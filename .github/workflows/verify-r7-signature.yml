@@ -18,14 +18,20 @@ jobs:
         run: |
           python -m py_compile ci/publish_release.py
           if ($LASTEXITCODE -ne 0) { throw 'Publisher syntax validation failed' }
+          python -m unittest ci/test_owner_release_hold.py -v
+          if ($LASTEXITCODE -ne 0) { throw 'Owner approval / publisher identity regression failed' }
           $source = Get-Content ci/publish_release.py -Raw
           $workflow = Get-Content .github/workflows/publish-windows.yml -Raw
           $gate = $source.IndexOf('verify-windows-installer-signature.ps1')
           $publish = $source.IndexOf("gh('release','create'")
           if ($gate -lt 0 -or $publish -lt 0 -or $gate -ge $publish) { throw 'BLOCK: publisher can upload before signature verification' }
+          if (!$source.Contains('require_owner_release_approval(revision)')) { throw 'BLOCK: release is not gated by exact owner approval' }
+          if (!$source.Contains('NEXIS_APPROVED_SIGNER_THUMBPRINT')) { throw 'BLOCK: approved signer is not pinned' }
+          if (!$workflow.Contains('secrets.NEXIS_OWNER_APPROVED_REVISION')) { throw 'BLOCK: release approval secret was not wired' }
+          if (!$workflow.Contains('secrets.NEXIS_APPROVED_SIGNER_THUMBPRINT')) { throw 'BLOCK: signer pin secret was not wired' }
           if (!$source.Contains("if os.name != 'nt'")) { throw 'BLOCK: publisher does not require Windows verification' }
           if (!$workflow.Contains('runs-on: windows-latest')) { throw 'BLOCK: release publisher is not on Windows' }
-          if (!$workflow.Contains('./ci/verify-windows-installer-signature.ps1 -Installer $installer')) { throw 'BLOCK: installed-update test lacks signature verification' }
+          if (!$workflow.Contains('./ci/verify-windows-installer-signature.ps1 -Installer $installer -ExpectedPublisherThumbprint $env:NEXIS_APPROVED_SIGNER_THUMBPRINT -ExpectedFileVersion $env:NEXIS_APPROVED_WINDOWS_FILE_VERSION')) { throw 'BLOCK: installed-update test lacks signature verification' }
       - name: Download historical R7 installer
         shell: pwsh
         env:
@@ -45,7 +51,7 @@ jobs:
         run: |
           $installer = "$env:RUNNER_TEMP/DTC_NEXIS_SETUP_R7.exe"
           try {
-            ./ci/verify-windows-installer-signature.ps1 -Installer $installer
+            ./ci/verify-windows-installer-signature.ps1 -Installer $installer -ExpectedPublisherThumbprint ('A' * 40) -ExpectedFileVersion '0.10.6.0'
             throw 'FAIL: historical R7 unexpectedly passed the signing release gate'
           } catch {
             if ($_.Exception.Message -notmatch 'BLOCK RELEASE:') { throw }
