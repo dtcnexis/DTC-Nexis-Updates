@@ -54,6 +54,16 @@ def main():
         assert digest(installer) == release['windows']['sha256'], 'Installer signature manifest checksum differs'
         with installer.open('rb') as file:
             assert file.read(2) == b'MZ', 'Not a Windows executable'
+        # Fail closed: a signed feed and matching SHA-256 do not prove that
+        # Windows trusts the installer. Verify the FINAL bytes before publishing
+        # the release or updating the public feed.
+        if os.name != 'nt':
+            raise RuntimeError('BLOCK RELEASE: Windows Authenticode verification requires a Windows runner')
+        subprocess.run(
+            ['pwsh', '-NoProfile', '-NonInteractive', '-File',
+             'ci/verify-windows-installer-signature.ps1', '-Installer', str(installer)],
+            check=True,
+        )
         tag = f'v{revision}'
         existing = gh('release','view',tag,'--repo',REPO,'--json','tagName',check=False)
         if existing.returncode == 0:
