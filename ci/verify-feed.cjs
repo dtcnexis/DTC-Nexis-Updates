@@ -1,0 +1,14 @@
+'use strict';
+const fs=require('node:fs'),crypto=require('node:crypto'),assert=require('node:assert/strict');
+const envelope=JSON.parse(fs.readFileSync(process.argv[2],'utf8'));
+const jwk=JSON.parse(fs.readFileSync(process.argv[3],'utf8'));
+assert.equal(jwk.kty,'EC');assert.equal(jwk.crv,'P-256');assert.equal(jwk.d,undefined);
+const bytes=Buffer.from(envelope.payload,'base64'),signature=Buffer.from(envelope.signature,'base64');
+assert(bytes.length>0&&bytes.length<=131072&&signature.length===64,'Invalid signed envelope');
+assert(crypto.verify('sha256',bytes,{key:crypto.createPublicKey({key:jwk,format:'jwk'}),dsaEncoding:'ieee-p1363'},signature),'Invalid owner signature');
+const release=JSON.parse(bytes.toString('utf8'));
+assert.equal(release.app,'DTCNexis');assert(Number.isSafeInteger(release.versionCode)&&release.versionCode>0);
+assert(typeof release.version==='string'&&/^[A-Za-z0-9_.-]{1,80}$/.test(release.version));
+const expected=`https://github.com/dtcnexis/DTC-Nexis-Updates/releases/download/v${release.versionCode}/DTC_NEXIS_SETUP_R${release.versionCode}.exe`;
+assert.equal(release.windows.url,expected);assert(/^[a-f0-9]{64}$/.test(release.windows.sha256));
+process.stdout.write(JSON.stringify(release));
