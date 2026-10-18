@@ -25,15 +25,12 @@ def digest(path):
     return h.hexdigest()
 
 
-def main():
-    assert os.environ.get('GITHUB_REPOSITORY') == REPO
-    request = json.loads(Path('release-request.json').read_text())
-    verified = subprocess.run(['node','ci/verify-feed.cjs','pending-update-feed.json','update-public-key.json'],
-                              text=True,capture_output=True,check=True)
-    release = json.loads(verified.stdout)
-    revision = release['versionCode']
-    # A release must be individually authorized by the owner, not by a CI push.
-    # The per-release approval value must be changed only AFTER the owner says "ارفع".
+def require_owner_release_approval(revision):
+    """Block all publishing unless owner explicitly approves this exact revision.
+
+    A valid code-signing cert without an approved pinned signer is insufficient.
+    This helper performs no network, release, installation, or GitHub actions.
+    """
     if os.environ.get('NEXIS_OWNER_APPROVED_REVISION') != str(revision):
         raise RuntimeError('BLOCK RELEASE: owner has not approved this exact revision')
     approved_thumbprint = os.environ.get('NEXIS_APPROVED_SIGNER_THUMBPRINT', '').strip()
@@ -42,6 +39,20 @@ def main():
         raise RuntimeError('BLOCK RELEASE: expected owner-approved publisher signer fingerprint is not configured')
     if not re.fullmatch(r'\d+\.\d+\.\d+(?:\.\d+)?', approved_file_version):
         raise RuntimeError('BLOCK RELEASE: owner-approved Windows FileVersion is not configured')
+    if not any(int(x) for x in approved_file_version.split('.')):
+        raise RuntimeError('BLOCK RELEASE: owner-approved Windows FileVersion must not be all zero')
+    return approved_thumbprint, approved_file_version
+
+
+def main():
+    assert os.environ.get('GITHUB_REPOSITORY') == REPO
+    request = json.loads(Path('release-request.json').read_text())
+    verified = subprocess.run(['node','ci/verify-feed.cjs','pending-update-feed.json','update-public-key.json'],
+                              text=True,capture_output=True,check=True)
+    release = json.loads(verified.stdout)
+    revision = release['versionCode']
+    # Fail closed before any release lookup, upload, or feed modification.
+    approved_thumbprint, approved_file_version = require_owner_release_approval(revision)
     asset = f'DTC_NEXIS_SETUP_R{revision}.exe'
     assert request['revision'] == revision
     assert set(request) == {'revision', 'installer_sha256', 'parts'}
