@@ -7,9 +7,6 @@ from pathlib import Path
 import re
 import subprocess
 import tempfile
-import urllib.request
-from urllib.parse import urlsplit
-import zipfile
 
 REPO = 'dtcnexis/DTC-Nexis-Updates'
 MAX_ARCHIVE = 260 * 1024 * 1024
@@ -28,13 +25,6 @@ def digest(path):
     return h.hexdigest()
 
 
-class HTTPSOnly(urllib.request.HTTPRedirectHandler):
-    def redirect_request(self, req, fp, code, msg, headers, url):
-        if urlsplit(url).scheme != 'https':
-            raise ValueError('Archive redirect must use HTTPS')
-        return super().redirect_request(req, fp, code, msg, headers, url)
-
-
 def main():
     assert os.environ.get('GITHUB_REPOSITORY') == REPO
     request = json.loads(Path('release-request.json').read_text())
@@ -44,32 +34,23 @@ def main():
     revision = release['versionCode']
     asset = f'DTC_NEXIS_SETUP_R{revision}.exe'
     assert request['revision'] == revision
-    assert re.fullmatch(r'[a-f0-9]{64}', request['archive_sha256'])
-    source = urlsplit(request['archive_url'])
-    assert source.scheme == 'https' and source.hostname and not source.username and not source.password
-    assert request['archive_member'] == 'DTC_NEXIS_PUBLIC_CHANNEL_TEST.exe'
+    assert set(request) == {'revision', 'installer_sha256', 'parts'}
+    assert request['installer_sha256'] == release['windows']['sha256']
+    assert isinstance(request['parts'], list) and 1 <= len(request['parts']) <= 100
     with tempfile.TemporaryDirectory() as folder:
         temp = Path(folder)
-        archive = temp/'installer.zip'
-        try:
-            opener = urllib.request.build_opener(HTTPSOnly())
-            with opener.open(request['archive_url'],timeout=90) as response, archive.open('wb') as output:
-                total = 0
-                while chunk := response.read(1024*1024):
-                    total += len(chunk)
-                    assert total <= MAX_ARCHIVE, 'Installer archive too large'
-                    output.write(chunk)
-        except Exception:
-            raise SystemExit('Installer transfer expired or failed. Refresh the installer-only transfer link.') from None
-        assert digest(archive) == request['archive_sha256'], 'Installer archive checksum differs'
         installer = temp/asset
-        with zipfile.ZipFile(archive) as package:
-            members = [item for item in package.infolist() if not item.is_dir()]
-            assert len(members) == 1 and members[0].filename == request['archive_member'], 'Expected an installer-only archive'
-            assert 1024 <= members[0].file_size <= MAX_ARCHIVE
-            with package.open(members[0]) as source_file, installer.open('wb') as output:
-                while chunk := source_file.read(1024*1024):
-                    output.write(chunk)
+        total = 0
+        with installer.open('wb') as output:
+            for index, part in enumerate(request['parts'], 1):
+                assert part['path'] == f'installer-parts/v{revision}/part-{index:02}.bin'
+                file = Path(part['path'])
+                assert file.is_file() and not file.is_symlink()
+                assert file.stat().st_size == part['size'] and digest(file) == part['sha256']
+                total += part['size']
+                assert total <= MAX_ARCHIVE, 'Installer too large'
+                output.write(file.read_bytes())
+        assert total >= 1024
         assert digest(installer) == release['windows']['sha256'], 'Installer signature manifest checksum differs'
         with installer.open('rb') as file:
             assert file.read(2) == b'MZ', 'Not a Windows executable'
