@@ -1,0 +1,84 @@
+name: Publish and verify signed Windows update
+on:
+  push:
+    branches: [main]
+    paths: [release-request.json]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: public-windows-release
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validate signed installer and publish permanent release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python ci/publish_release.py
+  verify-installed-program:
+    needs: publish
+    runs-on: windows-latest
+    timeout-minutes: 20
+    env:
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Download and install the public Windows release in isolated test data
+        shell: pwsh
+        run: |
+          node ci/verify-feed.cjs pending-update-feed.json update-public-key.json > verified-manifest.json
+          if ($LASTEXITCODE -ne 0) { throw 'Signed public release validation failed' }
+          $manifest = Get-Content verified-manifest.json -Raw | ConvertFrom-Json
+          $installer = Join-Path $env:RUNNER_TEMP 'DTC-Nexis-public-setup.exe'
+          Invoke-WebRequest $manifest.windows.url -OutFile $installer -TimeoutSec 120
+          if ((Get-FileHash $installer -Algorithm SHA256).Hash.ToLowerInvariant() -ne $manifest.windows.sha256) { throw 'Public installer digest differs' }
+          $target = Join-Path $env:RUNNER_TEMP 'Nexis-public-install'
+          $setup = Start-Process $installer -ArgumentList @('/VERYSILENT','/SUPPRESSMSGBOXES','/NORESTART',"/DIR=$target") -PassThru -Wait
+          if ($setup.ExitCode -ne 0) { throw 'Public installer failed' }
+          $env:NEXIS_DATA_DIR = Join-Path $env:RUNNER_TEMP 'Nexis-public-test-data'
+          Remove-Item Env:NEXIS_UPDATE_URL -ErrorAction SilentlyContinue
+          Remove-Item Env:NEXIS_UPDATE_PUBLIC_KEY -ErrorAction SilentlyContinue
+          Start-Process (Join-Path $target 'DTC_Nexis_RC3.exe')
+          $ready = $false
+          for ($attempt=0; $attempt -lt 25; $attempt++) {
+            Start-Sleep -Seconds 2
+            try {
+              $health = Invoke-RestMethod 'http://127.0.0.1:8873/api/health' -TimeoutSec 3
+              if ($health.installUpdatesAvailable) { $ready = $true; break }
+            } catch {}
+          }
+          if (-not $ready) { throw 'Installed Windows program did not start' }
+          $checked = $false
+          for ($attempt=0; $attempt -lt 12; $attempt++) {
+            try {
+              Invoke-WebRequest 'http://127.0.0.1:8873/api/updates/check' -OutFile checked-feed.json -TimeoutSec 15
+              node ci/verify-feed.cjs checked-feed.json update-public-key.json > checked-manifest.json
+              if ($LASTEXITCODE -eq 0) { $checked = $true; break }
+            } catch {}
+            Start-Sleep -Seconds 10
+          }
+          if (-not $checked) { throw 'Installed program could not read the signed public update feed' }
+      - name: Check the actual in-program update button in Edge
+        shell: pwsh
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          if ($LASTEXITCODE -ne 0) { throw 'Windows UI test dependency failed' }
+          node ci/check-installed.cjs
+          if ($LASTEXITCODE -ne 0) { throw 'Installed update channel UI check failed' }
+      - name: Save installed-channel verification
+        uses: actions/upload-artifact@v4
+        with:
+          name: DTC-NEXIS-INSTALLED-PUBLIC-CHANNEL-VERIFICATION
+          path: installed-channel-verification.json
+          if-no-files-found: error
+          retention-days: 30
