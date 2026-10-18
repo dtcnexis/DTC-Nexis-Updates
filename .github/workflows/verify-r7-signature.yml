@@ -1,0 +1,21 @@
+name: Verify Windows R7 installer signature (no publishing)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-r7:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download R7 installer
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download v7 --repo dtcnexis/DTC-Nexis-Updates --pattern "DTC_NEXIS_SETUP_R7.exe" --dir "$env:RUNNER_TEMP"
+          if (!(Test-Path "$env:RUNNER_TEMP/DTC_NEXIS_SETUP_R7.exe")) { throw 'Release asset not found' }
+      - name: Verify Authenticode before any release
+        shell: pwsh
+        run: |
+          ./ci/verify-windows-installer-signature.ps1 -Installer "$env:RUNNER_TEMP/DTC_NEXIS_SETUP_R7.exe"
