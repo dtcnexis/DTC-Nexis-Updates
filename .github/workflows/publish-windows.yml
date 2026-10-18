@@ -11,7 +11,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   publish:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     timeout-minutes: 15
     permissions:
       contents: write
@@ -42,6 +42,7 @@ jobs:
           $installer = Join-Path $env:RUNNER_TEMP 'DTC-Nexis-public-setup.exe'
           Invoke-WebRequest $manifest.windows.url -OutFile $installer -TimeoutSec 120
           if ((Get-FileHash $installer -Algorithm SHA256).Hash.ToLowerInvariant() -ne $manifest.windows.sha256) { throw 'Public installer digest differs' }
+          ./ci/verify-windows-installer-signature.ps1 -Installer $installer
           $target = Join-Path $env:RUNNER_TEMP 'Nexis-public-install'
           $setup = Start-Process $installer -ArgumentList @('/VERYSILENT','/SUPPRESSMSGBOXES','/NORESTART',"/DIR=$target") -PassThru -Wait
           if ($setup.ExitCode -ne 0) { throw 'Public installer failed' }
