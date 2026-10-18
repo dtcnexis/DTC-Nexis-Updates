@@ -32,6 +32,16 @@ def main():
                               text=True,capture_output=True,check=True)
     release = json.loads(verified.stdout)
     revision = release['versionCode']
+    # A release must be individually authorized by the owner, not by a CI push.
+    # The per-release approval value must be changed only AFTER the owner says "ارفع".
+    if os.environ.get('NEXIS_OWNER_APPROVED_REVISION') != str(revision):
+        raise RuntimeError('BLOCK RELEASE: owner has not approved this exact revision')
+    approved_thumbprint = os.environ.get('NEXIS_APPROVED_SIGNER_THUMBPRINT', '').strip()
+    approved_file_version = os.environ.get('NEXIS_APPROVED_WINDOWS_FILE_VERSION', '').strip()
+    if not re.fullmatch(r'[0-9a-fA-F]{40}', approved_thumbprint):
+        raise RuntimeError('BLOCK RELEASE: expected owner-approved publisher signer fingerprint is not configured')
+    if not re.fullmatch(r'\d+\.\d+\.\d+(?:\.\d+)?', approved_file_version):
+        raise RuntimeError('BLOCK RELEASE: owner-approved Windows FileVersion is not configured')
     asset = f'DTC_NEXIS_SETUP_R{revision}.exe'
     assert request['revision'] == revision
     assert set(request) == {'revision', 'installer_sha256', 'parts'}
@@ -61,7 +71,9 @@ def main():
             raise RuntimeError('BLOCK RELEASE: Windows Authenticode verification requires a Windows runner')
         subprocess.run(
             ['pwsh', '-NoProfile', '-NonInteractive', '-File',
-             'ci/verify-windows-installer-signature.ps1', '-Installer', str(installer)],
+             'ci/verify-windows-installer-signature.ps1', '-Installer', str(installer),
+             '-ExpectedPublisherThumbprint', approved_thumbprint,
+             '-ExpectedFileVersion', approved_file_version],
             check=True,
         )
         tag = f'v{revision}'
