@@ -15,6 +15,13 @@ jobs:
         run: |
           gh release download v7 --repo dtcnexis/DTC-Nexis-Updates --pattern "DTC_NEXIS_SETUP_R7.exe" --dir "$env:RUNNER_TEMP"
           if (!(Test-Path "$env:RUNNER_TEMP/DTC_NEXIS_SETUP_R7.exe")) { throw 'Release asset not found' }
+      - name: Verify R7 asset integrity against signed-feed payload hash
+        shell: pwsh
+        run: |
+          $expected = 'D5D7E48243EC40C57B8AF5D618130F47A0CBF00139D6B8FC1CDD9FB4895DF2C6'
+          $actual = (Get-FileHash -LiteralPath "$env:RUNNER_TEMP/DTC_NEXIS_SETUP_R7.exe" -Algorithm SHA256).Hash
+          if ($actual -ne $expected) { throw "BLOCK: R7 SHA-256 mismatch. Expected $expected; got $actual" }
+          Write-Host "PASS: R7 installer bytes match the SHA-256 declared by update-feed.json"
       - name: Verify Authenticode before any release
         shell: pwsh
         run: |
