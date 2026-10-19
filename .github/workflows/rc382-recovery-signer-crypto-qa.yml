@@ -8,6 +8,7 @@ on:
     paths:
       - .github/workflows/rc382-recovery-signer-crypto-qa.yml
       - ci/rc382_recovery_signer_selftest.py
+      - ci/rc382_recovery_public_metadata.py
 
 permissions:
   contents: read
@@ -37,6 +38,18 @@ jobs:
         env:
           NEXIS_OWNER_RECOVERY_SIGNER_KEY_PEM: ${{ secrets.NEXIS_OWNER_RECOVERY_SIGNER_KEY_PEM }}
         run: python ci/rc382_recovery_signer_selftest.py
+      - name: Derive PUBLIC trust anchor only (no private material exported)
+        env:
+          NEXIS_OWNER_RECOVERY_SIGNER_KEY_PEM: ${{ secrets.NEXIS_OWNER_RECOVERY_SIGNER_KEY_PEM }}
+          RECOVERY_PUBLIC_METADATA_PATH: ${{ runner.temp }}/owner-recovery-public.jwk.json
+        run: python ci/rc382_recovery_public_metadata.py
+      - name: Store PUBLIC key metadata for owner bootstrap review
+        uses: actions/upload-artifact@v4
+        with:
+          name: OWNER-RECOVERY-PUBLIC-JWK-NOT-ACTIVE
+          path: ${{ runner.temp }}/owner-recovery-public.jwk.json
+          if-no-files-found: error
+          retention-days: 7
       - name: Record private QA boundary
         if: always()
         run: |
