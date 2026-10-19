@@ -37,8 +37,10 @@ jobs:
           OWNER_SIGNER_CONFIGURED: ${{ secrets.NEXIS_OWNER_TRIAL_SIGNER_KEY_PEM != '' }}
         run: |
           if [[ "$OWNER_SIGNER_CONFIGURED" == "true" ]]; then
+            echo "OWNER_SIGNER_CONFIGURED: true (no secret content shown)"
             echo "Owner signer status: CONFIGURED (private value never accessed or displayed)" >> "$GITHUB_STEP_SUMMARY"
           else
+            echo "OWNER_SIGNER_CONFIGURED: false (no secret content shown)"
             echo "Owner signer status: NOT CONFIGURED — signed Revision 10 cannot be activated" >> "$GITHUB_STEP_SUMMARY"
           fi
       - name: Prepare PRIVATE signed envelope only when manually dispatched and ready
