@@ -14,8 +14,6 @@ jobs:
   safe-signer-staging:
     runs-on: ubuntu-latest
     timeout-minutes: 12
-    env:
-      OWNER_SIGNING_PEM: ${{ secrets.NEXIS_OWNER_TRIAL_SIGNER_KEY_PEM }}
     steps:
       - name: Checkout owner-only channel branch
         uses: actions/checkout@v4
@@ -30,6 +28,9 @@ jobs:
       - name: Synthetic key tests (no private owner key)
         run: python ci/test_prepare_owner_v10_signed.py
       - name: Sign only into temporary review artifact if original signer is securely configured
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          OWNER_SIGNING_PEM: ${{ secrets.NEXIS_OWNER_TRIAL_SIGNER_KEY_PEM }}
         shell: bash
         run: |
           set -euo pipefail
@@ -48,6 +49,7 @@ jobs:
             --out "$RUNNER_TEMP/owner-rev10-signed-review.json"
           echo "A verified signed Revision 10 candidate is staged privately; publishing remains a separate owner-only action." >> "$GITHUB_STEP_SUMMARY"
       - name: Upload ONLY signed envelope, NEVER signer private key or installable EXE
+        if: github.event_name == 'workflow_dispatch'
         uses: actions/upload-artifact@v4
         with:
           name: DTC-NEXIS-OWNER-REV10-SIGNED-STAGE-NOT-PUBLISHED
