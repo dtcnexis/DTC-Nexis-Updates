@@ -1,0 +1,56 @@
+name: PRIVATE OWNER Revision 10 signed-feed staging (NO PUBLISH)
+on:
+  push:
+    branches:
+      - owner-stable-data-channel
+    paths:
+      - ci/prepare_owner_v10_signed.py
+      - ci/test_prepare_owner_v10_signed.py
+      - .github/workflows/owner-v10-sign-staging.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  safe-signer-staging:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      OWNER_SIGNING_PEM: ${{ secrets.NEXIS_OWNER_TRIAL_SIGNER_KEY_PEM }}
+    steps:
+      - name: Checkout owner-only channel branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Python for cryptographic verifier
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned public verification dependency
+        run: python -m pip install --disable-pip-version-check cryptography==46.0.4
+      - name: Synthetic key tests (no private owner key)
+        run: python ci/test_prepare_owner_v10_signed.py
+      - name: Sign only into temporary review artifact if original signer is securely configured
+        shell: bash
+        run: |
+          set -euo pipefail
+          umask 077
+          if [[ -z "$OWNER_SIGNING_PEM" ]]; then
+            echo "BLOCKED: Owner test signing key has not been configured in GitHub Secrets."
+            echo "No signing and no update feed publication attempted."
+            echo "NEXIS OWNER: secure one-time authorized signer provision required" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          key="$RUNNER_TEMP/owner-trial-signer.pem"
+          trap 'rm -f "$key"' EXIT
+          printf '%s' "$OWNER_SIGNING_PEM" > "$key"
+          python ci/prepare_owner_v10_signed.py \
+            --private-pem "$key" \
+            --out "$RUNNER_TEMP/owner-rev10-signed-review.json"
+          echo "A verified signed Revision 10 candidate is staged privately; publishing remains a separate owner-only action." >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload ONLY signed envelope, NEVER signer private key or installable EXE
+        uses: actions/upload-artifact@v4
+        with:
+          name: DTC-NEXIS-OWNER-REV10-SIGNED-STAGE-NOT-PUBLISHED
+          path: ${{ runner.temp }}/owner-rev10-signed-review.json
+          if-no-files-found: ignore
+          retention-days: 2
