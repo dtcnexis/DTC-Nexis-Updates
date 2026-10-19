@@ -2,6 +2,12 @@ name: RC3.8.2 recovery signer cryptographic QA (NO PUBLISH)
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - test/rc382-recovery-signer-qa-20261019
+    paths:
+      - .github/workflows/rc382-recovery-signer-crypto-qa.yml
+      - ci/rc382_recovery_signer_selftest.py
 
 permissions:
   contents: read
