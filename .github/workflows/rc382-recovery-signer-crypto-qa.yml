@@ -9,6 +9,7 @@ on:
       - .github/workflows/rc382-recovery-signer-crypto-qa.yml
       - ci/rc382_recovery_signer_selftest.py
       - ci/rc382_recovery_public_metadata.py
+      - ci/rc382_recovery_runtime_probe.py
 
 permissions:
   contents: read
@@ -50,6 +51,10 @@ jobs:
           path: ${{ runner.temp }}/owner-recovery-public.jwk.json
           if-no-files-found: error
           retention-days: 7
+      - name: Produce fixed public non-installable probe for packaged Windows verification
+        env:
+          NEXIS_OWNER_RECOVERY_SIGNER_KEY_PEM: ${{ secrets.NEXIS_OWNER_RECOVERY_SIGNER_KEY_PEM }}
+        run: python ci/rc382_recovery_runtime_probe.py
       - name: Record private QA boundary
         if: always()
         run: |
