@@ -1,0 +1,72 @@
+name: PRIVATE OWNER R10 Guide+Catalog signing readiness (NO PUBLISH)
+on:
+  push:
+    branches:
+      - owner-stable-data-channel
+    paths:
+      - owner-channel/review/guide-v10-unsigned.json
+      - ci/check_owner_guide_v10_candidate.py
+      - ci/prepare_owner_v10_guide_signed.py
+      - ci/test_prepare_owner_v10_guide_signed.py
+      - .github/workflows/owner-v10-guide-sign-readiness.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate-private-candidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned cryptography verifier
+        run: python -m pip install --disable-pip-version-check cryptography==46.0.4
+      - name: Validate R10 Guide SHA256, image URL allowlist and unchanged signed Revision 9
+        run: python ci/check_owner_guide_v10_candidate.py
+      - name: Test old 26-code catalog and original signer restrictions
+        run: python ci/test_prepare_owner_v10_signed.py
+      - name: Test nested signed Guide envelope and blocked missing assets
+        run: python ci/test_prepare_owner_v10_guide_signed.py
+      - name: Prepare PRIVATE signed envelope only when manually dispatched and ready
+        if: github.event_name == 'workflow_dispatch'
+        shell: bash
+        env:
+          OWNER_SIGNING_PEM: ${{ secrets.NEXIS_OWNER_TRIAL_SIGNER_KEY_PEM }}
+        run: |
+          set -euo pipefail
+          umask 077
+          if [[ -z "$OWNER_SIGNING_PEM" ]]; then
+            echo "BLOCKED: Original owner signing key is not configured in GitHub Secrets." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          if [[ ! -f owner-channel/packages/guide-v10/wiring_diagrams.webp ||
+                ! -f owner-channel/packages/guide-v10/remote_key_maintenance.webp ||
+                ! -f owner-channel/packages/guide-v10/timing_belt_chain.webp ||
+                ! -f owner-channel/packages/guide-v10/torque_specifications.webp ]]; then
+            echo "BLOCKED: At least one of four approved R10 WebP files is absent from immutable package storage." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          key="$RUNNER_TEMP/owner-signing-private.pem"
+          trap 'rm -f "$key"' EXIT
+          printf '%s' "$OWNER_SIGNING_PEM" > "$key"
+          python ci/prepare_owner_v10_guide_signed.py \
+            --private-pem "$key" \
+            --out "$RUNNER_TEMP/owner-revision10-catalog-guide-signed-review.json"
+          echo "Signed package staged ONLY in ephemeral artifact. Manual owner feed activation remains separate." >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload signed review output only (never key or executable)
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: OWNER-REV10-CATALOG-GUIDE-SIGNED-REVIEW-NOT-PUBLISHED
+          path: ${{ runner.temp }}/owner-revision10-catalog-guide-signed-review.json
+          if-no-files-found: ignore
+          retention-days: 2
+      - name: Confirm permanent feed was never changed
+        if: always()
+        shell: bash
+        run: |
+          echo "PRIVATE QA ONLY. Do not publish an unsigned payload, never disable Windows Smart App Control, and do not alter RC3.8.0." >> "$GITHUB_STEP_SUMMARY"
