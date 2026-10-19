@@ -5,6 +5,8 @@ on:
       - owner-stable-data-channel
     paths:
       - owner-channel/review/catalog-v10-unsigned.json
+      - owner-channel/review/guide-v10-unsigned.json
+      - ci/check_owner_guide_v10_candidate.py
       - owner-channel/update-feed.json
       - ci/check_owner_v10_candidate.py
       - .github/workflows/owner-v10-draft-qa.yml
@@ -26,7 +28,9 @@ jobs:
         run: python -m pip install --disable-pip-version-check cryptography==46.0.4
       - name: Validate original signed v9 and isolated unsigned v10 draft
         run: python ci/check_owner_v10_candidate.py
+      - name: Validate four signed-guide metadata targets and live-feed protection
+        run: python ci/check_owner_guide_v10_candidate.py
       - name: Record blocked release boundary
         if: always()
         run: |
-          echo 'OWNER-ONLY QA: no production signing, no Revision 10 feed activation, no OEM photos, no release or deployment.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'OWNER-ONLY QA: no production signing, no Revision 10 feed activation, guide image binaries and matching original signer still required; no release or deployment.' >> "$GITHUB_STEP_SUMMARY"
