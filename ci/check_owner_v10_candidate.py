@@ -7,6 +7,7 @@ from cryptography.hazmat.primitives.asymmetric import ec,utils
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 old_path=ROOT/"owner-tests/batch01/catalog-v9.json"
 draft_path=ROOT/"owner-channel/review/catalog-v10-unsigned.json"
+package_path=ROOT/"owner-channel/packages/catalog-v10.json"
 live_path=ROOT/"owner-channel/update-feed.json"
 jwk=json.loads((ROOT/"owner-tests/batch01/public-key.jwk.json").read_text())
 def dec(s):return base64.urlsafe_b64decode(s+"="*((-len(s))%4))
@@ -21,8 +22,10 @@ manifest=json.loads(payload)
 assert manifest["app"]=="DTCNexis" and manifest["versionCode"]==7
 assert manifest["catalog"]["versionCode"]==9,"Live feed must remain at last authorized revision"
 assert "images" not in manifest,"No unreviewed image batches are published"
+assert manifest["catalog"]["url"]!= "https://raw.githubusercontent.com/dtcnexis/DTC-Nexis-Updates/owner-stable-data-channel/owner-channel/packages/catalog-v10.json", "Unsigned Revision 10 package must never be active"
 old=json.loads(old_path.read_text(encoding="utf8"))
 candidate=json.loads(draft_path.read_text(encoding="utf8"))
+assert package_path.read_bytes()==draft_path.read_bytes(),"Staged package must match reviewed candidate exactly"
 assert old["versionCode"]==9 and candidate["versionCode"]==10
 assert len(old["items"])==18 and len(candidate["items"])==26
 assert candidate["items"][:18]==old["items"],"Old 18 codes cannot be silently changed"
