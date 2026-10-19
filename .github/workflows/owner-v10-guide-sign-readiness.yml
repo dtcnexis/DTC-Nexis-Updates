@@ -31,6 +31,16 @@ jobs:
         run: python ci/test_prepare_owner_v10_signed.py
       - name: Test nested signed Guide envelope and blocked missing assets
         run: python ci/test_prepare_owner_v10_guide_signed.py
+      - name: Check original owner signing key availability without exposing it
+        shell: bash
+        env:
+          OWNER_SIGNER_CONFIGURED: ${{ secrets.NEXIS_OWNER_TRIAL_SIGNER_KEY_PEM != '' }}
+        run: |
+          if [[ "$OWNER_SIGNER_CONFIGURED" == "true" ]]; then
+            echo "Owner signer status: CONFIGURED (private value never accessed or displayed)" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Owner signer status: NOT CONFIGURED — signed Revision 10 cannot be activated" >> "$GITHUB_STEP_SUMMARY"
+          fi
       - name: Prepare PRIVATE signed envelope only when manually dispatched and ready
         if: github.event_name == 'workflow_dispatch'
         shell: bash
