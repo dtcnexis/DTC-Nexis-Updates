@@ -1,0 +1,37 @@
+name: RC3.8.2 recovery signer cryptographic QA (NO PUBLISH)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  recovery-signature-selftest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Require isolated testing branch
+        env:
+          REF_NAME: ${{ github.ref_name }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$REF_NAME" = "test/rc382-recovery-signer-qa-20261019"
+          echo "PASS: testing branch confirmed"
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install cryptographic verification dependency
+        run: python -m pip install --disable-pip-version-check cryptography==46.0.4
+      - name: Test owner recovery key signature without publishing
+        env:
+          NEXIS_OWNER_RECOVERY_SIGNER_KEY_PEM: ${{ secrets.NEXIS_OWNER_RECOVERY_SIGNER_KEY_PEM }}
+        run: python ci/rc382_recovery_signer_selftest.py
+      - name: Record private QA boundary
+        if: always()
+        run: |
+          echo "ISOLATED QA ONLY; no persistent signed feed, public release, signing material, or Windows installer created." >> "$GITHUB_STEP_SUMMARY"
