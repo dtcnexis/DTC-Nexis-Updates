@@ -82,7 +82,7 @@ def prepare(*,previous_feed,old_catalog,new_catalog,public_jwk,private_pem,outpu
     catalog=json.loads(raw)
     count=check_catalog(catalog,old)
     private=serialization.load_pem_private_key(private_pem.read_bytes(),password=None)
-    assert isinstance(private,ec.EllipticCurvePrivateKey) and isinstance(private.curve,ec.SECP256R1())
+    assert hasattr(private,"curve") and isinstance(private.curve,ec.SECP256R1) and callable(getattr(private,"sign",None)) and callable(getattr(private,"public_key",None)), "Only an EC P-256 private signing key is accepted"
     assert private.public_key().public_numbers()==pub.public_numbers(),(
         "Signer does not match original permanently pinned public key; trust rotation forbidden"
     )
