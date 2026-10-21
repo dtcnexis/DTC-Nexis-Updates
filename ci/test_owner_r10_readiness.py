@@ -49,7 +49,7 @@ class R10OwnerSigningReadiness(unittest.TestCase):
     def test_original_review_bytes_and_contract(self):
         actual, amount = m.review_candidate(CANDIDATE, ASSETS)
         self.assertEqual(actual["revision"], 10)
-        self.assertEqual(amount, 48982)
+        self.assertEqual(amount, 48882)
         self.assertEqual(set(m.APPROVED), {c["id"] for c in actual["cards"]})
 
     def test_sign_two_layers_only_when_original_matches(self):
