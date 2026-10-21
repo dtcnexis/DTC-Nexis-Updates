@@ -1,0 +1,64 @@
+name: RC382 owner R10 REAL images + recovery signatures (CI ONLY NO PUBLISH)
+
+on:
+  push:
+    branches: [test/rc382-guide-photoreal-review-20261021]
+    paths:
+      - ci/owner_r10_recovery_signed_trial.py
+      - .github/workflows/owner-r10-recovery-signed-trial.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  real-r10-recovery-signing-memory-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout isolated trial only, no stored credentials
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Use Python 3.12 for reproducible checks
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install cryptographic and WebP validators
+        run: python -m pip install --disable-pip-version-check cryptography==46.0.4 Pillow==11.3.0
+      - name: Validate existing R10 image source, QA manifest and negative test coverage
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m py_compile ci/owner_r10_recovery_signed_trial.py
+          python ci/test_owner_r10_readiness.py
+      - name: Check actual stable R9 signature without touching published channel
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --depth=1 --no-tags origin owner-stable-data-channel
+          git show FETCH_HEAD:owner-channel/update-feed.json > "$RUNNER_TEMP/owner-r9-feed.json"
+          git show FETCH_HEAD:owner-tests/batch01/public-key.jwk.json > "$RUNNER_TEMP/owner-r9-public.jwk.json"
+          if git cat-file -e FETCH_HEAD:owner-channel/packages/guide-v10/wiring_diagrams.webp 2>/dev/null; then
+            echo "BLOCKED: stable channel already contains R10 files; recheck scope before proceeding."
+            exit 3
+          fi
+          echo "PASS: stable owner channel remains R9; real R10 files stay staged on review branch."
+      - name: In-memory sign and verify BOTH real R10 layers using EXISTING recovery GitHub Secret
+        shell: bash
+        env:
+          NEXIS_OWNER_RECOVERY_SIGNER_KEY_PEM: ${{ secrets.NEXIS_OWNER_RECOVERY_SIGNER_KEY_PEM }}
+        run: |
+          set -euo pipefail
+          set +x
+          python ci/owner_r10_recovery_signed_trial.py \
+            --live "$RUNNER_TEMP/owner-r9-feed.json" \
+            --legacy-jwk "$RUNNER_TEMP/owner-r9-public.jwk.json"
+          echo "PASS: existing owner recovery key signed and verified real R10 Guide+feed in-memory only." >> "$GITHUB_STEP_SUMMARY"
+          echo "R9 installed clients cannot accept recovery signer until separately trusted bootstrap." >> "$GITHUB_STEP_SUMMARY"
+      - name: Enforce no publication or signed outputs
+        if: always()
+        shell: bash
+        run: |
+          echo "NO RELEASE / NO ARTIFACT / NO SIGNED FEED FILE / NO WIN INSTALLER / NO LIVE BRANCH CHANGE." >> "$GITHUB_STEP_SUMMARY"
+          echo "Local signed bytes were discarded with the ephemeral job; no private key was exported." >> "$GITHUB_STEP_SUMMARY"
