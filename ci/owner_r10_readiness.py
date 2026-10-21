@@ -117,6 +117,10 @@ def review_candidate(path, assets_root, *, installed_revision=9):
         require(len(raw) == size and hashlib.sha256(raw).hexdigest() == digest,
                 "Approved WebP bytes changed")
         require(raw[:4] == b"RIFF" and raw[8:12] == b"WEBP", "Non-WebP image rejected")
+        # Future channel layout is staged only on THIS REVIEW BRANCH, not activated.
+        staged = Path(__file__).resolve().parents[1] / "owner-channel/packages/guide-v10" / (ident + ".webp")
+        require(staged.is_file() and not staged.is_symlink()
+                and staged.read_bytes() == raw, "Review-branch immutable package staging differs")
         try:
             with Image.open(io.BytesIO(raw)) as img:
                 require(img.format == "WEBP" and img.mode in ("RGB", "RGBA")
