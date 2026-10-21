@@ -1,0 +1,88 @@
+name: RC382 OWNER R10 isolated signature and WebP readiness (NO PUBLISH)
+
+on:
+  push:
+    branches:
+      - test/rc382-guide-photoreal-review-20261021
+    paths:
+      - ci/owner_r10_readiness.py
+      - ci/test_owner_r10_readiness.py
+      - .github/workflows/owner-r10-isolated-readiness.yml
+      - owner-review/rc382-guide-r10/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  owner-r10-readiness-no-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout isolated owner review branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Install only validation dependencies
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install P-256 and WebP verifiers
+        run: python -m pip install --disable-pip-version-check cryptography==46.0.4 Pillow==11.3.0
+      - name: Test signed envelopes, approved pixels, rollback and tampering with EPHEMERAL keys
+        run: python ci/test_owner_r10_readiness.py
+      - name: Read existing owner R9 evidence without modifying the owner channel
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --depth=1 --no-tags origin owner-stable-data-channel
+          git show FETCH_HEAD:owner-channel/update-feed.json > "$RUNNER_TEMP/owner-r9-feed.json"
+          git show FETCH_HEAD:owner-tests/batch01/public-key.jwk.json > "$RUNNER_TEMP/original-p256-public.jwk.json"
+      - name: Verify actual original R9 signature and all four approved R10 WebP files
+        shell: bash
+        run: |
+          set -euo pipefail
+          python ci/owner_r10_readiness.py \
+            --live "$RUNNER_TEMP/owner-r9-feed.json" \
+            --jwk "$RUNNER_TEMP/original-p256-public.jwk.json"
+      - name: Check available signer identity without reading any private key
+        shell: bash
+        env:
+          ORIGINAL_CONFIGURED: ${{ secrets.NEXIS_OWNER_TRIAL_SIGNER_KEY_PEM != '' }}
+          RECOVERY_CONFIGURED: ${{ secrets.NEXIS_OWNER_RECOVERY_SIGNER_KEY_PEM != '' }}
+        run: |
+          if [[ "$ORIGINAL_CONFIGURED" == "true" ]]; then
+            echo "ORIGINAL_SIGNER_SECRET_PRESENT: yes; key ownership still requires cryptographic attestation"
+            echo "Original signer secret: PRESENT, NOT YET PROVEN TO MATCH" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "ORIGINAL_SIGNER_SECRET_PRESENT: no; cannot sign R10 for installed R9 client"
+            echo "Original signer secret: MISSING; R10 signing BLOCKED" >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if [[ "$RECOVERY_CONFIGURED" == "true" ]]; then
+            echo "RECOVERY_SECRET_PRESENT: yes; NOT accepted as original identity"
+          else
+            echo "RECOVERY_SECRET_PRESENT: no"
+          fi
+      - name: Owner-invoked ORIGINAL signer in-memory cryptographic attestation (NEVER PUBLISH)
+        if: github.event_name == 'workflow_dispatch'
+        shell: bash
+        env:
+          NEXIS_OWNER_TRIAL_SIGNER_KEY_PEM: ${{ secrets.NEXIS_OWNER_TRIAL_SIGNER_KEY_PEM }}
+        run: |
+          set -euo pipefail
+          set +x
+          if [[ -z "$NEXIS_OWNER_TRIAL_SIGNER_KEY_PEM" ]]; then
+            echo "BLOCKED: Original R9 signer missing; no new key will be created."
+            exit 2
+          fi
+          python ci/owner_r10_readiness.py \
+            --live "$RUNNER_TEMP/owner-r9-feed.json" \
+            --jwk "$RUNNER_TEMP/original-p256-public.jwk.json" \
+            --attest-secret
+          echo "PASS: original P-256 signer matched and signed both layers IN MEMORY ONLY." >> "$GITHUB_STEP_SUMMARY"
+      - name: Guarantee no feed or installer published
+        if: always()
+        shell: bash
+        run: |
+          echo "RC3.8.0 unchanged. Owner channel Revision 9 unchanged. Four R10 WebPs only in review branch." >> "$GITHUB_STEP_SUMMARY"
+          echo "No GitHub Release, no signed feed artifact, no Windows installer, no key rotation." >> "$GITHUB_STEP_SUMMARY"
