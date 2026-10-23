@@ -24,13 +24,10 @@ STAGED=ROOT/"owner-review"/"rc382-guide-r11"
 APPROVED={
  "wiring_diagrams":("db81eb1c202a2ea3f09213be747b13b0ac4990e74a8ca7956cc7f372495b5c3e",15884),
  "remote_key_maintenance":("87ba05e803921537a765c38b58891dbd80f1047f8b057e901895eb7dea38f9e0",9754),
- "timing_belt_chain":("fa6a68a32435357fe3e25a6d5794835390b0e7c957b519a8dce6268e6e0bea2014",12322),
+ "timing_belt_chain":("fa6a68a32435357fe3e25a6d5794835390b0e7c957b519a8dce6268e508fde46",12322),
  "torque_specifications":("05fa800456753aec254d673e73b5e67719487a9b2bbb1f17ae456e6e0bea2014",10922),
  "ecu_list":("a1a8ac63ab958a7160912c8a99ed494f909c15eb43ec437ffd7e66bd2f952cd7",42274),
 }
-# Exact hard-coded corrected hash is assigned below, independently of review data.
-APPROVED["timing_belt_chain"]=(
- "fa6a68a32435357fe3e25a6d5794835390b0e7c957b519a8dce6268e508fde46",12322)
 EXPECTED_IDS=list(APPROVED)
 PREFIX="https://raw.githubusercontent.com/dtcnexis/DTC-Nexis-Updates/owner-stable-data-channel/owner-channel/owner-guide-cards/"
 NOTES="PRIVATE OWNER R11 DRY RUN ONLY. Recovery trust bootstrap missing. Never install or publish."
