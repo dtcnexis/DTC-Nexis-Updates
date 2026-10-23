@@ -1,0 +1,73 @@
+{
+  "schema": "dtcnexis.guide-image-owner-review.v1",
+  "version": "RC3.8.2",
+  "revision_target": 11,
+  "status": "OWNER_REVIEWED_UNSIGNED_NOT_DELIVERED",
+  "scope": "private-review-only",
+  "images": [
+    {
+      "id": "remote_key_maintenance",
+      "path": "images/remote_key_maintenance.webp",
+      "mime": "image/webp",
+      "width": 352,
+      "height": 272,
+      "bytes": 9754,
+      "sha256": "87ba05e803921537a765c38b58891dbd80f1047f8b057e901895eb7dea38f9e0",
+      "qa_status": "owner_approved_for_private_rc382_testing"
+    },
+    {
+      "id": "timing_belt_chain",
+      "path": "images/timing_belt_chain.webp",
+      "mime": "image/webp",
+      "width": 352,
+      "height": 272,
+      "bytes": 12322,
+      "sha256": "fa6a68a32435357fe3e25a6d5794835390b0e7c957b519a8dce6268e508fde46",
+      "qa_status": "owner_approved_for_private_rc382_testing"
+    },
+    {
+      "id": "torque_specifications",
+      "path": "images/torque_specifications.webp",
+      "mime": "image/webp",
+      "width": 352,
+      "height": 272,
+      "bytes": 10922,
+      "sha256": "05fa800456753aec254d673e73b5e67719487a9b2bbb1f17ae456e6e0bea2014",
+      "qa_status": "owner_approved_for_private_rc382_testing"
+    },
+    {
+      "id": "wiring_diagrams",
+      "path": "images/wiring_diagrams.webp",
+      "mime": "image/webp",
+      "width": 352,
+      "height": 272,
+      "bytes": 15884,
+      "sha256": "db81eb1c202a2ea3f09213be747b13b0ac4990e74a8ca7956cc7f372495b5c3e",
+      "qa_status": "owner_approved_for_private_rc382_testing"
+    },
+    {
+      "id": "ecu_list",
+      "path": "images/ecu_list.webp",
+      "mime": "image/webp",
+      "width": 352,
+      "height": 272,
+      "bytes": 42274,
+      "sha256": "a1a8ac63ab958a7160912c8a99ed494f909c15eb43ec437ffd7e66bd2f952cd7",
+      "qa_status": "owner_approved_for_private_rc382_testing",
+      "asset_present_in_updates_branch": false
+    }
+  ],
+  "owner_review": {
+    "status": "approved_for_private_rc382_testing",
+    "date": "2026-10-23",
+    "source": "Owner approval in conversation for ECU card 352x272 WebP, with existing R10 four approvals preserved.",
+    "scope": "Five exact image fingerprints for private QA only. This is NOT a signed feed and must not be published."
+  },
+  "release_gates": {
+    "ecu_binary_uploaded": false,
+    "owner_original_p256_signed": false,
+    "real_five_image_edge_test": false,
+    "stable_feed_unchanged": true,
+    "one_button_existing": true
+  }
+}
