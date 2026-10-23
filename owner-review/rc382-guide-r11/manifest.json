@@ -54,7 +54,8 @@
       "bytes": 42274,
       "sha256": "a1a8ac63ab958a7160912c8a99ed494f909c15eb43ec437ffd7e66bd2f952cd7",
       "qa_status": "owner_approved_for_private_rc382_testing",
-      "asset_present_in_updates_branch": false
+      "asset_present_in_updates_branch": true,
+      "sha256_verified_against_owner_binary": true
     }
   ],
   "owner_review": {
@@ -64,7 +65,7 @@
     "scope": "Five exact image fingerprints for private QA only. This is NOT a signed feed and must not be published."
   },
   "release_gates": {
-    "ecu_binary_uploaded": false,
+    "ecu_binary_uploaded": true,
     "owner_original_p256_signed": false,
     "real_five_image_edge_test": false,
     "stable_feed_unchanged": true,
