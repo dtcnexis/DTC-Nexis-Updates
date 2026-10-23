@@ -1,0 +1,52 @@
+name: RC382 OWNER R11 five-real-WebP recovery signing (MEMORY ONLY NO PUBLISH)
+
+on:
+  push:
+    branches: [test/rc382-guide-photoreal-review-20261021]
+    paths:
+      - ci/owner_r11_recovery_signing_rehearsal.py
+      - .github/workflows/owner-r11-recovery-signing-rehearsal.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  owner-r11-in-memory-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout isolated owner QA branch without stored credentials
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install validators (no release tooling)
+        run: python -m pip install --disable-pip-version-check cryptography==46.0.4 Pillow==11.3.0
+      - name: Verify live R9 read-only trust anchor and retain its JSON outside the repo
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch --depth=1 --no-tags origin owner-stable-data-channel
+          git show FETCH_HEAD:owner-channel/update-feed.json > "$RUNNER_TEMP/owner-r9-feed.json"
+          git show FETCH_HEAD:owner-tests/batch01/public-key.jwk.json > "$RUNNER_TEMP/owner-r9-public.jwk.json"
+      - name: Run actual owner recovery key R11 signed-data rehearsal (discard signed bytes)
+        shell: bash
+        env:
+          NEXIS_OWNER_RECOVERY_SIGNER_KEY_PEM: ${{ secrets.NEXIS_OWNER_RECOVERY_SIGNER_KEY_PEM }}
+        run: |
+          set -euo pipefail
+          set +x
+          python ci/owner_r11_recovery_signing_rehearsal.py \
+            --live "$RUNNER_TEMP/owner-r9-feed.json" \
+            --legacy-jwk "$RUNNER_TEMP/owner-r9-public.jwk.json"
+          echo "R11 five approved WebPs and actual recovery signer: in-memory rehearsal passed." >> "$GITHUB_STEP_SUMMARY"
+          echo "STOP: recovery key remains UNTRUSTED by installed R9 app; no release authorized." >> "$GITHUB_STEP_SUMMARY"
+      - name: Retain strict no-release boundary
+        if: always()
+        shell: bash
+        run: |
+          echo "NO FEED PUBLISH, NO R11 ENVELOPE WRITTEN, NO ARTIFACT, NO INSTALLER, NO KEY EXPORT." >> "$GITHUB_STEP_SUMMARY"
+          echo "Keep owner-stable-data-channel signed R9 unchanged until trusted bootstrap and separate final authorization." >> "$GITHUB_STEP_SUMMARY"
