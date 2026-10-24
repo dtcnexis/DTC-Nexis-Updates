@@ -1,0 +1,635 @@
+{
+  "schema": "dtcnexis.owner-staging-inventory.v1",
+  "brand": "Volkswagen",
+  "date": "2026-10-24",
+  "purpose": "Read-only owner QA staging INDEX, not an installable update",
+  "library_batch_range": "VW001-VW022",
+  "library_file_count": 151,
+  "uploaded_data_files_to_updates_repo": 0,
+  "live_update_feed_modified": false,
+  "owner_update_button_ready": false,
+  "reason": "VW022 catalog is STAGING_ONLY, not signed client-compatible release; pending VIN/ECU/diagnostic license, rights, importer acceptance and owner-device validation",
+  "bundle_fingerprints": [
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW022_VOLKSWAGEN_PRIVATE_DATA_RC.zip",
+      "sha256": "edcd8bb9695ae4f9096e27b72db17970b1fb6e88d00a7d30235556445e3557e1"
+    },
+    {
+      "name": "Volkswagen_VW022_OFFLINE_IMPORT_PREFLIGHT.zip",
+      "sha256": "3a47866b888735877db6a92576823d96c3b09d969f76a72b4e132a6f6378b032"
+    }
+  ],
+  "qa": {
+    "structural_catalog_records": 1699,
+    "legacy_vag_dtc_candidates_not_fitment_verified": 644,
+    "blocking_release_gates": 5,
+    "owner_device_installer_test": "NOT_DONE",
+    "media_and_wiring_license": "NOT_CLEARED"
+  },
+  "inventory": [
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW001_manifest.json",
+      "bytes": 839
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW001.json",
+      "bytes": 1160852
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW002_staging.json",
+      "bytes": 1593476
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW003_generations.csv",
+      "bytes": 9984
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW003_generations.json",
+      "bytes": 32067
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW003_manifest.json",
+      "bytes": 948
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW003_README_AR.md",
+      "bytes": 4544
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW003_STAGING_ONLY.zip",
+      "bytes": 7575
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW004_engines.csv",
+      "bytes": 25712
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW004_engines.json",
+      "bytes": 72808
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW004_manifest.json",
+      "bytes": 1677
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW004_README_AR.md",
+      "bytes": 3629
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW004_STAGING_ONLY.zip",
+      "bytes": 8806
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW005_engine_codes.csv",
+      "bytes": 27345
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW005_manifest.json",
+      "bytes": 1465
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW005_README_AR.md",
+      "bytes": 6648
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW005_STAGING_ONLY.zip",
+      "bytes": 15600
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW005_staging.json",
+      "bytes": 194642
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW005_variants.csv",
+      "bytes": 52959
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW006_engine_variants.csv",
+      "bytes": 42628
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW006_generations.csv",
+      "bytes": 2555
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW006_manifest.json",
+      "bytes": 1490
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW006_README_AR.md",
+      "bytes": 6127
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW006_STAGING_ONLY.zip",
+      "bytes": 15348
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW006_staging.json",
+      "bytes": 129816
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW007_engine_variants.csv",
+      "bytes": 34926
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW007_generations.csv",
+      "bytes": 2143
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW007_manifest.json",
+      "bytes": 886
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW007_README_AR.md",
+      "bytes": 5289
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW007_STAGING_ONLY.zip",
+      "bytes": 11155
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW007_staging.json",
+      "bytes": 105381
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW008_generations.csv",
+      "bytes": 2718
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW008_manifest.json",
+      "bytes": 1699
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW008_powertrains.csv",
+      "bytes": 18029
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW008_README_AR.md",
+      "bytes": 5786
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW008_STAGING_ONLY.zip",
+      "bytes": 12413
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW008_staging.json",
+      "bytes": 63581
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW009_generations.csv",
+      "bytes": 2191
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW009_manifest.json",
+      "bytes": 1974
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW009_powertrains.csv",
+      "bytes": 14060
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW009_README_AR.md",
+      "bytes": 6076
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW009_STAGING_ONLY.zip",
+      "bytes": 13079
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW009_staging.json",
+      "bytes": 63003
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW010_generations.csv",
+      "bytes": 2444
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW010_manifest.json",
+      "bytes": 1103
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW010_powertrains.csv",
+      "bytes": 16631
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW010_README_AR.md",
+      "bytes": 6621
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW010_STAGING_ONLY.zip",
+      "bytes": 14339
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW010_staging.json",
+      "bytes": 62463
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW011_engine_code_candidates.csv",
+      "bytes": 4663
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW011_generations.csv",
+      "bytes": 3739
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW011_manifest.json",
+      "bytes": 1514
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW011_powertrains.csv",
+      "bytes": 17492
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW011_README_AR.md",
+      "bytes": 4169
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW011_sources.csv",
+      "bytes": 4410
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW011_STAGING_ONLY.zip",
+      "bytes": 17075
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW011_staging.json",
+      "bytes": 78976
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW012_engine_code_fitment.csv",
+      "bytes": 27121
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW012_manifest.json",
+      "bytes": 1292
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW012_README_AR.md",
+      "bytes": 5775
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW012_reviewed_vw011.csv",
+      "bytes": 5681
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW012_safety_guards.csv",
+      "bytes": 1374
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW012_sources.csv",
+      "bytes": 4989
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW012_STAGING_ONLY.zip",
+      "bytes": 18492
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW012_staging.json",
+      "bytes": 93443
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW013_code_part_observations.csv",
+      "bytes": 1775
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW013_conflicts.csv",
+      "bytes": 1518
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW013_ecu_part_catalog.csv",
+      "bytes": 10339
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW013_manifest.json",
+      "bytes": 1233
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW013_README_AR.md",
+      "bytes": 5627
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW013_safety_rules.csv",
+      "bytes": 1451
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW013_sources.csv",
+      "bytes": 5151
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW013_STAGING_ONLY.zip",
+      "bytes": 13334
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW013_staging.json",
+      "bytes": 44394
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW014_bosch_ecu_pairs.csv",
+      "bytes": 5220
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW014_hw_sw_observations.csv",
+      "bytes": 3481
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW014_manifest.json",
+      "bytes": 2632
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW014_README_AR.md",
+      "bytes": 5761
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW014_review_flags.csv",
+      "bytes": 1775
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW014_sources.csv",
+      "bytes": 8372
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW014_STAGING_ONLY.zip",
+      "bytes": 11822
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW014_staging.json",
+      "bytes": 43451
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW015_dtc_general_reference.csv",
+      "bytes": 4942
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW015_ecu_version_nonproof.csv",
+      "bytes": 807
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW015_individual_dtc_cases.csv",
+      "bytes": 617
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW015_manifest.json",
+      "bytes": 2364
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW015_README_AR.md",
+      "bytes": 5563
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW015_safety_guards.csv",
+      "bytes": 2021
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW015_sources.csv",
+      "bytes": 2550
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW015_STAGING_ONLY.zip",
+      "bytes": 17957
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW015_staging.json",
+      "bytes": 29539
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW015_vin_ecu_checklist.csv",
+      "bytes": 2613
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW016_cases.csv",
+      "bytes": 1272
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW016_conditional_checks.csv",
+      "bytes": 3404
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW016_manifest.json",
+      "bytes": 1844
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW016_observed_dtc.csv",
+      "bytes": 799
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW016_README_AR.md",
+      "bytes": 5569
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW016_safety_guards.csv",
+      "bytes": 1837
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW016_sources.csv",
+      "bytes": 1332
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW016_STAGING_ONLY.zip",
+      "bytes": 14046
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW016_staging.json",
+      "bytes": 16490
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW017_cases.csv",
+      "bytes": 1737
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW017_live_data_templates.csv",
+      "bytes": 3822
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW017_manifest.json",
+      "bytes": 1830
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW017_observed_dtc.csv",
+      "bytes": 2895
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW017_README_AR.md",
+      "bytes": 3996
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW017_safety_guards.csv",
+      "bytes": 2200
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW017_sources.csv",
+      "bytes": 2341
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW017_STAGING_ONLY.zip",
+      "bytes": 16792
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW017_staging.json",
+      "bytes": 21279
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW018_diagnostic_workflows.csv",
+      "bytes": 2123
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW018_live_data_signals.csv",
+      "bytes": 5170
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW018_manifest.json",
+      "bytes": 2214
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW018_README_AR.md",
+      "bytes": 5407
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW018_review_flags.csv",
+      "bytes": 1051
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW018_sources.csv",
+      "bytes": 2956
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW018_STAGING_ONLY.zip",
+      "bytes": 22385
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW018_staging.json",
+      "bytes": 53055
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW018_test_steps.csv",
+      "bytes": 8704
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW018_wiring_queue.csv",
+      "bytes": 2120
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW019_component_location_queue.csv",
+      "bytes": 5470
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW019_manifest.json",
+      "bytes": 2007
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW019_media_license_queue.csv",
+      "bytes": 2816
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW019_README_AR.md",
+      "bytes": 6878
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW019_retrieval_steps.csv",
+      "bytes": 1419
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW019_safety_gates.csv",
+      "bytes": 1427
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW019_sources.csv",
+      "bytes": 1833
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW019_STAGING_ONLY.zip",
+      "bytes": 18461
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW019_staging.json",
+      "bytes": 39915
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW019_wiring_register.csv",
+      "bytes": 7245
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW020_component_locations.csv",
+      "bytes": 4990
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW020_manifest.json",
+      "bytes": 962
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW020_media_clearance.csv",
+      "bytes": 2204
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW020_README_AR.md",
+      "bytes": 1546
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW020_release_gates.csv",
+      "bytes": 717
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW020_STAGING_ONLY.zip",
+      "bytes": 9533
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW020_staging.json",
+      "bytes": 23523
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW020_wiring_readiness.csv",
+      "bytes": 4961
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW021_conflicts.csv",
+      "bytes": 1110
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW021_index.csv",
+      "bytes": 221959
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW021_manifest.json",
+      "bytes": 1159
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW021_master.json",
+      "bytes": 3300927
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW021_provenance.json",
+      "bytes": 3565
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW021_README_AR.md",
+      "bytes": 2739
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW021_UNIFIED_STAGING_ONLY.zip",
+      "bytes": 169933
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW022_manifest.json",
+      "bytes": 4512
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW022_preflight_checklist.csv",
+      "bytes": 1477
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW022_QA_report_AR.md",
+      "bytes": 2549
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW022_QA_results.csv",
+      "bytes": 1459
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW022_release_readiness.json",
+      "bytes": 5336
+    },
+    {
+      "name": "Volkswagen_DTC_NEXIS_VW022_VOLKSWAGEN_PRIVATE_DATA_RC.zip",
+      "bytes": 616762
+    }
+  ]
+}
