@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Conservative human-review staging export. Does not activate signed feeds.
-Usage: python make_catalog_export.py MASTER.json OUTPUT_DIR
+Usage: python make_catalog_export.py MASTER.json OUTPUT_DIR [MAKE] [VERSION]
 Never include owner workshop records or binary/third-party images.
 """
 import hashlib,json,re,sys
@@ -29,8 +29,14 @@ def sha(b):return hashlib.sha256(b).hexdigest()
 def main():
  src=Path(sys.argv[1]);out=Path(sys.argv[2]);out.mkdir(parents=True,exist_ok=True)
  data=json.loads(src.read_text(encoding='utf-8'));raw=data['catalog'];index=[];tot=0
- assert set(raw)==set(SECTIONS),('unexpected sections',set(raw)^set(SECTIONS))
- for section in SECTIONS:
+ make=sys.argv[3] if len(sys.argv)>3 else data.get('metadata',{}).get('brand')
+ version=sys.argv[4] if len(sys.argv)>4 else 'REVIEW_ONLY'
+ assert isinstance(make,str) and re.fullmatch(r'[A-Za-zÀ-ÿŠš /-]{2,80}',make), 'Explicit safe MAKE is required'
+ assert isinstance(version,str) and re.fullmatch(r'[A-Za-z0-9_.-]{1,60}',version)
+ assert isinstance(raw,dict) and raw, 'Expected catalog sections'
+ sections=tuple(raw.keys())
+ assert all(re.fullmatch(r'[a-z][a-z0-9_]{1,70}',v) for v in sections), 'Unsafe section key'
+ for section in sections:
   rows=sanitize(raw[section]); assert isinstance(rows,list);seen=set()
   for row in rows:
    assert isinstance(row,dict) and isinstance(row.get('ref'),str) and isinstance(row.get('data'),dict)
@@ -39,7 +45,7 @@ def main():
   def flush():
    if not buf:return
    num=len(chunks)+1
-   doc={'schema':'dtcnexis.staging.records.v1','make':'Volkswagen','section':section,'chunk':num,
+   doc={'schema':'dtcnexis.staging.records.v1','make':make,'section':section,'chunk':num,
         'disposition':'REVIEW_ONLY_NOT_RELEASED','records':list(buf)}
    content=canon(doc)
    assert len(content)<75000,(section,len(content))
@@ -49,19 +55,19 @@ def main():
    buf.clear()
   for row in rows:
    nxt=buf+[row]
-   if buf and len(canon({'schema':'dtcnexis.staging.records.v1','make':'Volkswagen','section':section,'chunk':1,'disposition':'REVIEW_ONLY_NOT_RELEASED','records':nxt}))>CHUNK_LIMIT: flush()
+   if buf and len(canon({'schema':'dtcnexis.staging.records.v1','make':make,'section':section,'chunk':1,'disposition':'REVIEW_ONLY_NOT_RELEASED','records':nxt}))>CHUNK_LIMIT: flush()
    buf.append(row)
   flush()
   index.append({'section':section,'records':len(rows),'chunks':chunks})
   tot+=len(rows)
- manifest={'schema':'dtcnexis.staging.manifest.v1','make':'Volkswagen','version':'VW022','status':'STAGING_ONLY_NO_AUTO_INSTALL',
-   'source_sha256':sha(src.read_bytes()),'record_count':tot,'section_count':len(SECTIONS),
+ manifest={'schema':'dtcnexis.staging.manifest.v1','make':make,'version':version,'status':'STAGING_ONLY_NO_AUTO_INSTALL',
+   'source_sha256':sha(src.read_bytes()),'record_count':tot,'section_count':len(sections),
    'user_records_included':False,'binary_assets_included':False,'publication_license_cleared':False,
    'vin_ecu_fitment_approved':False,'signed_for_client':False,'client_update_ready':False,
    'notes':['Not a signed update-feed or executable release.','644 VAG legacy DTC candidates not approved for per-vehicle fitment.','Preserves evidence/status and quarantined info; clients must not auto-import.'],
    'sections':index}
  (out/'manifest.json').write_bytes(canon(manifest))
- assert tot==1699,tot
+ assert tot>0,tot
  for sec in index:
   assert sum(c['records'] for c in sec['chunks'])==sec['records']
   for c in sec['chunks']:
