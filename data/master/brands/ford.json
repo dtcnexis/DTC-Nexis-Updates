@@ -1,0 +1,4102 @@
+{
+  "schema": "dtcnexis-permanent-ford-batch01-v1",
+  "brand": "Ford",
+  "source_file": "DTC_NEXIS_Ford_batch01.json",
+  "source_library_file_id": "file_000000009bbc822fb8cfb159cdc4c708",
+  "record_count": 409,
+  "storage": "PERMANENT",
+  "release": "NOT_ACTIVATED",
+  "scope": "Source text and ECU preserved. Engine-specific applicability not inferred; original diagnostics maintained in owner Library.",
+  "entries": [
+    {
+      "raw_code": "P0420",
+      "code_format": "P0420 (SAE) / P0420_00 (Ford UDS)",
+      "ecu": "PCM",
+      "definition_en": "Catalyst System Efficiency Below Threshold, Bank 1",
+      "translation_ar": "كفاءة نظام المحفّز أقل من الحد المسموح، بنك 1",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 1
+    },
+    {
+      "raw_code": "P0430",
+      "code_format": "P0430 / P0430_00",
+      "ecu": "PCM",
+      "definition_en": "Catalyst System Efficiency Below Threshold, Bank 2",
+      "translation_ar": "كفاءة نظام المحفّز أقل من الحد المسموح، بنك 2",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 2
+    },
+    {
+      "raw_code": "P226D",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Particulate Filter Deteriorated/Missing Substrate (Bank 1)",
+      "translation_ar": "تدهور أو فقدان الركيزة الداخلية لمرشح الجسيمات، بنك 1",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 3
+    },
+    {
+      "raw_code": "P226E",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Particulate Filter Deteriorated/Missing Substrate (Bank 2)",
+      "translation_ar": "تدهور أو فقدان الركيزة الداخلية لمرشح الجسيمات، بنك 2",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 4
+    },
+    {
+      "raw_code": "P246C",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 5
+    },
+    {
+      "raw_code": "P243B",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 6
+    },
+    {
+      "raw_code": "P0545",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 7
+    },
+    {
+      "raw_code": "P0548",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 8
+    },
+    {
+      "raw_code": "P0546",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 9
+    },
+    {
+      "raw_code": "P0549",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 10
+    },
+    {
+      "raw_code": "P0544",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 11
+    },
+    {
+      "raw_code": "P0547",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 12
+    },
+    {
+      "raw_code": "P2454",
+      "code_format": "P2454 (OBD) / P2452_16 (UDS)",
+      "ecu": "PCM",
+      "definition_en": "Particulate Filter Pressure Sensor A Circuit Low",
+      "translation_ar": "جهد دائرة حساس ضغط مرشح الجسيمات A منخفض",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 13
+    },
+    {
+      "raw_code": "P2455",
+      "code_format": "P2455 / P2452_17",
+      "ecu": "PCM",
+      "definition_en": "Particulate Filter Pressure Sensor A Circuit High",
+      "translation_ar": "جهد دائرة حساس ضغط مرشح الجسيمات A مرتفع",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 14
+    },
+    {
+      "raw_code": "P2456",
+      "code_format": "P2456 / P2452_1F",
+      "ecu": "PCM",
+      "definition_en": "Particulate Filter Pressure Sensor A Circuit Intermittent/Erratic",
+      "translation_ar": "إشارة دائرة حساس ضغط مرشح الجسيمات A متقطعة أو غير منتظمة",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 15
+    },
+    {
+      "raw_code": "P2460",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 16
+    },
+    {
+      "raw_code": "P2461",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 17
+    },
+    {
+      "raw_code": "P2462",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 18
+    },
+    {
+      "raw_code": "P2CE7",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 19
+    },
+    {
+      "raw_code": "P2CE8",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 20
+    },
+    {
+      "raw_code": "P2CE9",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 21
+    },
+    {
+      "raw_code": "P2CEC",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 22
+    },
+    {
+      "raw_code": "P2CED",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 23
+    },
+    {
+      "raw_code": "P2CEE",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 24
+    },
+    {
+      "raw_code": "P2452",
+      "code_format": "P2452 / P2452_01 (SENT version)",
+      "ecu": "PCM",
+      "definition_en": "Particulate Filter Pressure Sensor A Circuit",
+      "translation_ar": "خلل في دائرة حساس ضغط مرشح الجسيمات A",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 25
+    },
+    {
+      "raw_code": "U0601",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Lost Communication with Particulate Filter Pressure Sensor A",
+      "translation_ar": "فقد الاتصال بحساس ضغط مرشح الجسيمات A",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 26
+    },
+    {
+      "raw_code": "P245E",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Particulate Filter Pressure Sensor B Circuit",
+      "translation_ar": "خلل في دائرة حساس ضغط مرشح الجسيمات B",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 27
+    },
+    {
+      "raw_code": "U0602",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Lost Communication with Particulate Filter Pressure Sensor B",
+      "translation_ar": "فقد الاتصال بحساس ضغط مرشح الجسيمات B",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 28
+    },
+    {
+      "raw_code": "P2CE5",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 29
+    },
+    {
+      "raw_code": "U0696",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 30
+    },
+    {
+      "raw_code": "P2CEA",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 31
+    },
+    {
+      "raw_code": "U0697",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 32
+    },
+    {
+      "raw_code": "P2453",
+      "code_format": "P2453 / P2452_92",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 33
+    },
+    {
+      "raw_code": "P245F",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 34
+    },
+    {
+      "raw_code": "P2CE6",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 35
+    },
+    {
+      "raw_code": "P2CEB",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 36
+    },
+    {
+      "raw_code": "P0300",
+      "code_format": "P0300 / P0300_00",
+      "ecu": "PCM",
+      "definition_en": "Random/Multiple Cylinder Misfire Detected",
+      "translation_ar": "اكتشاف تقطيع/اختلال احتراق في عدة أسطوانات أو بصورة عشوائية",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 37
+    },
+    {
+      "raw_code": "P0301",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Cylinder 1 Misfire Detected",
+      "translation_ar": "اكتشاف اختلال احتراق في الأسطوانة 1",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 38
+    },
+    {
+      "raw_code": "P0302",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Cylinder 2 Misfire Detected",
+      "translation_ar": "اكتشاف اختلال احتراق في الأسطوانة 2",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 39
+    },
+    {
+      "raw_code": "P0303",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Cylinder 3 Misfire Detected",
+      "translation_ar": "اكتشاف اختلال احتراق في الأسطوانة 3",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 40
+    },
+    {
+      "raw_code": "P0304",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Cylinder 4 Misfire Detected",
+      "translation_ar": "اكتشاف اختلال احتراق في الأسطوانة 4",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 41
+    },
+    {
+      "raw_code": "P0305",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Cylinder 5 Misfire Detected",
+      "translation_ar": "اكتشاف اختلال احتراق في الأسطوانة 5",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 42
+    },
+    {
+      "raw_code": "P0306",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Cylinder 6 Misfire Detected",
+      "translation_ar": "اكتشاف اختلال احتراق في الأسطوانة 6",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 43
+    },
+    {
+      "raw_code": "P0307",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Cylinder 7 Misfire Detected",
+      "translation_ar": "اكتشاف اختلال احتراق في الأسطوانة 7",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 44
+    },
+    {
+      "raw_code": "P0308",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Cylinder 8 Misfire Detected",
+      "translation_ar": "اكتشاف اختلال احتراق في الأسطوانة 8",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 45
+    },
+    {
+      "raw_code": "P0309",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Cylinder 9 Misfire Detected",
+      "translation_ar": "اكتشاف اختلال احتراق في الأسطوانة 9",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 46
+    },
+    {
+      "raw_code": "P0310",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Cylinder 10 Misfire Detected",
+      "translation_ar": "اكتشاف اختلال احتراق في الأسطوانة 10",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 47
+    },
+    {
+      "raw_code": "P033F",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 48
+    },
+    {
+      "raw_code": "P0315",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Crankshaft Position System Variation Not Learned",
+      "translation_ar": "لم يتم تعلم تغيرات إشارة موضع عمود المرفق",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 49
+    },
+    {
+      "raw_code": "P0316",
+      "code_format": "P0316 / P0316_00",
+      "ecu": "PCM",
+      "definition_en": "Misfire Detected During Startup (First 1000 Revolutions)",
+      "translation_ar": "اكتشاف اختلال احتراق أثناء أول 1000 دورة بعد التشغيل",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 50
+    },
+    {
+      "raw_code": "P0313",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Misfire Detected with Low Fuel",
+      "translation_ar": "اختلال احتراق مع انخفاض مستوى الوقود",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 51
+    },
+    {
+      "raw_code": "P0455",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "EVAP System Leak Detected (Large Leak)",
+      "translation_ar": "اكتشاف تسرب كبير في نظام تبخير الوقود",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 52
+    },
+    {
+      "raw_code": "P0457",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "EVAP System Leak Detected (Fuel Cap Loose/Off)",
+      "translation_ar": "اكتشاف تسرب في نظام تبخير الوقود بسبب غطاء خزان مرتخٍ أو مفتوح",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 53
+    },
+    {
+      "raw_code": "P0442",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "EVAP System Leak Detected (Small Leak)",
+      "translation_ar": "اكتشاف تسرب صغير في نظام تبخير الوقود",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 54
+    },
+    {
+      "raw_code": "P1450",
+      "code_format": "P1450 / P1450_00 (older Ford) ; manufacturer controlled",
+      "ecu": "PCM",
+      "definition_en": "Unable to Bleed Up Fuel Tank Vacuum",
+      "translation_ar": "تعذر تفريغ/معادلة الضغط السالب في خزان الوقود",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 55
+    },
+    {
+      "raw_code": "P0496",
+      "code_format": "P0496 / P0441_9B (replacement monitor mapping in Ford 2024–2025, not interchangeable blindly)",
+      "ecu": "PCM",
+      "definition_en": "EVAP System High Purge Flow",
+      "translation_ar": "تدفق تطهير بخار الوقود أعلى من المطلوب",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 56
+    },
+    {
+      "raw_code": "P0441",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 57
+    },
+    {
+      "raw_code": "P2450",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 58
+    },
+    {
+      "raw_code": "P2418",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 59
+    },
+    {
+      "raw_code": "P144A",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "EVAP System Purge Vapor Line Restricted/Blocked",
+      "translation_ar": "انسداد أو تقييد خط بخار تطهير نظام EVAP",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 60
+    },
+    {
+      "raw_code": "P00FE",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "EVAP System Tank Vapor Line Restricted/Blocked",
+      "translation_ar": "انسداد أو تقييد خط بخار خزان الوقود",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 61
+    },
+    {
+      "raw_code": "P144C",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Evaporative Emission System Purge Check Valve Performance",
+      "translation_ar": "خلل أداء صمام عدم الرجوع في خط تطهير أبخرة الوقود",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 62
+    },
+    {
+      "raw_code": "P04F0",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "EVAP System High Load Purge Line A Performance",
+      "translation_ar": "خلل أداء خط تطهير EVAP تحت حمل عالٍ A",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 63
+    },
+    {
+      "raw_code": "P219A",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Bank 1 Air-Fuel Ratio Imbalance",
+      "translation_ar": "اختلال توزيع نسبة الهواء إلى الوقود في بنك 1",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 64
+    },
+    {
+      "raw_code": "P219B",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Bank 2 Air-Fuel Ratio Imbalance",
+      "translation_ar": "اختلال توزيع نسبة الهواء إلى الوقود في بنك 2",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 65
+    },
+    {
+      "raw_code": "P0171",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "System Too Lean Bank 1",
+      "translation_ar": "خليط فقير جداً في بنك 1",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 66
+    },
+    {
+      "raw_code": "P0172",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "System Too Rich Bank 1",
+      "translation_ar": "خليط غني جداً في بنك 1",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 67
+    },
+    {
+      "raw_code": "P0174",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "System Too Lean Bank 2",
+      "translation_ar": "خليط فقير جداً في بنك 2",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 68
+    },
+    {
+      "raw_code": "P0175",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "System Too Rich Bank 2",
+      "translation_ar": "خليط غني جداً في بنك 2",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 69
+    },
+    {
+      "raw_code": "P0102",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 70
+    },
+    {
+      "raw_code": "P0103",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 71
+    },
+    {
+      "raw_code": "P0122",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 72
+    },
+    {
+      "raw_code": "P0123",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 73
+    },
+    {
+      "raw_code": "P0222",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 74
+    },
+    {
+      "raw_code": "P0223",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 75
+    },
+    {
+      "raw_code": "P0010",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 76
+    },
+    {
+      "raw_code": "P0020",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 77
+    },
+    {
+      "raw_code": "P0011",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 78
+    },
+    {
+      "raw_code": "P0012",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 79
+    },
+    {
+      "raw_code": "P0021",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 80
+    },
+    {
+      "raw_code": "P0022",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 81
+    },
+    {
+      "raw_code": "P2008",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 82
+    },
+    {
+      "raw_code": "P041D",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 83
+    },
+    {
+      "raw_code": "P041B",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 84
+    },
+    {
+      "raw_code": "P0472",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Exhaust Pressure Sensor A Circuit Low",
+      "translation_ar": "دائرة حساس ضغط العادم A منخفضة",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 85
+    },
+    {
+      "raw_code": "P0473",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Exhaust Pressure Sensor A Circuit High",
+      "translation_ar": "دائرة حساس ضغط العادم A مرتفعة",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 86
+    },
+    {
+      "raw_code": "P0474",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Exhaust Pressure Sensor A Circuit Intermittent/Erratic",
+      "translation_ar": "إشارة حساس ضغط العادم A متقطعة/غير منتظمة",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 87
+    },
+    {
+      "raw_code": "P0471",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Exhaust Pressure Sensor A Circuit Range/Performance",
+      "translation_ar": "مدى أو أداء دائرة حساس ضغط العادم A غير صحيح",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 88
+    },
+    {
+      "raw_code": "P2457",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "EGR Cooler Efficiency Below Threshold",
+      "translation_ar": "كفاءة مبرد إعادة تدوير غازات العادم دون الحد المطلوب",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 89
+    },
+    {
+      "raw_code": "P044C",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 90
+    },
+    {
+      "raw_code": "P044D",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 91
+    },
+    {
+      "raw_code": "P0246",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 92
+    },
+    {
+      "raw_code": "P0249",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 93
+    },
+    {
+      "raw_code": "P0250",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 94
+    },
+    {
+      "raw_code": "P1015",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Wastegate Control Pressure Lower Than Expected",
+      "translation_ar": "ضغط التحكم بصمام تجاوز التيربو أقل من المتوقع",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 95
+    },
+    {
+      "raw_code": "P1016",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Wastegate Control Pressure Lower Than Expected",
+      "translation_ar": "ضغط التحكم بصمام تجاوز التيربو أقل من المتوقع",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 96
+    },
+    {
+      "raw_code": "P1012",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Wastegate Control Pressure Sensor Circuit Low",
+      "translation_ar": "انخفاض إشارة حساس ضغط تحكم ويستغيت التيربو",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 97
+    },
+    {
+      "raw_code": "P1013",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Wastegate Control Pressure Sensor Circuit High",
+      "translation_ar": "ارتفاع إشارة حساس ضغط تحكم ويستغيت التيربو",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 98
+    },
+    {
+      "raw_code": "P1014",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Wastegate Control Pressure Sensor Circuit Intermittent/Erratic",
+      "translation_ar": "تقطع أو عدم انتظام إشارة حساس ضغط تحكم ويستغيت التيربو",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 99
+    },
+    {
+      "raw_code": "P1011",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 100
+    },
+    {
+      "raw_code": "P100F",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Wastegate Control Pressure/BARO Correlation",
+      "translation_ar": "عدم تطابق ضغط تحكم ويستغيت التيربو مع الضغط الجوي",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 101
+    },
+    {
+      "raw_code": "P0243",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 102
+    },
+    {
+      "raw_code": "P2ABD",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 103
+    },
+    {
+      "raw_code": "P052A",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Cold Start Camshaft Position Timing Over-Advanced (Bank 1)",
+      "translation_ar": "توقيت عمود الكامات متقدم أكثر من اللازم عند التشغيل البارد، بنك 1",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 104
+    },
+    {
+      "raw_code": "P052B",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Cold Start Camshaft Position Timing Over-Retarded (Bank 1)",
+      "translation_ar": "توقيت عمود الكامات متأخر أكثر من اللازم عند التشغيل البارد، بنك 1",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 105
+    },
+    {
+      "raw_code": "P052C",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 106
+    },
+    {
+      "raw_code": "P052D",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 107
+    },
+    {
+      "raw_code": "P050E",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Cold Start Engine Exhaust Temperature Too Low",
+      "translation_ar": "حرارة العادم منخفضة جداً عند بدء التشغيل البارد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 108
+    },
+    {
+      "raw_code": "P08A9",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 109
+    },
+    {
+      "raw_code": "P08AA",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 110
+    },
+    {
+      "raw_code": "P08B9",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 111
+    },
+    {
+      "raw_code": "P2C4C",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 112
+    },
+    {
+      "raw_code": "P2C4D",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 113
+    },
+    {
+      "raw_code": "P2C50",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 114
+    },
+    {
+      "raw_code": "P0124",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 115
+    },
+    {
+      "raw_code": "P0224",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 116
+    },
+    {
+      "raw_code": "P2135",
+      "code_format": "P2135 / P2135_00",
+      "ecu": "PCM",
+      "definition_en": "Throttle Position Sensor A/B Correlation",
+      "translation_ar": "عدم تطابق إشارتَي حساس موضع الخانق A وB",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 117
+    },
+    {
+      "raw_code": "P0120",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 118
+    },
+    {
+      "raw_code": "U0606",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 119
+    },
+    {
+      "raw_code": "U210F",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 120
+    },
+    {
+      "raw_code": "U2110",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 121
+    },
+    {
+      "raw_code": "P0068",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 122
+    },
+    {
+      "raw_code": "P0225",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 123
+    },
+    {
+      "raw_code": "U0608",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 124
+    },
+    {
+      "raw_code": "P0229",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 125
+    },
+    {
+      "raw_code": "U2111",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 126
+    },
+    {
+      "raw_code": "P0524",
+      "code_format": "P0524 / P0524_00",
+      "ecu": "PCM",
+      "definition_en": "Engine Oil Pressure Too Low",
+      "translation_ar": "ضغط زيت المحرك منخفض جداً",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 127
+    },
+    {
+      "raw_code": "P055F",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Engine Oil Pressure Out Of Range (Too High)",
+      "translation_ar": "ضغط زيت المحرك خارج المجال (مرتفع جداً)",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 128
+    },
+    {
+      "raw_code": "P06DA",
+      "code_format": "P06DA / P06DA_13",
+      "ecu": "PCM",
+      "definition_en": "Engine Oil Pressure Control Circuit/Open",
+      "translation_ar": "دائرة التحكم بضغط زيت المحرك مفتوحة",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 129
+    },
+    {
+      "raw_code": "P06DB",
+      "code_format": "P06DB / P06DA_11",
+      "ecu": "PCM",
+      "definition_en": "Engine Oil Pressure Control Circuit Low",
+      "translation_ar": "انخفاض إشارة دائرة التحكم بضغط زيت المحرك",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 130
+    },
+    {
+      "raw_code": "P06DC",
+      "code_format": "P06DC / P06DA_12",
+      "ecu": "PCM",
+      "definition_en": "Engine Oil Pressure Control Circuit High",
+      "translation_ar": "ارتفاع إشارة دائرة التحكم بضغط زيت المحرك",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 131
+    },
+    {
+      "raw_code": "P06DD",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 132
+    },
+    {
+      "raw_code": "P06DE",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 133
+    },
+    {
+      "raw_code": "P0197",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 134
+    },
+    {
+      "raw_code": "P0198",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 135
+    },
+    {
+      "raw_code": "P0111",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 136
+    },
+    {
+      "raw_code": "P007B",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 137
+    },
+    {
+      "raw_code": "P0096",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 138
+    },
+    {
+      "raw_code": "P0071",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 139
+    },
+    {
+      "raw_code": "P0192",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Fuel Rail Pressure Sensor Circuit Low",
+      "translation_ar": "انخفاض جهد دائرة حساس ضغط سكة الوقود",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 140
+    },
+    {
+      "raw_code": "P0193",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Fuel Rail Pressure Sensor Circuit High",
+      "translation_ar": "ارتفاع جهد دائرة حساس ضغط سكة الوقود",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 141
+    },
+    {
+      "raw_code": "P0705",
+      "code_format": "P0705 / P0705_01",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "Transmission Range Sensor Circuit Malfunction",
+      "translation_ar": "خلل دائرة حساس نطاق ناقل الحركة",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 142
+    },
+    {
+      "raw_code": "P0706",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "Transmission Range Sensor Circuit Range/Performance",
+      "translation_ar": "خلل مدى/أداء دائرة حساس نطاق ناقل الحركة",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 143
+    },
+    {
+      "raw_code": "P0707",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 144
+    },
+    {
+      "raw_code": "P0708",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 145
+    },
+    {
+      "raw_code": "P2804",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 146
+    },
+    {
+      "raw_code": "P2801",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 147
+    },
+    {
+      "raw_code": "P2802",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 148
+    },
+    {
+      "raw_code": "P2803",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 149
+    },
+    {
+      "raw_code": "P2805",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 150
+    },
+    {
+      "raw_code": "P0720",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "Output Shaft Speed Sensor Circuit Malfunction",
+      "translation_ar": "خلل دائرة حساس سرعة عمود خرج ناقل الحركة",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 151
+    },
+    {
+      "raw_code": "P0721",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "Output Shaft Speed Sensor Range/Performance",
+      "translation_ar": "خلل مدى/أداء حساس سرعة عمود خرج ناقل الحركة",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 152
+    },
+    {
+      "raw_code": "P0722",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 153
+    },
+    {
+      "raw_code": "P0723",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 154
+    },
+    {
+      "raw_code": "P0715",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 155
+    },
+    {
+      "raw_code": "P0791",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 156
+    },
+    {
+      "raw_code": "P07BF",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 157
+    },
+    {
+      "raw_code": "P07C5",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 158
+    },
+    {
+      "raw_code": "P077C",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 159
+    },
+    {
+      "raw_code": "P07C0",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 160
+    },
+    {
+      "raw_code": "P07C6",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 161
+    },
+    {
+      "raw_code": "P077D",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 162
+    },
+    {
+      "raw_code": "P0716",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 163
+    },
+    {
+      "raw_code": "P0792",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 164
+    },
+    {
+      "raw_code": "P0718",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 165
+    },
+    {
+      "raw_code": "P0794",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 166
+    },
+    {
+      "raw_code": "P0712",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 167
+    },
+    {
+      "raw_code": "P0713",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 168
+    },
+    {
+      "raw_code": "P0711",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 169
+    },
+    {
+      "raw_code": "P097A",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 170
+    },
+    {
+      "raw_code": "P0973",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 171
+    },
+    {
+      "raw_code": "P0974",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 172
+    },
+    {
+      "raw_code": "P0751",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 173
+    },
+    {
+      "raw_code": "P0752",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 174
+    },
+    {
+      "raw_code": "P097B",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 175
+    },
+    {
+      "raw_code": "P0976",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 176
+    },
+    {
+      "raw_code": "P0977",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 177
+    },
+    {
+      "raw_code": "P0756",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 178
+    },
+    {
+      "raw_code": "P0757",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 179
+    },
+    {
+      "raw_code": "P097C",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 180
+    },
+    {
+      "raw_code": "P0979",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 181
+    },
+    {
+      "raw_code": "P0980",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 182
+    },
+    {
+      "raw_code": "P0761",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 183
+    },
+    {
+      "raw_code": "P0762",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 184
+    },
+    {
+      "raw_code": "P097D",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 185
+    },
+    {
+      "raw_code": "P0982",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 186
+    },
+    {
+      "raw_code": "P0983",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 187
+    },
+    {
+      "raw_code": "P0766",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 188
+    },
+    {
+      "raw_code": "P0767",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 189
+    },
+    {
+      "raw_code": "P097E",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 190
+    },
+    {
+      "raw_code": "P0985",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 191
+    },
+    {
+      "raw_code": "P0986",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 192
+    },
+    {
+      "raw_code": "P0771",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 193
+    },
+    {
+      "raw_code": "P0772",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 194
+    },
+    {
+      "raw_code": "P097F",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 195
+    },
+    {
+      "raw_code": "P2709",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 196
+    },
+    {
+      "raw_code": "P2710",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 197
+    },
+    {
+      "raw_code": "P2707",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 198
+    },
+    {
+      "raw_code": "P2708",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 199
+    },
+    {
+      "raw_code": "P1A02",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 200
+    },
+    {
+      "raw_code": "P0740",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 201
+    },
+    {
+      "raw_code": "P2769",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 202
+    },
+    {
+      "raw_code": "P2770",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 203
+    },
+    {
+      "raw_code": "P0741",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 204
+    },
+    {
+      "raw_code": "P2758",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 205
+    },
+    {
+      "raw_code": "P0960",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 206
+    },
+    {
+      "raw_code": "P0962",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 207
+    },
+    {
+      "raw_code": "P0963",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 208
+    },
+    {
+      "raw_code": "P0657",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 209
+    },
+    {
+      "raw_code": "P2669",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 210
+    },
+    {
+      "raw_code": "P0603",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 211
+    },
+    {
+      "raw_code": "P0604",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 212
+    },
+    {
+      "raw_code": "P0605",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 213
+    },
+    {
+      "raw_code": "P0607",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 214
+    },
+    {
+      "raw_code": "P068A",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 215
+    },
+    {
+      "raw_code": "P06B8",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 216
+    },
+    {
+      "raw_code": "P0884",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 217
+    },
+    {
+      "raw_code": "P160A",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 218
+    },
+    {
+      "raw_code": "P1636",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 219
+    },
+    {
+      "raw_code": "P0882",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 220
+    },
+    {
+      "raw_code": "P0883",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 221
+    },
+    {
+      "raw_code": "P2531",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 222
+    },
+    {
+      "raw_code": "P2532",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 223
+    },
+    {
+      "raw_code": "P163E",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 224
+    },
+    {
+      "raw_code": "P163F",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM/TCM (vehicle-specific)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 225
+    },
+    {
+      "raw_code": "P0C2C",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 226
+    },
+    {
+      "raw_code": "P0C2D",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 227
+    },
+    {
+      "raw_code": "P0C2E",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 228
+    },
+    {
+      "raw_code": "P0B0D",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 229
+    },
+    {
+      "raw_code": "P0C27",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 230
+    },
+    {
+      "raw_code": "P0C28",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 231
+    },
+    {
+      "raw_code": "P0C29",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 232
+    },
+    {
+      "raw_code": "P0C2A",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 233
+    },
+    {
+      "raw_code": "P175A",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 234
+    },
+    {
+      "raw_code": "P2796",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 235
+    },
+    {
+      "raw_code": "P2888",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 236
+    },
+    {
+      "raw_code": "P2889",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 237
+    },
+    {
+      "raw_code": "P288A",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 238
+    },
+    {
+      "raw_code": "P288B",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 239
+    },
+    {
+      "raw_code": "P093A",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 240
+    },
+    {
+      "raw_code": "P093B",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 241
+    },
+    {
+      "raw_code": "P093C",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 242
+    },
+    {
+      "raw_code": "P093D",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 243
+    },
+    {
+      "raw_code": "P0843",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 244
+    },
+    {
+      "raw_code": "P0848",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 245
+    },
+    {
+      "raw_code": "P0873",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 246
+    },
+    {
+      "raw_code": "P0842",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 247
+    },
+    {
+      "raw_code": "P0847",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 248
+    },
+    {
+      "raw_code": "P0872",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 249
+    },
+    {
+      "raw_code": "P175C",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 250
+    },
+    {
+      "raw_code": "P175D",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 251
+    },
+    {
+      "raw_code": "P175E",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 252
+    },
+    {
+      "raw_code": "P0844",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 253
+    },
+    {
+      "raw_code": "P0849",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 254
+    },
+    {
+      "raw_code": "P0874",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 255
+    },
+    {
+      "raw_code": "P2855",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 256
+    },
+    {
+      "raw_code": "P2856",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 257
+    },
+    {
+      "raw_code": "P0869",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 258
+    },
+    {
+      "raw_code": "P2853",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 259
+    },
+    {
+      "raw_code": "P2854",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 260
+    },
+    {
+      "raw_code": "P0868",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 261
+    },
+    {
+      "raw_code": "P0867",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 262
+    },
+    {
+      "raw_code": "P0841",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 263
+    },
+    {
+      "raw_code": "P0846",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 264
+    },
+    {
+      "raw_code": "P0871",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 265
+    },
+    {
+      "raw_code": "P2743",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 266
+    },
+    {
+      "raw_code": "P2742",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 267
+    },
+    {
+      "raw_code": "P2741",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 268
+    },
+    {
+      "raw_code": "P2834",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 269
+    },
+    {
+      "raw_code": "P2839",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 270
+    },
+    {
+      "raw_code": "P283E",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 271
+    },
+    {
+      "raw_code": "P2843",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 272
+    },
+    {
+      "raw_code": "P2833",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 273
+    },
+    {
+      "raw_code": "P2838",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 274
+    },
+    {
+      "raw_code": "P283D",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 275
+    },
+    {
+      "raw_code": "P2842",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 276
+    },
+    {
+      "raw_code": "P2835",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 277
+    },
+    {
+      "raw_code": "P283A",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 278
+    },
+    {
+      "raw_code": "P283F",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 279
+    },
+    {
+      "raw_code": "P2844",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 280
+    },
+    {
+      "raw_code": "P2832",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 281
+    },
+    {
+      "raw_code": "P2837",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 282
+    },
+    {
+      "raw_code": "P283C",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 283
+    },
+    {
+      "raw_code": "P2841",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 284
+    },
+    {
+      "raw_code": "P284D",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 285
+    },
+    {
+      "raw_code": "P284E",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 286
+    },
+    {
+      "raw_code": "P277E",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 287
+    },
+    {
+      "raw_code": "P277F",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 288
+    },
+    {
+      "raw_code": "P07B4",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 289
+    },
+    {
+      "raw_code": "P07BA",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 290
+    },
+    {
+      "raw_code": "P07B3",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 291
+    },
+    {
+      "raw_code": "P07B9",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM / transmission control",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 292
+    },
+    {
+      "raw_code": "P20EE",
+      "code_format": "P20EE (SAE generic, 6.7L diesel SCR monitor)",
+      "ecu": "PCM",
+      "definition_en": "SCR NOx Catalyst Efficiency Below Threshold",
+      "translation_ar": "انخفاض كفاءة محفز SCR في معالجة أكاسيد النيتروجين NOx",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 293
+    },
+    {
+      "raw_code": "P0087",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Fuel Rail/System Pressure Too Low",
+      "translation_ar": "انخفاض ضغط سكة وقود المحرك عن المستوى المطلوب",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 294
+    },
+    {
+      "raw_code": "P0088",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Fuel Rail/System Pressure Too High",
+      "translation_ar": "ضغط سكة/نظام الوقود مرتفع جداً",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 295
+    },
+    {
+      "raw_code": "P0093",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 296
+    },
+    {
+      "raw_code": "P008A",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Low Pressure Fuel System Pressure Too Low",
+      "translation_ar": "ضغط دائرة تغذية الوقود منخفض الضغط أقل من المسموح",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 297
+    },
+    {
+      "raw_code": "P0263",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 298
+    },
+    {
+      "raw_code": "P0266",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 299
+    },
+    {
+      "raw_code": "P0269",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 300
+    },
+    {
+      "raw_code": "P0272",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 301
+    },
+    {
+      "raw_code": "P0275",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 302
+    },
+    {
+      "raw_code": "P0278",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 303
+    },
+    {
+      "raw_code": "P0281",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 304
+    },
+    {
+      "raw_code": "P0284",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 305
+    },
+    {
+      "raw_code": "P0170",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 306
+    },
+    {
+      "raw_code": "P24D1",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 307
+    },
+    {
+      "raw_code": "P2002",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Particulate Filter Efficiency Below Threshold (Bank 1)",
+      "translation_ar": "كفاءة مرشح الجسيمات أقل من الحد المطلوب، بنك 1",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 308
+    },
+    {
+      "raw_code": "P0401",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "EGR Flow Insufficient Detected",
+      "translation_ar": "تدفق نظام إعادة تدوير غازات العادم EGR أقل من المطلوب",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 309
+    },
+    {
+      "raw_code": "P0402",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "EGR Flow Excessive Detected",
+      "translation_ar": "تدفق إعادة تدوير غازات العادم أعلى من المطلوب",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 310
+    },
+    {
+      "raw_code": "P2698",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 311
+    },
+    {
+      "raw_code": "P0128",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Coolant Temperature Below Thermostat Regulating Temperature",
+      "translation_ar": "حرارة سائل التبريد أقل من درجة تنظيم الثرموستات",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 312
+    },
+    {
+      "raw_code": "P0116",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 313
+    },
+    {
+      "raw_code": "P00E0",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 314
+    },
+    {
+      "raw_code": "P00E1",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 315
+    },
+    {
+      "raw_code": "P00C7",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Intake Air Pressure Measurement System Multiple Sensor Correlation",
+      "translation_ar": "عدم تطابق قراءات حساسات ضغط هواء السحب",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 316
+    },
+    {
+      "raw_code": "P2122",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 317
+    },
+    {
+      "raw_code": "P2123",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 318
+    },
+    {
+      "raw_code": "P2127",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 319
+    },
+    {
+      "raw_code": "P2128",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 320
+    },
+    {
+      "raw_code": "P2138",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Throttle/Pedal Position Sensor D/E Voltage Correlation",
+      "translation_ar": "عدم تطابق جهد إشارتَي حساس دواسة الوقود D وE",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 321
+    },
+    {
+      "raw_code": "P0504",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 322
+    },
+    {
+      "raw_code": "P0572",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 323
+    },
+    {
+      "raw_code": "P0573",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 324
+    },
+    {
+      "raw_code": "P2598",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Turbocharger Boost Control Position Sensor A Performance - Stuck Low",
+      "translation_ar": "حساس موضع التحكم بضغط الشحن A عالق عند إشارة منخفضة",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 325
+    },
+    {
+      "raw_code": "B1213",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 326
+    },
+    {
+      "raw_code": "B10D8-00",
+      "code_format": "UDS/extended B10D8-00",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "Less than minimum programmed keys",
+      "translation_ar": "عدد المفاتيح المبرمجة أقل من الحد الأدنى",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 327
+    },
+    {
+      "raw_code": "B1232",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 328
+    },
+    {
+      "raw_code": "B2103",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 329
+    },
+    {
+      "raw_code": "B10D5-13",
+      "code_format": "UDS/extended B10D5-13",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "PATS transceiver antenna damaged / circuit open",
+      "translation_ar": "تلف هوائي قارئ مفتاح مانع التشغيل أو دائرة مفتوحة",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 330
+    },
+    {
+      "raw_code": "B1342",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 331
+    },
+    {
+      "raw_code": "B1600",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 332
+    },
+    {
+      "raw_code": "B10D7-87",
+      "code_format": "UDS/extended B10D7-87",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "Non-PATS key or damaged key",
+      "translation_ar": "مفتاح غير مزوّد بمانع تشغيل PATS أو مفتاح تالف",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 333
+    },
+    {
+      "raw_code": "B1601",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 334
+    },
+    {
+      "raw_code": "B10D7-51",
+      "code_format": "B10D7-51 (Ford PATS subfault; legacy B1601)",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "Unprogrammed encoded ignition key detected",
+      "translation_ar": "اكتشاف مفتاح تشغيل مشفّر غير مبرمج في نظام PATS",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 335
+    },
+    {
+      "raw_code": "B1602",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 336
+    },
+    {
+      "raw_code": "B10D7-8F",
+      "code_format": "UDS/extended B10D7-8F",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "Partial detection of encoded ignition key",
+      "translation_ar": "قراءة جزئية لشفرة مفتاح التشغيل",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 337
+    },
+    {
+      "raw_code": "B1681",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 338
+    },
+    {
+      "raw_code": "B10D9-97",
+      "code_format": "UDS/extended B10D9-97",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "PATS transceiver signal not detected",
+      "translation_ar": "عدم اكتشاف إشارة قارئ مفتاح مانع التشغيل",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 339
+    },
+    {
+      "raw_code": "B2141",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 340
+    },
+    {
+      "raw_code": "B10DA-5",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 341
+    },
+    {
+      "raw_code": "B2139",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 342
+    },
+    {
+      "raw_code": "U2510",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 343
+    },
+    {
+      "raw_code": "B10DA-61",
+      "code_format": "UDS/extended B10DA-61",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "PCM ID mismatch between PCM and PATS control",
+      "translation_ar": "عدم تطابق هوية PCM مع وحدة مانع التشغيل",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 344
+    },
+    {
+      "raw_code": "B2431",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 345
+    },
+    {
+      "raw_code": "B10D7-05",
+      "code_format": "UDS/extended B10D7-05",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "Key programming failure",
+      "translation_ar": "فشل برمجة مفتاح مانع التشغيل",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 346
+    },
+    {
+      "raw_code": "U1147",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 347
+    },
+    {
+      "raw_code": "U1262",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 348
+    },
+    {
+      "raw_code": "U1900",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 349
+    },
+    {
+      "raw_code": "U0100",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 350
+    },
+    {
+      "raw_code": "U2511",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 351
+    },
+    {
+      "raw_code": "B2009",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 352
+    },
+    {
+      "raw_code": "B10DA-96",
+      "code_format": "UDS/extended B10DA-96",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "PATS/PCM CAN communication fault",
+      "translation_ar": "خلل اتصال CAN بين مانع التشغيل وPCM",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 353
+    },
+    {
+      "raw_code": "P1260",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "Vehicle disabled by PATS",
+      "translation_ar": "مانع التشغيل عطّل تشغيل المحرك",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 354
+    },
+    {
+      "raw_code": "P1622",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "Incorrect PATS challenge-response",
+      "translation_ar": "استجابة تحقق مانع التشغيل غير صحيحة",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 355
+    },
+    {
+      "raw_code": "P1602",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PATS / BCM / IPC / PCM depending PATS generation",
+      "definition_en": "PATS communication issue with control module",
+      "translation_ar": "خلل اتصال مانع التشغيل بوحدة التحكم",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 356
+    },
+    {
+      "raw_code": "U3000",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "ABS control module performance fault",
+      "translation_ar": "خلل أداء وحدة ABS",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 357
+    },
+    {
+      "raw_code": "C0563",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "ABS control module performance — HPCM mapped code",
+      "translation_ar": "خلل أداء وحدة ABS كما تعرضه HPCM",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 358
+    },
+    {
+      "raw_code": "C100A",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 359
+    },
+    {
+      "raw_code": "P057B",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "Brake pedal angle sensor bias out of range / zero adjust failure",
+      "translation_ar": "انحياز حساس زاوية دواسة الفرامل خارج المجال أو فشل ضبط الصفر",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 360
+    },
+    {
+      "raw_code": "P05DC",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 361
+    },
+    {
+      "raw_code": "P057E",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 362
+    },
+    {
+      "raw_code": "C100F",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 363
+    },
+    {
+      "raw_code": "C056D",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 364
+    },
+    {
+      "raw_code": "C056E",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 365
+    },
+    {
+      "raw_code": "P05E0",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 366
+    },
+    {
+      "raw_code": "C100D",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 367
+    },
+    {
+      "raw_code": "P057C",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 368
+    },
+    {
+      "raw_code": "P057D",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 369
+    },
+    {
+      "raw_code": "P057A",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 370
+    },
+    {
+      "raw_code": "C100E",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 371
+    },
+    {
+      "raw_code": "P05DD",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 372
+    },
+    {
+      "raw_code": "P05DE",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 373
+    },
+    {
+      "raw_code": "P05DB",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 374
+    },
+    {
+      "raw_code": "U2200",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 375
+    },
+    {
+      "raw_code": "U0001",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 376
+    },
+    {
+      "raw_code": "U1025",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 377
+    },
+    {
+      "raw_code": "U0293",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 378
+    },
+    {
+      "raw_code": "U1026",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 379
+    },
+    {
+      "raw_code": "U1027",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "ABS-reported loss of ECM/PCM communication (HPCM mapped)",
+      "translation_ar": "رمز HPCM لفقد اتصال ABS مع PCM",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 380
+    },
+    {
+      "raw_code": "U0401",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "Invalid Data Received from ECM/PCM A",
+      "translation_ar": "بيانات غير صالحة مستلمة من PCM A",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 381
+    },
+    {
+      "raw_code": "U1028",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS / HPCM (record per source)",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 382
+    },
+    {
+      "raw_code": "P0443",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 383
+    },
+    {
+      "raw_code": "P0452",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 384
+    },
+    {
+      "raw_code": "P0456",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 385
+    },
+    {
+      "raw_code": "P0460",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 386
+    },
+    {
+      "raw_code": "P2196",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 387
+    },
+    {
+      "raw_code": "P04EE",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 388
+    },
+    {
+      "raw_code": "P04EF",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 389
+    },
+    {
+      "raw_code": "P0805",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 390
+    },
+    {
+      "raw_code": "P087A",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 391
+    },
+    {
+      "raw_code": "P090B",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 392
+    },
+    {
+      "raw_code": "P090C",
+      "code_format": "P090C (DPS6 Ford source, suffix unknown)",
+      "ecu": "TCM",
+      "definition_en": "غير مؤكد في نشرة Ford CSP 14M02 (تذكر الكود بلا تعريف)",
+      "translation_ar": "خلل بدائرة مشغل القابض B ـ انخفاض الإشارة (التعريف العام يحتاج مطابقة Ford WSM)",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 393
+    },
+    {
+      "raw_code": "P0901",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 394
+    },
+    {
+      "raw_code": "P0902",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 395
+    },
+    {
+      "raw_code": "P2831",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 396
+    },
+    {
+      "raw_code": "P2836",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 397
+    },
+    {
+      "raw_code": "P285C",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 398
+    },
+    {
+      "raw_code": "P285D",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 399
+    },
+    {
+      "raw_code": "P285E",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 400
+    },
+    {
+      "raw_code": "P2861",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 401
+    },
+    {
+      "raw_code": "P2862",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "TCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 402
+    },
+    {
+      "raw_code": "C0031",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 403
+    },
+    {
+      "raw_code": "C0034",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "رمز متعلق بحساس سرعة العجلة الأمامية اليمنى ضمن نشرة Ford المحددة",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 404
+    },
+    {
+      "raw_code": "C0051",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "ABS",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "غير مؤكد",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 405
+    },
+    {
+      "raw_code": "B11D9:09",
+      "code_format": "B11D9:09 (Ford extended failure-type subtype 09)",
+      "ecu": "BCM",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "خلل متعلق بمراقبة حالة بطارية 12 فولت/الإشارة غير الطبيعية كما تُبلغ BCM",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 406
+    },
+    {
+      "raw_code": "U3000:96",
+      "code_format": "U3000:96 (Ford extended failure-type subtype 96)",
+      "ecu": "ABS",
+      "definition_en": "غير مؤكد",
+      "translation_ar": "رمز خلل أداء/حدث داخلي بوحدة ABS مع النوع الفرعي 96، وقد يُحفظ خطأً بعد انقطاع تغذية EBB",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 407
+    },
+    {
+      "raw_code": "P1450",
+      "code_format": "P1450 (Ford PHEV/Hybrid); unique TSB 19-2207 diagnostic variant",
+      "ecu": "PCM",
+      "definition_en": "Unable to Bleed Up Fuel Tank Vacuum",
+      "translation_ar": "تعذر معادلة التفريغ في خزان الوقود",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 408
+    },
+    {
+      "raw_code": "P0420",
+      "code_format": "SAE J2012 five-character DTC",
+      "ecu": "PCM",
+      "definition_en": "Catalyst System Efficiency Below Threshold (Diesel Oxidation Catalyst)",
+      "translation_ar": "انخفاض كفاءة محفز الأكسدة الخاص بالديزل (DOC)",
+      "translation_sv": null,
+      "verification_status": "قيد التوثيق",
+      "source_row": 409
+    }
+  ]
+}
