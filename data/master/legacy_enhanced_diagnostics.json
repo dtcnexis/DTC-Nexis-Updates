@@ -1,0 +1,397 @@
+{
+  "schema": "dtc-nexis-permanent-legacy-enhanced-diagnostic-notes-v1",
+  "source_file": "dtc-data.js",
+  "storage_status": "PERMANENT_COLLECTED",
+  "release_status": "NOT_ACTIVATED",
+  "verification": "Technical statements, measurement values and procedures require independent checks before presenting as vehicle-specific.",
+  "records": [
+    {
+      "code": "P0171",
+      "original": {
+        "ar": "الخليط فقير أكثر من اللازم — الضفة 1",
+        "summary": "وحدة التحكم ترى أن تصحيح الوقود وصل باتجاه الإغناء لتعويض خليط فقير. افحص تسريب الهواء والوقود والقياسات قبل تبديل القطع.",
+        "causes": [
+          "تسريب فاكيوم/هواء بعد حساس MAF",
+          "PCV عالق أو خرطوم مشقوق",
+          "MAF متسخ/قراءته منخفضة",
+          "ضغط أو تدفق الوقود منخفض",
+          "بخاخات متسخة أو ضعيفة",
+          "تسريب عادم قبل حساس O2/A/F",
+          "EVAP purge عالق مفتوح"
+        ],
+        "tests": [
+          "اقرأ STFT وLTFT على الخمول ثم عند 2500 rpm.",
+          "إذا تحسن الـTrim عند رفع RPM، ركّز على تسريب فاكيوم/PCV.",
+          "اعمل Smoke Test لمجرى السحب والخراطيم.",
+          "قارن قراءة MAF مع مواصفات المحرك الفعلية؛ لا تعتمد قيمة عامة إذا كانت مواصفات الشركة متاحة.",
+          "تحقق من ضغط الوقود تحت الحمل حسب مواصفات السيارة.",
+          "اختبر EVAP purge وPCV قبل استبدال حساس O2."
+        ],
+        "live": [
+          "STFT/LTFT: مجموع موجب كبير يدعم حالة الخليط الفقير؛ الحد التشخيصي الدقيق يختلف حسب الشركة.",
+          "قارن MAF وO2/A/F وFuel Pressure مع بيانات السيارة."
+        ],
+        "components": [
+          "MAF",
+          "PCV",
+          "EVAP Purge Valve",
+          "O2 / A-F Sensor",
+          "Fuel Pump",
+          "Fuel Injectors"
+        ]
+      },
+      "verification_status": "REQUIRES_OEM_VERIFICATION"
+    },
+    {
+      "code": "P0101",
+      "original": {
+        "ar": "أداء/مدى دائرة حساس كتلة أو حجم الهواء MAF غير صحيح",
+        "summary": "قراءة MAF غير منطقية مقارنة بظروف تشغيل المحرك. السبب قد يكون الحساس نفسه أو تسريب هواء أو EGR/شحن/أسلاك.",
+        "causes": [
+          "MAF متسخ أو تالف",
+          "تسريب هواء بعد MAF",
+          "فلتر هواء مسدود",
+          "خلل EGR يؤثر على تدفق الهواء",
+          "أسلاك/فيشة MAF",
+          "تسريب في منظومة التيربو/الإنتركولر"
+        ],
+        "tests": [
+          "افحص الفيشة والتغذية والأرضي والإشارة.",
+          "راقب MAF مع RPM والحمل وقارنه بمواصفات المحرك.",
+          "افحص مجرى السحب بتسريب/Smoke Test.",
+          "افحص EGR وتيربو/بوست إذا كانت السيارة مزودة بها.",
+          "بعد الإصلاح نفّذ Reset/Adaptation إذا كانت الشركة توصي بذلك."
+        ],
+        "live": [
+          "MAF يجب أن يتغير بسلاسة مع RPM والحمل؛ الرقم الصحيح يعتمد على حجم المحرك ونظامه."
+        ],
+        "components": [
+          "MAF",
+          "Air Filter",
+          "EGR Valve",
+          "Turbo / Intercooler",
+          "Intake Hose"
+        ]
+      },
+      "verification_status": "REQUIRES_OEM_VERIFICATION"
+    },
+    {
+      "code": "P0118",
+      "original": {
+        "ar": "دائرة حساس حرارة سائل تبريد المحرك — إشارة مرتفعة",
+        "summary": "عادةً الإشارة المرتفعة تعني جهد إشارة مرتفع بسبب دائرة مفتوحة/فيشة مفصولة أو حساس ECT خارج النطاق.",
+        "causes": [
+          "فيشة ECT مفصولة أو مؤكسدة",
+          "قطع في سلك الإشارة أو الأرضي",
+          "حساس ECT تالف",
+          "خلل مرجع/وحدة التحكم نادرًا"
+        ],
+        "tests": [
+          "على محرك بارد قارن ECT مع حرارة الجو/IAT.",
+          "افحص التغذية المرجعية والأرضي والاتصال.",
+          "افحص مقاومة الحساس حسب جدول الشركة مع تغير الحرارة.",
+          "اعمل Wiggle Test للفيشة والضفيرة."
+        ],
+        "live": [
+          "ECT على محرك بارد يجب أن تكون قريبة منطقيًا من حرارة الجو؛ القيم الدقيقة حسب السيارة."
+        ],
+        "components": [
+          "ECT Sensor",
+          "Coolant Harness",
+          "ECM / PCM"
+        ]
+      },
+      "verification_status": "REQUIRES_OEM_VERIFICATION"
+    },
+    {
+      "code": "P0401",
+      "original": {
+        "ar": "تدفق EGR غير كافٍ",
+        "summary": "وحدة التحكم طلبت تدوير غازات العادم لكن التدفق المحسوب كان أقل من المتوقع.",
+        "causes": [
+          "ممرات EGR مسدودة بالكربون",
+          "صمام EGR عالق مغلق",
+          "خرطوم/دائرة فاكيوم معطلة",
+          "DPFE/حساس فرق الضغط أو حساس EGR",
+          "سولينويد التحكم EGR",
+          "انخفاض غير طبيعي في ضغط العادم"
+        ],
+        "tests": [
+          "افحص Active Test للصمام إن كان الجهاز يدعمه.",
+          "افحص أمر EGR مقابل الموضع/التدفق المقاس.",
+          "افحص الممرات للترسبات.",
+          "افحص خراطيم الفاكيوم وDPFE عند وجوده.",
+          "تحقق من الأسلاك والتغذية قبل استبدال الصمام."
+        ],
+        "live": [
+          "راقب Commanded EGR مقابل Actual/Position/DPFE حسب النظام."
+        ],
+        "components": [
+          "EGR Valve",
+          "EGR Solenoid",
+          "DPFE Sensor",
+          "EGR Passages",
+          "Vacuum Hoses"
+        ]
+      },
+      "verification_status": "REQUIRES_OEM_VERIFICATION"
+    },
+    {
+      "code": "P0409",
+      "original": {
+        "ar": "دائرة حساس موضع/تغذية EGR A",
+        "summary": "خلل كهربائي في دائرة حساس EGR A أو الإشارة المرتبطة به.",
+        "causes": [
+          "فيشة/أسلاك EGR",
+          "حساس موضع EGR داخل الصمام",
+          "5V reference أو ground",
+          "صمام EGR داخليًا"
+        ],
+        "tests": [
+          "افحص 5V reference والأرضي.",
+          "راقب إشارة موضع EGR أثناء Active Test.",
+          "افحص Continuity وقصر إلى موجب/أرضي.",
+          "لا تستبدل EGR قبل تأكيد التغذية والإشارة."
+        ],
+        "live": [
+          "EGR position يجب أن يتبع الأمر بسلاسة إذا كان النظام يدعم Position Feedback."
+        ],
+        "components": [
+          "EGR Valve",
+          "EGR Position Sensor",
+          "EGR Harness"
+        ]
+      },
+      "verification_status": "REQUIRES_OEM_VERIFICATION"
+    },
+    {
+      "code": "P0011",
+      "original": {
+        "ar": "توقيت عمود الكامات A متقدم أكثر من المطلوب — الضفة 1",
+        "summary": "التوقيت الفعلي للكامة متقدم أو لا يتبع الأمر كما تتوقع وحدة التحكم.",
+        "causes": [
+          "زيت منخفض/متسخ أو لزوجة غير صحيحة",
+          "VVT solenoid عالق",
+          "مجرى زيت VVT مسدود",
+          "توقيت ميكانيكي غير صحيح",
+          "حساس CMP/CKP أو wiring",
+          "مشغل/فازر الكامة"
+        ],
+        "tests": [
+          "تحقق من مستوى الزيت وجودته والمواصفة.",
+          "راقب Cam Desired مقابل Actual.",
+          "اختبر VVT/OCV عبر Active Test.",
+          "افحص ضغط الزيت إذا لزم.",
+          "إذا الفرق ثابت افحص التوقيت الميكانيكي وCKP/CMP."
+        ],
+        "live": [
+          "Desired vs Actual cam angle هو أهم مقارنة؛ الحدود تختلف حسب المحرك."
+        ],
+        "components": [
+          "VVT Solenoid",
+          "Cam Phaser",
+          "CMP Sensor",
+          "CKP Sensor",
+          "Timing Chain / Belt"
+        ]
+      },
+      "verification_status": "REQUIRES_OEM_VERIFICATION"
+    },
+    {
+      "code": "P2279",
+      "original": {
+        "ar": "تسريب في نظام هواء السحب",
+        "summary": "تم اكتشاف هواء غير محسوب يدخل منظومة السحب.",
+        "causes": [
+          "خرطوم سحب/بوست مشقوق",
+          "جوان مانيفولد",
+          "PCV",
+          "بوابة ثروتل/جوان",
+          "فاكيوم brake booster",
+          "EVAP purge"
+        ],
+        "tests": [
+          "Smoke Test كامل للسحب.",
+          "راقب Fuel Trims على الخمول ومع RPM.",
+          "افحص PCV وخراطيم الفاكيوم.",
+          "في المحركات التيربو افحص ضغط/تسريب الإنتركولر والبوست."
+        ],
+        "live": [
+          "Fuel trims وMAP/MAF تساعد على تحديد هل التسريب قبل/بعد الثروتل."
+        ],
+        "components": [
+          "Intake Hose",
+          "Intake Manifold",
+          "PCV",
+          "Throttle Body",
+          "Brake Booster Hose",
+          "Intercooler"
+        ]
+      },
+      "verification_status": "REQUIRES_OEM_VERIFICATION"
+    },
+    {
+      "code": "P0626",
+      "original": {
+        "ar": "دائرة مجال/طرف F للمولد — إشارة مرتفعة",
+        "summary": "خلل في دائرة تحكم أو مراقبة مجال المولد/الدينمو.",
+        "causes": [
+          "أسلاك/فيشة المولد",
+          "منظم الجهد داخل المولد",
+          "دائرة LIN/F حسب النظام",
+          "بطارية أو توصيلات شحن",
+          "PCM/BCM نادرًا"
+        ],
+        "tests": [
+          "قِس جهد البطارية قبل التشغيل وأثناءه.",
+          "افحص هبوط الجهد في كابلات الموجب والأرضي.",
+          "افحص دائرة F/LIN حسب مخطط السيارة.",
+          "راقب Generator Command/Load/Voltage بالاسكانر."
+        ],
+        "live": [
+          "جهد الشحن في السيارات الذكية متغير؛ لا تعتمد 14V ثابتة كقاعدة لجميع السيارات."
+        ],
+        "components": [
+          "Alternator",
+          "Voltage Regulator",
+          "Battery",
+          "Charging Cable",
+          "PCM / BCM"
+        ]
+      },
+      "verification_status": "REQUIRES_OEM_VERIFICATION"
+    },
+    {
+      "code": "P0300",
+      "original": {
+        "ar": "اختلال اشتعال عشوائي/متعدد الأسطوانات",
+        "summary": "تم رصد Misfire في أكثر من أسطوانة أو بنمط غير ثابت.",
+        "causes": [
+          "بواجي/كويلات",
+          "ضغط وقود",
+          "بخاخات",
+          "تسريب فاكيوم",
+          "ضغط/كومبريشن المحرك",
+          "توقيت CKP/CMP",
+          "EGR عالق",
+          "وقود رديء"
+        ],
+        "tests": [
+          "اقرأ Misfire counters لكل سلندر.",
+          "بدّل كويل/بوجي بين الأسطوانات إذا كان النمط يسمح.",
+          "افحص Fuel Trims وضغط الوقود.",
+          "اعمل Compression/Leak-down عند الحاجة.",
+          "افحص CKP/CMP waveform إذا كان الاختلال متقطعًا جماعيًا."
+        ],
+        "live": [
+          "Misfire counters + STFT/LTFT + Fuel Pressure + CKP/CMP correlation هي مفاتيح التشخيص."
+        ],
+        "components": [
+          "Spark Plugs",
+          "Ignition Coils",
+          "Fuel Injectors",
+          "Fuel Pump",
+          "CKP Sensor",
+          "CMP Sensor"
+        ]
+      },
+      "verification_status": "REQUIRES_OEM_VERIFICATION"
+    },
+    {
+      "code": "P0455",
+      "original": {
+        "ar": "تسريب كبير في نظام EVAP",
+        "summary": "نظام أبخرة الوقود لم يستطع الحفاظ على الضغط/الفراغ المتوقع، ويُفسّر عادة كتسريب كبير.",
+        "causes": [
+          "غطاء الوقود غير محكم/تالف",
+          "EVAP vent valve عالق مفتوح",
+          "خرطوم EVAP مفصول/مشقوق",
+          "Purge valve عالق",
+          "Canister متشقق",
+          "تسريب عند عنق التعبئة"
+        ],
+        "tests": [
+          "افحص غطاء الوقود والخراطيم بصريًا.",
+          "استخدم Smoke Test منخفض الضغط لمنظومة EVAP.",
+          "نفّذ Active Test لـ purge وvent إن كان متاحًا.",
+          "راقب Fuel Tank Pressure sensor إذا كان النظام يستخدمه."
+        ],
+        "live": [
+          "FTP sensor واتجاه تغيّره أثناء إغلاق vent وتشغيل purge يساعدان على تحديد التسريب."
+        ],
+        "components": [
+          "Fuel Cap",
+          "EVAP Vent Valve",
+          "EVAP Purge Valve",
+          "Charcoal Canister",
+          "Fuel Tank Pressure Sensor"
+        ]
+      },
+      "verification_status": "REQUIRES_OEM_VERIFICATION"
+    },
+    {
+      "code": "P0016",
+      "original": {
+        "ar": "عدم تطابق موضع الكرنك مع عمود الكامات — Bank 1 Sensor A",
+        "summary": "العلاقة الزمنية بين CKP وCMP خارج النطاق المتوقع.",
+        "causes": [
+          "توقيت ميكانيكي/سلسلة متمددة أو قفز سن",
+          "VVT عالق",
+          "حساس CKP/CMP أو wiring",
+          "ترس/حلقة reluctor",
+          "ضغط زيت/تغذية VVT"
+        ],
+        "tests": [
+          "راجع أي أكواد VVT/CMP/CKP المصاحبة.",
+          "قارن Cam/Crank correlation بالاسكانر إن توفر.",
+          "افحص Waveform CKP/CMP بالأوسيلوسكوب.",
+          "تحقق من التوقيت الميكانيكي قبل استبدال الحساسات عشوائيًا."
+        ],
+        "live": [
+          "زاوية الكامة المطلوبة/الفعلية وCorrelation data مهمة؛ القيم حسب المحرك."
+        ],
+        "components": [
+          "CKP Sensor",
+          "CMP Sensor",
+          "Timing Chain / Belt",
+          "VVT Solenoid",
+          "Cam Phaser"
+        ]
+      },
+      "verification_status": "REQUIRES_OEM_VERIFICATION"
+    },
+    {
+      "code": "U0100",
+      "original": {
+        "ar": "فقد الاتصال مع ECM/PCM",
+        "summary": "وحدة أو أكثر لا تستطيع التواصل مع كمبيوتر المحرك عبر شبكة الاتصال.",
+        "causes": [
+          "تغذية/أرضي ECM مفقودة",
+          "فيوز/ريليه ECM",
+          "قطع أو قصر CAN",
+          "وحدة تسقط الشبكة",
+          "فيشة ECM أو ماء/تآكل",
+          "ECM نفسه بعد استبعاد الدائرة"
+        ],
+        "tests": [
+          "ابدأ بفحص تغذية وأرضي ECM.",
+          "افحص OBD Pin 16 والـGround ثم CAN على Pins 6 و14 عند شبكة HS-CAN.",
+          "مع الإشعال OFF وبعد سكون الشبكة، المقاومة النموذجية عبر CAN-H/CAN-L تكون قرابة 60Ω في شبكة بإنهاءين 120Ω.",
+          "إذا الشبكة منهارة اعزل الفروع/الوحدات تدريجيًا.",
+          "استخدم الأوسيلوسكوب لفحص الإشارة التفاضلية عند الحاجة."
+        ],
+        "live": [
+          "في HS-CAN تكون خطوط H/L حول 2.5V في recessive، وتتباعد تقريبيًا إلى نحو 3.5V و1.5V في dominant؛ تحقق من مخطط السيارة."
+        ],
+        "components": [
+          "ECM / PCM",
+          "CAN-H / CAN-L",
+          "Main Relay",
+          "ECM Fuse",
+          "Gateway"
+        ]
+      },
+      "verification_status": "REQUIRES_OEM_VERIFICATION"
+    }
+  ]
+}
