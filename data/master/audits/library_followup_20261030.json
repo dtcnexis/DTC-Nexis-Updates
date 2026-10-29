@@ -1,0 +1,731 @@
+{
+  "schema": "dtcnexis-library-followup-audit-v1",
+  "checked_on": "2026-10-30",
+  "base_commit": "ae00191b2f960c8bf101b8225e1e309a402e126e",
+  "source_snapshot_commit": "c9f223e3994df10a3e14b8f226f1675be3791566",
+  "scope": "Permanent cloud data only. No Windows, release or update-feed edits.",
+  "integrity": {
+    "files": 30,
+    "rows": 7656,
+    "parsed_all_canonical_files": true,
+    "file_checks": [
+      {
+        "path": "data/master/dtc_text_catalog.json",
+        "blob_sha": "25405ee485a299b683030d01ea4925b4df5da186",
+        "expected": 26,
+        "actual": 26,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/alfa_romeo.json",
+        "blob_sha": "79d90be78abd100b0d6d921794cafd93d52bc533",
+        "expected": 59,
+        "actual": 59,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/bmw.json",
+        "blob_sha": "202d63cd6efbd9676305c617e4b96b5d380bbe02",
+        "expected": 98,
+        "actual": 98,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/cupra.json",
+        "blob_sha": "7612a0cd6d2994e4e052718f1841c23235128166",
+        "expected": 63,
+        "actual": 63,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/mazda.json",
+        "blob_sha": "70a3e8c3291ce33ac866c9d3a4feda99b055f23b",
+        "expected": 376,
+        "actual": 376,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/mercedes_benz.json",
+        "blob_sha": "1688c69812ef9e81a4dbca7e29cb871bd5a8f386",
+        "expected": 66,
+        "actual": 66,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/mini.json",
+        "blob_sha": "dedf5681a07d8867f80a2a3daffdbfa165869e83",
+        "expected": 45,
+        "actual": 45,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/opel_vauxhall.json",
+        "blob_sha": "82981e9f9dd2f8c4e33ca8446e47d85cc6d6ca9e",
+        "expected": 37,
+        "actual": 37,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/polestar.json",
+        "blob_sha": "0d377450c51bd837230753de1ccaa2a8a6ae10a6",
+        "expected": 29,
+        "actual": 29,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/seat.json",
+        "blob_sha": "19310c96f761b2dd154b6076d8238e06b4a47287",
+        "expected": 53,
+        "actual": 53,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/skoda.json",
+        "blob_sha": "2737fb06ac317c0fc876082c7494ea6632146f86",
+        "expected": 48,
+        "actual": 48,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/volvo.json",
+        "blob_sha": "d1803d61b6c2fd0d2cbc4bc11ba0ea599f266d5a",
+        "expected": 60,
+        "actual": 60,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/volkswagen_vag_legacy_part01.json",
+        "blob_sha": "d8d49c0977bc5b8c514b1474021a4aa41c1665b1",
+        "expected": 181,
+        "actual": 181,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/volkswagen_vag_legacy_part02.json",
+        "blob_sha": "139a81354061d47408f1345a2781b9b432a72803",
+        "expected": 175,
+        "actual": 175,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/volkswagen_vag_legacy_part03.json",
+        "blob_sha": "3e478301b60ddd415339ff18896492a13f96032a",
+        "expected": 140,
+        "actual": 140,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/volkswagen_vag_legacy_part04.json",
+        "blob_sha": "8225e749554a6e9c88173fb7efc9080d6a32e0eb",
+        "expected": 148,
+        "actual": 148,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/c_codes_multibrand.json",
+        "blob_sha": "eda5648c29887a70129ac59d6eb03119ab04b13b",
+        "expected": 278,
+        "actual": 278,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/ds_automobiles.json",
+        "blob_sha": "fc6feadddd05be846840d45e2f2fe313b6d97457",
+        "expected": 798,
+        "actual": 798,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/legacy_generic_pbu.json",
+        "blob_sha": "7b313ed5d1c13a77b7beaaead330669964b20b71",
+        "expected": 2137,
+        "actual": 2137,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/nissan.json",
+        "blob_sha": "2c89367b8bb14802e129095923b6dd300f3b7f03",
+        "expected": 495,
+        "actual": 495,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/renault.json",
+        "blob_sha": "32c3c67e45343a23ee5ccb86e193df583b260050",
+        "expected": 129,
+        "actual": 129,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/kia.json",
+        "blob_sha": "b67067e67cade3c65a32e26ed37c4c7470ddba5c",
+        "expected": 63,
+        "actual": 63,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/ford.json",
+        "blob_sha": "651db591fe664e397b52c55e535339671442979d",
+        "expected": 409,
+        "actual": 409,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/peugeot.json",
+        "blob_sha": "ac65ce5f835215a35450b13be13448755a357573",
+        "expected": 1317,
+        "actual": 1317,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": null
+      },
+      {
+        "path": "data/master/brands/audi_batch01_detail.json",
+        "blob_sha": "534efcc4fa1835d11efb834c8ed3fd7db5d31f35",
+        "expected": 20,
+        "actual": 20,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": true
+      },
+      {
+        "path": "data/master/brands/dacia_batch01_149_records.json",
+        "blob_sha": "be94b4e270c4289c2d41b198e8fc574c3da747eb",
+        "expected": 149,
+        "actual": 149,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": true
+      },
+      {
+        "path": "data/master/brands/toyota_exp002_dtc_part01.json",
+        "blob_sha": "789c136db4b406a85549de43a994117f74085779",
+        "expected": 70,
+        "actual": 70,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": true
+      },
+      {
+        "path": "data/master/brands/toyota_exp002_dtc_part02.json",
+        "blob_sha": "b62e51a69ac53c35edbb65daf887842f078ea0bf",
+        "expected": 70,
+        "actual": 70,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": true
+      },
+      {
+        "path": "data/master/brands/toyota_exp002_dtc_part03.json",
+        "blob_sha": "a55190abb752efc911d3770a211cbceae09885b2",
+        "expected": 70,
+        "actual": 70,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": true
+      },
+      {
+        "path": "data/master/brands/honda_batch02_dtc.json",
+        "blob_sha": "c1900948564c98f12a2e6d620b5a11dd24b80ed3",
+        "expected": 47,
+        "actual": 47,
+        "blank_or_multiline": 0,
+        "manifest_blob_match": true
+      }
+    ],
+    "registry_count_matches": true
+  },
+  "source_comparisons": [
+    {
+      "brand": "bmw",
+      "source_rows": 98,
+      "master_rows": 98,
+      "core_mismatches": 0,
+      "embedded_legacy_rows": 98,
+      "embedded_legacy_core_mismatches": 0
+    },
+    {
+      "brand": "mercedes_benz",
+      "source_rows": 66,
+      "master_rows": 66,
+      "core_mismatches": 0,
+      "embedded_legacy_rows": 0,
+      "embedded_legacy_core_mismatches": null
+    },
+    {
+      "brand": "cupra",
+      "source_rows": 63,
+      "master_rows": 63,
+      "core_mismatches": 0,
+      "embedded_legacy_rows": 63,
+      "embedded_legacy_core_mismatches": 0
+    }
+  ],
+  "recovered_enrichment": [
+    {
+      "path": "data/master/enrichment/bmw_embedded_legacy_batch01_20261030.json",
+      "rows": 98,
+      "additional_counted_rows": 0
+    },
+    {
+      "path": "data/master/enrichment/cupra_embedded_legacy_batch01_20261030.json",
+      "rows": 63,
+      "additional_counted_rows": 0
+    }
+  ],
+  "access_blockers": {
+    "audi_index": {
+      "names": [
+        "AUDI_DTC_BATCH01_INDEX.json",
+        "AUDI_DTC_BATCH01_INDEX.csv"
+      ],
+      "inventory_sizes_bytes": [
+        1169747,
+        714454
+      ],
+      "status": "METADATA_ONLY_NO_CONTENT_RECOVERED",
+      "comparison_performed": false
+    },
+    "standalone_legacy_sources": {
+      "names": [
+        "BMW_DTC_NEXIS_batch01.json",
+        "Mercedes_Benz_DTC_NEXIS_batch01_2026-10-15.json",
+        "CUPRA_DTC_NEXIS_B01_2026-10-15.json"
+      ],
+      "status": "Standalone raw files not accessible. BMW and CUPRA embedded legacy objects recovered; standalone equivalence not established."
+    },
+    "observed_library_access": "https://chatgpt.com/library displayed Log in; no authenticated source listing or file read available in this session.",
+    "historical_reconciliation": {
+      "references": 488,
+      "listed": 388,
+      "not_listed": 100,
+      "report_path": "data/master/audits/library_reconciliation_20261029.json",
+      "fresh_library_listing_verified": false,
+      "note": "Historical counts retained, not claimed freshly reconciled."
+    }
+  },
+  "deduplication": {
+    "new_counted_rows": 0,
+    "canonical_rows_changed": 0,
+    "method": "Exact ordered code + ECU + English definition + Arabic translation; Batch02 original IDs also matched. Keep source rows and context; no code-only merging.",
+    "audi_detail_rows": 20,
+    "audi_detail_distinct_codes": 19
+  },
+  "required_next_step": "Provide authenticated Library read access or attach/export original Audi INDEX JSON/CSV (or package ZIP), then standalone Mercedes Batch01. Compare exact records including ECU, suffix and applicability before incrementing ledger.",
+  "protected_blobs": [
+    {
+      "path": ".github/workflows/publish-windows.yml",
+      "sha": "db912061d860c1c241ba4d99ab3d01b321c3fcf8"
+    },
+    {
+      "path": ".github/workflows/verify-permanent-master.yml",
+      "sha": "ab5e7d28208a9c76b906236d1ce1a41c7eb7094a"
+    },
+    {
+      "path": "README.md",
+      "sha": "422bcace6b1d8f4fad0de8bdbee3811b3adc6fe0"
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "sha": "8286bcf33840ce24cbaa885468f6596db6ce88b5"
+    },
+    {
+      "path": "ci/check-installed.cjs",
+      "sha": "0ac190139f3dc958b6492af7ffde14639dae09b3"
+    },
+    {
+      "path": "ci/publish_release.py",
+      "sha": "08fde21054d5134efd6e062b53b061dcc4ba7b2d"
+    },
+    {
+      "path": "ci/verify-feed.cjs",
+      "sha": "a6b70de84565043c5149960bd71038c4035d3821"
+    },
+    {
+      "path": "ci/verify_master_data.cjs",
+      "sha": "fdbcd8e77cd5923e15447f6a509c03bf463c30a4"
+    },
+    {
+      "path": "installer-parts/v7/part-01.bin",
+      "sha": "4271be42007f9611043c91afb3ff5f52682f293e"
+    },
+    {
+      "path": "installer-parts/v7/part-02.bin",
+      "sha": "4388c558d0be235caf48d5006df35b58882b3aa3"
+    },
+    {
+      "path": "installer-parts/v7/part-03.bin",
+      "sha": "8fdd5fb28dcb5104b389028d88b2f69e55ded632"
+    },
+    {
+      "path": "installer-parts/v7/part-04.bin",
+      "sha": "5a50280f0de535144af30837838748697f0b8e5f"
+    },
+    {
+      "path": "installer-parts/v7/part-05.bin",
+      "sha": "0b9284ba215d93ee9e429696331b688b0d13ba1a"
+    },
+    {
+      "path": "installer-parts/v7/part-06.bin",
+      "sha": "6377f5b6693761cf88eb4c3b0e6be0f51549d9d0"
+    },
+    {
+      "path": "installer-parts/v7/part-07.bin",
+      "sha": "014b24d2886d5e153ced437a0893f75d4b9f790e"
+    },
+    {
+      "path": "installer-parts/v7/part-08.bin",
+      "sha": "95a39467a24ec89a04593689d92d66bcbfcb86bc"
+    },
+    {
+      "path": "installer-parts/v7/part-09.bin",
+      "sha": "1f05ed25b7e278b4c1542dd0917b6a89bd96dbb5"
+    },
+    {
+      "path": "installer-parts/v7/part-10.bin",
+      "sha": "f4cc51363e8d74934f578b199223462ee9567617"
+    },
+    {
+      "path": "installer-parts/v7/part-11.bin",
+      "sha": "5676aa160e6405892a74d0dcbacfd67ebbcdfbfc"
+    },
+    {
+      "path": "installer-parts/v7/part-12.bin",
+      "sha": "00b81c77c74db6ca9ba8bece6fe9c517b4b3e496"
+    },
+    {
+      "path": "installer-parts/v7/part-13.bin",
+      "sha": "f89f8ea8c580f2d1fe54aca25f7eb80be4138269"
+    },
+    {
+      "path": "installer-parts/v7/part-14.bin",
+      "sha": "f93de378cf14a75dd28c24726da0f3360c22ffde"
+    },
+    {
+      "path": "installer-parts/v7/part-15.bin",
+      "sha": "028a3113ea892a979661c2d3331791980e2c273f"
+    },
+    {
+      "path": "installer-parts/v7/part-16.bin",
+      "sha": "250f9a0e7437e002ba33c071ab3403de0f377f7e"
+    },
+    {
+      "path": "installer-parts/v7/part-17.bin",
+      "sha": "d02b229268b8b3b61d4ec24d8d5376fc28e03d95"
+    },
+    {
+      "path": "installer-parts/v7/part-18.bin",
+      "sha": "ceb6f7d3aaca2cc1e2767783de02d524ae0eb104"
+    },
+    {
+      "path": "installer-parts/v7/part-19.bin",
+      "sha": "a1ebb8a4f95ad8b27755df042ef02d829218a0b7"
+    },
+    {
+      "path": "installer-parts/v7/part-20.bin",
+      "sha": "5fa208bedf9aaa98e5857fec94d70ec93c574c32"
+    },
+    {
+      "path": "pending-update-feed.json",
+      "sha": "5ddafea72fb4bebddda4967e49996545eb9393c4"
+    },
+    {
+      "path": "release-request.json",
+      "sha": "0d21806679a4c6f4597589a5adf5d3c6376ff017"
+    },
+    {
+      "path": "update-feed.json",
+      "sha": "5ddafea72fb4bebddda4967e49996545eb9393c4"
+    },
+    {
+      "path": "update-public-key.json",
+      "sha": "4ce4b186141f2cc45a94b1ec0b4c779773309342"
+    },
+    {
+      "path": "volkswagen/VW022_STATUS_AR.md",
+      "sha": "c9b0c0dd816597a3aa300a084163fddfea765ff7"
+    },
+    {
+      "path": "volkswagen/data/VW022/README_AR.md",
+      "sha": "8f57ee4cb51b71f957a9b2601e5828052e9ef7b4"
+    },
+    {
+      "path": "volkswagen/data/VW022/diagnostic_checkworkflows-001.json",
+      "sha": "347c81f9417a69ce926f2d6572c771b0290241fc"
+    },
+    {
+      "path": "volkswagen/data/VW022/diagnostic_checkworkflows-002.json",
+      "sha": "7551180d2fd550d358f49bb4f4f1a5371bb6a02f"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-001.json",
+      "sha": "1082097ec56311967f41da75cf5795b1bf8adfd4"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-002.json",
+      "sha": "a1cf904de514d15ef7e2805d64b045f21f4b51d6"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-003.json",
+      "sha": "e6aa29ccea2efecd8c7eb04b811903a111751e12"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-004.json",
+      "sha": "3a1b9504f9e61572ea174d38c8f8b68a743c80e9"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-005.json",
+      "sha": "7996e8294839108bbe02dde77087ec29167c95c2"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-006.json",
+      "sha": "208233ad274e0245480ae545cf3977701095fbad"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-007.json",
+      "sha": "2dc0f8dd5557f52718f62555d3cc9e118b99616d"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-008.json",
+      "sha": "ae8d88342d9c971bc7f29571f6e535c1086b0930"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-009.json",
+      "sha": "0447abc5566e2aa77fe87550b3a6b90c24085054"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-010.json",
+      "sha": "74ed193aecb56bc83809acbcf583c856615f4f55"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-011.json",
+      "sha": "31b1eb10d5e6e23eee8d54950d83db2c0bc77864"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-012.json",
+      "sha": "8042568fb4524fec1dcad38e88a54e181dcdf287"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-013.json",
+      "sha": "7de5fb54b5e16ab3976e1fd1699bb75300ec09aa"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-014.json",
+      "sha": "5b1d4a8dc98a187740e810a3a6b497d691b8db2b"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-015.json",
+      "sha": "fd3c4a69f88cead87b546798989494cead2712e9"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-016.json",
+      "sha": "c66c3f1853b18584f57bf51bc75d44165a200842"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-017.json",
+      "sha": "9f535f5cfd87295ab970747d71fc34cc1b81608b"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-018.json",
+      "sha": "6381867bfc9eaea6d1cce3df083f002df9719235"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-019.json",
+      "sha": "60d0a7bfdc1eeb01309143665737e1d4dc39dde3"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-020.json",
+      "sha": "3b5688a3b34c6540eff035d6ec1cfbeb333b119a"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-021.json",
+      "sha": "44aaed6ec8056999bcb6daa967750609b7038e4c"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-022.json",
+      "sha": "9264ffacf3c314e9e29631c1d7a779dfe04ba6f9"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-023.json",
+      "sha": "8d26f3216665ec76697347339da989985ae944e5"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-024.json",
+      "sha": "53673ce3189702bbebc3d9b92bf52ab02c417dd0"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-025.json",
+      "sha": "08b49a0acb8c3c0b5df7e552ca4abdc09351496b"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-026.json",
+      "sha": "6cf4659c407f79e8ab3c7f3e8887d1e998de80a7"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-027.json",
+      "sha": "200af3b5fd5112ffbaee6a4f73c4c9c47107070d"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-028.json",
+      "sha": "ad6ca3dbf18c0caf0c92fb74735fa72fbce47892"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-029.json",
+      "sha": "059824ffb822124b4e55e411148186ffe15c8636"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-030.json",
+      "sha": "e4c2f1c8ce926a1c7ead924abf119197a7f9f12d"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-031.json",
+      "sha": "a81132af8ba64d5b9c6f7d3370848502d5b66727"
+    },
+    {
+      "path": "volkswagen/data/VW022/dtc_legacy_candidates-032.json",
+      "sha": "3aa9009ec171e8f117c44f012c0123a2b240c7a6"
+    },
+    {
+      "path": "volkswagen/data/VW022/ecu_catalog_and_evidence-001.json",
+      "sha": "5fa2bb6fc8f395b3ff85c2872dcd106ed7ae30a9"
+    },
+    {
+      "path": "volkswagen/data/VW022/ecu_catalog_and_evidence-002.json",
+      "sha": "3e7fe3bdd199b9926240f1ce537d2af83ff96c15"
+    },
+    {
+      "path": "volkswagen/data/VW022/engine_code_evidence-001.json",
+      "sha": "970414b968875cb2815b95ec5e24768a2466afca"
+    },
+    {
+      "path": "volkswagen/data/VW022/engine_code_evidence-002.json",
+      "sha": "b580d3ddca08cfb31cc16d89c06c50e366545b67"
+    },
+    {
+      "path": "volkswagen/data/VW022/engine_code_evidence-003.json",
+      "sha": "f16362f13b6f3833353e4274592c41dd4b03804c"
+    },
+    {
+      "path": "volkswagen/data/VW022/engine_code_evidence-004.json",
+      "sha": "1b0b0f13c996b3fbaa3a8e03fba665781b67a71c"
+    },
+    {
+      "path": "volkswagen/data/VW022/engine_powertrain_variants-001.json",
+      "sha": "c0568c7f6c57cceb2683c8215ee80b18165dea71"
+    },
+    {
+      "path": "volkswagen/data/VW022/engine_powertrain_variants-002.json",
+      "sha": "057fd6840aecf845d70d94460ed9a22dee588d34"
+    },
+    {
+      "path": "volkswagen/data/VW022/engine_powertrain_variants-003.json",
+      "sha": "40445b54b4c5a7e2782e9a6b0ddbe23e81599b8c"
+    },
+    {
+      "path": "volkswagen/data/VW022/engine_powertrain_variants-004.json",
+      "sha": "5cbf2d0b2a108438f79a912a340e8c023e0f0949"
+    },
+    {
+      "path": "volkswagen/data/VW022/engine_powertrain_variants-005.json",
+      "sha": "e620ed8006f631ea67478ba2d79c49bf792b998f"
+    },
+    {
+      "path": "volkswagen/data/VW022/engine_powertrain_variants-006.json",
+      "sha": "34ee015635c81403f93cb923e8fcc4d1626e6c09"
+    },
+    {
+      "path": "volkswagen/data/VW022/engine_powertrain_variants-007.json",
+      "sha": "c39e5ac091a642c4c695063b8477e0ee8ef4129e"
+    },
+    {
+      "path": "volkswagen/data/VW022/engine_powertrain_variants-008.json",
+      "sha": "0df00ecac90b2f970fd899f05c140fdfa3efbdda"
+    },
+    {
+      "path": "volkswagen/data/VW022/engine_powertrain_variants-009.json",
+      "sha": "560dd99fb44881f59bd4c63bd62b6757ed80cdb9"
+    },
+    {
+      "path": "volkswagen/data/VW022/engine_powertrain_variants-010.json",
+      "sha": "796a23005d8df2eec8bf67f41543e9e1de920b44"
+    },
+    {
+      "path": "volkswagen/data/VW022/engine_powertrain_variants-011.json",
+      "sha": "cad261767e4ffeb0845c5541a8ecf734afe32a36"
+    },
+    {
+      "path": "volkswagen/data/VW022/engine_powertrain_variants-012.json",
+      "sha": "336db0e16d475bb782ab34a9e68a5a0de1afd8a8"
+    },
+    {
+      "path": "volkswagen/data/VW022/engine_powertrain_variants-013.json",
+      "sha": "d6f0c7dc0a752382f2e0b32abeb11f60f3bcca5f"
+    },
+    {
+      "path": "volkswagen/data/VW022/general_dtc_reference-001.json",
+      "sha": "612c1ec75b63f342f7e27a729af3ddcfa99deda9"
+    },
+    {
+      "path": "volkswagen/data/VW022/individual_vehicle_cases-001.json",
+      "sha": "6bc1b12a4cac908c6d38ec6d558ec56f01c5986c"
+    },
+    {
+      "path": "volkswagen/data/VW022/manifest.json",
+      "sha": "236ded12ac68696ed58945f56e22feb026909afa"
+    },
+    {
+      "path": "volkswagen/data/VW022/observed_dtc_cases-001.json",
+      "sha": "b997d084b101d51426daf99c7d2cbefe5f5fb5fd"
+    },
+    {
+      "path": "volkswagen/data/VW022/reviews_and_safety-001.json",
+      "sha": "2ac5e57b1b50581e98399d0a11016eb41c2bfee7"
+    },
+    {
+      "path": "volkswagen/data/VW022/reviews_and_safety-002.json",
+      "sha": "0d9199f7dd338fe9696404f6a3e85a2b60929ae9"
+    },
+    {
+      "path": "volkswagen/data/VW022/vehicle_records-001.json",
+      "sha": "8e26fc955c5e2e79312b591e802e322f908e4f28"
+    },
+    {
+      "path": "volkswagen/data/VW022/vehicle_records-002.json",
+      "sha": "149e577414c6a3b0d6d71a2917c15c6eeb8ea1c5"
+    },
+    {
+      "path": "volkswagen/data/VW022/wiring_and_location_requests-001.json",
+      "sha": "1b650b02cb3b005945f2ae70411761bba3d7467d"
+    },
+    {
+      "path": "volkswagen/data/VW022/wiring_and_location_requests-002.json",
+      "sha": "1a4f4b45bdb606df715e4be2244b7434da6f7cfd"
+    },
+    {
+      "path": "volkswagen/tools/make_catalog_export.py",
+      "sha": "f9bbf6c43add6757113a3f4d6118b8c86785d571"
+    },
+    {
+      "path": "volkswagen/tools/verify_staging_chunks.py",
+      "sha": "40058fe479f3f427e72b2bc960d942f94bd95453"
+    }
+  ],
+  "validation_scope": "Storage integrity and archival identity only; no OEM technical validation."
+}
