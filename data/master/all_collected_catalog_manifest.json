@@ -183,5 +183,19 @@
   ],
   "quality_gate": "Storing a row permanently does not validate technical definitions, manufacturer fitment, translation or image rights. Keep original source references; release requires independent QA and owner approval.",
   "owner_rules": "Only the Windows application is experimental; permanent cloud data is retained independently. No change to update-feed or Windows installer.",
-  "reconciliation_note": "4817 is number of archived rows, not a worldwide distinct count. Original-source library metadata includes many unprocessed files; never claim complete coverage of all cars."
+  "reconciliation_note": "4817 is number of archived rows, not a worldwide distinct count. Original-source library metadata includes many unprocessed files; never claim complete coverage of all cars.",
+  "legacy_library_source_inventory": {
+    "entries": 488,
+    "by_file_type": {
+      "json": 241,
+      "csv": 146,
+      "zip": 43,
+      "images": 18,
+      "other": 40
+    },
+    "possible_diagnostic_code_json_entries": 141,
+    "review_state": "INCOMPLETE_SOURCE_ACCESS_OR_DEDUPLICATION",
+    "permanent_full_index_in_private_source": "dtcnexis/DTC-Nexis-App/data/manufacturers/review/library_source_inventory_20261016.json"
+  },
+  "access_note": "Audi and Dacia archived Library JSON filenames were discovered, but their raw contents could not be read or materialized in the current session. Do not pretend their records have been imported or infer code counts."
 }
