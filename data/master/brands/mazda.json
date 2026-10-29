@@ -1,0 +1,4905 @@
+{
+  "schema": "dtc-nexis-permanent-brand-code-records-v1",
+  "brand": "Mazda",
+  "archive_status": "PERMANENT_COLLECTED_SOURCE_DATA",
+  "release_to_app": "NOT_ACTIVE",
+  "source": {
+    "repository": "dtcnexis/DTC-Nexis-App",
+    "ref": "backup/rc382-owner-source-checkpoint-20261029",
+    "path": "data/manufacturers/review/mazda_batch02_unapproved.json",
+    "git_blob_sha": "148f0fc81d92a14919115b0b2ebc339be6f06991"
+  },
+  "record_count": 376,
+  "completeness": "preserves_core_code_and_translation_fields; full_original_details_remain_in_source_sha",
+  "records": [
+    {
+      "raw_code": "B00D2:01",
+      "code_family": "B",
+      "definition_en": "Active bonnet warning light malfunction",
+      "translation_ar": "خلل لمبة تحذير الغطاء النشط",
+      "translation_sv": null,
+      "original_row_index": 1,
+      "original_record_id": "MZD-DTC-B00D2-01",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B00D2:29",
+      "code_family": "B",
+      "definition_en": "Active bonnet warning light communication error",
+      "translation_ar": "خطأ اتصال لمبة الغطاء النشط",
+      "translation_sv": null,
+      "original_row_index": 2,
+      "original_record_id": "MZD-DTC-B00D2-29",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1001:11",
+      "code_family": "B",
+      "definition_en": "RH active bonnet actuator circuit short to ground",
+      "translation_ar": "تماس دائرة مشغل الغطاء النشط الأيمن بالأرضي",
+      "translation_sv": null,
+      "original_row_index": 3,
+      "original_record_id": "MZD-DTC-B1001-11",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1001:12",
+      "code_family": "B",
+      "definition_en": "RH active bonnet actuator circuit short to power",
+      "translation_ar": "تماس دائرة مشغل الغطاء النشط الأيمن بالموجب",
+      "translation_sv": null,
+      "original_row_index": 4,
+      "original_record_id": "MZD-DTC-B1001-12",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1001:13",
+      "code_family": "B",
+      "definition_en": "RH active bonnet actuator circuit open/high resistance",
+      "translation_ar": "انقطاع أو مقاومة مرتفعة بدائرة مشغل الغطاء النشط الأيمن",
+      "translation_sv": null,
+      "original_row_index": 5,
+      "original_record_id": "MZD-DTC-B1001-13",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1001:19",
+      "code_family": "B",
+      "definition_en": "RH/LH active bonnet actuator circuits short",
+      "translation_ar": "قصر بين دائرتَي مشغلي الغطاء النشط",
+      "translation_sv": null,
+      "original_row_index": 6,
+      "original_record_id": "MZD-DTC-B1001-19",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1001:1A",
+      "code_family": "B",
+      "definition_en": "RH active bonnet actuator circuit low resistance",
+      "translation_ar": "مقاومة منخفضة في دائرة مشغل الغطاء النشط الأيمن",
+      "translation_sv": null,
+      "original_row_index": 7,
+      "original_record_id": "MZD-DTC-B1001-1A",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1003:11",
+      "code_family": "B",
+      "definition_en": "LH active bonnet actuator circuit short to ground",
+      "translation_ar": "تماس دائرة مشغل الغطاء النشط الأيسر بالأرضي",
+      "translation_sv": null,
+      "original_row_index": 8,
+      "original_record_id": "MZD-DTC-B1003-11",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1003:12",
+      "code_family": "B",
+      "definition_en": "LH active bonnet actuator circuit short to power",
+      "translation_ar": "تماس دائرة مشغل الغطاء النشط الأيسر بالموجب",
+      "translation_sv": null,
+      "original_row_index": 9,
+      "original_record_id": "MZD-DTC-B1003-12",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1003:13",
+      "code_family": "B",
+      "definition_en": "LH active bonnet actuator circuit open/high resistance",
+      "translation_ar": "انقطاع أو مقاومة مرتفعة بدائرة مشغل الغطاء النشط الأيسر",
+      "translation_sv": null,
+      "original_row_index": 10,
+      "original_record_id": "MZD-DTC-B1003-13",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1003:19",
+      "code_family": "B",
+      "definition_en": "LH/RH active bonnet actuator circuits short",
+      "translation_ar": "قصر بين دائرتَي مشغلي الغطاء النشط",
+      "translation_sv": null,
+      "original_row_index": 11,
+      "original_record_id": "MZD-DTC-B1003-19",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1003:1A",
+      "code_family": "B",
+      "definition_en": "LH active bonnet actuator circuit low resistance",
+      "translation_ar": "مقاومة منخفضة في دائرة مشغل الغطاء النشط الأيسر",
+      "translation_sv": null,
+      "original_row_index": 12,
+      "original_record_id": "MZD-DTC-B1003-1A",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1011:95",
+      "code_family": "B",
+      "definition_en": "Active bonnet controller connector partially disconnected",
+      "translation_ar": "قابس وحدة الغطاء النشط غير مثبت بالكامل",
+      "translation_sv": null,
+      "original_row_index": 13,
+      "original_record_id": "MZD-DTC-B1011-95",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1048:00",
+      "code_family": "B",
+      "definition_en": "Brake fluid level sensor",
+      "translation_ar": "حساس مستوى سائل الفرامل",
+      "translation_sv": null,
+      "original_row_index": 14,
+      "original_record_id": "MZD-DTC-B1048-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1048:11",
+      "code_family": "B",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 15,
+      "original_record_id": "MZD-DTC-B1048-11",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "B1048:12",
+      "code_family": "B",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 16,
+      "original_record_id": "MZD-DTC-B1048-12",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "B1048:13",
+      "code_family": "B",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 17,
+      "original_record_id": "MZD-DTC-B1048-13",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "B1048:1A",
+      "code_family": "B",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 18,
+      "original_record_id": "MZD-DTC-B1048-1A",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "B1048:23",
+      "code_family": "B",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 19,
+      "original_record_id": "MZD-DTC-B1048-23",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "B10A2:00",
+      "code_family": "B",
+      "definition_en": "Vehicle collision",
+      "translation_ar": "إشارة تصادم السيارة",
+      "translation_sv": null,
+      "original_row_index": 20,
+      "original_record_id": "MZD-DTC-B10A2-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1193:00",
+      "code_family": "B",
+      "definition_en": "Active bonnet collision data stored",
+      "translation_ar": "بيانات تصادم مخزنة في وحدة الغطاء النشط",
+      "translation_sv": null,
+      "original_row_index": 21,
+      "original_record_id": "MZD-DTC-B1193-00",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1422:11",
+      "code_family": "B",
+      "definition_en": "Right active bonnet sensor short to ground",
+      "translation_ar": "قصر حساس الغطاء النشط الأيمن بالأرضي",
+      "translation_sv": null,
+      "original_row_index": 22,
+      "original_record_id": "MZD-DTC-B1422-11",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1422:13",
+      "code_family": "B",
+      "definition_en": "Right active bonnet sensor open/short to body ground",
+      "translation_ar": "انقطاع أو قصر بأرضي حساس الغطاء النشط الأيمن",
+      "translation_sv": null,
+      "original_row_index": 23,
+      "original_record_id": "MZD-DTC-B1422-13",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1422:55",
+      "code_family": "B",
+      "definition_en": "Active bonnet control module internal malfunction",
+      "translation_ar": "خلل داخلي بوحدة التحكم بالغطاء النشط",
+      "translation_sv": null,
+      "original_row_index": 24,
+      "original_record_id": "MZD-DTC-B1422-55",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1422:87",
+      "code_family": "B",
+      "definition_en": "Right active bonnet sensor signal not received",
+      "translation_ar": "غياب إشارة حساس الغطاء النشط الأيمن",
+      "translation_sv": null,
+      "original_row_index": 25,
+      "original_record_id": "MZD-DTC-B1422-87",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1422:96",
+      "code_family": "B",
+      "definition_en": "Right active bonnet sensor internal malfunction",
+      "translation_ar": "خلل داخلي بحساس الغطاء النشط الأيمن",
+      "translation_sv": null,
+      "original_row_index": 26,
+      "original_record_id": "MZD-DTC-B1422-96",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1423:11",
+      "code_family": "B",
+      "definition_en": "Right-center active bonnet sensor short to ground",
+      "translation_ar": "تماس حساس الغطاء النشط يمين الوسط بالأرضي",
+      "translation_sv": null,
+      "original_row_index": 27,
+      "original_record_id": "MZD-DTC-B1423-11",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1423:13",
+      "code_family": "B",
+      "definition_en": "Right-center active bonnet sensor open/short to power",
+      "translation_ar": "انقطاع أو قصر بالموجب بحساس الغطاء النشط يمين الوسط",
+      "translation_sv": null,
+      "original_row_index": 28,
+      "original_record_id": "MZD-DTC-B1423-13",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1423:55",
+      "code_family": "B",
+      "definition_en": "Active bonnet control module internal malfunction",
+      "translation_ar": "خلل داخلي بوحدة الغطاء النشط",
+      "translation_sv": null,
+      "original_row_index": 29,
+      "original_record_id": "MZD-DTC-B1423-55",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1423:87",
+      "code_family": "B",
+      "definition_en": "Right-center active bonnet sensor signal not received",
+      "translation_ar": "غياب إشارة حساس الغطاء النشط يمين الوسط",
+      "translation_sv": null,
+      "original_row_index": 30,
+      "original_record_id": "MZD-DTC-B1423-87",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1423:96",
+      "code_family": "B",
+      "definition_en": "Right-center active bonnet sensor internal malfunction",
+      "translation_ar": "خلل داخلي بحساس الغطاء النشط يمين الوسط",
+      "translation_sv": null,
+      "original_row_index": 31,
+      "original_record_id": "MZD-DTC-B1423-96",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1424:11",
+      "code_family": "B",
+      "definition_en": "Left-center active bonnet sensor short to ground",
+      "translation_ar": "تماس حساس الغطاء النشط يسار الوسط بالأرضي",
+      "translation_sv": null,
+      "original_row_index": 32,
+      "original_record_id": "MZD-DTC-B1424-11",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1424:13",
+      "code_family": "B",
+      "definition_en": "Left-center active bonnet sensor open/short to power",
+      "translation_ar": "انقطاع أو قصر بالموجب بحساس الغطاء النشط يسار الوسط",
+      "translation_sv": null,
+      "original_row_index": 33,
+      "original_record_id": "MZD-DTC-B1424-13",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1424:55",
+      "code_family": "B",
+      "definition_en": "Active bonnet control module internal malfunction",
+      "translation_ar": "خلل داخلي بوحدة الغطاء النشط",
+      "translation_sv": null,
+      "original_row_index": 34,
+      "original_record_id": "MZD-DTC-B1424-55",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1424:87",
+      "code_family": "B",
+      "definition_en": "Left-center active bonnet sensor signal not received",
+      "translation_ar": "غياب إشارة حساس الغطاء النشط يسار الوسط",
+      "translation_sv": null,
+      "original_row_index": 35,
+      "original_record_id": "MZD-DTC-B1424-87",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1424:96",
+      "code_family": "B",
+      "definition_en": "Left-center active bonnet sensor internal malfunction",
+      "translation_ar": "خلل داخلي بحساس الغطاء النشط يسار الوسط",
+      "translation_sv": null,
+      "original_row_index": 36,
+      "original_record_id": "MZD-DTC-B1424-96",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1425:11",
+      "code_family": "B",
+      "definition_en": "Left active bonnet sensor short to ground",
+      "translation_ar": "تماس حساس الغطاء النشط الأيسر بالأرضي",
+      "translation_sv": null,
+      "original_row_index": 37,
+      "original_record_id": "MZD-DTC-B1425-11",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1425:13",
+      "code_family": "B",
+      "definition_en": "Left active bonnet sensor open/short to power",
+      "translation_ar": "انقطاع أو قصر بالموجب بحساس الغطاء النشط الأيسر",
+      "translation_sv": null,
+      "original_row_index": 38,
+      "original_record_id": "MZD-DTC-B1425-13",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1425:55",
+      "code_family": "B",
+      "definition_en": "Active bonnet control module internal malfunction",
+      "translation_ar": "خلل داخلي بوحدة الغطاء النشط",
+      "translation_sv": null,
+      "original_row_index": 39,
+      "original_record_id": "MZD-DTC-B1425-55",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1425:87",
+      "code_family": "B",
+      "definition_en": "Left active bonnet sensor signal not received",
+      "translation_ar": "غياب إشارة حساس الغطاء النشط الأيسر",
+      "translation_sv": null,
+      "original_row_index": 40,
+      "original_record_id": "MZD-DTC-B1425-87",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "B1425:96",
+      "code_family": "B",
+      "definition_en": "Left active bonnet sensor internal malfunction",
+      "translation_ar": "خلل داخلي بحساس الغطاء النشط الأيسر",
+      "translation_sv": null,
+      "original_row_index": 41,
+      "original_record_id": "MZD-DTC-B1425-96",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0021:4B",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 42,
+      "original_record_id": "MZD-DTC-C0021-4B",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0021:52",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 43,
+      "original_record_id": "MZD-DTC-C0021-52",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0022:49",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 44,
+      "original_record_id": "MZD-DTC-C0022-49",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0022:56",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 45,
+      "original_record_id": "MZD-DTC-C0022-56",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0023:62",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 46,
+      "original_record_id": "MZD-DTC-C0023-62",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0030:00",
+      "code_family": "C",
+      "definition_en": "ABS wheel-speed sensor, left front",
+      "translation_ar": "حساس سرعة العجلة الأمامية اليسرى",
+      "translation_sv": null,
+      "original_row_index": 47,
+      "original_record_id": "MZD-DTC-C0030-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0030:07",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 48,
+      "original_record_id": "MZD-DTC-C0030-07",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0031:00",
+      "code_family": "C",
+      "definition_en": "ABS wheel-speed sensor/rotor, left front",
+      "translation_ar": "حساس سرعة العجلة الأمامية اليسرى أو حلقة الإشارة",
+      "translation_sv": null,
+      "original_row_index": 49,
+      "original_record_id": "MZD-DTC-C0031-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0031:07",
+      "code_family": "C",
+      "definition_en": "Left front ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الأمامية اليسرى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 50,
+      "original_record_id": "MZD-DTC-C0031-07",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0031:15",
+      "code_family": "C",
+      "definition_en": "Left front ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الأمامية اليسرى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 51,
+      "original_record_id": "MZD-DTC-C0031-15",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0031:19",
+      "code_family": "C",
+      "definition_en": "Left front ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الأمامية اليسرى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 52,
+      "original_record_id": "MZD-DTC-C0031-19",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0031:29",
+      "code_family": "C",
+      "definition_en": "Left front ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الأمامية اليسرى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 53,
+      "original_record_id": "MZD-DTC-C0031-29",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0031:2F",
+      "code_family": "C",
+      "definition_en": "Left front ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الأمامية اليسرى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 54,
+      "original_record_id": "MZD-DTC-C0031-2F",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0031:37",
+      "code_family": "C",
+      "definition_en": "Left front ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الأمامية اليسرى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 55,
+      "original_record_id": "MZD-DTC-C0031-37",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0031:64",
+      "code_family": "C",
+      "definition_en": "Left front ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الأمامية اليسرى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 56,
+      "original_record_id": "MZD-DTC-C0031-64",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0033:00",
+      "code_family": "C",
+      "definition_en": "ABS wheel-speed sensor, right front",
+      "translation_ar": "حساس سرعة العجلة الأمامية اليمنى",
+      "translation_sv": null,
+      "original_row_index": 57,
+      "original_record_id": "MZD-DTC-C0033-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0033:07",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 58,
+      "original_record_id": "MZD-DTC-C0033-07",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0034:00",
+      "code_family": "C",
+      "definition_en": "ABS wheel-speed sensor/rotor, right front",
+      "translation_ar": "حساس سرعة العجلة الأمامية اليمنى أو حلقة الإشارة",
+      "translation_sv": null,
+      "original_row_index": 59,
+      "original_record_id": "MZD-DTC-C0034-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0034:07",
+      "code_family": "C",
+      "definition_en": "Right front ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الأمامية اليمنى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 60,
+      "original_record_id": "MZD-DTC-C0034-07",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0034:15",
+      "code_family": "C",
+      "definition_en": "Right front ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الأمامية اليمنى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 61,
+      "original_record_id": "MZD-DTC-C0034-15",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0034:19",
+      "code_family": "C",
+      "definition_en": "Right front ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الأمامية اليمنى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 62,
+      "original_record_id": "MZD-DTC-C0034-19",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0034:29",
+      "code_family": "C",
+      "definition_en": "Right front ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الأمامية اليمنى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 63,
+      "original_record_id": "MZD-DTC-C0034-29",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0034:2F",
+      "code_family": "C",
+      "definition_en": "Right front ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الأمامية اليمنى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 64,
+      "original_record_id": "MZD-DTC-C0034-2F",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0034:37",
+      "code_family": "C",
+      "definition_en": "Right front ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الأمامية اليمنى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 65,
+      "original_record_id": "MZD-DTC-C0034-37",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0034:64",
+      "code_family": "C",
+      "definition_en": "Right front ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الأمامية اليمنى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 66,
+      "original_record_id": "MZD-DTC-C0034-64",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0036:00",
+      "code_family": "C",
+      "definition_en": "ABS wheel-speed sensor, left rear",
+      "translation_ar": "حساس سرعة العجلة الخلفية اليسرى",
+      "translation_sv": null,
+      "original_row_index": 67,
+      "original_record_id": "MZD-DTC-C0036-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0036:07",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 68,
+      "original_record_id": "MZD-DTC-C0036-07",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0037:00",
+      "code_family": "C",
+      "definition_en": "ABS wheel-speed sensor/rotor, left rear",
+      "translation_ar": "حساس سرعة العجلة الخلفية اليسرى أو حلقة الإشارة",
+      "translation_sv": null,
+      "original_row_index": 69,
+      "original_record_id": "MZD-DTC-C0037-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0037:07",
+      "code_family": "C",
+      "definition_en": "Left rear ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الخلفية اليسرى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 70,
+      "original_record_id": "MZD-DTC-C0037-07",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0037:15",
+      "code_family": "C",
+      "definition_en": "Left rear ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الخلفية اليسرى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 71,
+      "original_record_id": "MZD-DTC-C0037-15",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0037:19",
+      "code_family": "C",
+      "definition_en": "Left rear ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الخلفية اليسرى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 72,
+      "original_record_id": "MZD-DTC-C0037-19",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0037:29",
+      "code_family": "C",
+      "definition_en": "Left rear ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الخلفية اليسرى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 73,
+      "original_record_id": "MZD-DTC-C0037-29",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0037:2F",
+      "code_family": "C",
+      "definition_en": "Left rear ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الخلفية اليسرى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 74,
+      "original_record_id": "MZD-DTC-C0037-2F",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0037:37",
+      "code_family": "C",
+      "definition_en": "Left rear ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الخلفية اليسرى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 75,
+      "original_record_id": "MZD-DTC-C0037-37",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0037:64",
+      "code_family": "C",
+      "definition_en": "Left rear ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الخلفية اليسرى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 76,
+      "original_record_id": "MZD-DTC-C0037-64",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0039:00",
+      "code_family": "C",
+      "definition_en": "ABS wheel-speed sensor, right rear",
+      "translation_ar": "حساس سرعة العجلة الخلفية اليمنى",
+      "translation_sv": null,
+      "original_row_index": 77,
+      "original_record_id": "MZD-DTC-C0039-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0039:07",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 78,
+      "original_record_id": "MZD-DTC-C0039-07",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C003A:00",
+      "code_family": "C",
+      "definition_en": "ABS wheel-speed sensor/rotor, right rear",
+      "translation_ar": "حساس سرعة العجلة الخلفية اليمنى أو حلقة الإشارة",
+      "translation_sv": null,
+      "original_row_index": 79,
+      "original_record_id": "MZD-DTC-C003A-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C003A:07",
+      "code_family": "C",
+      "definition_en": "Right rear ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الخلفية اليمنى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 80,
+      "original_record_id": "MZD-DTC-C003A-07",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C003A:15",
+      "code_family": "C",
+      "definition_en": "Right rear ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الخلفية اليمنى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 81,
+      "original_record_id": "MZD-DTC-C003A-15",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C003A:19",
+      "code_family": "C",
+      "definition_en": "Right rear ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الخلفية اليمنى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 82,
+      "original_record_id": "MZD-DTC-C003A-19",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C003A:29",
+      "code_family": "C",
+      "definition_en": "Right rear ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الخلفية اليمنى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 83,
+      "original_record_id": "MZD-DTC-C003A-29",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C003A:2F",
+      "code_family": "C",
+      "definition_en": "Right rear ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الخلفية اليمنى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 84,
+      "original_record_id": "MZD-DTC-C003A-2F",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C003A:37",
+      "code_family": "C",
+      "definition_en": "Right rear ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الخلفية اليمنى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 85,
+      "original_record_id": "MZD-DTC-C003A-37",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C003A:64",
+      "code_family": "C",
+      "definition_en": "Right rear ABS wheel-speed sensor/rotor — subtype needs OEM definition",
+      "translation_ar": "حساس/حلقة سرعة العجلة الخلفية اليمنى؛ معنى الرمز الفرعي غير مؤكد",
+      "translation_sv": null,
+      "original_row_index": 86,
+      "original_record_id": "MZD-DTC-C003A-64",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0040:64",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 87,
+      "original_record_id": "MZD-DTC-C0040-64",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0044:1C",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 88,
+      "original_record_id": "MZD-DTC-C0044-1C",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0044:28",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 89,
+      "original_record_id": "MZD-DTC-C0044-28",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0044:49",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 90,
+      "original_record_id": "MZD-DTC-C0044-49",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0044:54",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 91,
+      "original_record_id": "MZD-DTC-C0044-54",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0044:56",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 92,
+      "original_record_id": "MZD-DTC-C0044-56",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0044:64",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 93,
+      "original_record_id": "MZD-DTC-C0044-64",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0044:84",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 94,
+      "original_record_id": "MZD-DTC-C0044-84",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0044:85",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 95,
+      "original_record_id": "MZD-DTC-C0044-85",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0045:28",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 96,
+      "original_record_id": "MZD-DTC-C0045-28",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0045:49",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 97,
+      "original_record_id": "MZD-DTC-C0045-49",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0045:56",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 98,
+      "original_record_id": "MZD-DTC-C0045-56",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0045:64",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 99,
+      "original_record_id": "MZD-DTC-C0045-64",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0045:84",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 100,
+      "original_record_id": "MZD-DTC-C0045-84",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0045:85",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 101,
+      "original_record_id": "MZD-DTC-C0045-85",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0048:28",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 102,
+      "original_record_id": "MZD-DTC-C0048-28",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0048:62",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 103,
+      "original_record_id": "MZD-DTC-C0048-62",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0049:00",
+      "code_family": "C",
+      "definition_en": "Brake linear actuator / brake fluid air or leakage",
+      "translation_ar": "مشغل الفرامل الخطي أو هواء أو تسرب بالسائل",
+      "translation_sv": null,
+      "original_row_index": 104,
+      "original_record_id": "MZD-DTC-C0049-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C0049:21",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 105,
+      "original_record_id": "MZD-DTC-C0049-21",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0049:22",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 106,
+      "original_record_id": "MZD-DTC-C0049-22",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0049:4B",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 107,
+      "original_record_id": "MZD-DTC-C0049-4B",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0049:74",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 108,
+      "original_record_id": "MZD-DTC-C0049-74",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0049:7A",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 109,
+      "original_record_id": "MZD-DTC-C0049-7A",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0049:7B",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 110,
+      "original_record_id": "MZD-DTC-C0049-7B",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0049:7C",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 111,
+      "original_record_id": "MZD-DTC-C0049-7C",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0051:25",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 112,
+      "original_record_id": "MZD-DTC-C0051-25",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0051:62",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 113,
+      "original_record_id": "MZD-DTC-C0051-62",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0051:64",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 114,
+      "original_record_id": "MZD-DTC-C0051-64",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0051:67",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 115,
+      "original_record_id": "MZD-DTC-C0051-67",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0051:84",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 116,
+      "original_record_id": "MZD-DTC-C0051-84",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0051:85",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 117,
+      "original_record_id": "MZD-DTC-C0051-85",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0051:86",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 118,
+      "original_record_id": "MZD-DTC-C0051-86",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0061:28",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 119,
+      "original_record_id": "MZD-DTC-C0061-28",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0061:54",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 120,
+      "original_record_id": "MZD-DTC-C0061-54",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0061:64",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 121,
+      "original_record_id": "MZD-DTC-C0061-64",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0062:28",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 122,
+      "original_record_id": "MZD-DTC-C0062-28",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0062:54",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 123,
+      "original_record_id": "MZD-DTC-C0062-54",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0062:64",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 124,
+      "original_record_id": "MZD-DTC-C0062-64",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0062:76",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 125,
+      "original_record_id": "MZD-DTC-C0062-76",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0063:28",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 126,
+      "original_record_id": "MZD-DTC-C0063-28",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0063:64",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 127,
+      "original_record_id": "MZD-DTC-C0063-64",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C006B:00",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 128,
+      "original_record_id": "MZD-DTC-C006B-00",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0089:64",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 129,
+      "original_record_id": "MZD-DTC-C0089-64",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0505:94",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 130,
+      "original_record_id": "MZD-DTC-C0505-94",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C050B:94",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 131,
+      "original_record_id": "MZD-DTC-C050B-94",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0511:94",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 132,
+      "original_record_id": "MZD-DTC-C0511-94",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0517:94",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 133,
+      "original_record_id": "MZD-DTC-C0517-94",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0518:95",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 134,
+      "original_record_id": "MZD-DTC-C0518-95",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C0519:95",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 135,
+      "original_record_id": "MZD-DTC-C0519-95",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C051A:95",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 136,
+      "original_record_id": "MZD-DTC-C051A-95",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C051B:95",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 137,
+      "original_record_id": "MZD-DTC-C051B-95",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C053B:49",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 138,
+      "original_record_id": "MZD-DTC-C053B-49",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C055D:7A",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 139,
+      "original_record_id": "MZD-DTC-C055D-7A",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C055E:7A",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 140,
+      "original_record_id": "MZD-DTC-C055E-7A",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C055F:7C",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 141,
+      "original_record_id": "MZD-DTC-C055F-7C",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C05AB:00",
+      "code_family": "C",
+      "definition_en": "Electronically controlled brake unit internal fault or hydraulic issue",
+      "translation_ar": "خلل داخلي محتمل بوحدة الفرامل الإلكترونية أو دائرة هيدروليكية",
+      "translation_sv": null,
+      "original_row_index": 142,
+      "original_record_id": "MZD-DTC-C05AB-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C1034:48",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 143,
+      "original_record_id": "MZD-DTC-C1034-48",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C1034:67",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 144,
+      "original_record_id": "MZD-DTC-C1034-67",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C1034:68",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 145,
+      "original_record_id": "MZD-DTC-C1034-68",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C103D:64",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 146,
+      "original_record_id": "MZD-DTC-C103D-64",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C103D:84",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 147,
+      "original_record_id": "MZD-DTC-C103D-84",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C103D:85",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 148,
+      "original_record_id": "MZD-DTC-C103D-85",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C103E:64",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 149,
+      "original_record_id": "MZD-DTC-C103E-64",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C103E:84",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 150,
+      "original_record_id": "MZD-DTC-C103E-84",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C103E:85",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 151,
+      "original_record_id": "MZD-DTC-C103E-85",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C103F:00",
+      "code_family": "C",
+      "definition_en": "Brake linear actuator position sensor or initialization not performed",
+      "translation_ar": "حساس موضع مشغل الفرامل أو تهيئة غير منفذة",
+      "translation_sv": null,
+      "original_row_index": 152,
+      "original_record_id": "MZD-DTC-C103F-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C103F:49",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 153,
+      "original_record_id": "MZD-DTC-C103F-49",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C103F:54",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 154,
+      "original_record_id": "MZD-DTC-C103F-54",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C103F:86",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 155,
+      "original_record_id": "MZD-DTC-C103F-86",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C1040:72",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 156,
+      "original_record_id": "MZD-DTC-C1040-72",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C1040:73",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 157,
+      "original_record_id": "MZD-DTC-C1040-73",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C1041:72",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 158,
+      "original_record_id": "MZD-DTC-C1041-72",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C1041:73",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 159,
+      "original_record_id": "MZD-DTC-C1041-73",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C1043:41",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 160,
+      "original_record_id": "MZD-DTC-C1043-41",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C1043:45",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 161,
+      "original_record_id": "MZD-DTC-C1043-45",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C1044:46",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 162,
+      "original_record_id": "MZD-DTC-C1044-46",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C1045:00",
+      "code_family": "C",
+      "definition_en": "TCS/DSC control system or ECU power/configuration fault",
+      "translation_ar": "خلل تحكم الثبات أو تغذية/تهيئة وحدته",
+      "translation_sv": null,
+      "original_row_index": 163,
+      "original_record_id": "MZD-DTC-C1045-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "C1045:48",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 164,
+      "original_record_id": "MZD-DTC-C1045-48",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C1045:49",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 165,
+      "original_record_id": "MZD-DTC-C1045-49",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C1046:49",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 166,
+      "original_record_id": "MZD-DTC-C1046-49",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C1047:49",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 167,
+      "original_record_id": "MZD-DTC-C1047-49",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C1047:64",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 168,
+      "original_record_id": "MZD-DTC-C1047-64",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C1048:47",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 169,
+      "original_record_id": "MZD-DTC-C1048-47",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C1048:49",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 170,
+      "original_record_id": "MZD-DTC-C1048-49",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C1128:01",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 171,
+      "original_record_id": "MZD-DTC-C1128-01",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C1128:0A",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 172,
+      "original_record_id": "MZD-DTC-C1128-0A",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C1128:2A",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 173,
+      "original_record_id": "MZD-DTC-C1128-2A",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C1128:4A",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 174,
+      "original_record_id": "MZD-DTC-C1128-4A",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C1128:66",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 175,
+      "original_record_id": "MZD-DTC-C1128-66",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C112A:77",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 176,
+      "original_record_id": "MZD-DTC-C112A-77",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C1139:64",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 177,
+      "original_record_id": "MZD-DTC-C1139-64",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C2005:01",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 178,
+      "original_record_id": "MZD-DTC-C2005-01",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C2005:07",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 179,
+      "original_record_id": "MZD-DTC-C2005-07",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "C2005:0A",
+      "code_family": "C",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 180,
+      "original_record_id": "MZD-DTC-C2005-0A",
+      "ecu_context": [
+        "Electronically Controlled Brake Unit (ABS/DSC)"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P000F:00",
+      "code_family": "P",
+      "definition_en": "High fuel pressure malfunction in fuel pressure control system",
+      "translation_ar": "خلل ضغط الوقود المرتفع في نظام التحكم بالضغط",
+      "translation_sv": null,
+      "original_row_index": 181,
+      "original_record_id": "MZD-DTC-P000F-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0010:00",
+      "code_family": "P",
+      "definition_en": "Intake electric variable valve timing control circuit range/performance",
+      "translation_ar": "نطاق/أداء دائرة توقيت الصمامات المتغير كهربائياً بالسحب",
+      "translation_sv": null,
+      "original_row_index": 182,
+      "original_record_id": "MZD-DTC-P0010-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0011:00",
+      "code_family": "P",
+      "definition_en": "Intake electric variable valve timing over-advanced",
+      "translation_ar": "توقيت صمامات السحب متقدم أكثر من المطلوب",
+      "translation_sv": null,
+      "original_row_index": 183,
+      "original_record_id": "MZD-DTC-P0011-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0012:00",
+      "code_family": "P",
+      "definition_en": "Intake electric variable valve timing over-retarded",
+      "translation_ar": "توقيت صمامات السحب متأخر أكثر من المطلوب",
+      "translation_sv": null,
+      "original_row_index": 184,
+      "original_record_id": "MZD-DTC-P0012-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0013:00",
+      "code_family": "P",
+      "definition_en": "Exhaust electric variable valve timing control circuit range/performance",
+      "translation_ar": "نطاق/أداء دائرة توقيت صمامات العادم المتغير كهربائياً",
+      "translation_sv": null,
+      "original_row_index": 185,
+      "original_record_id": "MZD-DTC-P0013-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0014:00",
+      "code_family": "P",
+      "definition_en": "Exhaust electric variable valve timing over-advanced",
+      "translation_ar": "توقيت صمامات العادم متقدم أكثر من المطلوب",
+      "translation_sv": null,
+      "original_row_index": 186,
+      "original_record_id": "MZD-DTC-P0014-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0015:00",
+      "code_family": "P",
+      "definition_en": "Exhaust electric variable valve timing over-retarded",
+      "translation_ar": "توقيت صمامات العادم متأخر أكثر من المطلوب",
+      "translation_sv": null,
+      "original_row_index": 187,
+      "original_record_id": "MZD-DTC-P0015-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0031:00",
+      "code_family": "P",
+      "definition_en": "A/F sensor heater control circuit low input",
+      "translation_ar": "إشارة منخفضة بدائرة تسخين حساس نسبة الهواء/الوقود",
+      "translation_sv": null,
+      "original_row_index": 188,
+      "original_record_id": "MZD-DTC-P0031-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0032:00",
+      "code_family": "P",
+      "definition_en": "A/F sensor heater control circuit high input",
+      "translation_ar": "إشارة مرتفعة بدائرة تسخين حساس نسبة الهواء/الوقود",
+      "translation_sv": null,
+      "original_row_index": 189,
+      "original_record_id": "MZD-DTC-P0032-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0033:00",
+      "code_family": "P",
+      "definition_en": "Air bypass valve control circuit open",
+      "translation_ar": "انقطاع دائرة التحكم بصمام تجاوز الهواء",
+      "translation_sv": null,
+      "original_row_index": 190,
+      "original_record_id": "MZD-DTC-P0033-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0118:00",
+      "code_family": "P",
+      "definition_en": "Engine coolant temperature sensor 1 circuit high input",
+      "translation_ar": "إشارة مرتفعة بحساس حرارة سائل التبريد رقم 1",
+      "translation_sv": null,
+      "original_row_index": 191,
+      "original_record_id": "MZD-DTC-P0118-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0122:00",
+      "code_family": "P",
+      "definition_en": "Throttle position sensor 1 circuit low input",
+      "translation_ar": "إشارة منخفضة بحساس موضع الخانق رقم 1",
+      "translation_sv": null,
+      "original_row_index": 192,
+      "original_record_id": "MZD-DTC-P0122-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0123:00",
+      "code_family": "P",
+      "definition_en": "Throttle position sensor 1 circuit high input",
+      "translation_ar": "إشارة مرتفعة بحساس موضع الخانق رقم 1",
+      "translation_sv": null,
+      "original_row_index": 193,
+      "original_record_id": "MZD-DTC-P0123-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0126:00",
+      "code_family": "P",
+      "definition_en": "Thermostat stuck open",
+      "translation_ar": "الثرموستات عالق في وضع الفتح",
+      "translation_sv": null,
+      "original_row_index": 194,
+      "original_record_id": "MZD-DTC-P0126-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "definition_confirmed_by_manufacturer_tsb_for_specified_ecu"
+    },
+    {
+      "raw_code": "P012B:00",
+      "code_family": "P",
+      "definition_en": "MAP sensor circuit range/performance",
+      "translation_ar": "خلل نطاق/أداء دائرة حساس ضغط مجمع السحب",
+      "translation_sv": null,
+      "original_row_index": 195,
+      "original_record_id": "MZD-DTC-P012B-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P012C:00",
+      "code_family": "P",
+      "definition_en": "MAP sensor circuit low input",
+      "translation_ar": "إشارة منخفضة في دائرة حساس ضغط مجمع السحب",
+      "translation_sv": null,
+      "original_row_index": 196,
+      "original_record_id": "MZD-DTC-P012C-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P012D:00",
+      "code_family": "P",
+      "definition_en": "MAP sensor circuit high input",
+      "translation_ar": "إشارة مرتفعة في دائرة حساس ضغط مجمع السحب",
+      "translation_sv": null,
+      "original_row_index": 197,
+      "original_record_id": "MZD-DTC-P012D-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0130:00",
+      "code_family": "P",
+      "definition_en": "A/F sensor voltage circuit problem",
+      "translation_ar": "خلل جهد دائرة حساس نسبة الهواء/الوقود",
+      "translation_sv": null,
+      "original_row_index": 198,
+      "original_record_id": "MZD-DTC-P0130-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0131:00",
+      "code_family": "P",
+      "definition_en": "A/F sensor circuit low input",
+      "translation_ar": "إشارة منخفضة بدائرة حساس نسبة الهواء/الوقود",
+      "translation_sv": null,
+      "original_row_index": 199,
+      "original_record_id": "MZD-DTC-P0131-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0132:00",
+      "code_family": "P",
+      "definition_en": "A/F sensor circuit high input",
+      "translation_ar": "إشارة مرتفعة بدائرة حساس نسبة الهواء/الوقود",
+      "translation_sv": null,
+      "original_row_index": 200,
+      "original_record_id": "MZD-DTC-P0132-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0133:00",
+      "code_family": "P",
+      "definition_en": "A/F sensor circuit slow response",
+      "translation_ar": "استجابة بطيئة لحساس نسبة الهواء/الوقود",
+      "translation_sv": null,
+      "original_row_index": 201,
+      "original_record_id": "MZD-DTC-P0133-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0134:00",
+      "code_family": "P",
+      "definition_en": "A/F sensor circuit no activity",
+      "translation_ar": "غياب نشاط دائرة حساس نسبة الهواء/الوقود",
+      "translation_sv": null,
+      "original_row_index": 202,
+      "original_record_id": "MZD-DTC-P0134-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0137:00",
+      "code_family": "P",
+      "definition_en": "Heated oxygen sensor circuit low input",
+      "translation_ar": "إشارة منخفضة في دائرة حساس الأكسجين المسخن",
+      "translation_sv": null,
+      "original_row_index": 203,
+      "original_record_id": "MZD-DTC-P0137-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0138:00",
+      "code_family": "P",
+      "definition_en": "Heated oxygen sensor circuit high input",
+      "translation_ar": "إشارة مرتفعة في دائرة حساس الأكسجين المسخن",
+      "translation_sv": null,
+      "original_row_index": 204,
+      "original_record_id": "MZD-DTC-P0138-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P013A:00",
+      "code_family": "P",
+      "definition_en": "Oxygen sensor slow response rich-to-lean",
+      "translation_ar": "بطء استجابة حساس الأكسجين من غني إلى فقير",
+      "translation_sv": null,
+      "original_row_index": 205,
+      "original_record_id": "MZD-DTC-P013A-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0140:00",
+      "code_family": "P",
+      "definition_en": "Heated oxygen sensor circuit no activity",
+      "translation_ar": "لا توجد فعالية لدائرة حساس الأكسجين المسخن",
+      "translation_sv": null,
+      "original_row_index": 206,
+      "original_record_id": "MZD-DTC-P0140-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0145:00",
+      "code_family": "P",
+      "definition_en": "NOx sensor slow response rich-to-lean",
+      "translation_ar": "بطء استجابة حساس أكاسيد النيتروجين من غني إلى فقير",
+      "translation_sv": null,
+      "original_row_index": 207,
+      "original_record_id": "MZD-DTC-P0145-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0171:00",
+      "code_family": "P",
+      "definition_en": "Fuel trim system too lean",
+      "translation_ar": "خليط الوقود/الهواء فقير أكثر من المطلوب",
+      "translation_sv": null,
+      "original_row_index": 208,
+      "original_record_id": "MZD-DTC-P0171-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0172:00",
+      "code_family": "P",
+      "definition_en": "Fuel trim system too rich",
+      "translation_ar": "خليط الوقود/الهواء غني أكثر من المطلوب",
+      "translation_sv": null,
+      "original_row_index": 209,
+      "original_record_id": "MZD-DTC-P0172-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0182:00",
+      "code_family": "P",
+      "definition_en": "Low fuel temperature sensor circuit low input",
+      "translation_ar": "إشارة منخفضة بدائرة حساس حرارة الوقود منخفض الضغط",
+      "translation_sv": null,
+      "original_row_index": 210,
+      "original_record_id": "MZD-DTC-P0182-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0183:00",
+      "code_family": "P",
+      "definition_en": "Low fuel temperature sensor circuit high input",
+      "translation_ar": "إشارة مرتفعة بدائرة حساس حرارة الوقود منخفض الضغط",
+      "translation_sv": null,
+      "original_row_index": 211,
+      "original_record_id": "MZD-DTC-P0183-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0186:00",
+      "code_family": "P",
+      "definition_en": "High fuel temperature sensor correlation fault",
+      "translation_ar": "عدم تطابق قراءات حساس حرارة الوقود عالي الضغط",
+      "translation_sv": null,
+      "original_row_index": 212,
+      "original_record_id": "MZD-DTC-P0186-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0187:00",
+      "code_family": "P",
+      "definition_en": "High fuel temperature sensor circuit low input",
+      "translation_ar": "إشارة منخفضة بدائرة حساس حرارة الوقود عالي الضغط",
+      "translation_sv": null,
+      "original_row_index": 213,
+      "original_record_id": "MZD-DTC-P0187-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0300",
+      "code_family": "P",
+      "definition_en": "Random/Multiple Cylinder Misfire Detected",
+      "translation_ar": "اختلال احتراق عشوائي أو متعدد الأسطوانات",
+      "translation_sv": null,
+      "original_row_index": 214,
+      "original_record_id": "MZD-DTC-P0300",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0301:00",
+      "code_family": "P",
+      "definition_en": "Cylinder 1 Misfire Detected",
+      "translation_ar": "تم رصد اختلال احتراق في الأسطوانة 1",
+      "translation_sv": null,
+      "original_row_index": 215,
+      "original_record_id": "MZD-DTC-P0301-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "definition_confirmed_by_manufacturer_tsb_for_specified_ecu"
+    },
+    {
+      "raw_code": "P0302:00",
+      "code_family": "P",
+      "definition_en": "Cylinder 2 Misfire Detected",
+      "translation_ar": "تم رصد اختلال احتراق في الأسطوانة 2",
+      "translation_sv": null,
+      "original_row_index": 216,
+      "original_record_id": "MZD-DTC-P0302-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "definition_confirmed_by_manufacturer_tsb_for_specified_ecu"
+    },
+    {
+      "raw_code": "P0303:00",
+      "code_family": "P",
+      "definition_en": "Cylinder 3 Misfire Detected",
+      "translation_ar": "تم رصد اختلال احتراق في الأسطوانة 3",
+      "translation_sv": null,
+      "original_row_index": 217,
+      "original_record_id": "MZD-DTC-P0303-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "definition_confirmed_by_manufacturer_tsb_for_specified_ecu"
+    },
+    {
+      "raw_code": "P0304:00",
+      "code_family": "P",
+      "definition_en": "Cylinder 4 Misfire Detected",
+      "translation_ar": "تم رصد اختلال احتراق في الأسطوانة 4",
+      "translation_sv": null,
+      "original_row_index": 218,
+      "original_record_id": "MZD-DTC-P0304-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "definition_confirmed_by_manufacturer_tsb_for_specified_ecu"
+    },
+    {
+      "raw_code": "P0397:00",
+      "code_family": "P",
+      "definition_en": "Cylinder 1 pressure sensor circuit low input",
+      "translation_ar": "إشارة منخفضة في دائرة حساس ضغط الأسطوانة رقم 1",
+      "translation_sv": null,
+      "original_row_index": 219,
+      "original_record_id": "MZD-DTC-P0397-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0398:00",
+      "code_family": "P",
+      "definition_en": "Cylinder 1 pressure sensor circuit high input",
+      "translation_ar": "إشارة مرتفعة في دائرة حساس ضغط الأسطوانة رقم 1",
+      "translation_sv": null,
+      "original_row_index": 220,
+      "original_record_id": "MZD-DTC-P0398-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P039E:00",
+      "code_family": "P",
+      "definition_en": "Cylinder 1 pressure sensor abnormal combustion",
+      "translation_ar": "احتراق غير طبيعي مرصود بحساس ضغط الأسطوانة رقم 1",
+      "translation_sv": null,
+      "original_row_index": 221,
+      "original_record_id": "MZD-DTC-P039E-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P03A1:00",
+      "code_family": "P",
+      "definition_en": "Cylinder 2 pressure sensor circuit low input",
+      "translation_ar": "إشارة منخفضة بحساس ضغط الأسطوانة رقم 2",
+      "translation_sv": null,
+      "original_row_index": 222,
+      "original_record_id": "MZD-DTC-P03A1-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P03A2:00",
+      "code_family": "P",
+      "definition_en": "Cylinder 2 pressure sensor circuit high input",
+      "translation_ar": "إشارة مرتفعة بحساس ضغط الأسطوانة رقم 2",
+      "translation_sv": null,
+      "original_row_index": 223,
+      "original_record_id": "MZD-DTC-P03A2-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P03A8:00",
+      "code_family": "P",
+      "definition_en": "Cylinder 2 pressure sensor abnormal combustion",
+      "translation_ar": "احتراق غير طبيعي مرصود بحساس ضغط الأسطوانة رقم 2",
+      "translation_sv": null,
+      "original_row_index": 224,
+      "original_record_id": "MZD-DTC-P03A8-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P03AB:00",
+      "code_family": "P",
+      "definition_en": "Cylinder 3 pressure sensor circuit low input",
+      "translation_ar": "إشارة منخفضة بحساس ضغط الأسطوانة رقم 3",
+      "translation_sv": null,
+      "original_row_index": 225,
+      "original_record_id": "MZD-DTC-P03AB-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P03AC:00",
+      "code_family": "P",
+      "definition_en": "Cylinder 3 pressure sensor circuit high input",
+      "translation_ar": "إشارة مرتفعة بحساس ضغط الأسطوانة رقم 3",
+      "translation_sv": null,
+      "original_row_index": 226,
+      "original_record_id": "MZD-DTC-P03AC-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P03B2:00",
+      "code_family": "P",
+      "definition_en": "Cylinder 3 pressure sensor abnormal combustion",
+      "translation_ar": "احتراق غير طبيعي مرصود بحساس ضغط الأسطوانة رقم 3",
+      "translation_sv": null,
+      "original_row_index": 227,
+      "original_record_id": "MZD-DTC-P03B2-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P03B5:00",
+      "code_family": "P",
+      "definition_en": "Cylinder 4 pressure sensor circuit low input",
+      "translation_ar": "إشارة منخفضة بحساس ضغط الأسطوانة رقم 4",
+      "translation_sv": null,
+      "original_row_index": 228,
+      "original_record_id": "MZD-DTC-P03B5-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P03B6:00",
+      "code_family": "P",
+      "definition_en": "Cylinder 4 pressure sensor circuit high input",
+      "translation_ar": "إشارة مرتفعة بحساس ضغط الأسطوانة رقم 4",
+      "translation_sv": null,
+      "original_row_index": 229,
+      "original_record_id": "MZD-DTC-P03B6-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P03BC:00",
+      "code_family": "P",
+      "definition_en": "Cylinder 4 pressure sensor abnormal combustion",
+      "translation_ar": "احتراق غير طبيعي مرصود بحساس ضغط الأسطوانة رقم 4",
+      "translation_sv": null,
+      "original_row_index": 230,
+      "original_record_id": "MZD-DTC-P03BC-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0401:00",
+      "code_family": "P",
+      "definition_en": "EGR insufficient flow",
+      "translation_ar": "تدفق غير كافٍ من نظام إعادة تدوير غازات العادم",
+      "translation_sv": null,
+      "original_row_index": 231,
+      "original_record_id": "MZD-DTC-P0401-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0402:00",
+      "code_family": "P",
+      "definition_en": "EGR excessive flow",
+      "translation_ar": "تدفق زائد من نظام إعادة تدوير غازات العادم",
+      "translation_sv": null,
+      "original_row_index": 232,
+      "original_record_id": "MZD-DTC-P0402-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0403:00",
+      "code_family": "P",
+      "definition_en": "EGR valve control circuit problem",
+      "translation_ar": "خلل دائرة التحكم بصمام EGR",
+      "translation_sv": null,
+      "original_row_index": 233,
+      "original_record_id": "MZD-DTC-P0403-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0405:00",
+      "code_family": "P",
+      "definition_en": "EGR valve position sensor circuit low input",
+      "translation_ar": "إشارة منخفضة في دائرة موضع صمام EGR",
+      "translation_sv": null,
+      "original_row_index": 234,
+      "original_record_id": "MZD-DTC-P0405-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0406:00",
+      "code_family": "P",
+      "definition_en": "EGR valve position sensor circuit high input",
+      "translation_ar": "إشارة مرتفعة في دائرة موضع صمام EGR",
+      "translation_sv": null,
+      "original_row_index": 235,
+      "original_record_id": "MZD-DTC-P0406-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0407:00",
+      "code_family": "P",
+      "definition_en": "EGR pressure sensor circuit low input",
+      "translation_ar": "إشارة منخفضة في دائرة حساس ضغط EGR",
+      "translation_sv": null,
+      "original_row_index": 236,
+      "original_record_id": "MZD-DTC-P0407-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0408:00",
+      "code_family": "P",
+      "definition_en": "EGR pressure sensor circuit high input",
+      "translation_ar": "إشارة مرتفعة في دائرة حساس ضغط EGR",
+      "translation_sv": null,
+      "original_row_index": 237,
+      "original_record_id": "MZD-DTC-P0408-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0412:00",
+      "code_family": "P",
+      "definition_en": "Fresh-air duct valve actuator circuit open",
+      "translation_ar": "انقطاع دائرة مشغل صمام قناة الهواء النقي",
+      "translation_sv": null,
+      "original_row_index": 238,
+      "original_record_id": "MZD-DTC-P0412-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0421:00",
+      "code_family": "P",
+      "definition_en": "Catalyst system efficiency/performance malfunction",
+      "translation_ar": "خلل أداء نظام المحول الحفاز",
+      "translation_sv": null,
+      "original_row_index": 239,
+      "original_record_id": "MZD-DTC-P0421-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0443:00",
+      "code_family": "P",
+      "definition_en": "Purge solenoid valve control circuit problem",
+      "translation_ar": "خلل دائرة صمام تنفيس أبخرة الوقود",
+      "translation_sv": null,
+      "original_row_index": 240,
+      "original_record_id": "MZD-DTC-P0443-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0555:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 241,
+      "original_record_id": "MZD-DTC-P0555-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P057F:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 242,
+      "original_record_id": "MZD-DTC-P057F-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P058A:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 243,
+      "original_record_id": "MZD-DTC-P058A-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P059F:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 244,
+      "original_record_id": "MZD-DTC-P059F-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P05A0:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 245,
+      "original_record_id": "MZD-DTC-P05A0-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P05A3:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 246,
+      "original_record_id": "MZD-DTC-P05A3-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P05C0:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 247,
+      "original_record_id": "MZD-DTC-P05C0-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P0600:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 248,
+      "original_record_id": "MZD-DTC-P0600-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P0601:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 249,
+      "original_record_id": "MZD-DTC-P0601-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P0604:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 250,
+      "original_record_id": "MZD-DTC-P0604-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P0606:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 251,
+      "original_record_id": "MZD-DTC-P0606-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P0607:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 252,
+      "original_record_id": "MZD-DTC-P0607-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P0615:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 253,
+      "original_record_id": "MZD-DTC-P0615-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P061B:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 254,
+      "original_record_id": "MZD-DTC-P061B-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P061D:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 255,
+      "original_record_id": "MZD-DTC-P061D-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P061F:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 256,
+      "original_record_id": "MZD-DTC-P061F-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P0628:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 257,
+      "original_record_id": "MZD-DTC-P0628-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P0629:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 258,
+      "original_record_id": "MZD-DTC-P0629-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P0638:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 259,
+      "original_record_id": "MZD-DTC-P0638-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P0646:00",
+      "code_family": "P",
+      "definition_en": "A/C compressor clutch circuit low input",
+      "translation_ar": "إشارة منخفضة بدائرة قابض ضاغط المكيف",
+      "translation_sv": null,
+      "original_row_index": 260,
+      "original_record_id": "MZD-DTC-P0646-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0647:00",
+      "code_family": "P",
+      "definition_en": "A/C compressor clutch circuit high input",
+      "translation_ar": "إشارة مرتفعة بدائرة قابض ضاغط المكيف",
+      "translation_sv": null,
+      "original_row_index": 261,
+      "original_record_id": "MZD-DTC-P0647-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P064A:00",
+      "code_family": "P",
+      "definition_en": "Fuel pump control module correlation fault",
+      "translation_ar": "عدم تطابق في عمل وحدة التحكم بمضخة الوقود",
+      "translation_sv": null,
+      "original_row_index": 262,
+      "original_record_id": "MZD-DTC-P064A-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P064D:00",
+      "code_family": "P",
+      "definition_en": "A/F sensor processor performance internal fault",
+      "translation_ar": "خلل داخلي بأداء معالج حساس نسبة الهواء/الوقود",
+      "translation_sv": null,
+      "original_row_index": 263,
+      "original_record_id": "MZD-DTC-P064D-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P0685:00",
+      "code_family": "P",
+      "definition_en": "Main relay control circuit open",
+      "translation_ar": "انقطاع دائرة التحكم بالريليه الرئيسي",
+      "translation_sv": null,
+      "original_row_index": 264,
+      "original_record_id": "MZD-DTC-P0685-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P06A1:00",
+      "code_family": "P",
+      "definition_en": "Compressor valve circuit low input",
+      "translation_ar": "إشارة منخفضة بدائرة صمام الضاغط",
+      "translation_sv": null,
+      "original_row_index": 265,
+      "original_record_id": "MZD-DTC-P06A1-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P06A2:00",
+      "code_family": "P",
+      "definition_en": "Compressor valve circuit high input",
+      "translation_ar": "إشارة مرتفعة بدائرة صمام الضاغط",
+      "translation_sv": null,
+      "original_row_index": 266,
+      "original_record_id": "MZD-DTC-P06A2-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P06B8:00",
+      "code_family": "P",
+      "definition_en": "Internal control module non-volatile RAM error",
+      "translation_ar": "خطأ ذاكرة ثابتة داخل وحدة التحكم",
+      "translation_sv": null,
+      "original_row_index": 267,
+      "original_record_id": "MZD-DTC-P06B8-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P06DB:00",
+      "code_family": "P",
+      "definition_en": "Engine oil solenoid valve control circuit low input",
+      "translation_ar": "إشارة منخفضة في دائرة صمام التحكم بزيت المحرك",
+      "translation_sv": null,
+      "original_row_index": 268,
+      "original_record_id": "MZD-DTC-P06DB-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P06DC:00",
+      "code_family": "P",
+      "definition_en": "Engine oil solenoid valve control circuit high input",
+      "translation_ar": "إشارة مرتفعة في دائرة صمام التحكم بزيت المحرك",
+      "translation_sv": null,
+      "original_row_index": 269,
+      "original_record_id": "MZD-DTC-P06DC-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P06DD:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 270,
+      "original_record_id": "MZD-DTC-P06DD-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P06DE:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 271,
+      "original_record_id": "MZD-DTC-P06DE-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P0703:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 272,
+      "original_record_id": "MZD-DTC-P0703-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P0780:00",
+      "code_family": "P",
+      "definition_en": "Gear shifting malfunction",
+      "translation_ar": "خلل في تبديل نسب ناقل الحركة",
+      "translation_sv": null,
+      "original_row_index": 273,
+      "original_record_id": "MZD-DTC-P0780-00",
+      "ecu_context": [
+        "TCM"
+      ],
+      "verification_status": "definition_confirmed_by_manufacturer_tsb_for_specified_ecu"
+    },
+    {
+      "raw_code": "P07BE:00",
+      "code_family": "P",
+      "definition_en": "Transmission indeterminate failure / failed to neutral",
+      "translation_ar": "فشل غير محدد بناقل الحركة أو فشل الانتقال إلى الحياد",
+      "translation_sv": null,
+      "original_row_index": 274,
+      "original_record_id": "MZD-DTC-P07BE-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0806:00",
+      "code_family": "P",
+      "definition_en": "Clutch stroke sensor circuit problem",
+      "translation_ar": "خلل دائرة حساس مشوار القابض",
+      "translation_sv": null,
+      "original_row_index": 275,
+      "original_record_id": "MZD-DTC-P0806-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0807:00",
+      "code_family": "P",
+      "definition_en": "Clutch stroke sensor circuit low input",
+      "translation_ar": "إشارة منخفضة بدائرة حساس مشوار القابض",
+      "translation_sv": null,
+      "original_row_index": 276,
+      "original_record_id": "MZD-DTC-P0807-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0842:00",
+      "code_family": "P",
+      "definition_en": "Oil pressure switch No. 1 (switch B) stuck on",
+      "translation_ar": "مفتاح ضغط الزيت 1 (المفتاح B) عالق في وضع التشغيل",
+      "translation_sv": null,
+      "original_row_index": 277,
+      "original_record_id": "MZD-DTC-P0842-00",
+      "ecu_context": [
+        "TCM"
+      ],
+      "verification_status": "definition_confirmed_by_manufacturer_tsb_for_specified_ecu"
+    },
+    {
+      "raw_code": "P0847:00",
+      "code_family": "P",
+      "definition_en": "Oil pressure switch No. 2 (switch A) stuck on",
+      "translation_ar": "مفتاح ضغط الزيت 2 (المفتاح A) عالق في وضع التشغيل",
+      "translation_sv": null,
+      "original_row_index": 278,
+      "original_record_id": "MZD-DTC-P0847-00",
+      "ecu_context": [
+        "TCM"
+      ],
+      "verification_status": "definition_confirmed_by_manufacturer_tsb_for_specified_ecu"
+    },
+    {
+      "raw_code": "P0872:00",
+      "code_family": "P",
+      "definition_en": "Oil pressure switch No. 3 (switch A) stuck on",
+      "translation_ar": "مفتاح ضغط الزيت 3 (المفتاح A) عالق في وضع التشغيل",
+      "translation_sv": null,
+      "original_row_index": 279,
+      "original_record_id": "MZD-DTC-P0872-00",
+      "ecu_context": [
+        "TCM"
+      ],
+      "verification_status": "definition_confirmed_by_manufacturer_tsb_for_specified_ecu"
+    },
+    {
+      "raw_code": "P0877:00",
+      "code_family": "P",
+      "definition_en": "Oil pressure switch No. 4 (switch B) stuck on",
+      "translation_ar": "مفتاح ضغط الزيت 4 (المفتاح B) عالق في وضع التشغيل",
+      "translation_sv": null,
+      "original_row_index": 280,
+      "original_record_id": "MZD-DTC-P0877-00",
+      "ecu_context": [
+        "TCM"
+      ],
+      "verification_status": "definition_confirmed_by_manufacturer_tsb_for_specified_ecu"
+    },
+    {
+      "raw_code": "P0A0F:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 281,
+      "original_record_id": "MZD-DTC-P0A0F-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P0A8D:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 282,
+      "original_record_id": "MZD-DTC-P0A8D-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P0A8F:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 283,
+      "original_record_id": "MZD-DTC-P0A8F-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P0A94:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 284,
+      "original_record_id": "MZD-DTC-P0A94-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P111A:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 285,
+      "original_record_id": "MZD-DTC-P111A-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P117A:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 286,
+      "original_record_id": "MZD-DTC-P117A-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P1200:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 287,
+      "original_record_id": "MZD-DTC-P1200-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P1260:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 288,
+      "original_record_id": "MZD-DTC-P1260-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P130C:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 289,
+      "original_record_id": "MZD-DTC-P130C-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P1380:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 290,
+      "original_record_id": "MZD-DTC-P1380-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P144A:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 291,
+      "original_record_id": "MZD-DTC-P144A-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P1450:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 292,
+      "original_record_id": "MZD-DTC-P1450-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P151B:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 293,
+      "original_record_id": "MZD-DTC-P151B-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P2090:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 294,
+      "original_record_id": "MZD-DTC-P2090-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P2091:00",
+      "code_family": "P",
+      "definition_en": null,
+      "translation_ar": null,
+      "translation_sv": null,
+      "original_row_index": 295,
+      "original_record_id": "MZD-DTC-P2091-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_source_limited"
+    },
+    {
+      "raw_code": "P2096:00",
+      "code_family": "P",
+      "definition_en": "Post-catalyst air-fuel correction too lean",
+      "translation_ar": "تصحيح الوقود بعد المحول الحفاز يشير لخليط فقير",
+      "translation_sv": null,
+      "original_row_index": 296,
+      "original_record_id": "MZD-DTC-P2096-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2097:00",
+      "code_family": "P",
+      "definition_en": "Post-catalyst air-fuel correction too rich",
+      "translation_ar": "تصحيح الوقود بعد المحول الحفاز يشير لخليط غني",
+      "translation_sv": null,
+      "original_row_index": 297,
+      "original_record_id": "MZD-DTC-P2097-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P20F8:00",
+      "code_family": "P",
+      "definition_en": "Swirl control circuit range/performance",
+      "translation_ar": "خلل نطاق/أداء دائرة التحكم بتدويم الهواء",
+      "translation_sv": null,
+      "original_row_index": 298,
+      "original_record_id": "MZD-DTC-P20F8-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2101:00",
+      "code_family": "P",
+      "definition_en": "Throttle actuator control motor range/performance",
+      "translation_ar": "خلل نطاق/أداء محرك مشغل الخانق",
+      "translation_sv": null,
+      "original_row_index": 299,
+      "original_record_id": "MZD-DTC-P2101-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2107:00",
+      "code_family": "P",
+      "definition_en": "Throttle actuator control module processor error",
+      "translation_ar": "خطأ معالج وحدة تشغيل الخانق",
+      "translation_sv": null,
+      "original_row_index": 300,
+      "original_record_id": "MZD-DTC-P2107-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2109:00",
+      "code_family": "P",
+      "definition_en": "Throttle position minimum stop range/performance",
+      "translation_ar": "خلل نطاق/أداء الحد الأدنى لتوقف الخانق",
+      "translation_sv": null,
+      "original_row_index": 301,
+      "original_record_id": "MZD-DTC-P2109-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2110:00",
+      "code_family": "P",
+      "definition_en": "Throttle control forced limited RPM",
+      "translation_ar": "تقييد سرعة المحرك إجبارياً بواسطة نظام الخانق",
+      "translation_sv": null,
+      "original_row_index": 302,
+      "original_record_id": "MZD-DTC-P2110-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2112:00",
+      "code_family": "P",
+      "definition_en": "Throttle actuator motor current range/performance",
+      "translation_ar": "خلل أداء تيار محرك الخانق",
+      "translation_sv": null,
+      "original_row_index": 303,
+      "original_record_id": "MZD-DTC-P2112-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2119:00",
+      "code_family": "P",
+      "definition_en": "Throttle body actuator range/performance",
+      "translation_ar": "خلل نطاق/أداء مشغل جسم الخانق",
+      "translation_sv": null,
+      "original_row_index": 304,
+      "original_record_id": "MZD-DTC-P2119-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2122:00",
+      "code_family": "P",
+      "definition_en": "Accelerator pedal position sensor 1 circuit low",
+      "translation_ar": "إشارة منخفضة من حساس دواسة الوقود رقم 1",
+      "translation_sv": null,
+      "original_row_index": 305,
+      "original_record_id": "MZD-DTC-P2122-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2123:00",
+      "code_family": "P",
+      "definition_en": "Accelerator pedal position sensor 1 circuit high",
+      "translation_ar": "إشارة مرتفعة من حساس دواسة الوقود رقم 1",
+      "translation_sv": null,
+      "original_row_index": 306,
+      "original_record_id": "MZD-DTC-P2123-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2127:00",
+      "code_family": "P",
+      "definition_en": "Accelerator pedal position sensor 2 circuit low",
+      "translation_ar": "إشارة منخفضة من حساس دواسة الوقود رقم 2",
+      "translation_sv": null,
+      "original_row_index": 307,
+      "original_record_id": "MZD-DTC-P2127-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2128:00",
+      "code_family": "P",
+      "definition_en": "Accelerator pedal position sensor 2 circuit high",
+      "translation_ar": "إشارة مرتفعة من حساس دواسة الوقود رقم 2",
+      "translation_sv": null,
+      "original_row_index": 308,
+      "original_record_id": "MZD-DTC-P2128-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2135:00",
+      "code_family": "P",
+      "definition_en": "Throttle position sensor 1/2 voltage correlation",
+      "translation_ar": "عدم تطابق جهد حساسَي موضع الخانق 1 و2",
+      "translation_sv": null,
+      "original_row_index": 309,
+      "original_record_id": "MZD-DTC-P2135-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2138:00",
+      "code_family": "P",
+      "definition_en": "Accelerator pedal sensors 1/2 voltage correlation",
+      "translation_ar": "عدم تطابق جهد حساسَي دواسة الوقود 1 و2",
+      "translation_sv": null,
+      "original_row_index": 310,
+      "original_record_id": "MZD-DTC-P2138-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2184:00",
+      "code_family": "P",
+      "definition_en": "Engine coolant temperature sensor 2 circuit low input",
+      "translation_ar": "إشارة منخفضة بحساس حرارة سائل التبريد رقم 2",
+      "translation_sv": null,
+      "original_row_index": 311,
+      "original_record_id": "MZD-DTC-P2184-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P244A:00",
+      "code_family": "P",
+      "definition_en": "Exhaust gas pressure sensor 2 range/performance",
+      "translation_ar": "خلل نطاق/أداء حساس ضغط العادم رقم 2",
+      "translation_sv": null,
+      "original_row_index": 312,
+      "original_record_id": "MZD-DTC-P244A-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2452:00",
+      "code_family": "P",
+      "definition_en": "Exhaust gas pressure sensor 2 signal malfunction",
+      "translation_ar": "خلل إشارة حساس ضغط العادم رقم 2",
+      "translation_sv": null,
+      "original_row_index": 313,
+      "original_record_id": "MZD-DTC-P2452-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2454:00",
+      "code_family": "P",
+      "definition_en": "Exhaust gas pressure sensor 2 circuit low input",
+      "translation_ar": "إشارة منخفضة لدائرة حساس ضغط العادم رقم 2",
+      "translation_sv": null,
+      "original_row_index": 314,
+      "original_record_id": "MZD-DTC-P2454-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2455:00",
+      "code_family": "P",
+      "definition_en": "Exhaust gas pressure sensor 2 circuit high input",
+      "translation_ar": "إشارة مرتفعة لدائرة حساس ضغط العادم رقم 2",
+      "translation_sv": null,
+      "original_row_index": 315,
+      "original_record_id": "MZD-DTC-P2455-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2456:00",
+      "code_family": "P",
+      "definition_en": "Exhaust gas pressure sensor 2 characteristic malfunction",
+      "translation_ar": "خلل خصائص حساس ضغط العادم رقم 2",
+      "translation_sv": null,
+      "original_row_index": 316,
+      "original_record_id": "MZD-DTC-P2456-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2458:00",
+      "code_family": "P",
+      "definition_en": "Diesel particulate filter excess soot accumulation (mid)",
+      "translation_ar": "تراكم متوسط زائد للسخام في فلتر الجسيمات DPF",
+      "translation_sv": null,
+      "original_row_index": 317,
+      "original_record_id": "MZD-DTC-P2458-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2463:00",
+      "code_family": "P",
+      "definition_en": "Diesel particulate filter excess soot accumulation (large)",
+      "translation_ar": "تراكم كبير زائد للسخام في فلتر الجسيمات DPF",
+      "translation_sv": null,
+      "original_row_index": 318,
+      "original_record_id": "MZD-DTC-P2463-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2518:00",
+      "code_family": "P",
+      "definition_en": "Refrigerant pressure sensor 2 circuit high input",
+      "translation_ar": "إشارة مرتفعة بدائرة حساس ضغط غاز المكيف رقم 2",
+      "translation_sv": null,
+      "original_row_index": 319,
+      "original_record_id": "MZD-DTC-P2518-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2541:00",
+      "code_family": "P",
+      "definition_en": "Low fuel pressure sensor circuit low input",
+      "translation_ar": "إشارة منخفضة بدائرة حساس ضغط الوقود المنخفض",
+      "translation_sv": null,
+      "original_row_index": 320,
+      "original_record_id": "MZD-DTC-P2541-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2542:00",
+      "code_family": "P",
+      "definition_en": "Low fuel pressure sensor circuit high input",
+      "translation_ar": "إشارة مرتفعة بدائرة حساس ضغط الوقود المنخفض",
+      "translation_sv": null,
+      "original_row_index": 321,
+      "original_record_id": "MZD-DTC-P2542-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2578:00",
+      "code_family": "P",
+      "definition_en": "Supercharger clutch circuit malfunction",
+      "translation_ar": "خلل دائرة قابض الشاحن الميكانيكي",
+      "translation_sv": null,
+      "original_row_index": 322,
+      "original_record_id": "MZD-DTC-P2578-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P25AF:00",
+      "code_family": "P",
+      "definition_en": "Coolant switching valve performance fault",
+      "translation_ar": "خلل أداء صمام تحويل سائل التبريد",
+      "translation_sv": null,
+      "original_row_index": 323,
+      "original_record_id": "MZD-DTC-P25AF-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P25EC:00",
+      "code_family": "P",
+      "definition_en": "Supercharger clutch control circuit low input",
+      "translation_ar": "إشارة منخفضة بدائرة قابض الشاحن الميكانيكي",
+      "translation_sv": null,
+      "original_row_index": 324,
+      "original_record_id": "MZD-DTC-P25EC-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P25ED:00",
+      "code_family": "P",
+      "definition_en": "Supercharger clutch control circuit high input",
+      "translation_ar": "إشارة مرتفعة بدائرة قابض الشاحن الميكانيكي",
+      "translation_sv": null,
+      "original_row_index": 325,
+      "original_record_id": "MZD-DTC-P25ED-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2602:00",
+      "code_family": "P",
+      "definition_en": "Electric water pump control circuit low input",
+      "translation_ar": "إشارة منخفضة بدائرة التحكم بالمضخة الكهربائية للماء",
+      "translation_sv": null,
+      "original_row_index": 326,
+      "original_record_id": "MZD-DTC-P2602-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2603:00",
+      "code_family": "P",
+      "definition_en": "Electric water pump control circuit high input",
+      "translation_ar": "إشارة مرتفعة بدائرة التحكم بالمضخة الكهربائية للماء",
+      "translation_sv": null,
+      "original_row_index": 327,
+      "original_record_id": "MZD-DTC-P2603-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2610:00",
+      "code_family": "P",
+      "definition_en": "Body control module malfunction (as interpreted by PCM)",
+      "translation_ar": "خلل بوحدة التحكم بالهيكل كما رصدته PCM",
+      "translation_sv": null,
+      "original_row_index": 328,
+      "original_record_id": "MZD-DTC-P2610-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2635:00",
+      "code_family": "P",
+      "definition_en": "Fuel transfer function malfunction",
+      "translation_ar": "خلل وظيفة نقل الوقود",
+      "translation_sv": null,
+      "original_row_index": 329,
+      "original_record_id": "MZD-DTC-P2635-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P26A3:00",
+      "code_family": "P",
+      "definition_en": "Coolant switching valve performance fault",
+      "translation_ar": "خلل أداء صمام تحويل سائل التبريد",
+      "translation_sv": null,
+      "original_row_index": 330,
+      "original_record_id": "MZD-DTC-P26A3-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P26C5:00",
+      "code_family": "P",
+      "definition_en": "Exhaust shutter valve circuit malfunction",
+      "translation_ar": "خلل دائرة صمام بوابة العادم",
+      "translation_sv": null,
+      "original_row_index": 331,
+      "original_record_id": "MZD-DTC-P26C5-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P26FE:00",
+      "code_family": "P",
+      "definition_en": "Exhaust shutter valve range/performance",
+      "translation_ar": "خلل نطاق/أداء صمام بوابة العادم",
+      "translation_sv": null,
+      "original_row_index": 332,
+      "original_record_id": "MZD-DTC-P26FE-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2B5A:00",
+      "code_family": "P",
+      "definition_en": "Coolant switching valve control circuit low input",
+      "translation_ar": "إشارة منخفضة بدائرة صمام تحويل سائل التبريد",
+      "translation_sv": null,
+      "original_row_index": 333,
+      "original_record_id": "MZD-DTC-P2B5A-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P2B61:00",
+      "code_family": "P",
+      "definition_en": "Coolant control valve circuit range/performance",
+      "translation_ar": "أداء/نطاق دائرة صمام التحكم بسائل التبريد",
+      "translation_sv": null,
+      "original_row_index": 334,
+      "original_record_id": "MZD-DTC-P2B61-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0001:88",
+      "code_family": "U",
+      "definition_en": "Active bonnet CAN communication error",
+      "translation_ar": "خطأ اتصال CAN في نظام الغطاء النشط",
+      "translation_sv": null,
+      "original_row_index": 335,
+      "original_record_id": "MZD-DTC-U0001-88",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0073",
+      "code_family": "U",
+      "definition_en": "CAN system communication error",
+      "translation_ar": "خلل اتصال شبكة CAN",
+      "translation_sv": null,
+      "original_row_index": 336,
+      "original_record_id": "MZD-DTC-U0073",
+      "ecu_context": [
+        "CAN network reporting module (model-specific)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0075:00",
+      "code_family": "U",
+      "definition_en": "CAN system communication fault",
+      "translation_ar": "خلل اتصال بشبكة CAN",
+      "translation_sv": null,
+      "original_row_index": 337,
+      "original_record_id": "MZD-DTC-U0075-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0100",
+      "code_family": "U",
+      "definition_en": "Communication error to PCM",
+      "translation_ar": "فشل الاتصال بوحدة PCM",
+      "translation_sv": null,
+      "original_row_index": 338,
+      "original_record_id": "MZD-DTC-U0100",
+      "ecu_context": [
+        "TCM / ABS HU/CM / Instrument Cluster (depends on reporting module)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0100:00",
+      "code_family": "U",
+      "definition_en": "Lost communication with PCM",
+      "translation_ar": "فقد الاتصال بوحدة PCM",
+      "translation_sv": null,
+      "original_row_index": 339,
+      "original_record_id": "MZD-DTC-U0100-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0100:68",
+      "code_family": "U",
+      "definition_en": "Active bonnet controller PCM communication / speed signal error",
+      "translation_ar": "خلل اتصال الغطاء النشط مع PCM/إشارة السرعة",
+      "translation_sv": null,
+      "original_row_index": 340,
+      "original_record_id": "MZD-DTC-U0100-68",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0101",
+      "code_family": "U",
+      "definition_en": "Communication error to TCM",
+      "translation_ar": "فشل الاتصال بوحدة TCM",
+      "translation_sv": null,
+      "original_row_index": 341,
+      "original_record_id": "MZD-DTC-U0101",
+      "ecu_context": [
+        "PCM / ABS HU/CM / Instrument Cluster"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0101:00",
+      "code_family": "U",
+      "definition_en": "Lost communication with TCM (CAN Bus No.1)",
+      "translation_ar": "فقد الاتصال بوحدة TCM على ناقل CAN رقم 1",
+      "translation_sv": null,
+      "original_row_index": 342,
+      "original_record_id": "MZD-DTC-U0101-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0111:00",
+      "code_family": "U",
+      "definition_en": "Lost communication with Mazda M Hybrid battery",
+      "translation_ar": "فقد الاتصال ببطارية نظام Mazda M Hybrid",
+      "translation_sv": null,
+      "original_row_index": 343,
+      "original_record_id": "MZD-DTC-U0111-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0120:00",
+      "code_family": "U",
+      "definition_en": "Lost communication with integrated starter generator (ISG)",
+      "translation_ar": "فقد الاتصال بوحدة المولد/بادئ التشغيل المدمج",
+      "translation_sv": null,
+      "original_row_index": 344,
+      "original_record_id": "MZD-DTC-U0120-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0121",
+      "code_family": "U",
+      "definition_en": "Communication error to ABS/DSC HU/CM",
+      "translation_ar": "فشل الاتصال بوحدة الفرامل ABS/DSC",
+      "translation_sv": null,
+      "original_row_index": 345,
+      "original_record_id": "MZD-DTC-U0121",
+      "ecu_context": [
+        "PCM / Instrument Cluster"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0121:00",
+      "code_family": "U",
+      "definition_en": "Lost communication with electronically controlled brake unit",
+      "translation_ar": "فقد الاتصال بوحدة الفرامل الإلكترونية",
+      "translation_sv": null,
+      "original_row_index": 346,
+      "original_record_id": "MZD-DTC-U0121-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0129:00",
+      "code_family": "U",
+      "definition_en": "Lost communication with electronically controlled brake unit",
+      "translation_ar": "فقد الاتصال بوحدة الفرامل الإلكترونية",
+      "translation_sv": null,
+      "original_row_index": 347,
+      "original_record_id": "MZD-DTC-U0129-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0131:00",
+      "code_family": "U",
+      "definition_en": "Lost communication with electric power steering (EPS) module",
+      "translation_ar": "فقد الاتصال بوحدة المقود الكهربائي",
+      "translation_sv": null,
+      "original_row_index": 348,
+      "original_record_id": "MZD-DTC-U0131-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0140:00",
+      "code_family": "U",
+      "definition_en": "Lost communication with BCM",
+      "translation_ar": "فقد الاتصال بوحدة التحكم بالهيكل",
+      "translation_sv": null,
+      "original_row_index": 349,
+      "original_record_id": "MZD-DTC-U0140-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0151:00",
+      "code_family": "U",
+      "definition_en": "Lost communication with SAS airbag control module",
+      "translation_ar": "فقد الاتصال بوحدة حساسات الوسائد الهوائية SAS",
+      "translation_sv": null,
+      "original_row_index": 350,
+      "original_record_id": "MZD-DTC-U0151-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0155",
+      "code_family": "U",
+      "definition_en": "Communication error to instrument cluster",
+      "translation_ar": "فشل الاتصال بلوحة العدادات",
+      "translation_sv": null,
+      "original_row_index": 351,
+      "original_record_id": "MZD-DTC-U0155",
+      "ecu_context": [
+        "PCM / ABS or DSC / Instrument Cluster"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0155:00",
+      "code_family": "U",
+      "definition_en": "Active bonnet controller lost instrument cluster communication",
+      "translation_ar": "فقد اتصال وحدة الغطاء النشط بلوحة العدادات",
+      "translation_sv": null,
+      "original_row_index": 352,
+      "original_record_id": "MZD-DTC-U0155-00",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)",
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0164:00",
+      "code_family": "U",
+      "definition_en": "Lost communication with dash electrical supply unit",
+      "translation_ar": "فقد الاتصال بوحدة التغذية الكهربائية للوحة القيادة",
+      "translation_sv": null,
+      "original_row_index": 353,
+      "original_record_id": "MZD-DTC-U0164-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0207",
+      "code_family": "U",
+      "definition_en": "Lost communication with power retractable hardtop module",
+      "translation_ar": "فقد الاتصال بوحدة السقف القابل للطي",
+      "translation_sv": null,
+      "original_row_index": 354,
+      "original_record_id": "MZD-DTC-U0207",
+      "ecu_context": [
+        "CAN network reporting module (model-specific)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0214",
+      "code_family": "U",
+      "definition_en": "Lost communication with keyless control module",
+      "translation_ar": "فقد الاتصال بوحدة الدخول دون مفتاح",
+      "translation_sv": null,
+      "original_row_index": 355,
+      "original_record_id": "MZD-DTC-U0214",
+      "ecu_context": [
+        "CAN network reporting module (model-specific)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0250",
+      "code_family": "U",
+      "definition_en": "Lost communication with active bonnet controller",
+      "translation_ar": "فقد الاتصال بوحدة الغطاء النشط",
+      "translation_sv": null,
+      "original_row_index": 356,
+      "original_record_id": "MZD-DTC-U0250",
+      "ecu_context": [
+        "CAN network reporting module (model-specific)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0284:00",
+      "code_family": "U",
+      "definition_en": "LIN communication fault between PCM and active air shutter",
+      "translation_ar": "فقد اتصال LIN بين PCM وبوابة الهواء الأمامية النشطة",
+      "translation_sv": null,
+      "original_row_index": 357,
+      "original_record_id": "MZD-DTC-U0284-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0298:00",
+      "code_family": "U",
+      "definition_en": "Lost communication with Mazda M Hybrid DC-DC converter",
+      "translation_ar": "فقد الاتصال بمحول جهد DC-DC لنظام Mazda M Hybrid",
+      "translation_sv": null,
+      "original_row_index": 358,
+      "original_record_id": "MZD-DTC-U0298-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U029D:00",
+      "code_family": "U",
+      "definition_en": "Lost communication with NOx sensor",
+      "translation_ar": "فقد الاتصال بحساس أكاسيد النيتروجين",
+      "translation_sv": null,
+      "original_row_index": 359,
+      "original_record_id": "MZD-DTC-U029D-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0302:00",
+      "code_family": "U",
+      "definition_en": "TCM processor error",
+      "translation_ar": "خلل معالج وحدة TCM",
+      "translation_sv": null,
+      "original_row_index": 360,
+      "original_record_id": "MZD-DTC-U0302-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0315:00",
+      "code_family": "U",
+      "definition_en": "Electronically controlled brake unit error",
+      "translation_ar": "خلل وحدة التحكم بالفرامل الإلكترونية",
+      "translation_sv": null,
+      "original_row_index": 361,
+      "original_record_id": "MZD-DTC-U0315-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U0320:00",
+      "code_family": "U",
+      "definition_en": "Electric power steering controller error",
+      "translation_ar": "خلل وحدة التحكم بالمقود الكهربائي",
+      "translation_sv": null,
+      "original_row_index": 362,
+      "original_record_id": "MZD-DTC-U0320-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U1900",
+      "code_family": "U",
+      "definition_en": "Communication error to other module",
+      "translation_ar": "خلل اتصال بوحدة إلكترونية أخرى",
+      "translation_sv": null,
+      "original_row_index": 363,
+      "original_record_id": "MZD-DTC-U1900",
+      "ecu_context": [
+        "CAN network reporting module (model-specific)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U2023",
+      "code_family": "U",
+      "definition_en": "Abnormal message from PCM",
+      "translation_ar": "رسالة غير طبيعية مستقبلة من PCM",
+      "translation_sv": null,
+      "original_row_index": 364,
+      "original_record_id": "MZD-DTC-U2023",
+      "ecu_context": [
+        "CAN network reporting module (model-specific)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U2197",
+      "code_family": "U",
+      "definition_en": "Vehicle speed signal communication error",
+      "translation_ar": "خلل إرسال إشارة سرعة السيارة عبر الشبكة",
+      "translation_sv": null,
+      "original_row_index": 365,
+      "original_record_id": "MZD-DTC-U2197",
+      "ecu_context": [
+        "CAN network reporting module (model-specific)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U3000:00",
+      "code_family": "U",
+      "definition_en": "Emergency call / telematics communication unit internal malfunction",
+      "translation_ar": "عطل داخلي في وحدة اتصال الطوارئ أو وحدة الاتصالات",
+      "translation_sv": null,
+      "original_row_index": 366,
+      "original_record_id": "MZD-DTC-U3000-00",
+      "ecu_context": [
+        "TCU"
+      ],
+      "verification_status": "definition_confirmed_by_manufacturer_tsb_for_specified_ecu"
+    },
+    {
+      "raw_code": "U3000:04",
+      "code_family": "U",
+      "definition_en": "Telematics communication unit internal malfunction",
+      "translation_ar": "عطل داخلي في وحدة الاتصالات",
+      "translation_sv": null,
+      "original_row_index": 367,
+      "original_record_id": "MZD-DTC-U3000-04",
+      "ecu_context": [
+        "TCU"
+      ],
+      "verification_status": "definition_confirmed_by_manufacturer_tsb_for_specified_ecu"
+    },
+    {
+      "raw_code": "U3000:49",
+      "code_family": "U",
+      "definition_en": "Active bonnet control module internal malfunction",
+      "translation_ar": "خلل داخلي بوحدة الغطاء النشط",
+      "translation_sv": null,
+      "original_row_index": 368,
+      "original_record_id": "MZD-DTC-U3000-49",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U3003:16",
+      "code_family": "U",
+      "definition_en": "Active bonnet power supply voltage too low (<8 V)",
+      "translation_ar": "انخفاض جهد تغذية وحدة الغطاء النشط دون 8 فولت",
+      "translation_sv": null,
+      "original_row_index": 369,
+      "original_record_id": "MZD-DTC-U3003-16",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "U3003:17",
+      "code_family": "U",
+      "definition_en": "Active bonnet power supply voltage high (>=18 V)",
+      "translation_ar": "ارتفاع جهد تغذية وحدة الغطاء النشط إلى 18 فولت أو أكثر",
+      "translation_sv": null,
+      "original_row_index": 370,
+      "original_record_id": "MZD-DTC-U3003-17",
+      "ecu_context": [
+        "Active Bonnet Control Module (DHS)"
+      ],
+      "verification_status": "carried_forward_pending_full_audit"
+    },
+    {
+      "raw_code": "P0128:00",
+      "code_family": "P",
+      "definition_en": "Thermostat stuck open",
+      "translation_ar": "الثرموستات عالق في وضع الفتح",
+      "translation_sv": null,
+      "original_row_index": 371,
+      "original_record_id": "MZD-DTC-P0128-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "definition_confirmed_by_manufacturer_tsb_for_specified_ecu"
+    },
+    {
+      "raw_code": "P0441",
+      "code_family": "P",
+      "definition_en": "Evaporative emission control system incorrect purge flow",
+      "translation_ar": "تدفق التطهير في نظام أبخرة الوقود EVAP غير صحيح",
+      "translation_sv": null,
+      "original_row_index": 372,
+      "original_record_id": "MZD-DTC-P0441",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "definition_confirmed_by_manufacturer_tsb_for_specified_ecu"
+    },
+    {
+      "raw_code": "P0442",
+      "code_family": "P",
+      "definition_en": "EVAP system leak detected (small leak)",
+      "translation_ar": "اكتشاف تسرب صغير في نظام أبخرة الوقود EVAP",
+      "translation_sv": null,
+      "original_row_index": 373,
+      "original_record_id": "MZD-DTC-P0442",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "definition_confirmed_by_manufacturer_tsb_for_specified_ecu"
+    },
+    {
+      "raw_code": "P0455",
+      "code_family": "P",
+      "definition_en": "EVAP system leak detected (gross leak)",
+      "translation_ar": "اكتشاف تسرب كبير في نظام أبخرة الوقود EVAP",
+      "translation_sv": null,
+      "original_row_index": 374,
+      "original_record_id": "MZD-DTC-P0455",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "definition_confirmed_by_manufacturer_tsb_for_specified_ecu"
+    },
+    {
+      "raw_code": "P0456",
+      "code_family": "P",
+      "definition_en": "EVAP system leak detected (very small leak)",
+      "translation_ar": "اكتشاف تسرب صغير جداً في نظام أبخرة الوقود EVAP",
+      "translation_sv": null,
+      "original_row_index": 375,
+      "original_record_id": "MZD-DTC-P0456",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "definition_confirmed_by_manufacturer_tsb_for_specified_ecu"
+    },
+    {
+      "raw_code": "P0016:00",
+      "code_family": "P",
+      "definition_en": "CKP / CMP signal correlation",
+      "translation_ar": "عدم تطابق توقيت إشارتَي حساس عمود المرفق وعمود الكامات",
+      "translation_sv": null,
+      "original_row_index": 376,
+      "original_record_id": "MZD-DTC-P0016-00",
+      "ecu_context": [
+        "PCM"
+      ],
+      "verification_status": "documented_in_third_party_manual_mirror_market_unconfirmed"
+    }
+  ]
+}
