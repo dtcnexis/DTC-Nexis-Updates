@@ -6,9 +6,9 @@
   "storage_repository": "dtcnexis/DTC-Nexis-Updates",
   "storage_branch": "main",
   "storage_directory": "data/master",
-  "current_saved_row_count": 5441,
+  "current_saved_row_count": 7230,
   "distinct_worldwide_codes": "UNKNOWN: cross-manufacturer duplicates/suffixes and same-code ECU variants are deliberately preserved",
-  "file_count": 21,
+  "file_count": 24,
   "collections": [
     {
       "kind": "generic_trilingual",
@@ -159,6 +159,27 @@
       "path": "data/master/brands/renault.json",
       "rows": 129,
       "verification": "Owner Library Renault Batch01 full code records preserved, ECU validity and technical manuals require review"
+    },
+    {
+      "kind": "kia_batch01",
+      "brand": "Kia",
+      "path": "data/master/brands/kia.json",
+      "rows": 63,
+      "verification": "Full owner Library batch01 text; source relevance/vehicle fitment pending"
+    },
+    {
+      "kind": "ford_batch01",
+      "brand": "Ford",
+      "path": "data/master/brands/ford.json",
+      "rows": 409,
+      "verification": "Ford batch01 text/ECU from full Library source; technical applicability pending"
+    },
+    {
+      "kind": "peugeot_legacy",
+      "brand": "Peugeot",
+      "path": "data/master/brands/peugeot.json",
+      "rows": 1317,
+      "verification": "Owner Library dtc_codes.json code definitions and translations; unreviewed OEM fitment"
     }
   ],
   "saved_groups": {
@@ -169,7 +190,10 @@
     "DS_Automobiles": 798,
     "legacy_generic_PBU": 2137,
     "Nissan_batch02_distinct_code_rows": 495,
-    "Renault_batch01": 129
+    "Renault_batch01": 129,
+    "kia_batch01": 63,
+    "ford_batch01": 409,
+    "peugeot_legacy": 1317
   },
   "source_lists_still_to_reconcile": [
     {
