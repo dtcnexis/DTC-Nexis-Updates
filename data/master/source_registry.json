@@ -324,5 +324,37 @@
       "preservation": "PERMANENT_NOT_OEM_VERIFIED"
     }
   ],
-  "remaining_source_work": "Audi INDEX source, remaining 488-entry Library index reconciliation (including other manufacturer sources), and technical/OEM quality validation remain open. Audi DETAIL/Dacia batch01/Toyota EXP002/Honda batch02 extracted and saved; no retake from scratch."
+  "remaining_source_work": "Audi INDEX source, remaining 488-entry Library index reconciliation (including other manufacturer sources), and technical/OEM quality validation remain open. Audi DETAIL/Dacia batch01/Toyota EXP002/Honda batch02 extracted and saved; no retake from scratch.",
+  "detail_recovery_20261030": {
+    "counted_rows_unchanged": 7656,
+    "canonical_files_unchanged": 30,
+    "enrichment_files": [
+      {
+        "path": "data/master/enrichment/bmw_embedded_legacy_batch01_20261030.json",
+        "original_rows": 98,
+        "counts_towards_unique_ledger": false,
+        "additional_counted_rows": 0
+      },
+      {
+        "path": "data/master/enrichment/cupra_embedded_legacy_batch01_20261030.json",
+        "original_rows": 63,
+        "counts_towards_unique_ledger": false,
+        "additional_counted_rows": 0
+      },
+      {
+        "path": "data/master/enrichment/mercedes_benz_batch02_full_detail_20261030.json",
+        "original_rows": 66,
+        "counts_towards_unique_ledger": false,
+        "additional_counted_rows": 0
+      }
+    ],
+    "standalone_sources_not_raw_verified": [
+      "AUDI_DTC_BATCH01_INDEX.json",
+      "AUDI_DTC_BATCH01_INDEX.csv",
+      "BMW_DTC_NEXIS_batch01.json",
+      "CUPRA_DTC_NEXIS_B01_2026-10-15.json",
+      "Mercedes_Benz_DTC_NEXIS_batch01_2026-10-15.json"
+    ],
+    "note": "BMW/CUPRA embedded Batch01 objects and Mercedes full Batch02 detail are now in master enrichment. Standalone Library source access remains unresolved."
+  }
 }
