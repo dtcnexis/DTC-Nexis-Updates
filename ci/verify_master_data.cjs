@@ -6,7 +6,7 @@ const root=path.resolve(__dirname,'../data/master');
 const load=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const manifest=load('all_collected_catalog_manifest.json');
 assert.equal(manifest.schema,'dtcnexis-permanent-collected-codes-manifest-v1');
-assert.ok(manifest.current_saved_row_count>=5312,'Baseline permanently saved rows cannot decrease without owner approval');
+assert.ok(manifest.current_saved_row_count>=7230,'Baseline permanently saved rows cannot decrease without owner approval');
 assert.equal(manifest.file_count,manifest.collections.length,'Manifest file count inconsistent');
 const all=new Set();let counted=0;
 const groups={};
@@ -41,6 +41,10 @@ assert.ok(groups.ds_automobiles_batch01>=798);
 assert.ok(groups.legacy_generic_PBU>=2137);
 assert.ok(groups.generic_trilingual>=26);
 assert.ok(groups.nissan_batch02>=495);
+assert.ok(groups.renault_batch01>=129);
+assert.ok(groups.kia_batch01>=63);
+assert.ok(groups.ford_batch01>=409);
+assert.ok(groups.peugeot_legacy>=1317);
 for(const e of manifest.enrichment_files||[]){const v=load(e.path.slice('data/master/'.length));assert.equal(v.records.length,e.original_rows);assert.equal(v.counts_towards_unique_ledger,false);}
 
 const enhanced=load('legacy_enhanced_diagnostics.json');
