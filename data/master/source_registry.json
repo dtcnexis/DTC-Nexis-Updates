@@ -1,0 +1,184 @@
+{
+  "schema": "dtc-nexis-permanent-data-source-registry-v1",
+  "purpose": "Permanent source references and audit checkpoints. Never redo collected data or destroy originals.",
+  "created": "2026-10-29",
+  "source_retention_policy": "Keep raw originals in authorized Git/Library. Any reviewed correction is a new Git commit preserving provenance. Never delete a record because it is unverified.",
+  "safe_update_policy": "This registry is not an update feed or release authorization. Only signed and explicitly owner-approved packages may reach clients.",
+  "catalog_path": "data/master/dtc_text_catalog.json",
+  "stored_generic_text_records": 26,
+  "manufacturer_originals": {
+    "source_repository": "dtcnexis/DTC-Nexis-App",
+    "source_ref": "backup/rc382-owner-source-checkpoint-20261029",
+    "files": [
+      {
+        "brand": "Alfa Romeo",
+        "kind": "manufacturer_original_review",
+        "repository": "dtcnexis/DTC-Nexis-App",
+        "ref": "backup/rc382-owner-source-checkpoint-20261029",
+        "path": "data/manufacturers/review/alfa_romeo_batch02_unapproved.json",
+        "git_blob_sha": "3cc73cfed966cae9f978a9167a0f730265f3b58f",
+        "record_count": 59,
+        "data_preservation": "PERMANENT_PRIVATE_SOURCE",
+        "technical_status": "AUDIT_INCOMPLETE",
+        "imported_to_master": false
+      },
+      {
+        "brand": "bmw",
+        "kind": "manufacturer_original_review",
+        "repository": "dtcnexis/DTC-Nexis-App",
+        "ref": "backup/rc382-owner-source-checkpoint-20261029",
+        "path": "data/manufacturers/review/bmw_batch02_unapproved.json",
+        "git_blob_sha": "5b821ab4a38c67dbd16c6c3a8de76b212534c4bc",
+        "record_count": 98,
+        "data_preservation": "PERMANENT_PRIVATE_SOURCE",
+        "technical_status": "AUDIT_INCOMPLETE",
+        "imported_to_master": false
+      },
+      {
+        "brand": "cupra",
+        "kind": "manufacturer_original_review",
+        "repository": "dtcnexis/DTC-Nexis-App",
+        "ref": "backup/rc382-owner-source-checkpoint-20261029",
+        "path": "data/manufacturers/review/cupra_batch02_unapproved.json",
+        "git_blob_sha": "cd7ba98e9b4fe37ba024f523571e5a1f771426d5",
+        "record_count": 63,
+        "data_preservation": "PERMANENT_PRIVATE_SOURCE",
+        "technical_status": "AUDIT_INCOMPLETE",
+        "imported_to_master": false
+      },
+      {
+        "brand": "Mazda",
+        "kind": "manufacturer_original_review",
+        "repository": "dtcnexis/DTC-Nexis-App",
+        "ref": "backup/rc382-owner-source-checkpoint-20261029",
+        "path": "data/manufacturers/review/mazda_batch02_unapproved.json",
+        "git_blob_sha": "148f0fc81d92a14919115b0b2ebc339be6f06991",
+        "record_count": 376,
+        "data_preservation": "PERMANENT_PRIVATE_SOURCE",
+        "technical_status": "AUDIT_INCOMPLETE",
+        "imported_to_master": false
+      },
+      {
+        "brand": "mercedes_benz",
+        "kind": "manufacturer_original_review",
+        "repository": "dtcnexis/DTC-Nexis-App",
+        "ref": "backup/rc382-owner-source-checkpoint-20261029",
+        "path": "data/manufacturers/review/mercedes_benz_batch02_unapproved.json",
+        "git_blob_sha": "da3d4b05f3146f4f64b03c0f3b29bb7e6000378a",
+        "record_count": 66,
+        "data_preservation": "PERMANENT_PRIVATE_SOURCE",
+        "technical_status": "AUDIT_INCOMPLETE",
+        "imported_to_master": false
+      },
+      {
+        "brand": "MINI",
+        "kind": "manufacturer_original_review",
+        "repository": "dtcnexis/DTC-Nexis-App",
+        "ref": "backup/rc382-owner-source-checkpoint-20261029",
+        "path": "data/manufacturers/review/mini_batch02_unapproved.json",
+        "git_blob_sha": "2c8bd7c6286877c2c2fbd89a19041643a14e24bf",
+        "record_count": 45,
+        "data_preservation": "PERMANENT_PRIVATE_SOURCE",
+        "technical_status": "AUDIT_INCOMPLETE",
+        "imported_to_master": false
+      },
+      {
+        "brand": "Opel / Vauxhall",
+        "kind": "manufacturer_original_review",
+        "repository": "dtcnexis/DTC-Nexis-App",
+        "ref": "backup/rc382-owner-source-checkpoint-20261029",
+        "path": "data/manufacturers/review/opel_vauxhall_batch02_unapproved.json",
+        "git_blob_sha": "799e3e5d1fea680a4e202334bfbeda620f46a217",
+        "record_count": 37,
+        "data_preservation": "PERMANENT_PRIVATE_SOURCE",
+        "technical_status": "AUDIT_INCOMPLETE",
+        "imported_to_master": false
+      },
+      {
+        "brand": "polestar",
+        "kind": "manufacturer_original_review",
+        "repository": "dtcnexis/DTC-Nexis-App",
+        "ref": "backup/rc382-owner-source-checkpoint-20261029",
+        "path": "data/manufacturers/review/polestar_batch02_unapproved.json",
+        "git_blob_sha": "24de7ed37d576f1e5480d5791255df195cfc2b2f",
+        "record_count": 29,
+        "data_preservation": "PERMANENT_PRIVATE_SOURCE",
+        "technical_status": "AUDIT_INCOMPLETE",
+        "imported_to_master": false
+      },
+      {
+        "brand": "SEAT",
+        "kind": "manufacturer_original_review",
+        "repository": "dtcnexis/DTC-Nexis-App",
+        "ref": "backup/rc382-owner-source-checkpoint-20261029",
+        "path": "data/manufacturers/review/seat_batch02_unapproved.json",
+        "git_blob_sha": "171c848096c67da004f3894b9fc6fe6974cc7ef9",
+        "record_count": 53,
+        "data_preservation": "PERMANENT_PRIVATE_SOURCE",
+        "technical_status": "AUDIT_INCOMPLETE",
+        "imported_to_master": false
+      },
+      {
+        "brand": "skoda",
+        "kind": "manufacturer_original_review",
+        "repository": "dtcnexis/DTC-Nexis-App",
+        "ref": "backup/rc382-owner-source-checkpoint-20261029",
+        "path": "data/manufacturers/review/skoda_batch02_unapproved.json",
+        "git_blob_sha": "3ea4fad3bef3acabd3fdf55752a900497ea59ffc",
+        "record_count": 48,
+        "data_preservation": "PERMANENT_PRIVATE_SOURCE",
+        "technical_status": "AUDIT_INCOMPLETE",
+        "imported_to_master": false
+      },
+      {
+        "brand": "volvo",
+        "kind": "manufacturer_original_review",
+        "repository": "dtcnexis/DTC-Nexis-App",
+        "ref": "backup/rc382-owner-source-checkpoint-20261029",
+        "path": "data/manufacturers/review/volvo_batch02_unapproved.json",
+        "git_blob_sha": "2d9c3c67f0b19f181ed93450fe1d3150a21110dd",
+        "record_count": 60,
+        "data_preservation": "PERMANENT_PRIVATE_SOURCE",
+        "technical_status": "AUDIT_INCOMPLETE",
+        "imported_to_master": false
+      }
+    ],
+    "total_review_rows": 934,
+    "quality_note": "The 934 are archival rows, not 934 verified unique codes. Duplicates and manufacturer-specific formats retained."
+  },
+  "volkswagen": {
+    "repository": "dtcnexis/DTC-Nexis-Updates",
+    "ref": "main",
+    "path": "volkswagen/data/VW022",
+    "reported_legacy_candidate_count": 644,
+    "preservation": "ORIGINAL_PERMANENT_IN_REPOSITORY",
+    "imported_to_master": false,
+    "verification": "review_required_per_ECU"
+  },
+  "library_metadata": {
+    "repository": "dtcnexis/DTC-Nexis-App",
+    "ref": "backup/rc382-owner-source-checkpoint-20261029",
+    "path": "data/manufacturers/review/library_source_inventory_20261016.json",
+    "git_blob_sha": "c39d4ae91f83a28c4c1a67232c34d6085b04150b",
+    "listed_files": 488,
+    "raw_file_availability": "SEPARATE_AUTHORIZED_LIBRARY_ACCESS",
+    "verification": "index_only; no automatic claim all raw files imported"
+  },
+  "other_preexisting_library_indexes": [
+    {
+      "file_name": "C_CODES_278_STAGING_RECONCILED.json",
+      "stated_rows": 278,
+      "preservation_status": "LIBRARY_REFERENCE_ONLY",
+      "contents_imported": false,
+      "verification": "source_not_raw_materializable_during_audit"
+    },
+    {
+      "file_name": "DTC_NEXIS_DS_batch01_manifest.json",
+      "stated_rows": 798,
+      "within_collection_unique_codes": 752,
+      "preservation_status": "LIBRARY_REFERENCE_ONLY",
+      "contents_imported": false,
+      "verification": "manifest_only"
+    }
+  ]
+}
