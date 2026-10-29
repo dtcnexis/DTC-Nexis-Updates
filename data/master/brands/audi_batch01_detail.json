@@ -1,0 +1,2549 @@
+{
+  "schema": "dtcnexis-permanent-owner-source-v1",
+  "brand": "Audi",
+  "source_file": "AUDI_DTC_BATCH01_DETAIL.json",
+  "source_library_file_id": "file_00000000a10c81f4a36c056fc04f5dc1",
+  "source_raw_record_count": 20,
+  "source_scope": "Audi Batch01 DETAIL only; separate Batch01 INDEX not yet located",
+  "status": "PERMANENT_RETAINED_SOURCE_NOT_OEM_VERIFIED_NOT_RELEASED",
+  "source_record_content_policy": "All extracted original JSON fields preserved; no mappings, translations or deletions",
+  "records": [
+    {
+      "brand": "Audi",
+      "code": "00446",
+      "code_format": "VAG legacy decimal; page label 00446",
+      "ecu": "Various ECUs",
+      "definition_en": "Function Limitation due to Under-Voltage: Lower Limit Exceeded",
+      "translation_ar": "تقييد وظيفة إلكترونية بسبب هبوط جهد التغذية عن الحد المطلوب",
+      "category": "manufacturer_specific_VAG_legacy",
+      "applicability": {
+        "models": "VAG legacy; Audi battery/ECU applicability pending",
+        "variant": "Lower Limit Exceeded"
+      },
+      "symptoms": [
+        "Warning light possible"
+      ],
+      "causes": [
+        {
+          "hypothesis": "Blown supply fuse",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Low battery/supply voltage",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Faulty battery",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Faulty alternator",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "action_ar": "قياس جهد البطارية والجهد أثناء التشغيل والحمل",
+          "confirmation_criterion": "المواصفة الخاصة بالموديل غير مؤكدة",
+          "tools": [
+            "multimeter"
+          ]
+        },
+        {
+          "action_ar": "اختبر البطارية والشحن وتوزيع الفيوزات تحت الحمل",
+          "confirmation_criterion": "تحديد انهيار الجهد تحت حمل",
+          "tools": [
+            "battery tester"
+          ]
+        },
+        {
+          "action_ar": "أصلح السبب ثم راقب جهد الوحدة وسجل الأعطال التابعة",
+          "confirmation_criterion": "زوال العطل مع تغذية سليمة",
+          "tools": [
+            "scan tool"
+          ]
+        }
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Terminal 30 voltage",
+          "parameter_ar": "جهد طرف البطارية الدائم 30",
+          "method": "ECU live data",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Terminal 15 voltage",
+          "parameter_ar": "جهد طرف التشغيل 15",
+          "method": "if ECU supports",
+          "reference_limit": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Battery",
+          "name_ar": "البطارية",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        },
+        {
+          "name_en": "Alternator",
+          "name_ar": "الدينامو",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        },
+        {
+          "name_en": "Supply fuse",
+          "name_ar": "فيوز التغذية",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.google.com/search?tbm=isch&q=Audi+power+supply+fuse+battery+alternator",
+          "type": "image_search_only_not_verified_photo"
+        }
+      ],
+      "wiring": null,
+      "video": {
+        "url": "https://www.youtube.com/results?search_query=Audi+VCDS+00446+under+voltage+terminal+30+diagnostics",
+        "type": "youtube_search_only_not_verified_video"
+      },
+      "priority_evidence": {
+        "priority": "A2 cross-ECU",
+        "basis": "Ross-Tech technical guidance; NOT a measured Audi workshop frequency"
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/00446",
+          "publisher": "Ross-Tech",
+          "source_version": "Web page as verified 2026-10-15",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php?title=Category:Fault_Codes",
+          "publisher": "Ross-Tech",
+          "evidence": "category page title; code presence only",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Audi",
+      "code": "00575",
+      "code_format": "VAG legacy decimal; page label 00575",
+      "ecu": "ECM",
+      "definition_en": "Intake Manifold Pressure: Control Limit Not Reached",
+      "translation_ar": "ضغط مجمع السحب / التيربو لم يصل إلى الحد المطلوب",
+      "category": "manufacturer_specific_VAG_legacy",
+      "applicability": {
+        "models": "older VAG TDI; Audi engine-year mapping pending",
+        "variant": "Control Limit Not Reached; distinguish exceeded and control difference"
+      },
+      "symptoms": [
+        "Sudden loss of power",
+        "Reduced power"
+      ],
+      "causes": [
+        {
+          "hypothesis": "Vacuum hose leak/incorrect routing",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Turbo pressure actuator fault",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Boost N75 control solenoid fault",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "action_ar": "ابدأ بخراطيم الفاكيوم القديمة وتسرب الخراطيم والوصلات",
+          "confirmation_criterion": "لا تسريب وفق الفاكيوم",
+          "tools": [
+            "vacuum gauge"
+          ]
+        },
+        {
+          "action_ar": "اختبر N75 ومشغل التيربو دون إجبار الذراع",
+          "confirmation_criterion": "الحركة مطابقة لأوامر المصنع",
+          "tools": [
+            "vacuum pump"
+          ]
+        },
+        {
+          "action_ar": "افحص Basic Settings MVB 011 إذا ECU يدعمه",
+          "confirmation_criterion": "الاستجابة طبيعية ومقاسة",
+          "tools": [
+            "VCDS"
+          ]
+        }
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Boost actual",
+          "parameter_ar": "ضغط التيربو الفعلي",
+          "method": "MVB 011 on supported older ECU",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Boost specified",
+          "parameter_ar": "ضغط التيربو المطلوب",
+          "method": "MVB 011 on supported older ECU",
+          "reference_limit": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "N75 boost solenoid",
+          "name_ar": "صمام تنظيم ضغط التيربو N75",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        },
+        {
+          "name_en": "Vacuum hoses",
+          "name_ar": "خراطيم فاكيوم التحكم",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.google.com/search?tbm=isch&q=Audi+older+1.9+TDI+N75+boost+vacuum+lines",
+          "type": "image_search_only_not_verified_photo"
+        }
+      ],
+      "wiring": null,
+      "video": {
+        "url": "https://www.youtube.com/results?search_query=Audi+1.9+TDI+00575+N75+vacuum+boost+control+diagnosis",
+        "type": "youtube_search_only_not_verified_video"
+      },
+      "priority_evidence": {
+        "priority": "A3 older TDI research",
+        "basis": "Ross-Tech technical guidance; NOT a measured Audi workshop frequency"
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/00575",
+          "publisher": "Ross-Tech",
+          "source_version": "Web page as verified 2026-10-15",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php?title=Category:Fault_Codes",
+          "publisher": "Ross-Tech",
+          "evidence": "category page title; code presence only",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Audi",
+      "code": "00928",
+      "code_format": "VAG legacy decimal; page label 00928",
+      "ecu": "Central Convenience / Door Control Unit",
+      "definition_en": "Locking Module for Central Locking; Front Driver Side (F220): Implausible Signal",
+      "translation_ar": "إشارة غير منطقية من وحدة قفل الباب الأمامي جهة السائق F220",
+      "category": "manufacturer_specific_VAG_legacy",
+      "applicability": {
+        "models": "Audi older central locking with F220; applicability must be confirmed by ECU",
+        "variant": "Implausible Signal",
+        "market_note": "NAR door locks may differ from Rest-of-World SAFE-switch configuration"
+      },
+      "symptoms": [
+        "Driver door lock not working correctly"
+      ],
+      "causes": [
+        {
+          "hypothesis": "Door loom/wiring/connector defect",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Incorrect lock supply voltage",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Stiff or seized mechanical lock",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "F220 internal switch/lock unit",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "action_ar": "اقرأ حالة الباب والقفل والسويتشات في وحدة الباب أثناء القفل والفتح",
+          "confirmation_criterion": "إشارة حالة غير منطقية مثبتة",
+          "tools": [
+            "VCDS"
+          ]
+        },
+        {
+          "action_ar": "افحص ضفيرة الباب في الربلة قرب المفصل",
+          "confirmation_criterion": "انقطاع متقطع مؤكد",
+          "tools": [
+            "multimeter"
+          ]
+        },
+        {
+          "action_ar": "افحص التغذية/الأرضي والميكانيك قبل استبدال القفل",
+          "confirmation_criterion": "ثبوت تلف القفل مع سلامة الضفيرة",
+          "tools": [
+            "multimeter"
+          ]
+        },
+        {
+          "action_ar": "طابق رقم القطعة ووجود SAFE switch حسب السوق",
+          "confirmation_criterion": "قطعة مناسبة لـVIN",
+          "tools": [
+            "ETKA"
+          ]
+        }
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Driver door lock status",
+          "parameter_ar": "حالة قفل باب السائق",
+          "method": "lock/unlock test",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Safe switch status",
+          "parameter_ar": "حالة سويتش SAFE",
+          "method": "if equipped",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Central locking command",
+          "parameter_ar": "أمر القفل المركزي",
+          "method": "command response",
+          "reference_limit": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "F220 Driver door lock",
+          "name_ar": "قفل الباب الأمامي للسائق",
+          "location": "داخل باب السائق",
+          "part_number": null
+        },
+        {
+          "name_en": "Door harness",
+          "name_ar": "ضفيرة الباب",
+          "location": "ممر أسلاك الباب",
+          "part_number": null
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.google.com/search?tbm=isch&q=Audi+F220+driver+door+lock+module",
+          "type": "image_search_only_not_verified_photo"
+        }
+      ],
+      "wiring": null,
+      "video": {
+        "url": "https://www.youtube.com/results?search_query=Audi+F220+00928+driver+door+lock+implausible+signal",
+        "type": "youtube_search_only_not_verified_video"
+      },
+      "priority_evidence": {
+        "priority": "A2 comfort diagnostic",
+        "basis": "Ross-Tech technical guidance; NOT a measured Audi workshop frequency"
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/00928",
+          "publisher": "Ross-Tech",
+          "source_version": "Web page as verified 2026-10-15",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php?title=Category:Fault_Codes",
+          "publisher": "Ross-Tech",
+          "evidence": "category page title; code presence only",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Audi",
+      "code": "01276",
+      "code_format": "VAG 5-digit / Electrical Fault in Circuit variant",
+      "ecu": "ABS J104",
+      "definition_en": "ABS Hydraulic Pump (V64): Electrical Fault in Circuit",
+      "translation_ar": "عطل كهربائي في دائرة مضخة هيدروليك ABS رقم V64",
+      "category": "manufacturer_specific_VAG_legacy",
+      "applicability": {
+        "models": "older VAG ABS systems; exact Audi ABS generation pending",
+        "variant": "Electrical Fault in Circuit"
+      },
+      "symptoms": [
+        "ABS warning possible"
+      ],
+      "causes": [
+        {
+          "hypothesis": "ABS pump power fuse(s)",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Corroded ground",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Pump circuit wiring",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Hydraulic pump V64 internal failure",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "action_ar": "ابدأ بفحص فيوزات البطارية المغذية للـABS بحسب مخطط الموديل",
+          "confirmation_criterion": "الفيوزات سليمة تحت حمل",
+          "tools": [
+            "multimeter"
+          ]
+        },
+        {
+          "action_ar": "افحص نقاط الأرضي والسلك ومقبس المضخة",
+          "confirmation_criterion": "هبوط الجهد ضمن مواصفة erWin؛ غير مؤكد",
+          "tools": [
+            "multimeter"
+          ]
+        },
+        {
+          "action_ar": "نفذ اختبار تشغيل المضخة إذا تدعمه الوحدة وبشروط السلامة",
+          "confirmation_criterion": "مضخة تعمل كهربائياً عند الاختبار",
+          "tools": [
+            "ODIS/VCDS"
+          ]
+        }
+      ],
+      "live_data": [
+        {
+          "parameter_en": "ABS hydraulic pump activation",
+          "parameter_ar": "حالة تشغيل مضخة ABS",
+          "method": "Output Test if supported",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Supply voltage",
+          "parameter_ar": "جهد التغذية",
+          "method": "measure under load",
+          "reference_limit": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "ABS Hydraulic Pump V64",
+          "name_ar": "مضخة هيدروليك ABS",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        },
+        {
+          "name_en": "J104",
+          "name_ar": "كمبيوتر ABS",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.google.com/search?tbm=isch&q=Audi+ABS+V64+pump+hydraulic+control+unit",
+          "type": "image_search_only_not_verified_photo"
+        }
+      ],
+      "wiring": null,
+      "video": {
+        "url": "https://www.youtube.com/results?search_query=Audi+01276+ABS+V64+pump+electrical+fault+fuse+test",
+        "type": "youtube_search_only_not_verified_video"
+      },
+      "priority_evidence": {
+        "priority": "A2 safety diagnostic",
+        "basis": "Ross-Tech technical guidance; NOT a measured Audi workshop frequency"
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01276",
+          "publisher": "Ross-Tech",
+          "source_version": "Web page as verified 2026-10-15",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php?pagefrom=01262&title=Category:Fault_Codes",
+          "publisher": "Ross-Tech",
+          "evidence": "category page title; code presence only",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Audi",
+      "code": "01314",
+      "code_format": "VAG 5-digit / variant: No Communications",
+      "ecu": "Gateway / other module observing ECM",
+      "definition_en": "Engine Control Module: No Communications",
+      "translation_ar": "انقطاع الاتصال بوحدة التحكم بالمحرك",
+      "category": "manufacturer_specific_VAG_legacy",
+      "applicability": {
+        "models": "VAG legacy communication systems; Audi ECU and generation pending",
+        "variant": "No Communications"
+      },
+      "symptoms": [],
+      "causes": [
+        {
+          "hypothesis": "ECM CAN/power/ground/network connection problem",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "ECM unavailable after flash/update",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Other modules reporting network DTCs; do not conflate with Check DTC Memory",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "action_ar": "حدّد الوحدة التي أبلغت عن 01314 وافحص إن كانت ECM تستجيب مباشرة",
+          "confirmation_criterion": "تحديد انقطاع فعلي",
+          "tools": [
+            "VCDS"
+          ]
+        },
+        {
+          "action_ar": "افحص تغذية وفيوزات وأرضي ECM قبل الشبكة",
+          "confirmation_criterion": "فولت تحت حمل مثبت",
+          "tools": [
+            "multimeter"
+          ]
+        },
+        {
+          "action_ar": "افحص CAN connectors والـGateway وحالة الوحدات",
+          "confirmation_criterion": "استعادة اتصال ECU",
+          "tools": [
+            "wiring test"
+          ]
+        },
+        {
+          "action_ar": "اقرأ MVB 125+ على الوحدات التي تدعمه",
+          "confirmation_criterion": "حالة اتصال موثقة حسب ECU",
+          "tools": [
+            "scan tool"
+          ]
+        }
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Communication status (MVB 125+)",
+          "parameter_ar": "حالة الاتصال في بلوكات القياس 125 فأعلى",
+          "method": "older controllers only",
+          "reference_limit": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "ECM",
+          "name_ar": "وحدة التحكم بالمحرك",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        },
+        {
+          "name_en": "CAN databus",
+          "name_ar": "شبكة CAN",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.google.com/search?tbm=isch&q=Audi+ECM+ECU+connector+CAN+gateway",
+          "type": "image_search_only_not_verified_photo"
+        }
+      ],
+      "wiring": null,
+      "video": {
+        "url": "https://www.youtube.com/results?search_query=Audi+VCDS+01314+engine+control+module+no+communications+diagnosis",
+        "type": "youtube_search_only_not_verified_video"
+      },
+      "priority_evidence": {
+        "priority": "A2 network/control priority",
+        "basis": "Ross-Tech technical guidance; NOT a measured Audi workshop frequency"
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01314",
+          "publisher": "Ross-Tech",
+          "source_version": "Web page as verified 2026-10-15",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Audi",
+      "code": "01314",
+      "code_format": "VAG 5-digit / variant: Check DTC Memory",
+      "ecu": "Gateway / other module observing ECM",
+      "definition_en": "Engine Control Module: Check DTC Memory",
+      "translation_ar": "وحدة أخرى تطلب فحص ذاكرة أعطال كمبيوتر المحرك",
+      "category": "manufacturer_specific_VAG_legacy",
+      "applicability": {
+        "models": "VAG legacy; Audi exact applicability pending",
+        "variant": "Check DTC Memory"
+      },
+      "symptoms": [],
+      "causes": [
+        {
+          "hypothesis": "ECM contains DTC influencing another module; NOT proof that CAN is disconnected",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "action_ar": "ادخل عنوان 01-Engine واقرأ الأعطال الأصلية في ECM",
+          "confirmation_criterion": "تحديد كود المسبب",
+          "tools": [
+            "scan tool"
+          ]
+        },
+        {
+          "action_ar": "عالج عطل ECM أولاً ثم امسح التابعة",
+          "confirmation_criterion": "يختفي تحذير التبعية بعد إصلاح السبب",
+          "tools": [
+            "scan tool"
+          ]
+        }
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Stored ECM fault codes",
+          "parameter_ar": "أكواد ذاكرة كمبيوتر المحرك",
+          "method": "read address 01",
+          "reference_limit": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "ECM",
+          "name_ar": "كمبيوتر المحرك",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.google.com/search?tbm=isch&q=Audi+engine+control+module+J623",
+          "type": "image_search_only_not_verified_photo"
+        }
+      ],
+      "wiring": null,
+      "video": {
+        "url": "https://www.youtube.com/results?search_query=Audi+VCDS+01314+check+DTC+memory+ECM",
+        "type": "youtube_search_only_not_verified_video"
+      },
+      "priority_evidence": {
+        "priority": "A2 network/control priority",
+        "basis": "Ross-Tech technical guidance; NOT a measured Audi workshop frequency"
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01314",
+          "publisher": "Ross-Tech",
+          "source_version": "Web page as verified 2026-10-15",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Audi",
+      "code": "01316",
+      "code_format": "VAG legacy decimal; page label 01316",
+      "ecu": "Gateway / other control modules",
+      "definition_en": "ABS Control Module: No Signal/Communication",
+      "translation_ar": "غياب الاتصال بوحدة ABS",
+      "category": "manufacturer_specific_VAG_legacy",
+      "applicability": {
+        "models": "VAG legacy; Audi exact applicability pending",
+        "variant": "No Signal/Communication"
+      },
+      "symptoms": [],
+      "causes": [
+        {
+          "hypothesis": "ABS unit wiring/CAN communication",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Fault stored in ABS controller",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "action_ar": "حدد أي وحدة لا تتصل بـABS ثم جرّب الدخول إلى 03-ABS مباشرة",
+          "confirmation_criterion": "تأكيد مشكلة اتصال",
+          "tools": [
+            "VCDS"
+          ]
+        },
+        {
+          "action_ar": "فحص تغذية ABS وفيوزاته والأرضي ووصلات CAN",
+          "confirmation_criterion": "سلامة دائرة مثبتة",
+          "tools": [
+            "multimeter"
+          ]
+        },
+        {
+          "action_ar": "افحص MVB 125+ في الأنظمة القديمة إن توفر",
+          "confirmation_criterion": "تغيير حالة التواصل بعد الإصلاح",
+          "tools": [
+            "scan tool"
+          ]
+        }
+      ],
+      "live_data": [
+        {
+          "parameter_en": "ABS communication status",
+          "parameter_ar": "حالة الاتصال بالـABS",
+          "method": "MVB 125+ if supported",
+          "reference_limit": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "ABS control module J104",
+          "name_ar": "وحدة مانع الانغلاق ABS",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        },
+        {
+          "name_en": "CAN network",
+          "name_ar": "شبكة CAN",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.google.com/search?tbm=isch&q=Audi+ABS+J104+control+module",
+          "type": "image_search_only_not_verified_photo"
+        }
+      ],
+      "wiring": null,
+      "video": {
+        "url": "https://www.youtube.com/results?search_query=Audi+VCDS+01316+ABS+no+communication+CAN+diagnosis",
+        "type": "youtube_search_only_not_verified_video"
+      },
+      "priority_evidence": {
+        "priority": "A2 network/control priority",
+        "basis": "Ross-Tech technical guidance; NOT a measured Audi workshop frequency"
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01316",
+          "publisher": "Ross-Tech",
+          "source_version": "Web page as verified 2026-10-15",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php?pagefrom=01262&title=Category:Fault_Codes",
+          "publisher": "Ross-Tech",
+          "evidence": "category page title; code presence only",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Audi",
+      "code": "B2000",
+      "code_format": "SAE-style 5-character DTC; Ross-Tech page label B2000",
+      "ecu": "Airbag / Instrument cluster / other affected ECU",
+      "definition_en": "Control Module: Defective",
+      "translation_ar": "وحدة تحكم إلكترونية بها عطل داخلي",
+      "category": "manufacturer_or_reserved_range_not_DA_verified",
+      "applicability": {
+        "models": "Audi model/ECU unknown; only ECU-reported context identifies relevance"
+      },
+      "symptoms": [
+        "Warning lamp possible"
+      ],
+      "causes": [
+        {
+          "hypothesis": "Internal module failure (Ross-Tech); must verify module, power and coding",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "action_ar": "حدد وحدة التحكم التي سجلت الكود وأكوادها المصاحبة",
+          "confirmation_criterion": "تحديد ECU ومعلومات البرنامج",
+          "tools": [
+            "scan tool"
+          ]
+        },
+        {
+          "action_ar": "افحص تغذية/أرضي وترميز/إصدار ECU حتى لا تنسب العطل لمجموعة غير صحيحة",
+          "confirmation_criterion": "فولت/توصيل مثبت حسب VIN",
+          "tools": [
+            "multimeter"
+          ]
+        },
+        {
+          "action_ar": "إذا الكود داخل Airbag: لا تقم بإصلاح إلكتروني غير معتمد؛ اتبع تعليمات مصنع السيارة",
+          "confirmation_criterion": "السلامة والقطع الجديدة وفق erWin",
+          "tools": [
+            "erWin"
+          ]
+        }
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Control module identification",
+          "parameter_ar": "هوية وحدة التحكم",
+          "method": "read ECU identification",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Supply voltage",
+          "parameter_ar": "جهد التغذية",
+          "method": "if available",
+          "reference_limit": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Affected control module",
+          "name_ar": "وحدة التحكم المتأثرة",
+          "location": "حسب عنوان ECU",
+          "part_number": null
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.google.com/search?tbm=isch&q=Audi+airbag+control+module",
+          "type": "image_search_only_not_verified_photo"
+        }
+      ],
+      "wiring": null,
+      "video": {
+        "url": "https://www.youtube.com/results?search_query=Audi+B2000+control+module+defective+diagnosis+VCDS",
+        "type": "youtube_search_only_not_verified_video"
+      },
+      "priority_evidence": {
+        "priority": "A3 safety/airbag review",
+        "basis": "Ross-Tech technical guidance; NOT a measured Audi workshop frequency"
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/B2000",
+          "publisher": "Ross-Tech",
+          "source_version": "Web page as verified 2026-10-15",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php?pagefrom=18619%2FP2187%2F008583&title=Category:Fault_Codes",
+          "publisher": "Ross-Tech",
+          "evidence": "category page title; code presence only",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Audi",
+      "code": "C10AC",
+      "code_format": "SAE-style 5-character DTC; Ross-Tech page label C10AC",
+      "ecu": "Steering Assist J500 (where applicable)",
+      "definition_en": "Steering End Stops Not Learned",
+      "translation_ar": "نقاط نهاية مشوار المقود غير متعلّمة",
+      "category": "manufacturer_or_reserved_range_not_DA_verified",
+      "applicability": {
+        "models": "Audi EPS with compatible ECU; exact mapping pending",
+        "variant": "Steering End Stops Not Learned; do NOT merge Mechanical Failure variant"
+      },
+      "symptoms": [
+        "Steering warning lamp",
+        "Hard steering"
+      ],
+      "causes": [
+        {
+          "hypothesis": "Steering end stops not learned after G85 calibration",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "action_ar": "اقرأ النص الفرعي الدقيق قبل تفعيل Basic Setting",
+          "confirmation_criterion": "تمييز End Stops Not Learned من Mechanical Failure",
+          "tools": [
+            "VCDS"
+          ]
+        },
+        {
+          "action_ar": "نفذ معايرة G85 وتعلم حدّي المقود وفق إجراءات الموديل",
+          "confirmation_criterion": "ECU confirms adaptation performed",
+          "tools": [
+            "ODIS"
+          ]
+        },
+        {
+          "action_ar": "إذا بقي الكود مع عطل ميكانيكي، لا تفسره على أنه فقدان تعلم فقط",
+          "confirmation_criterion": "اختبار ميكانيكي/كهربائي إضافي",
+          "tools": []
+        }
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Steering angle G85",
+          "parameter_ar": "زاوية المقود G85",
+          "method": "monitor while steering",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "End stops learned status",
+          "parameter_ar": "حالة تعلم حدود المقود",
+          "method": "if reported",
+          "reference_limit": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Steering angle sensor G85",
+          "name_ar": "حساس زاوية المقود",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        },
+        {
+          "name_en": "Steering control module",
+          "name_ar": "وحدة توجيه المقود",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.google.com/search?tbm=isch&q=Audi+steering+angle+sensor+G85",
+          "type": "image_search_only_not_verified_photo"
+        }
+      ],
+      "wiring": null,
+      "video": {
+        "url": "https://www.youtube.com/results?search_query=Audi+C10AC+steering+end+stops+not+learned+calibration",
+        "type": "youtube_search_only_not_verified_video"
+      },
+      "priority_evidence": {
+        "priority": "A3 pending Audi-specific mapping",
+        "basis": "Ross-Tech technical guidance; NOT a measured Audi workshop frequency"
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/C10AC",
+          "publisher": "Ross-Tech",
+          "source_version": "Web page as verified 2026-10-15",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php?pagefrom=18619%2FP2187%2F008583&title=Category:Fault_Codes",
+          "publisher": "Ross-Tech",
+          "evidence": "category page title; code presence only",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Audi",
+      "code": "P0016",
+      "code_format": "SAE-style 5-character DTC; Ross-Tech page label 16400/P0016/000022",
+      "ecu": "ECM",
+      "definition_en": "Bank 1: Camshaft Position Sensor (G40) / Engine Speed Sensor (G28): Incorrect Correlation",
+      "translation_ar": "عدم تطابق توقيت حساس عمود الكامات G40 مع حساس دوران الكرنك G28 – البنك الأول",
+      "category": "generic_range_candidate_not_DA_verified",
+      "applicability": {
+        "models": [
+          "Audi A4/A5/Q5 2009 3.2 FSI mentioned by Ross-Tech"
+        ],
+        "engine_codes": [
+          "AVE mentioned; verify bulletin"
+        ],
+        "market": "North America note; VIN not verified"
+      },
+      "symptoms": [
+        "MIL on"
+      ],
+      "causes": [
+        {
+          "hypothesis": "Timing belt/chain or mechanical timing out of phase",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Camshaft adjuster fault",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Sensor/wiring only after timing validation (diagnostic inference)",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "action_ar": "سجّل Freeze Frame والضجيج عند بدء التشغيل والأكواد الأخرى",
+          "confirmation_criterion": "الظروف موثقة",
+          "tools": [
+            "scan tool"
+          ]
+        },
+        {
+          "action_ar": "تحقق من علامات وتوقيت الكامات/الكرنك حسب تعليمات الإصلاح للمحرك نفسه",
+          "confirmation_criterion": "مطابقة مع erWin؛ لا تعتمد رقماً عاماً",
+          "tools": [
+            "timing tools"
+          ]
+        },
+        {
+          "action_ar": "افحص cam adjuster والـspool valve عند وجود دليل",
+          "confirmation_criterion": "اختبار التشغيل ووضع الكامات حسب المصنع",
+          "tools": [
+            "ODIS"
+          ]
+        },
+        {
+          "action_ar": "لا تستبدل G40 أو G28 بناءً على هذا الكود وحده",
+          "confirmation_criterion": "إثبات كهربائي مستقل قبل الاستبدال",
+          "tools": [
+            "oscilloscope"
+          ]
+        }
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Camshaft phase / camshaft adaptation",
+          "parameter_ar": "زاوية طور الكامات/قيمة التعلم",
+          "method": "Compare to OEM spec",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Camshaft position specified",
+          "parameter_ar": "موضع عمود الكامات المطلوب",
+          "method": "ECU dependent",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Camshaft position actual",
+          "parameter_ar": "موضع عمود الكامات الفعلي",
+          "method": "ECU dependent",
+          "reference_limit": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "G40 Camshaft sensor",
+          "name_ar": "حساس موضع الكامات",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        },
+        {
+          "name_en": "G28 Engine speed sensor",
+          "name_ar": "حساس دوران الكرنك",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        },
+        {
+          "name_en": "Camshaft timing adjuster",
+          "name_ar": "معدّل توقيت الكامات",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.google.com/search?tbm=isch&q=Audi+3.2+FSI+camshaft+adjuster+G40",
+          "type": "image_search_only_not_verified_photo"
+        }
+      ],
+      "wiring": null,
+      "video": {
+        "url": "https://www.youtube.com/results?search_query=Audi+3.2+FSI+P0016+camshaft+crankshaft+timing+correlation",
+        "type": "youtube_search_only_not_verified_video"
+      },
+      "priority_evidence": {
+        "priority": "A2 prioritized for diagnosis",
+        "basis": "Ross-Tech links Audi 2009 A4/A5/Q5 3.2FSI with TSB 15-09-04; precise bulletin not reviewed"
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/16400/P0016/000022",
+          "publisher": "Ross-Tech",
+          "source_version": "Web page as verified 2026-10-15",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php?pagefrom=01262&title=Category:Fault_Codes",
+          "publisher": "Ross-Tech",
+          "evidence": "category page title; code presence only",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Audi",
+      "code": "P0106",
+      "code_format": "SAE-style 5-character DTC; Ross-Tech page label 16490/P0106/000262",
+      "ecu": "ECM",
+      "definition_en": "Manifold / Barometric Pressure Sensor (G71) / (F96): Implausible Signal",
+      "translation_ar": "إشارة غير منطقية من حساس ضغط مجمع السحب أو الضغط الجوي G71/F96",
+      "category": "generic_range_candidate_not_DA_verified",
+      "applicability": {
+        "models": "Audi model not yet factory-confirmed",
+        "engine_codes": "غير مؤكد",
+        "fuel": "gasoline / diesel depending ECU",
+        "market": "غير مؤكد"
+      },
+      "symptoms": [
+        "Erratic idle"
+      ],
+      "causes": [
+        {
+          "hypothesis": "Intake/vacuum hose leak including brake booster and PCV circuits",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Sensor connector/wiring issue",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "MAP sensor mismatch or failure",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "ECM software/timing issue on certain engines",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "action_ar": "ابدأ بفحص الخراطيم القديمة والفواكيوم وخط السيرفو والـPCV وقاعدة أنبوب مقياس الزيت",
+          "confirmation_criterion": "لا يوجد تسريب بعد smoke test",
+          "tools": [
+            "smoke tester"
+          ]
+        },
+        {
+          "action_ar": "قارن MAP والضغط الجوي والموتور متوقف قبل التشغيل",
+          "confirmation_criterion": "مقارنة منطقية؛ الرقم حسب الارتفاع/الجو غير مؤكد",
+          "tools": [
+            "scan tool"
+          ]
+        },
+        {
+          "action_ar": "اختبر التغذية والأرضي والإشارة وفق مخطط ECU المحدد",
+          "confirmation_criterion": "القيم الدقيقة غير مؤكدة؛ تتطلب VIN/ECU",
+          "tools": [
+            "multimeter"
+          ]
+        },
+        {
+          "action_ar": "افحص نسخة البرنامج وتوقيت المحرك إذا ظهرت أدلة أخرى قبل تبديل MAP",
+          "confirmation_criterion": "معالجة التوقيت/البرنامج عند ثبوت عطل",
+          "tools": [
+            "ODIS"
+          ]
+        }
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Manifold Absolute Pressure (MAP)",
+          "parameter_ar": "الضغط المطلق في مجمع السحب",
+          "method": "KOEO and running",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Barometric Pressure (BARO)",
+          "parameter_ar": "الضغط الجوي",
+          "method": "KOEO",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Engine speed",
+          "parameter_ar": "سرعة المحرك",
+          "method": "idle",
+          "reference_limit": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "MAP / G71",
+          "name_ar": "حساس ضغط مجمع السحب",
+          "location": "حسب المحرك",
+          "part_number": null
+        },
+        {
+          "name_en": "Barometric sensor F96",
+          "name_ar": "حساس الضغط الجوي",
+          "location": "قد يكون داخل ECM حسب النسخة",
+          "part_number": null
+        },
+        {
+          "name_en": "Crankcase breather/PCV",
+          "name_ar": "تهوية الكارتير",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.google.com/search?tbm=isch&q=Audi+TFSI+G71+manifold+absolute+pressure+sensor",
+          "type": "image_search_only_not_verified_photo"
+        }
+      ],
+      "wiring": null,
+      "video": {
+        "url": "https://www.youtube.com/results?search_query=Audi+TFSI+P0106+MAP+pressure+vacuum+leak+diagnosis",
+        "type": "youtube_search_only_not_verified_video"
+      },
+      "priority_evidence": {
+        "priority": "A2 prioritized for diagnosis",
+        "basis": "Ross-Tech provides leak-first differential diagnosis; Audi engine mapping not confirmed"
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/16490/P0106/000262",
+          "publisher": "Ross-Tech",
+          "source_version": "Web page as verified 2026-10-15",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php?pagefrom=16403%2FP0019%2F000025&title=Category:Fault_Codes",
+          "publisher": "Ross-Tech",
+          "evidence": "category page title; code presence only",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Audi",
+      "code": "P0171",
+      "code_format": "SAE-style 5-character DTC; Ross-Tech page label 16555/P0171/000369",
+      "ecu": "ECM",
+      "definition_en": "Fuel Trim; Bank 1: System Too Lean",
+      "translation_ar": "تصحيح الوقود: خليط فقير في البنك الأول",
+      "category": "generic_range_candidate_not_DA_verified",
+      "applicability": {
+        "models": "Audi gasoline with bank 1; engine and market unconfirmed"
+      },
+      "symptoms": [],
+      "causes": [
+        {
+          "hypothesis": "Air/vacuum intake leak",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "G70 MAF abnormal",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Fuel pressure/pump/injector issue",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Exhaust or secondary air leak",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "action_ar": "فحص فاكيوم/PCV وخراطيم السحب قبل الحساسات",
+          "confirmation_criterion": "تسريب مستبعد",
+          "tools": [
+            "smoke tester"
+          ]
+        },
+        {
+          "action_ar": "قارن Fuel Trim عند الخمول والحمل",
+          "confirmation_criterion": "نمط تدل عليه القيم لا قيمة عامة",
+          "tools": [
+            "scan tool"
+          ]
+        },
+        {
+          "action_ar": "تحقق من MAF وسكة الوقود والبخاخات بعد استبعاد التسريب",
+          "confirmation_criterion": "اختبار محدد السبب",
+          "tools": [
+            "multimeter",
+            "fuel pressure tester"
+          ]
+        }
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Short Term Fuel Trim - Bank 1",
+          "parameter_ar": "تصحيح الوقود القصير",
+          "method": "warm idle / cruise",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Long Term Fuel Trim - Bank 1",
+          "parameter_ar": "تصحيح الوقود الطويل",
+          "method": "warm idle / cruise",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Mass Air Flow",
+          "parameter_ar": "كمية الهواء",
+          "method": "compare response to load",
+          "reference_limit": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "MAF (G70)",
+          "name_ar": "حساس كمية الهواء",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        },
+        {
+          "name_en": "PCV",
+          "name_ar": "صمام تهوية الكارتير",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        },
+        {
+          "name_en": "Vacuum hoses",
+          "name_ar": "خراطيم الفاكيوم",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.google.com/search?tbm=isch&q=Audi+TFSI+PCV+vacuum+lines+MAF",
+          "type": "image_search_only_not_verified_photo"
+        }
+      ],
+      "wiring": null,
+      "video": {
+        "url": "https://www.youtube.com/results?search_query=Audi+TFSI+P0171+fuel+trim+PCV+vacuum+leak+smoke+test",
+        "type": "youtube_search_only_not_verified_video"
+      },
+      "priority_evidence": {
+        "priority": "A2 prioritized for diagnosis",
+        "basis": "Ross-Tech technical guidance; NOT a measured Audi workshop frequency"
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/16555/P0171/000369",
+          "publisher": "Ross-Tech",
+          "source_version": "Web page as verified 2026-10-15",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php?pagefrom=16403%2FP0019%2F000025&title=Category:Fault_Codes",
+          "publisher": "Ross-Tech",
+          "evidence": "category page title; code presence only",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Audi",
+      "code": "P029900",
+      "code_format": "Audi UDS-style extended code P029900 / base DTC P0299 / legacy aliases 16683, 000665",
+      "ecu": "ECM J623 / address 01",
+      "definition_en": "Boost Pressure Regulation: Control Range Not Reached; Audi bulletin: Negative Pressure Deviation",
+      "translation_ar": "ضغط شحن التيربو أقل من المطلوب؛ وفي نشرة أودي: انحراف ضغط سلبي",
+      "category": "generic_range_candidate_not_DA_verified",
+      "applicability": {
+        "models": [
+          "A4 2009–2010",
+          "A5 2009–2010",
+          "A5 Cabriolet 2010"
+        ],
+        "engine_codes": [
+          "CAEB"
+        ],
+        "fuel": "gasoline TFSI",
+        "market": "North America (Audi of America TSB)",
+        "limits": "TSB 2031245/6 only; other Audi models not inferred",
+        "occurrence": "MIL on; static P029900; visually excessive wastegate flap/linkage play"
+      },
+      "symptoms": [
+        "MIL illuminated",
+        "Power loss or limp mode possible (Ross-Tech)"
+      ],
+      "causes": [
+        {
+          "hypothesis": "Charge-air plumbing leaks / blockages or other stored DTCs: EXCLUDE FIRST per Audi TSB",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Wastegate actuator linkage or flap excessive play (CAEB bulletin)",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Other turbo/diverter/pressure control faults if bulletin conditions not met",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "action_ar": "احفظ Freeze Frame وكل الأكواد المتزامنة قبل مسحها",
+          "confirmation_criterion": "لقطة بيانات محفوظة",
+          "tools": [
+            "ODIS/VCDS/Autel"
+          ]
+        },
+        {
+          "action_ar": "افحص خرطوم الشحن والأنابيب والتسريب والانسداد وعالج الأكواد المرافقة",
+          "confirmation_criterion": "لا يوجد تسريب/انسداد مؤثر",
+          "tools": [
+            "smoke tester",
+            "pressure tester"
+          ]
+        },
+        {
+          "action_ar": "تأكد من أن P029900 Static داخل J623 وأن وصلة الـWastegate بها خلوص مرئي باتجاه ذراع التشغيل",
+          "confirmation_criterion": "ثبوت الخلوص مع تحقق الشروط الثلاثة في Audi TSB",
+          "tools": [
+            "inspection light"
+          ]
+        },
+        {
+          "action_ar": "في الحالة المتقطعة الوحيدة يمكن مسح الكود وإعادة فحصه أثناء تجربة قيادة",
+          "confirmation_criterion": "عودة الكود بعد تجربة قيادة مضبوطة",
+          "tools": [
+            "scan tool"
+          ]
+        },
+        {
+          "action_ar": "لا تستبدل التيربو قبل اتباع GFF/ElsaWeb وتعليماته",
+          "confirmation_criterion": "تشخيص GFF يوجه للإصلاح",
+          "tools": [
+            "factory GFF / erWin"
+          ]
+        }
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Boost pressure specified",
+          "parameter_ar": "ضغط الشحن المطلوب",
+          "method": "Compare under repeatable load; exact factory limit not verified",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Boost pressure actual",
+          "parameter_ar": "ضغط الشحن الفعلي",
+          "method": "Compare to specified; record RPM/load",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Charge pressure actuator position / duty cycle",
+          "parameter_ar": "موضع / تشغيل مشغل ضغط الشحن",
+          "method": "if exposed by ECU",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Engine speed",
+          "parameter_ar": "سرعة المحرك",
+          "method": "Record during fault",
+          "reference_limit": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Wastegate flap/linkage",
+          "name_ar": "بوابة التيربو وذراع التحكم",
+          "location": "ضمن مجموعة التيربو في CAEB",
+          "part_number": null
+        },
+        {
+          "name_en": "Turbocharger",
+          "name_ar": "الشاحن التوربيني",
+          "location": "مجموعة العادم بالمحرك CAEB",
+          "part_number": "06H145702S (2013 bulletin; recheck ETKA)"
+        },
+        {
+          "name_en": "Spring clip",
+          "name_ar": "مشبك ذراع الـWastegate",
+          "location": "على وصلة ذراع التحكم",
+          "part_number": "06J145220B (2013 bulletin; recheck ETKA)"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.google.com/search?tbm=isch&q=Audi+CAEB+wastegate+linkage+2031245",
+          "type": "image_search_only_not_verified_photo"
+        }
+      ],
+      "wiring": null,
+      "video": {
+        "url": "https://www.youtube.com/results?search_query=Audi+A4+2009+CAEB+P0299+wastegate+linkage+play",
+        "type": "youtube_search_only_not_verified_video"
+      },
+      "priority_evidence": {
+        "priority": "A1 TSB-documented",
+        "basis": "Audi TSB 2031245/6 explicitly covers DTC P029900 / turbo wastegate play; this establishes technical priority but NOT numeric prevalence"
+      },
+      "sources": [
+        {
+          "url": "https://static.nhtsa.gov/odi/tsbs/2013/MC-10124497-9999.pdf",
+          "publisher": "Audi of America",
+          "source_version": "Audi 2031245/6, 2013-07-09",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/16683/P0299/000665",
+          "publisher": "Ross-Tech",
+          "source_version": "Web page as verified 2026-10-15",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "مكتمل"
+    },
+    {
+      "brand": "Audi",
+      "code": "P0300",
+      "code_format": "SAE-style 5-character DTC; Ross-Tech page label 16684/P0300/000768",
+      "ecu": "ECM",
+      "definition_en": "Random/Multiple Cylinder Misfire Detected",
+      "translation_ar": "احتراق غير منتظم في أسطوانة أو عدة أسطوانات دون تحديد أسطوانة بعينها",
+      "category": "generic_range_candidate_not_DA_verified",
+      "applicability": {
+        "models": [
+          "A3/TT 2008–2013",
+          "A4/A5/Q5/A6 2009–2013"
+        ],
+        "engine_family": "2.0 TFSI EA888, per Ross-Tech note",
+        "limit": "Not all variants have same ECU adaptation procedure"
+      },
+      "symptoms": [
+        "Rough engine operation possible",
+        "MIL possible",
+        "Loss of power possible"
+      ],
+      "causes": [
+        {
+          "hypothesis": "Ignition plug/coil issues in gasoline engines",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Fuel pressure/injectors",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Air intake leaks",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Mechanical compression/valve deposits",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Camshaft timing issue",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "action_ar": "اكتشف أكواد الأسطوانات الفردية P0301…P0312 وFreeze Frame",
+          "confirmation_criterion": "تحديد نمط misfire",
+          "tools": [
+            "scan tool"
+          ]
+        },
+        {
+          "action_ar": "افحص مكونات الاشتعال والمحرك الساخن والبارد بحسب المحرك",
+          "confirmation_criterion": "نتيجة اختبار شرارة وبواجي سليمة",
+          "tools": [
+            "coil tester"
+          ]
+        },
+        {
+          "action_ar": "راقب عدادات misfire لكل أسطوانة مع RPM وحمل المحرك",
+          "confirmation_criterion": "عزل الأسطوانة والشرط",
+          "tools": [
+            "scan tool"
+          ]
+        },
+        {
+          "action_ar": "اعزل مشاكل الوقود/الهواء والضغط والانضغاط بدل تبديل ملفات الاشتعال عشوائياً",
+          "confirmation_criterion": "تأكيد بالقياس",
+          "tools": [
+            "fuel tester",
+            "compression tester"
+          ]
+        },
+        {
+          "action_ar": "لا تنفذ Reset Misfire Adaptions إلا بعد إثبات إجراء المصنع المطبق؛ Ross-Tech يذكر حالات EA888 بعد تبديل المحرك",
+          "confirmation_criterion": "نسخة ECU والتحسين متوافقان",
+          "tools": [
+            "ODIS"
+          ]
+        }
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Misfire counter cylinder 1..N",
+          "parameter_ar": "عداد انقطاع الاحتراق لكل أسطوانة",
+          "method": "Monitor idle and load",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Fuel rail pressure actual",
+          "parameter_ar": "ضغط سكة الوقود الفعلي",
+          "method": "compare with specified",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Engine speed",
+          "parameter_ar": "دورات المحرك",
+          "method": "observe fault reproduction",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Lambda actual",
+          "parameter_ar": "لامبدا الفعلية",
+          "method": "when available",
+          "reference_limit": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Ignition coil",
+          "name_ar": "كويل الإشعال",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        },
+        {
+          "name_en": "Spark plug",
+          "name_ar": "شمعة الاحتراق",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        },
+        {
+          "name_en": "Fuel injector",
+          "name_ar": "بخاخ الوقود",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.google.com/search?tbm=isch&q=Audi+EA888+2.0+TFSI+ignition+coils+spark+plugs",
+          "type": "image_search_only_not_verified_photo"
+        }
+      ],
+      "wiring": null,
+      "video": {
+        "url": "https://www.youtube.com/results?search_query=Audi+EA888+2.0+TFSI+P0300+misfire+diagnosis",
+        "type": "youtube_search_only_not_verified_video"
+      },
+      "priority_evidence": {
+        "priority": "A2 prioritized for diagnosis",
+        "basis": "Ross-Tech documentation includes Audi EA888 family-specific service note; no fleet-frequency ranking"
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/16684/P0300/000768",
+          "publisher": "Ross-Tech",
+          "source_version": "Web page as verified 2026-10-15",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php?pagefrom=16403%2FP0019%2F000025&title=Category:Fault_Codes",
+          "publisher": "Ross-Tech",
+          "evidence": "category page title; code presence only",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Audi",
+      "code": "P0401",
+      "code_format": "SAE-style 5-character DTC; Ross-Tech page label 16785/P0401/001025",
+      "ecu": "ECM",
+      "definition_en": "Exhaust Gas Recirculation (EGR) System: Insufficient Flow Detected",
+      "translation_ar": "تدفق غازات العادم المعادة EGR أقل من المطلوب",
+      "category": "generic_range_candidate_not_DA_verified",
+      "applicability": {
+        "models": "TDI and other Audi engines with EGR; exact code/model/year pending",
+        "fuel": "diesel primarily; no universal assumption"
+      },
+      "symptoms": [
+        "MIL",
+        "May run rough or reduced power"
+      ],
+      "causes": [
+        {
+          "hypothesis": "EGR passage blockage/carbon deposit",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "EGR valve sticking or fault",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Valve connector/wiring fault",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "action_ar": "افحص أنابيب EGR والسحب لانغلاقها بالكربون",
+          "confirmation_criterion": "انسداد مثبت",
+          "tools": [
+            "inspection tools"
+          ]
+        },
+        {
+          "action_ar": "اطلب تشغيل EGR عبر الاختبار المناسب",
+          "confirmation_criterion": "استجابة فعلية مطابقة للأمر حسب ECU",
+          "tools": [
+            "ODIS/VCDS"
+          ]
+        },
+        {
+          "action_ar": "تحقق من توصيلات الصمام قبل استبداله",
+          "confirmation_criterion": "فولت/مقاومة من المخطط المحدد، غير مؤكدة",
+          "tools": [
+            "multimeter"
+          ]
+        }
+      ],
+      "live_data": [
+        {
+          "parameter_en": "EGR specified",
+          "parameter_ar": "تدفق/موضع EGR المطلوب",
+          "method": "if supported",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "EGR actual",
+          "parameter_ar": "تدفق/موضع EGR الفعلي",
+          "method": "if supported",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Mass Air Flow actual",
+          "parameter_ar": "كتلة الهواء الفعلية",
+          "method": "look for response during actuation",
+          "reference_limit": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "EGR valve",
+          "name_ar": "صمام تدوير غازات العادم",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        },
+        {
+          "name_en": "EGR piping / cooler",
+          "name_ar": "أنابيب ومبرد EGR",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.google.com/search?tbm=isch&q=Audi+2.0+TDI+EGR+valve+cooler",
+          "type": "image_search_only_not_verified_photo"
+        }
+      ],
+      "wiring": null,
+      "video": {
+        "url": "https://www.youtube.com/results?search_query=Audi+2.0+TDI+P0401+EGR+flow+diagnosis",
+        "type": "youtube_search_only_not_verified_video"
+      },
+      "priority_evidence": {
+        "priority": "A2 prioritized for diagnosis",
+        "basis": "Ross-Tech technical guidance; NOT a measured Audi workshop frequency"
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/16785/P0401/001025",
+          "publisher": "Ross-Tech",
+          "source_version": "Web page as verified 2026-10-15",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php?pagefrom=16403%2FP0019%2F000025&title=Category:Fault_Codes",
+          "publisher": "Ross-Tech",
+          "evidence": "category page title; code presence only",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Audi",
+      "code": "P189C",
+      "code_format": "Manufacturer-specific P189C / VAG decimal alias 006300",
+      "ecu": "TCM/Mechatronics",
+      "definition_en": "Function Restriction due to Insufficient Pressure Build-Up",
+      "translation_ar": "تقييد عمل ناقل الحركة لعدم وصول الضغط الهيدروليكي المطلوب",
+      "category": "manufacturer_or_reserved_range_not_DA_verified",
+      "applicability": {
+        "transmission": "7-speed DSG/0AM documented by Ross-Tech",
+        "Audi_application": "غير مؤكد؛ لا تفترض أنه ينطبق على جميع Audi S tronic"
+      },
+      "symptoms": [
+        "Basic Settings incomplete",
+        "TCM retains DTC"
+      ],
+      "causes": [
+        {
+          "hypothesis": "Mechatronic supply fuse/wiring/connector",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Hydraulic pump V401 / mechatronics fault",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "action_ar": "حدد نوع ناقل الحركة برقم علبة السرعة أولاً ولا تطبق فحص 0AM على DL501/0B5",
+          "confirmation_criterion": "0AM مثبت على ملصق/عبر scan",
+          "tools": [
+            "VCDS"
+          ]
+        },
+        {
+          "action_ar": "في DSG/0AM فقط: افحص جهد البطارية عند pin 9 من مقبس 25 طرفاً حسب Ross-Tech",
+          "confirmation_criterion": "فحص جهد تحت حمل؛ نسخة Audi غير مؤكدة",
+          "tools": [
+            "multimeter"
+          ]
+        },
+        {
+          "action_ar": "تحقق من الفيوز والأرضي والضغط قبل استبدال الميكاترونيك",
+          "confirmation_criterion": "تأكيد السبب الفعلي",
+          "tools": [
+            "ODIS"
+          ]
+        }
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Mechatronic hydraulic pressure actual",
+          "parameter_ar": "ضغط الميكاترونيك الفعلي",
+          "method": "0AM ECU only",
+          "reference_limit": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Mechatronic unit",
+          "name_ar": "وحدة الميكاترونيك",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        },
+        {
+          "name_en": "Hydraulic pump motor V401",
+          "name_ar": "محرك المضخة الهيدروليكية",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.google.com/search?tbm=isch&q=0AM+DSG+mechatronic+V401",
+          "type": "image_search_only_not_verified_photo"
+        }
+      ],
+      "wiring": {
+        "pin": "25-pin connector pin 9 battery feed",
+        "scope": "Ross-Tech 0AM ONLY; not proven for any Audi VIN",
+        "reference": "https://wiki.ross-tech.com/wiki/index.php/P189C/006300"
+      },
+      "video": {
+        "url": "https://www.youtube.com/results?search_query=0AM+DSG+P189C+006300+mechatronic+pressure+diagnosis",
+        "type": "youtube_search_only_not_verified_video"
+      },
+      "priority_evidence": {
+        "priority": "A3 pending Audi-specific mapping",
+        "basis": "Ross-Tech technical guidance; NOT a measured Audi workshop frequency"
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/P189C/006300",
+          "publisher": "Ross-Tech",
+          "source_version": "Web page as verified 2026-10-15",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php?pagefrom=18619%2FP2187%2F008583&title=Category:Fault_Codes",
+          "publisher": "Ross-Tech",
+          "evidence": "category page title; code presence only",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Audi",
+      "code": "P2002",
+      "code_format": "SAE-style 5-character DTC; Ross-Tech page label 18434/P2002/008194",
+      "ecu": "ECM",
+      "definition_en": "Particle Filter Bank 1: Malfunction",
+      "translation_ar": "خلل بكفاءة/عمل فلتر الجسيمات DPF – البنك الأول",
+      "category": "generic_range_candidate_not_DA_verified",
+      "applicability": {
+        "models": "Audi TDI with DPF; model, emissions standard and engine code pending",
+        "fuel": "diesel"
+      },
+      "symptoms": [
+        "MIL on"
+      ],
+      "causes": [
+        {
+          "hypothesis": "G450 exhaust differential pressure sensing fault",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "DPF restriction, leak or physical damage; exact failure pending",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "action_ar": "راقب ضغط DPF والتجدد وآخر تجربة regeneration",
+          "confirmation_criterion": "القراءات مقارنة بالمواصفات الخاصة بالسيارة",
+          "tools": [
+            "scan tool"
+          ]
+        },
+        {
+          "action_ar": "اختبر خرطومي G450 والتوصيلات والتسرب/الانسداد",
+          "confirmation_criterion": "تأكيد سلامة الأنابيب",
+          "tools": [
+            "pressure gauge"
+          ]
+        },
+        {
+          "action_ar": "قبل regeneration تأكد من شروط الأمان ودرجات الحرارة ومواصفات المصنع",
+          "confirmation_criterion": "مطابقة شروط erWin؛ غير مؤكد حالياً",
+          "tools": [
+            "ODIS"
+          ]
+        },
+        {
+          "action_ar": "لا تعتبر P2002 دليلاً منفرداً على ضرورة استبدال DPF",
+          "confirmation_criterion": "اختبار حساسات وكفاءة الفلتر أولاً",
+          "tools": []
+        }
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Particle filter differential pressure",
+          "parameter_ar": "الضغط التفاضلي لفلتر الجسيمات",
+          "method": "at defined rpm/load",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Calculated soot mass",
+          "parameter_ar": "كتلة السخام المحسوبة",
+          "method": "read ECU",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Exhaust gas temperature upstream of DPF",
+          "parameter_ar": "حرارة العادم قبل DPF",
+          "method": "verify safe regeneration window",
+          "reference_limit": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Exhaust Pressure Sensor G450",
+          "name_ar": "حساس فرق ضغط العادم",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        },
+        {
+          "name_en": "Diesel particulate filter",
+          "name_ar": "فلتر الجسيمات DPF",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.google.com/search?tbm=isch&q=Audi+2.0+TDI+G450+DPF+pressure+sensor",
+          "type": "image_search_only_not_verified_photo"
+        }
+      ],
+      "wiring": null,
+      "video": {
+        "url": "https://www.youtube.com/results?search_query=Audi+2.0+TDI+P2002+G450+differential+pressure+DPF+diagnosis",
+        "type": "youtube_search_only_not_verified_video"
+      },
+      "priority_evidence": {
+        "priority": "A2 prioritized for diagnosis",
+        "basis": "Ross-Tech technical guidance; NOT a measured Audi workshop frequency"
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/18434/P2002/008194",
+          "publisher": "Ross-Tech",
+          "source_version": "Web page as verified 2026-10-15",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php?pagefrom=17559%2FP1151%2F004433&title=Category:Fault_Codes",
+          "publisher": "Ross-Tech",
+          "evidence": "category page title; code presence only",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Audi",
+      "code": "P2015",
+      "code_format": "SAE-style 5-character DTC; Ross-Tech page label 18447/P2015/008213",
+      "ecu": "ECM",
+      "definition_en": "Intake Manifold Flap Position Sensor (Bank 1): Implausible Signal",
+      "translation_ar": "إشارة غير منطقية من حساس موضع بوابة مجمع السحب – البنك الأول",
+      "category": "generic_range_candidate_not_DA_verified",
+      "applicability": {
+        "models": "Audi gasoline/diesel where intake flap exists; specific Audi TSB 2044003 cited by Ross-Tech, scope pending",
+        "engine_codes": "غير مؤكد"
+      },
+      "symptoms": [
+        "MIL on",
+        "Power loss"
+      ],
+      "causes": [
+        {
+          "hypothesis": "Intake flap linkage/motor V157 failure",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Wiring/connectors",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Software or adaptation fault",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "N316 actuation fault in separate Audi service bulletin",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "action_ar": "شاهد حركة بوابات السحب ومدى التصاقها أو كسر الذراع",
+          "confirmation_criterion": "اختبار حركة واضح",
+          "tools": [
+            "inspection lamp"
+          ]
+        },
+        {
+          "action_ar": "نفّذ Output Test/Basic Setting الصحيح",
+          "confirmation_criterion": "موضع البوابة يتتبع الأمر",
+          "tools": [
+            "ODIS/VCDS"
+          ]
+        },
+        {
+          "action_ar": "قارن specified/actual بعد اختبار الأسلاك",
+          "confirmation_criterion": "فرق دائم مثبت؛ الحدود غير مؤكدة",
+          "tools": [
+            "multimeter"
+          ]
+        }
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Intake manifold runner specified position",
+          "parameter_ar": "موضع بوابة السحب المطلوب",
+          "method": "output test",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Intake manifold runner actual position",
+          "parameter_ar": "موضع بوابة السحب الفعلي",
+          "method": "compare and record",
+          "reference_limit": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Intake manifold flap motor V157",
+          "name_ar": "محرك بوابة مجمع السحب",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        },
+        {
+          "name_en": "Manifold runner position G336",
+          "name_ar": "حساس موضع بوابة مجمع السحب",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        },
+        {
+          "name_en": "Intake manifold flap valve N316",
+          "name_ar": "صمام تحكم بوابة السحب",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.google.com/search?tbm=isch&q=Audi+TFSI+intake+manifold+runner+V157+G336",
+          "type": "image_search_only_not_verified_photo"
+        }
+      ],
+      "wiring": null,
+      "video": {
+        "url": "https://www.youtube.com/results?search_query=Audi+P2015+V157+manifold+runner+flap+G336",
+        "type": "youtube_search_only_not_verified_video"
+      },
+      "priority_evidence": {
+        "priority": "A2 prioritized for diagnosis",
+        "basis": "Ross-Tech technical guidance; NOT a measured Audi workshop frequency"
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/18447/P2015/008213",
+          "publisher": "Ross-Tech",
+          "source_version": "Web page as verified 2026-10-15",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php?pagefrom=17559%2FP1151%2F004433&title=Category:Fault_Codes",
+          "publisher": "Ross-Tech",
+          "evidence": "category page title; code presence only",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Audi",
+      "code": "P2187",
+      "code_format": "SAE-style 5-character DTC; Ross-Tech page label 18619/P2187/008583",
+      "ecu": "ECM / J623",
+      "definition_en": "Bank 1: System Too Lean at Idle",
+      "translation_ar": "خليط الوقود والهواء فقير أكثر من المطلوب عند الخمول، البنك الأول",
+      "category": "generic_range_candidate_not_DA_verified",
+      "applicability": {
+        "models": [
+          "A3 2006–2008",
+          "A4 2005–2008",
+          "A4 Cabriolet 2007–2009",
+          "TT 2008–2010",
+          "TTS 2010–2011"
+        ],
+        "engine_codes": [
+          "BPY",
+          "BPG",
+          "BWT",
+          "CCTA",
+          "CDMA"
+        ],
+        "fuel": "gasoline turbo",
+        "market": "North America (Audi of America TSB 2015505/10)",
+        "vin_suffix_ranges_as_printed_in_tsb": [
+          {
+            "model": "TT",
+            "year": 2008,
+            "engine_codes": [
+              "BPY"
+            ],
+            "vin_suffix_min": "000166",
+            "vin_suffix_max": "999999"
+          },
+          {
+            "model": "TT",
+            "year": 2009,
+            "engine_codes": [
+              "BPY",
+              "CCTA",
+              "CDMA"
+            ],
+            "vin_suffix_min": "000001",
+            "vin_suffix_max": "033224"
+          },
+          {
+            "model": "TT",
+            "year": 2010,
+            "engine_codes": [
+              "CCTA"
+            ],
+            "vin_suffix_min": "000442",
+            "vin_suffix_max": "003554"
+          },
+          {
+            "model": "TTS",
+            "year": 2010,
+            "engine_codes": [
+              "CDMA"
+            ],
+            "vin_suffix_min": "004319",
+            "vin_suffix_max": "999999"
+          },
+          {
+            "model": "TTS",
+            "year": 2011,
+            "engine_codes": [
+              "CDMA"
+            ],
+            "vin_suffix_min": "000001",
+            "vin_suffix_max": "007893"
+          },
+          {
+            "model": "A4",
+            "year": 2005,
+            "engine_codes": [
+              "BPG"
+            ],
+            "vin_suffix_min": "405683",
+            "vin_suffix_max": "999999"
+          },
+          {
+            "model": "A4",
+            "year": 2006,
+            "engine_codes": [
+              "BPG"
+            ],
+            "vin_suffix_min": "000001",
+            "vin_suffix_max": "999999"
+          },
+          {
+            "model": "A4",
+            "year": 2007,
+            "engine_codes": [
+              "BWT"
+            ],
+            "vin_suffix_min": "000001",
+            "vin_suffix_max": "999999"
+          },
+          {
+            "model": "A4",
+            "year": 2008,
+            "engine_codes": [
+              "BWT"
+            ],
+            "vin_suffix_min": "000001",
+            "vin_suffix_max": "170087"
+          },
+          {
+            "model": "A3",
+            "year": 2006,
+            "engine_codes": [
+              "BPY"
+            ],
+            "vin_suffix_min": "000150",
+            "vin_suffix_max": "999999"
+          },
+          {
+            "model": "A3",
+            "year": 2007,
+            "engine_codes": [
+              "BPY"
+            ],
+            "vin_suffix_min": "000001",
+            "vin_suffix_max": "999999"
+          },
+          {
+            "model": "A3",
+            "year": 2008,
+            "engine_codes": [
+              "BPY"
+            ],
+            "vin_suffix_min": "000001",
+            "vin_suffix_max": "151827"
+          },
+          {
+            "model": "A4 Cabriolet",
+            "year": 2007,
+            "engine_codes": [
+              "BWT"
+            ],
+            "vin_suffix_min": "013458",
+            "vin_suffix_max": "999999"
+          },
+          {
+            "model": "A4 Cabriolet",
+            "year": 2008,
+            "engine_codes": [
+              "BWT"
+            ],
+            "vin_suffix_min": "000001",
+            "vin_suffix_max": "999999"
+          },
+          {
+            "model": "A4 Cabriolet",
+            "year": 2009,
+            "engine_codes": [
+              "BWT"
+            ],
+            "vin_suffix_min": "000001",
+            "vin_suffix_max": "011929"
+          }
+        ],
+        "limits": "VIN suffixes (last six digits) and engine groupings are transcribed from page 1 Audi TSB 2015505/10; do not substitute for full VIN validation with Audi erWin/ETKA"
+      },
+      "symptoms": [
+        "MIL illuminated",
+        "Whistling / rushing air noise",
+        "Oil leaks at filler cap",
+        "Unstable idle possible (inference)"
+      ],
+      "causes": [
+        {
+          "hypothesis": "Crankcase ventilation pressure regulating valve / PCV on bulletin-covered Audi cars",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Turbo inlet pipe or intake leaks",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "Injector or fuel supply fault",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        },
+        {
+          "hypothesis": "EVAP N80 or MAF readings where evidence supports them",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "action_ar": "تحقق من الموديل والمحرك ورقم VIN ضمن جدول النشرة",
+          "confirmation_criterion": "مطابقة جدول Audi 2015505/10",
+          "tools": [
+            "VIN reader"
+          ]
+        },
+        {
+          "action_ar": "افحص هواء السحب والـPCV وخراطيم الفاكيوم بمنظار ودخان",
+          "confirmation_criterion": "تحديد مصدر تسريب محسوس",
+          "tools": [
+            "smoke tester"
+          ]
+        },
+        {
+          "action_ar": "لاحظ عند الخمول هل غطاء الزيت يبقى ملتصقاً بقوة بعد فكّه؛ مؤشر للشفط الزائد حسب النشرة",
+          "confirmation_criterion": "علامة فحص مساعدة وليست وحدها حكماً نهائياً",
+          "tools": [
+            "inspection gloves"
+          ]
+        },
+        {
+          "action_ar": "طابق رقم صمام تهوية الكارتير وأنبوب دخول التيربو مع إصدارات التحسين حسب VIN/ETKA",
+          "confirmation_criterion": "رقم القطعة وطرازها مثبتان",
+          "tools": [
+            "ETKA/erWin"
+          ]
+        },
+        {
+          "action_ar": "تحقق من Fuel Trim قبل وبعد معالجة التسرب وإعادة تجربة القيادة",
+          "confirmation_criterion": "تحسن Fuel Trim وعدم عودة العطل؛ الحد الرسمي غير مؤكد",
+          "tools": [
+            "scan tool"
+          ]
+        }
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Short Term Fuel Trim - Bank 1",
+          "parameter_ar": "تصحيح الوقود القصير – البنك الأول",
+          "method": "Read hot idle",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Long Term Fuel Trim - Bank 1",
+          "parameter_ar": "تصحيح الوقود الطويل – البنك الأول",
+          "method": "Read at idle and part load",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Mass Air Flow",
+          "parameter_ar": "كمية الهواء المقاسة",
+          "method": "Check plausibility and changes",
+          "reference_limit": "غير مؤكد"
+        },
+        {
+          "parameter_en": "Oxygen Sensor / Lambda actual",
+          "parameter_ar": "لامبدا الفعلية",
+          "method": "if available in ECM",
+          "reference_limit": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Crankcase ventilation pressure regulating valve (PCV)",
+          "name_ar": "صمام تنظيم ضغط تهوية الكارتير",
+          "location": "على محرك TFSI حسب رقم المحرك",
+          "part_number": "06F 129 101 N / P (TSB; verify VIN)"
+        },
+        {
+          "name_en": "Turbo intake pipe",
+          "name_ar": "أنبوب مدخل التيربو",
+          "location": "حسب A3/TT/A4 والمحرك",
+          "part_number": "06F 103 215 B or 06D 103 215 A (VIN dependent)"
+        },
+        {
+          "name_en": "N80 EVAP purge valve",
+          "name_ar": "صمام بخار الوقود N80",
+          "location": "يحدد حسب المحرك/VIN",
+          "part_number": null
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.google.com/search?tbm=isch&q=Audi+BWT+BPY+crankcase+ventilation+regulating+valve+PCV",
+          "type": "image_search_only_not_verified_photo"
+        }
+      ],
+      "wiring": null,
+      "video": {
+        "url": "https://www.youtube.com/results?search_query=Audi+2.0+TFSI+BPY+BWT+PCV+P2187+fault+diagnosis",
+        "type": "youtube_search_only_not_verified_video"
+      },
+      "priority_evidence": {
+        "priority": "A1 TSB-documented",
+        "basis": "Audi TSB 2015505/10 specifically groups P1297 P2187 P2279 and PCV/pipe failures; no frequency ranking"
+      },
+      "sources": [
+        {
+          "url": "https://static.nhtsa.gov/odi/tsbs/2012/SB-10043872-9159.pdf",
+          "publisher": "Audi of America",
+          "source_version": "Audi 2015505/10, 2012-03-16",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/18619/P2187/008583",
+          "publisher": "Ross-Tech",
+          "source_version": "Web page as verified 2026-10-15",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php?pagefrom=18619%2FP2187%2F008583&title=Category:Fault_Codes",
+          "publisher": "Ross-Tech",
+          "evidence": "category page title; code presence only",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "مكتمل"
+    },
+    {
+      "brand": "Audi",
+      "code": "U112200",
+      "code_format": "Audi UDS-style extended code U112200 / base DTC U1122 / symptom 1188157",
+      "ecu": "J769 / address 003C Lane Change Assistance",
+      "definition_en": "Databus: Implausible Message",
+      "translation_ar": "رسالة غير منطقية واردة عبر شبكة اتصالات الوحدات الإلكترونية",
+      "category": "manufacturer_or_reserved_range_not_DA_verified",
+      "applicability": {
+        "models": [
+          "Q3 (F3) 2021–2023"
+        ],
+        "equipment": "Lane change assist",
+        "market": "North America (Audi of America bulletin)",
+        "exact_variant": "U112200; symptom 1188157; lane change J769 only",
+        "customer_impact": "None in the bulletin case"
+      },
+      "symptoms": [
+        "No customer complaint and no function restriction in TSB-specific case"
+      ],
+      "causes": [
+        {
+          "hypothesis": "Software diagnosis deviation explicitly described by Audi for exact condition; do not infer a wiring failure",
+          "evidence_rank": "ordered as a diagnostic WORKFLOW, not statistical frequency"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "action_ar": "تحقق من Q3 2021–2023 ووحدة 003C ووجود DTC U112200 مع symptom code 1188157",
+          "confirmation_criterion": "مطابقة جميع شروط النشرة",
+          "tools": [
+            "ODIS/VCDS"
+          ]
+        },
+        {
+          "action_ar": "إذا لم توجد أي رسالة/خلل وظيفي ولا شكوى: لا تُجرِ إصلاحاً وفق نشرة Audi 2061819/2",
+          "confirmation_criterion": "Audi TSB instructs DO NOT PERFORM REPAIRS",
+          "tools": []
+        },
+        {
+          "action_ar": "إذا اختلف الموديل أو رمز العَرَض أو ظهرت مشكلة وظيفية: لا تستخدم الاستثناء؛ ارجع إلى GFF",
+          "confirmation_criterion": "فصل حالة النشرة عن بقية حالات U1122",
+          "tools": [
+            "Audi erWin/ODIS"
+          ]
+        }
+      ],
+      "live_data": [
+        {
+          "parameter_en": "DTC symptom code",
+          "parameter_ar": "رمز العَرَض المرافق للعطل",
+          "method": "Confirm 1188157; exact bulletin value",
+          "reference_limit": "1188157"
+        },
+        {
+          "parameter_en": "DTC status",
+          "parameter_ar": "حالة الكود",
+          "method": "Check if stored; no prescribed operating measurements",
+          "reference_limit": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "J769 Lane change assistance control module",
+          "name_ar": "وحدة مساعدة تغيير المسار J769",
+          "location": "الموقع الدقيق غير مؤكد وفق المحرك/التجهيز",
+          "part_number": null
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.google.com/search?tbm=isch&q=Audi+Q3+F3+lane+change+assistance+J769",
+          "type": "image_search_only_not_verified_photo"
+        }
+      ],
+      "wiring": null,
+      "video": {
+        "url": "https://www.youtube.com/results?search_query=Audi+Q3+F3+2022+U112200+1188157+lane+change+assist",
+        "type": "youtube_search_only_not_verified_video"
+      },
+      "priority_evidence": {
+        "priority": "A1 TSB-documented",
+        "basis": "Audi TSB 2061819/2 (2021-06-04) prescribes no repair for exact symptom 1188157"
+      },
+      "sources": [
+        {
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10197967-0001.pdf",
+          "publisher": "Audi of America",
+          "source_version": "Audi 2061819/2, 2021-06-04",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/U1122",
+          "publisher": "Ross-Tech",
+          "source_version": "Web page as verified 2026-10-15",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "مكتمل"
+    }
+  ]
+}
