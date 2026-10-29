@@ -6,9 +6,9 @@
   "storage_repository": "dtcnexis/DTC-Nexis-Updates",
   "storage_branch": "main",
   "storage_directory": "data/master",
-  "current_saved_row_count": 7230,
+  "current_saved_row_count": 7656,
   "distinct_worldwide_codes": "UNKNOWN: cross-manufacturer duplicates/suffixes and same-code ECU variants are deliberately preserved",
-  "file_count": 24,
+  "file_count": 30,
   "collections": [
     {
       "kind": "generic_trilingual",
@@ -180,6 +180,54 @@
       "path": "data/master/brands/peugeot.json",
       "rows": 1317,
       "verification": "Owner Library dtc_codes.json code definitions and translations; unreviewed OEM fitment"
+    },
+    {
+      "kind": "audi_batch01_detail",
+      "brand": "Audi",
+      "path": "data/master/brands/audi_batch01_detail.json",
+      "rows": 20,
+      "verification": "Original 20 owner Library detail records; ECU/model fitment pending; Audi INDEX still missing",
+      "git_blob_sha": "534efcc4fa1835d11efb834c8ed3fd7db5d31f35"
+    },
+    {
+      "kind": "dacia_batch01",
+      "brand": "Dacia",
+      "path": "data/master/brands/dacia_batch01_149_records.json",
+      "rows": 149,
+      "verification": "Original 149 owner Library records; preserve DF/ECU context; OEM model fitment pending",
+      "git_blob_sha": "be94b4e270c4289c2d41b198e8fc574c3da747eb"
+    },
+    {
+      "kind": "toyota_exp002_dtc",
+      "brand": "Toyota",
+      "path": "data/master/brands/toyota_exp002_dtc_part01.json",
+      "rows": 70,
+      "verification": "Original Toyota EXP002 rows with main and INF forms; USA/EU fitment gated, not approved",
+      "git_blob_sha": "789c136db4b406a85549de43a994117f74085779"
+    },
+    {
+      "kind": "toyota_exp002_dtc",
+      "brand": "Toyota",
+      "path": "data/master/brands/toyota_exp002_dtc_part02.json",
+      "rows": 70,
+      "verification": "Original Toyota EXP002 rows with main and INF forms; USA/EU fitment gated, not approved",
+      "git_blob_sha": "b62e51a69ac53c35edbb65daf887842f078ea0bf"
+    },
+    {
+      "kind": "toyota_exp002_dtc",
+      "brand": "Toyota",
+      "path": "data/master/brands/toyota_exp002_dtc_part03.json",
+      "rows": 70,
+      "verification": "Original Toyota EXP002 rows with main and INF forms; USA/EU fitment gated, not approved",
+      "git_blob_sha": "a55190abb752efc911d3770a211cbceae09885b2"
+    },
+    {
+      "kind": "honda_batch02",
+      "brand": "Honda",
+      "path": "data/master/brands/honda_batch02_dtc.json",
+      "rows": 47,
+      "verification": "Original 47 enhanced source records; Honda Batch01 duplicate original separately archived; EU/USA applicability not presumed",
+      "git_blob_sha": "c1900948564c98f12a2e6d620b5a11dd24b80ed3"
     }
   ],
   "saved_groups": {
@@ -193,7 +241,12 @@
     "Renault_batch01": 129,
     "kia_batch01": 63,
     "ford_batch01": 409,
-    "peugeot_legacy": 1317
+    "peugeot_legacy": 1317,
+    "Audi_batch01_detail": 20,
+    "Dacia_batch01": 149,
+    "Toyota_EXP002": 210,
+    "Honda_batch02": 47,
+    "Honda_batch01_original_archive_counted_again": 0
   },
   "source_lists_still_to_reconcile": [
     {
@@ -229,18 +282,47 @@
     },
     {
       "name": "Audi AUDI_DTC_BATCH01_DETAIL.json",
-      "status": "Library metadata found, full read/materialization unavailable",
-      "count": null
+      "status": "COMPLETED_PERMANENT_DETAIL_ONLY",
+      "count": 20,
+      "saved_path": "data/master/brands/audi_batch01_detail.json",
+      "note": "Additional Audi INDEX source not yet located; do not claim total Audi code coverage"
     },
     {
       "name": "Dacia dacia_dtc_batch01_149_records.json",
-      "status": "Library metadata found, full read/materialization unavailable",
-      "count": null
+      "status": "COMPLETED_PERMANENT_BATCH01",
+      "count": 149,
+      "saved_path": "data/master/brands/dacia_batch01_149_records.json"
+    },
+    {
+      "name": "Audi AUDI_DTC_BATCH01_INDEX.json",
+      "status": "UNLOCATED_OWNER_LIBRARY_SOURCE",
+      "count": null,
+      "note": "Index may contain codes or ECU variants not in 20-row DETAIL."
+    },
+    {
+      "name": "Toyota TOYOTA_EXP002_FULL.json",
+      "status": "COMPLETED_PERMANENT_BATCH_EXP002",
+      "count": 210,
+      "saved_paths": [
+        "data/master/brands/toyota_exp002_dtc_part01.json",
+        "data/master/brands/toyota_exp002_dtc_part02.json",
+        "data/master/brands/toyota_exp002_dtc_part03.json"
+      ],
+      "related_path": "data/master/brands/toyota_exp002_related.json",
+      "note": "82 main + 128 INF records, partial manufacturer coverage only"
+    },
+    {
+      "name": "Honda honda_batch02_full_review.json",
+      "status": "COMPLETED_PERMANENT_BATCH02",
+      "count": 47,
+      "saved_path": "data/master/brands/honda_batch02_dtc.json",
+      "related_path": "data/master/brands/honda_batch02_related.json",
+      "original_batch01_archive": "data/master/brands/honda_batch01_original_archive.json"
     }
   ],
   "quality_gate": "Storing a row permanently does not validate technical definitions, manufacturer fitment, translation or image rights. Keep original source references; release requires independent QA and owner approval.",
   "owner_rules": "Only the Windows application is experimental; permanent cloud data is retained independently. No change to update-feed or Windows installer.",
-  "reconciliation_note": "4817 is number of archived rows, not a worldwide distinct count. Original-source library metadata includes many unprocessed files; never claim complete coverage of all cars.",
+  "reconciliation_note": "7656 retained DTC source records are not 7656 unique worldwide codes. Duplicate ECU-scoped rows and INF variations are deliberate; unrelated/extra source files remain to reconcile.",
   "legacy_library_source_inventory": {
     "entries": 488,
     "by_file_type": {
@@ -254,7 +336,7 @@
     "review_state": "INCOMPLETE_SOURCE_ACCESS_OR_DEDUPLICATION",
     "permanent_full_index_in_private_source": "dtcnexis/DTC-Nexis-App/data/manufacturers/review/library_source_inventory_20261016.json"
   },
-  "access_note": "Audi and Dacia archived Library JSON filenames were discovered, but their raw contents could not be read or materialized in the current session. Do not pretend their records have been imported or infer code counts.",
+  "access_note": "Audi DETAIL (20), Dacia Batch01 (149), Toyota EXP002 (210), Honda Batch02 (47) extracted via full authorized Library text reads and saved; Audi INDEX and other source inventory reconciliation remain pending.",
   "enrichment_files": [
     {
       "path": "data/master/enrichment/volkswagen_vw001_detail_part01.json",
@@ -278,26 +360,6 @@
     "policy": "Source remains preserved in user's Library and private inventory; no refetch of already archived records. Need authorized raw read to extract contents and deduplicate.",
     "unreadable_named_sources": [
       {
-        "brand": "Audi",
-        "file": "AUDI_DTC_BATCH01_DETAIL.json",
-        "status": "FULL_SOURCE_NOT_READABLE_CURRENT_LIBRARY_ACCESS"
-      },
-      {
-        "brand": "Dacia",
-        "file": "dacia_dtc_batch01_149_records.json",
-        "status": "FULL_SOURCE_NOT_READABLE_CURRENT_LIBRARY_ACCESS"
-      },
-      {
-        "brand": "Toyota",
-        "file": "TOYOTA_EXP002_FULL.json",
-        "status": "FULL_SOURCE_NOT_READABLE_CURRENT_LIBRARY_ACCESS"
-      },
-      {
-        "brand": "Honda",
-        "file": "DTC_NEXIS_HONDA_batch01_2026-10-15.json",
-        "status": "FULL_SOURCE_NOT_READABLE_CURRENT_LIBRARY_ACCESS"
-      },
-      {
         "brand": "Mercedes-Benz",
         "file": "Mercedes_Benz_DTC_NEXIS_batch01_2026-10-15.json",
         "status": "FULL_SOURCE_NOT_READABLE_CURRENT_LIBRARY_ACCESS"
@@ -312,7 +374,8 @@
         "file": "CUPRA_DTC_NEXIS_B01_2026-10-15.json",
         "status": "FULL_SOURCE_NOT_READABLE_CURRENT_LIBRARY_ACCESS_BATCH02_ARCHIVE_ALREADY_COPIED"
       }
-    ]
+    ],
+    "last_successful_import": "2026-10-29 Audi20 Dacia149 Toyota210 Honda47, all original text read and master copies verified; raw byte materialization unavailable but line extracts complete"
   },
-  "last_source_sync": "2026-10-29; permanent catalog 7230 rows / 24 files"
+  "last_source_sync": "2026-10-29; permanent catalog 7656 rows / 30 DTC collection files; Audi/Dacia/Toyota/Honda source batches imported; additional metadata/duplicate archives not counted"
 }
