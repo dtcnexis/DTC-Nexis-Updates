@@ -212,10 +212,10 @@
       "verification": "manifest_only"
     }
   ],
-  "master_status": "PERSISTED_CLOUD_MULTI_SOURCE_5312_ROWS",
+  "master_status": "PERSISTED_CLOUD_MULTI_SOURCE_7230_ROWS",
   "master_manifest_path": "data/master/all_collected_catalog_manifest.json",
-  "materialized_text_records": 5312,
-  "current_data_collections_count": 20,
+  "materialized_text_records": 7230,
+  "current_data_collections_count": 24,
   "additional_permanent_sources": [
     {
       "source": "C_CODES_278_STAGING_RECONCILED.json",
@@ -252,6 +252,34 @@
       ],
       "counted_as_new_rows": 0,
       "matched_to_VW022": true
+    },
+    {
+      "brand": "Renault",
+      "source": "renault_dtc_batch1.json",
+      "saved_path": "data/master/brands/renault.json",
+      "records": 129,
+      "preservation": "permanent_technical_review_separate"
+    },
+    {
+      "brand": "Kia",
+      "source": "kia_dtc_nexis_batch01.json",
+      "saved_path": "data/master/brands/kia.json",
+      "records": 63,
+      "preservation": "permanent_technical_review_separate"
+    },
+    {
+      "brand": "Ford",
+      "source": "DTC_NEXIS_Ford_batch01.json",
+      "saved_path": "data/master/brands/ford.json",
+      "records": 409,
+      "preservation": "permanent_technical_review_separate"
+    },
+    {
+      "brand": "Peugeot",
+      "source": "dtc_codes.json",
+      "saved_path": "data/master/brands/peugeot.json",
+      "records": 1317,
+      "preservation": "permanent_technical_review_separate"
     }
   ],
   "remaining_source_work": "Owner Library files may be inaccessible for raw extraction; Audi/Dacia/Renault named as blockers, and 488 metadata file index still requires reconciliation. No invented counts."
