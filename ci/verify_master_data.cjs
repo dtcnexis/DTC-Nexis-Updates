@@ -6,8 +6,8 @@ const root=path.resolve(__dirname,'../data/master');
 const load=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const manifest=load('all_collected_catalog_manifest.json');
 assert.equal(manifest.schema,'dtcnexis-permanent-collected-codes-manifest-v1');
-assert.equal(manifest.current_saved_row_count,4817,'Records vanished or count changed: review before updating baseline');
-assert.equal(manifest.file_count,19);
+assert.equal(manifest.current_saved_row_count,5312,'Records vanished or count changed: review before updating baseline');
+assert.equal(manifest.file_count,20);
 const all=new Set();let counted=0;
 const groups={};
 for(const record of manifest.collections){
@@ -40,6 +40,9 @@ assert.equal(groups.multibrand_C_variants,278);
 assert.equal(groups.ds_automobiles_batch01,798);
 assert.equal(groups.legacy_generic_PBU,2137);
 assert.equal(groups.generic_trilingual,26);
+assert.equal(groups.nissan_batch02,495);
+for(const e of manifest.enrichment_files||[]){const v=load(e.path.slice('data/master/'.length));assert.equal(v.records.length,e.original_rows);assert.equal(v.counts_towards_unique_ledger,false);}
+
 const enhanced=load('legacy_enhanced_diagnostics.json');
 assert.equal(enhanced.records.length,12);
 const registry=load('source_registry.json');
