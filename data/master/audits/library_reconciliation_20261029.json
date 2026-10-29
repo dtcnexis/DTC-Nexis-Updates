@@ -1,0 +1,678 @@
+{
+  "schema": "dtcnexis-source-reconciliation-audit-v1",
+  "checked_on": "2026-10-29",
+  "inventory_source": "dtcnexis/DTC-Nexis-App@backup/rc382-owner-source-checkpoint-20261029/data/manufacturers/review/library_source_inventory_20261016.json",
+  "library_folder": "/‏ملفات كل السيارات",
+  "inventory_metadata_entries": 488,
+  "currently_listed_files": 388,
+  "not_currently_listed_count": 100,
+  "not_currently_listed_by_extension": {
+    "md": 7,
+    "zip": 6,
+    "json": 50,
+    "png": 5,
+    "csv": 24,
+    "svg": 8
+  },
+  "available_by_extension": {
+    "zip": 37,
+    "json": 191,
+    "csv": 122,
+    "png": 13,
+    "md": 25
+  },
+  "note": "This is a metadata presence comparison, not proof that a missing file is lost or that a listed file is readable. A filename existing is not evidence of raw bytes or extracted codes.",
+  "missing_inventory_items": [
+    {
+      "name": "alfa_romeo_batch02_audit_report_ar.md",
+      "type": "text/markdown",
+      "size_bytes": 10509,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "alfa_romeo_batch02_review_package.zip",
+      "type": "application/zip",
+      "size_bytes": 133564,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "alfa_romeo_expansion_batch02_review.json",
+      "type": "application/json",
+      "size_bytes": 652478,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "alfa_romeo_expansion_batch02_review(1).json",
+      "type": "application/json",
+      "size_bytes": 652478,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "concept_p0299_generic_unapproved.png",
+      "type": "image/png",
+      "size_bytes": 2434215,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "diagnostic_steps(2).csv",
+      "type": "text/csv",
+      "size_bytes": 28292,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "diagnostic_steps(20261015-215400).json",
+      "type": "application/json",
+      "size_bytes": 416163,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "diagnostic_steps(3).json",
+      "type": "application/json",
+      "size_bytes": 416163,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "diagnostic_steps(4).json",
+      "type": "application/json",
+      "size_bytes": 42538,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "diagnostic_steps(5).json",
+      "type": "application/json",
+      "size_bytes": 127553,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "diagnostic_steps(6).json",
+      "type": "application/json",
+      "size_bytes": 127553,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "dtc_applicability_bulletin_scoped.json",
+      "type": "application/json",
+      "size_bytes": 82742,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "dtc_applicability_unconfirmed_candidates.json",
+      "type": "application/json",
+      "size_bytes": 298370,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "dtc_applicability(5).json",
+      "type": "application/json",
+      "size_bytes": 125117,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "dtc_applicability(6).csv",
+      "type": "text/csv",
+      "size_bytes": 8845,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "dtc_applicability(6).json",
+      "type": "application/json",
+      "size_bytes": 404469,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "dtc_applicability(7).csv",
+      "type": "text/csv",
+      "size_bytes": 8845,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "dtc_applicability(7).json",
+      "type": "application/json",
+      "size_bytes": 404469,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "dtc_codes(10).json",
+      "type": "application/json",
+      "size_bytes": 70831,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "dtc_codes(20261015-215341).json",
+      "type": "application/json",
+      "size_bytes": 1346301,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "dtc_codes(20261015-215732).json",
+      "type": "application/json",
+      "size_bytes": 736758,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "dtc_codes(20261015-215757).json",
+      "type": "application/json",
+      "size_bytes": 736758,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "dtc_codes(4).csv",
+      "type": "text/csv",
+      "size_bytes": 426976,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "dtc_codes(8).json",
+      "type": "application/json",
+      "size_bytes": 138408,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "dtc_codes(9).json",
+      "type": "application/json",
+      "size_bytes": 70831,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "DTC_NEXIS_Infiniti_batch02_2026-10-15.zip",
+      "type": "application/zip",
+      "size_bytes": 74901,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "DTC_NEXIS_Skoda_Batch02_REVIEW_ONLY.zip",
+      "type": "application/zip",
+      "size_bytes": 2445682,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "dtcnexis_opel_vauxhall_expansion02_REVIEW.zip",
+      "type": "application/zip",
+      "size_bytes": 82610,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "engines(10).json",
+      "type": "application/json",
+      "size_bytes": 29910,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "engines(20261015-215337).json",
+      "type": "application/json",
+      "size_bytes": 33961,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "engines(6).csv",
+      "type": "text/csv",
+      "size_bytes": 8028,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "engines(7).csv",
+      "type": "text/csv",
+      "size_bytes": 13251,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "engines(8).csv",
+      "type": "text/csv",
+      "size_bytes": 13251,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "engines(8).json",
+      "type": "application/json",
+      "size_bytes": 41328,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "engines(9).json",
+      "type": "application/json",
+      "size_bytes": 29910,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "generic_abs_ring.svg",
+      "type": "image/svg+xml",
+      "size_bytes": 2168,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "generic_abs_ring(1).svg",
+      "type": "image/svg+xml",
+      "size_bytes": 2168,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "generic_charge_air.svg",
+      "type": "image/svg+xml",
+      "size_bytes": 2160,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "generic_charge_air(1).svg",
+      "type": "image/svg+xml",
+      "size_bytes": 2160,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "generic_dpf_differential.svg",
+      "type": "image/svg+xml",
+      "size_bytes": 2168,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "generic_dpf_differential(1).svg",
+      "type": "image/svg+xml",
+      "size_bytes": 2168,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "generic_fuse80.svg",
+      "type": "image/svg+xml",
+      "size_bytes": 2159,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "generic_fuse80(1).svg",
+      "type": "image/svg+xml",
+      "size_bytes": 2159,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "manifest_batch02.json",
+      "type": "application/json",
+      "size_bytes": 1555,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "manifest(10).json",
+      "type": "application/json",
+      "size_bytes": 1792,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "manifest(20261015-215328).json",
+      "type": "application/json",
+      "size_bytes": 2042,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "manifest(20261015-215417).json",
+      "type": "application/json",
+      "size_bytes": 2042,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "opel_vauxhall_database_batch02.json",
+      "type": "application/json",
+      "size_bytes": 210158,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "pending_audit.json",
+      "type": "application/json",
+      "size_bytes": 2178,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "platform_references.json",
+      "type": "application/json",
+      "size_bytes": 6281,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "QA_report.json",
+      "type": "application/json",
+      "size_bytes": 2393,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "qa_validation.json",
+      "type": "application/json",
+      "size_bytes": 895,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "REPORT_AR(1).md",
+      "type": "text/markdown",
+      "size_bytes": 6828,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "REPORT_AR(2).md",
+      "type": "text/markdown",
+      "size_bytes": 4958,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "review_flags.csv",
+      "type": "text/csv",
+      "size_bytes": 5093,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "REVIEW_REPORT.md",
+      "type": "text/markdown",
+      "size_bytes": 6087,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "Saab_DTC_NEXIS_expansion_batch02_review.zip",
+      "type": "application/zip",
+      "size_bytes": 217033,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "SEAT_DTC_NEXIS_batch02_2026-10-15_dtc_applicability.csv",
+      "type": "text/csv",
+      "size_bytes": 2394,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "SEAT_DTC_NEXIS_batch02_2026-10-15_engines.csv",
+      "type": "text/csv",
+      "size_bytes": 30576,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "SEAT_DTC_NEXIS_batch02_2026-10-15_PACKAGE_REVIEW.zip",
+      "type": "application/zip",
+      "size_bytes": 76767,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "SEAT_DTC_NEXIS_batch02_2026-10-15_READ_ME_AR.md",
+      "type": "text/markdown",
+      "size_bytes": 4168,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "SEAT_DTC_NEXIS_batch02_2026-10-15_vehicles.csv",
+      "type": "text/csv",
+      "size_bytes": 21780,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "SEAT_DTC_NEXIS_batch02_2026-10-15.json",
+      "type": "application/json",
+      "size_bytes": 646353,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "SEAT_DTC_NEXIS_batch02_2026-10-15(1).json",
+      "type": "application/json",
+      "size_bytes": 646353,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "skoda_batch02_QA.md",
+      "type": "text/markdown",
+      "size_bytes": 1498,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "skoda_batch02_REVIEW.md",
+      "type": "text/markdown",
+      "size_bytes": 2921,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "skoda_database_batch02.json",
+      "type": "application/json",
+      "size_bytes": 422342,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "skoda_diagnostic_steps_batch02.csv",
+      "type": "text/csv",
+      "size_bytes": 31247,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "skoda_dtc_applicability_batch02.csv",
+      "type": "text/csv",
+      "size_bytes": 6145,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "skoda_dtc_codes_batch02.csv",
+      "type": "text/csv",
+      "size_bytes": 176135,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "skoda_engines_batch02.csv",
+      "type": "text/csv",
+      "size_bytes": 23475,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "skoda_sources_batch02.csv",
+      "type": "text/csv",
+      "size_bytes": 29496,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "skoda_vehicles_batch02.csv",
+      "type": "text/csv",
+      "size_bytes": 12481,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "skoda_visual_assets_batch02.csv",
+      "type": "text/csv",
+      "size_bytes": 4064,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "sources(10).json",
+      "type": "application/json",
+      "size_bytes": 55782,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "sources(2).csv",
+      "type": "text/csv",
+      "size_bytes": 11226,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "sources(20261015-215408).json",
+      "type": "application/json",
+      "size_bytes": 17174,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "sources(7).json",
+      "type": "application/json",
+      "size_bytes": 17174,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "sources(8).json",
+      "type": "application/json",
+      "size_bytes": 22710,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "sources(9).json",
+      "type": "application/json",
+      "size_bytes": 55782,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "vehicles(10).json",
+      "type": "application/json",
+      "size_bytes": 25096,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "vehicles(20261015-215333).json",
+      "type": "application/json",
+      "size_bytes": 151843,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "vehicles(20261015-215725).json",
+      "type": "application/json",
+      "size_bytes": 40593,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "vehicles(20261015-215749).json",
+      "type": "application/json",
+      "size_bytes": 40593,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "vehicles(7).csv",
+      "type": "text/csv",
+      "size_bytes": 13547,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "vehicles(8).csv",
+      "type": "text/csv",
+      "size_bytes": 13547,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "vehicles(8).json",
+      "type": "application/json",
+      "size_bytes": 12577,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "vehicles(9).json",
+      "type": "application/json",
+      "size_bytes": 25096,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "visual_assets(2).csv",
+      "type": "text/csv",
+      "size_bytes": 2679,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "visual_assets(20261015-215403).json",
+      "type": "application/json",
+      "size_bytes": 117420,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "visual_assets(3).csv",
+      "type": "text/csv",
+      "size_bytes": 4044,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "visual_assets(3).json",
+      "type": "application/json",
+      "size_bytes": 117420,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "visual_assets(4).csv",
+      "type": "text/csv",
+      "size_bytes": 4044,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "visual_assets(4).json",
+      "type": "application/json",
+      "size_bytes": 10518,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "visual_assets(5).json",
+      "type": "application/json",
+      "size_bytes": 8625,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "visual_assets(6).json",
+      "type": "application/json",
+      "size_bytes": 8625,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "wide_infographic_diagram_image_with_a_clean_techni.png",
+      "type": "image/png",
+      "size_bytes": 2459483,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "wide_infographic_diagram_image_with_a_clean_techni(1).png",
+      "type": "image/png",
+      "size_bytes": 2459483,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "مخطط تشخيص الكود P0106.png",
+      "type": "image/png",
+      "size_bytes": 2459483,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    },
+    {
+      "name": "مخطط تشخيص نظام الشاحن التوربيني.png",
+      "type": "image/png",
+      "size_bytes": 2434215,
+      "inventory_availability": "inventory_only_not_raw_verified"
+    }
+  ],
+  "known_readable_and_saved_canonical": [
+    {
+      "name": "AUDI_DTC_BATCH01_DETAIL.json",
+      "records": 20,
+      "canonical": "data/master/brands/audi_batch01_detail.json"
+    },
+    {
+      "name": "dacia_dtc_batch01_149_records.json",
+      "records": 149,
+      "canonical": "data/master/brands/dacia_batch01_149_records.json"
+    },
+    {
+      "name": "TOYOTA_EXP002_FULL.json",
+      "records": 210,
+      "canonical": [
+        "data/master/brands/toyota_exp002_dtc_part01.json",
+        "data/master/brands/toyota_exp002_dtc_part02.json",
+        "data/master/brands/toyota_exp002_dtc_part03.json"
+      ]
+    },
+    {
+      "name": "honda_batch02_full_review.json",
+      "records": 47,
+      "canonical": "data/master/brands/honda_batch02_dtc.json"
+    }
+  ],
+  "known_listed_but_unreadable": [
+    {
+      "name": "AUDI_DTC_BATCH01_INDEX.json",
+      "size_bytes": 1169747,
+      "reason": "files.read no readable content; raw materialization unavailable"
+    },
+    {
+      "name": "AUDI_DTC_BATCH01_INDEX.csv",
+      "size_bytes": 714454,
+      "reason": "files.read no readable content"
+    },
+    {
+      "name": "BMW_DTC_NEXIS_batch01.json",
+      "reason": "files.read no readable content"
+    },
+    {
+      "name": "Mercedes_Benz_DTC_NEXIS_batch01_2026-10-15.json",
+      "reason": "files.read no readable content"
+    },
+    {
+      "name": "CUPRA_DTC_NEXIS_B01_2026-10-15.json",
+      "reason": "files.read no readable content"
+    }
+  ],
+  "rule": "Do not count duplicate source copies or rewrite installed app/update feed; technical QA and release separately approved."
+}
