@@ -365,6 +365,12 @@
       "original_rows": 63,
       "counts_towards_unique_ledger": false,
       "additional_counted_rows": 0
+    },
+    {
+      "path": "data/master/enrichment/mercedes_benz_batch02_full_detail_20261030.json",
+      "original_rows": 66,
+      "counts_towards_unique_ledger": false,
+      "additional_counted_rows": 0
     }
   ],
   "enrichment_note": "VW001 644 records match VW022 codes in original order exactly. Diagnostic text preserved as enrichment only; not double counted.",
@@ -430,5 +436,10 @@
     "cupra_rows": 63,
     "added_counted_rows": 0,
     "note": "Embedded legacy objects recovered from pinned Batch02 source. Standalone Audi INDEX and Mercedes Batch01 still inaccessible. Existing canonical records unchanged."
+  },
+  "mercedes_full_detail_recovery_audit": {
+    "checked_on": "2026-10-30",
+    "report_path": "data/master/audits/library_source_search_20261030.json",
+    "additional_counted_rows": 0
   }
 }

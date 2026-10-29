@@ -1,0 +1,50 @@
+{
+  "schema": "dtcnexis-library-source-search-audit-v1",
+  "checked_on": "2026-10-30",
+  "base_commit": "c7e70e73b21fe5c4efb8bef835bde2ee8372ca8e",
+  "read_only_source_repository": "dtcnexis/DTC-Nexis-App",
+  "inspected_snapshots": [
+    {
+      "sha": "8d862db5725ded3d8472c81dd327ce4f5eac7a44",
+      "tree_truncated": false,
+      "audi_index_filename_found": false
+    },
+    {
+      "sha": "4c15c987afcabb70122742c6fbcccd383a734ef9",
+      "tree_truncated": false,
+      "audi_index_filename_found": false
+    },
+    {
+      "sha": "41e7ba3b551fa0a5ee18cd099604c3ebf86e44fc",
+      "tree_truncated": false,
+      "audi_index_filename_found": false
+    }
+  ],
+  "github_indexed_search": {
+    "query": "AUDI_DTC_BATCH01_INDEX",
+    "repositories": [
+      "dtcnexis/DTC-Nexis-App",
+      "dtcnexis/DTC-Nexis-Updates"
+    ],
+    "results": 0,
+    "limitation": "Indexed default-branch search is not a complete history or Library search."
+  },
+  "recovered": {
+    "path": "data/master/enrichment/mercedes_benz_batch02_full_detail_20261030.json",
+    "source_blob_sha": "da3d4b05f3146f4f64b03c0f3b29bb7e6000378a",
+    "records": 66,
+    "dtc_applicability": 66,
+    "diagnostic_steps": 66,
+    "unique_dtc_ids": 66,
+    "orphan_applicability": 0,
+    "orphan_diagnostic_steps": 0,
+    "exact_canonical_core_and_id_matches": 66,
+    "source_objects_preserved_without_field_edits": true,
+    "new_counted_rows": 0
+  },
+  "unresolved": "Audi INDEX and standalone Batch01 raw sources remain inaccessible. Embedded recovery does not prove standalone byte equivalence.",
+  "canonical_total": 7656,
+  "canonical_files": 30,
+  "no_source_repository_writes": true,
+  "no_app_or_feed_changes": true
+}
