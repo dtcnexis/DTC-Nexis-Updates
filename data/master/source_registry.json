@@ -212,10 +212,10 @@
       "verification": "manifest_only"
     }
   ],
-  "master_status": "PERSISTED_CLOUD_MULTI_SOURCE_7230_ROWS",
+  "master_status": "PERSISTED_CLOUD_MULTI_SOURCE_7656_ROWS",
   "master_manifest_path": "data/master/all_collected_catalog_manifest.json",
-  "materialized_text_records": 7230,
-  "current_data_collections_count": 24,
+  "materialized_text_records": 7656,
+  "current_data_collections_count": 30,
   "additional_permanent_sources": [
     {
       "source": "C_CODES_278_STAGING_RECONCILED.json",
@@ -280,7 +280,49 @@
       "saved_path": "data/master/brands/peugeot.json",
       "records": 1317,
       "preservation": "permanent_technical_review_separate"
+    },
+    {
+      "brand": "Audi",
+      "source": "AUDI_DTC_BATCH01_DETAIL.json",
+      "source_library_file_id": "file_00000000a10c81f4a36c056fc04f5dc1",
+      "saved_path": "data/master/brands/audi_batch01_detail.json",
+      "records": 20,
+      "preservation": "PERMANENT_NOT_OEM_VERIFIED",
+      "remaining": "AUDI_DTC_BATCH01_INDEX.json not yet recovered"
+    },
+    {
+      "brand": "Dacia",
+      "source": "dacia_dtc_batch01_149_records.json",
+      "source_library_file_id": "file_00000000707481f59aeabbf5f717f9c4",
+      "saved_path": "data/master/brands/dacia_batch01_149_records.json",
+      "records": 149,
+      "preservation": "PERMANENT_ECU_SCOPED_NOT_OEM_VERIFIED"
+    },
+    {
+      "brand": "Toyota",
+      "source": "TOYOTA_EXP002_FULL.json",
+      "source_library_file_id": "file_000000002f6081f4b3b5a0b9dd90a403",
+      "saved_paths": [
+        "data/master/brands/toyota_exp002_dtc_part01.json",
+        "data/master/brands/toyota_exp002_dtc_part02.json",
+        "data/master/brands/toyota_exp002_dtc_part03.json"
+      ],
+      "related_path": "data/master/brands/toyota_exp002_related.json",
+      "records": 210,
+      "preservation": "PERMANENT_WITH_82_MAIN_AND_128_INF_VARIANTS_NOT_OEM_VERIFIED"
+    },
+    {
+      "brand": "Honda",
+      "source": "honda_batch02_full_review.json",
+      "source_library_file_id": "file_00000000c83481f4bd3cbb93bd07602a",
+      "saved_path": "data/master/brands/honda_batch02_dtc.json",
+      "related_path": "data/master/brands/honda_batch02_related.json",
+      "original_archive": "data/master/brands/honda_batch01_original_archive.json",
+      "records": 47,
+      "original_batch01_records_already_included": 47,
+      "additional_rows_from_duplicate_archive": 0,
+      "preservation": "PERMANENT_NOT_OEM_VERIFIED"
     }
   ],
-  "remaining_source_work": "Owner Library files may be inaccessible for raw extraction; Audi/Dacia/Renault named as blockers, and 488 metadata file index still requires reconciliation. No invented counts."
+  "remaining_source_work": "Audi INDEX source, remaining 488-entry Library index reconciliation (including other manufacturer sources), and technical/OEM quality validation remain open. Audi DETAIL/Dacia batch01/Toyota EXP002/Honda batch02 extracted and saved; no retake from scratch."
 }
