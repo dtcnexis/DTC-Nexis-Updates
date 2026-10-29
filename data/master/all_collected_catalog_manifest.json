@@ -207,7 +207,8 @@
       "name": "Volkswagen VW001 full legacy source",
       "count": null,
       "source": "Owner Library Volkswagen_DTC_NEXIS_VW001.json",
-      "status": "compare with existing VW022 copy before any duplicate import"
+      "status": "SOURCE_DUPLICATE_RECONCILED_DO_NOT_DOUBLE_COUNT",
+      "note": "Historical source enriched existing 644 VAG code entries; see enrichment_files and VW022; do not count source as new DTC rows."
     },
     {
       "name": "Other manufacturer batch01 files",
@@ -222,8 +223,9 @@
     },
     {
       "name": "Renault renault_dtc_batch1.json",
-      "status": "Library metadata found, full content becomes intermittently unreadable. No imported rows claimed.",
-      "count": null
+      "status": "COMPLETED_PERMANENT",
+      "count": 129,
+      "saved_path": "data/master/brands/renault.json"
     },
     {
       "name": "Audi AUDI_DTC_BATCH01_DETAIL.json",
@@ -271,5 +273,46 @@
       "original_rows": 161
     }
   ],
-  "enrichment_note": "VW001 644 records match VW022 codes in original order exactly. Diagnostic text preserved as enrichment only; not double counted."
+  "enrichment_note": "VW001 644 records match VW022 codes in original order exactly. Diagnostic text preserved as enrichment only; not double counted.",
+  "access_backlog_20261029": {
+    "policy": "Source remains preserved in user's Library and private inventory; no refetch of already archived records. Need authorized raw read to extract contents and deduplicate.",
+    "unreadable_named_sources": [
+      {
+        "brand": "Audi",
+        "file": "AUDI_DTC_BATCH01_DETAIL.json",
+        "status": "FULL_SOURCE_NOT_READABLE_CURRENT_LIBRARY_ACCESS"
+      },
+      {
+        "brand": "Dacia",
+        "file": "dacia_dtc_batch01_149_records.json",
+        "status": "FULL_SOURCE_NOT_READABLE_CURRENT_LIBRARY_ACCESS"
+      },
+      {
+        "brand": "Toyota",
+        "file": "TOYOTA_EXP002_FULL.json",
+        "status": "FULL_SOURCE_NOT_READABLE_CURRENT_LIBRARY_ACCESS"
+      },
+      {
+        "brand": "Honda",
+        "file": "DTC_NEXIS_HONDA_batch01_2026-10-15.json",
+        "status": "FULL_SOURCE_NOT_READABLE_CURRENT_LIBRARY_ACCESS"
+      },
+      {
+        "brand": "Mercedes-Benz",
+        "file": "Mercedes_Benz_DTC_NEXIS_batch01_2026-10-15.json",
+        "status": "FULL_SOURCE_NOT_READABLE_CURRENT_LIBRARY_ACCESS"
+      },
+      {
+        "brand": "BMW",
+        "file": "BMW_DTC_NEXIS_batch01.json",
+        "status": "FULL_SOURCE_NOT_READABLE_CURRENT_LIBRARY_ACCESS_BATCH02_ARCHIVE_ALREADY_COPIED"
+      },
+      {
+        "brand": "CUPRA",
+        "file": "CUPRA_DTC_NEXIS_B01_2026-10-15.json",
+        "status": "FULL_SOURCE_NOT_READABLE_CURRENT_LIBRARY_ACCESS_BATCH02_ARCHIVE_ALREADY_COPIED"
+      }
+    ]
+  },
+  "last_source_sync": "2026-10-29; permanent catalog 7230 rows / 24 files"
 }
