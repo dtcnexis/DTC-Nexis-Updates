@@ -212,7 +212,28 @@
       "verification": "manifest_only"
     }
   ],
-  "master_status": "PERSISTED_CLOUD_MULTI_SOURCE_2680_ROWS",
+  "master_status": "PERSISTED_CLOUD_MULTI_SOURCE_4817_ROWS",
   "master_manifest_path": "data/master/all_collected_catalog_manifest.json",
-  "materialized_text_records": 2680
+  "materialized_text_records": 4817,
+  "current_data_collections_count": 19,
+  "additional_permanent_sources": [
+    {
+      "source": "C_CODES_278_STAGING_RECONCILED.json",
+      "saved_path": "data/master/brands/c_codes_multibrand.json",
+      "records": 278
+    },
+    {
+      "source": "DTC_NEXIS_DS_batch01.json",
+      "saved_path": "data/master/brands/ds_automobiles.json",
+      "records": 798
+    },
+    {
+      "source": "dtc-data.js",
+      "saved_path": "data/master/brands/legacy_generic_pbu.json",
+      "records": 2137,
+      "enhanced_notes_path": "data/master/legacy_enhanced_diagnostics.json",
+      "enhanced_notes_count": 12
+    }
+  ],
+  "remaining_source_work": "488 indexed Library file metadata objects include many car files, archives and possible duplicates. Continue to ingest actual code contents; no claim all 488 imported."
 }
