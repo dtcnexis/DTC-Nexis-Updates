@@ -1,0 +1,24 @@
+name: Permanent DTC Library - integrity only (NO RELEASE)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/master/**"
+      - "ci/verify_master_data.cjs"
+      - ".github/workflows/verify-permanent-master.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-permanent-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout data repository (read-only)
+        uses: actions/checkout@v4
+      - name: Verify all collected master rows and source links
+        run: node ci/verify_master_data.cjs
+      - name: Confirm no publication
+        run: echo "No installer, no feed publish, no code signing, no changes to update buttons."
