@@ -377,7 +377,7 @@
     ],
     "last_successful_import": "2026-10-29 Audi20 Dacia149 Toyota210 Honda47, all original text read and master copies verified; raw byte materialization unavailable but line extracts complete"
   },
-  "last_source_sync": "2026-10-29; 7656 distinct SOURCE ROWS across 30 canonical data files (not globally unique codes), duplicate archives excluded",
+  "last_source_sync": "2026-10-29; permanent canonical 7656 rows / 30 data files; Library inventory reconciled against 388 currently listed files",
   "duplicate_archival_copies_not_counted": [
     {
       "path": "data/master/brands/audi_legacy_detail.json",
@@ -393,5 +393,22 @@
       "duplicate_match": "all rows matched by code+ECU+English definition; preserved for traceability",
       "permanent_count_increment": 0
     }
-  ]
+  ],
+  "source_inventory_audit": {
+    "checked_on": "2026-10-29",
+    "source_index_count": 488,
+    "currently_listed": 388,
+    "not_currently_listed": 100,
+    "missing_by_file_type": {
+      "json": 50,
+      "csv": 24,
+      "zip": 6,
+      "md": 7,
+      "png": 5,
+      "svg": 8
+    },
+    "report_path": "data/master/audits/library_reconciliation_20261029.json",
+    "interpretation": "100 entries absent in current folder listing; not proven lost; do not redo preserved canonical data",
+    "next_priority": "Access full AUDI_DTC_BATCH01_INDEX JSON/CSV raw contents; then inspect unlisted 50 JSON metadata sources, comparing against canonical records."
+  }
 }
