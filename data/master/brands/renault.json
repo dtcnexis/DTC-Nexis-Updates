@@ -1,0 +1,1705 @@
+{
+  "schema": "dtcnexis-permanent-renault-codes-v1",
+  "brand": "Renault",
+  "source_file": "renault_dtc_batch1.json",
+  "original_file_id": "file_00000000c79081f5aac0121fb7bd44f6",
+  "record_count": 129,
+  "status": "PERMANENT_COLLECTED_NOT_RELEASED",
+  "source_limitations": [
+    "Not all Renault models or ECU generations indexed",
+    "Raw Renault DTC 4-hex is not always equivalent to a P/B/C/U code",
+    "DF107 conflicting rows need verification",
+    "No numeric popularity ranking or unlicensed OEM diagrams",
+    "Third-party-mirrored MR files not verified as licensed Renault Dialogys downloads"
+  ],
+  "fields_preserved": "code,format,ECU,EN,AR,SV if available,status,source IDs; full original diagnostic context remains in owner Library",
+  "records": [
+    {
+      "raw_code": "DF001",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Coolant temperature sensor circuit",
+      "translation_ar": "دارة حساس حرارة سائل التبريد",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3",
+        "https://www.carmanualsonline.info/renault-twingo-2009-2-g-engine-and-peripherals-workshop-manual/?srch=coolant+temperature"
+      ],
+      "source_row": 1
+    },
+    {
+      "raw_code": "DF002",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Air temperature sensor circuit",
+      "translation_ar": "دارة حساس درجة حرارة الهواء",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 2
+    },
+    {
+      "raw_code": "DF003",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Atmospheric pressure sensor circuit",
+      "translation_ar": "دارة حساس الضغط الجوي",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 3
+    },
+    {
+      "raw_code": "DF005",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Engine speed sensor circuit",
+      "translation_ar": "دارة حساس سرعة دوران المحرك",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 4
+    },
+    {
+      "raw_code": "DF007",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Rail pressure sensor circuit",
+      "translation_ar": "دارة حساس ضغط سكة الوقود",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 5
+    },
+    {
+      "raw_code": "DF008",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Pedal potentiometer circuit gang 1",
+      "translation_ar": "دارة مسار 1 لمقياس جهد دواسة الوقود",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 6
+    },
+    {
+      "raw_code": "DF009",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Pedal potentiometer circuit gang 2",
+      "translation_ar": "دارة مسار 2 لمقياس جهد دواسة الوقود",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 7
+    },
+    {
+      "raw_code": "DF010",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "EGR position sensor circuit",
+      "translation_ar": "دارة حساس موضع صمام إعادة تدوير غازات العادم",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 8
+    },
+    {
+      "raw_code": "DF014",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Vehicle speed information circuit",
+      "translation_ar": "دارة معلومات سرعة السيارة",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 9
+    },
+    {
+      "raw_code": "DF015",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Main relay control circuit",
+      "translation_ar": "دارة التحكم بالريليه الرئيسي",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 10
+    },
+    {
+      "raw_code": "DF016",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "EGR control circuit",
+      "translation_ar": "دارة التحكم بصمام إعادة تدوير غازات العادم",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 11
+    },
+    {
+      "raw_code": "DF017",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Preheating unit control circuit",
+      "translation_ar": "دارة التحكم بوحدة التسخين الأولي",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 12
+    },
+    {
+      "raw_code": "DF018",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Low-speed fan unit control circuit",
+      "translation_ar": "دارة التحكم بسرعة مروحة التبريد المنخفضة",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 13
+    },
+    {
+      "raw_code": "DF019",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "High-speed fan unit control circuit",
+      "translation_ar": "دارة التحكم بسرعة مروحة التبريد العالية",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 14
+    },
+    {
+      "raw_code": "DF024",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Low pressure actuator control circuit",
+      "translation_ar": "دارة التحكم بمشغّل الضغط المنخفض",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 15
+    },
+    {
+      "raw_code": "DF025",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Pre-postheating unit diagnostic line",
+      "translation_ar": "خط تشخيص وحدة التسخين قبل التشغيل وبعده",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 16
+    },
+    {
+      "raw_code": "DF026",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Cylinder 1 injector control circuit",
+      "translation_ar": "دارة التحكم بحاقن الأسطوانة 1",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 17
+    },
+    {
+      "raw_code": "DF027",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Cylinder 2 injector control circuit",
+      "translation_ar": "دارة التحكم بحاقن الأسطوانة 2",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 18
+    },
+    {
+      "raw_code": "DF028",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Cylinder 3 injector control circuit",
+      "translation_ar": "دارة التحكم بحاقن الأسطوانة 3",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 19
+    },
+    {
+      "raw_code": "DF029",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Cylinder 4 injector control circuit",
+      "translation_ar": "دارة التحكم بحاقن الأسطوانة 4",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 20
+    },
+    {
+      "raw_code": "DF032",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Thermoplunger 1 relay control circuit",
+      "translation_ar": "دارة التحكم بريليه السخان الكهربائي 1",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 21
+    },
+    {
+      "raw_code": "DF033",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Thermoplunger 2 relay control circuit",
+      "translation_ar": "دارة التحكم بريليه السخان الكهربائي 2",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 22
+    },
+    {
+      "raw_code": "DF034",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Thermoplunger 3 relay control circuit",
+      "translation_ar": "دارة التحكم بريليه السخان الكهربائي 3",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 23
+    },
+    {
+      "raw_code": "DF037",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Engine immobiliser",
+      "translation_ar": "نظام منع تشغيل المحرك",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 24
+    },
+    {
+      "raw_code": "DF038",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Computer",
+      "translation_ar": "وحدة تحكم المحرك",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 25
+    },
+    {
+      "raw_code": "DF039",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Inlet air temperature sensor circuit",
+      "translation_ar": "دارة حساس حرارة هواء السحب",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 26
+    },
+    {
+      "raw_code": "DF047",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Computer feed voltage",
+      "translation_ar": "جهد تغذية وحدة تحكم المحرك",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 27
+    },
+    {
+      "raw_code": "DF049",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Refrigerant sensor circuit",
+      "translation_ar": "دارة حساس ضغط وسيط التبريد بالمكيّف",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 28
+    },
+    {
+      "raw_code": "DF050",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Brake switch circuit",
+      "translation_ar": "دارة مفتاح دواسة الفرامل",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 29
+    },
+    {
+      "raw_code": "DF051",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Cruise control/speed limiter function",
+      "translation_ar": "وظيفة مثبت السرعة ومحدد السرعة",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 30
+    },
+    {
+      "raw_code": "DF052",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Injector control circuit",
+      "translation_ar": "دارة التحكم بالحاقنات",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 31
+    },
+    {
+      "raw_code": "DF053",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Rail pressure regulation function",
+      "translation_ar": "وظيفة تنظيم ضغط سكة الوقود",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/?srch=Df053",
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 32
+    },
+    {
+      "raw_code": "DF056",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Air flow sensor circuit",
+      "translation_ar": "دارة حساس كتلة تدفق الهواء",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 33
+    },
+    {
+      "raw_code": "DF057",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Water in diesel fuel detector circuit",
+      "translation_ar": "دارة كاشف الماء في وقود الديزل",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 34
+    },
+    {
+      "raw_code": "DF059",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Misfires in cylinder 1",
+      "translation_ar": "اختلال احتراق الأسطوانة 1",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 35
+    },
+    {
+      "raw_code": "DF060",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Misfires in cylinder 2",
+      "translation_ar": "اختلال احتراق الأسطوانة 2",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 36
+    },
+    {
+      "raw_code": "DF061",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Misfires in cylinder 3",
+      "translation_ar": "اختلال احتراق الأسطوانة 3",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 37
+    },
+    {
+      "raw_code": "DF062",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Misfires in cylinder 4",
+      "translation_ar": "اختلال احتراق الأسطوانة 4",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 38
+    },
+    {
+      "raw_code": "DF089",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Inlet manifold pressure sensor circuit",
+      "translation_ar": "دارة حساس ضغط مجمع السحب",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 39
+    },
+    {
+      "raw_code": "DF098",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Fuel temperature sensor circuit",
+      "translation_ar": "دارة حساس حرارة الوقود",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 40
+    },
+    {
+      "raw_code": "DF099",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Automatic or sequential gearbox connection via the multiplex network",
+      "translation_ar": "اتصال ناقل الحركة الآلي أو المتتابع عبر الشبكة متعددة الإرسال",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 41
+    },
+    {
+      "raw_code": "DF107",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Computer memory",
+      "translation_ar": "ذاكرة وحدة تحكم المحرك",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 42
+    },
+    {
+      "raw_code": "DF112",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Cylinder reference sensor circuit",
+      "translation_ar": "دارة حساس مرجع الأسطوانة (عمود الكامات)",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 43
+    },
+    {
+      "raw_code": "DF113",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Sensor feed voltage",
+      "translation_ar": "جهد تغذية الحساسات",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 44
+    },
+    {
+      "raw_code": "DF114",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "EGR solenoid valve circuit",
+      "translation_ar": "دارة صمام EGR الكهرومغناطيسي",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 45
+    },
+    {
+      "raw_code": "DF121",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Accelerometer circuit",
+      "translation_ar": "دارة حساس الاهتزاز (مقياس التسارع)",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 46
+    },
+    {
+      "raw_code": "DF122",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Pedal potentiometer gang 2 supply voltage",
+      "translation_ar": "جهد تغذية المسار 2 لحساس دواسة الوقود",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 47
+    },
+    {
+      "raw_code": "DF130",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Flow capacity function",
+      "translation_ar": "وظيفة القدرة على توفير تدفق الوقود",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 48
+    },
+    {
+      "raw_code": "DF195",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Camshaft sensor / engine speed consistency",
+      "translation_ar": "توافق إشارتي حساس الكامات وسرعة المحرك",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 49
+    },
+    {
+      "raw_code": "DF209",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "EGR valve position sensor circuit",
+      "translation_ar": "دارة حساس موضع صمام EGR",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/12"
+      ],
+      "source_row": 50
+    },
+    {
+      "raw_code": "DF221",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Clutch switch signal",
+      "translation_ar": "إشارة مفتاح دواسة القابض",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 51
+    },
+    {
+      "raw_code": "DF242",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Engine speed signal output",
+      "translation_ar": "خرج إشارة سرعة دوران المحرك",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 52
+    },
+    {
+      "raw_code": "DF261",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Turbocharger actuator circuit",
+      "translation_ar": "دارة مشغّل الشاحن التوربيني",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 53
+    },
+    {
+      "raw_code": "DF427",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Turbocharger actuator control",
+      "translation_ar": "التحكم بمشغّل الشاحن التوربيني",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 54
+    },
+    {
+      "raw_code": "DF489",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Air conditioning compressor control",
+      "translation_ar": "التحكم بضاغط مكيّف الهواء",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 55
+    },
+    {
+      "raw_code": "DF631",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Brake light switch signal",
+      "translation_ar": "إشارة مفتاح مصابيح الفرامل",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 56
+    },
+    {
+      "raw_code": "DF648",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Computer",
+      "translation_ar": "وحدة تحكم المحرك",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 57
+    },
+    {
+      "raw_code": "DF859",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Injector programming cycle not done",
+      "translation_ar": "عدم إتمام دورة برمجة الحاقنات",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 58
+    },
+    {
+      "raw_code": "DF886",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Presence of water in the diesel fuel",
+      "translation_ar": "وجود ماء في وقود الديزل",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 59
+    },
+    {
+      "raw_code": "DF107",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "DCM1.2 / Diesel injection ECU",
+      "definition_en": "Cold loop",
+      "translation_ar": "دائرة التبريد الخاصة بالمكيّف (توصيف متعارض في المصدر؛ قيد التدقيق)",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3"
+      ],
+      "source_row": 60
+    },
+    {
+      "raw_code": "DF001",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "UCH",
+      "translation_ar": "وحدة المقصورة UCH",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 61
+    },
+    {
+      "raw_code": "DF011",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Rain/light sensor circuit",
+      "translation_ar": "دارة حساس المطر والضوء",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 62
+    },
+    {
+      "raw_code": "DF012",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Right-hand direction indicator circuit",
+      "translation_ar": "دارة غماز الاتجاه الأيمن",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 63
+    },
+    {
+      "raw_code": "DF013",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Left-hand direction indicator circuit",
+      "translation_ar": "دارة غماز الاتجاه الأيسر",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 64
+    },
+    {
+      "raw_code": "DF027",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "External temperature sensor circuit",
+      "translation_ar": "دارة حساس درجة الحرارة الخارجية",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 65
+    },
+    {
+      "raw_code": "DF040",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Rear screen wiper park position",
+      "translation_ar": "موضع توقف ماسحة الزجاج الخلفي",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 66
+    },
+    {
+      "raw_code": "DF041",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Heated rear screen warning light circuit",
+      "translation_ar": "دارة مؤشر تسخين الزجاج الخلفي",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=heating"
+      ],
+      "source_row": 67
+    },
+    {
+      "raw_code": "DF042",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Air conditioning warning light circuit",
+      "translation_ar": "دارة مؤشر تشغيل المكيّف",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 68
+    },
+    {
+      "raw_code": "DF054",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Computer",
+      "translation_ar": "وحدة التحكم",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 69
+    },
+    {
+      "raw_code": "DF062",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Starter relay control circuit",
+      "translation_ar": "دارة التحكم بريليه بادئ التشغيل",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 70
+    },
+    {
+      "raw_code": "DF065",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Electric window authorisation connection",
+      "translation_ar": "توصيلة تمكين تشغيل النوافذ الكهربائية",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 71
+    },
+    {
+      "raw_code": "DF082",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Door locking button indicator light circuit",
+      "translation_ar": "دارة ضوء مؤشر زر قفل الأبواب",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 72
+    },
+    {
+      "raw_code": "DF087",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Side lights relay control circuit",
+      "translation_ar": "دارة التحكم بريليه أضواء الوقوف",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 73
+    },
+    {
+      "raw_code": "DF088",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Dipped beam headlights relay control circuit",
+      "translation_ar": "دارة التحكم بريليه الضوء المنخفض",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 74
+    },
+    {
+      "raw_code": "DF097",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Windscreen wiper park position control",
+      "translation_ar": "التحكم بموضع توقف ماسحات الزجاج الأمامي",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 75
+    },
+    {
+      "raw_code": "DF098",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Main beam headlight relay control circuit",
+      "translation_ar": "دارة التحكم بريليه الضوء العالي",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 76
+    },
+    {
+      "raw_code": "DF108",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Front fog lights control circuit",
+      "translation_ar": "دارة التحكم بمصابيح الضباب الأمامية",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 77
+    },
+    {
+      "raw_code": "DF109",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Rear fog lights control circuit",
+      "translation_ar": "دارة التحكم بمصابيح الضباب الخلفية",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 78
+    },
+    {
+      "raw_code": "DF133",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Deadlocking motor(s) circuit",
+      "translation_ar": "دارة محركات القفل المزدوج للأبواب",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 79
+    },
+    {
+      "raw_code": "DF134",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Hazard warning lights indicator light circuit",
+      "translation_ar": "دارة مؤشر أضواء التحذير الرباعية",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 80
+    },
+    {
+      "raw_code": "DF135",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Rain detector",
+      "translation_ar": "كاشف المطر",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 81
+    },
+    {
+      "raw_code": "DF136",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Light sensor",
+      "translation_ar": "حساس الإضاءة",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 82
+    },
+    {
+      "raw_code": "DF137",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "UCH - Alternator connection",
+      "translation_ar": "اتصال وحدة UCH بالمولد",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 83
+    },
+    {
+      "raw_code": "DF138",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Alternator",
+      "translation_ar": "المولد الكهربائي (الدينامو)",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 84
+    },
+    {
+      "raw_code": "DF139",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Interior lights",
+      "translation_ar": "الإضاءة الداخلية",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 85
+    },
+    {
+      "raw_code": "DF140",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Voltage regulator",
+      "translation_ar": "منظم الجهد الكهربائي",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 86
+    },
+    {
+      "raw_code": "DF212",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "UCH / Passenger compartment connection unit",
+      "definition_en": "Alarm circuit",
+      "translation_ar": "دارة جهاز الإنذار",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/amp/renault-twingo-2009-2-g-engine-and-peripherals-passenger-compartment-connection-unit-obd-workshop-manual/?srch=alternator"
+      ],
+      "source_row": 87
+    },
+    {
+      "raw_code": "DF001",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Computer supply",
+      "translation_ar": "تغذية وحدة تحكم ABS",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 88
+    },
+    {
+      "raw_code": "DF006",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Front left-hand wheel speed sensor circuit",
+      "translation_ar": "دارة حساس سرعة العجلة الأمامية اليسرى",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 89
+    },
+    {
+      "raw_code": "DF007",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Rear left-hand wheel speed sensor circuit",
+      "translation_ar": "دارة حساس سرعة العجلة الخلفية اليسرى",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 90
+    },
+    {
+      "raw_code": "DF008",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Front left-hand wheel speed sensor signal",
+      "translation_ar": "إشارة حساس سرعة العجلة الأمامية اليسرى",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 91
+    },
+    {
+      "raw_code": "DF009",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Rear left-hand wheel speed sensor signal",
+      "translation_ar": "إشارة حساس سرعة العجلة الخلفية اليسرى",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 92
+    },
+    {
+      "raw_code": "DF010",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Pump motor circuit",
+      "translation_ar": "دارة محرك مضخة ABS",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 93
+    },
+    {
+      "raw_code": "DF017",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Computer",
+      "translation_ar": "وحدة تحكم ABS",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 94
+    },
+    {
+      "raw_code": "DF020",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Tachometric index programming",
+      "translation_ar": "برمجة معامل حساب سرعة المركبة",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 95
+    },
+    {
+      "raw_code": "DF026",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Front right-hand wheel speed sensor circuit",
+      "translation_ar": "دارة حساس سرعة العجلة الأمامية اليمنى",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 96
+    },
+    {
+      "raw_code": "DF027",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Rear right-hand wheel speed sensor circuit",
+      "translation_ar": "دارة حساس سرعة العجلة الخلفية اليمنى",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 97
+    },
+    {
+      "raw_code": "DF028",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Front right-hand wheel speed sensor signal",
+      "translation_ar": "إشارة حساس سرعة العجلة الأمامية اليمنى",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 98
+    },
+    {
+      "raw_code": "DF029",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Rear right-hand wheel speed sensor signal",
+      "translation_ar": "إشارة حساس سرعة العجلة الخلفية اليمنى",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 99
+    },
+    {
+      "raw_code": "DF055",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Vehicle parameter programming",
+      "translation_ar": "برمجة معلمات المركبة",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 100
+    },
+    {
+      "raw_code": "DF066",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "No injection multiplex signal",
+      "translation_ar": "غياب إشارة وحدة الحقن عبر شبكة الاتصال",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 101
+    },
+    {
+      "raw_code": "DF090",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Front right-hand wheel target",
+      "translation_ar": "حلقة قراءة سرعة العجلة الأمامية اليمنى",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 102
+    },
+    {
+      "raw_code": "DF091",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Front left-hand wheel target",
+      "translation_ar": "حلقة قراءة سرعة العجلة الأمامية اليسرى",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 103
+    },
+    {
+      "raw_code": "DF092",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Rear right-hand wheel target",
+      "translation_ar": "حلقة قراءة سرعة العجلة الخلفية اليمنى",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 104
+    },
+    {
+      "raw_code": "DF093",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Rear left-hand wheel target",
+      "translation_ar": "حلقة قراءة سرعة العجلة الخلفية اليسرى",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 105
+    },
+    {
+      "raw_code": "DF096",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Computer internal electronic irregularity",
+      "translation_ar": "خلل إلكتروني داخلي في وحدة التحكم",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 106
+    },
+    {
+      "raw_code": "DF098",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "No UCH multiplex signal",
+      "translation_ar": "غياب إشارة UCH عبر شبكة الاتصال",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 107
+    },
+    {
+      "raw_code": "DF119",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Gearbox type configuration",
+      "translation_ar": "تهيئة نوع ناقل الحركة",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 108
+    },
+    {
+      "raw_code": "DF121",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Torque requested not available",
+      "translation_ar": "عزم الدوران المطلوب غير متاح",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 109
+    },
+    {
+      "raw_code": "DF152",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Multiplex network",
+      "translation_ar": "شبكة الاتصال متعددة الإرسال",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 110
+    },
+    {
+      "raw_code": "DF188",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Brake light switch circuit",
+      "translation_ar": "دارة مفتاح مصابيح الفرامل",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 111
+    },
+    {
+      "raw_code": "DF219",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "ABS multiplex signal consistency",
+      "translation_ar": "اتساق إشارات ABS على شبكة الاتصال",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 112
+    },
+    {
+      "raw_code": "DF229",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Front right-hand wheel speed",
+      "translation_ar": "سرعة العجلة الأمامية اليمنى",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 113
+    },
+    {
+      "raw_code": "DF230",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Front left-hand wheel speed",
+      "translation_ar": "سرعة العجلة الأمامية اليسرى",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 114
+    },
+    {
+      "raw_code": "DF231",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Rear right-hand wheel speed",
+      "translation_ar": "سرعة العجلة الخلفية اليمنى",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 115
+    },
+    {
+      "raw_code": "DF232",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Rear left-hand wheel speed",
+      "translation_ar": "سرعة العجلة الخلفية اليسرى",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 116
+    },
+    {
+      "raw_code": "DF250",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Engine speed multiplex signal",
+      "translation_ar": "إشارة سرعة المحرك عبر شبكة الاتصال",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 117
+    },
+    {
+      "raw_code": "DF251",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Effective average torque multiplex signal",
+      "translation_ar": "إشارة متوسط العزم الفعلي عبر الشبكة",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 118
+    },
+    {
+      "raw_code": "DF252",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Torque request multiplex feedback signal",
+      "translation_ar": "إشارة التغذية الراجعة لطلب العزم عبر الشبكة",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 119
+    },
+    {
+      "raw_code": "DF253",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Recalculated torque multiplex signal",
+      "translation_ar": "إشارة العزم المعاد حسابه عبر الشبكة",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 120
+    },
+    {
+      "raw_code": "DF254",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "Resisting torque multiplex signal",
+      "translation_ar": "إشارة عزم المقاومة عبر الشبكة",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 121
+    },
+    {
+      "raw_code": "DF311",
+      "code_format": "Renault DF (manufacturer enhanced; DF + 3 digits)",
+      "ecu": "MK70 ABS / Brake control ECU",
+      "definition_en": "No BVR multiplex signal",
+      "translation_ar": "غياب إشارة علبة السرعات عبر الشبكة",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-chasiss-abs-workshop-manual/2"
+      ],
+      "source_row": 122
+    },
+    {
+      "raw_code": "P0115",
+      "code_format": "SAE/ISO generic OBD powertrain P0 (code definition independently confirmed)",
+      "ecu": "Emission-related engine ECU (DCM1.2 candidate)",
+      "definition_en": "Engine Coolant Temperature Sensor 1 Circuit",
+      "translation_ar": "دارة حساس حرارة سائل تبريد المحرك 1",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.obd-codes.com/p0115",
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3",
+        "https://saemobilus.sae.org/standards/j2012_201612-diagnostic-trouble-code-definitions"
+      ],
+      "source_row": 123
+    },
+    {
+      "raw_code": "P0335",
+      "code_format": "SAE/ISO generic OBD powertrain P0 (code definition independently confirmed)",
+      "ecu": "Emission-related engine ECU (DCM1.2 candidate)",
+      "definition_en": "Crankshaft Position Sensor A Circuit",
+      "translation_ar": "دارة حساس موضع عمود المرفق A",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.motfiles.co.uk/fault-codes/p0335",
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3",
+        "https://saemobilus.sae.org/standards/j2012_201612-diagnostic-trouble-code-definitions"
+      ],
+      "source_row": 124
+    },
+    {
+      "raw_code": "P0089",
+      "code_format": "SAE/ISO generic OBD powertrain P0 (code definition independently confirmed)",
+      "ecu": "Emission-related engine ECU (DCM1.2 candidate)",
+      "definition_en": "Fuel Pressure Regulator 1 Performance",
+      "translation_ar": "أداء منظم ضغط الوقود 1",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://www.icarsoft.net/knowledge/article/p0089-code-fuel-pressure-regulator-performance-fix",
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3",
+        "https://saemobilus.sae.org/standards/j2012_201612-diagnostic-trouble-code-definitions"
+      ],
+      "source_row": 125
+    },
+    {
+      "raw_code": "P0201",
+      "code_format": "SAE/ISO generic OBD powertrain P0 (code definition independently confirmed)",
+      "ecu": "Emission-related engine ECU (DCM1.2 candidate)",
+      "definition_en": "Cylinder 1 Injector Circuit/Open",
+      "translation_ar": "دارة حاقن الأسطوانة 1 / انقطاع",
+      "translation_sv": null,
+      "original_verification_status": "قيد التوثيق",
+      "source_context": [
+        "https://autodtcs.com/codes/p0201/",
+        "https://www.carmanualsonline.info/renault-twingo-rs-2009-2-g-engine-diesel-injection-workshop-manual/3",
+        "https://saemobilus.sae.org/standards/j2012_201612-diagnostic-trouble-code-definitions"
+      ],
+      "source_row": 126
+    },
+    {
+      "raw_code": "U0121",
+      "code_format": "OBD-style U; standard/manufacturer-specific status dependent on code range and ECU",
+      "ecu": "ABS CAN listener / receiving ECU",
+      "definition_en": "Lost Communication With Anti-Lock Brake System (ABS) Control Module",
+      "translation_ar": "فقد الاتصال مع وحدة التحكم بنظام ABS",
+      "translation_sv": null,
+      "original_verification_status": "غير متاح المصدر",
+      "source_context": [
+        "https://www.autoxuga.com/averiasrecibidas/repararcoches/repararrenault/repararrenaultdtcC121.php"
+      ],
+      "source_row": 127
+    },
+    {
+      "raw_code": "B1001",
+      "code_format": "OBD-style B; standard/manufacturer-specific status dependent on code range and ECU",
+      "ecu": "SRS / Airbag ECU",
+      "definition_en": "Airbag control unit internal fault (secondary workshop provider wording)",
+      "translation_ar": "خلل داخلي في وحدة تحكم الوسائد الهوائية (توصيف مورد فني ثانوي)",
+      "translation_sv": null,
+      "original_verification_status": "غير متاح المصدر",
+      "source_context": [
+        "https://www.airbag24.de/en/products/renault-trafic-iii-airbag-steuergeraet-reparatur"
+      ],
+      "source_row": 128
+    },
+    {
+      "raw_code": "C1604",
+      "code_format": "OBD-style C; standard/manufacturer-specific status dependent on code range and ECU",
+      "ecu": "Electric power steering ECU",
+      "definition_en": "Electric power steering diagnostic code (exact subtype pending)",
+      "translation_ar": "كود تشخيص التوجيه الكهربائي، المعنى التفصيلي غير مؤكد",
+      "translation_sv": null,
+      "original_verification_status": "غير متاح المصدر",
+      "source_context": [
+        "https://www.scribd.com/document/944398756/RENAULT-MEGANE-II-INJECTION-SYSTEM-1"
+      ],
+      "source_row": 129
+    }
+  ]
+}
