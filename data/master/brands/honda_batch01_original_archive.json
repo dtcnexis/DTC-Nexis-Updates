@@ -1,0 +1,5044 @@
+{
+  "schema": "dtcnexis-permanent-original-duplicate-source-v1",
+  "brand": "Honda",
+  "source_file": "DTC_NEXIS_HONDA_batch01_2026-10-15.json",
+  "source_library_file_id": "file_00000000c04c8230a5d2b1ed662d663a",
+  "original_batch": "01",
+  "original_record_count": 47,
+  "counted_as_new_rows": 0,
+  "reason": "Original baseline; 47 codes already represented in Honda Batch02, archive for provenance, not double counted",
+  "status": "PERMANENT_ORIGINAL_SOURCE_NOT_RELEASED",
+  "records": [
+    {
+      "brand": "Honda",
+      "code": "P0300",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "PGM-FI / PCM",
+      "definition_en": "Random/Multiple Cylinder Misfire Detected",
+      "translation_ar": "رصد اختلال اشتعال عشوائي أو في عدة أسطوانات",
+      "category": "عام — صيغة OBD قياسية",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Pilot 2009-2013",
+          "Pilot 2016-2019",
+          "Ridgeline 2017-2019",
+          "Odyssey 2018-2019"
+        ],
+        "years": [
+          "2009-2013 Pilot",
+          "2016-2019 Pilot",
+          "2017-2019 Ridgeline",
+          "2018-2019 Odyssey"
+        ],
+        "engines": "V6 3.5L where bulletin applies; engine code غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "2021 Honda 21-010 / 20-100 model-and-VIN-specific injector diagnostic relevance only. Honda 13-082 / 13-055 do not designate P0300."
+      },
+      "symptoms": [
+        "MIL؛ اهتزاز/اختلال تشغيل محتمل"
+      ],
+      "causes": [
+        {
+          "cause": "بخاخ وقود ملوث/متآكل في سيارات الحملة",
+          "evidence": "Honda 21-010/20-100: الإجراء يعتمد على VIN ومجموعة الأكواد؛ عند وجود misfire أو P219A/B توصي النشرة باستبدال البخاخات مباشرة في الحالات المؤهلة، دون اشتراط Cylinder A/F Test؛ يشترط ≥5000 ميل وفق النشرة"
+        },
+        {
+          "cause": "بواجي/كويل/تسريب/ضغط سلندر",
+          "evidence": "احتمالات تشخيصية عامة؛ غير مثبتة بهذه النشرة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "تحقق من VIN ومجموعة DTC: Honda 21-010/20-100 تفرض Cylinder A/F Test عند P0420/P0430 وحدهما، لا تشترطه عندما P0300–P0306 أو P219A/B؛ خارج الحملة افحص الإشعال/الوقود/الضغط حسب دليل السيارة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "MISFIRE COUNT / CYLINDER MISFIRE",
+          "name_ar": "عداد اختلال الاشتعال لكل أسطوانة",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "ENGINE SPEED",
+          "name_ar": "سرعة المحرك",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "ECT SENSOR 1",
+          "name_ar": "حرارة سائل التبريد",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "Cylinder A/F Test",
+          "name_ar": "اختبار مزيج الهواء والوقود لكل أسطوانة",
+          "reference_condition": "استخدم نتيجة PASS/FAIL حسب إجراء Honda فقط"
+        }
+      ],
+      "parts": [
+        "Fuel injector — حسب VIN",
+        "Spark plug",
+        "Ignition coil",
+        "Piston rings (VIN and cylinder dependent)"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Pilot%202009-2013%20P0300%20Random/Multiple%20Cylinder%20Misfire%20Detected%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Pilot%202009-2013%20P0300%20Random/Multiple%20Cylinder%20Misfire%20Detected%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 21-010 / 20-100: VIN- and model-specific fuel-injector/misfire campaign; no 13-082 piston ring claim for this DTC",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 21-010, Version 1",
+          "date_or_version": "2021-02-11",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187008-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        },
+        {
+          "title": "Honda Service Bulletin 20-100, Version 2",
+          "date_or_version": "2021-02-11",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187006-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "P0301",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "PGM-FI / PCM",
+      "definition_en": "No. 1 Cylinder Misfire Detected",
+      "translation_ar": "رصد اختلال اشتعال في الأسطوانة رقم 1",
+      "category": "عام — صيغة OBD قياسية",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Pilot 2009-2013",
+          "Pilot 2016-2019",
+          "Ridgeline 2017-2019",
+          "Odyssey 2018-2019"
+        ],
+        "years": [
+          "2009-2013 Pilot",
+          "2016-2019 Pilot",
+          "2017-2019 Ridgeline",
+          "2018-2019 Odyssey"
+        ],
+        "engines": "V6 3.5L where bulletin applies; engine code غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "2009-2013 Pilot: piston rings note for cylinders 1–4 only; 2016-19 direct-injection fuel-injector campaigns VIN-specific; not every model-year has every cause"
+      },
+      "symptoms": [
+        "MIL؛ اهتزاز/اختلال تشغيل محتمل"
+      ],
+      "causes": [
+        {
+          "cause": "بخاخ وقود ملوث/متآكل في سيارات الحملة",
+          "evidence": "Honda 21-010/20-100: الإجراء يعتمد على VIN ومجموعة الأكواد؛ عند وجود misfire أو P219A/B توصي النشرة باستبدال البخاخات مباشرة في الحالات المؤهلة، دون اشتراط Cylinder A/F Test؛ يشترط ≥5000 ميل وفق النشرة"
+        },
+        {
+          "cause": "اتساخ شمعة بسبب حلقات المكبس (Pilot 2009-13 للأسطوانات 1–4)",
+          "evidence": "Honda 13-082؛ لا يمتد تلقائياً لـ P0305/P0306"
+        },
+        {
+          "cause": "بواجي/كويل/تسريب/ضغط سلندر",
+          "evidence": "احتمالات تشخيصية عامة؛ غير مثبتة بهذه النشرة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "تحقق من VIN ومجموعة DTC: Honda 21-010/20-100 تفرض Cylinder A/F Test عند P0420/P0430 وحدهما، لا تشترطه عندما P0300–P0306 أو P219A/B؛ خارج الحملة افحص الإشعال/الوقود/الضغط حسب دليل السيارة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "MISFIRE COUNT / CYLINDER MISFIRE",
+          "name_ar": "عداد اختلال الاشتعال لكل أسطوانة",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "ENGINE SPEED",
+          "name_ar": "سرعة المحرك",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "ECT SENSOR 1",
+          "name_ar": "حرارة سائل التبريد",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "Cylinder A/F Test",
+          "name_ar": "اختبار مزيج الهواء والوقود لكل أسطوانة",
+          "reference_condition": "استخدم نتيجة PASS/FAIL حسب إجراء Honda فقط"
+        }
+      ],
+      "parts": [
+        "Fuel injector — حسب VIN",
+        "Spark plug",
+        "Ignition coil",
+        "Piston rings (VIN and cylinder dependent)"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Pilot%202009-2013%20P0301%20No.%201%20Cylinder%20Misfire%20Detected%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Pilot%202009-2013%20P0301%20No.%201%20Cylinder%20Misfire%20Detected%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda TSB 13-082 misfire/piston-ring on 2009–13 Pilot (1–4); Honda TSB 21-010 / 20-100 multi-code injector-related campaign",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 21-010, Version 1",
+          "date_or_version": "2021-02-11",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187008-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        },
+        {
+          "title": "Honda Service Bulletin 20-100, Version 2",
+          "date_or_version": "2021-02-11",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187006-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        },
+        {
+          "title": "Honda Service Bulletin 13-082, Version 12",
+          "date_or_version": "2022-07-19",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10216874-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        },
+        {
+          "title": "Honda Service Bulletin 13-055",
+          "date_or_version": "2013-07-19",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2013/SB-10052924-4799.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "P0302",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "PGM-FI / PCM",
+      "definition_en": "No. 2 Cylinder Misfire Detected",
+      "translation_ar": "رصد اختلال اشتعال في الأسطوانة رقم 2",
+      "category": "عام — صيغة OBD قياسية",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Pilot 2009-2013",
+          "Pilot 2016-2019",
+          "Ridgeline 2017-2019",
+          "Odyssey 2018-2019"
+        ],
+        "years": [
+          "2009-2013 Pilot",
+          "2016-2019 Pilot",
+          "2017-2019 Ridgeline",
+          "2018-2019 Odyssey"
+        ],
+        "engines": "V6 3.5L where bulletin applies; engine code غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "2009-2013 Pilot: piston rings note for cylinders 1–4 only; 2016-19 direct-injection fuel-injector campaigns VIN-specific; not every model-year has every cause"
+      },
+      "symptoms": [
+        "MIL؛ اهتزاز/اختلال تشغيل محتمل"
+      ],
+      "causes": [
+        {
+          "cause": "بخاخ وقود ملوث/متآكل في سيارات الحملة",
+          "evidence": "Honda 21-010/20-100: الإجراء يعتمد على VIN ومجموعة الأكواد؛ عند وجود misfire أو P219A/B توصي النشرة باستبدال البخاخات مباشرة في الحالات المؤهلة، دون اشتراط Cylinder A/F Test؛ يشترط ≥5000 ميل وفق النشرة"
+        },
+        {
+          "cause": "اتساخ شمعة بسبب حلقات المكبس (Pilot 2009-13 للأسطوانات 1–4)",
+          "evidence": "Honda 13-082؛ لا يمتد تلقائياً لـ P0305/P0306"
+        },
+        {
+          "cause": "بواجي/كويل/تسريب/ضغط سلندر",
+          "evidence": "احتمالات تشخيصية عامة؛ غير مثبتة بهذه النشرة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "تحقق من VIN ومجموعة DTC: Honda 21-010/20-100 تفرض Cylinder A/F Test عند P0420/P0430 وحدهما، لا تشترطه عندما P0300–P0306 أو P219A/B؛ خارج الحملة افحص الإشعال/الوقود/الضغط حسب دليل السيارة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "MISFIRE COUNT / CYLINDER MISFIRE",
+          "name_ar": "عداد اختلال الاشتعال لكل أسطوانة",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "ENGINE SPEED",
+          "name_ar": "سرعة المحرك",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "ECT SENSOR 1",
+          "name_ar": "حرارة سائل التبريد",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "Cylinder A/F Test",
+          "name_ar": "اختبار مزيج الهواء والوقود لكل أسطوانة",
+          "reference_condition": "استخدم نتيجة PASS/FAIL حسب إجراء Honda فقط"
+        }
+      ],
+      "parts": [
+        "Fuel injector — حسب VIN",
+        "Spark plug",
+        "Ignition coil",
+        "Piston rings (VIN and cylinder dependent)"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Pilot%202009-2013%20P0302%20No.%202%20Cylinder%20Misfire%20Detected%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Pilot%202009-2013%20P0302%20No.%202%20Cylinder%20Misfire%20Detected%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda TSB 13-082 misfire/piston-ring on 2009–13 Pilot (1–4); Honda TSB 21-010 / 20-100 multi-code injector-related campaign",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 21-010, Version 1",
+          "date_or_version": "2021-02-11",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187008-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        },
+        {
+          "title": "Honda Service Bulletin 20-100, Version 2",
+          "date_or_version": "2021-02-11",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187006-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        },
+        {
+          "title": "Honda Service Bulletin 13-082, Version 12",
+          "date_or_version": "2022-07-19",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10216874-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        },
+        {
+          "title": "Honda Service Bulletin 13-055",
+          "date_or_version": "2013-07-19",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2013/SB-10052924-4799.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "P0303",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "PGM-FI / PCM",
+      "definition_en": "No. 3 Cylinder Misfire Detected",
+      "translation_ar": "رصد اختلال اشتعال في الأسطوانة رقم 3",
+      "category": "عام — صيغة OBD قياسية",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Pilot 2009-2013",
+          "Pilot 2016-2019",
+          "Ridgeline 2017-2019",
+          "Odyssey 2018-2019"
+        ],
+        "years": [
+          "2009-2013 Pilot",
+          "2016-2019 Pilot",
+          "2017-2019 Ridgeline",
+          "2018-2019 Odyssey"
+        ],
+        "engines": "V6 3.5L where bulletin applies; engine code غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "2009-2013 Pilot: piston rings note for cylinders 1–4 only; 2016-19 direct-injection fuel-injector campaigns VIN-specific; not every model-year has every cause"
+      },
+      "symptoms": [
+        "MIL؛ اهتزاز/اختلال تشغيل محتمل"
+      ],
+      "causes": [
+        {
+          "cause": "بخاخ وقود ملوث/متآكل في سيارات الحملة",
+          "evidence": "Honda 21-010/20-100: الإجراء يعتمد على VIN ومجموعة الأكواد؛ عند وجود misfire أو P219A/B توصي النشرة باستبدال البخاخات مباشرة في الحالات المؤهلة، دون اشتراط Cylinder A/F Test؛ يشترط ≥5000 ميل وفق النشرة"
+        },
+        {
+          "cause": "اتساخ شمعة بسبب حلقات المكبس (Pilot 2009-13 للأسطوانات 1–4)",
+          "evidence": "Honda 13-082؛ لا يمتد تلقائياً لـ P0305/P0306"
+        },
+        {
+          "cause": "بواجي/كويل/تسريب/ضغط سلندر",
+          "evidence": "احتمالات تشخيصية عامة؛ غير مثبتة بهذه النشرة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "تحقق من VIN ومجموعة DTC: Honda 21-010/20-100 تفرض Cylinder A/F Test عند P0420/P0430 وحدهما، لا تشترطه عندما P0300–P0306 أو P219A/B؛ خارج الحملة افحص الإشعال/الوقود/الضغط حسب دليل السيارة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "MISFIRE COUNT / CYLINDER MISFIRE",
+          "name_ar": "عداد اختلال الاشتعال لكل أسطوانة",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "ENGINE SPEED",
+          "name_ar": "سرعة المحرك",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "ECT SENSOR 1",
+          "name_ar": "حرارة سائل التبريد",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "Cylinder A/F Test",
+          "name_ar": "اختبار مزيج الهواء والوقود لكل أسطوانة",
+          "reference_condition": "استخدم نتيجة PASS/FAIL حسب إجراء Honda فقط"
+        }
+      ],
+      "parts": [
+        "Fuel injector — حسب VIN",
+        "Spark plug",
+        "Ignition coil",
+        "Piston rings (VIN and cylinder dependent)"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Pilot%202009-2013%20P0303%20No.%203%20Cylinder%20Misfire%20Detected%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Pilot%202009-2013%20P0303%20No.%203%20Cylinder%20Misfire%20Detected%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda TSB 13-082 misfire/piston-ring on 2009–13 Pilot (1–4); Honda TSB 21-010 / 20-100 multi-code injector-related campaign",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 21-010, Version 1",
+          "date_or_version": "2021-02-11",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187008-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        },
+        {
+          "title": "Honda Service Bulletin 20-100, Version 2",
+          "date_or_version": "2021-02-11",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187006-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        },
+        {
+          "title": "Honda Service Bulletin 13-082, Version 12",
+          "date_or_version": "2022-07-19",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10216874-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        },
+        {
+          "title": "Honda Service Bulletin 13-055",
+          "date_or_version": "2013-07-19",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2013/SB-10052924-4799.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "P0304",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "PGM-FI / PCM",
+      "definition_en": "No. 4 Cylinder Misfire Detected",
+      "translation_ar": "رصد اختلال اشتعال في الأسطوانة رقم 4",
+      "category": "عام — صيغة OBD قياسية",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Pilot 2009-2013",
+          "Pilot 2016-2019",
+          "Ridgeline 2017-2019",
+          "Odyssey 2018-2019"
+        ],
+        "years": [
+          "2009-2013 Pilot",
+          "2016-2019 Pilot",
+          "2017-2019 Ridgeline",
+          "2018-2019 Odyssey"
+        ],
+        "engines": "V6 3.5L where bulletin applies; engine code غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "2009-2013 Pilot: piston rings note for cylinders 1–4 only; 2016-19 direct-injection fuel-injector campaigns VIN-specific; not every model-year has every cause"
+      },
+      "symptoms": [
+        "MIL؛ اهتزاز/اختلال تشغيل محتمل"
+      ],
+      "causes": [
+        {
+          "cause": "بخاخ وقود ملوث/متآكل في سيارات الحملة",
+          "evidence": "Honda 21-010/20-100: الإجراء يعتمد على VIN ومجموعة الأكواد؛ عند وجود misfire أو P219A/B توصي النشرة باستبدال البخاخات مباشرة في الحالات المؤهلة، دون اشتراط Cylinder A/F Test؛ يشترط ≥5000 ميل وفق النشرة"
+        },
+        {
+          "cause": "اتساخ شمعة بسبب حلقات المكبس (Pilot 2009-13 للأسطوانات 1–4)",
+          "evidence": "Honda 13-082؛ لا يمتد تلقائياً لـ P0305/P0306"
+        },
+        {
+          "cause": "بواجي/كويل/تسريب/ضغط سلندر",
+          "evidence": "احتمالات تشخيصية عامة؛ غير مثبتة بهذه النشرة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "تحقق من VIN ومجموعة DTC: Honda 21-010/20-100 تفرض Cylinder A/F Test عند P0420/P0430 وحدهما، لا تشترطه عندما P0300–P0306 أو P219A/B؛ خارج الحملة افحص الإشعال/الوقود/الضغط حسب دليل السيارة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "MISFIRE COUNT / CYLINDER MISFIRE",
+          "name_ar": "عداد اختلال الاشتعال لكل أسطوانة",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "ENGINE SPEED",
+          "name_ar": "سرعة المحرك",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "ECT SENSOR 1",
+          "name_ar": "حرارة سائل التبريد",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "Cylinder A/F Test",
+          "name_ar": "اختبار مزيج الهواء والوقود لكل أسطوانة",
+          "reference_condition": "استخدم نتيجة PASS/FAIL حسب إجراء Honda فقط"
+        }
+      ],
+      "parts": [
+        "Fuel injector — حسب VIN",
+        "Spark plug",
+        "Ignition coil",
+        "Piston rings (VIN and cylinder dependent)"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Pilot%202009-2013%20P0304%20No.%204%20Cylinder%20Misfire%20Detected%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Pilot%202009-2013%20P0304%20No.%204%20Cylinder%20Misfire%20Detected%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda TSB 13-082 misfire/piston-ring on 2009–13 Pilot (1–4); Honda TSB 21-010 / 20-100 multi-code injector-related campaign",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 21-010, Version 1",
+          "date_or_version": "2021-02-11",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187008-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        },
+        {
+          "title": "Honda Service Bulletin 20-100, Version 2",
+          "date_or_version": "2021-02-11",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187006-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        },
+        {
+          "title": "Honda Service Bulletin 13-082, Version 12",
+          "date_or_version": "2022-07-19",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10216874-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        },
+        {
+          "title": "Honda Service Bulletin 13-055",
+          "date_or_version": "2013-07-19",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2013/SB-10052924-4799.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "P0305",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "PGM-FI / PCM",
+      "definition_en": "No. 5 Cylinder Misfire Detected",
+      "translation_ar": "رصد اختلال اشتعال في الأسطوانة رقم 5",
+      "category": "عام — صيغة OBD قياسية",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Pilot 2009-2013",
+          "Pilot 2016-2019",
+          "Ridgeline 2017-2019",
+          "Odyssey 2018-2019"
+        ],
+        "years": [
+          "2009-2013 Pilot",
+          "2016-2019 Pilot",
+          "2017-2019 Ridgeline",
+          "2018-2019 Odyssey"
+        ],
+        "engines": "V6 3.5L where bulletin applies; engine code غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Cylinder 5/6 codes: no demonstrated application of 13-082 Pilot piston-ring bulletin; relevant 2021 injector campaigns are model/VIN-specific."
+      },
+      "symptoms": [
+        "MIL؛ اهتزاز/اختلال تشغيل محتمل"
+      ],
+      "causes": [
+        {
+          "cause": "بخاخ وقود ملوث/متآكل في سيارات الحملة",
+          "evidence": "Honda 21-010/20-100: الإجراء يعتمد على VIN ومجموعة الأكواد؛ عند وجود misfire أو P219A/B توصي النشرة باستبدال البخاخات مباشرة في الحالات المؤهلة، دون اشتراط Cylinder A/F Test؛ يشترط ≥5000 ميل وفق النشرة"
+        },
+        {
+          "cause": "بواجي/كويل/تسريب/ضغط سلندر",
+          "evidence": "احتمالات تشخيصية عامة؛ غير مثبتة بهذه النشرة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "تحقق من VIN ومجموعة DTC: Honda 21-010/20-100 تفرض Cylinder A/F Test عند P0420/P0430 وحدهما، لا تشترطه عندما P0300–P0306 أو P219A/B؛ خارج الحملة افحص الإشعال/الوقود/الضغط حسب دليل السيارة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "MISFIRE COUNT / CYLINDER MISFIRE",
+          "name_ar": "عداد اختلال الاشتعال لكل أسطوانة",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "ENGINE SPEED",
+          "name_ar": "سرعة المحرك",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "ECT SENSOR 1",
+          "name_ar": "حرارة سائل التبريد",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "Cylinder A/F Test",
+          "name_ar": "اختبار مزيج الهواء والوقود لكل أسطوانة",
+          "reference_condition": "استخدم نتيجة PASS/FAIL حسب إجراء Honda فقط"
+        }
+      ],
+      "parts": [
+        "Fuel injector — حسب VIN",
+        "Spark plug",
+        "Ignition coil",
+        "Piston rings (VIN and cylinder dependent)"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Pilot%202009-2013%20P0305%20No.%205%20Cylinder%20Misfire%20Detected%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Pilot%202009-2013%20P0305%20No.%205%20Cylinder%20Misfire%20Detected%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 21-010 / 20-100: VIN- and model-specific fuel-injector/misfire campaign; no 13-082 piston ring claim for this DTC",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 21-010, Version 1",
+          "date_or_version": "2021-02-11",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187008-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        },
+        {
+          "title": "Honda Service Bulletin 20-100, Version 2",
+          "date_or_version": "2021-02-11",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187006-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "P0306",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "PGM-FI / PCM",
+      "definition_en": "No. 6 Cylinder Misfire Detected",
+      "translation_ar": "رصد اختلال اشتعال في الأسطوانة رقم 6",
+      "category": "عام — صيغة OBD قياسية",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Pilot 2009-2013",
+          "Pilot 2016-2019",
+          "Ridgeline 2017-2019",
+          "Odyssey 2018-2019"
+        ],
+        "years": [
+          "2009-2013 Pilot",
+          "2016-2019 Pilot",
+          "2017-2019 Ridgeline",
+          "2018-2019 Odyssey"
+        ],
+        "engines": "V6 3.5L where bulletin applies; engine code غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Cylinder 5/6 codes: no demonstrated application of 13-082 Pilot piston-ring bulletin; relevant 2021 injector campaigns are model/VIN-specific."
+      },
+      "symptoms": [
+        "MIL؛ اهتزاز/اختلال تشغيل محتمل"
+      ],
+      "causes": [
+        {
+          "cause": "بخاخ وقود ملوث/متآكل في سيارات الحملة",
+          "evidence": "Honda 21-010/20-100: الإجراء يعتمد على VIN ومجموعة الأكواد؛ عند وجود misfire أو P219A/B توصي النشرة باستبدال البخاخات مباشرة في الحالات المؤهلة، دون اشتراط Cylinder A/F Test؛ يشترط ≥5000 ميل وفق النشرة"
+        },
+        {
+          "cause": "بواجي/كويل/تسريب/ضغط سلندر",
+          "evidence": "احتمالات تشخيصية عامة؛ غير مثبتة بهذه النشرة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "تحقق من VIN ومجموعة DTC: Honda 21-010/20-100 تفرض Cylinder A/F Test عند P0420/P0430 وحدهما، لا تشترطه عندما P0300–P0306 أو P219A/B؛ خارج الحملة افحص الإشعال/الوقود/الضغط حسب دليل السيارة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "MISFIRE COUNT / CYLINDER MISFIRE",
+          "name_ar": "عداد اختلال الاشتعال لكل أسطوانة",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "ENGINE SPEED",
+          "name_ar": "سرعة المحرك",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "ECT SENSOR 1",
+          "name_ar": "حرارة سائل التبريد",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "Cylinder A/F Test",
+          "name_ar": "اختبار مزيج الهواء والوقود لكل أسطوانة",
+          "reference_condition": "استخدم نتيجة PASS/FAIL حسب إجراء Honda فقط"
+        }
+      ],
+      "parts": [
+        "Fuel injector — حسب VIN",
+        "Spark plug",
+        "Ignition coil",
+        "Piston rings (VIN and cylinder dependent)"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Pilot%202009-2013%20P0306%20No.%206%20Cylinder%20Misfire%20Detected%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Pilot%202009-2013%20P0306%20No.%206%20Cylinder%20Misfire%20Detected%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 21-010 / 20-100: VIN- and model-specific fuel-injector/misfire campaign; no 13-082 piston ring claim for this DTC",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 21-010, Version 1",
+          "date_or_version": "2021-02-11",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187008-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        },
+        {
+          "title": "Honda Service Bulletin 20-100, Version 2",
+          "date_or_version": "2021-02-11",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187006-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "P219A",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "PGM-FI / PCM",
+      "definition_en": "Air-Fuel Ratio Variation of Cylinder (Bank 1, Rear Bank)",
+      "translation_ar": "تفاوت نسبة الهواء إلى الوقود بين أسطوانات البنك 1 (الخلفي)",
+      "category": "عام — مرجع المصنع يؤكد تطبيقه",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Pilot",
+          "Ridgeline",
+          "Odyssey"
+        ],
+        "years": [
+          "Pilot 2016-2019",
+          "Ridgeline 2017-2019",
+          "Odyssey 2018-2019"
+        ],
+        "engines": "V6; exact engine code غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "نشرة تخص السوق الأمريكي؛ التأكد من VIN"
+      },
+      "symptoms": [
+        "MIL، تفاوت أداء سلندرات محتمل"
+      ],
+      "causes": [
+        {
+          "cause": "انسداد/اهتراء حاقنات الحقن المباشر",
+          "evidence": "Honda 20-100 /21-010؛ عيوب تصنيع/جسيمات"
+        },
+        {
+          "cause": "مشاكل ضغط الوقود/هواء غير مقاس",
+          "evidence": "فرضية تشخيصية، غير مثبتة لهذه الحالة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "تحقق من VIN ومجموعة DTC: Honda 21-010/20-100 تفرض Cylinder A/F Test عند P0420/P0430 وحدهما، لا تشترطه عندما P0300–P0306 أو P219A/B؛ خارج الحملة افحص الإشعال/الوقود/الضغط حسب دليل السيارة"
+        },
+        {
+          "step": "تحديد مسار Honda 20-100 مقابل 21-010 حسب VIN وإصدار تحديث PCM؛ لا تشترط نجاح Cylinder A/F Test لحالات P219A/B المؤهلة للنشرة.",
+          "evidence": "Honda 20-100 Version 2 page 2; Honda 21-010 Version 1 page 2"
+        },
+        {
+          "step": "تحديد مسار Honda 20-100 مقابل 21-010 حسب VIN وإصدار تحديث PCM؛ لا تشترط نجاح Cylinder A/F Test لحالات P219A/B المؤهلة للنشرة.",
+          "evidence": "Honda 20-100 Version 2 page 2; Honda 21-010 Version 1 page 2"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Cylinder A/F Test",
+          "name_ar": "اختبار مزيج كل أسطوانة",
+          "reference_condition": "تفسير النجاح/الفشل من دليل الإصلاح فقط"
+        },
+        {
+          "name_en": "FUEL PRESSURE",
+          "name_ar": "ضغط الوقود",
+          "reference_condition": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        "High pressure injectors",
+        "Fuel rail",
+        "High-pressure fuel pump"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Pilot%20P219A%20Air-Fuel%20Ratio%20Variation%20of%20Cylinder%20%28Bank%201%2C%20Rear%20Bank%29%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Pilot%20P219A%20Air-Fuel%20Ratio%20Variation%20of%20Cylinder%20%28Bank%201%2C%20Rear%20Bank%29%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda TSB 20-100 / 21-010 documented fuel injector campaigns",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 21-010, Version 1",
+          "date_or_version": "2021-02-11",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187008-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        },
+        {
+          "title": "Honda Service Bulletin 20-100, Version 2",
+          "date_or_version": "2021-02-11",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187006-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "P219B",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "PGM-FI / PCM",
+      "definition_en": "Air-Fuel Ratio Variation of Cylinder (Bank 2, Front Bank)",
+      "translation_ar": "تفاوت نسبة الهواء إلى الوقود بين أسطوانات البنك 2 (الأمامي)",
+      "category": "عام — مرجع المصنع يؤكد تطبيقه",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Pilot",
+          "Ridgeline",
+          "Odyssey"
+        ],
+        "years": [
+          "Pilot 2016-2019",
+          "Ridgeline 2017-2019",
+          "Odyssey 2018-2019"
+        ],
+        "engines": "V6; exact engine code غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "نشرة تخص السوق الأمريكي؛ التأكد من VIN"
+      },
+      "symptoms": [
+        "MIL، تفاوت أداء سلندرات محتمل"
+      ],
+      "causes": [
+        {
+          "cause": "انسداد/اهتراء حاقنات الحقن المباشر",
+          "evidence": "Honda 20-100 /21-010؛ عيوب تصنيع/جسيمات"
+        },
+        {
+          "cause": "مشاكل ضغط الوقود/هواء غير مقاس",
+          "evidence": "فرضية تشخيصية، غير مثبتة لهذه الحالة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "تحقق من VIN ومجموعة DTC: Honda 21-010/20-100 تفرض Cylinder A/F Test عند P0420/P0430 وحدهما، لا تشترطه عندما P0300–P0306 أو P219A/B؛ خارج الحملة افحص الإشعال/الوقود/الضغط حسب دليل السيارة"
+        },
+        {
+          "step": "تحديد مسار Honda 20-100 مقابل 21-010 حسب VIN وإصدار تحديث PCM؛ لا تشترط نجاح Cylinder A/F Test لحالات P219A/B المؤهلة للنشرة.",
+          "evidence": "Honda 20-100 Version 2 page 2; Honda 21-010 Version 1 page 2"
+        },
+        {
+          "step": "تحديد مسار Honda 20-100 مقابل 21-010 حسب VIN وإصدار تحديث PCM؛ لا تشترط نجاح Cylinder A/F Test لحالات P219A/B المؤهلة للنشرة.",
+          "evidence": "Honda 20-100 Version 2 page 2; Honda 21-010 Version 1 page 2"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Cylinder A/F Test",
+          "name_ar": "اختبار مزيج كل أسطوانة",
+          "reference_condition": "تفسير النجاح/الفشل من دليل الإصلاح فقط"
+        },
+        {
+          "name_en": "FUEL PRESSURE",
+          "name_ar": "ضغط الوقود",
+          "reference_condition": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        "High pressure injectors",
+        "Fuel rail",
+        "High-pressure fuel pump"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Pilot%20P219B%20Air-Fuel%20Ratio%20Variation%20of%20Cylinder%20%28Bank%202%2C%20Front%20Bank%29%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Pilot%20P219B%20Air-Fuel%20Ratio%20Variation%20of%20Cylinder%20%28Bank%202%2C%20Front%20Bank%29%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda TSB 20-100 / 21-010 documented fuel injector campaigns",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 21-010, Version 1",
+          "date_or_version": "2021-02-11",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187008-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        },
+        {
+          "title": "Honda Service Bulletin 20-100, Version 2",
+          "date_or_version": "2021-02-11",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187006-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "P3400",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "PGM-FI / PCM; VCM",
+      "definition_en": "Rocker Arm Oil Pressure Switch B (Honda bulletin contextual description)",
+      "translation_ar": "عدم تطابق حالة مفتاح ضغط زيت أذرع الصمامات B ضمن نظام VCM",
+      "category": "توصيف Honda خاص داخل رمز P3؛ تعريف SAE المستقل غير مفحوص",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Pilot"
+        ],
+        "years": [
+          "2013"
+        ],
+        "engines": "V6 3.5L; exact code غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "2WD/4WD",
+        "notes": "خاضع حصراً لنطاقات VIN المذكورة بنشرة 13-055؛ راجع VIN الكامل"
+      },
+      "symptoms": [
+        "MIL؛ قد يرافقه P0301–P0304 عند التشغيل البارد"
+      ],
+      "causes": [
+        {
+          "cause": "ارتفاع ضغط زيت مضخة المحرك عند برودة شديدة؛ نابض صمام تنفيس الضغط",
+          "evidence": "Honda 13-055؛ إذا تحقق >92 psi و ECT<30°F بالنشرة"
+        },
+        {
+          "cause": "خلل في صمام VCM أو المفتاح أو الأسلاك",
+          "evidence": "يتطلب فحص الدليل إن لم تتحقق شروط النشرة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "النشرة قابلة للتطبيق فقط إذا كان ضغط ROCKER ARM OIL PRESSURE >92 psi مع ECT SENSOR 1 <30°F، ثم استبدال نابض relief valve"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "ROCKER ARM OIL PRESSURE",
+          "name_ar": "ضغط الزيت في نظام أذرع الصمامات",
+          "reference_condition": ">92 psi فقط كشرط في Honda 13-055"
+        },
+        {
+          "name_en": "ECT SENSOR 1",
+          "name_ar": "حرارة سائل التبريد",
+          "reference_condition": "<30°F / -1.1°C في Honda 13-055"
+        }
+      ],
+      "parts": [
+        "Oil pump relief valve spring 15232-R70-A01 — when bulletin criteria met",
+        "VCM spool valve",
+        "Rocker arm oil pressure switch B"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Pilot%20P3400%20Rocker%20Arm%20Oil%20Pressure%20Switch%20B%20%28Honda%20bulletin%20contextual%20description%29%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Pilot%20P3400%20Rocker%20Arm%20Oil%20Pressure%20Switch%20B%20%28Honda%20bulletin%20contextual%20description%29%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 13-055, VIN-specific condition and quantitative threshold",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 13-055",
+          "date_or_version": "2013-07-19",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2013/SB-10052924-4799.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "P3497",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "PGM-FI / PCM; VCM",
+      "definition_en": "Rocker Arm Oil Pressure Switch C (Honda bulletin contextual description)",
+      "translation_ar": "عدم تطابق حالة مفتاح ضغط زيت أذرع الصمامات C ضمن نظام VCM",
+      "category": "توصيف Honda خاص داخل رمز P3؛ تعريف SAE المستقل غير مفحوص",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Pilot"
+        ],
+        "years": [
+          "2013"
+        ],
+        "engines": "V6 3.5L; exact code غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "2WD/4WD",
+        "notes": "خاضع حصراً لنطاقات VIN المذكورة بنشرة 13-055؛ راجع VIN الكامل"
+      },
+      "symptoms": [
+        "MIL؛ قد يرافقه P0301–P0304 عند التشغيل البارد"
+      ],
+      "causes": [
+        {
+          "cause": "ارتفاع ضغط زيت مضخة المحرك عند برودة شديدة؛ نابض صمام تنفيس الضغط",
+          "evidence": "Honda 13-055؛ إذا تحقق >92 psi و ECT<30°F بالنشرة"
+        },
+        {
+          "cause": "خلل في صمام VCM أو المفتاح أو الأسلاك",
+          "evidence": "يتطلب فحص الدليل إن لم تتحقق شروط النشرة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "النشرة قابلة للتطبيق فقط إذا كان ضغط ROCKER ARM OIL PRESSURE >92 psi مع ECT SENSOR 1 <30°F، ثم استبدال نابض relief valve"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "ROCKER ARM OIL PRESSURE",
+          "name_ar": "ضغط الزيت في نظام أذرع الصمامات",
+          "reference_condition": ">92 psi فقط كشرط في Honda 13-055"
+        },
+        {
+          "name_en": "ECT SENSOR 1",
+          "name_ar": "حرارة سائل التبريد",
+          "reference_condition": "<30°F / -1.1°C في Honda 13-055"
+        }
+      ],
+      "parts": [
+        "Oil pump relief valve spring 15232-R70-A01 — when bulletin criteria met",
+        "VCM spool valve",
+        "Rocker arm oil pressure switch C"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Pilot%20P3497%20Rocker%20Arm%20Oil%20Pressure%20Switch%20C%20%28Honda%20bulletin%20contextual%20description%29%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Pilot%20P3497%20Rocker%20Arm%20Oil%20Pressure%20Switch%20C%20%28Honda%20bulletin%20contextual%20description%29%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 13-055, VIN-specific condition and quantitative threshold",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 13-055",
+          "date_or_version": "2013-07-19",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2013/SB-10052924-4799.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "P1456",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "PGM-FI / ECM-PCM",
+      "definition_en": "EVAP Control System Leakage (Fuel Tank System)",
+      "translation_ar": "تسرّب في نظام التحكم بأبخرة الوقود جهة الخزان",
+      "category": "خاص بالمصنع Honda — P1",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord",
+          "Civic",
+          "CR-V",
+          "Insight",
+          "Odyssey",
+          "Pilot",
+          "S2000"
+        ],
+        "years": [
+          "Accord 1998-2002",
+          "Civic 1996-2000",
+          "CR-V 1998-2001",
+          "Insight 2000-2005",
+          "Odyssey 1999-2004",
+          "Pilot 2003-2004",
+          "S2000 2000-2006"
+        ],
+        "engines": "بنزين/هجين بحسب الطراز؛ رموز محركات غير مؤكدة",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Honda 99-075: Procedure A for Accord/Odyssey/Insight/Pilot/S2000; Procedure B for Civic/CR-V"
+      },
+      "symptoms": [
+        "MIL؛ غالباً لا توجد أعراض قيادة مباشرة"
+      ],
+      "causes": [
+        {
+          "cause": "غطاء الخزان أو حلقة إحكامه جهة الخزان",
+          "evidence": "Honda 99-075، في فحص P1456"
+        },
+        {
+          "cause": "تسريب خرطوم/صمام التهوية/علبة الفحم أو منظومة الخزان بحسب الرمز",
+          "evidence": "Honda 99-075، اختبارات EVAP"
+        },
+        {
+          "cause": "FTP sensor / connector defective",
+          "evidence": "يخضع لاختبار تغير إشارة الضغط"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "HDS EVAP FUNCTION TEST ثم تحقق EVAP monitor complete after repair؛ لا تساو بين P1456 و P1457"
+        },
+        {
+          "step": "Honda 99-075 Procedure A فقط: بعد فتح غطاء الخزان، تحقق من FTP SENSOR عند 2.45–2.55 V؛ إذا كان خارج النطاق اعزل خراطيم FTP وافحص الدائرة قبل استبدال الحساس.",
+          "evidence": "Honda SB 99-075 (2013-08-09), Procedure A, page 2; لا يسري على Procedure B بغير تحقق"
+        },
+        {
+          "step": "Honda 99-075 Procedure A فقط: بعد فتح غطاء الخزان، تحقق من FTP SENSOR عند 2.45–2.55 V؛ إذا كان خارج النطاق اعزل خراطيم FTP وافحص الدائرة قبل استبدال الحساس.",
+          "evidence": "Honda SB 99-075 (2013-08-09), Procedure A, page 2; لا يسري على Procedure B بغير تحقق"
+        },
+        {
+          "step": "Honda 99-075 Procedure A فقط: بعد فتح غطاء الخزان، تحقق من FTP SENSOR عند 2.45–2.55 V؛ إذا كان خارج النطاق اعزل خراطيم FTP وافحص الدائرة قبل استبدال الحساس.",
+          "evidence": "Honda SB 99-075 (2013-08-09), Procedure A, page 2; لا يسري على Procedure B بغير تحقق"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "FTP SENSOR",
+          "name_ar": "حساس ضغط خزان الوقود",
+          "reference_condition": "2.3–2.7 V نطاق مرجعي في جزء P1456 Procedure A، مع مفتاح ON ومحرك OFF؛ ليس معياراً لجميع الأجيال"
+        },
+        {
+          "name_en": "EVAP FUNCTION TEST",
+          "name_ar": "اختبار منظومة تبخر الوقود",
+          "reference_condition": "PASS/FAIL HDS حسب السيارة"
+        },
+        {
+          "name_en": "EVAP MONITOR",
+          "name_ar": "جاهزية مراقبة EVAP",
+          "reference_condition": "Complete بعد الإصلاح"
+        },
+        {
+          "name_en": "FTP SENSOR (fuel cap removed)",
+          "name_ar": "إشارة حساس ضغط الخزان والغطاء مفتوح",
+          "reference_condition": "2.45–2.55 V فقط Honda 99-075 Procedure A، المفتاح ON والمحرك OFF"
+        },
+        {
+          "name_en": "FTP SENSOR (fuel cap removed)",
+          "name_ar": "إشارة حساس ضغط الخزان والغطاء مفتوح",
+          "reference_condition": "2.45–2.55 V فقط Honda 99-075 Procedure A، المفتاح ON والمحرك OFF"
+        },
+        {
+          "name_en": "FTP SENSOR (fuel cap removed)",
+          "name_ar": "إشارة حساس ضغط الخزان والغطاء مفتوح",
+          "reference_condition": "2.45–2.55 V فقط Honda 99-075 Procedure A، المفتاح ON والمحرك OFF"
+        }
+      ],
+      "parts": [
+        "Fuel cap",
+        "Fuel tank pressure sensor",
+        "EVAP canister",
+        "Vent valve",
+        "Purge valve and hoses"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20fuel%20tank%20EVAP%20P1456%20P1457%20component%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%20P1456%20EVAP%20Control%20System%20Leakage%20%28Fuel%20Tank%20System%29%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 99-075 model-specific revised 20-page diagnostic bulletin",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 99-075, revised",
+          "date_or_version": "2013-08-09",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2013/SB-10053545-3978.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "P1457",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "PGM-FI / ECM-PCM",
+      "definition_en": "EVAP Control System Leakage (EVAP Canister System)",
+      "translation_ar": "تسرّب في نظام التحكم بأبخرة الوقود جهة علبة الفحم النشط",
+      "category": "خاص بالمصنع Honda — P1",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord",
+          "Civic",
+          "CR-V",
+          "Insight",
+          "Odyssey",
+          "Pilot",
+          "S2000"
+        ],
+        "years": [
+          "Accord 1998-2002",
+          "Civic 1996-2000",
+          "CR-V 1998-2001",
+          "Insight 2000-2005",
+          "Odyssey 1999-2004",
+          "Pilot 2003-2004",
+          "S2000 2000-2006"
+        ],
+        "engines": "بنزين/هجين بحسب الطراز؛ رموز محركات غير مؤكدة",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Honda 99-075: Procedure A for Accord/Odyssey/Insight/Pilot/S2000; Procedure B for Civic/CR-V"
+      },
+      "symptoms": [
+        "MIL؛ غالباً لا توجد أعراض قيادة مباشرة"
+      ],
+      "causes": [
+        {
+          "cause": "تسريب من دائرة علبة الفحم النشط (EVAP canister side) أو صماماتها/خراطيمها",
+          "evidence": "تعريف Honda 99-075 لـ P1457؛ تحديد الجزء المتسرب يتطلب Procedure A/B"
+        },
+        {
+          "cause": "تسريب من دائرة علبة الفحم النشط (EVAP canister side) أو صماماتها/خراطيمها",
+          "evidence": "تعريف Honda 99-075 لـ P1457؛ تحديد الجزء المتسرب يتطلب Procedure A/B"
+        },
+        {
+          "cause": "تسريب من دائرة علبة الفحم النشط (EVAP canister side) أو صماماتها/خراطيمها",
+          "evidence": "تعريف Honda 99-075 لـ P1457؛ تحديد الجزء المتسرب يتطلب Procedure A/B"
+        },
+        {
+          "cause": "تسريب خرطوم/صمام التهوية/علبة الفحم أو منظومة الخزان بحسب الرمز",
+          "evidence": "Honda 99-075، اختبارات EVAP"
+        },
+        {
+          "cause": "FTP sensor / connector defective",
+          "evidence": "يخضع لاختبار تغير إشارة الضغط"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "HDS EVAP FUNCTION TEST ثم تحقق EVAP monitor complete after repair؛ لا تساو بين P1456 و P1457"
+        },
+        {
+          "step": "حدد مسار P1457 لا P1456 من Honda 99-075: Procedure A في Accord/Insight/Odyssey/Pilot/S2000 وProcedure B في Civic/CR-V؛ اختبار canister side أولاً.",
+          "evidence": "Honda SB 99-075 pages 5–10 / 15–20"
+        },
+        {
+          "step": "حدد مسار P1457 لا P1456 من Honda 99-075: Procedure A في Accord/Insight/Odyssey/Pilot/S2000 وProcedure B في Civic/CR-V؛ اختبار canister side أولاً.",
+          "evidence": "Honda SB 99-075 pages 5–10 / 15–20"
+        },
+        {
+          "step": "حدد مسار P1457 لا P1456 من Honda 99-075: Procedure A في Accord/Insight/Odyssey/Pilot/S2000 وProcedure B في Civic/CR-V؛ اختبار canister side أولاً.",
+          "evidence": "Honda SB 99-075 pages 5–10 / 15–20"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "FTP SENSOR",
+          "name_ar": "حساس ضغط خزان الوقود",
+          "reference_condition": "غير مؤكد لـ P1457؛ نطاق 2.3–2.7 V المنقول من P1456 لا يُعمم؛ راجع جزء P1457 من Honda 99-075 حسب الطراز"
+        },
+        {
+          "name_en": "EVAP FUNCTION TEST",
+          "name_ar": "اختبار منظومة تبخر الوقود",
+          "reference_condition": "PASS/FAIL HDS حسب السيارة"
+        },
+        {
+          "name_en": "EVAP MONITOR",
+          "name_ar": "جاهزية مراقبة EVAP",
+          "reference_condition": "Complete بعد الإصلاح"
+        }
+      ],
+      "parts": [
+        "Fuel cap",
+        "Fuel tank pressure sensor",
+        "EVAP canister",
+        "Vent valve",
+        "Purge valve and hoses"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20canister%20EVAP%20P1456%20P1457%20component%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%20P1457%20EVAP%20Control%20System%20Leakage%20%28EVAP%20Canister%20System%29%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 99-075 model-specific revised 20-page diagnostic bulletin",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 99-075, revised",
+          "date_or_version": "2013-08-09",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2013/SB-10053545-3978.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "P2646",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "PGM-FI / PCM; VTEC",
+      "definition_en": "Rocker Arm Oil Pressure Switch Circuit Low Voltage (Honda 13-021 grouping)",
+      "translation_ar": "جهد منخفض في دائرة مفتاح ضغط زيت أذرع الصمامات",
+      "category": "تعريف Honda موثق؛ التخصيص SAE/P2 يحتاج J2012DA",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord L4",
+          "Civic",
+          "Civic Si",
+          "CR-V",
+          "CR-Z",
+          "Element",
+          "Fit"
+        ],
+        "years": [
+          "Accord 2003-2012",
+          "Civic non-Si non-Hybrid 2012-2013",
+          "Civic Si 2002-2005",
+          "CR-V 2002-2009",
+          "CR-Z 2011",
+          "Element 2003-2011",
+          "Fit 2007-2011"
+        ],
+        "engines": "L4 / specific engine codes غير مؤكدة; CR-Z hybrid explicitly included",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Honda 13-021 v3؛ رقم قطعة النشرة 2015 37250-PNE-G01، لكن نشرة 2013 v2 تخصص Civic 2012-2013 بالقطعة 37250-R1A-A01؛ يحتاج VIN Parts Catalog confirmation"
+      },
+      "symptoms": [
+        "MIL؛ العطل قد يكون متقطعاً ويختفي عند مسح DTC"
+      ],
+      "causes": [
+        {
+          "cause": "خلل متقطع في Rocker Arm Oil Pressure Switch",
+          "evidence": "Honda 13-021 Version 3, actual bulletin cause"
+        },
+        {
+          "cause": "زيت غير مناسب/منخفض أو انسداد مجرى/تلف سولينويد VTEC",
+          "evidence": "استبعاد تشخيصي معتمد فقط بعد اختبار الإصدار؛ غير مسند لهذه النشرة بعينها"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "HDS VTEC TEST، تحقق مستوى الزيت، الأسلاك وحالة الضغط قبل تبديل أي جزء خارج برنامج النشرة؛ بعد الإصلاح امسح وأعد اختبار"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "VTEC PRES SW",
+          "name_ar": "حالة مفتاح ضغط زيت VTEC",
+          "reference_condition": "ON/OFF — ما هو المتوقع يعتمد على الأمر وحالة المحرك"
+        },
+        {
+          "name_en": "ROCKER ARM OIL CONTROL SOLENOID",
+          "name_ar": "أمر سولينويد VTEC",
+          "reference_condition": "ON/OFF حسب HDS"
+        },
+        {
+          "name_en": "VTEC TEST",
+          "name_ar": "اختبار VTEC",
+          "reference_condition": "نتيجة HDS حسب الطراز"
+        }
+      ],
+      "parts": [
+        "Rocker arm oil pressure switch — confirm Honda VIN parts catalog",
+        "O-ring 91319-PAA-A01",
+        "VTEC solenoid/spool valve",
+        "37250-R1A-A01 (2012-13 Civic in 2013 Honda 13-021; conflicts with consolidated 2015 bulletin — verify using VIN)",
+        "37250-R1A-A01 (2012-13 Civic in 2013 Honda 13-021; conflicts with consolidated 2015 bulletin — verify using VIN)",
+        "37250-R1A-A01 (2012-13 Civic in 2013 Honda 13-021; conflicts with consolidated 2015 bulletin — verify using VIN)"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%20L4%20P2646%20Rocker%20Arm%20Oil%20Pressure%20Switch%20Circuit%20Low%20Voltage%20%28Honda%2013-021%20grouping%29%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%20L4%20P2646%20Rocker%20Arm%20Oil%20Pressure%20Switch%20Circuit%20Low%20Voltage%20%28Honda%2013-021%20grouping%29%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 13-021 v3 across 7 model groups; intermittent switch failure documented",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 13-021, Version 3",
+          "date_or_version": "2015-09-16",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2015/SB-10098946-5233.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "P2651",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "PGM-FI / PCM; VTEC",
+      "definition_en": "Rocker Arm Oil Pressure Switch Circuit Low Voltage (Honda 13-021 grouping)",
+      "translation_ar": "جهد منخفض في دائرة مفتاح ضغط زيت أذرع الصمامات",
+      "category": "تعريف Honda موثق؛ التخصيص SAE/P2 يحتاج J2012DA",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord L4",
+          "Civic",
+          "Civic Si",
+          "CR-V",
+          "CR-Z",
+          "Element",
+          "Fit"
+        ],
+        "years": [
+          "Accord 2003-2012",
+          "Civic non-Si non-Hybrid 2012-2013",
+          "Civic Si 2002-2005",
+          "CR-V 2002-2009",
+          "CR-Z 2011",
+          "Element 2003-2011",
+          "Fit 2007-2011"
+        ],
+        "engines": "L4 / specific engine codes غير مؤكدة; CR-Z hybrid explicitly included",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Honda 13-021 v3؛ رقم قطعة النشرة 2015 37250-PNE-G01، لكن نشرة 2013 v2 تخصص Civic 2012-2013 بالقطعة 37250-R1A-A01؛ يحتاج VIN Parts Catalog confirmation"
+      },
+      "symptoms": [
+        "MIL؛ العطل قد يكون متقطعاً ويختفي عند مسح DTC"
+      ],
+      "causes": [
+        {
+          "cause": "خلل متقطع في Rocker Arm Oil Pressure Switch",
+          "evidence": "Honda 13-021 Version 3, actual bulletin cause"
+        },
+        {
+          "cause": "زيت غير مناسب/منخفض أو انسداد مجرى/تلف سولينويد VTEC",
+          "evidence": "استبعاد تشخيصي معتمد فقط بعد اختبار الإصدار؛ غير مسند لهذه النشرة بعينها"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "HDS VTEC TEST، تحقق مستوى الزيت، الأسلاك وحالة الضغط قبل تبديل أي جزء خارج برنامج النشرة؛ بعد الإصلاح امسح وأعد اختبار"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "VTEC PRES SW",
+          "name_ar": "حالة مفتاح ضغط زيت VTEC",
+          "reference_condition": "ON/OFF — ما هو المتوقع يعتمد على الأمر وحالة المحرك"
+        },
+        {
+          "name_en": "ROCKER ARM OIL CONTROL SOLENOID",
+          "name_ar": "أمر سولينويد VTEC",
+          "reference_condition": "ON/OFF حسب HDS"
+        },
+        {
+          "name_en": "VTEC TEST",
+          "name_ar": "اختبار VTEC",
+          "reference_condition": "نتيجة HDS حسب الطراز"
+        }
+      ],
+      "parts": [
+        "Rocker arm oil pressure switch — confirm Honda VIN parts catalog",
+        "O-ring 91319-PAA-A01",
+        "VTEC solenoid/spool valve"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%20L4%20P2651%20Rocker%20Arm%20Oil%20Pressure%20Switch%20Circuit%20Low%20Voltage%20%28Honda%2013-021%20grouping%29%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%20L4%20P2651%20Rocker%20Arm%20Oil%20Pressure%20Switch%20Circuit%20Low%20Voltage%20%28Honda%2013-021%20grouping%29%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 13-021 v3 across 7 model groups; intermittent switch failure documented",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 13-021, Version 3",
+          "date_or_version": "2015-09-16",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2015/SB-10098946-5233.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "P2647",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "PGM-FI / PCM; VTEC",
+      "definition_en": "Rocker Arm Oil Pressure Switch Circuit High Voltage (Honda 13-021 grouping)",
+      "translation_ar": "جهد مرتفع في دائرة مفتاح ضغط زيت أذرع الصمامات",
+      "category": "تعريف Honda موثق؛ التخصيص SAE/P2 يحتاج J2012DA",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord L4",
+          "Civic",
+          "Civic Si",
+          "CR-V",
+          "CR-Z",
+          "Element",
+          "Fit"
+        ],
+        "years": [
+          "Accord 2003-2012",
+          "Civic non-Si non-Hybrid 2012-2013",
+          "Civic Si 2002-2005",
+          "CR-V 2002-2009",
+          "CR-Z 2011",
+          "Element 2003-2011",
+          "Fit 2007-2011"
+        ],
+        "engines": "L4 / specific engine codes غير مؤكدة; CR-Z hybrid explicitly included",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Honda 13-021 v3؛ رقم قطعة النشرة 2015 37250-PNE-G01، لكن نشرة 2013 v2 تخصص Civic 2012-2013 بالقطعة 37250-R1A-A01؛ يحتاج VIN Parts Catalog confirmation"
+      },
+      "symptoms": [
+        "MIL؛ العطل قد يكون متقطعاً ويختفي عند مسح DTC"
+      ],
+      "causes": [
+        {
+          "cause": "خلل متقطع في Rocker Arm Oil Pressure Switch",
+          "evidence": "Honda 13-021 Version 3, actual bulletin cause"
+        },
+        {
+          "cause": "زيت غير مناسب/منخفض أو انسداد مجرى/تلف سولينويد VTEC",
+          "evidence": "استبعاد تشخيصي معتمد فقط بعد اختبار الإصدار؛ غير مسند لهذه النشرة بعينها"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "HDS VTEC TEST، تحقق مستوى الزيت، الأسلاك وحالة الضغط قبل تبديل أي جزء خارج برنامج النشرة؛ بعد الإصلاح امسح وأعد اختبار"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "VTEC PRES SW",
+          "name_ar": "حالة مفتاح ضغط زيت VTEC",
+          "reference_condition": "ON/OFF — ما هو المتوقع يعتمد على الأمر وحالة المحرك"
+        },
+        {
+          "name_en": "ROCKER ARM OIL CONTROL SOLENOID",
+          "name_ar": "أمر سولينويد VTEC",
+          "reference_condition": "ON/OFF حسب HDS"
+        },
+        {
+          "name_en": "VTEC TEST",
+          "name_ar": "اختبار VTEC",
+          "reference_condition": "نتيجة HDS حسب الطراز"
+        }
+      ],
+      "parts": [
+        "Rocker arm oil pressure switch — confirm Honda VIN parts catalog",
+        "O-ring 91319-PAA-A01",
+        "VTEC solenoid/spool valve"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%20L4%20P2647%20Rocker%20Arm%20Oil%20Pressure%20Switch%20Circuit%20High%20Voltage%20%28Honda%2013-021%20grouping%29%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%20L4%20P2647%20Rocker%20Arm%20Oil%20Pressure%20Switch%20Circuit%20High%20Voltage%20%28Honda%2013-021%20grouping%29%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 13-021 v3 across 7 model groups; intermittent switch failure documented",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 13-021, Version 3",
+          "date_or_version": "2015-09-16",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2015/SB-10098946-5233.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "P2652",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "PGM-FI / PCM; VTEC",
+      "definition_en": "Rocker Arm Oil Pressure Switch Circuit High Voltage (Honda 13-021 grouping)",
+      "translation_ar": "جهد مرتفع في دائرة مفتاح ضغط زيت أذرع الصمامات",
+      "category": "تعريف Honda موثق؛ التخصيص SAE/P2 يحتاج J2012DA",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord L4",
+          "Civic",
+          "Civic Si",
+          "CR-V",
+          "CR-Z",
+          "Element",
+          "Fit"
+        ],
+        "years": [
+          "Accord 2003-2012",
+          "Civic non-Si non-Hybrid 2012-2013",
+          "Civic Si 2002-2005",
+          "CR-V 2002-2009",
+          "CR-Z 2011",
+          "Element 2003-2011",
+          "Fit 2007-2011"
+        ],
+        "engines": "L4 / specific engine codes غير مؤكدة; CR-Z hybrid explicitly included",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Honda 13-021 v3؛ رقم قطعة النشرة 2015 37250-PNE-G01، لكن نشرة 2013 v2 تخصص Civic 2012-2013 بالقطعة 37250-R1A-A01؛ يحتاج VIN Parts Catalog confirmation"
+      },
+      "symptoms": [
+        "MIL؛ العطل قد يكون متقطعاً ويختفي عند مسح DTC"
+      ],
+      "causes": [
+        {
+          "cause": "خلل متقطع في Rocker Arm Oil Pressure Switch",
+          "evidence": "Honda 13-021 Version 3, actual bulletin cause"
+        },
+        {
+          "cause": "زيت غير مناسب/منخفض أو انسداد مجرى/تلف سولينويد VTEC",
+          "evidence": "استبعاد تشخيصي معتمد فقط بعد اختبار الإصدار؛ غير مسند لهذه النشرة بعينها"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "HDS VTEC TEST، تحقق مستوى الزيت، الأسلاك وحالة الضغط قبل تبديل أي جزء خارج برنامج النشرة؛ بعد الإصلاح امسح وأعد اختبار"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "VTEC PRES SW",
+          "name_ar": "حالة مفتاح ضغط زيت VTEC",
+          "reference_condition": "ON/OFF — ما هو المتوقع يعتمد على الأمر وحالة المحرك"
+        },
+        {
+          "name_en": "ROCKER ARM OIL CONTROL SOLENOID",
+          "name_ar": "أمر سولينويد VTEC",
+          "reference_condition": "ON/OFF حسب HDS"
+        },
+        {
+          "name_en": "VTEC TEST",
+          "name_ar": "اختبار VTEC",
+          "reference_condition": "نتيجة HDS حسب الطراز"
+        }
+      ],
+      "parts": [
+        "Rocker arm oil pressure switch — confirm Honda VIN parts catalog",
+        "O-ring 91319-PAA-A01",
+        "VTEC solenoid/spool valve"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%20L4%20P2652%20Rocker%20Arm%20Oil%20Pressure%20Switch%20Circuit%20High%20Voltage%20%28Honda%2013-021%20grouping%29%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%20L4%20P2652%20Rocker%20Arm%20Oil%20Pressure%20Switch%20Circuit%20High%20Voltage%20%28Honda%2013-021%20grouping%29%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 13-021 v3 across 7 model groups; intermittent switch failure documented",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 13-021, Version 3",
+          "date_or_version": "2015-09-16",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2015/SB-10098946-5233.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "P0420",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "PGM-FI / PCM",
+      "definition_en": "Catalyst System Efficiency Below Threshold (Bank 1)",
+      "translation_ar": "كفاءة المحفّز الحفاز أقل من الحد المطلوب — البنك 1",
+      "category": "عام — OBD standardized",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord Hybrid",
+          "Pilot",
+          "Ridgeline",
+          "Odyssey"
+        ],
+        "years": [
+          "Accord Hybrid 2006-2007",
+          "Pilot 2016-2019",
+          "Ridgeline 2017-2019",
+          "Odyssey 2018-2019"
+        ],
+        "engines": "Accord Hybrid V6 hybrid; other 3.5 V6 engine codes غير مؤكدة",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Accord Hybrid Honda 18-023: PCM misinterpretation can lead to code; later direct-injection models: software and/or injectors under VIN-specific campaigns; not automatically failed catalyst"
+      },
+      "symptoms": [
+        "MIL؛ قد لا يظهر ضعف في العزم"
+      ],
+      "causes": [
+        {
+          "cause": "تفسير خاطئ للإشارة أو معايرة ECM لبعض Accord Hybrid",
+          "evidence": "Honda 18-023"
+        },
+        {
+          "cause": "مشكلات بخاخات/تفاوت A/F لبعض Pilot/Ridgeline/Odyssey",
+          "evidence": "Honda 21-010 and 20-100"
+        },
+        {
+          "cause": "تدهور حقيقي في المحفّز أو تسريب عادم/حساسات",
+          "evidence": "افتراض فني يتطلب اختبارات مستقلة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "قبل تبديل المحفز: All DTC، P030x/P219A-B، اختبارات Cylinder A/F/HDS، تسريب عادم/حساسات؛ قارن مع نشرة السيارة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "CATALYST MONITOR",
+          "name_ar": "مراقبة كفاءة المحفّز",
+          "reference_condition": "PASS/FAIL وحالة جاهزية"
+        },
+        {
+          "name_en": "A/F SENSOR",
+          "name_ar": "حساس نسبة الهواء/الوقود",
+          "reference_condition": "الحد غير مؤكد"
+        },
+        {
+          "name_en": "SECONDARY HO2S",
+          "name_ar": "حساس الأكسجين بعد المحفّز",
+          "reference_condition": "الحد غير مؤكد"
+        }
+      ],
+      "parts": [
+        "Three-way catalytic converter — only if fault proven",
+        "A/F sensor",
+        "Post catalyst HO2S",
+        "Fuel injectors — certain direct-injection cars"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%20Hybrid%20P0420%20Catalyst%20System%20Efficiency%20Below%20Threshold%20%28Bank%201%29%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%20Hybrid%20P0420%20Catalyst%20System%20Efficiency%20Below%20Threshold%20%28Bank%201%29%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 18-023 catalyst/ECM campaign and 2021 injector campaigns",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 18-023, Version 1",
+          "date_or_version": "2018-06-21",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10142633-9999.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        },
+        {
+          "title": "Honda Service Bulletin 21-010, Version 1",
+          "date_or_version": "2021-02-11",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187008-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        },
+        {
+          "title": "Honda Service Bulletin 20-100, Version 2",
+          "date_or_version": "2021-02-11",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187006-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "P0430",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "PGM-FI / PCM",
+      "definition_en": "Catalyst System Efficiency Below Threshold (Bank 2)",
+      "translation_ar": "كفاءة المحفّز الحفاز أقل من الحد المطلوب — البنك 2",
+      "category": "عام — OBD standardized",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord Hybrid",
+          "Pilot",
+          "Ridgeline",
+          "Odyssey"
+        ],
+        "years": [
+          "Accord Hybrid 2006-2007",
+          "Pilot 2016-2019",
+          "Ridgeline 2017-2019",
+          "Odyssey 2018-2019"
+        ],
+        "engines": "Accord Hybrid V6 hybrid; other 3.5 V6 engine codes غير مؤكدة",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Accord Hybrid Honda 18-023: PCM misinterpretation can lead to code; later direct-injection models: software and/or injectors under VIN-specific campaigns; not automatically failed catalyst"
+      },
+      "symptoms": [
+        "MIL؛ قد لا يظهر ضعف في العزم"
+      ],
+      "causes": [
+        {
+          "cause": "تفسير خاطئ للإشارة أو معايرة ECM لبعض Accord Hybrid",
+          "evidence": "Honda 18-023"
+        },
+        {
+          "cause": "مشكلات بخاخات/تفاوت A/F لبعض Pilot/Ridgeline/Odyssey",
+          "evidence": "Honda 21-010 and 20-100"
+        },
+        {
+          "cause": "تدهور حقيقي في المحفّز أو تسريب عادم/حساسات",
+          "evidence": "افتراض فني يتطلب اختبارات مستقلة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "قبل تبديل المحفز: All DTC، P030x/P219A-B، اختبارات Cylinder A/F/HDS، تسريب عادم/حساسات؛ قارن مع نشرة السيارة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "CATALYST MONITOR",
+          "name_ar": "مراقبة كفاءة المحفّز",
+          "reference_condition": "PASS/FAIL وحالة جاهزية"
+        },
+        {
+          "name_en": "A/F SENSOR",
+          "name_ar": "حساس نسبة الهواء/الوقود",
+          "reference_condition": "الحد غير مؤكد"
+        },
+        {
+          "name_en": "SECONDARY HO2S",
+          "name_ar": "حساس الأكسجين بعد المحفّز",
+          "reference_condition": "الحد غير مؤكد"
+        }
+      ],
+      "parts": [
+        "Three-way catalytic converter — only if fault proven",
+        "A/F sensor",
+        "Post catalyst HO2S",
+        "Fuel injectors — certain direct-injection cars"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%20Hybrid%20P0430%20Catalyst%20System%20Efficiency%20Below%20Threshold%20%28Bank%202%29%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%20Hybrid%20P0430%20Catalyst%20System%20Efficiency%20Below%20Threshold%20%28Bank%202%29%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 18-023 catalyst/ECM campaign and 2021 injector campaigns",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 18-023, Version 1",
+          "date_or_version": "2018-06-21",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10142633-9999.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        },
+        {
+          "title": "Honda Service Bulletin 21-010, Version 1",
+          "date_or_version": "2021-02-11",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187008-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        },
+        {
+          "title": "Honda Service Bulletin 20-100, Version 2",
+          "date_or_version": "2021-02-11",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187006-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "P0741",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "A/T; PCM/TCM",
+      "definition_en": "Torque Converter Clutch Circuit Performance or Stuck OFF",
+      "translation_ar": "ضعف أداء دائرة قابض محوّل العزم أو بقاؤه في وضع عدم التعشيق",
+      "category": "عام — OBD standardized",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord EX-L V6",
+          "Accord Touring V6"
+        ],
+        "years": [
+          "2017"
+        ],
+        "engines": "V6 3.5L, 6AT",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "FWD; confirm per VIN",
+        "notes": "Only VIN-eligible 2017 Accord EX-L/Touring V6 6-speed automatics under Honda 23-076"
+      },
+      "symptoms": [
+        "MIL؛ ضعف قفل محوّل العزم محتمل"
+      ],
+      "causes": [
+        {
+          "cause": "تصدع مكبس قفل المحوّل وانخفاض ضغط التعشيق",
+          "evidence": "Honda 23-076 confirmed for eligible VIN vehicles"
+        },
+        {
+          "cause": "ATF level/condition or valve-body/TCC solenoid",
+          "evidence": "differential diagnosis outside bulletin; not proven"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "Honda 23-076: verify DTC P0741 and VIN; check ATF level at ≥80°C per 6AT bulletin; only follow replacement decision for matching VIN"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "ATF TEMPERATURE",
+          "name_ar": "درجة حرارة زيت ناقل الحركة",
+          "reference_condition": "≥80°C فقط لخطوة قياس مستوى الزيت في نشرة 23-076"
+        },
+        {
+          "name_en": "TCC SLIP",
+          "name_ar": "انزلاق قابض محوّل العزم",
+          "reference_condition": "قيمة حسم غير مؤكدة"
+        }
+      ],
+      "parts": [
+        "Torque converter kit 06260-5B7-000 only specified variant",
+        "ATF DW-1"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%20EX-L%20V6%20P0741%20Torque%20Converter%20Clutch%20Circuit%20Performance%20or%20Stuck%20OFF%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%20EX-L%20V6%20P0741%20Torque%20Converter%20Clutch%20Circuit%20Performance%20or%20Stuck%20OFF%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda Service Bulletin 23-076 — crack in lock-up piston, VIN-specific",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 23-076, Version 1",
+          "date_or_version": "2023-08-31",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10241873-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "P1009",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "PGM-FI / PCM; VTC",
+      "definition_en": "VTC Advance Malfunction",
+      "translation_ar": "خلل في تقديم توقيت عمود الكامات بنظام VTC",
+      "category": "خاص بالمصنع Honda — P1",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "CR-V"
+        ],
+        "years": [
+          "2007",
+          "2012"
+        ],
+        "engines": "2.4 L K24 family (K24Z exact applicability غير مؤكد)",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "نشرة تخص السوق الأمريكي؛ التأكد من VIN"
+      },
+      "symptoms": [
+        "MIL"
+      ],
+      "causes": [
+        {
+          "cause": "انسداد مصفاة VTC",
+          "evidence": "Honda service manual copied in CHARM 2007"
+        },
+        {
+          "cause": "صمام تحكم زيت VTC",
+          "evidence": "2007 manual diagnostic branch"
+        },
+        {
+          "cause": "مُشغّل VTC أو استطالة سلسلة التوقيت",
+          "evidence": "2012 manual monitor description; not proof until checked"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "Check VTC strainer, control solenoid, VTC actuator, timing chain; HDS CKP learn after applicable repair"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "VTC ADVANCE",
+          "name_ar": "تقديم توقيت الكامات",
+          "reference_condition": "الحد يتغير حسب المحرك؛ غير مؤكد"
+        },
+        {
+          "name_en": "VTC TEST",
+          "name_ar": "فحص VTC",
+          "reference_condition": "HDS"
+        }
+      ],
+      "parts": [
+        "VTC strainer",
+        "VTC oil control solenoid",
+        "VTC actuator",
+        "Timing chain"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20CR-V%20P1009%20VTC%20Advance%20Malfunction%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20CR-V%20P1009%20VTC%20Advance%20Malfunction%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Service-manual troubleshooting, not a measured prevalence statistic",
+      "sources": [
+        {
+          "title": "Honda CR-V 2007 K24 service-manual reproduction, CHARM",
+          "date_or_version": "undated; vehicle 2007",
+          "url": "https://charm.li/Honda/2007/CR-V%204WD%20L4-2.4L/Repair%20and%20Diagnosis/A%20L%20L%20%20Diagnostic%20Trouble%20Codes%20%28%20DTC%20%29/Testing%20and%20Inspection/P%20Code%20Charts/P1009/",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "B1178",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "Gauge Control Module / Body Electrical",
+      "definition_en": "F-CAN Communication Line Error",
+      "translation_ar": "خطأ في اتصال شبكة F-CAN",
+      "category": "خاص Honda — B1",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Ridgeline"
+        ],
+        "years": [
+          "2007"
+        ],
+        "engines": "V6 3.5L",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "نشرة تخص السوق الأمريكي؛ التأكد من VIN"
+      },
+      "symptoms": [
+        "قد تعطل عمل لوحة العدادات؛ أخطاء اتصال"
+      ],
+      "causes": [
+        {
+          "cause": "اتصال أو تغذية Gauge Control Module / PCM",
+          "evidence": "Honda 2007 service manual copied in CHARM"
+        },
+        {
+          "cause": "ضعف بطارية أو نظام شحن",
+          "evidence": "manual advises checking battery/charging after connectors"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "ابدأ بفحص PCM DTC، ثم Gauge input test والفيوزات وأرضي لوحة العدادات؛ عطل وحدة العدادات يُثبت فقط بالاختبار البديل وفق الدليل"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "BATTERY VOLTAGE",
+          "name_ar": "جهد البطارية",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "F-CAN STATUS",
+          "name_ar": "حالة اتصال F-CAN",
+          "reference_condition": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        "Gauge control module",
+        "PCM",
+        "F-CAN wiring"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Ridgeline%20B1178%20F-CAN%20Communication%20Line%20Error%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Ridgeline%20B1178%20F-CAN%20Communication%20Line%20Error%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Source is service manual reproduction; not a frequency study",
+      "sources": [
+        {
+          "title": "Honda Ridgeline 2007 service-manual reproduction, CHARM",
+          "date_or_version": "undated; vehicle 2007",
+          "url": "https://charm.li/Honda/2007/Ridgeline%20V6-3.5L/Repair%20and%20Diagnosis/A%20L%20L%20%20Diagnostic%20Trouble%20Codes%20%28%20DTC%20%29/Testing%20and%20Inspection/B%20Code%20Charts/B1178/",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "B1239",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "Climate Control Unit / HVAC",
+      "definition_en": "An Open or Short in the Mode Control Motor Circuit",
+      "translation_ar": "قطع أو قصر في دائرة محرك تبديل اتجاه توزيع هواء التكييف",
+      "category": "خاص Honda — B1",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "CR-V"
+        ],
+        "years": [
+          "2008"
+        ],
+        "engines": "2.4L petrol",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "نشرة تخص السوق الأمريكي؛ التأكد من VIN"
+      },
+      "symptoms": [
+        "عدم تغيير وضع توزيع الهواء بين الوجه/الزجاج/القدمين"
+      ],
+      "causes": [
+        {
+          "cause": "محرك بوابات توزيع الهواء",
+          "evidence": "CR-V 2008 manual test branch"
+        },
+        {
+          "cause": "قطع/قصر في الأسلاك والموصلات",
+          "evidence": "Honda manual circuit testing"
+        },
+        {
+          "cause": "وحدة التحكم بالمكيف",
+          "evidence": "يستبعد فقط بعد إثبات سلامة الدائرة والمحرك"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "تشغيل HVAC self-diagnostic عبر HDS؛ فحص المحرك والفيش؛ عزل التغذية وفحص الاستمرارية ثم تحري القصر وفق مخطط 2008 CR-V"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "MODE CONTROL MOTOR",
+          "name_ar": "محرك بوابة وضع توزيع الهواء",
+          "reference_condition": "حالة/حركة حسب أداة التشخيص"
+        }
+      ],
+      "parts": [
+        "HVAC mode control motor",
+        "HVAC climate-control module"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20CR-V%20B1239%20An%20Open%20or%20Short%20in%20the%20Mode%20Control%20Motor%20Circuit%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20CR-V%20B1239%20An%20Open%20or%20Short%20in%20the%20Mode%20Control%20Motor%20Circuit%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Only service manual reproductions available; not statistical",
+      "sources": [
+        {
+          "title": "Honda CR-V 2008 service-manual reproduction, CHARM",
+          "date_or_version": "undated; vehicle 2008",
+          "url": "https://charm.li/Honda/2008/CR-V%204WD%20L4-2.4L/Repair%20and%20Diagnosis/A%20L%20L%20%20Diagnostic%20Trouble%20Codes%20%28%20DTC%20%29/Testing%20and%20Inspection/B%20Code%20Charts/B1239/",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "B0050-F0",
+      "code_format": "SAE_5_CHAR_FTB",
+      "ecu": "VSA; SRS correlation",
+      "definition_en": "Driver's Seat Belt Buckle Switch Malfunction",
+      "translation_ar": "خلل في مفتاح قفل حزام أمان السائق",
+      "category": "B0 مع Honda-specific F0",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Civic EX"
+        ],
+        "years": [
+          "2020"
+        ],
+        "engines": "غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "نشرة تخص السوق الأمريكي؛ التأكد من VIN"
+      },
+      "symptoms": [
+        "لمبات VSA/SRS حسب السبب"
+      ],
+      "causes": [
+        {
+          "cause": "رموز عطل SRS أساسية قبل VSA",
+          "evidence": "Honda 2020 manual first diagnostic branch"
+        },
+        {
+          "cause": "توصيل غير محكم في VSA",
+          "evidence": "manual 46P connector check"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "اقرأ رموز SRS أولاً؛ لا تستبدل VSA دون معالجة SRS وفحص التغذية والفيش"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "SEAT BELT BUCKLE",
+          "name_ar": "حالة قفل حزام السائق",
+          "reference_condition": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        "Seat-belt buckle switch",
+        "SRS unit",
+        "VSA modulator-control unit"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Civic%20EX%20B0050-F0%20Driver%27s%20Seat%20Belt%20Buckle%20Switch%20Malfunction%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Civic%20EX%20B0050-F0%20Driver%27s%20Seat%20Belt%20Buckle%20Switch%20Malfunction%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Technical service manual reproduction",
+      "sources": [
+        {
+          "title": "Honda Civic 2020 service-manual reproduction, LEMON",
+          "date_or_version": "undated; vehicle 2020",
+          "url": "https://lemon.dogeware.me/Honda/2020/Civic%20EX%2C%204D%20Sedan/Repair%20and%20Diagnosis%20%28Single%20Page%29/Brakes/Anti-Lock%20Brakes/VSA%20System%20-%20DTC%20Diagnostics/DTC%20Troubleshooting/DTC%20B0050-F0%20%28VSA%20Control%20Unit%29/",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "B0001-13",
+      "code_format": "SAE_5_CHAR_FTB",
+      "ecu": "SRS main unit",
+      "definition_en": "Driver's Airbag First Inflator Circuit (2013 Civic DTC, Honda note)",
+      "translation_ar": "خلل في دائرة منفاخ وسادة هواء السائق الأولى (Civic 2013)",
+      "category": "B0 مع لاحقة نوع فشل — مؤكد ظهور Honda",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Civic"
+        ],
+        "years": [
+          "2013 model-year as specifically indicated"
+        ],
+        "engines": "غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Honda 2016 technical note covers 2012–2014 Civic with grouped 11-1x/11-2x and B0001-13 for 2013 MY; meaning of suffix not established by cited document"
+      },
+      "symptoms": [
+        "إضاءة SRS وقد يكون متقطعاً"
+      ],
+      "causes": [
+        {
+          "cause": "وحدة وسادة السائق",
+          "evidence": "Honda 27 May 2016 technical note in NHTSA, for named scenario"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "تحقق من VIN/حملة وسادة السائق وافحص بتجهيزات SRS المعتمدة؛ لا تقِس مقاومة منفاخ الوسادة مباشرة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "SRS DTC PRESENT",
+          "name_ar": "وجود رمز SRS",
+          "reference_condition": "يحتاج HDS"
+        }
+      ],
+      "parts": [
+        "Driver airbag module"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Civic%20B0001-13%20Driver%27s%20Airbag%20First%20Inflator%20Circuit%20%282013%20Civic%20DTC%2C%20Honda%20note%29%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Civic%20B0001-13%20Driver%27s%20Airbag%20First%20Inflator%20Circuit%20%282013%20Civic%20DTC%2C%20Honda%20note%29%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 2016 technical SRS note for 2012–14 Civic",
+      "sources": [
+        {
+          "title": "Honda Civic SRS Technical Note — B0001-13",
+          "date_or_version": "2016-05-27",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2016/SB-10083593-2280.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "1-1",
+      "code_format": "HDS_NON_OBD",
+      "ecu": "SRS Control Unit",
+      "definition_en": "Open in driver's airbag inflator",
+      "translation_ar": "قطع في دائرة منفاخ وسادة السائق",
+      "category": "خاص Honda — HDS numeric non-OBD",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord",
+          "Civic",
+          "CR-V",
+          "Element",
+          "Odyssey",
+          "Pilot"
+        ],
+        "years": [
+          "Accord 2001-2002",
+          "Civic 2001-2005",
+          "CR-V 2002-2004",
+          "Element 2003-2006",
+          "Odyssey 2002",
+          "Pilot 2003-2004"
+        ],
+        "engines": "تختلف محركاتها؛ العطل SRS غير مرتبط برمز المحرك",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Honda 20-009 applies to warranty extension for defective replacement inflators only, VIN verification; not blanket replacement policy"
+      },
+      "symptoms": [
+        "SRS indicator ON"
+      ],
+      "causes": [
+        {
+          "cause": "خلل منفاخ وسادة السائق البديل — فقط إذا زال نفس DTC باستخدام محاكي SRS",
+          "evidence": "Honda 20-009 formal simulator-test branch"
+        },
+        {
+          "cause": "كابل Reel/توصيل/سلك/وحدة SRS",
+          "evidence": "إذا بقي الرمز مع جهاز المحاكاة فالمطلوب المسار التشخيصي العادي"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "فحص VIN والاستدعاءات المفتوحة واستبعاد وسادة سبق إطلاقها",
+          "evidence": "Honda 20-009"
+        },
+        {
+          "step": "افصل سالب البطارية وانتظر ≥3 دقائق قبل قطع الموصلات فقط بعد مراجعة SRS precautions",
+          "evidence": "Honda 20-009"
+        },
+        {
+          "step": "محاكي SRS متخصص 07SAZ-TB4011A مع lead 07XAZ-SZ3A100 لتحديد هل العطل من المنفاخ",
+          "evidence": "فحص حصري لمتخصص SRS؛ ممنوع مقاومة/فحص مباشر على منفاخ فعلي"
+        },
+        {
+          "step": "تكرار DTC مع المحاكي = لا يثبت فشل المنفاخ؛ عدم عودته = تابع إجراء Honda حسب أهلية VIN",
+          "evidence": "Honda 20-009"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "SRS INDICATOR",
+          "name_ar": "مصباح نظام الوسائد",
+          "reference_condition": "ON / OFF"
+        }
+      ],
+      "parts": [
+        "Driver airbag module",
+        "Cable reel",
+        "SRS wiring"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%201-1%20Open%20in%20driver%27s%20airbag%20inflator%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%201-1%20Open%20in%20driver%27s%20airbag%20inflator%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 20-009 customer support program — not occurrence frequency",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 20-009, Version 1",
+          "date_or_version": "2020-03-10",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10172561-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "1-2",
+      "code_format": "HDS_NON_OBD",
+      "ecu": "SRS Control Unit",
+      "definition_en": "Increased resistance in driver's airbag inflator",
+      "translation_ar": "مقاومة مرتفعة في دائرة منفاخ وسادة السائق",
+      "category": "خاص Honda — HDS numeric non-OBD",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord",
+          "Civic",
+          "CR-V",
+          "Element",
+          "Odyssey",
+          "Pilot"
+        ],
+        "years": [
+          "Accord 2001-2002",
+          "Civic 2001-2005",
+          "CR-V 2002-2004",
+          "Element 2003-2006",
+          "Odyssey 2002",
+          "Pilot 2003-2004"
+        ],
+        "engines": "تختلف محركاتها؛ العطل SRS غير مرتبط برمز المحرك",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Honda 20-009 applies to warranty extension for defective replacement inflators only, VIN verification; not blanket replacement policy"
+      },
+      "symptoms": [
+        "SRS indicator ON"
+      ],
+      "causes": [
+        {
+          "cause": "خلل منفاخ وسادة السائق البديل — فقط إذا زال نفس DTC باستخدام محاكي SRS",
+          "evidence": "Honda 20-009 formal simulator-test branch"
+        },
+        {
+          "cause": "كابل Reel/توصيل/سلك/وحدة SRS",
+          "evidence": "إذا بقي الرمز مع جهاز المحاكاة فالمطلوب المسار التشخيصي العادي"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "فحص VIN والاستدعاءات المفتوحة واستبعاد وسادة سبق إطلاقها",
+          "evidence": "Honda 20-009"
+        },
+        {
+          "step": "افصل سالب البطارية وانتظر ≥3 دقائق قبل قطع الموصلات فقط بعد مراجعة SRS precautions",
+          "evidence": "Honda 20-009"
+        },
+        {
+          "step": "محاكي SRS متخصص 07SAZ-TB4011A مع lead 07XAZ-SZ3A100 لتحديد هل العطل من المنفاخ",
+          "evidence": "فحص حصري لمتخصص SRS؛ ممنوع مقاومة/فحص مباشر على منفاخ فعلي"
+        },
+        {
+          "step": "تكرار DTC مع المحاكي = لا يثبت فشل المنفاخ؛ عدم عودته = تابع إجراء Honda حسب أهلية VIN",
+          "evidence": "Honda 20-009"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "SRS INDICATOR",
+          "name_ar": "مصباح نظام الوسائد",
+          "reference_condition": "ON / OFF"
+        }
+      ],
+      "parts": [
+        "Driver airbag module",
+        "Cable reel",
+        "SRS wiring"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%201-2%20Increased%20resistance%20in%20driver%27s%20airbag%20inflator%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%201-2%20Increased%20resistance%20in%20driver%27s%20airbag%20inflator%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 20-009 customer support program — not occurrence frequency",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 20-009, Version 1",
+          "date_or_version": "2020-03-10",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10172561-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "1-3",
+      "code_format": "HDS_NON_OBD",
+      "ecu": "SRS Control Unit",
+      "definition_en": "Short to another wire or decreased resistance in driver's airbag inflator",
+      "translation_ar": "قصر مع سلك آخر أو انخفاض المقاومة بدائرة منفاخ وسادة السائق",
+      "category": "خاص Honda — HDS numeric non-OBD",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord",
+          "Civic",
+          "CR-V",
+          "Element",
+          "Odyssey",
+          "Pilot"
+        ],
+        "years": [
+          "Accord 2001-2002",
+          "Civic 2001-2005",
+          "CR-V 2002-2004",
+          "Element 2003-2006",
+          "Odyssey 2002",
+          "Pilot 2003-2004"
+        ],
+        "engines": "تختلف محركاتها؛ العطل SRS غير مرتبط برمز المحرك",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Honda 20-009 applies to warranty extension for defective replacement inflators only, VIN verification; not blanket replacement policy"
+      },
+      "symptoms": [
+        "SRS indicator ON"
+      ],
+      "causes": [
+        {
+          "cause": "خلل منفاخ وسادة السائق البديل — فقط إذا زال نفس DTC باستخدام محاكي SRS",
+          "evidence": "Honda 20-009 formal simulator-test branch"
+        },
+        {
+          "cause": "كابل Reel/توصيل/سلك/وحدة SRS",
+          "evidence": "إذا بقي الرمز مع جهاز المحاكاة فالمطلوب المسار التشخيصي العادي"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "فحص VIN والاستدعاءات المفتوحة واستبعاد وسادة سبق إطلاقها",
+          "evidence": "Honda 20-009"
+        },
+        {
+          "step": "افصل سالب البطارية وانتظر ≥3 دقائق قبل قطع الموصلات فقط بعد مراجعة SRS precautions",
+          "evidence": "Honda 20-009"
+        },
+        {
+          "step": "محاكي SRS متخصص 07SAZ-TB4011A مع lead 07XAZ-SZ3A100 لتحديد هل العطل من المنفاخ",
+          "evidence": "فحص حصري لمتخصص SRS؛ ممنوع مقاومة/فحص مباشر على منفاخ فعلي"
+        },
+        {
+          "step": "تكرار DTC مع المحاكي = لا يثبت فشل المنفاخ؛ عدم عودته = تابع إجراء Honda حسب أهلية VIN",
+          "evidence": "Honda 20-009"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "SRS INDICATOR",
+          "name_ar": "مصباح نظام الوسائد",
+          "reference_condition": "ON / OFF"
+        }
+      ],
+      "parts": [
+        "Driver airbag module",
+        "Cable reel",
+        "SRS wiring"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%201-3%20Short%20to%20another%20wire%20or%20decreased%20resistance%20in%20driver%27s%20airbag%20inflator%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%201-3%20Short%20to%20another%20wire%20or%20decreased%20resistance%20in%20driver%27s%20airbag%20inflator%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 20-009 customer support program — not occurrence frequency",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 20-009, Version 1",
+          "date_or_version": "2020-03-10",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10172561-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "1-4",
+      "code_format": "HDS_NON_OBD",
+      "ecu": "SRS Control Unit",
+      "definition_en": "Short to power in driver's airbag inflator",
+      "translation_ar": "قصر إلى موجب التغذية في دائرة منفاخ وسادة السائق",
+      "category": "خاص Honda — HDS numeric non-OBD",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord",
+          "Civic",
+          "CR-V",
+          "Element",
+          "Odyssey",
+          "Pilot"
+        ],
+        "years": [
+          "Accord 2001-2002",
+          "Civic 2001-2005",
+          "CR-V 2002-2004",
+          "Element 2003-2006",
+          "Odyssey 2002",
+          "Pilot 2003-2004"
+        ],
+        "engines": "تختلف محركاتها؛ العطل SRS غير مرتبط برمز المحرك",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Honda 20-009 applies to warranty extension for defective replacement inflators only, VIN verification; not blanket replacement policy"
+      },
+      "symptoms": [
+        "SRS indicator ON"
+      ],
+      "causes": [
+        {
+          "cause": "خلل منفاخ وسادة السائق البديل — فقط إذا زال نفس DTC باستخدام محاكي SRS",
+          "evidence": "Honda 20-009 formal simulator-test branch"
+        },
+        {
+          "cause": "كابل Reel/توصيل/سلك/وحدة SRS",
+          "evidence": "إذا بقي الرمز مع جهاز المحاكاة فالمطلوب المسار التشخيصي العادي"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "فحص VIN والاستدعاءات المفتوحة واستبعاد وسادة سبق إطلاقها",
+          "evidence": "Honda 20-009"
+        },
+        {
+          "step": "افصل سالب البطارية وانتظر ≥3 دقائق قبل قطع الموصلات فقط بعد مراجعة SRS precautions",
+          "evidence": "Honda 20-009"
+        },
+        {
+          "step": "محاكي SRS متخصص 07SAZ-TB4011A مع lead 07XAZ-SZ3A100 لتحديد هل العطل من المنفاخ",
+          "evidence": "فحص حصري لمتخصص SRS؛ ممنوع مقاومة/فحص مباشر على منفاخ فعلي"
+        },
+        {
+          "step": "تكرار DTC مع المحاكي = لا يثبت فشل المنفاخ؛ عدم عودته = تابع إجراء Honda حسب أهلية VIN",
+          "evidence": "Honda 20-009"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "SRS INDICATOR",
+          "name_ar": "مصباح نظام الوسائد",
+          "reference_condition": "ON / OFF"
+        }
+      ],
+      "parts": [
+        "Driver airbag module",
+        "Cable reel",
+        "SRS wiring"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%201-4%20Short%20to%20power%20in%20driver%27s%20airbag%20inflator%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%201-4%20Short%20to%20power%20in%20driver%27s%20airbag%20inflator%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 20-009 customer support program — not occurrence frequency",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 20-009, Version 1",
+          "date_or_version": "2020-03-10",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10172561-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "1-5",
+      "code_format": "HDS_NON_OBD",
+      "ecu": "SRS Control Unit",
+      "definition_en": "Short to ground in driver's airbag inflator",
+      "translation_ar": "قصر إلى الأرضي في دائرة منفاخ وسادة السائق",
+      "category": "خاص Honda — HDS numeric non-OBD",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord",
+          "Civic",
+          "CR-V",
+          "Element",
+          "Odyssey",
+          "Pilot"
+        ],
+        "years": [
+          "Accord 2001-2002",
+          "Civic 2001-2005",
+          "CR-V 2002-2004",
+          "Element 2003-2006",
+          "Odyssey 2002",
+          "Pilot 2003-2004"
+        ],
+        "engines": "تختلف محركاتها؛ العطل SRS غير مرتبط برمز المحرك",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Honda 20-009 applies to warranty extension for defective replacement inflators only, VIN verification; not blanket replacement policy"
+      },
+      "symptoms": [
+        "SRS indicator ON"
+      ],
+      "causes": [
+        {
+          "cause": "خلل منفاخ وسادة السائق البديل — فقط إذا زال نفس DTC باستخدام محاكي SRS",
+          "evidence": "Honda 20-009 formal simulator-test branch"
+        },
+        {
+          "cause": "كابل Reel/توصيل/سلك/وحدة SRS",
+          "evidence": "إذا بقي الرمز مع جهاز المحاكاة فالمطلوب المسار التشخيصي العادي"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "فحص VIN والاستدعاءات المفتوحة واستبعاد وسادة سبق إطلاقها",
+          "evidence": "Honda 20-009"
+        },
+        {
+          "step": "افصل سالب البطارية وانتظر ≥3 دقائق قبل قطع الموصلات فقط بعد مراجعة SRS precautions",
+          "evidence": "Honda 20-009"
+        },
+        {
+          "step": "محاكي SRS متخصص 07SAZ-TB4011A مع lead 07XAZ-SZ3A100 لتحديد هل العطل من المنفاخ",
+          "evidence": "فحص حصري لمتخصص SRS؛ ممنوع مقاومة/فحص مباشر على منفاخ فعلي"
+        },
+        {
+          "step": "تكرار DTC مع المحاكي = لا يثبت فشل المنفاخ؛ عدم عودته = تابع إجراء Honda حسب أهلية VIN",
+          "evidence": "Honda 20-009"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "SRS INDICATOR",
+          "name_ar": "مصباح نظام الوسائد",
+          "reference_condition": "ON / OFF"
+        }
+      ],
+      "parts": [
+        "Driver airbag module",
+        "Cable reel",
+        "SRS wiring"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%201-5%20Short%20to%20ground%20in%20driver%27s%20airbag%20inflator%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%201-5%20Short%20to%20ground%20in%20driver%27s%20airbag%20inflator%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 20-009 customer support program — not occurrence frequency",
+      "sources": [
+        {
+          "title": "Honda Service Bulletin 20-009, Version 1",
+          "date_or_version": "2020-03-10",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10172561-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "11-1",
+      "code_format": "HDS_NON_OBD",
+      "ecu": "SRS Control Unit",
+      "definition_en": "Open or Increased Resistance in Driver's Side Airbag Inflator",
+      "translation_ar": "قطع أو زيادة مقاومة في دائرة منفاخ الوسادة الجانبية للسائق",
+      "category": "خاص Honda — HDS numeric non-OBD",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Civic LX Sedan"
+        ],
+        "years": [
+          "2001"
+        ],
+        "engines": "1.7 L SOHC",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "نشرة تخص السوق الأمريكي؛ التأكد من VIN"
+      },
+      "symptoms": [
+        "SRS indicator stays on"
+      ],
+      "causes": [
+        {
+          "cause": "منفاخ الوسادة الجانبية / الوصلة",
+          "evidence": "Honda 2001 service manual reproduced by CHARM"
+        },
+        {
+          "cause": "ضفيرة الأرضية أو وحدة SRS",
+          "evidence": "manual simulator test branches"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "OFF ثم سالب البطارية مع انتظار 3 دقائق قبل لمس SRS",
+          "evidence": "manual"
+        },
+        {
+          "step": "نفذ Honda inflator simulator test وليس قياساً مباشراً للمنفاخ",
+          "evidence": "07SAZ-TB4011A & 07XAZ-S1A0200"
+        },
+        {
+          "step": "حسم الاستبدال من مسار اختبار 2001 Civic فقط",
+          "evidence": "PIN details and 2-3 ohms apply to simulator/harness of this edition, not universal"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "SRS DTC READ",
+          "name_ar": "قراءة رمز SRS",
+          "reference_condition": "حالة الفحص عبر HDS"
+        }
+      ],
+      "parts": [
+        "Driver side airbag inflator",
+        "Floor wire harness",
+        "SRS unit"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Civic%20LX%20Sedan%2011-1%20Open%20or%20Increased%20Resistance%20in%20Driver%27s%20Side%20Airbag%20Inflator%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Civic%20LX%20Sedan%2011-1%20Open%20or%20Increased%20Resistance%20in%20Driver%27s%20Side%20Airbag%20Inflator%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Vehicle-specific old HDS numeric code, not interchangeable with 1-1 or 11-10",
+      "sources": [
+        {
+          "title": "Honda Civic 2001 SRS service-manual reproduction, CHARM",
+          "date_or_version": "undated; vehicle 2001",
+          "url": "https://charm.li/Honda/2001/Civic%20LX%20Sedan%20L4-1668cc%201.7L%20SOHC%20MFI/Repair%20and%20Diagnosis/A%20L%20L%20%20Diagnostic%20Trouble%20Codes%20%28%20DTC%20%29/Testing%20and%20Inspection/Manufacturer%20Code%20Charts/Air%20Bag%20System%20%28SRS%29/DTC%2011-1/",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "C0023-12",
+      "code_format": "SAE_5_CHAR_FTB",
+      "ecu": "VSA / Brake System",
+      "definition_en": "Brake Diag Circuit ON Failure",
+      "translation_ar": "خلل في دائرة تشخيص الفرامل — إشارة ON",
+      "category": "Honda FTB-specific C0 diagnosis (not generic bare C0040)",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord"
+        ],
+        "years": [
+          "2018-2020"
+        ],
+        "engines": "غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "نشرة تخص السوق الأمريكي؛ التأكد من VIN"
+      },
+      "symptoms": [
+        "MIL أو VSA indicator"
+      ],
+      "causes": [
+        {
+          "cause": "إشارة مفتاح/دائرة لمبات الفرامل أو ضبطها",
+          "evidence": "Honda Nov 2020 research request lists the codes; no definitive root cause given"
+        },
+        {
+          "cause": "خلل في النظام الكهربائي للفرامل أو VSA",
+          "evidence": "اقتراح فحص لا حكم نهائي"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "Honda 2020 request: collect current active DTC and freeze snapshot; for C0040 read brake switch live data; diagnose actual cause per VIN; do not claim bulletin identifies failed part"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "BRAKE SWITCH",
+          "name_ar": "إشارة دواسة الفرامل",
+          "reference_condition": "يجب أن تتغير ON/OFF عند الضغط والتحرير؛ من دليل Honda Ridgeline variant لا Accord بالضرورة"
+        },
+        {
+          "name_en": "BRAKE LIGHT RELAY TEST",
+          "name_ar": "اختبار ريليه مصباح الفرامل",
+          "reference_condition": "عند دعم الوحدة HDS"
+        }
+      ],
+      "parts": [
+        "Brake light switch",
+        "Brake pedal stopper",
+        "VSA modulator",
+        "Brake light relay"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%20C0023-12%20Brake%20Diag%20Circuit%20ON%20Failure%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%20C0023-12%20Brake%20Diag%20Circuit%20ON%20Failure%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda iN investigation of 2018-2020 Accord; it does not quantify prevalence",
+      "sources": [
+        {
+          "title": "American Honda iN Technical Research Request — Brake/Cruise",
+          "date_or_version": "2020-11-04",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10182468-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "C0040-62",
+      "code_format": "SAE_5_CHAR_FTB",
+      "ecu": "VSA / Brake System",
+      "definition_en": "Brake Lamp Switch Failure (Stuck)",
+      "translation_ar": "خلل بمفتاح مصباح الفرامل — عالق",
+      "category": "Honda FTB-specific C0 diagnosis (not generic bare C0040)",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord"
+        ],
+        "years": [
+          "2018-2020"
+        ],
+        "engines": "غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "نشرة تخص السوق الأمريكي؛ التأكد من VIN"
+      },
+      "symptoms": [
+        "MIL أو VSA indicator"
+      ],
+      "causes": [
+        {
+          "cause": "إشارة مفتاح/دائرة لمبات الفرامل أو ضبطها",
+          "evidence": "Honda Nov 2020 research request lists the codes; no definitive root cause given"
+        },
+        {
+          "cause": "خلل في النظام الكهربائي للفرامل أو VSA",
+          "evidence": "اقتراح فحص لا حكم نهائي"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "Honda 2020 request: collect current active DTC and freeze snapshot; for C0040 read brake switch live data; diagnose actual cause per VIN; do not claim bulletin identifies failed part"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "BRAKE SWITCH",
+          "name_ar": "إشارة دواسة الفرامل",
+          "reference_condition": "يجب أن تتغير ON/OFF عند الضغط والتحرير؛ من دليل Honda Ridgeline variant لا Accord بالضرورة"
+        },
+        {
+          "name_en": "BRAKE LIGHT RELAY TEST",
+          "name_ar": "اختبار ريليه مصباح الفرامل",
+          "reference_condition": "عند دعم الوحدة HDS"
+        }
+      ],
+      "parts": [
+        "Brake light switch",
+        "Brake pedal stopper",
+        "VSA modulator",
+        "Brake light relay"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%20C0040-62%20Brake%20Lamp%20Switch%20Failure%20%28Stuck%29%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%20C0040-62%20Brake%20Lamp%20Switch%20Failure%20%28Stuck%29%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda iN investigation of 2018-2020 Accord; it does not quantify prevalence",
+      "sources": [
+        {
+          "title": "American Honda iN Technical Research Request — Brake/Cruise",
+          "date_or_version": "2020-11-04",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10182468-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "C0023-14",
+      "code_format": "SAE_5_CHAR_FTB",
+      "ecu": "VSA",
+      "definition_en": "Brake Diag Circuit OFF Failure",
+      "translation_ar": "خلل في دائرة تشخيص الفرامل — إشارة OFF",
+      "category": "تفسير Honda برمز C مع FTB -14",
+      "applicability": {
+        "markets": [
+          "غير مؤكد؛ دليل Civic FC/FK غير مُثبت لسوق محدد"
+        ],
+        "models": [
+          "Civic FC/FK 2016-2021"
+        ],
+        "years": [
+          "2016-2021"
+        ],
+        "engines": "غير مؤكد",
+        "fuel": "غير مؤكد",
+        "drive": "غير مؤكد",
+        "notes": "Service manual 2/4 door (except Japan production); manufacturer direct PDF inaccessible"
+      },
+      "symptoms": [
+        "VSA / brake warning possible"
+      ],
+      "causes": [
+        {
+          "cause": "Brake light relay or circuit",
+          "evidence": "Honda Civic manual description; circuit testing depends on body production"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "Use HDS brake light relay test where listed; inspect switch/fuse and 2/4-door Japan-origin branch separately"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "BRAKE LIGHT RELAY TEST",
+          "name_ar": "اختبار ريليه ضوء الفرامل",
+          "reference_condition": "HDS VSA FUNCTION TEST, only when equipped"
+        }
+      ],
+      "parts": [
+        "Brake light relay",
+        "Brake switch"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Civic%20FC/FK%202016-2021%20C0023-14%20Brake%20Diag%20Circuit%20OFF%20Failure%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Civic%20FC/FK%202016-2021%20C0023-14%20Brake%20Diag%20Circuit%20OFF%20Failure%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Indexed in 2016-21 Civic repair manual; no recurrence statistics",
+      "sources": [
+        {
+          "title": "Honda Civic FC/FK service-manual reproduction",
+          "date_or_version": "undated; 2016-2021",
+          "url": "https://honcivic.automotive-manuals.com/techinfo/html/en/civic-fc-fk/T003317.html",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "C0034-62",
+      "code_format": "SAE_5_CHAR_FTB",
+      "ecu": "VSA/ABS",
+      "definition_en": "Right Front Wheel Speed Sensor Signal Compare Failure",
+      "translation_ar": "إشارة حساس سرعة العجلة الأمامية اليمنى غير متطابقة مع بقية الإشارات",
+      "category": "تفسير Honda مع لاحقة FTB -62",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Ridgeline Black Edition"
+        ],
+        "years": [
+          "2021"
+        ],
+        "engines": "V6 3.5L",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "نشرة تخص السوق الأمريكي؛ التأكد من VIN"
+      },
+      "symptoms": [
+        "ABS/VSA indicator possible"
+      ],
+      "causes": [
+        {
+          "cause": "إشارة حساس يمين أمام أو فجوة/حلقة مشفرة",
+          "evidence": "عمل VSA لمقارنة الإشارات؛ اختبار الحساس وتثبيته مطلوب"
+        },
+        {
+          "cause": "اختلاف حجم/ضغط الإطار أو توصيل ضعيف",
+          "evidence": "فرضية تشخيصية، غير مثبتة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "قارن سرعة الأربع عجلات في قيادة آمنة؛ ابحث عن انعزال RF ثم افحص الأسلاك والحساس/encoder حسب المرجع"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "RF WHEEL SPEED",
+          "name_ar": "سرعة العجلة الأمامية اليمنى",
+          "reference_condition": "قارن مع باقي العجلات؛ لا توجد قيمة مطلقة موثقة"
+        },
+        {
+          "name_en": "FL WHEEL SPEED",
+          "name_ar": "سرعة العجلة الأمامية اليسرى",
+          "reference_condition": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        "Front right wheel speed sensor",
+        "Wheel hub encoder",
+        "ABS/VSA unit"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Ridgeline%20Black%20Edition%20C0034-62%20Right%20Front%20Wheel%20Speed%20Sensor%20Signal%20Compare%20Failure%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Ridgeline%20Black%20Edition%20C0034-62%20Right%20Front%20Wheel%20Speed%20Sensor%20Signal%20Compare%20Failure%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 2021 service-manual reproduction, not frequency analysis",
+      "sources": [
+        {
+          "title": "Honda Ridgeline 2021 service-manual reproduction, LEMON",
+          "date_or_version": "undated; vehicle 2021",
+          "url": "https://lemon.dogeware.me/Honda/2021/Ridgeline%20Black%20Edition/Repair%20and%20Diagnosis%20%28Single%20Page%29/Brakes/Traction%20Control/VSA%20System%20-%20Advanced%20Diagnostics/Advanced%20Diagnostics/DTC%20C0034-62%20%28VSA%20Control%20Unit%29/",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "U0100-00",
+      "code_format": "SAE_5_CHAR_FTB",
+      "ecu": "PGM-FI",
+      "definition_en": "Lost Communication with the PCM – PGM-FI System",
+      "translation_ar": "انقطاع الاتصال بوحدة PCM من نظام PGM-FI",
+      "category": "قاعدة U0 مشتركة + لاحقة تفسّرها Honda في وحدة محددة",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord FHEV"
+        ],
+        "years": [
+          "2023-2025"
+        ],
+        "engines": "Hybrid powertrain; engine code غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Honda 2025 technical information request ONLY vehicles with all ten codes together and codes do not recur after clear; NOT a fault-root-cause bulletin"
+      },
+      "symptoms": [
+        "تحذيرات متعددة على لوحة القيادة؛ يمكن فقدان قوة الدفع بحسب Honda"
+      ],
+      "causes": [
+        {
+          "cause": "سبب جذري غير معروف؛ Honda تجمع بيانات سيارات تحتوي الأكواد العشرة كلها",
+          "evidence": "Honda 2025 iN request explicitly not an approved repair/failure attribution"
+        },
+        {
+          "cause": "جهد/أرضي/اتصال شبكة متقطع",
+          "evidence": "فحوص مقترحة غير مؤكدة كسبب في هذه الحملة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "حفظ ALL DTC مع وحدة الإصدار، Freeze/Onboard snapshot؛ فحص فولت البطارية/الأرضي وفيوزات كل ECU وCAN باستخدام مخطط VIN؛ سجل إن كانت الأكواد لا ترجع"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "12V BATTERY",
+          "name_ar": "جهد بطارية 12 فولت",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "CAN COMMUNICATION STATUS",
+          "name_ar": "حالة اتصال الشبكة",
+          "reference_condition": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        "CAN gateway",
+        "PCM",
+        "VSA modulator",
+        "Multipurpose camera",
+        "Millimeter-wave radar",
+        "EPS",
+        "SRS module"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%20FHEV%20U0100-00%20Lost%20Communication%20with%20the%20PCM%20%E2%80%93%20PGM-FI%20System%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%20FHEV%20U0100-00%20Lost%20Communication%20with%20the%20PCM%20%E2%80%93%20PGM-FI%20System%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 2025 field investigation 2023–25 Accord FHEV; not a statistical prevalence ranking",
+      "sources": [
+        {
+          "title": "American Honda iN — 2023-25 Accord FHEV Lost Communication",
+          "date_or_version": "2025-05-22",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11019245-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "U0100-F1",
+      "code_format": "SAE_5_CHAR_FTB",
+      "ecu": "Millimeter Wave Radar",
+      "definition_en": "Lost Communication with the PCM – PGM-FI System — Millimeter Wave Radar",
+      "translation_ar": "انقطاع اتصال وحدة الرادار المليمترية مع PCM",
+      "category": "قاعدة U0 مشتركة + لاحقة تفسّرها Honda في وحدة محددة",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord FHEV"
+        ],
+        "years": [
+          "2023-2025"
+        ],
+        "engines": "Hybrid powertrain; engine code غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Honda 2025 technical information request ONLY vehicles with all ten codes together and codes do not recur after clear; NOT a fault-root-cause bulletin"
+      },
+      "symptoms": [
+        "تحذيرات متعددة على لوحة القيادة؛ يمكن فقدان قوة الدفع بحسب Honda"
+      ],
+      "causes": [
+        {
+          "cause": "سبب جذري غير معروف؛ Honda تجمع بيانات سيارات تحتوي الأكواد العشرة كلها",
+          "evidence": "Honda 2025 iN request explicitly not an approved repair/failure attribution"
+        },
+        {
+          "cause": "جهد/أرضي/اتصال شبكة متقطع",
+          "evidence": "فحوص مقترحة غير مؤكدة كسبب في هذه الحملة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "حفظ ALL DTC مع وحدة الإصدار، Freeze/Onboard snapshot؛ فحص فولت البطارية/الأرضي وفيوزات كل ECU وCAN باستخدام مخطط VIN؛ سجل إن كانت الأكواد لا ترجع"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "12V BATTERY",
+          "name_ar": "جهد بطارية 12 فولت",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "CAN COMMUNICATION STATUS",
+          "name_ar": "حالة اتصال الشبكة",
+          "reference_condition": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        "CAN gateway",
+        "PCM",
+        "VSA modulator",
+        "Multipurpose camera",
+        "Millimeter-wave radar",
+        "EPS",
+        "SRS module"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%20FHEV%20U0100-F1%20Lost%20Communication%20with%20the%20PCM%20%E2%80%93%20PGM-FI%20System%20%E2%80%94%20Millimeter%20Wave%20Radar%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%20FHEV%20U0100-F1%20Lost%20Communication%20with%20the%20PCM%20%E2%80%93%20PGM-FI%20System%20%E2%80%94%20Millimeter%20Wave%20Radar%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 2025 field investigation 2023–25 Accord FHEV; not a statistical prevalence ranking",
+      "sources": [
+        {
+          "title": "American Honda iN — 2023-25 Accord FHEV Lost Communication",
+          "date_or_version": "2025-05-22",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11019245-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "U0101-00",
+      "code_format": "SAE_5_CHAR_FTB",
+      "ecu": "Vehicle network / control units",
+      "definition_en": "Lost Communication with the PCM/TCM",
+      "translation_ar": "انقطاع الاتصال بوحدة PCM/TCM",
+      "category": "قاعدة U0 مشتركة + لاحقة تفسّرها Honda في وحدة محددة",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord FHEV"
+        ],
+        "years": [
+          "2023-2025"
+        ],
+        "engines": "Hybrid powertrain; engine code غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Honda 2025 technical information request ONLY vehicles with all ten codes together and codes do not recur after clear; NOT a fault-root-cause bulletin"
+      },
+      "symptoms": [
+        "تحذيرات متعددة على لوحة القيادة؛ يمكن فقدان قوة الدفع بحسب Honda"
+      ],
+      "causes": [
+        {
+          "cause": "سبب جذري غير معروف؛ Honda تجمع بيانات سيارات تحتوي الأكواد العشرة كلها",
+          "evidence": "Honda 2025 iN request explicitly not an approved repair/failure attribution"
+        },
+        {
+          "cause": "جهد/أرضي/اتصال شبكة متقطع",
+          "evidence": "فحوص مقترحة غير مؤكدة كسبب في هذه الحملة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "حفظ ALL DTC مع وحدة الإصدار، Freeze/Onboard snapshot؛ فحص فولت البطارية/الأرضي وفيوزات كل ECU وCAN باستخدام مخطط VIN؛ سجل إن كانت الأكواد لا ترجع"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "12V BATTERY",
+          "name_ar": "جهد بطارية 12 فولت",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "CAN COMMUNICATION STATUS",
+          "name_ar": "حالة اتصال الشبكة",
+          "reference_condition": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        "CAN gateway",
+        "PCM",
+        "VSA modulator",
+        "Multipurpose camera",
+        "Millimeter-wave radar",
+        "EPS",
+        "SRS module"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%20FHEV%20U0101-00%20Lost%20Communication%20with%20the%20PCM/TCM%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%20FHEV%20U0101-00%20Lost%20Communication%20with%20the%20PCM/TCM%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 2025 field investigation 2023–25 Accord FHEV; not a statistical prevalence ranking",
+      "sources": [
+        {
+          "title": "American Honda iN — 2023-25 Accord FHEV Lost Communication",
+          "date_or_version": "2025-05-22",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11019245-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "U0122-F1",
+      "code_format": "SAE_5_CHAR_FTB",
+      "ecu": "Millimeter Wave Radar",
+      "definition_en": "Lost Communication with the VSA Modulator-Control Unit",
+      "translation_ar": "انقطاع الاتصال بوحدة التحكم بمعدِّل الفرامل VSA",
+      "category": "قاعدة U0 مشتركة + لاحقة تفسّرها Honda في وحدة محددة",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord FHEV"
+        ],
+        "years": [
+          "2023-2025"
+        ],
+        "engines": "Hybrid powertrain; engine code غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Honda 2025 technical information request ONLY vehicles with all ten codes together and codes do not recur after clear; NOT a fault-root-cause bulletin"
+      },
+      "symptoms": [
+        "تحذيرات متعددة على لوحة القيادة؛ يمكن فقدان قوة الدفع بحسب Honda"
+      ],
+      "causes": [
+        {
+          "cause": "سبب جذري غير معروف؛ Honda تجمع بيانات سيارات تحتوي الأكواد العشرة كلها",
+          "evidence": "Honda 2025 iN request explicitly not an approved repair/failure attribution"
+        },
+        {
+          "cause": "جهد/أرضي/اتصال شبكة متقطع",
+          "evidence": "فحوص مقترحة غير مؤكدة كسبب في هذه الحملة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "حفظ ALL DTC مع وحدة الإصدار، Freeze/Onboard snapshot؛ فحص فولت البطارية/الأرضي وفيوزات كل ECU وCAN باستخدام مخطط VIN؛ سجل إن كانت الأكواد لا ترجع"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "12V BATTERY",
+          "name_ar": "جهد بطارية 12 فولت",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "CAN COMMUNICATION STATUS",
+          "name_ar": "حالة اتصال الشبكة",
+          "reference_condition": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        "CAN gateway",
+        "PCM",
+        "VSA modulator",
+        "Multipurpose camera",
+        "Millimeter-wave radar",
+        "EPS",
+        "SRS module"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%20FHEV%20U0122-F1%20Lost%20Communication%20with%20the%20VSA%20Modulator-Control%20Unit%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%20FHEV%20U0122-F1%20Lost%20Communication%20with%20the%20VSA%20Modulator-Control%20Unit%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 2025 field investigation 2023–25 Accord FHEV; not a statistical prevalence ranking",
+      "sources": [
+        {
+          "title": "American Honda iN — 2023-25 Accord FHEV Lost Communication",
+          "date_or_version": "2025-05-22",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11019245-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "U0129-00",
+      "code_format": "SAE_5_CHAR_FTB",
+      "ecu": "Millimeter Wave Radar",
+      "definition_en": "Lost Communication with the Electric Servo Brake Control Unit — Detected by Millimeter Wave Radar",
+      "translation_ar": "انقطاع الاتصال بوحدة الفرامل الكهربائية المؤازرة — رصده الرادار",
+      "category": "قاعدة U0 مشتركة + لاحقة تفسّرها Honda في وحدة محددة",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord FHEV"
+        ],
+        "years": [
+          "2023-2025"
+        ],
+        "engines": "Hybrid powertrain; engine code غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Honda 2025 technical information request ONLY vehicles with all ten codes together and codes do not recur after clear; NOT a fault-root-cause bulletin"
+      },
+      "symptoms": [
+        "تحذيرات متعددة على لوحة القيادة؛ يمكن فقدان قوة الدفع بحسب Honda"
+      ],
+      "causes": [
+        {
+          "cause": "سبب جذري غير معروف؛ Honda تجمع بيانات سيارات تحتوي الأكواد العشرة كلها",
+          "evidence": "Honda 2025 iN request explicitly not an approved repair/failure attribution"
+        },
+        {
+          "cause": "جهد/أرضي/اتصال شبكة متقطع",
+          "evidence": "فحوص مقترحة غير مؤكدة كسبب في هذه الحملة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "حفظ ALL DTC مع وحدة الإصدار، Freeze/Onboard snapshot؛ فحص فولت البطارية/الأرضي وفيوزات كل ECU وCAN باستخدام مخطط VIN؛ سجل إن كانت الأكواد لا ترجع"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "12V BATTERY",
+          "name_ar": "جهد بطارية 12 فولت",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "CAN COMMUNICATION STATUS",
+          "name_ar": "حالة اتصال الشبكة",
+          "reference_condition": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        "CAN gateway",
+        "PCM",
+        "VSA modulator",
+        "Multipurpose camera",
+        "Millimeter-wave radar",
+        "EPS",
+        "SRS module"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%20FHEV%20U0129-00%20Lost%20Communication%20with%20the%20Electric%20Servo%20Brake%20Control%20Unit%20%E2%80%94%20Detected%20by%20Millimeter%20Wave%20Radar%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%20FHEV%20U0129-00%20Lost%20Communication%20with%20the%20Electric%20Servo%20Brake%20Control%20Unit%20%E2%80%94%20Detected%20by%20Millimeter%20Wave%20Radar%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 2025 field investigation 2023–25 Accord FHEV; not a statistical prevalence ranking",
+      "sources": [
+        {
+          "title": "American Honda iN — 2023-25 Accord FHEV Lost Communication",
+          "date_or_version": "2025-05-22",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11019245-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "U0129-F1",
+      "code_format": "SAE_5_CHAR_FTB",
+      "ecu": "Multipurpose Camera Unit",
+      "definition_en": "Lost Communication with the Electric Servo Brake Control Unit — Multipurpose Camera Unit",
+      "translation_ar": "انقطاع الاتصال بوحدة الفرامل الكهربائية المؤازرة — رصدته الكاميرا متعددة المهام",
+      "category": "قاعدة U0 مشتركة + لاحقة تفسّرها Honda في وحدة محددة",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord FHEV"
+        ],
+        "years": [
+          "2023-2025"
+        ],
+        "engines": "Hybrid powertrain; engine code غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Honda 2025 technical information request ONLY vehicles with all ten codes together and codes do not recur after clear; NOT a fault-root-cause bulletin"
+      },
+      "symptoms": [
+        "تحذيرات متعددة على لوحة القيادة؛ يمكن فقدان قوة الدفع بحسب Honda"
+      ],
+      "causes": [
+        {
+          "cause": "سبب جذري غير معروف؛ Honda تجمع بيانات سيارات تحتوي الأكواد العشرة كلها",
+          "evidence": "Honda 2025 iN request explicitly not an approved repair/failure attribution"
+        },
+        {
+          "cause": "جهد/أرضي/اتصال شبكة متقطع",
+          "evidence": "فحوص مقترحة غير مؤكدة كسبب في هذه الحملة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "حفظ ALL DTC مع وحدة الإصدار، Freeze/Onboard snapshot؛ فحص فولت البطارية/الأرضي وفيوزات كل ECU وCAN باستخدام مخطط VIN؛ سجل إن كانت الأكواد لا ترجع"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "12V BATTERY",
+          "name_ar": "جهد بطارية 12 فولت",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "CAN COMMUNICATION STATUS",
+          "name_ar": "حالة اتصال الشبكة",
+          "reference_condition": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        "CAN gateway",
+        "PCM",
+        "VSA modulator",
+        "Multipurpose camera",
+        "Millimeter-wave radar",
+        "EPS",
+        "SRS module"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%20FHEV%20U0129-F1%20Lost%20Communication%20with%20the%20Electric%20Servo%20Brake%20Control%20Unit%20%E2%80%94%20Multipurpose%20Camera%20Unit%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%20FHEV%20U0129-F1%20Lost%20Communication%20with%20the%20Electric%20Servo%20Brake%20Control%20Unit%20%E2%80%94%20Multipurpose%20Camera%20Unit%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 2025 field investigation 2023–25 Accord FHEV; not a statistical prevalence ranking",
+      "sources": [
+        {
+          "title": "American Honda iN — 2023-25 Accord FHEV Lost Communication",
+          "date_or_version": "2025-05-22",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11019245-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "U0131-F1",
+      "code_format": "SAE_5_CHAR_FTB",
+      "ecu": "Multipurpose Camera Unit",
+      "definition_en": "Lost Communication with the EPS Control Unit — Multipurpose Camera Unit",
+      "translation_ar": "انقطاع اتصال كاميرا الأنظمة المساعدة مع وحدة التوجيه الكهربائي EPS",
+      "category": "قاعدة U0 مشتركة + لاحقة تفسّرها Honda في وحدة محددة",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord FHEV"
+        ],
+        "years": [
+          "2023-2025"
+        ],
+        "engines": "Hybrid powertrain; engine code غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Honda 2025 technical information request ONLY vehicles with all ten codes together and codes do not recur after clear; NOT a fault-root-cause bulletin"
+      },
+      "symptoms": [
+        "تحذيرات متعددة على لوحة القيادة؛ يمكن فقدان قوة الدفع بحسب Honda"
+      ],
+      "causes": [
+        {
+          "cause": "سبب جذري غير معروف؛ Honda تجمع بيانات سيارات تحتوي الأكواد العشرة كلها",
+          "evidence": "Honda 2025 iN request explicitly not an approved repair/failure attribution"
+        },
+        {
+          "cause": "جهد/أرضي/اتصال شبكة متقطع",
+          "evidence": "فحوص مقترحة غير مؤكدة كسبب في هذه الحملة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "حفظ ALL DTC مع وحدة الإصدار، Freeze/Onboard snapshot؛ فحص فولت البطارية/الأرضي وفيوزات كل ECU وCAN باستخدام مخطط VIN؛ سجل إن كانت الأكواد لا ترجع"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "12V BATTERY",
+          "name_ar": "جهد بطارية 12 فولت",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "CAN COMMUNICATION STATUS",
+          "name_ar": "حالة اتصال الشبكة",
+          "reference_condition": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        "CAN gateway",
+        "PCM",
+        "VSA modulator",
+        "Multipurpose camera",
+        "Millimeter-wave radar",
+        "EPS",
+        "SRS module"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%20FHEV%20U0131-F1%20Lost%20Communication%20with%20the%20EPS%20Control%20Unit%20%E2%80%94%20Multipurpose%20Camera%20Unit%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%20FHEV%20U0131-F1%20Lost%20Communication%20with%20the%20EPS%20Control%20Unit%20%E2%80%94%20Multipurpose%20Camera%20Unit%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 2025 field investigation 2023–25 Accord FHEV; not a statistical prevalence ranking",
+      "sources": [
+        {
+          "title": "American Honda iN — 2023-25 Accord FHEV Lost Communication",
+          "date_or_version": "2025-05-22",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11019245-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "U0146-00",
+      "code_format": "SAE_5_CHAR_FTB",
+      "ecu": "CAN Gateway",
+      "definition_en": "Lost Communication with the CAN Gateway",
+      "translation_ar": "انقطاع الاتصال ببوابة CAN",
+      "category": "قاعدة U0 مشتركة + لاحقة تفسّرها Honda في وحدة محددة",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord FHEV"
+        ],
+        "years": [
+          "2023-2025"
+        ],
+        "engines": "Hybrid powertrain; engine code غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Honda 2025 technical information request ONLY vehicles with all ten codes together and codes do not recur after clear; NOT a fault-root-cause bulletin"
+      },
+      "symptoms": [
+        "تحذيرات متعددة على لوحة القيادة؛ يمكن فقدان قوة الدفع بحسب Honda"
+      ],
+      "causes": [
+        {
+          "cause": "سبب جذري غير معروف؛ Honda تجمع بيانات سيارات تحتوي الأكواد العشرة كلها",
+          "evidence": "Honda 2025 iN request explicitly not an approved repair/failure attribution"
+        },
+        {
+          "cause": "جهد/أرضي/اتصال شبكة متقطع",
+          "evidence": "فحوص مقترحة غير مؤكدة كسبب في هذه الحملة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "حفظ ALL DTC مع وحدة الإصدار، Freeze/Onboard snapshot؛ فحص فولت البطارية/الأرضي وفيوزات كل ECU وCAN باستخدام مخطط VIN؛ سجل إن كانت الأكواد لا ترجع"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "12V BATTERY",
+          "name_ar": "جهد بطارية 12 فولت",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "CAN COMMUNICATION STATUS",
+          "name_ar": "حالة اتصال الشبكة",
+          "reference_condition": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        "CAN gateway",
+        "PCM",
+        "VSA modulator",
+        "Multipurpose camera",
+        "Millimeter-wave radar",
+        "EPS",
+        "SRS module"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%20FHEV%20U0146-00%20Lost%20Communication%20with%20the%20CAN%20Gateway%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%20FHEV%20U0146-00%20Lost%20Communication%20with%20the%20CAN%20Gateway%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 2025 field investigation 2023–25 Accord FHEV; not a statistical prevalence ranking",
+      "sources": [
+        {
+          "title": "American Honda iN — 2023-25 Accord FHEV Lost Communication",
+          "date_or_version": "2025-05-22",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11019245-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "U0151-00",
+      "code_format": "SAE_5_CHAR_FTB",
+      "ecu": "Vehicle network / control units",
+      "definition_en": "Lost Communication with the SRS Unit",
+      "translation_ar": "انقطاع الاتصال بوحدة الوسائد الهوائية SRS",
+      "category": "قاعدة U0 مشتركة + لاحقة تفسّرها Honda في وحدة محددة",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord FHEV"
+        ],
+        "years": [
+          "2023-2025"
+        ],
+        "engines": "Hybrid powertrain; engine code غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Honda 2025 technical information request ONLY vehicles with all ten codes together and codes do not recur after clear; NOT a fault-root-cause bulletin"
+      },
+      "symptoms": [
+        "تحذيرات متعددة على لوحة القيادة؛ يمكن فقدان قوة الدفع بحسب Honda"
+      ],
+      "causes": [
+        {
+          "cause": "سبب جذري غير معروف؛ Honda تجمع بيانات سيارات تحتوي الأكواد العشرة كلها",
+          "evidence": "Honda 2025 iN request explicitly not an approved repair/failure attribution"
+        },
+        {
+          "cause": "جهد/أرضي/اتصال شبكة متقطع",
+          "evidence": "فحوص مقترحة غير مؤكدة كسبب في هذه الحملة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "حفظ ALL DTC مع وحدة الإصدار، Freeze/Onboard snapshot؛ فحص فولت البطارية/الأرضي وفيوزات كل ECU وCAN باستخدام مخطط VIN؛ سجل إن كانت الأكواد لا ترجع"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "12V BATTERY",
+          "name_ar": "جهد بطارية 12 فولت",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "CAN COMMUNICATION STATUS",
+          "name_ar": "حالة اتصال الشبكة",
+          "reference_condition": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        "CAN gateway",
+        "PCM",
+        "VSA modulator",
+        "Multipurpose camera",
+        "Millimeter-wave radar",
+        "EPS",
+        "SRS module"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%20FHEV%20U0151-00%20Lost%20Communication%20with%20the%20SRS%20Unit%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%20FHEV%20U0151-00%20Lost%20Communication%20with%20the%20SRS%20Unit%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 2025 field investigation 2023–25 Accord FHEV; not a statistical prevalence ranking",
+      "sources": [
+        {
+          "title": "American Honda iN — 2023-25 Accord FHEV Lost Communication",
+          "date_or_version": "2025-05-22",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11019245-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "U0416-68",
+      "code_format": "SAE_5_CHAR_FTB",
+      "ecu": "Radar/Driving Support and VSA",
+      "definition_en": "VSA Brake Actuator Malfunction",
+      "translation_ar": "خلل في مشغل فرامل VSA",
+      "category": "قاعدة U0 مشتركة + لاحقة تفسّرها Honda في وحدة محددة",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Accord FHEV"
+        ],
+        "years": [
+          "2023-2025"
+        ],
+        "engines": "Hybrid powertrain; engine code غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "Honda 2025 technical information request ONLY vehicles with all ten codes together and codes do not recur after clear; NOT a fault-root-cause bulletin"
+      },
+      "symptoms": [
+        "تحذيرات متعددة على لوحة القيادة؛ يمكن فقدان قوة الدفع بحسب Honda"
+      ],
+      "causes": [
+        {
+          "cause": "سبب جذري غير معروف؛ Honda تجمع بيانات سيارات تحتوي الأكواد العشرة كلها",
+          "evidence": "Honda 2025 iN request explicitly not an approved repair/failure attribution"
+        },
+        {
+          "cause": "جهد/أرضي/اتصال شبكة متقطع",
+          "evidence": "فحوص مقترحة غير مؤكدة كسبب في هذه الحملة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "حفظ ALL DTC مع وحدة الإصدار، Freeze/Onboard snapshot؛ فحص فولت البطارية/الأرضي وفيوزات كل ECU وCAN باستخدام مخطط VIN؛ سجل إن كانت الأكواد لا ترجع"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "12V BATTERY",
+          "name_ar": "جهد بطارية 12 فولت",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "CAN COMMUNICATION STATUS",
+          "name_ar": "حالة اتصال الشبكة",
+          "reference_condition": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        "CAN gateway",
+        "PCM",
+        "VSA modulator",
+        "Multipurpose camera",
+        "Millimeter-wave radar",
+        "EPS",
+        "SRS module"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Accord%20FHEV%20U0416-68%20VSA%20Brake%20Actuator%20Malfunction%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Accord%20FHEV%20U0416-68%20VSA%20Brake%20Actuator%20Malfunction%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda 2025 field investigation 2023–25 Accord FHEV; not a statistical prevalence ranking",
+      "sources": [
+        {
+          "title": "American Honda iN — 2023-25 Accord FHEV Lost Communication",
+          "date_or_version": "2025-05-22",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11019245-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        },
+        {
+          "title": "American Honda iN Technical Research Request — Brake/Cruise",
+          "date_or_version": "2020-11-04",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10182468-0001.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "U0122",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "PGM-FI / VSA",
+      "definition_en": "F-CAN Malfunction (PCM-VSA)",
+      "translation_ar": "خلل اتصال شبكة F-CAN بين PCM وVSA",
+      "category": "عام U0؛ تعريف شبكة Honda حسب ServiceNews",
+      "applicability": {
+        "markets": [
+          "USA — bulletin scope only"
+        ],
+        "models": [
+          "Pilot"
+        ],
+        "years": [
+          "2005-2008 (context of investigation; exact applicability needs manual)"
+        ],
+        "engines": "3.5 V6; غير مؤكد",
+        "fuel": "بنزين إلا إذا ورد خلاف ذلك في وصف الطراز",
+        "drive": "غير مؤكد",
+        "notes": "نشرة تخص السوق الأمريكي؛ التأكد من VIN"
+      },
+      "symptoms": [
+        "VSA indicator، MIL قد يكون OFF"
+      ],
+      "causes": [
+        {
+          "cause": "فقد تغذية +B FSR أو IG1 / أرضي VSA",
+          "evidence": "Honda ServiceNews Aug 2007 reproduced in NHTSA Honda investigation"
+        },
+        {
+          "cause": "فتح/وصل ضعيف بشبكة F-CAN H/L عند اقترانه برمز VSA 86",
+          "evidence": "Honda bulletin differentiates U0122 alone and U0122+VSA 86"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "تحقق من +B FSR وIG1 وVSA ground أولاً، ثم F-CAN H/L عند تزامن VSA 86؛ pinouts بحسب VIN"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "VSA POWER SUPPLY",
+          "name_ar": "تغذية وحدة VSA",
+          "reference_condition": "مطابقة جهد البطارية في دائرة السيارة؛ قيمة رقمية غير مؤكدة"
+        },
+        {
+          "name_en": "CAN STATUS",
+          "name_ar": "حالة شبكة CAN",
+          "reference_condition": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        "VSA modulator",
+        "CAN wiring",
+        "Fuses and grounds"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Pilot%20U0122%20F-CAN%20Malfunction%20%28PCM-VSA%29%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Pilot%20U0122%20F-CAN%20Malfunction%20%28PCM-VSA%29%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Honda ServiceNews technical diagnosis of U0122 and VSA code 86",
+      "sources": [
+        {
+          "title": "Honda ServiceNews August 2007 — NHTSA Honda investigation appendix",
+          "date_or_version": "2007-08",
+          "url": "https://static.nhtsa.gov/odi/inv/2012/INRD-DP12002-53027P.pdf",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Honda",
+      "code": "U0029",
+      "code_format": "SAE_5_CHAR",
+      "ecu": "ECM / F-CAN",
+      "definition_en": "F-CAN Malfunction (BUS-OFF ECM)",
+      "translation_ar": "تعطل شبكة F-CAN بسبب توقف اتصال ECM ‏(Bus-Off)",
+      "category": "عام U0 — تفسير Honda خاص",
+      "applicability": {
+        "markets": [
+          "غير مؤكد"
+        ],
+        "models": [
+          "Civic IX Si / K24Z7"
+        ],
+        "years": [
+          "2011-2015 context"
+        ],
+        "engines": "K24Z7",
+        "fuel": "بنزين",
+        "drive": "غير مؤكد",
+        "notes": "مستند نسخة دليل مستنسخة؛ تحقق من البلد وVIN قبل بيانات الأطراف"
+      },
+      "symptoms": [
+        "قد تظهر لمبات تحذير اتصال وحدات"
+      ],
+      "causes": [
+        {
+          "cause": "فتح/قصر في CAN أو سوء تغذية VSA/ECM",
+          "evidence": "حالة تشخيصية من manual; لا يوجد سبب مؤكّد لكل سيارة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": "اقرأ جميع DTC مع Pending/Confirmed وحدد وحدة التحكم وVIN",
+          "evidence": "نسخة تقرير HDS/i-HDS"
+        },
+        {
+          "step": "وثّق Freeze Frame / On-board Snapshot قبل المسح",
+          "evidence": "حرارة/حمولة/جهد/سرعة حسب المتاح"
+        },
+        {
+          "step": "اختبر الجهد والفيوزات والأرضي والفيش بصرياً ثم حمل الدائرة وفق مخطط الإصدار",
+          "evidence": "المواصفات الرقمية غير مؤكدة ما لم يرد قياس في النشرة"
+        },
+        {
+          "step": "أعد الاختبار بالطريقة التي يحددها المرجع",
+          "evidence": "تحقق من VSA B24 7.5 A fuse فقط عند مطابقة إصدار K24Z7 المذكور؛ ابدأ power/ground ثم فحص الشبكة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "VSA IG1",
+          "name_ar": "تغذية إشعال وحدة VSA",
+          "reference_condition": "غير مؤكد"
+        },
+        {
+          "name_en": "F-CAN LINE STATUS",
+          "name_ar": "حالة أسلاك شبكة F-CAN",
+          "reference_condition": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        "ECM",
+        "VSA modulator",
+        "F-CAN harness"
+      ],
+      "images": {
+        "type": "reference_image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Honda%20Civic%20IX%20Si%20/%20K24Z7%20U0029%20F-CAN%20Malfunction%20%28BUS-OFF%20ECM%29%20part%20location",
+        "note": "صور نتائج بحث فقط؛ لا تُعتبر صوراً متحققة للمحرك المحدد"
+      },
+      "wiring": {
+        "status": "not_verified",
+        "note": "غير مؤكد — مخطط الطرفيات يحدد حسب VIN وإصدار ECU"
+      },
+      "video": {
+        "type": "video_search_unverified",
+        "url": "https://www.youtube.com/results?search_query=Honda%20Civic%20IX%20Si%20/%20K24Z7%20U0029%20F-CAN%20Malfunction%20%28BUS-OFF%20ECM%29%20diagnosis",
+        "note": "رابط بحث وليس فيديو جرى التحقق من مطابقته"
+      },
+      "priority_evidence": "Manufacturer service-manual reproduction for K24Z7; no evidence of prevalence",
+      "sources": [
+        {
+          "title": "Honda Civic IX K24Z7 service-manual reproduction",
+          "date_or_version": "undated; 2011-2015",
+          "url": "https://diagnostdata.com/honda/civic/ix-2011-2015/remont/communication-devices/multi-plex-control-system-diagnostic-codes/dtc-u0029-f-can-malfunction-bus-off-ecm-k24z7/",
+          "location": "الصفحة/المقطع المحدد في المصدر"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    }
+  ]
+}
