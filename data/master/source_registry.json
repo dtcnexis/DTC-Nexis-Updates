@@ -20,7 +20,8 @@
         "record_count": 59,
         "data_preservation": "PERMANENT_PRIVATE_SOURCE",
         "technical_status": "AUDIT_INCOMPLETE",
-        "imported_to_master": false
+        "imported_to_master": true,
+        "master_copy_path": "data/master/brands/alfa_romeo.json"
       },
       {
         "brand": "bmw",
@@ -32,7 +33,8 @@
         "record_count": 98,
         "data_preservation": "PERMANENT_PRIVATE_SOURCE",
         "technical_status": "AUDIT_INCOMPLETE",
-        "imported_to_master": false
+        "imported_to_master": true,
+        "master_copy_path": "data/master/brands/bmw.json"
       },
       {
         "brand": "cupra",
@@ -44,7 +46,8 @@
         "record_count": 63,
         "data_preservation": "PERMANENT_PRIVATE_SOURCE",
         "technical_status": "AUDIT_INCOMPLETE",
-        "imported_to_master": false
+        "imported_to_master": true,
+        "master_copy_path": "data/master/brands/cupra.json"
       },
       {
         "brand": "Mazda",
@@ -56,7 +59,8 @@
         "record_count": 376,
         "data_preservation": "PERMANENT_PRIVATE_SOURCE",
         "technical_status": "AUDIT_INCOMPLETE",
-        "imported_to_master": false
+        "imported_to_master": true,
+        "master_copy_path": "data/master/brands/mazda.json"
       },
       {
         "brand": "mercedes_benz",
@@ -68,7 +72,8 @@
         "record_count": 66,
         "data_preservation": "PERMANENT_PRIVATE_SOURCE",
         "technical_status": "AUDIT_INCOMPLETE",
-        "imported_to_master": false
+        "imported_to_master": true,
+        "master_copy_path": "data/master/brands/mercedes_benz.json"
       },
       {
         "brand": "MINI",
@@ -80,7 +85,8 @@
         "record_count": 45,
         "data_preservation": "PERMANENT_PRIVATE_SOURCE",
         "technical_status": "AUDIT_INCOMPLETE",
-        "imported_to_master": false
+        "imported_to_master": true,
+        "master_copy_path": "data/master/brands/mini.json"
       },
       {
         "brand": "Opel / Vauxhall",
@@ -92,7 +98,8 @@
         "record_count": 37,
         "data_preservation": "PERMANENT_PRIVATE_SOURCE",
         "technical_status": "AUDIT_INCOMPLETE",
-        "imported_to_master": false
+        "imported_to_master": true,
+        "master_copy_path": "data/master/brands/opel_vauxhall.json"
       },
       {
         "brand": "polestar",
@@ -104,7 +111,8 @@
         "record_count": 29,
         "data_preservation": "PERMANENT_PRIVATE_SOURCE",
         "technical_status": "AUDIT_INCOMPLETE",
-        "imported_to_master": false
+        "imported_to_master": true,
+        "master_copy_path": "data/master/brands/polestar.json"
       },
       {
         "brand": "SEAT",
@@ -116,7 +124,8 @@
         "record_count": 53,
         "data_preservation": "PERMANENT_PRIVATE_SOURCE",
         "technical_status": "AUDIT_INCOMPLETE",
-        "imported_to_master": false
+        "imported_to_master": true,
+        "master_copy_path": "data/master/brands/seat.json"
       },
       {
         "brand": "skoda",
@@ -128,7 +137,8 @@
         "record_count": 48,
         "data_preservation": "PERMANENT_PRIVATE_SOURCE",
         "technical_status": "AUDIT_INCOMPLETE",
-        "imported_to_master": false
+        "imported_to_master": true,
+        "master_copy_path": "data/master/brands/skoda.json"
       },
       {
         "brand": "volvo",
@@ -140,11 +150,13 @@
         "record_count": 60,
         "data_preservation": "PERMANENT_PRIVATE_SOURCE",
         "technical_status": "AUDIT_INCOMPLETE",
-        "imported_to_master": false
+        "imported_to_master": true,
+        "master_copy_path": "data/master/brands/volvo.json"
       }
     ],
     "total_review_rows": 934,
-    "quality_note": "The 934 are archival rows, not 934 verified unique codes. Duplicates and manufacturer-specific formats retained."
+    "quality_note": "The 934 are archival rows, not 934 verified unique codes. Duplicates and manufacturer-specific formats retained.",
+    "actual_copies_in_master": 11
   },
   "volkswagen": {
     "repository": "dtcnexis/DTC-Nexis-Updates",
@@ -152,8 +164,14 @@
     "path": "volkswagen/data/VW022",
     "reported_legacy_candidate_count": 644,
     "preservation": "ORIGINAL_PERMANENT_IN_REPOSITORY",
-    "imported_to_master": false,
-    "verification": "review_required_per_ECU"
+    "imported_to_master": true,
+    "verification": "review_required_per_ECU",
+    "copied_to_paths": [
+      "data/master/brands/volkswagen_vag_legacy_part01.json",
+      "data/master/brands/volkswagen_vag_legacy_part02.json",
+      "data/master/brands/volkswagen_vag_legacy_part03.json",
+      "data/master/brands/volkswagen_vag_legacy_part04.json"
+    ]
   },
   "library_metadata": {
     "repository": "dtcnexis/DTC-Nexis-App",
@@ -162,7 +180,20 @@
     "git_blob_sha": "c39d4ae91f83a28c4c1a67232c34d6085b04150b",
     "listed_files": 488,
     "raw_file_availability": "SEPARATE_AUTHORIZED_LIBRARY_ACCESS",
-    "verification": "index_only; no automatic claim all raw files imported"
+    "verification": "index_only; no automatic claim all raw files imported",
+    "materialized_known_sources": [
+      {
+        "file_name": "C_CODES_278_STAGING_RECONCILED.json",
+        "actual_saved_rows": 278,
+        "master_copy_path": "data/master/brands/c_codes_multibrand.json"
+      },
+      {
+        "file_name": "DTC_NEXIS_DS_batch01.json",
+        "actual_saved_rows": 798,
+        "master_copy_path": "data/master/brands/ds_automobiles.json"
+      }
+    ],
+    "audit_remaining": "Source index has 488 entries including archives, pictures, possible duplicates and text files. Match raw sources and import without double-counting; no claim all are already extracted."
   },
   "other_preexisting_library_indexes": [
     {
@@ -180,5 +211,8 @@
       "contents_imported": false,
       "verification": "manifest_only"
     }
-  ]
+  ],
+  "master_status": "PERSISTED_CLOUD_MULTI_SOURCE_2680_ROWS",
+  "master_manifest_path": "data/master/all_collected_catalog_manifest.json",
+  "materialized_text_records": 2680
 }
