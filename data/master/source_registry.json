@@ -324,7 +324,7 @@
       "preservation": "PERMANENT_NOT_OEM_VERIFIED"
     }
   ],
-  "remaining_source_work": "Audi INDEX source, remaining 488-entry Library index reconciliation (including other manufacturer sources), and technical/OEM quality validation remain open. Audi DETAIL/Dacia batch01/Toyota EXP002/Honda batch02 extracted and saved; no retake from scratch.",
+  "remaining_source_work": "Audi INDEX source, remaining 488-entry Library index reconciliation (including other manufacturer sources), and technical/OEM quality validation remain open. Audi DETAIL/Dacia batch01/Toyota EXP002/Honda batch02 extracted and saved; no retake from scratch. Update 2026-10-30: standalone Mercedes Batch01 raw content recovered from Drive, exact file archived and all 66 core records matched; Audi INDEX remains inaccessible.",
   "detail_recovery_20261030": {
     "counted_rows_unchanged": 7656,
     "canonical_files_unchanged": 30,
@@ -352,9 +352,21 @@
       "AUDI_DTC_BATCH01_INDEX.json",
       "AUDI_DTC_BATCH01_INDEX.csv",
       "BMW_DTC_NEXIS_batch01.json",
-      "CUPRA_DTC_NEXIS_B01_2026-10-15.json",
-      "Mercedes_Benz_DTC_NEXIS_batch01_2026-10-15.json"
+      "CUPRA_DTC_NEXIS_B01_2026-10-15.json"
     ],
     "note": "BMW/CUPRA embedded Batch01 objects and Mercedes full Batch02 detail are now in master enrichment. Standalone Library source access remains unresolved."
+  },
+  "recovered_raw_mercedes_batch01": {
+    "source_url": "https://drive.google.com/file/d/1Q3VoMLHsLhu3EJ_GFbX1ItsUaEMZsnZB/view",
+    "archive_path": "data/master/source_archives/Mercedes_Benz_DTC_NEXIS_batch01_2026-10-15.json",
+    "sha256": "1300b01dce26e7413ed3d8b2c5037477c1fd40c576a28c32a0035ceeddc33c71",
+    "size_bytes": 431938,
+    "rows": 66,
+    "checked_on": "2026-10-30",
+    "preservation": "EXACT_ORIGINAL_UTF8_CONTENT",
+    "canonical_path": "data/master/brands/mercedes_benz.json",
+    "matched_rows_by_code_ecu_en_ar": 66,
+    "additional_counted_rows": 0,
+    "technical_approval": false
   }
 }
