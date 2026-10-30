@@ -1,0 +1,58 @@
+{
+  "status": "PARTIAL_REVIEW_NOT_COMPLETE_NOT_RELEASED",
+  "archive_sha256": "baa0b110d43e95384ece3823bdc43261bb1e64447f5f24d00162a63989b92f7a",
+  "original_files": 38,
+  "original_final_rows": 1001,
+  "original_unique_codes": 1000,
+  "original_rows_with_english": 21,
+  "original_missing_english": 980,
+  "reviewed_definition_variants": 58,
+  "reviewed_base_codes": 50,
+  "revalidated_previous_batch_codes": 6,
+  "newly_reviewed_base_codes": 44,
+  "remaining_missing_definition_rows": 930,
+  "held_component_conflicts": [
+    "U102F"
+  ],
+  "oem_scoped_base_codes": [
+    "B1092",
+    "B11AF",
+    "B1916"
+  ],
+  "previous_defined_rows_not_revalidated_this_run": 21,
+  "github_comparison": {
+    "base_commit": "5617cc59ae33e2b82d773977ba12f56dc93ef796",
+    "files": {
+      "data/master/brands/audi_batch01_detail.json": {
+        "records": 20,
+        "semantic_equality_with_original_detail": true
+      },
+      "data/master/brands/audi_legacy_detail.json": {
+        "records": 20,
+        "semantic_equality_with_original_detail": true
+      }
+    },
+    "interpretation": "These two retained files contain the same 20 source records (19 unique codes); do not count as 40 distinct codes. Full original final CSV is retained separately, not reclassified as verified."
+  },
+  "duplicate_code_groups": {
+    "01314": [
+      {
+        "id": "AUDI-DTC-0814",
+        "definition_en": "Engine Control Module (variant-dependent)"
+      },
+      {
+        "id": "AUDI_DTC_01314",
+        "definition_en": "Engine Control Module: No Communications"
+      }
+    ]
+  },
+  "dedup_policy": "Keep all originals; group by code for lookup only; variants stay separate. 01314 general label and no-communication row are not deletable duplicates.",
+  "app_changes": false,
+  "update_published": false,
+  "limitations": [
+    "Pending means not yet researched, not impossible to document.",
+    "Source definition verification does not imply Audi model/VIN applicability.",
+    "A complete all-code source review has not been performed.",
+    "No source text or translations invented for pending rows."
+  ]
+}
