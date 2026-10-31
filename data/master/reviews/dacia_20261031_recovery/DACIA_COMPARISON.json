@@ -1,0 +1,208 @@
+{
+  "date": "2026-10-31",
+  "original_rows": 149,
+  "unique_code_strings": 138,
+  "unique_code_ecu_pairs": 149,
+  "df_rows": 84,
+  "candidate_p_associations": 65,
+  "github_semantically_matches_originals": [
+    "dacia_legacy_batch01.json",
+    "dacia_batch01_149_records.json"
+  ],
+  "expansion_legacy_records_match_originals": true,
+  "new_dtc_records_from_expansion": 0,
+  "empty_english_fields": 0,
+  "empty_arabic_fields": 0,
+  "all_original_statuses": {
+    "قيد التوثيق": 149
+  },
+  "technical_verification_complete": false,
+  "duplicates_by_code": [
+    {
+      "code": "DF001",
+      "records": [
+        {
+          "original_row": 1,
+          "ecu": "Delphi DCM 1.2 / Program 4C / Vdiag 08",
+          "definition_en": "Coolant temperature sensor circuit",
+          "translation_ar": "دائرة حساس درجة حرارة سائل تبريد المحرك"
+        },
+        {
+          "original_row": 66,
+          "ecu": "Bosch ABS 8.1 / Vdiag 18, 1C",
+          "definition_en": "Computer supply voltage",
+          "translation_ar": "جهد تغذية وحدة ABS"
+        },
+        {
+          "original_row": 74,
+          "ecu": "TEMIC Airbag / Vdiag 04 / ECU types 01,02",
+          "definition_en": "Computer",
+          "translation_ar": "وحدة التحكم بالوسائد الهوائية"
+        }
+      ],
+      "action": "preserve_distinct_ECU_scopes"
+    },
+    {
+      "code": "DF002",
+      "records": [
+        {
+          "original_row": 2,
+          "ecu": "Delphi DCM 1.2 / Program 4C / Vdiag 08",
+          "definition_en": "Air temperature sensor circuit",
+          "translation_ar": "دائرة حساس درجة حرارة الهواء"
+        },
+        {
+          "original_row": 75,
+          "ecu": "TEMIC Airbag / Vdiag 04 / ECU types 01,02",
+          "definition_en": "Computer feed voltage",
+          "translation_ar": "جهد تغذية وحدة الوسائد الهوائية"
+        }
+      ],
+      "action": "preserve_distinct_ECU_scopes"
+    },
+    {
+      "code": "DF003",
+      "records": [
+        {
+          "original_row": 3,
+          "ecu": "Delphi DCM 1.2 / Program 4C / Vdiag 08",
+          "definition_en": "Atmospheric pressure sensor circuit",
+          "translation_ar": "دائرة حساس الضغط الجوي"
+        },
+        {
+          "original_row": 76,
+          "ecu": "TEMIC Airbag / Vdiag 04 / ECU types 01,02",
+          "definition_en": "Driver's front airbag circuit",
+          "translation_ar": "دائرة الوسادة الهوائية الأمامية للسائق"
+        }
+      ],
+      "action": "preserve_distinct_ECU_scopes"
+    },
+    {
+      "code": "DF007",
+      "records": [
+        {
+          "original_row": 5,
+          "ecu": "Delphi DCM 1.2 / Program 4C / Vdiag 08",
+          "definition_en": "Rail pressure sensor circuit",
+          "translation_ar": "دائرة حساس ضغط سكة الوقود"
+        },
+        {
+          "original_row": 68,
+          "ecu": "Bosch ABS 8.1 / Vdiag 18, 1C",
+          "definition_en": "Rear left wheel speed sensor circuit",
+          "translation_ar": "دائرة حساس سرعة العجلة الخلفية اليسرى"
+        }
+      ],
+      "action": "preserve_distinct_ECU_scopes"
+    },
+    {
+      "code": "DF017",
+      "records": [
+        {
+          "original_row": 12,
+          "ecu": "Delphi DCM 1.2 / Program 4C / Vdiag 08",
+          "definition_en": "Preheating unit control circuit",
+          "translation_ar": "دائرة التحكم بوحدة التسخين المسبق"
+        },
+        {
+          "original_row": 69,
+          "ecu": "Bosch ABS 8.1 / Vdiag 18, 1C",
+          "definition_en": "Computer",
+          "translation_ar": "وحدة تحكم ABS"
+        }
+      ],
+      "action": "preserve_distinct_ECU_scopes"
+    },
+    {
+      "code": "DF026",
+      "records": [
+        {
+          "original_row": 19,
+          "ecu": "Delphi DCM 1.2 / Program 4C / Vdiag 08",
+          "definition_en": "Cylinder 1 injector circuit control",
+          "translation_ar": "التحكم بدائرة بخاخ الأسطوانة الأولى"
+        },
+        {
+          "original_row": 71,
+          "ecu": "Bosch ABS 8.1 / Vdiag 18, 1C",
+          "definition_en": "Front right wheel speed sensor circuit",
+          "translation_ar": "دائرة حساس سرعة العجلة الأمامية اليمنى"
+        }
+      ],
+      "action": "preserve_distinct_ECU_scopes"
+    },
+    {
+      "code": "DF027",
+      "records": [
+        {
+          "original_row": 20,
+          "ecu": "Delphi DCM 1.2 / Program 4C / Vdiag 08",
+          "definition_en": "Cylinder 2 injector circuit control",
+          "translation_ar": "التحكم بدائرة بخاخ الأسطوانة الثانية"
+        },
+        {
+          "original_row": 72,
+          "ecu": "Bosch ABS 8.1 / Vdiag 18, 1C",
+          "definition_en": "Rear right wheel speed sensor circuit",
+          "translation_ar": "دائرة حساس سرعة العجلة الخلفية اليمنى"
+        }
+      ],
+      "action": "preserve_distinct_ECU_scopes"
+    },
+    {
+      "code": "DF028",
+      "records": [
+        {
+          "original_row": 21,
+          "ecu": "Delphi DCM 1.2 / Program 4C / Vdiag 08",
+          "definition_en": "Cylinder 3 injector circuit control",
+          "translation_ar": "التحكم بدائرة بخاخ الأسطوانة الثالثة"
+        },
+        {
+          "original_row": 78,
+          "ecu": "TEMIC Airbag / Vdiag 04 / ECU types 01,02",
+          "definition_en": "Passenger airbag status warning light circuit",
+          "translation_ar": "دائرة لمبة حالة وسادة الراكب الهوائية"
+        }
+      ],
+      "action": "preserve_distinct_ECU_scopes"
+    },
+    {
+      "code": "DF034",
+      "records": [
+        {
+          "original_row": 25,
+          "ecu": "Delphi DCM 1.2 / Program 4C / Vdiag 08",
+          "definition_en": "Thermoplunger 3 relay control circuit",
+          "translation_ar": "دائرة التحكم بمرحل سخان التبريد الإضافي الثالث"
+        },
+        {
+          "original_row": 79,
+          "ecu": "TEMIC Airbag / Vdiag 04 / ECU types 01,02",
+          "definition_en": "Computer locked",
+          "translation_ar": "وحدة الوسائد الهوائية مقفلة تشخيصياً"
+        }
+      ],
+      "action": "preserve_distinct_ECU_scopes"
+    },
+    {
+      "code": "DF242",
+      "records": [
+        {
+          "original_row": 56,
+          "ecu": "Delphi DCM 1.2 / Program 4C / Vdiag 08",
+          "definition_en": "Engine speed signal output",
+          "translation_ar": "خرج إشارة سرعة المحرك"
+        },
+        {
+          "original_row": 84,
+          "ecu": "TEMIC Airbag / Vdiag 04 / ECU types 01,02",
+          "definition_en": "Left-hand/right-hand drive configuration",
+          "translation_ar": "إعداد تهيئة مقود يسار/يمين"
+        }
+      ],
+      "action": "preserve_distinct_ECU_scopes"
+    }
+  ]
+}
