@@ -1,0 +1,1839 @@
+{
+  "schema": "dtcnexis-source-review-overlay-v1",
+  "release_status": "NOT_RELEASED",
+  "records": [
+    {
+      "code": "U102F",
+      "subcode": "unspecified",
+      "definition_en": "LIN communication timeout",
+      "translation_ar": "انتهاء مهلة الاتصال عبر LIN",
+      "review_id": "AUDI-20261031-B06-U102F",
+      "original_row_ids": [
+        "AUDI-DTC-0593"
+      ],
+      "source_url": "https://wiki.ross-tech.com/wiki/index.php/U102F/053295",
+      "checked_on": "2026-10-31",
+      "definition_status": "oem_definition_verified_scoped",
+      "translation_status": "translated_from_verified_definition",
+      "english_text_kind": "source_label",
+      "audi_applicability_status": "Audi TT MY2014 reference only",
+      "match_rule": "Match full scan text and ECU; base code alone must not select a fault subtype.",
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/U102F/053295",
+          "evidence": "code-specific page heading",
+          "checked_on": "2026-10-31"
+        },
+        {
+          "publisher": "Audi",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2013/MC-10203515-9999.pdf",
+          "locator": "2014 Audi TT, printed page 136, PDF page 144",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Source heading says Fan Identification Sensor, but body identifies radiator identification sensor G611. Do not infer a fan fault; OEM/ECU wording required.",
+        "Official scoped LIN wording avoids choosing between conflicting fan/radiator names. Original Ross-Tech component conflict remains unresolved outside this scope."
+      ],
+      "previous_review_id": "AUDI-REVIEW-20261030-0044",
+      "prior_record_preserved": true,
+      "new_verified_variants": [
+        {
+          "definition_en": "LIN communication timeout",
+          "translation_ar": "انتهاء مهلة الاتصال عبر LIN",
+          "scope": "2014 Audi TT Quick Reference Specification Book; printed page 136",
+          "source_url": "https://static.nhtsa.gov/odi/tsbs/2013/MC-10203515-9999.pdf",
+          "pdf_page": 144
+        }
+      ],
+      "review_outcome": "oem_definition_verified_scoped_legacy_conflict_retained",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant.",
+      "legacy_conflicting_label": "Fan Identification Sensor: No Communications"
+    },
+    {
+      "review_id": "AUDI-20261031-B06-P0180",
+      "code": "P0180",
+      "original_row_ids": [
+        "AUDI-DTC-0087"
+      ],
+      "definition_en": "Fuel Temperature Sensor A (G81): Signal Too Low",
+      "translation_ar": "حساس حرارة الوقود A ‏G81: الإشارة منخفضة جداً",
+      "english_text_kind": "source_label",
+      "definition_status": "source_specific_label_requires_oem_confirmation",
+      "translation_status": "reviewed_translation",
+      "audi_applicability_status": "pending_model_engine_ecu_verification",
+      "checked_on": "2026-10-31",
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/16564/P0180",
+          "locator": "DTC definition heading",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Ross-Tech wording must not be presented as a universal SAE/OEM definition. Match ECU/scanner text; independent OEM confirmation remains pending."
+      ],
+      "previous_review_id": "AUDI-20261030-B04-P0180",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "conflict_not_resolved",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-P0185",
+      "code": "P0185",
+      "original_row_ids": [
+        "AUDI-DTC-0092"
+      ],
+      "definition_en": "Fuel Temperature Sensor B (G248): Circuit Low Input",
+      "translation_ar": "حساس حرارة الوقود B ‏G248: دخل الدائرة منخفض",
+      "english_text_kind": "source_label",
+      "definition_status": "source_specific_label_requires_oem_confirmation",
+      "translation_status": "reviewed_translation",
+      "audi_applicability_status": "pending_model_engine_ecu_verification",
+      "checked_on": "2026-10-31",
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/16569/P0185",
+          "locator": "DTC definition heading",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Ross-Tech wording must not be presented as a universal SAE/OEM definition. Match ECU/scanner text; independent OEM confirmation remains pending."
+      ],
+      "previous_review_id": "AUDI-20261030-B04-P0185",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "conflict_not_resolved",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-P0235",
+      "code": "P0235",
+      "original_row_ids": [
+        "AUDI-DTC-0109"
+      ],
+      "definition_en": "Turbocharger/supercharger boost sensor A circuit",
+      "translation_ar": "دائرة حساس ضغط الشحن A للشاحن التوربيني أو الشاحن الفائق",
+      "english_text_kind": "source_label",
+      "definition_status": "oem_definition_verified_scoped",
+      "translation_status": "reviewed_translation",
+      "audi_applicability_status": "Audi Q7 MY2014 CTWA/CTWB reference only",
+      "checked_on": "2026-10-31",
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/16619/P0235/000565",
+          "locator": "DTC definition heading",
+          "checked_on": "2026-10-31"
+        },
+        {
+          "publisher": "Audi",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2013/MC-10121466-9999.pdf",
+          "locator": "2014 Audi Q7, CTWA/CTWB DTC chart, printed page 174, PDF page 184",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Ross-Tech wording must not be presented as a universal SAE/OEM definition. Match ECU/scanner text; independent OEM confirmation remains pending.",
+        "Audi Q7 MY2014 CTWA/CTWB reference, printed page 174, describes boost sensor A circuitry; retain this as separate OEM wording, do not collapse into pressure regulation.",
+        "OEM wording already present as a separate batch04 variant is now preferred ONLY within that documented scope; Ross-Tech pressure-regulation wording remains quarantined for broader application."
+      ],
+      "oem_variant": {
+        "definition_en": "Boost-pressure sensor A circuit for turbocharger/supercharger",
+        "translation_ar": "دائرة حساس ضغط الشحن A للشاحن التوربيني أو الشاحن الفائق",
+        "text_kind": "paraphrase",
+        "scope": "Audi Q7 MY2014 CTWA/CTWB",
+        "source_url": "https://static.nhtsa.gov/odi/tsbs/2013/MC-10121466-9999.pdf",
+        "printed_page": 174
+      },
+      "previous_review_id": "AUDI-20261030-B04-P0235",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "oem_definition_verified_scoped_legacy_conflict_retained",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant.",
+      "legacy_conflicting_label": "Boost Pressure: Regulation Range not Reached"
+    },
+    {
+      "review_id": "AUDI-20261031-B06-P1263",
+      "code": "P1263",
+      "original_row_ids": [
+        "AUDI-DTC-0327"
+      ],
+      "original_source_heading": "17673/P1266/004709 - PD Unit Injector: Cylinder 2 (N241): Implausible Signal",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_status": "code_heading_conflict_hold",
+      "translation_status": "withheld_code_conflict",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/17671/P1263/004707",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        }
+      ],
+      "notes": [
+        "Code in page heading differs from requested code. No definition or translation approved for this code."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-P1263",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "conflict_not_resolved",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-00105",
+      "code": "00105",
+      "original_row_ids": [
+        "AUDI-DTC-0603"
+      ],
+      "original_source_heading": "00105 - Signal Central Locking SAVE/LOCK Drivers Side",
+      "definition_en": "Signal Central Locking SAVE/LOCK Drivers Side",
+      "translation_ar": "إشارة القفل المركزي SAVE/LOCK في جهة السائق",
+      "definition_status": "source_spelling_ambiguity_hold",
+      "translation_status": "candidate_translation_not_approved",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [
+        {
+          "fault_text_en": "Implausible Signal",
+          "fault_translation_ar": "إشارة غير منطقية",
+          "source_heading_code": "00105",
+          "match_rule": "Match the scanner fault subtype and ECU; do not choose from the base code alone."
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/00105",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        }
+      ],
+      "notes": [
+        "SAVE/LOCK retained as printed; SAFE not silently substituted.",
+        "SAVE / Won’t save spelling is not silently rewritten to SAFE; code-specific factory text or authoritative corrected wording is required."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-00105",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "conflict_not_resolved",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-00873",
+      "code": "00873",
+      "original_row_ids": [
+        "AUDI-DTC-0718"
+      ],
+      "original_source_heading": "00871 - Bass Speaker Rear Right (R17)",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_status": "code_heading_conflict_hold",
+      "translation_status": "withheld_code_conflict",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/00873",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        }
+      ],
+      "notes": [
+        "Code in page heading differs from requested code. No definition or translation approved for this code."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-00873",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "conflict_not_resolved",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01463",
+      "code": "01463",
+      "original_row_ids": [
+        "AUDI-DTC-0846"
+      ],
+      "original_source_heading": "01370 - Alarm triggered by Sensor for Anti-Theft Alarm System",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_status": "code_heading_conflict_hold",
+      "translation_status": "withheld_code_conflict",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01463",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        }
+      ],
+      "notes": [
+        "Code in page heading differs from requested code. No definition or translation approved for this code."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01463",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "conflict_not_resolved",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01559",
+      "code": "01559",
+      "original_row_ids": [
+        "AUDI-DTC-0866"
+      ],
+      "original_source_heading": "01559 - Drivers Door; 59-00 Can't Unlock / 60-00 Won't save",
+      "definition_en": "Driver’s Door; 59-00 Can't Unlock / 60-00 Won't save",
+      "translation_ar": "باب السائق؛ 59-00 تعذر فتح القفل؛ الوصف الفرعي 60-00 يحتاج تأكيداً بسبب صياغة المصدر",
+      "definition_status": "source_wording_conflict_hold",
+      "translation_status": "candidate_translation_not_approved",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01559",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        }
+      ],
+      "notes": [
+        "01559: unclear wording \"Won't save\" for 60-00; 01573: conflicting passenger/rear-left/rear-right descriptions. Source text retained; no location/subtype inferred.",
+        "SAVE / Won’t save spelling is not silently rewritten to SAFE; code-specific factory text or authoritative corrected wording is required."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01559",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "conflict_not_resolved",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01573",
+      "code": "01573",
+      "original_row_ids": [
+        "AUDI-DTC-0872"
+      ],
+      "original_source_heading": "01573 - Alarm triggered by Door Contact Switch; Passenger Side",
+      "definition_en": "Alarm triggered by Door Contact Switch; Passenger Side",
+      "translation_ar": "تفعيل الإنذار بواسطة مفتاح تلامس باب الراكب؛ جهة الباب تحتاج تأكيداً",
+      "definition_status": "source_wording_conflict_hold",
+      "translation_status": "candidate_translation_not_approved",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01573",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        }
+      ],
+      "notes": [
+        "01559: unclear wording \"Won't save\" for 60-00; 01573: conflicting passenger/rear-left/rear-right descriptions. Source text retained; no location/subtype inferred.",
+        "Third-party user scans suggest rear-left wording, but no authoritative Audi/Ross-Tech correction was found; these scans are not used to resolve the conflict."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01573",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "conflict_not_resolved",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-P0A1F",
+      "code": "P0A1F",
+      "original_row_ids": [
+        "AUDI-DTC-0237"
+      ],
+      "definition_en": "Battery Energy Control Module",
+      "translation_ar": "وحدة التحكم بطاقة البطارية",
+      "english_text_kind": "source_label",
+      "definition_status": "verified_component_label_subtype_not_specified",
+      "translation_status": "reviewed_translation",
+      "audi_applicability_status": "pending_model_engine_ecu_verification",
+      "checked_on": "2026-10-31",
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/P0A1F",
+          "locator": "DTC definition heading",
+          "checked_on": "2026-10-31"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Ross-Tech special note is specifically Bentley Bentayga W12; it is NOT evidence that this configuration applies to Audi. Audi scope still unverified.",
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "previous_review_id": "AUDI-20261030-B04-P0A1F",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-P1740",
+      "code": "P1740",
+      "original_row_ids": [
+        "AUDI-DTC-0466"
+      ],
+      "original_source_heading": "18148/P1740/005952 - Clutch Temperature Monitoring",
+      "definition_en": "Clutch Temperature Monitoring",
+      "translation_ar": "مراقبة حرارة القابض",
+      "definition_status": "oem_definition_verified_scoped",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/18148/P1740/005952",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Audi",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10128006-9999.pdf",
+          "locator": "TSB 2030477/9, pages 1-3",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Clutch Temperature Monitoring is itself the OEM label, not an incomplete component name. Do not append unverified electrical/high-temperature failure text."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-P1740",
+      "prior_record_preserved": true,
+      "new_verified_variants": [
+        {
+          "symptom_code": "8031",
+          "definition_en": "Clutch Temperature Monitoring",
+          "translation_ar": "مراقبة حرارة القابض",
+          "scope": "S4/S5 MY2010-2013; RS5/S6/S7 MY2013; 7-speed S tronic; J217 address 02; DTC and symptom must both match",
+          "source_url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10128006-9999.pdf",
+          "source_page": 2
+        }
+      ],
+      "review_outcome": "oem_definition_and_symptom_code_verified_scoped",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-P2543",
+      "code": "P2543",
+      "original_row_ids": [
+        "AUDI-DTC-0548"
+      ],
+      "original_source_heading": "18975/P2543 - Low Pressure Fuel Sensor (G410)",
+      "definition_en": "Low Pressure Fuel Sensor (G410)",
+      "translation_ar": "حساس ضغط الوقود المنخفض (G410)",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/18975/P2543",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-P2543",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-00301",
+      "code": "00301",
+      "original_row_ids": [
+        "AUDI-DTC-0634"
+      ],
+      "original_source_heading": "00301 - ABS Return Flow Pump (V39)",
+      "definition_en": "ABS Return Flow Pump (V39)",
+      "translation_ar": "مضخة التدفق الراجع لنظام ABS (V39)",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/00301",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-00301",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-00741",
+      "code": "00741",
+      "original_row_ids": [
+        "AUDI-DTC-0688"
+      ],
+      "original_source_heading": "00741 - Brake Pedal Monitoring",
+      "definition_en": "Brake Pedal Monitoring",
+      "translation_ar": "مراقبة دواسة الفرامل",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/00741",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-00741",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-00792",
+      "code": "00792",
+      "original_row_ids": [
+        "AUDI-DTC-0698"
+      ],
+      "original_source_heading": "00792 - A/C Pressure Switch (F129)",
+      "definition_en": "A/C Pressure Switch (F129)",
+      "translation_ar": "مفتاح ضغط المكيف (F129)",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/00792",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-00792",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-00812",
+      "code": "00812",
+      "original_row_ids": [
+        "AUDI-DTC-0703"
+      ],
+      "original_source_heading": "00812 - Brake Pressure Release Solenoid (F84)",
+      "definition_en": "Brake Pressure Release Solenoid (F84)",
+      "translation_ar": "الصمام الكهرومغناطيسي لتفريغ ضغط الفرامل (F84)",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/00812",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-00812",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-00927",
+      "code": "00927",
+      "original_row_ids": [
+        "AUDI-DTC-0734"
+      ],
+      "original_source_heading": "00927 - Terminal 30 (Right)",
+      "definition_en": "Terminal 30 (Right)",
+      "translation_ar": "الطرف 30 الأيمن",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/00927",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-00927",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01039",
+      "code": "01039",
+      "original_row_ids": [
+        "AUDI-DTC-0759"
+      ],
+      "original_source_heading": "01039 - Engine Coolant Temperature Sensor (G2)",
+      "definition_en": "Engine Coolant Temperature Sensor (G2)",
+      "translation_ar": "حساس حرارة سائل تبريد المحرك (G2)",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01039",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01039",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01119",
+      "code": "01119",
+      "original_row_ids": [
+        "AUDI-DTC-0769"
+      ],
+      "original_source_heading": "01119 - Gear Recognition Signal",
+      "definition_en": "Gear Recognition Signal",
+      "translation_ar": "إشارة التعرف على الترس",
+      "definition_status": "verified_source_state_or_function_label",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01119",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        }
+      ],
+      "notes": [
+        "Earlier classification as merely an incomplete component name was too broad. Source defines a state/function; no invented failure elaborator is required for the base label."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01119",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "classification_corrected_source_state_or_function_label",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant.",
+      "interpretation_ar": "يسمي المصدر هذا الرمز ملاحظة مرتبطة بإشارة التعرف على الترس، ويوجه إلى فحص وحدة ناقل الحركة؛ لا يثبت تلف حساس."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01128",
+      "code": "01128",
+      "original_row_ids": [
+        "AUDI-DTC-0770"
+      ],
+      "original_source_heading": "01128 - Immobilizer Pickup Coil (D2)",
+      "definition_en": "Immobilizer Pickup Coil (D2)",
+      "translation_ar": "ملف التقاط إشارة مانع التشغيل (D2)",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01128",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01128",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01200",
+      "code": "01200",
+      "original_row_ids": [
+        "AUDI-DTC-0783"
+      ],
+      "original_source_heading": "01200 - ABS Valves Supply Voltage",
+      "definition_en": "ABS Valves Supply Voltage",
+      "translation_ar": "جهد تغذية صمامات ABS",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01200",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01200",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01206",
+      "code": "01206",
+      "original_row_ids": [
+        "AUDI-DTC-0786"
+      ],
+      "original_source_heading": "01206 - Signal for Duration of Ignition Off Time",
+      "definition_en": "Signal for Duration of Ignition Off Time",
+      "translation_ar": "إشارة مدة إيقاف الإشعال",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01206",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01206",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01232",
+      "code": "01232",
+      "original_row_ids": [
+        "AUDI-DTC-0796"
+      ],
+      "original_source_heading": "01232 - A/C Compressor Regulator Valve (N280)",
+      "definition_en": "A/C Compressor Regulator Valve (N280)",
+      "translation_ar": "صمام تنظيم ضاغط المكيف (N280)",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01232",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01232",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01273",
+      "code": "01273",
+      "original_row_ids": [
+        "AUDI-DTC-0803"
+      ],
+      "original_source_heading": "01273 - Fresh Air Blower (V2)",
+      "definition_en": "Fresh Air Blower (V2)",
+      "translation_ar": "مروحة الهواء النقي (V2)",
+      "definition_status": "verified_oem_variants_with_base_label",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01273",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Audi",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2013/MC-10123929-9999.pdf",
+          "locator": "2033596/1, page 1; historical definition evidence only",
+          "checked_on": "2026-10-31"
+        },
+        {
+          "publisher": "Audi",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2014/SB-10068129-6903.pdf",
+          "locator": "2033596/3, pages 1-2; newer bulletin retains these exact code/subcode pairs",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Historical /1 bulletin provides wording; /3 supersedes its service instructions. This review does not prescribe repairs or transfer scope to all model years."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01273",
+      "prior_record_preserved": true,
+      "new_verified_variants": [
+        {
+          "subcode": "009",
+          "definition_en": "Blower V2 circuit open or grounded",
+          "translation_ar": "دائرة مروحة الهواء النقي V2: انقطاع أو قصر إلى الأرضي",
+          "text_kind": "technical_paraphrase",
+          "scope": "Audi of America TSB 2033596/1: A4 2009-2011; A5 2008-2011; Q5 2009-2011; A5 Cabriolet 2010-2011. MY2012 only within page-1 VIN limits. HVAC address 08.",
+          "source_url": "https://static.nhtsa.gov/odi/tsbs/2013/MC-10123929-9999.pdf",
+          "source_page": 1
+        },
+        {
+          "subcode": "006",
+          "definition_en": "Blower V2 circuit shorted to battery positive",
+          "translation_ar": "دائرة مروحة الهواء النقي V2: قصر إلى موجب البطارية",
+          "text_kind": "technical_paraphrase",
+          "scope": "Audi of America TSB 2033596/1: A4 2009-2011; A5 2008-2011; Q5 2009-2011; A5 Cabriolet 2010-2011. MY2012 only within page-1 VIN limits. HVAC address 08.",
+          "source_url": "https://static.nhtsa.gov/odi/tsbs/2013/MC-10123929-9999.pdf",
+          "source_page": 1
+        }
+      ],
+      "review_outcome": "oem_fault_variants_verified_scoped",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01418",
+      "code": "01418",
+      "original_row_ids": [
+        "AUDI-DTC-0837"
+      ],
+      "original_source_heading": "01418 - Switch Valve 1 for Electronic Stability Program (N225)",
+      "definition_en": "Switch Valve 1 for Electronic Stability Program (N225)",
+      "translation_ar": "صمام التحويل 1 لنظام الثبات الإلكتروني (N225)",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01418",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01418",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01419",
+      "code": "01419",
+      "original_row_ids": [
+        "AUDI-DTC-0838"
+      ],
+      "original_source_heading": "01419 - Switch Valve 2 for Electronic Stability Program (N226)",
+      "definition_en": "Switch Valve 2 for Electronic Stability Program (N226)",
+      "translation_ar": "صمام التحويل 2 لنظام الثبات الإلكتروني (N226)",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01419",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01419",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01420",
+      "code": "01420",
+      "original_row_ids": [
+        "AUDI-DTC-0839"
+      ],
+      "original_source_heading": "01420 - High Pressure Switch Valve 1 for Electronic Stability Program (N227)",
+      "definition_en": "High Pressure Switch Valve 1 for Electronic Stability Program (N227)",
+      "translation_ar": "صمام تحويل الضغط العالي 1 لنظام الثبات الإلكتروني (N227)",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01420",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01420",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01421",
+      "code": "01421",
+      "original_row_ids": [
+        "AUDI-DTC-0840"
+      ],
+      "original_source_heading": "01421 - High Pressure Switch Valve 2 for Electronic Stability Program (N228)",
+      "definition_en": "High Pressure Switch Valve 2 for Electronic Stability Program (N228)",
+      "translation_ar": "صمام تحويل الضغط العالي 2 لنظام الثبات الإلكتروني (N228)",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01421",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01421",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01422",
+      "code": "01422",
+      "original_row_ids": [
+        "AUDI-DTC-0841"
+      ],
+      "original_source_heading": "01422 - Hydraulic Pump for Electronic Stability Program (V156)",
+      "definition_en": "Hydraulic Pump for Electronic Stability Program (V156)",
+      "translation_ar": "المضخة الهيدروليكية لنظام الثبات الإلكتروني (V156)",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01422",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01422",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01517",
+      "code": "01517",
+      "original_row_ids": [
+        "AUDI-DTC-0855"
+      ],
+      "original_source_heading": "01517 - Control Module for Trailer/Towing Sensor (J345)",
+      "definition_en": "Control Module for Trailer/Towing Sensor (J345)",
+      "translation_ar": "وحدة التحكم بالمقطورة أو حساس السحب (J345)",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01517",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01517",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01570",
+      "code": "01570",
+      "original_row_ids": [
+        "AUDI-DTC-0870"
+      ],
+      "original_source_heading": "01570 - Turn-Off Delay; Terminal 15",
+      "definition_en": "Turn-Off Delay; Terminal 15",
+      "translation_ar": "تأخير الإيقاف للطرف 15",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01570",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01570",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01738",
+      "code": "01738",
+      "original_row_ids": [
+        "AUDI-DTC-0882"
+      ],
+      "original_source_heading": "01738 - Crash Sensor for Front Airbag; Drivers Side (G283)",
+      "definition_en": "Crash Sensor for Front Airbag; Drivers Side (G283)",
+      "translation_ar": "حساس اصطدام الوسادة الهوائية الأمامية في جهة السائق (G283)",
+      "definition_status": "verified_source_label_with_separate_variants",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01738",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        }
+      ],
+      "notes": [
+        "Failure-mode wording appears in the body, not in the main heading. No numeric subcode inferred. Volkswagen New Beetle recall is not treated as Audi applicability."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01738",
+      "prior_record_preserved": true,
+      "new_verified_variants": [
+        {
+          "subcode": null,
+          "fault_text_en": "Open or Short to Plus",
+          "fault_translation_ar": "دائرة مفتوحة أو قصر إلى الموجب",
+          "scope": "Ross-Tech code-specific solution note; observed when crash-sensor connector wires are reversed. No Audi model applicability inferred.",
+          "source_url": "https://wiki.ross-tech.com/wiki/index.php/01738",
+          "locator": "Possible Solutions, wiring-reversal note"
+        }
+      ],
+      "review_outcome": "ross_tech_fault_variant_verified",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01739",
+      "code": "01739",
+      "original_row_ids": [
+        "AUDI-DTC-0883"
+      ],
+      "original_source_heading": "01739 - Crash Sensor for Front Airbag: Passenger Side (G284)",
+      "definition_en": "Crash Sensor for Front Airbag: Passenger Side (G284)",
+      "translation_ar": "حساس اصطدام الوسادة الهوائية الأمامية في جهة الراكب (G284)",
+      "definition_status": "verified_source_label_with_separate_variants",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01739",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        }
+      ],
+      "notes": [
+        "Failure-mode wording appears in the body, not in the main heading. No numeric subcode inferred. Volkswagen New Beetle recall is not treated as Audi applicability."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01739",
+      "prior_record_preserved": true,
+      "new_verified_variants": [
+        {
+          "subcode": null,
+          "fault_text_en": "Open or Short to Plus",
+          "fault_translation_ar": "دائرة مفتوحة أو قصر إلى الموجب",
+          "scope": "Ross-Tech code-specific solution note; observed when crash-sensor connector wires are reversed. No Audi model applicability inferred.",
+          "source_url": "https://wiki.ross-tech.com/wiki/index.php/01739",
+          "locator": "Possible Solutions, wiring-reversal note"
+        }
+      ],
+      "review_outcome": "ross_tech_fault_variant_verified",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01795",
+      "code": "01795",
+      "original_row_ids": [
+        "AUDI-DTC-0886"
+      ],
+      "original_source_heading": "01795 - Vacuum System for Brakes",
+      "definition_en": "Vacuum System for Brakes",
+      "translation_ar": "نظام التفريغ للفرامل",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01795",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01795",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01826",
+      "code": "01826",
+      "original_row_ids": [
+        "AUDI-DTC-0891"
+      ],
+      "original_source_heading": "01826 - Sensor for Steering Angle (G85); Supply Voltage Terminal 30",
+      "definition_en": "Sensor for Steering Angle (G85); Supply Voltage Terminal 30",
+      "translation_ar": "حساس زاوية التوجيه: جهد تغذية الطرف 30 (G85)",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01826",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01826",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01842",
+      "code": "01842",
+      "original_row_ids": [
+        "AUDI-DTC-0893"
+      ],
+      "original_source_heading": "01842 - Potentiometer/Actuator for Temperature Flap; Right (G221)",
+      "definition_en": "Potentiometer/Actuator for Temperature Flap; Right (G221)",
+      "translation_ar": "مقياس الجهد أو مشغل بوابة الحرارة اليمنى (G221)",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01842",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01842",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-01844",
+      "code": "01844",
+      "original_row_ids": [
+        "AUDI-DTC-0894"
+      ],
+      "original_source_heading": "01844 - Control Module for Fresh Air Blower (J126)",
+      "definition_en": "Control Module for Fresh Air Blower (J126)",
+      "translation_ar": "وحدة التحكم بمروحة الهواء النقي (J126)",
+      "definition_status": "verified_oem_variants_with_base_label",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01844",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Audi",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2013/MC-10123929-9999.pdf",
+          "locator": "2033596/1, page 1; historical definition evidence only",
+          "checked_on": "2026-10-31"
+        },
+        {
+          "publisher": "Audi",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2014/SB-10068129-6903.pdf",
+          "locator": "2033596/3, pages 1-2; newer bulletin retains these exact code/subcode pairs",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Historical /1 bulletin provides wording; /3 supersedes its service instructions. This review does not prescribe repairs or transfer scope to all model years."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-01844",
+      "prior_record_preserved": true,
+      "new_verified_variants": [
+        {
+          "subcode": "004",
+          "definition_en": "J126 blower controller not communicating",
+          "translation_ar": "وحدة التحكم بمروحة الهواء النقي J126: غياب الإشارة أو الاتصال",
+          "text_kind": "technical_paraphrase",
+          "scope": "Audi of America TSB 2033596/1: A4 2009-2011; A5 2008-2011; Q5 2009-2011; A5 Cabriolet 2010-2011. MY2012 only within page-1 VIN limits. HVAC address 08.",
+          "source_url": "https://static.nhtsa.gov/odi/tsbs/2013/MC-10123929-9999.pdf",
+          "source_page": 1
+        },
+        {
+          "subcode": "014",
+          "definition_en": "J126 blower controller defective",
+          "translation_ar": "وحدة التحكم بمروحة الهواء النقي J126: خلل في الوحدة",
+          "text_kind": "technical_paraphrase",
+          "scope": "Audi of America TSB 2033596/1: A4 2009-2011; A5 2008-2011; Q5 2009-2011; A5 Cabriolet 2010-2011. MY2012 only within page-1 VIN limits. HVAC address 08.",
+          "source_url": "https://static.nhtsa.gov/odi/tsbs/2013/MC-10123929-9999.pdf",
+          "source_page": 1
+        }
+      ],
+      "review_outcome": "oem_fault_variants_verified_scoped",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-02275",
+      "code": "02275",
+      "original_row_ids": [
+        "AUDI-DTC-0917"
+      ],
+      "original_source_heading": "02275 - Quiescent Current Stage 4",
+      "definition_en": "Quiescent Current Stage 4",
+      "translation_ar": "المرحلة 4 لتيار السكون",
+      "definition_status": "verified_source_state_or_function_label",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/02275",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        }
+      ],
+      "notes": [
+        "Earlier classification as merely an incomplete component name was too broad. Source defines a state/function; no invented failure elaborator is required for the base label."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-02275",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "classification_corrected_source_state_or_function_label",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant.",
+      "interpretation_ar": "المرحلة 4 لتيار السكون هي تسمية الحالة في المصدر؛ لا تثبت وحدها تلف البطارية أو وحدة التحكم."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-03123",
+      "code": "03123",
+      "original_row_ids": [
+        "AUDI-DTC-0976"
+      ],
+      "original_source_heading": "03123 - Terminal 30 - 2",
+      "definition_en": "Terminal 30 - 2",
+      "translation_ar": "الطرف 30 - 2",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/03123",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-03123",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-03124",
+      "code": "03124",
+      "original_row_ids": [
+        "AUDI-DTC-0977"
+      ],
+      "original_source_heading": "03124 - Terminal 30 - 3",
+      "definition_en": "Terminal 30 - 3",
+      "translation_ar": "الطرف 30 - 3",
+      "definition_status": "verified_component_or_system_label_subtype_not_specified",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/03124",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        },
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://www.ross-tech.com/vcds/tour/dtc_screen.php",
+          "locator": "Fault-code format explanation; component identifiers and fault elaborators are separate",
+          "checked_on": "2026-10-31"
+        }
+      ],
+      "notes": [
+        "Base name remains usable as a source-verified label; no short/open/defective subtype is fabricated from possible causes."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-03124",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "base_label_reconfirmed_fault_subtype_still_needed",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant."
+    },
+    {
+      "review_id": "AUDI-20261031-B06-03271",
+      "code": "03271",
+      "original_row_ids": [
+        "AUDI-DTC-0983"
+      ],
+      "original_source_heading": "03271 - Installation of Positioning Motor for Back Pressure Flap",
+      "definition_en": "Installation of Positioning Motor for Back Pressure Flap",
+      "translation_ar": "تركيب محرك ضبط بوابة الضغط الخلفي",
+      "definition_status": "verified_source_state_or_function_label",
+      "translation_status": "reviewed_source_translation",
+      "audi_applicability_status": "pending_vehicle_model_engine_ecu_match",
+      "source_variants": [],
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/03271",
+          "checked_on": "2026-10-31",
+          "locator": "DTC heading and available fault-variant subheadings"
+        }
+      ],
+      "notes": [
+        "Earlier classification as merely an incomplete component name was too broad. Source defines a state/function; no invented failure elaborator is required for the base label."
+      ],
+      "checked_on": "2026-10-31",
+      "english_text_kind": "source_label_with_typographical_normalization",
+      "previous_review_id": "AUDI-20261030-B05-03271",
+      "prior_record_preserved": true,
+      "new_verified_variants": [],
+      "review_outcome": "classification_corrected_source_state_or_function_label",
+      "required_to_complete": [
+        "Full diagnostic text including fault elaborator/subcode",
+        "ECU part number and software",
+        "Vehicle model/year/engine and applicable factory DTC table"
+      ],
+      "selection_rule": "Base code alone must not select a fault subtype or model-specific variant.",
+      "interpretation_ar": "الرمز يتعلق بتركيب محرك ضبط البوابة؛ يذكر المصدر عدم تركيب V71 كسبب محتمل، وليس كتشخيص مؤكد لكل سيارة."
+    }
+  ]
+}
