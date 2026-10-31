@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-31",
+  "sources": [
+    {
+      "url": "https://asos.renault.com/offers/documentation",
+      "publisher": "Renault Group",
+      "role": "Official access route to New Dialogys; does not itself supply a DTC table",
+      "retrieval": "Search index describes documentation offers; direct open returns no readable lines."
+    },
+    {
+      "url": "https://www.daciadusterexplorers.co.uk/media/Duster_Service_Manual_2009.pdf",
+      "role": "Third-party-hosted candidate copy of Renault manual",
+      "retrieval": "Direct web fetch rejected due to size 32194750 bytes; not inspected as PDF, no approval."
+    },
+    {
+      "url": "https://manualzz.com/doc/o/2d3qbd/dacia-duster-2009-workshop-manual-13b-diesel-injection",
+      "locator": "MR-453-X79-13B000, V1, 13B-22 through 13B-24",
+      "role": "Previously supplied source reproduction, not authenticated against official original",
+      "observation": "Associated numeric entries visible without P prefix; no automatic OBD equivalence approved."
+    }
+  ]
+}
