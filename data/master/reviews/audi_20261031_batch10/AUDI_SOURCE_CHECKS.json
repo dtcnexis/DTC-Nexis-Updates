@@ -1,0 +1,77 @@
+{
+  "checked_on": "2026-10-31",
+  "previous_commit": "91283cc12a0fe7e2e72ff265d5201a8e78f2cf45",
+  "new_accepted_definitions": 0,
+  "counts": {
+    "original_unique_codes": 1000,
+    "reviewed_including_scoped": 970,
+    "base_labels_without_verified_variant": 22,
+    "source_conflicts": 8
+  },
+  "records": [
+    {
+      "code": "01232",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10204735-0001.pdf",
+      "publisher": "Audi of America via NHTSA",
+      "document": "2061277/2",
+      "locator": "pages 1–2",
+      "status": "context_only_not_code_definition",
+      "accepted": false,
+      "note": "N280 issue; no explicit 01232 mapping."
+    },
+    {
+      "code": "01232",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2014/MC-10124804-9999.pdf",
+      "publisher": "Audi of America via NHTSA",
+      "document": "2038023/1",
+      "locator": "page 1",
+      "status": "not_evidence_for_code_definition",
+      "accepted": false,
+      "note": "A3 Sedan MY2015 condition explicitly has no stored DTCs."
+    },
+    {
+      "code": "00873",
+      "url": "https://wiki.ross-tech.com/wiki/index.php/00873",
+      "publisher": "Ross-Tech",
+      "revision": 4972,
+      "status": "source_internal_number_conflict_reconfirmed",
+      "accepted": false,
+      "observed_heading_code": "00871",
+      "definition_en": null,
+      "translation_ar": null
+    },
+    {
+      "code": "01463",
+      "url": "https://wiki.ross-tech.com/wiki/index.php/01463",
+      "publisher": "Ross-Tech",
+      "revision": 4320,
+      "status": "source_internal_number_conflict_reconfirmed",
+      "accepted": false,
+      "observed_heading_code": "01370",
+      "definition_en": null,
+      "translation_ar": null
+    },
+    {
+      "code": "P1263",
+      "url": "https://wiki.ross-tech.com/wiki/index.php/17671/P1263/004707",
+      "publisher": "Ross-Tech",
+      "revision": 6126,
+      "status": "source_internal_number_conflict_reconfirmed",
+      "accepted": false,
+      "observed_heading_code": "17673/P1266/004709",
+      "definition_en": null,
+      "translation_ar": null
+    },
+    {
+      "code": "01826",
+      "url": "https://wiki.ross-tech.com/wiki/index.php/01826",
+      "publisher": "Ross-Tech",
+      "status": "existing_base_label_reconfirmed_no_new_variant",
+      "accepted_as_new_definition": false,
+      "note": "Possible causes must not be promoted to a fault elaborator."
+    }
+  ],
+  "originals_preserved": true,
+  "program_modified": false,
+  "release_published": false
+}
