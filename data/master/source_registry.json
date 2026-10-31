@@ -212,10 +212,10 @@
       "verification": "manifest_only"
     }
   ],
-  "master_status": "PERSISTED_CLOUD_MULTI_SOURCE_7656_ROWS",
+  "master_status": "PERSISTED_CLOUD_MULTI_SOURCE_8637_ROWS",
   "master_manifest_path": "data/master/all_collected_catalog_manifest.json",
-  "materialized_text_records": 7656,
-  "current_data_collections_count": 30,
+  "materialized_text_records": 8637,
+  "current_data_collections_count": 35,
   "additional_permanent_sources": [
     {
       "source": "C_CODES_278_STAGING_RECONCILED.json",
@@ -322,9 +322,30 @@
       "original_batch01_records_already_included": 47,
       "additional_rows_from_duplicate_archive": 0,
       "preservation": "PERMANENT_NOT_OEM_VERIFIED"
+    },
+    {
+      "brand": "Audi",
+      "source": "Audi original index reviewed code coverage",
+      "raw_original_file": "AUDI_DTC_BATCH01_INDEX.json",
+      "source_review_location": "data/master/reviews/audi_20261031_final/coverage_*.json",
+      "source_type": "PREEXISTING_GITHUB_REVIEW_SOURCE_WITH_ORIGINAL_ROW_IDS",
+      "saved_parts": [
+        "data/master/brands/audi_index_new_part01.json",
+        "data/master/brands/audi_index_new_part02.json",
+        "data/master/brands/audi_index_new_part03.json",
+        "data/master/brands/audi_index_new_part04.json",
+        "data/master/brands/audi_index_new_part05.json"
+      ],
+      "unique_original_index_codes": 1000,
+      "already_present_in_detail": 19,
+      "new_index_codes_counted": 981,
+      "remaining_under_monitoring": 30,
+      "source_bytes_directly_preserved_in_master": false,
+      "source_reference_in_owner_library": true,
+      "verification": "CODE_INDEXED_TECHNICAL_SCOPED_QA_PENDING_NOT_RELEASED"
     }
   ],
-  "remaining_source_work": "Audi INDEX source, remaining 488-entry Library index reconciliation (including other manufacturer sources), and technical/OEM quality validation remain open. Audi DETAIL/Dacia batch01/Toyota EXP002/Honda batch02 extracted and saved; no retake from scratch. Update 2026-10-30: standalone Mercedes Batch01 raw content recovered from Drive, exact file archived and all 66 core records matched; Audi INDEX remains inaccessible.",
+  "remaining_source_work": "Audi original 1000 distinct code strings are now indexed in permanent master, with 30 codes retained in monitoring for OEM/context proof; other 488 Library source inventory entries still need source-by-source technical reconciliation. Main app, installer and feed unchanged.",
   "detail_recovery_20261030": {
     "counted_rows_unchanged": 7656,
     "canonical_files_unchanged": 30,
