@@ -1,0 +1,35 @@
+{
+  "original_duplicate_code": "01314",
+  "original_rows": [
+    {
+      "brand": "Audi",
+      "code": "01314",
+      "code_format": "VAG legacy decimal; page label 01314",
+      "ecu": "غير مؤكد",
+      "definition_en": "Engine Control Module (variant-dependent)",
+      "translation_ar": "وحدة التحكم بالمحرك – المعنى حسب الوصف الفرعي",
+      "category": "manufacturer_specific_VAG_legacy",
+      "verification_status": "قيد التوثيق",
+      "sources": "[{\"url\": \"https://wiki.ross-tech.com/wiki/index.php?pagefrom=01262&title=Category:Fault_Codes\", \"publisher\": \"Ross-Tech\", \"evidence\": \"category page title; code presence only\", \"checked_on\": \"2026-10-15\"}, {\"url\": \"https://wiki.ross-tech.com/wiki/index.php/01314\", \"publisher\": \"Ross-Tech\", \"source_version\": \"Web page as verified 2026-10-15\", \"checked_on\": \"2026-10-15\"}]",
+      "id": "AUDI-DTC-0814",
+      "origin": "batch01_index",
+      "source_reference": ""
+    },
+    {
+      "brand": "Audi",
+      "code": "01314",
+      "code_format": "",
+      "ecu": "",
+      "definition_en": "Engine Control Module: No Communications",
+      "translation_ar": "انقطاع الاتصال بوحدة التحكم بالمحرك",
+      "category": "manufacturer_specific_VAG_legacy",
+      "verification_status": "previous_batch_requires_scope_review",
+      "sources": "",
+      "id": "AUDI_DTC_01314",
+      "origin": "batch02",
+      "source_reference": "AUDI_DTC_BATCH01_DETAIL.json"
+    }
+  ],
+  "policy": "Preserve both original IDs; component label and no-communication subtype are distinct. Numeric/SAE aliases are not silently merged.",
+  "existing_github_overlap": "audi_batch01_detail.json and audi_legacy_detail.json contain semantically equal 20 records, 19 unique codes; not counted twice. Existing files and review batches retained."
+}
