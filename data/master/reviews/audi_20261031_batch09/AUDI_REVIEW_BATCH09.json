@@ -1,0 +1,117 @@
+{
+  "records": [
+    {
+      "review_id": "AUDI-20261031-B09-03123-011",
+      "code": "03123",
+      "original_row_ids": [
+        "AUDI-DTC-0976"
+      ],
+      "previous_review_id": "AUDI-20261031-B06-03123",
+      "definition_en": "Terminal 30 - 2: Open Circuit",
+      "translation_ar": "الطرف 30-2: دائرة مفتوحة",
+      "scope": {
+        "model": "Audi S7",
+        "model_year": 2014,
+        "controller_address": "09",
+        "controller": "J519",
+        "software_part_number": "4H0 907 063 CG",
+        "hardware_part_number": "4H0 907 063",
+        "component": "BCM1 2.0 H12 0130"
+      },
+      "definition_status": "verified_scoped_variant_ross_tech_staff_reviewed_case",
+      "translation_status": "reviewed_translation_with_stated_scope",
+      "sources": [
+        {
+          "publisher": "Ross-Tech Wiki",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/03123",
+          "revision": 8680,
+          "locator": "Special Notes and link to the 2014 S7 case"
+        },
+        {
+          "publisher": "Ross-Tech Forums",
+          "url": "https://forums.ross-tech.com/index.php?threads/18410/",
+          "locator": "Posts 5 and 6: scan and Jef staff reply; posts 10 and 14: Dana staff replies linking the resulting Wiki page",
+          "evidence_type": "Primary diagnostic report discussed by Ross-Tech employees; not an Audi factory table"
+        }
+      ],
+      "checked_on": "2026-10-31",
+      "originals_preserved": true,
+      "accepted": true,
+      "fault_subcode": "011",
+      "counts_as_new_scoped_code": true,
+      "match_rule": "Require code, elaborator and controller context; never select this variant from 03123 alone.",
+      "notes": [
+        "The label/subcode is explicitly quoted in a Ross-Tech employee reply. The base Wiki links this exact case.",
+        "The same thread includes another vehicle with this code in address 46; that case and controller are not merged into this record.",
+        "No VIN, registration, owner identity or device serial number copied."
+      ]
+    },
+    {
+      "review_id": "AUDI-20261031-B09-01559-59-00",
+      "code": "01559",
+      "original_row_ids": [
+        "AUDI-DTC-0866"
+      ],
+      "previous_review_id": "AUDI-20261031-B06-01559",
+      "definition_en": "Driver's Door: Can't Unlock",
+      "translation_ar": "باب السائق: تعذّر فتح القفل",
+      "scope": {
+        "match": "01559 with elaborator 59-00; vehicle/ECU applicability must match the diagnostic report"
+      },
+      "definition_status": "verified_partial_variant_other_variant_still_on_hold",
+      "translation_status": "reviewed_translation_with_stated_scope",
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01559",
+          "revision": 3213,
+          "locator": "Definition heading, 59-00 segment only"
+        }
+      ],
+      "checked_on": "2026-10-31",
+      "originals_preserved": true,
+      "accepted": true,
+      "fault_subcode": "59-00",
+      "counts_as_new_scoped_code": false,
+      "base_code_complete": false,
+      "unresolved_variant": "60-00",
+      "notes": [
+        "The earlier combined record remains unchanged. This adds a separately selectable verified segment.",
+        "The ambiguous 60-00 wording remains on hold; no correction from save to safe is approved."
+      ]
+    },
+    {
+      "review_id": "AUDI-20261031-B09-00105-fault-mode",
+      "code": "00105",
+      "original_row_ids": [
+        "AUDI-DTC-0603"
+      ],
+      "previous_review_id": "AUDI-20261031-B06-00105",
+      "definition_en": "Implausible Signal",
+      "translation_ar": "إشارة غير منطقية",
+      "scope": {
+        "field_only": "Fault elaborator; this does not approve or correct the SAVE/LOCK component wording."
+      },
+      "definition_status": "verified_field_only_base_terminology_still_on_hold",
+      "translation_status": "reviewed_translation_with_stated_scope",
+      "sources": [
+        {
+          "publisher": "Ross-Tech",
+          "url": "https://wiki.ross-tech.com/wiki/index.php/00105",
+          "revision": 4424,
+          "locator": "Fault-variant subheading"
+        }
+      ],
+      "checked_on": "2026-10-31",
+      "originals_preserved": true,
+      "accepted": false,
+      "field_verified": true,
+      "counts_as_new_scoped_code": false,
+      "base_code_complete": false,
+      "notes": [
+        "This elaborator already appeared in Batch05. This is a status clarification, not a new definition or additional unique code.",
+        "Full definition remains on hold due to the unresolved source spelling."
+      ]
+    }
+  ]
+}
