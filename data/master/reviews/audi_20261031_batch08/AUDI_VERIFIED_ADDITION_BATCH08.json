@@ -1,0 +1,44 @@
+{
+  "records": [
+    {
+      "review_id": "AUDI-20261031-B08-P0A1F-J840",
+      "code": "P0A1F",
+      "original_row_ids": [
+        "AUDI-DTC-0237"
+      ],
+      "previous_review_id": "AUDI-20261031-B06-P0A1F",
+      "definition_en": "Battery Energy Control Module",
+      "translation_ar": "وحدة التحكم بطاقة البطارية",
+      "definition_status": "verified_oem_label_with_scoped_monitoring_context",
+      "translation_status": "reviewed_translation",
+      "accepted": true,
+      "scope": {
+        "document": "2014 Audi Q5/SQ5 Quick Reference Specification Book",
+        "edition": "September 2013",
+        "model_year": 2014,
+        "system": "Battery Regulation Control Module J840",
+        "applicability_rule": "Only the J840 battery-system configuration covered by this table; not every Q5/SQ5 powertrain and not all Audi vehicles."
+      },
+      "sources": [
+        {
+          "publisher": "Audi",
+          "host": "NHTSA",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2013/MC-10121465-9999.pdf",
+          "printed_page": 235,
+          "pdf_page_1_based": 247,
+          "locator": "Battery Regulation Control Module - J840; P0A1F row",
+          "checked_on": "2026-10-31",
+          "verification": "PDF text and page image checked"
+        }
+      ],
+      "monitoring_context_en": "The J840 table associates this code with monitoring of contactor power, the latch and sustained-power signals, and watchdog operation. These conditions remain diagnostic context rather than additions to the code title.",
+      "monitoring_context_ar": "يربط جدول J840 هذا الكود بمراقبة تغذية موصلات القدرة، وإشارات تثبيت التغذية واستمرارها، وعمل مؤقت المراقبة. هذه شروط رصد وليست أوصافاً فرعية تُضاف إلى اسم الكود.",
+      "source_variation_note": "The same book uses a high-voltage battery-pack label for P0A1F on printed page 225. That separate table is not merged with the J840 definition; ECU/system context is required.",
+      "previous_scope_note": "The earlier Ross-Tech Bentley-specific note remains preserved and is not used to establish Audi applicability.",
+      "fault_subcode": null,
+      "subcode_policy": "No numerical subcode or open/short/defective suffix invented.",
+      "closure_reason": "The original Audi J840 table confirms that the component label itself is the complete displayed DTC title in this scope. Lack of a fault-mode suffix is not a missing translation.",
+      "originals_preserved": true
+    }
+  ]
+}
