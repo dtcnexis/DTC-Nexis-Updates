@@ -1,0 +1,97 @@
+{
+  "schema": "dtcnexis-audi-index-reconciliation-v1",
+  "date": "2026-10-31",
+  "original_unique_codes_in_review": 1000,
+  "permanent_previous_detail_rows": 20,
+  "permanent_previous_detail_distinct_codes": 19,
+  "deduplicated_new_index_codes": 981,
+  "union_unique_Audi_codes": 1000,
+  "monitored_codes": [
+    "00105",
+    "00301",
+    "00741",
+    "00792",
+    "00812",
+    "00873",
+    "00927",
+    "01039",
+    "01128",
+    "01200",
+    "01206",
+    "01232",
+    "01418",
+    "01419",
+    "01420",
+    "01421",
+    "01422",
+    "01463",
+    "01517",
+    "01559",
+    "01570",
+    "01573",
+    "01795",
+    "01826",
+    "01842",
+    "03124",
+    "P0180",
+    "P0185",
+    "P1263",
+    "P2543"
+  ],
+  "monitored_count": 30,
+  "old_detail_overlapping_codes": [
+    "00446",
+    "00575",
+    "00928",
+    "01276",
+    "01314",
+    "01316",
+    "B2000",
+    "C10AC",
+    "P0016",
+    "P0106",
+    "P0171",
+    "P029900",
+    "P0300",
+    "P0401",
+    "P189C",
+    "P2002",
+    "P2015",
+    "P2187",
+    "U112200"
+  ],
+  "reconstructed_from": "Previously saved GitHub Audi coverage/index source IDs; raw bytes of original INDEX JSON not acquired in this operation",
+  "technical_status": "INDEX_COMPLETE_SOURCE_QA_INCOMPLETE_NO_RELEASE",
+  "new_files": [
+    {
+      "path": "data/master/brands/audi_index_new_part01.json",
+      "rows": 200,
+      "git_blob_sha": "da07dc0377822ca645e42285c6c7040a736f3498"
+    },
+    {
+      "path": "data/master/brands/audi_index_new_part02.json",
+      "rows": 200,
+      "git_blob_sha": "0d46fa18bcadc5c203f8f2815c2d5a0f78d0597a"
+    },
+    {
+      "path": "data/master/brands/audi_index_new_part03.json",
+      "rows": 200,
+      "git_blob_sha": "046b99902bc4b6526fa769ca302f74529021aba7"
+    },
+    {
+      "path": "data/master/brands/audi_index_new_part04.json",
+      "rows": 200,
+      "git_blob_sha": "f62b465e4cac7c6f3a75cb7b9f4507292d64816f"
+    },
+    {
+      "path": "data/master/brands/audi_index_new_part05.json",
+      "rows": 181,
+      "git_blob_sha": "fd958be1d99f3b2faa85be972fd273d66248feeb"
+    }
+  ],
+  "review_sources": [
+    "data/master/reviews/audi_20261031_final/",
+    "data/master/reviews/audi_20261031_monitoring/"
+  ],
+  "no_app_change": true
+}
