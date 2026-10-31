@@ -6,9 +6,9 @@
   "storage_repository": "dtcnexis/DTC-Nexis-Updates",
   "storage_branch": "main",
   "storage_directory": "data/master",
-  "current_saved_row_count": 7656,
+  "current_saved_row_count": 8637,
   "distinct_worldwide_codes": "UNKNOWN: cross-manufacturer duplicates/suffixes and same-code ECU variants are deliberately preserved",
-  "file_count": 30,
+  "file_count": 35,
   "collections": [
     {
       "kind": "generic_trilingual",
@@ -228,6 +228,51 @@
       "rows": 47,
       "verification": "Original 47 enhanced source records; Honda Batch01 duplicate original separately archived; EU/USA applicability not presumed",
       "git_blob_sha": "c1900948564c98f12a2e6d620b5a11dd24b80ed3"
+    },
+    {
+      "kind": "audi_original_index_deduplicated",
+      "brand": "Audi",
+      "path": "data/master/brands/audi_index_new_part01.json",
+      "rows": 200,
+      "verification": "Source review index persisted, OEM vehicle ECU applicability unverified, monitoring held separately",
+      "source": "Audi source original INDEX review coverage with original row IDs",
+      "git_blob_sha": "da07dc0377822ca645e42285c6c7040a736f3498"
+    },
+    {
+      "kind": "audi_original_index_deduplicated",
+      "brand": "Audi",
+      "path": "data/master/brands/audi_index_new_part02.json",
+      "rows": 200,
+      "verification": "Source review index persisted, OEM vehicle ECU applicability unverified, monitoring held separately",
+      "source": "Audi source original INDEX review coverage with original row IDs",
+      "git_blob_sha": "0d46fa18bcadc5c203f8f2815c2d5a0f78d0597a"
+    },
+    {
+      "kind": "audi_original_index_deduplicated",
+      "brand": "Audi",
+      "path": "data/master/brands/audi_index_new_part03.json",
+      "rows": 200,
+      "verification": "Source review index persisted, OEM vehicle ECU applicability unverified, monitoring held separately",
+      "source": "Audi source original INDEX review coverage with original row IDs",
+      "git_blob_sha": "046b99902bc4b6526fa769ca302f74529021aba7"
+    },
+    {
+      "kind": "audi_original_index_deduplicated",
+      "brand": "Audi",
+      "path": "data/master/brands/audi_index_new_part04.json",
+      "rows": 200,
+      "verification": "Source review index persisted, OEM vehicle ECU applicability unverified, monitoring held separately",
+      "source": "Audi source original INDEX review coverage with original row IDs",
+      "git_blob_sha": "f62b465e4cac7c6f3a75cb7b9f4507292d64816f"
+    },
+    {
+      "kind": "audi_original_index_deduplicated",
+      "brand": "Audi",
+      "path": "data/master/brands/audi_index_new_part05.json",
+      "rows": 181,
+      "verification": "Source review index persisted, OEM vehicle ECU applicability unverified, monitoring held separately",
+      "source": "Audi source original INDEX review coverage with original row IDs",
+      "git_blob_sha": "fd958be1d99f3b2faa85be972fd273d66248feeb"
     }
   ],
   "saved_groups": {
@@ -246,7 +291,8 @@
     "Dacia_batch01": 149,
     "Toyota_EXP002": 210,
     "Honda_batch02": 47,
-    "Honda_batch01_original_archive_counted_again": 0
+    "Honda_batch01_original_archive_counted_again": 0,
+    "Audi_original_index_new_codes": 981
   },
   "source_lists_still_to_reconcile": [
     {
@@ -295,9 +341,20 @@
     },
     {
       "name": "Audi AUDI_DTC_BATCH01_INDEX.json",
-      "status": "UNLOCATED_OWNER_LIBRARY_SOURCE",
-      "count": null,
-      "note": "Index may contain codes or ECU variants not in 20-row DETAIL."
+      "status": "1000_UNIQUE_CODES_INDEXED_IN_PERMANENT_MASTER_WITH_19_EXISTING_OVERLAPS",
+      "count": 1000,
+      "note": "Index may contain codes or ECU variants not in 20-row DETAIL.",
+      "net_new_codes": 981,
+      "index_parts": [
+        "data/master/brands/audi_index_new_part01.json",
+        "data/master/brands/audi_index_new_part02.json",
+        "data/master/brands/audi_index_new_part03.json",
+        "data/master/brands/audi_index_new_part04.json",
+        "data/master/brands/audi_index_new_part05.json"
+      ],
+      "raw_original_bytes_preserved_in_user_archive_not_directly_imported": true,
+      "audit_file": "data/master/audits/audi_1000_code_reconciliation_20261031.json",
+      "technical_review_remaining": 30
     },
     {
       "name": "Toyota TOYOTA_EXP002_FULL.json",
@@ -322,7 +379,7 @@
   ],
   "quality_gate": "Storing a row permanently does not validate technical definitions, manufacturer fitment, translation or image rights. Keep original source references; release requires independent QA and owner approval.",
   "owner_rules": "Only the Windows application is experimental; permanent cloud data is retained independently. No change to update-feed or Windows installer.",
-  "reconciliation_note": "Source records preserved, including manufacturer-specific DF and VAG variants; counts are archived rows, not global distinct P/B/C/U codes. Source access reconciliation incomplete.",
+  "reconciliation_note": "Permanent catalog 8637 counted source/code records; Audi index 1000 unique codes reconciled with 19 existing detail codes, yielding 981 newly counted rows. Total is not worldwide unique DTCs; VIN/ECU validation still required.",
   "legacy_library_source_inventory": {
     "entries": 488,
     "by_file_type": {
@@ -395,7 +452,7 @@
     ],
     "last_successful_import": "2026-10-29 Audi20 Dacia149 Toyota210 Honda47, all original text read and master copies verified; raw byte materialization unavailable but line extracts complete"
   },
-  "last_source_sync": "2026-10-29; permanent canonical 7656 rows / 30 data files; Library inventory reconciled against 388 currently listed files",
+  "last_source_sync": "2026-10-31; permanent catalog 8637 rows / 35 counted data files; Audi index 1000 unique codes represented, 30 under monitoring; not released",
   "duplicate_archival_copies_not_counted": [
     {
       "path": "data/master/brands/audi_legacy_detail.json",
@@ -454,5 +511,15 @@
     "matched_rows_by_code_ecu_en_ar": 66,
     "additional_counted_rows": 0,
     "technical_approval": false
+  },
+  "audi_index_import_20261031": {
+    "source_unique_codes": 1000,
+    "new_rows_added": 981,
+    "existing_covered_codes": 19,
+    "monitoring_codes": 30,
+    "source_raw_index_recovered": false,
+    "source_reconstructed_from_previous_review": true,
+    "manifest_verification": "counting rows not worldwide unique DTC codes",
+    "audit": "data/master/audits/audi_1000_code_reconciliation_20261031.json"
   }
 }
