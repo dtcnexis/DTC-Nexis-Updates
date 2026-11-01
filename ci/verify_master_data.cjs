@@ -19,7 +19,7 @@ for(const record of manifest.collections){
  assert.ok(Array.isArray(items),'Missing rows: '+record.path);
  assert.equal(items.length,record.rows,'Rows changed in '+record.path);
  for(const entry of items) {
-  const code=String(entry.code??entry.raw_code??'');
+  const code=String(entry.code??entry.raw_code??entry.code_raw??'');
   assert.ok(code.trim().length>0,'Blank code in '+record.path);
   assert.ok(!code.includes('\n'),'Invalid code in '+record.path);
  }
