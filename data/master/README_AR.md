@@ -1,6 +1,8 @@
 # DTC NEXIS — حالة الحفظ الدائم المحدثة (29 أكتوبر 2026)
 
-**تم حفظ 8,637 سجل كود/سجل مصدر نصّي فعلياً** في **35 ملف بيانات أكواد** على GitHub، مع احتمال التكرار وتعدد المعنى حسب ECU. أضيفت دفعات Audi (20)، Dacia (149)، Toyota (210)، Honda (47)، بالإضافة إلى Nissan/Renault/Kia/Ford/Peugeot. وتشمل السجلات السابقة: Nissan 495، Renault 129، Kia 63، Ford 409، Peugeot 1,317، بالإضافة إلى المجموعات الأصلية. **العدد ليس عدد الأكواد الفريدة عالمياً ولا يعني أن التحقق الفني أو جميع ملفات السيارات اكتملت.**
+**المرجع الحالي (1 نوفمبر 2026):** [تقرير الحالة المحدث](STATUS_20261101_AR.md) — **8,911 سجلاً في 41 ملف بيانات**، ومراجعة سلامة 41/41. مستودع GitHub عام؛ الحفظ فيه مرئي، لكنه ليس تحديثاً للتطبيق. تبقى مراجعات المصادر القديمة أدناه كسجل تاريخي ولا تُستخدم بدلاً من حالة الفهرس الحالية.
+
+**تم حفظ 8,911 سجل كود/سجل مصدر نصّي فعلياً** في **41 ملف بيانات أكواد** على GitHub، مع احتمال التكرار وتعدد المعنى حسب ECU. أضيفت دفعات Audi (20)، Dacia (149)، Toyota (210)، Honda (47)، بالإضافة إلى Nissan/Renault/Kia/Ford/Peugeot. وتشمل السجلات السابقة: Nissan 495، Renault 129، Kia 63، Ford 409، Peugeot 1,317، بالإضافة إلى المجموعات الأصلية. **العدد ليس عدد الأكواد الفريدة عالمياً ولا يعني أن التحقق الفني أو جميع ملفات السيارات اكتملت.**
 
 [الفهرس المرجعي الرسمي](all_collected_catalog_manifest.json) | [مراجع كل المصادر](source_registry.json) | [ملفات الشركات](brands/)
 
@@ -16,7 +18,7 @@
 
 ## آخر دفعات الاستيراد المحفوظة — 29 أكتوبر 2026
 
-- **Audi:** 20 سجلاً من `AUDI_DTC_BATCH01_DETAIL.json` في [ملف Audi](brands/audi_batch01_detail.json). مصدر `AUDI_DTC_BATCH01_INDEX.json` لم يسترجع بعد.
+- **Audi:** 20 سجلاً من `AUDI_DTC_BATCH01_DETAIL.json` في [ملف Audi](brands/audi_batch01_detail.json). تُظهر هذه العبارة وضع 29 أكتوبر القديم؛ فهرس Audi أصبح ممثلاً بــ981 رمزاً إضافياً مع حفظ 19 رمزاً سبق وجودها، وفق تقرير 1 نوفمبر.
 - **Dacia:** 149 سجلاً من `dacia_dtc_batch01_149_records.json` في [ملف Dacia](brands/dacia_batch01_149_records.json) مع الحفاظ على DF وECU.
 - **Toyota:** 210 سجلات (82 رئيسي + 128 INF) في [الجزء 1](brands/toyota_exp002_dtc_part01.json)، [2](brands/toyota_exp002_dtc_part02.json)، [3](brands/toyota_exp002_dtc_part03.json)؛ [الموديلات والمراجع](brands/toyota_exp002_related.json) منفصلة وغير معدودة كأكواد.
 - **Honda:** 47 سجلاً في [Honda Batch02](brands/honda_batch02_dtc.json)، [بيانات الارتباط](brands/honda_batch02_related.json)؛ و[الأصل Batch01](brands/honda_batch01_original_archive.json) محفوظ دون احتسابه 47 مرة إضافية.
