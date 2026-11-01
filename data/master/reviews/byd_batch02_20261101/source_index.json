@@ -1,0 +1,138 @@
+{
+  "schema": "dtcnexis-BYD-batch02-index-v1",
+  "source_file": "BYD_DTC_NEXIS_batch02_review.json",
+  "source_library_id": "file_00000000977c81f4ba4ac4b3730879cf",
+  "source_text_lines": 45834,
+  "document_section_counts": [
+    {
+      "key": "manifest",
+      "len": null
+    },
+    {
+      "key": "vehicles",
+      "len": 17
+    },
+    {
+      "key": "engines",
+      "len": 25
+    },
+    {
+      "key": "vehicle_document_scopes",
+      "len": 3
+    },
+    {
+      "key": "dtc_codes",
+      "len": 274
+    },
+    {
+      "key": "dtc_applicability",
+      "len": 274
+    },
+    {
+      "key": "diagnostic_steps",
+      "len": 1103
+    },
+    {
+      "key": "visual_assets",
+      "len": 2
+    },
+    {
+      "key": "visual_asset_requests",
+      "len": 274
+    },
+    {
+      "key": "sources",
+      "len": 19
+    },
+    {
+      "key": "review_flags",
+      "len": 6
+    }
+  ],
+  "retained_metadata": {
+    "manifest": {
+      "project": "DTC NEXIS — Workshop Edition",
+      "brand": "BYD",
+      "batch": "BYD-BATCH-002",
+      "created_on": "2026-10-15",
+      "review_of_previous_batch": "BYD-BATCH-001 unchanged; derived per-document DTC associations only",
+      "methodology": "Production/model years unknown unless validated; EU/SE catalog listings distinguish trim specification; no unlicensed artwork and no automatic VIN mapping",
+      "acceptance_and_installation": "PROPOSAL ONLY. Await vehicle owner approval. No GitHub/app changes.",
+      "counts": {
+        "europe_model_lines_verified": 17,
+        "sweden_live_catalogue_model_lines": 7,
+        "manufacturer_powertrain_trim_spec_rows": 25,
+        "unique_manufacturer_engine_codes": 0,
+        "previous_dtc_records_preserved": 262,
+        "unique_raw_dtc_codes": 255,
+        "new_indexed_dtc_definition_rows": 12,
+        "new_unique_raw_dtc_codes": 11,
+        "definition_variant_rows": 274,
+        "document_scoped_dtc_catalogue_associations": 274,
+        "VIN_plus_engine_OEM_DTC_links": 0,
+        "suggested_steps_not_factory": 1103,
+        "licensed_approved_technical_images": 0,
+        "external_OEM_visual_references_not_embed_licensed": 2,
+        "image_requests_without_verified_files": 274,
+        "tracked_source_records": 19,
+        "unresolved_conflict_review_flags": 6,
+        "fully_OEM_approved_DTC": 0
+      },
+      "limitations": [
+        "DTC labels extracted from third-party TOCs, not verified against factory diagnostic manual",
+        "All ECU/VIN/engine-specific DTC relationships remain unverified",
+        "EU / SE model existence is not evidence of compatibility with China-indexed DTCs",
+        "No verified manufacturer engine-code IDs, exact chassis generation or model-year spans",
+        "No verified HV wiring, diagnostic thresholds, pinouts, or part locations",
+        "Images are external references only, rights for redistribution unknown"
+      ]
+    }
+  },
+  "related_new_files": [
+    {
+      "path": "data/master/reviews/byd_batch02_20261101/diagnostic_steps_part01.json",
+      "count": 400,
+      "commit": "896cab7587e6f726c76a51f4f396e278a22d48c4"
+    },
+    {
+      "path": "data/master/reviews/byd_batch02_20261101/diagnostic_steps_part02.json",
+      "count": 400,
+      "commit": "afa5cd54516716c4879e62f11b2864dafdd655b5"
+    },
+    {
+      "path": "data/master/reviews/byd_batch02_20261101/diagnostic_steps_part03.json",
+      "count": 303,
+      "commit": "427ff3fda5851d46ea85eb59ff6fa79cd12bb915"
+    },
+    {
+      "path": "data/master/reviews/byd_batch02_20261101/visual_assets_part01.json",
+      "count": 2,
+      "commit": "8ff1208f099cae10b0a0c1e41790227239d0ac4d"
+    },
+    {
+      "path": "data/master/reviews/byd_batch02_20261101/visual_asset_requests_part01.json",
+      "count": 274,
+      "commit": "8a54f43724c57bda16f71743dddaf192747a8b66"
+    },
+    {
+      "path": "data/master/reviews/byd_batch02_20261101/sources_part01.json",
+      "count": 19,
+      "commit": "d0da3fbccca00c6f7fb95930bf48b6f180e9af0b"
+    },
+    {
+      "path": "data/master/reviews/byd_batch02_20261101/review_flags_part01.json",
+      "count": 6,
+      "commit": "f884d77a9927f78528b6432ac5b9fa1ab4953314"
+    }
+  ],
+  "previously_saved_sections": [
+    "dtc_codes:5",
+    "dtc_applicability:2",
+    "vehicles:1",
+    "engines:1",
+    "vehicle_document_scopes:1"
+  ],
+  "record_count_original_B02": 274,
+  "technical_approval": false,
+  "source_status": "REVIEW_ONLY_OEM_UNVERIFIED"
+}
