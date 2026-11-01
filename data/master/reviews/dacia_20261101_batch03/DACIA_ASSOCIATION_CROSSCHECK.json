@@ -1,0 +1,726 @@
+{
+  "schema": "dtcnexis-dacia-evidence-review-v1",
+  "date": "2026-11-01",
+  "baseline_commit": "7c08deac01043a0f9f2ccb49b8f6fee96dbae774",
+  "scope": "Additive numeric-association cross-check and ECU collision audit; not OEM approval",
+  "source_files": {
+    "data/master/brands/dacia_batch01_149_records.json": {
+      "git_blob_sha": "be94b4e270c4289c2d41b198e8fc574c3da747eb"
+    },
+    "data/master/reviews/dacia_20261031_batch02/DACIA_ASSOCIATION_GUARDS.json": {
+      "git_blob_sha": "a10424ad77029952a0508d5964239396468019ad"
+    }
+  },
+  "summary": {
+    "source_rows": 149,
+    "unique_code_strings": 138,
+    "associations_compared": 65,
+    "matching_associations": 65,
+    "discrepancies": 0,
+    "ambiguous_code_strings": 10,
+    "extra_rows_from_ecu_scoping": 11,
+    "new_oem_verified": 0,
+    "candidate_p_codes_still_on_hold": 65,
+    "technical_rows_pending": 149,
+    "new_dtc_rows_added": 0
+  },
+  "evidence_limitations": [
+    "Comparison is against a third-party HTML reproduction attributed to Renault manual MR-453-X79-13B000 V1, DCM1.2 Program 4C Vdiag 08, pages 13B-22..24.",
+    "An additional mirror is not an independent OEM source. Only numeric associations were compared, not all definitions, procedures or applicability.",
+    "No automatic P prefix conversion is authorized. Official source authentication remains pending.",
+    "Official access route identified at https://asos.asdh.aws.renault.com/offers/documentation; no subscription purchased or authenticated manual accessed."
+  ],
+  "association_checks": [
+    {
+      "review_id": "DACIA-REVIEW-001",
+      "df_code": "DF001",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-002",
+      "df_code": "DF002",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-003",
+      "df_code": "DF003",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-004",
+      "df_code": "DF005",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-005",
+      "df_code": "DF007",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-006",
+      "df_code": "DF008",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-007",
+      "df_code": "DF009",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-008",
+      "df_code": "DF010",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-009",
+      "df_code": "DF014",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-010",
+      "df_code": "DF015",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-011",
+      "df_code": "DF016",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-012",
+      "df_code": "DF017",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-013",
+      "df_code": "DF018",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-014",
+      "df_code": "DF019",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-015",
+      "df_code": "DF021",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-016",
+      "df_code": "DF022",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-017",
+      "df_code": "DF024",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-018",
+      "df_code": "DF025",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-019",
+      "df_code": "DF026",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-020",
+      "df_code": "DF027",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-021",
+      "df_code": "DF028",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-022",
+      "df_code": "DF029",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-023",
+      "df_code": "DF032",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-024",
+      "df_code": "DF033",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-025",
+      "df_code": "DF034",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-026",
+      "df_code": "DF037",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-027",
+      "df_code": "DF038",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-028",
+      "df_code": "DF039",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-029",
+      "df_code": "DF047",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-030",
+      "df_code": "DF049",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-031",
+      "df_code": "DF050",
+      "page": "13B-22",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/22",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-032",
+      "df_code": "DF052",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-033",
+      "df_code": "DF053",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-034",
+      "df_code": "DF056",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-035",
+      "df_code": "DF057",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-036",
+      "df_code": "DF059",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-037",
+      "df_code": "DF060",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-038",
+      "df_code": "DF061",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-039",
+      "df_code": "DF062",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-040",
+      "df_code": "DF089",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-041",
+      "df_code": "DF098",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-042",
+      "df_code": "DF107",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-043",
+      "df_code": "DF112",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-044",
+      "df_code": "DF113",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-045",
+      "df_code": "DF114",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-046",
+      "df_code": "DF121",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-047",
+      "df_code": "DF122",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-048",
+      "df_code": "DF130",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-049",
+      "df_code": "DF159",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-050",
+      "df_code": "DF162",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-051",
+      "df_code": "DF195",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-052",
+      "df_code": "DF209",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-053",
+      "df_code": "DF218",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-054",
+      "df_code": "DF221",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-055",
+      "df_code": "DF236",
+      "page": "13B-23",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/23",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-056",
+      "df_code": "DF242",
+      "page": "13B-24",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/24",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-057",
+      "df_code": "DF261",
+      "page": "13B-24",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/24",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-058",
+      "df_code": "DF427",
+      "page": "13B-24",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/24",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-059",
+      "df_code": "DF433",
+      "page": "13B-24",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/24",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-060",
+      "df_code": "DF489",
+      "page": "13B-24",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/24",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-061",
+      "df_code": "DF532",
+      "page": "13B-24",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/24",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-062",
+      "df_code": "DF631",
+      "page": "13B-24",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/24",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-063",
+      "df_code": "DF859",
+      "page": "13B-24",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/24",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-064",
+      "df_code": "DF886",
+      "page": "13B-24",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/24",
+      "accepted_as_oem_verified": false
+    },
+    {
+      "review_id": "DACIA-REVIEW-065",
+      "df_code": "DF1083",
+      "page": "13B-24",
+      "association_matches": true,
+      "source_url": "https://renault.manymanuals.com/cars/2009-x79/specifications-25326/24",
+      "accepted_as_oem_verified": false
+    }
+  ],
+  "ecu_collisions": [
+    {
+      "code": "DF001",
+      "records": [
+        {
+          "source_row": 1,
+          "ecu": "Delphi DCM 1.2 / Program 4C / Vdiag 08",
+          "definition_en": "Coolant temperature sensor circuit"
+        },
+        {
+          "source_row": 66,
+          "ecu": "Bosch ABS 8.1 / Vdiag 18, 1C",
+          "definition_en": "Computer supply voltage"
+        },
+        {
+          "source_row": 74,
+          "ecu": "TEMIC Airbag / Vdiag 04 / ECU types 01,02",
+          "definition_en": "Computer"
+        }
+      ]
+    },
+    {
+      "code": "DF002",
+      "records": [
+        {
+          "source_row": 2,
+          "ecu": "Delphi DCM 1.2 / Program 4C / Vdiag 08",
+          "definition_en": "Air temperature sensor circuit"
+        },
+        {
+          "source_row": 75,
+          "ecu": "TEMIC Airbag / Vdiag 04 / ECU types 01,02",
+          "definition_en": "Computer feed voltage"
+        }
+      ]
+    },
+    {
+      "code": "DF003",
+      "records": [
+        {
+          "source_row": 3,
+          "ecu": "Delphi DCM 1.2 / Program 4C / Vdiag 08",
+          "definition_en": "Atmospheric pressure sensor circuit"
+        },
+        {
+          "source_row": 76,
+          "ecu": "TEMIC Airbag / Vdiag 04 / ECU types 01,02",
+          "definition_en": "Driver's front airbag circuit"
+        }
+      ]
+    },
+    {
+      "code": "DF007",
+      "records": [
+        {
+          "source_row": 5,
+          "ecu": "Delphi DCM 1.2 / Program 4C / Vdiag 08",
+          "definition_en": "Rail pressure sensor circuit"
+        },
+        {
+          "source_row": 68,
+          "ecu": "Bosch ABS 8.1 / Vdiag 18, 1C",
+          "definition_en": "Rear left wheel speed sensor circuit"
+        }
+      ]
+    },
+    {
+      "code": "DF017",
+      "records": [
+        {
+          "source_row": 12,
+          "ecu": "Delphi DCM 1.2 / Program 4C / Vdiag 08",
+          "definition_en": "Preheating unit control circuit"
+        },
+        {
+          "source_row": 69,
+          "ecu": "Bosch ABS 8.1 / Vdiag 18, 1C",
+          "definition_en": "Computer"
+        }
+      ]
+    },
+    {
+      "code": "DF026",
+      "records": [
+        {
+          "source_row": 19,
+          "ecu": "Delphi DCM 1.2 / Program 4C / Vdiag 08",
+          "definition_en": "Cylinder 1 injector circuit control"
+        },
+        {
+          "source_row": 71,
+          "ecu": "Bosch ABS 8.1 / Vdiag 18, 1C",
+          "definition_en": "Front right wheel speed sensor circuit"
+        }
+      ]
+    },
+    {
+      "code": "DF027",
+      "records": [
+        {
+          "source_row": 20,
+          "ecu": "Delphi DCM 1.2 / Program 4C / Vdiag 08",
+          "definition_en": "Cylinder 2 injector circuit control"
+        },
+        {
+          "source_row": 72,
+          "ecu": "Bosch ABS 8.1 / Vdiag 18, 1C",
+          "definition_en": "Rear right wheel speed sensor circuit"
+        }
+      ]
+    },
+    {
+      "code": "DF028",
+      "records": [
+        {
+          "source_row": 21,
+          "ecu": "Delphi DCM 1.2 / Program 4C / Vdiag 08",
+          "definition_en": "Cylinder 3 injector circuit control"
+        },
+        {
+          "source_row": 78,
+          "ecu": "TEMIC Airbag / Vdiag 04 / ECU types 01,02",
+          "definition_en": "Passenger airbag status warning light circuit"
+        }
+      ]
+    },
+    {
+      "code": "DF034",
+      "records": [
+        {
+          "source_row": 25,
+          "ecu": "Delphi DCM 1.2 / Program 4C / Vdiag 08",
+          "definition_en": "Thermoplunger 3 relay control circuit"
+        },
+        {
+          "source_row": 79,
+          "ecu": "TEMIC Airbag / Vdiag 04 / ECU types 01,02",
+          "definition_en": "Computer locked"
+        }
+      ]
+    },
+    {
+      "code": "DF242",
+      "records": [
+        {
+          "source_row": 56,
+          "ecu": "Delphi DCM 1.2 / Program 4C / Vdiag 08",
+          "definition_en": "Engine speed signal output"
+        },
+        {
+          "source_row": 84,
+          "ecu": "TEMIC Airbag / Vdiag 04 / ECU types 01,02",
+          "definition_en": "Left-hand/right-hand drive configuration"
+        }
+      ]
+    }
+  ],
+  "required_lookup_key": [
+    "brand",
+    "code",
+    "ecu",
+    "ecu_version"
+  ],
+  "next_steps": [
+    "Authenticate the exact manual edition and ECU scope through OEM documentation before approval.",
+    "Review ABS and airbag source tables, retaining separate ECU identities.",
+    "Keep original data and pending P associations intact."
+  ],
+  "app_modified": false,
+  "update_feed_modified": false,
+  "release_published": false
+}
