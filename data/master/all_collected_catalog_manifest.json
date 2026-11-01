@@ -6,9 +6,9 @@
   "storage_repository": "dtcnexis/DTC-Nexis-Updates",
   "storage_branch": "main",
   "storage_directory": "data/master",
-  "current_saved_row_count": 8637,
+  "current_saved_row_count": 8911,
   "distinct_worldwide_codes": "UNKNOWN: cross-manufacturer duplicates/suffixes and same-code ECU variants are deliberately preserved",
-  "file_count": 35,
+  "file_count": 41,
   "collections": [
     {
       "kind": "generic_trilingual",
@@ -273,6 +273,54 @@
       "verification": "Source review index persisted, OEM vehicle ECU applicability unverified, monitoring held separately",
       "source": "Audi source original INDEX review coverage with original row IDs",
       "git_blob_sha": "fd958be1d99f3b2faa85be972fd273d66248feeb"
+    },
+    {
+      "kind": "byd_batch01_original_records",
+      "brand": "BYD",
+      "path": "data/master/brands/byd_batch01_original_part01.json",
+      "rows": 55,
+      "source": "BYD_DTC_NEXIS_batch01.json",
+      "verification": "CATALOGUE_INDEX_ONLY_OEM_NOT_VERIFIED_NO_RELEASE"
+    },
+    {
+      "kind": "byd_batch01_original_records",
+      "brand": "BYD",
+      "path": "data/master/brands/byd_batch01_original_part02.json",
+      "rows": 55,
+      "source": "BYD_DTC_NEXIS_batch01.json",
+      "verification": "CATALOGUE_INDEX_ONLY_OEM_NOT_VERIFIED_NO_RELEASE"
+    },
+    {
+      "kind": "byd_batch01_original_records",
+      "brand": "BYD",
+      "path": "data/master/brands/byd_batch01_original_part03.json",
+      "rows": 55,
+      "source": "BYD_DTC_NEXIS_batch01.json",
+      "verification": "CATALOGUE_INDEX_ONLY_OEM_NOT_VERIFIED_NO_RELEASE"
+    },
+    {
+      "kind": "byd_batch01_original_records",
+      "brand": "BYD",
+      "path": "data/master/brands/byd_batch01_original_part04.json",
+      "rows": 55,
+      "source": "BYD_DTC_NEXIS_batch01.json",
+      "verification": "CATALOGUE_INDEX_ONLY_OEM_NOT_VERIFIED_NO_RELEASE"
+    },
+    {
+      "kind": "byd_batch01_original_records",
+      "brand": "BYD",
+      "path": "data/master/brands/byd_batch01_original_part05.json",
+      "rows": 42,
+      "source": "BYD_DTC_NEXIS_batch01.json",
+      "verification": "CATALOGUE_INDEX_ONLY_OEM_NOT_VERIFIED_NO_RELEASE"
+    },
+    {
+      "kind": "byd_batch02_new_details",
+      "brand": "BYD",
+      "path": "data/master/brands/byd_batch02_new_dtc.json",
+      "rows": 12,
+      "source": "BYD_DTC_NEXIS_batch02_review.json",
+      "verification": "11 new raw codes, 12 model/ECU variants; catalogue only; cannot auto-release"
     }
   ],
   "saved_groups": {
@@ -292,7 +340,9 @@
     "Toyota_EXP002": 210,
     "Honda_batch02": 47,
     "Honda_batch01_original_archive_counted_again": 0,
-    "Audi_original_index_new_codes": 981
+    "Audi_original_index_new_codes": 981,
+    "BYD_batch01_original": 262,
+    "BYD_batch02_unique_variants_not_in_batch01": 12
   },
   "source_lists_still_to_reconcile": [
     {
@@ -379,7 +429,7 @@
   ],
   "quality_gate": "Storing a row permanently does not validate technical definitions, manufacturer fitment, translation or image rights. Keep original source references; release requires independent QA and owner approval.",
   "owner_rules": "Only the Windows application is experimental; permanent cloud data is retained independently. No change to update-feed or Windows installer.",
-  "reconciliation_note": "Permanent catalog 8637 counted source/code records; Audi index 1000 unique codes reconciled with 19 existing detail codes, yielding 981 newly counted rows. Total is not worldwide unique DTCs; VIN/ECU validation still required.",
+  "reconciliation_note": "8911 source rows: 8637 prior + BYD 262 original B01 + 12 new B02 scope variants. Not a count of globally unique DTC codes. BYD catalogue/third-party evidence only; mandatory OEM verification.",
   "legacy_library_source_inventory": {
     "entries": 488,
     "by_file_type": {
@@ -452,7 +502,7 @@
     ],
     "last_successful_import": "2026-10-29 Audi20 Dacia149 Toyota210 Honda47, all original text read and master copies verified; raw byte materialization unavailable but line extracts complete"
   },
-  "last_source_sync": "2026-10-31; permanent catalog 8637 rows / 35 counted data files; Audi index 1000 unique codes represented, 30 under monitoring; not released",
+  "last_source_sync": "2026-11-01; 8911 counted data rows / 41 files; BYD 274 source rows newly retained, all source review data preserved separately; no release",
   "duplicate_archival_copies_not_counted": [
     {
       "path": "data/master/brands/audi_legacy_detail.json",
@@ -521,5 +571,18 @@
     "source_reconstructed_from_previous_review": true,
     "manifest_verification": "counting rows not worldwide unique DTC codes",
     "audit": "data/master/audits/audi_1000_code_reconciliation_20261031.json"
+  },
+  "byd_import_20261101": {
+    "batch01_saved": 262,
+    "batch01_distinct_raw_codes": 244,
+    "batch02_new_rows": 12,
+    "batch02_new_distinct_raw_codes": 11,
+    "combined_rows": 274,
+    "combined_unique_codes": 255,
+    "related_review_path": "data/master/reviews/byd_batch02_20261101/source_index.json",
+    "source_records_preserved": "INDEXED_TEXT_JSON_FIELDS_SEMANTICALLY",
+    "raw_source_byte_sha256_recovered": false,
+    "no_oem_verified_electrical_workflows": true,
+    "app_updates": false
   }
 }
