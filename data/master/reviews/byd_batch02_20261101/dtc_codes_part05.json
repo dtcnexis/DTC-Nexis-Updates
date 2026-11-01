@@ -1,0 +1,2302 @@
+{
+  "source_library_file": "BYD_DTC_NEXIS_batch02_review.json",
+  "source_library_id": "file_00000000977c81f4ba4ac4b3730879cf",
+  "section": "dtc_codes",
+  "part": 5,
+  "source_review_only": true,
+  "record_count": 34,
+  "records": [
+    {
+      "dtc_id": "byd-dtc-43b1e77992640c17",
+      "brand": "BYD",
+      "code_raw": "P157017",
+      "base_code": "P1570",
+      "extension_2hex": "17",
+      "suffix_type": "2-character extension as catalogued; no confirmed standard FTB mapping",
+      "family": "P",
+      "ecu_label_catalogue": "OBC",
+      "definition_en_catalogue": "High AC Voltage at the Connection Side",
+      "translation_ar_provisional": "ارتفاع جهد جهة التيار المتردد بالشاحن الداخلي",
+      "classification_source_statement": "P / مصنعي/نطاق غير قياسي؛ تعريف BYD مستند إلى فهرس طرف ثالث",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [
+        {
+          "text": "غير مؤكد؛ المراجَع عنوان الفهرس فقط، ولم يتم الاطلاع على جدول شروط ضبط الكود أو أعراضه",
+          "evidence": "not disclosed in accessed public index"
+        }
+      ],
+      "causes_provisional": [
+        {
+          "cause": "الجزء أو الدائرة المحددة بعنوان الكود",
+          "rank": "غير مؤكد؛ لا توجد بيانات حالات أو فحص سبب",
+          "evidence": "استدلال من اسم الكود فقط، وليس تشخيص مصنع"
+        }
+      ],
+      "live_data_provisional": [
+        {
+          "name_en": "AC Input Voltage",
+          "translation_ar": "جهد دخل الشحن المتردد",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "DC Output Voltage",
+          "translation_ar": "جهد الخرج المستمر",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Charging State",
+          "translation_ar": "حالة الشحن",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Charging Stop Reason",
+          "translation_ar": "سبب توقف الشحن",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "OBC/DC-DC Temperature",
+          "translation_ar": "حرارة وحدة الشحن/المحول",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Low Voltage System Voltage",
+          "translation_ar": "جهد منظومة 12 فولت",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        }
+      ],
+      "parts_unverified": [
+        {
+          "component_and_location": "OBC أو DC-DC أو مدخل الشحن وكابله بحسب الرمز؛ موقع الطرفية/الموصول غير مؤكد",
+          "part_number": "غير مؤكد",
+          "ecu": "OBC",
+          "evidence": "استدلال من عنوان الكود؛ رقم القطعة/المكان النهائي غير موثق"
+        }
+      ],
+      "fuse_pin_wiring_unverified": {
+        "verified_wiring_diagram_url": null,
+        "reference_catalogue_url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "pinouts": "غير مؤكد",
+        "fuses": "غير مؤكد",
+        "specification": "غير مؤكد؛ مطلوب VIN والموديل وسنة الإنتاج ونسخة ECU"
+      },
+      "video_search_only": {
+        "search_url": "https://www.youtube.com/results?search_query=BYD%20Sealion%2007%20EV%20%28not%20automatically%20Sealion%207%20Europe%29%20P157017%20OBC%20diagnosis",
+        "note": "رابط نتائج بحث وليس فيديو موثّقاً"
+      },
+      "priority_evidence_provisional": {
+        "priority": "فهرسة فقط",
+        "workshop_frequency": "غير مؤكد؛ لا توجد إحصاءات أعطال ورش منشورة تحققنا منها",
+        "basis": "أولوية مبنية على خطورة/قيمة التشخيص لا على معدل التكرار"
+      },
+      "source_ids": [
+        "CATALOG-SEALION07"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-001",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-68014537b0f5b0fb",
+      "brand": "BYD",
+      "code_raw": "P1EC300",
+      "base_code": "P1EC3",
+      "extension_2hex": "00",
+      "suffix_type": "2-character extension as catalogued; no confirmed standard FTB mapping",
+      "family": "P",
+      "ecu_label_catalogue": "DC-DC",
+      "definition_en_catalogue": "Low voltage on the low side during depressurization",
+      "translation_ar_provisional": "انخفاض جهد الجانب المنخفض أثناء تحويل DC-DC",
+      "classification_source_statement": "P / مصنعي/نطاق غير قياسي؛ تعريف BYD مستند إلى فهرس طرف ثالث",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [
+        {
+          "text": "قد يعجز النظام عن تغذية/شحن منظومة 12 فولت ويظهر تحذير طاقة؛ غير مؤكد",
+          "evidence": "استنتاج تشخيصي؛ دليل المصنع وشروط ظهور الكود غير متاحان"
+        }
+      ],
+      "causes_provisional": [
+        {
+          "cause": "خرج DC-DC منخفض نتيجة حمل LV مرتفع (فرضية)",
+          "rank": "ترتيب فحص إرشادي وليس ترتيب شيوع مرصود",
+          "evidence": "فرضية مرتبطة بوصف الفهرس وليست نتيجة اختبار"
+        },
+        {
+          "cause": "انقطاع/هبوط في خرج المحول أو الفيوز (فرضية)",
+          "rank": "ترتيب فحص إرشادي وليس ترتيب شيوع مرصود",
+          "evidence": "فرضية مرتبطة بوصف الفهرس وليست نتيجة اختبار"
+        },
+        {
+          "cause": "خلل داخلي بالمحول بعد استبعاد البطارية والحمل (فرضية)",
+          "rank": "ترتيب فحص إرشادي وليس ترتيب شيوع مرصود",
+          "evidence": "فرضية مرتبطة بوصف الفهرس وليست نتيجة اختبار"
+        }
+      ],
+      "live_data_provisional": [
+        {
+          "name_en": "AC Input Voltage",
+          "translation_ar": "جهد دخل الشحن المتردد",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "DC Output Voltage",
+          "translation_ar": "جهد الخرج المستمر",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Charging State",
+          "translation_ar": "حالة الشحن",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Charging Stop Reason",
+          "translation_ar": "سبب توقف الشحن",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "OBC/DC-DC Temperature",
+          "translation_ar": "حرارة وحدة الشحن/المحول",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Low Voltage System Voltage",
+          "translation_ar": "جهد منظومة 12 فولت",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        }
+      ],
+      "parts_unverified": [
+        {
+          "component_and_location": "DC-DC converter and 12V bus; exact HV/LV connector pins: غير مؤكد",
+          "part_number": "غير مؤكد",
+          "ecu": "DC-DC",
+          "evidence": "الموقع الإجمالي الوظيفي استدلال، والموقع الدقيق غير مؤكد"
+        }
+      ],
+      "fuse_pin_wiring_unverified": {
+        "verified_wiring_diagram_url": null,
+        "reference_catalogue_url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "pinouts": "غير مؤكد",
+        "fuses": "غير مؤكد",
+        "specification": "غير مؤكد؛ مطلوب VIN والموديل وسنة الإنتاج ونسخة ECU"
+      },
+      "video_search_only": {
+        "search_url": "https://www.youtube.com/results?search_query=BYD%20Sealion%2007%20EV%20%28not%20automatically%20Sealion%207%20Europe%29%20P1EC300%20DC-DC%20diagnosis",
+        "note": "رابط نتائج بحث وليس فيديو موثّقاً"
+      },
+      "priority_evidence_provisional": {
+        "priority": "تفصيل أولي في هذه الدفعة",
+        "workshop_frequency": "غير مؤكد؛ لا توجد إحصاءات أعطال ورش منشورة تحققنا منها",
+        "basis": "أولوية مبنية على خطورة/قيمة التشخيص لا على معدل التكرار",
+        "detail": "فحص أولي موسع؛ لا يمثل تدفق تشخيص BYD الرسمي ولا مكتمل التوثيق"
+      },
+      "source_ids": [
+        "CATALOG-SEALION07"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-001",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-0e1f738407de1293",
+      "brand": "BYD",
+      "code_raw": "C2DA511",
+      "base_code": "C2DA5",
+      "extension_2hex": "11",
+      "suffix_type": "2-character extension as catalogued; no confirmed standard FTB mapping",
+      "family": "C",
+      "ecu_label_catalogue": "Active Suspension",
+      "definition_en_catalogue": "left front valve to ground short circuit",
+      "translation_ar_provisional": "قصر صمام التعليق الأمامي الأيسر إلى الأرضي",
+      "classification_source_statement": "C / مصنعي/نطاق غير قياسي؛ تعريف BYD مستند إلى فهرس طرف ثالث",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [
+        {
+          "text": "غير مؤكد؛ المراجَع عنوان الفهرس فقط، ولم يتم الاطلاع على جدول شروط ضبط الكود أو أعراضه",
+          "evidence": "not disclosed in accessed public index"
+        }
+      ],
+      "causes_provisional": [
+        {
+          "cause": "الجزء أو الدائرة المحددة بعنوان الكود",
+          "rank": "غير مؤكد؛ لا توجد بيانات حالات أو فحص سبب",
+          "evidence": "استدلال من اسم الكود فقط، وليس تشخيص مصنع"
+        }
+      ],
+      "live_data_provisional": [
+        {
+          "name_en": "Wheel Speed FL/FR/RL/RR",
+          "translation_ar": "سرعات العجلات الأربع",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Brake Pressure",
+          "translation_ar": "ضغط الفرامل",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "EPS Supply Voltage",
+          "translation_ar": "جهد تغذية التوجيه",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Steering Angle",
+          "translation_ar": "زاوية التوجيه",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Actuator Command/Feedback",
+          "translation_ar": "أمر/استجابة المشغل",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        }
+      ],
+      "parts_unverified": [
+        {
+          "component_and_location": "الحساس أو المشغل المشار إليه وECU الكبح/التوجيه/التعليق؛ موضع الوحدة والفيشة يحتاج مخطط النسخة",
+          "part_number": "غير مؤكد",
+          "ecu": "Active Suspension",
+          "evidence": "استدلال من عنوان الكود؛ رقم القطعة/المكان النهائي غير موثق"
+        }
+      ],
+      "fuse_pin_wiring_unverified": {
+        "verified_wiring_diagram_url": null,
+        "reference_catalogue_url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "pinouts": "غير مؤكد",
+        "fuses": "غير مؤكد",
+        "specification": "غير مؤكد؛ مطلوب VIN والموديل وسنة الإنتاج ونسخة ECU"
+      },
+      "video_search_only": {
+        "search_url": "https://www.youtube.com/results?search_query=BYD%20Sealion%2007%20EV%20%28not%20automatically%20Sealion%207%20Europe%29%20C2DA511%20Active%20Suspension%20diagnosis",
+        "note": "رابط نتائج بحث وليس فيديو موثّقاً"
+      },
+      "priority_evidence_provisional": {
+        "priority": "فهرسة فقط",
+        "workshop_frequency": "غير مؤكد؛ لا توجد إحصاءات أعطال ورش منشورة تحققنا منها",
+        "basis": "أولوية مبنية على خطورة/قيمة التشخيص لا على معدل التكرار"
+      },
+      "source_ids": [
+        "CATALOG-SEALION07"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-001",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-3cbb4d6149f4ae26",
+      "brand": "BYD",
+      "code_raw": "C2DA512",
+      "base_code": "C2DA5",
+      "extension_2hex": "12",
+      "suffix_type": "2-character extension as catalogued; no confirmed standard FTB mapping",
+      "family": "C",
+      "ecu_label_catalogue": "Active Suspension",
+      "definition_en_catalogue": "Left Front Valve Short to Power Supply",
+      "translation_ar_provisional": "قصر صمام التعليق الأمامي الأيسر إلى الموجب",
+      "classification_source_statement": "C / مصنعي/نطاق غير قياسي؛ تعريف BYD مستند إلى فهرس طرف ثالث",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [
+        {
+          "text": "غير مؤكد؛ المراجَع عنوان الفهرس فقط، ولم يتم الاطلاع على جدول شروط ضبط الكود أو أعراضه",
+          "evidence": "not disclosed in accessed public index"
+        }
+      ],
+      "causes_provisional": [
+        {
+          "cause": "الجزء أو الدائرة المحددة بعنوان الكود",
+          "rank": "غير مؤكد؛ لا توجد بيانات حالات أو فحص سبب",
+          "evidence": "استدلال من اسم الكود فقط، وليس تشخيص مصنع"
+        }
+      ],
+      "live_data_provisional": [
+        {
+          "name_en": "Wheel Speed FL/FR/RL/RR",
+          "translation_ar": "سرعات العجلات الأربع",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Brake Pressure",
+          "translation_ar": "ضغط الفرامل",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "EPS Supply Voltage",
+          "translation_ar": "جهد تغذية التوجيه",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Steering Angle",
+          "translation_ar": "زاوية التوجيه",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Actuator Command/Feedback",
+          "translation_ar": "أمر/استجابة المشغل",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        }
+      ],
+      "parts_unverified": [
+        {
+          "component_and_location": "الحساس أو المشغل المشار إليه وECU الكبح/التوجيه/التعليق؛ موضع الوحدة والفيشة يحتاج مخطط النسخة",
+          "part_number": "غير مؤكد",
+          "ecu": "Active Suspension",
+          "evidence": "استدلال من عنوان الكود؛ رقم القطعة/المكان النهائي غير موثق"
+        }
+      ],
+      "fuse_pin_wiring_unverified": {
+        "verified_wiring_diagram_url": null,
+        "reference_catalogue_url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "pinouts": "غير مؤكد",
+        "fuses": "غير مؤكد",
+        "specification": "غير مؤكد؛ مطلوب VIN والموديل وسنة الإنتاج ونسخة ECU"
+      },
+      "video_search_only": {
+        "search_url": "https://www.youtube.com/results?search_query=BYD%20Sealion%2007%20EV%20%28not%20automatically%20Sealion%207%20Europe%29%20C2DA512%20Active%20Suspension%20diagnosis",
+        "note": "رابط نتائج بحث وليس فيديو موثّقاً"
+      },
+      "priority_evidence_provisional": {
+        "priority": "فهرسة فقط",
+        "workshop_frequency": "غير مؤكد؛ لا توجد إحصاءات أعطال ورش منشورة تحققنا منها",
+        "basis": "أولوية مبنية على خطورة/قيمة التشخيص لا على معدل التكرار"
+      },
+      "source_ids": [
+        "CATALOG-SEALION07"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-001",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-736e4458e8cb507d",
+      "brand": "BYD",
+      "code_raw": "C2DA513",
+      "base_code": "C2DA5",
+      "extension_2hex": "13",
+      "suffix_type": "2-character extension as catalogued; no confirmed standard FTB mapping",
+      "family": "C",
+      "ecu_label_catalogue": "Active Suspension",
+      "definition_en_catalogue": "Left Front Valve Open Circuit",
+      "translation_ar_provisional": "انقطاع دائرة صمام التعليق الأمامي الأيسر",
+      "classification_source_statement": "C / مصنعي/نطاق غير قياسي؛ تعريف BYD مستند إلى فهرس طرف ثالث",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [
+        {
+          "text": "قد يظهر تحذير التعليق أو تغير استجابته بالجهة الأمامية اليسرى؛ غير مؤكد",
+          "evidence": "استنتاج تشخيصي؛ دليل المصنع وشروط ظهور الكود غير متاحان"
+        }
+      ],
+      "causes_provisional": [
+        {
+          "cause": "قطع بدائرة صمام التعليق الأمامي الأيسر (استنتاج مباشر)",
+          "rank": "ترتيب فحص إرشادي وليس ترتيب شيوع مرصود",
+          "evidence": "فرضية مرتبطة بوصف الفهرس وليست نتيجة اختبار"
+        },
+        {
+          "cause": "فيشة/أسلاك متضررة أو عطل تغذية (فرضية)",
+          "rank": "ترتيب فحص إرشادي وليس ترتيب شيوع مرصود",
+          "evidence": "فرضية مرتبطة بوصف الفهرس وليست نتيجة اختبار"
+        },
+        {
+          "cause": "ملف الصمام مفتوح إذا أكدت القياسات (احتمال لاحق)",
+          "rank": "ترتيب فحص إرشادي وليس ترتيب شيوع مرصود",
+          "evidence": "فرضية مرتبطة بوصف الفهرس وليست نتيجة اختبار"
+        }
+      ],
+      "live_data_provisional": [
+        {
+          "name_en": "Wheel Speed FL/FR/RL/RR",
+          "translation_ar": "سرعات العجلات الأربع",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Brake Pressure",
+          "translation_ar": "ضغط الفرامل",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "EPS Supply Voltage",
+          "translation_ar": "جهد تغذية التوجيه",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Steering Angle",
+          "translation_ar": "زاوية التوجيه",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Actuator Command/Feedback",
+          "translation_ar": "أمر/استجابة المشغل",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        }
+      ],
+      "parts_unverified": [
+        {
+          "component_and_location": "Left-front active-suspension valve if fitted; connector and module version: غير مؤكد",
+          "part_number": "غير مؤكد",
+          "ecu": "Active Suspension",
+          "evidence": "الموقع الإجمالي الوظيفي استدلال، والموقع الدقيق غير مؤكد"
+        }
+      ],
+      "fuse_pin_wiring_unverified": {
+        "verified_wiring_diagram_url": null,
+        "reference_catalogue_url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "pinouts": "غير مؤكد",
+        "fuses": "غير مؤكد",
+        "specification": "غير مؤكد؛ مطلوب VIN والموديل وسنة الإنتاج ونسخة ECU"
+      },
+      "video_search_only": {
+        "search_url": "https://www.youtube.com/results?search_query=BYD%20Sealion%2007%20EV%20%28not%20automatically%20Sealion%207%20Europe%29%20C2DA513%20Active%20Suspension%20diagnosis",
+        "note": "رابط نتائج بحث وليس فيديو موثّقاً"
+      },
+      "priority_evidence_provisional": {
+        "priority": "تفصيل أولي في هذه الدفعة",
+        "workshop_frequency": "غير مؤكد؛ لا توجد إحصاءات أعطال ورش منشورة تحققنا منها",
+        "basis": "أولوية مبنية على خطورة/قيمة التشخيص لا على معدل التكرار",
+        "detail": "فحص أولي موسع؛ لا يمثل تدفق تشخيص BYD الرسمي ولا مكتمل التوثيق"
+      },
+      "source_ids": [
+        "CATALOG-SEALION07"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-001",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-657db3bd3bedb9e0",
+      "brand": "BYD",
+      "code_raw": "C2DA519",
+      "base_code": "C2DA5",
+      "extension_2hex": "19",
+      "suffix_type": "2-character extension as catalogued; no confirmed standard FTB mapping",
+      "family": "C",
+      "ecu_label_catalogue": "Active Suspension",
+      "definition_en_catalogue": "Overcurrent due to short circuit of the left front valve",
+      "translation_ar_provisional": "زيادة تيار صمام التعليق الأمامي الأيسر بسبب قصر",
+      "classification_source_statement": "C / مصنعي/نطاق غير قياسي؛ تعريف BYD مستند إلى فهرس طرف ثالث",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [
+        {
+          "text": "غير مؤكد؛ المراجَع عنوان الفهرس فقط، ولم يتم الاطلاع على جدول شروط ضبط الكود أو أعراضه",
+          "evidence": "not disclosed in accessed public index"
+        }
+      ],
+      "causes_provisional": [
+        {
+          "cause": "الجزء أو الدائرة المحددة بعنوان الكود",
+          "rank": "غير مؤكد؛ لا توجد بيانات حالات أو فحص سبب",
+          "evidence": "استدلال من اسم الكود فقط، وليس تشخيص مصنع"
+        }
+      ],
+      "live_data_provisional": [
+        {
+          "name_en": "Wheel Speed FL/FR/RL/RR",
+          "translation_ar": "سرعات العجلات الأربع",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Brake Pressure",
+          "translation_ar": "ضغط الفرامل",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "EPS Supply Voltage",
+          "translation_ar": "جهد تغذية التوجيه",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Steering Angle",
+          "translation_ar": "زاوية التوجيه",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Actuator Command/Feedback",
+          "translation_ar": "أمر/استجابة المشغل",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        }
+      ],
+      "parts_unverified": [
+        {
+          "component_and_location": "الحساس أو المشغل المشار إليه وECU الكبح/التوجيه/التعليق؛ موضع الوحدة والفيشة يحتاج مخطط النسخة",
+          "part_number": "غير مؤكد",
+          "ecu": "Active Suspension",
+          "evidence": "استدلال من عنوان الكود؛ رقم القطعة/المكان النهائي غير موثق"
+        }
+      ],
+      "fuse_pin_wiring_unverified": {
+        "verified_wiring_diagram_url": null,
+        "reference_catalogue_url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "pinouts": "غير مؤكد",
+        "fuses": "غير مؤكد",
+        "specification": "غير مؤكد؛ مطلوب VIN والموديل وسنة الإنتاج ونسخة ECU"
+      },
+      "video_search_only": {
+        "search_url": "https://www.youtube.com/results?search_query=BYD%20Sealion%2007%20EV%20%28not%20automatically%20Sealion%207%20Europe%29%20C2DA519%20Active%20Suspension%20diagnosis",
+        "note": "رابط نتائج بحث وليس فيديو موثّقاً"
+      },
+      "priority_evidence_provisional": {
+        "priority": "فهرسة فقط",
+        "workshop_frequency": "غير مؤكد؛ لا توجد إحصاءات أعطال ورش منشورة تحققنا منها",
+        "basis": "أولوية مبنية على خطورة/قيمة التشخيص لا على معدل التكرار"
+      },
+      "source_ids": [
+        "CATALOG-SEALION07"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-001",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-ce1bdb0918f0099c",
+      "brand": "BYD",
+      "code_raw": "C2DA611",
+      "base_code": "C2DA6",
+      "extension_2hex": "11",
+      "suffix_type": "2-character extension as catalogued; no confirmed standard FTB mapping",
+      "family": "C",
+      "ecu_label_catalogue": "Active Suspension",
+      "definition_en_catalogue": "Right Front Valve Ground Short",
+      "translation_ar_provisional": "قصر صمام التعليق الأمامي الأيمن إلى الأرضي",
+      "classification_source_statement": "C / مصنعي/نطاق غير قياسي؛ تعريف BYD مستند إلى فهرس طرف ثالث",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [
+        {
+          "text": "غير مؤكد؛ المراجَع عنوان الفهرس فقط، ولم يتم الاطلاع على جدول شروط ضبط الكود أو أعراضه",
+          "evidence": "not disclosed in accessed public index"
+        }
+      ],
+      "causes_provisional": [
+        {
+          "cause": "الجزء أو الدائرة المحددة بعنوان الكود",
+          "rank": "غير مؤكد؛ لا توجد بيانات حالات أو فحص سبب",
+          "evidence": "استدلال من اسم الكود فقط، وليس تشخيص مصنع"
+        }
+      ],
+      "live_data_provisional": [
+        {
+          "name_en": "Wheel Speed FL/FR/RL/RR",
+          "translation_ar": "سرعات العجلات الأربع",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Brake Pressure",
+          "translation_ar": "ضغط الفرامل",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "EPS Supply Voltage",
+          "translation_ar": "جهد تغذية التوجيه",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Steering Angle",
+          "translation_ar": "زاوية التوجيه",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Actuator Command/Feedback",
+          "translation_ar": "أمر/استجابة المشغل",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        }
+      ],
+      "parts_unverified": [
+        {
+          "component_and_location": "الحساس أو المشغل المشار إليه وECU الكبح/التوجيه/التعليق؛ موضع الوحدة والفيشة يحتاج مخطط النسخة",
+          "part_number": "غير مؤكد",
+          "ecu": "Active Suspension",
+          "evidence": "استدلال من عنوان الكود؛ رقم القطعة/المكان النهائي غير موثق"
+        }
+      ],
+      "fuse_pin_wiring_unverified": {
+        "verified_wiring_diagram_url": null,
+        "reference_catalogue_url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "pinouts": "غير مؤكد",
+        "fuses": "غير مؤكد",
+        "specification": "غير مؤكد؛ مطلوب VIN والموديل وسنة الإنتاج ونسخة ECU"
+      },
+      "video_search_only": {
+        "search_url": "https://www.youtube.com/results?search_query=BYD%20Sealion%2007%20EV%20%28not%20automatically%20Sealion%207%20Europe%29%20C2DA611%20Active%20Suspension%20diagnosis",
+        "note": "رابط نتائج بحث وليس فيديو موثّقاً"
+      },
+      "priority_evidence_provisional": {
+        "priority": "فهرسة فقط",
+        "workshop_frequency": "غير مؤكد؛ لا توجد إحصاءات أعطال ورش منشورة تحققنا منها",
+        "basis": "أولوية مبنية على خطورة/قيمة التشخيص لا على معدل التكرار"
+      },
+      "source_ids": [
+        "CATALOG-SEALION07"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-001",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-a8e576c6d49b9e5c",
+      "brand": "BYD",
+      "code_raw": "C2DA612",
+      "base_code": "C2DA6",
+      "extension_2hex": "12",
+      "suffix_type": "2-character extension as catalogued; no confirmed standard FTB mapping",
+      "family": "C",
+      "ecu_label_catalogue": "Active Suspension",
+      "definition_en_catalogue": "Right Front Valve Short to Power Supply",
+      "translation_ar_provisional": "قصر صمام التعليق الأمامي الأيمن إلى الموجب",
+      "classification_source_statement": "C / مصنعي/نطاق غير قياسي؛ تعريف BYD مستند إلى فهرس طرف ثالث",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [
+        {
+          "text": "غير مؤكد؛ المراجَع عنوان الفهرس فقط، ولم يتم الاطلاع على جدول شروط ضبط الكود أو أعراضه",
+          "evidence": "not disclosed in accessed public index"
+        }
+      ],
+      "causes_provisional": [
+        {
+          "cause": "الجزء أو الدائرة المحددة بعنوان الكود",
+          "rank": "غير مؤكد؛ لا توجد بيانات حالات أو فحص سبب",
+          "evidence": "استدلال من اسم الكود فقط، وليس تشخيص مصنع"
+        }
+      ],
+      "live_data_provisional": [
+        {
+          "name_en": "Wheel Speed FL/FR/RL/RR",
+          "translation_ar": "سرعات العجلات الأربع",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Brake Pressure",
+          "translation_ar": "ضغط الفرامل",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "EPS Supply Voltage",
+          "translation_ar": "جهد تغذية التوجيه",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Steering Angle",
+          "translation_ar": "زاوية التوجيه",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Actuator Command/Feedback",
+          "translation_ar": "أمر/استجابة المشغل",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        }
+      ],
+      "parts_unverified": [
+        {
+          "component_and_location": "الحساس أو المشغل المشار إليه وECU الكبح/التوجيه/التعليق؛ موضع الوحدة والفيشة يحتاج مخطط النسخة",
+          "part_number": "غير مؤكد",
+          "ecu": "Active Suspension",
+          "evidence": "استدلال من عنوان الكود؛ رقم القطعة/المكان النهائي غير موثق"
+        }
+      ],
+      "fuse_pin_wiring_unverified": {
+        "verified_wiring_diagram_url": null,
+        "reference_catalogue_url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "pinouts": "غير مؤكد",
+        "fuses": "غير مؤكد",
+        "specification": "غير مؤكد؛ مطلوب VIN والموديل وسنة الإنتاج ونسخة ECU"
+      },
+      "video_search_only": {
+        "search_url": "https://www.youtube.com/results?search_query=BYD%20Sealion%2007%20EV%20%28not%20automatically%20Sealion%207%20Europe%29%20C2DA612%20Active%20Suspension%20diagnosis",
+        "note": "رابط نتائج بحث وليس فيديو موثّقاً"
+      },
+      "priority_evidence_provisional": {
+        "priority": "فهرسة فقط",
+        "workshop_frequency": "غير مؤكد؛ لا توجد إحصاءات أعطال ورش منشورة تحققنا منها",
+        "basis": "أولوية مبنية على خطورة/قيمة التشخيص لا على معدل التكرار"
+      },
+      "source_ids": [
+        "CATALOG-SEALION07"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-001",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-0d6ef530e971335e",
+      "brand": "BYD",
+      "code_raw": "C2DA613",
+      "base_code": "C2DA6",
+      "extension_2hex": "13",
+      "suffix_type": "2-character extension as catalogued; no confirmed standard FTB mapping",
+      "family": "C",
+      "ecu_label_catalogue": "Active Suspension",
+      "definition_en_catalogue": "Right Front Valve Open Circuit",
+      "translation_ar_provisional": "انقطاع دائرة صمام التعليق الأمامي الأيمن",
+      "classification_source_statement": "C / مصنعي/نطاق غير قياسي؛ تعريف BYD مستند إلى فهرس طرف ثالث",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [
+        {
+          "text": "غير مؤكد؛ المراجَع عنوان الفهرس فقط، ولم يتم الاطلاع على جدول شروط ضبط الكود أو أعراضه",
+          "evidence": "not disclosed in accessed public index"
+        }
+      ],
+      "causes_provisional": [
+        {
+          "cause": "الجزء أو الدائرة المحددة بعنوان الكود",
+          "rank": "غير مؤكد؛ لا توجد بيانات حالات أو فحص سبب",
+          "evidence": "استدلال من اسم الكود فقط، وليس تشخيص مصنع"
+        }
+      ],
+      "live_data_provisional": [
+        {
+          "name_en": "Wheel Speed FL/FR/RL/RR",
+          "translation_ar": "سرعات العجلات الأربع",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Brake Pressure",
+          "translation_ar": "ضغط الفرامل",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "EPS Supply Voltage",
+          "translation_ar": "جهد تغذية التوجيه",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Steering Angle",
+          "translation_ar": "زاوية التوجيه",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Actuator Command/Feedback",
+          "translation_ar": "أمر/استجابة المشغل",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        }
+      ],
+      "parts_unverified": [
+        {
+          "component_and_location": "الحساس أو المشغل المشار إليه وECU الكبح/التوجيه/التعليق؛ موضع الوحدة والفيشة يحتاج مخطط النسخة",
+          "part_number": "غير مؤكد",
+          "ecu": "Active Suspension",
+          "evidence": "استدلال من عنوان الكود؛ رقم القطعة/المكان النهائي غير موثق"
+        }
+      ],
+      "fuse_pin_wiring_unverified": {
+        "verified_wiring_diagram_url": null,
+        "reference_catalogue_url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "pinouts": "غير مؤكد",
+        "fuses": "غير مؤكد",
+        "specification": "غير مؤكد؛ مطلوب VIN والموديل وسنة الإنتاج ونسخة ECU"
+      },
+      "video_search_only": {
+        "search_url": "https://www.youtube.com/results?search_query=BYD%20Sealion%2007%20EV%20%28not%20automatically%20Sealion%207%20Europe%29%20C2DA613%20Active%20Suspension%20diagnosis",
+        "note": "رابط نتائج بحث وليس فيديو موثّقاً"
+      },
+      "priority_evidence_provisional": {
+        "priority": "فهرسة فقط",
+        "workshop_frequency": "غير مؤكد؛ لا توجد إحصاءات أعطال ورش منشورة تحققنا منها",
+        "basis": "أولوية مبنية على خطورة/قيمة التشخيص لا على معدل التكرار"
+      },
+      "source_ids": [
+        "CATALOG-SEALION07"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-001",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-ef32b3abb3e8b3fa",
+      "brand": "BYD",
+      "code_raw": "C2DA619",
+      "base_code": "C2DA6",
+      "extension_2hex": "19",
+      "suffix_type": "2-character extension as catalogued; no confirmed standard FTB mapping",
+      "family": "C",
+      "ecu_label_catalogue": "Active Suspension",
+      "definition_en_catalogue": "Overcurrent due to short circuit of the right front valve",
+      "translation_ar_provisional": "زيادة تيار صمام التعليق الأمامي الأيمن بسبب قصر",
+      "classification_source_statement": "C / مصنعي/نطاق غير قياسي؛ تعريف BYD مستند إلى فهرس طرف ثالث",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [
+        {
+          "text": "غير مؤكد؛ المراجَع عنوان الفهرس فقط، ولم يتم الاطلاع على جدول شروط ضبط الكود أو أعراضه",
+          "evidence": "not disclosed in accessed public index"
+        }
+      ],
+      "causes_provisional": [
+        {
+          "cause": "الجزء أو الدائرة المحددة بعنوان الكود",
+          "rank": "غير مؤكد؛ لا توجد بيانات حالات أو فحص سبب",
+          "evidence": "استدلال من اسم الكود فقط، وليس تشخيص مصنع"
+        }
+      ],
+      "live_data_provisional": [
+        {
+          "name_en": "Wheel Speed FL/FR/RL/RR",
+          "translation_ar": "سرعات العجلات الأربع",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Brake Pressure",
+          "translation_ar": "ضغط الفرامل",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "EPS Supply Voltage",
+          "translation_ar": "جهد تغذية التوجيه",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Steering Angle",
+          "translation_ar": "زاوية التوجيه",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Actuator Command/Feedback",
+          "translation_ar": "أمر/استجابة المشغل",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        }
+      ],
+      "parts_unverified": [
+        {
+          "component_and_location": "الحساس أو المشغل المشار إليه وECU الكبح/التوجيه/التعليق؛ موضع الوحدة والفيشة يحتاج مخطط النسخة",
+          "part_number": "غير مؤكد",
+          "ecu": "Active Suspension",
+          "evidence": "استدلال من عنوان الكود؛ رقم القطعة/المكان النهائي غير موثق"
+        }
+      ],
+      "fuse_pin_wiring_unverified": {
+        "verified_wiring_diagram_url": null,
+        "reference_catalogue_url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "pinouts": "غير مؤكد",
+        "fuses": "غير مؤكد",
+        "specification": "غير مؤكد؛ مطلوب VIN والموديل وسنة الإنتاج ونسخة ECU"
+      },
+      "video_search_only": {
+        "search_url": "https://www.youtube.com/results?search_query=BYD%20Sealion%2007%20EV%20%28not%20automatically%20Sealion%207%20Europe%29%20C2DA619%20Active%20Suspension%20diagnosis",
+        "note": "رابط نتائج بحث وليس فيديو موثّقاً"
+      },
+      "priority_evidence_provisional": {
+        "priority": "فهرسة فقط",
+        "workshop_frequency": "غير مؤكد؛ لا توجد إحصاءات أعطال ورش منشورة تحققنا منها",
+        "basis": "أولوية مبنية على خطورة/قيمة التشخيص لا على معدل التكرار"
+      },
+      "source_ids": [
+        "CATALOG-SEALION07"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-001",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-7150e50be9872e9b",
+      "brand": "BYD",
+      "code_raw": "B2AB049",
+      "base_code": "B2AB0",
+      "extension_2hex": "49",
+      "suffix_type": "2-character extension as catalogued; no confirmed standard FTB mapping",
+      "family": "B",
+      "ecu_label_catalogue": "HVAC Compressor",
+      "definition_en_catalogue": "Compressor current sampling circuit fault",
+      "translation_ar_provisional": "خلل دائرة قياس تيار الضاغط",
+      "classification_source_statement": "B / مصنعي/نطاق غير قياسي؛ تعريف BYD مستند إلى فهرس طرف ثالث",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [
+        {
+          "text": "غير مؤكد؛ المراجَع عنوان الفهرس فقط، ولم يتم الاطلاع على جدول شروط ضبط الكود أو أعراضه",
+          "evidence": "not disclosed in accessed public index"
+        }
+      ],
+      "causes_provisional": [
+        {
+          "cause": "الجزء أو الدائرة المحددة بعنوان الكود",
+          "rank": "غير مؤكد؛ لا توجد بيانات حالات أو فحص سبب",
+          "evidence": "استدلال من اسم الكود فقط، وليس تشخيص مصنع"
+        }
+      ],
+      "live_data_provisional": [
+        {
+          "name_en": "Cabin Temperature Sensor",
+          "translation_ar": "حساس حرارة المقصورة",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Ambient Temperature Sensor",
+          "translation_ar": "حساس الحرارة الخارجية",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Evaporator Temperature",
+          "translation_ar": "حرارة المبخر",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Refrigerant Pressure",
+          "translation_ar": "ضغط سائل التبريد",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Compressor Request/Actual Speed",
+          "translation_ar": "سرعة الضاغط المطلوبة/الفعلية",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        }
+      ],
+      "parts_unverified": [
+        {
+          "component_and_location": "حساس المناخ أو الضاغط/مشغّل الهواء بحسب الرمز؛ الموقع الدقيق غير مؤكد",
+          "part_number": "غير مؤكد",
+          "ecu": "HVAC Compressor",
+          "evidence": "استدلال من عنوان الكود؛ رقم القطعة/المكان النهائي غير موثق"
+        }
+      ],
+      "fuse_pin_wiring_unverified": {
+        "verified_wiring_diagram_url": null,
+        "reference_catalogue_url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "pinouts": "غير مؤكد",
+        "fuses": "غير مؤكد",
+        "specification": "غير مؤكد؛ مطلوب VIN والموديل وسنة الإنتاج ونسخة ECU"
+      },
+      "video_search_only": {
+        "search_url": "https://www.youtube.com/results?search_query=BYD%20Sealion%2007%20EV%20%28not%20automatically%20Sealion%207%20Europe%29%20B2AB049%20HVAC%20Compressor%20diagnosis",
+        "note": "رابط نتائج بحث وليس فيديو موثّقاً"
+      },
+      "priority_evidence_provisional": {
+        "priority": "فهرسة فقط",
+        "workshop_frequency": "غير مؤكد؛ لا توجد إحصاءات أعطال ورش منشورة تحققنا منها",
+        "basis": "أولوية مبنية على خطورة/قيمة التشخيص لا على معدل التكرار"
+      },
+      "source_ids": [
+        "CATALOG-SEALION07"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-001",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-738600526d0abcee",
+      "brand": "BYD",
+      "code_raw": "B2AB149",
+      "base_code": "B2AB1",
+      "extension_2hex": "49",
+      "suffix_type": "2-character extension as catalogued; no confirmed standard FTB mapping",
+      "family": "B",
+      "ecu_label_catalogue": "HVAC Compressor",
+      "definition_en_catalogue": "Compressor Motor Phase Failure",
+      "translation_ar_provisional": "فقدان طور من أطوار محرك الضاغط",
+      "classification_source_statement": "B / مصنعي/نطاق غير قياسي؛ تعريف BYD مستند إلى فهرس طرف ثالث",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [
+        {
+          "text": "غير مؤكد؛ المراجَع عنوان الفهرس فقط، ولم يتم الاطلاع على جدول شروط ضبط الكود أو أعراضه",
+          "evidence": "not disclosed in accessed public index"
+        }
+      ],
+      "causes_provisional": [
+        {
+          "cause": "الجزء أو الدائرة المحددة بعنوان الكود",
+          "rank": "غير مؤكد؛ لا توجد بيانات حالات أو فحص سبب",
+          "evidence": "استدلال من اسم الكود فقط، وليس تشخيص مصنع"
+        }
+      ],
+      "live_data_provisional": [
+        {
+          "name_en": "Cabin Temperature Sensor",
+          "translation_ar": "حساس حرارة المقصورة",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Ambient Temperature Sensor",
+          "translation_ar": "حساس الحرارة الخارجية",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Evaporator Temperature",
+          "translation_ar": "حرارة المبخر",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Refrigerant Pressure",
+          "translation_ar": "ضغط سائل التبريد",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Compressor Request/Actual Speed",
+          "translation_ar": "سرعة الضاغط المطلوبة/الفعلية",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        }
+      ],
+      "parts_unverified": [
+        {
+          "component_and_location": "حساس المناخ أو الضاغط/مشغّل الهواء بحسب الرمز؛ الموقع الدقيق غير مؤكد",
+          "part_number": "غير مؤكد",
+          "ecu": "HVAC Compressor",
+          "evidence": "استدلال من عنوان الكود؛ رقم القطعة/المكان النهائي غير موثق"
+        }
+      ],
+      "fuse_pin_wiring_unverified": {
+        "verified_wiring_diagram_url": null,
+        "reference_catalogue_url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "pinouts": "غير مؤكد",
+        "fuses": "غير مؤكد",
+        "specification": "غير مؤكد؛ مطلوب VIN والموديل وسنة الإنتاج ونسخة ECU"
+      },
+      "video_search_only": {
+        "search_url": "https://www.youtube.com/results?search_query=BYD%20Sealion%2007%20EV%20%28not%20automatically%20Sealion%207%20Europe%29%20B2AB149%20HVAC%20Compressor%20diagnosis",
+        "note": "رابط نتائج بحث وليس فيديو موثّقاً"
+      },
+      "priority_evidence_provisional": {
+        "priority": "فهرسة فقط",
+        "workshop_frequency": "غير مؤكد؛ لا توجد إحصاءات أعطال ورش منشورة تحققنا منها",
+        "basis": "أولوية مبنية على خطورة/قيمة التشخيص لا على معدل التكرار"
+      },
+      "source_ids": [
+        "CATALOG-SEALION07"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-001",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-27ba8e5ab6144411",
+      "brand": "BYD",
+      "code_raw": "B2AB249",
+      "base_code": "B2AB2",
+      "extension_2hex": "49",
+      "suffix_type": "2-character extension as catalogued; no confirmed standard FTB mapping",
+      "family": "B",
+      "ecu_label_catalogue": "HVAC Compressor",
+      "definition_en_catalogue": "Compressor IPM/IGBT Failure",
+      "translation_ar_provisional": "خلل وحدة قدرة IPM/IGBT للضاغط",
+      "classification_source_statement": "B / مصنعي/نطاق غير قياسي؛ تعريف BYD مستند إلى فهرس طرف ثالث",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [
+        {
+          "text": "غير مؤكد؛ المراجَع عنوان الفهرس فقط، ولم يتم الاطلاع على جدول شروط ضبط الكود أو أعراضه",
+          "evidence": "not disclosed in accessed public index"
+        }
+      ],
+      "causes_provisional": [
+        {
+          "cause": "الجزء أو الدائرة المحددة بعنوان الكود",
+          "rank": "غير مؤكد؛ لا توجد بيانات حالات أو فحص سبب",
+          "evidence": "استدلال من اسم الكود فقط، وليس تشخيص مصنع"
+        }
+      ],
+      "live_data_provisional": [
+        {
+          "name_en": "Cabin Temperature Sensor",
+          "translation_ar": "حساس حرارة المقصورة",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Ambient Temperature Sensor",
+          "translation_ar": "حساس الحرارة الخارجية",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Evaporator Temperature",
+          "translation_ar": "حرارة المبخر",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Refrigerant Pressure",
+          "translation_ar": "ضغط سائل التبريد",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Compressor Request/Actual Speed",
+          "translation_ar": "سرعة الضاغط المطلوبة/الفعلية",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        }
+      ],
+      "parts_unverified": [
+        {
+          "component_and_location": "حساس المناخ أو الضاغط/مشغّل الهواء بحسب الرمز؛ الموقع الدقيق غير مؤكد",
+          "part_number": "غير مؤكد",
+          "ecu": "HVAC Compressor",
+          "evidence": "استدلال من عنوان الكود؛ رقم القطعة/المكان النهائي غير موثق"
+        }
+      ],
+      "fuse_pin_wiring_unverified": {
+        "verified_wiring_diagram_url": null,
+        "reference_catalogue_url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "pinouts": "غير مؤكد",
+        "fuses": "غير مؤكد",
+        "specification": "غير مؤكد؛ مطلوب VIN والموديل وسنة الإنتاج ونسخة ECU"
+      },
+      "video_search_only": {
+        "search_url": "https://www.youtube.com/results?search_query=BYD%20Sealion%2007%20EV%20%28not%20automatically%20Sealion%207%20Europe%29%20B2AB249%20HVAC%20Compressor%20diagnosis",
+        "note": "رابط نتائج بحث وليس فيديو موثّقاً"
+      },
+      "priority_evidence_provisional": {
+        "priority": "فهرسة فقط",
+        "workshop_frequency": "غير مؤكد؛ لا توجد إحصاءات أعطال ورش منشورة تحققنا منها",
+        "basis": "أولوية مبنية على خطورة/قيمة التشخيص لا على معدل التكرار"
+      },
+      "source_ids": [
+        "CATALOG-SEALION07"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-001",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-edb2f541348574fe",
+      "brand": "BYD",
+      "code_raw": "B2AB573",
+      "base_code": "B2AB5",
+      "extension_2hex": "73",
+      "suffix_type": "2-character extension as catalogued; no confirmed standard FTB mapping",
+      "family": "B",
+      "ecu_label_catalogue": "HVAC Compressor",
+      "definition_en_catalogue": "Compressor Start-up Failure",
+      "translation_ar_provisional": "فشل بدء تشغيل الضاغط",
+      "classification_source_statement": "B / مصنعي/نطاق غير قياسي؛ تعريف BYD مستند إلى فهرس طرف ثالث",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [
+        {
+          "text": "غير مؤكد؛ المراجَع عنوان الفهرس فقط، ولم يتم الاطلاع على جدول شروط ضبط الكود أو أعراضه",
+          "evidence": "not disclosed in accessed public index"
+        }
+      ],
+      "causes_provisional": [
+        {
+          "cause": "الجزء أو الدائرة المحددة بعنوان الكود",
+          "rank": "غير مؤكد؛ لا توجد بيانات حالات أو فحص سبب",
+          "evidence": "استدلال من اسم الكود فقط، وليس تشخيص مصنع"
+        }
+      ],
+      "live_data_provisional": [
+        {
+          "name_en": "Cabin Temperature Sensor",
+          "translation_ar": "حساس حرارة المقصورة",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Ambient Temperature Sensor",
+          "translation_ar": "حساس الحرارة الخارجية",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Evaporator Temperature",
+          "translation_ar": "حرارة المبخر",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Refrigerant Pressure",
+          "translation_ar": "ضغط سائل التبريد",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Compressor Request/Actual Speed",
+          "translation_ar": "سرعة الضاغط المطلوبة/الفعلية",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        }
+      ],
+      "parts_unverified": [
+        {
+          "component_and_location": "حساس المناخ أو الضاغط/مشغّل الهواء بحسب الرمز؛ الموقع الدقيق غير مؤكد",
+          "part_number": "غير مؤكد",
+          "ecu": "HVAC Compressor",
+          "evidence": "استدلال من عنوان الكود؛ رقم القطعة/المكان النهائي غير موثق"
+        }
+      ],
+      "fuse_pin_wiring_unverified": {
+        "verified_wiring_diagram_url": null,
+        "reference_catalogue_url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "pinouts": "غير مؤكد",
+        "fuses": "غير مؤكد",
+        "specification": "غير مؤكد؛ مطلوب VIN والموديل وسنة الإنتاج ونسخة ECU"
+      },
+      "video_search_only": {
+        "search_url": "https://www.youtube.com/results?search_query=BYD%20Sealion%2007%20EV%20%28not%20automatically%20Sealion%207%20Europe%29%20B2AB573%20HVAC%20Compressor%20diagnosis",
+        "note": "رابط نتائج بحث وليس فيديو موثّقاً"
+      },
+      "priority_evidence_provisional": {
+        "priority": "فهرسة فقط",
+        "workshop_frequency": "غير مؤكد؛ لا توجد إحصاءات أعطال ورش منشورة تحققنا منها",
+        "basis": "أولوية مبنية على خطورة/قيمة التشخيص لا على معدل التكرار"
+      },
+      "source_ids": [
+        "CATALOG-SEALION07"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-001",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-e71adc18ec4534b8",
+      "brand": "BYD",
+      "code_raw": "B2AB64B",
+      "base_code": "B2AB6",
+      "extension_2hex": "4B",
+      "suffix_type": "2-character extension as catalogued; no confirmed standard FTB mapping",
+      "family": "B",
+      "ecu_label_catalogue": "HVAC Compressor",
+      "definition_en_catalogue": "Internal temperature of the compressor is abnormal",
+      "translation_ar_provisional": "ارتفاع غير طبيعي في حرارة الضاغط الداخلية",
+      "classification_source_statement": "B / مصنعي/نطاق غير قياسي؛ تعريف BYD مستند إلى فهرس طرف ثالث",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [
+        {
+          "text": "غير مؤكد؛ المراجَع عنوان الفهرس فقط، ولم يتم الاطلاع على جدول شروط ضبط الكود أو أعراضه",
+          "evidence": "not disclosed in accessed public index"
+        }
+      ],
+      "causes_provisional": [
+        {
+          "cause": "الجزء أو الدائرة المحددة بعنوان الكود",
+          "rank": "غير مؤكد؛ لا توجد بيانات حالات أو فحص سبب",
+          "evidence": "استدلال من اسم الكود فقط، وليس تشخيص مصنع"
+        }
+      ],
+      "live_data_provisional": [
+        {
+          "name_en": "Cabin Temperature Sensor",
+          "translation_ar": "حساس حرارة المقصورة",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Ambient Temperature Sensor",
+          "translation_ar": "حساس الحرارة الخارجية",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Evaporator Temperature",
+          "translation_ar": "حرارة المبخر",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Refrigerant Pressure",
+          "translation_ar": "ضغط سائل التبريد",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Compressor Request/Actual Speed",
+          "translation_ar": "سرعة الضاغط المطلوبة/الفعلية",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        }
+      ],
+      "parts_unverified": [
+        {
+          "component_and_location": "حساس المناخ أو الضاغط/مشغّل الهواء بحسب الرمز؛ الموقع الدقيق غير مؤكد",
+          "part_number": "غير مؤكد",
+          "ecu": "HVAC Compressor",
+          "evidence": "استدلال من عنوان الكود؛ رقم القطعة/المكان النهائي غير موثق"
+        }
+      ],
+      "fuse_pin_wiring_unverified": {
+        "verified_wiring_diagram_url": null,
+        "reference_catalogue_url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "pinouts": "غير مؤكد",
+        "fuses": "غير مؤكد",
+        "specification": "غير مؤكد؛ مطلوب VIN والموديل وسنة الإنتاج ونسخة ECU"
+      },
+      "video_search_only": {
+        "search_url": "https://www.youtube.com/results?search_query=BYD%20Sealion%2007%20EV%20%28not%20automatically%20Sealion%207%20Europe%29%20B2AB64B%20HVAC%20Compressor%20diagnosis",
+        "note": "رابط نتائج بحث وليس فيديو موثّقاً"
+      },
+      "priority_evidence_provisional": {
+        "priority": "فهرسة فقط",
+        "workshop_frequency": "غير مؤكد؛ لا توجد إحصاءات أعطال ورش منشورة تحققنا منها",
+        "basis": "أولوية مبنية على خطورة/قيمة التشخيص لا على معدل التكرار"
+      },
+      "source_ids": [
+        "CATALOG-SEALION07"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-001",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-f40db2d33e336131",
+      "brand": "BYD",
+      "code_raw": "B2AB774",
+      "base_code": "B2AB7",
+      "extension_2hex": "74",
+      "suffix_type": "2-character extension as catalogued; no confirmed standard FTB mapping",
+      "family": "B",
+      "ecu_label_catalogue": "HVAC Compressor",
+      "definition_en_catalogue": "Abnormal compressor speed fault",
+      "translation_ar_provisional": "خلل سرعة دوران الضاغط",
+      "classification_source_statement": "B / مصنعي/نطاق غير قياسي؛ تعريف BYD مستند إلى فهرس طرف ثالث",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [
+        {
+          "text": "غير مؤكد؛ المراجَع عنوان الفهرس فقط، ولم يتم الاطلاع على جدول شروط ضبط الكود أو أعراضه",
+          "evidence": "not disclosed in accessed public index"
+        }
+      ],
+      "causes_provisional": [
+        {
+          "cause": "الجزء أو الدائرة المحددة بعنوان الكود",
+          "rank": "غير مؤكد؛ لا توجد بيانات حالات أو فحص سبب",
+          "evidence": "استدلال من اسم الكود فقط، وليس تشخيص مصنع"
+        }
+      ],
+      "live_data_provisional": [
+        {
+          "name_en": "Cabin Temperature Sensor",
+          "translation_ar": "حساس حرارة المقصورة",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Ambient Temperature Sensor",
+          "translation_ar": "حساس الحرارة الخارجية",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Evaporator Temperature",
+          "translation_ar": "حرارة المبخر",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Refrigerant Pressure",
+          "translation_ar": "ضغط سائل التبريد",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Compressor Request/Actual Speed",
+          "translation_ar": "سرعة الضاغط المطلوبة/الفعلية",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        }
+      ],
+      "parts_unverified": [
+        {
+          "component_and_location": "حساس المناخ أو الضاغط/مشغّل الهواء بحسب الرمز؛ الموقع الدقيق غير مؤكد",
+          "part_number": "غير مؤكد",
+          "ecu": "HVAC Compressor",
+          "evidence": "استدلال من عنوان الكود؛ رقم القطعة/المكان النهائي غير موثق"
+        }
+      ],
+      "fuse_pin_wiring_unverified": {
+        "verified_wiring_diagram_url": null,
+        "reference_catalogue_url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "pinouts": "غير مؤكد",
+        "fuses": "غير مؤكد",
+        "specification": "غير مؤكد؛ مطلوب VIN والموديل وسنة الإنتاج ونسخة ECU"
+      },
+      "video_search_only": {
+        "search_url": "https://www.youtube.com/results?search_query=BYD%20Sealion%2007%20EV%20%28not%20automatically%20Sealion%207%20Europe%29%20B2AB774%20HVAC%20Compressor%20diagnosis",
+        "note": "رابط نتائج بحث وليس فيديو موثّقاً"
+      },
+      "priority_evidence_provisional": {
+        "priority": "فهرسة فقط",
+        "workshop_frequency": "غير مؤكد؛ لا توجد إحصاءات أعطال ورش منشورة تحققنا منها",
+        "basis": "أولوية مبنية على خطورة/قيمة التشخيص لا على معدل التكرار"
+      },
+      "source_ids": [
+        "CATALOG-SEALION07"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-001",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-221eb6ab5647266b",
+      "brand": "BYD",
+      "code_raw": "B23D509",
+      "base_code": "B23D5",
+      "extension_2hex": "09",
+      "suffix_type": "2-character extension as catalogued; no confirmed standard FTB mapping",
+      "family": "B",
+      "ecu_label_catalogue": "Cluster",
+      "definition_en_catalogue": "Instrument Display Backlight Failure",
+      "translation_ar_provisional": "تعطل الإضاءة الخلفية للشاشة في العدادات",
+      "classification_source_statement": "B / مصنعي/نطاق غير قياسي؛ تعريف BYD مستند إلى فهرس طرف ثالث",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [
+        {
+          "text": "غير مؤكد؛ المراجَع عنوان الفهرس فقط، ولم يتم الاطلاع على جدول شروط ضبط الكود أو أعراضه",
+          "evidence": "not disclosed in accessed public index"
+        }
+      ],
+      "causes_provisional": [
+        {
+          "cause": "الجزء أو الدائرة المحددة بعنوان الكود",
+          "rank": "غير مؤكد؛ لا توجد بيانات حالات أو فحص سبب",
+          "evidence": "استدلال من اسم الكود فقط، وليس تشخيص مصنع"
+        }
+      ],
+      "live_data_provisional": [
+        {
+          "name_en": "Module Supply Voltage",
+          "translation_ar": "جهد تغذية الوحدة",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Switch Input Status",
+          "translation_ar": "حالة دخل المفتاح",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Actuator Command",
+          "translation_ar": "أمر المشغّل",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "LIN/CAN Communication Status",
+          "translation_ar": "حالة اتصال LIN/CAN",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        }
+      ],
+      "parts_unverified": [
+        {
+          "component_and_location": "المفتاح أو المحرك أو الحساس المعني في وصف العطل؛ موضع طرفيات ECU غير مؤكد",
+          "part_number": "غير مؤكد",
+          "ecu": "Cluster",
+          "evidence": "استدلال من عنوان الكود؛ رقم القطعة/المكان النهائي غير موثق"
+        }
+      ],
+      "fuse_pin_wiring_unverified": {
+        "verified_wiring_diagram_url": null,
+        "reference_catalogue_url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "pinouts": "غير مؤكد",
+        "fuses": "غير مؤكد",
+        "specification": "غير مؤكد؛ مطلوب VIN والموديل وسنة الإنتاج ونسخة ECU"
+      },
+      "video_search_only": {
+        "search_url": "https://www.youtube.com/results?search_query=BYD%20Sealion%2007%20EV%20%28not%20automatically%20Sealion%207%20Europe%29%20B23D509%20Cluster%20diagnosis",
+        "note": "رابط نتائج بحث وليس فيديو موثّقاً"
+      },
+      "priority_evidence_provisional": {
+        "priority": "فهرسة فقط",
+        "workshop_frequency": "غير مؤكد؛ لا توجد إحصاءات أعطال ورش منشورة تحققنا منها",
+        "basis": "أولوية مبنية على خطورة/قيمة التشخيص لا على معدل التكرار"
+      },
+      "source_ids": [
+        "CATALOG-SEALION07"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-001",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-5c7fe7a83e3079d5",
+      "brand": "BYD",
+      "code_raw": "B23D798",
+      "base_code": "B23D7",
+      "extension_2hex": "98",
+      "suffix_type": "2-character extension as catalogued; no confirmed standard FTB mapping",
+      "family": "B",
+      "ecu_label_catalogue": "Cluster",
+      "definition_en_catalogue": "Instrument PCB Working Temperature Abnormal",
+      "translation_ar_provisional": "حرارة لوحة العدادات الإلكترونية غير طبيعية",
+      "classification_source_statement": "B / مصنعي/نطاق غير قياسي؛ تعريف BYD مستند إلى فهرس طرف ثالث",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [
+        {
+          "text": "غير مؤكد؛ المراجَع عنوان الفهرس فقط، ولم يتم الاطلاع على جدول شروط ضبط الكود أو أعراضه",
+          "evidence": "not disclosed in accessed public index"
+        }
+      ],
+      "causes_provisional": [
+        {
+          "cause": "الجزء أو الدائرة المحددة بعنوان الكود",
+          "rank": "غير مؤكد؛ لا توجد بيانات حالات أو فحص سبب",
+          "evidence": "استدلال من اسم الكود فقط، وليس تشخيص مصنع"
+        }
+      ],
+      "live_data_provisional": [
+        {
+          "name_en": "Module Supply Voltage",
+          "translation_ar": "جهد تغذية الوحدة",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Switch Input Status",
+          "translation_ar": "حالة دخل المفتاح",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Actuator Command",
+          "translation_ar": "أمر المشغّل",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "LIN/CAN Communication Status",
+          "translation_ar": "حالة اتصال LIN/CAN",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        }
+      ],
+      "parts_unverified": [
+        {
+          "component_and_location": "المفتاح أو المحرك أو الحساس المعني في وصف العطل؛ موضع طرفيات ECU غير مؤكد",
+          "part_number": "غير مؤكد",
+          "ecu": "Cluster",
+          "evidence": "استدلال من عنوان الكود؛ رقم القطعة/المكان النهائي غير موثق"
+        }
+      ],
+      "fuse_pin_wiring_unverified": {
+        "verified_wiring_diagram_url": null,
+        "reference_catalogue_url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "pinouts": "غير مؤكد",
+        "fuses": "غير مؤكد",
+        "specification": "غير مؤكد؛ مطلوب VIN والموديل وسنة الإنتاج ونسخة ECU"
+      },
+      "video_search_only": {
+        "search_url": "https://www.youtube.com/results?search_query=BYD%20Sealion%2007%20EV%20%28not%20automatically%20Sealion%207%20Europe%29%20B23D798%20Cluster%20diagnosis",
+        "note": "رابط نتائج بحث وليس فيديو موثّقاً"
+      },
+      "priority_evidence_provisional": {
+        "priority": "فهرسة فقط",
+        "workshop_frequency": "غير مؤكد؛ لا توجد إحصاءات أعطال ورش منشورة تحققنا منها",
+        "basis": "أولوية مبنية على خطورة/قيمة التشخيص لا على معدل التكرار"
+      },
+      "source_ids": [
+        "CATALOG-SEALION07"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-001",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-c7956ac0c75dedf5",
+      "brand": "BYD",
+      "code_raw": "U014087",
+      "base_code": "U0140",
+      "extension_2hex": "87",
+      "suffix_type": "2-character extension as catalogued; no confirmed standard FTB mapping",
+      "family": "U",
+      "ecu_label_catalogue": "Wireless Charging",
+      "definition_en_catalogue": "BCM node lost",
+      "translation_ar_provisional": "فقد الاتصال بوحدة BCM",
+      "classification_source_statement": "U / نطاق قياسي محتمل؛ مطابقة الوصف الرسمي مع SAE J2012DA غير مؤكدة",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [
+        {
+          "text": "غير مؤكد؛ المراجَع عنوان الفهرس فقط، ولم يتم الاطلاع على جدول شروط ضبط الكود أو أعراضه",
+          "evidence": "not disclosed in accessed public index"
+        }
+      ],
+      "causes_provisional": [
+        {
+          "cause": "الجزء أو الدائرة المحددة بعنوان الكود",
+          "rank": "غير مؤكد؛ لا توجد بيانات حالات أو فحص سبب",
+          "evidence": "استدلال من اسم الكود فقط، وليس تشخيص مصنع"
+        }
+      ],
+      "live_data_provisional": [
+        {
+          "name_en": "Module Supply Voltage",
+          "translation_ar": "جهد تغذية الوحدة",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Switch Input Status",
+          "translation_ar": "حالة دخل المفتاح",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Actuator Command",
+          "translation_ar": "أمر المشغّل",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "LIN/CAN Communication Status",
+          "translation_ar": "حالة اتصال LIN/CAN",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        }
+      ],
+      "parts_unverified": [
+        {
+          "component_and_location": "المفتاح أو المحرك أو الحساس المعني في وصف العطل؛ موضع طرفيات ECU غير مؤكد",
+          "part_number": "غير مؤكد",
+          "ecu": "Wireless Charging",
+          "evidence": "استدلال من عنوان الكود؛ رقم القطعة/المكان النهائي غير موثق"
+        }
+      ],
+      "fuse_pin_wiring_unverified": {
+        "verified_wiring_diagram_url": null,
+        "reference_catalogue_url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "pinouts": "غير مؤكد",
+        "fuses": "غير مؤكد",
+        "specification": "غير مؤكد؛ مطلوب VIN والموديل وسنة الإنتاج ونسخة ECU"
+      },
+      "video_search_only": {
+        "search_url": "https://www.youtube.com/results?search_query=BYD%20Sealion%2007%20EV%20%28not%20automatically%20Sealion%207%20Europe%29%20U014087%20Wireless%20Charging%20diagnosis",
+        "note": "رابط نتائج بحث وليس فيديو موثّقاً"
+      },
+      "priority_evidence_provisional": {
+        "priority": "فهرسة فقط",
+        "workshop_frequency": "غير مؤكد؛ لا توجد إحصاءات أعطال ورش منشورة تحققنا منها",
+        "basis": "أولوية مبنية على خطورة/قيمة التشخيص لا على معدل التكرار"
+      },
+      "source_ids": [
+        "CATALOG-SEALION07"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-001",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-ede15d3959305ff7",
+      "brand": "BYD",
+      "code_raw": "B2FD016",
+      "base_code": "B2FD0",
+      "extension_2hex": "16",
+      "suffix_type": "2-character extension as catalogued; no confirmed standard FTB mapping",
+      "family": "B",
+      "ecu_label_catalogue": "Wireless Charging",
+      "definition_en_catalogue": "Power Voltage Low Alarm",
+      "translation_ar_provisional": "إنذار انخفاض جهد الشحن اللاسلكي",
+      "classification_source_statement": "B / مصنعي/نطاق غير قياسي؛ تعريف BYD مستند إلى فهرس طرف ثالث",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [
+        {
+          "text": "غير مؤكد؛ المراجَع عنوان الفهرس فقط، ولم يتم الاطلاع على جدول شروط ضبط الكود أو أعراضه",
+          "evidence": "not disclosed in accessed public index"
+        }
+      ],
+      "causes_provisional": [
+        {
+          "cause": "الجزء أو الدائرة المحددة بعنوان الكود",
+          "rank": "غير مؤكد؛ لا توجد بيانات حالات أو فحص سبب",
+          "evidence": "استدلال من اسم الكود فقط، وليس تشخيص مصنع"
+        }
+      ],
+      "live_data_provisional": [
+        {
+          "name_en": "Module Supply Voltage",
+          "translation_ar": "جهد تغذية الوحدة",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Switch Input Status",
+          "translation_ar": "حالة دخل المفتاح",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Actuator Command",
+          "translation_ar": "أمر المشغّل",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "LIN/CAN Communication Status",
+          "translation_ar": "حالة اتصال LIN/CAN",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        }
+      ],
+      "parts_unverified": [
+        {
+          "component_and_location": "المفتاح أو المحرك أو الحساس المعني في وصف العطل؛ موضع طرفيات ECU غير مؤكد",
+          "part_number": "غير مؤكد",
+          "ecu": "Wireless Charging",
+          "evidence": "استدلال من عنوان الكود؛ رقم القطعة/المكان النهائي غير موثق"
+        }
+      ],
+      "fuse_pin_wiring_unverified": {
+        "verified_wiring_diagram_url": null,
+        "reference_catalogue_url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "pinouts": "غير مؤكد",
+        "fuses": "غير مؤكد",
+        "specification": "غير مؤكد؛ مطلوب VIN والموديل وسنة الإنتاج ونسخة ECU"
+      },
+      "video_search_only": {
+        "search_url": "https://www.youtube.com/results?search_query=BYD%20Sealion%2007%20EV%20%28not%20automatically%20Sealion%207%20Europe%29%20B2FD016%20Wireless%20Charging%20diagnosis",
+        "note": "رابط نتائج بحث وليس فيديو موثّقاً"
+      },
+      "priority_evidence_provisional": {
+        "priority": "فهرسة فقط",
+        "workshop_frequency": "غير مؤكد؛ لا توجد إحصاءات أعطال ورش منشورة تحققنا منها",
+        "basis": "أولوية مبنية على خطورة/قيمة التشخيص لا على معدل التكرار"
+      },
+      "source_ids": [
+        "CATALOG-SEALION07"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-001",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-f297a39962ee83a0",
+      "brand": "BYD",
+      "code_raw": "B2FD017",
+      "base_code": "B2FD0",
+      "extension_2hex": "17",
+      "suffix_type": "2-character extension as catalogued; no confirmed standard FTB mapping",
+      "family": "B",
+      "ecu_label_catalogue": "Wireless Charging",
+      "definition_en_catalogue": "Power Voltage High Alarm",
+      "translation_ar_provisional": "إنذار ارتفاع جهد الشحن اللاسلكي",
+      "classification_source_statement": "B / مصنعي/نطاق غير قياسي؛ تعريف BYD مستند إلى فهرس طرف ثالث",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [
+        {
+          "text": "غير مؤكد؛ المراجَع عنوان الفهرس فقط، ولم يتم الاطلاع على جدول شروط ضبط الكود أو أعراضه",
+          "evidence": "not disclosed in accessed public index"
+        }
+      ],
+      "causes_provisional": [
+        {
+          "cause": "الجزء أو الدائرة المحددة بعنوان الكود",
+          "rank": "غير مؤكد؛ لا توجد بيانات حالات أو فحص سبب",
+          "evidence": "استدلال من اسم الكود فقط، وليس تشخيص مصنع"
+        }
+      ],
+      "live_data_provisional": [
+        {
+          "name_en": "Module Supply Voltage",
+          "translation_ar": "جهد تغذية الوحدة",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Switch Input Status",
+          "translation_ar": "حالة دخل المفتاح",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Actuator Command",
+          "translation_ar": "أمر المشغّل",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "LIN/CAN Communication Status",
+          "translation_ar": "حالة اتصال LIN/CAN",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        }
+      ],
+      "parts_unverified": [
+        {
+          "component_and_location": "المفتاح أو المحرك أو الحساس المعني في وصف العطل؛ موضع طرفيات ECU غير مؤكد",
+          "part_number": "غير مؤكد",
+          "ecu": "Wireless Charging",
+          "evidence": "استدلال من عنوان الكود؛ رقم القطعة/المكان النهائي غير موثق"
+        }
+      ],
+      "fuse_pin_wiring_unverified": {
+        "verified_wiring_diagram_url": null,
+        "reference_catalogue_url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "pinouts": "غير مؤكد",
+        "fuses": "غير مؤكد",
+        "specification": "غير مؤكد؛ مطلوب VIN والموديل وسنة الإنتاج ونسخة ECU"
+      },
+      "video_search_only": {
+        "search_url": "https://www.youtube.com/results?search_query=BYD%20Sealion%2007%20EV%20%28not%20automatically%20Sealion%207%20Europe%29%20B2FD017%20Wireless%20Charging%20diagnosis",
+        "note": "رابط نتائج بحث وليس فيديو موثّقاً"
+      },
+      "priority_evidence_provisional": {
+        "priority": "فهرسة فقط",
+        "workshop_frequency": "غير مؤكد؛ لا توجد إحصاءات أعطال ورش منشورة تحققنا منها",
+        "basis": "أولوية مبنية على خطورة/قيمة التشخيص لا على معدل التكرار"
+      },
+      "source_ids": [
+        "CATALOG-SEALION07"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-001",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-c64d2ea633aaf5cc",
+      "brand": "BYD",
+      "code_raw": "B2FD14B",
+      "base_code": "B2FD1",
+      "extension_2hex": "4B",
+      "suffix_type": "2-character extension as catalogued; no confirmed standard FTB mapping",
+      "family": "B",
+      "ecu_label_catalogue": "Wireless Charging",
+      "definition_en_catalogue": "Wireless Charging Temperature Overheating Alarm",
+      "translation_ar_provisional": "إنذار ارتفاع حرارة الشحن اللاسلكي",
+      "classification_source_statement": "B / مصنعي/نطاق غير قياسي؛ تعريف BYD مستند إلى فهرس طرف ثالث",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [
+        {
+          "text": "غير مؤكد؛ المراجَع عنوان الفهرس فقط، ولم يتم الاطلاع على جدول شروط ضبط الكود أو أعراضه",
+          "evidence": "not disclosed in accessed public index"
+        }
+      ],
+      "causes_provisional": [
+        {
+          "cause": "الجزء أو الدائرة المحددة بعنوان الكود",
+          "rank": "غير مؤكد؛ لا توجد بيانات حالات أو فحص سبب",
+          "evidence": "استدلال من اسم الكود فقط، وليس تشخيص مصنع"
+        }
+      ],
+      "live_data_provisional": [
+        {
+          "name_en": "Module Supply Voltage",
+          "translation_ar": "جهد تغذية الوحدة",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Switch Input Status",
+          "translation_ar": "حالة دخل المفتاح",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "Actuator Command",
+          "translation_ar": "أمر المشغّل",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        },
+        {
+          "name_en": "LIN/CAN Communication Status",
+          "translation_ar": "حالة اتصال LIN/CAN",
+          "expected_value": "غير مؤكد",
+          "pid_availability": "غير مؤكد؛ اسم وظيفي إرشادي وليس اسم PID معتمداً من BYD"
+        }
+      ],
+      "parts_unverified": [
+        {
+          "component_and_location": "المفتاح أو المحرك أو الحساس المعني في وصف العطل؛ موضع طرفيات ECU غير مؤكد",
+          "part_number": "غير مؤكد",
+          "ecu": "Wireless Charging",
+          "evidence": "استدلال من عنوان الكود؛ رقم القطعة/المكان النهائي غير موثق"
+        }
+      ],
+      "fuse_pin_wiring_unverified": {
+        "verified_wiring_diagram_url": null,
+        "reference_catalogue_url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "pinouts": "غير مؤكد",
+        "fuses": "غير مؤكد",
+        "specification": "غير مؤكد؛ مطلوب VIN والموديل وسنة الإنتاج ونسخة ECU"
+      },
+      "video_search_only": {
+        "search_url": "https://www.youtube.com/results?search_query=BYD%20Sealion%2007%20EV%20%28not%20automatically%20Sealion%207%20Europe%29%20B2FD14B%20Wireless%20Charging%20diagnosis",
+        "note": "رابط نتائج بحث وليس فيديو موثّقاً"
+      },
+      "priority_evidence_provisional": {
+        "priority": "فهرسة فقط",
+        "workshop_frequency": "غير مؤكد؛ لا توجد إحصاءات أعطال ورش منشورة تحققنا منها",
+        "basis": "أولوية مبنية على خطورة/قيمة التشخيص لا على معدل التكرار"
+      },
+      "source_ids": [
+        "CATALOG-SEALION07"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-001",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-87d9bc1e30d39195",
+      "brand": "BYD",
+      "code_raw": "P2B7517",
+      "base_code": "P2B75",
+      "extension_2hex": "17",
+      "suffix_type": "2-character extension in public catalogue; failure type unverified",
+      "family": "P",
+      "ecu_label_catalogue": "BMS",
+      "definition_en_catalogue": "Traction battery pack voltage above expected upper range",
+      "definition_authority": "editorial technical paraphrase of published third-party heading; not verified official wording",
+      "translation_ar_provisional": "ارتفاع جهد حزمة بطارية الدفع عن النطاق المرجعي",
+      "classification_source_statement": "classification requires validated SAE/ISO mapping for this ECU revision",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [],
+      "causes_provisional": [],
+      "live_data_provisional": [],
+      "parts_unverified": [],
+      "fuse_pin_wiring_unverified": null,
+      "video_search_only": null,
+      "priority_evidence_provisional": "not statistically ranked",
+      "source_ids": [
+        "CATALOG-ATTO3"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-002",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-074361a244aa7778",
+      "brand": "BYD",
+      "code_raw": "P26834B",
+      "base_code": "P2683",
+      "extension_2hex": "4B",
+      "suffix_type": "2-character extension in public catalogue; failure type unverified",
+      "family": "P",
+      "ecu_label_catalogue": "VCU charging port",
+      "definition_en_catalogue": "Charge inlet temperature rise above general warning threshold; regional variant",
+      "definition_authority": "editorial technical paraphrase of published third-party heading; not verified official wording",
+      "translation_ar_provisional": "ارتفاع حرارة منفذ الشحن عن عتبة التحذير العامة؛ يتغير الإجراء حسب معيار السوق",
+      "classification_source_statement": "classification requires validated SAE/ISO mapping for this ECU revision",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [],
+      "causes_provisional": [],
+      "live_data_provisional": [],
+      "parts_unverified": [],
+      "fuse_pin_wiring_unverified": null,
+      "video_search_only": null,
+      "priority_evidence_provisional": "not statistically ranked",
+      "source_ids": [
+        "CATALOG-ATTO3"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-002",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-969fe7c3b0effad5",
+      "brand": "BYD",
+      "code_raw": "P26804B",
+      "base_code": "P2680",
+      "extension_2hex": "4B",
+      "suffix_type": "2-character extension in public catalogue; failure type unverified",
+      "family": "P",
+      "ecu_label_catalogue": "VCU charging port",
+      "definition_en_catalogue": "Charging connector thermal rise warning, monitored path one",
+      "definition_authority": "editorial technical paraphrase of published third-party heading; not verified official wording",
+      "translation_ar_provisional": "تحذير ارتفاع حرارة موصل الشحن في مسار المراقبة الأول",
+      "classification_source_statement": "classification requires validated SAE/ISO mapping for this ECU revision",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [],
+      "causes_provisional": [],
+      "live_data_provisional": [],
+      "parts_unverified": [],
+      "fuse_pin_wiring_unverified": null,
+      "video_search_only": null,
+      "priority_evidence_provisional": "not statistically ranked",
+      "source_ids": [
+        "CATALOG-ATTO3"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-002",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-43019834a1353329",
+      "brand": "BYD",
+      "code_raw": "P26814B",
+      "base_code": "P2681",
+      "extension_2hex": "4B",
+      "suffix_type": "2-character extension in public catalogue; failure type unverified",
+      "family": "P",
+      "ecu_label_catalogue": "VCU charging port",
+      "definition_en_catalogue": "Charging connector thermal rise warning, monitored path two",
+      "definition_authority": "editorial technical paraphrase of published third-party heading; not verified official wording",
+      "translation_ar_provisional": "تحذير ارتفاع حرارة موصل الشحن في مسار المراقبة الثاني",
+      "classification_source_statement": "classification requires validated SAE/ISO mapping for this ECU revision",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [],
+      "causes_provisional": [],
+      "live_data_provisional": [],
+      "parts_unverified": [],
+      "fuse_pin_wiring_unverified": null,
+      "video_search_only": null,
+      "priority_evidence_provisional": "not statistically ranked",
+      "source_ids": [
+        "CATALOG-ATTO3"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-002",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-01ef9d39baea592c",
+      "brand": "BYD",
+      "code_raw": "P26844B",
+      "base_code": "P2684",
+      "extension_2hex": "4B",
+      "suffix_type": "2-character extension in public catalogue; failure type unverified",
+      "family": "P",
+      "ecu_label_catalogue": "VCU charging port",
+      "definition_en_catalogue": "Charge inlet temperature rise at serious severity",
+      "definition_authority": "editorial technical paraphrase of published third-party heading; not verified official wording",
+      "translation_ar_provisional": "ارتفاع شديد في حرارة منفذ الشحن",
+      "classification_source_statement": "classification requires validated SAE/ISO mapping for this ECU revision",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [],
+      "causes_provisional": [],
+      "live_data_provisional": [],
+      "parts_unverified": [],
+      "fuse_pin_wiring_unverified": null,
+      "video_search_only": null,
+      "priority_evidence_provisional": "not statistically ranked",
+      "source_ids": [
+        "CATALOG-ATTO3"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-002",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-c9e6829171a8a06c",
+      "brand": "BYD",
+      "code_raw": "P26824B",
+      "base_code": "P2682",
+      "extension_2hex": "4B",
+      "suffix_type": "2-character extension in public catalogue; failure type unverified",
+      "family": "P",
+      "ecu_label_catalogue": "VCU charging port",
+      "definition_en_catalogue": "Charge inlet temperature rise at serious severity, third indexed case",
+      "definition_authority": "editorial technical paraphrase of published third-party heading; not verified official wording",
+      "translation_ar_provisional": "ارتفاع شديد في حرارة منفذ الشحن؛ الحالة الثالثة في الفهرس",
+      "classification_source_statement": "classification requires validated SAE/ISO mapping for this ECU revision",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [],
+      "causes_provisional": [],
+      "live_data_provisional": [],
+      "parts_unverified": [],
+      "fuse_pin_wiring_unverified": null,
+      "video_search_only": null,
+      "priority_evidence_provisional": "not statistically ranked",
+      "source_ids": [
+        "CATALOG-ATTO3"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-002",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-3300efc612ee8231",
+      "brand": "BYD",
+      "code_raw": "P1A3622",
+      "base_code": "P1A36",
+      "extension_2hex": "22",
+      "suffix_type": "2-character extension in public catalogue; failure type unverified",
+      "family": "P",
+      "ecu_label_catalogue": "BMS",
+      "definition_en_catalogue": "Battery cell voltage elevated, general-severity fault",
+      "definition_authority": "editorial technical paraphrase of published third-party heading; not verified official wording",
+      "translation_ar_provisional": "ارتفاع جهد خلية البطارية بدرجة عامة",
+      "classification_source_statement": "classification requires validated SAE/ISO mapping for this ECU revision",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [],
+      "causes_provisional": [],
+      "live_data_provisional": [],
+      "parts_unverified": [],
+      "fuse_pin_wiring_unverified": null,
+      "video_search_only": null,
+      "priority_evidence_provisional": "not statistically ranked",
+      "source_ids": [
+        "CATALOG-ATTO3"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-002",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-4a8aa5c7226fe778",
+      "brand": "BYD",
+      "code_raw": "P1A3B21",
+      "base_code": "P1A3B",
+      "extension_2hex": "21",
+      "suffix_type": "2-character extension in public catalogue; failure type unverified",
+      "family": "P",
+      "ecu_label_catalogue": "BMS",
+      "definition_en_catalogue": "Battery cell temperature critically low",
+      "definition_authority": "editorial technical paraphrase of published third-party heading; not verified official wording",
+      "translation_ar_provisional": "انخفاض شديد في درجة حرارة خلية البطارية",
+      "classification_source_statement": "classification requires validated SAE/ISO mapping for this ECU revision",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [],
+      "causes_provisional": [],
+      "live_data_provisional": [],
+      "parts_unverified": [],
+      "fuse_pin_wiring_unverified": null,
+      "video_search_only": null,
+      "priority_evidence_provisional": "not statistically ranked",
+      "source_ids": [
+        "CATALOG-ATTO3"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-002",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-d80698da2db734b5",
+      "brand": "BYD",
+      "code_raw": "U027E01",
+      "base_code": "U027E",
+      "extension_2hex": "01",
+      "suffix_type": "2-character extension in public catalogue; failure type unverified",
+      "family": "U",
+      "ecu_label_catalogue": "BMS/BIC",
+      "definition_en_catalogue": "BIC1 cascade communication failure",
+      "definition_authority": "editorial technical paraphrase of published third-party heading; not verified official wording",
+      "translation_ar_provisional": "فشل اتصال التسلسل مع وحدة مراقبة خلايا البطارية الأولى",
+      "classification_source_statement": "classification requires validated SAE/ISO mapping for this ECU revision",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [],
+      "causes_provisional": [],
+      "live_data_provisional": [],
+      "parts_unverified": [],
+      "fuse_pin_wiring_unverified": null,
+      "video_search_only": null,
+      "priority_evidence_provisional": "not statistically ranked",
+      "source_ids": [
+        "CATALOG-ATTO3"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-002",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-4fe1ff7e43be40ef",
+      "brand": "BYD",
+      "code_raw": "P2B8A00",
+      "base_code": "P2B8A",
+      "extension_2hex": "00",
+      "suffix_type": "2-character extension in public catalogue; failure type unverified",
+      "family": "P",
+      "ecu_label_catalogue": "BMS (BIC context)",
+      "definition_en_catalogue": "Battery monitoring interface configuration disagrees with module state",
+      "definition_authority": "editorial technical paraphrase of published third-party heading; not verified official wording",
+      "translation_ar_provisional": "اختلاف تهيئة وحدة مراقبة الخلايا عن حالتها؛ تعريف متنازع عليه",
+      "classification_source_statement": "classification requires validated SAE/ISO mapping for this ECU revision",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [],
+      "causes_provisional": [],
+      "live_data_provisional": [],
+      "parts_unverified": [],
+      "fuse_pin_wiring_unverified": null,
+      "video_search_only": null,
+      "priority_evidence_provisional": "not statistically ranked",
+      "source_ids": [
+        "CATALOG-ATTO3"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-002",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-a8b89f0e77e89cc6",
+      "brand": "BYD",
+      "code_raw": "P2B8A00",
+      "base_code": "P2B8A",
+      "extension_2hex": "00",
+      "suffix_type": "2-character extension in public catalogue; failure type unverified",
+      "family": "P",
+      "ecu_label_catalogue": "BMS (HVSU context)",
+      "definition_en_catalogue": "High-voltage sampling unit electrical power abnormal",
+      "definition_authority": "editorial technical paraphrase of published third-party heading; not verified official wording",
+      "translation_ar_provisional": "خلل تغذية وحدة أخذ عينات الجهد العالي؛ تعريف متنازع عليه",
+      "classification_source_statement": "classification requires validated SAE/ISO mapping for this ECU revision",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [],
+      "causes_provisional": [],
+      "live_data_provisional": [],
+      "parts_unverified": [],
+      "fuse_pin_wiring_unverified": null,
+      "video_search_only": null,
+      "priority_evidence_provisional": "not statistically ranked",
+      "source_ids": [
+        "CATALOG-ATTO3"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-002",
+      "approved_for_automatic_vehicle_match": false
+    },
+    {
+      "dtc_id": "byd-dtc-5bb61f374fac4c6f",
+      "brand": "BYD",
+      "code_raw": "P2B9000",
+      "base_code": "P2B90",
+      "extension_2hex": "00",
+      "suffix_type": "2-character extension in public catalogue; failure type unverified",
+      "family": "P",
+      "ecu_label_catalogue": "BMS/HVSU",
+      "definition_en_catalogue": "High-voltage-side drive overcurrent in contactor actuation path",
+      "definition_authority": "editorial technical paraphrase of published third-party heading; not verified official wording",
+      "translation_ar_provisional": "تيار زائد بمسار قيادة قاطع الجهد العالي",
+      "classification_source_statement": "classification requires validated SAE/ISO mapping for this ECU revision",
+      "standard_vs_manufacturer_mapping": "unverified_without_current_authoritative_J2012DA_and_BYD_ECU_manual",
+      "symptoms_provisional": [],
+      "causes_provisional": [],
+      "live_data_provisional": [],
+      "parts_unverified": [],
+      "fuse_pin_wiring_unverified": null,
+      "video_search_only": null,
+      "priority_evidence_provisional": "not statistically ranked",
+      "source_ids": [
+        "CATALOG-ATTO3"
+      ],
+      "verification_status": "catalogue_index_only_OEM_not_verified",
+      "source_batch": "BYD-BATCH-002",
+      "approved_for_automatic_vehicle_match": false
+    }
+  ]
+}
