@@ -1,0 +1,95 @@
+{
+  "schema": "dtcnexis-master-data-audit-20261101-v1",
+  "created_on": "2026-11-01",
+  "scope": "Cloud permanent DTC text library storage count audit; technical OEM validation separate",
+  "manifest": "data/master/all_collected_catalog_manifest.json",
+  "master_data_files_checked": 41,
+  "master_data_files_matching_manifest_count": 41,
+  "master_data_count_sum": 8911,
+  "master_data_record_count": 8911,
+  "master_count_reconciled": true,
+  "source_de_duplication": {
+    "audi_original_index_unique": 1000,
+    "audi_preexisting_unique": 19,
+    "audi_net_added": 981,
+    "audi_monitoring": 30,
+    "byd_batch01_rows": 262,
+    "byd_batch01_unique_code_strings": 244,
+    "byd_batch02_review_total_code_rows": 274,
+    "byd_net_new_code_rows": 12,
+    "byd_net_new_unique_code_strings": 11,
+    "byd_combined_255_unique_code_strings": true
+  },
+  "previous_app_review_code_list_consistency": {
+    "private_source_repository": "dtcnexis/DTC-Nexis-App",
+    "source_branch": "backup/rc382-owner-source-checkpoint-20261029",
+    "brands": [
+      {
+        "brand": "Alfa Romeo",
+        "n": 59
+      },
+      {
+        "brand": "BMW",
+        "n": 98
+      },
+      {
+        "brand": "CUPRA",
+        "n": 63
+      },
+      {
+        "brand": "Mazda",
+        "n": 376
+      },
+      {
+        "brand": "MINI",
+        "n": 45
+      },
+      {
+        "brand": "Opel / Vauxhall",
+        "n": 37
+      },
+      {
+        "brand": "Polestar",
+        "n": 29
+      },
+      {
+        "brand": "SEAT",
+        "n": 53
+      },
+      {
+        "brand": "Skoda",
+        "n": 48
+      },
+      {
+        "brand": "Volvo",
+        "n": 60
+      }
+    ],
+    "all_code_lists_equal_previous_master": true,
+    "new_rows_duplicated": 0
+  },
+  "inaccessible_sources_to_reconcile": [
+    "Nissan_DTC_NEXIS_Batch01.json",
+    "Nissan_Batch02_Review_Dataset.json",
+    "polestar_dtc_batch01.json",
+    "opel_vauxhall_dtc_batch01.json",
+    "skoda_dtc_batch01.json",
+    "lexus_dtc_batch01.json"
+  ],
+  "source_access_limitation": "Source files are present in Library listing but cannot be read or materialized (no readable text / unauthorized raw bytes); missing access is not evidence of lost originals.",
+  "distribution_visibility": {
+    "data_repository_public": true,
+    "data_files_in_public_GitHub_accessible": true,
+    "app_stable_changed": false,
+    "update_feed_changed": false,
+    "app_release_published": false,
+    "owner_approval_to_change_visibility_or_migrate_required": true
+  },
+  "engineering_quality": {
+    "all_oem_verified": false,
+    "all_manufacturers_complete": false,
+    "vin_ecu_model_specific_qa_pending": true,
+    "high_voltage_byd_factory_procedures_unverified": true
+  },
+  "notes": "Do not claim source bytes SHA256 verified; code-list comparisons only for ten brands. QA count audit is not technical content validation."
+}
