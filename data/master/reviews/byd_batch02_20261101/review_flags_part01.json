@@ -1,0 +1,78 @@
+{
+  "section": "review_flags",
+  "source_library_id": "file_00000000977c81f4ba4ac4b3730879cf",
+  "source_file": "BYD_DTC_NEXIS_batch02_review.json",
+  "record_count": 6,
+  "source_review_only": true,
+  "records": [
+    {
+      "flag_id": "BYD-REVIEW-0001",
+      "code": "B1C0D12",
+      "scope": "ATTO 3 / Yuan Plus",
+      "issue": "Two distinct third-party indexed interpretations: rear wiper reset vs washer motor short-circuit",
+      "action": "Keep two code+ECU meanings separate, query factory DTC table per ECU/edition, no auto-repair suggestion",
+      "source_ids": [
+        "CATALOG-ATTO3"
+      ],
+      "status": "open"
+    },
+    {
+      "flag_id": "BYD-REVIEW-0002",
+      "code": "P2B8A00",
+      "scope": "ATTO 3 / Yuan Plus",
+      "issue": "Public ATTO 3 index uses this same raw code under BIC configuration inconsistency and HVSU abnormal power; first batch may include only one",
+      "action": "Verify both underlying ECUs and exact code bytes; do not collapse the two TOC headings into one global description",
+      "source_ids": [
+        "CATALOG-ATTO3"
+      ],
+      "status": "open"
+    },
+    {
+      "flag_id": "BYD-REVIEW-0003",
+      "code": "P26834B / P26804B / P26814B / P26844B / P26824B",
+      "scope": "ATTO 3 charging port systems",
+      "issue": "Index distinguishes Chinese/Japanese/European 7kW/European 11kW circuits for same raw DTC family",
+      "action": "Require charging configuration and region before applying pinouts/sensor checks",
+      "source_ids": [
+        "CATALOG-ATTO3"
+      ],
+      "status": "open"
+    },
+    {
+      "flag_id": "BYD-REVIEW-0004",
+      "code": null,
+      "scope": "Sealion 07 EV vs SEALION 7 EU",
+      "issue": "Model-name resemblance does not establish shared ECUs or wiring",
+      "action": "Forbid auto-applicability transfer",
+      "source_ids": [
+        "CATALOG-SEALION07",
+        "BYD-SEALION7-2024"
+      ],
+      "status": "open"
+    },
+    {
+      "flag_id": "BYD-REVIEW-0005",
+      "code": null,
+      "scope": "All vehicles",
+      "issue": "No production-year or manufacturer engine-code/type-approval confirmation from present brochure collection",
+      "action": "Acquire VIN-matched BYD TIS and CoC/type-approval data",
+      "source_ids": [
+        "BYD-OEM-TIS"
+      ],
+      "status": "open"
+    },
+    {
+      "flag_id": "BYD-REVIEW-0006",
+      "code": "B2342 / B234A / U0146",
+      "scope": "Previous batch 001",
+      "issue": "Exactly three catalogue entries use five-character original codes; remaining 259 use seven-character form",
+      "action": "Preserve original code string; verify any hidden extended failure-type bytes before appending them",
+      "source_ids": [
+        "CATALOG-ATTO3",
+        "CATALOG-QINL",
+        "CATALOG-SEALION07"
+      ],
+      "status": "open"
+    }
+  ]
+}
