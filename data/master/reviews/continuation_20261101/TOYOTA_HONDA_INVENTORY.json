@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-01",
+  "baseline_commit": "5d06c2fc9d558c374aa27168af100c307b560268",
+  "scope": "Repository inventory, not technical approval",
+  "toyota_rows": 210,
+  "toyota_main_rows": 82,
+  "toyota_inf_rows": 128,
+  "toyota_missing_definitions": 154,
+  "honda_rows": 47,
+  "honda_archive_rows": 47,
+  "honda_archive_same_codes": true,
+  "source_files": [
+    {
+      "path": "data/master/brands/toyota_exp002_dtc_part01.json",
+      "git_blob_sha": "789c136db4b406a85549de43a994117f74085779"
+    },
+    {
+      "path": "data/master/brands/toyota_exp002_dtc_part02.json",
+      "git_blob_sha": "b62e51a69ac53c35edbb65daf887842f078ea0bf"
+    },
+    {
+      "path": "data/master/brands/toyota_exp002_dtc_part03.json",
+      "git_blob_sha": "a55190abb752efc911d3770a211cbceae09885b2"
+    },
+    {
+      "path": "data/master/brands/honda_batch02_dtc.json",
+      "git_blob_sha": "c1900948564c98f12a2e6d620b5a11dd24b80ed3"
+    },
+    {
+      "path": "data/master/brands/honda_batch01_original_archive.json",
+      "git_blob_sha": "4547e6737c940f740bc558ee84c5564d8fb40b2a"
+    },
+    {
+      "path": "data/master/brands/toyota_exp002_related.json",
+      "git_blob_sha": "c0c390e682a40cc5897520515d0ea45970f1750e"
+    },
+    {
+      "path": "data/master/brands/honda_batch02_related.json",
+      "git_blob_sha": "4c489ad738718c77b398f9f156a516c490c8cb98"
+    }
+  ],
+  "next_action": "Review Toyota main DTC evidence, then INF definitions, then Honda. Do not double count Honda archive.",
+  "new_codes_added": 0,
+  "app_modified": false
+}
