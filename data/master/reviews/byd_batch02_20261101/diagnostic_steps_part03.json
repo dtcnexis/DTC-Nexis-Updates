@@ -1,0 +1,3039 @@
+{
+  "section": "diagnostic_steps",
+  "source_library_id": "file_00000000977c81f4ba4ac4b3730879cf",
+  "source_file": "BYD_DTC_NEXIS_batch02_review.json",
+  "record_count": 303,
+  "source_review_only": true,
+  "records": [
+    {
+      "step_id": "byd-dtc-33a917e96f4e563a-s01",
+      "dtc_id": "byd-dtc-33a917e96f4e563a",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-33a917e96f4e563a-s02",
+      "dtc_id": "byd-dtc-33a917e96f4e563a",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-33a917e96f4e563a-s03",
+      "dtc_id": "byd-dtc-33a917e96f4e563a",
+      "step_order": 3,
+      "instruction_ar": "اقرأ RPM وحرارة المبرد والحمل والتزامن/توقيت الكامات الفعلي والمطلوب من ECU المحرك.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-33a917e96f4e563a-s04",
+      "dtc_id": "byd-dtc-33a917e96f4e563a",
+      "step_order": 4,
+      "instruction_ar": "افحص الزيت الملائم ومستواه وضغطه وتغذية المشغل والحساسات، والقياسات النوعية حسب دليل محرك 1.5L المحدد.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-4fa2a349c2ca3f7b-s01",
+      "dtc_id": "byd-dtc-4fa2a349c2ca3f7b",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-4fa2a349c2ca3f7b-s02",
+      "dtc_id": "byd-dtc-4fa2a349c2ca3f7b",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-4fa2a349c2ca3f7b-s03",
+      "dtc_id": "byd-dtc-4fa2a349c2ca3f7b",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-4fa2a349c2ca3f7b-s04",
+      "dtc_id": "byd-dtc-4fa2a349c2ca3f7b",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-f1037c58d4c066f2-s01",
+      "dtc_id": "byd-dtc-f1037c58d4c066f2",
+      "step_order": 1,
+      "instruction_ar": "معدات: ماسح BYD FMCU وبروتوكول سلامة HV وبيانات inverter fault history.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-f1037c58d4c066f2-s02",
+      "dtc_id": "byd-dtc-f1037c58d4c066f2",
+      "step_order": 2,
+      "instruction_ar": "احفظ جميع أخطاء التيار/الحرارة/الجهد ومعلومات الحمل عند حدوث العطل.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-f1037c58d4c066f2-s03",
+      "dtc_id": "byd-dtc-f1037c58d4c066f2",
+      "step_order": 3,
+      "instruction_ar": "استبعد فشل تغذية FMCU منخفضة الجهد ومشاكل مضخة التبريد والاتصال وفق OEM.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-f1037c58d4c066f2-s04",
+      "dtc_id": "byd-dtc-f1037c58d4c066f2",
+      "step_order": 4,
+      "instruction_ar": "لا تستخدم أوسيلوسكوب أرضي/ملتيميتر عادي على أطوار HV؛ يتطلب فني جهد عالٍ معتمد.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-f1037c58d4c066f2-s05",
+      "dtc_id": "byd-dtc-f1037c58d4c066f2",
+      "step_order": 5,
+      "instruction_ar": "اعتمد فحص عاكس BYD الموجه وتأكيد عطل مكوّن القدرة قبل تقرير الاستبدال.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-56a1461fef76428c-s01",
+      "dtc_id": "byd-dtc-56a1461fef76428c",
+      "step_order": 1,
+      "instruction_ar": "معدات: ماسح FMCU، بيانات Motor Temperature وMotor Current وCooling Pump Status.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-56a1461fef76428c-s02",
+      "dtc_id": "byd-dtc-56a1461fef76428c",
+      "step_order": 2,
+      "instruction_ar": "تحقق من ظروف الحرارة/الحمل وقيود العزم المصاحبة.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-56a1461fef76428c-s03",
+      "dtc_id": "byd-dtc-56a1461fef76428c",
+      "step_order": 3,
+      "instruction_ar": "افحص منظومة التبريد خارجياً ومستوى السائل وفق تعليمات نظام BYD الهجين، دون فتح مسار HV.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-56a1461fef76428c-s04",
+      "dtc_id": "byd-dtc-56a1461fef76428c",
+      "step_order": 4,
+      "instruction_ar": "قارن Motor Temperature مع ظروف التشغيل وحساس/قياس معتمد؛ درجة القطع غير مؤكدة.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-56a1461fef76428c-s05",
+      "dtc_id": "byd-dtc-56a1461fef76428c",
+      "step_order": 5,
+      "instruction_ar": "إذا كان التبريد سليماً، افحص دائرة الإشارة/معايرة ECU وفق مخطط المحرك المحدد.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-2681759ae6537b00-s01",
+      "dtc_id": "byd-dtc-2681759ae6537b00",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-2681759ae6537b00-s02",
+      "dtc_id": "byd-dtc-2681759ae6537b00",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-2681759ae6537b00-s03",
+      "dtc_id": "byd-dtc-2681759ae6537b00",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-2681759ae6537b00-s04",
+      "dtc_id": "byd-dtc-2681759ae6537b00",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-f73af6a285ee4bf0-s01",
+      "dtc_id": "byd-dtc-f73af6a285ee4bf0",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-f73af6a285ee4bf0-s02",
+      "dtc_id": "byd-dtc-f73af6a285ee4bf0",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-f73af6a285ee4bf0-s03",
+      "dtc_id": "byd-dtc-f73af6a285ee4bf0",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-f73af6a285ee4bf0-s04",
+      "dtc_id": "byd-dtc-f73af6a285ee4bf0",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c8a254c11a8a71a5-s01",
+      "dtc_id": "byd-dtc-c8a254c11a8a71a5",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c8a254c11a8a71a5-s02",
+      "dtc_id": "byd-dtc-c8a254c11a8a71a5",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c8a254c11a8a71a5-s03",
+      "dtc_id": "byd-dtc-c8a254c11a8a71a5",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c8a254c11a8a71a5-s04",
+      "dtc_id": "byd-dtc-c8a254c11a8a71a5",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-002ad6d440373000-s01",
+      "dtc_id": "byd-dtc-002ad6d440373000",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-002ad6d440373000-s02",
+      "dtc_id": "byd-dtc-002ad6d440373000",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-002ad6d440373000-s03",
+      "dtc_id": "byd-dtc-002ad6d440373000",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-002ad6d440373000-s04",
+      "dtc_id": "byd-dtc-002ad6d440373000",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-695dc41886b52f35-s01",
+      "dtc_id": "byd-dtc-695dc41886b52f35",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-695dc41886b52f35-s02",
+      "dtc_id": "byd-dtc-695dc41886b52f35",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-695dc41886b52f35-s03",
+      "dtc_id": "byd-dtc-695dc41886b52f35",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-695dc41886b52f35-s04",
+      "dtc_id": "byd-dtc-695dc41886b52f35",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-5ebd133e11953bb1-s01",
+      "dtc_id": "byd-dtc-5ebd133e11953bb1",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-5ebd133e11953bb1-s02",
+      "dtc_id": "byd-dtc-5ebd133e11953bb1",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-5ebd133e11953bb1-s03",
+      "dtc_id": "byd-dtc-5ebd133e11953bb1",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-5ebd133e11953bb1-s04",
+      "dtc_id": "byd-dtc-5ebd133e11953bb1",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-1031cb4ea395be00-s01",
+      "dtc_id": "byd-dtc-1031cb4ea395be00",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-1031cb4ea395be00-s02",
+      "dtc_id": "byd-dtc-1031cb4ea395be00",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-1031cb4ea395be00-s03",
+      "dtc_id": "byd-dtc-1031cb4ea395be00",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-1031cb4ea395be00-s04",
+      "dtc_id": "byd-dtc-1031cb4ea395be00",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-4b4df0485917b16b-s01",
+      "dtc_id": "byd-dtc-4b4df0485917b16b",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-4b4df0485917b16b-s02",
+      "dtc_id": "byd-dtc-4b4df0485917b16b",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-4b4df0485917b16b-s03",
+      "dtc_id": "byd-dtc-4b4df0485917b16b",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-4b4df0485917b16b-s04",
+      "dtc_id": "byd-dtc-4b4df0485917b16b",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-85ed29a08f58a0e3-s01",
+      "dtc_id": "byd-dtc-85ed29a08f58a0e3",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-85ed29a08f58a0e3-s02",
+      "dtc_id": "byd-dtc-85ed29a08f58a0e3",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-85ed29a08f58a0e3-s03",
+      "dtc_id": "byd-dtc-85ed29a08f58a0e3",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-85ed29a08f58a0e3-s04",
+      "dtc_id": "byd-dtc-85ed29a08f58a0e3",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-29ddeb192113fc6c-s01",
+      "dtc_id": "byd-dtc-29ddeb192113fc6c",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-29ddeb192113fc6c-s02",
+      "dtc_id": "byd-dtc-29ddeb192113fc6c",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-29ddeb192113fc6c-s03",
+      "dtc_id": "byd-dtc-29ddeb192113fc6c",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-29ddeb192113fc6c-s04",
+      "dtc_id": "byd-dtc-29ddeb192113fc6c",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-b1bbf809b2d8f6e4-s01",
+      "dtc_id": "byd-dtc-b1bbf809b2d8f6e4",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-b1bbf809b2d8f6e4-s02",
+      "dtc_id": "byd-dtc-b1bbf809b2d8f6e4",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-b1bbf809b2d8f6e4-s03",
+      "dtc_id": "byd-dtc-b1bbf809b2d8f6e4",
+      "step_order": 3,
+      "instruction_ar": "وثّق حالة العزل HVIL والشحن وحالة الكونتاكتورات وفرق جهد الخلايا ودرجات الحرارة بأداة تدعم BMS.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-b1bbf809b2d8f6e4-s04",
+      "dtc_id": "byd-dtc-b1bbf809b2d8f6e4",
+      "step_order": 4,
+      "instruction_ar": "لا تفتح حزمة البطارية أو تفصل موصلات HV إلا بواسطة فني جهد عالٍ مخول وبروتوكول BYD المخصص.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-1313fbe92c5ba1ca-s01",
+      "dtc_id": "byd-dtc-1313fbe92c5ba1ca",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-1313fbe92c5ba1ca-s02",
+      "dtc_id": "byd-dtc-1313fbe92c5ba1ca",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-1313fbe92c5ba1ca-s03",
+      "dtc_id": "byd-dtc-1313fbe92c5ba1ca",
+      "step_order": 3,
+      "instruction_ar": "وثّق حالة العزل HVIL والشحن وحالة الكونتاكتورات وفرق جهد الخلايا ودرجات الحرارة بأداة تدعم BMS.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-1313fbe92c5ba1ca-s04",
+      "dtc_id": "byd-dtc-1313fbe92c5ba1ca",
+      "step_order": 4,
+      "instruction_ar": "لا تفتح حزمة البطارية أو تفصل موصلات HV إلا بواسطة فني جهد عالٍ مخول وبروتوكول BYD المخصص.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c40bcf966a0f8736-s01",
+      "dtc_id": "byd-dtc-c40bcf966a0f8736",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c40bcf966a0f8736-s02",
+      "dtc_id": "byd-dtc-c40bcf966a0f8736",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c40bcf966a0f8736-s03",
+      "dtc_id": "byd-dtc-c40bcf966a0f8736",
+      "step_order": 3,
+      "instruction_ar": "وثّق حالة العزل HVIL والشحن وحالة الكونتاكتورات وفرق جهد الخلايا ودرجات الحرارة بأداة تدعم BMS.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c40bcf966a0f8736-s04",
+      "dtc_id": "byd-dtc-c40bcf966a0f8736",
+      "step_order": 4,
+      "instruction_ar": "لا تفتح حزمة البطارية أو تفصل موصلات HV إلا بواسطة فني جهد عالٍ مخول وبروتوكول BYD المخصص.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-6ca12636bbe86e52-s01",
+      "dtc_id": "byd-dtc-6ca12636bbe86e52",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-6ca12636bbe86e52-s02",
+      "dtc_id": "byd-dtc-6ca12636bbe86e52",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-6ca12636bbe86e52-s03",
+      "dtc_id": "byd-dtc-6ca12636bbe86e52",
+      "step_order": 3,
+      "instruction_ar": "وثّق حالة العزل HVIL والشحن وحالة الكونتاكتورات وفرق جهد الخلايا ودرجات الحرارة بأداة تدعم BMS.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-6ca12636bbe86e52-s04",
+      "dtc_id": "byd-dtc-6ca12636bbe86e52",
+      "step_order": 4,
+      "instruction_ar": "لا تفتح حزمة البطارية أو تفصل موصلات HV إلا بواسطة فني جهد عالٍ مخول وبروتوكول BYD المخصص.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-8ad635b3a2033052-s01",
+      "dtc_id": "byd-dtc-8ad635b3a2033052",
+      "step_order": 1,
+      "instruction_ar": "تجهيزات: جهاز تشخيص يدعم BYD BMS، معدات سلامة HV معتمدة، مخطط OEM ومعدات قياس العزل المصرح بها من BYD.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-8ad635b3a2033052-s02",
+      "dtc_id": "byd-dtc-8ad635b3a2033052",
+      "step_order": 2,
+      "instruction_ar": "سجّل وقت ظهور الكود وحالة الشحن/الرطوبة والرسائل والأكواد المرافقة وFreeze Frame.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-8ad635b3a2033052-s03",
+      "dtc_id": "byd-dtc-8ad635b3a2033052",
+      "step_order": 3,
+      "instruction_ar": "اعرض HV Isolation Status/Resistance وHV Contactor State وحالة HVIL باستخدام جهاز متوافق؛ قيم القبول غير مؤكدة.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-8ad635b3a2033052-s04",
+      "dtc_id": "byd-dtc-8ad635b3a2033052",
+      "step_order": 4,
+      "instruction_ar": "ابدأ بفحص بصري خارجي فقط للكابلات/مناطق تسرب السوائل دون لمس وصلات HV مكشوفة.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-8ad635b3a2033052-s05",
+      "dtc_id": "byd-dtc-8ad635b3a2033052",
+      "step_order": 5,
+      "instruction_ar": "إذا تطلب الأمر اختبار عزل فعلي: فني HV مخوّل، إيقاف/إثبات غياب جهد وفق دليل BYD لهذه النسخة، ثم اختبار التفرعات المعتمدة فقط.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-8ad635b3a2033052-s06",
+      "dtc_id": "byd-dtc-8ad635b3a2033052",
+      "step_order": 6,
+      "instruction_ar": "لا تستبدل البطارية قبل عزل الدائرة المسببة وإثبات الاختلال بقياسات ومقارنة مع حد OEM، وهو غير مؤكد حالياً.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-9c63436be783938f-s01",
+      "dtc_id": "byd-dtc-9c63436be783938f",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-9c63436be783938f-s02",
+      "dtc_id": "byd-dtc-9c63436be783938f",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-9c63436be783938f-s03",
+      "dtc_id": "byd-dtc-9c63436be783938f",
+      "step_order": 3,
+      "instruction_ar": "وثّق حالة العزل HVIL والشحن وحالة الكونتاكتورات وفرق جهد الخلايا ودرجات الحرارة بأداة تدعم BMS.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-9c63436be783938f-s04",
+      "dtc_id": "byd-dtc-9c63436be783938f",
+      "step_order": 4,
+      "instruction_ar": "لا تفتح حزمة البطارية أو تفصل موصلات HV إلا بواسطة فني جهد عالٍ مخول وبروتوكول BYD المخصص.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-7280736ef3ee3f1e-s01",
+      "dtc_id": "byd-dtc-7280736ef3ee3f1e",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-7280736ef3ee3f1e-s02",
+      "dtc_id": "byd-dtc-7280736ef3ee3f1e",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-7280736ef3ee3f1e-s03",
+      "dtc_id": "byd-dtc-7280736ef3ee3f1e",
+      "step_order": 3,
+      "instruction_ar": "وثّق حالة العزل HVIL والشحن وحالة الكونتاكتورات وفرق جهد الخلايا ودرجات الحرارة بأداة تدعم BMS.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-7280736ef3ee3f1e-s04",
+      "dtc_id": "byd-dtc-7280736ef3ee3f1e",
+      "step_order": 4,
+      "instruction_ar": "لا تفتح حزمة البطارية أو تفصل موصلات HV إلا بواسطة فني جهد عالٍ مخول وبروتوكول BYD المخصص.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-b9a23245e01c6660-s01",
+      "dtc_id": "byd-dtc-b9a23245e01c6660",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-b9a23245e01c6660-s02",
+      "dtc_id": "byd-dtc-b9a23245e01c6660",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-b9a23245e01c6660-s03",
+      "dtc_id": "byd-dtc-b9a23245e01c6660",
+      "step_order": 3,
+      "instruction_ar": "وثّق حالة العزل HVIL والشحن وحالة الكونتاكتورات وفرق جهد الخلايا ودرجات الحرارة بأداة تدعم BMS.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-b9a23245e01c6660-s04",
+      "dtc_id": "byd-dtc-b9a23245e01c6660",
+      "step_order": 4,
+      "instruction_ar": "لا تفتح حزمة البطارية أو تفصل موصلات HV إلا بواسطة فني جهد عالٍ مخول وبروتوكول BYD المخصص.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-d4f67791790ac523-s01",
+      "dtc_id": "byd-dtc-d4f67791790ac523",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-d4f67791790ac523-s02",
+      "dtc_id": "byd-dtc-d4f67791790ac523",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-d4f67791790ac523-s03",
+      "dtc_id": "byd-dtc-d4f67791790ac523",
+      "step_order": 3,
+      "instruction_ar": "وثّق حالة العزل HVIL والشحن وحالة الكونتاكتورات وفرق جهد الخلايا ودرجات الحرارة بأداة تدعم BMS.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-d4f67791790ac523-s04",
+      "dtc_id": "byd-dtc-d4f67791790ac523",
+      "step_order": 4,
+      "instruction_ar": "لا تفتح حزمة البطارية أو تفصل موصلات HV إلا بواسطة فني جهد عالٍ مخول وبروتوكول BYD المخصص.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-d37b162e572bcc87-s01",
+      "dtc_id": "byd-dtc-d37b162e572bcc87",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-d37b162e572bcc87-s02",
+      "dtc_id": "byd-dtc-d37b162e572bcc87",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-d37b162e572bcc87-s03",
+      "dtc_id": "byd-dtc-d37b162e572bcc87",
+      "step_order": 3,
+      "instruction_ar": "وثّق حالة العزل HVIL والشحن وحالة الكونتاكتورات وفرق جهد الخلايا ودرجات الحرارة بأداة تدعم BMS.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-d37b162e572bcc87-s04",
+      "dtc_id": "byd-dtc-d37b162e572bcc87",
+      "step_order": 4,
+      "instruction_ar": "لا تفتح حزمة البطارية أو تفصل موصلات HV إلا بواسطة فني جهد عالٍ مخول وبروتوكول BYD المخصص.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-dedc89bc7655df6f-s01",
+      "dtc_id": "byd-dtc-dedc89bc7655df6f",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-dedc89bc7655df6f-s02",
+      "dtc_id": "byd-dtc-dedc89bc7655df6f",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-dedc89bc7655df6f-s03",
+      "dtc_id": "byd-dtc-dedc89bc7655df6f",
+      "step_order": 3,
+      "instruction_ar": "وثّق حالة العزل HVIL والشحن وحالة الكونتاكتورات وفرق جهد الخلايا ودرجات الحرارة بأداة تدعم BMS.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-dedc89bc7655df6f-s04",
+      "dtc_id": "byd-dtc-dedc89bc7655df6f",
+      "step_order": 4,
+      "instruction_ar": "لا تفتح حزمة البطارية أو تفصل موصلات HV إلا بواسطة فني جهد عالٍ مخول وبروتوكول BYD المخصص.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-43646c4589bce00b-s01",
+      "dtc_id": "byd-dtc-43646c4589bce00b",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-43646c4589bce00b-s02",
+      "dtc_id": "byd-dtc-43646c4589bce00b",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-43646c4589bce00b-s03",
+      "dtc_id": "byd-dtc-43646c4589bce00b",
+      "step_order": 3,
+      "instruction_ar": "وثّق حالة العزل HVIL والشحن وحالة الكونتاكتورات وفرق جهد الخلايا ودرجات الحرارة بأداة تدعم BMS.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-43646c4589bce00b-s04",
+      "dtc_id": "byd-dtc-43646c4589bce00b",
+      "step_order": 4,
+      "instruction_ar": "لا تفتح حزمة البطارية أو تفصل موصلات HV إلا بواسطة فني جهد عالٍ مخول وبروتوكول BYD المخصص.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-5dd90c584330b9a7-s01",
+      "dtc_id": "byd-dtc-5dd90c584330b9a7",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-5dd90c584330b9a7-s02",
+      "dtc_id": "byd-dtc-5dd90c584330b9a7",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-5dd90c584330b9a7-s03",
+      "dtc_id": "byd-dtc-5dd90c584330b9a7",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-5dd90c584330b9a7-s04",
+      "dtc_id": "byd-dtc-5dd90c584330b9a7",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-01a57bb34a1be4f7-s01",
+      "dtc_id": "byd-dtc-01a57bb34a1be4f7",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-01a57bb34a1be4f7-s02",
+      "dtc_id": "byd-dtc-01a57bb34a1be4f7",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-01a57bb34a1be4f7-s03",
+      "dtc_id": "byd-dtc-01a57bb34a1be4f7",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-01a57bb34a1be4f7-s04",
+      "dtc_id": "byd-dtc-01a57bb34a1be4f7",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-1f16fcbad7194f6f-s01",
+      "dtc_id": "byd-dtc-1f16fcbad7194f6f",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-1f16fcbad7194f6f-s02",
+      "dtc_id": "byd-dtc-1f16fcbad7194f6f",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-1f16fcbad7194f6f-s03",
+      "dtc_id": "byd-dtc-1f16fcbad7194f6f",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-1f16fcbad7194f6f-s04",
+      "dtc_id": "byd-dtc-1f16fcbad7194f6f",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-8c7b49a7e75be877-s01",
+      "dtc_id": "byd-dtc-8c7b49a7e75be877",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-8c7b49a7e75be877-s02",
+      "dtc_id": "byd-dtc-8c7b49a7e75be877",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-8c7b49a7e75be877-s03",
+      "dtc_id": "byd-dtc-8c7b49a7e75be877",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-8c7b49a7e75be877-s04",
+      "dtc_id": "byd-dtc-8c7b49a7e75be877",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-60047e3f015cb9de-s01",
+      "dtc_id": "byd-dtc-60047e3f015cb9de",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-60047e3f015cb9de-s02",
+      "dtc_id": "byd-dtc-60047e3f015cb9de",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-60047e3f015cb9de-s03",
+      "dtc_id": "byd-dtc-60047e3f015cb9de",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-60047e3f015cb9de-s04",
+      "dtc_id": "byd-dtc-60047e3f015cb9de",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-44335525f4df8e70-s01",
+      "dtc_id": "byd-dtc-44335525f4df8e70",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-44335525f4df8e70-s02",
+      "dtc_id": "byd-dtc-44335525f4df8e70",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-44335525f4df8e70-s03",
+      "dtc_id": "byd-dtc-44335525f4df8e70",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-44335525f4df8e70-s04",
+      "dtc_id": "byd-dtc-44335525f4df8e70",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-a1e660d0de705678-s01",
+      "dtc_id": "byd-dtc-a1e660d0de705678",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-a1e660d0de705678-s02",
+      "dtc_id": "byd-dtc-a1e660d0de705678",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-a1e660d0de705678-s03",
+      "dtc_id": "byd-dtc-a1e660d0de705678",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-a1e660d0de705678-s04",
+      "dtc_id": "byd-dtc-a1e660d0de705678",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-63422ba140837c3a-s01",
+      "dtc_id": "byd-dtc-63422ba140837c3a",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-63422ba140837c3a-s02",
+      "dtc_id": "byd-dtc-63422ba140837c3a",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-63422ba140837c3a-s03",
+      "dtc_id": "byd-dtc-63422ba140837c3a",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-63422ba140837c3a-s04",
+      "dtc_id": "byd-dtc-63422ba140837c3a",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-87afdff80ad5d51b-s01",
+      "dtc_id": "byd-dtc-87afdff80ad5d51b",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-87afdff80ad5d51b-s02",
+      "dtc_id": "byd-dtc-87afdff80ad5d51b",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-87afdff80ad5d51b-s03",
+      "dtc_id": "byd-dtc-87afdff80ad5d51b",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-87afdff80ad5d51b-s04",
+      "dtc_id": "byd-dtc-87afdff80ad5d51b",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-d9150a20b7baff54-s01",
+      "dtc_id": "byd-dtc-d9150a20b7baff54",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-d9150a20b7baff54-s02",
+      "dtc_id": "byd-dtc-d9150a20b7baff54",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-d9150a20b7baff54-s03",
+      "dtc_id": "byd-dtc-d9150a20b7baff54",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-d9150a20b7baff54-s04",
+      "dtc_id": "byd-dtc-d9150a20b7baff54",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-8d253b448ae108df-s01",
+      "dtc_id": "byd-dtc-8d253b448ae108df",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-8d253b448ae108df-s02",
+      "dtc_id": "byd-dtc-8d253b448ae108df",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-8d253b448ae108df-s03",
+      "dtc_id": "byd-dtc-8d253b448ae108df",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-8d253b448ae108df-s04",
+      "dtc_id": "byd-dtc-8d253b448ae108df",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-70d16ce12eb8a6d8-s01",
+      "dtc_id": "byd-dtc-70d16ce12eb8a6d8",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-70d16ce12eb8a6d8-s02",
+      "dtc_id": "byd-dtc-70d16ce12eb8a6d8",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-70d16ce12eb8a6d8-s03",
+      "dtc_id": "byd-dtc-70d16ce12eb8a6d8",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-70d16ce12eb8a6d8-s04",
+      "dtc_id": "byd-dtc-70d16ce12eb8a6d8",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c68c8f1e18392809-s01",
+      "dtc_id": "byd-dtc-c68c8f1e18392809",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c68c8f1e18392809-s02",
+      "dtc_id": "byd-dtc-c68c8f1e18392809",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c68c8f1e18392809-s03",
+      "dtc_id": "byd-dtc-c68c8f1e18392809",
+      "step_order": 3,
+      "instruction_ar": "قارن طلب العزم بسرعة المحرك وحد التيار ودرجات حرارة المحرك/العاكس وتبريد القدرة تحت ظروف تفعيل آمنة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c68c8f1e18392809-s04",
+      "dtc_id": "byd-dtc-c68c8f1e18392809",
+      "step_order": 4,
+      "instruction_ar": "افحص أسلاك الإشارات/شبكة الاتصال منخفضة الجهد أولاً؛ اختبارات ملفات/أطوار المحرك HV فقط وفق دليل المصنع.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-1cd09f74820c4874-s01",
+      "dtc_id": "byd-dtc-1cd09f74820c4874",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-1cd09f74820c4874-s02",
+      "dtc_id": "byd-dtc-1cd09f74820c4874",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-1cd09f74820c4874-s03",
+      "dtc_id": "byd-dtc-1cd09f74820c4874",
+      "step_order": 3,
+      "instruction_ar": "سجل AC/DC Charging State وسبب توقف الشحن وقراءات المدخل/المخرج بواسطة أداة BYD متوافقة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-1cd09f74820c4874-s04",
+      "dtc_id": "byd-dtc-1cd09f74820c4874",
+      "step_order": 4,
+      "instruction_ar": "جرّب محطة أو كابل شحن معروف السلامة بعد فحص خارجي، ولا تفتح OBC/DC-DC أثناء بقاء الجهد العالي.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-3e75d14d5d29b7d8-s01",
+      "dtc_id": "byd-dtc-3e75d14d5d29b7d8",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-3e75d14d5d29b7d8-s02",
+      "dtc_id": "byd-dtc-3e75d14d5d29b7d8",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-3e75d14d5d29b7d8-s03",
+      "dtc_id": "byd-dtc-3e75d14d5d29b7d8",
+      "step_order": 3,
+      "instruction_ar": "سجل AC/DC Charging State وسبب توقف الشحن وقراءات المدخل/المخرج بواسطة أداة BYD متوافقة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-3e75d14d5d29b7d8-s04",
+      "dtc_id": "byd-dtc-3e75d14d5d29b7d8",
+      "step_order": 4,
+      "instruction_ar": "جرّب محطة أو كابل شحن معروف السلامة بعد فحص خارجي، ولا تفتح OBC/DC-DC أثناء بقاء الجهد العالي.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-af1591172a941b27-s01",
+      "dtc_id": "byd-dtc-af1591172a941b27",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-af1591172a941b27-s02",
+      "dtc_id": "byd-dtc-af1591172a941b27",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-af1591172a941b27-s03",
+      "dtc_id": "byd-dtc-af1591172a941b27",
+      "step_order": 3,
+      "instruction_ar": "سجل AC/DC Charging State وسبب توقف الشحن وقراءات المدخل/المخرج بواسطة أداة BYD متوافقة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-af1591172a941b27-s04",
+      "dtc_id": "byd-dtc-af1591172a941b27",
+      "step_order": 4,
+      "instruction_ar": "جرّب محطة أو كابل شحن معروف السلامة بعد فحص خارجي، ولا تفتح OBC/DC-DC أثناء بقاء الجهد العالي.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-95e2a9da0511d039-s01",
+      "dtc_id": "byd-dtc-95e2a9da0511d039",
+      "step_order": 1,
+      "instruction_ar": "معدات: جهاز تشخيص OBC متوافق، محطة وكابل شحن معروفان بصلاحيتهما، معدات فحص AC على يد كهربائي مؤهل.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-95e2a9da0511d039-s02",
+      "dtc_id": "byd-dtc-95e2a9da0511d039",
+      "step_order": 2,
+      "instruction_ar": "سجّل AC Input Voltage وCharging State وStop Reason أثناء محاولة الشحن.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-95e2a9da0511d039-s03",
+      "dtc_id": "byd-dtc-95e2a9da0511d039",
+      "step_order": 3,
+      "instruction_ar": "تحقق خارجياً من المقبس والكابل ووضع القفل/الملاءمة، ثم اختبر بمحطة معروفة بلا تدخل في دوائر HV.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-95e2a9da0511d039-s04",
+      "dtc_id": "byd-dtc-95e2a9da0511d039",
+      "step_order": 4,
+      "instruction_ar": "لا تقارن الجهد برقم اعتباطي؛ عتبة BYD وخيارات 7/11kW والنسخة السوقية غير مؤكدة.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-95e2a9da0511d039-s05",
+      "dtc_id": "byd-dtc-95e2a9da0511d039",
+      "step_order": 5,
+      "instruction_ar": "إذا كانت التغذية مستقرة بحسب القياس المعتمد وبقيت قراءة OBC شاذة، اختبر وفق المخطط OEM قبل الاستبدال.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-43b1e77992640c17-s01",
+      "dtc_id": "byd-dtc-43b1e77992640c17",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-43b1e77992640c17-s02",
+      "dtc_id": "byd-dtc-43b1e77992640c17",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-43b1e77992640c17-s03",
+      "dtc_id": "byd-dtc-43b1e77992640c17",
+      "step_order": 3,
+      "instruction_ar": "سجل AC/DC Charging State وسبب توقف الشحن وقراءات المدخل/المخرج بواسطة أداة BYD متوافقة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-43b1e77992640c17-s04",
+      "dtc_id": "byd-dtc-43b1e77992640c17",
+      "step_order": 4,
+      "instruction_ar": "جرّب محطة أو كابل شحن معروف السلامة بعد فحص خارجي، ولا تفتح OBC/DC-DC أثناء بقاء الجهد العالي.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-68014537b0f5b0fb-s01",
+      "dtc_id": "byd-dtc-68014537b0f5b0fb",
+      "step_order": 1,
+      "instruction_ar": "معدات: ماسح DC-DC، ملتيميتر LV، توثيق حدود خرج النسخة.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-68014537b0f5b0fb-s02",
+      "dtc_id": "byd-dtc-68014537b0f5b0fb",
+      "step_order": 2,
+      "instruction_ar": "سجل Low Voltage Output Voltage وCurrent وحالة DC-DC Enable أثناء العطل.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-68014537b0f5b0fb-s03",
+      "dtc_id": "byd-dtc-68014537b0f5b0fb",
+      "step_order": 3,
+      "instruction_ar": "افحص بطارية الجهد المنخفض والأحمال والأرضي والفيوز دون التعامل مع الجهد العالي.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-68014537b0f5b0fb-s04",
+      "dtc_id": "byd-dtc-68014537b0f5b0fb",
+      "step_order": 4,
+      "instruction_ar": "قارن الجهد بين خرج وحدة DC-DC والبطارية أثناء نفس الحالة (أرقام الحدود غير مؤكدة).",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-68014537b0f5b0fb-s05",
+      "dtc_id": "byd-dtc-68014537b0f5b0fb",
+      "step_order": 5,
+      "instruction_ar": "لا تبدل DC-DC قبل استبعاد هبوط التوصيلات وعدم استقرار أمر التشغيل.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-0e1f738407de1293-s01",
+      "dtc_id": "byd-dtc-0e1f738407de1293",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-0e1f738407de1293-s02",
+      "dtc_id": "byd-dtc-0e1f738407de1293",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-0e1f738407de1293-s03",
+      "dtc_id": "byd-dtc-0e1f738407de1293",
+      "step_order": 3,
+      "instruction_ar": "قارن قراءات الحساسات بين العجلات/الوحدات في حالة ساكنة ثم أثناء اختبار آمن وفق تعليمات الورشة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-0e1f738407de1293-s04",
+      "dtc_id": "byd-dtc-0e1f738407de1293",
+      "step_order": 4,
+      "instruction_ar": "افحص التوصيلات والضفيرة بعد التأكد من حالة نظام الكبح/التوجيه؛ لا تفك وحدة المكابح الهيدروليكية دون إجراء معتمد.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-3cbb4d6149f4ae26-s01",
+      "dtc_id": "byd-dtc-3cbb4d6149f4ae26",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-3cbb4d6149f4ae26-s02",
+      "dtc_id": "byd-dtc-3cbb4d6149f4ae26",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-3cbb4d6149f4ae26-s03",
+      "dtc_id": "byd-dtc-3cbb4d6149f4ae26",
+      "step_order": 3,
+      "instruction_ar": "قارن قراءات الحساسات بين العجلات/الوحدات في حالة ساكنة ثم أثناء اختبار آمن وفق تعليمات الورشة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-3cbb4d6149f4ae26-s04",
+      "dtc_id": "byd-dtc-3cbb4d6149f4ae26",
+      "step_order": 4,
+      "instruction_ar": "افحص التوصيلات والضفيرة بعد التأكد من حالة نظام الكبح/التوجيه؛ لا تفك وحدة المكابح الهيدروليكية دون إجراء معتمد.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-736e4458e8cb507d-s01",
+      "dtc_id": "byd-dtc-736e4458e8cb507d",
+      "step_order": 1,
+      "instruction_ar": "اشترط أولاً وجود خيار التعليق النشط/DiSus في نسخة Sealion 07 المفحوصة.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-736e4458e8cb507d-s02",
+      "dtc_id": "byd-dtc-736e4458e8cb507d",
+      "step_order": 2,
+      "instruction_ar": "معدات: أداة قراءة وحدة Active Suspension، مخطط صمام LF، أدوات LV مناسبة.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-736e4458e8cb507d-s03",
+      "dtc_id": "byd-dtc-736e4458e8cb507d",
+      "step_order": 3,
+      "instruction_ar": "اقرأ Valve Command/Current وقراءات بقية الصمامات إن توفرت؛ الأسماء الدقيقة غير مؤكدة.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-736e4458e8cb507d-s04",
+      "dtc_id": "byd-dtc-736e4458e8cb507d",
+      "step_order": 4,
+      "instruction_ar": "افحص فيشة الصمام والأسلاك، ثم طبق اختبار الاستمرارية/التيار المحدد بالمصنع.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-736e4458e8cb507d-s05",
+      "dtc_id": "byd-dtc-736e4458e8cb507d",
+      "step_order": 5,
+      "instruction_ar": "لا تفترض أوم ملف أو رقم فيوز؛ غائبان عن الفهرس ولا تغير الصمام دون إثبات القطع.",
+      "evidence": "اقتراح فني غير OEM؛ أي حد غير مصرح به يظل غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-657db3bd3bedb9e0-s01",
+      "dtc_id": "byd-dtc-657db3bd3bedb9e0",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-657db3bd3bedb9e0-s02",
+      "dtc_id": "byd-dtc-657db3bd3bedb9e0",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-657db3bd3bedb9e0-s03",
+      "dtc_id": "byd-dtc-657db3bd3bedb9e0",
+      "step_order": 3,
+      "instruction_ar": "قارن قراءات الحساسات بين العجلات/الوحدات في حالة ساكنة ثم أثناء اختبار آمن وفق تعليمات الورشة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-657db3bd3bedb9e0-s04",
+      "dtc_id": "byd-dtc-657db3bd3bedb9e0",
+      "step_order": 4,
+      "instruction_ar": "افحص التوصيلات والضفيرة بعد التأكد من حالة نظام الكبح/التوجيه؛ لا تفك وحدة المكابح الهيدروليكية دون إجراء معتمد.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-ce1bdb0918f0099c-s01",
+      "dtc_id": "byd-dtc-ce1bdb0918f0099c",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-ce1bdb0918f0099c-s02",
+      "dtc_id": "byd-dtc-ce1bdb0918f0099c",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-ce1bdb0918f0099c-s03",
+      "dtc_id": "byd-dtc-ce1bdb0918f0099c",
+      "step_order": 3,
+      "instruction_ar": "قارن قراءات الحساسات بين العجلات/الوحدات في حالة ساكنة ثم أثناء اختبار آمن وفق تعليمات الورشة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-ce1bdb0918f0099c-s04",
+      "dtc_id": "byd-dtc-ce1bdb0918f0099c",
+      "step_order": 4,
+      "instruction_ar": "افحص التوصيلات والضفيرة بعد التأكد من حالة نظام الكبح/التوجيه؛ لا تفك وحدة المكابح الهيدروليكية دون إجراء معتمد.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-a8e576c6d49b9e5c-s01",
+      "dtc_id": "byd-dtc-a8e576c6d49b9e5c",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-a8e576c6d49b9e5c-s02",
+      "dtc_id": "byd-dtc-a8e576c6d49b9e5c",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-a8e576c6d49b9e5c-s03",
+      "dtc_id": "byd-dtc-a8e576c6d49b9e5c",
+      "step_order": 3,
+      "instruction_ar": "قارن قراءات الحساسات بين العجلات/الوحدات في حالة ساكنة ثم أثناء اختبار آمن وفق تعليمات الورشة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-a8e576c6d49b9e5c-s04",
+      "dtc_id": "byd-dtc-a8e576c6d49b9e5c",
+      "step_order": 4,
+      "instruction_ar": "افحص التوصيلات والضفيرة بعد التأكد من حالة نظام الكبح/التوجيه؛ لا تفك وحدة المكابح الهيدروليكية دون إجراء معتمد.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-0d6ef530e971335e-s01",
+      "dtc_id": "byd-dtc-0d6ef530e971335e",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-0d6ef530e971335e-s02",
+      "dtc_id": "byd-dtc-0d6ef530e971335e",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-0d6ef530e971335e-s03",
+      "dtc_id": "byd-dtc-0d6ef530e971335e",
+      "step_order": 3,
+      "instruction_ar": "قارن قراءات الحساسات بين العجلات/الوحدات في حالة ساكنة ثم أثناء اختبار آمن وفق تعليمات الورشة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-0d6ef530e971335e-s04",
+      "dtc_id": "byd-dtc-0d6ef530e971335e",
+      "step_order": 4,
+      "instruction_ar": "افحص التوصيلات والضفيرة بعد التأكد من حالة نظام الكبح/التوجيه؛ لا تفك وحدة المكابح الهيدروليكية دون إجراء معتمد.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-ef32b3abb3e8b3fa-s01",
+      "dtc_id": "byd-dtc-ef32b3abb3e8b3fa",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-ef32b3abb3e8b3fa-s02",
+      "dtc_id": "byd-dtc-ef32b3abb3e8b3fa",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-ef32b3abb3e8b3fa-s03",
+      "dtc_id": "byd-dtc-ef32b3abb3e8b3fa",
+      "step_order": 3,
+      "instruction_ar": "قارن قراءات الحساسات بين العجلات/الوحدات في حالة ساكنة ثم أثناء اختبار آمن وفق تعليمات الورشة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-ef32b3abb3e8b3fa-s04",
+      "dtc_id": "byd-dtc-ef32b3abb3e8b3fa",
+      "step_order": 4,
+      "instruction_ar": "افحص التوصيلات والضفيرة بعد التأكد من حالة نظام الكبح/التوجيه؛ لا تفك وحدة المكابح الهيدروليكية دون إجراء معتمد.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-7150e50be9872e9b-s01",
+      "dtc_id": "byd-dtc-7150e50be9872e9b",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-7150e50be9872e9b-s02",
+      "dtc_id": "byd-dtc-7150e50be9872e9b",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-7150e50be9872e9b-s03",
+      "dtc_id": "byd-dtc-7150e50be9872e9b",
+      "step_order": 3,
+      "instruction_ar": "قارن الطلب وقراءات الحرارة/الضغط وحالة تشغيل الضاغط والمراوح مع حالتين مختلفتين من الحمل.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-7150e50be9872e9b-s04",
+      "dtc_id": "byd-dtc-7150e50be9872e9b",
+      "step_order": 4,
+      "instruction_ar": "افحص دائرة الحساس منخفض الجهد حسب مخطط النسخة؛ لا تتدخل بدائرة ضاغط الجهد العالي دون تأهيل.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-738600526d0abcee-s01",
+      "dtc_id": "byd-dtc-738600526d0abcee",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-738600526d0abcee-s02",
+      "dtc_id": "byd-dtc-738600526d0abcee",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-738600526d0abcee-s03",
+      "dtc_id": "byd-dtc-738600526d0abcee",
+      "step_order": 3,
+      "instruction_ar": "قارن الطلب وقراءات الحرارة/الضغط وحالة تشغيل الضاغط والمراوح مع حالتين مختلفتين من الحمل.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-738600526d0abcee-s04",
+      "dtc_id": "byd-dtc-738600526d0abcee",
+      "step_order": 4,
+      "instruction_ar": "افحص دائرة الحساس منخفض الجهد حسب مخطط النسخة؛ لا تتدخل بدائرة ضاغط الجهد العالي دون تأهيل.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-27ba8e5ab6144411-s01",
+      "dtc_id": "byd-dtc-27ba8e5ab6144411",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-27ba8e5ab6144411-s02",
+      "dtc_id": "byd-dtc-27ba8e5ab6144411",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-27ba8e5ab6144411-s03",
+      "dtc_id": "byd-dtc-27ba8e5ab6144411",
+      "step_order": 3,
+      "instruction_ar": "قارن الطلب وقراءات الحرارة/الضغط وحالة تشغيل الضاغط والمراوح مع حالتين مختلفتين من الحمل.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-27ba8e5ab6144411-s04",
+      "dtc_id": "byd-dtc-27ba8e5ab6144411",
+      "step_order": 4,
+      "instruction_ar": "افحص دائرة الحساس منخفض الجهد حسب مخطط النسخة؛ لا تتدخل بدائرة ضاغط الجهد العالي دون تأهيل.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-edb2f541348574fe-s01",
+      "dtc_id": "byd-dtc-edb2f541348574fe",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-edb2f541348574fe-s02",
+      "dtc_id": "byd-dtc-edb2f541348574fe",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-edb2f541348574fe-s03",
+      "dtc_id": "byd-dtc-edb2f541348574fe",
+      "step_order": 3,
+      "instruction_ar": "قارن الطلب وقراءات الحرارة/الضغط وحالة تشغيل الضاغط والمراوح مع حالتين مختلفتين من الحمل.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-edb2f541348574fe-s04",
+      "dtc_id": "byd-dtc-edb2f541348574fe",
+      "step_order": 4,
+      "instruction_ar": "افحص دائرة الحساس منخفض الجهد حسب مخطط النسخة؛ لا تتدخل بدائرة ضاغط الجهد العالي دون تأهيل.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-e71adc18ec4534b8-s01",
+      "dtc_id": "byd-dtc-e71adc18ec4534b8",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-e71adc18ec4534b8-s02",
+      "dtc_id": "byd-dtc-e71adc18ec4534b8",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-e71adc18ec4534b8-s03",
+      "dtc_id": "byd-dtc-e71adc18ec4534b8",
+      "step_order": 3,
+      "instruction_ar": "قارن الطلب وقراءات الحرارة/الضغط وحالة تشغيل الضاغط والمراوح مع حالتين مختلفتين من الحمل.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-e71adc18ec4534b8-s04",
+      "dtc_id": "byd-dtc-e71adc18ec4534b8",
+      "step_order": 4,
+      "instruction_ar": "افحص دائرة الحساس منخفض الجهد حسب مخطط النسخة؛ لا تتدخل بدائرة ضاغط الجهد العالي دون تأهيل.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-f40db2d33e336131-s01",
+      "dtc_id": "byd-dtc-f40db2d33e336131",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-f40db2d33e336131-s02",
+      "dtc_id": "byd-dtc-f40db2d33e336131",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-f40db2d33e336131-s03",
+      "dtc_id": "byd-dtc-f40db2d33e336131",
+      "step_order": 3,
+      "instruction_ar": "قارن الطلب وقراءات الحرارة/الضغط وحالة تشغيل الضاغط والمراوح مع حالتين مختلفتين من الحمل.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-f40db2d33e336131-s04",
+      "dtc_id": "byd-dtc-f40db2d33e336131",
+      "step_order": 4,
+      "instruction_ar": "افحص دائرة الحساس منخفض الجهد حسب مخطط النسخة؛ لا تتدخل بدائرة ضاغط الجهد العالي دون تأهيل.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-221eb6ab5647266b-s01",
+      "dtc_id": "byd-dtc-221eb6ab5647266b",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-221eb6ab5647266b-s02",
+      "dtc_id": "byd-dtc-221eb6ab5647266b",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-221eb6ab5647266b-s03",
+      "dtc_id": "byd-dtc-221eb6ab5647266b",
+      "step_order": 3,
+      "instruction_ar": "نفّذ اختبار أمر للمكوّن إن دعم جهاز التشخيص ذلك، وسجّل حالة المفتاح/الحساس قبل وبعد تغييره.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-221eb6ab5647266b-s04",
+      "dtc_id": "byd-dtc-221eb6ab5647266b",
+      "step_order": 4,
+      "instruction_ar": "افحص تغذية المكوّن وأرضيه واستمرارية الأسلاك حسب الرسم الأصلي وليس الألوان المتوقعة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-5c7fe7a83e3079d5-s01",
+      "dtc_id": "byd-dtc-5c7fe7a83e3079d5",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-5c7fe7a83e3079d5-s02",
+      "dtc_id": "byd-dtc-5c7fe7a83e3079d5",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-5c7fe7a83e3079d5-s03",
+      "dtc_id": "byd-dtc-5c7fe7a83e3079d5",
+      "step_order": 3,
+      "instruction_ar": "نفّذ اختبار أمر للمكوّن إن دعم جهاز التشخيص ذلك، وسجّل حالة المفتاح/الحساس قبل وبعد تغييره.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-5c7fe7a83e3079d5-s04",
+      "dtc_id": "byd-dtc-5c7fe7a83e3079d5",
+      "step_order": 4,
+      "instruction_ar": "افحص تغذية المكوّن وأرضيه واستمرارية الأسلاك حسب الرسم الأصلي وليس الألوان المتوقعة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c7956ac0c75dedf5-s01",
+      "dtc_id": "byd-dtc-c7956ac0c75dedf5",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c7956ac0c75dedf5-s02",
+      "dtc_id": "byd-dtc-c7956ac0c75dedf5",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c7956ac0c75dedf5-s03",
+      "dtc_id": "byd-dtc-c7956ac0c75dedf5",
+      "step_order": 3,
+      "instruction_ar": "نفّذ اختبار أمر للمكوّن إن دعم جهاز التشخيص ذلك، وسجّل حالة المفتاح/الحساس قبل وبعد تغييره.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c7956ac0c75dedf5-s04",
+      "dtc_id": "byd-dtc-c7956ac0c75dedf5",
+      "step_order": 4,
+      "instruction_ar": "افحص تغذية المكوّن وأرضيه واستمرارية الأسلاك حسب الرسم الأصلي وليس الألوان المتوقعة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-ede15d3959305ff7-s01",
+      "dtc_id": "byd-dtc-ede15d3959305ff7",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-ede15d3959305ff7-s02",
+      "dtc_id": "byd-dtc-ede15d3959305ff7",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-ede15d3959305ff7-s03",
+      "dtc_id": "byd-dtc-ede15d3959305ff7",
+      "step_order": 3,
+      "instruction_ar": "نفّذ اختبار أمر للمكوّن إن دعم جهاز التشخيص ذلك، وسجّل حالة المفتاح/الحساس قبل وبعد تغييره.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-ede15d3959305ff7-s04",
+      "dtc_id": "byd-dtc-ede15d3959305ff7",
+      "step_order": 4,
+      "instruction_ar": "افحص تغذية المكوّن وأرضيه واستمرارية الأسلاك حسب الرسم الأصلي وليس الألوان المتوقعة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-f297a39962ee83a0-s01",
+      "dtc_id": "byd-dtc-f297a39962ee83a0",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-f297a39962ee83a0-s02",
+      "dtc_id": "byd-dtc-f297a39962ee83a0",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-f297a39962ee83a0-s03",
+      "dtc_id": "byd-dtc-f297a39962ee83a0",
+      "step_order": 3,
+      "instruction_ar": "نفّذ اختبار أمر للمكوّن إن دعم جهاز التشخيص ذلك، وسجّل حالة المفتاح/الحساس قبل وبعد تغييره.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-f297a39962ee83a0-s04",
+      "dtc_id": "byd-dtc-f297a39962ee83a0",
+      "step_order": 4,
+      "instruction_ar": "افحص تغذية المكوّن وأرضيه واستمرارية الأسلاك حسب الرسم الأصلي وليس الألوان المتوقعة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c64d2ea633aaf5cc-s01",
+      "dtc_id": "byd-dtc-c64d2ea633aaf5cc",
+      "step_order": 1,
+      "instruction_ar": "سجّل الكود كما ظهر واسم ECU والرقم البرمجي وFreeze Frame وStatus؛ افحص جميع الوحدات بحثاً عن أكواد تغذية/اتصال مصاحبة.",
+      "evidence": "إجراء تشخيصي عام مقترح، غير منقول من تعليمات BYD لهذا الكود",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c64d2ea633aaf5cc-s02",
+      "dtc_id": "byd-dtc-c64d2ea633aaf5cc",
+      "step_order": 2,
+      "instruction_ar": "تحقق من حالة بطارية الجهد المنخفض وتغذية الوحدة وأرضيها وفيوزاتها من مخطط النسخة الفعلية؛ لا تستخدم مواقع أطراف مفترضة.",
+      "evidence": "إجراء عام؛ أرقام الفيوزات ونطاق الجهد غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c64d2ea633aaf5cc-s03",
+      "dtc_id": "byd-dtc-c64d2ea633aaf5cc",
+      "step_order": 3,
+      "instruction_ar": "نفّذ اختبار أمر للمكوّن إن دعم جهاز التشخيص ذلك، وسجّل حالة المفتاح/الحساس قبل وبعد تغييره.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c64d2ea633aaf5cc-s04",
+      "dtc_id": "byd-dtc-c64d2ea633aaf5cc",
+      "step_order": 4,
+      "instruction_ar": "افحص تغذية المكوّن وأرضيه واستمرارية الأسلاك حسب الرسم الأصلي وليس الألوان المتوقعة.",
+      "evidence": "فحص أولي مقترح؛ معيار القبول العددي غير مؤكد",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-87d9bc1e30d39195-s01",
+      "dtc_id": "byd-dtc-87d9bc1e30d39195",
+      "step_order": 1,
+      "instruction_ar": "اقرأ الأكواد المصاحبة وFreeze Frame من وحدة التحكم المتوافقة، وسجّل ظروف ظهور العطل دون مسح البيانات قبل حفظها.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-87d9bc1e30d39195-s02",
+      "dtc_id": "byd-dtc-87d9bc1e30d39195",
+      "step_order": 2,
+      "instruction_ar": "راجع حالة تغذية وحدة التحكم وموصلات الجهد المنخفض المرئية؛ أي تدخل في HV يحتاج فني جهد عالٍ ودليل فصل معتمد.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-87d9bc1e30d39195-s03",
+      "dtc_id": "byd-dtc-87d9bc1e30d39195",
+      "step_order": 3,
+      "instruction_ar": "قارن قيم Live Data مع دليل BYD لنفس VIN ونسخة ECU؛ جميع العتبات الرقمية وأرقام الأطراف غير مؤكدة.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-074361a244aa7778-s01",
+      "dtc_id": "byd-dtc-074361a244aa7778",
+      "step_order": 1,
+      "instruction_ar": "اقرأ الأكواد المصاحبة وFreeze Frame من وحدة التحكم المتوافقة، وسجّل ظروف ظهور العطل دون مسح البيانات قبل حفظها.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-074361a244aa7778-s02",
+      "dtc_id": "byd-dtc-074361a244aa7778",
+      "step_order": 2,
+      "instruction_ar": "راجع حالة تغذية وحدة التحكم وموصلات الجهد المنخفض المرئية؛ أي تدخل في HV يحتاج فني جهد عالٍ ودليل فصل معتمد.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-074361a244aa7778-s03",
+      "dtc_id": "byd-dtc-074361a244aa7778",
+      "step_order": 3,
+      "instruction_ar": "قارن قيم Live Data مع دليل BYD لنفس VIN ونسخة ECU؛ جميع العتبات الرقمية وأرقام الأطراف غير مؤكدة.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-969fe7c3b0effad5-s01",
+      "dtc_id": "byd-dtc-969fe7c3b0effad5",
+      "step_order": 1,
+      "instruction_ar": "اقرأ الأكواد المصاحبة وFreeze Frame من وحدة التحكم المتوافقة، وسجّل ظروف ظهور العطل دون مسح البيانات قبل حفظها.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-969fe7c3b0effad5-s02",
+      "dtc_id": "byd-dtc-969fe7c3b0effad5",
+      "step_order": 2,
+      "instruction_ar": "راجع حالة تغذية وحدة التحكم وموصلات الجهد المنخفض المرئية؛ أي تدخل في HV يحتاج فني جهد عالٍ ودليل فصل معتمد.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-969fe7c3b0effad5-s03",
+      "dtc_id": "byd-dtc-969fe7c3b0effad5",
+      "step_order": 3,
+      "instruction_ar": "قارن قيم Live Data مع دليل BYD لنفس VIN ونسخة ECU؛ جميع العتبات الرقمية وأرقام الأطراف غير مؤكدة.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-43019834a1353329-s01",
+      "dtc_id": "byd-dtc-43019834a1353329",
+      "step_order": 1,
+      "instruction_ar": "اقرأ الأكواد المصاحبة وFreeze Frame من وحدة التحكم المتوافقة، وسجّل ظروف ظهور العطل دون مسح البيانات قبل حفظها.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-43019834a1353329-s02",
+      "dtc_id": "byd-dtc-43019834a1353329",
+      "step_order": 2,
+      "instruction_ar": "راجع حالة تغذية وحدة التحكم وموصلات الجهد المنخفض المرئية؛ أي تدخل في HV يحتاج فني جهد عالٍ ودليل فصل معتمد.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-43019834a1353329-s03",
+      "dtc_id": "byd-dtc-43019834a1353329",
+      "step_order": 3,
+      "instruction_ar": "قارن قيم Live Data مع دليل BYD لنفس VIN ونسخة ECU؛ جميع العتبات الرقمية وأرقام الأطراف غير مؤكدة.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-01ef9d39baea592c-s01",
+      "dtc_id": "byd-dtc-01ef9d39baea592c",
+      "step_order": 1,
+      "instruction_ar": "اقرأ الأكواد المصاحبة وFreeze Frame من وحدة التحكم المتوافقة، وسجّل ظروف ظهور العطل دون مسح البيانات قبل حفظها.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-01ef9d39baea592c-s02",
+      "dtc_id": "byd-dtc-01ef9d39baea592c",
+      "step_order": 2,
+      "instruction_ar": "راجع حالة تغذية وحدة التحكم وموصلات الجهد المنخفض المرئية؛ أي تدخل في HV يحتاج فني جهد عالٍ ودليل فصل معتمد.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-01ef9d39baea592c-s03",
+      "dtc_id": "byd-dtc-01ef9d39baea592c",
+      "step_order": 3,
+      "instruction_ar": "قارن قيم Live Data مع دليل BYD لنفس VIN ونسخة ECU؛ جميع العتبات الرقمية وأرقام الأطراف غير مؤكدة.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c9e6829171a8a06c-s01",
+      "dtc_id": "byd-dtc-c9e6829171a8a06c",
+      "step_order": 1,
+      "instruction_ar": "اقرأ الأكواد المصاحبة وFreeze Frame من وحدة التحكم المتوافقة، وسجّل ظروف ظهور العطل دون مسح البيانات قبل حفظها.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c9e6829171a8a06c-s02",
+      "dtc_id": "byd-dtc-c9e6829171a8a06c",
+      "step_order": 2,
+      "instruction_ar": "راجع حالة تغذية وحدة التحكم وموصلات الجهد المنخفض المرئية؛ أي تدخل في HV يحتاج فني جهد عالٍ ودليل فصل معتمد.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-c9e6829171a8a06c-s03",
+      "dtc_id": "byd-dtc-c9e6829171a8a06c",
+      "step_order": 3,
+      "instruction_ar": "قارن قيم Live Data مع دليل BYD لنفس VIN ونسخة ECU؛ جميع العتبات الرقمية وأرقام الأطراف غير مؤكدة.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-3300efc612ee8231-s01",
+      "dtc_id": "byd-dtc-3300efc612ee8231",
+      "step_order": 1,
+      "instruction_ar": "اقرأ الأكواد المصاحبة وFreeze Frame من وحدة التحكم المتوافقة، وسجّل ظروف ظهور العطل دون مسح البيانات قبل حفظها.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-3300efc612ee8231-s02",
+      "dtc_id": "byd-dtc-3300efc612ee8231",
+      "step_order": 2,
+      "instruction_ar": "راجع حالة تغذية وحدة التحكم وموصلات الجهد المنخفض المرئية؛ أي تدخل في HV يحتاج فني جهد عالٍ ودليل فصل معتمد.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-3300efc612ee8231-s03",
+      "dtc_id": "byd-dtc-3300efc612ee8231",
+      "step_order": 3,
+      "instruction_ar": "قارن قيم Live Data مع دليل BYD لنفس VIN ونسخة ECU؛ جميع العتبات الرقمية وأرقام الأطراف غير مؤكدة.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-4a8aa5c7226fe778-s01",
+      "dtc_id": "byd-dtc-4a8aa5c7226fe778",
+      "step_order": 1,
+      "instruction_ar": "اقرأ الأكواد المصاحبة وFreeze Frame من وحدة التحكم المتوافقة، وسجّل ظروف ظهور العطل دون مسح البيانات قبل حفظها.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-4a8aa5c7226fe778-s02",
+      "dtc_id": "byd-dtc-4a8aa5c7226fe778",
+      "step_order": 2,
+      "instruction_ar": "راجع حالة تغذية وحدة التحكم وموصلات الجهد المنخفض المرئية؛ أي تدخل في HV يحتاج فني جهد عالٍ ودليل فصل معتمد.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-4a8aa5c7226fe778-s03",
+      "dtc_id": "byd-dtc-4a8aa5c7226fe778",
+      "step_order": 3,
+      "instruction_ar": "قارن قيم Live Data مع دليل BYD لنفس VIN ونسخة ECU؛ جميع العتبات الرقمية وأرقام الأطراف غير مؤكدة.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-d80698da2db734b5-s01",
+      "dtc_id": "byd-dtc-d80698da2db734b5",
+      "step_order": 1,
+      "instruction_ar": "اقرأ الأكواد المصاحبة وFreeze Frame من وحدة التحكم المتوافقة، وسجّل ظروف ظهور العطل دون مسح البيانات قبل حفظها.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-d80698da2db734b5-s02",
+      "dtc_id": "byd-dtc-d80698da2db734b5",
+      "step_order": 2,
+      "instruction_ar": "راجع حالة تغذية وحدة التحكم وموصلات الجهد المنخفض المرئية؛ أي تدخل في HV يحتاج فني جهد عالٍ ودليل فصل معتمد.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-d80698da2db734b5-s03",
+      "dtc_id": "byd-dtc-d80698da2db734b5",
+      "step_order": 3,
+      "instruction_ar": "قارن قيم Live Data مع دليل BYD لنفس VIN ونسخة ECU؛ جميع العتبات الرقمية وأرقام الأطراف غير مؤكدة.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-4fe1ff7e43be40ef-s01",
+      "dtc_id": "byd-dtc-4fe1ff7e43be40ef",
+      "step_order": 1,
+      "instruction_ar": "اقرأ الأكواد المصاحبة وFreeze Frame من وحدة التحكم المتوافقة، وسجّل ظروف ظهور العطل دون مسح البيانات قبل حفظها.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-4fe1ff7e43be40ef-s02",
+      "dtc_id": "byd-dtc-4fe1ff7e43be40ef",
+      "step_order": 2,
+      "instruction_ar": "راجع حالة تغذية وحدة التحكم وموصلات الجهد المنخفض المرئية؛ أي تدخل في HV يحتاج فني جهد عالٍ ودليل فصل معتمد.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-4fe1ff7e43be40ef-s03",
+      "dtc_id": "byd-dtc-4fe1ff7e43be40ef",
+      "step_order": 3,
+      "instruction_ar": "قارن قيم Live Data مع دليل BYD لنفس VIN ونسخة ECU؛ جميع العتبات الرقمية وأرقام الأطراف غير مؤكدة.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-a8b89f0e77e89cc6-s01",
+      "dtc_id": "byd-dtc-a8b89f0e77e89cc6",
+      "step_order": 1,
+      "instruction_ar": "اقرأ الأكواد المصاحبة وFreeze Frame من وحدة التحكم المتوافقة، وسجّل ظروف ظهور العطل دون مسح البيانات قبل حفظها.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-a8b89f0e77e89cc6-s02",
+      "dtc_id": "byd-dtc-a8b89f0e77e89cc6",
+      "step_order": 2,
+      "instruction_ar": "راجع حالة تغذية وحدة التحكم وموصلات الجهد المنخفض المرئية؛ أي تدخل في HV يحتاج فني جهد عالٍ ودليل فصل معتمد.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-a8b89f0e77e89cc6-s03",
+      "dtc_id": "byd-dtc-a8b89f0e77e89cc6",
+      "step_order": 3,
+      "instruction_ar": "قارن قيم Live Data مع دليل BYD لنفس VIN ونسخة ECU؛ جميع العتبات الرقمية وأرقام الأطراف غير مؤكدة.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-5bb61f374fac4c6f-s01",
+      "dtc_id": "byd-dtc-5bb61f374fac4c6f",
+      "step_order": 1,
+      "instruction_ar": "اقرأ الأكواد المصاحبة وFreeze Frame من وحدة التحكم المتوافقة، وسجّل ظروف ظهور العطل دون مسح البيانات قبل حفظها.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-5bb61f374fac4c6f-s02",
+      "dtc_id": "byd-dtc-5bb61f374fac4c6f",
+      "step_order": 2,
+      "instruction_ar": "راجع حالة تغذية وحدة التحكم وموصلات الجهد المنخفض المرئية؛ أي تدخل في HV يحتاج فني جهد عالٍ ودليل فصل معتمد.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    },
+    {
+      "step_id": "byd-dtc-5bb61f374fac4c6f-s03",
+      "dtc_id": "byd-dtc-5bb61f374fac4c6f",
+      "step_order": 3,
+      "instruction_ar": "قارن قيم Live Data مع دليل BYD لنفس VIN ونسخة ECU؛ جميع العتبات الرقمية وأرقام الأطراف غير مؤكدة.",
+      "evidence": "مقترح أولي غير منسوب إلى إجراء المصنع",
+      "procedure_source_id": null,
+      "verified_oem_thresholds": null,
+      "verification_status": "suggested_not_factory_verified"
+    }
+  ]
+}
