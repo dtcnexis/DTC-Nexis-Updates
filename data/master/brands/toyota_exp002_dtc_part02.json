@@ -21,8 +21,8 @@
       "main_code": "P0A2B",
       "inf_code": "248",
       "ecu": "Hybrid Vehicle Control ECU",
-      "definition_en": "غير مؤكد — تعريف INF في القسم التفصيلي RM1076E لم يراجع",
-      "translation_ar": "غير مؤكد — ترجمة التعريف تنتظر صفحة تشخيص الكود",
+      "definition_en": "Range or performance fault in drive motor A temperature sensing circuit",
+      "translation_ar": "خلل نطاق أو أداء في دائرة حساس حرارة محرك الدفع A",
       "category": "P",
       "generic_vs_manufacturer": "generic",
       "canonical_dtc_id": "toyota:dtc-canonical:P0A2B-INF-248",
@@ -92,7 +92,16 @@
       "source_urls": [
         "https://toyotamanuals.gitlab.io/PZ471-Z01S0-CA/htmlweb/SB/12120509.pdf"
       ],
-      "verification_status": "carried_forward_pending_full_technical_review"
+      "verification_status": "carried_forward_pending_full_technical_review",
+      "definition_review": {
+        "date": "2026-11-01",
+        "status": "definition_paraphrase_checked_against_manufacturer_manual_reproduction",
+        "source_url": "https://toyotamanuals.gitlab.io/PZ471-Z01S0-CA/htmlweb/SB/12120509.pdf",
+        "pdf_page": 45,
+        "manual": "RM1076E, Prius NHW20, December 2012 correction",
+        "scope": "Definition only; does not approve all legacy procedures or applicability. Main-code rows are limited to this manual context.",
+        "official_host_authenticated": false
+      }
     },
     {
       "id": "toyota:dtc:P0A2B",
@@ -102,8 +111,8 @@
       "main_code": "P0A2B",
       "inf_code": null,
       "ecu": "Hybrid Vehicle Control ECU",
-      "definition_en": "غير مؤكد",
-      "translation_ar": "غير مؤكد",
+      "definition_en": "Range or performance fault in drive motor A temperature sensing circuit",
+      "translation_ar": "خلل نطاق أو أداء في دائرة حساس حرارة محرك الدفع A",
       "category": "P",
       "generic_vs_manufacturer": "generic",
       "canonical_dtc_id": "toyota:dtc-canonical:P0A2B",
@@ -168,7 +177,16 @@
       "source_urls": [
         "https://toyotamanuals.gitlab.io/PZ471-Z01S0-CA/htmlweb/SB/12120509.pdf"
       ],
-      "verification_status": "carried_forward_pending_full_technical_review"
+      "verification_status": "carried_forward_pending_full_technical_review",
+      "definition_review": {
+        "date": "2026-11-01",
+        "status": "definition_paraphrase_checked_against_manufacturer_manual_reproduction",
+        "source_url": "https://toyotamanuals.gitlab.io/PZ471-Z01S0-CA/htmlweb/SB/12120509.pdf",
+        "pdf_page": 45,
+        "manual": "RM1076E, Prius NHW20, December 2012 correction",
+        "scope": "Definition only; does not approve all legacy procedures or applicability. Main-code rows are limited to this manual context.",
+        "official_host_authenticated": false
+      }
     },
     {
       "id": "toyota:dtc:P0A2C-247",
