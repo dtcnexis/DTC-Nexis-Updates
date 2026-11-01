@@ -1,0 +1,89 @@
+{
+  "source_file": "BYD_DTC_NEXIS_batch01.json",
+  "source_library_id": "file_000000002a2481f4ad4a88dc9394097d",
+  "original_record_count": 262,
+  "unique_raw_codes": 244,
+  "related_metadata": {
+    "project": "DTC NEXIS / BYD",
+    "batch": "BYD-BATCH-001",
+    "created_on": "2026-10-15",
+    "scope": "Publicly visible third-party diagnostic manual indexes; no full OEM manual purchased/accessed. Includes ATTO 3 2022-23, Qin L DM-i 2024, Sealion 07 EV 2024; not whole BYD.",
+    "fields": [
+      "brand",
+      "code",
+      "code_format",
+      "ecu",
+      "definition_en",
+      "translation_ar",
+      "category",
+      "applicability",
+      "symptoms",
+      "causes",
+      "diagnostic_steps",
+      "live_data",
+      "parts",
+      "images",
+      "wiring",
+      "video",
+      "priority_evidence",
+      "sources",
+      "verification_status"
+    ],
+    "caveats": [
+      "All records are pending OEM verification; visible index verifies that the title is indexed by secondary publisher, not BYD officially.",
+      "Numerical measurement thresholds, pinouts, part numbers, symptom/setting conditions are unavailable and intentionally not invented.",
+      "Live data names are suggested functional labels and must not be treated as scan-tool PID names.",
+      "No real-world workshop frequency rankings are claimed.",
+      "No GitHub upload or DTC NEXIS app integration has occurred.",
+      "No assumption that all manufacturer DTCs are available through emissions OBD."
+    ],
+    "sources": [
+      {
+        "url": "https://obdtotal.com/product/byd-atto3-yuanplus-sc2e-service-manual/",
+        "publisher": "OBDTotal (third-party catalogue reproducing diagnostic-manual table of contents)",
+        "document": "BYD ATTO 3 Diagnostic Manual (indexed; no purchased text)",
+        "edition": "RHD/LHD SC2E - advertised 2022-2023; exact OEM revision unverified",
+        "accessed": "2026-10-15",
+        "evidence": "Code + English entry visible in public index; full OEM procedures NOT accessed"
+      },
+      {
+        "url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2128.html",
+        "publisher": "17VIN (third-party catalogue)",
+        "document": "2024 BYD Qin L DM-i Repair Manual / Diagnosis manual index",
+        "edition": "2024 listing, OEM manual revision unverified",
+        "accessed": "2026-10-15",
+        "evidence": "Code + English entry visible in public index; full OEM procedures NOT accessed"
+      },
+      {
+        "url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2122.html",
+        "publisher": "17VIN (third-party catalogue)",
+        "document": "2024 BYD Sealion 07 EV Repair Manual / Diagnosis manual index",
+        "edition": "2024 listing, OEM manual revision unverified",
+        "accessed": "2026-10-15",
+        "evidence": "Code + English entry visible in public index; full OEM procedures NOT accessed"
+      }
+    ],
+    "reference_portals": [
+      {
+        "BYD TIS": "https://tis.byd.com/"
+      },
+      {
+        "BYD Europe service login": "https://service.bydeurope.com/"
+      },
+      {
+        "BYD Korea technical documents contact": "https://www.bydauto.kr/service/service-information"
+      },
+      {
+        "SAE J2012": "https://saemobilus.sae.org/standards/j2012_202511-diagnostic-trouble-code-definitions"
+      }
+    ]
+  },
+  "shard_files": [
+    "data/master/brands/byd_batch01_original_part01.json",
+    "data/master/brands/byd_batch01_original_part02.json",
+    "data/master/brands/byd_batch01_original_part03.json",
+    "data/master/brands/byd_batch01_original_part04.json",
+    "data/master/brands/byd_batch01_original_part05.json"
+  ],
+  "source_integrity": "structured text reconstructed by indexed full line ranges, no original-byte SHA256; no release"
+}
