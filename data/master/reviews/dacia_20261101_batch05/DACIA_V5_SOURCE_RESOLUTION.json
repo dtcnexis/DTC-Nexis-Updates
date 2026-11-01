@@ -1,0 +1,45 @@
+{
+  "schema": "dtcnexis-dacia-source-resolution-v1",
+  "date": "2026-11-01",
+  "baseline_commit": "9fc215f237c6cc41c9154ddbf9a2e6ad01f251a2",
+  "resolved_documentary_findings": [
+    "DACIA-B04-SRS-SCOPE",
+    "DACIA-B04-SRS-REVISION"
+  ],
+  "resolution": "Located indexed Spanish V5 reproduction covering Logan/Sandero and the exact TEMIC types 01,02, Vdiag 04. Earlier observations about English V2 remain valid; they did not establish absence of V5.",
+  "source_url": "https://es.scribd.com/doc/201803936/Air-Bag-Estudiar",
+  "document": "MR-390-X90-88C050",
+  "scope_locator": "V5, 88C-2",
+  "table_locator": "V5, 88C-17",
+  "retrieval": "Search engines returned indexed document text. Direct open returned Client Challenge. No PDF bytes retrieved or authenticated.",
+  "affected_source_rows": [
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84
+  ],
+  "records_updated": 11,
+  "rows_before": 149,
+  "rows_after": 149,
+  "new_codes": 0,
+  "original_record_fields_preserved": true,
+  "original_sources_preserved": true,
+  "verification_status_not_upgraded": true,
+  "exclusion": "MR-426-B90-88C100 V3 covers TEMIC types 04-06 and must not be substituted for the 01/02 source merely because Vdiag is also 04.",
+  "unresolved": {
+    "oem_authentication": "No authenticated OEM manual obtained.",
+    "df_p_equivalence": "Numeric table agreement does not establish universal P-code meaning or vehicle applicability; 65 candidate mappings remain unapproved.",
+    "abs_50C3": "Retain DF017 and DF020 as separate records; reproduced table shares one numeric association.",
+    "all_dacia_completed": false
+  },
+  "app_modified": false,
+  "feed_modified": false,
+  "release_published": false
+}
