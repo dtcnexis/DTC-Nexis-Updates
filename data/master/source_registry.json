@@ -212,10 +212,10 @@
       "verification": "manifest_only"
     }
   ],
-  "master_status": "PERSISTED_CLOUD_MULTI_SOURCE_8637_ROWS",
+  "master_status": "PERSISTED_CLOUD_MULTI_SOURCE_8911_ROWS",
   "master_manifest_path": "data/master/all_collected_catalog_manifest.json",
-  "materialized_text_records": 8637,
-  "current_data_collections_count": 35,
+  "materialized_text_records": 8911,
+  "current_data_collections_count": 41,
   "additional_permanent_sources": [
     {
       "source": "C_CODES_278_STAGING_RECONCILED.json",
@@ -343,9 +343,36 @@
       "source_bytes_directly_preserved_in_master": false,
       "source_reference_in_owner_library": true,
       "verification": "CODE_INDEXED_TECHNICAL_SCOPED_QA_PENDING_NOT_RELEASED"
+    },
+    {
+      "brand": "BYD",
+      "original_file": "BYD_DTC_NEXIS_batch01.json",
+      "source_library_file_id": "file_000000002a2481f4ad4a88dc9394097d",
+      "original_rows": 262,
+      "unique_raw_codes": 244,
+      "archive_paths": [
+        "data/master/brands/byd_batch01_original_part01.json",
+        "data/master/brands/byd_batch01_original_part02.json",
+        "data/master/brands/byd_batch01_original_part03.json",
+        "data/master/brands/byd_batch01_original_part04.json",
+        "data/master/brands/byd_batch01_original_part05.json"
+      ],
+      "related_metadata_path": "data/master/brands/byd_batch01_source_metadata.json",
+      "quality": "CATALOGUE_ONLY_OEM_NOT_VERIFIED"
+    },
+    {
+      "brand": "BYD",
+      "original_file": "BYD_DTC_NEXIS_batch02_review.json",
+      "source_library_file_id": "file_00000000977c81f4ba4ac4b3730879cf",
+      "total_review_rows": 274,
+      "net_new_rows": 12,
+      "unique_new_code_strings": 11,
+      "canonical_delta_path": "data/master/brands/byd_batch02_new_dtc.json",
+      "full_source_review_index": "data/master/reviews/byd_batch02_20261101/source_index.json",
+      "quality": "REVIEW_ONLY_NO_PUBLICATION_OEM_NOT_VERIFIED"
     }
   ],
-  "remaining_source_work": "Audi original 1000 distinct code strings are now indexed in permanent master, with 30 codes retained in monitoring for OEM/context proof; other 488 Library source inventory entries still need source-by-source technical reconciliation. Main app, installer and feed unchanged.",
+  "remaining_source_work": "BYD Batch01/02 original source text extracted and saved, while their authoritative OEM evidence and HV guidance remain unverified. Nissan Batch01 comparison, additional manufacturers and global 488-entry source inventory are outstanding. Stable app and owner update feed must remain unchanged.",
   "detail_recovery_20261030": {
     "counted_rows_unchanged": 7656,
     "canonical_files_unchanged": 30,
