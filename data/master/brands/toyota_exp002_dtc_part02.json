@@ -1337,8 +1337,8 @@
       "main_code": "P0A60",
       "inf_code": "288",
       "ecu": "Hybrid Vehicle Control ECU",
-      "definition_en": "غير مؤكد — تعريف INF في القسم التفصيلي RM1076E لم يراجع",
-      "translation_ar": "غير مؤكد — ترجمة التعريف تنتظر صفحة تشخيص الكود",
+      "definition_en": "V-phase motor-inverter current: sub-sensor fault.",
+      "translation_ar": "تيار عاكس المحرك، الطور V: خلل الحساس الفرعي.",
       "category": "P",
       "generic_vs_manufacturer": "generic",
       "canonical_dtc_id": "toyota:dtc-canonical:P0A60-INF-288",
@@ -1408,7 +1408,17 @@
       "source_urls": [
         "https://toyotamanuals.gitlab.io/PZ471-Z01S0-CA/htmlweb/SB/12120509.pdf"
       ],
-      "verification_status": "carried_forward_pending_full_technical_review"
+      "verification_status": "carried_forward_pending_full_technical_review",
+      "definition_review": {
+        "date": "2026-11-02",
+        "status": "definition_paraphrase_checked_against_manufacturer_manual_reproduction",
+        "source_url": "https://toyotamanuals.gitlab.io/PZ471-Z01S0-CA/htmlweb/SB/12120509.pdf",
+        "pdf_page": 56,
+        "printed_page": "05-358",
+        "manual": "RM1076E, Prius NHW20, December 2012 correction",
+        "scope": "Definition only; applicability, causes and repair procedures remain unapproved.",
+        "official_host_authenticated": false
+      }
     },
     {
       "id": "toyota:dtc:P0A60",
