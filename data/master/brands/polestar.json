@@ -21,7 +21,41 @@
       "original_row_index": 1,
       "original_record_id": "DTC_POL_B109A4A",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 1,
+          "ecu": "CEM",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "B109A",
+            "failure_type_byte_hex": "4A",
+            "classification": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)",
+            "raw_tool_example": "CEM-B109A4A",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              2
+            ],
+            "model_years": "2025+; structural weeks 202349+",
+            "vehicle_type": "534",
+            "engines": [
+              "غير محدد في النشرة"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "الكود منفرد بلا أعراض إنذار",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://oemdtc.com/tsb/11020569/",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "B15381B",
@@ -32,7 +66,42 @@
       "original_row_index": 2,
       "original_record_id": "DTC_POL_B15381B",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 31,
+          "ecu": "SRS",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "B1538",
+            "failure_type_byte_hex": "1B",
+            "classification": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)",
+            "raw_tool_example": "SRS-B15381B",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              2
+            ],
+            "model_years": "2021+ in table, diagnostic applicability NOT established",
+            "vehicle_type": "534",
+            "engines": [
+              "غير محدد في النشرة"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "غير مؤكد: توجد فجوة/عدم اتساق بين عنوان/نص النشرة ورمز SRS",
+            "other_markets_verified": false,
+            "notes": "source inconsistency flagged; excluded from release-ready diagnostics"
+          },
+          "source_urls": [
+            "https://oemdtc.com/tsb/11000078/",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "B1A0213",
@@ -43,7 +112,41 @@
       "original_row_index": 3,
       "original_record_id": "DTC_POL_B1A0213",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 26,
+          "ecu": "ESM",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "B1A02",
+            "failure_type_byte_hex": "13",
+            "classification": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)",
+            "raw_tool_example": "ESM-B1A0213",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              2
+            ],
+            "model_years": "2021+ in TJ; verify exact variant",
+            "vehicle_type": "534",
+            "engines": [
+              "غير محدد في النشرة"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "يمكن ظهورها منفردة أو مجتمعة وفق TJ؛ دائمية الكود بالنشرة Intermittent",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://static.nhtsa.gov/odi/tsbs/2024/MC-11002689-0001.pdf",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "C007768",
@@ -54,7 +157,41 @@
       "original_row_index": 4,
       "original_record_id": "DTC_POL_C007768",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 2,
+          "ecu": "BCM2",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "C0077",
+            "failure_type_byte_hex": "68",
+            "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+            "raw_tool_example": "BCM2-C007768",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              2
+            ],
+            "model_years": "2021+ within TJ broad scope",
+            "vehicle_type": "534",
+            "engines": [
+              "غير محدد في النشرة"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "وجود تحذير ضغط مع C007768 (قد يكون دائماً أو متقطعاً)",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://static.nhtsa.gov/odi/tsbs/2025/MC-11014147-0001.pdf",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "P060C00",
@@ -65,7 +202,42 @@
       "original_row_index": 5,
       "original_record_id": "DTC_POL_P060C00",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 3,
+          "ecu": "IHFA",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "P060C",
+            "failure_type_byte_hex": "00",
+            "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+            "raw_tool_example": "IHFA-P060C00",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              2
+            ],
+            "model_years": "2021–2023; ED/EG variants",
+            "vehicle_type": "534",
+            "engines": [
+              "ED/E400V6",
+              "EG/E400V9"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "الكود دائم مع تحذير الدفع؛ قد يكون misdetection",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://oemdtc.com/tsb/10226635/",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "P060C04",
@@ -76,7 +248,42 @@
       "original_row_index": 6,
       "original_record_id": "DTC_POL_P060C04",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 4,
+          "ecu": "IHFA",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "P060C",
+            "failure_type_byte_hex": "04",
+            "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+            "raw_tool_example": "IHFA-P060C04",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              2
+            ],
+            "model_years": "2021–2023; ED/EG variants",
+            "vehicle_type": "534",
+            "engines": [
+              "ED/E400V6",
+              "EG/E400V9"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "الكود دائم مع تحذير الدفع؛ قد يكون misdetection",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://oemdtc.com/tsb/10226635/",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "P060C66",
@@ -87,7 +294,73 @@
       "original_row_index": 7,
       "original_record_id": "DTC_POL_P060C66",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 16,
+          "ecu": "IHFA",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "P060C",
+            "failure_type_byte_hex": "66",
+            "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+            "raw_tool_example": "IHFA-P060C66",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              3
+            ],
+            "model_years": "2024–2025; structure weeks 202402–202524",
+            "vehicle_type": "359",
+            "engines": [
+              "غير محدد في النشرة"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "انتهاء شحن AC مع استمرار توصيل السيارة بالشاحن، والكود Permanent أو Intermittent",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://oemdtc.com/tsb/11020571/",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        },
+        {
+          "original_source_row": 17,
+          "ecu": "IHRA",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "P060C",
+            "failure_type_byte_hex": "66",
+            "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+            "raw_tool_example": "IHRA-P060C66",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              3
+            ],
+            "model_years": "2024–2025; structure weeks 202402–202524",
+            "vehicle_type": "359",
+            "engines": [
+              "غير محدد في النشرة"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "انتهاء شحن AC مع استمرار توصيل السيارة بالشاحن، والكود Permanent أو Intermittent",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://oemdtc.com/tsb/11020571/",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "P0A7A66",
@@ -98,7 +371,73 @@
       "original_row_index": 8,
       "original_record_id": "DTC_POL_P0A7A66",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 18,
+          "ecu": "IHFA",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "P0A7A",
+            "failure_type_byte_hex": "66",
+            "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+            "raw_tool_example": "IHFA-P0A7A66",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              3
+            ],
+            "model_years": "2024–2025; structure weeks 202402–202524",
+            "vehicle_type": "359",
+            "engines": [
+              "غير محدد في النشرة"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "انتهاء شحن AC مع استمرار توصيل السيارة بالشاحن، والكود Permanent أو Intermittent",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://oemdtc.com/tsb/11020571/",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        },
+        {
+          "original_source_row": 19,
+          "ecu": "IHRA",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "P0A7A",
+            "failure_type_byte_hex": "66",
+            "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+            "raw_tool_example": "IHRA-P0A7A66",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              3
+            ],
+            "model_years": "2024–2025; structure weeks 202402–202524",
+            "vehicle_type": "359",
+            "engines": [
+              "غير محدد في النشرة"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "انتهاء شحن AC مع استمرار توصيل السيارة بالشاحن، والكود Permanent أو Intermittent",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://oemdtc.com/tsb/11020571/",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "P0A8187",
@@ -109,7 +448,41 @@
       "original_row_index": 9,
       "original_record_id": "DTC_POL_P0A8187",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 20,
+          "ecu": "FIOC",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "P0A81",
+            "failure_type_byte_hex": "87",
+            "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+            "raw_tool_example": "FIOC-P0A8187",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              3
+            ],
+            "model_years": "2025+; structural weeks from 202425",
+            "vehicle_type": "359",
+            "engines": [
+              "غير محدد في النشرة"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "المسار الموثق فقط إذا ظهر الكود وحده دون أعراض",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://oemdtc.com/tsb/11015988/",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "P0A9500",
@@ -120,7 +493,41 @@
       "original_row_index": 10,
       "original_record_id": "DTC_POL_P0A9500",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 5,
+          "ecu": "BECM",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "P0A95",
+            "failure_type_byte_hex": "00",
+            "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+            "raw_tool_example": "BECM-P0A9500",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              2
+            ],
+            "model_years": "2021+ in TJ scope; verify VIN",
+            "vehicle_type": "534",
+            "engines": [
+              "غير محدد في النشرة"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "التحذير مصحوب بأحد الكودين؛ قواطع الجهد العالي مغلقة أثناء قراءة القيم",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://oemdtc.com/tsb/11031083/",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "P0AA800",
@@ -131,7 +538,42 @@
       "original_row_index": 11,
       "original_record_id": "DTC_POL_P0AA800",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 24,
+          "ecu": "BECM",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "P0AA8",
+            "failure_type_byte_hex": "00",
+            "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+            "raw_tool_example": "BECM-P0AA800",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              4
+            ],
+            "model_years": "2025–2026; structure weeks 202447–202613",
+            "vehicle_type": "814",
+            "engines": [
+              "PA / E400P01 LRDM",
+              "PB / E400P02 LRSM"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "وجود الكودين معاً P0AA800 وP127900 وعدم قبول أي غيار",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://oemdtc.com/tsb/11032615/",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "P0D1513",
@@ -142,7 +584,41 @@
       "original_row_index": 12,
       "original_record_id": "DTC_POL_P0D1513",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 6,
+          "ecu": "OBC",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "P0D15",
+            "failure_type_byte_hex": "13",
+            "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+            "raw_tool_example": "OBC-P0D1513",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              2
+            ],
+            "model_years": "2021-2023",
+            "vehicle_type": "534",
+            "engines": [
+              "غير محدد في النشرة"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "عند تعذر شحن Mode 2 وMode 3 ووجود الكود؛ شروط ECU الدقيقة غير مؤكد",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://static.oemdtc.com/NHTSA-PDFs/MC-10235012-9999.pdf",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "P0D1556",
@@ -153,7 +629,41 @@
       "original_row_index": 13,
       "original_record_id": "DTC_POL_P0D1556",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 7,
+          "ecu": "OBC",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "P0D15",
+            "failure_type_byte_hex": "56",
+            "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+            "raw_tool_example": "OBC-P0D1556",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              2
+            ],
+            "model_years": "2021-2023",
+            "vehicle_type": "534",
+            "engines": [
+              "غير محدد في النشرة"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "تعذر AC Mode 2/3 مع الكود؛ شروط الضبط التفصيلية غير مؤكدة",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://static.oemdtc.com/NHTSA-PDFs/MC-10235012-9999.pdf",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "P0D1800",
@@ -164,7 +674,42 @@
       "original_row_index": 14,
       "original_record_id": "DTC_POL_P0D1800",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 8,
+          "ecu": "BECM",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "P0D18",
+            "failure_type_byte_hex": "00",
+            "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+            "raw_tool_example": "BECM-P0D1800",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              2
+            ],
+            "model_years": "2021–2023; structural weeks 201935–202316",
+            "vehicle_type": "534",
+            "engines": [
+              "ED/E400V6",
+              "ET/E400V35"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "تظهر رسالة الدفع مع كود BECM وحده وعدم أعراض أخرى",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://oemdtc.com/tsb/10242241/",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "P0D320A",
@@ -175,7 +720,41 @@
       "original_row_index": 15,
       "original_record_id": "DTC_POL_P0D320A",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 21,
+          "ecu": "HLCM",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "P0D32",
+            "failure_type_byte_hex": "0A",
+            "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+            "raw_tool_example": "HLCM-P0D320A",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              3
+            ],
+            "model_years": "2025–2027; structure weeks 202402–202752",
+            "vehicle_type": "359",
+            "engines": [
+              "غير محدد في النشرة"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "ارتفاع حرارة HLCM في Live Data؛ احتمال تقييد تدفق السائل",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://oemdtc.com/tsb/11035007/",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "P0D3224",
@@ -186,7 +765,41 @@
       "original_row_index": 16,
       "original_record_id": "DTC_POL_P0D3224",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 22,
+          "ecu": "HLCM",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "P0D32",
+            "failure_type_byte_hex": "24",
+            "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+            "raw_tool_example": "HLCM-P0D3224",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              3
+            ],
+            "model_years": "2025–2027; structure weeks 202402–202752",
+            "vehicle_type": "359",
+            "engines": [
+              "غير محدد في النشرة"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "ارتفاع حرارة HLCM في Live Data؛ احتمال تقييد تدفق السائل",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://oemdtc.com/tsb/11035007/",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "P0D6787",
@@ -197,7 +810,41 @@
       "original_row_index": 17,
       "original_record_id": "DTC_POL_P0D6787",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 23,
+          "ecu": "OBC",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "P0D67",
+            "failure_type_byte_hex": "87",
+            "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+            "raw_tool_example": "OBC-P0D6787",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              3
+            ],
+            "model_years": "2025; structural weeks 202431–202502",
+            "vehicle_type": "359",
+            "engines": [
+              "غير محدد في النشرة"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "تكوّن العَرَض مع انحشار سلك التحرير اليدوي لمنفذ الشحن",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://oemdtc.com/tsb/11019500/",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "P0D67A2",
@@ -208,7 +855,43 @@
       "original_row_index": 18,
       "original_record_id": "DTC_POL_P0D67A2",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 9,
+          "ecu": "OBC",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "P0D67",
+            "failure_type_byte_hex": "A2",
+            "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+            "raw_tool_example": "OBC-P0D67A2",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              2
+            ],
+            "model_years": "2020-2023",
+            "vehicle_type": "534",
+            "engines": [
+              "ED / E400V6",
+              "EG / E400V9",
+              "ET / E400V35"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "الكود متقطع في النشرة، عند مشكلات شحن Mode 2",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://static.oemdtc.com/NHTSA-PDFs/MC-10235010-9999.pdf",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "P0E0500",
@@ -219,7 +902,43 @@
       "original_row_index": 19,
       "original_record_id": "DTC_POL_P0E0500",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 10,
+          "ecu": "IEM",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "P0E05",
+            "failure_type_byte_hex": "00",
+            "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+            "raw_tool_example": "IEM-P0E0500",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              2
+            ],
+            "model_years": "2024; model build weeks from 202317",
+            "vehicle_type": "534",
+            "engines": [
+              "FD/E400V26",
+              "FE/E400V20",
+              "FG/E400V37 (later TJ revision)"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "تذبذب العزم مع الكود داخل IEM",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://oemdtc.com/tsb/11005715/",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "P0E2F00",
@@ -230,7 +949,41 @@
       "original_row_index": 20,
       "original_record_id": "DTC_POL_P0E2F00",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 11,
+          "ecu": "BECM",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "P0E2F",
+            "failure_type_byte_hex": "00",
+            "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+            "raw_tool_example": "BECM-P0E2F00",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              2
+            ],
+            "model_years": "2021+ in TJ scope; verify VIN",
+            "vehicle_type": "534",
+            "engines": [
+              "غير محدد في النشرة"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "التحذير مصحوب بأحد الكودين؛ قواطع الجهد العالي مغلقة أثناء قراءة القيم",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://oemdtc.com/tsb/11031083/",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "P127900",
@@ -241,7 +994,42 @@
       "original_row_index": 21,
       "original_record_id": "DTC_POL_P127900",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 25,
+          "ecu": "BECM",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "P1279",
+            "failure_type_byte_hex": "00",
+            "classification": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)",
+            "raw_tool_example": "BECM-P127900",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              4
+            ],
+            "model_years": "2025–2026; structure weeks 202447–202613",
+            "vehicle_type": "814",
+            "engines": [
+              "PA / E400P01 LRDM",
+              "PB / E400P02 LRSM"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "وجود الكودين معاً P0AA800 وP127900 وعدم قبول أي غيار",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://oemdtc.com/tsb/11032615/",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "P2BE017",
@@ -252,7 +1040,41 @@
       "original_row_index": 22,
       "original_record_id": "DTC_POL_P2BE017",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 30,
+          "ecu": "FIOC",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "P2BE0",
+            "failure_type_byte_hex": "17",
+            "classification": "نطاق خاضع لـ ISO/SAE (P2xxx)، وليس نطاقاً مخصصاً للمصنع؛ التعريف الكامل وتوفر التخصيص غير مؤكدين",
+            "raw_tool_example": "FIOC-P2BE017",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              3
+            ],
+            "model_years": "2025+",
+            "vehicle_type": "359",
+            "engines": [
+              "غير محدد في النشرة"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "الكود مذكور في نشرة تعبئة وتنفيـس نظام التبريد؛ تعريف الكود التفصيلي غير مؤكد",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://oemdtc.com/tsb/11023311/",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "U002888",
@@ -263,7 +1085,41 @@
       "original_row_index": 23,
       "original_record_id": "DTC_POL_U002888",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 27,
+          "ecu": "ESM",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "U0028",
+            "failure_type_byte_hex": "88",
+            "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+            "raw_tool_example": "ESM-U002888",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              2
+            ],
+            "model_years": "2021+ in TJ; verify exact variant",
+            "vehicle_type": "534",
+            "engines": [
+              "غير محدد في النشرة"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "يمكن ظهورها منفردة أو مجتمعة وفق TJ؛ دائمية الكود بالنشرة Intermittent",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://static.nhtsa.gov/odi/tsbs/2024/MC-11002689-0001.pdf",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "U007388",
@@ -274,7 +1130,41 @@
       "original_row_index": 24,
       "original_record_id": "DTC_POL_U007388",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 28,
+          "ecu": "BECM",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "U0073",
+            "failure_type_byte_hex": "88",
+            "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+            "raw_tool_example": "BECM-U007388",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              2
+            ],
+            "model_years": "2021+ in TJ; verify exact variant",
+            "vehicle_type": "534",
+            "engines": [
+              "غير محدد في النشرة"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "يمكن ظهورها منفردة أو مجتمعة وفق TJ؛ دائمية الكود بالنشرة Intermittent",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://static.nhtsa.gov/odi/tsbs/2024/MC-11002689-0001.pdf",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "U112700",
@@ -285,7 +1175,41 @@
       "original_row_index": 25,
       "original_record_id": "DTC_POL_U112700",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 29,
+          "ecu": "VCU1",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "U1127",
+            "failure_type_byte_hex": "00",
+            "classification": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)",
+            "raw_tool_example": "VCU1-U112700",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              2
+            ],
+            "model_years": "2021+ in TJ; verify exact variant",
+            "vehicle_type": "534",
+            "engines": [
+              "غير محدد في النشرة"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "يمكن ظهورها منفردة أو مجتمعة وفق TJ؛ دائمية الكود بالنشرة Intermittent",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://static.nhtsa.gov/odi/tsbs/2024/MC-11002689-0001.pdf",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "U116E00",
@@ -296,7 +1220,74 @@
       "original_row_index": 26,
       "original_record_id": "DTC_POL_U116E00",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 12,
+          "ecu": "VCU1",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "U116E",
+            "failure_type_byte_hex": "00",
+            "classification": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)",
+            "raw_tool_example": "VCU1-U116E00",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              2
+            ],
+            "model_years": "2020–2023",
+            "vehicle_type": "534",
+            "engines": [
+              "ED/E400V6",
+              "EG/E400V9"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "عرض Disconnect Charging Cable بلا كابل؛ الشحن نفسه يعمل",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://oemdtc.com/tsb/10243623/",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        },
+        {
+          "original_source_row": 13,
+          "ecu": "VCU1",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "U116E",
+            "failure_type_byte_hex": "00",
+            "classification": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)",
+            "raw_tool_example": "VCU1-U116E00",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              2
+            ],
+            "model_years": "2024–2025; build weeks 202346–202427",
+            "vehicle_type": "534",
+            "engines": [
+              "غير محدد في TJ"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "نفس العرض والـ DTC ولكن إجراء برمجي مختلف عن MY الأقدم",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://oemdtc.com/tsb/11005714/",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "U201F00",
@@ -307,7 +1298,41 @@
       "original_row_index": 27,
       "original_record_id": "DTC_POL_U201F00",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 14,
+          "ecu": "CEM",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "U201F",
+            "failure_type_byte_hex": "00",
+            "classification": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)",
+            "raw_tool_example": "CEM-U201F00",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              2
+            ],
+            "model_years": "2021+ in manufacturer document",
+            "vehicle_type": "534",
+            "engines": [
+              "غير محدد في النشرة"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "أعراض المفتاح أو عدم اتصال VIDA؛ الكود دائم في النشرة",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://static.oemdtc.com/NHTSA-PDFs/MC-10230751-9999.pdf",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "U210993",
@@ -318,7 +1343,41 @@
       "original_row_index": 28,
       "original_record_id": "DTC_POL_U210993",
       "ecu_context": null,
-      "verification_status": "document_occurrence_verified_definition_pending"
+      "verification_status": "document_occurrence_verified_definition_pending",
+      "source_context_variants_20261105": [
+        {
+          "original_source_row": 15,
+          "ecu": "TCAM",
+          "code_format": {
+            "display": "7-character extended DTC",
+            "base_dtc": "U2109",
+            "failure_type_byte_hex": "93",
+            "classification": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)",
+            "raw_tool_example": "TCAM-U210993",
+            "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+          },
+          "applicability": {
+            "models": [
+              2
+            ],
+            "model_years": "2021–2023; 202007–202352",
+            "vehicle_type": "534",
+            "engines": [
+              "غير محدد في النشرة"
+            ],
+            "fuel": "electricity (BEV)",
+            "markets": "US/CA bulletin; other markets unverified",
+            "conditions": "رسالة eCall مع الكود؛ قد تظهر بعد تحديث البرنامج",
+            "other_markets_verified": false
+          },
+          "source_urls": [
+            "https://oemdtc.com/tsb/10232124/",
+            "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+          ],
+          "definition_status": "UNKNOWN_ORIGINAL_DEFINITION_IS_NULL_DO_NOT_INFER_FROM_BASE_DTC",
+          "full_technical_approval": false
+        }
+      ]
     },
     {
       "raw_code": "P137394",

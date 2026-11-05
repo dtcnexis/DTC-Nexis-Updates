@@ -384,9 +384,42 @@
       "raw_original_sha256": null,
       "preservation": "FULL_JSON_VALUES_SEMANTIC_EXPORT_NOT_ORIGINAL_BYTES",
       "quality": "ALL_72_PENDING_FULL_TECHNICAL_QA"
+    },
+    {
+      "brand": "opel_vauxhall",
+      "original_file": "opel_vauxhall_dtc_batch01.json",
+      "source_library_file_id": "libfile_1a09047c28d0819183489774c6d2cd67",
+      "source_rows": 34,
+      "saved_path": "data/master/enrichment/opel_vauxhall_batch01_source_values_20261105.json",
+      "additional_counted_rows": 0,
+      "preservation": "FULL_JSON_VALUES_SEMANTIC_EXPORT_NOT_ORIGINAL_BYTES",
+      "raw_original_sha256": null,
+      "quality": "TECHNICAL_REVIEW_PENDING"
+    },
+    {
+      "brand": "polestar",
+      "original_file": "polestar_dtc_batch01.json",
+      "source_library_file_id": "libfile_f28d2aeeda948191a491aaae82e62346",
+      "source_rows": 31,
+      "saved_path": "data/master/enrichment/polestar_batch01_source_values_20261105.json",
+      "additional_counted_rows": 0,
+      "preservation": "FULL_JSON_VALUES_SEMANTIC_EXPORT_NOT_ORIGINAL_BYTES",
+      "raw_original_sha256": null,
+      "quality": "TECHNICAL_REVIEW_PENDING"
+    },
+    {
+      "brand": "skoda",
+      "original_file": "skoda_dtc_batch01.json",
+      "source_library_file_id": "libfile_9b5bfe1bf5a8819197ab140cbaf17602",
+      "source_rows": 43,
+      "saved_path": "data/master/enrichment/skoda_batch01_source_values_20261105.json",
+      "additional_counted_rows": 0,
+      "preservation": "FULL_JSON_VALUES_SEMANTIC_EXPORT_NOT_ORIGINAL_BYTES",
+      "raw_original_sha256": null,
+      "quality": "TECHNICAL_REVIEW_PENDING"
     }
   ],
-  "remaining_source_work": "Nissan Batch01 compared: 503 source rows / 495 code strings; one missing P0101 L34 scope added, no new code count. Lexus Batch01 72 records retained; all need full technical QA, with 19 primary-definition and 11 primary-context checks. All 430 JSON/CSV/ZIP names in original 488-entry inventory found; content reconciliation of remaining source files continues. Audi30 and Honda7 remain pending. Do not start image inventory.",
+  "remaining_source_work": "Nissan Batch01 compared: 503 source rows / 495 code strings; one missing P0101 L34 scope added, no new code count. Lexus Batch01 72 records retained; all need full technical QA, with 19 primary-definition and 11 primary-context checks. All 430 JSON/CSV/ZIP names in original 488-entry inventory found; content reconciliation of remaining source files continues. Audi30 and Honda7 remain pending. Do not start image inventory. Batch02 now preserves full Opel34/Polestar31/Skoda43 original record values as non-counted enrichment. Polestar source-context variants retained, definitions remain unknown. Full Nissan/Lexus and these three source-text reads completed. Other source-file content reconciliation and technical reviews remain.",
   "detail_recovery_20261030": {
     "counted_rows_unchanged": 7656,
     "canonical_files_unchanged": 30,

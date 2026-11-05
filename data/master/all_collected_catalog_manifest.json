@@ -543,6 +543,24 @@
       "original_rows": 53,
       "counts_towards_unique_ledger": false,
       "additional_counted_rows": 0
+    },
+    {
+      "path": "data/master/enrichment/opel_vauxhall_batch01_source_values_20261105.json",
+      "original_rows": 34,
+      "counts_towards_unique_ledger": false,
+      "additional_counted_rows": 0
+    },
+    {
+      "path": "data/master/enrichment/polestar_batch01_source_values_20261105.json",
+      "original_rows": 31,
+      "counts_towards_unique_ledger": false,
+      "additional_counted_rows": 0
+    },
+    {
+      "path": "data/master/enrichment/skoda_batch01_source_values_20261105.json",
+      "original_rows": 43,
+      "counts_towards_unique_ledger": false,
+      "additional_counted_rows": 0
     }
   ],
   "enrichment_note": "VW001 644 records match VW022 codes in original order exactly. Diagnostic text preserved as enrichment only; not double counted.",
@@ -567,7 +585,7 @@
     ],
     "last_successful_import": "2026-10-29 Audi20 Dacia149 Toyota210 Honda47, all original text read and master copies verified; raw byte materialization unavailable but line extracts complete"
   },
-  "last_source_sync": "2026-11-05; Lexus 72 source records retained / 44 counted files / 8983 archived rows; Nissan P0101 additional model scope retained without code increment; no app release",
+  "last_source_sync": "2026-11-05 batch02; 8983 counted source rows / 44 files unchanged; 108 Opel/Polestar/Skoda original record values retained as enrichment without duplicate counting",
   "duplicate_archival_copies_not_counted": [
     {
       "path": "data/master/brands/audi_legacy_detail.json",
@@ -655,6 +673,16 @@
     "additional_nissan_scope_variants": 1,
     "source_inventory_json_csv_zip_metadata_matches": 430,
     "original_byte_recovery": false,
-    "audit_path": "data/master/reviews/continuation_20261105_batch01"
+    "audit_path": "data/master/reviews/continuation_20261105_batch01",
+    "batch02": {
+      "enrichment_source_rows": 108,
+      "new_counted_rows": 0,
+      "brands": [
+        "Opel / Vauxhall",
+        "Polestar",
+        "Skoda"
+      ],
+      "report": "data/master/reviews/continuation_20261105_batch02/REPORT_AR.md"
+    }
   }
 }

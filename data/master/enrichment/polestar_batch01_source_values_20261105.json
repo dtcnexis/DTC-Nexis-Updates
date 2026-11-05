@@ -1,0 +1,3747 @@
+{
+  "schema": "dtcnexis-source-value-preservation-v1",
+  "source": {
+    "filename": "polestar_dtc_batch01.json",
+    "library_file_id": "libfile_f28d2aeeda948191a491aaae82e62346",
+    "version_id": "1",
+    "reported_original_size_bytes": 158673,
+    "complete_text_lines_read": 3731,
+    "raw_original_sha256": null,
+    "raw_original_bytes_materialized": false,
+    "preservation": "All JSON record values retained, with original top-level metadata kept separately; generated semantic export, not original file recreation"
+  },
+  "counts_towards_unique_ledger": false,
+  "additional_counted_rows": 0,
+  "full_technical_approval": false,
+  "records": [
+    {
+      "brand": "Polestar",
+      "code": "B109A4A",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "B109A",
+        "failure_type_byte_hex": "4A",
+        "classification": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)",
+        "raw_tool_example": "CEM-B109A4A",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "CEM",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "B",
+        "system": "Body / الهيكل والأجهزة",
+        "manufacturer_generic": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)"
+      },
+      "applicability": {
+        "models": [
+          2
+        ],
+        "model_years": "2025+; structural weeks 202349+",
+        "vehicle_type": "534",
+        "engines": [
+          "غير محدد في النشرة"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "الكود منفرد بلا أعراض إنذار",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "الكود دائم دون أي أعراض أخرى"
+      ],
+      "causes": [
+        {
+          "candidate": "SW false DTC; لا يؤثر في وظيفة الإنذار",
+          "evidence": "Polestar TJ37416.2.0"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Confirm no symptoms and isolated CEM B109A4A",
+          "ar": "تحقق من غياب الأعراض ومن أن الكود منفرد",
+          "evidence": "Polestar TJ37416"
+        },
+        {
+          "en": "Erase the DTC and release; do not replace BBS/CEM",
+          "ar": "امسح الكود ولا تستبدل صافرة الإنذار أو CEM لهذه الحالة",
+          "evidence": "Polestar TJ37416"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "No verified parameter identified in cited source",
+          "name_ar": "لا توجد قيمة Live Data محددة موثقة في النشرة",
+          "expected": "غير مؤكد",
+          "evidence": "not in source"
+        }
+      ],
+      "parts": [
+        {
+          "part": "Battery Backed-up Sounder (BBS)",
+          "location": "غير مؤكد",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://oemdtc.com/tsb/11020569/",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+2+CEM+battery-backed+alarm+sounder+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+2+B109A4A+CEM+battery-backed+alarm+sounder+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "نشرة تصف الكود بأنه غير صالح وتمنع تغيير القطعة",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 37416.2.0",
+          "date": "2025-06-23",
+          "url": "https://oemdtc.com/tsb/11020569/",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "C007768",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "C0077",
+        "failure_type_byte_hex": "68",
+        "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+        "raw_tool_example": "BCM2-C007768",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "BCM2",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "C",
+        "system": "Chassis / الشاسيه والفرامل",
+        "manufacturer_generic": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)"
+      },
+      "applicability": {
+        "models": [
+          2
+        ],
+        "model_years": "2021+ within TJ broad scope",
+        "vehicle_type": "534",
+        "engines": [
+          "غير محدد في النشرة"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "وجود تحذير ضغط مع C007768 (قد يكون دائماً أو متقطعاً)",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "Low tire pressure warning في شاشة السائق"
+      ],
+      "causes": [
+        {
+          "candidate": "ضغط إطارات منخفض فعلاً",
+          "evidence": "ينبغي التحقق من ضغط كل إطار كما في النشرة"
+        },
+        {
+          "candidate": "تحتاج منظومة iTPMS معايرة بعد التأكد من الضغوط",
+          "evidence": "Polestar TJ36243"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Check tire pressures against the tire placard for exact vehicle/tires",
+          "ar": "قس ضغط الإطارات مقارنة بملصق السيارة وفق مقاس العجلات",
+          "evidence": "Polestar TJ36243"
+        },
+        {
+          "en": "Only if pressures correct, calibrate iTPMS as per vehicle manual",
+          "ar": "بعد التأكد من سلامة الضغط عاير iTPMS",
+          "evidence": "Polestar TJ36243"
+        },
+        {
+          "en": "Recheck warning and DTC; use VIDA if persistent",
+          "ar": "أعد قراءة الكود والتحذير واتبع VIDA إذا استمر",
+          "evidence": "diagnostic_recommendation"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Tire pressure",
+          "name_ar": "ضغط الإطارات",
+          "expected": "Per exact vehicle door/tire placard; numeric value غير مؤكد",
+          "evidence": "Polestar TJ36243"
+        }
+      ],
+      "parts": [
+        {
+          "part": "Tires/wheels",
+          "location": "العجلات الأربع",
+          "location_verified": true
+        },
+        {
+          "part": "BCM2",
+          "location": "موضع الوحدة غير مؤكد",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11014147-0001.pdf",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+2+BCM2+indirect+TPMS+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+2+C007768+BCM2+indirect+TPMS+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "تحذير سلامة مع معايرة موثقة؛ لا يعني الكود وجود حساس TPMS تقليدي",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 36243.2.0",
+          "date": "2024-12-05",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11014147-0001.pdf",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "P060C00",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "P060C",
+        "failure_type_byte_hex": "00",
+        "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+        "raw_tool_example": "IHFA-P060C00",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "IHFA",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "P",
+        "system": "Powertrain / الدفع والطاقة",
+        "manufacturer_generic": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)"
+      },
+      "applicability": {
+        "models": [
+          2
+        ],
+        "model_years": "2021–2023; ED/EG variants",
+        "vehicle_type": "534",
+        "engines": [
+          "ED/E400V6",
+          "EG/E400V9"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "الكود دائم مع تحذير الدفع؛ قد يكون misdetection",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "Propulsion system performance warning"
+      ],
+      "causes": [
+        {
+          "candidate": "اكتشاف خاطئ متقطع ببرنامج العاكس",
+          "evidence": "Polestar TJ36316.3.0"
+        },
+        {
+          "candidate": "خلل حقيقي إذا عاد الكود مباشرة بعد إعادة تعيينه",
+          "evidence": "TJ يوصي بالتتبع في VIDA عند عودة الكود"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Save scan, erase DTC, cycle ignition and re-read",
+          "ar": "احفظ تقرير التشخيص، امسح الكود، أعد تشغيل المركبة ثم اقرأ الكود",
+          "evidence": "Polestar TJ36316"
+        },
+        {
+          "en": "If it does not return, do not replace any parts",
+          "ar": "إذا لم يعد الكود فلا تستبدل أي قطعة",
+          "evidence": "Polestar TJ36316"
+        },
+        {
+          "en": "If it returns immediately, continue guided VIDA diagnostics",
+          "ar": "إذا عاد مباشرة تابع تشخيص VIDA",
+          "evidence": "Polestar TJ36316"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "No verified parameter identified in cited source",
+          "name_ar": "لا توجد قيمة Live Data محددة موثقة في النشرة",
+          "expected": "غير مؤكد",
+          "evidence": "not in source"
+        }
+      ],
+      "parts": [
+        {
+          "part": "IHFA front axle inverter",
+          "location": "على محور الدفع الأمامي؛ موضع العمل حسب VIDA",
+          "location_verified": true
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://oemdtc.com/tsb/10226635/",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+2+IHFA+front+traction+inverter+processor+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+2+P060C00+IHFA+front+traction+inverter+processor+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "نشرة تحدد كيف تفرق بين الإيجابي الخاطئ والعطل المتكرر",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 36316.3.0",
+          "date": "2022-09-14",
+          "url": "https://oemdtc.com/tsb/10226635/",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "P060C04",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "P060C",
+        "failure_type_byte_hex": "04",
+        "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+        "raw_tool_example": "IHFA-P060C04",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "IHFA",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "P",
+        "system": "Powertrain / الدفع والطاقة",
+        "manufacturer_generic": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)"
+      },
+      "applicability": {
+        "models": [
+          2
+        ],
+        "model_years": "2021–2023; ED/EG variants",
+        "vehicle_type": "534",
+        "engines": [
+          "ED/E400V6",
+          "EG/E400V9"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "الكود دائم مع تحذير الدفع؛ قد يكون misdetection",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "Propulsion system performance warning"
+      ],
+      "causes": [
+        {
+          "candidate": "اكتشاف خاطئ متقطع ببرنامج العاكس",
+          "evidence": "Polestar TJ36316.3.0"
+        },
+        {
+          "candidate": "خلل حقيقي إذا عاد الكود مباشرة بعد إعادة تعيينه",
+          "evidence": "TJ يوصي بالتتبع في VIDA عند عودة الكود"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Save scan, erase DTC, cycle ignition and re-read",
+          "ar": "احفظ تقرير التشخيص، امسح الكود، أعد تشغيل المركبة ثم اقرأ الكود",
+          "evidence": "Polestar TJ36316"
+        },
+        {
+          "en": "If it does not return, do not replace any parts",
+          "ar": "إذا لم يعد الكود فلا تستبدل أي قطعة",
+          "evidence": "Polestar TJ36316"
+        },
+        {
+          "en": "If it returns immediately, continue guided VIDA diagnostics",
+          "ar": "إذا عاد مباشرة تابع تشخيص VIDA",
+          "evidence": "Polestar TJ36316"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "No verified parameter identified in cited source",
+          "name_ar": "لا توجد قيمة Live Data محددة موثقة في النشرة",
+          "expected": "غير مؤكد",
+          "evidence": "not in source"
+        }
+      ],
+      "parts": [
+        {
+          "part": "IHFA front axle inverter",
+          "location": "على محور الدفع الأمامي؛ موضع العمل حسب VIDA",
+          "location_verified": true
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://oemdtc.com/tsb/10226635/",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+2+IHFA+front+traction+inverter+processor+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+2+P060C04+IHFA+front+traction+inverter+processor+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "نشرة تحدد كيف تفرق بين الإيجابي الخاطئ والعطل المتكرر",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 36316.3.0",
+          "date": "2022-09-14",
+          "url": "https://oemdtc.com/tsb/10226635/",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "P0A9500",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "P0A95",
+        "failure_type_byte_hex": "00",
+        "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+        "raw_tool_example": "BECM-P0A9500",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "BECM",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "P",
+        "system": "Powertrain / الدفع والطاقة",
+        "manufacturer_generic": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)"
+      },
+      "applicability": {
+        "models": [
+          2
+        ],
+        "model_years": "2021+ in TJ scope; verify VIN",
+        "vehicle_type": "534",
+        "engines": [
+          "غير محدد في النشرة"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "التحذير مصحوب بأحد الكودين؛ قواطع الجهد العالي مغلقة أثناء قراءة القيم",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "عدم إكمال شحن البطارية و/أو تحذير Propulsion Warning"
+      ],
+      "causes": [
+        {
+          "candidate": "خلل داخلي محتمل في BECM إذا تحققت مقارنة الجهد الموثقة",
+          "evidence": "Polestar TJ37385.3.0"
+        },
+        {
+          "candidate": "غير محدد عند غياب شرط المقارنة؛ تابع VIDA",
+          "evidence": "الاستنتاج التشخيصي مقيد بشرط النشرة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Open High-voltage system overview in VIDA; only certified HV technician",
+          "ar": "افتح عرض منظومة الجهد العالي في VIDA بواسطة فني مؤهل",
+          "evidence": "Polestar TJ37385.3.0"
+        },
+        {
+          "en": "With contactors closed, compare pack voltage with front/rear post-fuse voltage readings",
+          "ar": "مع غلق الكونتاكتورات قارن جهد حزمة البطارية بجهدي الخرج بعد الفيوز الأمامي والخلفي",
+          "evidence": "Polestar TJ37385.3.0"
+        },
+        {
+          "en": "BECM replacement per VIDA only if voltages after front and rear fuses exceed pack voltage",
+          "ar": "لا تعتمد استبدال BECM إلا إذا زادت قراءتا ما بعد فيوزَي الأمام والخلف عن جهد البطارية وفق النشرة",
+          "evidence": "Polestar TJ37385.3.0"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "BECM – High voltage battery, voltage",
+          "name_ar": "جهد بطارية الجهد العالي",
+          "expected": "Compare; absolute V غير مؤكد",
+          "evidence": "Polestar TJ37385.3.0"
+        },
+        {
+          "name_en": "BECM – Voltage after fuse, front output (measuring point C)",
+          "name_ar": "الجهد بعد فيوز المخرج الأمامي (النقطة C)",
+          "expected": "compare to battery voltage",
+          "evidence": "Polestar TJ37385.3.0"
+        },
+        {
+          "name_en": "BECM – Voltage after fuse, rear output (measuring point D)",
+          "name_ar": "الجهد بعد فيوز المخرج الخلفي (النقطة D)",
+          "expected": "compare to battery voltage",
+          "evidence": "Polestar TJ37385.3.0"
+        }
+      ],
+      "parts": [
+        {
+          "part": "BECM",
+          "location": "ضمن منظومة بطارية الدفع؛ تفاصيل الفك في VIDA",
+          "location_verified": false
+        },
+        {
+          "part": "HV front/rear fuses",
+          "location": "داخل منظومة توزيع الجهد العالي؛ لا تُفتح دون تصريح",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://oemdtc.com/tsb/11031083/",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+2+BECM+HV+battery+voltage+output+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+2+P0A9500+BECM+HV+battery+voltage+output+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "TJ محدث 2026 مع Live Data وشرط استبدال محدد",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 37385.3.0",
+          "date": "2026-03-02",
+          "url": "https://oemdtc.com/tsb/11031083/",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "P0D1513",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "P0D15",
+        "failure_type_byte_hex": "13",
+        "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+        "raw_tool_example": "OBC-P0D1513",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "OBC",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "P",
+        "system": "Powertrain / الدفع والطاقة",
+        "manufacturer_generic": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)"
+      },
+      "applicability": {
+        "models": [
+          2
+        ],
+        "model_years": "2021-2023",
+        "vehicle_type": "534",
+        "engines": [
+          "غير محدد في النشرة"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "عند تعذر شحن Mode 2 وMode 3 ووجود الكود؛ شروط ECU الدقيقة غير مؤكد",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "AC charging unavailable"
+      ],
+      "causes": [
+        {
+          "candidate": "عدم إغلاق قفلي موصل HV بين EVI وOBC جيداً",
+          "evidence": "مصنعي TJ36523؛ حالات توصيل غير مكتملة في المصنع"
+        },
+        {
+          "candidate": "تلف/تلوث الموصل؛ يُفحص ولا يُفترض",
+          "evidence": "خطوة فحص مصنعية"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Confirm AC Mode 2/Mode 3 charging failure and OBC DTC",
+          "ar": "أكد تعذر الشحن بالتيار المتردد واقرأ كود OBC",
+          "evidence": "Polestar TJ36523"
+        },
+        {
+          "en": "Follow VIDA HV de-energization and safe-access method by qualified HV technician",
+          "ar": "اتبع طريقة فصل الجهد العالي الموثقة في VIDA بواسطة فني معتمد",
+          "evidence": "safety_inference"
+        },
+        {
+          "en": "Inspect EVI-to-OBC HV connector; unlatch, check damage/foreign objects and fully secure both locks per VIDA",
+          "ar": "افحص موصل منفذ الشحن إلى الشاحن الداخلي وتأكد من إحكام قفلَي الموصل وفق تعليمات VIDA",
+          "evidence": "Polestar TJ36523"
+        },
+        {
+          "en": "Retest AC charging; do not replace OBC if connection restores charging",
+          "ar": "أعد اختبار الشحن؛ لا تستبدل OBC إذا زال العطل بعد إحكام الموصل",
+          "evidence": "Polestar TJ36523"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "No verified parameter identified in cited source",
+          "name_ar": "لا توجد قيمة Live Data محددة موثقة في النشرة",
+          "expected": "غير مؤكد",
+          "evidence": "not in source"
+        }
+      ],
+      "parts": [
+        {
+          "part": "EVI-to-OBC AC HV harness connector",
+          "location": "عند OBC؛ الموقع التفصيلي عبر VIDA",
+          "location_verified": true
+        },
+        {
+          "part": "OBC",
+          "location": "موقع الدارة حسب VIN في VIDA",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://static.oemdtc.com/NHTSA-PDFs/MC-10235012-9999.pdf",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+2+OBC+AC+charging+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+2+P0D1513+OBC+AC+charging+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "نشرة مصنع تتضمن سبباً ملموساً وفحصاً يمنع الاستبدال الخاطئ",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 36523.1.0",
+          "date": "2023-02-17",
+          "url": "https://static.oemdtc.com/NHTSA-PDFs/MC-10235012-9999.pdf",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "P0D1556",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "P0D15",
+        "failure_type_byte_hex": "56",
+        "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+        "raw_tool_example": "OBC-P0D1556",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "OBC",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "P",
+        "system": "Powertrain / الدفع والطاقة",
+        "manufacturer_generic": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)"
+      },
+      "applicability": {
+        "models": [
+          2
+        ],
+        "model_years": "2021-2023",
+        "vehicle_type": "534",
+        "engines": [
+          "غير محدد في النشرة"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "تعذر AC Mode 2/3 مع الكود؛ شروط الضبط التفصيلية غير مؤكدة",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "AC charging unavailable"
+      ],
+      "causes": [
+        {
+          "candidate": "موصل EVI→OBC HV غير محكم أو أقفال غير مغلقة",
+          "evidence": "Polestar TJ36523"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Verify symptom and paired P0D1513; identify original EVI-to-OBC connector",
+          "ar": "تحقق من العَرَض والكود المرافق P0D1513 وحدد موصل الشحن الأصلي",
+          "evidence": "Polestar TJ36523"
+        },
+        {
+          "en": "Have HV-certified tech inspect/re-seat and secure both locks under VIDA",
+          "ar": "دع فنياً مؤهلاً للجهد العالي يفحص ويعيد تركيب الموصل وقفلَيه حسب VIDA",
+          "evidence": "Polestar TJ36523"
+        },
+        {
+          "en": "Retest Mode 2 and Mode 3 charging before part replacement",
+          "ar": "أعد اختبار الشحن Mode 2 وMode 3 قبل استبدال أي قطعة",
+          "evidence": "Polestar TJ36523"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "No verified parameter identified in cited source",
+          "name_ar": "لا توجد قيمة Live Data محددة موثقة في النشرة",
+          "expected": "غير مؤكد",
+          "evidence": "not in source"
+        }
+      ],
+      "parts": [
+        {
+          "part": "EVI-to-OBC AC HV connector",
+          "location": "عند OBC؛ تفاصيل الفك في VIDA",
+          "location_verified": true
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://static.oemdtc.com/NHTSA-PDFs/MC-10235012-9999.pdf",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+2+OBC+AC+charging+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+2+P0D1556+OBC+AC+charging+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "نشرة مشتركة مع P0D1513 تتضمن إجراء تحقق واضح",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 36523.1.0",
+          "date": "2023-02-17",
+          "url": "https://static.oemdtc.com/NHTSA-PDFs/MC-10235012-9999.pdf",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "P0D1800",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "P0D18",
+        "failure_type_byte_hex": "00",
+        "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+        "raw_tool_example": "BECM-P0D1800",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "BECM",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "P",
+        "system": "Powertrain / الدفع والطاقة",
+        "manufacturer_generic": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)"
+      },
+      "applicability": {
+        "models": [
+          2
+        ],
+        "model_years": "2021–2023; structural weeks 201935–202316",
+        "vehicle_type": "534",
+        "engines": [
+          "ED/E400V6",
+          "ET/E400V35"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "تظهر رسالة الدفع مع كود BECM وحده وعدم أعراض أخرى",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "Propulsion Service Required دون أعراض أخرى"
+      ],
+      "causes": [
+        {
+          "candidate": "ضبط عتبة الكشف في برنامج BECM القديم",
+          "evidence": "Polestar TJ36713؛ حد العتبة تم تصحيحه من 100 Ω إلى 800 Ω في البرنامج"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Confirm code and no other symptoms; record current SW version",
+          "ar": "تحقق من وجود الكود وحده دون أعراض أخرى وسجل إصدار البرنامج",
+          "evidence": "Polestar TJ36713"
+        },
+        {
+          "en": "Update BECM via VIDA if version is earlier than 2.10",
+          "ar": "حدّث BECM عبر VIDA إن كان الإصدار أقدم من 2.10",
+          "evidence": "Polestar TJ36713"
+        },
+        {
+          "en": "Re-scan and use VIDA diagnosis if fault persists",
+          "ar": "أعد القراءة واتبع تشخيص VIDA إذا استمر الكود",
+          "evidence": "workshop_reasoning"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "BECM software version",
+          "name_ar": "إصدار برنامج BECM",
+          "expected": "2.10 or newer for issue addressed in TJ",
+          "evidence": "Polestar TJ36713"
+        }
+      ],
+      "parts": [
+        {
+          "part": "BECM",
+          "location": "في منظومة بطارية الجهد العالي؛ الموقع التفصيلي غير متاح",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://oemdtc.com/tsb/10242241/",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+2+BECM+battery+energy+management+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+2+P0D1800+BECM+battery+energy+management+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "نشرة إصلاح برمجي بعتبة وإصدار موثق؛ لا تستبدل وحدة البطارية مباشرة",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 36713.1.0",
+          "date": "2023-09-01",
+          "url": "https://oemdtc.com/tsb/10242241/",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "P0D67A2",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "P0D67",
+        "failure_type_byte_hex": "A2",
+        "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+        "raw_tool_example": "OBC-P0D67A2",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "OBC",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "P",
+        "system": "Powertrain / الدفع والطاقة",
+        "manufacturer_generic": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)"
+      },
+      "applicability": {
+        "models": [
+          2
+        ],
+        "model_years": "2020-2023",
+        "vehicle_type": "534",
+        "engines": [
+          "ED / E400V6",
+          "EG / E400V9",
+          "ET / E400V35"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "الكود متقطع في النشرة، عند مشكلات شحن Mode 2",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "فشل متقطع في كابل الشحن المنزلي؛ لمبة حمراء بالكابل"
+      ],
+      "causes": [
+        {
+          "candidate": "سوء/انقطاع التأريض في مقبس المنزل",
+          "evidence": "سجلات كابلات فُحصت في Polestar TJ36510"
+        },
+        {
+          "candidate": "كابل Mode 2 معطل إذا أعيد العطل في الورشة",
+          "evidence": "اختبار مقارن في Polestar TJ36510"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Charge known-good vehicle with known-good cable and grounded outlet",
+          "ar": "جرّب سيارة سليمة مع كابل ومقبس مؤرض سليمين",
+          "evidence": "Polestar TJ36510"
+        },
+        {
+          "en": "Try customer cable on same known-good vehicle and outlet",
+          "ar": "جرّب كابل العميل على نفس السيارة والمقبس السليمين",
+          "evidence": "Polestar TJ36510"
+        },
+        {
+          "en": "Replace customer cable only if fault is reproducible (dead/steady or flashing red status)",
+          "ar": "لا تستبدل كابل العميل إلا إذا تكرر العطل مع ظهور حالة الخطأ",
+          "evidence": "Polestar TJ36510"
+        },
+        {
+          "en": "If not reproducible, advise qualified electrician to assess home earthing",
+          "ar": "إذا لم يتكرر العطل اطلب فحص التأريض المنزلي بواسطة كهربائي مؤهل",
+          "evidence": "Polestar TJ36510"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "No verified parameter identified in cited source",
+          "name_ar": "لا توجد قيمة Live Data محددة موثقة في النشرة",
+          "expected": "غير مؤكد",
+          "evidence": "not in source"
+        }
+      ],
+      "parts": [
+        {
+          "part": "Mode 2 portable EVSE cable",
+          "location": "خارج المركبة، بين المقبس ومنفذ الشحن",
+          "location_verified": true
+        },
+        {
+          "part": "Home outlet grounding",
+          "location": "مصدر تغذية خارجي",
+          "location_verified": true
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://static.oemdtc.com/NHTSA-PDFs/MC-10235010-9999.pdf",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+2+OBC+Mode+2+portable+charging+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+2+P0D67A2+OBC+Mode+2+portable+charging+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "نشرة مصنعية صريحة حول الاستبدالات غير الضرورية",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 36510.1.0",
+          "date": "2023-01-31",
+          "url": "https://static.oemdtc.com/NHTSA-PDFs/MC-10235010-9999.pdf",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "P0E0500",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "P0E05",
+        "failure_type_byte_hex": "00",
+        "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+        "raw_tool_example": "IEM-P0E0500",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "IEM",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "P",
+        "system": "Powertrain / الدفع والطاقة",
+        "manufacturer_generic": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)"
+      },
+      "applicability": {
+        "models": [
+          2
+        ],
+        "model_years": "2024; model build weeks from 202317",
+        "vehicle_type": "534",
+        "engines": [
+          "FD/E400V26",
+          "FE/E400V20",
+          "FG/E400V37 (later TJ revision)"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "تذبذب العزم مع الكود داخل IEM",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "تذبذب العزم أو اندفاع متكرر عند سرعة ثابتة"
+      ],
+      "causes": [
+        {
+          "candidate": "مشكلة برنامج عاكس الدفع الخلفي",
+          "evidence": "Polestar TJ36851.3.0، software version 3.1.2 متاح من 2024-W21"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Reproduce steady-speed torque surging and save IEM code",
+          "ar": "أعد إنتاج تذبذب العزم أثناء سرعة ثابتة وسجل الكود",
+          "evidence": "Polestar TJ36851"
+        },
+        {
+          "en": "Check vehicle software; install 3.1.2 or later through VIDA where applicable",
+          "ar": "تحقق من إصدار البرنامج وثبت 3.1.2 أو أحدث إذا انطبق",
+          "evidence": "Polestar TJ36851.3.0"
+        },
+        {
+          "en": "Repeat test drive and DTC scan before hardware action",
+          "ar": "أعد تجربة القيادة وقراءة الأكواد قبل اعتماد تغيير وحدة",
+          "evidence": "diagnostic_recommendation"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Vehicle software version",
+          "name_ar": "إصدار البرنامج",
+          "expected": "3.1.2 or newer for bulletin",
+          "evidence": "Polestar TJ36851.3.0"
+        }
+      ],
+      "parts": [
+        {
+          "part": "IEM electric rear axle inverter",
+          "location": "محور الدفع الخلفي؛ موضع دقيق عبر VIDA",
+          "location_verified": true
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://oemdtc.com/tsb/11005715/",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+2+IEM+rear+axle+inverter+torque+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+2+P0E0500+IEM+rear+axle+inverter+torque+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "تحديث مصنعي ونسخة برنامج مثبتة",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 36851.3.0",
+          "date": "2024-06-25",
+          "url": "https://oemdtc.com/tsb/11005715/",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "P0E2F00",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "P0E2F",
+        "failure_type_byte_hex": "00",
+        "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+        "raw_tool_example": "BECM-P0E2F00",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "BECM",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "P",
+        "system": "Powertrain / الدفع والطاقة",
+        "manufacturer_generic": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)"
+      },
+      "applicability": {
+        "models": [
+          2
+        ],
+        "model_years": "2021+ in TJ scope; verify VIN",
+        "vehicle_type": "534",
+        "engines": [
+          "غير محدد في النشرة"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "التحذير مصحوب بأحد الكودين؛ قواطع الجهد العالي مغلقة أثناء قراءة القيم",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "عدم إكمال شحن البطارية و/أو تحذير Propulsion Warning"
+      ],
+      "causes": [
+        {
+          "candidate": "خلل داخلي محتمل في BECM إذا تحققت مقارنة الجهد الموثقة",
+          "evidence": "Polestar TJ37385.3.0"
+        },
+        {
+          "candidate": "غير محدد عند غياب شرط المقارنة؛ تابع VIDA",
+          "evidence": "الاستنتاج التشخيصي مقيد بشرط النشرة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Open High-voltage system overview in VIDA; only certified HV technician",
+          "ar": "افتح عرض منظومة الجهد العالي في VIDA بواسطة فني مؤهل",
+          "evidence": "Polestar TJ37385.3.0"
+        },
+        {
+          "en": "With contactors closed, compare pack voltage with front/rear post-fuse voltage readings",
+          "ar": "مع غلق الكونتاكتورات قارن جهد حزمة البطارية بجهدي الخرج بعد الفيوز الأمامي والخلفي",
+          "evidence": "Polestar TJ37385.3.0"
+        },
+        {
+          "en": "BECM replacement per VIDA only if voltages after front and rear fuses exceed pack voltage",
+          "ar": "لا تعتمد استبدال BECM إلا إذا زادت قراءتا ما بعد فيوزَي الأمام والخلف عن جهد البطارية وفق النشرة",
+          "evidence": "Polestar TJ37385.3.0"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "BECM – High voltage battery, voltage",
+          "name_ar": "جهد بطارية الجهد العالي",
+          "expected": "Compare; absolute V غير مؤكد",
+          "evidence": "Polestar TJ37385.3.0"
+        },
+        {
+          "name_en": "BECM – Voltage after fuse, front output (measuring point C)",
+          "name_ar": "الجهد بعد فيوز المخرج الأمامي (النقطة C)",
+          "expected": "compare to battery voltage",
+          "evidence": "Polestar TJ37385.3.0"
+        },
+        {
+          "name_en": "BECM – Voltage after fuse, rear output (measuring point D)",
+          "name_ar": "الجهد بعد فيوز المخرج الخلفي (النقطة D)",
+          "expected": "compare to battery voltage",
+          "evidence": "Polestar TJ37385.3.0"
+        }
+      ],
+      "parts": [
+        {
+          "part": "BECM",
+          "location": "ضمن منظومة بطارية الدفع؛ تفاصيل الفك في VIDA",
+          "location_verified": false
+        },
+        {
+          "part": "HV front/rear fuses",
+          "location": "داخل منظومة توزيع الجهد العالي؛ لا تُفتح دون تصريح",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://oemdtc.com/tsb/11031083/",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+2+BECM+HV+battery+voltage+output+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+2+P0E2F00+BECM+HV+battery+voltage+output+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "TJ محدث 2026 مع Live Data وشرط استبدال محدد",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 37385.3.0",
+          "date": "2026-03-02",
+          "url": "https://oemdtc.com/tsb/11031083/",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "U116E00",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "U116E",
+        "failure_type_byte_hex": "00",
+        "classification": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)",
+        "raw_tool_example": "VCU1-U116E00",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "VCU1",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "U",
+        "system": "Network / الشبكات والاتصالات",
+        "manufacturer_generic": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)"
+      },
+      "applicability": {
+        "models": [
+          2
+        ],
+        "model_years": "2020–2023",
+        "vehicle_type": "534",
+        "engines": [
+          "ED/E400V6",
+          "EG/E400V9"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "عرض Disconnect Charging Cable بلا كابل؛ الشحن نفسه يعمل",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "Disconnect charging cable تظهر مع عدم وجود كابل موصول"
+      ],
+      "causes": [
+        {
+          "candidate": "عدم استيقاظ OBC في الوقت المناسب فتعرض الوحدة رسالة وقائية",
+          "evidence": "Polestar TJ36404 للسنوات الأقدم"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Confirm charge cable absent and charging otherwise functions normally",
+          "ar": "تأكد من عدم اتصال الكابل وأن عملية الشحن نفسها تعمل",
+          "evidence": "Polestar TJ36404"
+        },
+        {
+          "en": "Match vehicle year/build range before selecting applicable software action",
+          "ar": "طابق سنة السيارة وأسبوع تصنيعها قبل اختيار إجراء التحديث",
+          "evidence": "Polestar TJ36404"
+        },
+        {
+          "en": "Use VIDA software remedy specific to bulletin; never mix early and later model-year procedure",
+          "ar": "اتبع تحديث VIDA في نشرة السنوات الصحيحة، ولا تخلط الحلول بين الأجيال",
+          "evidence": "Polestar TJ36404"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "No verified parameter identified in cited source",
+          "name_ar": "لا توجد قيمة Live Data محددة موثقة في النشرة",
+          "expected": "غير مؤكد",
+          "evidence": "not in source"
+        }
+      ],
+      "parts": [
+        {
+          "part": "On-board Charger (OBC)",
+          "location": "المكان يتغير بحسب نسخة Polestar 2؛ راجع VIDA",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://oemdtc.com/tsb/10243623/",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+2+VCU1+charging+cable+presence+%2F+ECU+wake+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+2+U116E00+VCU1+charging+cable+presence+%2F+ECU+wake+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "النشرة TJ36931 صراحة تحذر من استخدام حل TJ36404 للسنوات الأحدث",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 36404.4.0",
+          "date": "2023-09-28",
+          "url": "https://oemdtc.com/tsb/10243623/",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "U116E00",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "U116E",
+        "failure_type_byte_hex": "00",
+        "classification": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)",
+        "raw_tool_example": "VCU1-U116E00",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "VCU1",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "U",
+        "system": "Network / الشبكات والاتصالات",
+        "manufacturer_generic": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)"
+      },
+      "applicability": {
+        "models": [
+          2
+        ],
+        "model_years": "2024–2025; build weeks 202346–202427",
+        "vehicle_type": "534",
+        "engines": [
+          "غير محدد في TJ"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "نفس العرض والـ DTC ولكن إجراء برمجي مختلف عن MY الأقدم",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "Disconnect charging cable تظهر مع عدم وجود كابل موصول"
+      ],
+      "causes": [
+        {
+          "candidate": "عدم استيقاظ OBC في الوقت المناسب فتعرض الوحدة رسالة وقائية",
+          "evidence": "Polestar TJ36931 للسنوات 2024–2025"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Confirm charge cable absent and charging otherwise functions normally",
+          "ar": "تأكد من عدم اتصال الكابل وأن عملية الشحن نفسها تعمل",
+          "evidence": "Polestar TJ36931"
+        },
+        {
+          "en": "Match vehicle year/build range before selecting applicable software action",
+          "ar": "طابق سنة السيارة وأسبوع تصنيعها قبل اختيار إجراء التحديث",
+          "evidence": "Polestar TJ36931"
+        },
+        {
+          "en": "Use VIDA software remedy specific to bulletin; never mix early and later model-year procedure",
+          "ar": "اتبع تحديث VIDA في نشرة السنوات الصحيحة، ولا تخلط الحلول بين الأجيال",
+          "evidence": "Polestar TJ36931"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "No verified parameter identified in cited source",
+          "name_ar": "لا توجد قيمة Live Data محددة موثقة في النشرة",
+          "expected": "غير مؤكد",
+          "evidence": "not in source"
+        }
+      ],
+      "parts": [
+        {
+          "part": "On-board Charger (OBC)",
+          "location": "المكان يتغير بحسب نسخة Polestar 2؛ راجع VIDA",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://oemdtc.com/tsb/11005714/",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+2+VCU1+charging+cable+presence+%2F+ECU+wake+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+2+U116E00+VCU1+charging+cable+presence+%2F+ECU+wake+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "النشرة TJ36931 صراحة تحذر من استخدام حل TJ36404 للسنوات الأحدث",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 36931.2.0",
+          "date": "2024-06-25",
+          "url": "https://oemdtc.com/tsb/11005714/",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "U201F00",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "U201F",
+        "failure_type_byte_hex": "00",
+        "classification": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)",
+        "raw_tool_example": "CEM-U201F00",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "CEM",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "U",
+        "system": "Network / الشبكات والاتصالات",
+        "manufacturer_generic": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)"
+      },
+      "applicability": {
+        "models": [
+          2
+        ],
+        "model_years": "2021+ in manufacturer document",
+        "vehicle_type": "534",
+        "engines": [
+          "غير محدد في النشرة"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "أعراض المفتاح أو عدم اتصال VIDA؛ الكود دائم في النشرة",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "تعذّر الفتح بالقفل اللاسلكي وKey not found وربما عدم الاتصال مع VIDA"
+      ],
+      "causes": [
+        {
+          "candidate": "حالة تعليق بالاتصالات/البرمجيات يمكن معالجتها بإعادة تهيئة TCAM والتحديث",
+          "evidence": "Polestar TJ35954.14.0"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Read CEM U201F00 and test mechanical key, backup position, VIDA connectivity",
+          "ar": "افحص الكود واختبر المفتاح الميكانيكي والموضع الاحتياطي واتصال VIDA",
+          "evidence": "Polestar TJ35954"
+        },
+        {
+          "en": "Follow official TCAM reset: disconnect CF27 + TCAM BUB 30 s; reconnect BUB BEFORE reinserting CF27",
+          "ar": "اتبع طريقة TCAM الموثقة: افصل CF27 وBUB مدة 30 ثانية ثم أوصل BUB قبل إعادة الفيوز",
+          "evidence": "Polestar TJ35954"
+        },
+        {
+          "en": "Perform Total Upgrade according to TJ35361 where applicable",
+          "ar": "نفذ Total Upgrade بحسب TJ35361",
+          "evidence": "Polestar TJ35954"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "No verified parameter identified in cited source",
+          "name_ar": "لا توجد قيمة Live Data محددة موثقة في النشرة",
+          "expected": "غير مؤكد",
+          "evidence": "not in source"
+        }
+      ],
+      "parts": [
+        {
+          "part": "TCAM backup battery connector",
+          "location": "وحدة TCAM؛ الموقع الدقيق راجع VIDA",
+          "location_verified": false
+        },
+        {
+          "part": "Fuse CF27",
+          "location": "فيوز TCAM؛ موضع الخانة من المخطط حسب السنة غير مؤكد",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://static.oemdtc.com/NHTSA-PDFs/MC-10230751-9999.pdf",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+2+CEM+TCAM+%2F+remote+locking+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+2+U201F00+CEM+TCAM+%2F+remote+locking+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "خطوة إعادة تهيئة مضبوطة زمنياً وترتيب الوصل موثقان",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 35954.14.0",
+          "date": "2022-11-18",
+          "url": "https://static.oemdtc.com/NHTSA-PDFs/MC-10230751-9999.pdf",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "U210993",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "U2109",
+        "failure_type_byte_hex": "93",
+        "classification": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)",
+        "raw_tool_example": "TCAM-U210993",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "TCAM",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "U",
+        "system": "Network / الشبكات والاتصالات",
+        "manufacturer_generic": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)"
+      },
+      "applicability": {
+        "models": [
+          2
+        ],
+        "model_years": "2021–2023; 202007–202352",
+        "vehicle_type": "534",
+        "engines": [
+          "غير محدد في النشرة"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "رسالة eCall مع الكود؛ قد تظهر بعد تحديث البرنامج",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "eCall service required"
+      ],
+      "causes": [
+        {
+          "candidate": "انخفاض شحن بطارية BUB الاحتياطية",
+          "evidence": "Polestar TJ35602.5.0"
+        },
+        {
+          "candidate": "تحتاج استبدال BUB إذا تعذّرت إعادة الشحن وفق VIDA",
+          "evidence": "Polestar TJ35602؛ الحكم بعد الاختبار"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Confirm TCAM U210993; note BUB SOC and TCAM software",
+          "ar": "تحقق من الكود وسجل نسبة شحن BUB وإصدار TCAM",
+          "evidence": "Polestar TJ35602"
+        },
+        {
+          "en": "Connect 12 V battery maintainer; set gear selector in P",
+          "ar": "وصّل مثبت جهد بطارية 12V واضبط الناقل على P",
+          "evidence": "Polestar TJ35602"
+        },
+        {
+          "en": "If BUB SOC ≥1%, run VIDA charge script and continue to at least 45% SOC",
+          "ar": "إذا كان شحن BUB يساوي 1% أو أكثر نفذ شحن VIDA حتى 45% على الأقل",
+          "evidence": "Polestar TJ35602"
+        },
+        {
+          "en": "Do not replace BUB before VIDA charging attempt; apply VIDA replacement test for unrecoverable battery",
+          "ar": "لا تستبدل BUB قبل محاولة الشحن الموثقة، ثم اتبع شروط الاستبدال ببرنامج VIDA",
+          "evidence": "Polestar TJ35602"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "BUB SOC",
+          "name_ar": "نسبة شحن بطارية الاتصال الاحتياطية",
+          "expected": "Minimum target 45%; VIDA script for SOC >=1%",
+          "evidence": "Polestar TJ35602"
+        }
+      ],
+      "parts": [
+        {
+          "part": "TCAM Back-up Battery (BUB)",
+          "location": "قرب وحدة TCAM؛ موقع التركيب التفصيلي غير مؤكد",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://oemdtc.com/tsb/10232124/",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+2+TCAM+eCall+backup+battery+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+2+U210993+TCAM+eCall+backup+battery+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "نشرة تقدم قياسات SOC وقرار إصلاح يغني عن الاستبدال",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 35602.5.0",
+          "date": "2023-01-11",
+          "url": "https://oemdtc.com/tsb/10232124/",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "P060C66",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "P060C",
+        "failure_type_byte_hex": "66",
+        "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+        "raw_tool_example": "IHFA-P060C66",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "IHFA",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "P",
+        "system": "Powertrain / الدفع والطاقة",
+        "manufacturer_generic": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)"
+      },
+      "applicability": {
+        "models": [
+          3
+        ],
+        "model_years": "2024–2025; structure weeks 202402–202524",
+        "vehicle_type": "359",
+        "engines": [
+          "غير محدد في النشرة"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "انتهاء شحن AC مع استمرار توصيل السيارة بالشاحن، والكود Permanent أو Intermittent",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "Reduced Performance بعد انتهاء AC وبقاء القابس موصولاً"
+      ],
+      "causes": [
+        {
+          "candidate": "مشكلة معالجة برمجية عالجها إصدار 1.3.17",
+          "evidence": "Polestar TJ37273.2.0"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Confirm charger remained connected after AC completion and save DTC state",
+          "ar": "تأكد من بقاء قابس الشحن متصلاً بعد نهاية الشحن واحفظ حالة الكود",
+          "evidence": "Polestar TJ37273.2.0"
+        },
+        {
+          "en": "Install software version 1.3.17 or later according to VIDA/TJ35361; do not replace parts",
+          "ar": "ثبّت إصدار 1.3.17 أو أحدث عبر VIDA؛ لا تستبدل القطع لهذه الحالة",
+          "evidence": "Polestar TJ37273.2.0"
+        },
+        {
+          "en": "Check if Reduced Performance warning clears after software and reset drive cycle",
+          "ar": "تحقق من اختفاء التحذير بعد التحديث وتكرار ظروف التشغيل",
+          "evidence": "workshop_reasoning"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Vehicle software version",
+          "name_ar": "إصدار برامج المركبة",
+          "expected": "1.3.17 or newer resolves bulletin condition",
+          "evidence": "Polestar TJ37273.2.0"
+        }
+      ],
+      "parts": [
+        {
+          "part": "IHFA",
+          "location": "جزء من منظومة عاكس الدفع الأمامي؛ موضع VIN غير مؤكد",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://oemdtc.com/tsb/11020571/",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+3+IHFA+traction+inverter+after+AC+charging+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+3+P060C66+IHFA+traction+inverter+after+AC+charging+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "TJ يوفر حل إصدار برمجي ويذكر صراحة عدم تغيير القطع",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 37273.2.0",
+          "date": "2025-06-13",
+          "url": "https://oemdtc.com/tsb/11020571/",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "P060C66",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "P060C",
+        "failure_type_byte_hex": "66",
+        "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+        "raw_tool_example": "IHRA-P060C66",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "IHRA",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "P",
+        "system": "Powertrain / الدفع والطاقة",
+        "manufacturer_generic": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)"
+      },
+      "applicability": {
+        "models": [
+          3
+        ],
+        "model_years": "2024–2025; structure weeks 202402–202524",
+        "vehicle_type": "359",
+        "engines": [
+          "غير محدد في النشرة"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "انتهاء شحن AC مع استمرار توصيل السيارة بالشاحن، والكود Permanent أو Intermittent",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "Reduced Performance بعد انتهاء AC وبقاء القابس موصولاً"
+      ],
+      "causes": [
+        {
+          "candidate": "مشكلة معالجة برمجية عالجها إصدار 1.3.17",
+          "evidence": "Polestar TJ37273.2.0"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Confirm charger remained connected after AC completion and save DTC state",
+          "ar": "تأكد من بقاء قابس الشحن متصلاً بعد نهاية الشحن واحفظ حالة الكود",
+          "evidence": "Polestar TJ37273.2.0"
+        },
+        {
+          "en": "Install software version 1.3.17 or later according to VIDA/TJ35361; do not replace parts",
+          "ar": "ثبّت إصدار 1.3.17 أو أحدث عبر VIDA؛ لا تستبدل القطع لهذه الحالة",
+          "evidence": "Polestar TJ37273.2.0"
+        },
+        {
+          "en": "Check if Reduced Performance warning clears after software and reset drive cycle",
+          "ar": "تحقق من اختفاء التحذير بعد التحديث وتكرار ظروف التشغيل",
+          "evidence": "workshop_reasoning"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Vehicle software version",
+          "name_ar": "إصدار برامج المركبة",
+          "expected": "1.3.17 or newer resolves bulletin condition",
+          "evidence": "Polestar TJ37273.2.0"
+        }
+      ],
+      "parts": [
+        {
+          "part": "IHRA",
+          "location": "جزء من منظومة عاكس الدفع الخلفي؛ موضع VIN غير مؤكد",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://oemdtc.com/tsb/11020571/",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+3+IHRA+traction+inverter+after+AC+charging+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+3+P060C66+IHRA+traction+inverter+after+AC+charging+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "TJ يوفر حل إصدار برمجي ويذكر صراحة عدم تغيير القطع",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 37273.2.0",
+          "date": "2025-06-13",
+          "url": "https://oemdtc.com/tsb/11020571/",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "P0A7A66",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "P0A7A",
+        "failure_type_byte_hex": "66",
+        "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+        "raw_tool_example": "IHFA-P0A7A66",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "IHFA",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "P",
+        "system": "Powertrain / الدفع والطاقة",
+        "manufacturer_generic": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)"
+      },
+      "applicability": {
+        "models": [
+          3
+        ],
+        "model_years": "2024–2025; structure weeks 202402–202524",
+        "vehicle_type": "359",
+        "engines": [
+          "غير محدد في النشرة"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "انتهاء شحن AC مع استمرار توصيل السيارة بالشاحن، والكود Permanent أو Intermittent",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "Reduced Performance بعد انتهاء AC وبقاء القابس موصولاً"
+      ],
+      "causes": [
+        {
+          "candidate": "مشكلة معالجة برمجية عالجها إصدار 1.3.17",
+          "evidence": "Polestar TJ37273.2.0"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Confirm charger remained connected after AC completion and save DTC state",
+          "ar": "تأكد من بقاء قابس الشحن متصلاً بعد نهاية الشحن واحفظ حالة الكود",
+          "evidence": "Polestar TJ37273.2.0"
+        },
+        {
+          "en": "Install software version 1.3.17 or later according to VIDA/TJ35361; do not replace parts",
+          "ar": "ثبّت إصدار 1.3.17 أو أحدث عبر VIDA؛ لا تستبدل القطع لهذه الحالة",
+          "evidence": "Polestar TJ37273.2.0"
+        },
+        {
+          "en": "Check if Reduced Performance warning clears after software and reset drive cycle",
+          "ar": "تحقق من اختفاء التحذير بعد التحديث وتكرار ظروف التشغيل",
+          "evidence": "workshop_reasoning"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Vehicle software version",
+          "name_ar": "إصدار برامج المركبة",
+          "expected": "1.3.17 or newer resolves bulletin condition",
+          "evidence": "Polestar TJ37273.2.0"
+        }
+      ],
+      "parts": [
+        {
+          "part": "IHFA",
+          "location": "جزء من منظومة عاكس الدفع الأمامي؛ موضع VIN غير مؤكد",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://oemdtc.com/tsb/11020571/",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+3+IHFA+traction+inverter+after+AC+charging+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+3+P0A7A66+IHFA+traction+inverter+after+AC+charging+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "TJ يوفر حل إصدار برمجي ويذكر صراحة عدم تغيير القطع",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 37273.2.0",
+          "date": "2025-06-13",
+          "url": "https://oemdtc.com/tsb/11020571/",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "P0A7A66",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "P0A7A",
+        "failure_type_byte_hex": "66",
+        "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+        "raw_tool_example": "IHRA-P0A7A66",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "IHRA",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "P",
+        "system": "Powertrain / الدفع والطاقة",
+        "manufacturer_generic": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)"
+      },
+      "applicability": {
+        "models": [
+          3
+        ],
+        "model_years": "2024–2025; structure weeks 202402–202524",
+        "vehicle_type": "359",
+        "engines": [
+          "غير محدد في النشرة"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "انتهاء شحن AC مع استمرار توصيل السيارة بالشاحن، والكود Permanent أو Intermittent",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "Reduced Performance بعد انتهاء AC وبقاء القابس موصولاً"
+      ],
+      "causes": [
+        {
+          "candidate": "مشكلة معالجة برمجية عالجها إصدار 1.3.17",
+          "evidence": "Polestar TJ37273.2.0"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Confirm charger remained connected after AC completion and save DTC state",
+          "ar": "تأكد من بقاء قابس الشحن متصلاً بعد نهاية الشحن واحفظ حالة الكود",
+          "evidence": "Polestar TJ37273.2.0"
+        },
+        {
+          "en": "Install software version 1.3.17 or later according to VIDA/TJ35361; do not replace parts",
+          "ar": "ثبّت إصدار 1.3.17 أو أحدث عبر VIDA؛ لا تستبدل القطع لهذه الحالة",
+          "evidence": "Polestar TJ37273.2.0"
+        },
+        {
+          "en": "Check if Reduced Performance warning clears after software and reset drive cycle",
+          "ar": "تحقق من اختفاء التحذير بعد التحديث وتكرار ظروف التشغيل",
+          "evidence": "workshop_reasoning"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Vehicle software version",
+          "name_ar": "إصدار برامج المركبة",
+          "expected": "1.3.17 or newer resolves bulletin condition",
+          "evidence": "Polestar TJ37273.2.0"
+        }
+      ],
+      "parts": [
+        {
+          "part": "IHRA",
+          "location": "جزء من منظومة عاكس الدفع الخلفي؛ موضع VIN غير مؤكد",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://oemdtc.com/tsb/11020571/",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+3+IHRA+traction+inverter+after+AC+charging+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+3+P0A7A66+IHRA+traction+inverter+after+AC+charging+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "TJ يوفر حل إصدار برمجي ويذكر صراحة عدم تغيير القطع",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 37273.2.0",
+          "date": "2025-06-13",
+          "url": "https://oemdtc.com/tsb/11020571/",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "P0A8187",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "P0A81",
+        "failure_type_byte_hex": "87",
+        "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+        "raw_tool_example": "FIOC-P0A8187",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "FIOC",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "P",
+        "system": "Powertrain / الدفع والطاقة",
+        "manufacturer_generic": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)"
+      },
+      "applicability": {
+        "models": [
+          3
+        ],
+        "model_years": "2025+; structural weeks from 202425",
+        "vehicle_type": "359",
+        "engines": [
+          "غير محدد في النشرة"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "المسار الموثق فقط إذا ظهر الكود وحده دون أعراض",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "الكود محفوظ دون أعراض أخرى وقد تظهر شكاوى مروحة/تبريد"
+      ],
+      "causes": [
+        {
+          "candidate": "Ghost code / misdetection برمجي والمروحة تعمل طبيعياً",
+          "evidence": "Polestar TJ37286.1.0"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Check if P0A8187 is the only DTC and fan functions normally",
+          "ar": "تحقق أن الكود منفرد وأن المروحة تعمل بشكل طبيعي",
+          "evidence": "Polestar TJ37286"
+        },
+        {
+          "en": "Do not replace the fan or other parts for this isolated scenario",
+          "ar": "لا تستبدل المروحة أو القطع لهذه الحالة المنفردة",
+          "evidence": "Polestar TJ37286"
+        },
+        {
+          "en": "If any genuine cooling symptom exists, follow VIDA separate diagnostic path",
+          "ar": "إذا ظهرت أعراض تبريد حقيقية فاتبع تشخيصاً آخر في VIDA",
+          "evidence": "workshop_reasoning"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "No verified parameter identified in cited source",
+          "name_ar": "لا توجد قيمة Live Data محددة موثقة في النشرة",
+          "expected": "غير مؤكد",
+          "evidence": "not in source"
+        }
+      ],
+      "parts": [
+        {
+          "part": "Cooling fan",
+          "location": "منظومة التبريد الأمامية؛ موضع دقيق غير مؤكد",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://oemdtc.com/tsb/11015988/",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+3+FIOC+electric+cooling+fan+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+3+P0A8187+FIOC+electric+cooling+fan+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "النشرة تؤكد كشفاً خاطئاً وتحظر استبدال القطعة بلا داعٍ",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 37286.1.0",
+          "date": "2025-02-20",
+          "url": "https://oemdtc.com/tsb/11015988/",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "P0D320A",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "P0D32",
+        "failure_type_byte_hex": "0A",
+        "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+        "raw_tool_example": "HLCM-P0D320A",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "HLCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "P",
+        "system": "Powertrain / الدفع والطاقة",
+        "manufacturer_generic": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)"
+      },
+      "applicability": {
+        "models": [
+          3
+        ],
+        "model_years": "2025–2027; structure weeks 202402–202752",
+        "vehicle_type": "359",
+        "engines": [
+          "غير محدد في النشرة"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "ارتفاع حرارة HLCM في Live Data؛ احتمال تقييد تدفق السائل",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "Electric System Temporarily Limited مع قدرة دفع منخفضة"
+      ],
+      "causes": [
+        {
+          "candidate": "انسداد منفذ دخول/خروج سائل تبريد HLCM",
+          "evidence": "Polestar TJ37515.1.0 بعد مقارنة الحرارة وسرعة المضخة"
+        },
+        {
+          "candidate": "ضعف أداء مضخة سائل تبريد بطارية الدفع",
+          "evidence": "افحص requested vs actual pump speed قبل الاستنتاج"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Activate rear defogger, seat and steering wheel heating under safe test condition",
+          "ar": "فعّل تسخين الزجاج الخلفي والمقاعد والمقود وفق النشرة",
+          "evidence": "Polestar TJ37515"
+        },
+        {
+          "en": "Run HLCM temperature-monitoring diagnostic sequence and compare cooling plate temperature to HV battery coolant inlet",
+          "ar": "شغّل تسلسل مراقبة حرارة HLCM وقارن حرارة صفيحة التبريد بحرارة مدخل تبريد بطارية HV",
+          "evidence": "Polestar TJ37515"
+        },
+        {
+          "en": "If cooling plate rises markedly faster, compare requested versus actual HV battery coolant pump speed",
+          "ar": "إذا ارتفعت حرارة الصفيحة أسرع بوضوح فقارن السرعة المطلوبة والفعلية لمضخة سائل التبريد",
+          "evidence": "Polestar TJ37515"
+        },
+        {
+          "en": "If pump tracks request, inspect HLCM coolant ports via authorized repair and prior approval; do not automatically replace HLCM",
+          "ar": "إذا طابقت المضخة أمر التحكم فافحص انسداد منافذ HLCM بإذن فني؛ لا تستبدل الوحدة تلقائياً",
+          "evidence": "Polestar TJ37515"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "HLCM cooling plate temperature",
+          "name_ar": "حرارة صفيحة تبريد HLCM",
+          "expected": "Approximately same as HV coolant inlet when functioning; absolute °C غير مؤكد",
+          "evidence": "Polestar TJ37515"
+        },
+        {
+          "name_en": "HV battery coolant inlet temperature",
+          "name_ar": "حرارة مدخل سائل تبريد البطارية",
+          "expected": "Comparison with cooling plate",
+          "evidence": "Polestar TJ37515"
+        },
+        {
+          "name_en": "HV battery coolant pump requested speed",
+          "name_ar": "سرعة مضخة تبريد البطارية المطلوبة",
+          "expected": "Requested speed ≈ actual speed",
+          "evidence": "Polestar TJ37515"
+        },
+        {
+          "name_en": "HV battery coolant pump actual speed",
+          "name_ar": "سرعة مضخة تبريد البطارية الفعلية",
+          "expected": "Should track requested speed; tolerance غير مؤكد",
+          "evidence": "Polestar TJ37515"
+        }
+      ],
+      "parts": [
+        {
+          "part": "HLCM",
+          "location": "وحدة تحويل الجهد العالي إلى المنخفض؛ الموضع غير مؤكد",
+          "location_verified": false
+        },
+        {
+          "part": "HLCM coolant inlet/outlet ports",
+          "location": "على الوحدة؛ يلزم إجراء VIDA",
+          "location_verified": true
+        },
+        {
+          "part": "HV battery coolant pump",
+          "location": "في دائرة تبريد البطارية؛ موضع VIN غير مؤكد",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://oemdtc.com/tsb/11035007/",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+3+HLCM+HLCM+cooling+%2F+thermal+management+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+3+P0D320A+HLCM+HLCM+cooling+%2F+thermal+management+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "نشرة 2026 تتضمن اختبار Live Data وفصل خلل تدفق التبريد عن المضخة",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 37515.1.0",
+          "date": "2025-09-18",
+          "url": "https://oemdtc.com/tsb/11035007/",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "P0D3224",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "P0D32",
+        "failure_type_byte_hex": "24",
+        "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+        "raw_tool_example": "HLCM-P0D3224",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "HLCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "P",
+        "system": "Powertrain / الدفع والطاقة",
+        "manufacturer_generic": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)"
+      },
+      "applicability": {
+        "models": [
+          3
+        ],
+        "model_years": "2025–2027; structure weeks 202402–202752",
+        "vehicle_type": "359",
+        "engines": [
+          "غير محدد في النشرة"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "ارتفاع حرارة HLCM في Live Data؛ احتمال تقييد تدفق السائل",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "Electric System Temporarily Limited مع قدرة دفع منخفضة"
+      ],
+      "causes": [
+        {
+          "candidate": "انسداد منفذ دخول/خروج سائل تبريد HLCM",
+          "evidence": "Polestar TJ37515.1.0 بعد مقارنة الحرارة وسرعة المضخة"
+        },
+        {
+          "candidate": "ضعف أداء مضخة سائل تبريد بطارية الدفع",
+          "evidence": "افحص requested vs actual pump speed قبل الاستنتاج"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Activate rear defogger, seat and steering wheel heating under safe test condition",
+          "ar": "فعّل تسخين الزجاج الخلفي والمقاعد والمقود وفق النشرة",
+          "evidence": "Polestar TJ37515"
+        },
+        {
+          "en": "Run HLCM temperature-monitoring diagnostic sequence and compare cooling plate temperature to HV battery coolant inlet",
+          "ar": "شغّل تسلسل مراقبة حرارة HLCM وقارن حرارة صفيحة التبريد بحرارة مدخل تبريد بطارية HV",
+          "evidence": "Polestar TJ37515"
+        },
+        {
+          "en": "If cooling plate rises markedly faster, compare requested versus actual HV battery coolant pump speed",
+          "ar": "إذا ارتفعت حرارة الصفيحة أسرع بوضوح فقارن السرعة المطلوبة والفعلية لمضخة سائل التبريد",
+          "evidence": "Polestar TJ37515"
+        },
+        {
+          "en": "If pump tracks request, inspect HLCM coolant ports via authorized repair and prior approval; do not automatically replace HLCM",
+          "ar": "إذا طابقت المضخة أمر التحكم فافحص انسداد منافذ HLCM بإذن فني؛ لا تستبدل الوحدة تلقائياً",
+          "evidence": "Polestar TJ37515"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "HLCM cooling plate temperature",
+          "name_ar": "حرارة صفيحة تبريد HLCM",
+          "expected": "Approximately same as HV coolant inlet when functioning; absolute °C غير مؤكد",
+          "evidence": "Polestar TJ37515"
+        },
+        {
+          "name_en": "HV battery coolant inlet temperature",
+          "name_ar": "حرارة مدخل سائل تبريد البطارية",
+          "expected": "Comparison with cooling plate",
+          "evidence": "Polestar TJ37515"
+        },
+        {
+          "name_en": "HV battery coolant pump requested speed",
+          "name_ar": "سرعة مضخة تبريد البطارية المطلوبة",
+          "expected": "Requested speed ≈ actual speed",
+          "evidence": "Polestar TJ37515"
+        },
+        {
+          "name_en": "HV battery coolant pump actual speed",
+          "name_ar": "سرعة مضخة تبريد البطارية الفعلية",
+          "expected": "Should track requested speed; tolerance غير مؤكد",
+          "evidence": "Polestar TJ37515"
+        }
+      ],
+      "parts": [
+        {
+          "part": "HLCM",
+          "location": "وحدة تحويل الجهد العالي إلى المنخفض؛ الموضع غير مؤكد",
+          "location_verified": false
+        },
+        {
+          "part": "HLCM coolant inlet/outlet ports",
+          "location": "على الوحدة؛ يلزم إجراء VIDA",
+          "location_verified": true
+        },
+        {
+          "part": "HV battery coolant pump",
+          "location": "في دائرة تبريد البطارية؛ موضع VIN غير مؤكد",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://oemdtc.com/tsb/11035007/",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+3+HLCM+HLCM+cooling+%2F+thermal+management+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+3+P0D3224+HLCM+HLCM+cooling+%2F+thermal+management+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "نشرة 2026 تتضمن اختبار Live Data وفصل خلل تدفق التبريد عن المضخة",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 37515.1.0",
+          "date": "2025-09-18",
+          "url": "https://oemdtc.com/tsb/11035007/",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "P0D6787",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "P0D67",
+        "failure_type_byte_hex": "87",
+        "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+        "raw_tool_example": "OBC-P0D6787",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "OBC",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "P",
+        "system": "Powertrain / الدفع والطاقة",
+        "manufacturer_generic": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)"
+      },
+      "applicability": {
+        "models": [
+          3
+        ],
+        "model_years": "2025; structural weeks 202431–202502",
+        "vehicle_type": "359",
+        "engines": [
+          "غير محدد في النشرة"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "تكوّن العَرَض مع انحشار سلك التحرير اليدوي لمنفذ الشحن",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "حد AC إلى 10 A وعدم عمل الشحن السريع DC"
+      ],
+      "causes": [
+        {
+          "candidate": "سلك التحرير اليدوي EVI لا يعود من وضع التحرير",
+          "evidence": "Polestar TJ37374"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Confirm AC 10 A limit and DC charging unavailable",
+          "ar": "أكد محدودية AC إلى 10 أمبير وعدم عمل DC",
+          "evidence": "Polestar TJ37374"
+        },
+        {
+          "en": "Inspect EVI release wire in luggage area and whether it retracts",
+          "ar": "افحص سلك تحرير مقبس الشحن في صندوق الأمتعة وتأكد من عودته",
+          "evidence": "Polestar TJ37374"
+        },
+        {
+          "en": "If locking actuator cannot retract release wire, replace actuator cover per VIDA",
+          "ar": "إذا عجز المشغل عن إعادة السلك فاستبدل غطاء المشغل وفق VIDA",
+          "evidence": "Polestar TJ37374"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "AC charging current limit",
+          "name_ar": "الحد المسموح لتيار الشحن المتردد",
+          "expected": "10 A under published fault condition",
+          "evidence": "Polestar TJ37374"
+        }
+      ],
+      "parts": [
+        {
+          "part": "EVI release wire",
+          "location": "منطقة الأمتعة",
+          "location_verified": true
+        },
+        {
+          "part": "Charge connector locking motor actuator cover",
+          "location": "منفذ الشحن، غطاء المشغل رقم 18 في مرفق TJ",
+          "location_verified": true
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://oemdtc.com/tsb/11019500/",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+3+OBC+EVI+charge-port+actuator+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+3+P0D6787+OBC+EVI+charge-port+actuator+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "نشرة إصلاح سببية وتحقق مباشر",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 37374.1.0",
+          "date": "2025-05-09",
+          "url": "https://oemdtc.com/tsb/11019500/",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "P0AA800",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "P0AA8",
+        "failure_type_byte_hex": "00",
+        "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+        "raw_tool_example": "BECM-P0AA800",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "BECM",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "P",
+        "system": "Powertrain / الدفع والطاقة",
+        "manufacturer_generic": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)"
+      },
+      "applicability": {
+        "models": [
+          4
+        ],
+        "model_years": "2025–2026; structure weeks 202447–202613",
+        "vehicle_type": "814",
+        "engines": [
+          "PA / E400P01 LRDM",
+          "PB / E400P02 LRSM"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "وجود الكودين معاً P0AA800 وP127900 وعدم قبول أي غيار",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "عدم إمكانية اختيار أي وضع قيادة"
+      ],
+      "causes": [
+        {
+          "candidate": "عطل وحدة CDD وفق نشرة بولستار عند تحقق جميع الشروط معاً",
+          "evidence": "Polestar TJ37772.2.0؛ تشخيص حاسم مشروط"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Confirm gear engagement impossible and both BECM codes present together",
+          "ar": "أكد تعذر تعشيق ناقل الحركة ووجود الكودين معاً",
+          "evidence": "Polestar TJ37772.2.0"
+        },
+        {
+          "en": "Verify model/engine/build-week and all bulletin conditions",
+          "ar": "طابق سنة الموديل ورمز المحرك وأسبوع التصنيع وجميع شروط النشرة",
+          "evidence": "Polestar TJ37772.2.0"
+        },
+        {
+          "en": "Only then replace CDD Charger and DC-DC Module in accordance with VIDA HV safety procedure",
+          "ar": "عند تحقق الشروط فقط استبدل وحدة CDD بحسب VIDA وباحتياطات الجهد العالي",
+          "evidence": "Polestar TJ37772.2.0"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "No verified parameter identified in cited source",
+          "name_ar": "لا توجد قيمة Live Data محددة موثقة في النشرة",
+          "expected": "غير مؤكد",
+          "evidence": "not in source"
+        }
+      ],
+      "parts": [
+        {
+          "part": "CDD Charger and DC-DC Module",
+          "location": "الموقع التفصيلي لم يُتحقق منه؛ راجع VIDA لـ Polestar 4",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://oemdtc.com/tsb/11032615/",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+4+BECM+high+voltage+charger+%2F+DC-DC+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+4+P0AA800+BECM+high+voltage+charger+%2F+DC-DC+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "TJ يربط الكودين بشرط إصلاح محدد، لا تعميم على أي واحد منفرد",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 37772.2.0",
+          "date": "2026-04-16",
+          "url": "https://oemdtc.com/tsb/11032615/",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "P127900",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "P1279",
+        "failure_type_byte_hex": "00",
+        "classification": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)",
+        "raw_tool_example": "BECM-P127900",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "BECM",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "P",
+        "system": "Powertrain / الدفع والطاقة",
+        "manufacturer_generic": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)"
+      },
+      "applicability": {
+        "models": [
+          4
+        ],
+        "model_years": "2025–2026; structure weeks 202447–202613",
+        "vehicle_type": "814",
+        "engines": [
+          "PA / E400P01 LRDM",
+          "PB / E400P02 LRSM"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "وجود الكودين معاً P0AA800 وP127900 وعدم قبول أي غيار",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "عدم إمكانية اختيار أي وضع قيادة"
+      ],
+      "causes": [
+        {
+          "candidate": "عطل وحدة CDD وفق نشرة بولستار عند تحقق جميع الشروط معاً",
+          "evidence": "Polestar TJ37772.2.0؛ تشخيص حاسم مشروط"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Confirm gear engagement impossible and both BECM codes present together",
+          "ar": "أكد تعذر تعشيق ناقل الحركة ووجود الكودين معاً",
+          "evidence": "Polestar TJ37772.2.0"
+        },
+        {
+          "en": "Verify model/engine/build-week and all bulletin conditions",
+          "ar": "طابق سنة الموديل ورمز المحرك وأسبوع التصنيع وجميع شروط النشرة",
+          "evidence": "Polestar TJ37772.2.0"
+        },
+        {
+          "en": "Only then replace CDD Charger and DC-DC Module in accordance with VIDA HV safety procedure",
+          "ar": "عند تحقق الشروط فقط استبدل وحدة CDD بحسب VIDA وباحتياطات الجهد العالي",
+          "evidence": "Polestar TJ37772.2.0"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "No verified parameter identified in cited source",
+          "name_ar": "لا توجد قيمة Live Data محددة موثقة في النشرة",
+          "expected": "غير مؤكد",
+          "evidence": "not in source"
+        }
+      ],
+      "parts": [
+        {
+          "part": "CDD Charger and DC-DC Module",
+          "location": "الموقع التفصيلي لم يُتحقق منه؛ راجع VIDA لـ Polestar 4",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://oemdtc.com/tsb/11032615/",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+4+BECM+high+voltage+charger+%2F+DC-DC+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+4+P127900+BECM+high+voltage+charger+%2F+DC-DC+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P1",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "TJ يربط الكودين بشرط إصلاح محدد، لا تعميم على أي واحد منفرد",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 37772.2.0",
+          "date": "2026-04-16",
+          "url": "https://oemdtc.com/tsb/11032615/",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "B1A0213",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "B1A02",
+        "failure_type_byte_hex": "13",
+        "classification": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)",
+        "raw_tool_example": "ESM-B1A0213",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "ESM",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "B",
+        "system": "Body / الهيكل والأجهزة",
+        "manufacturer_generic": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)"
+      },
+      "applicability": {
+        "models": [
+          2
+        ],
+        "model_years": "2021+ in TJ; verify exact variant",
+        "vehicle_type": "534",
+        "engines": [
+          "غير محدد في النشرة"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "يمكن ظهورها منفردة أو مجتمعة وفق TJ؛ دائمية الكود بالنشرة Intermittent",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "فقدان صوت التنبيه الخارجي أو أصوات التحذير"
+      ],
+      "causes": [
+        {
+          "candidate": "خلل اتصال/تغذية مرتبط بـ ESM أو المنظومة حسب الكود",
+          "evidence": "استدلال وظيفي؛ السبب التفصيلي غير منشور في النص المتاح"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Check whether pedestrian/exterior audible warning is absent",
+          "ar": "اختبر عمل التنبيه الخارجي عند ظروف الاختبار الآمنة",
+          "evidence": "Polestar TJ35888 symptom"
+        },
+        {
+          "en": "Read ESM/VCU1/BECM DTC together and apply VIDA guided fault tracing",
+          "ar": "اقرأ أكواد ESM وVCU1 وBECM معاً ونفذ مسار VIDA",
+          "evidence": "Polestar TJ35888"
+        },
+        {
+          "en": "Measure wiring/power only after retrieving VIN-specific ESM diagram and pin data",
+          "ar": "لا تقس تغذية أو أسلاك الوحدة قبل الحصول على مخطط وأطراف النسخة الصحيحة",
+          "evidence": "diagnostic_recommendation"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "No verified parameter identified in cited source",
+          "name_ar": "لا توجد قيمة Live Data محددة موثقة في النشرة",
+          "expected": "غير مؤكد",
+          "evidence": "not in source"
+        }
+      ],
+      "parts": [
+        {
+          "part": "Exterior Sound Module ESM",
+          "location": "موقعه الدقيق غير مؤكد",
+          "location_verified": false
+        },
+        {
+          "part": "Exterior warning speaker",
+          "location": "موقعه الدقيق غير مؤكد",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11002689-0001.pdf",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+2+ESM+exterior+acoustic+warning+%2F+network+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+2+B1A0213+ESM+exterior+acoustic+warning+%2F+network+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P2",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "أربع أكواد مثبتة في نشرة واحدة؛ دون دليل شيوع عددي",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 35888.4.0",
+          "date": "2024-06-04",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11002689-0001.pdf",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "U002888",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "U0028",
+        "failure_type_byte_hex": "88",
+        "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+        "raw_tool_example": "ESM-U002888",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "ESM",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "U",
+        "system": "Network / الشبكات والاتصالات",
+        "manufacturer_generic": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)"
+      },
+      "applicability": {
+        "models": [
+          2
+        ],
+        "model_years": "2021+ in TJ; verify exact variant",
+        "vehicle_type": "534",
+        "engines": [
+          "غير محدد في النشرة"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "يمكن ظهورها منفردة أو مجتمعة وفق TJ؛ دائمية الكود بالنشرة Intermittent",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "فقدان صوت التنبيه الخارجي أو أصوات التحذير"
+      ],
+      "causes": [
+        {
+          "candidate": "خلل اتصال/تغذية مرتبط بـ ESM أو المنظومة حسب الكود",
+          "evidence": "استدلال وظيفي؛ السبب التفصيلي غير منشور في النص المتاح"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Check whether pedestrian/exterior audible warning is absent",
+          "ar": "اختبر عمل التنبيه الخارجي عند ظروف الاختبار الآمنة",
+          "evidence": "Polestar TJ35888 symptom"
+        },
+        {
+          "en": "Read ESM/VCU1/BECM DTC together and apply VIDA guided fault tracing",
+          "ar": "اقرأ أكواد ESM وVCU1 وBECM معاً ونفذ مسار VIDA",
+          "evidence": "Polestar TJ35888"
+        },
+        {
+          "en": "Measure wiring/power only after retrieving VIN-specific ESM diagram and pin data",
+          "ar": "لا تقس تغذية أو أسلاك الوحدة قبل الحصول على مخطط وأطراف النسخة الصحيحة",
+          "evidence": "diagnostic_recommendation"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "No verified parameter identified in cited source",
+          "name_ar": "لا توجد قيمة Live Data محددة موثقة في النشرة",
+          "expected": "غير مؤكد",
+          "evidence": "not in source"
+        }
+      ],
+      "parts": [
+        {
+          "part": "Exterior Sound Module ESM",
+          "location": "موقعه الدقيق غير مؤكد",
+          "location_verified": false
+        },
+        {
+          "part": "Exterior warning speaker",
+          "location": "موقعه الدقيق غير مؤكد",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11002689-0001.pdf",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+2+ESM+exterior+acoustic+warning+%2F+network+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+2+U002888+ESM+exterior+acoustic+warning+%2F+network+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P2",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "أربع أكواد مثبتة في نشرة واحدة؛ دون دليل شيوع عددي",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 35888.4.0",
+          "date": "2024-06-04",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11002689-0001.pdf",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "U007388",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "U0073",
+        "failure_type_byte_hex": "88",
+        "classification": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)",
+        "raw_tool_example": "BECM-U007388",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "BECM",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "U",
+        "system": "Network / الشبكات والاتصالات",
+        "manufacturer_generic": "نطاق قياسي SAE/ISO (انطباق الرقم الأساسي مثبت بالنشرة؛ المعنى الكامل والنوع الفرعي غير مؤكدين)"
+      },
+      "applicability": {
+        "models": [
+          2
+        ],
+        "model_years": "2021+ in TJ; verify exact variant",
+        "vehicle_type": "534",
+        "engines": [
+          "غير محدد في النشرة"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "يمكن ظهورها منفردة أو مجتمعة وفق TJ؛ دائمية الكود بالنشرة Intermittent",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "فقدان صوت التنبيه الخارجي أو أصوات التحذير"
+      ],
+      "causes": [
+        {
+          "candidate": "خلل اتصال/تغذية مرتبط بـ ESM أو المنظومة حسب الكود",
+          "evidence": "استدلال وظيفي؛ السبب التفصيلي غير منشور في النص المتاح"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Check whether pedestrian/exterior audible warning is absent",
+          "ar": "اختبر عمل التنبيه الخارجي عند ظروف الاختبار الآمنة",
+          "evidence": "Polestar TJ35888 symptom"
+        },
+        {
+          "en": "Read ESM/VCU1/BECM DTC together and apply VIDA guided fault tracing",
+          "ar": "اقرأ أكواد ESM وVCU1 وBECM معاً ونفذ مسار VIDA",
+          "evidence": "Polestar TJ35888"
+        },
+        {
+          "en": "Measure wiring/power only after retrieving VIN-specific ESM diagram and pin data",
+          "ar": "لا تقس تغذية أو أسلاك الوحدة قبل الحصول على مخطط وأطراف النسخة الصحيحة",
+          "evidence": "diagnostic_recommendation"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "No verified parameter identified in cited source",
+          "name_ar": "لا توجد قيمة Live Data محددة موثقة في النشرة",
+          "expected": "غير مؤكد",
+          "evidence": "not in source"
+        }
+      ],
+      "parts": [
+        {
+          "part": "Exterior Sound Module ESM",
+          "location": "موقعه الدقيق غير مؤكد",
+          "location_verified": false
+        },
+        {
+          "part": "Exterior warning speaker",
+          "location": "موقعه الدقيق غير مؤكد",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11002689-0001.pdf",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+2+BECM+exterior+acoustic+warning+%2F+network+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+2+U007388+BECM+exterior+acoustic+warning+%2F+network+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P2",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "أربع أكواد مثبتة في نشرة واحدة؛ دون دليل شيوع عددي",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 35888.4.0",
+          "date": "2024-06-04",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11002689-0001.pdf",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "U112700",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "U1127",
+        "failure_type_byte_hex": "00",
+        "classification": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)",
+        "raw_tool_example": "VCU1-U112700",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "VCU1",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "U",
+        "system": "Network / الشبكات والاتصالات",
+        "manufacturer_generic": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)"
+      },
+      "applicability": {
+        "models": [
+          2
+        ],
+        "model_years": "2021+ in TJ; verify exact variant",
+        "vehicle_type": "534",
+        "engines": [
+          "غير محدد في النشرة"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "يمكن ظهورها منفردة أو مجتمعة وفق TJ؛ دائمية الكود بالنشرة Intermittent",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "فقدان صوت التنبيه الخارجي أو أصوات التحذير"
+      ],
+      "causes": [
+        {
+          "candidate": "خلل اتصال/تغذية مرتبط بـ ESM أو المنظومة حسب الكود",
+          "evidence": "استدلال وظيفي؛ السبب التفصيلي غير منشور في النص المتاح"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Check whether pedestrian/exterior audible warning is absent",
+          "ar": "اختبر عمل التنبيه الخارجي عند ظروف الاختبار الآمنة",
+          "evidence": "Polestar TJ35888 symptom"
+        },
+        {
+          "en": "Read ESM/VCU1/BECM DTC together and apply VIDA guided fault tracing",
+          "ar": "اقرأ أكواد ESM وVCU1 وBECM معاً ونفذ مسار VIDA",
+          "evidence": "Polestar TJ35888"
+        },
+        {
+          "en": "Measure wiring/power only after retrieving VIN-specific ESM diagram and pin data",
+          "ar": "لا تقس تغذية أو أسلاك الوحدة قبل الحصول على مخطط وأطراف النسخة الصحيحة",
+          "evidence": "diagnostic_recommendation"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "No verified parameter identified in cited source",
+          "name_ar": "لا توجد قيمة Live Data محددة موثقة في النشرة",
+          "expected": "غير مؤكد",
+          "evidence": "not in source"
+        }
+      ],
+      "parts": [
+        {
+          "part": "Exterior Sound Module ESM",
+          "location": "موقعه الدقيق غير مؤكد",
+          "location_verified": false
+        },
+        {
+          "part": "Exterior warning speaker",
+          "location": "موقعه الدقيق غير مؤكد",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11002689-0001.pdf",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+2+VCU1+exterior+acoustic+warning+%2F+network+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+2+U112700+VCU1+exterior+acoustic+warning+%2F+network+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P2",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "أربع أكواد مثبتة في نشرة واحدة؛ دون دليل شيوع عددي",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 35888.4.0",
+          "date": "2024-06-04",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11002689-0001.pdf",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "P2BE017",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "P2BE0",
+        "failure_type_byte_hex": "17",
+        "classification": "نطاق خاضع لـ ISO/SAE (P2xxx)، وليس نطاقاً مخصصاً للمصنع؛ التعريف الكامل وتوفر التخصيص غير مؤكدين",
+        "raw_tool_example": "FIOC-P2BE017",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "FIOC",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "P",
+        "system": "Powertrain / الدفع والطاقة",
+        "manufacturer_generic": "نطاق خاضع لـ ISO/SAE (P2xxx)، وليس نطاقاً مخصصاً للمصنع؛ التعريف الكامل وتوفر التخصيص غير مؤكدين"
+      },
+      "applicability": {
+        "models": [
+          3
+        ],
+        "model_years": "2025+",
+        "vehicle_type": "359",
+        "engines": [
+          "غير محدد في النشرة"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "الكود مذكور في نشرة تعبئة وتنفيـس نظام التبريد؛ تعريف الكود التفصيلي غير مؤكد",
+        "other_markets_verified": false
+      },
+      "symptoms": [
+        "شكاوى تبريد/تسريب أو سخونة ضمن سياق تنفيس نظام التبريد"
+      ],
+      "causes": [
+        {
+          "candidate": "تعبئة/تنفيس سائل التبريد بطريقة غير صحيحة يمكن أن تؤثر في وظائف منظومة التبريد",
+          "evidence": "السياق الفني TJ37301؛ علاقة السببية الدقيقة بالكود غير مؤكدة"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Confirm cooling history and scan FIOC DTC",
+          "ar": "تحقق من سجل صيانة التبريد واقرأ أكواد FIOC",
+          "evidence": "Polestar TJ37301"
+        },
+        {
+          "en": "If coolant was drained, perform VIDA electric powertrain cooling fill and bleed routine with specified equipment",
+          "ar": "إذا أُفرغ سائل التبريد نفّذ طريقة التعبئة والتنفيـس المعتمدة بــ VIDA وأدواتها الصحيحة",
+          "evidence": "Polestar TJ37301"
+        },
+        {
+          "en": "Do not infer low coolant based solely on DIM warning; model may not display low-level warning",
+          "ar": "لا تفترض وجود تحذير مستوى سائل منخفض على الشاشة؛ النشرة تنبه لعدم توفره",
+          "evidence": "Polestar TJ37301"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "No verified parameter identified in cited source",
+          "name_ar": "لا توجد قيمة Live Data محددة موثقة في النشرة",
+          "expected": "غير مؤكد",
+          "evidence": "not in source"
+        }
+      ],
+      "parts": [
+        {
+          "part": "Electric powertrain coolant circuit",
+          "location": "مكونات تبريد الجهد العالي؛ خريطة الأنابيب عبر VIDA",
+          "location_verified": false
+        }
+      ],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://oemdtc.com/tsb/11023311/",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+3+FIOC+electric+coolant+system+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+3+P2BE017+FIOC+electric+coolant+system+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P2",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "كود موثق بسياق فني دون إجراء فحص سببي مفصل للرمز",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 37301.1.0",
+          "date": "2025-03-13",
+          "url": "https://oemdtc.com/tsb/11023311/",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Polestar",
+      "code": "B15381B",
+      "code_format": {
+        "display": "7-character extended DTC",
+        "base_dtc": "B1538",
+        "failure_type_byte_hex": "1B",
+        "classification": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)",
+        "raw_tool_example": "SRS-B15381B",
+        "observed_fault_state": "راجع النشرة؛ لا يُعد Permanent/Intermittent جزءاً من الكود"
+      },
+      "ecu": "SRS",
+      "definition_en": null,
+      "translation_ar": null,
+      "category": {
+        "group": "B",
+        "system": "Body / الهيكل والأجهزة",
+        "manufacturer_generic": "نطاق مخصص للمصنع / manufacturer controlled (تمييز النطاق فقط؛ معنى الكود يحتاج توثيق Polestar)"
+      },
+      "applicability": {
+        "models": [
+          2
+        ],
+        "model_years": "2021+ in table, diagnostic applicability NOT established",
+        "vehicle_type": "534",
+        "engines": [
+          "غير محدد في النشرة"
+        ],
+        "fuel": "electricity (BEV)",
+        "markets": "US/CA bulletin; other markets unverified",
+        "conditions": "غير مؤكد: توجد فجوة/عدم اتساق بين عنوان/نص النشرة ورمز SRS",
+        "other_markets_verified": false,
+        "notes": "source inconsistency flagged; excluded from release-ready diagnostics"
+      },
+      "symptoms": [
+        "ورد الكود في خانة SRS من نشرة تتمحور حول خدمات Google، دون تفسير تشخيصي صالح"
+      ],
+      "causes": [
+        {
+          "candidate": "غير مؤكد",
+          "evidence": "Do not infer fault from mismatched bulletin"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "en": "Do not use TJ36930 as diagnostic proof of SRS root cause; obtain matching VIN-specific VIDA fault trace",
+          "ar": "لا تستخدم هذه النشرة لتحديد سبب كود SRS؛ اطلب صفحة VIDA المطابقة لرقم VIN",
+          "evidence": "data_quality_warning"
+        },
+        {
+          "en": "Do not work on SRS/HV disconnect loop without manufacturer procedure",
+          "ar": "لا تعمل على دائرة SRS أو حلقة فصل الجهد العالي دون إجراء مصنعي",
+          "evidence": "safety_warning"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "No verified parameter identified in cited source",
+          "name_ar": "لا توجد قيمة Live Data محددة موثقة في النشرة",
+          "expected": "غير مؤكد",
+          "evidence": "not in source"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "verified_image_url": null,
+        "reference_page": "https://oemdtc.com/tsb/11000078/",
+        "search_url": "https://www.google.com/search?tbm=isch&q=Polestar+2+SRS+HV+battery+loop+control+%28bulletin+heading+not+reliable%29+location",
+        "note": "رابط بحث للصور فقط وليس صورة قطعة موثّقة؛ تحقّق من رقم القطعة والموديل قبل العرض"
+      },
+      "wiring": {
+        "pinout": null,
+        "diagram_url": null,
+        "edition": "غير مؤكد",
+        "status": "غير متاح المصدر علناً؛ الرجوع إلى VIDA حسب VIN/السنة"
+      },
+      "video": {
+        "verified_video_url": null,
+        "search_url": "https://www.youtube.com/results?search_query=Polestar+2+B15381B+SRS+HV+battery+loop+control+%28bulletin+heading+not+reliable%29+diagnostic+repair",
+        "note": "رابط بحث فقط، وليس فيديو مصدَّق"
+      },
+      "priority_evidence": {
+        "tier": "P3",
+        "evidence_type": "manufacturer_TJ",
+        "reason": "الكود ظاهر في جدول مصنع لكن الصفحة غير متسقة؛ حُجز لتوثيق لاحق",
+        "statistical_frequency": null
+      },
+      "sources": [
+        {
+          "publisher": "Polestar",
+          "document": "TJ 36930.1.0",
+          "date": "2024-05-08",
+          "url": "https://oemdtc.com/tsb/11000078/",
+          "evidence": "Original manufacturer Technical Journal reproduced in NHTSA records; code and symptom/steps verified where described"
+        },
+        {
+          "title": "SAE J2012_202509 Diagnostic Trouble Code Definitions",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "issue_date": "2025-09-01",
+          "access": "scope summary only; DTC definitions not accessed"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    }
+  ]
+}

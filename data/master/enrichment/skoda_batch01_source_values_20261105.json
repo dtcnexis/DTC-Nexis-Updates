@@ -1,0 +1,4138 @@
+{
+  "schema": "dtcnexis-source-value-preservation-v1",
+  "source": {
+    "filename": "skoda_dtc_batch01.json",
+    "library_file_id": "libfile_9b5bfe1bf5a8819197ab140cbaf17602",
+    "version_id": "1",
+    "reported_original_size_bytes": 157009,
+    "complete_text_lines_read": 4155,
+    "raw_original_sha256": null,
+    "raw_original_bytes_materialized": false,
+    "preservation": "All JSON record values retained, with original top-level metadata kept separately; generated semantic export, not original file recreation"
+  },
+  "counts_towards_unique_ledger": false,
+  "additional_counted_rows": 0,
+  "full_technical_approval": false,
+  "records": [
+    {
+      "brand": "Škoda",
+      "code": "P0106",
+      "code_format": {
+        "primary": "P0106",
+        "aliases": [
+          "16490",
+          "000262"
+        ],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "01-Engine / ECM",
+      "definition_en": "Manifold / Barometric Pressure Sensor (G71) / (F96): Implausible Signal",
+      "translation_ar": "إشارة غير منطقية من حساس ضغط مجمع السحب/الضغط الجوي (G71/F96)",
+      "category": "P0 قياسي (وصف VAG موسع)",
+      "applicability": {
+        "skoda_applicability": "observed-in-Skoda",
+        "models": [
+          "Fabia I (ورشة: 2003 1.2 64hp; engine code unverified)"
+        ],
+        "generations": [
+          "Fabia I"
+        ],
+        "years": [
+          2003
+        ],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [
+          "1.2 petrol naturally aspirated / HTP subject to vehicle ID"
+        ],
+        "fuel_or_powertrain": [
+          "بنزين"
+        ],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": "حالة ورشة موثقة بالمحادثة السابقة، لا توثيق مصنع أو نسبة شيوع"
+      },
+      "symptoms": [
+        "اضطراب سرعة الخمول",
+        "قد تضيء لمبة المحرك بحسب ECU"
+      ],
+      "causes": [
+        "تسريب في خراطيم السحب أو الفاكيوم؛ فحص أولي مستند إلى الحالة العملية",
+        "تمديدات أو وصلات G71/F96",
+        "الحساس غير صحيح أو معطوب",
+        "خلل توقيت الصمامات أو شداد سلسلة على محركات صغيرة محددة",
+        "تحديث برمجي ECU أو خلل نادر بالوحدة"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "task": "حفظ Freeze Frame ورقم المحرك ورقم ECU والرمز الفرعي قبل مسح الكود",
+          "source_type": "إجراء ورشة؛ استنتاج تشخيصي"
+        },
+        {
+          "order": 2,
+          "task": "فحص خرطوم الفاكيوم وسحب الهواء وتشققاته ثم smoke test منخفض الضغط وفق تعليمات المحرك",
+          "source_type": "Ross-Tech + ورشة"
+        },
+        {
+          "order": 3,
+          "task": "KOEO مقارنة Manifold Absolute Pressure مع Barometric Pressure نوعياً؛ تفاوت القيم المسموح به غير مؤكد",
+          "source_type": "استنتاج هندسي، ليس مواصفة مصنع"
+        },
+        {
+          "order": 4,
+          "task": "فحص تزويد الحساس والأرضي وسلك الإشارة من مخطط VIN فقط، وعدم افتراض 5V لكل نسخة",
+          "source_type": "استنتاج تشخيصي"
+        },
+        {
+          "order": 5,
+          "task": "إذا استمر الخلل بعد نفي التسريب والكهرباء، تحقق من توقيت السلسلة وإصدار سوفتوير ECU قبل استبدال G71",
+          "source_type": "Ross-Tech"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Intake manifold absolute pressure (MAP)",
+          "name_ar": "الضغط المطلق في مجمع السحب",
+          "id": "غير مؤكد بحسب ECU",
+          "check": "KOEO والخمول والتسارع؛ اتساق السلوك مع الضغط الجوي",
+          "spec": "غير مؤكد"
+        },
+        {
+          "name_en": "Barometric pressure",
+          "name_ar": "الضغط الجوي",
+          "id": "غير مؤكد",
+          "check": "قارن مع MAP والمحرك متوقف",
+          "spec": "غير مؤكد"
+        },
+        {
+          "name_en": "Engine speed",
+          "name_ar": "سرعة المحرك",
+          "id": "غير مؤكد",
+          "check": "اربط تذبذب الخمول بقراءات MAP",
+          "spec": "غير مؤكد"
+        },
+        {
+          "name_en": "Throttle valve angle",
+          "name_ar": "زاوية بوابة الهواء",
+          "id": "غير مؤكد",
+          "check": "تحقق من توافق الحمل والزاوية مع MAP",
+          "spec": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Manifold absolute pressure sensor (G71)",
+          "name_ar": "حساس ضغط مجمع السحب",
+          "location": "على منظومة السحب؛ الموضع الدقيق يحتاج رمز المحرك"
+        },
+        {
+          "name_en": "Vacuum/intake hoses",
+          "name_ar": "خراطيم الفاكيوم والسحب",
+          "location": "منظومة السحب، حسب 1.2 6V/12V"
+        },
+        {
+          "name_en": "Barometric pressure sensor (F96) if separate",
+          "name_ar": "حساس الضغط الجوي إن كان منفصلاً",
+          "location": "قد يكون مدمجاً حسب ECU؛ غير مؤكد"
+        }
+      ],
+      "images": {
+        "type": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Skoda+Fabia+1.2+12v+2003+MAP+sensor+G71+location",
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": "https://www.youtube.com/results?search_query=Skoda+Fabia+2003+1.2+12V+P0106+MAP+sensor+intake+vacuum+leak+diagnosis",
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - تفصيل تشخيصي",
+        "basis": "Ross-Tech يخص محركات صغيرة بتوقيت/برمجيات محتملة؛ حالة اختبار Fabia 2003 في الورشة (دليل حالة واحدة لا انتشار)",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/16490/P0106/000262",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": true,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "P0171",
+      "code_format": {
+        "primary": "P0171",
+        "aliases": [
+          "16555",
+          "000369"
+        ],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "01-Engine / ECM",
+      "definition_en": "Fuel Trim; Bank 1: System Too Lean",
+      "translation_ar": "تصحيح خليط الوقود - بنك 1: الخليط أفقر من المطلوب",
+      "category": "P0 قياسي",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [
+          "MPI/TSI petrol after engine validation"
+        ],
+        "fuel_or_powertrain": [
+          "بنزين"
+        ],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [],
+      "causes": [
+        "تسريب هواء السحب/فاكيوم",
+        "MAF (G70) إذا كان مثبتاً في المحرك",
+        "منظم الضغط/المضخة/البخاخات",
+        "تسريب عادم مؤثر على حساس الأكسجين"
+      ],
+      "diagnostic_steps": [
+        "فحص تسريب السحب قبل تغيير الحساس",
+        "مقارنة Fuel Trim قصير وطويل المدى حسب ظروف التشغيل",
+        "قياس ضغط الوقود حسب معيار المحرك؛ القيمة غير مؤكد"
+      ],
+      "live_data": [
+        {
+          "name_en": "Short Term Fuel Trim (Bank 1)",
+          "name_ar": "تصحيح الوقود قصير المدى",
+          "spec": "غير مؤكد"
+        },
+        {
+          "name_en": "Long Term Fuel Trim (Bank 1)",
+          "name_ar": "تصحيح الوقود طويل المدى",
+          "spec": "غير مؤكد"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Skoda+Octavia+1.6+MPI+vacuum+hoses+intake+engine",
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": "https://www.youtube.com/results?search_query=Skoda+Octavia+MPI+P0171+intake+leak+fuel+trim+test",
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - فهرسة",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/16555/P0171/000369",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "P0300",
+      "code_format": {
+        "primary": "P0300",
+        "aliases": [
+          "16684",
+          "000768"
+        ],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "01-Engine / ECM",
+      "definition_en": "Random/Multiple Cylinder Misfire Detected",
+      "translation_ar": "اكتشاف تقطيع احتراق عشوائي أو في عدة أسطوانات",
+      "category": "P0 قياسي",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [
+          "MPI/TSI petrol; test method varies"
+        ],
+        "fuel_or_powertrain": [
+          "بنزين"
+        ],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [
+        "اهتزاز وتقطيع",
+        "ضعف التسارع",
+        "لمبة محرك قد تومض"
+      ],
+      "causes": [
+        "تسريب سحب الهواء",
+        "البواجي أو الكويلات حسب المحرك",
+        "نقص الوقود/البخاخات",
+        "ضغط أسطوانات منخفض أو خلل توقيت",
+        "G40 أو G28 في الحالات ذات الصلة"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "task": "احفظ Freeze Frame وعدّادات التقطيع لكل أسطوانة",
+          "source_type": "Ross-Tech"
+        },
+        {
+          "order": 2,
+          "task": "افحص تسريب السحب وجودة الوقود والبواجي والكويلات إن وُجدت",
+          "source_type": "Ross-Tech"
+        },
+        {
+          "order": 3,
+          "task": "اختبار تبديل الكويل بين أسطوانتين عند ملاءمة التصميم ومتابعة انتقال العطل",
+          "source_type": "Ross-Tech misfire guide"
+        },
+        {
+          "order": 4,
+          "task": "افحص ضغط الأسطوانات أو Leak-down إذا لم تثبت مشكلة إشعال/وقود",
+          "source_type": "Ross-Tech"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Misfire counter cylinder 1..n",
+          "name_ar": "عداد التقطيع لكل أسطوانة",
+          "spec": "غير مؤكد؛ عدد الأسطوانات بحسب المحرك"
+        },
+        {
+          "name_en": "Engine speed",
+          "name_ar": "سرعة المحرك",
+          "spec": "غير مؤكد"
+        },
+        {
+          "name_en": "Fuel trim",
+          "name_ar": "تصحيح الوقود",
+          "spec": "غير مؤكد"
+        },
+        {
+          "name_en": "Lambda regulation",
+          "name_ar": "تنظيم نسبة الهواء إلى الوقود",
+          "spec": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Ignition coil / spark plugs, gasoline",
+          "name_ar": "كويلات وبواجي البنزين",
+          "location": "على رأس المحرك؛ التصميم 3 أو 4 أسطوانات بحسب الكود"
+        },
+        {
+          "name_en": "Injectors",
+          "name_ar": "البخاخات",
+          "location": "موقعها يختلف بين MPI وTSI"
+        }
+      ],
+      "images": {
+        "type": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Skoda+Fabia+1.2+HTP+ignition+coil+spark+plug+location",
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": "https://www.youtube.com/results?search_query=Skoda+Fabia+1.2+HTP+misfire+diagnosis+spark+plugs+coils+compression",
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - تفصيل تشخيصي",
+        "basis": "Ross-Tech نشرت دليلاً متخصصاً للتقطيع مع اختبارات تشخيص؛ لا يحدد تواتر سكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/16684/P0300/000768",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        },
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/Misfire_Diagnosis",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "P0299",
+      "code_format": {
+        "primary": "P0299",
+        "aliases": [
+          "16683",
+          "000665"
+        ],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "01-Engine / ECM",
+      "definition_en": "Boost Pressure Regulation: Control Range Not Reached",
+      "translation_ar": "تنظيم ضغط الشحن: الضغط المطلوب لم يتحقق",
+      "category": "P0 قياسي",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [
+          "TSI turbo petrol",
+          "TDI turbo diesel"
+        ],
+        "fuel_or_powertrain": [
+          "بنزين",
+          "ديزل"
+        ],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [
+        "ضعف القدرة",
+        "نمط حماية Limp Mode"
+      ],
+      "causes": [
+        "تسريب في مواسير الشحن أو مبرد الهواء",
+        "نظام التحكم بالتيربو أو الفاكيوم حسب النسخة",
+        "صمام تحويل الهواء Diverter Valve في بعض محركات البنزين",
+        "خلل ميكانيكي بالتيربو"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "task": "توثيق بيانات ضغط الشحن المطلوب والحقيقي والحمولة وسرعة المحرك تحت شروط اختبار آمنة",
+          "source_type": "استنتاج فني تدعمه أسباب Ross-Tech"
+        },
+        {
+          "order": 2,
+          "task": "فحص خراطيم الشحن والوصلات وIntercooler باختبار تسريب مناسب",
+          "source_type": "Ross-Tech"
+        },
+        {
+          "order": 3,
+          "task": "في TDI فحص فاكيوم N75 ومشغل الريش؛ في TSI فحص diverter/wastegate بحسب رقم المحرك",
+          "source_type": "Ross-Tech"
+        },
+        {
+          "order": 4,
+          "task": "إثبات حركة مشغل التيربو/الاستجابة في Output Test قبل اتخاذ قرار استبدال التيربو",
+          "source_type": "استنتاج ورشة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Charge air pressure: specified value",
+          "name_ar": "ضغط الشحن المطلوب",
+          "spec": "غير مؤكد"
+        },
+        {
+          "name_en": "Charge air pressure: actual value",
+          "name_ar": "ضغط الشحن الفعلي",
+          "spec": "غير مؤكد"
+        },
+        {
+          "name_en": "Charge pressure actuator: position",
+          "name_ar": "موضع مشغل ضغط التيربو",
+          "spec": "غير مؤكد"
+        },
+        {
+          "name_en": "Engine speed",
+          "name_ar": "سرعة المحرك",
+          "spec": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Turbocharger / actuator",
+          "name_ar": "التيربو ومشغله",
+          "location": "عند مجموعة العادم، موضعه يختلف حسب كود المحرك"
+        },
+        {
+          "name_en": "Boost pressure control solenoid (N75) where fitted",
+          "name_ar": "صمام التحكم بضغط التيربو N75",
+          "location": "نظام الفاكيوم حسب المحرك"
+        },
+        {
+          "name_en": "Charge air pipes/intercooler",
+          "name_ar": "مواسير هواء التيربو ومبرد الهواء",
+          "location": "مجرى الشحن من التيربو إلى مشعب السحب"
+        }
+      ],
+      "images": {
+        "type": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Skoda+Octavia+2.0+TDI+charge+air+pipes+N75+turbo+actuator+location",
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": "https://www.youtube.com/results?search_query=Skoda+Octavia+2.0+TDI+P0299+boost+leak+N75+turbo+actuator+diagnosis",
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - تفصيل تشخيصي",
+        "basis": "Ross-Tech يعرض تفريعات تشخيص مختلفة للبنزين والديزل وBLS؛ دليل تعدد الأسباب لا معدل حدوث",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/16683/P0299/000665",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "P0234",
+      "code_format": {
+        "primary": "P0234",
+        "aliases": [
+          "16618",
+          "000564"
+        ],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "01-Engine / ECM",
+      "definition_en": "Boost Pressure Regulation: Limit Exceeded (Overboost Condition)",
+      "translation_ar": "ضغط شحن زائد: تجاوز الحد المسموح",
+      "category": "P0 قياسي",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [
+          "TSI",
+          "TDI"
+        ],
+        "fuel_or_powertrain": [
+          "بنزين",
+          "ديزل"
+        ],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [],
+      "causes": [
+        "N75 أو التحكم في الشحن",
+        "تعليق ريش التيربو",
+        "خرطوم فاكيوم أو وصلة معكوسة",
+        "حساس G31"
+      ],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - فهرسة",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/16618/P0234/000564",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "P0401",
+      "code_format": {
+        "primary": "P0401",
+        "aliases": [
+          "16785",
+          "001025"
+        ],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "01-Engine / ECM",
+      "definition_en": "Exhaust Gas Recirculation (EGR) System: Insufficient Flow Detected",
+      "translation_ar": "نظام تدوير غازات العادم EGR: تدفق أقل من المطلوب",
+      "category": "P0 قياسي",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [
+          "TDI",
+          "some petrol EGR-equipped"
+        ],
+        "fuel_or_powertrain": [
+          "ديزل",
+          "بنزين حيث يوجد EGR"
+        ],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [
+        "ضعف عزم أو خشونة",
+        "انبعاثات مرتفعة",
+        "MIL"
+      ],
+      "causes": [
+        "تراكم الكربون/انسداد مجاري EGR",
+        "صمام EGR عالق أو غير مستجيب",
+        "سلك أو فيشة EGR",
+        "ترابط ضغط العادم ونظام EGR في بعض أنظمة CR-TDI"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "task": "تسجيل Freeze Frame والأعطال المرتبطة EGR/DPF/Exhaust pressure",
+          "source_type": "Ross-Tech"
+        },
+        {
+          "order": 2,
+          "task": "فحص رواسب الكربون ومسار EGR للانسداد",
+          "source_type": "Ross-Tech"
+        },
+        {
+          "order": 3,
+          "task": "اختبار الأمر للصمام مع مراقبة Actual vs Specified أو التغير في MAF حيث يدعم ECU",
+          "source_type": "استنتاج فني، ليس مواصفة موحدة"
+        },
+        {
+          "order": 4,
+          "task": "فحص أسلاك/موصلات EGR وOutput Test المناسب قبل تغييره",
+          "source_type": "Ross-Tech"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "EGR specified / commanded position",
+          "name_ar": "موضع EGR المطلوب",
+          "spec": "غير مؤكد"
+        },
+        {
+          "name_en": "EGR actual position",
+          "name_ar": "موضع EGR الفعلي",
+          "spec": "غير مؤكد"
+        },
+        {
+          "name_en": "Mass air flow: actual",
+          "name_ar": "كتلة هواء الدخول الفعلية",
+          "spec": "غير مؤكد"
+        },
+        {
+          "name_en": "Exhaust pressure",
+          "name_ar": "ضغط غازات العادم",
+          "spec": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "EGR valve",
+          "name_ar": "صمام تدوير غازات العادم",
+          "location": "بين نظام العادم والسحب؛ يختلف بمحرّكات PD/CR TDI"
+        },
+        {
+          "name_en": "EGR cooler where fitted",
+          "name_ar": "مبرد EGR إن وجد",
+          "location": "حسب مخطط المحرك المحدد"
+        }
+      ],
+      "images": {
+        "type": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Skoda+Octavia+1.9+TDI+EGR+valve+intake+location",
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": "https://www.youtube.com/results?search_query=Skoda+Octavia+1.9+TDI+EGR+P0401+cleaning+diagnosis",
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - تفصيل تشخيصي",
+        "basis": "تغطية Ross-Tech واسعة لكن نشرات NAR المشار إليها لبعض VW لا تُعمم على سكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/16785/P0401",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "P0441",
+      "code_format": {
+        "primary": "P0441",
+        "aliases": [
+          "16825",
+          "001089"
+        ],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "01-Engine / ECM",
+      "definition_en": "EVAP Emission Control System: Incorrect Flow",
+      "translation_ar": "منظومة تبخير الوقود EVAP: تدفق غير صحيح",
+      "category": "P0 قياسي",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [
+          "petrol EVAP-equipped"
+        ],
+        "fuel_or_powertrain": [
+          "بنزين"
+        ],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [],
+      "causes": [
+        "صمام N80 عالق",
+        "علبة فحم EVAP",
+        "تسريب/انسداد خراطيم تهوية الخزان"
+      ],
+      "diagnostic_steps": [
+        "فحص خراطيم EVAP ثم Output Test للصمام المناسب",
+        "مراقبة EVAP purge activation إذا توفر"
+      ],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - فهرسة",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/16825/P0441/001089",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "P0016",
+      "code_format": {
+        "primary": "P0016",
+        "aliases": [
+          "16400",
+          "000022"
+        ],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "01-Engine / ECM",
+      "definition_en": "Bank 1: Camshaft Position Sensor (G40) / Engine Speed Sensor (G28): Incorrect Correlation",
+      "translation_ar": "عدم تطابق توقيت حساس عمود الكامات G40 مع حساس سرعة/عمود المرفق G28",
+      "category": "P0 قياسي",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [
+          "chain or belt timing engine-specific"
+        ],
+        "fuel_or_powertrain": [
+          "بنزين",
+          "ديزل بحسب ECU"
+        ],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [],
+      "causes": [
+        "توقيت غير صحيح",
+        "شداد/سلسلة/حزام",
+        "Camshaft adjuster"
+      ],
+      "diagnostic_steps": [
+        "تحقق من إشارة التزامن ومن علامات التوقيت وفق دليل المحرك قبل أي تغيير حساس"
+      ],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - فهرسة",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/16400/P0016/000022",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "P2563",
+      "code_format": {
+        "primary": "P2563",
+        "aliases": [
+          "18995",
+          "009571"
+        ],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "01-Engine / ECM",
+      "definition_en": "Turbocharger Boost Control Position Sensor Circuit: Implausible Signal",
+      "translation_ar": "إشارة غير منطقية في دائرة حساس موضع مشغل التحكم بالتيربو",
+      "category": "P2 قياسي",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [
+          "TDI turbo with G581 where fitted"
+        ],
+        "fuel_or_powertrain": [
+          "ديزل"
+        ],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [],
+      "causes": [
+        "G581 أو سلكه",
+        "تعليق ريش التيربو",
+        "تسريب فاكيوم N75/المشغل"
+      ],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - فهرسة",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/18995/P2563/009571",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "P2015",
+      "code_format": {
+        "primary": "P2015",
+        "aliases": [
+          "18447",
+          "008213"
+        ],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "01-Engine / ECM",
+      "definition_en": "Intake Manifold Flap Position Sensor (Bank 1): Implausible Signal",
+      "translation_ar": "إشارة غير منطقية من حساس موضع بوابات مجمع السحب - بنك 1",
+      "category": "P2 قياسي",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [
+          "engines fitted with intake manifold runner flap"
+        ],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [],
+      "causes": [
+        "مشغل V157 أو بوابة السحب",
+        "أسلاك ووصلات",
+        "برنامج ECU لبعض النسخ"
+      ],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - فهرسة",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/18447/P2015/008213",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "P242F",
+      "code_format": {
+        "primary": "P242F",
+        "aliases": [
+          "009263"
+        ],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "01-Engine / ECM",
+      "definition_en": "Diesel Particulate Filter (Bank 1): Restricted/Clogged",
+      "translation_ar": "فلتر جسيمات الديزل DPF (بنك 1) مسدود أو مقيد التدفق",
+      "category": "P2 قياسي",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [
+          "TDI equipped with DPF"
+        ],
+        "fuel_or_powertrain": [
+          "ديزل"
+        ],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [
+        "MIL",
+        "قيود على التجديد أو قدرة المحرك محتملة"
+      ],
+      "causes": [
+        "تراكم حمل الفلتر أو انسداده",
+        "مشكلة مرافقة في نظام العادم/الحساسات تحتاج تحقق"
+      ],
+      "diagnostic_steps": [
+        "قراءة DPF load وDifferential pressure",
+        "تشخيص الأسباب الأخرى قبل أي قرار Regeneration",
+        "لا تنفذ forced regeneration إذا لم تتحقق شروط المصنع ومستوى الحمل والحرارة"
+      ],
+      "live_data": [
+        {
+          "name_en": "Particle filter soot mass: calculated",
+          "name_ar": "كتلة السخام المحسوبة",
+          "spec": "غير مؤكد"
+        },
+        {
+          "name_en": "Differential pressure across particulate filter",
+          "name_ar": "فرق الضغط على فلتر الجسيمات",
+          "spec": "غير مؤكد"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - فهرسة",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/P242F/009263",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "P119A",
+      "code_format": {
+        "primary": "P119A",
+        "aliases": [
+          "004506"
+        ],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "01-Engine / ECM",
+      "definition_en": "Fuel Pressure Sensor (G247): Malfunction",
+      "translation_ar": "خلل في حساس ضغط الوقود G247",
+      "category": "P1 خاص بالمصنع/ VAG",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [
+          "direct-injection engines with G247"
+        ],
+        "fuel_or_powertrain": [
+          "بنزين",
+          "ديزل بحسب التركيب"
+        ],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [],
+      "causes": [
+        "G247 أو توصيلاته",
+        "مضخة الضغط العالي HPFP",
+        "حقن وقود يتسرب",
+        "N276/N290 حيث يوجد"
+      ],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "لاحق",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/P119A/004506",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "P053F",
+      "code_format": {
+        "primary": "P053F",
+        "aliases": [
+          "001343"
+        ],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "01-Engine / ECM",
+      "definition_en": "Fuel Pressure too Low during Cold Start",
+      "translation_ar": "ضغط الوقود منخفض جداً عند بدء التشغيل البارد",
+      "category": "P0 قياسي",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [
+          "direct injection engines ECU-dependent"
+        ],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [],
+      "causes": [
+        "نقص التغذية من مضخة الخزان",
+        "G247",
+        "N276"
+      ],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "لاحق",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/P053F/001343",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "P0562",
+      "code_format": {
+        "primary": "P0562",
+        "aliases": [
+          "16946",
+          "001378"
+        ],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "01-Engine / ECM",
+      "definition_en": "System Voltage: Too Low",
+      "translation_ar": "جهد النظام الكهربائي منخفض جداً",
+      "category": "P0 قياسي",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [],
+      "causes": [
+        "بطارية/مولد",
+        "أسلاك تغذية وأرضي"
+      ],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - فهرسة",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/16946/P0562/001378",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "P1570",
+      "code_format": {
+        "primary": "P1570",
+        "aliases": [
+          "17978",
+          "005488"
+        ],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "01-Engine / ECM",
+      "definition_en": "Engine Start Blocked by Immobilizer",
+      "translation_ar": "تم منع تشغيل المحرك بواسطة مانع التشغيل الإلكتروني",
+      "category": "P1 خاص بالمصنع/ VAG",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [
+        "قد يشتغل المحرك ثم يتوقف بعد نحو ثوانٍ في أنظمة المفاتيح التقليدية"
+      ],
+      "causes": [
+        "مفتاح غير متعلم",
+        "عدادات/ECU غير متطابق",
+        "خلل تغذية ECU"
+      ],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - فهرسة",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/17978/P1570/005488",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "P189C",
+      "code_format": {
+        "primary": "P189C",
+        "aliases": [
+          "006300"
+        ],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "02-Auto Trans / TCM",
+      "definition_en": "Function Restriction due to Insufficient Pressure Build-Up",
+      "translation_ar": "تقييد وظيفة ناقل الحركة بسبب عدم تكوّن ضغط هيدروليكي كافٍ",
+      "category": "P1 خاص بالمصنع/ VAG",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [
+          "7-speed DSG 0AM only if gearbox identification confirms"
+        ],
+        "fuel_or_powertrain": [
+          "DSG 0AM (conditional)"
+        ],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [
+        "Basic Settings لا يكتمل"
+      ],
+      "causes": [
+        "فيوز تغذية علبة الميكاترونيك",
+        "انقطاع/هبوط جهد بأسلاك أو موصلات",
+        "وحدة mechatronic/مضختها V401"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "task": "تسجيل رقم ناقل الحركة 0AM/غيره وعنوان وحدة TCM قبل تفسير الكود",
+          "source_type": "Ross-Tech"
+        },
+        {
+          "order": 2,
+          "task": "فحص تغذية الفيوزات والجهد والهبوط تحت الحمل عند ميكاترونيك 0AM حسب مخطط السيارة",
+          "source_type": "Ross-Tech"
+        },
+        {
+          "order": 3,
+          "task": "فحص استجابة Pressure build up وقياسات الضغط إذا كانت ECU تدعمها، دون افتراض مواصفة عددية",
+          "source_type": "استنتاج"
+        },
+        {
+          "order": 4,
+          "task": "لا تستبدل Mechatronic حتى يثبت سلامة الفيوز والتغذية والأرضي وأسلاك الموصل",
+          "source_type": "استنتاج تشخيصي"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Hydraulic pressure: actual",
+          "name_ar": "ضغط الهيدروليك الفعلي",
+          "spec": "غير مؤكد واسم القناة يتغير حسب ECU"
+        },
+        {
+          "name_en": "Hydraulic pump activation",
+          "name_ar": "تشغيل المضخة الهيدروليكية",
+          "spec": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Mechatronic pump motor (V401) for 0AM DSG",
+          "name_ar": "محرك مضخة وحدة الميكاترونيك V401 لناقل 0AM",
+          "location": "داخل وحدة ميكاترونيك ناقل DSG 0AM إذا تأكد رقم الناقل"
+        }
+      ],
+      "images": {
+        "type": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Skoda+Octavia+DSG+DQ200+0AM+mechatronic+25+pin+connector+location",
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": "Ross-Tech يذكر Pin 9 تغذية بطارية بموصل 25-pin لـ DSG 0AM فقط؛ لا تعتمدها دون تأكيد نوع DSG والمخطط الأصلي"
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": "https://www.youtube.com/results?search_query=Skoda+Octavia+DSG+DQ200+0AM+P189C+mechatronic+fuse+hydraulic+pump+test",
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - تفصيل تشخيصي",
+        "basis": "توثيق إجراء Ross-Tech الخاص بـ DSG 0AM؛ ليس إثباتاً أنه شائع في سكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/P189C/006300",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "P261A",
+      "code_format": {
+        "primary": "P261A",
+        "aliases": [
+          "009754"
+        ],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "01-Engine / ECM",
+      "definition_en": "Coolant Pump 2: Open Circuit",
+      "translation_ar": "دائرة مفتوحة في مضخة سائل التبريد الثانية",
+      "category": "P2 قياسي",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [
+          "only engines equipped with coolant pump 2"
+        ],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": "إرشادات الاستدعاء الأمريكي في الصفحة تخص Audi محددة ولا تُنسب إلى سكودا"
+      },
+      "symptoms": [],
+      "causes": [
+        "مضخة كهربائية معيبة أو مفصولة",
+        "أسلاك/موصلات حسب نسخة المحرك"
+      ],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "لاحق",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/P261A/009754",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "P0088",
+      "code_format": {
+        "primary": "P0088",
+        "aliases": [],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "01-Engine / ECM",
+      "definition_en": "Fuel Rail/System Pressure: Too High",
+      "translation_ar": "ضغط مسطرة الوقود/النظام أعلى من المسموح",
+      "category": "P0 قياسي",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [
+          "direct injection engines"
+        ],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [],
+      "causes": [
+        "G247",
+        "N276/N290",
+        "ميكانيكا مضخة الضغط العالي أو توقيتها في بعض المحركات"
+      ],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "لاحق",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/P0088",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "P2263",
+      "code_format": {
+        "primary": "P2263",
+        "aliases": [
+          "18695",
+          "008803"
+        ],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "01-Engine / ECM",
+      "definition_en": "Turbo/Super Charger Boost System: Performance",
+      "translation_ar": "خلل أداء نظام ضغط التيربو/السوبرتشارجر",
+      "category": "P2 قياسي",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [
+          "TSI/TDI charged engines"
+        ],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [],
+      "causes": [
+        "خرطوم تسريب/انسداد",
+        "N75 حيث موجود",
+        "وضع المشغل G581 في بعض المحركات"
+      ],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "لاحق",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/18695/P2263/008803",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "B108C",
+      "code_format": {
+        "primary": "B108C",
+        "aliases": [
+          "037004"
+        ],
+        "protocol": "UDS/enhanced possible; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "08-Auto HVAC / Climatronic",
+      "definition_en": "Motor for Left Temperature Flap",
+      "translation_ar": "محرك بوابة توزيع حرارة الجهة اليسرى",
+      "category": "B1 خاص بالمصنع/ VAG",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [],
+      "causes": [
+        "فيوز",
+        "فيشة أو أسلاك المحرك",
+        "بوابة حرارة عالقة",
+        "المحرك نفسه"
+      ],
+      "diagnostic_steps": [
+        "قارن طلب الحرارة مع حركة flap motor في القياسات",
+        "Output Test / Basic Setting بعد تحقق أمان الحركة"
+      ],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "لاحق",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/B108C/037004",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "B2000",
+      "code_format": {
+        "primary": "B2000",
+        "aliases": [],
+        "protocol": "UDS/enhanced possible; ECU-specific validation required",
+        "failure_type": "00 (documented scan instance only)",
+        "fault_status": null
+      },
+      "ecu": "Depends on ECU: 15-Airbags /17-Instruments / etc",
+      "definition_en": "Control Module: Defective",
+      "translation_ar": "خلل داخلي في وحدة التحكم",
+      "category": "B2 خاص بالمصنع/ VAG",
+      "applicability": {
+        "skoda_applicability": "observed-in-Skoda",
+        "models": [],
+        "generations": [
+          "Octavia IV"
+        ],
+        "years": [
+          2020
+        ],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": "شوهد B2000 00 في فحص Octavia MK4 2020 المنشور؛ لا يلزم أن نفس الوحدة موجودة بكل سكودا"
+      },
+      "symptoms": [
+        "MIL/تعطل وظيفة حسب وحدة التحكم"
+      ],
+      "causes": [
+        "خلل داخلي محتمل في وحدة التحكم بحسب سياق ECU"
+      ],
+      "diagnostic_steps": [
+        "سجل الوحدة ورقم القطعة/السوفتوير والجهد والأكواد المصاحبة",
+        "ملاحظة أمان: لا تصلح وحدات Airbag ولا تركّب مستعملة خلاف توجيهات المصنع"
+      ],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - فهرسة",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/B2000",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        },
+        {
+          "url": "https://forums.ross-tech.com/index.php?threads/49946/",
+          "publisher": "Ross-Tech forum; Octavia IV 2020 diagnostic case",
+          "reviewed_on": "2026-10-15",
+          "document_version": "forum auto-scan"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": true,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "B2010",
+      "code_format": {
+        "primary": "B2010",
+        "aliases": [],
+        "protocol": "UDS/enhanced possible; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "Multiple ECUs (vehicle-specific)",
+      "definition_en": "No Basic Setting",
+      "translation_ar": "الإعداد الأساسي غير مكتمل أو مفقود",
+      "category": "B2 خاص بالمصنع/ VAG",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [],
+      "causes": [
+        "فقدان معايرة/Basic Setting"
+      ],
+      "diagnostic_steps": [
+        "حدد عنوان ECU أولاً قبل تنفيذ Basic Settings؛ الإجراء يختلف كلياً"
+      ],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "لاحق",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/B2010",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "B10B3",
+      "code_format": {
+        "primary": "B10B3",
+        "aliases": [
+          "037043"
+        ],
+        "protocol": "UDS/enhanced possible; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "15-Airbags / seat recognition depending on design",
+      "definition_en": "Seat Occupied Recognition: Function Restriction due to Implausible Message(s)",
+      "translation_ar": "تقييد وظيفة التعرف على شغل المقعد بسبب رسائل غير منطقية",
+      "category": "B1 خاص بالمصنع/ VAG",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [],
+      "causes": [
+        "رسالة خاطئة من وحدة أخرى",
+        "كود مرافق في وحدة أخرى"
+      ],
+      "diagnostic_steps": [
+        "فحص أخطاء الوحدات المرتبطة قبل استبدال أي مكون سلامة"
+      ],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "لاحق",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/B10B3/037043",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "B10FC",
+      "code_format": {
+        "primary": "B10FC",
+        "aliases": [
+          "B10FC 13"
+        ],
+        "protocol": "UDS/enhanced possible; ECU-specific validation required",
+        "failure_type": "13 (Open Circuit, actual Superb 2016 scan)",
+        "fault_status": null
+      },
+      "ecu": "10-Park/Steer Assist / PLA 3.0",
+      "definition_en": "Front Parking Aid Sensor(s): Open Circuit",
+      "translation_ar": "حساس/حساسات الركن الأمامية: دائرة مفتوحة",
+      "category": "B1 خاص بالمصنع/ UDS VAG",
+      "applicability": {
+        "skoda_applicability": "observed-in-Skoda",
+        "models": [
+          "Superb III (2016 actual scan)"
+        ],
+        "generations": [
+          "Superb III"
+        ],
+        "years": [
+          2016
+        ],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [
+          "engine-independent; parking equipment specific"
+        ],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": "اللاحقة 13 = Open Circuit في سجل Superb المعروض؛ بقية اللاحقات غير موثقة"
+      },
+      "symptoms": [
+        "تعطل حساسات الركن الأمامية بحسب وحدة PLA"
+      ],
+      "causes": [
+        "قطع في سلك أو موصل الحساس",
+        "حساس معيب؛ لا يمكن إثباته من الرمز وحده"
+      ],
+      "diagnostic_steps": [
+        "حدد الحساس المعني عبر قياسات PLA ثم افحص التغذية والإشارة حسب رسم VIN"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "name_en": "Front parking ultrasonic sensor",
+          "name_ar": "حساس ركن أمامي",
+          "location": "الصدام الأمامي بحسب تجهيز Superb III، الحساس المعني يحتاج ECU measurement"
+        }
+      ],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - فهرسة",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://forums.ross-tech.com/index.php?threads/44514/",
+          "publisher": "Ross-Tech forum; Skoda Superb 2016 VCDS log",
+          "reviewed_on": "2026-10-15",
+          "document_version": "2023 logged scan"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Actual VCDS scan of Škoda Superb 2016",
+        "skoda_observed": true,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "C10AC",
+      "code_format": {
+        "primary": "C10AC",
+        "aliases": [],
+        "protocol": "UDS/enhanced possible; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "44-Steering Assist / J500",
+      "definition_en": "Steering End Stops Not Learned",
+      "translation_ar": "حدود نهاية دوران المقود لم تُعلَّم/تُعاير",
+      "category": "C1 خاص بالمصنع/ VAG",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [],
+      "causes": [
+        "غياب معايرة نهاية المقود بعد G85"
+      ],
+      "diagnostic_steps": [
+        "تحديد ECU/ABS ومراجعة إجراء معايرة Steering end stops المطابق",
+        "لا تفترض إجراء Golf 7 صالحاً تلقائياً لسكودا"
+      ],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "لاحق",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/C10AC",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "C1011",
+      "code_format": {
+        "primary": "C1011",
+        "aliases": [],
+        "protocol": "UDS/enhanced possible; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "53-Parking Brake / EPB",
+      "definition_en": "Brake Pad Replacement Mode Active",
+      "translation_ar": "وضع تغيير بطانات الفرامل الخلفية ما زال مفعّلاً",
+      "category": "C1 خاص بالمصنع/ VAG",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [],
+      "causes": [
+        "وضع خدمة فرامل إلكترونية لم ينته"
+      ],
+      "diagnostic_steps": [
+        "إنهاء Brake pad replacement mode وفق وحدة EPB",
+        "عدم قيادة السيارة قبل استكمال العمل/اختبار الفرامل"
+      ],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "لاحق",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/C1011",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "C10AD",
+      "code_format": {
+        "primary": "C10AD",
+        "aliases": [],
+        "protocol": "UDS/enhanced possible; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "44-Steering Assist",
+      "definition_en": "Position Sensor for Motor: Signal Implausible",
+      "translation_ar": "إشارة غير منطقية من حساس موضع محرك التوجيه الكهربائي",
+      "category": "C1 خاص بالمصنع/ VAG",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": "الأمثلة المنشورة لأودي لا تُثبت انطباقها على وحدات سكودا"
+      },
+      "symptoms": [],
+      "causes": [
+        "حساس الموضع",
+        "برنامج وحدة توجيه في تطبيقات معينة"
+      ],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "لاحق",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/C10AD",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "U0103",
+      "code_format": {
+        "primary": "U0103",
+        "aliases": [
+          "28775",
+          "049411"
+        ],
+        "protocol": "UDS/enhanced possible; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "19-CAN Gateway/02-TCM depending on log",
+      "definition_en": "No Communication with Gear Selector Module",
+      "translation_ar": "انقطاع الاتصال بوحدة اختيار السرعات",
+      "category": "U0 قياسي",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [
+          "automatic gearbox with gear-selector module J587 where fitted"
+        ],
+        "fuel_or_powertrain": [
+          "أوتوماتيك"
+        ],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [],
+      "causes": [
+        "فشل اتصال J587",
+        "عطل CAN-Gateway-to-TCM",
+        "مفتاح اختيار E313"
+      ],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "لاحق",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/28775/U0103/049411",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "U1122",
+      "code_format": {
+        "primary": "U1122",
+        "aliases": [
+          "U1122 00"
+        ],
+        "protocol": "UDS/enhanced possible; ECU-specific validation required",
+        "failure_type": "00 (documented scan instance only)",
+        "fault_status": null
+      },
+      "ecu": "Multiple ECUs (record the reporting address)",
+      "definition_en": "Databus: Implausible Message",
+      "translation_ar": "ناقل البيانات: رسالة غير منطقية",
+      "category": "U1 خاص بالمصنع/ VAG",
+      "applicability": {
+        "skoda_applicability": "observed-in-Skoda",
+        "models": [
+          "Octavia III 2017 actual scan"
+        ],
+        "generations": [
+          "Octavia III"
+        ],
+        "years": [
+          2014,
+          2017
+        ],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [
+          "not engine specific; ASAM/module software matters"
+        ],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [
+        "أخطاء ESP/ABS أو وحدات شبكية بحسب ECU"
+      ],
+      "causes": [
+        "رسالة غير متسقة قادمة من وحدة أخرى",
+        "ترميز أو VIN غير مطابق بعد تبديل وحدة (في حالة موثقة)",
+        "خلل شبكة أو برمجيات، يحتاج تمييز حسب ECU"
+      ],
+      "diagnostic_steps": [
+        "احتفظ بالنص بين الأقواس وASAM dataset وتحديد المرسل/المستقبل",
+        "افحص أخطاء المصدر قبل تبديل الوحدة المستقبلة"
+      ],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - فهرسة",
+        "basis": "أكواد U1122 00 موثقة بفحص Octavia 2017؛ حالة تشخيصية لا مقياس انتشار",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/U1122",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        },
+        {
+          "url": "https://forums.ross-tech.com/index.php?threads/13188/",
+          "publisher": "Ross-Tech forum; Octavia III 2017 auto-scan",
+          "reviewed_on": "2026-10-15",
+          "document_version": "2017 vehicle scan"
+        },
+        {
+          "url": "https://forums.ross-tech.com/index.php?threads/32526/",
+          "publisher": "Ross-Tech forum; Octavia 2014 scan",
+          "reviewed_on": "2026-10-15",
+          "document_version": "2022 scan"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": true,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "U1123",
+      "code_format": {
+        "primary": "U1123",
+        "aliases": [
+          "U1123 00"
+        ],
+        "protocol": "UDS/enhanced possible; ECU-specific validation required",
+        "failure_type": "00 (documented scan instance only)",
+        "fault_status": null
+      },
+      "ecu": "Multiple: 01-Engine,03-ABS,10-Park,13-ACC,44-Steering",
+      "definition_en": "Databus: Received Error Message",
+      "translation_ar": "ناقل البيانات: تم استقبال رسالة خطأ",
+      "category": "U1 خاص بالمصنع/ VAG",
+      "applicability": {
+        "skoda_applicability": "observed-in-Skoda",
+        "models": [
+          "Octavia III auto-scan",
+          "Superb III 2016 actual scan",
+          "Enyaq 2022 actual scan"
+        ],
+        "generations": [
+          "Octavia III",
+          "Superb III",
+          "Enyaq"
+        ],
+        "years": [
+          2014,
+          2016,
+          2018,
+          2022
+        ],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": "المصدر الأساسي للرمز من سجلات سكودا المباشرة؛ لا يوجد صفحة Wiki متخصصة مستقلة للتحقق من تعريفه"
+      },
+      "symptoms": [],
+      "causes": [
+        "وحدة مصدر تبعث قيمة حالة فاشلة",
+        "خلل مرتبط بوحدة ABS/ESP أو معايرة أو ترميز حسب رسالة ASAM",
+        "خلل تغذية/شبكة محتمل لكن لا يثبت من الكود منفرداً"
+      ],
+      "diagnostic_steps": [
+        "اقرأ التفسير الإضافي للرسالة مثل ESP_Systemstatus أو SNA_Check",
+        "شخّص DTC الأساسي في الوحدة المرسلة قبل استبدال المستقبل"
+      ],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - فهرسة",
+        "basis": "شوهد بكثرة في السجلات المنشورة المختلفة (ليس ترتيب انتشار إحصائي)",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://forums.ross-tech.com/index.php?threads/34625/",
+          "publisher": "Ross-Tech forum; Skoda Octavia actual auto-scan",
+          "reviewed_on": "2026-10-15",
+          "document_version": "2022 scan"
+        },
+        {
+          "url": "https://forums.ross-tech.com/index.php?threads/44514/",
+          "publisher": "Ross-Tech forum; Skoda Superb actual scan",
+          "reviewed_on": "2026-10-15",
+          "document_version": "2023 scan"
+        },
+        {
+          "url": "https://forums.ross-tech.com/index.php?threads/47651/",
+          "publisher": "Ross-Tech forum; Enyaq 2022 auto-scan",
+          "reviewed_on": "2026-10-15",
+          "document_version": "forum 2025"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Actual VCDS auto-scan text in Skoda user forum examples",
+        "skoda_observed": true,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "U1400",
+      "code_format": {
+        "primary": "U1400",
+        "aliases": [
+          "31896",
+          "054272",
+          "U1400 00"
+        ],
+        "protocol": "UDS/enhanced possible; ECU-specific validation required",
+        "failure_type": "00 (documented scan instance only)",
+        "fault_status": null
+      },
+      "ecu": "10-Parking Aid / multiple ECUs depending on scan",
+      "definition_en": "Function Restricted due to Insufficient Voltage",
+      "translation_ar": "تقييد الوظيفة بسبب انخفاض الجهد الكهربائي",
+      "category": "U1 خاص بالمصنع/ VAG",
+      "applicability": {
+        "skoda_applicability": "observed-in-Skoda",
+        "models": [
+          "Superb III (2016 actual scan)"
+        ],
+        "generations": [
+          "Superb III"
+        ],
+        "years": [
+          2016
+        ],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [],
+      "causes": [
+        "هبوط الجهد",
+        "بطارية أو شحن أو توصيلات بحسب وحدة التسجيل"
+      ],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - فهرسة",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/31896/U1400/054272",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        },
+        {
+          "url": "https://forums.ross-tech.com/index.php?threads/44514/",
+          "publisher": "Ross-Tech forum; Superb 2016 parking aid scan",
+          "reviewed_on": "2026-10-15",
+          "document_version": "2023 scan"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": true,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "U1101",
+      "code_format": {
+        "primary": "U1101",
+        "aliases": [
+          "29797",
+          "053505"
+        ],
+        "protocol": "UDS/enhanced possible; ECU-specific validation required",
+        "failure_type": "00 (documented scan instance only)",
+        "fault_status": null
+      },
+      "ecu": "13-ACC / potentially other ECUs",
+      "definition_en": "Component Protection: Active",
+      "translation_ar": "حماية مكونات VAG مفعّلة",
+      "category": "U1 خاص بالمصنع/ VAG",
+      "applicability": {
+        "skoda_applicability": "observed-in-Skoda",
+        "models": [
+          "Octavia III actual scan"
+        ],
+        "generations": [
+          "Octavia III"
+        ],
+        "years": [
+          2018
+        ],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [],
+      "causes": [
+        "حماية مكوّنات/تطابق وحدة لم يكتمل"
+      ],
+      "diagnostic_steps": [
+        "تحقق من صلاحية إجراءات المصنع الإلكترونية؛ لا تحاول تجاوز حماية المكونات"
+      ],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "لاحق",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/29797/U1101/053505",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        },
+        {
+          "url": "https://forums.ross-tech.com/index.php?threads/19983/",
+          "publisher": "Ross-Tech forum; Octavia 2018 scan",
+          "reviewed_on": "2026-10-15",
+          "document_version": "2019 scan"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": true,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "00446",
+      "code_format": {
+        "primary": "00446",
+        "aliases": [],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "Multiple ECUs",
+      "definition_en": "Function Limitation due to Under-Voltage",
+      "translation_ar": "تقييد الوظائف بسبب انخفاض الجهد",
+      "category": "VAG legacy numeric (enhanced)",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [],
+      "causes": [
+        "ضعف البطارية",
+        "دينامو",
+        "فيوز أو جهد تغذية منخفض"
+      ],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - فهرسة",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/00446",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "00532",
+      "code_format": {
+        "primary": "00532",
+        "aliases": [],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": "Signal too Low",
+        "fault_status": null
+      },
+      "ecu": "Multiple ECUs",
+      "definition_en": "Supply Voltage B+: Signal too Low",
+      "translation_ar": "جهد التغذية B+ منخفض",
+      "category": "VAG legacy numeric (enhanced)",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": "احفظ subfault منفصلاً؛ lower vs upper يتطلب مسارين مختلفين"
+      },
+      "symptoms": [],
+      "causes": [
+        "تغذية/أرضي وحدة مفردة",
+        "مولد/بطارية مشتركة عند ظهور العطل بوحدات متعددة"
+      ],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - فهرسة",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/00532",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "01176",
+      "code_format": {
+        "primary": "01176",
+        "aliases": [],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "17-Instruments/25-Immobilizer/46-Comfort context-dependent",
+      "definition_en": "Key: Signal too Low",
+      "translation_ar": "المفتاح: قوة الإشارة منخفضة",
+      "category": "VAG legacy numeric (enhanced)",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": "لا تخلط transponder immobilizer مع بطارية ريموت القفل"
+      },
+      "symptoms": [],
+      "causes": [
+        "ملف قراءة مانع التشغيل أو المفتاح",
+        "بطارية ريموت إن كان العطل في Remote Control (سيناريو مختلف)"
+      ],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - فهرسة",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01176",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "01276",
+      "code_format": {
+        "primary": "01276",
+        "aliases": [],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": "Electrical Fault in Circuit",
+        "fault_status": null
+      },
+      "ecu": "03-ABS / J104",
+      "definition_en": "ABS Hydraulic Pump (V64): Electrical Fault in Circuit",
+      "translation_ar": "مضخة ABS (V64): عطل كهربائي في الدائرة",
+      "category": "VAG legacy numeric (enhanced)",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": "نفس الرقم تتبعه أوصاف فرعية متعددة موثقة؛ لا تخزن تفسيراً واحداً ثابتاً"
+      },
+      "symptoms": [],
+      "causes": [
+        "فيوز تغذية/أرضي",
+        "وصلات/أسلاك",
+        "مضخة V64"
+      ],
+      "diagnostic_steps": [
+        "فحص فيوزات ABS وخصوصاً قرب البطارية على المنصات ذات الصلة",
+        "اختبار هبوط الجهد تحت حمل المضخة حسب مخطط ABS"
+      ],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - فهرسة",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01276",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "01314",
+      "code_format": {
+        "primary": "01314",
+        "aliases": [],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": "No Communications",
+        "fault_status": null
+      },
+      "ecu": "19-CAN Gateway/03-ABS/other reporter",
+      "definition_en": "Engine Control Module: No Communications",
+      "translation_ar": "انقطاع الاتصال بوحدة تحكم المحرك",
+      "category": "VAG legacy numeric (enhanced)",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": "لا توجد تطابقات PIN لسكودا محددة حالياً"
+      },
+      "symptoms": [],
+      "causes": [
+        "تغذية ECM أو أرضيه",
+        "فيوز أو خطوط CAN أو الوصلات"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "task": "تمييز No Communications عن Check DTC Memory؛ لا تعاملهما كعطل واحد",
+          "source_type": "Ross-Tech"
+        },
+        {
+          "order": 2,
+          "task": "أجرِ Auto-Scan كاملاً وتحقق هل 01-Engine قابل للاتصال",
+          "source_type": "Ross-Tech"
+        },
+        {
+          "order": 3,
+          "task": "عند فقد الاتصال افحص التغذية والأرضي والـCAN وفيوزات ECM حسب مخطط السيارة",
+          "source_type": "استنتاج تشخيصي"
+        },
+        {
+          "order": 4,
+          "task": "عند Check DTC Memory اقرأ أعطال 01-Engine وأصلح السبب هناك أولاً",
+          "source_type": "Ross-Tech"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "CAN bus communication status",
+          "name_ar": "حالة الاتصال بشبكة CAN",
+          "spec": "غير مؤكد؛ MVB125+ لبعض النسخ القديمة فقط"
+        },
+        {
+          "name_en": "Supply voltage / Terminal 30",
+          "name_ar": "جهد التغذية الدائم",
+          "spec": "غير مؤكد"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - تفصيل تشخيصي",
+        "basis": "Ross-Tech يُظهر صراحة حالتين فرعيتين مختلفتين؛ أولوية منع التشخيص الخاطئ",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01314",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "00778",
+      "code_format": {
+        "primary": "00778",
+        "aliases": [],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": "No or Incorrect Basic Setting / Adaptation",
+        "fault_status": null
+      },
+      "ecu": "03-ABS /44-Steering Assist",
+      "definition_en": "Steering Angle Sensor (G85): No or Incorrect Basic Setting / Adaptation",
+      "translation_ar": "حساس زاوية المقود G85: معايرة أساسية مفقودة/خاطئة",
+      "category": "VAG legacy numeric (enhanced)",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": "يوجد نص مرجعي 0 ±5° لكن لم يُربط بوحدة ABS لسيارة سكودا معينة"
+      },
+      "symptoms": [],
+      "causes": [
+        "Basic Setting لم يكتمل"
+      ],
+      "diagnostic_steps": [
+        "تحقق من قيمة G85 مع وضع المقود مستقيماً",
+        "اختر إجراء Basic Setting حسب MK60/MK70 وموديل سكودا",
+        "تحقق من استكمال تهيئة الحساس بعد الاختبار إذا كانت ECU تتطلب ذلك"
+      ],
+      "live_data": [
+        {
+          "name_en": "Steering angle sensor (G85)",
+          "name_ar": "زاوية المقود G85",
+          "spec": "Ross-Tech يذكر قرابة 0 ±5° في حالة عجلات مستقيمة؛ تحقق من النسخة"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - فهرسة",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/00778",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "03803",
+      "code_format": {
+        "primary": "03803",
+        "aliases": [],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": null,
+        "fault_status": null
+      },
+      "ecu": "44-Steering Assist",
+      "definition_en": "Steering Angle Sensor for Steering Aid: No or Incorrect Basic Setting / Adaptation",
+      "translation_ar": "حساس زاوية المقود لدعم التوجيه: معايرة غير مكتملة",
+      "category": "VAG legacy numeric (enhanced)",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": ""
+      },
+      "symptoms": [],
+      "causes": [
+        "استبدال توجيه كهربائي",
+        "G85 غير معاير"
+      ],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "لاحق",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/03803",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "00532",
+      "code_format": {
+        "primary": "00532",
+        "aliases": [],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": "Upper Limit Exceeded",
+        "fault_status": null
+      },
+      "ecu": "Multiple ECUs",
+      "definition_en": "Supply Voltage B+: Upper Limit Exceeded",
+      "translation_ar": "جهد التغذية B+ أعلى من الحد المسموح",
+      "category": "VAG legacy numeric (enhanced)",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": "احفظ subfault منفصلاً؛ lower vs upper يتطلب مسارين مختلفين"
+      },
+      "symptoms": [],
+      "causes": [
+        "منظم جهد المولد",
+        "جهد زائد من جهاز شحن خارجي أو توصيل خاطئ"
+      ],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - فهرسة",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/00532",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "01314",
+      "code_format": {
+        "primary": "01314",
+        "aliases": [],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": "Check DTC Memory",
+        "fault_status": null
+      },
+      "ecu": "19-CAN Gateway/03-ABS/other reporter",
+      "definition_en": "Engine Control Module: Check DTC Memory",
+      "translation_ar": "يرجى مراجعة ذاكرة أعطال وحدة المحرك",
+      "category": "VAG legacy numeric (enhanced)",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": "لا توجد تطابقات PIN لسكودا محددة حالياً"
+      },
+      "symptoms": [],
+      "causes": [
+        "أكواد فعلية مسجلة داخل ECM تتسبب برسالة في الوحدة الأخرى"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "task": "تمييز No Communications عن Check DTC Memory؛ لا تعاملهما كعطل واحد",
+          "source_type": "Ross-Tech"
+        },
+        {
+          "order": 2,
+          "task": "أجرِ Auto-Scan كاملاً وتحقق هل 01-Engine قابل للاتصال",
+          "source_type": "Ross-Tech"
+        },
+        {
+          "order": 3,
+          "task": "عند فقد الاتصال افحص التغذية والأرضي والـCAN وفيوزات ECM حسب مخطط السيارة",
+          "source_type": "استنتاج تشخيصي"
+        },
+        {
+          "order": 4,
+          "task": "عند Check DTC Memory اقرأ أعطال 01-Engine وأصلح السبب هناك أولاً",
+          "source_type": "Ross-Tech"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "CAN bus communication status",
+          "name_ar": "حالة الاتصال بشبكة CAN",
+          "spec": "غير مؤكد؛ MVB125+ لبعض النسخ القديمة فقط"
+        },
+        {
+          "name_en": "Supply voltage / Terminal 30",
+          "name_ar": "جهد التغذية الدائم",
+          "spec": "غير مؤكد"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - تفصيل تشخيصي",
+        "basis": "Ross-Tech يُظهر صراحة حالتين فرعيتين مختلفتين؛ أولوية منع التشخيص الخاطئ",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01314",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "01276",
+      "code_format": {
+        "primary": "01276",
+        "aliases": [],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": "Signal Outside Specifications",
+        "fault_status": null
+      },
+      "ecu": "03-ABS / J104",
+      "definition_en": "ABS Hydraulic Pump (V64): Signal Outside Specifications",
+      "translation_ar": "إشارة مضخة ABS (V64) خارج المواصفات",
+      "category": "VAG legacy numeric (enhanced)",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": "نفس الرقم تتبعه أوصاف فرعية متعددة موثقة؛ لا تخزن تفسيراً واحداً ثابتاً"
+      },
+      "symptoms": [],
+      "causes": [
+        "موصل المضخة للوحدة J104",
+        "أسلاك",
+        "مضخة V64 أو وحدة J104 بعد فحص الأسلاك"
+      ],
+      "diagnostic_steps": [
+        "فحص فيوزات ABS وخصوصاً قرب البطارية على المنصات ذات الصلة",
+        "اختبار هبوط الجهد تحت حمل المضخة حسب مخطط ABS"
+      ],
+      "live_data": [],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - فهرسة",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/01276",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    },
+    {
+      "brand": "Škoda",
+      "code": "00778",
+      "code_format": {
+        "primary": "00778",
+        "aliases": [],
+        "protocol": "OBD/EOBD or VAG enhanced; ECU-specific validation required",
+        "failure_type": "Implausible Signal",
+        "fault_status": null
+      },
+      "ecu": "03-ABS /44-Steering Assist",
+      "definition_en": "Steering Angle Sensor (G85): Implausible Signal",
+      "translation_ar": "حساس زاوية المقود G85: إشارة غير منطقية",
+      "category": "VAG legacy numeric (enhanced)",
+      "applicability": {
+        "skoda_applicability": "candidate shared VAG/OBD - not independently confirmed for each Škoda model",
+        "models": [],
+        "generations": [],
+        "years": [],
+        "markets": [],
+        "engine_codes": [],
+        "engine_families": [],
+        "fuel_or_powertrain": [],
+        "ecu_part_numbers": [],
+        "trigger_conditions": "غير مؤكد؛ يتطلب معاينة ECU وFreeze Frame",
+        "notes": "يوجد نص مرجعي 0 ±5° لكن لم يُربط بوحدة ABS لسيارة سكودا معينة"
+      },
+      "symptoms": [],
+      "causes": [
+        "موضع تركيب الحساس",
+        "معايرة G85",
+        "انقطاع اتصال مع J104"
+      ],
+      "diagnostic_steps": [
+        "تحقق من قيمة G85 مع وضع المقود مستقيماً",
+        "اختر إجراء Basic Setting حسب MK60/MK70 وموديل سكودا",
+        "تحقق من استكمال تهيئة الحساس بعد الاختبار إذا كانت ECU تتطلب ذلك"
+      ],
+      "live_data": [
+        {
+          "name_en": "Steering angle sensor (G85)",
+          "name_ar": "زاوية المقود G85",
+          "spec": "Ross-Tech يذكر قرابة 0 ±5° في حالة عجلات مستقيمة؛ تحقق من النسخة"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "image_search_only",
+        "url": null,
+        "warning": "نتائج بحث غير مدققة؛ لا تُعرض صورة بعينها حتى يطابق رقم المحرك/القطعة"
+      },
+      "wiring": {
+        "diagram_url": null,
+        "pinout": null,
+        "validation": "غير مؤكد؛ الحصول على مخطط erWin بحسب VIN/ECU/المحرك",
+        "technical_note": ""
+      },
+      "video": {
+        "type": "youtube_search_only",
+        "url": null,
+        "warning": "نتائج البحث ليست فيديو معتمداً فنياً"
+      },
+      "priority_evidence": {
+        "tier": "أولى - فهرسة",
+        "basis": "مرجع فني يثبت تعريف الكود؛ لا تتوفر إحصاءات انتشار خاصة بسكودا",
+        "not_a_prevalence_ranking": true
+      },
+      "sources": [
+        {
+          "url": "https://wiki.ross-tech.com/wiki/index.php/00778",
+          "publisher": "Ross-Tech Wiki; independent VAG technical reference",
+          "reviewed_on": "2026-10-15",
+          "document_version": "not specified on public page"
+        }
+      ],
+      "verification_status": {
+        "status": "قيد التوثيق",
+        "definition_verified": "Ross-Tech technical reference",
+        "skoda_observed": false,
+        "model_engine_wiring_verified": false,
+        "checked_on": "2026-10-15",
+        "missing": [
+          "Škoda erWin VIN-specific applicability",
+          "fault enabling criteria",
+          "ECU-dependent thresholds",
+          "vehicle-matched wiring/pinout",
+          "OEM image/video confirmation"
+        ]
+      }
+    }
+  ]
+}
