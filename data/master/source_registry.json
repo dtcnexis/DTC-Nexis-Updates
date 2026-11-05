@@ -212,10 +212,10 @@
       "verification": "manifest_only"
     }
   ],
-  "master_status": "PERSISTED_CLOUD_MULTI_SOURCE_8911_ROWS",
+  "master_status": "PERSISTED_CLOUD_MULTI_SOURCE_8983_ROWS",
   "master_manifest_path": "data/master/all_collected_catalog_manifest.json",
-  "materialized_text_records": 8911,
-  "current_data_collections_count": 41,
+  "materialized_text_records": 8983,
+  "current_data_collections_count": 44,
   "additional_permanent_sources": [
     {
       "source": "C_CODES_278_STAGING_RECONCILED.json",
@@ -370,9 +370,23 @@
       "canonical_delta_path": "data/master/brands/byd_batch02_new_dtc.json",
       "full_source_review_index": "data/master/reviews/byd_batch02_20261101/source_index.json",
       "quality": "REVIEW_ONLY_NO_PUBLICATION_OEM_NOT_VERIFIED"
+    },
+    {
+      "brand": "Lexus",
+      "original_file": "lexus_dtc_batch01.json",
+      "source_library_file_id": "libfile_b2306cade1408191bb53ae04a011bf6e",
+      "original_rows": 72,
+      "archive_paths": [
+        "data/master/brands/lexus_batch01_preserved_part01.json",
+        "data/master/brands/lexus_batch01_preserved_part02.json",
+        "data/master/brands/lexus_batch01_preserved_part03.json"
+      ],
+      "raw_original_sha256": null,
+      "preservation": "FULL_JSON_VALUES_SEMANTIC_EXPORT_NOT_ORIGINAL_BYTES",
+      "quality": "ALL_72_PENDING_FULL_TECHNICAL_QA"
     }
   ],
-  "remaining_source_work": "BYD Batch01/02 original source text extracted and saved, while their authoritative OEM evidence and HV guidance remain unverified. Nissan Batch01 comparison, additional manufacturers and global 488-entry source inventory are outstanding. Stable app and owner update feed must remain unchanged.",
+  "remaining_source_work": "Nissan Batch01 compared: 503 source rows / 495 code strings; one missing P0101 L34 scope added, no new code count. Lexus Batch01 72 records retained; all need full technical QA, with 19 primary-definition and 11 primary-context checks. All 430 JSON/CSV/ZIP names in original 488-entry inventory found; content reconciliation of remaining source files continues. Audi30 and Honda7 remain pending. Do not start image inventory.",
   "detail_recovery_20261030": {
     "counted_rows_unchanged": 7656,
     "canonical_files_unchanged": 30,

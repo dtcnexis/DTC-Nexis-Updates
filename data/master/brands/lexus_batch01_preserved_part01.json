@@ -1,0 +1,2402 @@
+{
+  "schema": "dtcnexis-lexus-batch01-preserved-v1",
+  "storage_status": "PERMANENT_RETAINED_SOURCE_PENDING_TECHNICAL_REVIEW",
+  "brand": "Lexus",
+  "source": {
+    "filename": "lexus_dtc_batch01.json",
+    "library_file_id": "libfile_b2306cade1408191bb53ae04a011bf6e",
+    "version_id": "1",
+    "reported_original_size_bytes": 289640,
+    "access": "Complete 5991-line Library text read, parsed as JSON",
+    "raw_original_bytes_materialized": false,
+    "raw_original_sha256": null,
+    "preservation": "All original JSON record values retained; serialization is a generated semantic export, NOT an original file replica"
+  },
+  "source_row_start": 1,
+  "release_to_app": false,
+  "records": [
+    {
+      "brand": "Lexus",
+      "code": "P0300/00",
+      "code_format": "Toyota Techstream DTC/INF (slash)",
+      "ecu": "ECM",
+      "definition_en": "Random/Multiple Cylinder Misfire Detected",
+      "translation_ar": "رصد تقطيع عشوائي/متعدد الأسطوانات",
+      "category": {
+        "system": "Powertrain / misfire",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": "RX 450h",
+        "years": "2010-2017",
+        "market": "USA",
+        "engine": "2GR-FXE",
+        "fuel": "بنزين + هجين",
+        "drivetrain": "غير محدد في النشرة",
+        "generation": "تختلف حسب سنة الصنع؛ راجع VIN",
+        "important_note": "تشير نشرات مختلفة إلى 2GR-FXE و2GR-FXS في سنوات متداخلة؛ لا تختَر التشخيص دون التحقق من كود المحرك الفعلي وVIN."
+      },
+      "symptoms": [
+        "MIL ON",
+        "خشونة تشغيل في بداية التشغيل بعد مبيت بارد"
+      ],
+      "causes": [
+        {
+          "item": "مخلفات على رؤوس حاقنات الوقود",
+          "evidence": "سبب مشروط في L-SB-0045-12 Rev1 بعد استبعاد أعطال ميكانيكية/إشعال/تغذية"
+        },
+        {
+          "item": "خلل إشعال أو تغذية أو ميكانيكا أو إدارة محرك",
+          "evidence": "يجب نفيه أولاً حسب نشرة Lexus"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. تسجيل DTC والبيانات المجمدة بواسطة Techstream",
+        "2. تأكيد خشونة التشغيل بعد مبيت بارد؛ تحقق من الحالة الميكانيكية والإشعال وتغذية الوقود وإدارة المحرك وفق TIS",
+        "3. إذا كانت الفحوص سليمة، افحص بصرياً رؤوس حاقنات الوقود بعد فكها وفق TIS",
+        "4. فقط عند وجود مخلفات على رؤوس الحاقنات وبدون أعطال أخرى، تنص النشرة على تغيير الحاقنات الستة ثم مسح الأكواد وتأكيد الإصلاح",
+        "ضغط الانضغاط ومواصفات الكويل/الحاقن: غير مؤكد دون Repair Manual المناسب"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Engine Speed",
+          "translation_ar": "سرعة دوران المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Engine Coolant Temperature",
+          "translation_ar": "حرارة سائل تبريد المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Misfire Count Cylinder #",
+          "translation_ar": "عدد مرات التقطيع للأسطوانة المعنية",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Short Term Fuel Trim",
+          "translation_ar": "تصحيح الوقود قصير الأمد",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Fuel injector set",
+          "name_ar": "مجموعة بخاخات الوقود الستة",
+          "location": "برؤوس/مجمع سحب محرك 2GR-FXE؛ تفاصيل الوصول من TIS",
+          "part_number": "يتغير حسب السنة؛ راجع النشرة وEPC حسب VIN"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+450h+2GR-FXE+P0300%2F00+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+450h+2GR-FXE+P0300%2F00+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "Lexus L-SB-0045-12 Rev1 يثبت حالة ورشة محددة وليس نسبة انتشار",
+      "sources": [
+        {
+          "title": "L-SB-0045-12 Rev1",
+          "version_date": "2017-12-13",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10140601-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "P0301/00",
+      "code_format": "Toyota Techstream DTC/INF (slash)",
+      "ecu": "ECM",
+      "definition_en": "Cylinder 1 Misfire Detected",
+      "translation_ar": "رصد تقطيع احتراق في الأسطوانة رقم 1",
+      "category": {
+        "system": "Powertrain / misfire",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": "RX 450h",
+        "years": "2010-2017",
+        "market": "USA",
+        "engine": "2GR-FXE",
+        "fuel": "بنزين + هجين",
+        "drivetrain": "غير محدد في النشرة",
+        "generation": "تختلف حسب سنة الصنع؛ راجع VIN",
+        "important_note": "تشير نشرات مختلفة إلى 2GR-FXE و2GR-FXS في سنوات متداخلة؛ لا تختَر التشخيص دون التحقق من كود المحرك الفعلي وVIN."
+      },
+      "symptoms": [
+        "MIL ON",
+        "خشونة تشغيل في بداية التشغيل بعد مبيت بارد"
+      ],
+      "causes": [
+        {
+          "item": "مخلفات على رؤوس حاقنات الوقود",
+          "evidence": "سبب مشروط في L-SB-0045-12 Rev1 بعد استبعاد أعطال ميكانيكية/إشعال/تغذية"
+        },
+        {
+          "item": "خلل إشعال أو تغذية أو ميكانيكا أو إدارة محرك",
+          "evidence": "يجب نفيه أولاً حسب نشرة Lexus"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. تسجيل DTC والبيانات المجمدة بواسطة Techstream",
+        "2. تأكيد خشونة التشغيل بعد مبيت بارد؛ تحقق من الحالة الميكانيكية والإشعال وتغذية الوقود وإدارة المحرك وفق TIS",
+        "3. إذا كانت الفحوص سليمة، افحص بصرياً رؤوس حاقنات الوقود بعد فكها وفق TIS",
+        "4. فقط عند وجود مخلفات على رؤوس الحاقنات وبدون أعطال أخرى، تنص النشرة على تغيير الحاقنات الستة ثم مسح الأكواد وتأكيد الإصلاح",
+        "ضغط الانضغاط ومواصفات الكويل/الحاقن: غير مؤكد دون Repair Manual المناسب"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Engine Speed",
+          "translation_ar": "سرعة دوران المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Engine Coolant Temperature",
+          "translation_ar": "حرارة سائل تبريد المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Misfire Count Cylinder #",
+          "translation_ar": "عدد مرات التقطيع للأسطوانة المعنية",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Short Term Fuel Trim",
+          "translation_ar": "تصحيح الوقود قصير الأمد",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Fuel injector set",
+          "name_ar": "مجموعة بخاخات الوقود الستة",
+          "location": "برؤوس/مجمع سحب محرك 2GR-FXE؛ تفاصيل الوصول من TIS",
+          "part_number": "يتغير حسب السنة؛ راجع النشرة وEPC حسب VIN"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+450h+2GR-FXE+P0301%2F00+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+450h+2GR-FXE+P0301%2F00+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "Lexus L-SB-0045-12 Rev1 يثبت حالة ورشة محددة وليس نسبة انتشار",
+      "sources": [
+        {
+          "title": "L-SB-0045-12 Rev1",
+          "version_date": "2017-12-13",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10140601-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "P0302/00",
+      "code_format": "Toyota Techstream DTC/INF (slash)",
+      "ecu": "ECM",
+      "definition_en": "Cylinder 2 Misfire Detected",
+      "translation_ar": "رصد تقطيع احتراق في الأسطوانة رقم 2",
+      "category": {
+        "system": "Powertrain / misfire",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": "RX 450h",
+        "years": "2010-2017",
+        "market": "USA",
+        "engine": "2GR-FXE",
+        "fuel": "بنزين + هجين",
+        "drivetrain": "غير محدد في النشرة",
+        "generation": "تختلف حسب سنة الصنع؛ راجع VIN",
+        "important_note": "تشير نشرات مختلفة إلى 2GR-FXE و2GR-FXS في سنوات متداخلة؛ لا تختَر التشخيص دون التحقق من كود المحرك الفعلي وVIN."
+      },
+      "symptoms": [
+        "MIL ON",
+        "خشونة تشغيل في بداية التشغيل بعد مبيت بارد"
+      ],
+      "causes": [
+        {
+          "item": "مخلفات على رؤوس حاقنات الوقود",
+          "evidence": "سبب مشروط في L-SB-0045-12 Rev1 بعد استبعاد أعطال ميكانيكية/إشعال/تغذية"
+        },
+        {
+          "item": "خلل إشعال أو تغذية أو ميكانيكا أو إدارة محرك",
+          "evidence": "يجب نفيه أولاً حسب نشرة Lexus"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. تسجيل DTC والبيانات المجمدة بواسطة Techstream",
+        "2. تأكيد خشونة التشغيل بعد مبيت بارد؛ تحقق من الحالة الميكانيكية والإشعال وتغذية الوقود وإدارة المحرك وفق TIS",
+        "3. إذا كانت الفحوص سليمة، افحص بصرياً رؤوس حاقنات الوقود بعد فكها وفق TIS",
+        "4. فقط عند وجود مخلفات على رؤوس الحاقنات وبدون أعطال أخرى، تنص النشرة على تغيير الحاقنات الستة ثم مسح الأكواد وتأكيد الإصلاح",
+        "ضغط الانضغاط ومواصفات الكويل/الحاقن: غير مؤكد دون Repair Manual المناسب"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Engine Speed",
+          "translation_ar": "سرعة دوران المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Engine Coolant Temperature",
+          "translation_ar": "حرارة سائل تبريد المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Misfire Count Cylinder #",
+          "translation_ar": "عدد مرات التقطيع للأسطوانة المعنية",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Short Term Fuel Trim",
+          "translation_ar": "تصحيح الوقود قصير الأمد",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Fuel injector set",
+          "name_ar": "مجموعة بخاخات الوقود الستة",
+          "location": "برؤوس/مجمع سحب محرك 2GR-FXE؛ تفاصيل الوصول من TIS",
+          "part_number": "يتغير حسب السنة؛ راجع النشرة وEPC حسب VIN"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+450h+2GR-FXE+P0302%2F00+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+450h+2GR-FXE+P0302%2F00+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "Lexus L-SB-0045-12 Rev1 يثبت حالة ورشة محددة وليس نسبة انتشار",
+      "sources": [
+        {
+          "title": "L-SB-0045-12 Rev1",
+          "version_date": "2017-12-13",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10140601-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "P0303/00",
+      "code_format": "Toyota Techstream DTC/INF (slash)",
+      "ecu": "ECM",
+      "definition_en": "Cylinder 3 Misfire Detected",
+      "translation_ar": "رصد تقطيع احتراق في الأسطوانة رقم 3",
+      "category": {
+        "system": "Powertrain / misfire",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": "RX 450h",
+        "years": "2010-2017",
+        "market": "USA",
+        "engine": "2GR-FXE",
+        "fuel": "بنزين + هجين",
+        "drivetrain": "غير محدد في النشرة",
+        "generation": "تختلف حسب سنة الصنع؛ راجع VIN",
+        "important_note": "تشير نشرات مختلفة إلى 2GR-FXE و2GR-FXS في سنوات متداخلة؛ لا تختَر التشخيص دون التحقق من كود المحرك الفعلي وVIN."
+      },
+      "symptoms": [
+        "MIL ON",
+        "خشونة تشغيل في بداية التشغيل بعد مبيت بارد"
+      ],
+      "causes": [
+        {
+          "item": "مخلفات على رؤوس حاقنات الوقود",
+          "evidence": "سبب مشروط في L-SB-0045-12 Rev1 بعد استبعاد أعطال ميكانيكية/إشعال/تغذية"
+        },
+        {
+          "item": "خلل إشعال أو تغذية أو ميكانيكا أو إدارة محرك",
+          "evidence": "يجب نفيه أولاً حسب نشرة Lexus"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. تسجيل DTC والبيانات المجمدة بواسطة Techstream",
+        "2. تأكيد خشونة التشغيل بعد مبيت بارد؛ تحقق من الحالة الميكانيكية والإشعال وتغذية الوقود وإدارة المحرك وفق TIS",
+        "3. إذا كانت الفحوص سليمة، افحص بصرياً رؤوس حاقنات الوقود بعد فكها وفق TIS",
+        "4. فقط عند وجود مخلفات على رؤوس الحاقنات وبدون أعطال أخرى، تنص النشرة على تغيير الحاقنات الستة ثم مسح الأكواد وتأكيد الإصلاح",
+        "ضغط الانضغاط ومواصفات الكويل/الحاقن: غير مؤكد دون Repair Manual المناسب"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Engine Speed",
+          "translation_ar": "سرعة دوران المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Engine Coolant Temperature",
+          "translation_ar": "حرارة سائل تبريد المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Misfire Count Cylinder #",
+          "translation_ar": "عدد مرات التقطيع للأسطوانة المعنية",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Short Term Fuel Trim",
+          "translation_ar": "تصحيح الوقود قصير الأمد",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Fuel injector set",
+          "name_ar": "مجموعة بخاخات الوقود الستة",
+          "location": "برؤوس/مجمع سحب محرك 2GR-FXE؛ تفاصيل الوصول من TIS",
+          "part_number": "يتغير حسب السنة؛ راجع النشرة وEPC حسب VIN"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+450h+2GR-FXE+P0303%2F00+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+450h+2GR-FXE+P0303%2F00+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "Lexus L-SB-0045-12 Rev1 يثبت حالة ورشة محددة وليس نسبة انتشار",
+      "sources": [
+        {
+          "title": "L-SB-0045-12 Rev1",
+          "version_date": "2017-12-13",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10140601-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "P0304/00",
+      "code_format": "Toyota Techstream DTC/INF (slash)",
+      "ecu": "ECM",
+      "definition_en": "Cylinder 4 Misfire Detected",
+      "translation_ar": "رصد تقطيع احتراق في الأسطوانة رقم 4",
+      "category": {
+        "system": "Powertrain / misfire",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": "RX 450h",
+        "years": "2010-2017",
+        "market": "USA",
+        "engine": "2GR-FXE",
+        "fuel": "بنزين + هجين",
+        "drivetrain": "غير محدد في النشرة",
+        "generation": "تختلف حسب سنة الصنع؛ راجع VIN",
+        "important_note": "تشير نشرات مختلفة إلى 2GR-FXE و2GR-FXS في سنوات متداخلة؛ لا تختَر التشخيص دون التحقق من كود المحرك الفعلي وVIN."
+      },
+      "symptoms": [
+        "MIL ON",
+        "خشونة تشغيل في بداية التشغيل بعد مبيت بارد"
+      ],
+      "causes": [
+        {
+          "item": "مخلفات على رؤوس حاقنات الوقود",
+          "evidence": "سبب مشروط في L-SB-0045-12 Rev1 بعد استبعاد أعطال ميكانيكية/إشعال/تغذية"
+        },
+        {
+          "item": "خلل إشعال أو تغذية أو ميكانيكا أو إدارة محرك",
+          "evidence": "يجب نفيه أولاً حسب نشرة Lexus"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. تسجيل DTC والبيانات المجمدة بواسطة Techstream",
+        "2. تأكيد خشونة التشغيل بعد مبيت بارد؛ تحقق من الحالة الميكانيكية والإشعال وتغذية الوقود وإدارة المحرك وفق TIS",
+        "3. إذا كانت الفحوص سليمة، افحص بصرياً رؤوس حاقنات الوقود بعد فكها وفق TIS",
+        "4. فقط عند وجود مخلفات على رؤوس الحاقنات وبدون أعطال أخرى، تنص النشرة على تغيير الحاقنات الستة ثم مسح الأكواد وتأكيد الإصلاح",
+        "ضغط الانضغاط ومواصفات الكويل/الحاقن: غير مؤكد دون Repair Manual المناسب"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Engine Speed",
+          "translation_ar": "سرعة دوران المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Engine Coolant Temperature",
+          "translation_ar": "حرارة سائل تبريد المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Misfire Count Cylinder #",
+          "translation_ar": "عدد مرات التقطيع للأسطوانة المعنية",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Short Term Fuel Trim",
+          "translation_ar": "تصحيح الوقود قصير الأمد",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Fuel injector set",
+          "name_ar": "مجموعة بخاخات الوقود الستة",
+          "location": "برؤوس/مجمع سحب محرك 2GR-FXE؛ تفاصيل الوصول من TIS",
+          "part_number": "يتغير حسب السنة؛ راجع النشرة وEPC حسب VIN"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+450h+2GR-FXE+P0304%2F00+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+450h+2GR-FXE+P0304%2F00+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "Lexus L-SB-0045-12 Rev1 يثبت حالة ورشة محددة وليس نسبة انتشار",
+      "sources": [
+        {
+          "title": "L-SB-0045-12 Rev1",
+          "version_date": "2017-12-13",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10140601-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "P0305/00",
+      "code_format": "Toyota Techstream DTC/INF (slash)",
+      "ecu": "ECM",
+      "definition_en": "Cylinder 5 Misfire Detected",
+      "translation_ar": "رصد تقطيع احتراق في الأسطوانة رقم 5",
+      "category": {
+        "system": "Powertrain / misfire",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": "RX 450h",
+        "years": "2010-2017",
+        "market": "USA",
+        "engine": "2GR-FXE",
+        "fuel": "بنزين + هجين",
+        "drivetrain": "غير محدد في النشرة",
+        "generation": "تختلف حسب سنة الصنع؛ راجع VIN",
+        "important_note": "تشير نشرات مختلفة إلى 2GR-FXE و2GR-FXS في سنوات متداخلة؛ لا تختَر التشخيص دون التحقق من كود المحرك الفعلي وVIN."
+      },
+      "symptoms": [
+        "MIL ON",
+        "خشونة تشغيل في بداية التشغيل بعد مبيت بارد"
+      ],
+      "causes": [
+        {
+          "item": "مخلفات على رؤوس حاقنات الوقود",
+          "evidence": "سبب مشروط في L-SB-0045-12 Rev1 بعد استبعاد أعطال ميكانيكية/إشعال/تغذية"
+        },
+        {
+          "item": "خلل إشعال أو تغذية أو ميكانيكا أو إدارة محرك",
+          "evidence": "يجب نفيه أولاً حسب نشرة Lexus"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. تسجيل DTC والبيانات المجمدة بواسطة Techstream",
+        "2. تأكيد خشونة التشغيل بعد مبيت بارد؛ تحقق من الحالة الميكانيكية والإشعال وتغذية الوقود وإدارة المحرك وفق TIS",
+        "3. إذا كانت الفحوص سليمة، افحص بصرياً رؤوس حاقنات الوقود بعد فكها وفق TIS",
+        "4. فقط عند وجود مخلفات على رؤوس الحاقنات وبدون أعطال أخرى، تنص النشرة على تغيير الحاقنات الستة ثم مسح الأكواد وتأكيد الإصلاح",
+        "ضغط الانضغاط ومواصفات الكويل/الحاقن: غير مؤكد دون Repair Manual المناسب"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Engine Speed",
+          "translation_ar": "سرعة دوران المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Engine Coolant Temperature",
+          "translation_ar": "حرارة سائل تبريد المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Misfire Count Cylinder #",
+          "translation_ar": "عدد مرات التقطيع للأسطوانة المعنية",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Short Term Fuel Trim",
+          "translation_ar": "تصحيح الوقود قصير الأمد",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Fuel injector set",
+          "name_ar": "مجموعة بخاخات الوقود الستة",
+          "location": "برؤوس/مجمع سحب محرك 2GR-FXE؛ تفاصيل الوصول من TIS",
+          "part_number": "يتغير حسب السنة؛ راجع النشرة وEPC حسب VIN"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+450h+2GR-FXE+P0305%2F00+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+450h+2GR-FXE+P0305%2F00+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "Lexus L-SB-0045-12 Rev1 يثبت حالة ورشة محددة وليس نسبة انتشار",
+      "sources": [
+        {
+          "title": "L-SB-0045-12 Rev1",
+          "version_date": "2017-12-13",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10140601-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "P0306/00",
+      "code_format": "Toyota Techstream DTC/INF (slash)",
+      "ecu": "ECM",
+      "definition_en": "Cylinder 6 Misfire Detected",
+      "translation_ar": "رصد تقطيع احتراق في الأسطوانة رقم 6",
+      "category": {
+        "system": "Powertrain / misfire",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": "RX 450h",
+        "years": "2010-2017",
+        "market": "USA",
+        "engine": "2GR-FXE",
+        "fuel": "بنزين + هجين",
+        "drivetrain": "غير محدد في النشرة",
+        "generation": "تختلف حسب سنة الصنع؛ راجع VIN",
+        "important_note": "تشير نشرات مختلفة إلى 2GR-FXE و2GR-FXS في سنوات متداخلة؛ لا تختَر التشخيص دون التحقق من كود المحرك الفعلي وVIN."
+      },
+      "symptoms": [
+        "MIL ON",
+        "خشونة تشغيل في بداية التشغيل بعد مبيت بارد"
+      ],
+      "causes": [
+        {
+          "item": "مخلفات على رؤوس حاقنات الوقود",
+          "evidence": "سبب مشروط في L-SB-0045-12 Rev1 بعد استبعاد أعطال ميكانيكية/إشعال/تغذية"
+        },
+        {
+          "item": "خلل إشعال أو تغذية أو ميكانيكا أو إدارة محرك",
+          "evidence": "يجب نفيه أولاً حسب نشرة Lexus"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. تسجيل DTC والبيانات المجمدة بواسطة Techstream",
+        "2. تأكيد خشونة التشغيل بعد مبيت بارد؛ تحقق من الحالة الميكانيكية والإشعال وتغذية الوقود وإدارة المحرك وفق TIS",
+        "3. إذا كانت الفحوص سليمة، افحص بصرياً رؤوس حاقنات الوقود بعد فكها وفق TIS",
+        "4. فقط عند وجود مخلفات على رؤوس الحاقنات وبدون أعطال أخرى، تنص النشرة على تغيير الحاقنات الستة ثم مسح الأكواد وتأكيد الإصلاح",
+        "ضغط الانضغاط ومواصفات الكويل/الحاقن: غير مؤكد دون Repair Manual المناسب"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Engine Speed",
+          "translation_ar": "سرعة دوران المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Engine Coolant Temperature",
+          "translation_ar": "حرارة سائل تبريد المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Misfire Count Cylinder #",
+          "translation_ar": "عدد مرات التقطيع للأسطوانة المعنية",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Short Term Fuel Trim",
+          "translation_ar": "تصحيح الوقود قصير الأمد",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Fuel injector set",
+          "name_ar": "مجموعة بخاخات الوقود الستة",
+          "location": "برؤوس/مجمع سحب محرك 2GR-FXE؛ تفاصيل الوصول من TIS",
+          "part_number": "يتغير حسب السنة؛ راجع النشرة وEPC حسب VIN"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+450h+2GR-FXE+P0306%2F00+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+450h+2GR-FXE+P0306%2F00+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "Lexus L-SB-0045-12 Rev1 يثبت حالة ورشة محددة وليس نسبة انتشار",
+      "sources": [
+        {
+          "title": "L-SB-0045-12 Rev1",
+          "version_date": "2017-12-13",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10140601-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "P0301",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "ECM",
+      "definition_en": "Cylinder 1 Misfire Detected",
+      "translation_ar": "رصد تقطيع احتراق في الأسطوانة رقم 1",
+      "category": {
+        "system": "Powertrain / misfire",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": [
+          "RX 450h",
+          "RX 450hL"
+        ],
+        "years": "RX450h 2016-2019؛ RX450hL 2018-2019",
+        "market": "USA",
+        "engine": "2GR-FXS",
+        "fuel": "بنزين + هجين",
+        "drivetrain": "غير محدد في النشرة",
+        "generation": "تحديد الهيكل عبر VIN",
+        "important_note": "تشير نشرات مختلفة إلى 2GR-FXE و2GR-FXS في سنوات متداخلة؛ لا تختَر التشخيص دون التحقق من كود المحرك الفعلي وVIN."
+      },
+      "symptoms": [
+        "MIL ON"
+      ],
+      "causes": [
+        {
+          "item": "Ignition coil failure",
+          "evidence": "تُطبق النشرة فقط إن أظهر التشخيص تعطل الكويل"
+        },
+        {
+          "item": "ECM calibration (outdated)",
+          "evidence": "تحقق من معرف المعايرة وفق جدول المصنع؛ لا يعتبر ECU تالفاً"
+        },
+        {
+          "item": "أسباب وقود/هواء/ضغط انضغاط",
+          "evidence": "احتمالات تشخيص أولي غير محددة كأسباب خاصة بالنشرة"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. تأكيد الكود على Techstream ثم اختبار نظام الإشعال حسب TIS",
+        "2. إذا أظهر الفحص عطل كويل، تحقق من Calibration ID وAuthorized Modifications Label",
+        "3. إذا كان تحديث ECM مطلوباً، نفّذ reflash عبر Techstream/J2534 وفق نشرة المصنع وتغذية مستقرة 13.5 V (شرط البرمجة حصراً)",
+        "4. استبدل الكويل المعطوب وفق دليل فك وتركيب 2GR-FXS ثم اختبر السيارة",
+        "مواصفات مقاومة/ذبذبة الكويل: غير مؤكد دون دليل المحرك"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Engine Speed",
+          "translation_ar": "سرعة دوران المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Engine Coolant Temperature",
+          "translation_ar": "حرارة سائل تبريد المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Misfire Count Cylinder #",
+          "translation_ar": "عدد مرات التقطيع للأسطوانة المعنية",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Short Term Fuel Trim",
+          "translation_ar": "تصحيح الوقود قصير الأمد",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Ignition coil",
+          "name_ar": "ملف إشعال (كويل) للأسطوانة المعنية",
+          "location": "أعلى رأس المحرك حسب بنك الأسطوانة 2GR-FXS؛ تفاصيل الفك حسب TIS",
+          "part_number": "90919-02280 / 90919-A2013 كما ورد بالنشرة؛ تحقق EPC وVIN"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=%5B%27RX+450h%27%2C+%27RX+450hL%27%5D+2GR-FXS+P0301+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=%5B%27RX+450h%27%2C+%27RX+450hL%27%5D+2GR-FXS+P0301+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "Lexus L-SB-0044-19 Rev1 يثبت مسار كويل ومعايرة لهذه السنوات، وليس تقدير تكرار عالمي",
+      "sources": [
+        {
+          "title": "L-SB-0044-19 Rev1",
+          "version_date": "2023-02-15",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10235227-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "P0302",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "ECM",
+      "definition_en": "Cylinder 2 Misfire Detected",
+      "translation_ar": "رصد تقطيع احتراق في الأسطوانة رقم 2",
+      "category": {
+        "system": "Powertrain / misfire",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": [
+          "RX 450h",
+          "RX 450hL"
+        ],
+        "years": "RX450h 2016-2019؛ RX450hL 2018-2019",
+        "market": "USA",
+        "engine": "2GR-FXS",
+        "fuel": "بنزين + هجين",
+        "drivetrain": "غير محدد في النشرة",
+        "generation": "تحديد الهيكل عبر VIN",
+        "important_note": "تشير نشرات مختلفة إلى 2GR-FXE و2GR-FXS في سنوات متداخلة؛ لا تختَر التشخيص دون التحقق من كود المحرك الفعلي وVIN."
+      },
+      "symptoms": [
+        "MIL ON"
+      ],
+      "causes": [
+        {
+          "item": "Ignition coil failure",
+          "evidence": "تُطبق النشرة فقط إن أظهر التشخيص تعطل الكويل"
+        },
+        {
+          "item": "ECM calibration (outdated)",
+          "evidence": "تحقق من معرف المعايرة وفق جدول المصنع؛ لا يعتبر ECU تالفاً"
+        },
+        {
+          "item": "أسباب وقود/هواء/ضغط انضغاط",
+          "evidence": "احتمالات تشخيص أولي غير محددة كأسباب خاصة بالنشرة"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. تأكيد الكود على Techstream ثم اختبار نظام الإشعال حسب TIS",
+        "2. إذا أظهر الفحص عطل كويل، تحقق من Calibration ID وAuthorized Modifications Label",
+        "3. إذا كان تحديث ECM مطلوباً، نفّذ reflash عبر Techstream/J2534 وفق نشرة المصنع وتغذية مستقرة 13.5 V (شرط البرمجة حصراً)",
+        "4. استبدل الكويل المعطوب وفق دليل فك وتركيب 2GR-FXS ثم اختبر السيارة",
+        "مواصفات مقاومة/ذبذبة الكويل: غير مؤكد دون دليل المحرك"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Engine Speed",
+          "translation_ar": "سرعة دوران المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Engine Coolant Temperature",
+          "translation_ar": "حرارة سائل تبريد المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Misfire Count Cylinder #",
+          "translation_ar": "عدد مرات التقطيع للأسطوانة المعنية",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Short Term Fuel Trim",
+          "translation_ar": "تصحيح الوقود قصير الأمد",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Ignition coil",
+          "name_ar": "ملف إشعال (كويل) للأسطوانة المعنية",
+          "location": "أعلى رأس المحرك حسب بنك الأسطوانة 2GR-FXS؛ تفاصيل الفك حسب TIS",
+          "part_number": "90919-02280 / 90919-A2013 كما ورد بالنشرة؛ تحقق EPC وVIN"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=%5B%27RX+450h%27%2C+%27RX+450hL%27%5D+2GR-FXS+P0302+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=%5B%27RX+450h%27%2C+%27RX+450hL%27%5D+2GR-FXS+P0302+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "Lexus L-SB-0044-19 Rev1 يثبت مسار كويل ومعايرة لهذه السنوات، وليس تقدير تكرار عالمي",
+      "sources": [
+        {
+          "title": "L-SB-0044-19 Rev1",
+          "version_date": "2023-02-15",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10235227-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "P0303",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "ECM",
+      "definition_en": "Cylinder 3 Misfire Detected",
+      "translation_ar": "رصد تقطيع احتراق في الأسطوانة رقم 3",
+      "category": {
+        "system": "Powertrain / misfire",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": [
+          "RX 450h",
+          "RX 450hL"
+        ],
+        "years": "RX450h 2016-2019؛ RX450hL 2018-2019",
+        "market": "USA",
+        "engine": "2GR-FXS",
+        "fuel": "بنزين + هجين",
+        "drivetrain": "غير محدد في النشرة",
+        "generation": "تحديد الهيكل عبر VIN",
+        "important_note": "تشير نشرات مختلفة إلى 2GR-FXE و2GR-FXS في سنوات متداخلة؛ لا تختَر التشخيص دون التحقق من كود المحرك الفعلي وVIN."
+      },
+      "symptoms": [
+        "MIL ON"
+      ],
+      "causes": [
+        {
+          "item": "Ignition coil failure",
+          "evidence": "تُطبق النشرة فقط إن أظهر التشخيص تعطل الكويل"
+        },
+        {
+          "item": "ECM calibration (outdated)",
+          "evidence": "تحقق من معرف المعايرة وفق جدول المصنع؛ لا يعتبر ECU تالفاً"
+        },
+        {
+          "item": "أسباب وقود/هواء/ضغط انضغاط",
+          "evidence": "احتمالات تشخيص أولي غير محددة كأسباب خاصة بالنشرة"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. تأكيد الكود على Techstream ثم اختبار نظام الإشعال حسب TIS",
+        "2. إذا أظهر الفحص عطل كويل، تحقق من Calibration ID وAuthorized Modifications Label",
+        "3. إذا كان تحديث ECM مطلوباً، نفّذ reflash عبر Techstream/J2534 وفق نشرة المصنع وتغذية مستقرة 13.5 V (شرط البرمجة حصراً)",
+        "4. استبدل الكويل المعطوب وفق دليل فك وتركيب 2GR-FXS ثم اختبر السيارة",
+        "مواصفات مقاومة/ذبذبة الكويل: غير مؤكد دون دليل المحرك"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Engine Speed",
+          "translation_ar": "سرعة دوران المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Engine Coolant Temperature",
+          "translation_ar": "حرارة سائل تبريد المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Misfire Count Cylinder #",
+          "translation_ar": "عدد مرات التقطيع للأسطوانة المعنية",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Short Term Fuel Trim",
+          "translation_ar": "تصحيح الوقود قصير الأمد",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Ignition coil",
+          "name_ar": "ملف إشعال (كويل) للأسطوانة المعنية",
+          "location": "أعلى رأس المحرك حسب بنك الأسطوانة 2GR-FXS؛ تفاصيل الفك حسب TIS",
+          "part_number": "90919-02280 / 90919-A2013 كما ورد بالنشرة؛ تحقق EPC وVIN"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=%5B%27RX+450h%27%2C+%27RX+450hL%27%5D+2GR-FXS+P0303+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=%5B%27RX+450h%27%2C+%27RX+450hL%27%5D+2GR-FXS+P0303+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "Lexus L-SB-0044-19 Rev1 يثبت مسار كويل ومعايرة لهذه السنوات، وليس تقدير تكرار عالمي",
+      "sources": [
+        {
+          "title": "L-SB-0044-19 Rev1",
+          "version_date": "2023-02-15",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10235227-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "P0304",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "ECM",
+      "definition_en": "Cylinder 4 Misfire Detected",
+      "translation_ar": "رصد تقطيع احتراق في الأسطوانة رقم 4",
+      "category": {
+        "system": "Powertrain / misfire",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": [
+          "RX 450h",
+          "RX 450hL"
+        ],
+        "years": "RX450h 2016-2019؛ RX450hL 2018-2019",
+        "market": "USA",
+        "engine": "2GR-FXS",
+        "fuel": "بنزين + هجين",
+        "drivetrain": "غير محدد في النشرة",
+        "generation": "تحديد الهيكل عبر VIN",
+        "important_note": "تشير نشرات مختلفة إلى 2GR-FXE و2GR-FXS في سنوات متداخلة؛ لا تختَر التشخيص دون التحقق من كود المحرك الفعلي وVIN."
+      },
+      "symptoms": [
+        "MIL ON"
+      ],
+      "causes": [
+        {
+          "item": "Ignition coil failure",
+          "evidence": "تُطبق النشرة فقط إن أظهر التشخيص تعطل الكويل"
+        },
+        {
+          "item": "ECM calibration (outdated)",
+          "evidence": "تحقق من معرف المعايرة وفق جدول المصنع؛ لا يعتبر ECU تالفاً"
+        },
+        {
+          "item": "أسباب وقود/هواء/ضغط انضغاط",
+          "evidence": "احتمالات تشخيص أولي غير محددة كأسباب خاصة بالنشرة"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. تأكيد الكود على Techstream ثم اختبار نظام الإشعال حسب TIS",
+        "2. إذا أظهر الفحص عطل كويل، تحقق من Calibration ID وAuthorized Modifications Label",
+        "3. إذا كان تحديث ECM مطلوباً، نفّذ reflash عبر Techstream/J2534 وفق نشرة المصنع وتغذية مستقرة 13.5 V (شرط البرمجة حصراً)",
+        "4. استبدل الكويل المعطوب وفق دليل فك وتركيب 2GR-FXS ثم اختبر السيارة",
+        "مواصفات مقاومة/ذبذبة الكويل: غير مؤكد دون دليل المحرك"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Engine Speed",
+          "translation_ar": "سرعة دوران المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Engine Coolant Temperature",
+          "translation_ar": "حرارة سائل تبريد المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Misfire Count Cylinder #",
+          "translation_ar": "عدد مرات التقطيع للأسطوانة المعنية",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Short Term Fuel Trim",
+          "translation_ar": "تصحيح الوقود قصير الأمد",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Ignition coil",
+          "name_ar": "ملف إشعال (كويل) للأسطوانة المعنية",
+          "location": "أعلى رأس المحرك حسب بنك الأسطوانة 2GR-FXS؛ تفاصيل الفك حسب TIS",
+          "part_number": "90919-02280 / 90919-A2013 كما ورد بالنشرة؛ تحقق EPC وVIN"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=%5B%27RX+450h%27%2C+%27RX+450hL%27%5D+2GR-FXS+P0304+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=%5B%27RX+450h%27%2C+%27RX+450hL%27%5D+2GR-FXS+P0304+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "Lexus L-SB-0044-19 Rev1 يثبت مسار كويل ومعايرة لهذه السنوات، وليس تقدير تكرار عالمي",
+      "sources": [
+        {
+          "title": "L-SB-0044-19 Rev1",
+          "version_date": "2023-02-15",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10235227-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "P0305",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "ECM",
+      "definition_en": "Cylinder 5 Misfire Detected",
+      "translation_ar": "رصد تقطيع احتراق في الأسطوانة رقم 5",
+      "category": {
+        "system": "Powertrain / misfire",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": [
+          "RX 450h",
+          "RX 450hL"
+        ],
+        "years": "RX450h 2016-2019؛ RX450hL 2018-2019",
+        "market": "USA",
+        "engine": "2GR-FXS",
+        "fuel": "بنزين + هجين",
+        "drivetrain": "غير محدد في النشرة",
+        "generation": "تحديد الهيكل عبر VIN",
+        "important_note": "تشير نشرات مختلفة إلى 2GR-FXE و2GR-FXS في سنوات متداخلة؛ لا تختَر التشخيص دون التحقق من كود المحرك الفعلي وVIN."
+      },
+      "symptoms": [
+        "MIL ON"
+      ],
+      "causes": [
+        {
+          "item": "Ignition coil failure",
+          "evidence": "تُطبق النشرة فقط إن أظهر التشخيص تعطل الكويل"
+        },
+        {
+          "item": "ECM calibration (outdated)",
+          "evidence": "تحقق من معرف المعايرة وفق جدول المصنع؛ لا يعتبر ECU تالفاً"
+        },
+        {
+          "item": "أسباب وقود/هواء/ضغط انضغاط",
+          "evidence": "احتمالات تشخيص أولي غير محددة كأسباب خاصة بالنشرة"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. تأكيد الكود على Techstream ثم اختبار نظام الإشعال حسب TIS",
+        "2. إذا أظهر الفحص عطل كويل، تحقق من Calibration ID وAuthorized Modifications Label",
+        "3. إذا كان تحديث ECM مطلوباً، نفّذ reflash عبر Techstream/J2534 وفق نشرة المصنع وتغذية مستقرة 13.5 V (شرط البرمجة حصراً)",
+        "4. استبدل الكويل المعطوب وفق دليل فك وتركيب 2GR-FXS ثم اختبر السيارة",
+        "مواصفات مقاومة/ذبذبة الكويل: غير مؤكد دون دليل المحرك"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Engine Speed",
+          "translation_ar": "سرعة دوران المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Engine Coolant Temperature",
+          "translation_ar": "حرارة سائل تبريد المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Misfire Count Cylinder #",
+          "translation_ar": "عدد مرات التقطيع للأسطوانة المعنية",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Short Term Fuel Trim",
+          "translation_ar": "تصحيح الوقود قصير الأمد",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Ignition coil",
+          "name_ar": "ملف إشعال (كويل) للأسطوانة المعنية",
+          "location": "أعلى رأس المحرك حسب بنك الأسطوانة 2GR-FXS؛ تفاصيل الفك حسب TIS",
+          "part_number": "90919-02280 / 90919-A2013 كما ورد بالنشرة؛ تحقق EPC وVIN"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=%5B%27RX+450h%27%2C+%27RX+450hL%27%5D+2GR-FXS+P0305+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=%5B%27RX+450h%27%2C+%27RX+450hL%27%5D+2GR-FXS+P0305+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "Lexus L-SB-0044-19 Rev1 يثبت مسار كويل ومعايرة لهذه السنوات، وليس تقدير تكرار عالمي",
+      "sources": [
+        {
+          "title": "L-SB-0044-19 Rev1",
+          "version_date": "2023-02-15",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10235227-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "P0306",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "ECM",
+      "definition_en": "Cylinder 6 Misfire Detected",
+      "translation_ar": "رصد تقطيع احتراق في الأسطوانة رقم 6",
+      "category": {
+        "system": "Powertrain / misfire",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": [
+          "RX 450h",
+          "RX 450hL"
+        ],
+        "years": "RX450h 2016-2019؛ RX450hL 2018-2019",
+        "market": "USA",
+        "engine": "2GR-FXS",
+        "fuel": "بنزين + هجين",
+        "drivetrain": "غير محدد في النشرة",
+        "generation": "تحديد الهيكل عبر VIN",
+        "important_note": "تشير نشرات مختلفة إلى 2GR-FXE و2GR-FXS في سنوات متداخلة؛ لا تختَر التشخيص دون التحقق من كود المحرك الفعلي وVIN."
+      },
+      "symptoms": [
+        "MIL ON"
+      ],
+      "causes": [
+        {
+          "item": "Ignition coil failure",
+          "evidence": "تُطبق النشرة فقط إن أظهر التشخيص تعطل الكويل"
+        },
+        {
+          "item": "ECM calibration (outdated)",
+          "evidence": "تحقق من معرف المعايرة وفق جدول المصنع؛ لا يعتبر ECU تالفاً"
+        },
+        {
+          "item": "أسباب وقود/هواء/ضغط انضغاط",
+          "evidence": "احتمالات تشخيص أولي غير محددة كأسباب خاصة بالنشرة"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. تأكيد الكود على Techstream ثم اختبار نظام الإشعال حسب TIS",
+        "2. إذا أظهر الفحص عطل كويل، تحقق من Calibration ID وAuthorized Modifications Label",
+        "3. إذا كان تحديث ECM مطلوباً، نفّذ reflash عبر Techstream/J2534 وفق نشرة المصنع وتغذية مستقرة 13.5 V (شرط البرمجة حصراً)",
+        "4. استبدل الكويل المعطوب وفق دليل فك وتركيب 2GR-FXS ثم اختبر السيارة",
+        "مواصفات مقاومة/ذبذبة الكويل: غير مؤكد دون دليل المحرك"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Engine Speed",
+          "translation_ar": "سرعة دوران المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Engine Coolant Temperature",
+          "translation_ar": "حرارة سائل تبريد المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Misfire Count Cylinder #",
+          "translation_ar": "عدد مرات التقطيع للأسطوانة المعنية",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Short Term Fuel Trim",
+          "translation_ar": "تصحيح الوقود قصير الأمد",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Ignition coil",
+          "name_ar": "ملف إشعال (كويل) للأسطوانة المعنية",
+          "location": "أعلى رأس المحرك حسب بنك الأسطوانة 2GR-FXS؛ تفاصيل الفك حسب TIS",
+          "part_number": "90919-02280 / 90919-A2013 كما ورد بالنشرة؛ تحقق EPC وVIN"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=%5B%27RX+450h%27%2C+%27RX+450hL%27%5D+2GR-FXS+P0306+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=%5B%27RX+450h%27%2C+%27RX+450hL%27%5D+2GR-FXS+P0306+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "Lexus L-SB-0044-19 Rev1 يثبت مسار كويل ومعايرة لهذه السنوات، وليس تقدير تكرار عالمي",
+      "sources": [
+        {
+          "title": "L-SB-0044-19 Rev1",
+          "version_date": "2023-02-15",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10235227-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "C1391",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Skid Control ECU / Brake Actuator",
+      "definition_en": "Abnormal Leak in Accumulator",
+      "translation_ar": "تسرب غير طبيعي في مُراكم ضغط الفرامل",
+      "category": {
+        "system": "Chassis / brake ABS/VSC",
+        "type": "خاص بالشركة المصنعة (نطاق DTC)"
+      },
+      "applicability": {
+        "model": "LS 460",
+        "years": "2013-2017",
+        "market": "USA",
+        "engine": "غير محدد في النشرة",
+        "fuel": "بنزين",
+        "drivetrain": "غير محدد في النشرة",
+        "generation": "LS 460 موديلات 2013–2017"
+      },
+      "symptoms": [
+        "لمبة الفرامل أو ABS أو TRAC",
+        "رسالة Check VSC محتملة"
+      ],
+      "causes": [
+        {
+          "item": "تسرب داخلي صغير في Brake Actuator",
+          "evidence": "نشرة Lexus L-SB-0009-23 تشير إليه كسبب محتمل مشترك للأكواد المعنية"
+        },
+        {
+          "item": "فيوز/تغذية المضخة أو الأسلاك أو العطل خارج نطاق النشرة",
+          "evidence": "يلزم التحقق عبر Repair Manual؛ لم تورد النشرة قيم فصل كافية"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. تأكيد وجود لمبات Brake/ABS/TRAC أو رسالة Check VSC",
+        "2. قراءة جميع الأكواد في نظام الفرامل باستخدام Techstream والتأكد من وجود أحد الأكواد الأربعة",
+        "3. فحص التسرب الخارجي ومستوى سائل الفرامل والتغذية وفق دليل TIS؛ أية قيمة ضغط مرجعية: غير مؤكد",
+        "4. إذا انطبقت النشرة وشروطها، يرجع المصنع إلى تبديل Brake Actuator وBrake Booster Pump معاً حسب تعليمات TIS",
+        "5. تنفيذ تنفيس إلكتروني/فحص تشغيل حسب TIS ثم مسح DTC واختبار الطريق؛ العمل على الفرامل يتطلب فني مؤهل"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Accumulator Pressure",
+          "translation_ar": "ضغط مُراكم الفرامل",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Brake Booster Pump Motor",
+          "translation_ar": "حالة محرك مضخة تعزيز الفرامل",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Brake Pedal Stroke",
+          "translation_ar": "مشوار دواسة الفرامل",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Brake actuator assembly",
+          "name_ar": "مجموعة مشغل الفرامل",
+          "location": "مجموعة الفرامل الهيدروليكية؛ الموقع/الوصلات التفصيلية عبر TIS",
+          "part_number": "44050-50110 -> 04003-45450 في النشرة"
+        },
+        {
+          "name_en": "Brake booster pump with accumulator",
+          "name_ar": "مضخة تعزيز الفرامل مع مُراكم الضغط",
+          "location": "دائرة ضغط الفرامل؛ موقع التثبيت حسب TIS",
+          "part_number": "47070-50040 -> 04002-07150 في النشرة"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=LS+460+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF+%D9%81%D9%8A+%D8%A7%D9%84%D9%86%D8%B4%D8%B1%D8%A9+C1391+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=LS+460+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF+%D9%81%D9%8A+%D8%A7%D9%84%D9%86%D8%B4%D8%B1%D8%A9+C1391+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "نشرة خدمة Lexus L-SB-0009-23 تثبت حالة فرامل متكررة محتملة؛ لا يوجد معدل انتشار معتمد",
+      "sources": [
+        {
+          "title": "L-SB-0009-23",
+          "version_date": "2023-03-02",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10234302-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "C1252",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Skid Control ECU / Brake Actuator",
+      "definition_en": "Brake Booster Pump Motor On Time Abnormally Long",
+      "translation_ar": "مدة تشغيل محرك مضخة تعزيز الفرامل أطول من الطبيعي",
+      "category": {
+        "system": "Chassis / brake ABS/VSC",
+        "type": "خاص بالشركة المصنعة (نطاق DTC)"
+      },
+      "applicability": {
+        "model": "LS 460",
+        "years": "2013-2017",
+        "market": "USA",
+        "engine": "غير محدد في النشرة",
+        "fuel": "بنزين",
+        "drivetrain": "غير محدد في النشرة",
+        "generation": "LS 460 موديلات 2013–2017"
+      },
+      "symptoms": [
+        "لمبة الفرامل أو ABS أو TRAC",
+        "رسالة Check VSC محتملة"
+      ],
+      "causes": [
+        {
+          "item": "تسرب داخلي صغير في Brake Actuator",
+          "evidence": "نشرة Lexus L-SB-0009-23 تشير إليه كسبب محتمل مشترك للأكواد المعنية"
+        },
+        {
+          "item": "فيوز/تغذية المضخة أو الأسلاك أو العطل خارج نطاق النشرة",
+          "evidence": "يلزم التحقق عبر Repair Manual؛ لم تورد النشرة قيم فصل كافية"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. تأكيد وجود لمبات Brake/ABS/TRAC أو رسالة Check VSC",
+        "2. قراءة جميع الأكواد في نظام الفرامل باستخدام Techstream والتأكد من وجود أحد الأكواد الأربعة",
+        "3. فحص التسرب الخارجي ومستوى سائل الفرامل والتغذية وفق دليل TIS؛ أية قيمة ضغط مرجعية: غير مؤكد",
+        "4. إذا انطبقت النشرة وشروطها، يرجع المصنع إلى تبديل Brake Actuator وBrake Booster Pump معاً حسب تعليمات TIS",
+        "5. تنفيذ تنفيس إلكتروني/فحص تشغيل حسب TIS ثم مسح DTC واختبار الطريق؛ العمل على الفرامل يتطلب فني مؤهل"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Accumulator Pressure",
+          "translation_ar": "ضغط مُراكم الفرامل",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Brake Booster Pump Motor",
+          "translation_ar": "حالة محرك مضخة تعزيز الفرامل",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Brake Pedal Stroke",
+          "translation_ar": "مشوار دواسة الفرامل",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Brake actuator assembly",
+          "name_ar": "مجموعة مشغل الفرامل",
+          "location": "مجموعة الفرامل الهيدروليكية؛ الموقع/الوصلات التفصيلية عبر TIS",
+          "part_number": "44050-50110 -> 04003-45450 في النشرة"
+        },
+        {
+          "name_en": "Brake booster pump with accumulator",
+          "name_ar": "مضخة تعزيز الفرامل مع مُراكم الضغط",
+          "location": "دائرة ضغط الفرامل؛ موقع التثبيت حسب TIS",
+          "part_number": "47070-50040 -> 04002-07150 في النشرة"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=LS+460+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF+%D9%81%D9%8A+%D8%A7%D9%84%D9%86%D8%B4%D8%B1%D8%A9+C1252+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=LS+460+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF+%D9%81%D9%8A+%D8%A7%D9%84%D9%86%D8%B4%D8%B1%D8%A9+C1252+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "نشرة خدمة Lexus L-SB-0009-23 تثبت حالة فرامل متكررة محتملة؛ لا يوجد معدل انتشار معتمد",
+      "sources": [
+        {
+          "title": "L-SB-0009-23",
+          "version_date": "2023-03-02",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10234302-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        },
+        {
+          "title": "2010 Lexus LX570 C1252/52 diagnostic chart",
+          "version_date": "2010 model-year document (web mirror)",
+          "url": "https://charm.li/Lexus/2010/LX%20570%20V8-5.7L%20%283UR-FE%29/Repair%20and%20Diagnosis/A%20L%20L%20%20Diagnostic%20Trouble%20Codes%20%28%20DTC%20%29/Testing%20and%20Inspection/Manufacturer%20Code%20Charts/DTC%2052/Brake%20Booster%20Pump%20Motor%20on%20Time%20Abnormally%20Long%20-%20Vehicle%20Stability%20Control%20System/",
+          "source_type": "Related Lexus model secondary repair reference, NOT proof of LS460 applicability",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "C1253",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Skid Control ECU / Brake Actuator",
+      "definition_en": "Brake Booster Pump Motor Circuit (exact LS460 MY2013-17 text unverified)",
+      "translation_ar": "خلل دائرة محرك مضخة تعزيز الفرامل (التعريف التفصيلي لهذه السنوات غير مؤكد)",
+      "category": {
+        "system": "Chassis / brake ABS/VSC",
+        "type": "خاص بالشركة المصنعة (نطاق DTC)"
+      },
+      "applicability": {
+        "model": "LS 460",
+        "years": "2013-2017",
+        "market": "USA",
+        "engine": "غير محدد في النشرة",
+        "fuel": "بنزين",
+        "drivetrain": "غير محدد في النشرة",
+        "generation": "LS 460 موديلات 2013–2017"
+      },
+      "symptoms": [
+        "لمبة الفرامل أو ABS أو TRAC",
+        "رسالة Check VSC محتملة"
+      ],
+      "causes": [
+        {
+          "item": "تسرب داخلي صغير في Brake Actuator",
+          "evidence": "نشرة Lexus L-SB-0009-23 تشير إليه كسبب محتمل مشترك للأكواد المعنية"
+        },
+        {
+          "item": "فيوز/تغذية المضخة أو الأسلاك أو العطل خارج نطاق النشرة",
+          "evidence": "يلزم التحقق عبر Repair Manual؛ لم تورد النشرة قيم فصل كافية"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. تأكيد وجود لمبات Brake/ABS/TRAC أو رسالة Check VSC",
+        "2. قراءة جميع الأكواد في نظام الفرامل باستخدام Techstream والتأكد من وجود أحد الأكواد الأربعة",
+        "3. فحص التسرب الخارجي ومستوى سائل الفرامل والتغذية وفق دليل TIS؛ أية قيمة ضغط مرجعية: غير مؤكد",
+        "4. إذا انطبقت النشرة وشروطها، يرجع المصنع إلى تبديل Brake Actuator وBrake Booster Pump معاً حسب تعليمات TIS",
+        "5. تنفيذ تنفيس إلكتروني/فحص تشغيل حسب TIS ثم مسح DTC واختبار الطريق؛ العمل على الفرامل يتطلب فني مؤهل"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Accumulator Pressure",
+          "translation_ar": "ضغط مُراكم الفرامل",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Brake Booster Pump Motor",
+          "translation_ar": "حالة محرك مضخة تعزيز الفرامل",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Brake Pedal Stroke",
+          "translation_ar": "مشوار دواسة الفرامل",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Brake actuator assembly",
+          "name_ar": "مجموعة مشغل الفرامل",
+          "location": "مجموعة الفرامل الهيدروليكية؛ الموقع/الوصلات التفصيلية عبر TIS",
+          "part_number": "44050-50110 -> 04003-45450 في النشرة"
+        },
+        {
+          "name_en": "Brake booster pump with accumulator",
+          "name_ar": "مضخة تعزيز الفرامل مع مُراكم الضغط",
+          "location": "دائرة ضغط الفرامل؛ موقع التثبيت حسب TIS",
+          "part_number": "47070-50040 -> 04002-07150 في النشرة"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=LS+460+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF+%D9%81%D9%8A+%D8%A7%D9%84%D9%86%D8%B4%D8%B1%D8%A9+C1253+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=LS+460+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF+%D9%81%D9%8A+%D8%A7%D9%84%D9%86%D8%B4%D8%B1%D8%A9+C1253+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "نشرة خدمة Lexus L-SB-0009-23 تثبت حالة فرامل متكررة محتملة؛ لا يوجد معدل انتشار معتمد",
+      "sources": [
+        {
+          "title": "L-SB-0009-23",
+          "version_date": "2023-03-02",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10234302-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        },
+        {
+          "title": "Lexus NX C1252/C1253 circuit reference",
+          "version_date": "غير مؤكد (web mirror)",
+          "url": "https://www.lexunx.com/brake_booster_pump_motor_on_time_abnormally_long_c1252_c1253_-763.html",
+          "source_type": "Different Lexus model supporting generic component definition, NOT proof of LS460 applicability",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "C1256",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Skid Control ECU / Brake Actuator",
+      "definition_en": "Accumulator Low Pressure",
+      "translation_ar": "انخفاض ضغط مُراكم الفرامل",
+      "category": {
+        "system": "Chassis / brake ABS/VSC",
+        "type": "خاص بالشركة المصنعة (نطاق DTC)"
+      },
+      "applicability": {
+        "model": "LS 460",
+        "years": "2013-2017",
+        "market": "USA",
+        "engine": "غير محدد في النشرة",
+        "fuel": "بنزين",
+        "drivetrain": "غير محدد في النشرة",
+        "generation": "LS 460 موديلات 2013–2017"
+      },
+      "symptoms": [
+        "لمبة الفرامل أو ABS أو TRAC",
+        "رسالة Check VSC محتملة"
+      ],
+      "causes": [
+        {
+          "item": "تسرب داخلي صغير في Brake Actuator",
+          "evidence": "نشرة Lexus L-SB-0009-23 تشير إليه كسبب محتمل مشترك للأكواد المعنية"
+        },
+        {
+          "item": "فيوز/تغذية المضخة أو الأسلاك أو العطل خارج نطاق النشرة",
+          "evidence": "يلزم التحقق عبر Repair Manual؛ لم تورد النشرة قيم فصل كافية"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. تأكيد وجود لمبات Brake/ABS/TRAC أو رسالة Check VSC",
+        "2. قراءة جميع الأكواد في نظام الفرامل باستخدام Techstream والتأكد من وجود أحد الأكواد الأربعة",
+        "3. فحص التسرب الخارجي ومستوى سائل الفرامل والتغذية وفق دليل TIS؛ أية قيمة ضغط مرجعية: غير مؤكد",
+        "4. إذا انطبقت النشرة وشروطها، يرجع المصنع إلى تبديل Brake Actuator وBrake Booster Pump معاً حسب تعليمات TIS",
+        "5. تنفيذ تنفيس إلكتروني/فحص تشغيل حسب TIS ثم مسح DTC واختبار الطريق؛ العمل على الفرامل يتطلب فني مؤهل"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Accumulator Pressure",
+          "translation_ar": "ضغط مُراكم الفرامل",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Brake Booster Pump Motor",
+          "translation_ar": "حالة محرك مضخة تعزيز الفرامل",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Brake Pedal Stroke",
+          "translation_ar": "مشوار دواسة الفرامل",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Brake actuator assembly",
+          "name_ar": "مجموعة مشغل الفرامل",
+          "location": "مجموعة الفرامل الهيدروليكية؛ الموقع/الوصلات التفصيلية عبر TIS",
+          "part_number": "44050-50110 -> 04003-45450 في النشرة"
+        },
+        {
+          "name_en": "Brake booster pump with accumulator",
+          "name_ar": "مضخة تعزيز الفرامل مع مُراكم الضغط",
+          "location": "دائرة ضغط الفرامل؛ موقع التثبيت حسب TIS",
+          "part_number": "47070-50040 -> 04002-07150 في النشرة"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=LS+460+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF+%D9%81%D9%8A+%D8%A7%D9%84%D9%86%D8%B4%D8%B1%D8%A9+C1256+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=LS+460+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF+%D9%81%D9%8A+%D8%A7%D9%84%D9%86%D8%B4%D8%B1%D8%A9+C1256+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "نشرة خدمة Lexus L-SB-0009-23 تثبت حالة فرامل متكررة محتملة؛ لا يوجد معدل انتشار معتمد",
+      "sources": [
+        {
+          "title": "L-SB-0009-23",
+          "version_date": "2023-03-02",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10234302-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "P2111",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "ECM",
+      "definition_en": "Throttle Actuator Control System - Stuck Open",
+      "translation_ar": "خلل نظام التحكم بخانق الهواء — عالق بوضع الفتح",
+      "category": {
+        "system": "Powertrain / hybrid cold-start",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": "CT 200h",
+        "years": "2011-2016",
+        "market": "USA",
+        "engine": "2ZR-FXE",
+        "fuel": "بنزين + هجين",
+        "drivetrain": "هجين؛ نوع الدفع غير مفصل بالنشرة",
+        "generation": "الجيل CT 200h ضمن السنوات المحددة"
+      },
+      "symptoms": [
+        "MIL ON",
+        "تعذر تشغيل محرك البنزين بعد مبيت بارد عندما تقل الحرارة المحيطة عن −5°C في الحالة المشمولة"
+      ],
+      "causes": [
+        {
+          "item": "تصميم/رقم إصدار مجمع السحب القديم",
+          "evidence": "تحسين مذكور في L-SB-0061-12 Rev2"
+        },
+        {
+          "item": "منطق معايرة ECM قديم",
+          "evidence": "Lexus تطلب التحقق من Calibration ID وتحديثه عند انطباق النشرة"
+        },
+        {
+          "item": "أسباب أخرى لعدم بدء التشغيل",
+          "evidence": "غير مثبتة بالنشرة؛ شخّصها قبل التعميم"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. سجل P2111 و/أو P0A0F ودرجة حرارة البيئة؛ تحقّق من نطاق أقل من −5°C ضمن حالة النشرة",
+        "2. اقرأ رقم مجمع السحب، الموجود أعلى قناة السحب رقم 4، وقارن مع رقم الجزء",
+        "3. إذا كان المجمع 17120-37090 فلا تستبدله بناء على هذه النشرة",
+        "4. قارن Calibration ID بمعرفات Lexus حسب سنة الموديل؛ لا تستبدل ECM وفق هذه النشرة",
+        "5. طبّق تحديث مجمع السحب وبرمجة ECM فقط عند استيفاء شروط Lexus ثم أعد الاختبار بعد مبيت بارد"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Engine Coolant Temperature",
+          "translation_ar": "حرارة المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Throttle Position",
+          "translation_ar": "موضع الخانق",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Engine Speed",
+          "translation_ar": "دوران المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Intake manifold assembly",
+          "name_ar": "مجمع سحب الهواء",
+          "location": "جانب سحب محرك 2ZR-FXE؛ رقم القطعة أعلى مسار السحب رقم 4",
+          "part_number": "17120-37050/51/52/53/54 -> 17120-37091 (بحسب الحالة)"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=CT+200h+2ZR-FXE+P2111+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=CT+200h+2ZR-FXE+P2111+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "Lexus L-SB-0061-12 Rev2 يثبت حالة محددة مرتبطة بدرجة حرارة وقطع ومعايرة",
+      "sources": [
+        {
+          "title": "L-SB-0061-12 Rev2",
+          "version_date": "2016-10-17",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10132863-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "P0A0F",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Hybrid control / ECM; DTC output ECU needs confirmation",
+      "definition_en": "Engine Failed to Start",
+      "translation_ar": "فشل تشغيل محرك الاحتراق الداخلي",
+      "category": {
+        "system": "Powertrain / hybrid cold-start",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": "CT 200h",
+        "years": "2011-2016",
+        "market": "USA",
+        "engine": "2ZR-FXE",
+        "fuel": "بنزين + هجين",
+        "drivetrain": "هجين؛ نوع الدفع غير مفصل بالنشرة",
+        "generation": "الجيل CT 200h ضمن السنوات المحددة"
+      },
+      "symptoms": [
+        "MIL ON",
+        "تعذر تشغيل محرك البنزين بعد مبيت بارد عندما تقل الحرارة المحيطة عن −5°C في الحالة المشمولة"
+      ],
+      "causes": [
+        {
+          "item": "تصميم/رقم إصدار مجمع السحب القديم",
+          "evidence": "تحسين مذكور في L-SB-0061-12 Rev2"
+        },
+        {
+          "item": "منطق معايرة ECM قديم",
+          "evidence": "Lexus تطلب التحقق من Calibration ID وتحديثه عند انطباق النشرة"
+        },
+        {
+          "item": "أسباب أخرى لعدم بدء التشغيل",
+          "evidence": "غير مثبتة بالنشرة؛ شخّصها قبل التعميم"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. سجل P2111 و/أو P0A0F ودرجة حرارة البيئة؛ تحقّق من نطاق أقل من −5°C ضمن حالة النشرة",
+        "2. اقرأ رقم مجمع السحب، الموجود أعلى قناة السحب رقم 4، وقارن مع رقم الجزء",
+        "3. إذا كان المجمع 17120-37090 فلا تستبدله بناء على هذه النشرة",
+        "4. قارن Calibration ID بمعرفات Lexus حسب سنة الموديل؛ لا تستبدل ECM وفق هذه النشرة",
+        "5. طبّق تحديث مجمع السحب وبرمجة ECM فقط عند استيفاء شروط Lexus ثم أعد الاختبار بعد مبيت بارد"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Engine Coolant Temperature",
+          "translation_ar": "حرارة المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Throttle Position",
+          "translation_ar": "موضع الخانق",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Engine Speed",
+          "translation_ar": "دوران المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Intake manifold assembly",
+          "name_ar": "مجمع سحب الهواء",
+          "location": "جانب سحب محرك 2ZR-FXE؛ رقم القطعة أعلى مسار السحب رقم 4",
+          "part_number": "17120-37050/51/52/53/54 -> 17120-37091 (بحسب الحالة)"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=CT+200h+2ZR-FXE+P0A0F+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=CT+200h+2ZR-FXE+P0A0F+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "Lexus L-SB-0061-12 Rev2 يثبت حالة محددة مرتبطة بدرجة حرارة وقطع ومعايرة",
+      "sources": [
+        {
+          "title": "L-SB-0061-12 Rev2",
+          "version_date": "2016-10-17",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10132863-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "P014C",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "ECM",
+      "definition_en": "A/F Sensor Slow Response - Rich to Lean Bank 1 Sensor 1",
+      "translation_ar": "استجابة بطيئة لحساس نسبة الهواء/الوقود من غني إلى فقير — البنك 1 الحساس 1",
+      "category": {
+        "system": "Powertrain / A/F sensor response",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": [
+          "IS 250",
+          "IS 250C"
+        ],
+        "years": "2010-2012",
+        "market": "USA",
+        "engine": "غير مثبت في النشرة؛ يلزم VIN لتأكيد كود المحرك",
+        "fuel": "بنزين",
+        "transmission": "6AT",
+        "drivetrain": "IS250 2WD/AWD؛ IS250C 2WD"
+      },
+      "symptoms": [
+        "MIL ON"
+      ],
+      "causes": [
+        {
+          "item": "ECM calibration version",
+          "evidence": "Lexus L-SB-0017-13 تصف منطق معايرة معدلاً لحالة هذه الأكواد"
+        },
+        {
+          "item": "A/F sensor signal / wiring / exhaust or fuel control",
+          "evidence": "احتمالات فحص عام وليست سبباً مثبتاً في هذه النشرة"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. استخدم Techstream لتسجيل الكود والتأكد من شروط النشرة",
+        "2. إذا كانت أكواد أخرى موجودة فلا تطبق إصلاح هذه النشرة قبل تشخيصها وفق دليل السيارة",
+        "3. تحقق من ECM Calibration ID وملصق التعديلات حسب سنة وطراز ودفع السيارة",
+        "4. إذا كان معرف المعايرة قديماً، نفذ تحديث ECM وفق Lexus مع Power Supply ثابت 13.5 V خلال البرمجة فقط",
+        "5. أعد فحص الأكواد وتجربة الطريق؛ لا تستبدل حساس A/F تلقائياً بسبب النشرة"
+      ],
+      "live_data": [
+        {
+          "pid_en": "A/F Sensor Bank 1 Sensor 1",
+          "translation_ar": "حساس نسبة الهواء/الوقود بنك 1 حساس 1",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "A/F Sensor Bank 2 Sensor 1",
+          "translation_ar": "حساس نسبة الهواء/الوقود بنك 2 حساس 1",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Fuel Trim",
+          "translation_ar": "تصحيح الوقود",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Air fuel ratio sensor Bank 1/2 Sensor 1",
+          "name_ar": "حساس نسبة الهواء/الوقود الأمامي للبنك المعني",
+          "location": "على مسار عادم البنك المناسب قبل المحفز؛ تأكيد البنك عبر TIS حسب المحرك",
+          "part_number": "غير مؤكد؛ النشرة تتناول برمجة ECM ولا تأمر بتبديل الحساس"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=%5B%27IS+250%27%2C+%27IS+250C%27%5D+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AB%D8%A8%D8%AA+%D9%81%D9%8A+%D8%A7%D9%84%D9%86%D8%B4%D8%B1%D8%A9%D8%9B+%D9%8A%D9%84%D8%B2%D9%85+VIN+%D9%84%D8%AA%D8%A3%D9%83%D9%8A%D8%AF+%D9%83%D9%88%D8%AF+%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83+P014C+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=%5B%27IS+250%27%2C+%27IS+250C%27%5D+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AB%D8%A8%D8%AA+%D9%81%D9%8A+%D8%A7%D9%84%D9%86%D8%B4%D8%B1%D8%A9%D8%9B+%D9%8A%D9%84%D8%B2%D9%85+VIN+%D9%84%D8%AA%D8%A3%D9%83%D9%8A%D8%AF+%D9%83%D9%88%D8%AF+%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83+P014C+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "Lexus L-SB-0017-13 تؤكد إصلاح معايرة ECU للحالة المحددة",
+      "sources": [
+        {
+          "title": "L-SB-0017-13",
+          "version_date": "2013-03-20",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2013/MC-10133805-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "P014D",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "ECM",
+      "definition_en": "A/F Sensor Slow Response - Lean to Rich Bank 1 Sensor 1",
+      "translation_ar": "استجابة بطيئة لحساس نسبة الهواء/الوقود من فقير إلى غني — البنك 1 الحساس 1",
+      "category": {
+        "system": "Powertrain / A/F sensor response",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": [
+          "IS 250",
+          "IS 250C"
+        ],
+        "years": "2010-2012",
+        "market": "USA",
+        "engine": "غير مثبت في النشرة؛ يلزم VIN لتأكيد كود المحرك",
+        "fuel": "بنزين",
+        "transmission": "6AT",
+        "drivetrain": "IS250 2WD/AWD؛ IS250C 2WD"
+      },
+      "symptoms": [
+        "MIL ON"
+      ],
+      "causes": [
+        {
+          "item": "ECM calibration version",
+          "evidence": "Lexus L-SB-0017-13 تصف منطق معايرة معدلاً لحالة هذه الأكواد"
+        },
+        {
+          "item": "A/F sensor signal / wiring / exhaust or fuel control",
+          "evidence": "احتمالات فحص عام وليست سبباً مثبتاً في هذه النشرة"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. استخدم Techstream لتسجيل الكود والتأكد من شروط النشرة",
+        "2. إذا كانت أكواد أخرى موجودة فلا تطبق إصلاح هذه النشرة قبل تشخيصها وفق دليل السيارة",
+        "3. تحقق من ECM Calibration ID وملصق التعديلات حسب سنة وطراز ودفع السيارة",
+        "4. إذا كان معرف المعايرة قديماً، نفذ تحديث ECM وفق Lexus مع Power Supply ثابت 13.5 V خلال البرمجة فقط",
+        "5. أعد فحص الأكواد وتجربة الطريق؛ لا تستبدل حساس A/F تلقائياً بسبب النشرة"
+      ],
+      "live_data": [
+        {
+          "pid_en": "A/F Sensor Bank 1 Sensor 1",
+          "translation_ar": "حساس نسبة الهواء/الوقود بنك 1 حساس 1",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "A/F Sensor Bank 2 Sensor 1",
+          "translation_ar": "حساس نسبة الهواء/الوقود بنك 2 حساس 1",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Fuel Trim",
+          "translation_ar": "تصحيح الوقود",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Air fuel ratio sensor Bank 1/2 Sensor 1",
+          "name_ar": "حساس نسبة الهواء/الوقود الأمامي للبنك المعني",
+          "location": "على مسار عادم البنك المناسب قبل المحفز؛ تأكيد البنك عبر TIS حسب المحرك",
+          "part_number": "غير مؤكد؛ النشرة تتناول برمجة ECM ولا تأمر بتبديل الحساس"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=%5B%27IS+250%27%2C+%27IS+250C%27%5D+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AB%D8%A8%D8%AA+%D9%81%D9%8A+%D8%A7%D9%84%D9%86%D8%B4%D8%B1%D8%A9%D8%9B+%D9%8A%D9%84%D8%B2%D9%85+VIN+%D9%84%D8%AA%D8%A3%D9%83%D9%8A%D8%AF+%D9%83%D9%88%D8%AF+%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83+P014D+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=%5B%27IS+250%27%2C+%27IS+250C%27%5D+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AB%D8%A8%D8%AA+%D9%81%D9%8A+%D8%A7%D9%84%D9%86%D8%B4%D8%B1%D8%A9%D8%9B+%D9%8A%D9%84%D8%B2%D9%85+VIN+%D9%84%D8%AA%D8%A3%D9%83%D9%8A%D8%AF+%D9%83%D9%88%D8%AF+%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83+P014D+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "Lexus L-SB-0017-13 تؤكد إصلاح معايرة ECU للحالة المحددة",
+      "sources": [
+        {
+          "title": "L-SB-0017-13",
+          "version_date": "2013-03-20",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2013/MC-10133805-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "P014E",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "ECM",
+      "definition_en": "A/F Sensor Slow Response - Rich to Lean Bank 2 Sensor 1",
+      "translation_ar": "استجابة بطيئة لحساس نسبة الهواء/الوقود من غني إلى فقير — البنك 2 الحساس 1",
+      "category": {
+        "system": "Powertrain / A/F sensor response",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": [
+          "IS 250",
+          "IS 250C"
+        ],
+        "years": "2010-2012",
+        "market": "USA",
+        "engine": "غير مثبت في النشرة؛ يلزم VIN لتأكيد كود المحرك",
+        "fuel": "بنزين",
+        "transmission": "6AT",
+        "drivetrain": "IS250 2WD/AWD؛ IS250C 2WD"
+      },
+      "symptoms": [
+        "MIL ON"
+      ],
+      "causes": [
+        {
+          "item": "ECM calibration version",
+          "evidence": "Lexus L-SB-0017-13 تصف منطق معايرة معدلاً لحالة هذه الأكواد"
+        },
+        {
+          "item": "A/F sensor signal / wiring / exhaust or fuel control",
+          "evidence": "احتمالات فحص عام وليست سبباً مثبتاً في هذه النشرة"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. استخدم Techstream لتسجيل الكود والتأكد من شروط النشرة",
+        "2. إذا كانت أكواد أخرى موجودة فلا تطبق إصلاح هذه النشرة قبل تشخيصها وفق دليل السيارة",
+        "3. تحقق من ECM Calibration ID وملصق التعديلات حسب سنة وطراز ودفع السيارة",
+        "4. إذا كان معرف المعايرة قديماً، نفذ تحديث ECM وفق Lexus مع Power Supply ثابت 13.5 V خلال البرمجة فقط",
+        "5. أعد فحص الأكواد وتجربة الطريق؛ لا تستبدل حساس A/F تلقائياً بسبب النشرة"
+      ],
+      "live_data": [
+        {
+          "pid_en": "A/F Sensor Bank 1 Sensor 1",
+          "translation_ar": "حساس نسبة الهواء/الوقود بنك 1 حساس 1",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "A/F Sensor Bank 2 Sensor 1",
+          "translation_ar": "حساس نسبة الهواء/الوقود بنك 2 حساس 1",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Fuel Trim",
+          "translation_ar": "تصحيح الوقود",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Air fuel ratio sensor Bank 1/2 Sensor 1",
+          "name_ar": "حساس نسبة الهواء/الوقود الأمامي للبنك المعني",
+          "location": "على مسار عادم البنك المناسب قبل المحفز؛ تأكيد البنك عبر TIS حسب المحرك",
+          "part_number": "غير مؤكد؛ النشرة تتناول برمجة ECM ولا تأمر بتبديل الحساس"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=%5B%27IS+250%27%2C+%27IS+250C%27%5D+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AB%D8%A8%D8%AA+%D9%81%D9%8A+%D8%A7%D9%84%D9%86%D8%B4%D8%B1%D8%A9%D8%9B+%D9%8A%D9%84%D8%B2%D9%85+VIN+%D9%84%D8%AA%D8%A3%D9%83%D9%8A%D8%AF+%D9%83%D9%88%D8%AF+%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83+P014E+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=%5B%27IS+250%27%2C+%27IS+250C%27%5D+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AB%D8%A8%D8%AA+%D9%81%D9%8A+%D8%A7%D9%84%D9%86%D8%B4%D8%B1%D8%A9%D8%9B+%D9%8A%D9%84%D8%B2%D9%85+VIN+%D9%84%D8%AA%D8%A3%D9%83%D9%8A%D8%AF+%D9%83%D9%88%D8%AF+%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83+P014E+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "Lexus L-SB-0017-13 تؤكد إصلاح معايرة ECU للحالة المحددة",
+      "sources": [
+        {
+          "title": "L-SB-0017-13",
+          "version_date": "2013-03-20",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2013/MC-10133805-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "P014F",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "ECM",
+      "definition_en": "A/F Sensor Slow Response - Lean to Rich Bank 2 Sensor 1",
+      "translation_ar": "استجابة بطيئة لحساس نسبة الهواء/الوقود من فقير إلى غني — البنك 2 الحساس 1",
+      "category": {
+        "system": "Powertrain / A/F sensor response",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": [
+          "IS 250",
+          "IS 250C"
+        ],
+        "years": "2010-2012",
+        "market": "USA",
+        "engine": "غير مثبت في النشرة؛ يلزم VIN لتأكيد كود المحرك",
+        "fuel": "بنزين",
+        "transmission": "6AT",
+        "drivetrain": "IS250 2WD/AWD؛ IS250C 2WD"
+      },
+      "symptoms": [
+        "MIL ON"
+      ],
+      "causes": [
+        {
+          "item": "ECM calibration version",
+          "evidence": "Lexus L-SB-0017-13 تصف منطق معايرة معدلاً لحالة هذه الأكواد"
+        },
+        {
+          "item": "A/F sensor signal / wiring / exhaust or fuel control",
+          "evidence": "احتمالات فحص عام وليست سبباً مثبتاً في هذه النشرة"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. استخدم Techstream لتسجيل الكود والتأكد من شروط النشرة",
+        "2. إذا كانت أكواد أخرى موجودة فلا تطبق إصلاح هذه النشرة قبل تشخيصها وفق دليل السيارة",
+        "3. تحقق من ECM Calibration ID وملصق التعديلات حسب سنة وطراز ودفع السيارة",
+        "4. إذا كان معرف المعايرة قديماً، نفذ تحديث ECM وفق Lexus مع Power Supply ثابت 13.5 V خلال البرمجة فقط",
+        "5. أعد فحص الأكواد وتجربة الطريق؛ لا تستبدل حساس A/F تلقائياً بسبب النشرة"
+      ],
+      "live_data": [
+        {
+          "pid_en": "A/F Sensor Bank 1 Sensor 1",
+          "translation_ar": "حساس نسبة الهواء/الوقود بنك 1 حساس 1",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "A/F Sensor Bank 2 Sensor 1",
+          "translation_ar": "حساس نسبة الهواء/الوقود بنك 2 حساس 1",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Fuel Trim",
+          "translation_ar": "تصحيح الوقود",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Air fuel ratio sensor Bank 1/2 Sensor 1",
+          "name_ar": "حساس نسبة الهواء/الوقود الأمامي للبنك المعني",
+          "location": "على مسار عادم البنك المناسب قبل المحفز؛ تأكيد البنك عبر TIS حسب المحرك",
+          "part_number": "غير مؤكد؛ النشرة تتناول برمجة ECM ولا تأمر بتبديل الحساس"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=%5B%27IS+250%27%2C+%27IS+250C%27%5D+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AB%D8%A8%D8%AA+%D9%81%D9%8A+%D8%A7%D9%84%D9%86%D8%B4%D8%B1%D8%A9%D8%9B+%D9%8A%D9%84%D8%B2%D9%85+VIN+%D9%84%D8%AA%D8%A3%D9%83%D9%8A%D8%AF+%D9%83%D9%88%D8%AF+%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83+P014F+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=%5B%27IS+250%27%2C+%27IS+250C%27%5D+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AB%D8%A8%D8%AA+%D9%81%D9%8A+%D8%A7%D9%84%D9%86%D8%B4%D8%B1%D8%A9%D8%9B+%D9%8A%D9%84%D8%B2%D9%85+VIN+%D9%84%D8%AA%D8%A3%D9%83%D9%8A%D8%AF+%D9%83%D9%88%D8%AF+%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83+P014F+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "Lexus L-SB-0017-13 تؤكد إصلاح معايرة ECU للحالة المحددة",
+      "sources": [
+        {
+          "title": "L-SB-0017-13",
+          "version_date": "2013-03-20",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2013/MC-10133805-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "B1650",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Occupant Classification ECU / SRS; exact output module needs scan",
+      "definition_en": "Occupant Classification System Malfunction",
+      "translation_ar": "خلل نظام تصنيف الراكب الأمامي",
+      "category": {
+        "system": "Body / SRS passenger classification",
+        "type": "خاص بالشركة المصنعة (نطاق DTC)"
+      },
+      "applicability": {
+        "model": "GX 460",
+        "years": "2023",
+        "market": "USA",
+        "engine": "غير مفصل في النشرة (تحقق VIN)",
+        "fuel": "بنزين",
+        "drivetrain": "غير مفصل في النشرة",
+        "generation": "GX 460 MY2023"
+      },
+      "symptoms": [
+        "ظهور DTC عند إزالة Short Pin أثناء النقل/التخزين؛ قد لا يدل وحده على عطل دائم"
+      ],
+      "causes": [
+        {
+          "item": "انقطاع تغذية B+ بسبب إزالة Short Pin في وضع الشحن",
+          "evidence": "تؤكد نشرة PDS حدوث الكود في هذا السيناريو حصراً"
+        },
+        {
+          "item": "خلل مستمر بنظام SRS أو OC",
+          "evidence": "غير مؤكد؛ إذا بقي الكود بعد إعادة Short Pin يلزم دليل إصلاح"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. التحقق من وجود Short Pin بموقعه المخصص في علبة الريليه ضمن تجهيزات ما قبل التسليم",
+        "2. إعادة Short Pin وفق نشرة Lexus؛ ليس فيوزاً عادياً ولا يوضع في موضع آخر",
+        "3. إجراء Health Check على Techstream بعد IG-ON",
+        "4. مسح B1650 / B1794 وFreeze Frame في سيناريو PDS فقط",
+        "5. إذا تكرر الكود أو وُجد كود آخر انتقل لتشخيص SRS الخاص بالطراز؛ لا تفحص بادئات SRS بأوميتر عادي"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد بطارية 12 فولت",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [
+        {
+          "name_en": "Short pin",
+          "name_ar": "وصلة الشحن / النقل القصيرة",
+          "location": "Relay block في حجرة المحرك حسب نشرة GX460 2023",
+          "part_number": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=GX+460+%D8%BA%D9%8A%D8%B1+%D9%85%D9%81%D8%B5%D9%84+%D9%81%D9%8A+%D8%A7%D9%84%D9%86%D8%B4%D8%B1%D8%A9+%28%D8%AA%D8%AD%D9%82%D9%82+VIN%29+B1650+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=GX+460+%D8%BA%D9%8A%D8%B1+%D9%85%D9%81%D8%B5%D9%84+%D9%81%D9%8A+%D8%A7%D9%84%D9%86%D8%B4%D8%B1%D8%A9+%28%D8%AA%D8%AD%D9%82%D9%82+VIN%29+B1650+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "Lexus L-SB-0034-22 حالة ما قبل التسليم، وليست دليلاً على شيوع عطل وسادة هوائية",
+      "sources": [
+        {
+          "title": "L-SB-0034-22",
+          "version_date": "2022-08-10",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10220220-9999.pdf",
+          "source_type": "Lexus factory bulletin",
+          "retrieved_on": "2026-10-15"
+        },
+        {
+          "title": "2018 Lexus GX460 B1650 repair definition",
+          "version_date": "2018 document (web mirror)",
+          "url": "https://lemon-manuals.la/Lexus/2018/GX%20460%20Base/Repair%20and%20Diagnosis%20%28Single%20Page%29/Restraints/Air%20Bag%2C%20SRS/Supplemental%20Restraint%20System%20%28Diagnostic%20Codes%29%20%281%20Of%203%29/Airbag%20System/DTC%20B1650%3A%20Occupant%20Classification%20System%20Malfunction%20%5B08%2F2019%20-%20%5D/Description/",
+          "source_type": "Related 2018 GX secondary mirror, 2023 applicability not confirmed by this document",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    }
+  ]
+}

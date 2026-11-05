@@ -8871,6 +8871,30 @@
             "configuration_note": "Model-wide index only; no engine-specific DTC detection verified"
           },
           "status": "short OEM index heading; not official full DTC text verified"
+        },
+        {
+          "definition_en": "MAF SEN/CIRCUIT-B1",
+          "translation_ar": "حساس/دائرة كتلة الهواء الداخل — المجموعة 1",
+          "ecu": "ECM",
+          "scope": {
+            "model": "Altima",
+            "generation": "L34",
+            "years": [
+              2019,
+              2020
+            ],
+            "market": "USA bulletin",
+            "engine": "PR25DD 2.5L",
+            "fuel": "gasoline",
+            "transmission": "not restricted by bulletin",
+            "criteria": "MIL on, P0101 stored, no drivability concerns; ECM P/N matches table 1"
+          },
+          "status": "OEM_bulletin_definition_and_scoped_context_checked_20261105",
+          "source_urls": [
+            "https://static.nhtsa.gov/odi/tsbs/2021/MC-10186844-0001.pdf"
+          ],
+          "source_row_index": 249,
+          "full_technical_approval": false
         }
       ],
       "definition_en": "MAF SEN/CIRCUIT-B1",
@@ -8882,7 +8906,14 @@
         "SRC-ALTIMA16-IDX"
       ],
       "original_id": "NIS-DTC-P0101",
-      "original_row_index": 245
+      "original_row_index": 245,
+      "review_20261105": {
+        "addition": "Retained 2019–2020 L34 PR25DD scope independently of existing L33 scope",
+        "primary_document": "NTB20-056a",
+        "source_url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10186844-0001.pdf",
+        "restriction": "Only if MIL on, P0101 stored, no drivability concerns and current ECM part number matches bulletin Table 1; this does not prove all mechanical/electrical checks.",
+        "new_code_count": 0
+      }
     },
     {
       "raw_code": "P0102",
