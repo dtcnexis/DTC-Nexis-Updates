@@ -6,9 +6,9 @@
   "storage_repository": "dtcnexis/DTC-Nexis-Updates",
   "storage_branch": "main",
   "storage_directory": "data/master",
-  "current_saved_row_count": 8911,
+  "current_saved_row_count": 8983,
   "distinct_worldwide_codes": "UNKNOWN: cross-manufacturer duplicates/suffixes and same-code ECU variants are deliberately preserved",
-  "file_count": 41,
+  "file_count": 44,
   "collections": [
     {
       "kind": "generic_trilingual",
@@ -321,6 +321,27 @@
       "rows": 12,
       "source": "BYD_DTC_NEXIS_batch02_review.json",
       "verification": "11 new raw codes, 12 model/ECU variants; catalogue only; cannot auto-release"
+    },
+    {
+      "kind": "lexus_batch01_preserved",
+      "brand": "Lexus",
+      "path": "data/master/brands/lexus_batch01_preserved_part01.json",
+      "rows": 24,
+      "verification": "72 original JSON records retained semantically; 19 primary definition checks, 11 code context only, 42 primary definition pending; all 72 pending full technical approval"
+    },
+    {
+      "kind": "lexus_batch01_preserved",
+      "brand": "Lexus",
+      "path": "data/master/brands/lexus_batch01_preserved_part02.json",
+      "rows": 24,
+      "verification": "72 original JSON records retained semantically; 19 primary definition checks, 11 code context only, 42 primary definition pending; all 72 pending full technical approval"
+    },
+    {
+      "kind": "lexus_batch01_preserved",
+      "brand": "Lexus",
+      "path": "data/master/brands/lexus_batch01_preserved_part03.json",
+      "rows": 24,
+      "verification": "72 original JSON records retained semantically; 19 primary definition checks, 11 code context only, 42 primary definition pending; all 72 pending full technical approval"
     }
   ],
   "saved_groups": {
@@ -342,7 +363,8 @@
     "Honda_batch01_original_archive_counted_again": 0,
     "Audi_original_index_new_codes": 981,
     "BYD_batch01_original": 262,
-    "BYD_batch02_unique_variants_not_in_batch01": 12
+    "BYD_batch02_unique_variants_not_in_batch01": 12,
+    "Lexus_batch01_preserved": 72
   },
   "source_lists_still_to_reconcile": [
     {
@@ -425,6 +447,13 @@
       "saved_path": "data/master/brands/honda_batch02_dtc.json",
       "related_path": "data/master/brands/honda_batch02_related.json",
       "original_batch01_archive": "data/master/brands/honda_batch01_original_archive.json"
+    },
+    {
+      "name": "Lexus lexus_dtc_batch01.json",
+      "status": "COMPLETE_SEMANTIC_SOURCE_PRESERVATION_72_ROWS_FULL_TECHNICAL_QA_PENDING",
+      "count": 72,
+      "audit": "data/master/reviews/continuation_20261105_batch01/LEXUS_DEFINITION_REVIEW.json",
+      "raw_original_sha256": null
     }
   ],
   "quality_gate": "Storing a row permanently does not validate technical definitions, manufacturer fitment, translation or image rights. Keep original source references; release requires independent QA and owner approval.",
@@ -478,6 +507,42 @@
       "original_rows": 66,
       "counts_towards_unique_ledger": false,
       "additional_counted_rows": 0
+    },
+    {
+      "path": "data/master/enrichment/nissan_batch01_source_records_part01_20261105.json",
+      "original_rows": 90,
+      "counts_towards_unique_ledger": false,
+      "additional_counted_rows": 0
+    },
+    {
+      "path": "data/master/enrichment/nissan_batch01_source_records_part02_20261105.json",
+      "original_rows": 90,
+      "counts_towards_unique_ledger": false,
+      "additional_counted_rows": 0
+    },
+    {
+      "path": "data/master/enrichment/nissan_batch01_source_records_part03_20261105.json",
+      "original_rows": 90,
+      "counts_towards_unique_ledger": false,
+      "additional_counted_rows": 0
+    },
+    {
+      "path": "data/master/enrichment/nissan_batch01_source_records_part04_20261105.json",
+      "original_rows": 90,
+      "counts_towards_unique_ledger": false,
+      "additional_counted_rows": 0
+    },
+    {
+      "path": "data/master/enrichment/nissan_batch01_source_records_part05_20261105.json",
+      "original_rows": 90,
+      "counts_towards_unique_ledger": false,
+      "additional_counted_rows": 0
+    },
+    {
+      "path": "data/master/enrichment/nissan_batch01_source_records_part06_20261105.json",
+      "original_rows": 53,
+      "counts_towards_unique_ledger": false,
+      "additional_counted_rows": 0
     }
   ],
   "enrichment_note": "VW001 644 records match VW022 codes in original order exactly. Diagnostic text preserved as enrichment only; not double counted.",
@@ -502,7 +567,7 @@
     ],
     "last_successful_import": "2026-10-29 Audi20 Dacia149 Toyota210 Honda47, all original text read and master copies verified; raw byte materialization unavailable but line extracts complete"
   },
-  "last_source_sync": "2026-11-01; 8911 counted data rows / 41 files; BYD 274 source rows newly retained, all source review data preserved separately; no release",
+  "last_source_sync": "2026-11-05; Lexus 72 source records retained / 44 counted files / 8983 archived rows; Nissan P0101 additional model scope retained without code increment; no app release",
   "duplicate_archival_copies_not_counted": [
     {
       "path": "data/master/brands/audi_legacy_detail.json",
@@ -584,5 +649,12 @@
     "raw_source_byte_sha256_recovered": false,
     "no_oem_verified_electrical_workflows": true,
     "app_updates": false
+  },
+  "continuation_20261105": {
+    "new_counted_rows": 72,
+    "additional_nissan_scope_variants": 1,
+    "source_inventory_json_csv_zip_metadata_matches": 430,
+    "original_byte_recovery": false,
+    "audit_path": "data/master/reviews/continuation_20261105_batch01"
   }
 }

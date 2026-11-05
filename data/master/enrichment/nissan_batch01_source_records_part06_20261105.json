@@ -1,0 +1,3204 @@
+{
+  "schema": "dtcnexis-nissan-source-preservation-v1",
+  "counts_towards_unique_ledger": false,
+  "source": {
+    "filename": "Nissan_DTC_NEXIS_Batch01.json",
+    "library_file_id": "libfile_924b629e61ec8191896d0d5a46c7fcdb",
+    "version_id": "1",
+    "reported_original_size_bytes": 1068668,
+    "access": "Complete 29848-line Library text read, parsed as JSON",
+    "raw_original_bytes_materialized": false,
+    "raw_original_sha256": null,
+    "preservation": "Unmodified record values in generated semantic export; not original-byte recovery"
+  },
+  "source_row_start": 451,
+  "full_technical_approval": false,
+  "records": [
+    {
+      "brand": "Nissan",
+      "code": "U0401",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "ADAS",
+      "definition_en": "ECM CAN 1",
+      "translation_ar": "بيانات CAN من وحدة تحكم المحرك 1",
+      "category": {
+        "group": "U",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U0401+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U0402",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "ADAS",
+      "definition_en": "TCM CAN 1",
+      "translation_ar": "بيانات CAN من وحدة ناقل الحركة 1",
+      "category": {
+        "group": "U",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U0402+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U0405",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "ADAS",
+      "definition_en": "ADAS CAN 2",
+      "translation_ar": "بيانات CAN من نظام المساعدة 2",
+      "category": {
+        "group": "U",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U0405+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U0415",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM / ADAS",
+      "definition_en": "VEHICLE SPEED SIG",
+      "translation_ar": "إشارة سرعة المركبة غير صالحة",
+      "category": {
+        "group": "U",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U0415+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U0428",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "ADAS",
+      "definition_en": "STRG SEN CAN 2",
+      "translation_ar": "بيانات CAN من حساس زاوية التوجيه 2",
+      "category": {
+        "group": "U",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U0428+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U0433",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "ADAS",
+      "definition_en": "DIST SEN CAN CIRC 2",
+      "translation_ar": "دائرة CAN لحساس المسافة 2",
+      "category": {
+        "group": "U",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U0433+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1000",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "CAN COMM CIRCUIT",
+      "translation_ar": "خلل دائرة الاتصال بشبكة CAN",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan service bulletin / service manual full diagnostic entry"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2015
+        ],
+        "market": "North America",
+        "engine": "ECM dependent for ECM path; any engine for other ECUs",
+        "fuel": "gasoline",
+        "transmission": "not specific",
+        "criteria": "Control unit other than ECM not transmitting/receiving expected CAN for >=2 s"
+      },
+      "symptoms": [
+        "Communication trouble; module/system functionality varies"
+      ],
+      "causes": [
+        {
+          "item": "Missing CAN data from connected ECU",
+          "evidence": "LAN diagnostic definition"
+        },
+        {
+          "item": "CAN wiring / connectors / power / grounds",
+          "evidence": "diagnostic hypothesis: must verify topology against service manual, not definite component"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "stage": "identify",
+          "text_ar": "سجّل الوحدة التي خزنت U1000 وكل الوحدات التي لا تتصل مع جهاز CONSULT."
+        },
+        {
+          "stage": "network",
+          "text_ar": "قارن مخطط CAN ورسائل الإرسال والاستقبال بمواصفات التجهيز VIN لكل ECU قبل اتهام أي وحدة."
+        },
+        {
+          "stage": "electrical",
+          "text_ar": "افحص التغذية والأرضي والفيوزات والموصلات ووصلات شبكة CAN في الوحدة المشتبه بها؛ القيم الرقمية الخاصة بالسيارة غير مؤكدة."
+        },
+        {
+          "stage": "retest",
+          "text_ar": "أصلح سبب فقد الاتصال وثبت اختفاء الرمز مع تكرار ظروف ظهوره."
+        }
+      ],
+      "live_data": {
+        "parameters": [
+          {
+            "name_en": "CAN Diagnostic Support Monitor — PRESENT",
+            "name_ar": "حالة الاتصال الحالية",
+            "specification": "OK vs NG/not diagnosed according to module"
+          },
+          {
+            "name_en": "CAN Diagnostic Support Monitor — PAST",
+            "name_ar": "سجل الانقطاع السابق",
+            "specification": "consult module monitor; numeric value غير مؤكد"
+          }
+        ],
+        "numeric_specifications": ">=2 seconds; 2015 LAN-13 only"
+      },
+      "parts": [
+        {
+          "part": "CAN harness/connectors",
+          "location": "network dependent"
+        },
+        {
+          "part": "ECU supply/ground",
+          "location": "module dependent"
+        }
+      ],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2015%2Flan.pdf#page=13"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "2015 Altima LAN network type and topology must be chosen by VIN/vehicle equipment"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=2015+Nissan+Altima+U1000+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "service-first",
+        "type": "OEM cross-module code",
+        "note": "listed in many control modules; no frequency claim"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2015%2Flan.pdf",
+          "title": "Nissan 2015 Altima LAN Service Manual",
+          "version": "May 2014",
+          "locator": "LAN-13 (ECM vs other modules timing)",
+          "verified_existence": true
+        },
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "U1000 listed across ECM, BCM, ABS, TCM, etc",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "مكتمل"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1000",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "ECM",
+      "definition_en": "CAN COMM CIRCUIT",
+      "translation_ar": "خلل دائرة الاتصال بشبكة CAN",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan service bulletin / service manual full diagnostic entry"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2015
+        ],
+        "market": "North America",
+        "engine": "ECM dependent for ECM path; any engine for other ECUs",
+        "fuel": "gasoline",
+        "transmission": "not specific",
+        "criteria": "ECM not transmitting/receiving OBD-emission CAN signals for >=2 s"
+      },
+      "symptoms": [
+        "Communication trouble; module/system functionality varies"
+      ],
+      "causes": [
+        {
+          "item": "Missing CAN data from connected ECU",
+          "evidence": "LAN diagnostic definition"
+        },
+        {
+          "item": "CAN wiring / connectors / power / grounds",
+          "evidence": "diagnostic hypothesis: must verify topology against service manual, not definite component"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "stage": "identify",
+          "text_ar": "سجّل الوحدة التي خزنت U1000 وكل الوحدات التي لا تتصل مع جهاز CONSULT."
+        },
+        {
+          "stage": "network",
+          "text_ar": "قارن مخطط CAN ورسائل الإرسال والاستقبال بمواصفات التجهيز VIN لكل ECU قبل اتهام أي وحدة."
+        },
+        {
+          "stage": "electrical",
+          "text_ar": "افحص التغذية والأرضي والفيوزات والموصلات ووصلات شبكة CAN في الوحدة المشتبه بها؛ القيم الرقمية الخاصة بالسيارة غير مؤكدة."
+        },
+        {
+          "stage": "retest",
+          "text_ar": "أصلح سبب فقد الاتصال وثبت اختفاء الرمز مع تكرار ظروف ظهوره."
+        }
+      ],
+      "live_data": {
+        "parameters": [
+          {
+            "name_en": "CAN Diagnostic Support Monitor — PRESENT",
+            "name_ar": "حالة الاتصال الحالية",
+            "specification": "OK vs NG/not diagnosed according to module"
+          },
+          {
+            "name_en": "CAN Diagnostic Support Monitor — PAST",
+            "name_ar": "سجل الانقطاع السابق",
+            "specification": "consult module monitor; numeric value غير مؤكد"
+          }
+        ],
+        "numeric_specifications": ">=2 seconds; 2015 LAN-13 only"
+      },
+      "parts": [
+        {
+          "part": "CAN harness/connectors",
+          "location": "network dependent"
+        },
+        {
+          "part": "ECU supply/ground",
+          "location": "module dependent"
+        }
+      ],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2015%2Flan.pdf#page=13"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "2015 Altima LAN network type and topology must be chosen by VIN/vehicle equipment"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=2015+Nissan+Altima+U1000+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "service-first",
+        "type": "OEM cross-module code",
+        "note": "listed in many control modules; no frequency claim"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2015%2Flan.pdf",
+          "title": "Nissan 2015 Altima LAN Service Manual",
+          "version": "May 2014",
+          "locator": "LAN-13 (ECM vs other modules timing)",
+          "verified_existence": true
+        },
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "U1000 listed across ECM, BCM, ABS, TCM, etc",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "مكتمل"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1000",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "Multiple ECUs",
+      "definition_en": "CAN COMM CIRCUIT",
+      "translation_ar": "دائرة اتصال CAN",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1000+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1001",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "Multiple ECUs",
+      "definition_en": "CAN COMM CIRCUIT",
+      "translation_ar": "دائرة اتصال CAN",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1001+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1010",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "Multiple ECUs",
+      "definition_en": "CONTROL UNIT (CAN)",
+      "translation_ar": "وحدة التحكم/متحكم CAN",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1010+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1040",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "ECM",
+      "definition_en": "ENG COMM CIRCUIT",
+      "translation_ar": "دائرة اتصال وحدة تحكم المحرك",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1040+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1044",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "ECM",
+      "definition_en": "ENG COMM CIRCUIT",
+      "translation_ar": "دائرة اتصال وحدة تحكم المحرك",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1044+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1117",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "TCM",
+      "definition_en": "LOST COMMUNICATION (ABS)",
+      "translation_ar": "فقد الاتصال بوحدة ABS",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1117+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1217",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "AV",
+      "definition_en": "AV CONTROL UNIT",
+      "translation_ar": "وحدة التحكم بالصوت والصورة",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1217+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1229",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "AV",
+      "definition_en": "AV CONTROL UNIT",
+      "translation_ar": "وحدة التحكم بالصوت والصورة",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1229+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U122F",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "AV",
+      "definition_en": "AV CONTROL UNIT",
+      "translation_ar": "وحدة التحكم بالصوت والصورة",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U122F+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1244",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "AV",
+      "definition_en": "GPS ANTENNA",
+      "translation_ar": "هوائي تحديد المواقع GPS",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1244+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1258",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "AV",
+      "definition_en": "SATELLITE RADIO ANTENNA",
+      "translation_ar": "هوائي الراديو الفضائي",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1258+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1263",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "AV",
+      "definition_en": "USB",
+      "translation_ar": "واجهة USB",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1263+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1264",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "AV",
+      "definition_en": "ANTENNA AMP",
+      "translation_ar": "مضخم الهوائي",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1264+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1265",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "AV",
+      "definition_en": "BOSE AMP",
+      "translation_ar": "مضخم صوت Bose",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1265+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U12AA",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "AV",
+      "definition_en": "CONFIGURATION ERROR",
+      "translation_ar": "خطأ التهيئة",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U12AA+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U12AB",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "AV",
+      "definition_en": "ANTENNA",
+      "translation_ar": "الهوائي",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U12AB+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U12AC",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "AV",
+      "definition_en": "AV CONTROL UNIT",
+      "translation_ar": "وحدة التحكم بالصوت والصورة",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U12AC+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U12AD",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "AV",
+      "definition_en": "AV CONTROL UNIT",
+      "translation_ar": "وحدة التحكم بالصوت والصورة",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U12AD+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U12AE",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "AV",
+      "definition_en": "AV CONTROL UNIT",
+      "translation_ar": "وحدة التحكم بالصوت والصورة",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U12AE+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U12AF",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "AV",
+      "definition_en": "AV CONTROL UNIT",
+      "translation_ar": "وحدة التحكم بالصوت والصورة",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U12AF+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U12B0",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "AV",
+      "definition_en": "POWER SUPPLY VOLTAGE",
+      "translation_ar": "جهد التغذية الكهربائية",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U12B0+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U12B1",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "AV",
+      "definition_en": "POWER SUPPLY VOLTAGE",
+      "translation_ar": "جهد التغذية الكهربائية",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U12B1+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1300",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "AV",
+      "definition_en": "AV COMM CIRCUIT",
+      "translation_ar": "دائرة اتصال الصوت والصورة",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1300+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1310",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "AV",
+      "definition_en": "AV CONTROL UNIT",
+      "translation_ar": "وحدة تحكم الصوت والصورة",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1310+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1321",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "ADAS",
+      "definition_en": "CONFIGURATION",
+      "translation_ar": "تهيئة وحدة التحكم",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1321+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1503",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "ADAS",
+      "definition_en": "SIDE RDR L CAN",
+      "translation_ar": "اتصال CAN بالرادار الجانبي الأيسر",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1503+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1504",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "ADAS",
+      "definition_en": "SIDE RDR L CAN",
+      "translation_ar": "اتصال CAN بالرادار الجانبي الأيسر",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1504+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1505",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "ADAS",
+      "definition_en": "SIDE RDR R CAN",
+      "translation_ar": "اتصال CAN بالرادار الجانبي الأيمن",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1505+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1506",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "ADAS",
+      "definition_en": "SIDE RDR R CAN",
+      "translation_ar": "اتصال CAN بالرادار الجانبي الأيمن",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1506+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1507",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "ADAS",
+      "definition_en": "LOST COMM(SIDE RDR R)",
+      "translation_ar": "فقد الاتصال بالرادار الجانبي الأيمن",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1507+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1508",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "ADAS",
+      "definition_en": "LOST COMM(SIDE RDR L)",
+      "translation_ar": "فقد الاتصال بالرادار الجانبي الأيسر",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1508+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U153A",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "ADAS",
+      "definition_en": "CVT MESSAGE COUNTER FAILURE",
+      "translation_ar": "فشل عداد رسائل CVT",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U153A+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U153B",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "ADAS",
+      "definition_en": "CVT CHECK SUM FAILURE",
+      "translation_ar": "فشل مجموع التحقق لرسائل CVT",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U153B+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1A00",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "TCU",
+      "definition_en": "TCU",
+      "translation_ar": "وحدة الاتصالات",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1A00+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1A01",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "TCU",
+      "definition_en": "TCU",
+      "translation_ar": "وحدة الاتصالات",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1A01+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1A03",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "TCU",
+      "definition_en": "TCU",
+      "translation_ar": "وحدة الاتصالات",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1A03+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1A04",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "TCU",
+      "definition_en": "TCU",
+      "translation_ar": "وحدة الاتصالات",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1A04+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1A06",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "TCU",
+      "definition_en": "TEL ANTENNA",
+      "translation_ar": "هوائي الاتصالات",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1A06+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1A09",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "TCU",
+      "definition_en": "GPS ANTENNA",
+      "translation_ar": "هوائي GPS",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1A09+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1A0A",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "TCU",
+      "definition_en": "TCU",
+      "translation_ar": "وحدة الاتصالات",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1A0A+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1A0B",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "TCU",
+      "definition_en": "MICROPHONE",
+      "translation_ar": "الميكروفون",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1A0B+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1A0C",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "TCU",
+      "definition_en": "MICROPHONE",
+      "translation_ar": "الميكروفون",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1A0C+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1A0E",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "TCU",
+      "definition_en": "TELEMATICS SWITCH",
+      "translation_ar": "مفتاح أنظمة الاتصالات",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1A0E+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1A10",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "TCU",
+      "definition_en": "TCU",
+      "translation_ar": "وحدة الاتصالات",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1A10+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "U1A11",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "TCU",
+      "definition_en": "TCU",
+      "translation_ar": "وحدة الاتصالات",
+      "category": {
+        "group": "U",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+U1A11+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: U code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    }
+  ]
+}

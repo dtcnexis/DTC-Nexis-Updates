@@ -1,0 +1,5344 @@
+{
+  "schema": "dtcnexis-nissan-source-preservation-v1",
+  "counts_towards_unique_ledger": false,
+  "source": {
+    "filename": "Nissan_DTC_NEXIS_Batch01.json",
+    "library_file_id": "libfile_924b629e61ec8191896d0d5a46c7fcdb",
+    "version_id": "1",
+    "reported_original_size_bytes": 1068668,
+    "access": "Complete 29848-line Library text read, parsed as JSON",
+    "raw_original_bytes_materialized": false,
+    "raw_original_sha256": null,
+    "preservation": "Unmodified record values in generated semantic export; not original-byte recovery"
+  },
+  "source_row_start": 1,
+  "full_technical_approval": false,
+  "records": [
+    {
+      "brand": "Nissan",
+      "code": "B0001",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "DRIVER AIR BAG MODULE",
+      "translation_ar": "وحدة وسادة هواء السائق",
+      "category": {
+        "group": "B",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B0001+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B0002",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "DRIVER AIR BAG MODULE",
+      "translation_ar": "وحدة وسادة هواء السائق",
+      "category": {
+        "group": "B",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B0002+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B0010",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "PASSENGER AIR BAG MODULE",
+      "translation_ar": "وحدة وسادة هواء الراكب",
+      "category": {
+        "group": "B",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B0010+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B0011",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "PASSENGER AIR BAG MODULE",
+      "translation_ar": "وحدة وسادة هواء الراكب",
+      "category": {
+        "group": "B",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B0011+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B0020",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "SIDE AIRBAG MODULE LH",
+      "translation_ar": "وحدة الوسادة الجانبية اليسرى",
+      "category": {
+        "group": "B",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B0020+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B0021",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "SIDE CURTAIN AIR BAG MODULE LH",
+      "translation_ar": "وسادة الستارة الهوائية اليسرى",
+      "category": {
+        "group": "B",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B0021+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B0028",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "SIDE AIRBAG MODULE RH",
+      "translation_ar": "وحدة الوسادة الجانبية اليمنى",
+      "category": {
+        "group": "B",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B0028+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B0028-13",
+      "code_format": "SAE_J2012_5CHAR_PLUS_FAILURE_TYPE",
+      "ecu": "Air Bag Diagnosis Sensor Unit",
+      "definition_en": "SIDE A/B MODULE RH [OPEN]",
+      "translation_ar": "دائرة مفتوحة في وحدة الوسادة الهوائية الجانبية اليمنى",
+      "category": {
+        "group": "B",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan service bulletin / service manual full diagnostic entry"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2015
+        ],
+        "market": "North America",
+        "engine": "not engine-dependent",
+        "fuel": "gasoline",
+        "transmission": "not relevant",
+        "criteria": "current or past DTC B0028–13 in CONSULT SRS; front RH side airbag module"
+      },
+      "symptoms": [
+        "Airbag warning lamp may indicate SRS fault; specific telltale behavior must be verified"
+      ],
+      "causes": [
+        {
+          "item": "Open harness / connector in front RH side airbag module circuit",
+          "evidence": "Nissan SRC-66"
+        },
+        {
+          "item": "Internal front RH side airbag module fault",
+          "evidence": "Nissan SRC-66"
+        },
+        {
+          "item": "Internal air bag diagnosis sensor unit fault",
+          "evidence": "Nissan SRC-66"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "stage": "safety",
+          "text_ar": "التزم بإجراء إبطال SRS في دليل المصنع قبل الاقتراب من الموصلات؛ لا تستخدم أوميتر أو معدات قياس كهربائي على أسلاك SRS ما لم ينص دليل نيسان صراحة على ذلك."
+        },
+        {
+          "stage": "confirm",
+          "text_ar": "اقرأ رمز B0028-13 والتمييز Current/Past عبر CONSULT؛ اتبع إجراء SRC-67 للاختبارات المخصصة وبمعدات SRS المعتمدة."
+        },
+        {
+          "stage": "replace-only-after",
+          "text_ar": "لا تغيّر وحدة الوسادة أو ECU إلا بعد خطوات العزل المخصصة في دليل المصنع؛ القيم الطرفية غير مؤكدة هنا."
+        }
+      ],
+      "live_data": {
+        "parameters": [
+          {
+            "name_en": "Self Diagnostic Result — SIDE A/B MODULE RH",
+            "name_ar": "نتيجة فحص دائرة الوسادة الجانبية اليمنى",
+            "specification": "B0028–13 [OPEN]"
+          }
+        ],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [
+        {
+          "part": "Front right side airbag module",
+          "location": "front passenger seat side in 2015 Altima; check SRC-5 vehicle diagram"
+        },
+        {
+          "part": "SRS wiring/connectors",
+          "location": "seat and related harness, exact routing manual-required"
+        },
+        {
+          "part": "Airbag diagnosis sensor unit",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2015%2Fsrc.pdf#page=66"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "SRS protected circuit: do not copy or probe; follow Nissan SRC-67"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=2015+Nissan+Altima+B0028-13+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "safety",
+        "type": "full Nissan SRS fault subtype description",
+        "note": "High safety priority, not reported workshop frequency"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2015%2Fsrc.pdf",
+          "title": "Nissan 2015 Altima SRS Airbag Control Manual",
+          "version": "May 2014",
+          "locator": "SRC-66 B0028–13, SRC-67 diagnostic procedure",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "مكتمل"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B0029",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "SIDE CURTAIN AIR BAG MODULE RH",
+      "translation_ar": "وسادة الستارة الهوائية اليمنى",
+      "category": {
+        "group": "B",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B0029+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B0092",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "REAR SIDE AIR BAG SATELLITE SENSOR",
+      "translation_ar": "حساس الصدمات الجانبي الخلفي",
+      "category": {
+        "group": "B",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B0092+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B0093",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "FRONT DOOR SATELLITE SENSOR",
+      "translation_ar": "حساس الصدمات في الباب الأمامي",
+      "category": {
+        "group": "B",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B0093+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B0094",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "CRASH ZONE SENSOR",
+      "translation_ar": "حساس منطقة التصادم",
+      "category": {
+        "group": "B",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B0094+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B0097",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "REAR SIDE AIR BAG SATELLITE SENSOR",
+      "translation_ar": "حساس الصدمات الجانبي الخلفي",
+      "category": {
+        "group": "B",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B0097+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B0098",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "FRONT DOOR SATELLITE SENSOR",
+      "translation_ar": "حساس الصدمات في الباب الأمامي",
+      "category": {
+        "group": "B",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B0098+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B0099",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "SATELLITE SENSOR",
+      "translation_ar": "حساس تصادم تابع",
+      "category": {
+        "group": "B",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B0099+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B00A0",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "OCCUPANT CLASSIFICATION SYSTEM CONTROL UNIT",
+      "translation_ar": "وحدة تصنيف وجود الراكب",
+      "category": {
+        "group": "B",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B00A0+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B00D5",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "FRONT PASSENGER AIR BAG OFF INDICATOR",
+      "translation_ar": "مؤشر تعطيل وسادة هواء الراكب الأمامي",
+      "category": {
+        "group": "B",
+        "standardization": "عام (ISO/SAE)",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B00D5+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B130D",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "AV / TCU",
+      "definition_en": "TCU",
+      "translation_ar": "وحدة التحكم بالاتصالات",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B130D+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B1310",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "AV / TCU",
+      "definition_en": "TCU",
+      "translation_ar": "وحدة التحكم بالاتصالات",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B1310+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B13D9",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "AV / TCU",
+      "definition_en": "TCU",
+      "translation_ar": "وحدة التحكم بالاتصالات",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B13D9+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B13E1",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "AV / TCU",
+      "definition_en": "TCU",
+      "translation_ar": "وحدة التحكم بالاتصالات",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B13E1+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B1428",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "SEAT BELT BUCKLE SWITCH",
+      "translation_ar": "مفتاح مشبك حزام الأمان",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B1428+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B1429",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "SEAT BELT BUCKLE SWITCH",
+      "translation_ar": "مفتاح مشبك حزام الأمان",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B1429+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B142A",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "IGN VOLTAGE",
+      "translation_ar": "جهد الإشعال",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B142A+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B1430",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "SEAT BELT PRE-TENSIONER LH",
+      "translation_ar": "شداد حزام الأمان الأيسر",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B1430+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B1431",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "SEAT BELT PRE-TENSIONER RH",
+      "translation_ar": "شداد حزام الأمان الأيمن",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B1431+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B1432",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "SEAT BELT PRE-TENSIONER LH",
+      "translation_ar": "شداد حزام الأمان الأيسر",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B1432+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B1433",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "SRS",
+      "definition_en": "SEAT BELT PRE-TENSIONER RH",
+      "translation_ar": "شداد حزام الأمان الأيمن",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B1433+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2098",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "IPDM E/R",
+      "definition_en": "IGNITION RELAY ON STUCK",
+      "translation_ar": "مرحل الإشعال عالق في وضع التشغيل",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2098+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2099",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "IPDM E/R",
+      "definition_en": "IGNITION RELAY OFF STUCK",
+      "translation_ar": "مرحل الإشعال عالق في وضع الإيقاف",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2099+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B20A1",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "IPDM E/R",
+      "definition_en": "ECM RELAY CIRC",
+      "translation_ar": "دائرة مرحل وحدة التحكم بالمحرك",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B20A1+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B20A2",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "IPDM E/R",
+      "definition_en": "ECM RELAY CIRC",
+      "translation_ar": "دائرة مرحل وحدة التحكم بالمحرك",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B20A2+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B20A3",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "IPDM E/R",
+      "definition_en": "ETC RELAY STUCK",
+      "translation_ar": "مرحل الخانق الإلكتروني عالق",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B20A3+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B20A4",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "IPDM E/R",
+      "definition_en": "ETC RELAY STUCK",
+      "translation_ar": "مرحل الخانق الإلكتروني عالق",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B20A4+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B20A5",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "IPDM E/R",
+      "definition_en": "FUEL PUMP RELAY STUCK",
+      "translation_ar": "مرحل مضخة الوقود عالق",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B20A5+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B20A6",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "IPDM E/R",
+      "definition_en": "FUEL PUMP RELAY STUCK",
+      "translation_ar": "مرحل مضخة الوقود عالق",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B20A6+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B20A7",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "IPDM E/R",
+      "definition_en": "IPDM EXTERNAL MALF FOR IGN",
+      "translation_ar": "خلل خارجي بوحدة توزيع القدرة يتعلق بالإشعال",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B20A7+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B20A8",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "IPDM E/R",
+      "definition_en": "IPDM EXTERNAL MALF FOR ST",
+      "translation_ar": "خلل خارجي بوحدة توزيع القدرة يتعلق بالتشغيل",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B20A8+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B20A9",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "IPDM E/R",
+      "definition_en": "IPDM EXTERNAL MALF FOR ST",
+      "translation_ar": "خلل خارجي بوحدة توزيع القدرة يتعلق بالتشغيل",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B20A9+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B210B",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM / IPDM E/R",
+      "definition_en": "STARTER CONTROL RELAY",
+      "translation_ar": "مرحل التحكم بمحرك بدء التشغيل",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B210B+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B210C",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM / IPDM E/R",
+      "definition_en": "STARTER CONTROL RELAY",
+      "translation_ar": "مرحل التحكم بمحرك بدء التشغيل",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B210C+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B210D",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM / IPDM E/R",
+      "definition_en": "STARTER RELAY",
+      "translation_ar": "مرحل التشغيل",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B210D+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B210E",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM / IPDM E/R",
+      "definition_en": "STARTER RELAY",
+      "translation_ar": "مرحل التشغيل",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B210E+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B210F",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "TRANSMISSION RANGE SWITCH",
+      "translation_ar": "مفتاح أو حساس وضع ناقل الحركة",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B210F+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2110",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "TRANSMISSION RANGE SWITCH",
+      "translation_ar": "مفتاح أو حساس وضع ناقل الحركة",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2110+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2190",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "NATS ANTENNA AMP.",
+      "translation_ar": "مضخم هوائي مانع التشغيل NATS",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2190+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2191",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "DIFFERENCE OF KEY",
+      "translation_ar": "اختلاف تعريف المفتاح",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2191+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2192",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "ID DISCORD, IMMU-ECM",
+      "translation_ar": "عدم تطابق هوية مانع التشغيل مع ECM",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2192+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2193",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "CHAIN OF ECM-IMMU",
+      "translation_ar": "خلل تسلسل الاتصال بين ECM ومانع التشغيل",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2193+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2195",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "ANTI-SCANNING",
+      "translation_ar": "مكافحة محاولات المسح المتكررة",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2195+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2196",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "DONGLE UNIT",
+      "translation_ar": "وحدة الدونغل",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2196+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2198",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "NATS ANTENNA AMP.",
+      "translation_ar": "مضخم هوائي مانع التشغيل NATS",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2198+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2205",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "Combination meter / BCM",
+      "definition_en": "VEHICLE SPEED",
+      "translation_ar": "إشارة سرعة المركبة",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2205+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2267",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "Combination meter",
+      "definition_en": "ENGINE SPEED",
+      "translation_ar": "إشارة سرعة دوران المحرك",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2267+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2268",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "Combination meter",
+      "definition_en": "WATER TEMP",
+      "translation_ar": "إشارة حرارة سائل التبريد",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2268+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2555",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "STOP LAMP",
+      "translation_ar": "دائرة مصباح التوقف",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2555+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2556",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "PUSH-BUTTON IGNITION SWITCH",
+      "translation_ar": "مفتاح الإشعال بالزر",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2556+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2557",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "Combination meter / BCM",
+      "definition_en": "VEHICLE SPEED",
+      "translation_ar": "إشارة سرعة المركبة",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2557+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2560",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "STARTER CONTROL RELAY",
+      "translation_ar": "مرحل التحكم ببدء التشغيل",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2560+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2562",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "LOW VOLTAGE",
+      "translation_ar": "انخفاض جهد تغذية وحدة BCM",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan service bulletin / service manual full diagnostic entry"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2015
+        ],
+        "market": "North America",
+        "engine": "QR25DE/VQ35DE (BCM is not engine-specific in cited procedure)",
+        "fuel": "gasoline",
+        "transmission": "CVT",
+        "criteria": "BCM supply remains below 8.8 V for >=120 seconds"
+      },
+      "symptoms": [
+        "Low-voltage event in BCM; specific user-visible symptoms غير مؤكد"
+      ],
+      "causes": [
+        {
+          "item": "Battery undercharged/weak",
+          "evidence": "2015 BCS-72 Nissan listed cause"
+        },
+        {
+          "item": "BCM power supply / ground harness or connector",
+          "evidence": "2015 BCS-72 Nissan listed cause"
+        },
+        {
+          "item": "BCM internal fault",
+          "evidence": "Nissan step 3: only if voltage and supply/ground normal and current code remains"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "stage": "confirm",
+          "text_ar": "امسح الرمز، شغّل الإشعال، وبعد مرور 120 ثانية افحص Self Diagnostic Result لوحدة BCM."
+        },
+        {
+          "stage": "measure",
+          "text_ar": "قس جهد البطارية؛ إن كان أقل من 8.8V اشحن/افحص البطارية وأعد الاختبار."
+        },
+        {
+          "stage": "circuit",
+          "text_ar": "إن لم يكن الجهد منخفضاً، افحص تغذية وتأريض BCM والتوصيلات وفق BCS-75."
+        },
+        {
+          "stage": "confirm-cause",
+          "text_ar": "لا تتجه إلى BCM إلا إذا ثبتت سلامة التغذية والتأريض وبقي B2562 CRNT وفق فحص نيسان."
+        }
+      ],
+      "live_data": {
+        "parameters": [
+          {
+            "name_en": "Battery Voltage",
+            "name_ar": "جهد البطارية",
+            "specification": "<8.8 V for >=120 s at BCM triggers B2562"
+          },
+          {
+            "name_en": "BCM Self Diagnostic Result",
+            "name_ar": "التشخيص الذاتي لوحدة الهيكل",
+            "specification": "B2562 CRNT vs PAST"
+          }
+        ],
+        "numeric_specifications": "8.8 V / 120 s directly from 2015 BCS-72"
+      },
+      "parts": [
+        {
+          "part": "12V battery",
+          "location": "engine bay"
+        },
+        {
+          "part": "BCM",
+          "location": "behind combination meter in 2015 L33 (BCS-5)",
+          "part_number": "غير مؤكد"
+        },
+        {
+          "part": "BCM power supply and ground wiring",
+          "location": "BCM connectors; specific pinout غير مؤكد"
+        }
+      ],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2015%2Fbcs.pdf#page=5"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "BCS-56 to BCS-64 in referenced manual, not reproduced"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=2015+Nissan+Altima+B2562+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "service-first",
+        "type": "Nissan BCM priority chart",
+        "note": "B2562 is inspection PRIORITY #1 when multiple BCM codes present; this is not statistical frequency"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2015%2Fbcs.pdf",
+          "title": "Nissan 2015 Altima BCM Service Manual",
+          "version": "May 2014",
+          "locator": "BCS-52 (priority), BCS-72 (threshold/repair), BCS-5 (location)",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "مكتمل"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2562",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "LOW VOLTAGE",
+      "translation_ar": "جهد منخفض",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan index heading; not full fault definition"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (2016 Nissan manual)",
+        "fuel": "gasoline",
+        "engine": "QR25DE or VQ35DE; exact applicability to this code remains to be checked in engine/TCM chapter",
+        "transmission": "CVT and equipment-dependent",
+        "configuration_note": "Model-wide index only; no engine-specific DTC detection verified"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=2015+Nissan+Altima+B2562+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "index presence does not indicate incidence"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan DTC alphabetical index",
+          "version": "Revision November 2015",
+          "locator": "B2562 index heading",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2578",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "HVAC",
+      "definition_en": "IN-VEHICLE SENSOR",
+      "translation_ar": "حساس حرارة المقصورة",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2578+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2579",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "HVAC",
+      "definition_en": "IN-VEHICLE SENSOR",
+      "translation_ar": "حساس حرارة المقصورة",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2579+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B257B",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "HVAC",
+      "definition_en": "AMBIENT SENSOR",
+      "translation_ar": "حساس الحرارة الخارجية",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B257B+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B257C",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "HVAC",
+      "definition_en": "AMBIENT SENSOR",
+      "translation_ar": "حساس الحرارة الخارجية",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B257C+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2581",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "HVAC",
+      "definition_en": "INTAKE SENSOR",
+      "translation_ar": "حساس حرارة الهواء الداخل للمكيف",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2581+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2582",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "HVAC",
+      "definition_en": "INTAKE SENSOR",
+      "translation_ar": "حساس حرارة الهواء الداخل للمكيف",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2582+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B259A",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "ROOM LAMP FUSE",
+      "translation_ar": "فيوز إنارة المقصورة",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B259A+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2601",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "SHIFT POSITION",
+      "translation_ar": "إشارة وضع ناقل الحركة",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2601+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2602",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "SHIFT POSITION",
+      "translation_ar": "إشارة وضع ناقل الحركة",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2602+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2603",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "SHIFT POSITION",
+      "translation_ar": "إشارة وضع ناقل الحركة",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2603+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2604",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "SHIFT POSITION",
+      "translation_ar": "إشارة وضع ناقل الحركة",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2604+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2605",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "SHIFT POSITION",
+      "translation_ar": "إشارة وضع ناقل الحركة",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2605+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2608",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "STARTER RELAY",
+      "translation_ar": "مرحل التشغيل",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2608+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B260A",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM / IPDM E/R",
+      "definition_en": "IGNITION RELAY",
+      "translation_ar": "مرحل الإشعال",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B260A+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2614",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "ACC RELAY CIRCUIT",
+      "translation_ar": "دائرة مرحل الملحقات",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2614+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2615",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "BLOWER RELAY CIRCUIT",
+      "translation_ar": "دائرة مرحل المروحة",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2615+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2616",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "IGNITION RELAY CIRCUIT",
+      "translation_ar": "دائرة مرحل الإشعال",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2616+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2617",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "STARTER RELAY CIRCUIT",
+      "translation_ar": "دائرة مرحل بدء التشغيل",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2617+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2618",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "BCM",
+      "translation_ar": "وحدة التحكم بالهيكل",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2618+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B261A",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "PUSH-BUTTON IGNITION SWITCH",
+      "translation_ar": "مفتاح الإشعال بالزر",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B261A+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B261B",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "REMOTE ENGINE START",
+      "translation_ar": "التشغيل عن بعد للمحرك",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B261B+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B261E",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "VEHICLE TYPE",
+      "translation_ar": "إعداد نوع المركبة",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B261E+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2621",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "INSIDE ANTENNA",
+      "translation_ar": "الهوائي الداخلي للمفتاح الذكي",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2621+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2622",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "BCM",
+      "definition_en": "INSIDE ANTENNA",
+      "translation_ar": "الهوائي الداخلي للمفتاح الذكي",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2622+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2630",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "HVAC",
+      "definition_en": "SUNLOAD SENSOR",
+      "translation_ar": "حساس أشعة الشمس",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2630+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2631",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "HVAC",
+      "definition_en": "SUNLOAD SENSOR",
+      "translation_ar": "حساس أشعة الشمس",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2631+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2632",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "HVAC",
+      "definition_en": "AIR MIX DOOR MOTOR (DRIVER SIDE)",
+      "translation_ar": "محرك بوابة مزج الهواء جهة السائق",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2632+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2633",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "HVAC",
+      "definition_en": "AIR MIX DOOR MOTOR (DRIVER SIDE)",
+      "translation_ar": "محرك بوابة مزج الهواء جهة السائق",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2633+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Nissan",
+      "code": "B2634",
+      "code_format": "SAE_J2012_5CHAR",
+      "ecu": "HVAC",
+      "definition_en": "AIR MIX DOOR MOTOR (PASSENGER SIDE)",
+      "translation_ar": "محرك بوابة مزج الهواء جهة الراكب",
+      "category": {
+        "group": "B",
+        "standardization": "خاص بالمصنع",
+        "definition_status": "Nissan FSM short index heading (not full CONSULT DTC definition)"
+      },
+      "applicability": {
+        "model": "Altima Sedan",
+        "generation": "L33",
+        "years": [
+          2016
+        ],
+        "market": "North America (manual edition)",
+        "fuel": "gasoline",
+        "engine": "QR25DE 2.5L or VQ35DE 3.5L; exact code/engine applicability not established by alphabetic index alone",
+        "transmission": "CVT; equipment-dependent",
+        "configuration_note": "Presence in model-wide index does not prove installed ECU or option; check VIN/ECU calibration against exact service manual"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [],
+      "live_data": {
+        "parameters": [],
+        "numeric_specifications": "غير مؤكد"
+      },
+      "parts": [],
+      "images": {
+        "verified_component_photo_urls": [],
+        "reference_document_url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf"
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "circuit_diagram": "غير مؤكد"
+      },
+      "video": {
+        "search_url": "https://www.youtube.com/results?search_query=Nissan+Altima+L33+2016+B2634+diagnosis"
+      },
+      "priority_evidence": {
+        "tier": "unranked",
+        "note": "وجود الكود في الفهرس لا يثبت شيوعه"
+      },
+      "sources": [
+        {
+          "url": "https://www.nicoclub.com/service-manual?fsm_download=Altima%2F2016%2FIDX.pdf",
+          "title": "Nissan 2016 Altima Sedan alphabetical DTC index",
+          "version": "Revision November 2015",
+          "locator": "Alphabetical Index: B code entries; revision Nov 2015",
+          "verified_existence": true
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    }
+  ]
+}

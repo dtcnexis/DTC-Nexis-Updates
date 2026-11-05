@@ -1,0 +1,1764 @@
+{
+  "schema": "dtcnexis-lexus-batch01-preserved-v1",
+  "storage_status": "PERMANENT_RETAINED_SOURCE_PENDING_TECHNICAL_REVIEW",
+  "brand": "Lexus",
+  "source": {
+    "filename": "lexus_dtc_batch01.json",
+    "library_file_id": "libfile_b2306cade1408191bb53ae04a011bf6e",
+    "version_id": "1",
+    "reported_original_size_bytes": 289640,
+    "access": "Complete 5991-line Library text read, parsed as JSON",
+    "raw_original_bytes_materialized": false,
+    "raw_original_sha256": null,
+    "preservation": "All original JSON record values retained; serialization is a generated semantic export, NOT an original file replica"
+  },
+  "source_row_start": 49,
+  "release_to_app": false,
+  "records": [
+    {
+      "brand": "Lexus",
+      "code": "P160400",
+      "code_format": "Toyota/Techstream DTC+FMI (7 characters)",
+      "ecu": "ECM",
+      "definition_en": "Startability Malfunction",
+      "translation_ar": "خلل قابلية بدء تشغيل المحرك",
+      "category": {
+        "system": "Powertrain / engine management",
+        "type": "خاص بالشركة المصنعة (نطاق DTC)"
+      },
+      "applicability": {
+        "model": [
+          "RX 350",
+          "RX 350L"
+        ],
+        "years": "غير مؤكد — جدول 2GR-FKS يحتاج إثبات نسخة المصنع لكل سنة",
+        "market": "غير مؤكد",
+        "engine": "2GR-FKS",
+        "fuel": "بنزين",
+        "drivetrain": "غير مؤكد",
+        "note": "الصفحة المستضافة ليست دليلاً على أن كل الأكواد تنطبق على كل RX من 2016 إلى 2026"
+      },
+      "symptoms": [
+        "غير مؤكد — مطلوب ربط الأعراض بإصدار ECU والمحرك"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "حفظ Health Check وFreeze Frame وجميع DTCs مع تحديد ECU المصدر",
+        "التحقق من حالة جهد 12V والفيوزات والأرضي وفق مخطط EWD قبل استبدال أي وحدة",
+        "مراجعة Repair Manual للموديل/المحرك وتأكيد الشرط بقياسات موثقة؛ حدود القياس: غير مؤكد"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Engine Speed",
+          "translation_ar": "سرعة المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Engine Coolant Temperature",
+          "translation_ar": "حرارة المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=%5B%27RX+350%27%2C+%27RX+350L%27%5D+2GR-FKS+P160400+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=%5B%27RX+350%27%2C+%27RX+350L%27%5D+2GR-FKS+P160400+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "فهرس 2GR-FKS مستضاف لدى طرف ثالث؛ لم تثبت كثافة الحالات ولا شروط الطراز",
+      "sources": [
+        {
+          "title": "RX SFI chart, 2GR-FKS",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/1602/diagnostic_trouble_code_chart.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "P160500",
+      "code_format": "Toyota/Techstream DTC+FMI (7 characters)",
+      "ecu": "ECM",
+      "definition_en": "Rough Idling",
+      "translation_ar": "خشونة دوران المحرك عند الخمول",
+      "category": {
+        "system": "Powertrain / engine management",
+        "type": "خاص بالشركة المصنعة (نطاق DTC)"
+      },
+      "applicability": {
+        "model": [
+          "RX 350",
+          "RX 350L"
+        ],
+        "years": "غير مؤكد — جدول 2GR-FKS يحتاج إثبات نسخة المصنع لكل سنة",
+        "market": "غير مؤكد",
+        "engine": "2GR-FKS",
+        "fuel": "بنزين",
+        "drivetrain": "غير مؤكد",
+        "note": "الصفحة المستضافة ليست دليلاً على أن كل الأكواد تنطبق على كل RX من 2016 إلى 2026"
+      },
+      "symptoms": [
+        "غير مؤكد — مطلوب ربط الأعراض بإصدار ECU والمحرك"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "حفظ Health Check وFreeze Frame وجميع DTCs مع تحديد ECU المصدر",
+        "التحقق من حالة جهد 12V والفيوزات والأرضي وفق مخطط EWD قبل استبدال أي وحدة",
+        "مراجعة Repair Manual للموديل/المحرك وتأكيد الشرط بقياسات موثقة؛ حدود القياس: غير مؤكد"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Engine Speed",
+          "translation_ar": "سرعة المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Engine Coolant Temperature",
+          "translation_ar": "حرارة المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=%5B%27RX+350%27%2C+%27RX+350L%27%5D+2GR-FKS+P160500+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=%5B%27RX+350%27%2C+%27RX+350L%27%5D+2GR-FKS+P160500+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "فهرس 2GR-FKS مستضاف لدى طرف ثالث؛ لم تثبت كثافة الحالات ولا شروط الطراز",
+      "sources": [
+        {
+          "title": "RX SFI chart, 2GR-FKS",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/1602/diagnostic_trouble_code_chart.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "P117000",
+      "code_format": "Toyota/Techstream DTC+FMI (7 characters)",
+      "ecu": "ECM",
+      "definition_en": "Fuel Performance/Port Injector",
+      "translation_ar": "خلل أداء منظومة الوقود/البخاخات في منفذ السحب",
+      "category": {
+        "system": "Powertrain / engine management",
+        "type": "خاص بالشركة المصنعة (نطاق DTC)"
+      },
+      "applicability": {
+        "model": [
+          "RX 350",
+          "RX 350L"
+        ],
+        "years": "غير مؤكد — جدول 2GR-FKS يحتاج إثبات نسخة المصنع لكل سنة",
+        "market": "غير مؤكد",
+        "engine": "2GR-FKS",
+        "fuel": "بنزين",
+        "drivetrain": "غير مؤكد",
+        "note": "الصفحة المستضافة ليست دليلاً على أن كل الأكواد تنطبق على كل RX من 2016 إلى 2026"
+      },
+      "symptoms": [
+        "غير مؤكد — مطلوب ربط الأعراض بإصدار ECU والمحرك"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "حفظ Health Check وFreeze Frame وجميع DTCs مع تحديد ECU المصدر",
+        "التحقق من حالة جهد 12V والفيوزات والأرضي وفق مخطط EWD قبل استبدال أي وحدة",
+        "مراجعة Repair Manual للموديل/المحرك وتأكيد الشرط بقياسات موثقة؛ حدود القياس: غير مؤكد"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Engine Speed",
+          "translation_ar": "سرعة المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Engine Coolant Temperature",
+          "translation_ar": "حرارة المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=%5B%27RX+350%27%2C+%27RX+350L%27%5D+2GR-FKS+P117000+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=%5B%27RX+350%27%2C+%27RX+350L%27%5D+2GR-FKS+P117000+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "فهرس 2GR-FKS مستضاف لدى طرف ثالث؛ لم تثبت كثافة الحالات ولا شروط الطراز",
+      "sources": [
+        {
+          "title": "RX SFI chart, 2GR-FKS",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/1602/diagnostic_trouble_code_chart.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "P117B00",
+      "code_format": "Toyota/Techstream DTC+FMI (7 characters)",
+      "ecu": "ECM",
+      "definition_en": "Fuel Performance/Direct Injector",
+      "translation_ar": "خلل أداء منظومة الوقود/البخاخات المباشرة",
+      "category": {
+        "system": "Powertrain / engine management",
+        "type": "خاص بالشركة المصنعة (نطاق DTC)"
+      },
+      "applicability": {
+        "model": [
+          "RX 350",
+          "RX 350L"
+        ],
+        "years": "غير مؤكد — جدول 2GR-FKS يحتاج إثبات نسخة المصنع لكل سنة",
+        "market": "غير مؤكد",
+        "engine": "2GR-FKS",
+        "fuel": "بنزين",
+        "drivetrain": "غير مؤكد",
+        "note": "الصفحة المستضافة ليست دليلاً على أن كل الأكواد تنطبق على كل RX من 2016 إلى 2026"
+      },
+      "symptoms": [
+        "غير مؤكد — مطلوب ربط الأعراض بإصدار ECU والمحرك"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "حفظ Health Check وFreeze Frame وجميع DTCs مع تحديد ECU المصدر",
+        "التحقق من حالة جهد 12V والفيوزات والأرضي وفق مخطط EWD قبل استبدال أي وحدة",
+        "مراجعة Repair Manual للموديل/المحرك وتأكيد الشرط بقياسات موثقة؛ حدود القياس: غير مؤكد"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Engine Speed",
+          "translation_ar": "سرعة المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Engine Coolant Temperature",
+          "translation_ar": "حرارة المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=%5B%27RX+350%27%2C+%27RX+350L%27%5D+2GR-FKS+P117B00+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=%5B%27RX+350%27%2C+%27RX+350L%27%5D+2GR-FKS+P117B00+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "فهرس 2GR-FKS مستضاف لدى طرف ثالث؛ لم تثبت كثافة الحالات ولا شروط الطراز",
+      "sources": [
+        {
+          "title": "RX SFI chart, 2GR-FKS",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/1602/diagnostic_trouble_code_chart.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "P123513",
+      "code_format": "Toyota/Techstream DTC+FMI (7 characters)",
+      "ecu": "ECM",
+      "definition_en": "High Pressure Fuel Pump Circuit Open",
+      "translation_ar": "دائرة مضخة الوقود عالية الضغط مفتوحة",
+      "category": {
+        "system": "Powertrain / engine management",
+        "type": "خاص بالشركة المصنعة (نطاق DTC)"
+      },
+      "applicability": {
+        "model": [
+          "RX 350",
+          "RX 350L"
+        ],
+        "years": "غير مؤكد — جدول 2GR-FKS يحتاج إثبات نسخة المصنع لكل سنة",
+        "market": "غير مؤكد",
+        "engine": "2GR-FKS",
+        "fuel": "بنزين",
+        "drivetrain": "غير مؤكد",
+        "note": "الصفحة المستضافة ليست دليلاً على أن كل الأكواد تنطبق على كل RX من 2016 إلى 2026"
+      },
+      "symptoms": [
+        "غير مؤكد — مطلوب ربط الأعراض بإصدار ECU والمحرك"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "حفظ Health Check وFreeze Frame وجميع DTCs مع تحديد ECU المصدر",
+        "التحقق من حالة جهد 12V والفيوزات والأرضي وفق مخطط EWD قبل استبدال أي وحدة",
+        "مراجعة Repair Manual للموديل/المحرك وتأكيد الشرط بقياسات موثقة؛ حدود القياس: غير مؤكد"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Engine Speed",
+          "translation_ar": "سرعة المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Engine Coolant Temperature",
+          "translation_ar": "حرارة المحرك",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=%5B%27RX+350%27%2C+%27RX+350L%27%5D+2GR-FKS+P123513+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=%5B%27RX+350%27%2C+%27RX+350L%27%5D+2GR-FKS+P123513+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "فهرس 2GR-FKS مستضاف لدى طرف ثالث؛ لم تثبت كثافة الحالات ولا شروط الطراز",
+      "sources": [
+        {
+          "title": "RX SFI chart, 2GR-FKS",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/1602/diagnostic_trouble_code_chart.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "B1321",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Combination Meter ECU",
+      "definition_en": "Lost Communication with EMV",
+      "translation_ar": "فقد الاتصال بوحدة عرض المعلومات المتعددة EMV",
+      "category": {
+        "system": "Body / instrumentation",
+        "type": "خاص بالشركة المصنعة (نطاق DTC)"
+      },
+      "applicability": {
+        "model": "RX family (instrument combination meter)",
+        "years": "غير مؤكد وفق VIN ونسخة العداد",
+        "market": "غير مؤكد",
+        "engine": "غير محدد؛ تخص عدادات السيارة",
+        "fuel": "غير مؤكد",
+        "drivetrain": "غير مؤكد",
+        "note": "صفحة مستضافة مستقلة؛ يلزم نسخة TIS الأصلية"
+      },
+      "symptoms": [
+        "غير مؤكد — مطلوب ربط الأعراض بإصدار ECU والمحرك"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "حفظ Health Check وFreeze Frame وجميع DTCs مع تحديد ECU المصدر",
+        "التحقق من حالة جهد 12V والفيوزات والأرضي وفق مخطط EWD قبل استبدال أي وحدة",
+        "مراجعة Repair Manual للموديل/المحرك وتأكيد الشرط بقياسات موثقة؛ حدود القياس: غير مؤكد"
+      ],
+      "live_data": [
+        {
+          "pid_en": "ECU Communication Status",
+          "translation_ar": "حالة اتصال وحدة التحكم",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية 12 فولت",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+B1321+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+B1321+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "موجود في فهرس تقني؛ لا توجد بيانات منشورة تبرر ترتيب الشيوع",
+      "sources": [
+        {
+          "title": "RX meter / gauge DTC chart",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/3472/diagnostic_trouble_code_chart.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "B1326",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Combination Meter ECU",
+      "definition_en": "Lost Communication with Clock Device (Local-CAN)",
+      "translation_ar": "فقد الاتصال بوحدة الساعة عبر Local-CAN",
+      "category": {
+        "system": "Body / instrumentation",
+        "type": "خاص بالشركة المصنعة (نطاق DTC)"
+      },
+      "applicability": {
+        "model": "RX family (instrument combination meter)",
+        "years": "غير مؤكد وفق VIN ونسخة العداد",
+        "market": "غير مؤكد",
+        "engine": "غير محدد؛ تخص عدادات السيارة",
+        "fuel": "غير مؤكد",
+        "drivetrain": "غير مؤكد",
+        "note": "صفحة مستضافة مستقلة؛ يلزم نسخة TIS الأصلية"
+      },
+      "symptoms": [
+        "غير مؤكد — مطلوب ربط الأعراض بإصدار ECU والمحرك"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "حفظ Health Check وFreeze Frame وجميع DTCs مع تحديد ECU المصدر",
+        "التحقق من حالة جهد 12V والفيوزات والأرضي وفق مخطط EWD قبل استبدال أي وحدة",
+        "مراجعة Repair Manual للموديل/المحرك وتأكيد الشرط بقياسات موثقة؛ حدود القياس: غير مؤكد"
+      ],
+      "live_data": [
+        {
+          "pid_en": "ECU Communication Status",
+          "translation_ar": "حالة اتصال وحدة التحكم",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية 12 فولت",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+B1326+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+B1326+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "موجود في فهرس تقني؛ لا توجد بيانات منشورة تبرر ترتيب الشيوع",
+      "sources": [
+        {
+          "title": "RX meter / gauge DTC chart",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/3472/diagnostic_trouble_code_chart.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "B1500",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Combination Meter ECU",
+      "definition_en": "Fuel Sender Open Detected",
+      "translation_ar": "رصد انقطاع في دائرة مرسل مستوى الوقود",
+      "category": {
+        "system": "Body / instrumentation",
+        "type": "خاص بالشركة المصنعة (نطاق DTC)"
+      },
+      "applicability": {
+        "model": "RX family (instrument combination meter)",
+        "years": "غير مؤكد وفق VIN ونسخة العداد",
+        "market": "غير مؤكد",
+        "engine": "غير محدد؛ تخص عدادات السيارة",
+        "fuel": "غير مؤكد",
+        "drivetrain": "غير مؤكد",
+        "note": "صفحة مستضافة مستقلة؛ يلزم نسخة TIS الأصلية"
+      },
+      "symptoms": [
+        "غير مؤكد — مطلوب ربط الأعراض بإصدار ECU والمحرك"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "حفظ Health Check وFreeze Frame وجميع DTCs مع تحديد ECU المصدر",
+        "التحقق من حالة جهد 12V والفيوزات والأرضي وفق مخطط EWD قبل استبدال أي وحدة",
+        "مراجعة Repair Manual للموديل/المحرك وتأكيد الشرط بقياسات موثقة؛ حدود القياس: غير مؤكد"
+      ],
+      "live_data": [
+        {
+          "pid_en": "ECU Communication Status",
+          "translation_ar": "حالة اتصال وحدة التحكم",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية 12 فولت",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+B1500+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+B1500+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "موجود في فهرس تقني؛ لا توجد بيانات منشورة تبرر ترتيب الشيوع",
+      "sources": [
+        {
+          "title": "RX meter / gauge DTC chart",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/3472/diagnostic_trouble_code_chart.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "B1507",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Combination Meter ECU",
+      "definition_en": "Open in Turn Signal Circuit",
+      "translation_ar": "انقطاع في دائرة إشارات الانعطاف",
+      "category": {
+        "system": "Body / instrumentation",
+        "type": "خاص بالشركة المصنعة (نطاق DTC)"
+      },
+      "applicability": {
+        "model": "RX family (instrument combination meter)",
+        "years": "غير مؤكد وفق VIN ونسخة العداد",
+        "market": "غير مؤكد",
+        "engine": "غير محدد؛ تخص عدادات السيارة",
+        "fuel": "غير مؤكد",
+        "drivetrain": "غير مؤكد",
+        "note": "صفحة مستضافة مستقلة؛ يلزم نسخة TIS الأصلية"
+      },
+      "symptoms": [
+        "غير مؤكد — مطلوب ربط الأعراض بإصدار ECU والمحرك"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "حفظ Health Check وFreeze Frame وجميع DTCs مع تحديد ECU المصدر",
+        "التحقق من حالة جهد 12V والفيوزات والأرضي وفق مخطط EWD قبل استبدال أي وحدة",
+        "مراجعة Repair Manual للموديل/المحرك وتأكيد الشرط بقياسات موثقة؛ حدود القياس: غير مؤكد"
+      ],
+      "live_data": [
+        {
+          "pid_en": "ECU Communication Status",
+          "translation_ar": "حالة اتصال وحدة التحكم",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية 12 فولت",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+B1507+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+B1507+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "موجود في فهرس تقني؛ لا توجد بيانات منشورة تبرر ترتيب الشيوع",
+      "sources": [
+        {
+          "title": "RX meter / gauge DTC chart",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/3472/diagnostic_trouble_code_chart.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "B1508",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Combination Meter ECU",
+      "definition_en": "Short in Turn Signal / Hazard Flasher Circuit",
+      "translation_ar": "قصر في دائرة إشارات الانعطاف أو أضواء التحذير",
+      "category": {
+        "system": "Body / instrumentation",
+        "type": "خاص بالشركة المصنعة (نطاق DTC)"
+      },
+      "applicability": {
+        "model": "RX family (instrument combination meter)",
+        "years": "غير مؤكد وفق VIN ونسخة العداد",
+        "market": "غير مؤكد",
+        "engine": "غير محدد؛ تخص عدادات السيارة",
+        "fuel": "غير مؤكد",
+        "drivetrain": "غير مؤكد",
+        "note": "صفحة مستضافة مستقلة؛ يلزم نسخة TIS الأصلية"
+      },
+      "symptoms": [
+        "غير مؤكد — مطلوب ربط الأعراض بإصدار ECU والمحرك"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "حفظ Health Check وFreeze Frame وجميع DTCs مع تحديد ECU المصدر",
+        "التحقق من حالة جهد 12V والفيوزات والأرضي وفق مخطط EWD قبل استبدال أي وحدة",
+        "مراجعة Repair Manual للموديل/المحرك وتأكيد الشرط بقياسات موثقة؛ حدود القياس: غير مؤكد"
+      ],
+      "live_data": [
+        {
+          "pid_en": "ECU Communication Status",
+          "translation_ar": "حالة اتصال وحدة التحكم",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية 12 فولت",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+B1508+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+B1508+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "موجود في فهرس تقني؛ لا توجد بيانات منشورة تبرر ترتيب الشيوع",
+      "sources": [
+        {
+          "title": "RX meter / gauge DTC chart",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/3472/diagnostic_trouble_code_chart.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "U0100",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Combination Meter ECU",
+      "definition_en": "Lost Communication with ECM / PCM \"A\"",
+      "translation_ar": "فقد الاتصال بوحدة التحكم بالمحرك ECM/PCM A",
+      "category": {
+        "system": "Network / CAN (reported by meter)",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": "RX family (instrument combination meter)",
+        "years": "غير مؤكد وفق VIN ونسخة العداد",
+        "market": "غير مؤكد",
+        "engine": "غير محدد؛ تخص عدادات السيارة",
+        "fuel": "غير مؤكد",
+        "drivetrain": "غير مؤكد",
+        "note": "صفحة مستضافة مستقلة؛ يلزم نسخة TIS الأصلية"
+      },
+      "symptoms": [
+        "تخزين كود اتصال في العداد؛ الأعراض الأخرى حسب وحدة الاتصال المفقودة"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. حفظ Health Check وتحديد أن ECU المبلّغ هو Combination Meter",
+        "2. فحص حالة ECU المقصودة في Network Gateway بما يشمل التغذية والفيوزات والأرضي",
+        "3. إذا عدة أكواد U متزامنة افحص مسار CAN المشترك؛ مرجع المقاومة/الأطراف: غير مؤكد دون EWD",
+        "4. تأكيد العطل بانقطاع اتصال فعلي/بيانات قبل استبدال وحدة، لا بسبب كود مخزن وحده"
+      ],
+      "live_data": [
+        {
+          "pid_en": "ECU Communication Status",
+          "translation_ar": "حالة اتصال وحدة التحكم",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية 12 فولت",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+U0100+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+U0100+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "موجود في فهرس تقني؛ لا توجد بيانات منشورة تبرر ترتيب الشيوع",
+      "sources": [
+        {
+          "title": "RX meter / gauge DTC chart",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/3472/diagnostic_trouble_code_chart.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "U0129",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Combination Meter ECU",
+      "definition_en": "Lost Communication with Brake System Control Module",
+      "translation_ar": "فقد الاتصال بوحدة التحكم بالفرامل",
+      "category": {
+        "system": "Network / CAN (reported by meter)",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": "RX family (instrument combination meter)",
+        "years": "غير مؤكد وفق VIN ونسخة العداد",
+        "market": "غير مؤكد",
+        "engine": "غير محدد؛ تخص عدادات السيارة",
+        "fuel": "غير مؤكد",
+        "drivetrain": "غير مؤكد",
+        "note": "صفحة مستضافة مستقلة؛ يلزم نسخة TIS الأصلية"
+      },
+      "symptoms": [
+        "تخزين كود اتصال في العداد؛ الأعراض الأخرى حسب وحدة الاتصال المفقودة"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. حفظ Health Check وتحديد أن ECU المبلّغ هو Combination Meter",
+        "2. فحص حالة ECU المقصودة في Network Gateway بما يشمل التغذية والفيوزات والأرضي",
+        "3. إذا عدة أكواد U متزامنة افحص مسار CAN المشترك؛ مرجع المقاومة/الأطراف: غير مؤكد دون EWD",
+        "4. تأكيد العطل بانقطاع اتصال فعلي/بيانات قبل استبدال وحدة، لا بسبب كود مخزن وحده"
+      ],
+      "live_data": [
+        {
+          "pid_en": "ECU Communication Status",
+          "translation_ar": "حالة اتصال وحدة التحكم",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية 12 فولت",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+U0129+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+U0129+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "موجود في فهرس تقني؛ لا توجد بيانات منشورة تبرر ترتيب الشيوع",
+      "sources": [
+        {
+          "title": "RX meter / gauge DTC chart",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/3472/diagnostic_trouble_code_chart.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "U0131",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Combination Meter ECU",
+      "definition_en": "Lost Communication with Power Steering Control Module",
+      "translation_ar": "فقد الاتصال بوحدة التحكم بالتوجيه المعزز",
+      "category": {
+        "system": "Network / CAN (reported by meter)",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": "RX family (instrument combination meter)",
+        "years": "غير مؤكد وفق VIN ونسخة العداد",
+        "market": "غير مؤكد",
+        "engine": "غير محدد؛ تخص عدادات السيارة",
+        "fuel": "غير مؤكد",
+        "drivetrain": "غير مؤكد",
+        "note": "صفحة مستضافة مستقلة؛ يلزم نسخة TIS الأصلية"
+      },
+      "symptoms": [
+        "تخزين كود اتصال في العداد؛ الأعراض الأخرى حسب وحدة الاتصال المفقودة"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. حفظ Health Check وتحديد أن ECU المبلّغ هو Combination Meter",
+        "2. فحص حالة ECU المقصودة في Network Gateway بما يشمل التغذية والفيوزات والأرضي",
+        "3. إذا عدة أكواد U متزامنة افحص مسار CAN المشترك؛ مرجع المقاومة/الأطراف: غير مؤكد دون EWD",
+        "4. تأكيد العطل بانقطاع اتصال فعلي/بيانات قبل استبدال وحدة، لا بسبب كود مخزن وحده"
+      ],
+      "live_data": [
+        {
+          "pid_en": "ECU Communication Status",
+          "translation_ar": "حالة اتصال وحدة التحكم",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية 12 فولت",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+U0131+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+U0131+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "موجود في فهرس تقني؛ لا توجد بيانات منشورة تبرر ترتيب الشيوع",
+      "sources": [
+        {
+          "title": "RX meter / gauge DTC chart",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/3472/diagnostic_trouble_code_chart.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "U0140",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Combination Meter ECU",
+      "definition_en": "Lost Communication with Body Control Module",
+      "translation_ar": "فقد الاتصال بوحدة التحكم بالهيكل",
+      "category": {
+        "system": "Network / CAN (reported by meter)",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": "RX family (instrument combination meter)",
+        "years": "غير مؤكد وفق VIN ونسخة العداد",
+        "market": "غير مؤكد",
+        "engine": "غير محدد؛ تخص عدادات السيارة",
+        "fuel": "غير مؤكد",
+        "drivetrain": "غير مؤكد",
+        "note": "صفحة مستضافة مستقلة؛ يلزم نسخة TIS الأصلية"
+      },
+      "symptoms": [
+        "تخزين كود اتصال في العداد؛ الأعراض الأخرى حسب وحدة الاتصال المفقودة"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. حفظ Health Check وتحديد أن ECU المبلّغ هو Combination Meter",
+        "2. فحص حالة ECU المقصودة في Network Gateway بما يشمل التغذية والفيوزات والأرضي",
+        "3. إذا عدة أكواد U متزامنة افحص مسار CAN المشترك؛ مرجع المقاومة/الأطراف: غير مؤكد دون EWD",
+        "4. تأكيد العطل بانقطاع اتصال فعلي/بيانات قبل استبدال وحدة، لا بسبب كود مخزن وحده"
+      ],
+      "live_data": [
+        {
+          "pid_en": "ECU Communication Status",
+          "translation_ar": "حالة اتصال وحدة التحكم",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية 12 فولت",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+U0140+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+U0140+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "موجود في فهرس تقني؛ لا توجد بيانات منشورة تبرر ترتيب الشيوع",
+      "sources": [
+        {
+          "title": "RX meter / gauge DTC chart",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/3472/diagnostic_trouble_code_chart.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "U0151",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Combination Meter ECU",
+      "definition_en": "Lost Communication with Restraints Control Module",
+      "translation_ar": "فقد الاتصال بوحدة نظام الوسائد الهوائية وشدادات الأحزمة",
+      "category": {
+        "system": "Network / CAN (reported by meter)",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": "RX family (instrument combination meter)",
+        "years": "غير مؤكد وفق VIN ونسخة العداد",
+        "market": "غير مؤكد",
+        "engine": "غير محدد؛ تخص عدادات السيارة",
+        "fuel": "غير مؤكد",
+        "drivetrain": "غير مؤكد",
+        "note": "صفحة مستضافة مستقلة؛ يلزم نسخة TIS الأصلية"
+      },
+      "symptoms": [
+        "تخزين كود اتصال في العداد؛ الأعراض الأخرى حسب وحدة الاتصال المفقودة"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. حفظ Health Check وتحديد أن ECU المبلّغ هو Combination Meter",
+        "2. فحص حالة ECU المقصودة في Network Gateway بما يشمل التغذية والفيوزات والأرضي",
+        "3. إذا عدة أكواد U متزامنة افحص مسار CAN المشترك؛ مرجع المقاومة/الأطراف: غير مؤكد دون EWD",
+        "4. تأكيد العطل بانقطاع اتصال فعلي/بيانات قبل استبدال وحدة، لا بسبب كود مخزن وحده"
+      ],
+      "live_data": [
+        {
+          "pid_en": "ECU Communication Status",
+          "translation_ar": "حالة اتصال وحدة التحكم",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية 12 فولت",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+U0151+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+U0151+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "موجود في فهرس تقني؛ لا توجد بيانات منشورة تبرر ترتيب الشيوع",
+      "sources": [
+        {
+          "title": "RX meter / gauge DTC chart",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/3472/diagnostic_trouble_code_chart.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "U0163",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Combination Meter ECU",
+      "definition_en": "Lost Communication with Navigation Control Module",
+      "translation_ar": "فقد الاتصال بوحدة الملاحة",
+      "category": {
+        "system": "Network / CAN (reported by meter)",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": "RX family (instrument combination meter)",
+        "years": "غير مؤكد وفق VIN ونسخة العداد",
+        "market": "غير مؤكد",
+        "engine": "غير محدد؛ تخص عدادات السيارة",
+        "fuel": "غير مؤكد",
+        "drivetrain": "غير مؤكد",
+        "note": "صفحة مستضافة مستقلة؛ يلزم نسخة TIS الأصلية"
+      },
+      "symptoms": [
+        "تخزين كود اتصال في العداد؛ الأعراض الأخرى حسب وحدة الاتصال المفقودة"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. حفظ Health Check وتحديد أن ECU المبلّغ هو Combination Meter",
+        "2. فحص حالة ECU المقصودة في Network Gateway بما يشمل التغذية والفيوزات والأرضي",
+        "3. إذا عدة أكواد U متزامنة افحص مسار CAN المشترك؛ مرجع المقاومة/الأطراف: غير مؤكد دون EWD",
+        "4. تأكيد العطل بانقطاع اتصال فعلي/بيانات قبل استبدال وحدة، لا بسبب كود مخزن وحده"
+      ],
+      "live_data": [
+        {
+          "pid_en": "ECU Communication Status",
+          "translation_ar": "حالة اتصال وحدة التحكم",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية 12 فولت",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+U0163+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+U0163+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "موجود في فهرس تقني؛ لا توجد بيانات منشورة تبرر ترتيب الشيوع",
+      "sources": [
+        {
+          "title": "RX meter / gauge DTC chart",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/3472/diagnostic_trouble_code_chart.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "U0182",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Combination Meter ECU",
+      "definition_en": "Lost Communication with Lighting Control Module Front",
+      "translation_ar": "فقد الاتصال بوحدة التحكم بالإضاءة الأمامية",
+      "category": {
+        "system": "Network / CAN (reported by meter)",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": "RX family (instrument combination meter)",
+        "years": "غير مؤكد وفق VIN ونسخة العداد",
+        "market": "غير مؤكد",
+        "engine": "غير محدد؛ تخص عدادات السيارة",
+        "fuel": "غير مؤكد",
+        "drivetrain": "غير مؤكد",
+        "note": "صفحة مستضافة مستقلة؛ يلزم نسخة TIS الأصلية"
+      },
+      "symptoms": [
+        "تخزين كود اتصال في العداد؛ الأعراض الأخرى حسب وحدة الاتصال المفقودة"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. حفظ Health Check وتحديد أن ECU المبلّغ هو Combination Meter",
+        "2. فحص حالة ECU المقصودة في Network Gateway بما يشمل التغذية والفيوزات والأرضي",
+        "3. إذا عدة أكواد U متزامنة افحص مسار CAN المشترك؛ مرجع المقاومة/الأطراف: غير مؤكد دون EWD",
+        "4. تأكيد العطل بانقطاع اتصال فعلي/بيانات قبل استبدال وحدة، لا بسبب كود مخزن وحده"
+      ],
+      "live_data": [
+        {
+          "pid_en": "ECU Communication Status",
+          "translation_ar": "حالة اتصال وحدة التحكم",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية 12 فولت",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+U0182+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+U0182+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "موجود في فهرس تقني؛ لا توجد بيانات منشورة تبرر ترتيب الشيوع",
+      "sources": [
+        {
+          "title": "RX meter / gauge DTC chart",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/3472/diagnostic_trouble_code_chart.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "U023A",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Combination Meter ECU",
+      "definition_en": "Lost Communication with Front Camera Module",
+      "translation_ar": "فقد الاتصال بوحدة الكاميرا الأمامية",
+      "category": {
+        "system": "Network / CAN (reported by meter)",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": "RX family (instrument combination meter)",
+        "years": "غير مؤكد وفق VIN ونسخة العداد",
+        "market": "غير مؤكد",
+        "engine": "غير محدد؛ تخص عدادات السيارة",
+        "fuel": "غير مؤكد",
+        "drivetrain": "غير مؤكد",
+        "note": "صفحة مستضافة مستقلة؛ يلزم نسخة TIS الأصلية"
+      },
+      "symptoms": [
+        "تخزين كود اتصال في العداد؛ الأعراض الأخرى حسب وحدة الاتصال المفقودة"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "1. حفظ Health Check وتحديد أن ECU المبلّغ هو Combination Meter",
+        "2. فحص حالة ECU المقصودة في Network Gateway بما يشمل التغذية والفيوزات والأرضي",
+        "3. إذا عدة أكواد U متزامنة افحص مسار CAN المشترك؛ مرجع المقاومة/الأطراف: غير مؤكد دون EWD",
+        "4. تأكيد العطل بانقطاع اتصال فعلي/بيانات قبل استبدال وحدة، لا بسبب كود مخزن وحده"
+      ],
+      "live_data": [
+        {
+          "pid_en": "ECU Communication Status",
+          "translation_ar": "حالة اتصال وحدة التحكم",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية 12 فولت",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+U023A+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+family+%28instrument+combination+meter%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AD%D8%AF%D8%AF%D8%9B+%D8%AA%D8%AE%D8%B5+%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7%D8%AA+%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A9+U023A+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "موجود في فهرس تقني؛ لا توجد بيانات منشورة تبرر ترتيب الشيوع",
+      "sources": [
+        {
+          "title": "RX meter / gauge DTC chart",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/3472/diagnostic_trouble_code_chart.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "U0073",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Clearance Warning ECU",
+      "definition_en": "Control Module Communication Bus \"A\" Off",
+      "translation_ar": "توقف ناقل اتصالات وحدات التحكم A",
+      "category": {
+        "system": "Network / CAN (reported by clearance sonar)",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": "RX family (intelligent clearance sonar)",
+        "years": "غير مؤكد — فقط عند تجهيز نظام حساسات الركن المذكور",
+        "market": "غير مؤكد",
+        "engine": "غير مرتبط مباشرة بالمحرك",
+        "fuel": "غير مؤكد",
+        "drivetrain": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد — مطلوب ربط الأعراض بإصدار ECU والمحرك"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "حفظ Health Check وFreeze Frame وجميع DTCs مع تحديد ECU المصدر",
+        "التحقق من حالة جهد 12V والفيوزات والأرضي وفق مخطط EWD قبل استبدال أي وحدة",
+        "مراجعة Repair Manual للموديل/المحرك وتأكيد الشرط بقياسات موثقة؛ حدود القياس: غير مؤكد"
+      ],
+      "live_data": [
+        {
+          "pid_en": "ECU Communication Status",
+          "translation_ar": "حالة اتصال وحدة التحكم",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية 12 فولت",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+family+%28intelligent+clearance+sonar%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%B1%D8%AA%D8%A8%D8%B7+%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D8%A9+%D8%A8%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83+U0073+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+family+%28intelligent+clearance+sonar%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%B1%D8%AA%D8%A8%D8%B7+%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D8%A9+%D8%A8%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83+U0073+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "موجود في فهرس تقني؛ لا توجد بيانات منشورة تبرر ترتيب الشيوع",
+      "sources": [
+        {
+          "title": "RX intelligent clearance sonar U code chart",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/697/control_module_communication_bus_a_off_u0073_u0100_u0124_u0126_u0129_u0140_u0155_u0164_.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "U0124",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Clearance Warning ECU",
+      "definition_en": "Lost Communication with Lateral Acceleration Sensor Module",
+      "translation_ar": "فقد الاتصال بوحدة حساس التسارع الجانبي",
+      "category": {
+        "system": "Network / CAN (reported by clearance sonar)",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": "RX family (intelligent clearance sonar)",
+        "years": "غير مؤكد — فقط عند تجهيز نظام حساسات الركن المذكور",
+        "market": "غير مؤكد",
+        "engine": "غير مرتبط مباشرة بالمحرك",
+        "fuel": "غير مؤكد",
+        "drivetrain": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد — مطلوب ربط الأعراض بإصدار ECU والمحرك"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "حفظ Health Check وFreeze Frame وجميع DTCs مع تحديد ECU المصدر",
+        "التحقق من حالة جهد 12V والفيوزات والأرضي وفق مخطط EWD قبل استبدال أي وحدة",
+        "مراجعة Repair Manual للموديل/المحرك وتأكيد الشرط بقياسات موثقة؛ حدود القياس: غير مؤكد"
+      ],
+      "live_data": [
+        {
+          "pid_en": "ECU Communication Status",
+          "translation_ar": "حالة اتصال وحدة التحكم",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية 12 فولت",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+family+%28intelligent+clearance+sonar%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%B1%D8%AA%D8%A8%D8%B7+%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D8%A9+%D8%A8%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83+U0124+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+family+%28intelligent+clearance+sonar%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%B1%D8%AA%D8%A8%D8%B7+%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D8%A9+%D8%A8%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83+U0124+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "موجود في فهرس تقني؛ لا توجد بيانات منشورة تبرر ترتيب الشيوع",
+      "sources": [
+        {
+          "title": "RX intelligent clearance sonar U code chart",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/697/control_module_communication_bus_a_off_u0073_u0100_u0124_u0126_u0129_u0140_u0155_u0164_.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "U0126",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Clearance Warning ECU",
+      "definition_en": "Lost Communication with Steering Angle Sensor Module",
+      "translation_ar": "فقد الاتصال بوحدة حساس زاوية المقود",
+      "category": {
+        "system": "Network / CAN (reported by clearance sonar)",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": "RX family (intelligent clearance sonar)",
+        "years": "غير مؤكد — فقط عند تجهيز نظام حساسات الركن المذكور",
+        "market": "غير مؤكد",
+        "engine": "غير مرتبط مباشرة بالمحرك",
+        "fuel": "غير مؤكد",
+        "drivetrain": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد — مطلوب ربط الأعراض بإصدار ECU والمحرك"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "حفظ Health Check وFreeze Frame وجميع DTCs مع تحديد ECU المصدر",
+        "التحقق من حالة جهد 12V والفيوزات والأرضي وفق مخطط EWD قبل استبدال أي وحدة",
+        "مراجعة Repair Manual للموديل/المحرك وتأكيد الشرط بقياسات موثقة؛ حدود القياس: غير مؤكد"
+      ],
+      "live_data": [
+        {
+          "pid_en": "ECU Communication Status",
+          "translation_ar": "حالة اتصال وحدة التحكم",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية 12 فولت",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+family+%28intelligent+clearance+sonar%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%B1%D8%AA%D8%A8%D8%B7+%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D8%A9+%D8%A8%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83+U0126+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+family+%28intelligent+clearance+sonar%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%B1%D8%AA%D8%A8%D8%B7+%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D8%A9+%D8%A8%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83+U0126+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "موجود في فهرس تقني؛ لا توجد بيانات منشورة تبرر ترتيب الشيوع",
+      "sources": [
+        {
+          "title": "RX intelligent clearance sonar U code chart",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/697/control_module_communication_bus_a_off_u0073_u0100_u0124_u0126_u0129_u0140_u0155_u0164_.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "U0155",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Clearance Warning ECU",
+      "definition_en": "Lost Communication with Instrument Panel Cluster (IPC) Control Module",
+      "translation_ar": "فقد الاتصال بلوحة العدادات",
+      "category": {
+        "system": "Network / CAN (reported by clearance sonar)",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": "RX family (intelligent clearance sonar)",
+        "years": "غير مؤكد — فقط عند تجهيز نظام حساسات الركن المذكور",
+        "market": "غير مؤكد",
+        "engine": "غير مرتبط مباشرة بالمحرك",
+        "fuel": "غير مؤكد",
+        "drivetrain": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد — مطلوب ربط الأعراض بإصدار ECU والمحرك"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "حفظ Health Check وFreeze Frame وجميع DTCs مع تحديد ECU المصدر",
+        "التحقق من حالة جهد 12V والفيوزات والأرضي وفق مخطط EWD قبل استبدال أي وحدة",
+        "مراجعة Repair Manual للموديل/المحرك وتأكيد الشرط بقياسات موثقة؛ حدود القياس: غير مؤكد"
+      ],
+      "live_data": [
+        {
+          "pid_en": "ECU Communication Status",
+          "translation_ar": "حالة اتصال وحدة التحكم",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية 12 فولت",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+family+%28intelligent+clearance+sonar%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%B1%D8%AA%D8%A8%D8%B7+%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D8%A9+%D8%A8%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83+U0155+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+family+%28intelligent+clearance+sonar%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%B1%D8%AA%D8%A8%D8%B7+%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D8%A9+%D8%A8%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83+U0155+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "موجود في فهرس تقني؛ لا توجد بيانات منشورة تبرر ترتيب الشيوع",
+      "sources": [
+        {
+          "title": "RX intelligent clearance sonar U code chart",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/697/control_module_communication_bus_a_off_u0073_u0100_u0124_u0126_u0129_u0140_u0155_u0164_.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "U0164",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Clearance Warning ECU",
+      "definition_en": "Lost Communication with HVAC Control Module",
+      "translation_ar": "فقد الاتصال بوحدة التحكم بالتكييف",
+      "category": {
+        "system": "Network / CAN (reported by clearance sonar)",
+        "type": "عام (نطاق SAE)"
+      },
+      "applicability": {
+        "model": "RX family (intelligent clearance sonar)",
+        "years": "غير مؤكد — فقط عند تجهيز نظام حساسات الركن المذكور",
+        "market": "غير مؤكد",
+        "engine": "غير مرتبط مباشرة بالمحرك",
+        "fuel": "غير مؤكد",
+        "drivetrain": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد — مطلوب ربط الأعراض بإصدار ECU والمحرك"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "حفظ Health Check وFreeze Frame وجميع DTCs مع تحديد ECU المصدر",
+        "التحقق من حالة جهد 12V والفيوزات والأرضي وفق مخطط EWD قبل استبدال أي وحدة",
+        "مراجعة Repair Manual للموديل/المحرك وتأكيد الشرط بقياسات موثقة؛ حدود القياس: غير مؤكد"
+      ],
+      "live_data": [
+        {
+          "pid_en": "ECU Communication Status",
+          "translation_ar": "حالة اتصال وحدة التحكم",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية 12 فولت",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+family+%28intelligent+clearance+sonar%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%B1%D8%AA%D8%A8%D8%B7+%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D8%A9+%D8%A8%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83+U0164+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+family+%28intelligent+clearance+sonar%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%B1%D8%AA%D8%A8%D8%B7+%D9%85%D8%A8%D8%A7%D8%B4%D8%B1%D8%A9+%D8%A8%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83+U0164+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "موجود في فهرس تقني؛ لا توجد بيانات منشورة تبرر ترتيب الشيوع",
+      "sources": [
+        {
+          "title": "RX intelligent clearance sonar U code chart",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/697/control_module_communication_bus_a_off_u0073_u0100_u0124_u0126_u0129_u0140_u0155_u0164_.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Lexus",
+      "code": "U1110",
+      "code_format": "SAE-style 5-character DTC",
+      "ecu": "Parking Assist Monitor ECU",
+      "definition_en": "Lost Communication with Intuitive Parking Assist Module",
+      "translation_ar": "فقد الاتصال بوحدة المساعدة الذكية على الركن",
+      "category": {
+        "system": "Network / parking camera",
+        "type": "خاص بالشركة المصنعة (نطاق DTC)"
+      },
+      "applicability": {
+        "model": "RX family (parking assist monitor)",
+        "years": "غير مؤكد",
+        "market": "غير مؤكد",
+        "engine": "غير متعلق بالمحرك",
+        "fuel": "غير مؤكد",
+        "drivetrain": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد — مطلوب ربط الأعراض بإصدار ECU والمحرك"
+      ],
+      "causes": [
+        {
+          "item": "غير مؤكد — يلزم مخطط تشخيص ECU المحدد",
+          "evidence": "لم تكتمل إجراءات الاختبار الخاصة بالطراز"
+        }
+      ],
+      "diagnostic_steps": [
+        "حفظ Health Check وFreeze Frame وجميع DTCs مع تحديد ECU المصدر",
+        "التحقق من حالة جهد 12V والفيوزات والأرضي وفق مخطط EWD قبل استبدال أي وحدة",
+        "مراجعة Repair Manual للموديل/المحرك وتأكيد الشرط بقياسات موثقة؛ حدود القياس: غير مؤكد"
+      ],
+      "live_data": [
+        {
+          "pid_en": "ECU Communication Status",
+          "translation_ar": "حالة اتصال وحدة التحكم",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية 12 فولت",
+          "normal_range": "غير مؤكد",
+          "exact_techstream_label_verified": false
+        }
+      ],
+      "parts": [],
+      "images": {
+        "type": "search_link_only",
+        "url": "https://www.google.com/search?tbm=isch&q=RX+family+%28parking+assist+monitor%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AA%D8%B9%D9%84%D9%82+%D8%A8%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83+U1110+component+location",
+        "note": "رابط بحث صور مرجعي؛ ليست صورة أصلية معتمدة لقطعة بهذا VIN"
+      },
+      "wiring": "غير مؤكد — يلزم مخطط EWD وفق VIN وسنة الصنع والسوق",
+      "video": {
+        "type": "search_link_only",
+        "url": "https://www.youtube.com/results?search_query=RX+family+%28parking+assist+monitor%29+%D8%BA%D9%8A%D8%B1+%D9%85%D8%AA%D8%B9%D9%84%D9%82+%D8%A8%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83+U1110+diagnostics",
+        "note": "بحث فيديو حسب الموديل والمحرك؛ لم يُتحقق من فيديو بعينه"
+      },
+      "priority_evidence": "موجود في فهرس تقني؛ لا توجد بيانات منشورة تبرر ترتيب الشيوع",
+      "sources": [
+        {
+          "title": "RX parking assist camera U code chart",
+          "version_date": "غير مؤكد (صفحة متاحة 2026-10-15)",
+          "url": "https://www.lexusrx.net/798/lost_communication_with_ecm_pcm_a_u0100_u0126_u0129_u0140_u0163_u0233_u1110_.html",
+          "source_type": "Third-party hosted service manual; OEM publication version not independently authenticated",
+          "retrieved_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    }
+  ]
+}
