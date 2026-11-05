@@ -1,0 +1,3898 @@
+{
+  "schema": "dtcnexis-original-source-preservation-v1",
+  "brand": "Fiat",
+  "storage_status": "PERMANENT_SOURCE_ARCHIVE_PENDING_TECHNICAL_REVIEW",
+  "release_to_app": false,
+  "source": {
+    "filename": "DTC_NEXIS_FIAT_batch01.json",
+    "library_file_id": "libfile_87ccad1dea0c8191a48535cca285ddd6",
+    "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+    "archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+    "original_source_rows": 221,
+    "exact_original_bytes_preserved": true
+  },
+  "records": [
+    {
+      "brand": "Fiat",
+      "code": "B1081",
+      "code_format": "SAE DTC five-character",
+      "ecu": "Delphi Body Computer (EP) 4",
+      "definition_en": "Start & Stop relay",
+      "translation_ar": "ريليه Start & Stop",
+      "category": {
+        "system": "Body",
+        "ownership": "خاص بالشركة (نطاق مخصص للمصنع)",
+        "definition_origin": "English editorial translation of Italian Fiat eLearn label"
+      },
+      "applicability": {
+        "model": "Grande Punto",
+        "platform": "199",
+        "generation": "199",
+        "engine": "1.4 8V (سياق فهرس BCM)",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20B1081%20Start%20%26%20Stop%20relay",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20B1081%20Start%20%26%20Stop%20relay%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=Italiano&languageID=1&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199019424&prodID=199000000&sectionName=Diagnosi+per+DTC&valID=199000001",
+          "document": "Fiat Grande Punto eLearn Body Computer index",
+          "document_revision": "غير مذكور",
+          "language": "it",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 181,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "B1083",
+      "code_format": "SAE DTC five-character",
+      "ecu": "Delphi Body Computer (EP) 4",
+      "definition_en": "Start & Stop relay feedback (from NCM)",
+      "translation_ar": "إشارة التغذية الراجعة لريليه Start & Stop من وحدة المحرك",
+      "category": {
+        "system": "Body",
+        "ownership": "خاص بالشركة (نطاق مخصص للمصنع)",
+        "definition_origin": "English editorial translation of Italian Fiat eLearn label"
+      },
+      "applicability": {
+        "model": "Grande Punto",
+        "platform": "199",
+        "generation": "199",
+        "engine": "1.4 8V (سياق فهرس BCM)",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20B1083%20Start%20%26%20Stop%20relay%20feedback%20%28from%20NCM%29",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20B1083%20Start%20%26%20Stop%20relay%20feedback%20%28from%20NCM%29%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=Italiano&languageID=1&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199019424&prodID=199000000&sectionName=Diagnosi+per+DTC&valID=199000001",
+          "document": "Fiat Grande Punto eLearn Body Computer index",
+          "document_revision": "غير مذكور",
+          "language": "it",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 182,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "B1085",
+      "code_format": "SAE DTC five-character",
+      "ecu": "Delphi Body Computer (EP) 4",
+      "definition_en": "Start & Stop LED command",
+      "translation_ar": "أمر تشغيل مؤشر نظام Start & Stop",
+      "category": {
+        "system": "Body",
+        "ownership": "خاص بالشركة (نطاق مخصص للمصنع)",
+        "definition_origin": "English editorial translation of Italian Fiat eLearn label"
+      },
+      "applicability": {
+        "model": "Grande Punto",
+        "platform": "199",
+        "generation": "199",
+        "engine": "1.4 8V (سياق فهرس BCM)",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20B1085%20Start%20%26%20Stop%20LED%20command",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20B1085%20Start%20%26%20Stop%20LED%20command%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=Italiano&languageID=1&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199019424&prodID=199000000&sectionName=Diagnosi+per+DTC&valID=199000001",
+          "document": "Fiat Grande Punto eLearn Body Computer index",
+          "document_revision": "غير مذكور",
+          "language": "it",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 183,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "U0001",
+      "code_format": "SAE DTC five-character",
+      "ecu": "Delphi Body Computer (EP) 4",
+      "definition_en": "C-CAN",
+      "translation_ar": "خلل شبكة C-CAN",
+      "category": {
+        "system": "Network",
+        "ownership": "عام (بنية قياسية؛ الوصف المعروض من Fiat ECU)",
+        "definition_origin": "English editorial translation of Italian Fiat eLearn label"
+      },
+      "applicability": {
+        "model": "Grande Punto",
+        "platform": "199",
+        "generation": "199",
+        "engine": "1.4 8V (سياق فهرس BCM)",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U0001%20C-CAN",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U0001%20C-CAN%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=Italiano&languageID=1&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199019424&prodID=199000000&sectionName=Diagnosi+per+DTC&valID=199000001",
+          "document": "Fiat Grande Punto eLearn Body Computer index",
+          "document_revision": "غير مذكور",
+          "language": "it",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 184,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "U0426",
+      "code_format": "SAE DTC five-character",
+      "ecu": "Delphi Body Computer (EP) 4",
+      "definition_en": "MiniCrypt immobilizer information",
+      "translation_ar": "خلل بيانات تشفير منع التشغيل MiniCrypt",
+      "category": {
+        "system": "Network",
+        "ownership": "عام (بنية قياسية؛ الوصف المعروض من Fiat ECU)",
+        "definition_origin": "English editorial translation of Italian Fiat eLearn label"
+      },
+      "applicability": {
+        "model": "Grande Punto",
+        "platform": "199",
+        "generation": "199",
+        "engine": "1.4 8V (سياق فهرس BCM)",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U0426%20MiniCrypt%20immobilizer%20information",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U0426%20MiniCrypt%20immobilizer%20information%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=Italiano&languageID=1&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199019424&prodID=199000000&sectionName=Diagnosi+per+DTC&valID=199000001",
+          "document": "Fiat Grande Punto eLearn Body Computer index",
+          "document_revision": "غير مذكور",
+          "language": "it",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 185,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "U1701",
+      "code_format": "SAE DTC five-character",
+      "ecu": "Delphi Body Computer (EP) 4",
+      "definition_en": "Engine control node (NCM)",
+      "translation_ar": "فقد اتصال/خلل رسالة وحدة المحرك NCM",
+      "category": {
+        "system": "Network",
+        "ownership": "خاص بالشركة (نطاق مخصص للمصنع)",
+        "definition_origin": "English editorial translation of Italian Fiat eLearn label"
+      },
+      "applicability": {
+        "model": "Grande Punto",
+        "platform": "199",
+        "generation": "199",
+        "engine": "1.4 8V (سياق فهرس BCM)",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U1701%20Engine%20control%20node%20%28NCM%29",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U1701%20Engine%20control%20node%20%28NCM%29%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=Italiano&languageID=1&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199019424&prodID=199000000&sectionName=Diagnosi+per+DTC&valID=199000001",
+          "document": "Fiat Grande Punto eLearn Body Computer index",
+          "document_revision": "غير مذكور",
+          "language": "it",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 186,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "U1702",
+      "code_format": "SAE DTC five-character",
+      "ecu": "Delphi Body Computer (EP) 4",
+      "definition_en": "Electric steering node (NGE)",
+      "translation_ar": "فقد اتصال/خلل رسالة التوجيه الكهربائي NGE",
+      "category": {
+        "system": "Network",
+        "ownership": "خاص بالشركة (نطاق مخصص للمصنع)",
+        "definition_origin": "English editorial translation of Italian Fiat eLearn label"
+      },
+      "applicability": {
+        "model": "Grande Punto",
+        "platform": "199",
+        "generation": "199",
+        "engine": "1.4 8V (سياق فهرس BCM)",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U1702%20Electric%20steering%20node%20%28NGE%29",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U1702%20Electric%20steering%20node%20%28NGE%29%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=Italiano&languageID=1&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199019424&prodID=199000000&sectionName=Diagnosi+per+DTC&valID=199000001",
+          "document": "Fiat Grande Punto eLearn Body Computer index",
+          "document_revision": "غير مذكور",
+          "language": "it",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 187,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "U1703",
+      "code_format": "SAE DTC five-character",
+      "ecu": "Delphi Body Computer (EP) 4",
+      "definition_en": "Instrument cluster node",
+      "translation_ar": "فقد اتصال/خلل رسالة لوحة العدادات",
+      "category": {
+        "system": "Network",
+        "ownership": "خاص بالشركة (نطاق مخصص للمصنع)",
+        "definition_origin": "English editorial translation of Italian Fiat eLearn label"
+      },
+      "applicability": {
+        "model": "Grande Punto",
+        "platform": "199",
+        "generation": "199",
+        "engine": "1.4 8V (سياق فهرس BCM)",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U1703%20Instrument%20cluster%20node",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U1703%20Instrument%20cluster%20node%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=Italiano&languageID=1&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199019424&prodID=199000000&sectionName=Diagnosi+per+DTC&valID=199000001",
+          "document": "Fiat Grande Punto eLearn Body Computer index",
+          "document_revision": "غير مذكور",
+          "language": "it",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 188,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "U1705",
+      "code_format": "SAE DTC five-character",
+      "ecu": "Delphi Body Computer (EP) 4",
+      "definition_en": "Radio receiver node (NRR)",
+      "translation_ar": "فقد اتصال/خلل رسالة وحدة الراديو NRR",
+      "category": {
+        "system": "Network",
+        "ownership": "خاص بالشركة (نطاق مخصص للمصنع)",
+        "definition_origin": "English editorial translation of Italian Fiat eLearn label"
+      },
+      "applicability": {
+        "model": "Grande Punto",
+        "platform": "199",
+        "generation": "199",
+        "engine": "1.4 8V (سياق فهرس BCM)",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U1705%20Radio%20receiver%20node%20%28NRR%29",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U1705%20Radio%20receiver%20node%20%28NRR%29%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=Italiano&languageID=1&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199019424&prodID=199000000&sectionName=Diagnosi+per+DTC&valID=199000001",
+          "document": "Fiat Grande Punto eLearn Body Computer index",
+          "document_revision": "غير مذكور",
+          "language": "it",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 189,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "U1706",
+      "code_format": "SAE DTC five-character",
+      "ecu": "Delphi Body Computer (EP) 4",
+      "definition_en": "Brake system node (NFR)",
+      "translation_ar": "فقد اتصال/خلل رسالة وحدة الفرامل NFR",
+      "category": {
+        "system": "Network",
+        "ownership": "خاص بالشركة (نطاق مخصص للمصنع)",
+        "definition_origin": "English editorial translation of Italian Fiat eLearn label"
+      },
+      "applicability": {
+        "model": "Grande Punto",
+        "platform": "199",
+        "generation": "199",
+        "engine": "1.4 8V (سياق فهرس BCM)",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U1706%20Brake%20system%20node%20%28NFR%29",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U1706%20Brake%20system%20node%20%28NFR%29%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=Italiano&languageID=1&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199019424&prodID=199000000&sectionName=Diagnosi+per+DTC&valID=199000001",
+          "document": "Fiat Grande Punto eLearn Body Computer index",
+          "document_revision": "غير مذكور",
+          "language": "it",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 190,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "U1710",
+      "code_format": "SAE DTC five-character",
+      "ecu": "Delphi Body Computer (EP) 4",
+      "definition_en": "Climate control node (NCL)",
+      "translation_ar": "فقد اتصال/خلل رسالة وحدة المكيف NCL",
+      "category": {
+        "system": "Network",
+        "ownership": "خاص بالشركة (نطاق مخصص للمصنع)",
+        "definition_origin": "English editorial translation of Italian Fiat eLearn label"
+      },
+      "applicability": {
+        "model": "Grande Punto",
+        "platform": "199",
+        "generation": "199",
+        "engine": "1.4 8V (سياق فهرس BCM)",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U1710%20Climate%20control%20node%20%28NCL%29",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U1710%20Climate%20control%20node%20%28NCL%29%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=Italiano&languageID=1&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199019424&prodID=199000000&sectionName=Diagnosi+per+DTC&valID=199000001",
+          "document": "Fiat Grande Punto eLearn Body Computer index",
+          "document_revision": "غير مذكور",
+          "language": "it",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 191,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "U1726",
+      "code_format": "SAE DTC five-character",
+      "ecu": "Delphi Body Computer (EP) 4",
+      "definition_en": "Airbag node (NAB)",
+      "translation_ar": "فقد اتصال/خلل رسالة وحدة الوسائد الهوائية NAB",
+      "category": {
+        "system": "Network",
+        "ownership": "خاص بالشركة (نطاق مخصص للمصنع)",
+        "definition_origin": "English editorial translation of Italian Fiat eLearn label"
+      },
+      "applicability": {
+        "model": "Grande Punto",
+        "platform": "199",
+        "generation": "199",
+        "engine": "1.4 8V (سياق فهرس BCM)",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U1726%20Airbag%20node%20%28NAB%29",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U1726%20Airbag%20node%20%28NAB%29%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=Italiano&languageID=1&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199019424&prodID=199000000&sectionName=Diagnosi+per+DTC&valID=199000001",
+          "document": "Fiat Grande Punto eLearn Body Computer index",
+          "document_revision": "غير مذكور",
+          "language": "it",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 192,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "U1732",
+      "code_format": "SAE DTC five-character",
+      "ecu": "Delphi Body Computer (EP) 4",
+      "definition_en": "Tyre pressure control module (CPP)",
+      "translation_ar": "فقد اتصال/خلل رسالة وحدة مراقبة ضغط الإطارات",
+      "category": {
+        "system": "Network",
+        "ownership": "خاص بالشركة (نطاق مخصص للمصنع)",
+        "definition_origin": "English editorial translation of Italian Fiat eLearn label"
+      },
+      "applicability": {
+        "model": "Grande Punto",
+        "platform": "199",
+        "generation": "199",
+        "engine": "1.4 8V (سياق فهرس BCM)",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U1732%20Tyre%20pressure%20control%20module%20%28CPP%29",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U1732%20Tyre%20pressure%20control%20module%20%28CPP%29%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=Italiano&languageID=1&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199019424&prodID=199000000&sectionName=Diagnosi+per+DTC&valID=199000001",
+          "document": "Fiat Grande Punto eLearn Body Computer index",
+          "document_revision": "غير مذكور",
+          "language": "it",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 193,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "U1733",
+      "code_format": "SAE DTC five-character",
+      "ecu": "Delphi Body Computer (EP) 4",
+      "definition_en": "Convergence L1/L2 telematics node",
+      "translation_ar": "فقد اتصال/خلل رسالة وحدة الاتصالات Convergence",
+      "category": {
+        "system": "Network",
+        "ownership": "خاص بالشركة (نطاق مخصص للمصنع)",
+        "definition_origin": "English editorial translation of Italian Fiat eLearn label"
+      },
+      "applicability": {
+        "model": "Grande Punto",
+        "platform": "199",
+        "generation": "199",
+        "engine": "1.4 8V (سياق فهرس BCM)",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U1733%20Convergence%20L1/L2%20telematics%20node",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U1733%20Convergence%20L1/L2%20telematics%20node%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=Italiano&languageID=1&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199019424&prodID=199000000&sectionName=Diagnosi+per+DTC&valID=199000001",
+          "document": "Fiat Grande Punto eLearn Body Computer index",
+          "document_revision": "غير مذكور",
+          "language": "it",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 194,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "U1739",
+      "code_format": "SAE DTC five-character",
+      "ecu": "Delphi Body Computer (EP) 4",
+      "definition_en": "Intelligent battery sensor (IBS)",
+      "translation_ar": "فقد اتصال/خلل رسالة حساس البطارية الذكي IBS",
+      "category": {
+        "system": "Network",
+        "ownership": "خاص بالشركة (نطاق مخصص للمصنع)",
+        "definition_origin": "English editorial translation of Italian Fiat eLearn label"
+      },
+      "applicability": {
+        "model": "Grande Punto",
+        "platform": "199",
+        "generation": "199",
+        "engine": "1.4 8V (سياق فهرس BCM)",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U1739%20Intelligent%20battery%20sensor%20%28IBS%29",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Grande%20Punto%201.4%208V%20%28%D8%B3%D9%8A%D8%A7%D9%82%20%D9%81%D9%87%D8%B1%D8%B3%20BCM%29%20U1739%20Intelligent%20battery%20sensor%20%28IBS%29%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=Italiano&languageID=1&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199019424&prodID=199000000&sectionName=Diagnosi+per+DTC&valID=199000001",
+          "document": "Fiat Grande Punto eLearn Body Computer index",
+          "document_revision": "غير مذكور",
+          "language": "it",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 195,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "C1214",
+      "code_format": "SAE DTC five-character",
+      "ecu": "Electric Power Steering (NGE), precise ECU version not stated",
+      "definition_en": "Incorrect end-of-line configuration",
+      "translation_ar": "تكوين نهاية خط البيانات غير صحيح",
+      "category": {
+        "system": "Chassis",
+        "ownership": "خاص بالشركة (نطاق مخصص للمصنع)",
+        "definition_origin": "Fiat eLearn English ECU label"
+      },
+      "applicability": {
+        "model": "Grande Punto",
+        "platform": "199",
+        "generation": "199",
+        "engine": "All versions in Fiat June 2006 EPS bulletin",
+        "fuel": "petrol/diesel حسب تجهيز المركبة",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "قد يظهر الكود دون فقدان المساعدة الكهربائية للتوجيه"
+      ],
+      "causes": [
+        {
+          "cause": "إعداد End-of-line أو توافق PROXI",
+          "evidence": "Fiat Service News، خطوة 6: لا تستبدل EPS عند C1214"
+        }
+      ],
+      "diagnostic_steps": [
+        "اقرأ أخطاء عقدة Electric Steering Node ومعطيات الحالة بواسطة Examiner أو جهاز يقدم وظيفة مقابلة.",
+        "افحص تغذية عقدة التوجيه والبطارية والأرضي والتوصيلات قبل الاستبدال.",
+        "طبق الفرع المخصص لهذا الكود من نشرة H025/H026 وإعادة الفحص بعد الإصلاح.",
+        "تحقق من إعداد PROXI/تهيئة نهاية الخط أولاً؛ لا تستبدل وحدة EPS لمجرد وجود الكود."
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "test_condition": "مفتاح مطفأ عند الوصلة الزرقاء للتوجيه",
+          "expected": "حوالي 12.5 V حسب نشرة Punto (199) EPS 2006",
+          "verification": "مصنع - خاص بهذه الوثيقة"
+        },
+        {
+          "parameter_en": "Steering Angle Position",
+          "translation_ar": "زاوية التوجيه",
+          "test_condition": "المقود والعجلتان الأماميتان بوضع مستقيم",
+          "expected": "0° حسب نشرة Fiat 2006",
+          "verification": "مصنع - خاص بهذه الوثيقة"
+        }
+      ],
+      "parts": [
+        {
+          "part": "EPS electric steering assembly / steering-column electronics",
+          "location": "مجموعة عمود التوجيه الكهربائي داخل المقصورة؛ رقم الجزء الدقيق غير مؤكد",
+          "location_verification": "استنتاج من مسار H025؛ يلزم دليل نسخة السيارة"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Grande%20Punto%20All%20versions%20in%20Fiat%20June%202006%20EPS%20bulletin%20C1214%20Incorrect%20end-of-line%20configuration",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": true,
+        "verified_diagram": false,
+        "reference": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=English&languageID=2&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199002085&prodID=199000000&sectionName=Service+News&valID=199000004&validityName=1.4+16v",
+        "verified_details": [
+          "فتيل قدرة 70 A لتوجيه EPS عند قطب البطارية الموجب في نشرة 2006",
+          "مع مفتاح تشغيل: عند Pin 1 للموصل الأسود توجد تغذية بجهد البطارية حسب النشرة؛ يلزم التحقق من تعريف موصل نفس النسخة",
+          "عند إطفاء المفتاح بعد دورة تشغيل/إيقاف: Pin 1 للموصل الأسود 0 V",
+          "موصل التغذية الأزرق: نحو 12.5 V مع مفتاح مطفأ"
+        ],
+        "warning": "لا تنقل Pin 1 أو 70 A إلى Fiat أخرى أو نسخة/تجهيز آخر بغير مخططها"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Grande%20Punto%20All%20versions%20in%20Fiat%20June%202006%20EPS%20bulletin%20C1214%20Incorrect%20end-of-line%20configuration%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "تفصيل مثبت بنشرة مصنع",
+        "kind": "Fiat Service News 41/05.06, 30 Jun 2006, EPS diagnostic path",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=English&languageID=2&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199002085&prodID=199000000&sectionName=Service+News&valID=199000004&validityName=1.4+16v",
+          "document": "Fiat Grande Punto eLearn Body Computer index",
+          "document_revision": "2006-06-30",
+          "language": "en",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        },
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=English&languageID=2&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199002085&prodID=199000000&sectionName=Service+News&valID=199000004&validityName=1.4+16v",
+          "document": "Service News Fiat Punto (199), 41 05.06: 4110 1 101 AE Electric power steering",
+          "document_revision": "2006-06-30",
+          "language": "en",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 196,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "C1001",
+      "code_format": "SAE DTC five-character",
+      "ecu": "Electric Power Steering (NGE), precise ECU version not stated",
+      "definition_en": "Internal electric steering control unit error",
+      "translation_ar": "خلل داخلي في وحدة التوجيه الكهربائي",
+      "category": {
+        "system": "Chassis",
+        "ownership": "خاص بالشركة (نطاق مخصص للمصنع)",
+        "definition_origin": "Fiat eLearn English ECU label"
+      },
+      "applicability": {
+        "model": "Grande Punto",
+        "platform": "199",
+        "generation": "199",
+        "engine": "All versions in Fiat June 2006 EPS bulletin",
+        "fuel": "petrol/diesel حسب تجهيز المركبة",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "تعطل/ثقل توجيه كهربائي ضمن حالة التحذير H025"
+      ],
+      "causes": [
+        {
+          "cause": "خلل داخلي بوحدة التوجيه بعد التأكد من التغذية",
+          "evidence": "Fiat H025 خطوة 6، يوجّه المصنع لتبديل EPS"
+        }
+      ],
+      "diagnostic_steps": [
+        "اقرأ أخطاء عقدة Electric Steering Node ومعطيات الحالة بواسطة Examiner أو جهاز يقدم وظيفة مقابلة.",
+        "افحص تغذية عقدة التوجيه والبطارية والأرضي والتوصيلات قبل الاستبدال.",
+        "طبق الفرع المخصص لهذا الكود من نشرة H025/H026 وإعادة الفحص بعد الإصلاح.",
+        "استبعد أولاً مشاكل جهد التغذية والوصلات والبطارية ثم اتبع توصية النشرة الخاصة بالخلل الداخلي."
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "test_condition": "مفتاح مطفأ عند الوصلة الزرقاء للتوجيه",
+          "expected": "حوالي 12.5 V حسب نشرة Punto (199) EPS 2006",
+          "verification": "مصنع - خاص بهذه الوثيقة"
+        },
+        {
+          "parameter_en": "Steering Angle Position",
+          "translation_ar": "زاوية التوجيه",
+          "test_condition": "المقود والعجلتان الأماميتان بوضع مستقيم",
+          "expected": "0° حسب نشرة Fiat 2006",
+          "verification": "مصنع - خاص بهذه الوثيقة"
+        }
+      ],
+      "parts": [
+        {
+          "part": "EPS electric steering assembly / steering-column electronics",
+          "location": "مجموعة عمود التوجيه الكهربائي داخل المقصورة؛ رقم الجزء الدقيق غير مؤكد",
+          "location_verification": "استنتاج من مسار H025؛ يلزم دليل نسخة السيارة"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Grande%20Punto%20All%20versions%20in%20Fiat%20June%202006%20EPS%20bulletin%20C1001%20Internal%20electric%20steering%20control%20unit%20error",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": true,
+        "verified_diagram": false,
+        "reference": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=English&languageID=2&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199002085&prodID=199000000&sectionName=Service+News&valID=199000004&validityName=1.4+16v",
+        "verified_details": [
+          "فتيل قدرة 70 A لتوجيه EPS عند قطب البطارية الموجب في نشرة 2006",
+          "مع مفتاح تشغيل: عند Pin 1 للموصل الأسود توجد تغذية بجهد البطارية حسب النشرة؛ يلزم التحقق من تعريف موصل نفس النسخة",
+          "عند إطفاء المفتاح بعد دورة تشغيل/إيقاف: Pin 1 للموصل الأسود 0 V",
+          "موصل التغذية الأزرق: نحو 12.5 V مع مفتاح مطفأ"
+        ],
+        "warning": "لا تنقل Pin 1 أو 70 A إلى Fiat أخرى أو نسخة/تجهيز آخر بغير مخططها"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Grande%20Punto%20All%20versions%20in%20Fiat%20June%202006%20EPS%20bulletin%20C1001%20Internal%20electric%20steering%20control%20unit%20error%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "تفصيل مثبت بنشرة مصنع",
+        "kind": "Fiat Service News 41/05.06, 30 Jun 2006, EPS diagnostic path",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=English&languageID=2&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199002085&prodID=199000000&sectionName=Service+News&valID=199000004&validityName=1.4+16v",
+          "document": "Fiat Grande Punto eLearn Body Computer index",
+          "document_revision": "2006-06-30",
+          "language": "en",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        },
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=English&languageID=2&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199002085&prodID=199000000&sectionName=Service+News&valID=199000004&validityName=1.4+16v",
+          "document": "Service News Fiat Punto (199), 41 05.06: 4110 1 101 AE Electric power steering",
+          "document_revision": "2006-06-30",
+          "language": "en",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 197,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "C1002",
+      "code_format": "SAE DTC five-character",
+      "ecu": "Electric Power Steering (NGE), precise ECU version not stated",
+      "definition_en": "Steering column torque/position sensor error",
+      "translation_ar": "خلل حساس عزم/موضع عمود التوجيه",
+      "category": {
+        "system": "Chassis",
+        "ownership": "خاص بالشركة (نطاق مخصص للمصنع)",
+        "definition_origin": "Fiat eLearn English ECU label"
+      },
+      "applicability": {
+        "model": "Grande Punto",
+        "platform": "199",
+        "generation": "199",
+        "engine": "All versions in Fiat June 2006 EPS bulletin",
+        "fuel": "petrol/diesel حسب تجهيز المركبة",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "ثقل التوجيه/تحذير التوجيه ممكن ضمن مسار H025"
+      ],
+      "causes": [
+        {
+          "cause": "خلل حسّاس العزم/الموضع أو وصلات عمود التوجيه",
+          "evidence": "Fiat H025، فحص Temporary Electric Steering Error والموصل ذي الثمانية أطراف"
+        }
+      ],
+      "diagnostic_steps": [
+        "اقرأ أخطاء عقدة Electric Steering Node ومعطيات الحالة بواسطة Examiner أو جهاز يقدم وظيفة مقابلة.",
+        "افحص تغذية عقدة التوجيه والبطارية والأرضي والتوصيلات قبل الاستبدال.",
+        "طبق الفرع المخصص لهذا الكود من نشرة H025/H026 وإعادة الفحص بعد الإصلاح.",
+        "اقرأ Temporary Electric Steering Error وربط الخطوة بالقيم 23/19/32/25/99 الواردة بالنشرة.",
+        "افحص وصلات البطارية والأرضي والموصل 8-way واختبر تكرار الكود قبل استبدال المجموعة."
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "test_condition": "مفتاح مطفأ عند الوصلة الزرقاء للتوجيه",
+          "expected": "حوالي 12.5 V حسب نشرة Punto (199) EPS 2006",
+          "verification": "مصنع - خاص بهذه الوثيقة"
+        },
+        {
+          "parameter_en": "Steering Angle Position",
+          "translation_ar": "زاوية التوجيه",
+          "test_condition": "المقود والعجلتان الأماميتان بوضع مستقيم",
+          "expected": "0° حسب نشرة Fiat 2006",
+          "verification": "مصنع - خاص بهذه الوثيقة"
+        },
+        {
+          "parameter_en": "Temporary Electric Steering Error",
+          "translation_ar": "رقم العطل المؤقت للتوجيه الكهربائي",
+          "test_condition": "أثناء قراءة تفاصيل C1002",
+          "expected": "تفسير القيم 23/19/32/25/99 محدد في نشرة 2006؛ ليست قياسات جهد",
+          "verification": "مصنع"
+        }
+      ],
+      "parts": [
+        {
+          "part": "EPS electric steering assembly / steering-column electronics",
+          "location": "مجموعة عمود التوجيه الكهربائي داخل المقصورة؛ رقم الجزء الدقيق غير مؤكد",
+          "location_verification": "استنتاج من مسار H025؛ يلزم دليل نسخة السيارة"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Grande%20Punto%20All%20versions%20in%20Fiat%20June%202006%20EPS%20bulletin%20C1002%20Steering%20column%20torque/position%20sensor%20error",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": true,
+        "verified_diagram": false,
+        "reference": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=English&languageID=2&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199002085&prodID=199000000&sectionName=Service+News&valID=199000004&validityName=1.4+16v",
+        "verified_details": [
+          "فتيل قدرة 70 A لتوجيه EPS عند قطب البطارية الموجب في نشرة 2006",
+          "مع مفتاح تشغيل: عند Pin 1 للموصل الأسود توجد تغذية بجهد البطارية حسب النشرة؛ يلزم التحقق من تعريف موصل نفس النسخة",
+          "عند إطفاء المفتاح بعد دورة تشغيل/إيقاف: Pin 1 للموصل الأسود 0 V",
+          "موصل التغذية الأزرق: نحو 12.5 V مع مفتاح مطفأ"
+        ],
+        "warning": "لا تنقل Pin 1 أو 70 A إلى Fiat أخرى أو نسخة/تجهيز آخر بغير مخططها"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Grande%20Punto%20All%20versions%20in%20Fiat%20June%202006%20EPS%20bulletin%20C1002%20Steering%20column%20torque/position%20sensor%20error%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "تفصيل مثبت بنشرة مصنع",
+        "kind": "Fiat Service News 41/05.06, 30 Jun 2006, EPS diagnostic path",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=English&languageID=2&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199002085&prodID=199000000&sectionName=Service+News&valID=199000004&validityName=1.4+16v",
+          "document": "Fiat Grande Punto eLearn Body Computer index",
+          "document_revision": "2006-06-30",
+          "language": "en",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        },
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=English&languageID=2&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199002085&prodID=199000000&sectionName=Service+News&valID=199000004&validityName=1.4+16v",
+          "document": "Service News Fiat Punto (199), 41 05.06: 4110 1 101 AE Electric power steering",
+          "document_revision": "2006-06-30",
+          "language": "en",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 198,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "C1008",
+      "code_format": "SAE DTC five-character",
+      "ecu": "Electric Power Steering (NGE), precise ECU version not stated",
+      "definition_en": "Steering position sensor not calibrated",
+      "translation_ar": "حساس موضع التوجيه غير معاير",
+      "category": {
+        "system": "Chassis",
+        "ownership": "خاص بالشركة (نطاق مخصص للمصنع)",
+        "definition_origin": "Fiat eLearn English ECU label"
+      },
+      "applicability": {
+        "model": "Grande Punto",
+        "platform": "199",
+        "generation": "199",
+        "engine": "All versions in Fiat June 2006 EPS bulletin",
+        "fuel": "petrol/diesel حسب تجهيز المركبة",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "قد تظهر مشكلة معايرة زاوية التوجيه دون فقدان المساعدة"
+      ],
+      "causes": [
+        {
+          "cause": "الحساس غير معاير أو تركيب العمود المتوسط غير صحيح",
+          "evidence": "Fiat H025، خطوة 14"
+        }
+      ],
+      "diagnostic_steps": [
+        "اقرأ أخطاء عقدة Electric Steering Node ومعطيات الحالة بواسطة Examiner أو جهاز يقدم وظيفة مقابلة.",
+        "افحص تغذية عقدة التوجيه والبطارية والأرضي والتوصيلات قبل الاستبدال.",
+        "طبق الفرع المخصص لهذا الكود من نشرة H025/H026 وإعادة الفحص بعد الإصلاح.",
+        "قم بمعايرة Position Sensor Calibration بجهاز متوافق بعد التحقق من وضع عمود التوجيه المتوسط.",
+        "راقب Steering Angle Position؛ صفر درجة والعجلات مستقيمة في هذه النشرة."
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "test_condition": "مفتاح مطفأ عند الوصلة الزرقاء للتوجيه",
+          "expected": "حوالي 12.5 V حسب نشرة Punto (199) EPS 2006",
+          "verification": "مصنع - خاص بهذه الوثيقة"
+        },
+        {
+          "parameter_en": "Steering Angle Position",
+          "translation_ar": "زاوية التوجيه",
+          "test_condition": "المقود والعجلتان الأماميتان بوضع مستقيم",
+          "expected": "0° حسب نشرة Fiat 2006",
+          "verification": "مصنع - خاص بهذه الوثيقة"
+        }
+      ],
+      "parts": [
+        {
+          "part": "EPS electric steering assembly / steering-column electronics",
+          "location": "مجموعة عمود التوجيه الكهربائي داخل المقصورة؛ رقم الجزء الدقيق غير مؤكد",
+          "location_verification": "استنتاج من مسار H025؛ يلزم دليل نسخة السيارة"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Grande%20Punto%20All%20versions%20in%20Fiat%20June%202006%20EPS%20bulletin%20C1008%20Steering%20position%20sensor%20not%20calibrated",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": true,
+        "verified_diagram": false,
+        "reference": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=English&languageID=2&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199002085&prodID=199000000&sectionName=Service+News&valID=199000004&validityName=1.4+16v",
+        "verified_details": [
+          "فتيل قدرة 70 A لتوجيه EPS عند قطب البطارية الموجب في نشرة 2006",
+          "مع مفتاح تشغيل: عند Pin 1 للموصل الأسود توجد تغذية بجهد البطارية حسب النشرة؛ يلزم التحقق من تعريف موصل نفس النسخة",
+          "عند إطفاء المفتاح بعد دورة تشغيل/إيقاف: Pin 1 للموصل الأسود 0 V",
+          "موصل التغذية الأزرق: نحو 12.5 V مع مفتاح مطفأ"
+        ],
+        "warning": "لا تنقل Pin 1 أو 70 A إلى Fiat أخرى أو نسخة/تجهيز آخر بغير مخططها"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Grande%20Punto%20All%20versions%20in%20Fiat%20June%202006%20EPS%20bulletin%20C1008%20Steering%20position%20sensor%20not%20calibrated%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "تفصيل مثبت بنشرة مصنع",
+        "kind": "Fiat Service News 41/05.06, 30 Jun 2006, EPS diagnostic path",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=English&languageID=2&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199002085&prodID=199000000&sectionName=Service+News&valID=199000004&validityName=1.4+16v",
+          "document": "Fiat Grande Punto eLearn Body Computer index",
+          "document_revision": "2006-06-30",
+          "language": "en",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        },
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=English&languageID=2&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199002085&prodID=199000000&sectionName=Service+News&valID=199000004&validityName=1.4+16v",
+          "document": "Service News Fiat Punto (199), 41 05.06: 4110 1 101 AE Electric power steering",
+          "document_revision": "2006-06-30",
+          "language": "en",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 199,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "C1200",
+      "code_format": "SAE DTC five-character",
+      "ecu": "Electric Power Steering (NGE), precise ECU version not stated",
+      "definition_en": "Service battery fault",
+      "translation_ar": "خلل تغذية بطارية السيارة للتوجيه الكهربائي",
+      "category": {
+        "system": "Chassis",
+        "ownership": "خاص بالشركة (نطاق مخصص للمصنع)",
+        "definition_origin": "Fiat eLearn English ECU label"
+      },
+      "applicability": {
+        "model": "Grande Punto",
+        "platform": "199",
+        "generation": "199",
+        "engine": "All versions in Fiat June 2006 EPS bulletin",
+        "fuel": "petrol/diesel حسب تجهيز المركبة",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "تحذير توجيه أو ثقل محتمل مع جهد تغذية غير سليم"
+      ],
+      "causes": [
+        {
+          "cause": "البطارية أو توصيلات التغذية/الأرضي",
+          "evidence": "Fiat H025، خطوة 8: لا تستبدل EPS"
+        }
+      ],
+      "diagnostic_steps": [
+        "اقرأ أخطاء عقدة Electric Steering Node ومعطيات الحالة بواسطة Examiner أو جهاز يقدم وظيفة مقابلة.",
+        "افحص تغذية عقدة التوجيه والبطارية والأرضي والتوصيلات قبل الاستبدال.",
+        "طبق الفرع المخصص لهذا الكود من نشرة H025/H026 وإعادة الفحص بعد الإصلاح.",
+        "افحص البطارية والوصلات قبل أي تدخل في وحدة التوجيه؛ تؤكد النشرة عدم تبديل EPS لحالة C1200 بذاتها."
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "test_condition": "مفتاح مطفأ عند الوصلة الزرقاء للتوجيه",
+          "expected": "حوالي 12.5 V حسب نشرة Punto (199) EPS 2006",
+          "verification": "مصنع - خاص بهذه الوثيقة"
+        },
+        {
+          "parameter_en": "Steering Angle Position",
+          "translation_ar": "زاوية التوجيه",
+          "test_condition": "المقود والعجلتان الأماميتان بوضع مستقيم",
+          "expected": "0° حسب نشرة Fiat 2006",
+          "verification": "مصنع - خاص بهذه الوثيقة"
+        }
+      ],
+      "parts": [
+        {
+          "part": "EPS electric steering assembly / steering-column electronics",
+          "location": "مجموعة عمود التوجيه الكهربائي داخل المقصورة؛ رقم الجزء الدقيق غير مؤكد",
+          "location_verification": "استنتاج من مسار H025؛ يلزم دليل نسخة السيارة"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Grande%20Punto%20All%20versions%20in%20Fiat%20June%202006%20EPS%20bulletin%20C1200%20Service%20battery%20fault",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": true,
+        "verified_diagram": false,
+        "reference": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=English&languageID=2&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199002085&prodID=199000000&sectionName=Service+News&valID=199000004&validityName=1.4+16v",
+        "verified_details": [
+          "فتيل قدرة 70 A لتوجيه EPS عند قطب البطارية الموجب في نشرة 2006",
+          "مع مفتاح تشغيل: عند Pin 1 للموصل الأسود توجد تغذية بجهد البطارية حسب النشرة؛ يلزم التحقق من تعريف موصل نفس النسخة",
+          "عند إطفاء المفتاح بعد دورة تشغيل/إيقاف: Pin 1 للموصل الأسود 0 V",
+          "موصل التغذية الأزرق: نحو 12.5 V مع مفتاح مطفأ"
+        ],
+        "warning": "لا تنقل Pin 1 أو 70 A إلى Fiat أخرى أو نسخة/تجهيز آخر بغير مخططها"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Grande%20Punto%20All%20versions%20in%20Fiat%20June%202006%20EPS%20bulletin%20C1200%20Service%20battery%20fault%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "تفصيل مثبت بنشرة مصنع",
+        "kind": "Fiat Service News 41/05.06, 30 Jun 2006, EPS diagnostic path",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=English&languageID=2&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199002085&prodID=199000000&sectionName=Service+News&valID=199000004&validityName=1.4+16v",
+          "document": "Fiat Grande Punto eLearn Body Computer index",
+          "document_revision": "2006-06-30",
+          "language": "en",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        },
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=English&languageID=2&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199002085&prodID=199000000&sectionName=Service+News&valID=199000004&validityName=1.4+16v",
+          "document": "Service News Fiat Punto (199), 41 05.06: 4110 1 101 AE Electric power steering",
+          "document_revision": "2006-06-30",
+          "language": "en",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 200,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "C1003",
+      "code_format": "SAE DTC five-character",
+      "ecu": "Electric Power Steering (NGE), precise ECU version not stated",
+      "definition_en": "Vehicle speed or Body Computer node fault",
+      "translation_ar": "خلل إشارة سرعة السيارة أو اتصال Body Computer",
+      "category": {
+        "system": "Chassis",
+        "ownership": "خاص بالشركة (نطاق مخصص للمصنع)",
+        "definition_origin": "Fiat eLearn English ECU label"
+      },
+      "applicability": {
+        "model": "Grande Punto",
+        "platform": "199",
+        "generation": "199",
+        "engine": "All versions in Fiat June 2006 EPS bulletin",
+        "fuel": "petrol/diesel حسب تجهيز المركبة",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "عدم توفر إشارة السرعة/الاتصال بوحدة BCM"
+      ],
+      "causes": [
+        {
+          "cause": "خلل CAN أو Body Computer/إشارة السرعة",
+          "evidence": "Fiat H025، الخطوة 7"
+        }
+      ],
+      "diagnostic_steps": [
+        "اقرأ أخطاء عقدة Electric Steering Node ومعطيات الحالة بواسطة Examiner أو جهاز يقدم وظيفة مقابلة.",
+        "افحص تغذية عقدة التوجيه والبطارية والأرضي والتوصيلات قبل الاستبدال.",
+        "طبق الفرع المخصص لهذا الكود من نشرة H025/H026 وإعادة الفحص بعد الإصلاح.",
+        "اقرأ الوحدات الأخرى واختبر اتصال CAN والأرضي؛ لا تغيّر EPS قبل إثبات عطبها."
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "test_condition": "مفتاح مطفأ عند الوصلة الزرقاء للتوجيه",
+          "expected": "حوالي 12.5 V حسب نشرة Punto (199) EPS 2006",
+          "verification": "مصنع - خاص بهذه الوثيقة"
+        },
+        {
+          "parameter_en": "Steering Angle Position",
+          "translation_ar": "زاوية التوجيه",
+          "test_condition": "المقود والعجلتان الأماميتان بوضع مستقيم",
+          "expected": "0° حسب نشرة Fiat 2006",
+          "verification": "مصنع - خاص بهذه الوثيقة"
+        }
+      ],
+      "parts": [
+        {
+          "part": "EPS electric steering assembly / steering-column electronics",
+          "location": "مجموعة عمود التوجيه الكهربائي داخل المقصورة؛ رقم الجزء الدقيق غير مؤكد",
+          "location_verification": "استنتاج من مسار H025؛ يلزم دليل نسخة السيارة"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Grande%20Punto%20All%20versions%20in%20Fiat%20June%202006%20EPS%20bulletin%20C1003%20Vehicle%20speed%20or%20Body%20Computer%20node%20fault",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": true,
+        "verified_diagram": false,
+        "reference": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=English&languageID=2&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199002085&prodID=199000000&sectionName=Service+News&valID=199000004&validityName=1.4+16v",
+        "verified_details": [
+          "فتيل قدرة 70 A لتوجيه EPS عند قطب البطارية الموجب في نشرة 2006",
+          "مع مفتاح تشغيل: عند Pin 1 للموصل الأسود توجد تغذية بجهد البطارية حسب النشرة؛ يلزم التحقق من تعريف موصل نفس النسخة",
+          "عند إطفاء المفتاح بعد دورة تشغيل/إيقاف: Pin 1 للموصل الأسود 0 V",
+          "موصل التغذية الأزرق: نحو 12.5 V مع مفتاح مطفأ"
+        ],
+        "warning": "لا تنقل Pin 1 أو 70 A إلى Fiat أخرى أو نسخة/تجهيز آخر بغير مخططها"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Grande%20Punto%20All%20versions%20in%20Fiat%20June%202006%20EPS%20bulletin%20C1003%20Vehicle%20speed%20or%20Body%20Computer%20node%20fault%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "تفصيل مثبت بنشرة مصنع",
+        "kind": "Fiat Service News 41/05.06, 30 Jun 2006, EPS diagnostic path",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=English&languageID=2&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199002085&prodID=199000000&sectionName=Service+News&valID=199000004&validityName=1.4+16v",
+          "document": "Fiat Grande Punto eLearn Body Computer index",
+          "document_revision": "2006-06-30",
+          "language": "en",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        },
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=English&languageID=2&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199002085&prodID=199000000&sectionName=Service+News&valID=199000004&validityName=1.4+16v",
+          "document": "Service News Fiat Punto (199), 41 05.06: 4110 1 101 AE Electric power steering",
+          "document_revision": "2006-06-30",
+          "language": "en",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 201,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "C1005",
+      "code_format": "SAE DTC five-character",
+      "ecu": "Electric Power Steering (NGE), precise ECU version not stated",
+      "definition_en": "Instrument panel warning lamp fault",
+      "translation_ar": "خلل لمبة التحذير بلوحة العدادات",
+      "category": {
+        "system": "Chassis",
+        "ownership": "خاص بالشركة (نطاق مخصص للمصنع)",
+        "definition_origin": "Fiat eLearn English ECU label"
+      },
+      "applicability": {
+        "model": "Grande Punto",
+        "platform": "199",
+        "generation": "199",
+        "engine": "All versions in Fiat June 2006 EPS bulletin",
+        "fuel": "petrol/diesel حسب تجهيز المركبة",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "خلل بمؤشر تحذير التوجيه أو بقراءة لوحة العدادات"
+      ],
+      "causes": [
+        {
+          "cause": "لمبة/لوحة عدادات أو اتصال BCM",
+          "evidence": "Fiat H026 خطوة 10"
+        }
+      ],
+      "diagnostic_steps": [
+        "اقرأ أخطاء عقدة Electric Steering Node ومعطيات الحالة بواسطة Examiner أو جهاز يقدم وظيفة مقابلة.",
+        "افحص تغذية عقدة التوجيه والبطارية والأرضي والتوصيلات قبل الاستبدال.",
+        "طبق الفرع المخصص لهذا الكود من نشرة H025/H026 وإعادة الفحص بعد الإصلاح.",
+        "افحص لوحة العدادات وBCM ورسائل CAN؛ تنص النشرة على عدم تبديل EPS بسبب هذا الكود وحده."
+      ],
+      "live_data": [
+        {
+          "parameter_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "test_condition": "مفتاح مطفأ عند الوصلة الزرقاء للتوجيه",
+          "expected": "حوالي 12.5 V حسب نشرة Punto (199) EPS 2006",
+          "verification": "مصنع - خاص بهذه الوثيقة"
+        },
+        {
+          "parameter_en": "Steering Angle Position",
+          "translation_ar": "زاوية التوجيه",
+          "test_condition": "المقود والعجلتان الأماميتان بوضع مستقيم",
+          "expected": "0° حسب نشرة Fiat 2006",
+          "verification": "مصنع - خاص بهذه الوثيقة"
+        }
+      ],
+      "parts": [
+        {
+          "part": "EPS electric steering assembly / steering-column electronics",
+          "location": "مجموعة عمود التوجيه الكهربائي داخل المقصورة؛ رقم الجزء الدقيق غير مؤكد",
+          "location_verification": "استنتاج من مسار H025؛ يلزم دليل نسخة السيارة"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Grande%20Punto%20All%20versions%20in%20Fiat%20June%202006%20EPS%20bulletin%20C1005%20Instrument%20panel%20warning%20lamp%20fault",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": true,
+        "verified_diagram": false,
+        "reference": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=English&languageID=2&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199002085&prodID=199000000&sectionName=Service+News&valID=199000004&validityName=1.4+16v",
+        "verified_details": [
+          "فتيل قدرة 70 A لتوجيه EPS عند قطب البطارية الموجب في نشرة 2006",
+          "مع مفتاح تشغيل: عند Pin 1 للموصل الأسود توجد تغذية بجهد البطارية حسب النشرة؛ يلزم التحقق من تعريف موصل نفس النسخة",
+          "عند إطفاء المفتاح بعد دورة تشغيل/إيقاف: Pin 1 للموصل الأسود 0 V",
+          "موصل التغذية الأزرق: نحو 12.5 V مع مفتاح مطفأ"
+        ],
+        "warning": "لا تنقل Pin 1 أو 70 A إلى Fiat أخرى أو نسخة/تجهيز آخر بغير مخططها"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Grande%20Punto%20All%20versions%20in%20Fiat%20June%202006%20EPS%20bulletin%20C1005%20Instrument%20panel%20warning%20lamp%20fault%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "تفصيل مثبت بنشرة مصنع",
+        "kind": "Fiat Service News 41/05.06, 30 Jun 2006, EPS diagnostic path",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=English&languageID=2&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199002085&prodID=199000000&sectionName=Service+News&valID=199000004&validityName=1.4+16v",
+          "document": "Fiat Grande Punto eLearn Body Computer index",
+          "document_revision": "2006-06-30",
+          "language": "en",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        },
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=English&languageID=2&markID=1&modelID=199000000&modelName=Fiat+-+199+-+Grande+Punto&nodeID=199002085&prodID=199000000&sectionName=Service+News&valID=199000004&validityName=1.4+16v",
+          "document": "Service News Fiat Punto (199), 41 05.06: 4110 1 101 AE Electric power steering",
+          "document_revision": "2006-06-30",
+          "language": "en",
+          "access": "indexed first-party page",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 202,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "P0300-92",
+      "code_format": "SAE DTC + manufacturer ECU failure-type suffix",
+      "ecu": "Engine ECU variant not independently verified",
+      "definition_en": "Misfire detected - Performance or incorrect operation",
+      "translation_ar": "اكتشاف خلل اشتعال متعدد الأسطوانات: أداء غير سليم",
+      "category": {
+        "system": "Powertrain",
+        "ownership": "عام (بنية قياسية؛ الوصف المعروض من Fiat ECU)",
+        "definition_origin": "Fiat lab test-environment label"
+      },
+      "applicability": {
+        "model": "Punto Evo/Punto MY2012",
+        "platform": "199",
+        "generation": "Punto Evo / MY 2012",
+        "engine": "1.2 8V",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Punto%20Evo/Punto%20MY2012%201.2%208V%20P0300-92%20Misfire%20detected%20-%20Performance%20or%20incorrect%20operation",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Punto%20Evo/Punto%20MY2012%201.2%208V%20P0300-92%20Misfire%20detected%20-%20Performance%20or%20incorrect%20operation%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://lab-aftersales.fiat.com/elearn_testreda/frmMainPage.aspx?langDesc=English&languageID=2&markID=1&modelID=199000002&modelName=Fiat+-+199+-+Punto+Evo%2FPunto+M.Y.+2012&nodeID=199027675&prodID=99&sectionName=Diagnosi+per+DTC&valID=199000008&validityName=1.2+8v",
+          "document": "Fiat Service News EPS",
+          "document_revision": "غير مذكور",
+          "language": "lab",
+          "access": "manufacturer laboratory/search-engine indexed only",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "غير متاح المصدر",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 203,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "P0300-98",
+      "code_format": "SAE DTC + manufacturer ECU failure-type suffix",
+      "ecu": "Engine ECU variant not independently verified",
+      "definition_en": "Misfire detected - Component or system over temperature",
+      "translation_ar": "خلل اشتعال متعدد الأسطوانات: ارتفاع حرارة مكوّن أو نظام",
+      "category": {
+        "system": "Powertrain",
+        "ownership": "عام (بنية قياسية؛ الوصف المعروض من Fiat ECU)",
+        "definition_origin": "Fiat lab test-environment label"
+      },
+      "applicability": {
+        "model": "Punto Evo/Punto MY2012",
+        "platform": "199",
+        "generation": "Punto Evo / MY 2012",
+        "engine": "1.2 8V",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Punto%20Evo/Punto%20MY2012%201.2%208V%20P0300-98%20Misfire%20detected%20-%20Component%20or%20system%20over%20temperature",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Punto%20Evo/Punto%20MY2012%201.2%208V%20P0300-98%20Misfire%20detected%20-%20Component%20or%20system%20over%20temperature%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://lab-aftersales.fiat.com/elearn_testreda/frmMainPage.aspx?langDesc=English&languageID=2&markID=1&modelID=199000002&modelName=Fiat+-+199+-+Punto+Evo%2FPunto+M.Y.+2012&nodeID=199027675&prodID=99&sectionName=Diagnosi+per+DTC&valID=199000008&validityName=1.2+8v",
+          "document": "Fiat Service News EPS",
+          "document_revision": "غير مذكور",
+          "language": "lab",
+          "access": "manufacturer laboratory/search-engine indexed only",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "غير متاح المصدر",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 204,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "P0301-92",
+      "code_format": "SAE DTC + manufacturer ECU failure-type suffix",
+      "ecu": "Engine ECU variant not independently verified",
+      "definition_en": "Misfire cylinder 1 - Performance or incorrect operation (misfire 1000)",
+      "translation_ar": "خلل اشتعال الأسطوانة 1: أداء غير سليم",
+      "category": {
+        "system": "Powertrain",
+        "ownership": "عام (بنية قياسية؛ الوصف المعروض من Fiat ECU)",
+        "definition_origin": "Fiat lab test-environment label"
+      },
+      "applicability": {
+        "model": "Punto Evo/Punto MY2012",
+        "platform": "199",
+        "generation": "Punto Evo / MY 2012",
+        "engine": "1.2 8V",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Punto%20Evo/Punto%20MY2012%201.2%208V%20P0301-92%20Misfire%20cylinder%201%20-%20Performance%20or%20incorrect%20operation%20%28misfire%201000%29",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Punto%20Evo/Punto%20MY2012%201.2%208V%20P0301-92%20Misfire%20cylinder%201%20-%20Performance%20or%20incorrect%20operation%20%28misfire%201000%29%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://lab-aftersales.fiat.com/elearn_testreda/frmMainPage.aspx?langDesc=English&languageID=2&markID=1&modelID=199000002&modelName=Fiat+-+199+-+Punto+Evo%2FPunto+M.Y.+2012&nodeID=199027675&prodID=99&sectionName=Diagnosi+per+DTC&valID=199000008&validityName=1.2+8v",
+          "document": "Fiat Service News EPS",
+          "document_revision": "غير مذكور",
+          "language": "lab",
+          "access": "manufacturer laboratory/search-engine indexed only",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "غير متاح المصدر",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 205,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "P0301-98",
+      "code_format": "SAE DTC + manufacturer ECU failure-type suffix",
+      "ecu": "Engine ECU variant not independently verified",
+      "definition_en": "Misfire cylinder 1 - Component or system over temperature (misfire 200)",
+      "translation_ar": "خلل اشتعال الأسطوانة 1 مع حالة ارتفاع حرارة",
+      "category": {
+        "system": "Powertrain",
+        "ownership": "عام (بنية قياسية؛ الوصف المعروض من Fiat ECU)",
+        "definition_origin": "Fiat lab test-environment label"
+      },
+      "applicability": {
+        "model": "Punto Evo/Punto MY2012",
+        "platform": "199",
+        "generation": "Punto Evo / MY 2012",
+        "engine": "1.2 8V",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Punto%20Evo/Punto%20MY2012%201.2%208V%20P0301-98%20Misfire%20cylinder%201%20-%20Component%20or%20system%20over%20temperature%20%28misfire%20200%29",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Punto%20Evo/Punto%20MY2012%201.2%208V%20P0301-98%20Misfire%20cylinder%201%20-%20Component%20or%20system%20over%20temperature%20%28misfire%20200%29%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://lab-aftersales.fiat.com/elearn_testreda/frmMainPage.aspx?langDesc=English&languageID=2&markID=1&modelID=199000002&modelName=Fiat+-+199+-+Punto+Evo%2FPunto+M.Y.+2012&nodeID=199027675&prodID=99&sectionName=Diagnosi+per+DTC&valID=199000008&validityName=1.2+8v",
+          "document": "Fiat Service News EPS",
+          "document_revision": "غير مذكور",
+          "language": "lab",
+          "access": "manufacturer laboratory/search-engine indexed only",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "غير متاح المصدر",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 206,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "P0302-92",
+      "code_format": "SAE DTC + manufacturer ECU failure-type suffix",
+      "ecu": "Engine ECU variant not independently verified",
+      "definition_en": "Misfire cylinder 2 - Performance or incorrect operation (misfire 1000)",
+      "translation_ar": "خلل اشتعال الأسطوانة 2: أداء غير سليم",
+      "category": {
+        "system": "Powertrain",
+        "ownership": "عام (بنية قياسية؛ الوصف المعروض من Fiat ECU)",
+        "definition_origin": "Fiat lab test-environment label"
+      },
+      "applicability": {
+        "model": "Punto Evo/Punto MY2012",
+        "platform": "199",
+        "generation": "Punto Evo / MY 2012",
+        "engine": "1.2 8V",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Punto%20Evo/Punto%20MY2012%201.2%208V%20P0302-92%20Misfire%20cylinder%202%20-%20Performance%20or%20incorrect%20operation%20%28misfire%201000%29",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Punto%20Evo/Punto%20MY2012%201.2%208V%20P0302-92%20Misfire%20cylinder%202%20-%20Performance%20or%20incorrect%20operation%20%28misfire%201000%29%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://lab-aftersales.fiat.com/elearn_testreda/frmMainPage.aspx?langDesc=English&languageID=2&markID=1&modelID=199000002&modelName=Fiat+-+199+-+Punto+Evo%2FPunto+M.Y.+2012&nodeID=199027675&prodID=99&sectionName=Diagnosi+per+DTC&valID=199000008&validityName=1.2+8v",
+          "document": "Fiat Service News EPS",
+          "document_revision": "غير مذكور",
+          "language": "lab",
+          "access": "manufacturer laboratory/search-engine indexed only",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "غير متاح المصدر",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 207,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "P0302-98",
+      "code_format": "SAE DTC + manufacturer ECU failure-type suffix",
+      "ecu": "Engine ECU variant not independently verified",
+      "definition_en": "Misfire cylinder 2 - Component or system over temperature (misfire 200)",
+      "translation_ar": "خلل اشتعال الأسطوانة 2 مع حالة ارتفاع حرارة",
+      "category": {
+        "system": "Powertrain",
+        "ownership": "عام (بنية قياسية؛ الوصف المعروض من Fiat ECU)",
+        "definition_origin": "Fiat lab test-environment label"
+      },
+      "applicability": {
+        "model": "Punto Evo/Punto MY2012",
+        "platform": "199",
+        "generation": "Punto Evo / MY 2012",
+        "engine": "1.2 8V",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Punto%20Evo/Punto%20MY2012%201.2%208V%20P0302-98%20Misfire%20cylinder%202%20-%20Component%20or%20system%20over%20temperature%20%28misfire%20200%29",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Punto%20Evo/Punto%20MY2012%201.2%208V%20P0302-98%20Misfire%20cylinder%202%20-%20Component%20or%20system%20over%20temperature%20%28misfire%20200%29%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://lab-aftersales.fiat.com/elearn_testreda/frmMainPage.aspx?langDesc=English&languageID=2&markID=1&modelID=199000002&modelName=Fiat+-+199+-+Punto+Evo%2FPunto+M.Y.+2012&nodeID=199027675&prodID=99&sectionName=Diagnosi+per+DTC&valID=199000008&validityName=1.2+8v",
+          "document": "Fiat Service News EPS",
+          "document_revision": "غير مذكور",
+          "language": "lab",
+          "access": "manufacturer laboratory/search-engine indexed only",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "غير متاح المصدر",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 208,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "P0303-92",
+      "code_format": "SAE DTC + manufacturer ECU failure-type suffix",
+      "ecu": "Engine ECU variant not independently verified",
+      "definition_en": "Misfire cylinder 3 - Performance or incorrect operation (misfire 1000)",
+      "translation_ar": "خلل اشتعال الأسطوانة 3: أداء غير سليم",
+      "category": {
+        "system": "Powertrain",
+        "ownership": "عام (بنية قياسية؛ الوصف المعروض من Fiat ECU)",
+        "definition_origin": "Fiat lab test-environment label"
+      },
+      "applicability": {
+        "model": "Punto Evo/Punto MY2012",
+        "platform": "199",
+        "generation": "Punto Evo / MY 2012",
+        "engine": "1.2 8V",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Punto%20Evo/Punto%20MY2012%201.2%208V%20P0303-92%20Misfire%20cylinder%203%20-%20Performance%20or%20incorrect%20operation%20%28misfire%201000%29",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Punto%20Evo/Punto%20MY2012%201.2%208V%20P0303-92%20Misfire%20cylinder%203%20-%20Performance%20or%20incorrect%20operation%20%28misfire%201000%29%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://lab-aftersales.fiat.com/elearn_testreda/frmMainPage.aspx?langDesc=English&languageID=2&markID=1&modelID=199000002&modelName=Fiat+-+199+-+Punto+Evo%2FPunto+M.Y.+2012&nodeID=199027675&prodID=99&sectionName=Diagnosi+per+DTC&valID=199000008&validityName=1.2+8v",
+          "document": "Fiat Service News EPS",
+          "document_revision": "غير مذكور",
+          "language": "lab",
+          "access": "manufacturer laboratory/search-engine indexed only",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "غير متاح المصدر",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 209,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "P0303-98",
+      "code_format": "SAE DTC + manufacturer ECU failure-type suffix",
+      "ecu": "Engine ECU variant not independently verified",
+      "definition_en": "Misfire cylinder 3 - Component or system over temperature (misfire 200)",
+      "translation_ar": "خلل اشتعال الأسطوانة 3 مع حالة ارتفاع حرارة",
+      "category": {
+        "system": "Powertrain",
+        "ownership": "عام (بنية قياسية؛ الوصف المعروض من Fiat ECU)",
+        "definition_origin": "Fiat lab test-environment label"
+      },
+      "applicability": {
+        "model": "Punto Evo/Punto MY2012",
+        "platform": "199",
+        "generation": "Punto Evo / MY 2012",
+        "engine": "1.2 8V",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Punto%20Evo/Punto%20MY2012%201.2%208V%20P0303-98%20Misfire%20cylinder%203%20-%20Component%20or%20system%20over%20temperature%20%28misfire%20200%29",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Punto%20Evo/Punto%20MY2012%201.2%208V%20P0303-98%20Misfire%20cylinder%203%20-%20Component%20or%20system%20over%20temperature%20%28misfire%20200%29%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://lab-aftersales.fiat.com/elearn_testreda/frmMainPage.aspx?langDesc=English&languageID=2&markID=1&modelID=199000002&modelName=Fiat+-+199+-+Punto+Evo%2FPunto+M.Y.+2012&nodeID=199027675&prodID=99&sectionName=Diagnosi+per+DTC&valID=199000008&validityName=1.2+8v",
+          "document": "Fiat Service News EPS",
+          "document_revision": "غير مذكور",
+          "language": "lab",
+          "access": "manufacturer laboratory/search-engine indexed only",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "غير متاح المصدر",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 210,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "P0304-92",
+      "code_format": "SAE DTC + manufacturer ECU failure-type suffix",
+      "ecu": "Engine ECU variant not independently verified",
+      "definition_en": "Misfire cylinder 4 - Performance or incorrect operation (misfire 1000)",
+      "translation_ar": "خلل اشتعال الأسطوانة 4: أداء غير سليم",
+      "category": {
+        "system": "Powertrain",
+        "ownership": "عام (بنية قياسية؛ الوصف المعروض من Fiat ECU)",
+        "definition_origin": "Fiat lab test-environment label"
+      },
+      "applicability": {
+        "model": "Punto Evo/Punto MY2012",
+        "platform": "199",
+        "generation": "Punto Evo / MY 2012",
+        "engine": "1.2 8V",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Punto%20Evo/Punto%20MY2012%201.2%208V%20P0304-92%20Misfire%20cylinder%204%20-%20Performance%20or%20incorrect%20operation%20%28misfire%201000%29",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Punto%20Evo/Punto%20MY2012%201.2%208V%20P0304-92%20Misfire%20cylinder%204%20-%20Performance%20or%20incorrect%20operation%20%28misfire%201000%29%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://lab-aftersales.fiat.com/elearn_testreda/frmMainPage.aspx?langDesc=English&languageID=2&markID=1&modelID=199000002&modelName=Fiat+-+199+-+Punto+Evo%2FPunto+M.Y.+2012&nodeID=199027675&prodID=99&sectionName=Diagnosi+per+DTC&valID=199000008&validityName=1.2+8v",
+          "document": "Fiat Service News EPS",
+          "document_revision": "غير مذكور",
+          "language": "lab",
+          "access": "manufacturer laboratory/search-engine indexed only",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "غير متاح المصدر",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 211,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "P0304-98",
+      "code_format": "SAE DTC + manufacturer ECU failure-type suffix",
+      "ecu": "Engine ECU variant not independently verified",
+      "definition_en": "Misfire cylinder 4 - Component or system over temperature (misfire 200)",
+      "translation_ar": "خلل اشتعال الأسطوانة 4 مع حالة ارتفاع حرارة",
+      "category": {
+        "system": "Powertrain",
+        "ownership": "عام (بنية قياسية؛ الوصف المعروض من Fiat ECU)",
+        "definition_origin": "Fiat lab test-environment label"
+      },
+      "applicability": {
+        "model": "Punto Evo/Punto MY2012",
+        "platform": "199",
+        "generation": "Punto Evo / MY 2012",
+        "engine": "1.2 8V",
+        "fuel": "petrol",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Punto%20Evo/Punto%20MY2012%201.2%208V%20P0304-98%20Misfire%20cylinder%204%20-%20Component%20or%20system%20over%20temperature%20%28misfire%20200%29",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Punto%20Evo/Punto%20MY2012%201.2%208V%20P0304-98%20Misfire%20cylinder%204%20-%20Component%20or%20system%20over%20temperature%20%28misfire%20200%29%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://lab-aftersales.fiat.com/elearn_testreda/frmMainPage.aspx?langDesc=English&languageID=2&markID=1&modelID=199000002&modelName=Fiat+-+199+-+Punto+Evo%2FPunto+M.Y.+2012&nodeID=199027675&prodID=99&sectionName=Diagnosi+per+DTC&valID=199000008&validityName=1.2+8v",
+          "document": "Fiat Service News EPS",
+          "document_revision": "غير مذكور",
+          "language": "lab",
+          "access": "manufacturer laboratory/search-engine indexed only",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "غير متاح المصدر",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 212,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "P0190-15",
+      "code_format": "SAE DTC + manufacturer ECU failure-type suffix",
+      "ecu": "Engine ECU variant not independently verified",
+      "definition_en": "Rail pressure sensor - Circuit short to battery or open",
+      "translation_ar": "حساس ضغط سكة الوقود: قصر إلى موجب البطارية أو دائرة مفتوحة",
+      "category": {
+        "system": "Powertrain",
+        "ownership": "عام (بنية قياسية؛ الوصف المعروض من Fiat ECU)",
+        "definition_origin": "Fiat lab test-environment label"
+      },
+      "applicability": {
+        "model": "Nuova Panda",
+        "platform": "319",
+        "generation": "319",
+        "engine": "1.3 Multijet",
+        "fuel": "diesel",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Nuova%20Panda%201.3%20Multijet%20P0190-15%20Rail%20pressure%20sensor%20-%20Circuit%20short%20to%20battery%20or%20open",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Nuova%20Panda%201.3%20Multijet%20P0190-15%20Rail%20pressure%20sensor%20-%20Circuit%20short%20to%20battery%20or%20open%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://lab-aftersales.fiat.com/elearn_testreda/frmMainPage.aspx?langDesc=English&languageID=2&markID=1&modelID=139000000&modelName=Fiat+-+319+-+Nuova+Panda&nodeID=139004113&prodID=99&sectionName=Diagnosi+per+DTC&valID=139000002&validityName=1.3+Multijet",
+          "document": "Fiat Nuova Panda DTC lab index",
+          "document_revision": "غير مذكور",
+          "language": "lab",
+          "access": "manufacturer laboratory/search-engine indexed only",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "غير متاح المصدر",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 213,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "P0190-26",
+      "code_format": "SAE DTC + manufacturer ECU failure-type suffix",
+      "ecu": "Engine ECU variant not independently verified",
+      "definition_en": "Rail pressure sensor - Signal rate of change below threshold",
+      "translation_ar": "حساس ضغط سكة الوقود: معدل تغير الإشارة دون الحد",
+      "category": {
+        "system": "Powertrain",
+        "ownership": "عام (بنية قياسية؛ الوصف المعروض من Fiat ECU)",
+        "definition_origin": "Fiat lab test-environment label"
+      },
+      "applicability": {
+        "model": "Nuova Panda",
+        "platform": "319",
+        "generation": "319",
+        "engine": "1.3 Multijet",
+        "fuel": "diesel",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Nuova%20Panda%201.3%20Multijet%20P0190-26%20Rail%20pressure%20sensor%20-%20Signal%20rate%20of%20change%20below%20threshold",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Nuova%20Panda%201.3%20Multijet%20P0190-26%20Rail%20pressure%20sensor%20-%20Signal%20rate%20of%20change%20below%20threshold%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://lab-aftersales.fiat.com/elearn_testreda/frmMainPage.aspx?langDesc=English&languageID=2&markID=1&modelID=139000000&modelName=Fiat+-+319+-+Nuova+Panda&nodeID=139004113&prodID=99&sectionName=Diagnosi+per+DTC&valID=139000002&validityName=1.3+Multijet",
+          "document": "Fiat Nuova Panda DTC lab index",
+          "document_revision": "غير مذكور",
+          "language": "lab",
+          "access": "manufacturer laboratory/search-engine indexed only",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "غير متاح المصدر",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 214,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "P0190-27",
+      "code_format": "SAE DTC + manufacturer ECU failure-type suffix",
+      "ecu": "Engine ECU variant not independently verified",
+      "definition_en": "Rail pressure sensor - Signal rate of change above threshold",
+      "translation_ar": "حساس ضغط سكة الوقود: معدل تغير الإشارة فوق الحد",
+      "category": {
+        "system": "Powertrain",
+        "ownership": "عام (بنية قياسية؛ الوصف المعروض من Fiat ECU)",
+        "definition_origin": "Fiat lab test-environment label"
+      },
+      "applicability": {
+        "model": "Nuova Panda",
+        "platform": "319",
+        "generation": "319",
+        "engine": "1.3 Multijet",
+        "fuel": "diesel",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Nuova%20Panda%201.3%20Multijet%20P0190-27%20Rail%20pressure%20sensor%20-%20Signal%20rate%20of%20change%20above%20threshold",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Nuova%20Panda%201.3%20Multijet%20P0190-27%20Rail%20pressure%20sensor%20-%20Signal%20rate%20of%20change%20above%20threshold%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://lab-aftersales.fiat.com/elearn_testreda/frmMainPage.aspx?langDesc=English&languageID=2&markID=1&modelID=139000000&modelName=Fiat+-+319+-+Nuova+Panda&nodeID=139004113&prodID=99&sectionName=Diagnosi+per+DTC&valID=139000002&validityName=1.3+Multijet",
+          "document": "Fiat Nuova Panda DTC lab index",
+          "document_revision": "غير مذكور",
+          "language": "lab",
+          "access": "manufacturer laboratory/search-engine indexed only",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "غير متاح المصدر",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 215,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "P0230-11",
+      "code_format": "SAE DTC + manufacturer ECU failure-type suffix",
+      "ecu": "Engine ECU variant not independently verified",
+      "definition_en": "Fuel pump relay command - Circuit short to ground",
+      "translation_ar": "دائرة أمر ريليه مضخة الوقود: قصر إلى الأرضي",
+      "category": {
+        "system": "Powertrain",
+        "ownership": "عام (بنية قياسية؛ الوصف المعروض من Fiat ECU)",
+        "definition_origin": "Fiat lab test-environment label"
+      },
+      "applicability": {
+        "model": "Nuova Panda",
+        "platform": "319",
+        "generation": "319",
+        "engine": "1.3 Multijet",
+        "fuel": "diesel",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Nuova%20Panda%201.3%20Multijet%20P0230-11%20Fuel%20pump%20relay%20command%20-%20Circuit%20short%20to%20ground",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Nuova%20Panda%201.3%20Multijet%20P0230-11%20Fuel%20pump%20relay%20command%20-%20Circuit%20short%20to%20ground%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://lab-aftersales.fiat.com/elearn_testreda/frmMainPage.aspx?langDesc=English&languageID=2&markID=1&modelID=139000000&modelName=Fiat+-+319+-+Nuova+Panda&nodeID=139004113&prodID=99&sectionName=Diagnosi+per+DTC&valID=139000002&validityName=1.3+Multijet",
+          "document": "Fiat Nuova Panda DTC lab index",
+          "document_revision": "غير مذكور",
+          "language": "lab",
+          "access": "manufacturer laboratory/search-engine indexed only",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "غير متاح المصدر",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 216,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "P0230-12",
+      "code_format": "SAE DTC + manufacturer ECU failure-type suffix",
+      "ecu": "Engine ECU variant not independently verified",
+      "definition_en": "Fuel pump relay command - Circuit short to battery",
+      "translation_ar": "دائرة أمر ريليه مضخة الوقود: قصر إلى الموجب",
+      "category": {
+        "system": "Powertrain",
+        "ownership": "عام (بنية قياسية؛ الوصف المعروض من Fiat ECU)",
+        "definition_origin": "Fiat lab test-environment label"
+      },
+      "applicability": {
+        "model": "Nuova Panda",
+        "platform": "319",
+        "generation": "319",
+        "engine": "1.3 Multijet",
+        "fuel": "diesel",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Nuova%20Panda%201.3%20Multijet%20P0230-12%20Fuel%20pump%20relay%20command%20-%20Circuit%20short%20to%20battery",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Nuova%20Panda%201.3%20Multijet%20P0230-12%20Fuel%20pump%20relay%20command%20-%20Circuit%20short%20to%20battery%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://lab-aftersales.fiat.com/elearn_testreda/frmMainPage.aspx?langDesc=English&languageID=2&markID=1&modelID=139000000&modelName=Fiat+-+319+-+Nuova+Panda&nodeID=139004113&prodID=99&sectionName=Diagnosi+per+DTC&valID=139000002&validityName=1.3+Multijet",
+          "document": "Fiat Nuova Panda DTC lab index",
+          "document_revision": "غير مذكور",
+          "language": "lab",
+          "access": "manufacturer laboratory/search-engine indexed only",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "غير متاح المصدر",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 217,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "P0230-13",
+      "code_format": "SAE DTC + manufacturer ECU failure-type suffix",
+      "ecu": "Engine ECU variant not independently verified",
+      "definition_en": "Fuel pump relay command - Circuit open",
+      "translation_ar": "دائرة أمر ريليه مضخة الوقود: دائرة مفتوحة",
+      "category": {
+        "system": "Powertrain",
+        "ownership": "عام (بنية قياسية؛ الوصف المعروض من Fiat ECU)",
+        "definition_origin": "Fiat lab test-environment label"
+      },
+      "applicability": {
+        "model": "Nuova Panda",
+        "platform": "319",
+        "generation": "319",
+        "engine": "1.3 Multijet",
+        "fuel": "diesel",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Nuova%20Panda%201.3%20Multijet%20P0230-13%20Fuel%20pump%20relay%20command%20-%20Circuit%20open",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Nuova%20Panda%201.3%20Multijet%20P0230-13%20Fuel%20pump%20relay%20command%20-%20Circuit%20open%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://lab-aftersales.fiat.com/elearn_testreda/frmMainPage.aspx?langDesc=English&languageID=2&markID=1&modelID=139000000&modelName=Fiat+-+319+-+Nuova+Panda&nodeID=139004113&prodID=99&sectionName=Diagnosi+per+DTC&valID=139000002&validityName=1.3+Multijet",
+          "document": "Fiat Nuova Panda DTC lab index",
+          "document_revision": "غير مذكور",
+          "language": "lab",
+          "access": "manufacturer laboratory/search-engine indexed only",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "غير متاح المصدر",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 218,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "P0234-62",
+      "code_format": "SAE DTC + manufacturer ECU failure-type suffix",
+      "ecu": "Engine ECU variant not independently verified",
+      "definition_en": "Manifold pressure too high - Signal compare failure",
+      "translation_ar": "ارتفاع ضغط مجمع السحب: فشل مقارنة الإشارات",
+      "category": {
+        "system": "Powertrain",
+        "ownership": "عام (بنية قياسية؛ الوصف المعروض من Fiat ECU)",
+        "definition_origin": "Fiat lab test-environment label"
+      },
+      "applicability": {
+        "model": "Nuova Panda",
+        "platform": "319",
+        "generation": "319",
+        "engine": "1.3 Multijet",
+        "fuel": "diesel",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Nuova%20Panda%201.3%20Multijet%20P0234-62%20Manifold%20pressure%20too%20high%20-%20Signal%20compare%20failure",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Nuova%20Panda%201.3%20Multijet%20P0234-62%20Manifold%20pressure%20too%20high%20-%20Signal%20compare%20failure%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://lab-aftersales.fiat.com/elearn_testreda/frmMainPage.aspx?langDesc=English&languageID=2&markID=1&modelID=139000000&modelName=Fiat+-+319+-+Nuova+Panda&nodeID=139004113&prodID=99&sectionName=Diagnosi+per+DTC&valID=139000002&validityName=1.3+Multijet",
+          "document": "Fiat Nuova Panda DTC lab index",
+          "document_revision": "غير مذكور",
+          "language": "lab",
+          "access": "manufacturer laboratory/search-engine indexed only",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "غير متاح المصدر",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 219,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "P0235-11",
+      "code_format": "SAE DTC + manufacturer ECU failure-type suffix",
+      "ecu": "Engine ECU variant not independently verified",
+      "definition_en": "Turbocharger pressure sensor - Circuit short to ground",
+      "translation_ar": "حساس ضغط التوربو: قصر إلى الأرضي",
+      "category": {
+        "system": "Powertrain",
+        "ownership": "عام (بنية قياسية؛ الوصف المعروض من Fiat ECU)",
+        "definition_origin": "Fiat lab test-environment label"
+      },
+      "applicability": {
+        "model": "Nuova Panda",
+        "platform": "319",
+        "generation": "319",
+        "engine": "1.3 Multijet",
+        "fuel": "diesel",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Nuova%20Panda%201.3%20Multijet%20P0235-11%20Turbocharger%20pressure%20sensor%20-%20Circuit%20short%20to%20ground",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Nuova%20Panda%201.3%20Multijet%20P0235-11%20Turbocharger%20pressure%20sensor%20-%20Circuit%20short%20to%20ground%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://lab-aftersales.fiat.com/elearn_testreda/frmMainPage.aspx?langDesc=English&languageID=2&markID=1&modelID=139000000&modelName=Fiat+-+319+-+Nuova+Panda&nodeID=139004113&prodID=99&sectionName=Diagnosi+per+DTC&valID=139000002&validityName=1.3+Multijet",
+          "document": "Fiat Nuova Panda DTC lab index",
+          "document_revision": "غير مذكور",
+          "language": "lab",
+          "access": "manufacturer laboratory/search-engine indexed only",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "غير متاح المصدر",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 220,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Fiat",
+      "code": "P0235-15",
+      "code_format": "SAE DTC + manufacturer ECU failure-type suffix",
+      "ecu": "Engine ECU variant not independently verified",
+      "definition_en": "Turbocharger pressure sensor - Circuit short to battery or open",
+      "translation_ar": "حساس ضغط التوربو: قصر إلى الموجب أو دائرة مفتوحة",
+      "category": {
+        "system": "Powertrain",
+        "ownership": "عام (بنية قياسية؛ الوصف المعروض من Fiat ECU)",
+        "definition_origin": "Fiat lab test-environment label"
+      },
+      "applicability": {
+        "model": "Nuova Panda",
+        "platform": "319",
+        "generation": "319",
+        "engine": "1.3 Multijet",
+        "fuel": "diesel",
+        "powertrain": "غير مؤكد",
+        "years": "غير مؤكد من الوثيقة المفهرسة",
+        "market": "غير مؤكد",
+        "equipment": "يتطلب مطابقة رقم ECU وVIN",
+        "transmission": "غير مؤكد"
+      },
+      "symptoms": [
+        "غير مؤكد لهذه السيارة/وحدة التحكم"
+      ],
+      "causes": [
+        {
+          "cause": "غير مؤكد؛ يتطلب التشخيص التفصيلي لهذا ECU",
+          "evidence": "الفهرس يؤكد وجود الكود فقط"
+        }
+      ],
+      "diagnostic_steps": [
+        "قراءة جميع الوحدات باستخدام جهاز يدعم Fiat enhanced DTC وتسجيل Freeze Frame وحالة العطل دون حذفها",
+        "تأكيد ECU/المنصة/المحرك، ثم فتح اختبار Fiat eLearn الخاص بالكود",
+        "فحص البطارية والتوصيلات والفيش بصرياً؛ نتائج وأرقام المرجع غير مؤكدة حتى مراجعة الدليل الكامل"
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "part": "غير مؤكد؛ يحتاج ربط بمحرك ووحدة التحكم",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "kind": "image_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Fiat%20Nuova%20Panda%201.3%20Multijet%20P0235-15%20Turbocharger%20pressure%20sensor%20-%20Circuit%20short%20to%20battery%20or%20open",
+        "verified_photo": false
+      },
+      "wiring": {
+        "verified_pinout": false,
+        "verified_diagram": false,
+        "reference": "https://www.technicalinformation.fiat.com/tech-info-web/web/pageLarge.do?id=456",
+        "note": "النسخة الكهربائية والفيوز والأطراف غير مؤكدة، ولا يجوز نسخ الرسم المحمي"
+      },
+      "video": {
+        "kind": "search_only",
+        "url": "https://www.youtube.com/results?search_query=Fiat%20Nuova%20Panda%201.3%20Multijet%20P0235-15%20Turbocharger%20pressure%20sensor%20-%20Circuit%20short%20to%20battery%20or%20open%20diagnosis",
+        "verified_video": false
+      },
+      "priority_evidence": {
+        "level": "فهرس فقط",
+        "kind": "manufacturer_ecu_listing",
+        "claim_of_prevalence": false
+      },
+      "sources": [
+        {
+          "publisher": "Fiat / Stellantis eLearn",
+          "url": "https://lab-aftersales.fiat.com/elearn_testreda/frmMainPage.aspx?langDesc=English&languageID=2&markID=1&modelID=139000000&modelName=Fiat+-+319+-+Nuova+Panda&nodeID=139004113&prodID=99&sectionName=Diagnosi+per+DTC&valID=139000002&validityName=1.3+Multijet",
+          "document": "Fiat Nuova Panda DTC lab index",
+          "document_revision": "غير مذكور",
+          "language": "lab",
+          "access": "manufacturer laboratory/search-engine indexed only",
+          "access_checked": "2026-10-15"
+        }
+      ],
+      "verification_status": "غير متاح المصدر",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+        "original_source_row": 221,
+        "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+        "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    }
+  ]
+}

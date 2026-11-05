@@ -1,0 +1,539 @@
+{
+  "date": "2026-11-06",
+  "parent_commit": "0ba99aba2530499fa2b3cade3db58fce503ae461",
+  "baseline_rows": 8983,
+  "baseline_files": 44,
+  "original_source_rows": 633,
+  "new_counted_rows": 606,
+  "wildcard_family_rows_not_counted": 26,
+  "existing_bulk_source_rows_not_counted": 1,
+  "new_total": 9589,
+  "counted_files": 53,
+  "normalization": "Only brand accents/case normalized for candidate search; raw DTC incl. suffix unchanged. Exact code+ECU+all source applicability fields retained; no cross-brand merge. C1130 aggregate application represented already as individual model/year cases. Wildcard -xx family headings retained without code count.",
+  "brands": [
+    {
+      "brand": "Citroën",
+      "source_filename": "citroen_batch01_catalog.json",
+      "source_rows": 88,
+      "source_unique_raw_codes": 87,
+      "retained_scope_keys": 88,
+      "new_counted_rows": 88,
+      "family_source_rows_not_counted": [],
+      "existing_bulk_rows_not_counted": [],
+      "new_raw_code_strings_not_in_baseline": 7,
+      "missing_english_definition": 0,
+      "missing_arabic_text": 0,
+      "original_sha256": "c15cd553c2a68dfd8946fb22bb7b196712a24957ce4705443d06a7f30c1eac8a",
+      "original_archive_path": "data/master/source_archives/citroen_batch01_catalog.json",
+      "saved_paths": [
+        "data/master/brands/citroen_batch01_preserved_part01.json"
+      ],
+      "full_technical_approval": false
+    },
+    {
+      "brand": "Infiniti",
+      "source_filename": "DTC_NEXIS_Infiniti_batch01_2026-10-15.json",
+      "source_rows": 38,
+      "source_unique_raw_codes": 36,
+      "retained_scope_keys": 38,
+      "new_counted_rows": 37,
+      "family_source_rows_not_counted": [],
+      "existing_bulk_rows_not_counted": [
+        16
+      ],
+      "new_raw_code_strings_not_in_baseline": 9,
+      "missing_english_definition": 0,
+      "missing_arabic_text": 0,
+      "original_sha256": "d1e0467b810360a9a8068001fa7d02151e706a05b7d5054f89f915006e0770b8",
+      "original_archive_path": "data/master/source_archives/DTC_NEXIS_Infiniti_batch01_2026-10-15.json",
+      "saved_paths": [
+        "data/master/brands/infiniti_batch01_preserved_part01.json"
+      ],
+      "full_technical_approval": false
+    },
+    {
+      "brand": "Jeep",
+      "source_filename": "jeep_dtc_batch1.json",
+      "source_rows": 111,
+      "source_unique_raw_codes": 108,
+      "retained_scope_keys": 111,
+      "new_counted_rows": 111,
+      "family_source_rows_not_counted": [],
+      "existing_bulk_rows_not_counted": [],
+      "new_raw_code_strings_not_in_baseline": 58,
+      "missing_english_definition": 10,
+      "missing_arabic_text": 0,
+      "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+      "original_archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+      "saved_paths": [
+        "data/master/brands/jeep_batch01_preserved_part01.json",
+        "data/master/brands/jeep_batch01_preserved_part02.json"
+      ],
+      "full_technical_approval": false
+    },
+    {
+      "brand": "Fiat",
+      "source_filename": "DTC_NEXIS_FIAT_batch01.json",
+      "source_rows": 221,
+      "source_unique_raw_codes": 219,
+      "retained_scope_keys": 221,
+      "new_counted_rows": 221,
+      "family_source_rows_not_counted": [],
+      "existing_bulk_rows_not_counted": [],
+      "new_raw_code_strings_not_in_baseline": 85,
+      "missing_english_definition": 0,
+      "missing_arabic_text": 0,
+      "original_sha256": "b91895e0e4a0a970b9d84b885da8bb6f2e2247dcb9b5cfb5198d9a6a9071e31c",
+      "original_archive_path": "data/master/source_archives/DTC_NEXIS_FIAT_batch01.json",
+      "saved_paths": [
+        "data/master/brands/fiat_batch01_preserved_part01.json",
+        "data/master/brands/fiat_batch01_preserved_part02.json",
+        "data/master/brands/fiat_batch01_preserved_part03.json"
+      ],
+      "full_technical_approval": false
+    },
+    {
+      "brand": "Jaguar",
+      "source_filename": "dtc_nexis_jaguar_batch01.json",
+      "source_rows": 175,
+      "source_unique_raw_codes": 173,
+      "retained_scope_keys": 175,
+      "new_counted_rows": 149,
+      "family_source_rows_not_counted": [
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134
+      ],
+      "existing_bulk_rows_not_counted": [],
+      "new_raw_code_strings_not_in_baseline": 39,
+      "missing_english_definition": 0,
+      "missing_arabic_text": 0,
+      "original_sha256": "a269072bbcfe81790cfc01b769a2e38ea99bd333809d25055e730f2390417b5e",
+      "original_archive_path": "data/master/source_archives/dtc_nexis_jaguar_batch01.json",
+      "saved_paths": [
+        "data/master/brands/jaguar_batch01_preserved_part01.json",
+        "data/master/brands/jaguar_batch01_preserved_part02.json"
+      ],
+      "full_technical_approval": false
+    }
+  ],
+  "existing_overlap_reconciliation": [
+    {
+      "source_filename": "DTC_NEXIS_Infiniti_batch01_2026-10-15.json",
+      "original_row": 16,
+      "code": "C1130",
+      "reason": "Existing Infiniti C1130 applications from ITB16-047 already retained in 55 per-model/year records; bulk source row not counted again. Original wording and Arabic translation preserved in exact source archive.",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10119264-9999.pdf",
+      "existing_records": [
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 200,
+          "source_row_number": 200,
+          "model": "G37 Sedan",
+          "year": 2012
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 201,
+          "source_row_number": 201,
+          "model": "G37 Sedan",
+          "year": 2013
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 202,
+          "source_row_number": 202,
+          "model": "G37 Coupe",
+          "year": 2012
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 203,
+          "source_row_number": 203,
+          "model": "G37 Coupe",
+          "year": 2013
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 204,
+          "source_row_number": 204,
+          "model": "Q60 Coupe",
+          "year": 2014
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 205,
+          "source_row_number": 205,
+          "model": "Q60 Coupe",
+          "year": 2015
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 206,
+          "source_row_number": 206,
+          "model": "Q60 Coupe",
+          "year": 2017
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 207,
+          "source_row_number": 207,
+          "model": "G37 Convertible",
+          "year": 2012
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 208,
+          "source_row_number": 208,
+          "model": "G37 Convertible",
+          "year": 2013
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 209,
+          "source_row_number": 209,
+          "model": "Q60 Convertible",
+          "year": 2014
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 210,
+          "source_row_number": 210,
+          "model": "Q60 Convertible",
+          "year": 2015
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 211,
+          "source_row_number": 211,
+          "model": "Q40",
+          "year": 2015
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 212,
+          "source_row_number": 212,
+          "model": "EX35",
+          "year": 2012
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 213,
+          "source_row_number": 213,
+          "model": "EX37",
+          "year": 2013
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 214,
+          "source_row_number": 214,
+          "model": "QX50",
+          "year": 2014
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 215,
+          "source_row_number": 215,
+          "model": "QX50",
+          "year": 2015
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 216,
+          "source_row_number": 216,
+          "model": "QX50",
+          "year": 2016
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 217,
+          "source_row_number": 217,
+          "model": "QX50",
+          "year": 2017
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 218,
+          "source_row_number": 218,
+          "model": "JX35",
+          "year": 2013
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 219,
+          "source_row_number": 219,
+          "model": "QX60",
+          "year": 2014
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 220,
+          "source_row_number": 220,
+          "model": "QX60",
+          "year": 2015
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 221,
+          "source_row_number": 221,
+          "model": "QX60",
+          "year": 2016
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 222,
+          "source_row_number": 222,
+          "model": "QX60",
+          "year": 2017
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 223,
+          "source_row_number": 223,
+          "model": "QX60 Hybrid",
+          "year": 2014
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 224,
+          "source_row_number": 224,
+          "model": "QX60 Hybrid",
+          "year": 2015
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 225,
+          "source_row_number": 225,
+          "model": "QX60 Hybrid",
+          "year": 2016
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 226,
+          "source_row_number": 226,
+          "model": "QX60 Hybrid",
+          "year": 2017
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 227,
+          "source_row_number": 227,
+          "model": "FX35",
+          "year": 2012
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 228,
+          "source_row_number": 228,
+          "model": "FX37",
+          "year": 2013
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 229,
+          "source_row_number": 229,
+          "model": "FX50",
+          "year": 2012
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 230,
+          "source_row_number": 230,
+          "model": "FX50",
+          "year": 2013
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 231,
+          "source_row_number": 231,
+          "model": "QX70",
+          "year": 2014
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 232,
+          "source_row_number": 232,
+          "model": "QX70",
+          "year": 2015
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 233,
+          "source_row_number": 233,
+          "model": "QX70",
+          "year": 2016
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 234,
+          "source_row_number": 234,
+          "model": "QX70",
+          "year": 2017
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 235,
+          "source_row_number": 235,
+          "model": "Q50",
+          "year": 2014
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 236,
+          "source_row_number": 236,
+          "model": "Q50",
+          "year": 2015
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 237,
+          "source_row_number": 237,
+          "model": "Q50",
+          "year": 2016
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 238,
+          "source_row_number": 238,
+          "model": "Q50",
+          "year": 2017
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 239,
+          "source_row_number": 239,
+          "model": "Q50 Hybrid",
+          "year": 2014
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 240,
+          "source_row_number": 240,
+          "model": "Q50 Hybrid",
+          "year": 2015
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 241,
+          "source_row_number": 241,
+          "model": "Q50 Hybrid",
+          "year": 2016
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 242,
+          "source_row_number": 242,
+          "model": "Q50 Hybrid",
+          "year": 2017
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 243,
+          "source_row_number": 243,
+          "model": "M37",
+          "year": 2012
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 244,
+          "source_row_number": 244,
+          "model": "M37",
+          "year": 2013
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 245,
+          "source_row_number": 245,
+          "model": "M56",
+          "year": 2012
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 246,
+          "source_row_number": 246,
+          "model": "M56",
+          "year": 2013
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 247,
+          "source_row_number": 247,
+          "model": "Q70",
+          "year": 2014
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 248,
+          "source_row_number": 248,
+          "model": "Q70",
+          "year": 2015
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 249,
+          "source_row_number": 249,
+          "model": "Q70",
+          "year": 2016
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 250,
+          "source_row_number": 250,
+          "model": "Q70",
+          "year": 2017
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 251,
+          "source_row_number": 251,
+          "model": "Q70 Hybrid",
+          "year": 2014
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 252,
+          "source_row_number": 252,
+          "model": "Q70 Hybrid",
+          "year": 2015
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 253,
+          "source_row_number": 253,
+          "model": "Q70 Hybrid",
+          "year": 2016
+        },
+        {
+          "path": "data/master/brands/c_codes_multibrand.json",
+          "record_index": 254,
+          "source_row_number": 254,
+          "model": "Q70 Hybrid",
+          "year": 2017
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1843 @@
+{
+  "schema": "dtcnexis-original-source-preservation-v1",
+  "brand": "Jeep",
+  "storage_status": "PERMANENT_SOURCE_ARCHIVE_PENDING_TECHNICAL_REVIEW",
+  "release_to_app": false,
+  "source": {
+    "filename": "jeep_dtc_batch1.json",
+    "library_file_id": "libfile_1fdb86cae1a0819197eca150168aac70",
+    "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+    "archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+    "original_source_rows": 111,
+    "exact_original_bytes_preserved": true
+  },
+  "records": [
+    {
+      "brand": "Jeep",
+      "code": "P0171",
+      "code_format": "5-char DTC",
+      "ecu": "PCM",
+      "definition_en": "1/1 Fuel System Lean",
+      "translation_ar": "خليط وقود فقير بنك 1",
+      "category": {
+        "system": "Powertrain",
+        "code_scope": "عام/قياسي SAE",
+        "classification_note": "تخصيص النطاق استناداً إلى تنسيق الرمز؛ التعريف النصي مأخوذ من نشرة المصنع المذكورة أو من دليل ثانوي، وليس من ملحق SAE المحمي"
+      },
+      "applicability": {
+        "model": "Grand Cherokee",
+        "generation": "WJ",
+        "years": "WJ production era 1999-2004; exact applicability unverified",
+        "engine": "4.0L JTEC or 4.7L JTEC depending on code",
+        "fuel": "Gasoline",
+        "market": "unspecified",
+        "drivetrain": "verify specific vehicle"
+      },
+      "symptoms": [
+        "Legacy WJ service-manual index confirms code entry; model-specific symptom unverified"
+      ],
+      "causes": [
+        {
+          "possible_cause": "السبب الفردي غير مؤكد من فهرس الدليل وحده",
+          "evidence": "Only DTC index; requires complete chapter"
+        }
+      ],
+      "diagnostic_steps": [
+        "Match exact model year, 4.0L vs 4.7L, ECU and transmission variant",
+        "Retrieve DTC and freeze frame and follow dedicated diagnostic page in service manual",
+        "Measure sensor/reference/ground only with year/engine-matched connector pinout; specifications unverified in this index"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC status / Active / Stored",
+          "translation_ar": "حالة العطل: نشط/محفوظ",
+          "expected": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name": "غير مؤكد؛ يعتمد على الوحدة والمحرك",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "mode": "SEARCH_REFERENCE_ONLY_NOT_VERIFIED",
+        "reference_image_search_url": "https://www.google.com/search?tbm=isch&q=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0171+1%2F1+Fuel+System+Lean+location",
+        "source_bulletin_url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+        "original_images_embedded": false
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "wiring_diagram": "غير متاح المصدر في هذه الدفعة",
+        "do_not_infer_connections": true
+      },
+      "video": {
+        "mode": "SEARCH_RESULTS_NOT_VERIFIED",
+        "search_url": "https://www.youtube.com/results?search_query=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0171+1%2F1+Fuel+System+Lean+repair"
+      },
+      "priority_evidence": {
+        "phase": "فهرس قديم",
+        "reason": "فهرس دليل تشخيص WJ مؤرشف بمصدر ثانوي؛ يتطلب تأكيد النسخة والموديل"
+      },
+      "sources": [
+        {
+          "title": "Jeep WJ 4.0/4.7 JTEC diagnostic service manual index - secondary archival mirror",
+          "date_or_revision": "year/model not independently verified; WJ 1999-2004 generation",
+          "url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+          "source_tier": "secondary_archived_repair_manual"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "jeep_dtc_batch1.json",
+        "original_source_row": 91,
+        "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+        "original_archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Jeep",
+      "code": "P0172",
+      "code_format": "5-char DTC",
+      "ecu": "PCM",
+      "definition_en": "1/1 Fuel System Rich",
+      "translation_ar": "خليط وقود غني بنك 1",
+      "category": {
+        "system": "Powertrain",
+        "code_scope": "عام/قياسي SAE",
+        "classification_note": "تخصيص النطاق استناداً إلى تنسيق الرمز؛ التعريف النصي مأخوذ من نشرة المصنع المذكورة أو من دليل ثانوي، وليس من ملحق SAE المحمي"
+      },
+      "applicability": {
+        "model": "Grand Cherokee",
+        "generation": "WJ",
+        "years": "WJ production era 1999-2004; exact applicability unverified",
+        "engine": "4.0L JTEC or 4.7L JTEC depending on code",
+        "fuel": "Gasoline",
+        "market": "unspecified",
+        "drivetrain": "verify specific vehicle"
+      },
+      "symptoms": [
+        "Legacy WJ service-manual index confirms code entry; model-specific symptom unverified"
+      ],
+      "causes": [
+        {
+          "possible_cause": "السبب الفردي غير مؤكد من فهرس الدليل وحده",
+          "evidence": "Only DTC index; requires complete chapter"
+        }
+      ],
+      "diagnostic_steps": [
+        "Match exact model year, 4.0L vs 4.7L, ECU and transmission variant",
+        "Retrieve DTC and freeze frame and follow dedicated diagnostic page in service manual",
+        "Measure sensor/reference/ground only with year/engine-matched connector pinout; specifications unverified in this index"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC status / Active / Stored",
+          "translation_ar": "حالة العطل: نشط/محفوظ",
+          "expected": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name": "غير مؤكد؛ يعتمد على الوحدة والمحرك",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "mode": "SEARCH_REFERENCE_ONLY_NOT_VERIFIED",
+        "reference_image_search_url": "https://www.google.com/search?tbm=isch&q=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0172+1%2F1+Fuel+System+Rich+location",
+        "source_bulletin_url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+        "original_images_embedded": false
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "wiring_diagram": "غير متاح المصدر في هذه الدفعة",
+        "do_not_infer_connections": true
+      },
+      "video": {
+        "mode": "SEARCH_RESULTS_NOT_VERIFIED",
+        "search_url": "https://www.youtube.com/results?search_query=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0172+1%2F1+Fuel+System+Rich+repair"
+      },
+      "priority_evidence": {
+        "phase": "فهرس قديم",
+        "reason": "فهرس دليل تشخيص WJ مؤرشف بمصدر ثانوي؛ يتطلب تأكيد النسخة والموديل"
+      },
+      "sources": [
+        {
+          "title": "Jeep WJ 4.0/4.7 JTEC diagnostic service manual index - secondary archival mirror",
+          "date_or_revision": "year/model not independently verified; WJ 1999-2004 generation",
+          "url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+          "source_tier": "secondary_archived_repair_manual"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "jeep_dtc_batch1.json",
+        "original_source_row": 92,
+        "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+        "original_archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Jeep",
+      "code": "P0300",
+      "code_format": "5-char DTC",
+      "ecu": "PCM",
+      "definition_en": "Multiple Cylinder Misfire",
+      "translation_ar": "اختلال احتراق بأسطوانات متعددة",
+      "category": {
+        "system": "Powertrain",
+        "code_scope": "عام/قياسي SAE",
+        "classification_note": "تخصيص النطاق استناداً إلى تنسيق الرمز؛ التعريف النصي مأخوذ من نشرة المصنع المذكورة أو من دليل ثانوي، وليس من ملحق SAE المحمي"
+      },
+      "applicability": {
+        "model": "Grand Cherokee",
+        "generation": "WJ",
+        "years": "WJ production era 1999-2004; exact applicability unverified",
+        "engine": "4.0L JTEC or 4.7L JTEC depending on code",
+        "fuel": "Gasoline",
+        "market": "unspecified",
+        "drivetrain": "verify specific vehicle"
+      },
+      "symptoms": [
+        "Legacy WJ service-manual index confirms code entry; model-specific symptom unverified"
+      ],
+      "causes": [
+        {
+          "possible_cause": "السبب الفردي غير مؤكد من فهرس الدليل وحده",
+          "evidence": "Only DTC index; requires complete chapter"
+        }
+      ],
+      "diagnostic_steps": [
+        "Match exact model year, 4.0L vs 4.7L, ECU and transmission variant",
+        "Retrieve DTC and freeze frame and follow dedicated diagnostic page in service manual",
+        "Measure sensor/reference/ground only with year/engine-matched connector pinout; specifications unverified in this index"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC status / Active / Stored",
+          "translation_ar": "حالة العطل: نشط/محفوظ",
+          "expected": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name": "غير مؤكد؛ يعتمد على الوحدة والمحرك",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "mode": "SEARCH_REFERENCE_ONLY_NOT_VERIFIED",
+        "reference_image_search_url": "https://www.google.com/search?tbm=isch&q=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0300+Multiple+Cylinder+Misfire+location",
+        "source_bulletin_url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+        "original_images_embedded": false
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "wiring_diagram": "غير متاح المصدر في هذه الدفعة",
+        "do_not_infer_connections": true
+      },
+      "video": {
+        "mode": "SEARCH_RESULTS_NOT_VERIFIED",
+        "search_url": "https://www.youtube.com/results?search_query=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0300+Multiple+Cylinder+Misfire+repair"
+      },
+      "priority_evidence": {
+        "phase": "فهرس قديم",
+        "reason": "فهرس دليل تشخيص WJ مؤرشف بمصدر ثانوي؛ يتطلب تأكيد النسخة والموديل"
+      },
+      "sources": [
+        {
+          "title": "Jeep WJ 4.0/4.7 JTEC diagnostic service manual index - secondary archival mirror",
+          "date_or_revision": "year/model not independently verified; WJ 1999-2004 generation",
+          "url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+          "source_tier": "secondary_archived_repair_manual"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "jeep_dtc_batch1.json",
+        "original_source_row": 93,
+        "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+        "original_archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Jeep",
+      "code": "P0301",
+      "code_format": "5-char DTC",
+      "ecu": "PCM",
+      "definition_en": "Cylinder 1 Misfire",
+      "translation_ar": "اختلال احتراق الأسطوانة الأولى",
+      "category": {
+        "system": "Powertrain",
+        "code_scope": "عام/قياسي SAE",
+        "classification_note": "تخصيص النطاق استناداً إلى تنسيق الرمز؛ التعريف النصي مأخوذ من نشرة المصنع المذكورة أو من دليل ثانوي، وليس من ملحق SAE المحمي"
+      },
+      "applicability": {
+        "model": "Grand Cherokee",
+        "generation": "WJ",
+        "years": "WJ production era 1999-2004; exact applicability unverified",
+        "engine": "4.0L JTEC or 4.7L JTEC depending on code",
+        "fuel": "Gasoline",
+        "market": "unspecified",
+        "drivetrain": "verify specific vehicle"
+      },
+      "symptoms": [
+        "Legacy WJ service-manual index confirms code entry; model-specific symptom unverified"
+      ],
+      "causes": [
+        {
+          "possible_cause": "السبب الفردي غير مؤكد من فهرس الدليل وحده",
+          "evidence": "Only DTC index; requires complete chapter"
+        }
+      ],
+      "diagnostic_steps": [
+        "Match exact model year, 4.0L vs 4.7L, ECU and transmission variant",
+        "Retrieve DTC and freeze frame and follow dedicated diagnostic page in service manual",
+        "Measure sensor/reference/ground only with year/engine-matched connector pinout; specifications unverified in this index"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC status / Active / Stored",
+          "translation_ar": "حالة العطل: نشط/محفوظ",
+          "expected": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name": "غير مؤكد؛ يعتمد على الوحدة والمحرك",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "mode": "SEARCH_REFERENCE_ONLY_NOT_VERIFIED",
+        "reference_image_search_url": "https://www.google.com/search?tbm=isch&q=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0301+Cylinder+1+Misfire+location",
+        "source_bulletin_url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+        "original_images_embedded": false
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "wiring_diagram": "غير متاح المصدر في هذه الدفعة",
+        "do_not_infer_connections": true
+      },
+      "video": {
+        "mode": "SEARCH_RESULTS_NOT_VERIFIED",
+        "search_url": "https://www.youtube.com/results?search_query=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0301+Cylinder+1+Misfire+repair"
+      },
+      "priority_evidence": {
+        "phase": "فهرس قديم",
+        "reason": "فهرس دليل تشخيص WJ مؤرشف بمصدر ثانوي؛ يتطلب تأكيد النسخة والموديل"
+      },
+      "sources": [
+        {
+          "title": "Jeep WJ 4.0/4.7 JTEC diagnostic service manual index - secondary archival mirror",
+          "date_or_revision": "year/model not independently verified; WJ 1999-2004 generation",
+          "url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+          "source_tier": "secondary_archived_repair_manual"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "jeep_dtc_batch1.json",
+        "original_source_row": 94,
+        "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+        "original_archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Jeep",
+      "code": "P0302",
+      "code_format": "5-char DTC",
+      "ecu": "PCM",
+      "definition_en": "Cylinder 2 Misfire",
+      "translation_ar": "اختلال احتراق الأسطوانة الثانية",
+      "category": {
+        "system": "Powertrain",
+        "code_scope": "عام/قياسي SAE",
+        "classification_note": "تخصيص النطاق استناداً إلى تنسيق الرمز؛ التعريف النصي مأخوذ من نشرة المصنع المذكورة أو من دليل ثانوي، وليس من ملحق SAE المحمي"
+      },
+      "applicability": {
+        "model": "Grand Cherokee",
+        "generation": "WJ",
+        "years": "WJ production era 1999-2004; exact applicability unverified",
+        "engine": "4.0L JTEC or 4.7L JTEC depending on code",
+        "fuel": "Gasoline",
+        "market": "unspecified",
+        "drivetrain": "verify specific vehicle"
+      },
+      "symptoms": [
+        "Legacy WJ service-manual index confirms code entry; model-specific symptom unverified"
+      ],
+      "causes": [
+        {
+          "possible_cause": "السبب الفردي غير مؤكد من فهرس الدليل وحده",
+          "evidence": "Only DTC index; requires complete chapter"
+        }
+      ],
+      "diagnostic_steps": [
+        "Match exact model year, 4.0L vs 4.7L, ECU and transmission variant",
+        "Retrieve DTC and freeze frame and follow dedicated diagnostic page in service manual",
+        "Measure sensor/reference/ground only with year/engine-matched connector pinout; specifications unverified in this index"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC status / Active / Stored",
+          "translation_ar": "حالة العطل: نشط/محفوظ",
+          "expected": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name": "غير مؤكد؛ يعتمد على الوحدة والمحرك",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "mode": "SEARCH_REFERENCE_ONLY_NOT_VERIFIED",
+        "reference_image_search_url": "https://www.google.com/search?tbm=isch&q=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0302+Cylinder+2+Misfire+location",
+        "source_bulletin_url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+        "original_images_embedded": false
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "wiring_diagram": "غير متاح المصدر في هذه الدفعة",
+        "do_not_infer_connections": true
+      },
+      "video": {
+        "mode": "SEARCH_RESULTS_NOT_VERIFIED",
+        "search_url": "https://www.youtube.com/results?search_query=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0302+Cylinder+2+Misfire+repair"
+      },
+      "priority_evidence": {
+        "phase": "فهرس قديم",
+        "reason": "فهرس دليل تشخيص WJ مؤرشف بمصدر ثانوي؛ يتطلب تأكيد النسخة والموديل"
+      },
+      "sources": [
+        {
+          "title": "Jeep WJ 4.0/4.7 JTEC diagnostic service manual index - secondary archival mirror",
+          "date_or_revision": "year/model not independently verified; WJ 1999-2004 generation",
+          "url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+          "source_tier": "secondary_archived_repair_manual"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "jeep_dtc_batch1.json",
+        "original_source_row": 95,
+        "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+        "original_archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Jeep",
+      "code": "P0320",
+      "code_format": "5-char DTC",
+      "ecu": "PCM",
+      "definition_en": "No Crank Reference Signal At PCM",
+      "translation_ar": "غياب إشارة مرجع دوران عمود المرفق عند PCM",
+      "category": {
+        "system": "Powertrain",
+        "code_scope": "عام/قياسي SAE",
+        "classification_note": "تخصيص النطاق استناداً إلى تنسيق الرمز؛ التعريف النصي مأخوذ من نشرة المصنع المذكورة أو من دليل ثانوي، وليس من ملحق SAE المحمي"
+      },
+      "applicability": {
+        "model": "Grand Cherokee",
+        "generation": "WJ",
+        "years": "WJ production era 1999-2004; exact applicability unverified",
+        "engine": "4.0L JTEC or 4.7L JTEC depending on code",
+        "fuel": "Gasoline",
+        "market": "unspecified",
+        "drivetrain": "verify specific vehicle"
+      },
+      "symptoms": [
+        "Legacy WJ service-manual index confirms code entry; model-specific symptom unverified"
+      ],
+      "causes": [
+        {
+          "possible_cause": "السبب الفردي غير مؤكد من فهرس الدليل وحده",
+          "evidence": "Only DTC index; requires complete chapter"
+        }
+      ],
+      "diagnostic_steps": [
+        "Match exact model year, 4.0L vs 4.7L, ECU and transmission variant",
+        "Retrieve DTC and freeze frame and follow dedicated diagnostic page in service manual",
+        "Measure sensor/reference/ground only with year/engine-matched connector pinout; specifications unverified in this index"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC status / Active / Stored",
+          "translation_ar": "حالة العطل: نشط/محفوظ",
+          "expected": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name": "غير مؤكد؛ يعتمد على الوحدة والمحرك",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "mode": "SEARCH_REFERENCE_ONLY_NOT_VERIFIED",
+        "reference_image_search_url": "https://www.google.com/search?tbm=isch&q=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0320+No+Crank+Reference+Signal+At+PCM+location",
+        "source_bulletin_url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+        "original_images_embedded": false
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "wiring_diagram": "غير متاح المصدر في هذه الدفعة",
+        "do_not_infer_connections": true
+      },
+      "video": {
+        "mode": "SEARCH_RESULTS_NOT_VERIFIED",
+        "search_url": "https://www.youtube.com/results?search_query=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0320+No+Crank+Reference+Signal+At+PCM+repair"
+      },
+      "priority_evidence": {
+        "phase": "فهرس قديم",
+        "reason": "فهرس دليل تشخيص WJ مؤرشف بمصدر ثانوي؛ يتطلب تأكيد النسخة والموديل"
+      },
+      "sources": [
+        {
+          "title": "Jeep WJ 4.0/4.7 JTEC diagnostic service manual index - secondary archival mirror",
+          "date_or_revision": "year/model not independently verified; WJ 1999-2004 generation",
+          "url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+          "source_tier": "secondary_archived_repair_manual"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "jeep_dtc_batch1.json",
+        "original_source_row": 96,
+        "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+        "original_archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Jeep",
+      "code": "P0351",
+      "code_format": "5-char DTC",
+      "ecu": "PCM",
+      "definition_en": "Ignition Coil 1 Primary Circuit",
+      "translation_ar": "عطل الدائرة الأولية لملف إشعال رقم 1",
+      "category": {
+        "system": "Powertrain",
+        "code_scope": "عام/قياسي SAE",
+        "classification_note": "تخصيص النطاق استناداً إلى تنسيق الرمز؛ التعريف النصي مأخوذ من نشرة المصنع المذكورة أو من دليل ثانوي، وليس من ملحق SAE المحمي"
+      },
+      "applicability": {
+        "model": "Grand Cherokee",
+        "generation": "WJ",
+        "years": "WJ production era 1999-2004; exact applicability unverified",
+        "engine": "4.0L JTEC or 4.7L JTEC depending on code",
+        "fuel": "Gasoline",
+        "market": "unspecified",
+        "drivetrain": "verify specific vehicle"
+      },
+      "symptoms": [
+        "Legacy WJ service-manual index confirms code entry; model-specific symptom unverified"
+      ],
+      "causes": [
+        {
+          "possible_cause": "السبب الفردي غير مؤكد من فهرس الدليل وحده",
+          "evidence": "Only DTC index; requires complete chapter"
+        }
+      ],
+      "diagnostic_steps": [
+        "Match exact model year, 4.0L vs 4.7L, ECU and transmission variant",
+        "Retrieve DTC and freeze frame and follow dedicated diagnostic page in service manual",
+        "Measure sensor/reference/ground only with year/engine-matched connector pinout; specifications unverified in this index"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC status / Active / Stored",
+          "translation_ar": "حالة العطل: نشط/محفوظ",
+          "expected": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name": "غير مؤكد؛ يعتمد على الوحدة والمحرك",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "mode": "SEARCH_REFERENCE_ONLY_NOT_VERIFIED",
+        "reference_image_search_url": "https://www.google.com/search?tbm=isch&q=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0351+Ignition+Coil+1+Primary+Circuit+location",
+        "source_bulletin_url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+        "original_images_embedded": false
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "wiring_diagram": "غير متاح المصدر في هذه الدفعة",
+        "do_not_infer_connections": true
+      },
+      "video": {
+        "mode": "SEARCH_RESULTS_NOT_VERIFIED",
+        "search_url": "https://www.youtube.com/results?search_query=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0351+Ignition+Coil+1+Primary+Circuit+repair"
+      },
+      "priority_evidence": {
+        "phase": "فهرس قديم",
+        "reason": "فهرس دليل تشخيص WJ مؤرشف بمصدر ثانوي؛ يتطلب تأكيد النسخة والموديل"
+      },
+      "sources": [
+        {
+          "title": "Jeep WJ 4.0/4.7 JTEC diagnostic service manual index - secondary archival mirror",
+          "date_or_revision": "year/model not independently verified; WJ 1999-2004 generation",
+          "url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+          "source_tier": "secondary_archived_repair_manual"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "jeep_dtc_batch1.json",
+        "original_source_row": 97,
+        "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+        "original_archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Jeep",
+      "code": "P0420",
+      "code_format": "5-char DTC",
+      "ecu": "PCM",
+      "definition_en": "Catalytic Converter Efficiency Bank 1",
+      "translation_ar": "انخفاض كفاءة المحول الحفاز بنك 1",
+      "category": {
+        "system": "Powertrain",
+        "code_scope": "عام/قياسي SAE",
+        "classification_note": "تخصيص النطاق استناداً إلى تنسيق الرمز؛ التعريف النصي مأخوذ من نشرة المصنع المذكورة أو من دليل ثانوي، وليس من ملحق SAE المحمي"
+      },
+      "applicability": {
+        "model": "Grand Cherokee",
+        "generation": "WJ",
+        "years": "WJ production era 1999-2004; exact applicability unverified",
+        "engine": "4.0L JTEC or 4.7L JTEC depending on code",
+        "fuel": "Gasoline",
+        "market": "unspecified",
+        "drivetrain": "verify specific vehicle"
+      },
+      "symptoms": [
+        "Legacy WJ service-manual index confirms code entry; model-specific symptom unverified"
+      ],
+      "causes": [
+        {
+          "possible_cause": "السبب الفردي غير مؤكد من فهرس الدليل وحده",
+          "evidence": "Only DTC index; requires complete chapter"
+        }
+      ],
+      "diagnostic_steps": [
+        "Match exact model year, 4.0L vs 4.7L, ECU and transmission variant",
+        "Retrieve DTC and freeze frame and follow dedicated diagnostic page in service manual",
+        "Measure sensor/reference/ground only with year/engine-matched connector pinout; specifications unverified in this index"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC status / Active / Stored",
+          "translation_ar": "حالة العطل: نشط/محفوظ",
+          "expected": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name": "غير مؤكد؛ يعتمد على الوحدة والمحرك",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "mode": "SEARCH_REFERENCE_ONLY_NOT_VERIFIED",
+        "reference_image_search_url": "https://www.google.com/search?tbm=isch&q=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0420+Catalytic+Converter+Efficiency+Bank+1+location",
+        "source_bulletin_url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+        "original_images_embedded": false
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "wiring_diagram": "غير متاح المصدر في هذه الدفعة",
+        "do_not_infer_connections": true
+      },
+      "video": {
+        "mode": "SEARCH_RESULTS_NOT_VERIFIED",
+        "search_url": "https://www.youtube.com/results?search_query=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0420+Catalytic+Converter+Efficiency+Bank+1+repair"
+      },
+      "priority_evidence": {
+        "phase": "فهرس قديم",
+        "reason": "فهرس دليل تشخيص WJ مؤرشف بمصدر ثانوي؛ يتطلب تأكيد النسخة والموديل"
+      },
+      "sources": [
+        {
+          "title": "Jeep WJ 4.0/4.7 JTEC diagnostic service manual index - secondary archival mirror",
+          "date_or_revision": "year/model not independently verified; WJ 1999-2004 generation",
+          "url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+          "source_tier": "secondary_archived_repair_manual"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "jeep_dtc_batch1.json",
+        "original_source_row": 98,
+        "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+        "original_archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Jeep",
+      "code": "P0442",
+      "code_format": "5-char DTC",
+      "ecu": "PCM",
+      "definition_en": "EVAP Medium Leak Detected",
+      "translation_ar": "تسرّب متوسط في نظام EVAP",
+      "category": {
+        "system": "Powertrain",
+        "code_scope": "عام/قياسي SAE",
+        "classification_note": "تخصيص النطاق استناداً إلى تنسيق الرمز؛ التعريف النصي مأخوذ من نشرة المصنع المذكورة أو من دليل ثانوي، وليس من ملحق SAE المحمي"
+      },
+      "applicability": {
+        "model": "Grand Cherokee",
+        "generation": "WJ",
+        "years": "WJ production era 1999-2004; exact applicability unverified",
+        "engine": "4.0L JTEC or 4.7L JTEC depending on code",
+        "fuel": "Gasoline",
+        "market": "unspecified",
+        "drivetrain": "verify specific vehicle"
+      },
+      "symptoms": [
+        "Legacy WJ service-manual index confirms code entry; model-specific symptom unverified"
+      ],
+      "causes": [
+        {
+          "possible_cause": "السبب الفردي غير مؤكد من فهرس الدليل وحده",
+          "evidence": "Only DTC index; requires complete chapter"
+        }
+      ],
+      "diagnostic_steps": [
+        "Match exact model year, 4.0L vs 4.7L, ECU and transmission variant",
+        "Retrieve DTC and freeze frame and follow dedicated diagnostic page in service manual",
+        "Measure sensor/reference/ground only with year/engine-matched connector pinout; specifications unverified in this index"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC status / Active / Stored",
+          "translation_ar": "حالة العطل: نشط/محفوظ",
+          "expected": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name": "غير مؤكد؛ يعتمد على الوحدة والمحرك",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "mode": "SEARCH_REFERENCE_ONLY_NOT_VERIFIED",
+        "reference_image_search_url": "https://www.google.com/search?tbm=isch&q=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0442+EVAP+Medium+Leak+Detected+location",
+        "source_bulletin_url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+        "original_images_embedded": false
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "wiring_diagram": "غير متاح المصدر في هذه الدفعة",
+        "do_not_infer_connections": true
+      },
+      "video": {
+        "mode": "SEARCH_RESULTS_NOT_VERIFIED",
+        "search_url": "https://www.youtube.com/results?search_query=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0442+EVAP+Medium+Leak+Detected+repair"
+      },
+      "priority_evidence": {
+        "phase": "فهرس قديم",
+        "reason": "فهرس دليل تشخيص WJ مؤرشف بمصدر ثانوي؛ يتطلب تأكيد النسخة والموديل"
+      },
+      "sources": [
+        {
+          "title": "Jeep WJ 4.0/4.7 JTEC diagnostic service manual index - secondary archival mirror",
+          "date_or_revision": "year/model not independently verified; WJ 1999-2004 generation",
+          "url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+          "source_tier": "secondary_archived_repair_manual"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "jeep_dtc_batch1.json",
+        "original_source_row": 99,
+        "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+        "original_archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Jeep",
+      "code": "P0500",
+      "code_format": "5-char DTC",
+      "ecu": "PCM",
+      "definition_en": "No Vehicle Speed Sensor Signal",
+      "translation_ar": "غياب إشارة حساس سرعة السيارة",
+      "category": {
+        "system": "Powertrain",
+        "code_scope": "عام/قياسي SAE",
+        "classification_note": "تخصيص النطاق استناداً إلى تنسيق الرمز؛ التعريف النصي مأخوذ من نشرة المصنع المذكورة أو من دليل ثانوي، وليس من ملحق SAE المحمي"
+      },
+      "applicability": {
+        "model": "Grand Cherokee",
+        "generation": "WJ",
+        "years": "WJ production era 1999-2004; exact applicability unverified",
+        "engine": "4.0L JTEC or 4.7L JTEC depending on code",
+        "fuel": "Gasoline",
+        "market": "unspecified",
+        "drivetrain": "verify specific vehicle"
+      },
+      "symptoms": [
+        "Legacy WJ service-manual index confirms code entry; model-specific symptom unverified"
+      ],
+      "causes": [
+        {
+          "possible_cause": "السبب الفردي غير مؤكد من فهرس الدليل وحده",
+          "evidence": "Only DTC index; requires complete chapter"
+        }
+      ],
+      "diagnostic_steps": [
+        "Match exact model year, 4.0L vs 4.7L, ECU and transmission variant",
+        "Retrieve DTC and freeze frame and follow dedicated diagnostic page in service manual",
+        "Measure sensor/reference/ground only with year/engine-matched connector pinout; specifications unverified in this index"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC status / Active / Stored",
+          "translation_ar": "حالة العطل: نشط/محفوظ",
+          "expected": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name": "غير مؤكد؛ يعتمد على الوحدة والمحرك",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "mode": "SEARCH_REFERENCE_ONLY_NOT_VERIFIED",
+        "reference_image_search_url": "https://www.google.com/search?tbm=isch&q=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0500+No+Vehicle+Speed+Sensor+Signal+location",
+        "source_bulletin_url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+        "original_images_embedded": false
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "wiring_diagram": "غير متاح المصدر في هذه الدفعة",
+        "do_not_infer_connections": true
+      },
+      "video": {
+        "mode": "SEARCH_RESULTS_NOT_VERIFIED",
+        "search_url": "https://www.youtube.com/results?search_query=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0500+No+Vehicle+Speed+Sensor+Signal+repair"
+      },
+      "priority_evidence": {
+        "phase": "فهرس قديم",
+        "reason": "فهرس دليل تشخيص WJ مؤرشف بمصدر ثانوي؛ يتطلب تأكيد النسخة والموديل"
+      },
+      "sources": [
+        {
+          "title": "Jeep WJ 4.0/4.7 JTEC diagnostic service manual index - secondary archival mirror",
+          "date_or_revision": "year/model not independently verified; WJ 1999-2004 generation",
+          "url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+          "source_tier": "secondary_archived_repair_manual"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "jeep_dtc_batch1.json",
+        "original_source_row": 100,
+        "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+        "original_archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Jeep",
+      "code": "P0522",
+      "code_format": "5-char DTC",
+      "ecu": "PCM",
+      "definition_en": "Oil Pressure Sensor Voltage Low",
+      "translation_ar": "جهد حساس ضغط الزيت منخفض",
+      "category": {
+        "system": "Powertrain",
+        "code_scope": "عام/قياسي SAE",
+        "classification_note": "تخصيص النطاق استناداً إلى تنسيق الرمز؛ التعريف النصي مأخوذ من نشرة المصنع المذكورة أو من دليل ثانوي، وليس من ملحق SAE المحمي"
+      },
+      "applicability": {
+        "model": "Grand Cherokee",
+        "generation": "WJ",
+        "years": "WJ production era 1999-2004; exact applicability unverified",
+        "engine": "4.0L JTEC or 4.7L JTEC depending on code",
+        "fuel": "Gasoline",
+        "market": "unspecified",
+        "drivetrain": "verify specific vehicle"
+      },
+      "symptoms": [
+        "Legacy WJ service-manual index confirms code entry; model-specific symptom unverified"
+      ],
+      "causes": [
+        {
+          "possible_cause": "السبب الفردي غير مؤكد من فهرس الدليل وحده",
+          "evidence": "Only DTC index; requires complete chapter"
+        }
+      ],
+      "diagnostic_steps": [
+        "Match exact model year, 4.0L vs 4.7L, ECU and transmission variant",
+        "Retrieve DTC and freeze frame and follow dedicated diagnostic page in service manual",
+        "Measure sensor/reference/ground only with year/engine-matched connector pinout; specifications unverified in this index"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC status / Active / Stored",
+          "translation_ar": "حالة العطل: نشط/محفوظ",
+          "expected": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name": "غير مؤكد؛ يعتمد على الوحدة والمحرك",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "mode": "SEARCH_REFERENCE_ONLY_NOT_VERIFIED",
+        "reference_image_search_url": "https://www.google.com/search?tbm=isch&q=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0522+Oil+Pressure+Sensor+Voltage+Low+location",
+        "source_bulletin_url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+        "original_images_embedded": false
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "wiring_diagram": "غير متاح المصدر في هذه الدفعة",
+        "do_not_infer_connections": true
+      },
+      "video": {
+        "mode": "SEARCH_RESULTS_NOT_VERIFIED",
+        "search_url": "https://www.youtube.com/results?search_query=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0522+Oil+Pressure+Sensor+Voltage+Low+repair"
+      },
+      "priority_evidence": {
+        "phase": "فهرس قديم",
+        "reason": "فهرس دليل تشخيص WJ مؤرشف بمصدر ثانوي؛ يتطلب تأكيد النسخة والموديل"
+      },
+      "sources": [
+        {
+          "title": "Jeep WJ 4.0/4.7 JTEC diagnostic service manual index - secondary archival mirror",
+          "date_or_revision": "year/model not independently verified; WJ 1999-2004 generation",
+          "url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+          "source_tier": "secondary_archived_repair_manual"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "jeep_dtc_batch1.json",
+        "original_source_row": 101,
+        "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+        "original_archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Jeep",
+      "code": "P0700",
+      "code_format": "5-char DTC",
+      "ecu": "TCM/PCM transmission interface (verify variant)",
+      "definition_en": "TCM Controller DTC Present",
+      "translation_ar": "وجود كود عطل محفوظ بوحدة ناقل الحركة TCM",
+      "category": {
+        "system": "Powertrain",
+        "code_scope": "عام/قياسي SAE",
+        "classification_note": "تخصيص النطاق استناداً إلى تنسيق الرمز؛ التعريف النصي مأخوذ من نشرة المصنع المذكورة أو من دليل ثانوي، وليس من ملحق SAE المحمي"
+      },
+      "applicability": {
+        "model": "Grand Cherokee",
+        "generation": "WJ",
+        "years": "WJ production era 1999-2004; exact applicability unverified",
+        "engine": "4.0L JTEC or 4.7L JTEC depending on code",
+        "fuel": "Gasoline",
+        "market": "unspecified",
+        "drivetrain": "verify specific vehicle"
+      },
+      "symptoms": [
+        "Legacy WJ service-manual index confirms code entry; model-specific symptom unverified"
+      ],
+      "causes": [
+        {
+          "possible_cause": "السبب الفردي غير مؤكد من فهرس الدليل وحده",
+          "evidence": "Only DTC index; requires complete chapter"
+        }
+      ],
+      "diagnostic_steps": [
+        "Match exact model year, 4.0L vs 4.7L, ECU and transmission variant",
+        "Retrieve DTC and freeze frame and follow dedicated diagnostic page in service manual",
+        "Measure sensor/reference/ground only with year/engine-matched connector pinout; specifications unverified in this index"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC status / Active / Stored",
+          "translation_ar": "حالة العطل: نشط/محفوظ",
+          "expected": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name": "غير مؤكد؛ يعتمد على الوحدة والمحرك",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "mode": "SEARCH_REFERENCE_ONLY_NOT_VERIFIED",
+        "reference_image_search_url": "https://www.google.com/search?tbm=isch&q=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0700+TCM+Controller+DTC+Present+location",
+        "source_bulletin_url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+        "original_images_embedded": false
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "wiring_diagram": "غير متاح المصدر في هذه الدفعة",
+        "do_not_infer_connections": true
+      },
+      "video": {
+        "mode": "SEARCH_RESULTS_NOT_VERIFIED",
+        "search_url": "https://www.youtube.com/results?search_query=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0700+TCM+Controller+DTC+Present+repair"
+      },
+      "priority_evidence": {
+        "phase": "فهرس قديم",
+        "reason": "فهرس دليل تشخيص WJ مؤرشف بمصدر ثانوي؛ يتطلب تأكيد النسخة والموديل"
+      },
+      "sources": [
+        {
+          "title": "Jeep WJ 4.0/4.7 JTEC diagnostic service manual index - secondary archival mirror",
+          "date_or_revision": "year/model not independently verified; WJ 1999-2004 generation",
+          "url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+          "source_tier": "secondary_archived_repair_manual"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "jeep_dtc_batch1.json",
+        "original_source_row": 102,
+        "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+        "original_archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Jeep",
+      "code": "P0740",
+      "code_format": "5-char DTC",
+      "ecu": "TCM/PCM transmission interface (verify variant)",
+      "definition_en": "Torque Converter Clutch No RPM Drop At Lockup",
+      "translation_ar": "عدم انخفاض سرعة الدوران عند تعشيق قفل محول العزم",
+      "category": {
+        "system": "Powertrain",
+        "code_scope": "عام/قياسي SAE",
+        "classification_note": "تخصيص النطاق استناداً إلى تنسيق الرمز؛ التعريف النصي مأخوذ من نشرة المصنع المذكورة أو من دليل ثانوي، وليس من ملحق SAE المحمي"
+      },
+      "applicability": {
+        "model": "Grand Cherokee",
+        "generation": "WJ",
+        "years": "WJ production era 1999-2004; exact applicability unverified",
+        "engine": "4.0L JTEC or 4.7L JTEC depending on code",
+        "fuel": "Gasoline",
+        "market": "unspecified",
+        "drivetrain": "verify specific vehicle"
+      },
+      "symptoms": [
+        "Legacy WJ service-manual index confirms code entry; model-specific symptom unverified"
+      ],
+      "causes": [
+        {
+          "possible_cause": "السبب الفردي غير مؤكد من فهرس الدليل وحده",
+          "evidence": "Only DTC index; requires complete chapter"
+        }
+      ],
+      "diagnostic_steps": [
+        "Match exact model year, 4.0L vs 4.7L, ECU and transmission variant",
+        "Retrieve DTC and freeze frame and follow dedicated diagnostic page in service manual",
+        "Measure sensor/reference/ground only with year/engine-matched connector pinout; specifications unverified in this index"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC status / Active / Stored",
+          "translation_ar": "حالة العطل: نشط/محفوظ",
+          "expected": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name": "غير مؤكد؛ يعتمد على الوحدة والمحرك",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "mode": "SEARCH_REFERENCE_ONLY_NOT_VERIFIED",
+        "reference_image_search_url": "https://www.google.com/search?tbm=isch&q=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0740+Torque+Converter+Clutch+No+RPM+Drop+At+Lockup+location",
+        "source_bulletin_url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+        "original_images_embedded": false
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "wiring_diagram": "غير متاح المصدر في هذه الدفعة",
+        "do_not_infer_connections": true
+      },
+      "video": {
+        "mode": "SEARCH_RESULTS_NOT_VERIFIED",
+        "search_url": "https://www.youtube.com/results?search_query=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P0740+Torque+Converter+Clutch+No+RPM+Drop+At+Lockup+repair"
+      },
+      "priority_evidence": {
+        "phase": "فهرس قديم",
+        "reason": "فهرس دليل تشخيص WJ مؤرشف بمصدر ثانوي؛ يتطلب تأكيد النسخة والموديل"
+      },
+      "sources": [
+        {
+          "title": "Jeep WJ 4.0/4.7 JTEC diagnostic service manual index - secondary archival mirror",
+          "date_or_revision": "year/model not independently verified; WJ 1999-2004 generation",
+          "url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+          "source_tier": "secondary_archived_repair_manual"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "jeep_dtc_batch1.json",
+        "original_source_row": 103,
+        "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+        "original_archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Jeep",
+      "code": "P1296",
+      "code_format": "5-char DTC",
+      "ecu": "PCM",
+      "definition_en": "No 5 Volts To MAP Sensor",
+      "translation_ar": "غياب تغذية 5 فولت لحساس MAP",
+      "category": {
+        "system": "Powertrain",
+        "code_scope": "خاص بالمصنّع Chrysler/FCA/Stellantis",
+        "classification_note": "تخصيص النطاق استناداً إلى تنسيق الرمز؛ التعريف النصي مأخوذ من نشرة المصنع المذكورة أو من دليل ثانوي، وليس من ملحق SAE المحمي"
+      },
+      "applicability": {
+        "model": "Grand Cherokee",
+        "generation": "WJ",
+        "years": "WJ production era 1999-2004; exact applicability unverified",
+        "engine": "4.0L JTEC or 4.7L JTEC depending on code",
+        "fuel": "Gasoline",
+        "market": "unspecified",
+        "drivetrain": "verify specific vehicle"
+      },
+      "symptoms": [
+        "Legacy WJ service-manual index confirms code entry; model-specific symptom unverified"
+      ],
+      "causes": [
+        {
+          "possible_cause": "السبب الفردي غير مؤكد من فهرس الدليل وحده",
+          "evidence": "Only DTC index; requires complete chapter"
+        }
+      ],
+      "diagnostic_steps": [
+        "Match exact model year, 4.0L vs 4.7L, ECU and transmission variant",
+        "Retrieve DTC and freeze frame and follow dedicated diagnostic page in service manual",
+        "Measure sensor/reference/ground only with year/engine-matched connector pinout; specifications unverified in this index"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC status / Active / Stored",
+          "translation_ar": "حالة العطل: نشط/محفوظ",
+          "expected": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name": "غير مؤكد؛ يعتمد على الوحدة والمحرك",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "mode": "SEARCH_REFERENCE_ONLY_NOT_VERIFIED",
+        "reference_image_search_url": "https://www.google.com/search?tbm=isch&q=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P1296+No+5+Volts+To+MAP+Sensor+location",
+        "source_bulletin_url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+        "original_images_embedded": false
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "wiring_diagram": "غير متاح المصدر في هذه الدفعة",
+        "do_not_infer_connections": true
+      },
+      "video": {
+        "mode": "SEARCH_RESULTS_NOT_VERIFIED",
+        "search_url": "https://www.youtube.com/results?search_query=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P1296+No+5+Volts+To+MAP+Sensor+repair"
+      },
+      "priority_evidence": {
+        "phase": "فهرس قديم",
+        "reason": "فهرس دليل تشخيص WJ مؤرشف بمصدر ثانوي؛ يتطلب تأكيد النسخة والموديل"
+      },
+      "sources": [
+        {
+          "title": "Jeep WJ 4.0/4.7 JTEC diagnostic service manual index - secondary archival mirror",
+          "date_or_revision": "year/model not independently verified; WJ 1999-2004 generation",
+          "url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+          "source_tier": "secondary_archived_repair_manual"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "jeep_dtc_batch1.json",
+        "original_source_row": 104,
+        "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+        "original_archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Jeep",
+      "code": "P1391",
+      "code_format": "5-char DTC",
+      "ecu": "PCM",
+      "definition_en": "Intermittent Loss Of CMP Or CKP",
+      "translation_ar": "فقدان متقطع لإشارة الكامات CMP أو المرفق CKP",
+      "category": {
+        "system": "Powertrain",
+        "code_scope": "خاص بالمصنّع Chrysler/FCA/Stellantis",
+        "classification_note": "تخصيص النطاق استناداً إلى تنسيق الرمز؛ التعريف النصي مأخوذ من نشرة المصنع المذكورة أو من دليل ثانوي، وليس من ملحق SAE المحمي"
+      },
+      "applicability": {
+        "model": "Grand Cherokee",
+        "generation": "WJ",
+        "years": "WJ production era 1999-2004; exact applicability unverified",
+        "engine": "4.0L JTEC or 4.7L JTEC depending on code",
+        "fuel": "Gasoline",
+        "market": "unspecified",
+        "drivetrain": "verify specific vehicle"
+      },
+      "symptoms": [
+        "Legacy WJ service-manual index confirms code entry; model-specific symptom unverified"
+      ],
+      "causes": [
+        {
+          "possible_cause": "السبب الفردي غير مؤكد من فهرس الدليل وحده",
+          "evidence": "Only DTC index; requires complete chapter"
+        }
+      ],
+      "diagnostic_steps": [
+        "Match exact model year, 4.0L vs 4.7L, ECU and transmission variant",
+        "Retrieve DTC and freeze frame and follow dedicated diagnostic page in service manual",
+        "Measure sensor/reference/ground only with year/engine-matched connector pinout; specifications unverified in this index"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC status / Active / Stored",
+          "translation_ar": "حالة العطل: نشط/محفوظ",
+          "expected": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name": "غير مؤكد؛ يعتمد على الوحدة والمحرك",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "mode": "SEARCH_REFERENCE_ONLY_NOT_VERIFIED",
+        "reference_image_search_url": "https://www.google.com/search?tbm=isch&q=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P1391+Intermittent+Loss+Of+CMP+Or+CKP+location",
+        "source_bulletin_url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+        "original_images_embedded": false
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "wiring_diagram": "غير متاح المصدر في هذه الدفعة",
+        "do_not_infer_connections": true
+      },
+      "video": {
+        "mode": "SEARCH_RESULTS_NOT_VERIFIED",
+        "search_url": "https://www.youtube.com/results?search_query=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P1391+Intermittent+Loss+Of+CMP+Or+CKP+repair"
+      },
+      "priority_evidence": {
+        "phase": "فهرس قديم",
+        "reason": "فهرس دليل تشخيص WJ مؤرشف بمصدر ثانوي؛ يتطلب تأكيد النسخة والموديل"
+      },
+      "sources": [
+        {
+          "title": "Jeep WJ 4.0/4.7 JTEC diagnostic service manual index - secondary archival mirror",
+          "date_or_revision": "year/model not independently verified; WJ 1999-2004 generation",
+          "url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+          "source_tier": "secondary_archived_repair_manual"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "jeep_dtc_batch1.json",
+        "original_source_row": 105,
+        "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+        "original_archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Jeep",
+      "code": "P1494",
+      "code_format": "5-char DTC",
+      "ecu": "PCM",
+      "definition_en": "Leak Detection Pump Switch Or Mechanical Fault",
+      "translation_ar": "عطل ميكانيكي أو بمفتاح مضخة فحص تسرب EVAP",
+      "category": {
+        "system": "Powertrain",
+        "code_scope": "خاص بالمصنّع Chrysler/FCA/Stellantis",
+        "classification_note": "تخصيص النطاق استناداً إلى تنسيق الرمز؛ التعريف النصي مأخوذ من نشرة المصنع المذكورة أو من دليل ثانوي، وليس من ملحق SAE المحمي"
+      },
+      "applicability": {
+        "model": "Grand Cherokee",
+        "generation": "WJ",
+        "years": "WJ production era 1999-2004; exact applicability unverified",
+        "engine": "4.0L JTEC or 4.7L JTEC depending on code",
+        "fuel": "Gasoline",
+        "market": "unspecified",
+        "drivetrain": "verify specific vehicle"
+      },
+      "symptoms": [
+        "Legacy WJ service-manual index confirms code entry; model-specific symptom unverified"
+      ],
+      "causes": [
+        {
+          "possible_cause": "السبب الفردي غير مؤكد من فهرس الدليل وحده",
+          "evidence": "Only DTC index; requires complete chapter"
+        }
+      ],
+      "diagnostic_steps": [
+        "Match exact model year, 4.0L vs 4.7L, ECU and transmission variant",
+        "Retrieve DTC and freeze frame and follow dedicated diagnostic page in service manual",
+        "Measure sensor/reference/ground only with year/engine-matched connector pinout; specifications unverified in this index"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC status / Active / Stored",
+          "translation_ar": "حالة العطل: نشط/محفوظ",
+          "expected": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name": "غير مؤكد؛ يعتمد على الوحدة والمحرك",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "mode": "SEARCH_REFERENCE_ONLY_NOT_VERIFIED",
+        "reference_image_search_url": "https://www.google.com/search?tbm=isch&q=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P1494+Leak+Detection+Pump+Switch+Or+Mechanical+Fault+location",
+        "source_bulletin_url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+        "original_images_embedded": false
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "wiring_diagram": "غير متاح المصدر في هذه الدفعة",
+        "do_not_infer_connections": true
+      },
+      "video": {
+        "mode": "SEARCH_RESULTS_NOT_VERIFIED",
+        "search_url": "https://www.youtube.com/results?search_query=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P1494+Leak+Detection+Pump+Switch+Or+Mechanical+Fault+repair"
+      },
+      "priority_evidence": {
+        "phase": "فهرس قديم",
+        "reason": "فهرس دليل تشخيص WJ مؤرشف بمصدر ثانوي؛ يتطلب تأكيد النسخة والموديل"
+      },
+      "sources": [
+        {
+          "title": "Jeep WJ 4.0/4.7 JTEC diagnostic service manual index - secondary archival mirror",
+          "date_or_revision": "year/model not independently verified; WJ 1999-2004 generation",
+          "url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+          "source_tier": "secondary_archived_repair_manual"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "jeep_dtc_batch1.json",
+        "original_source_row": 106,
+        "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+        "original_archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Jeep",
+      "code": "P1495",
+      "code_format": "5-char DTC",
+      "ecu": "PCM",
+      "definition_en": "Leak Detection Pump Solenoid Circuit",
+      "translation_ar": "خلل بدائرة ملف مضخة كشف تسرب الوقود",
+      "category": {
+        "system": "Powertrain",
+        "code_scope": "خاص بالمصنّع Chrysler/FCA/Stellantis",
+        "classification_note": "تخصيص النطاق استناداً إلى تنسيق الرمز؛ التعريف النصي مأخوذ من نشرة المصنع المذكورة أو من دليل ثانوي، وليس من ملحق SAE المحمي"
+      },
+      "applicability": {
+        "model": "Grand Cherokee",
+        "generation": "WJ",
+        "years": "WJ production era 1999-2004; exact applicability unverified",
+        "engine": "4.0L JTEC or 4.7L JTEC depending on code",
+        "fuel": "Gasoline",
+        "market": "unspecified",
+        "drivetrain": "verify specific vehicle"
+      },
+      "symptoms": [
+        "Legacy WJ service-manual index confirms code entry; model-specific symptom unverified"
+      ],
+      "causes": [
+        {
+          "possible_cause": "السبب الفردي غير مؤكد من فهرس الدليل وحده",
+          "evidence": "Only DTC index; requires complete chapter"
+        }
+      ],
+      "diagnostic_steps": [
+        "Match exact model year, 4.0L vs 4.7L, ECU and transmission variant",
+        "Retrieve DTC and freeze frame and follow dedicated diagnostic page in service manual",
+        "Measure sensor/reference/ground only with year/engine-matched connector pinout; specifications unverified in this index"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC status / Active / Stored",
+          "translation_ar": "حالة العطل: نشط/محفوظ",
+          "expected": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name": "غير مؤكد؛ يعتمد على الوحدة والمحرك",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "mode": "SEARCH_REFERENCE_ONLY_NOT_VERIFIED",
+        "reference_image_search_url": "https://www.google.com/search?tbm=isch&q=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P1495+Leak+Detection+Pump+Solenoid+Circuit+location",
+        "source_bulletin_url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+        "original_images_embedded": false
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "wiring_diagram": "غير متاح المصدر في هذه الدفعة",
+        "do_not_infer_connections": true
+      },
+      "video": {
+        "mode": "SEARCH_RESULTS_NOT_VERIFIED",
+        "search_url": "https://www.youtube.com/results?search_query=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P1495+Leak+Detection+Pump+Solenoid+Circuit+repair"
+      },
+      "priority_evidence": {
+        "phase": "فهرس قديم",
+        "reason": "فهرس دليل تشخيص WJ مؤرشف بمصدر ثانوي؛ يتطلب تأكيد النسخة والموديل"
+      },
+      "sources": [
+        {
+          "title": "Jeep WJ 4.0/4.7 JTEC diagnostic service manual index - secondary archival mirror",
+          "date_or_revision": "year/model not independently verified; WJ 1999-2004 generation",
+          "url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+          "source_tier": "secondary_archived_repair_manual"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "jeep_dtc_batch1.json",
+        "original_source_row": 107,
+        "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+        "original_archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Jeep",
+      "code": "P1685",
+      "code_format": "5-char DTC",
+      "ecu": "PCM / SKIM",
+      "definition_en": "Wrong Or Invalid Key Received From SKIM",
+      "translation_ar": "استلام مفتاح غير صحيح أو غير معرّف من وحدة منع التشغيل",
+      "category": {
+        "system": "Powertrain",
+        "code_scope": "خاص بالمصنّع Chrysler/FCA/Stellantis",
+        "classification_note": "تخصيص النطاق استناداً إلى تنسيق الرمز؛ التعريف النصي مأخوذ من نشرة المصنع المذكورة أو من دليل ثانوي، وليس من ملحق SAE المحمي"
+      },
+      "applicability": {
+        "model": "Grand Cherokee",
+        "generation": "WJ",
+        "years": "WJ production era 1999-2004; exact applicability unverified",
+        "engine": "4.0L JTEC or 4.7L JTEC depending on code",
+        "fuel": "Gasoline",
+        "market": "unspecified",
+        "drivetrain": "verify specific vehicle"
+      },
+      "symptoms": [
+        "Legacy WJ service-manual index confirms code entry; model-specific symptom unverified"
+      ],
+      "causes": [
+        {
+          "possible_cause": "السبب الفردي غير مؤكد من فهرس الدليل وحده",
+          "evidence": "Only DTC index; requires complete chapter"
+        }
+      ],
+      "diagnostic_steps": [
+        "Match exact model year, 4.0L vs 4.7L, ECU and transmission variant",
+        "Retrieve DTC and freeze frame and follow dedicated diagnostic page in service manual",
+        "Measure sensor/reference/ground only with year/engine-matched connector pinout; specifications unverified in this index"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC status / Active / Stored",
+          "translation_ar": "حالة العطل: نشط/محفوظ",
+          "expected": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name": "غير مؤكد؛ يعتمد على الوحدة والمحرك",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "mode": "SEARCH_REFERENCE_ONLY_NOT_VERIFIED",
+        "reference_image_search_url": "https://www.google.com/search?tbm=isch&q=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P1685+Wrong+Or+Invalid+Key+Received+From+SKIM+location",
+        "source_bulletin_url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+        "original_images_embedded": false
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "wiring_diagram": "غير متاح المصدر في هذه الدفعة",
+        "do_not_infer_connections": true
+      },
+      "video": {
+        "mode": "SEARCH_RESULTS_NOT_VERIFIED",
+        "search_url": "https://www.youtube.com/results?search_query=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P1685+Wrong+Or+Invalid+Key+Received+From+SKIM+repair"
+      },
+      "priority_evidence": {
+        "phase": "فهرس قديم",
+        "reason": "فهرس دليل تشخيص WJ مؤرشف بمصدر ثانوي؛ يتطلب تأكيد النسخة والموديل"
+      },
+      "sources": [
+        {
+          "title": "Jeep WJ 4.0/4.7 JTEC diagnostic service manual index - secondary archival mirror",
+          "date_or_revision": "year/model not independently verified; WJ 1999-2004 generation",
+          "url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+          "source_tier": "secondary_archived_repair_manual"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "jeep_dtc_batch1.json",
+        "original_source_row": 108,
+        "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+        "original_archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Jeep",
+      "code": "P1686",
+      "code_format": "5-char DTC",
+      "ecu": "PCM / SKIM",
+      "definition_en": "No SKIM Bus Message Received",
+      "translation_ar": "غياب رسائل شبكة وحدة منع التشغيل SKIM",
+      "category": {
+        "system": "Powertrain",
+        "code_scope": "خاص بالمصنّع Chrysler/FCA/Stellantis",
+        "classification_note": "تخصيص النطاق استناداً إلى تنسيق الرمز؛ التعريف النصي مأخوذ من نشرة المصنع المذكورة أو من دليل ثانوي، وليس من ملحق SAE المحمي"
+      },
+      "applicability": {
+        "model": "Grand Cherokee",
+        "generation": "WJ",
+        "years": "WJ production era 1999-2004; exact applicability unverified",
+        "engine": "4.0L JTEC or 4.7L JTEC depending on code",
+        "fuel": "Gasoline",
+        "market": "unspecified",
+        "drivetrain": "verify specific vehicle"
+      },
+      "symptoms": [
+        "Legacy WJ service-manual index confirms code entry; model-specific symptom unverified"
+      ],
+      "causes": [
+        {
+          "possible_cause": "السبب الفردي غير مؤكد من فهرس الدليل وحده",
+          "evidence": "Only DTC index; requires complete chapter"
+        }
+      ],
+      "diagnostic_steps": [
+        "Match exact model year, 4.0L vs 4.7L, ECU and transmission variant",
+        "Retrieve DTC and freeze frame and follow dedicated diagnostic page in service manual",
+        "Measure sensor/reference/ground only with year/engine-matched connector pinout; specifications unverified in this index"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC status / Active / Stored",
+          "translation_ar": "حالة العطل: نشط/محفوظ",
+          "expected": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name": "غير مؤكد؛ يعتمد على الوحدة والمحرك",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "mode": "SEARCH_REFERENCE_ONLY_NOT_VERIFIED",
+        "reference_image_search_url": "https://www.google.com/search?tbm=isch&q=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P1686+No+SKIM+Bus+Message+Received+location",
+        "source_bulletin_url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+        "original_images_embedded": false
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "wiring_diagram": "غير متاح المصدر في هذه الدفعة",
+        "do_not_infer_connections": true
+      },
+      "video": {
+        "mode": "SEARCH_RESULTS_NOT_VERIFIED",
+        "search_url": "https://www.youtube.com/results?search_query=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P1686+No+SKIM+Bus+Message+Received+repair"
+      },
+      "priority_evidence": {
+        "phase": "فهرس قديم",
+        "reason": "فهرس دليل تشخيص WJ مؤرشف بمصدر ثانوي؛ يتطلب تأكيد النسخة والموديل"
+      },
+      "sources": [
+        {
+          "title": "Jeep WJ 4.0/4.7 JTEC diagnostic service manual index - secondary archival mirror",
+          "date_or_revision": "year/model not independently verified; WJ 1999-2004 generation",
+          "url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+          "source_tier": "secondary_archived_repair_manual"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "jeep_dtc_batch1.json",
+        "original_source_row": 109,
+        "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+        "original_archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Jeep",
+      "code": "P1698",
+      "code_format": "5-char DTC",
+      "ecu": "TCM/PCM transmission interface (verify variant)",
+      "definition_en": "No Bus Message From TCM",
+      "translation_ar": "غياب رسائل الشبكة من TCM",
+      "category": {
+        "system": "Powertrain",
+        "code_scope": "خاص بالمصنّع Chrysler/FCA/Stellantis",
+        "classification_note": "تخصيص النطاق استناداً إلى تنسيق الرمز؛ التعريف النصي مأخوذ من نشرة المصنع المذكورة أو من دليل ثانوي، وليس من ملحق SAE المحمي"
+      },
+      "applicability": {
+        "model": "Grand Cherokee",
+        "generation": "WJ",
+        "years": "WJ production era 1999-2004; exact applicability unverified",
+        "engine": "4.0L JTEC or 4.7L JTEC depending on code",
+        "fuel": "Gasoline",
+        "market": "unspecified",
+        "drivetrain": "verify specific vehicle"
+      },
+      "symptoms": [
+        "Legacy WJ service-manual index confirms code entry; model-specific symptom unverified"
+      ],
+      "causes": [
+        {
+          "possible_cause": "السبب الفردي غير مؤكد من فهرس الدليل وحده",
+          "evidence": "Only DTC index; requires complete chapter"
+        }
+      ],
+      "diagnostic_steps": [
+        "Match exact model year, 4.0L vs 4.7L, ECU and transmission variant",
+        "Retrieve DTC and freeze frame and follow dedicated diagnostic page in service manual",
+        "Measure sensor/reference/ground only with year/engine-matched connector pinout; specifications unverified in this index"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC status / Active / Stored",
+          "translation_ar": "حالة العطل: نشط/محفوظ",
+          "expected": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name": "غير مؤكد؛ يعتمد على الوحدة والمحرك",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "mode": "SEARCH_REFERENCE_ONLY_NOT_VERIFIED",
+        "reference_image_search_url": "https://www.google.com/search?tbm=isch&q=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P1698+No+Bus+Message+From+TCM+location",
+        "source_bulletin_url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+        "original_images_embedded": false
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "wiring_diagram": "غير متاح المصدر في هذه الدفعة",
+        "do_not_infer_connections": true
+      },
+      "video": {
+        "mode": "SEARCH_RESULTS_NOT_VERIFIED",
+        "search_url": "https://www.youtube.com/results?search_query=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P1698+No+Bus+Message+From+TCM+repair"
+      },
+      "priority_evidence": {
+        "phase": "فهرس قديم",
+        "reason": "فهرس دليل تشخيص WJ مؤرشف بمصدر ثانوي؛ يتطلب تأكيد النسخة والموديل"
+      },
+      "sources": [
+        {
+          "title": "Jeep WJ 4.0/4.7 JTEC diagnostic service manual index - secondary archival mirror",
+          "date_or_revision": "year/model not independently verified; WJ 1999-2004 generation",
+          "url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+          "source_tier": "secondary_archived_repair_manual"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "jeep_dtc_batch1.json",
+        "original_source_row": 110,
+        "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+        "original_archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    },
+    {
+      "brand": "Jeep",
+      "code": "P1756",
+      "code_format": "5-char DTC",
+      "ecu": "TCM/PCM transmission interface (verify variant)",
+      "definition_en": "Governor Pressure Not Equal Target At 15-20 PSI",
+      "translation_ar": "ضغط منظم ناقل الحركة لا يطابق الهدف عند نطاق 15–20 PSI المذكور في عنوان كود الدليل",
+      "category": {
+        "system": "Powertrain",
+        "code_scope": "خاص بالمصنّع Chrysler/FCA/Stellantis",
+        "classification_note": "تخصيص النطاق استناداً إلى تنسيق الرمز؛ التعريف النصي مأخوذ من نشرة المصنع المذكورة أو من دليل ثانوي، وليس من ملحق SAE المحمي"
+      },
+      "applicability": {
+        "model": "Grand Cherokee",
+        "generation": "WJ",
+        "years": "WJ production era 1999-2004; exact applicability unverified",
+        "engine": "4.0L JTEC or 4.7L JTEC depending on code",
+        "fuel": "Gasoline",
+        "market": "unspecified",
+        "drivetrain": "verify specific vehicle"
+      },
+      "symptoms": [
+        "Legacy WJ service-manual index confirms code entry; model-specific symptom unverified"
+      ],
+      "causes": [
+        {
+          "possible_cause": "السبب الفردي غير مؤكد من فهرس الدليل وحده",
+          "evidence": "Only DTC index; requires complete chapter"
+        }
+      ],
+      "diagnostic_steps": [
+        "Match exact model year, 4.0L vs 4.7L, ECU and transmission variant",
+        "Retrieve DTC and freeze frame and follow dedicated diagnostic page in service manual",
+        "Measure sensor/reference/ground only with year/engine-matched connector pinout; specifications unverified in this index"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC status / Active / Stored",
+          "translation_ar": "حالة العطل: نشط/محفوظ",
+          "expected": "غير مؤكد"
+        }
+      ],
+      "parts": [
+        {
+          "name": "غير مؤكد؛ يعتمد على الوحدة والمحرك",
+          "location": "غير مؤكد"
+        }
+      ],
+      "images": {
+        "mode": "SEARCH_REFERENCE_ONLY_NOT_VERIFIED",
+        "reference_image_search_url": "https://www.google.com/search?tbm=isch&q=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P1756+Governor+Pressure+Not+Equal+Target+At+15-20+PSI+location",
+        "source_bulletin_url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+        "original_images_embedded": false
+      },
+      "wiring": {
+        "pinout": "غير مؤكد",
+        "wiring_diagram": "غير متاح المصدر في هذه الدفعة",
+        "do_not_infer_connections": true
+      },
+      "video": {
+        "mode": "SEARCH_RESULTS_NOT_VERIFIED",
+        "search_url": "https://www.youtube.com/results?search_query=Jeep+Grand+Cherokee+4.0L+JTEC+or+4.7L+JTEC+depending+on+code+P1756+Governor+Pressure+Not+Equal+Target+At+15-20+PSI+repair"
+      },
+      "priority_evidence": {
+        "phase": "فهرس قديم",
+        "reason": "فهرس دليل تشخيص WJ مؤرشف بمصدر ثانوي؛ يتطلب تأكيد النسخة والموديل"
+      },
+      "sources": [
+        {
+          "title": "Jeep WJ 4.0/4.7 JTEC diagnostic service manual index - secondary archival mirror",
+          "date_or_revision": "year/model not independently verified; WJ 1999-2004 generation",
+          "url": "https://manualzz.com/doc/o/ko4tm/jeep-wj-4.0l-jtec--wj-4.7l-jtec-engine-diagnostic-manual-non-monitored-circuits",
+          "source_tier": "secondary_archived_repair_manual"
+        }
+      ],
+      "verification_status": "قيد التوثيق",
+      "_dtc_nexis_archive_review": {
+        "source_filename": "jeep_dtc_batch1.json",
+        "original_source_row": 111,
+        "original_sha256": "46876c4805cb109300ef3849961ec0fbfb9fde0525f075feb57b128c2f6cb72c",
+        "original_archive_path": "data/master/source_archives/jeep_dtc_batch1.json",
+        "stored_on": "2026-11-06",
+        "full_technical_approval": false,
+        "automatic_diagnostic_use": false,
+        "review_status": "SOURCE_VALUES_PRESERVED_PENDING_PRIMARY_DEFINITION_TRANSLATION_AND_VIN_ECU_REVIEW"
+      }
+    }
+  ]
+}

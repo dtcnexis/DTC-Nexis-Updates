@@ -1,0 +1,3180 @@
+{
+  "schema": "dtcnexis-family-index-preservation-v1",
+  "counts_towards_unique_ledger": false,
+  "additional_counted_rows": 0,
+  "reason": "The -xx marker is an unspecified failure-type placeholder in SSM74274, not an actual scanned suffix. Preserve family headings but never generate subcodes from them.",
+  "records": [
+    {
+      "brand": "Jaguar",
+      "code": "P0A0A-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "High Voltage System Interlock Circuit",
+      "translation_ar": "دائرة قفل السلامة للجهد العالي",
+      "category": "P | عام SAE/ISO (definition per referenced Jaguar guide)",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0A0A-xx+High+Voltage+System+Interlock+Circuit"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0A0A-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P0A1F-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "Battery Energy Control Module",
+      "translation_ar": "وحدة إدارة طاقة البطارية",
+      "category": "P | عام SAE/ISO (definition per referenced Jaguar guide)",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0A1F-xx+Battery+Energy+Control+Module"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0A1F-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P0A95-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "High Voltage Fuse \"A\"",
+      "translation_ar": "فيوز الجهد العالي A",
+      "category": "P | عام SAE/ISO (definition per referenced Jaguar guide)",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0A95-xx+High+Voltage+Fuse+%22A%22"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0A95-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P0AA0-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "Hybrid/EV Battery Positive Contactor Circuit",
+      "translation_ar": "دائرة كونتاكتور القطب الموجب لبطارية الدفع",
+      "category": "P | عام SAE/ISO (definition per referenced Jaguar guide)",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0AA0-xx+Hybrid%2FEV+Battery+Positive+Contactor+Circuit"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0AA0-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P0AA6-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "Hybrid/EV Battery Voltage System Isolation Fault",
+      "translation_ar": "خلل عزل منظومة جهد بطارية الدفع عن الهيكل",
+      "category": "P | عام SAE/ISO (definition per referenced Jaguar guide)",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0AA6-xx+Hybrid%2FEV+Battery+Voltage+System+Isolation+Fault"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0AA6-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P0ABA-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "Hybrid/EV Battery Pack Voltage Sense \"A\" Circuit",
+      "translation_ar": "دائرة قياس جهد مجموعة البطارية A",
+      "category": "P | عام SAE/ISO (definition per referenced Jaguar guide)",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0ABA-xx+Hybrid%2FEV+Battery+Pack+Voltage+Sense+%22A%22+Circuit"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0ABA-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P0ABF-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "Hybrid/EV Battery Pack Current Sensor \"A\" Circuit",
+      "translation_ar": "دائرة حساس تيار مجموعة البطارية A",
+      "category": "P | عام SAE/ISO (definition per referenced Jaguar guide)",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0ABF-xx+Hybrid%2FEV+Battery+Pack+Current+Sensor+%22A%22+Circuit"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0ABF-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P0ADD-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "Hybrid/EV Battery Negative Contactor Control Circuit/Open",
+      "translation_ar": "دائرة تحكم كونتاكتور القطب السالب للبطارية مفتوحة",
+      "category": "P | عام SAE/ISO (definition per referenced Jaguar guide)",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0ADD-xx+Hybrid%2FEV+Battery+Negative+Contactor+Control+Circuit%2FOpen"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0ADD-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P0AE1-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "Hybrid/EV Battery Precharge Contactor Circuit",
+      "translation_ar": "دائرة كونتاكتور الشحن المسبق للبطارية",
+      "category": "P | عام SAE/ISO (definition per referenced Jaguar guide)",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0AE1-xx+Hybrid%2FEV+Battery+Precharge+Contactor+Circuit"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0AE1-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P0AF8-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "Hybrid/EV Battery System Voltage",
+      "translation_ar": "جهد منظومة بطارية الدفع",
+      "category": "P | عام SAE/ISO (definition per referenced Jaguar guide)",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0AF8-xx+Hybrid%2FEV+Battery+System+Voltage"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0AF8-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P0B0E-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "Hybrid/EV Battery Pack Current Sensor \"B\" Circuit",
+      "translation_ar": "دائرة حساس تيار مجموعة البطارية B",
+      "category": "P | عام SAE/ISO (definition per referenced Jaguar guide)",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0B0E-xx+Hybrid%2FEV+Battery+Pack+Current+Sensor+%22B%22+Circuit"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0B0E-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P0B33-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "High Voltage Service Disconnect Circuit",
+      "translation_ar": "دائرة فصل الخدمة للجهد العالي",
+      "category": "P | عام SAE/ISO (definition per referenced Jaguar guide)",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0B33-xx+High+Voltage+Service+Disconnect+Circuit"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0B33-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P0D34-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "Hybrid/EV Battery System Current",
+      "translation_ar": "تيار منظومة بطارية الدفع",
+      "category": "P | عام SAE/ISO (definition per referenced Jaguar guide)",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0D34-xx+Hybrid%2FEV+Battery+System+Current"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0D34-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P0D4C-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "Battery Charger Hybrid/EV Battery Output Voltage Sensor Circuit",
+      "translation_ar": "دائرة حساس جهد خرج شاحن البطارية",
+      "category": "P | عام SAE/ISO (definition per referenced Jaguar guide)",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0D4C-xx+Battery+Charger+Hybrid%2FEV+Battery+Output+Voltage+Sensor+Circuit"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0D4C-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P0E2F-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "High Voltage Fuse \"B\"",
+      "translation_ar": "فيوز الجهد العالي B",
+      "category": "P | عام SAE/ISO (definition per referenced Jaguar guide)",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0E2F-xx+High+Voltage+Fuse+%22B%22"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0E2F-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P0E30-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "High Voltage Fuse \"C\"",
+      "translation_ar": "فيوز الجهد العالي C",
+      "category": "P | عام SAE/ISO (definition per referenced Jaguar guide)",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0E30-xx+High+Voltage+Fuse+%22C%22"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P0E30-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P3035-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "Hybrid/EV Battery Traction Positive Contactor Control Circuit",
+      "translation_ar": "دائرة التحكم بكونتاكتور القطب الموجب لبطارية الدفع",
+      "category": "P | خاص بالمصنع / Jaguar-JLR",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P3035-xx+Hybrid%2FEV+Battery+Traction+Positive+Contactor+Control+Circuit"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P3035-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P3049-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "Hybrid/EV Battery Charger \"A\" High Voltage Supply Circuit",
+      "translation_ar": "دائرة تغذية الجهد العالي لشاحن البطارية A",
+      "category": "P | خاص بالمصنع / Jaguar-JLR",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P3049-xx+Hybrid%2FEV+Battery+Charger+%22A%22+High+Voltage+Supply+Circuit"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P3049-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P304A-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "Power Convertor A High Voltage Supply Circuit",
+      "translation_ar": "دائرة تغذية الجهد العالي لمحول القدرة A",
+      "category": "P | خاص بالمصنع / Jaguar-JLR",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P304A-xx+Power+Convertor+A+High+Voltage+Supply+Circuit"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P304A-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P304B-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "Electric Booster Heater (PTC Heater) High Voltage Supply Circuit",
+      "translation_ar": "دائرة تغذية سخان PTC بالجهد العالي",
+      "category": "P | خاص بالمصنع / Jaguar-JLR",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P304B-xx+Electric+Booster+Heater+%28PTC+Heater%29+High+Voltage+Supply+Circuit"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P304B-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P304C-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "Electric Air compressor High Voltage Supply Circuit",
+      "translation_ar": "دائرة تغذية ضاغط التكييف الكهربائي بالجهد العالي",
+      "category": "P | خاص بالمصنع / Jaguar-JLR",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P304C-xx+Electric+Air+compressor+High+Voltage+Supply+Circuit"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P304C-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P304D-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "Front Electric Motor Inverter High Voltage Supply Circuit",
+      "translation_ar": "دائرة تغذية عاكس المحرك الكهربائي الأمامي بالجهد العالي",
+      "category": "P | خاص بالمصنع / Jaguar-JLR",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P304D-xx+Front+Electric+Motor+Inverter+High+Voltage+Supply+Circuit"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P304D-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P304E-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "Rear Electric Motor Inverter High Voltage Supply Circuit",
+      "translation_ar": "دائرة تغذية عاكس المحرك الكهربائي الخلفي بالجهد العالي",
+      "category": "P | خاص بالمصنع / Jaguar-JLR",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P304E-xx+Rear+Electric+Motor+Inverter+High+Voltage+Supply+Circuit"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P304E-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P304F-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "Hybrid/EV Battery Contactor A",
+      "translation_ar": "كونتاكتور بطارية الدفع A",
+      "category": "P | خاص بالمصنع / Jaguar-JLR",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P304F-xx+Hybrid%2FEV+Battery+Contactor+A"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P304F-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P3050-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "Hybrid/EV Battery Contactor B",
+      "translation_ar": "كونتاكتور بطارية الدفع B",
+      "category": "P | خاص بالمصنع / Jaguar-JLR",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P3050-xx+Hybrid%2FEV+Battery+Contactor+B"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P3050-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Jaguar",
+      "code": "P3051-xx",
+      "code_format": "base+FTB_family_pattern_not_scanner_code",
+      "ecu": "BECM",
+      "definition_en": "Hybrid/EV Battery Contactor C",
+      "translation_ar": "كونتاكتور بطارية الدفع C",
+      "category": "P | خاص بالمصنع / Jaguar-JLR",
+      "applicability": {
+        "make": "Jaguar",
+        "model": "I-PACE",
+        "generation": "X590",
+        "model_years": [
+          "2019 reference; total production-year applicability unconfirmed"
+        ],
+        "engine": "dual electric motors; exact derivative unconfirmed",
+        "fuel": "electric",
+        "market": "غير مؤكد",
+        "drive": "electric AWD (derivative confirmation required)",
+        "transmission": "electric drive",
+        "VIN": "غير مؤكد"
+      },
+      "symptoms": [],
+      "causes": [],
+      "diagnostic_steps": [
+        "هذا سجل فهرسة لعائلة DTC؛ اقرأ لاحقة FTB الحقيقية على الجهاز قبل تنفيذ اختبار خاص",
+        "طبق SSM74274: تحقق أولاً من صحة نظام 12V والبطاريتين قبل فحص بطارية HV",
+        "باستخدام Pathfinder سجل جميع الوحدات ومعلومات جهد حزمة البطارية؛ صعّد إلى TA عند الحاجة",
+        "أي تدخل في دائرة HV يتطلب فنيّاً مخولاً وتطبيق إجراء فصل/تحقق الجهد المناسب",
+        "أسماء DIDs التسعة معتمدة في SSM74274؛ تؤخذ القراءات في وضعي تشغيل الإشعال وREADY وتُحفظ قبل طلب دعم TA؛ حدود النجاح غير مؤكد."
+      ],
+      "live_data": [
+        {
+          "did": "490F",
+          "pid_en": "Electric Vehicle Battery Pack Voltage",
+          "translation_ar": "جهد مجموعة بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4900",
+          "pid_en": "Electric Vehicle Traction Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور بطارية الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4901",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Voltage",
+          "translation_ar": "جهد الكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490D",
+          "pid_en": "Electric Vehicle Front Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الأمامي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490B",
+          "pid_en": "Electric Vehicle Rear Inverter Fuse Voltage",
+          "translation_ar": "جهد فيوز العاكس الخلفي",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "490E",
+          "pid_en": "Electric Vehicle Auxiliary Fuse Voltage",
+          "translation_ar": "جهد الفيوز المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491F",
+          "pid_en": "Electric Vehicle Traction Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بكونتاكتور الدفع",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "491E",
+          "pid_en": "Electric Vehicle Auxiliary Contactor Differential Voltage - Measured",
+          "translation_ar": "فرق الجهد المقاس بالكونتاكتور المساعد",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        },
+        {
+          "did": "4909",
+          "pid_en": "Electric Vehicle Negative Contactor Voltage",
+          "translation_ar": "جهد كونتاكتور القطب السالب",
+          "expected": "غير مؤكد؛ المصدر يقدم اسم DID ولا يقدم حدود القياس الرقمية"
+        }
+      ],
+      "parts": [],
+      "images": {
+        "reference_urls": [
+          {
+            "kind": "Google_Images_search_unverified",
+            "url": "https://www.google.com/search?tbm=isch&q=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P3051-xx+Hybrid%2FEV+Battery+Contactor+C"
+          }
+        ],
+        "status": "رابط بحث صور فقط، وليس صورة موثقة أو مصرحاً بإعادة استخدامها؛ طابق VIN والمحرك قبل العرض"
+      },
+      "wiring": {
+        "diagram": "غير متاح المصدر",
+        "pins": [],
+        "electrical_values": "غير مؤكد"
+      },
+      "video": {
+        "kind": "YouTube_search_not_reviewed",
+        "url": "https://www.youtube.com/results?search_query=Jaguar+I-PACE+dual+electric+motors%3B+exact+derivative+unconfirmed+P3051-xx+diagnosis",
+        "validated_video": false
+      },
+      "priority_evidence": {
+        "tier": "priority_1_system",
+        "basis": "Included in formal JLR SSM74274 troubleshooting escalation Appendix A; NOT a published frequency ranking"
+      },
+      "sources": [
+        {
+          "title": "JLR SSM74274, I-Pace High Voltage System – TA Escalation Process",
+          "date": "Last modified 2019-02-12; archived copy 2019-03-06",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+          "type": "JLR primary service communication archived by NHTSA",
+          "verified": "PDF content examined; Appendix A p.3"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    }
+  ]
+}
