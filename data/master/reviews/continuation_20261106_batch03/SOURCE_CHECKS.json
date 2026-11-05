@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-06",
+  "documents_read": 8,
+  "all_new_rows_pending_full_technical_QA": true,
+  "checks": [
+    {
+      "document": "Fiat Linea eLearn / Marelli 8F3 1.3 Multijet",
+      "url": "https://aftersales.fiat.com/elearnsections/frmMainPage.aspx?isExaminer=&langDesc=English&languageID=2&markID=1&modelID=323000000&modelName=Fiat+-+110+-+Linea&nodeID=323005249&prodID=323000000&sectionName=Diagnosi+per+DTC&valID=323000001&validityName=1.3+Multijet",
+      "level": "PRIMARY_INDEX_ACCESS_AND_ECU_CONTEXT",
+      "finding": "Manufacturer index available. Index labels are ECU-specific, not generic SAE replacements. No full vehicle-level electrical procedure or all Arabic translations approved."
+    },
+    {
+      "document": "Infiniti ITB14-042",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2014/SB-10056179-3284.pdf",
+      "level": "PRIMARY_CODE_MODEL_CONTEXT",
+      "finding": "Two-sensor OCS only; 2013 JX does not support B00A0-00. Subtype-specific definition is not established by the bulletin. Original subtype uncertainty retained."
+    },
+    {
+      "document": "Infiniti ITB16-047",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10119264-9999.pdf",
+      "level": "PRIMARY_CONTEXT_DUPLICATE_RECONCILIATION",
+      "finding": "C1130 already mapped to existing per-model/year records; aggregate source row not counted again. ECM-related P-codes require prior diagnosis; an ABS DTC does not alone establish a faulty ABS unit."
+    },
+    {
+      "document": "Infiniti ITB22-030",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10218940-0001.pdf",
+      "level": "PRIMARY_SEVEN_MISFIRE_LABELS_AND_CONTEXT",
+      "finding": "P0300-P0306 meaning and Arabic rendering reviewed for source QX60 2022 L51 scope. Cold-start warm-up, no drivability concern and ECM part-number restriction retained; no general injector/coil repair inferred."
+    },
+    {
+      "document": "FCA 18-061-16 Rev.C",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10121865-9999.pdf",
+      "level": "PRIMARY_CODE_LIST_AND_SCOPE",
+      "finding": "2016 BU Renegade 2.4L ED6 code-list scope checked. Software bulletin does not prove a physical part fault or assign a sensor to every listed C/U code."
+    },
+    {
+      "document": "FCA STAR S1808000072",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10175082-9999.pdf",
+      "level": "PRIMARY_CODE_OCCURRENCE_ONLY",
+      "finding": "Ten related DTCs occur in a no-start/ground-condition case; the document provides no individual English definitions. Null English definitions retained. Visible text does not establish model/year fitment independently."
+    },
+    {
+      "document": "JLR SSM74274",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10155303-9999.pdf",
+      "level": "PRIMARY_FAMILY_INDEX_AND_DIAGNOSTIC_CONTEXT",
+      "finding": "26 -xx entries are family headings with unspecified failure type, retained but excluded from counted DTC rows. No suffixes generated. 12V checks precede HV diagnostic escalation; no HV procedure approved for automatic use."
+    },
+    {
+      "document": "HELLA C4 NFU/TU5JP4 workshop article",
+      "url": "https://www.hella.com/techworld/tr/bi/citroen-c4-illumination-of-the-coolant-temperature-warning-light/",
+      "level": "SUPPLIER_AUTHORED_CONTEXT_NOT_CITROEN_OEM",
+      "finding": "Supplier article confirms P0116 context on C4 NFU/TU5JP4 from the stated build date. Supplier publication is not Citroen OEM approval; generic illustrative values must not become vehicle-specific limits."
+    }
+  ]
+}

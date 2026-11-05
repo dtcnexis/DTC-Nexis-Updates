@@ -1,0 +1,4344 @@
+[
+  {
+    "brand": "Infiniti",
+    "code": "B00A0-00",
+    "code_format": "B00A0-xx (DTC + failure type)",
+    "ecu": "OCS ECU / Airbag Control Unit (as supported by actual scan)",
+    "definition_en": "B00A0 - OCS-related DTC, failure type 00 (official subtype descriptor not stated in ITB14-042)",
+    "translation_ar": "رمز مرتبط بنظام تصنيف شاغل المقعد الأمامي OCS؛ وصف نمط العطل الفرعي 00 غير مؤكد",
+    "category": {
+      "family": "B",
+      "control": "عام/SAE (نطاق B0)",
+      "system": "Body/SRS"
+    },
+    "applicability": {
+      "verified_scope": "QX60 (L50) 2014 وQX60 Hybrid 2014؛ Q50 (V37) 2014 وQ50 Hybrid 2014 | نظام OCS بحساسَي قياس التشوّه 2-sensor | لا ينطبق B00A0-00 على JX35 2013 حسب النشرة",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "لمبة تصنيف الراكب PABI أو تحذير Airbag قد تتأثر، وليس كل سلوك لمبة عطلاً"
+    ],
+    "causes": [
+      {
+        "cause_ar": "حساسات OCS أسفل المقعد/ضمن قاعدة المقعد تحتاج اختبار المصنع",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "وحدة OCS وقد تحتاج Zero Point Reset طبقاً لجدول النشرة",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "تغير وضعية جلوس الراكب قد ينتج سلوكًا طبيعيًا للمؤشر",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "استخرج الكود كاملًا باللاحقة؛ تحقق من تجهيز OCS بحساسين ومن سنة الموديل.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "اقرأ ITB14-042 Table A: للاحقات 00/02/09 تسلسل 1 ثم 2 عند انطباقها، وللاحقة 04 التسلسل 2 فقط.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "نفذ فحص وضعية جلوس الراكب ومؤشر PABI بحسب جدول B، ولا تفسر سلوكًا طبيعيًا على أنه عطل.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "إذا أكد إرشاد المصنع استبدال حساس/وحدة OCS، نفّذ Zero Point Reset بوسيلة الخدمة المخصصة؛ تجنّب العبث بدارات الوسائد الهوائية.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Front Passenger Airbag Status",
+        "pid_ar": "حالة الوسادة الهوائية للراكب الأمامي",
+        "expected": "غير مؤكد",
+        "name_verification": "تذكره النشرة صراحة في CONSULT، لكن نص PID الحرفي غير مؤكد"
+      },
+      {
+        "pid_en": "Passenger Airbag Indicator",
+        "pid_ar": "لمبة تصنيف الراكب PABI",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "Two OCS strain-gauge sensors",
+        "location": "ضمن قاعدة/إطار مقعد الراكب الأمامي بحسب الإصدار"
+      },
+      {
+        "part": "OCS control unit",
+        "location": "موقعها التفصيلي غير مؤكد؛ يتطلب ESM/إجراء السلامة"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+QX60+%28L50%29+2014+%D9%88QX60+Hybrid+2014%D8%9B+Q50+%28V37%29+2014+%D9%88Q50+Hybrid+2014+B00A0-00+occupant+classification+airbag",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر؛ نظام SRS حساس للسلامة",
+      "detail": "لا تفحص دوائر الوسائد الهوائية بمقياس مقاومة أو تغذية مباشرة؛ يلزم ESM وتدريب SRS."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+QX60+%28L50%29+2014+%D9%88QX60+Hybrid+2014%D8%9B+Q50+%28V37%29+2014+%D9%88Q50+Hybrid+2014+B00A0-00+occupant+classification+airbag",
+      "query": "Infiniti QX60 (L50) 2014 وQX60 Hybrid 2014؛ Q50 (V37) 2014 وQ50 Hybrid 2014 B00A0-00 occupant classification airbag"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB14-042",
+        "date": "2014-08-29",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2014/SB-10056179-3284.pdf",
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "B00A0-02",
+    "code_format": "B00A0-xx (DTC + failure type)",
+    "ecu": "OCS ECU / Airbag Control Unit (as supported by actual scan)",
+    "definition_en": "B00A0 - OCS-related DTC, failure type 02 (official subtype descriptor not stated in ITB14-042)",
+    "translation_ar": "رمز مرتبط بنظام تصنيف شاغل المقعد الأمامي OCS؛ وصف نمط العطل الفرعي 02 غير مؤكد",
+    "category": {
+      "family": "B",
+      "control": "عام/SAE (نطاق B0)",
+      "system": "Body/SRS"
+    },
+    "applicability": {
+      "verified_scope": "QX60 (L50) 2014 وQX60 Hybrid 2014؛ Q50 (V37) 2014 وQ50 Hybrid 2014 | نظام OCS بحساسَي قياس التشوّه 2-sensor | لا ينطبق B00A0-00 على JX35 2013 حسب النشرة",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "لمبة تصنيف الراكب PABI أو تحذير Airbag قد تتأثر، وليس كل سلوك لمبة عطلاً"
+    ],
+    "causes": [
+      {
+        "cause_ar": "حساسات OCS أسفل المقعد/ضمن قاعدة المقعد تحتاج اختبار المصنع",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "وحدة OCS وقد تحتاج Zero Point Reset طبقاً لجدول النشرة",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "تغير وضعية جلوس الراكب قد ينتج سلوكًا طبيعيًا للمؤشر",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "استخرج الكود كاملًا باللاحقة؛ تحقق من تجهيز OCS بحساسين ومن سنة الموديل.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "اقرأ ITB14-042 Table A: للاحقات 00/02/09 تسلسل 1 ثم 2 عند انطباقها، وللاحقة 04 التسلسل 2 فقط.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "نفذ فحص وضعية جلوس الراكب ومؤشر PABI بحسب جدول B، ولا تفسر سلوكًا طبيعيًا على أنه عطل.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "إذا أكد إرشاد المصنع استبدال حساس/وحدة OCS، نفّذ Zero Point Reset بوسيلة الخدمة المخصصة؛ تجنّب العبث بدارات الوسائد الهوائية.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Front Passenger Airbag Status",
+        "pid_ar": "حالة الوسادة الهوائية للراكب الأمامي",
+        "expected": "غير مؤكد",
+        "name_verification": "تذكره النشرة صراحة في CONSULT، لكن نص PID الحرفي غير مؤكد"
+      },
+      {
+        "pid_en": "Passenger Airbag Indicator",
+        "pid_ar": "لمبة تصنيف الراكب PABI",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "Two OCS strain-gauge sensors",
+        "location": "ضمن قاعدة/إطار مقعد الراكب الأمامي بحسب الإصدار"
+      },
+      {
+        "part": "OCS control unit",
+        "location": "موقعها التفصيلي غير مؤكد؛ يتطلب ESM/إجراء السلامة"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+QX60+%28L50%29+2014+%D9%88QX60+Hybrid+2014%D8%9B+Q50+%28V37%29+2014+%D9%88Q50+Hybrid+2014+B00A0-02+occupant+classification+airbag",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر؛ نظام SRS حساس للسلامة",
+      "detail": "لا تفحص دوائر الوسائد الهوائية بمقياس مقاومة أو تغذية مباشرة؛ يلزم ESM وتدريب SRS."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+QX60+%28L50%29+2014+%D9%88QX60+Hybrid+2014%D8%9B+Q50+%28V37%29+2014+%D9%88Q50+Hybrid+2014+B00A0-02+occupant+classification+airbag",
+      "query": "Infiniti QX60 (L50) 2014 وQX60 Hybrid 2014؛ Q50 (V37) 2014 وQ50 Hybrid 2014 B00A0-02 occupant classification airbag"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB14-042",
+        "date": "2014-08-29",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2014/SB-10056179-3284.pdf",
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "B00A0-04",
+    "code_format": "B00A0-xx (DTC + failure type)",
+    "ecu": "OCS ECU / Airbag Control Unit (as supported by actual scan)",
+    "definition_en": "B00A0 - OCS-related DTC, failure type 04 (official subtype descriptor not stated in ITB14-042)",
+    "translation_ar": "رمز مرتبط بنظام تصنيف شاغل المقعد الأمامي OCS؛ وصف نمط العطل الفرعي 04 غير مؤكد",
+    "category": {
+      "family": "B",
+      "control": "عام/SAE (نطاق B0)",
+      "system": "Body/SRS"
+    },
+    "applicability": {
+      "verified_scope": "QX60 (L50) 2014 وQX60 Hybrid 2014؛ Q50 (V37) 2014 وQ50 Hybrid 2014 | نظام OCS بحساسَي قياس التشوّه 2-sensor | لا ينطبق B00A0-00 على JX35 2013 حسب النشرة",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "لمبة تصنيف الراكب PABI أو تحذير Airbag قد تتأثر، وليس كل سلوك لمبة عطلاً"
+    ],
+    "causes": [
+      {
+        "cause_ar": "حساسات OCS أسفل المقعد/ضمن قاعدة المقعد تحتاج اختبار المصنع",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "وحدة OCS وقد تحتاج Zero Point Reset طبقاً لجدول النشرة",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "تغير وضعية جلوس الراكب قد ينتج سلوكًا طبيعيًا للمؤشر",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "استخرج الكود كاملًا باللاحقة؛ تحقق من تجهيز OCS بحساسين ومن سنة الموديل.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "اقرأ ITB14-042 Table A: للاحقات 00/02/09 تسلسل 1 ثم 2 عند انطباقها، وللاحقة 04 التسلسل 2 فقط.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "نفذ فحص وضعية جلوس الراكب ومؤشر PABI بحسب جدول B، ولا تفسر سلوكًا طبيعيًا على أنه عطل.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "إذا أكد إرشاد المصنع استبدال حساس/وحدة OCS، نفّذ Zero Point Reset بوسيلة الخدمة المخصصة؛ تجنّب العبث بدارات الوسائد الهوائية.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Front Passenger Airbag Status",
+        "pid_ar": "حالة الوسادة الهوائية للراكب الأمامي",
+        "expected": "غير مؤكد",
+        "name_verification": "تذكره النشرة صراحة في CONSULT، لكن نص PID الحرفي غير مؤكد"
+      },
+      {
+        "pid_en": "Passenger Airbag Indicator",
+        "pid_ar": "لمبة تصنيف الراكب PABI",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "Two OCS strain-gauge sensors",
+        "location": "ضمن قاعدة/إطار مقعد الراكب الأمامي بحسب الإصدار"
+      },
+      {
+        "part": "OCS control unit",
+        "location": "موقعها التفصيلي غير مؤكد؛ يتطلب ESM/إجراء السلامة"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+QX60+%28L50%29+2014+%D9%88QX60+Hybrid+2014%D8%9B+Q50+%28V37%29+2014+%D9%88Q50+Hybrid+2014+B00A0-04+occupant+classification+airbag",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر؛ نظام SRS حساس للسلامة",
+      "detail": "لا تفحص دوائر الوسائد الهوائية بمقياس مقاومة أو تغذية مباشرة؛ يلزم ESM وتدريب SRS."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+QX60+%28L50%29+2014+%D9%88QX60+Hybrid+2014%D8%9B+Q50+%28V37%29+2014+%D9%88Q50+Hybrid+2014+B00A0-04+occupant+classification+airbag",
+      "query": "Infiniti QX60 (L50) 2014 وQX60 Hybrid 2014؛ Q50 (V37) 2014 وQ50 Hybrid 2014 B00A0-04 occupant classification airbag"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB14-042",
+        "date": "2014-08-29",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2014/SB-10056179-3284.pdf",
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "B00A0-09",
+    "code_format": "B00A0-xx (DTC + failure type)",
+    "ecu": "OCS ECU / Airbag Control Unit (as supported by actual scan)",
+    "definition_en": "B00A0 - OCS-related DTC, failure type 09 (official subtype descriptor not stated in ITB14-042)",
+    "translation_ar": "رمز مرتبط بنظام تصنيف شاغل المقعد الأمامي OCS؛ وصف نمط العطل الفرعي 09 غير مؤكد",
+    "category": {
+      "family": "B",
+      "control": "عام/SAE (نطاق B0)",
+      "system": "Body/SRS"
+    },
+    "applicability": {
+      "verified_scope": "QX60 (L50) 2014 وQX60 Hybrid 2014؛ Q50 (V37) 2014 وQ50 Hybrid 2014 | نظام OCS بحساسَي قياس التشوّه 2-sensor | لا ينطبق B00A0-00 على JX35 2013 حسب النشرة",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "لمبة تصنيف الراكب PABI أو تحذير Airbag قد تتأثر، وليس كل سلوك لمبة عطلاً"
+    ],
+    "causes": [
+      {
+        "cause_ar": "حساسات OCS أسفل المقعد/ضمن قاعدة المقعد تحتاج اختبار المصنع",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "وحدة OCS وقد تحتاج Zero Point Reset طبقاً لجدول النشرة",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "تغير وضعية جلوس الراكب قد ينتج سلوكًا طبيعيًا للمؤشر",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "استخرج الكود كاملًا باللاحقة؛ تحقق من تجهيز OCS بحساسين ومن سنة الموديل.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "اقرأ ITB14-042 Table A: للاحقات 00/02/09 تسلسل 1 ثم 2 عند انطباقها، وللاحقة 04 التسلسل 2 فقط.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "نفذ فحص وضعية جلوس الراكب ومؤشر PABI بحسب جدول B، ولا تفسر سلوكًا طبيعيًا على أنه عطل.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "إذا أكد إرشاد المصنع استبدال حساس/وحدة OCS، نفّذ Zero Point Reset بوسيلة الخدمة المخصصة؛ تجنّب العبث بدارات الوسائد الهوائية.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Front Passenger Airbag Status",
+        "pid_ar": "حالة الوسادة الهوائية للراكب الأمامي",
+        "expected": "غير مؤكد",
+        "name_verification": "تذكره النشرة صراحة في CONSULT، لكن نص PID الحرفي غير مؤكد"
+      },
+      {
+        "pid_en": "Passenger Airbag Indicator",
+        "pid_ar": "لمبة تصنيف الراكب PABI",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "Two OCS strain-gauge sensors",
+        "location": "ضمن قاعدة/إطار مقعد الراكب الأمامي بحسب الإصدار"
+      },
+      {
+        "part": "OCS control unit",
+        "location": "موقعها التفصيلي غير مؤكد؛ يتطلب ESM/إجراء السلامة"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+QX60+%28L50%29+2014+%D9%88QX60+Hybrid+2014%D8%9B+Q50+%28V37%29+2014+%D9%88Q50+Hybrid+2014+B00A0-09+occupant+classification+airbag",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر؛ نظام SRS حساس للسلامة",
+      "detail": "لا تفحص دوائر الوسائد الهوائية بمقياس مقاومة أو تغذية مباشرة؛ يلزم ESM وتدريب SRS."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+QX60+%28L50%29+2014+%D9%88QX60+Hybrid+2014%D8%9B+Q50+%28V37%29+2014+%D9%88Q50+Hybrid+2014+B00A0-09+occupant+classification+airbag",
+      "query": "Infiniti QX60 (L50) 2014 وQX60 Hybrid 2014؛ Q50 (V37) 2014 وQ50 Hybrid 2014 B00A0-09 occupant classification airbag"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB14-042",
+        "date": "2014-08-29",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2014/SB-10056179-3284.pdf",
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "B1018",
+    "code_format": "5-character DTC",
+    "ecu": "OCS ECU / SRS",
+    "definition_en": "Official English failure description not provided in ITB14-042; OCS-related DTC",
+    "translation_ar": "رمز متعلق بنظام تصنيف الراكب OCS؛ المعنى الدقيق غير مؤكد",
+    "category": {
+      "family": "B",
+      "control": "خاص بالمصنع (نطاق B1)",
+      "system": "Body/SRS"
+    },
+    "applicability": {
+      "verified_scope": "JX35 (L50) موديل 2013 مع نظام OCS بحساسين | لا تنقل معانيها إلى QX60 2014",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "خلل OCS/SRS أو وضع لمبة الراكب وفق التشخيص الفعلي"
+    ],
+    "causes": [
+      {
+        "cause_ar": "حساسات OCS/وحدة OCS ضمن التسلسل المحدد في جدول المصنع",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "اقرأ الكود وحدد هل هو B1018 أو B1019 أو B1020.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "ارجع إلى جدول ITB14-042 لـJX35 2013 واتبع Sequence 1 & 2 للأولين، وSequence 2 للثالث، مع Zero Point Reset.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "تأكد من عدم دخول نظام الوسائد في diagnostic mode، وافحص لمبة الراكب بعد معايرة المصنع.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Front Passenger Airbag Status",
+        "pid_ar": "حالة وسادة الراكب",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "OCS sensor / OCS control unit",
+        "location": "قاعدة/مكونات المقعد الأمامي؛ موضع الوحدة غير مؤكد"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+JX35+%28L50%29+%D9%85%D9%88%D8%AF%D9%8A%D9%84+2013+%D9%85%D8%B9+%D9%86%D8%B8%D8%A7%D9%85+OCS+%D8%A8%D8%AD%D8%B3%D8%A7%D8%B3%D9%8A%D9%86+B1018+occupant+classification+airbag",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر",
+      "detail": "لا يجوز تحديد pinout أو مخطط دون ESM مطابق للسيارة؛ لا توجد نسخة معتمدة في هذه الدفعة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+JX35+%28L50%29+%D9%85%D9%88%D8%AF%D9%8A%D9%84+2013+%D9%85%D8%B9+%D9%86%D8%B8%D8%A7%D9%85+OCS+%D8%A8%D8%AD%D8%B3%D8%A7%D8%B3%D9%8A%D9%86+B1018+occupant+classification+airbag",
+      "query": "Infiniti JX35 (L50) موديل 2013 مع نظام OCS بحساسين B1018 occupant classification airbag"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الثانية — كود مؤكد في نشرة المصنع",
+      "basis": "ليس تصنيفاً إحصائياً للشيوع"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB14-042",
+        "date": "2014-08-29",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2014/SB-10056179-3284.pdf",
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "B1019",
+    "code_format": "5-character DTC",
+    "ecu": "OCS ECU / SRS",
+    "definition_en": "Official English failure description not provided in ITB14-042; OCS-related DTC",
+    "translation_ar": "رمز متعلق بنظام تصنيف الراكب OCS؛ المعنى الدقيق غير مؤكد",
+    "category": {
+      "family": "B",
+      "control": "خاص بالمصنع (نطاق B1)",
+      "system": "Body/SRS"
+    },
+    "applicability": {
+      "verified_scope": "JX35 (L50) موديل 2013 مع نظام OCS بحساسين | لا تنقل معانيها إلى QX60 2014",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "خلل OCS/SRS أو وضع لمبة الراكب وفق التشخيص الفعلي"
+    ],
+    "causes": [
+      {
+        "cause_ar": "حساسات OCS/وحدة OCS ضمن التسلسل المحدد في جدول المصنع",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "اقرأ الكود وحدد هل هو B1018 أو B1019 أو B1020.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "ارجع إلى جدول ITB14-042 لـJX35 2013 واتبع Sequence 1 & 2 للأولين، وSequence 2 للثالث، مع Zero Point Reset.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "تأكد من عدم دخول نظام الوسائد في diagnostic mode، وافحص لمبة الراكب بعد معايرة المصنع.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Front Passenger Airbag Status",
+        "pid_ar": "حالة وسادة الراكب",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "OCS sensor / OCS control unit",
+        "location": "قاعدة/مكونات المقعد الأمامي؛ موضع الوحدة غير مؤكد"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+JX35+%28L50%29+%D9%85%D9%88%D8%AF%D9%8A%D9%84+2013+%D9%85%D8%B9+%D9%86%D8%B8%D8%A7%D9%85+OCS+%D8%A8%D8%AD%D8%B3%D8%A7%D8%B3%D9%8A%D9%86+B1019+occupant+classification+airbag",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر",
+      "detail": "لا يجوز تحديد pinout أو مخطط دون ESM مطابق للسيارة؛ لا توجد نسخة معتمدة في هذه الدفعة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+JX35+%28L50%29+%D9%85%D9%88%D8%AF%D9%8A%D9%84+2013+%D9%85%D8%B9+%D9%86%D8%B8%D8%A7%D9%85+OCS+%D8%A8%D8%AD%D8%B3%D8%A7%D8%B3%D9%8A%D9%86+B1019+occupant+classification+airbag",
+      "query": "Infiniti JX35 (L50) موديل 2013 مع نظام OCS بحساسين B1019 occupant classification airbag"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الثانية — كود مؤكد في نشرة المصنع",
+      "basis": "ليس تصنيفاً إحصائياً للشيوع"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB14-042",
+        "date": "2014-08-29",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2014/SB-10056179-3284.pdf",
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "B1020",
+    "code_format": "5-character DTC",
+    "ecu": "OCS ECU / SRS",
+    "definition_en": "Official English failure description not provided in ITB14-042; OCS-related DTC",
+    "translation_ar": "رمز متعلق بنظام تصنيف الراكب OCS؛ المعنى الدقيق غير مؤكد",
+    "category": {
+      "family": "B",
+      "control": "خاص بالمصنع (نطاق B1)",
+      "system": "Body/SRS"
+    },
+    "applicability": {
+      "verified_scope": "JX35 (L50) موديل 2013 مع نظام OCS بحساسين | لا تنقل معانيها إلى QX60 2014",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "خلل OCS/SRS أو وضع لمبة الراكب وفق التشخيص الفعلي"
+    ],
+    "causes": [
+      {
+        "cause_ar": "حساسات OCS/وحدة OCS ضمن التسلسل المحدد في جدول المصنع",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "اقرأ الكود وحدد هل هو B1018 أو B1019 أو B1020.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "ارجع إلى جدول ITB14-042 لـJX35 2013 واتبع Sequence 1 & 2 للأولين، وSequence 2 للثالث، مع Zero Point Reset.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "تأكد من عدم دخول نظام الوسائد في diagnostic mode، وافحص لمبة الراكب بعد معايرة المصنع.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Front Passenger Airbag Status",
+        "pid_ar": "حالة وسادة الراكب",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "OCS sensor / OCS control unit",
+        "location": "قاعدة/مكونات المقعد الأمامي؛ موضع الوحدة غير مؤكد"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+JX35+%28L50%29+%D9%85%D9%88%D8%AF%D9%8A%D9%84+2013+%D9%85%D8%B9+%D9%86%D8%B8%D8%A7%D9%85+OCS+%D8%A8%D8%AD%D8%B3%D8%A7%D8%B3%D9%8A%D9%86+B1020+occupant+classification+airbag",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر",
+      "detail": "لا يجوز تحديد pinout أو مخطط دون ESM مطابق للسيارة؛ لا توجد نسخة معتمدة في هذه الدفعة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+JX35+%28L50%29+%D9%85%D9%88%D8%AF%D9%8A%D9%84+2013+%D9%85%D8%B9+%D9%86%D8%B8%D8%A7%D9%85+OCS+%D8%A8%D8%AD%D8%B3%D8%A7%D8%B3%D9%8A%D9%86+B1020+occupant+classification+airbag",
+      "query": "Infiniti JX35 (L50) موديل 2013 مع نظام OCS بحساسين B1020 occupant classification airbag"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الثانية — كود مؤكد في نشرة المصنع",
+      "basis": "ليس تصنيفاً إحصائياً للشيوع"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB14-042",
+        "date": "2014-08-29",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2014/SB-10056179-3284.pdf",
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "C1101",
+    "code_format": "5-character DTC",
+    "ecu": "ABS/VDC Control Unit",
+    "definition_en": "WHEEL SENSOR-1",
+    "translation_ar": "خلل دائرة/إشارة سرعة عجلة — مجموعة 1؛ موضع العجلة لهذا الرمز يتطلب ESM",
+    "category": {
+      "family": "C",
+      "control": "خاص بالمصنع (نطاق C1)",
+      "system": "Chassis/ADAS"
+    },
+    "applicability": {
+      "verified_scope": "Infiniti 2007–2013 المجهزة ABS/VDC | يشمل موديلات متعددة؛ تحديد كل موديل/دفع/محرك من ESM",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "تحذير ABS/VDC محتمل",
+      "ظهور DTC نشط في وحدة ABS؛ الأعراض الدقيقة حسب السيارة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "تلف في حساس سرعة العجلة بعد اختبار إشارة مباشر",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "قطع/قصر في ضفيرة الحساس أو تآكل الموصل",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "خلل دائرة التغذية/ABS Control Unit عند استبعاد الحساس والأسلاك",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "سجل أكواد ABS النشطة في CONSULT-III plus؛ امسح وأعد القيادة بسرعة تتجاوز 13 mph لإعادة إظهار الكود كما في مخطط النشرة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص الحساس والموصلات بحثًا عن كسر/تآكل/تلوث.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "استخدم J-45741 Wheel Sensor Tester وأدر العجلة؛ يجب أن يومض مؤشر SENSOR الأحمر عند وجود إشارة سليمة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افصل موصل ABS وموصل الحساس ثم افحص القصر مع التغذية/الأرضي وبين الأسلاك؛ لا ينبغي وجود اتصال قصر بين خطّي الحساس.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص جهد تغذية ABS عند Pin 1 وPin 32 بالنسبة إلى أرضي ECU؛ قيمته المرجعية جهد البطارية في النشرة (طبقاً للنسخة المذكورة).",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "قارن جهد دائرة الحساس بجـهد البطارية في الإجراء المحدد، ثم أصلح الضفيرة أو الحساس أو وحدة ABS فقط وفق نتائج خطوات المصنع.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "أعِد تجميع القطع، امسح DTC، وأكّد الإصلاح كما في Repair Verification Test.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Wheel Speed Sensor 1101",
+        "pid_ar": "إشارة حساس سرعة العجلة 1101",
+        "expected": "غير مؤكد",
+        "name_verification": "تسمية عملية؛ تسمية CONSULT الدقيقة والعجلة غير مؤكدتين"
+      },
+      {
+        "pid_en": "ABS DTC Status",
+        "pid_ar": "حالة كود ABS",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "Active wheel speed sensor",
+        "location": "عند محور/مجموعة عجلة؛ تحديد FL/FR/RL/RR لهذا الكود غير مؤكد"
+      },
+      {
+        "part": "Wheel sensor harness and connector",
+        "location": "بين الحساس ووحدة ABS/VDC؛ رقم الطرفيات يختلف حسب ESM"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+Infiniti+2007%E2%80%932013+%D8%A7%D9%84%D9%85%D8%AC%D9%87%D8%B2%D8%A9+ABS%2FVDC+C1101+ABS+ADAS",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "معلومة جزئية موثقة في ITB10-056a (فقط سياق 2007–2013)",
+      "detail": "Pin 1 وPin 32 في ضفيرة ABS: جهد البطارية بالنسبة لأرض ECU؛ خريطة موصلات السيارة/الحساس ومواقع العجلات يجب استكمالها من ESM. لا تستخدم القيم لأي موديل خارج نطاق النشرة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+Infiniti+2007%E2%80%932013+%D8%A7%D9%84%D9%85%D8%AC%D9%87%D8%B2%D8%A9+ABS%2FVDC+C1101+ABS+ADAS",
+      "query": "Infiniti Infiniti 2007–2013 المجهزة ABS/VDC C1101 ABS ADAS"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB10-056a",
+        "date": "2012-09-25",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2012/SB-10046600-6246.pdf",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "C1102",
+    "code_format": "5-character DTC",
+    "ecu": "ABS/VDC Control Unit",
+    "definition_en": "WHEEL SENSOR-1",
+    "translation_ar": "خلل دائرة/إشارة سرعة عجلة — مجموعة 1؛ موضع العجلة لهذا الرمز يتطلب ESM",
+    "category": {
+      "family": "C",
+      "control": "خاص بالمصنع (نطاق C1)",
+      "system": "Chassis/ADAS"
+    },
+    "applicability": {
+      "verified_scope": "Infiniti 2007–2013 المجهزة ABS/VDC | يشمل موديلات متعددة؛ تحديد كل موديل/دفع/محرك من ESM",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "تحذير ABS/VDC محتمل",
+      "ظهور DTC نشط في وحدة ABS؛ الأعراض الدقيقة حسب السيارة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "تلف في حساس سرعة العجلة بعد اختبار إشارة مباشر",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "قطع/قصر في ضفيرة الحساس أو تآكل الموصل",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "خلل دائرة التغذية/ABS Control Unit عند استبعاد الحساس والأسلاك",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "سجل أكواد ABS النشطة في CONSULT-III plus؛ امسح وأعد القيادة بسرعة تتجاوز 13 mph لإعادة إظهار الكود كما في مخطط النشرة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص الحساس والموصلات بحثًا عن كسر/تآكل/تلوث.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "استخدم J-45741 Wheel Sensor Tester وأدر العجلة؛ يجب أن يومض مؤشر SENSOR الأحمر عند وجود إشارة سليمة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افصل موصل ABS وموصل الحساس ثم افحص القصر مع التغذية/الأرضي وبين الأسلاك؛ لا ينبغي وجود اتصال قصر بين خطّي الحساس.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص جهد تغذية ABS عند Pin 1 وPin 32 بالنسبة إلى أرضي ECU؛ قيمته المرجعية جهد البطارية في النشرة (طبقاً للنسخة المذكورة).",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "قارن جهد دائرة الحساس بجـهد البطارية في الإجراء المحدد، ثم أصلح الضفيرة أو الحساس أو وحدة ABS فقط وفق نتائج خطوات المصنع.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "أعِد تجميع القطع، امسح DTC، وأكّد الإصلاح كما في Repair Verification Test.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Wheel Speed Sensor 1102",
+        "pid_ar": "إشارة حساس سرعة العجلة 1102",
+        "expected": "غير مؤكد",
+        "name_verification": "تسمية عملية؛ تسمية CONSULT الدقيقة والعجلة غير مؤكدتين"
+      },
+      {
+        "pid_en": "ABS DTC Status",
+        "pid_ar": "حالة كود ABS",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "Active wheel speed sensor",
+        "location": "عند محور/مجموعة عجلة؛ تحديد FL/FR/RL/RR لهذا الكود غير مؤكد"
+      },
+      {
+        "part": "Wheel sensor harness and connector",
+        "location": "بين الحساس ووحدة ABS/VDC؛ رقم الطرفيات يختلف حسب ESM"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+Infiniti+2007%E2%80%932013+%D8%A7%D9%84%D9%85%D8%AC%D9%87%D8%B2%D8%A9+ABS%2FVDC+C1102+ABS+ADAS",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "معلومة جزئية موثقة في ITB10-056a (فقط سياق 2007–2013)",
+      "detail": "Pin 1 وPin 32 في ضفيرة ABS: جهد البطارية بالنسبة لأرض ECU؛ خريطة موصلات السيارة/الحساس ومواقع العجلات يجب استكمالها من ESM. لا تستخدم القيم لأي موديل خارج نطاق النشرة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+Infiniti+2007%E2%80%932013+%D8%A7%D9%84%D9%85%D8%AC%D9%87%D8%B2%D8%A9+ABS%2FVDC+C1102+ABS+ADAS",
+      "query": "Infiniti Infiniti 2007–2013 المجهزة ABS/VDC C1102 ABS ADAS"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB10-056a",
+        "date": "2012-09-25",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2012/SB-10046600-6246.pdf",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "C1103",
+    "code_format": "5-character DTC",
+    "ecu": "ABS/VDC Control Unit",
+    "definition_en": "WHEEL SENSOR-1",
+    "translation_ar": "خلل دائرة/إشارة سرعة عجلة — مجموعة 1؛ موضع العجلة لهذا الرمز يتطلب ESM",
+    "category": {
+      "family": "C",
+      "control": "خاص بالمصنع (نطاق C1)",
+      "system": "Chassis/ADAS"
+    },
+    "applicability": {
+      "verified_scope": "Infiniti 2007–2013 المجهزة ABS/VDC | يشمل موديلات متعددة؛ تحديد كل موديل/دفع/محرك من ESM",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "تحذير ABS/VDC محتمل",
+      "ظهور DTC نشط في وحدة ABS؛ الأعراض الدقيقة حسب السيارة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "تلف في حساس سرعة العجلة بعد اختبار إشارة مباشر",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "قطع/قصر في ضفيرة الحساس أو تآكل الموصل",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "خلل دائرة التغذية/ABS Control Unit عند استبعاد الحساس والأسلاك",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "سجل أكواد ABS النشطة في CONSULT-III plus؛ امسح وأعد القيادة بسرعة تتجاوز 13 mph لإعادة إظهار الكود كما في مخطط النشرة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص الحساس والموصلات بحثًا عن كسر/تآكل/تلوث.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "استخدم J-45741 Wheel Sensor Tester وأدر العجلة؛ يجب أن يومض مؤشر SENSOR الأحمر عند وجود إشارة سليمة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افصل موصل ABS وموصل الحساس ثم افحص القصر مع التغذية/الأرضي وبين الأسلاك؛ لا ينبغي وجود اتصال قصر بين خطّي الحساس.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص جهد تغذية ABS عند Pin 1 وPin 32 بالنسبة إلى أرضي ECU؛ قيمته المرجعية جهد البطارية في النشرة (طبقاً للنسخة المذكورة).",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "قارن جهد دائرة الحساس بجـهد البطارية في الإجراء المحدد، ثم أصلح الضفيرة أو الحساس أو وحدة ABS فقط وفق نتائج خطوات المصنع.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "أعِد تجميع القطع، امسح DTC، وأكّد الإصلاح كما في Repair Verification Test.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Wheel Speed Sensor 1103",
+        "pid_ar": "إشارة حساس سرعة العجلة 1103",
+        "expected": "غير مؤكد",
+        "name_verification": "تسمية عملية؛ تسمية CONSULT الدقيقة والعجلة غير مؤكدتين"
+      },
+      {
+        "pid_en": "ABS DTC Status",
+        "pid_ar": "حالة كود ABS",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "Active wheel speed sensor",
+        "location": "عند محور/مجموعة عجلة؛ تحديد FL/FR/RL/RR لهذا الكود غير مؤكد"
+      },
+      {
+        "part": "Wheel sensor harness and connector",
+        "location": "بين الحساس ووحدة ABS/VDC؛ رقم الطرفيات يختلف حسب ESM"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+Infiniti+2007%E2%80%932013+%D8%A7%D9%84%D9%85%D8%AC%D9%87%D8%B2%D8%A9+ABS%2FVDC+C1103+ABS+ADAS",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "معلومة جزئية موثقة في ITB10-056a (فقط سياق 2007–2013)",
+      "detail": "Pin 1 وPin 32 في ضفيرة ABS: جهد البطارية بالنسبة لأرض ECU؛ خريطة موصلات السيارة/الحساس ومواقع العجلات يجب استكمالها من ESM. لا تستخدم القيم لأي موديل خارج نطاق النشرة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+Infiniti+2007%E2%80%932013+%D8%A7%D9%84%D9%85%D8%AC%D9%87%D8%B2%D8%A9+ABS%2FVDC+C1103+ABS+ADAS",
+      "query": "Infiniti Infiniti 2007–2013 المجهزة ABS/VDC C1103 ABS ADAS"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB10-056a",
+        "date": "2012-09-25",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2012/SB-10046600-6246.pdf",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "C1104",
+    "code_format": "5-character DTC",
+    "ecu": "ABS/VDC Control Unit",
+    "definition_en": "WHEEL SENSOR-1",
+    "translation_ar": "خلل دائرة/إشارة سرعة عجلة — مجموعة 1؛ موضع العجلة لهذا الرمز يتطلب ESM",
+    "category": {
+      "family": "C",
+      "control": "خاص بالمصنع (نطاق C1)",
+      "system": "Chassis/ADAS"
+    },
+    "applicability": {
+      "verified_scope": "Infiniti 2007–2013 المجهزة ABS/VDC | يشمل موديلات متعددة؛ تحديد كل موديل/دفع/محرك من ESM",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "تحذير ABS/VDC محتمل",
+      "ظهور DTC نشط في وحدة ABS؛ الأعراض الدقيقة حسب السيارة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "تلف في حساس سرعة العجلة بعد اختبار إشارة مباشر",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "قطع/قصر في ضفيرة الحساس أو تآكل الموصل",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "خلل دائرة التغذية/ABS Control Unit عند استبعاد الحساس والأسلاك",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "سجل أكواد ABS النشطة في CONSULT-III plus؛ امسح وأعد القيادة بسرعة تتجاوز 13 mph لإعادة إظهار الكود كما في مخطط النشرة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص الحساس والموصلات بحثًا عن كسر/تآكل/تلوث.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "استخدم J-45741 Wheel Sensor Tester وأدر العجلة؛ يجب أن يومض مؤشر SENSOR الأحمر عند وجود إشارة سليمة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افصل موصل ABS وموصل الحساس ثم افحص القصر مع التغذية/الأرضي وبين الأسلاك؛ لا ينبغي وجود اتصال قصر بين خطّي الحساس.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص جهد تغذية ABS عند Pin 1 وPin 32 بالنسبة إلى أرضي ECU؛ قيمته المرجعية جهد البطارية في النشرة (طبقاً للنسخة المذكورة).",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "قارن جهد دائرة الحساس بجـهد البطارية في الإجراء المحدد، ثم أصلح الضفيرة أو الحساس أو وحدة ABS فقط وفق نتائج خطوات المصنع.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "أعِد تجميع القطع، امسح DTC، وأكّد الإصلاح كما في Repair Verification Test.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Wheel Speed Sensor 1104",
+        "pid_ar": "إشارة حساس سرعة العجلة 1104",
+        "expected": "غير مؤكد",
+        "name_verification": "تسمية عملية؛ تسمية CONSULT الدقيقة والعجلة غير مؤكدتين"
+      },
+      {
+        "pid_en": "ABS DTC Status",
+        "pid_ar": "حالة كود ABS",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "Active wheel speed sensor",
+        "location": "عند محور/مجموعة عجلة؛ تحديد FL/FR/RL/RR لهذا الكود غير مؤكد"
+      },
+      {
+        "part": "Wheel sensor harness and connector",
+        "location": "بين الحساس ووحدة ABS/VDC؛ رقم الطرفيات يختلف حسب ESM"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+Infiniti+2007%E2%80%932013+%D8%A7%D9%84%D9%85%D8%AC%D9%87%D8%B2%D8%A9+ABS%2FVDC+C1104+ABS+ADAS",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "معلومة جزئية موثقة في ITB10-056a (فقط سياق 2007–2013)",
+      "detail": "Pin 1 وPin 32 في ضفيرة ABS: جهد البطارية بالنسبة لأرض ECU؛ خريطة موصلات السيارة/الحساس ومواقع العجلات يجب استكمالها من ESM. لا تستخدم القيم لأي موديل خارج نطاق النشرة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+Infiniti+2007%E2%80%932013+%D8%A7%D9%84%D9%85%D8%AC%D9%87%D8%B2%D8%A9+ABS%2FVDC+C1104+ABS+ADAS",
+      "query": "Infiniti Infiniti 2007–2013 المجهزة ABS/VDC C1104 ABS ADAS"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB10-056a",
+        "date": "2012-09-25",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2012/SB-10046600-6246.pdf",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "C1105",
+    "code_format": "5-character DTC",
+    "ecu": "ABS/VDC Control Unit",
+    "definition_en": "WHEEL SENSOR-2",
+    "translation_ar": "خلل دائرة/إشارة سرعة عجلة — مجموعة 2؛ موضع العجلة لهذا الرمز يتطلب ESM",
+    "category": {
+      "family": "C",
+      "control": "خاص بالمصنع (نطاق C1)",
+      "system": "Chassis/ADAS"
+    },
+    "applicability": {
+      "verified_scope": "Infiniti 2007–2013 المجهزة ABS/VDC | يشمل موديلات متعددة؛ تحديد كل موديل/دفع/محرك من ESM",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "تحذير ABS/VDC محتمل",
+      "ظهور DTC نشط في وحدة ABS؛ الأعراض الدقيقة حسب السيارة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "تلف في حساس سرعة العجلة بعد اختبار إشارة مباشر",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "قطع/قصر في ضفيرة الحساس أو تآكل الموصل",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "خلل دائرة التغذية/ABS Control Unit عند استبعاد الحساس والأسلاك",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "سجل أكواد ABS النشطة في CONSULT-III plus؛ امسح وأعد القيادة بسرعة تتجاوز 13 mph لإعادة إظهار الكود كما في مخطط النشرة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص الحساس والموصلات بحثًا عن كسر/تآكل/تلوث.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "استخدم J-45741 Wheel Sensor Tester وأدر العجلة؛ يجب أن يومض مؤشر SENSOR الأحمر عند وجود إشارة سليمة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "اتبع الإجراء المنفصل C1105–C1108 المبين في صفحة 6 من ITB10-056a؛ لا تعمم خطوات Sensor-1 على Sensor-2.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "حدد العجلة والطرفيات وفق ESM قبل فحص الأسلاك واستبدال الحساس.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Wheel Speed Sensor 1105",
+        "pid_ar": "إشارة حساس سرعة العجلة 1105",
+        "expected": "غير مؤكد",
+        "name_verification": "تسمية عملية؛ تسمية CONSULT الدقيقة والعجلة غير مؤكدتين"
+      },
+      {
+        "pid_en": "ABS DTC Status",
+        "pid_ar": "حالة كود ABS",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "Active wheel speed sensor",
+        "location": "عند محور/مجموعة عجلة؛ تحديد FL/FR/RL/RR لهذا الكود غير مؤكد"
+      },
+      {
+        "part": "Wheel sensor harness and connector",
+        "location": "بين الحساس ووحدة ABS/VDC؛ رقم الطرفيات يختلف حسب ESM"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+Infiniti+2007%E2%80%932013+%D8%A7%D9%84%D9%85%D8%AC%D9%87%D8%B2%D8%A9+ABS%2FVDC+C1105+ABS+ADAS",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "معلومة جزئية موثقة في ITB10-056a (فقط سياق 2007–2013)",
+      "detail": "Pin 1 وPin 32 في ضفيرة ABS: جهد البطارية بالنسبة لأرض ECU؛ خريطة موصلات السيارة/الحساس ومواقع العجلات يجب استكمالها من ESM. لا تستخدم القيم لأي موديل خارج نطاق النشرة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+Infiniti+2007%E2%80%932013+%D8%A7%D9%84%D9%85%D8%AC%D9%87%D8%B2%D8%A9+ABS%2FVDC+C1105+ABS+ADAS",
+      "query": "Infiniti Infiniti 2007–2013 المجهزة ABS/VDC C1105 ABS ADAS"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الثانية — كود مؤكد في نشرة المصنع",
+      "basis": "ليس تصنيفاً إحصائياً للشيوع"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB10-056a",
+        "date": "2012-09-25",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2012/SB-10046600-6246.pdf",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "C1106",
+    "code_format": "5-character DTC",
+    "ecu": "ABS/VDC Control Unit",
+    "definition_en": "WHEEL SENSOR-2",
+    "translation_ar": "خلل دائرة/إشارة سرعة عجلة — مجموعة 2؛ موضع العجلة لهذا الرمز يتطلب ESM",
+    "category": {
+      "family": "C",
+      "control": "خاص بالمصنع (نطاق C1)",
+      "system": "Chassis/ADAS"
+    },
+    "applicability": {
+      "verified_scope": "Infiniti 2007–2013 المجهزة ABS/VDC | يشمل موديلات متعددة؛ تحديد كل موديل/دفع/محرك من ESM",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "تحذير ABS/VDC محتمل",
+      "ظهور DTC نشط في وحدة ABS؛ الأعراض الدقيقة حسب السيارة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "تلف في حساس سرعة العجلة بعد اختبار إشارة مباشر",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "قطع/قصر في ضفيرة الحساس أو تآكل الموصل",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "خلل دائرة التغذية/ABS Control Unit عند استبعاد الحساس والأسلاك",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "سجل أكواد ABS النشطة في CONSULT-III plus؛ امسح وأعد القيادة بسرعة تتجاوز 13 mph لإعادة إظهار الكود كما في مخطط النشرة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص الحساس والموصلات بحثًا عن كسر/تآكل/تلوث.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "استخدم J-45741 Wheel Sensor Tester وأدر العجلة؛ يجب أن يومض مؤشر SENSOR الأحمر عند وجود إشارة سليمة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "اتبع الإجراء المنفصل C1105–C1108 المبين في صفحة 6 من ITB10-056a؛ لا تعمم خطوات Sensor-1 على Sensor-2.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "حدد العجلة والطرفيات وفق ESM قبل فحص الأسلاك واستبدال الحساس.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Wheel Speed Sensor 1106",
+        "pid_ar": "إشارة حساس سرعة العجلة 1106",
+        "expected": "غير مؤكد",
+        "name_verification": "تسمية عملية؛ تسمية CONSULT الدقيقة والعجلة غير مؤكدتين"
+      },
+      {
+        "pid_en": "ABS DTC Status",
+        "pid_ar": "حالة كود ABS",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "Active wheel speed sensor",
+        "location": "عند محور/مجموعة عجلة؛ تحديد FL/FR/RL/RR لهذا الكود غير مؤكد"
+      },
+      {
+        "part": "Wheel sensor harness and connector",
+        "location": "بين الحساس ووحدة ABS/VDC؛ رقم الطرفيات يختلف حسب ESM"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+Infiniti+2007%E2%80%932013+%D8%A7%D9%84%D9%85%D8%AC%D9%87%D8%B2%D8%A9+ABS%2FVDC+C1106+ABS+ADAS",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "معلومة جزئية موثقة في ITB10-056a (فقط سياق 2007–2013)",
+      "detail": "Pin 1 وPin 32 في ضفيرة ABS: جهد البطارية بالنسبة لأرض ECU؛ خريطة موصلات السيارة/الحساس ومواقع العجلات يجب استكمالها من ESM. لا تستخدم القيم لأي موديل خارج نطاق النشرة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+Infiniti+2007%E2%80%932013+%D8%A7%D9%84%D9%85%D8%AC%D9%87%D8%B2%D8%A9+ABS%2FVDC+C1106+ABS+ADAS",
+      "query": "Infiniti Infiniti 2007–2013 المجهزة ABS/VDC C1106 ABS ADAS"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الثانية — كود مؤكد في نشرة المصنع",
+      "basis": "ليس تصنيفاً إحصائياً للشيوع"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB10-056a",
+        "date": "2012-09-25",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2012/SB-10046600-6246.pdf",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "C1107",
+    "code_format": "5-character DTC",
+    "ecu": "ABS/VDC Control Unit",
+    "definition_en": "WHEEL SENSOR-2",
+    "translation_ar": "خلل دائرة/إشارة سرعة عجلة — مجموعة 2؛ موضع العجلة لهذا الرمز يتطلب ESM",
+    "category": {
+      "family": "C",
+      "control": "خاص بالمصنع (نطاق C1)",
+      "system": "Chassis/ADAS"
+    },
+    "applicability": {
+      "verified_scope": "Infiniti 2007–2013 المجهزة ABS/VDC | يشمل موديلات متعددة؛ تحديد كل موديل/دفع/محرك من ESM",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "تحذير ABS/VDC محتمل",
+      "ظهور DTC نشط في وحدة ABS؛ الأعراض الدقيقة حسب السيارة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "تلف في حساس سرعة العجلة بعد اختبار إشارة مباشر",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "قطع/قصر في ضفيرة الحساس أو تآكل الموصل",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "خلل دائرة التغذية/ABS Control Unit عند استبعاد الحساس والأسلاك",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "سجل أكواد ABS النشطة في CONSULT-III plus؛ امسح وأعد القيادة بسرعة تتجاوز 13 mph لإعادة إظهار الكود كما في مخطط النشرة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص الحساس والموصلات بحثًا عن كسر/تآكل/تلوث.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "استخدم J-45741 Wheel Sensor Tester وأدر العجلة؛ يجب أن يومض مؤشر SENSOR الأحمر عند وجود إشارة سليمة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "اتبع الإجراء المنفصل C1105–C1108 المبين في صفحة 6 من ITB10-056a؛ لا تعمم خطوات Sensor-1 على Sensor-2.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "حدد العجلة والطرفيات وفق ESM قبل فحص الأسلاك واستبدال الحساس.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Wheel Speed Sensor 1107",
+        "pid_ar": "إشارة حساس سرعة العجلة 1107",
+        "expected": "غير مؤكد",
+        "name_verification": "تسمية عملية؛ تسمية CONSULT الدقيقة والعجلة غير مؤكدتين"
+      },
+      {
+        "pid_en": "ABS DTC Status",
+        "pid_ar": "حالة كود ABS",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "Active wheel speed sensor",
+        "location": "عند محور/مجموعة عجلة؛ تحديد FL/FR/RL/RR لهذا الكود غير مؤكد"
+      },
+      {
+        "part": "Wheel sensor harness and connector",
+        "location": "بين الحساس ووحدة ABS/VDC؛ رقم الطرفيات يختلف حسب ESM"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+Infiniti+2007%E2%80%932013+%D8%A7%D9%84%D9%85%D8%AC%D9%87%D8%B2%D8%A9+ABS%2FVDC+C1107+ABS+ADAS",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "معلومة جزئية موثقة في ITB10-056a (فقط سياق 2007–2013)",
+      "detail": "Pin 1 وPin 32 في ضفيرة ABS: جهد البطارية بالنسبة لأرض ECU؛ خريطة موصلات السيارة/الحساس ومواقع العجلات يجب استكمالها من ESM. لا تستخدم القيم لأي موديل خارج نطاق النشرة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+Infiniti+2007%E2%80%932013+%D8%A7%D9%84%D9%85%D8%AC%D9%87%D8%B2%D8%A9+ABS%2FVDC+C1107+ABS+ADAS",
+      "query": "Infiniti Infiniti 2007–2013 المجهزة ABS/VDC C1107 ABS ADAS"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الثانية — كود مؤكد في نشرة المصنع",
+      "basis": "ليس تصنيفاً إحصائياً للشيوع"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB10-056a",
+        "date": "2012-09-25",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2012/SB-10046600-6246.pdf",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "C1108",
+    "code_format": "5-character DTC",
+    "ecu": "ABS/VDC Control Unit",
+    "definition_en": "WHEEL SENSOR-2",
+    "translation_ar": "خلل دائرة/إشارة سرعة عجلة — مجموعة 2؛ موضع العجلة لهذا الرمز يتطلب ESM",
+    "category": {
+      "family": "C",
+      "control": "خاص بالمصنع (نطاق C1)",
+      "system": "Chassis/ADAS"
+    },
+    "applicability": {
+      "verified_scope": "Infiniti 2007–2013 المجهزة ABS/VDC | يشمل موديلات متعددة؛ تحديد كل موديل/دفع/محرك من ESM",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "تحذير ABS/VDC محتمل",
+      "ظهور DTC نشط في وحدة ABS؛ الأعراض الدقيقة حسب السيارة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "تلف في حساس سرعة العجلة بعد اختبار إشارة مباشر",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "قطع/قصر في ضفيرة الحساس أو تآكل الموصل",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "خلل دائرة التغذية/ABS Control Unit عند استبعاد الحساس والأسلاك",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "سجل أكواد ABS النشطة في CONSULT-III plus؛ امسح وأعد القيادة بسرعة تتجاوز 13 mph لإعادة إظهار الكود كما في مخطط النشرة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص الحساس والموصلات بحثًا عن كسر/تآكل/تلوث.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "استخدم J-45741 Wheel Sensor Tester وأدر العجلة؛ يجب أن يومض مؤشر SENSOR الأحمر عند وجود إشارة سليمة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "اتبع الإجراء المنفصل C1105–C1108 المبين في صفحة 6 من ITB10-056a؛ لا تعمم خطوات Sensor-1 على Sensor-2.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "حدد العجلة والطرفيات وفق ESM قبل فحص الأسلاك واستبدال الحساس.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Wheel Speed Sensor 1108",
+        "pid_ar": "إشارة حساس سرعة العجلة 1108",
+        "expected": "غير مؤكد",
+        "name_verification": "تسمية عملية؛ تسمية CONSULT الدقيقة والعجلة غير مؤكدتين"
+      },
+      {
+        "pid_en": "ABS DTC Status",
+        "pid_ar": "حالة كود ABS",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "Active wheel speed sensor",
+        "location": "عند محور/مجموعة عجلة؛ تحديد FL/FR/RL/RR لهذا الكود غير مؤكد"
+      },
+      {
+        "part": "Wheel sensor harness and connector",
+        "location": "بين الحساس ووحدة ABS/VDC؛ رقم الطرفيات يختلف حسب ESM"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+Infiniti+2007%E2%80%932013+%D8%A7%D9%84%D9%85%D8%AC%D9%87%D8%B2%D8%A9+ABS%2FVDC+C1108+ABS+ADAS",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "معلومة جزئية موثقة في ITB10-056a (فقط سياق 2007–2013)",
+      "detail": "Pin 1 وPin 32 في ضفيرة ABS: جهد البطارية بالنسبة لأرض ECU؛ خريطة موصلات السيارة/الحساس ومواقع العجلات يجب استكمالها من ESM. لا تستخدم القيم لأي موديل خارج نطاق النشرة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+Infiniti+2007%E2%80%932013+%D8%A7%D9%84%D9%85%D8%AC%D9%87%D8%B2%D8%A9+ABS%2FVDC+C1108+ABS+ADAS",
+      "query": "Infiniti Infiniti 2007–2013 المجهزة ABS/VDC C1108 ABS ADAS"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الثانية — كود مؤكد في نشرة المصنع",
+      "basis": "ليس تصنيفاً إحصائياً للشيوع"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB10-056a",
+        "date": "2012-09-25",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2012/SB-10046600-6246.pdf",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "C1130",
+    "code_format": "5-character DTC",
+    "ecu": "ABS/VDC Control Unit",
+    "definition_en": "ENGINE SIGNAL",
+    "translation_ar": "إشارة المحرك غير معروفة/غير مستقبَلة لدى نظام ABS",
+    "category": {
+      "family": "C",
+      "control": "خاص بالمصنع (نطاق C1)",
+      "system": "Chassis/ADAS"
+    },
+    "applicability": {
+      "verified_scope": "G37 2012–2013 وQ60 V36 2014–2015 وQ60 V37 2017؛ EX/QX50 J50؛ JX/QX60 L50؛ FX/QX70 S51؛ Q50 V37؛ M/Q70 Y51، بما فيها Hybrid المدرجة، ضمن سنوات 2012–2017 المفصلة في ITB16-047",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "قد تتأثر أنظمة FEB وICC وVDC/ABS/TCS"
+    ],
+    "causes": [
+      {
+        "cause_ar": "إشارة ECM غائبة أو خاطئة بسبب عطل محرك P-code مصاحب",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "سبب CAN/ECM غير مؤكد إذا لم تكن P-codes موجودة",
+        "evidence": "not_verified"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "افحص ECM وكل P-codes المرتبطة بالمحرك أولاً.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "أصلح أسباب أكواد ECM وامسحها قبل الحكم على نظام ABS.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "أعِد إجراء تشخيص ABS؛ لا تغيّر ABS/ADAS بسبب C1130 وحده.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "ECM DTC Status",
+        "pid_ar": "حالة أعطال وحدة المحرك",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      },
+      {
+        "pid_en": "ABS DTC Status",
+        "pid_ar": "حالة أعطال الفرامل",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      },
+      {
+        "pid_en": "Engine Signal",
+        "pid_ar": "إشارة المحرك إلى ABS",
+        "expected": "غير مؤكد",
+        "name_verification": "مفهوم الإشارة موثق؛ اسم PID الحرفي غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "ECM/engine related systems",
+        "location": "حسب رمز P المصاحب"
+      },
+      {
+        "part": "ABS/VDC ECU",
+        "location": "الموقع الفعلي يعتمد الموديل"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+G37+2012%E2%80%932013+%D9%88Q60+V36+2014%E2%80%932015+%D9%88Q60+V37+2017%D8%9B+EX%2FQX50+J50%D8%9B+JX%2FQX60+L50%D8%9B+FX%2FQX70+S51%D8%9B+Q50+V37%D8%9B+M%2FQ70+Y51%D8%8C+%D8%A8%D9%85%D8%A7+%D9%81%D9%8A%D9%87%D8%A7+Hybrid+%D8%A7%D9%84%D9%85%D8%AF%D8%B1%D8%AC%D8%A9%D8%8C+%D8%B6%D9%85%D9%86+%D8%B3%D9%86%D9%88%D8%A7%D8%AA+2012%E2%80%932017+%D8%A7%D9%84%D9%85%D9%81%D8%B5%D9%84%D8%A9+%D9%81%D9%8A+ITB16-047+C1130+ABS+ADAS",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير مطلوب لمسار النشرة الأولي؛ غير مؤكد على مستوى Pins",
+      "detail": "مبدأ إشارة ECM→ABS موثق؛ طرفيات المصنع لا تستنتج دون ESM."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+G37+2012%E2%80%932013+%D9%88Q60+V36+2014%E2%80%932015+%D9%88Q60+V37+2017%D8%9B+EX%2FQX50+J50%D8%9B+JX%2FQX60+L50%D8%9B+FX%2FQX70+S51%D8%9B+Q50+V37%D8%9B+M%2FQ70+Y51%D8%8C+%D8%A8%D9%85%D8%A7+%D9%81%D9%8A%D9%87%D8%A7+Hybrid+%D8%A7%D9%84%D9%85%D8%AF%D8%B1%D8%AC%D8%A9%D8%8C+%D8%B6%D9%85%D9%86+%D8%B3%D9%86%D9%88%D8%A7%D8%AA+2012%E2%80%932017+%D8%A7%D9%84%D9%85%D9%81%D8%B5%D9%84%D8%A9+%D9%81%D9%8A+ITB16-047+C1130+ABS+ADAS",
+      "query": "Infiniti G37 2012–2013 وQ60 V36 2014–2015 وQ60 V37 2017؛ EX/QX50 J50؛ JX/QX60 L50؛ FX/QX70 S51؛ Q50 V37؛ M/Q70 Y51، بما فيها Hybrid المدرجة، ضمن سنوات 2012–2017 المفصلة في ITB16-047 C1130 ABS ADAS"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB16-047",
+        "date": "2016-11-28",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10119264-9999.pdf",
+        "pages": [
+          1
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "مكتمل"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "C1A03",
+    "code_format": "5-character DTC",
+    "ecu": "ICC/ADAS ECU",
+    "definition_en": "VEHICLE SPEED SENSOR",
+    "translation_ar": "حساس/إشارة سرعة السيارة بنظام ADAS",
+    "category": {
+      "family": "C",
+      "control": "خاص بالمصنع (نطاق C1)",
+      "system": "Chassis/ADAS"
+    },
+    "applicability": {
+      "verified_scope": "Q50/Q50 Hybrid 2017–2018؛ Q60 2017–2018؛ Q70/Q70 Hybrid 2017–2018؛ QX30 2017–2018؛ QX50 J50 2017 وJ55 2019؛ QX60/QX60 Hybrid 2017–2018؛ QX80 2017–2018؛ QX70 2017 | شرط تجهيز ICC/ADAS بالنشرة",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "تحذير ADAS/ICC محتمل؛ الأعراض الدقيقة غير مبينة بالنشرة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "خلل ABS متزامن قبل أن يكون السبب رادار ADAS",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "اقرأ الأكواد في وحدة ICC/ADAS وأجرِ فحص جميع الوحدات.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "شخّص وأصلح أكواد ABS/VDC المسجلة أولاً؛ ظهور الكود في ADAS لا يثبت عطل وحدة ADAS.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "كرر DTC Confirmation Procedure بعد إصلاح الفرامل، قبل استبدال رادار/وحدة ADAS.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Wheel Speed / ABS DTC Status",
+        "pid_ar": "سرعة العجلات/أكواد ABS",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "ABS wheel speed sensor / ABS ECU",
+        "location": "الموقع يحدده موديل السيارة وتجهيزات ADAS"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+Q50%2FQ50+Hybrid+2017%E2%80%932018%D8%9B+Q60+2017%E2%80%932018%D8%9B+Q70%2FQ70+Hybrid+2017%E2%80%932018%D8%9B+QX30+2017%E2%80%932018%D8%9B+QX50+J50+2017+%D9%88J55+2019%D8%9B+QX60%2FQX60+Hybrid+2017%E2%80%932018%D8%9B+QX80+2017%E2%80%932018%D8%9B+QX70+2017+C1A03+ABS+ADAS",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر",
+      "detail": "لا يجوز تحديد pinout أو مخطط دون ESM مطابق للسيارة؛ لا توجد نسخة معتمدة في هذه الدفعة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+Q50%2FQ50+Hybrid+2017%E2%80%932018%D8%9B+Q60+2017%E2%80%932018%D8%9B+Q70%2FQ70+Hybrid+2017%E2%80%932018%D8%9B+QX30+2017%E2%80%932018%D8%9B+QX50+J50+2017+%D9%88J55+2019%D8%9B+QX60%2FQX60+Hybrid+2017%E2%80%932018%D8%9B+QX80+2017%E2%80%932018%D8%9B+QX70+2017+C1A03+ABS+ADAS",
+      "query": "Infiniti Q50/Q50 Hybrid 2017–2018؛ Q60 2017–2018؛ Q70/Q70 Hybrid 2017–2018؛ QX30 2017–2018؛ QX50 J50 2017 وJ55 2019؛ QX60/QX60 Hybrid 2017–2018؛ QX80 2017–2018؛ QX70 2017 C1A03 ABS ADAS"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB18-005B",
+        "date": "2021-03-24",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10190156-0001.pdf",
+        "pages": [
+          1
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "C1A04",
+    "code_format": "5-character DTC",
+    "ecu": "ICC/ADAS ECU",
+    "definition_en": "ABS/TCS/VDC SYSTEM",
+    "translation_ar": "عطل/إشارة متعلقة بأنظمة ABS ومانع الانزلاق والثبات لدى ADAS",
+    "category": {
+      "family": "C",
+      "control": "خاص بالمصنع (نطاق C1)",
+      "system": "Chassis/ADAS"
+    },
+    "applicability": {
+      "verified_scope": "Q50/Q50 Hybrid 2017–2018؛ Q60 2017–2018؛ Q70/Q70 Hybrid 2017–2018؛ QX30 2017–2018؛ QX50 J50 2017 وJ55 2019؛ QX60/QX60 Hybrid 2017–2018؛ QX80 2017–2018؛ QX70 2017 | شرط تجهيز ICC/ADAS بالنشرة",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "تحذير ADAS/ICC محتمل؛ الأعراض الدقيقة غير مبينة بالنشرة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "خلل ABS متزامن قبل أن يكون السبب رادار ADAS",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "اقرأ الأكواد في وحدة ICC/ADAS وأجرِ فحص جميع الوحدات.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "شخّص وأصلح أكواد ABS/VDC المسجلة أولاً؛ ظهور الكود في ADAS لا يثبت عطل وحدة ADAS.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "كرر DTC Confirmation Procedure بعد إصلاح الفرامل، قبل استبدال رادار/وحدة ADAS.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Wheel Speed / ABS DTC Status",
+        "pid_ar": "سرعة العجلات/أكواد ABS",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "ABS wheel speed sensor / ABS ECU",
+        "location": "الموقع يحدده موديل السيارة وتجهيزات ADAS"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+Q50%2FQ50+Hybrid+2017%E2%80%932018%D8%9B+Q60+2017%E2%80%932018%D8%9B+Q70%2FQ70+Hybrid+2017%E2%80%932018%D8%9B+QX30+2017%E2%80%932018%D8%9B+QX50+J50+2017+%D9%88J55+2019%D8%9B+QX60%2FQX60+Hybrid+2017%E2%80%932018%D8%9B+QX80+2017%E2%80%932018%D8%9B+QX70+2017+C1A04+ABS+ADAS",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر",
+      "detail": "لا يجوز تحديد pinout أو مخطط دون ESM مطابق للسيارة؛ لا توجد نسخة معتمدة في هذه الدفعة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+Q50%2FQ50+Hybrid+2017%E2%80%932018%D8%9B+Q60+2017%E2%80%932018%D8%9B+Q70%2FQ70+Hybrid+2017%E2%80%932018%D8%9B+QX30+2017%E2%80%932018%D8%9B+QX50+J50+2017+%D9%88J55+2019%D8%9B+QX60%2FQX60+Hybrid+2017%E2%80%932018%D8%9B+QX80+2017%E2%80%932018%D8%9B+QX70+2017+C1A04+ABS+ADAS",
+      "query": "Infiniti Q50/Q50 Hybrid 2017–2018؛ Q60 2017–2018؛ Q70/Q70 Hybrid 2017–2018؛ QX30 2017–2018؛ QX50 J50 2017 وJ55 2019؛ QX60/QX60 Hybrid 2017–2018؛ QX80 2017–2018؛ QX70 2017 C1A04 ABS ADAS"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB18-005B",
+        "date": "2021-03-24",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10190156-0001.pdf",
+        "pages": [
+          1
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "C1B01",
+    "code_format": "5-character DTC",
+    "ecu": "ICC/ADAS ECU",
+    "definition_en": "CAM AIMING INCMP",
+    "translation_ar": "توجيه/معايرة كاميرا المسار غير مكتمل (اختصار INCMP كما في المصدر)",
+    "category": {
+      "family": "C",
+      "control": "خاص بالمصنع (نطاق C1)",
+      "system": "Chassis/ADAS"
+    },
+    "applicability": {
+      "verified_scope": "Q50/Q50 Hybrid 2017–2018؛ Q60 2017–2018؛ Q70/Q70 Hybrid 2017–2018؛ QX30 2017–2018؛ QX50 J50 2017 وJ55 2019؛ QX60/QX60 Hybrid 2017–2018؛ QX80 2017–2018؛ QX70 2017 | شرط تجهيز ICC/ADAS بالنشرة",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "تحذير ADAS/ICC محتمل؛ الأعراض الدقيقة غير مبينة بالنشرة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "أكواد أو معايرة LANE CAMERA سبب سابق لرمز ADAS",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "اقرأ الأكواد في وحدة ICC/ADAS وأجرِ فحص جميع الوحدات.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص أكواد LANE CAMERA أولاً ثم تحقق من الحاجة لضبط/معايرة كاميرا المسار طبقاً لـESM.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "بعد المعايرة أو الإصلاح، كرر DTC Confirmation Procedure قبل تبديل أي جزء ADAS.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Lane Camera DTC Status",
+        "pid_ar": "حالة أعطال كاميرا المسار",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "Lane camera / ADAS module",
+        "location": "الموقع يحدده موديل السيارة وتجهيزات ADAS"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+Q50%2FQ50+Hybrid+2017%E2%80%932018%D8%9B+Q60+2017%E2%80%932018%D8%9B+Q70%2FQ70+Hybrid+2017%E2%80%932018%D8%9B+QX30+2017%E2%80%932018%D8%9B+QX50+J50+2017+%D9%88J55+2019%D8%9B+QX60%2FQX60+Hybrid+2017%E2%80%932018%D8%9B+QX80+2017%E2%80%932018%D8%9B+QX70+2017+C1B01+ABS+ADAS",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر",
+      "detail": "لا يجوز تحديد pinout أو مخطط دون ESM مطابق للسيارة؛ لا توجد نسخة معتمدة في هذه الدفعة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+Q50%2FQ50+Hybrid+2017%E2%80%932018%D8%9B+Q60+2017%E2%80%932018%D8%9B+Q70%2FQ70+Hybrid+2017%E2%80%932018%D8%9B+QX30+2017%E2%80%932018%D8%9B+QX50+J50+2017+%D9%88J55+2019%D8%9B+QX60%2FQX60+Hybrid+2017%E2%80%932018%D8%9B+QX80+2017%E2%80%932018%D8%9B+QX70+2017+C1B01+ABS+ADAS",
+      "query": "Infiniti Q50/Q50 Hybrid 2017–2018؛ Q60 2017–2018؛ Q70/Q70 Hybrid 2017–2018؛ QX30 2017–2018؛ QX50 J50 2017 وJ55 2019؛ QX60/QX60 Hybrid 2017–2018؛ QX80 2017–2018؛ QX70 2017 C1B01 ABS ADAS"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB18-005B",
+        "date": "2021-03-24",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10190156-0001.pdf",
+        "pages": [
+          1
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "P0087",
+    "code_format": "5-character DTC",
+    "ecu": "ECM",
+    "definition_en": "Fuel Rail/System Pressure - Too Low",
+    "translation_ar": "ضغط مسطرة الوقود/النظام منخفض",
+    "category": {
+      "family": "P",
+      "control": "عام/SAE (نطاق P0)",
+      "system": "Powertrain"
+    },
+    "applicability": {
+      "verified_scope": "Q50 VR30DDTT 2017–2019؛ Q60 VR30DDTT 2017–2019؛ QX60 VQ35DD 2017–2019 (السنوات الدقيقة بحسب جدول A) | بنزين",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "MIL ممكنة؛ تفاصيل الشكوى غير واردة في النشرة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "العطل الكهربائي/الهيدروليكي المحدد بالكود يتطلب تشخيص ESM قبل البرمجة",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "نسخة ECM قد تحتاج تحديث طريقة تخزين DTC الدائم بعد الإصلاح",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "أكد وجود الرمز وراجع Freeze Frame وDTC المصاحبة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "شخّص سبب العطل الأصلي وفق ESM؛ لا تستعمل تحديث ITB19-027 بديلاً للتشخيص.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "قارن رقم ECM بقائمة ITB19-027، ثم برمج فقط عند التطابق وبعد الإصلاح.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "للبرمجة: حافظ شحن وضع reflash، والنطاق الموثق 12.0–15.5 V.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Fuel Rail Pressure",
+        "pid_ar": "ضغط مسطرة الوقود",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "Fuel pressure system",
+        "location": "غير مؤكد حسب المحرك"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+Q50+VR30DDTT+2017%E2%80%932019%D8%9B+Q60+VR30DDTT+2017%E2%80%932019%D8%9B+QX60+VQ35DD+2017%E2%80%932019+%28%D8%A7%D9%84%D8%B3%D9%86%D9%88%D8%A7%D8%AA+%D8%A7%D9%84%D8%AF%D9%82%D9%8A%D9%82%D8%A9+%D8%A8%D8%AD%D8%B3%D8%A8+%D8%AC%D8%AF%D9%88%D9%84+A%29+P0087+diagnosis",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر",
+      "detail": "لا يجوز تحديد pinout أو مخطط دون ESM مطابق للسيارة؛ لا توجد نسخة معتمدة في هذه الدفعة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+Q50+VR30DDTT+2017%E2%80%932019%D8%9B+Q60+VR30DDTT+2017%E2%80%932019%D8%9B+QX60+VQ35DD+2017%E2%80%932019+%28%D8%A7%D9%84%D8%B3%D9%86%D9%88%D8%A7%D8%AA+%D8%A7%D9%84%D8%AF%D9%82%D9%8A%D9%82%D8%A9+%D8%A8%D8%AD%D8%B3%D8%A8+%D8%AC%D8%AF%D9%88%D9%84+A%29+P0087+diagnosis",
+      "query": "Infiniti Q50 VR30DDTT 2017–2019؛ Q60 VR30DDTT 2017–2019؛ QX60 VQ35DD 2017–2019 (السنوات الدقيقة بحسب جدول A) P0087 diagnosis"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الثانية — كود مؤكد في نشرة المصنع",
+      "basis": "ليس تصنيفاً إحصائياً للشيوع"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB19-027",
+        "date": "2019-09-19",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10165756-0001.pdf",
+        "pages": [
+          1,
+          2,
+          6
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "P0101",
+    "code_format": "5-character DTC",
+    "ecu": "ECM",
+    "definition_en": "MAF SEN/CIRCUIT-B1",
+    "translation_ar": "حساس كتلة الهواء/دائرته، البنك 1",
+    "category": {
+      "family": "P",
+      "control": "عام/SAE (نطاق P0)",
+      "system": "Powertrain"
+    },
+    "applicability": {
+      "verified_scope": "Q50 (V37) 2016–2023 وQ60 (CV37) 2017–2022 | VR30DDTT | بنزين توربو V6 | نظام الجر غير مقيّد في النشرة",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "MIL مضاءة مع P0101",
+      "أعراض القيادة بخلاف ذلك غير محددة في النشرة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "تسرّب أو عدم إحكام توصيل مجرى الهواء على جهة الراكب اليمنى RH",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "خلل حساس MAF أو أسلاكه — احتمال عام يحتاج ESM",
+        "evidence": "engineering_hypothesis"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "اقرأ ECM DTC وسجل Freeze Frame ورقم ECM.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص مجرى الهواء Air Duct على جهة الراكب RH، بين Air Cleaner Case وAir Duct، بحثاً عن تسريب أو عدم إحكام.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "أعد تركيب المجرى وإحكام وصلاته، ثم امسح الكود وأعد اختبار التأكيد.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "لا تلمس عنصر MAF ولا تفككه؛ اختبر دائرة الحساس فقط بإجراء ESM المطابق.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "MAF Sensor Bank 1",
+        "pid_ar": "حساس كتلة الهواء – البنك 1",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      },
+      {
+        "pid_en": "Intake Air Temperature",
+        "pid_ar": "درجة حرارة هواء السحب",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      },
+      {
+        "pid_en": "Fuel Trim Bank 1",
+        "pid_ar": "تصحيح الوقود – البنك 1",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "Air duct RH",
+        "location": "المجرى قرب علبة فلتر الهواء على جهة الراكب RH، حسب صور نشرة VR30DDTT"
+      },
+      {
+        "part": "MAF sensor B1",
+        "location": "ضمن مجموعة مسار سحب الهواء؛ رقم القطعة غير مؤكد"
+      }
+    ],
+    "images": [
+      {
+        "kind": "original_manufacturer_bulletin_reference",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10231087-0001.pdf#page=2",
+        "note": "الرجوع للصفحة في PDF الأصلي، لا إعادة توزيع الرسم."
+      },
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+Q50+%28V37%29+2016%E2%80%932023+%D9%88Q60+%28CV37%29+2017%E2%80%932022+P0101+diagnosis",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر",
+      "detail": "لا يجوز تحديد pinout أو مخطط دون ESM مطابق للسيارة؛ لا توجد نسخة معتمدة في هذه الدفعة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+Q50+%28V37%29+2016%E2%80%932023+%D9%88Q60+%28CV37%29+2017%E2%80%932022+P0101+diagnosis",
+      "query": "Infiniti Q50 (V37) 2016–2023 وQ60 (CV37) 2017–2022 P0101 diagnosis"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB23-001",
+        "date": "2023-01-18",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10231087-0001.pdf",
+        "pages": [
+          1,
+          2
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      },
+      {
+        "id": "Infiniti Factory-authorized Service Manuals - access portal",
+        "date": "accessed 2026-10-15",
+        "url": "https://www.infiniti-techinfo.com/find.aspx?dept_id=10",
+        "pages": [
+          1
+        ],
+        "evidence": "مرجع للمنهج أو لطلب نسخة ESM، لا يؤكد جميع تعريفات الأكواد"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "P0101",
+    "code_format": "5-character DTC",
+    "ecu": "ECM",
+    "definition_en": "MAF SEN/CIRCUIT-B1",
+    "translation_ar": "حساس كتلة الهواء/دائرته، البنك 1",
+    "category": {
+      "family": "P",
+      "control": "عام/SAE (نطاق P0)",
+      "system": "Powertrain"
+    },
+    "applicability": {
+      "verified_scope": "QX60 (L50) 2017–2020 | VQ35DD V6 | بنزين | حالة توافر تحديث ECM تعتمد رقم الوحدة 23710-...",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "MIL مضاءة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "معايرة/برمجية ECM مؤهلة لتحديث مصنع عند مطابقة رقم الوحدة",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "عطل فعلي في مسار الهواء أو حساس MAF — فحص ESM مطلوب",
+        "evidence": "engineering_hypothesis"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "اقرأ P0101 في ECM وثبّت سنة الصنع والمحرك VQ35DD.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص أعطال الهواء الفعلية طبقًا لـESM قبل افتراض أن التحديث سيصلحها.",
+        "evidence": "engineering_guidance"
+      },
+      {
+        "instruction_ar": "باستخدام CONSULT-III plus اقرأ رقم ECM الحالي 23710-... وقارنه بجدول ITB20-010 للسنة المعنية.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "إذا طابق رقم الوحدة، استخدم إجراء تحديث المصنع مع حافظ جهد 12.0–15.5V أثناء البرمجة وفق النشرة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "إذا لم يطابق الرقم، النشرة لا تنطبق؛ عد إلى تشخيص ASIST/ESM.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "MAF SEN/CIRCUIT-B1",
+        "pid_ar": "قراءة حساس كتلة الهواء، البنك 1",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      },
+      {
+        "pid_en": "ECM Part Number",
+        "pid_ar": "رقم وحدة ECM",
+        "expected": "23710-... كما يظهر CONSULT",
+        "name_verification": "معرّف وحدة؛ ليس PID ديناميكياً"
+      }
+    ],
+    "parts": [
+      {
+        "part": "ECM software/calibration",
+        "location": "داخل وحدة ECM، موقعها الميكانيكي غير مؤكد"
+      },
+      {
+        "part": "MAF sensor",
+        "location": "موقع الطرفيات غير مؤكد لهذا المحرك"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+QX60+%28L50%29+2017%E2%80%932020+P0101+diagnosis",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر",
+      "detail": "لا يجوز تحديد pinout أو مخطط دون ESM مطابق للسيارة؛ لا توجد نسخة معتمدة في هذه الدفعة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+QX60+%28L50%29+2017%E2%80%932020+P0101+diagnosis",
+      "query": "Infiniti QX60 (L50) 2017–2020 P0101 diagnosis"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB20-010",
+        "date": "2020-03-20",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10173594-0001.pdf",
+        "pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      },
+      {
+        "id": "Infiniti Factory-authorized Service Manuals - access portal",
+        "date": "accessed 2026-10-15",
+        "url": "https://www.infiniti-techinfo.com/find.aspx?dept_id=10",
+        "pages": [
+          1
+        ],
+        "evidence": "مرجع للمنهج أو لطلب نسخة ESM، لا يؤكد جميع تعريفات الأكواد"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "P0101",
+    "code_format": "5-character DTC",
+    "ecu": "ECM",
+    "definition_en": "MAF SEN/CIRCUIT-B1",
+    "translation_ar": "حساس كتلة الهواء/دائرته، البنك 1",
+    "category": {
+      "family": "P",
+      "control": "عام/SAE (نطاق P0)",
+      "system": "Powertrain"
+    },
+    "applicability": {
+      "verified_scope": "QX60 (L50) 2015–2016 | VQ35DE V6 | بنزين | ITB19-027 يختص بمسح DTC الدائم بعد إصلاح السبب",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "MIL عند وجود العطل وفق التشخيص؛ الشكوى الأخرى غير مؤكدة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "خلل لم يُصلَح بعد في منظومة MAF يحتاج ESM",
+        "evidence": "not_verified"
+      },
+      {
+        "cause_ar": "طريقة الاحتفاظ بالكود الدائم في إصدار ECM معين بعد الإصلاح",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "شخّص أصل P0101 وأصلحه طبقاً لـESM أولاً؛ تحديث ITB19-027 ليس علاجاً للسبب.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "تحقق من رقم ECM 23710-... وقارنه بجدول ITB19-027.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "إذا طابق الرقم، نفذ إعادة البرمجة مع شروط الجهد المنصوص عليها، ثم تعلّم الخانق والخمول وامسح DTC.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "MAF Sensor",
+        "pid_ar": "إشارة حساس الهواء",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      },
+      {
+        "pid_en": "ECM Part Number",
+        "pid_ar": "رقم ECM",
+        "expected": "غير مؤكد",
+        "name_verification": "معلومة تعريف الوحدة وليست Live Data"
+      }
+    ],
+    "parts": [
+      {
+        "part": "MAF sensor/air duct",
+        "location": "غير مؤكد دون ESM محرك VQ35DE"
+      },
+      {
+        "part": "ECM calibration",
+        "location": "برمجي"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+QX60+%28L50%29+2015%E2%80%932016+P0101+diagnosis",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر",
+      "detail": "لا يجوز تحديد pinout أو مخطط دون ESM مطابق للسيارة؛ لا توجد نسخة معتمدة في هذه الدفعة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+QX60+%28L50%29+2015%E2%80%932016+P0101+diagnosis",
+      "query": "Infiniti QX60 (L50) 2015–2016 P0101 diagnosis"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB19-027",
+        "date": "2019-09-19",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10165756-0001.pdf",
+        "pages": [
+          1,
+          2,
+          6
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "P010B",
+    "code_format": "5-character DTC",
+    "ecu": "ECM",
+    "definition_en": "MAF SEN/CIRCUIT-B2",
+    "translation_ar": "حساس كتلة الهواء/دائرته، البنك 2",
+    "category": {
+      "family": "P",
+      "control": "عام/SAE (نطاق P0)",
+      "system": "Powertrain"
+    },
+    "applicability": {
+      "verified_scope": "Q50 (V37) 2016–2023 وQ60 (CV37) 2017–2022 | VR30DDTT | بنزين توربو V6",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "MIL مضاءة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "تسريب أو وصلة غير محكمة في مجرى الهواء على جهة السائق اليسرى LH",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "حساس MAF أو دائرته — احتمال غير مثبت",
+        "evidence": "engineering_hypothesis"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "حدد P010B في ECM.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص Air Duct في جهة السائق اليسرى LH: إحكام الوصلات وأثر التسريب.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "أعد تركيب المجرى حسب ESM ونفذ اختبار تأكيد الكود.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "لا تلمس عنصر MAF؛ الفحص الكهربائي والقراءات العددية تحتاج ESM.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "MAF Sensor Bank 2",
+        "pid_ar": "حساس كتلة الهواء – البنك 2",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      },
+      {
+        "pid_en": "Fuel Trim Bank 2",
+        "pid_ar": "تصحيح الوقود – البنك 2",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "Air duct LH",
+        "location": "قرب Air Cleaner Case جهة السائق LH؛ صور المصنع بالصفحة الثانية"
+      },
+      {
+        "part": "MAF B2",
+        "location": "ضمن مسار الهواء؛ موصل/Pin غير متاح"
+      }
+    ],
+    "images": [
+      {
+        "kind": "original_manufacturer_bulletin_reference",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10231087-0001.pdf#page=2",
+        "note": "الرجوع للصفحة في PDF الأصلي، لا إعادة توزيع الرسم."
+      },
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+Q50+%28V37%29+2016%E2%80%932023+%D9%88Q60+%28CV37%29+2017%E2%80%932022+P010B+diagnosis",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر",
+      "detail": "لا يجوز تحديد pinout أو مخطط دون ESM مطابق للسيارة؛ لا توجد نسخة معتمدة في هذه الدفعة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+Q50+%28V37%29+2016%E2%80%932023+%D9%88Q60+%28CV37%29+2017%E2%80%932022+P010B+diagnosis",
+      "query": "Infiniti Q50 (V37) 2016–2023 وQ60 (CV37) 2017–2022 P010B diagnosis"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB23-001",
+        "date": "2023-01-18",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10231087-0001.pdf",
+        "pages": [
+          1,
+          2
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "P0300",
+    "code_format": "5-character DTC",
+    "ecu": "ECM",
+    "definition_en": "MULTI CYL MISFIRE",
+    "translation_ar": "اشتعال متقطع في عدة أسطوانات",
+    "category": {
+      "family": "P",
+      "control": "عام/SAE (نطاق P0)",
+      "system": "Powertrain"
+    },
+    "applicability": {
+      "verified_scope": "QX60 (L51) موديل 2022 فقط ضمن ITB22-030 | أثناء الإحماء بعد تشغيل بارد، دون أعراض قيادة | المحرك/رقم المحرك الدقيق غير منصوص عليه في النشرة",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "ظهور DTC عند Cold Start Warm-Up مع عدم وجود مشاكل قيادة، ضمن شرط النشرة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "معايرة ECM في قائمة أرقام وحدات محددة، بشرط عدم وجود أعراض قيادة",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "عطل اشتعال حقيقي إذا كانت هناك رعشة/تراجع أداء — يستوجب ESM خارج النشرة",
+        "evidence": "engineering_hypothesis"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "تأكد أن الكود ظهر أثناء Cold Start Warm-Up، ولا توجد أي مشكلة قيادة؛ وإلا لا تطبق النشرة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "باستخدام CONSULT اقرأ رقم ECM وقارنه حصراً بجدول 23761-: 6SD4B/C/D، 6SD5B/C/D، 6SD6B/C/D، 6SD7B/C/D.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "إذا طابق، نفذ إجراء Reprogramming الخاص بالمصنع بجهد 12.0–15.5V؛ إذا لم يطابق اتبع ASIST/ESM.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "بعد التحديث استكمل IAVL وتعلم موضع الخانق ومسح الأكواد؛ حرارة التهيئة الموثقة 70–100°C مع جهد سكون دوران >12.9V.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Misfire Count",
+        "pid_ar": "عدد مرات الاشتعال المتقطع",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      },
+      {
+        "pid_en": "Engine Coolant Temperature",
+        "pid_ar": "حرارة سائل تبريد المحرك",
+        "expected": "70–100°C فقط شرط IAVL في النشرة، وليس عتبة ظهور الكود",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      },
+      {
+        "pid_en": "Battery Voltage",
+        "pid_ar": "جهد البطارية",
+        "expected": "12.0–15.5V أثناء إعادة البرمجة؛ >12.9V عند الخمول شرط IAVL",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "ECM software",
+        "location": "برمجة داخل ECM؛ رقم الوحدة المحدد في المصدر"
+      },
+      {
+        "part": "Ignition system",
+        "location": "غير محدد في النشرة؛ لا تستبدل شيئًا دون تشخيص مستقل"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+QX60+%28L51%29+%D9%85%D9%88%D8%AF%D9%8A%D9%84+2022+%D9%81%D9%82%D8%B7+%D8%B6%D9%85%D9%86+ITB22-030+P0300+diagnosis",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر",
+      "detail": "لا يجوز تحديد pinout أو مخطط دون ESM مطابق للسيارة؛ لا توجد نسخة معتمدة في هذه الدفعة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+QX60+%28L51%29+%D9%85%D9%88%D8%AF%D9%8A%D9%84+2022+%D9%81%D9%82%D8%B7+%D8%B6%D9%85%D9%86+ITB22-030+P0300+diagnosis",
+      "query": "Infiniti QX60 (L51) موديل 2022 فقط ضمن ITB22-030 P0300 diagnosis"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB22-030",
+        "date": "2022-08-15",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10218940-0001.pdf",
+        "pages": [
+          1,
+          2
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      },
+      {
+        "id": "Infiniti Factory-authorized Service Manuals - access portal",
+        "date": "accessed 2026-10-15",
+        "url": "https://www.infiniti-techinfo.com/find.aspx?dept_id=10",
+        "pages": [
+          1
+        ],
+        "evidence": "مرجع للمنهج أو لطلب نسخة ESM، لا يؤكد جميع تعريفات الأكواد"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "P0301",
+    "code_format": "5-character DTC",
+    "ecu": "ECM",
+    "definition_en": "CYL 1 MISFIRE",
+    "translation_ar": "اشتعال متقطع في الأسطوانة رقم 1",
+    "category": {
+      "family": "P",
+      "control": "عام/SAE (نطاق P0)",
+      "system": "Powertrain"
+    },
+    "applicability": {
+      "verified_scope": "QX60 (L51) موديل 2022 فقط ضمن ITB22-030 | أثناء الإحماء بعد تشغيل بارد، دون أعراض قيادة | المحرك/رقم المحرك الدقيق غير منصوص عليه في النشرة",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "ظهور DTC عند Cold Start Warm-Up مع عدم وجود مشاكل قيادة، ضمن شرط النشرة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "معايرة ECM في قائمة أرقام وحدات محددة، بشرط عدم وجود أعراض قيادة",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "عطل اشتعال حقيقي إذا كانت هناك رعشة/تراجع أداء — يستوجب ESM خارج النشرة",
+        "evidence": "engineering_hypothesis"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "تأكد أن الكود ظهر أثناء Cold Start Warm-Up، ولا توجد أي مشكلة قيادة؛ وإلا لا تطبق النشرة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "باستخدام CONSULT اقرأ رقم ECM وقارنه حصراً بجدول 23761-: 6SD4B/C/D، 6SD5B/C/D، 6SD6B/C/D، 6SD7B/C/D.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "إذا طابق، نفذ إجراء Reprogramming الخاص بالمصنع بجهد 12.0–15.5V؛ إذا لم يطابق اتبع ASIST/ESM.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "بعد التحديث استكمل IAVL وتعلم موضع الخانق ومسح الأكواد؛ حرارة التهيئة الموثقة 70–100°C مع جهد سكون دوران >12.9V.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Misfire Count Cylinder 1",
+        "pid_ar": "عدد مرات الاشتعال المتقطع",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      },
+      {
+        "pid_en": "Engine Coolant Temperature",
+        "pid_ar": "حرارة سائل تبريد المحرك",
+        "expected": "70–100°C فقط شرط IAVL في النشرة، وليس عتبة ظهور الكود",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      },
+      {
+        "pid_en": "Battery Voltage",
+        "pid_ar": "جهد البطارية",
+        "expected": "12.0–15.5V أثناء إعادة البرمجة؛ >12.9V عند الخمول شرط IAVL",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "ECM software",
+        "location": "برمجة داخل ECM؛ رقم الوحدة المحدد في المصدر"
+      },
+      {
+        "part": "Ignition system",
+        "location": "غير محدد في النشرة؛ لا تستبدل شيئًا دون تشخيص مستقل"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+QX60+%28L51%29+%D9%85%D9%88%D8%AF%D9%8A%D9%84+2022+%D9%81%D9%82%D8%B7+%D8%B6%D9%85%D9%86+ITB22-030+P0301+diagnosis",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر",
+      "detail": "لا يجوز تحديد pinout أو مخطط دون ESM مطابق للسيارة؛ لا توجد نسخة معتمدة في هذه الدفعة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+QX60+%28L51%29+%D9%85%D9%88%D8%AF%D9%8A%D9%84+2022+%D9%81%D9%82%D8%B7+%D8%B6%D9%85%D9%86+ITB22-030+P0301+diagnosis",
+      "query": "Infiniti QX60 (L51) موديل 2022 فقط ضمن ITB22-030 P0301 diagnosis"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB22-030",
+        "date": "2022-08-15",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10218940-0001.pdf",
+        "pages": [
+          1,
+          2
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      },
+      {
+        "id": "Infiniti Factory-authorized Service Manuals - access portal",
+        "date": "accessed 2026-10-15",
+        "url": "https://www.infiniti-techinfo.com/find.aspx?dept_id=10",
+        "pages": [
+          1
+        ],
+        "evidence": "مرجع للمنهج أو لطلب نسخة ESM، لا يؤكد جميع تعريفات الأكواد"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "P0302",
+    "code_format": "5-character DTC",
+    "ecu": "ECM",
+    "definition_en": "CYL 2 MISFIRE",
+    "translation_ar": "اشتعال متقطع في الأسطوانة رقم 2",
+    "category": {
+      "family": "P",
+      "control": "عام/SAE (نطاق P0)",
+      "system": "Powertrain"
+    },
+    "applicability": {
+      "verified_scope": "QX60 (L51) موديل 2022 فقط ضمن ITB22-030 | أثناء الإحماء بعد تشغيل بارد، دون أعراض قيادة | المحرك/رقم المحرك الدقيق غير منصوص عليه في النشرة",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "ظهور DTC عند Cold Start Warm-Up مع عدم وجود مشاكل قيادة، ضمن شرط النشرة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "معايرة ECM في قائمة أرقام وحدات محددة، بشرط عدم وجود أعراض قيادة",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "عطل اشتعال حقيقي إذا كانت هناك رعشة/تراجع أداء — يستوجب ESM خارج النشرة",
+        "evidence": "engineering_hypothesis"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "تأكد أن الكود ظهر أثناء Cold Start Warm-Up، ولا توجد أي مشكلة قيادة؛ وإلا لا تطبق النشرة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "باستخدام CONSULT اقرأ رقم ECM وقارنه حصراً بجدول 23761-: 6SD4B/C/D، 6SD5B/C/D، 6SD6B/C/D، 6SD7B/C/D.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "إذا طابق، نفذ إجراء Reprogramming الخاص بالمصنع بجهد 12.0–15.5V؛ إذا لم يطابق اتبع ASIST/ESM.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "بعد التحديث استكمل IAVL وتعلم موضع الخانق ومسح الأكواد؛ حرارة التهيئة الموثقة 70–100°C مع جهد سكون دوران >12.9V.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Misfire Count Cylinder 2",
+        "pid_ar": "عدد مرات الاشتعال المتقطع",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      },
+      {
+        "pid_en": "Engine Coolant Temperature",
+        "pid_ar": "حرارة سائل تبريد المحرك",
+        "expected": "70–100°C فقط شرط IAVL في النشرة، وليس عتبة ظهور الكود",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      },
+      {
+        "pid_en": "Battery Voltage",
+        "pid_ar": "جهد البطارية",
+        "expected": "12.0–15.5V أثناء إعادة البرمجة؛ >12.9V عند الخمول شرط IAVL",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "ECM software",
+        "location": "برمجة داخل ECM؛ رقم الوحدة المحدد في المصدر"
+      },
+      {
+        "part": "Ignition system",
+        "location": "غير محدد في النشرة؛ لا تستبدل شيئًا دون تشخيص مستقل"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+QX60+%28L51%29+%D9%85%D9%88%D8%AF%D9%8A%D9%84+2022+%D9%81%D9%82%D8%B7+%D8%B6%D9%85%D9%86+ITB22-030+P0302+diagnosis",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر",
+      "detail": "لا يجوز تحديد pinout أو مخطط دون ESM مطابق للسيارة؛ لا توجد نسخة معتمدة في هذه الدفعة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+QX60+%28L51%29+%D9%85%D9%88%D8%AF%D9%8A%D9%84+2022+%D9%81%D9%82%D8%B7+%D8%B6%D9%85%D9%86+ITB22-030+P0302+diagnosis",
+      "query": "Infiniti QX60 (L51) موديل 2022 فقط ضمن ITB22-030 P0302 diagnosis"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB22-030",
+        "date": "2022-08-15",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10218940-0001.pdf",
+        "pages": [
+          1,
+          2
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      },
+      {
+        "id": "Infiniti Factory-authorized Service Manuals - access portal",
+        "date": "accessed 2026-10-15",
+        "url": "https://www.infiniti-techinfo.com/find.aspx?dept_id=10",
+        "pages": [
+          1
+        ],
+        "evidence": "مرجع للمنهج أو لطلب نسخة ESM، لا يؤكد جميع تعريفات الأكواد"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "P0303",
+    "code_format": "5-character DTC",
+    "ecu": "ECM",
+    "definition_en": "CYL 3 MISFIRE",
+    "translation_ar": "اشتعال متقطع في الأسطوانة رقم 3",
+    "category": {
+      "family": "P",
+      "control": "عام/SAE (نطاق P0)",
+      "system": "Powertrain"
+    },
+    "applicability": {
+      "verified_scope": "QX60 (L51) موديل 2022 فقط ضمن ITB22-030 | أثناء الإحماء بعد تشغيل بارد، دون أعراض قيادة | المحرك/رقم المحرك الدقيق غير منصوص عليه في النشرة",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "ظهور DTC عند Cold Start Warm-Up مع عدم وجود مشاكل قيادة، ضمن شرط النشرة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "معايرة ECM في قائمة أرقام وحدات محددة، بشرط عدم وجود أعراض قيادة",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "عطل اشتعال حقيقي إذا كانت هناك رعشة/تراجع أداء — يستوجب ESM خارج النشرة",
+        "evidence": "engineering_hypothesis"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "تأكد أن الكود ظهر أثناء Cold Start Warm-Up، ولا توجد أي مشكلة قيادة؛ وإلا لا تطبق النشرة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "باستخدام CONSULT اقرأ رقم ECM وقارنه حصراً بجدول 23761-: 6SD4B/C/D، 6SD5B/C/D، 6SD6B/C/D، 6SD7B/C/D.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "إذا طابق، نفذ إجراء Reprogramming الخاص بالمصنع بجهد 12.0–15.5V؛ إذا لم يطابق اتبع ASIST/ESM.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "بعد التحديث استكمل IAVL وتعلم موضع الخانق ومسح الأكواد؛ حرارة التهيئة الموثقة 70–100°C مع جهد سكون دوران >12.9V.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Misfire Count Cylinder 3",
+        "pid_ar": "عدد مرات الاشتعال المتقطع",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      },
+      {
+        "pid_en": "Engine Coolant Temperature",
+        "pid_ar": "حرارة سائل تبريد المحرك",
+        "expected": "70–100°C فقط شرط IAVL في النشرة، وليس عتبة ظهور الكود",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      },
+      {
+        "pid_en": "Battery Voltage",
+        "pid_ar": "جهد البطارية",
+        "expected": "12.0–15.5V أثناء إعادة البرمجة؛ >12.9V عند الخمول شرط IAVL",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "ECM software",
+        "location": "برمجة داخل ECM؛ رقم الوحدة المحدد في المصدر"
+      },
+      {
+        "part": "Ignition system",
+        "location": "غير محدد في النشرة؛ لا تستبدل شيئًا دون تشخيص مستقل"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+QX60+%28L51%29+%D9%85%D9%88%D8%AF%D9%8A%D9%84+2022+%D9%81%D9%82%D8%B7+%D8%B6%D9%85%D9%86+ITB22-030+P0303+diagnosis",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر",
+      "detail": "لا يجوز تحديد pinout أو مخطط دون ESM مطابق للسيارة؛ لا توجد نسخة معتمدة في هذه الدفعة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+QX60+%28L51%29+%D9%85%D9%88%D8%AF%D9%8A%D9%84+2022+%D9%81%D9%82%D8%B7+%D8%B6%D9%85%D9%86+ITB22-030+P0303+diagnosis",
+      "query": "Infiniti QX60 (L51) موديل 2022 فقط ضمن ITB22-030 P0303 diagnosis"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB22-030",
+        "date": "2022-08-15",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10218940-0001.pdf",
+        "pages": [
+          1,
+          2
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      },
+      {
+        "id": "Infiniti Factory-authorized Service Manuals - access portal",
+        "date": "accessed 2026-10-15",
+        "url": "https://www.infiniti-techinfo.com/find.aspx?dept_id=10",
+        "pages": [
+          1
+        ],
+        "evidence": "مرجع للمنهج أو لطلب نسخة ESM، لا يؤكد جميع تعريفات الأكواد"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "P0304",
+    "code_format": "5-character DTC",
+    "ecu": "ECM",
+    "definition_en": "CYL 4 MISFIRE",
+    "translation_ar": "اشتعال متقطع في الأسطوانة رقم 4",
+    "category": {
+      "family": "P",
+      "control": "عام/SAE (نطاق P0)",
+      "system": "Powertrain"
+    },
+    "applicability": {
+      "verified_scope": "QX60 (L51) موديل 2022 فقط ضمن ITB22-030 | أثناء الإحماء بعد تشغيل بارد، دون أعراض قيادة | المحرك/رقم المحرك الدقيق غير منصوص عليه في النشرة",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "ظهور DTC عند Cold Start Warm-Up مع عدم وجود مشاكل قيادة، ضمن شرط النشرة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "معايرة ECM في قائمة أرقام وحدات محددة، بشرط عدم وجود أعراض قيادة",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "عطل اشتعال حقيقي إذا كانت هناك رعشة/تراجع أداء — يستوجب ESM خارج النشرة",
+        "evidence": "engineering_hypothesis"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "تأكد أن الكود ظهر أثناء Cold Start Warm-Up، ولا توجد أي مشكلة قيادة؛ وإلا لا تطبق النشرة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "باستخدام CONSULT اقرأ رقم ECM وقارنه حصراً بجدول 23761-: 6SD4B/C/D، 6SD5B/C/D، 6SD6B/C/D، 6SD7B/C/D.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "إذا طابق، نفذ إجراء Reprogramming الخاص بالمصنع بجهد 12.0–15.5V؛ إذا لم يطابق اتبع ASIST/ESM.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "بعد التحديث استكمل IAVL وتعلم موضع الخانق ومسح الأكواد؛ حرارة التهيئة الموثقة 70–100°C مع جهد سكون دوران >12.9V.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Misfire Count Cylinder 4",
+        "pid_ar": "عدد مرات الاشتعال المتقطع",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      },
+      {
+        "pid_en": "Engine Coolant Temperature",
+        "pid_ar": "حرارة سائل تبريد المحرك",
+        "expected": "70–100°C فقط شرط IAVL في النشرة، وليس عتبة ظهور الكود",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      },
+      {
+        "pid_en": "Battery Voltage",
+        "pid_ar": "جهد البطارية",
+        "expected": "12.0–15.5V أثناء إعادة البرمجة؛ >12.9V عند الخمول شرط IAVL",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "ECM software",
+        "location": "برمجة داخل ECM؛ رقم الوحدة المحدد في المصدر"
+      },
+      {
+        "part": "Ignition system",
+        "location": "غير محدد في النشرة؛ لا تستبدل شيئًا دون تشخيص مستقل"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+QX60+%28L51%29+%D9%85%D9%88%D8%AF%D9%8A%D9%84+2022+%D9%81%D9%82%D8%B7+%D8%B6%D9%85%D9%86+ITB22-030+P0304+diagnosis",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر",
+      "detail": "لا يجوز تحديد pinout أو مخطط دون ESM مطابق للسيارة؛ لا توجد نسخة معتمدة في هذه الدفعة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+QX60+%28L51%29+%D9%85%D9%88%D8%AF%D9%8A%D9%84+2022+%D9%81%D9%82%D8%B7+%D8%B6%D9%85%D9%86+ITB22-030+P0304+diagnosis",
+      "query": "Infiniti QX60 (L51) موديل 2022 فقط ضمن ITB22-030 P0304 diagnosis"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB22-030",
+        "date": "2022-08-15",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10218940-0001.pdf",
+        "pages": [
+          1,
+          2
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      },
+      {
+        "id": "Infiniti Factory-authorized Service Manuals - access portal",
+        "date": "accessed 2026-10-15",
+        "url": "https://www.infiniti-techinfo.com/find.aspx?dept_id=10",
+        "pages": [
+          1
+        ],
+        "evidence": "مرجع للمنهج أو لطلب نسخة ESM، لا يؤكد جميع تعريفات الأكواد"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "P0305",
+    "code_format": "5-character DTC",
+    "ecu": "ECM",
+    "definition_en": "CYL 5 MISFIRE",
+    "translation_ar": "اشتعال متقطع في الأسطوانة رقم 5",
+    "category": {
+      "family": "P",
+      "control": "عام/SAE (نطاق P0)",
+      "system": "Powertrain"
+    },
+    "applicability": {
+      "verified_scope": "QX60 (L51) موديل 2022 فقط ضمن ITB22-030 | أثناء الإحماء بعد تشغيل بارد، دون أعراض قيادة | المحرك/رقم المحرك الدقيق غير منصوص عليه في النشرة",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "ظهور DTC عند Cold Start Warm-Up مع عدم وجود مشاكل قيادة، ضمن شرط النشرة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "معايرة ECM في قائمة أرقام وحدات محددة، بشرط عدم وجود أعراض قيادة",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "عطل اشتعال حقيقي إذا كانت هناك رعشة/تراجع أداء — يستوجب ESM خارج النشرة",
+        "evidence": "engineering_hypothesis"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "تأكد أن الكود ظهر أثناء Cold Start Warm-Up، ولا توجد أي مشكلة قيادة؛ وإلا لا تطبق النشرة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "باستخدام CONSULT اقرأ رقم ECM وقارنه حصراً بجدول 23761-: 6SD4B/C/D، 6SD5B/C/D، 6SD6B/C/D، 6SD7B/C/D.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "إذا طابق، نفذ إجراء Reprogramming الخاص بالمصنع بجهد 12.0–15.5V؛ إذا لم يطابق اتبع ASIST/ESM.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "بعد التحديث استكمل IAVL وتعلم موضع الخانق ومسح الأكواد؛ حرارة التهيئة الموثقة 70–100°C مع جهد سكون دوران >12.9V.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Misfire Count Cylinder 5",
+        "pid_ar": "عدد مرات الاشتعال المتقطع",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      },
+      {
+        "pid_en": "Engine Coolant Temperature",
+        "pid_ar": "حرارة سائل تبريد المحرك",
+        "expected": "70–100°C فقط شرط IAVL في النشرة، وليس عتبة ظهور الكود",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      },
+      {
+        "pid_en": "Battery Voltage",
+        "pid_ar": "جهد البطارية",
+        "expected": "12.0–15.5V أثناء إعادة البرمجة؛ >12.9V عند الخمول شرط IAVL",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "ECM software",
+        "location": "برمجة داخل ECM؛ رقم الوحدة المحدد في المصدر"
+      },
+      {
+        "part": "Ignition system",
+        "location": "غير محدد في النشرة؛ لا تستبدل شيئًا دون تشخيص مستقل"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+QX60+%28L51%29+%D9%85%D9%88%D8%AF%D9%8A%D9%84+2022+%D9%81%D9%82%D8%B7+%D8%B6%D9%85%D9%86+ITB22-030+P0305+diagnosis",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر",
+      "detail": "لا يجوز تحديد pinout أو مخطط دون ESM مطابق للسيارة؛ لا توجد نسخة معتمدة في هذه الدفعة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+QX60+%28L51%29+%D9%85%D9%88%D8%AF%D9%8A%D9%84+2022+%D9%81%D9%82%D8%B7+%D8%B6%D9%85%D9%86+ITB22-030+P0305+diagnosis",
+      "query": "Infiniti QX60 (L51) موديل 2022 فقط ضمن ITB22-030 P0305 diagnosis"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB22-030",
+        "date": "2022-08-15",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10218940-0001.pdf",
+        "pages": [
+          1,
+          2
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      },
+      {
+        "id": "Infiniti Factory-authorized Service Manuals - access portal",
+        "date": "accessed 2026-10-15",
+        "url": "https://www.infiniti-techinfo.com/find.aspx?dept_id=10",
+        "pages": [
+          1
+        ],
+        "evidence": "مرجع للمنهج أو لطلب نسخة ESM، لا يؤكد جميع تعريفات الأكواد"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "P0306",
+    "code_format": "5-character DTC",
+    "ecu": "ECM",
+    "definition_en": "CYL 6 MISFIRE",
+    "translation_ar": "اشتعال متقطع في الأسطوانة رقم 6",
+    "category": {
+      "family": "P",
+      "control": "عام/SAE (نطاق P0)",
+      "system": "Powertrain"
+    },
+    "applicability": {
+      "verified_scope": "QX60 (L51) موديل 2022 فقط ضمن ITB22-030 | أثناء الإحماء بعد تشغيل بارد، دون أعراض قيادة | المحرك/رقم المحرك الدقيق غير منصوص عليه في النشرة",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "ظهور DTC عند Cold Start Warm-Up مع عدم وجود مشاكل قيادة، ضمن شرط النشرة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "معايرة ECM في قائمة أرقام وحدات محددة، بشرط عدم وجود أعراض قيادة",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "عطل اشتعال حقيقي إذا كانت هناك رعشة/تراجع أداء — يستوجب ESM خارج النشرة",
+        "evidence": "engineering_hypothesis"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "تأكد أن الكود ظهر أثناء Cold Start Warm-Up، ولا توجد أي مشكلة قيادة؛ وإلا لا تطبق النشرة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "باستخدام CONSULT اقرأ رقم ECM وقارنه حصراً بجدول 23761-: 6SD4B/C/D، 6SD5B/C/D، 6SD6B/C/D، 6SD7B/C/D.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "إذا طابق، نفذ إجراء Reprogramming الخاص بالمصنع بجهد 12.0–15.5V؛ إذا لم يطابق اتبع ASIST/ESM.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "بعد التحديث استكمل IAVL وتعلم موضع الخانق ومسح الأكواد؛ حرارة التهيئة الموثقة 70–100°C مع جهد سكون دوران >12.9V.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Misfire Count Cylinder 6",
+        "pid_ar": "عدد مرات الاشتعال المتقطع",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      },
+      {
+        "pid_en": "Engine Coolant Temperature",
+        "pid_ar": "حرارة سائل تبريد المحرك",
+        "expected": "70–100°C فقط شرط IAVL في النشرة، وليس عتبة ظهور الكود",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      },
+      {
+        "pid_en": "Battery Voltage",
+        "pid_ar": "جهد البطارية",
+        "expected": "12.0–15.5V أثناء إعادة البرمجة؛ >12.9V عند الخمول شرط IAVL",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "ECM software",
+        "location": "برمجة داخل ECM؛ رقم الوحدة المحدد في المصدر"
+      },
+      {
+        "part": "Ignition system",
+        "location": "غير محدد في النشرة؛ لا تستبدل شيئًا دون تشخيص مستقل"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+QX60+%28L51%29+%D9%85%D9%88%D8%AF%D9%8A%D9%84+2022+%D9%81%D9%82%D8%B7+%D8%B6%D9%85%D9%86+ITB22-030+P0306+diagnosis",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر",
+      "detail": "لا يجوز تحديد pinout أو مخطط دون ESM مطابق للسيارة؛ لا توجد نسخة معتمدة في هذه الدفعة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+QX60+%28L51%29+%D9%85%D9%88%D8%AF%D9%8A%D9%84+2022+%D9%81%D9%82%D8%B7+%D8%B6%D9%85%D9%86+ITB22-030+P0306+diagnosis",
+      "query": "Infiniti QX60 (L51) موديل 2022 فقط ضمن ITB22-030 P0306 diagnosis"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB22-030",
+        "date": "2022-08-15",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10218940-0001.pdf",
+        "pages": [
+          1,
+          2
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      },
+      {
+        "id": "Infiniti Factory-authorized Service Manuals - access portal",
+        "date": "accessed 2026-10-15",
+        "url": "https://www.infiniti-techinfo.com/find.aspx?dept_id=10",
+        "pages": [
+          1
+        ],
+        "evidence": "مرجع للمنهج أو لطلب نسخة ESM، لا يؤكد جميع تعريفات الأكواد"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "P0448",
+    "code_format": "5-character DTC",
+    "ecu": "ECM",
+    "definition_en": "Evaporative Emission System Vent Control Circuit Shorted",
+    "translation_ar": "قصر كهربائي في دائرة التحكم بتهوية نظام أبخرة الوقود EVAP",
+    "category": {
+      "family": "P",
+      "control": "عام/SAE (نطاق P0)",
+      "system": "Powertrain"
+    },
+    "applicability": {
+      "verified_scope": "Q50 VR30DDTT 2016–2017؛ Q60 VR30DDTT 2017؛ QX60 VQ35DE 2015–2016، VQ35DD 2017 (راجع جدول A) | بنزين",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "MIL ممكنة؛ تفاصيل الشكوى غير واردة في النشرة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "العطل الكهربائي/الهيدروليكي المحدد بالكود يتطلب تشخيص ESM قبل البرمجة",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "نسخة ECM قد تحتاج تحديث طريقة تخزين DTC الدائم بعد الإصلاح",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "أكد وجود الرمز وراجع Freeze Frame وDTC المصاحبة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "شخّص سبب العطل الأصلي وفق ESM؛ لا تستعمل تحديث ITB19-027 بديلاً للتشخيص.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "قارن رقم ECM بقائمة ITB19-027، ثم برمج فقط عند التطابق وبعد الإصلاح.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "للبرمجة: حافظ شحن وضع reflash، والنطاق الموثق 12.0–15.5 V.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "EVAP Vent Control",
+        "pid_ar": "التحكم بصمام تنفيس أبخرة الوقود",
+        "expected": "غير مؤكد",
+        "name_verification": "اسم العرض المقترح؛ الاسم الحرفي في CONSULT غير مؤكد"
+      }
+    ],
+    "parts": [
+      {
+        "part": "EVAP vent valve and circuit",
+        "location": "غير مؤكد حسب المحرك"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+Q50+VR30DDTT+2016%E2%80%932017%D8%9B+Q60+VR30DDTT+2017%D8%9B+QX60+VQ35DE+2015%E2%80%932016%D8%8C+VQ35DD+2017+%28%D8%B1%D8%A7%D8%AC%D8%B9+%D8%AC%D8%AF%D9%88%D9%84+A%29+P0448+diagnosis",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير متاح المصدر",
+      "detail": "لا يجوز تحديد pinout أو مخطط دون ESM مطابق للسيارة؛ لا توجد نسخة معتمدة في هذه الدفعة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+Q50+VR30DDTT+2016%E2%80%932017%D8%9B+Q60+VR30DDTT+2017%D8%9B+QX60+VQ35DE+2015%E2%80%932016%D8%8C+VQ35DD+2017+%28%D8%B1%D8%A7%D8%AC%D8%B9+%D8%AC%D8%AF%D9%88%D9%84+A%29+P0448+diagnosis",
+      "query": "Infiniti Q50 VR30DDTT 2016–2017؛ Q60 VR30DDTT 2017؛ QX60 VQ35DE 2015–2016، VQ35DD 2017 (راجع جدول A) P0448 diagnosis"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الثانية — كود مؤكد في نشرة المصنع",
+      "basis": "ليس تصنيفاً إحصائياً للشيوع"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB19-027",
+        "date": "2019-09-19",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10165756-0001.pdf",
+        "pages": [
+          1,
+          2,
+          6
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "P17F0",
+    "code_format": "5-character DTC",
+    "ecu": "TCM / Transmission",
+    "definition_en": "CVT_JUDDER (T/M INSPECTION)",
+    "translation_ar": "ارتجاج ناقل CVT — يستلزم فحص الناقل",
+    "category": {
+      "family": "P",
+      "control": "خاص بالمصنع (نطاق P1)",
+      "system": "Powertrain"
+    },
+    "applicability": {
+      "verified_scope": "JX35 (L50) 2013 بعد حدّ VIN المبيّن 5N1AL0M(*) (*)DC343902 وتاريخ 2013-03-26؛ QX60 (L50) 2014–2018 V6 | CVT | بنزين؛ نسخة المحرك الدقيقة تتطلب VIN",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "ارتجاج/اهتزاز/نتعات ناقل الحركة تحت القيادة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "نظام CVT الداخلية أو سلسلة الناقل وفق مسار الفحص المحدد بالنشرة",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "خلل وحدة الصمامات Valve Body عندما يثبت سلامة السلسلة مع P17F1",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "تأكد من شكوى ارتجاج CVT ومن تخزين الرمز داخل TCM عبر CONSULT-III plus؛ النشرة لا تنطبق إذا لم توجد الشكوى والكود.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "تحقق من كود المحرك V6 وناقل CVT وسنة الصنع؛ 2013 JX35 مقيد بتاريخ إنتاج بعد 26 مارس 2013.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "وفق مخطط ITB15-012h، إذا تأكد P17F0 والارتجاج، اتبع مسار استبدال مجموعة CVT، مع متطلبات اعتماد الإصلاح وإجراءات ESM.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "راجع رقم TCM وأجرِ إعادة البرمجة عند اللزوم قبل الخدمات الإضافية؛ تأكد من إتمام التعلم والإعدادات المنصوص عليها.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Self Diagnostic Result",
+        "pid_ar": "نتائج التشخيص الذاتي",
+        "expected": "غير مؤكد",
+        "name_verification": "شاشة CONSULT موثقة، ليست live data"
+      },
+      {
+        "pid_en": "TCM Part Number",
+        "pid_ar": "رقم وحدة TCM",
+        "expected": "غير مؤكد",
+        "name_verification": "معلومة وحدة غير لحظية؛ موثقة"
+      }
+    ],
+    "parts": [
+      {
+        "part": "CVT assembly",
+        "location": "مجموعة علبة التروس"
+      },
+      {
+        "part": "CVT control valve / valve body",
+        "location": "داخل ناقل CVT خلف حوض/وحدة التحكم الهيدروليكية وفق الرسم الأصلي"
+      },
+      {
+        "part": "CVT chain",
+        "location": "داخل CVT، يلزم فحص بالمنظار"
+      }
+    ],
+    "images": [
+      {
+        "kind": "original_manufacturer_bulletin_reference",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10167282-0001.pdf#page=6",
+        "note": "الرجوع للصفحة في PDF الأصلي، لا إعادة توزيع الرسم."
+      },
+      {
+        "kind": "original_manufacturer_bulletin_reference",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10167282-0001.pdf#page=2",
+        "note": "الرجوع للصفحة في PDF الأصلي، لا إعادة توزيع الرسم."
+      },
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+JX35+%28L50%29+2013+%D8%A8%D8%B9%D8%AF+%D8%AD%D8%AF%D9%91+VIN+%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D9%91%D9%86+5N1AL0M%28%2A%29+%28%2A%29DC343902+%D9%88%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE+2013-03-26%D8%9B+QX60+%28L50%29+2014%E2%80%932018+V6+P17F0+diagnosis",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير مطلوب لمسار الاستقصاء الموضح في ITB15-012h",
+      "detail": "مخطط الأسلاك وموصلات TCM غير متاحين؛ قبل أي اختبار كهربائي يلزم ESM مطابقة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+JX35+%28L50%29+2013+%D8%A8%D8%B9%D8%AF+%D8%AD%D8%AF%D9%91+VIN+%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D9%91%D9%86+5N1AL0M%28%2A%29+%28%2A%29DC343902+%D9%88%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE+2013-03-26%D8%9B+QX60+%28L50%29+2014%E2%80%932018+V6+P17F0+diagnosis",
+      "query": "Infiniti JX35 (L50) 2013 بعد حدّ VIN المبيّن 5N1AL0M(*) (*)DC343902 وتاريخ 2013-03-26؛ QX60 (L50) 2014–2018 V6 P17F0 diagnosis"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB15-012h",
+        "date": "2019-10-22",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10167282-0001.pdf",
+        "pages": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          23,
+          28
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      },
+      {
+        "id": "Infiniti Factory-authorized Service Manuals - access portal",
+        "date": "accessed 2026-10-15",
+        "url": "https://www.infiniti-techinfo.com/find.aspx?dept_id=10",
+        "pages": [
+          1
+        ],
+        "evidence": "مرجع للمنهج أو لطلب نسخة ESM، لا يؤكد جميع تعريفات الأكواد"
+      }
+    ],
+    "verification_status": "مكتمل"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "P17F1",
+    "code_format": "5-character DTC",
+    "ecu": "TCM / Transmission",
+    "definition_en": "CVT_JUDDER (C/U INSPECTION)",
+    "translation_ar": "ارتجاج ناقل CVT — يستلزم فحص وحدة التحكم/الصمامات",
+    "category": {
+      "family": "P",
+      "control": "خاص بالمصنع (نطاق P1)",
+      "system": "Powertrain"
+    },
+    "applicability": {
+      "verified_scope": "JX35 (L50) 2013 بعد حدّ VIN المبيّن 5N1AL0M(*) (*)DC343902 وتاريخ 2013-03-26؛ QX60 (L50) 2014–2018 V6 | CVT | بنزين؛ نسخة المحرك الدقيقة تتطلب VIN",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "ارتجاج/اهتزاز/نتعات ناقل الحركة تحت القيادة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "نظام CVT الداخلية أو سلسلة الناقل وفق مسار الفحص المحدد بالنشرة",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "خلل وحدة الصمامات Valve Body عندما يثبت سلامة السلسلة مع P17F1",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "تأكد من شكوى ارتجاج CVT ومن تخزين الرمز داخل TCM عبر CONSULT-III plus؛ النشرة لا تنطبق إذا لم توجد الشكوى والكود.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "تحقق من كود المحرك V6 وناقل CVT وسنة الصنع؛ 2013 JX35 مقيد بتاريخ إنتاج بعد 26 مارس 2013.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "استخرج وحدة Control Valve وافحص سلسلة CVT بمنظار Tech Cam J-51951 باتباع صور وخطوات النشرة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "إذا لم يظهر انزلاق/ضرر في السلسلة، اتبع مسار استبدال Valve Body؛ إذا ظهر ضرر اتبع مسار مجموعة CVT.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "راجع رقم TCM ونفذ البرمجة عند انطباقها، ثم خدمات استبدال Valve Body وتعليماته.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "Self Diagnostic Result",
+        "pid_ar": "نتائج التشخيص الذاتي",
+        "expected": "غير مؤكد",
+        "name_verification": "شاشة CONSULT موثقة، ليست live data"
+      },
+      {
+        "pid_en": "TCM Part Number",
+        "pid_ar": "رقم وحدة TCM",
+        "expected": "غير مؤكد",
+        "name_verification": "معلومة وحدة غير لحظية؛ موثقة"
+      }
+    ],
+    "parts": [
+      {
+        "part": "CVT assembly",
+        "location": "مجموعة علبة التروس"
+      },
+      {
+        "part": "CVT control valve / valve body",
+        "location": "داخل ناقل CVT خلف حوض/وحدة التحكم الهيدروليكية وفق الرسم الأصلي"
+      },
+      {
+        "part": "CVT chain",
+        "location": "داخل CVT، يلزم فحص بالمنظار"
+      }
+    ],
+    "images": [
+      {
+        "kind": "original_manufacturer_bulletin_reference",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10167282-0001.pdf#page=6",
+        "note": "الرجوع للصفحة في PDF الأصلي، لا إعادة توزيع الرسم."
+      },
+      {
+        "kind": "original_manufacturer_bulletin_reference",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10167282-0001.pdf#page=2",
+        "note": "الرجوع للصفحة في PDF الأصلي، لا إعادة توزيع الرسم."
+      },
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+JX35+%28L50%29+2013+%D8%A8%D8%B9%D8%AF+%D8%AD%D8%AF%D9%91+VIN+%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D9%91%D9%86+5N1AL0M%28%2A%29+%28%2A%29DC343902+%D9%88%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE+2013-03-26%D8%9B+QX60+%28L50%29+2014%E2%80%932018+V6+P17F1+diagnosis",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "غير مطلوب لمسار الاستقصاء الموضح في ITB15-012h",
+      "detail": "مخطط الأسلاك وموصلات TCM غير متاحين؛ قبل أي اختبار كهربائي يلزم ESM مطابقة."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+JX35+%28L50%29+2013+%D8%A8%D8%B9%D8%AF+%D8%AD%D8%AF%D9%91+VIN+%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D9%91%D9%86+5N1AL0M%28%2A%29+%28%2A%29DC343902+%D9%88%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE+2013-03-26%D8%9B+QX60+%28L50%29+2014%E2%80%932018+V6+P17F1+diagnosis",
+      "query": "Infiniti JX35 (L50) 2013 بعد حدّ VIN المبيّن 5N1AL0M(*) (*)DC343902 وتاريخ 2013-03-26؛ QX60 (L50) 2014–2018 V6 P17F1 diagnosis"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB15-012h",
+        "date": "2019-10-22",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10167282-0001.pdf",
+        "pages": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          23,
+          28
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      },
+      {
+        "id": "Infiniti Factory-authorized Service Manuals - access portal",
+        "date": "accessed 2026-10-15",
+        "url": "https://www.infiniti-techinfo.com/find.aspx?dept_id=10",
+        "pages": [
+          1
+        ],
+        "evidence": "مرجع للمنهج أو لطلب نسخة ESM، لا يؤكد جميع تعريفات الأكواد"
+      }
+    ],
+    "verification_status": "مكتمل"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "U1000",
+    "code_format": "5-character DTC",
+    "ecu": "Multiple ECUs (depends on reporter)",
+    "definition_en": "CAN communication missing / network error",
+    "translation_ar": "انقطاع رسائل شبكة CAN أو عدم وصولها",
+    "category": {
+      "family": "U",
+      "control": "خاص بالمصنع (نطاق U1)",
+      "system": "Network"
+    },
+    "applicability": {
+      "verified_scope": "سيارات Infiniti موديلات 2005–2015 حسب ITB10-029a | هندسة CAN ووحدات الإنهاء تختلف بين موديل وآخر؛ لا تعمم على السيارات الأحدث",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "تعطل اتصالات وحدات أو وظائف مرتبطة بها؛ الأعراض التفصيلية بحسب الشبكة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "تلف/انقطاع أو قصر أسلاك CAN أو ضعف تغذية/أرضي وحدة",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "انخفاض جهد البطارية أو رقم وحدة/تهيئة غير متوافق",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "عطل داخلي ECU فقط بعد استبعاد خلل الشبكة، خاصة U1010",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "اقرأ جميع DTCs مع اسم الوحدة التي أبلغت عنها وحالتها Current/Past؛ استخدم CONSULT-III plus واختر CAN Type الصحيح.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "حلل شاشة V-CAN / CAN Diag Support Monitor؛ الرمز U1000 في وحدة قد يعني مشكلة خارج الوحدة لا عطلها.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص التغذية والأرضي لكل وحدة مشكوك فيها، وجهد البطارية وحالة التهيئة والبرمجة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "إذا لم تحسم مخططات CONSULT المشكلة، افصل البطارية للقياسات المقاومة، وقارن CAN H/L في DLC Pins 6 و14: قرابة 60 Ω عبر الشبكة عند اكتمال إنهاءات المقاومة، 120 Ω عند نزع وحدة إنهاء، بشرط بنية الشبكة الموضحة بنشرة المصنع.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص CAN High وCAN Low عند تشغيل الدائرة ومقياس جهد مطابق: High نحو 2.5–3.5V وLow نحو 1.5–2.5V بحسب مخططات النشرة؛ قياس الجهد/المقاومة بشروط مختلفة لا يقارن مباشرة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "لا تبدّل ECU إلا بعد استبعاد خلل الشبكة الخارجية والتغذية والتأكد من تشخيص ما بعد مسح الأكواد.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "CAN Diag Support Monitor",
+        "pid_ar": "مراقب تشخيص شبكة CAN",
+        "expected": "غير مؤكد",
+        "name_verification": "أداة تشخيص CONSULT موثقة"
+      },
+      {
+        "pid_en": "Current/Past Communication Error",
+        "pid_ar": "خطأ اتصال حالي/سابق",
+        "expected": "غير مؤكد",
+        "name_verification": "حالات V-CAN موثقة"
+      }
+    ],
+    "parts": [
+      {
+        "part": "CAN twisted-pair harness",
+        "location": "شبكة الوحدة؛ المسار الدقيق غير موثق"
+      },
+      {
+        "part": "ECM/BCM/IPDM/TCM",
+        "location": "وحدات إنهاء الشبكة محتملة حسب الرسم، لا تفترض نفس الوحدة لكل سيارة"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+Infiniti+%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA+2005%E2%80%932015+%D8%AD%D8%B3%D8%A8+ITB10-029a+U1000+CAN+network+wiring",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "قيم CAN عامة ضمن نطاق نشرة 2005–2015 موثقة",
+      "detail": "DLC CAN High Pin 6 وCAN Low Pin 14؛ المقاومة ~60Ω، وعند طرف إنهاء مفصول ~120Ω؛ High 2.5–3.5V وLow 1.5–2.5V وفق بنية النشرة. افصل البطارية لقياس المقاومة. قد تحتوي السيارات على شبكتَي CAN؛ ESM لازمة لتحديد ECU/مقاومات الإنهاء."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+Infiniti+%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA+2005%E2%80%932015+%D8%AD%D8%B3%D8%A8+ITB10-029a+U1000+CAN+network+wiring",
+      "query": "Infiniti سيارات Infiniti موديلات 2005–2015 حسب ITB10-029a U1000 CAN network wiring"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الأولى للتفصيل — وجود نشرة مصنع وقرار تشخيص/إصلاح مهم",
+      "basis": "لا توجد بيانات كمية عن ترتيب الأعطال وانتشارها"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB10-029a",
+        "date": "2014-06-24",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2014/MC-10192396-9999.pdf",
+        "pages": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          12,
+          13
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "U1001",
+    "code_format": "5-character DTC",
+    "ecu": "ECM",
+    "definition_en": "ECM CAN communication missing (OBD-related context differs by ESM)",
+    "translation_ar": "فقدان رسائل اتصال CAN الخاصة بوحدة المحرك ECM",
+    "category": {
+      "family": "U",
+      "control": "خاص بالمصنع (نطاق U1)",
+      "system": "Network"
+    },
+    "applicability": {
+      "verified_scope": "سيارات Infiniti موديلات 2005–2015 حسب ITB10-029a | هندسة CAN ووحدات الإنهاء تختلف بين موديل وآخر؛ لا تعمم على السيارات الأحدث",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "تعطل اتصالات وحدات أو وظائف مرتبطة بها؛ الأعراض التفصيلية بحسب الشبكة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "تلف/انقطاع أو قصر أسلاك CAN أو ضعف تغذية/أرضي وحدة",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "انخفاض جهد البطارية أو رقم وحدة/تهيئة غير متوافق",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "عطل داخلي ECU فقط بعد استبعاد خلل الشبكة، خاصة U1010",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "اقرأ جميع DTCs مع اسم الوحدة التي أبلغت عنها وحالتها Current/Past؛ استخدم CONSULT-III plus واختر CAN Type الصحيح.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "حلل شاشة V-CAN / CAN Diag Support Monitor؛ الرمز U1000 في وحدة قد يعني مشكلة خارج الوحدة لا عطلها.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص التغذية والأرضي لكل وحدة مشكوك فيها، وجهد البطارية وحالة التهيئة والبرمجة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "إذا لم تحسم مخططات CONSULT المشكلة، افصل البطارية للقياسات المقاومة، وقارن CAN H/L في DLC Pins 6 و14: قرابة 60 Ω عبر الشبكة عند اكتمال إنهاءات المقاومة، 120 Ω عند نزع وحدة إنهاء، بشرط بنية الشبكة الموضحة بنشرة المصنع.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص CAN High وCAN Low عند تشغيل الدائرة ومقياس جهد مطابق: High نحو 2.5–3.5V وLow نحو 1.5–2.5V بحسب مخططات النشرة؛ قياس الجهد/المقاومة بشروط مختلفة لا يقارن مباشرة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "لا تبدّل ECU إلا بعد استبعاد خلل الشبكة الخارجية والتغذية والتأكد من تشخيص ما بعد مسح الأكواد.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "CAN Diag Support Monitor",
+        "pid_ar": "مراقب تشخيص شبكة CAN",
+        "expected": "غير مؤكد",
+        "name_verification": "أداة تشخيص CONSULT موثقة"
+      },
+      {
+        "pid_en": "Current/Past Communication Error",
+        "pid_ar": "خطأ اتصال حالي/سابق",
+        "expected": "غير مؤكد",
+        "name_verification": "حالات V-CAN موثقة"
+      }
+    ],
+    "parts": [
+      {
+        "part": "CAN twisted-pair harness",
+        "location": "شبكة الوحدة؛ المسار الدقيق غير موثق"
+      },
+      {
+        "part": "ECM/BCM/IPDM/TCM",
+        "location": "وحدات إنهاء الشبكة محتملة حسب الرسم، لا تفترض نفس الوحدة لكل سيارة"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+Infiniti+%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA+2005%E2%80%932015+%D8%AD%D8%B3%D8%A8+ITB10-029a+U1001+CAN+network+wiring",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "قيم CAN عامة ضمن نطاق نشرة 2005–2015 موثقة",
+      "detail": "DLC CAN High Pin 6 وCAN Low Pin 14؛ المقاومة ~60Ω، وعند طرف إنهاء مفصول ~120Ω؛ High 2.5–3.5V وLow 1.5–2.5V وفق بنية النشرة. افصل البطارية لقياس المقاومة. قد تحتوي السيارات على شبكتَي CAN؛ ESM لازمة لتحديد ECU/مقاومات الإنهاء."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+Infiniti+%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA+2005%E2%80%932015+%D8%AD%D8%B3%D8%A8+ITB10-029a+U1001+CAN+network+wiring",
+      "query": "Infiniti سيارات Infiniti موديلات 2005–2015 حسب ITB10-029a U1001 CAN network wiring"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الثانية — كود مؤكد في نشرة المصنع",
+      "basis": "ليس تصنيفاً إحصائياً للشيوع"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB10-029a",
+        "date": "2014-06-24",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2014/MC-10192396-9999.pdf",
+        "pages": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          12,
+          13
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "U1002",
+    "code_format": "5-character DTC",
+    "ecu": "Multiple ECUs",
+    "definition_en": "CAN communication missing with tighter monitoring threshold",
+    "translation_ar": "فقد اتصال CAN وفق معيار رصد أكثر صرامة",
+    "category": {
+      "family": "U",
+      "control": "خاص بالمصنع (نطاق U1)",
+      "system": "Network"
+    },
+    "applicability": {
+      "verified_scope": "سيارات Infiniti موديلات 2005–2015 حسب ITB10-029a | هندسة CAN ووحدات الإنهاء تختلف بين موديل وآخر؛ لا تعمم على السيارات الأحدث",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "تعطل اتصالات وحدات أو وظائف مرتبطة بها؛ الأعراض التفصيلية بحسب الشبكة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "تلف/انقطاع أو قصر أسلاك CAN أو ضعف تغذية/أرضي وحدة",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "انخفاض جهد البطارية أو رقم وحدة/تهيئة غير متوافق",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "عطل داخلي ECU فقط بعد استبعاد خلل الشبكة، خاصة U1010",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "اقرأ جميع DTCs مع اسم الوحدة التي أبلغت عنها وحالتها Current/Past؛ استخدم CONSULT-III plus واختر CAN Type الصحيح.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "حلل شاشة V-CAN / CAN Diag Support Monitor؛ الرمز U1000 في وحدة قد يعني مشكلة خارج الوحدة لا عطلها.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص التغذية والأرضي لكل وحدة مشكوك فيها، وجهد البطارية وحالة التهيئة والبرمجة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "إذا لم تحسم مخططات CONSULT المشكلة، افصل البطارية للقياسات المقاومة، وقارن CAN H/L في DLC Pins 6 و14: قرابة 60 Ω عبر الشبكة عند اكتمال إنهاءات المقاومة، 120 Ω عند نزع وحدة إنهاء، بشرط بنية الشبكة الموضحة بنشرة المصنع.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص CAN High وCAN Low عند تشغيل الدائرة ومقياس جهد مطابق: High نحو 2.5–3.5V وLow نحو 1.5–2.5V بحسب مخططات النشرة؛ قياس الجهد/المقاومة بشروط مختلفة لا يقارن مباشرة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "لا تبدّل ECU إلا بعد استبعاد خلل الشبكة الخارجية والتغذية والتأكد من تشخيص ما بعد مسح الأكواد.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "CAN Diag Support Monitor",
+        "pid_ar": "مراقب تشخيص شبكة CAN",
+        "expected": "غير مؤكد",
+        "name_verification": "أداة تشخيص CONSULT موثقة"
+      },
+      {
+        "pid_en": "Current/Past Communication Error",
+        "pid_ar": "خطأ اتصال حالي/سابق",
+        "expected": "غير مؤكد",
+        "name_verification": "حالات V-CAN موثقة"
+      }
+    ],
+    "parts": [
+      {
+        "part": "CAN twisted-pair harness",
+        "location": "شبكة الوحدة؛ المسار الدقيق غير موثق"
+      },
+      {
+        "part": "ECM/BCM/IPDM/TCM",
+        "location": "وحدات إنهاء الشبكة محتملة حسب الرسم، لا تفترض نفس الوحدة لكل سيارة"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+Infiniti+%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA+2005%E2%80%932015+%D8%AD%D8%B3%D8%A8+ITB10-029a+U1002+CAN+network+wiring",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "قيم CAN عامة ضمن نطاق نشرة 2005–2015 موثقة",
+      "detail": "DLC CAN High Pin 6 وCAN Low Pin 14؛ المقاومة ~60Ω، وعند طرف إنهاء مفصول ~120Ω؛ High 2.5–3.5V وLow 1.5–2.5V وفق بنية النشرة. افصل البطارية لقياس المقاومة. قد تحتوي السيارات على شبكتَي CAN؛ ESM لازمة لتحديد ECU/مقاومات الإنهاء."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+Infiniti+%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA+2005%E2%80%932015+%D8%AD%D8%B3%D8%A8+ITB10-029a+U1002+CAN+network+wiring",
+      "query": "Infiniti سيارات Infiniti موديلات 2005–2015 حسب ITB10-029a U1002 CAN network wiring"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الثانية — كود مؤكد في نشرة المصنع",
+      "basis": "ليس تصنيفاً إحصائياً للشيوع"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB10-029a",
+        "date": "2014-06-24",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2014/MC-10192396-9999.pdf",
+        "pages": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          12,
+          13
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  },
+  {
+    "brand": "Infiniti",
+    "code": "U1010",
+    "code_format": "5-character DTC",
+    "ecu": "ECU reporting code; TCM mentioned in bulletin",
+    "definition_en": "Module internal errors",
+    "translation_ar": "خطأ داخلي بوحدة تحكم إلكترونية",
+    "category": {
+      "family": "U",
+      "control": "خاص بالمصنع (نطاق U1)",
+      "system": "Network"
+    },
+    "applicability": {
+      "verified_scope": "سيارات Infiniti موديلات 2005–2015 حسب ITB10-029a | هندسة CAN ووحدات الإنهاء تختلف بين موديل وآخر؛ لا تعمم على السيارات الأحدث",
+      "markets": "السوق المؤكد: نشرة Infiniti لأمريكا الشمالية؛ اعتماد نفس الإجراء لأسواق أوروبا/الخليج/اليابان غير مؤكد.",
+      "other_models": "غير مؤكد؛ لا تعمم النشرة خارج النطاق."
+    },
+    "symptoms": [
+      "تعطل اتصالات وحدات أو وظائف مرتبطة بها؛ الأعراض التفصيلية بحسب الشبكة"
+    ],
+    "causes": [
+      {
+        "cause_ar": "تلف/انقطاع أو قصر أسلاك CAN أو ضعف تغذية/أرضي وحدة",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "انخفاض جهد البطارية أو رقم وحدة/تهيئة غير متوافق",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "cause_ar": "عطل داخلي ECU فقط بعد استبعاد خلل الشبكة، خاصة U1010",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "diagnostic_steps": [
+      {
+        "instruction_ar": "اقرأ جميع DTCs مع اسم الوحدة التي أبلغت عنها وحالتها Current/Past؛ استخدم CONSULT-III plus واختر CAN Type الصحيح.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "حلل شاشة V-CAN / CAN Diag Support Monitor؛ الرمز U1000 في وحدة قد يعني مشكلة خارج الوحدة لا عطلها.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص التغذية والأرضي لكل وحدة مشكوك فيها، وجهد البطارية وحالة التهيئة والبرمجة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "إذا لم تحسم مخططات CONSULT المشكلة، افصل البطارية للقياسات المقاومة، وقارن CAN H/L في DLC Pins 6 و14: قرابة 60 Ω عبر الشبكة عند اكتمال إنهاءات المقاومة، 120 Ω عند نزع وحدة إنهاء، بشرط بنية الشبكة الموضحة بنشرة المصنع.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "افحص CAN High وCAN Low عند تشغيل الدائرة ومقياس جهد مطابق: High نحو 2.5–3.5V وLow نحو 1.5–2.5V بحسب مخططات النشرة؛ قياس الجهد/المقاومة بشروط مختلفة لا يقارن مباشرة.",
+        "evidence": "factory_bulletin"
+      },
+      {
+        "instruction_ar": "لا تبدّل ECU إلا بعد استبعاد خلل الشبكة الخارجية والتغذية والتأكد من تشخيص ما بعد مسح الأكواد.",
+        "evidence": "factory_bulletin"
+      }
+    ],
+    "live_data": [
+      {
+        "pid_en": "CAN Diag Support Monitor",
+        "pid_ar": "مراقب تشخيص شبكة CAN",
+        "expected": "غير مؤكد",
+        "name_verification": "أداة تشخيص CONSULT موثقة"
+      },
+      {
+        "pid_en": "Current/Past Communication Error",
+        "pid_ar": "خطأ اتصال حالي/سابق",
+        "expected": "غير مؤكد",
+        "name_verification": "حالات V-CAN موثقة"
+      }
+    ],
+    "parts": [
+      {
+        "part": "CAN twisted-pair harness",
+        "location": "شبكة الوحدة؛ المسار الدقيق غير موثق"
+      },
+      {
+        "part": "ECM/BCM/IPDM/TCM",
+        "location": "وحدات إنهاء الشبكة محتملة حسب الرسم، لا تفترض نفس الوحدة لكل سيارة"
+      }
+    ],
+    "images": [
+      {
+        "kind": "reference_search_only",
+        "url": "https://www.google.com/search?tbm=isch&q=Infiniti+%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+Infiniti+%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA+2005%E2%80%932015+%D8%AD%D8%B3%D8%A8+ITB10-029a+U1010+CAN+network+wiring",
+        "note": "رابط بحث صور، لا توجد صورة معتمدة مدمجة؛ تحقق من نفس الموديل/المحرك."
+      }
+    ],
+    "wiring": {
+      "status": "قيم CAN عامة ضمن نطاق نشرة 2005–2015 موثقة",
+      "detail": "DLC CAN High Pin 6 وCAN Low Pin 14؛ المقاومة ~60Ω، وعند طرف إنهاء مفصول ~120Ω؛ High 2.5–3.5V وLow 1.5–2.5V وفق بنية النشرة. افصل البطارية لقياس المقاومة. قد تحتوي السيارات على شبكتَي CAN؛ ESM لازمة لتحديد ECU/مقاومات الإنهاء."
+    },
+    "video": {
+      "type": "YouTube search, not vetted instructional video",
+      "url": "https://www.youtube.com/results?search_query=Infiniti+%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA+Infiniti+%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA+2005%E2%80%932015+%D8%AD%D8%B3%D8%A8+ITB10-029a+U1010+CAN+network+wiring",
+      "query": "Infiniti سيارات Infiniti موديلات 2005–2015 حسب ITB10-029a U1010 CAN network wiring"
+    },
+    "priority_evidence": {
+      "class": "الأولوية الثانية — كود مؤكد في نشرة المصنع",
+      "basis": "ليس تصنيفاً إحصائياً للشيوع"
+    },
+    "sources": [
+      {
+        "id": "Infiniti ITB10-029a",
+        "date": "2014-06-24",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2014/MC-10192396-9999.pdf",
+        "pages": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          12,
+          13
+        ],
+        "evidence": "وثيقة أصلية/مرجع معياري؛ تمت مراجعة النص والصفحات"
+      }
+    ],
+    "verification_status": "قيد التوثيق"
+  }
+]
