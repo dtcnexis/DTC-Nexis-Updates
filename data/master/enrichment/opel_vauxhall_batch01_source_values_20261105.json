@@ -1,0 +1,1030 @@
+{
+  "schema": "dtcnexis-source-value-preservation-v1",
+  "source": {
+    "filename": "opel_vauxhall_dtc_batch01.json",
+    "library_file_id": "libfile_1a09047c28d0819183489774c6d2cd67",
+    "version_id": "1",
+    "reported_original_size_bytes": 131082,
+    "complete_text_lines_read": 1014,
+    "raw_original_sha256": null,
+    "raw_original_bytes_materialized": false,
+    "preservation": "All JSON record values retained, with original top-level metadata kept separately; generated semantic export, not original file recreation"
+  },
+  "counts_towards_unique_ledger": false,
+  "additional_counted_rows": 0,
+  "full_technical_approval": false,
+  "records": [
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P2453 (5A)",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "ECM / diesel engine ECU",
+      "definition_en": "Diesel Particulate Filter Differential Pressure Sensor Circuit Range/Performance [base-code descriptor; suffix meaning not confirmed]",
+      "translation_ar": "أداء/معقولية دائرة حساس فرق ضغط فلتر جسيمات الديزل؛ معنى اللاحقة 5A غير مؤكد",
+      "category": "P",
+      "applicability": "Astra J MY2010 A20DTH VIN A?000001–A?129026؛ Insignia MY2009–2011 A20DTC/A20DTH/A20DTJ VIN 91000362–B1219369؛ GM Legacy؛ ديزل؛ الأسواق غير محددة في النشرة",
+      "symptoms": "ظهور Check DPF أو Service Vehicle Soon؛ تخزين P2453 (5A)",
+      "causes": "1) تسرب/انفصال خرطوم بمنظومة الشحن أو مشبك مرتخٍ، أو خلل بحساس حرارة العادم: ذكرت في TSB؛ 2) سبب جذري نهائي: قيد التحقيق وفق نشرة المصنع، لا يُنسب لحساس فرق الضغط دون فحص",
+      "diagnostic_steps": "[مصنع TSB2684] افحص خراطيم الشحن ومشابكها وحساسات حرارة العادم؛ لا تبدل قطعاً سليمة؛ استخدم GDS لإجراء reset لـ DPF sensor إن لزم لمسح الكود؛ راجع توفر تحديث معايرة TIS2Web لنفس VIN. [استنتاج فني] راقب منطق فرق ضغط DPF في KOEO والخمول مع تغير الحمل، وافحص خراطيم الحساس وتوصيلاته قبل الحكم عليه؛ القيم العددية غير مؤكدة.",
+      "live_data": "DPF Differential Pressure (فرق ضغط فلتر الجسيمات)؛ Exhaust Gas Temperature (حرارة غاز العادم)؛ Boost Pressure Actual (ضغط الشحن الفعلي)؛ Boost Pressure Desired (الضغط المطلوب)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "خراطيم الشحن؛ حساس فرق ضغط DPF ومواسيره؛ حساسات حرارة العادم؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Astra%20J%20MY2010%20A20DTH%20VIN%20A%3F000001%E2%80%93A%3F129026%20P2453%20%D8%AE%D8%B1%D8%A7%D8%B7%D9%8A%D9%85%20%D8%A7%D9%84%D8%B4%D8%AD%D9%86",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Astra%20J%20MY2010%20A20DTH%20VIN%20A%3F000001%E2%80%93A%3F129026%20P2453%20%D8%AE%D8%B1%D8%A7%D8%B7%D9%8A%D9%85%20%D8%A7%D9%84%D8%B4%D8%AD%D9%86%20diagnosis%20repair",
+      "priority_evidence": "نشرة خدمة أصلية محددة بطراز/محرك/VIN؛ ليست إحصاء انتشار",
+      "sources": [
+        {
+          "publisher": "Adam Opel AG",
+          "version_date": "Technical Service Bulletin 2684, ©2010; archived PDF",
+          "url": "https://vxoc.org.uk/Images/vxoc%20astra-j-gtc/Tech%20data/TSB%27s/2684%209-7-12%20Engine%20A20DTx%20-%20Check%20DPF%20or%20SVS%20on%2C%20DTC%20P2453%20%285A%29%20in%20ECU%20set..pdf",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "publisher": "SAE",
+          "version_date": "J2012_202509",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P037E",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "ECM / glow control + UEC (actual storing ECU must be identified)",
+      "definition_en": "Glow plug sensing / control system DTC — OEM description not verified",
+      "translation_ar": "خلل في نظام مراقبة/تحكم شمعات التسخين؛ التعريف النصي الرسمي غير مؤكد",
+      "category": "P",
+      "applicability": "Astra J 2010–2011؛ منشور Field Remedy 2771؛ P0383(00) على الديزل؛ P037E نوع المحرك المتأثر يحتاج تثبيت؛ GM Legacy",
+      "symptoms": "قد يصاحب فقدان دعم التوجيه بشكل متقطع؛ علاقة العرض بالكود مباشرة غير مؤكدة",
+      "causes": "ارتخاء أو فقدان اتصال في مسار فيوز التغذية 80A بصندوق UEC؛ بقية أسباب الكود العامة تحتاج دليل ECU",
+      "diagnostic_steps": "[مصنع Field Remedy 2771] افحص اتصال فيوز 80A في صندوق الفيوزات الأولي بحجرة المحرك ومكان تركيب أطراف الكابل؛ في حالة الشكوى المطابقة تُركّب الغسالة وغسالة القفل المسننة حسب ترتيب النشرة؛ عزم التثبيت الأقصى بالنشرة 4.7 Nm فقط لهذه الوصلة المحددة؛ راجع VIN وتحديث الإنتاج. [استنتاج] اختبر فرق الجهد تحت الحمل ولا تستبدل شمعات التسخين أو وحدة التحكم بلا إثبات.",
+      "live_data": "Ignition Voltage (جهد الإشعال)؛ Control Module Supply Voltage (جهد تغذية وحدة التحكم)؛ Glow Plug Command (أمر التسخين إن توفر)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "علبة الفيوزات UEC في حجرة المحرك؛ فيوز وصلة 80A؛ وحدة شمعات التسخين؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Astra%20J%202010%E2%80%932011%20P037E%20%D8%B9%D9%84%D8%A8%D8%A9%20%D8%A7%D9%84%D9%81%D9%8A%D9%88%D8%B2%D8%A7%D8%AA%20UEC%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Astra%20J%202010%E2%80%932011%20P037E%20%D8%B9%D9%84%D8%A8%D8%A9%20%D8%A7%D9%84%D9%81%D9%8A%D9%88%D8%B2%D8%A7%D8%AA%20UEC%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83%20diagnosis%20repair",
+      "priority_evidence": "إجراء إصلاح مصنع مرقم 2771؛ لا يشير إلى معدل حدوث",
+      "sources": [
+        {
+          "publisher": "Adam Opel AG",
+          "version_date": "Field Remedy 2771, ©2010; archived PDF",
+          "url": "https://vxoc.org.uk/Images/vxoc%20astra-j-gtc/Tech%20data/TSB%27s/2771%205-6-11%20Pre%20Fuse%20Box%20%28UEC%29%20-%20Loose%20connection%2C%20P037E%20and%20or%20P0383%2800%29%20set.pdf",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P0383(00)",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "ECM / glow control + UEC (actual storing ECU must be identified)",
+      "definition_en": "Glow Plug Control Module Control Circuit Low [generic descriptor; OEM suffix unverified]",
+      "translation_ar": "انخفاض إشارة دائرة التحكم بوحدة شمعات التسخين؛ معنى 00 غير مؤكد",
+      "category": "P",
+      "applicability": "Astra J 2010–2011؛ منشور Field Remedy 2771؛ P0383(00) على الديزل؛ P037E نوع المحرك المتأثر يحتاج تثبيت؛ GM Legacy",
+      "symptoms": "خلل في وحدة التحكم بشمعات التسخين على محركات الديزل؛ قد يصاحب فقدان مساعدة التوجيه وفق النشرة",
+      "causes": "ارتخاء أو فقدان اتصال في مسار فيوز التغذية 80A بصندوق UEC؛ بقية أسباب الكود العامة تحتاج دليل ECU",
+      "diagnostic_steps": "[مصنع Field Remedy 2771] افحص اتصال فيوز 80A في صندوق الفيوزات الأولي بحجرة المحرك ومكان تركيب أطراف الكابل؛ في حالة الشكوى المطابقة تُركّب الغسالة وغسالة القفل المسننة حسب ترتيب النشرة؛ عزم التثبيت الأقصى بالنشرة 4.7 Nm فقط لهذه الوصلة المحددة؛ راجع VIN وتحديث الإنتاج. [استنتاج] اختبر فرق الجهد تحت الحمل ولا تستبدل شمعات التسخين أو وحدة التحكم بلا إثبات.",
+      "live_data": "Ignition Voltage (جهد الإشعال)؛ Control Module Supply Voltage (جهد تغذية وحدة التحكم)؛ Glow Plug Command (أمر التسخين إن توفر)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "علبة الفيوزات UEC في حجرة المحرك؛ فيوز وصلة 80A؛ وحدة شمعات التسخين؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Astra%20J%202010%E2%80%932011%20P0383%2800%29%20%D8%B9%D9%84%D8%A8%D8%A9%20%D8%A7%D9%84%D9%81%D9%8A%D9%88%D8%B2%D8%A7%D8%AA%20UEC%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Astra%20J%202010%E2%80%932011%20P0383%2800%29%20%D8%B9%D9%84%D8%A8%D8%A9%20%D8%A7%D9%84%D9%81%D9%8A%D9%88%D8%B2%D8%A7%D8%AA%20UEC%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83%20diagnosis%20repair",
+      "priority_evidence": "إجراء إصلاح مصنع مرقم 2771؛ لا يشير إلى معدل حدوث",
+      "sources": [
+        {
+          "publisher": "Adam Opel AG",
+          "version_date": "Field Remedy 2771, ©2010; archived PDF",
+          "url": "https://vxoc.org.uk/Images/vxoc%20astra-j-gtc/Tech%20data/TSB%27s/2771%205-6-11%20Pre%20Fuse%20Box%20%28UEC%29%20-%20Loose%20connection%2C%20P037E%20and%20or%20P0383%2800%29%20set.pdf",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P0171",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "ECM",
+      "definition_en": "System Too Lean (Bank 1)",
+      "translation_ar": "خليط الوقود/الهواء فقير أكثر من المطلوب، الصف الأول",
+      "category": "P",
+      "applicability": "موديلات Opel المختلفة المزودة بمحرك Z16XEP بنزين؛ السنوات/الأسواق والطرازات الدقيقة: غير مؤكدة",
+      "symptoms": "ضعف قدرة المحرك؛ إضاءة لمبة المحرك على فترات؛ الأكواد قد تظهر منفردة أو مجتمعة",
+      "causes": "انسداد قنوات EGR في مجمع السحب (سبب حالة HELLA)؛ حالة صمام EGR ومحيطه يجب استبعادها أولاً؛ أعطال الإشعال/التسريب/الوقود احتمالات تشخيصية تحتاج تحقق",
+      "diagnostic_steps": "[HELLA] افحص محيط نظام EGR لاستبعاد الصمام ومشكلات أخرى؛ اقرأ جميع الأكواد ثم نظف مجاري EGR في مجمع السحب حسب تعليمات المصنع بعد تأكيد الانسداد؛ أعد التجميع وامسح الأكواد ثم اختبر بقيادة السيارة. [استنتاج] للأكواد P030x راجع عدادات misfire لكل أسطوانة ونظام الإشعال/الضغط؛ لـP0171 راجع الوقود والهواء والتسريب قبل تبديل القطع.",
+      "live_data": "EGR Command / Feedback (أمر EGR/التغذية الراجعة إن توافرا)؛ Misfire Counter Cylinder 1–4 (عداد اختلال الاشتعال)؛ Short/Long Term Fuel Trim (تصحيحات الوقود)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "قنوات EGR داخل مجمع السحب؛ صمام EGR؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%20Opel%20%D8%A7%D9%84%D9%85%D8%AE%D8%AA%D9%84%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%88%D8%AF%D8%A9%20%D8%A8%D9%85%D8%AD%D8%B1%D9%83%20Z16XEP%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20P0171%20%D9%82%D9%86%D9%88%D8%A7%D8%AA%20EGR%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%85%D8%AC%D9%85%D8%B9%20%D8%A7%D9%84%D8%B3%D8%AD%D8%A8",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%20Opel%20%D8%A7%D9%84%D9%85%D8%AE%D8%AA%D9%84%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%88%D8%AF%D8%A9%20%D8%A8%D9%85%D8%AD%D8%B1%D9%83%20Z16XEP%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20P0171%20%D9%82%D9%86%D9%88%D8%A7%D8%AA%20EGR%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%85%D8%AC%D9%85%D8%B9%20%D8%A7%D9%84%D8%B3%D8%AD%D8%A8%20diagnosis%20repair",
+      "priority_evidence": "حالة إصلاح فنية متعددة الأكواد لمحرك Z16XEP؛ ليست إحصاء وقوع",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Opel various models / Z16XEP; date unspecified",
+          "url": "https://www.hella.com/techworld/en/ti/opel-various-models-insufficient-engine-power/",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "publisher": "SAE",
+          "version_date": "J2012_202509",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P0300",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "ECM",
+      "definition_en": "Random/Multiple Cylinder Misfire Detected",
+      "translation_ar": "اكتشاف اختلال احتراق عشوائي أو في عدة أسطوانات",
+      "category": "P",
+      "applicability": "موديلات Opel المختلفة المزودة بمحرك Z16XEP بنزين؛ السنوات/الأسواق والطرازات الدقيقة: غير مؤكدة",
+      "symptoms": "ضعف قدرة المحرك؛ إضاءة لمبة المحرك على فترات؛ الأكواد قد تظهر منفردة أو مجتمعة",
+      "causes": "انسداد قنوات EGR في مجمع السحب (سبب حالة HELLA)؛ حالة صمام EGR ومحيطه يجب استبعادها أولاً؛ أعطال الإشعال/التسريب/الوقود احتمالات تشخيصية تحتاج تحقق",
+      "diagnostic_steps": "[HELLA] افحص محيط نظام EGR لاستبعاد الصمام ومشكلات أخرى؛ اقرأ جميع الأكواد ثم نظف مجاري EGR في مجمع السحب حسب تعليمات المصنع بعد تأكيد الانسداد؛ أعد التجميع وامسح الأكواد ثم اختبر بقيادة السيارة. [استنتاج] للأكواد P030x راجع عدادات misfire لكل أسطوانة ونظام الإشعال/الضغط؛ لـP0171 راجع الوقود والهواء والتسريب قبل تبديل القطع.",
+      "live_data": "EGR Command / Feedback (أمر EGR/التغذية الراجعة إن توافرا)؛ Misfire Counter Cylinder 1–4 (عداد اختلال الاشتعال)؛ Short/Long Term Fuel Trim (تصحيحات الوقود)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "قنوات EGR داخل مجمع السحب؛ صمام EGR؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%20Opel%20%D8%A7%D9%84%D9%85%D8%AE%D8%AA%D9%84%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%88%D8%AF%D8%A9%20%D8%A8%D9%85%D8%AD%D8%B1%D9%83%20Z16XEP%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20P0300%20%D9%82%D9%86%D9%88%D8%A7%D8%AA%20EGR%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%85%D8%AC%D9%85%D8%B9%20%D8%A7%D9%84%D8%B3%D8%AD%D8%A8",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%20Opel%20%D8%A7%D9%84%D9%85%D8%AE%D8%AA%D9%84%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%88%D8%AF%D8%A9%20%D8%A8%D9%85%D8%AD%D8%B1%D9%83%20Z16XEP%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20P0300%20%D9%82%D9%86%D9%88%D8%A7%D8%AA%20EGR%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%85%D8%AC%D9%85%D8%B9%20%D8%A7%D9%84%D8%B3%D8%AD%D8%A8%20diagnosis%20repair",
+      "priority_evidence": "حالة إصلاح فنية متعددة الأكواد لمحرك Z16XEP؛ ليست إحصاء وقوع",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Opel various models / Z16XEP; date unspecified",
+          "url": "https://www.hella.com/techworld/en/ti/opel-various-models-insufficient-engine-power/",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "publisher": "SAE",
+          "version_date": "J2012_202509",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P0301",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "ECM",
+      "definition_en": "Cylinder 1 Misfire Detected",
+      "translation_ar": "اختلال احتراق الأسطوانة 1",
+      "category": "P",
+      "applicability": "موديلات Opel المختلفة المزودة بمحرك Z16XEP بنزين؛ السنوات/الأسواق والطرازات الدقيقة: غير مؤكدة",
+      "symptoms": "ضعف قدرة المحرك؛ إضاءة لمبة المحرك على فترات؛ الأكواد قد تظهر منفردة أو مجتمعة",
+      "causes": "انسداد قنوات EGR في مجمع السحب (سبب حالة HELLA)؛ حالة صمام EGR ومحيطه يجب استبعادها أولاً؛ أعطال الإشعال/التسريب/الوقود احتمالات تشخيصية تحتاج تحقق",
+      "diagnostic_steps": "[HELLA] افحص محيط نظام EGR لاستبعاد الصمام ومشكلات أخرى؛ اقرأ جميع الأكواد ثم نظف مجاري EGR في مجمع السحب حسب تعليمات المصنع بعد تأكيد الانسداد؛ أعد التجميع وامسح الأكواد ثم اختبر بقيادة السيارة. [استنتاج] للأكواد P030x راجع عدادات misfire لكل أسطوانة ونظام الإشعال/الضغط؛ لـP0171 راجع الوقود والهواء والتسريب قبل تبديل القطع.",
+      "live_data": "EGR Command / Feedback (أمر EGR/التغذية الراجعة إن توافرا)؛ Misfire Counter Cylinder 1–4 (عداد اختلال الاشتعال)؛ Short/Long Term Fuel Trim (تصحيحات الوقود)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "قنوات EGR داخل مجمع السحب؛ صمام EGR؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%20Opel%20%D8%A7%D9%84%D9%85%D8%AE%D8%AA%D9%84%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%88%D8%AF%D8%A9%20%D8%A8%D9%85%D8%AD%D8%B1%D9%83%20Z16XEP%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20P0301%20%D9%82%D9%86%D9%88%D8%A7%D8%AA%20EGR%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%85%D8%AC%D9%85%D8%B9%20%D8%A7%D9%84%D8%B3%D8%AD%D8%A8",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%20Opel%20%D8%A7%D9%84%D9%85%D8%AE%D8%AA%D9%84%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%88%D8%AF%D8%A9%20%D8%A8%D9%85%D8%AD%D8%B1%D9%83%20Z16XEP%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20P0301%20%D9%82%D9%86%D9%88%D8%A7%D8%AA%20EGR%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%85%D8%AC%D9%85%D8%B9%20%D8%A7%D9%84%D8%B3%D8%AD%D8%A8%20diagnosis%20repair",
+      "priority_evidence": "حالة إصلاح فنية متعددة الأكواد لمحرك Z16XEP؛ ليست إحصاء وقوع",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Opel various models / Z16XEP; date unspecified",
+          "url": "https://www.hella.com/techworld/en/ti/opel-various-models-insufficient-engine-power/",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "publisher": "SAE",
+          "version_date": "J2012_202509",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P0302",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "ECM",
+      "definition_en": "Cylinder 2 Misfire Detected",
+      "translation_ar": "اختلال احتراق الأسطوانة 2",
+      "category": "P",
+      "applicability": "موديلات Opel المختلفة المزودة بمحرك Z16XEP بنزين؛ السنوات/الأسواق والطرازات الدقيقة: غير مؤكدة",
+      "symptoms": "ضعف قدرة المحرك؛ إضاءة لمبة المحرك على فترات؛ الأكواد قد تظهر منفردة أو مجتمعة",
+      "causes": "انسداد قنوات EGR في مجمع السحب (سبب حالة HELLA)؛ حالة صمام EGR ومحيطه يجب استبعادها أولاً؛ أعطال الإشعال/التسريب/الوقود احتمالات تشخيصية تحتاج تحقق",
+      "diagnostic_steps": "[HELLA] افحص محيط نظام EGR لاستبعاد الصمام ومشكلات أخرى؛ اقرأ جميع الأكواد ثم نظف مجاري EGR في مجمع السحب حسب تعليمات المصنع بعد تأكيد الانسداد؛ أعد التجميع وامسح الأكواد ثم اختبر بقيادة السيارة. [استنتاج] للأكواد P030x راجع عدادات misfire لكل أسطوانة ونظام الإشعال/الضغط؛ لـP0171 راجع الوقود والهواء والتسريب قبل تبديل القطع.",
+      "live_data": "EGR Command / Feedback (أمر EGR/التغذية الراجعة إن توافرا)؛ Misfire Counter Cylinder 1–4 (عداد اختلال الاشتعال)؛ Short/Long Term Fuel Trim (تصحيحات الوقود)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "قنوات EGR داخل مجمع السحب؛ صمام EGR؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%20Opel%20%D8%A7%D9%84%D9%85%D8%AE%D8%AA%D9%84%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%88%D8%AF%D8%A9%20%D8%A8%D9%85%D8%AD%D8%B1%D9%83%20Z16XEP%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20P0302%20%D9%82%D9%86%D9%88%D8%A7%D8%AA%20EGR%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%85%D8%AC%D9%85%D8%B9%20%D8%A7%D9%84%D8%B3%D8%AD%D8%A8",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%20Opel%20%D8%A7%D9%84%D9%85%D8%AE%D8%AA%D9%84%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%88%D8%AF%D8%A9%20%D8%A8%D9%85%D8%AD%D8%B1%D9%83%20Z16XEP%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20P0302%20%D9%82%D9%86%D9%88%D8%A7%D8%AA%20EGR%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%85%D8%AC%D9%85%D8%B9%20%D8%A7%D9%84%D8%B3%D8%AD%D8%A8%20diagnosis%20repair",
+      "priority_evidence": "حالة إصلاح فنية متعددة الأكواد لمحرك Z16XEP؛ ليست إحصاء وقوع",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Opel various models / Z16XEP; date unspecified",
+          "url": "https://www.hella.com/techworld/en/ti/opel-various-models-insufficient-engine-power/",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "publisher": "SAE",
+          "version_date": "J2012_202509",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P0303",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "ECM",
+      "definition_en": "Cylinder 3 Misfire Detected",
+      "translation_ar": "اختلال احتراق الأسطوانة 3",
+      "category": "P",
+      "applicability": "موديلات Opel المختلفة المزودة بمحرك Z16XEP بنزين؛ السنوات/الأسواق والطرازات الدقيقة: غير مؤكدة",
+      "symptoms": "ضعف قدرة المحرك؛ إضاءة لمبة المحرك على فترات؛ الأكواد قد تظهر منفردة أو مجتمعة",
+      "causes": "انسداد قنوات EGR في مجمع السحب (سبب حالة HELLA)؛ حالة صمام EGR ومحيطه يجب استبعادها أولاً؛ أعطال الإشعال/التسريب/الوقود احتمالات تشخيصية تحتاج تحقق",
+      "diagnostic_steps": "[HELLA] افحص محيط نظام EGR لاستبعاد الصمام ومشكلات أخرى؛ اقرأ جميع الأكواد ثم نظف مجاري EGR في مجمع السحب حسب تعليمات المصنع بعد تأكيد الانسداد؛ أعد التجميع وامسح الأكواد ثم اختبر بقيادة السيارة. [استنتاج] للأكواد P030x راجع عدادات misfire لكل أسطوانة ونظام الإشعال/الضغط؛ لـP0171 راجع الوقود والهواء والتسريب قبل تبديل القطع.",
+      "live_data": "EGR Command / Feedback (أمر EGR/التغذية الراجعة إن توافرا)؛ Misfire Counter Cylinder 1–4 (عداد اختلال الاشتعال)؛ Short/Long Term Fuel Trim (تصحيحات الوقود)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "قنوات EGR داخل مجمع السحب؛ صمام EGR؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%20Opel%20%D8%A7%D9%84%D9%85%D8%AE%D8%AA%D9%84%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%88%D8%AF%D8%A9%20%D8%A8%D9%85%D8%AD%D8%B1%D9%83%20Z16XEP%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20P0303%20%D9%82%D9%86%D9%88%D8%A7%D8%AA%20EGR%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%85%D8%AC%D9%85%D8%B9%20%D8%A7%D9%84%D8%B3%D8%AD%D8%A8",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%20Opel%20%D8%A7%D9%84%D9%85%D8%AE%D8%AA%D9%84%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%88%D8%AF%D8%A9%20%D8%A8%D9%85%D8%AD%D8%B1%D9%83%20Z16XEP%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20P0303%20%D9%82%D9%86%D9%88%D8%A7%D8%AA%20EGR%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%85%D8%AC%D9%85%D8%B9%20%D8%A7%D9%84%D8%B3%D8%AD%D8%A8%20diagnosis%20repair",
+      "priority_evidence": "حالة إصلاح فنية متعددة الأكواد لمحرك Z16XEP؛ ليست إحصاء وقوع",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Opel various models / Z16XEP; date unspecified",
+          "url": "https://www.hella.com/techworld/en/ti/opel-various-models-insufficient-engine-power/",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "publisher": "SAE",
+          "version_date": "J2012_202509",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P0304",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "ECM",
+      "definition_en": "Cylinder 4 Misfire Detected",
+      "translation_ar": "اختلال احتراق الأسطوانة 4",
+      "category": "P",
+      "applicability": "موديلات Opel المختلفة المزودة بمحرك Z16XEP بنزين؛ السنوات/الأسواق والطرازات الدقيقة: غير مؤكدة",
+      "symptoms": "ضعف قدرة المحرك؛ إضاءة لمبة المحرك على فترات؛ الأكواد قد تظهر منفردة أو مجتمعة",
+      "causes": "انسداد قنوات EGR في مجمع السحب (سبب حالة HELLA)؛ حالة صمام EGR ومحيطه يجب استبعادها أولاً؛ أعطال الإشعال/التسريب/الوقود احتمالات تشخيصية تحتاج تحقق",
+      "diagnostic_steps": "[HELLA] افحص محيط نظام EGR لاستبعاد الصمام ومشكلات أخرى؛ اقرأ جميع الأكواد ثم نظف مجاري EGR في مجمع السحب حسب تعليمات المصنع بعد تأكيد الانسداد؛ أعد التجميع وامسح الأكواد ثم اختبر بقيادة السيارة. [استنتاج] للأكواد P030x راجع عدادات misfire لكل أسطوانة ونظام الإشعال/الضغط؛ لـP0171 راجع الوقود والهواء والتسريب قبل تبديل القطع.",
+      "live_data": "EGR Command / Feedback (أمر EGR/التغذية الراجعة إن توافرا)؛ Misfire Counter Cylinder 1–4 (عداد اختلال الاشتعال)؛ Short/Long Term Fuel Trim (تصحيحات الوقود)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "قنوات EGR داخل مجمع السحب؛ صمام EGR؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%20Opel%20%D8%A7%D9%84%D9%85%D8%AE%D8%AA%D9%84%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%88%D8%AF%D8%A9%20%D8%A8%D9%85%D8%AD%D8%B1%D9%83%20Z16XEP%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20P0304%20%D9%82%D9%86%D9%88%D8%A7%D8%AA%20EGR%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%85%D8%AC%D9%85%D8%B9%20%D8%A7%D9%84%D8%B3%D8%AD%D8%A8",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%20Opel%20%D8%A7%D9%84%D9%85%D8%AE%D8%AA%D9%84%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%88%D8%AF%D8%A9%20%D8%A8%D9%85%D8%AD%D8%B1%D9%83%20Z16XEP%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20P0304%20%D9%82%D9%86%D9%88%D8%A7%D8%AA%20EGR%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%85%D8%AC%D9%85%D8%B9%20%D8%A7%D9%84%D8%B3%D8%AD%D8%A8%20diagnosis%20repair",
+      "priority_evidence": "حالة إصلاح فنية متعددة الأكواد لمحرك Z16XEP؛ ليست إحصاء وقوع",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Opel various models / Z16XEP; date unspecified",
+          "url": "https://www.hella.com/techworld/en/ti/opel-various-models-insufficient-engine-power/",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "publisher": "SAE",
+          "version_date": "J2012_202509",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P1300",
+      "code_format": "خاص بالمصنّع (Manufacturer-specific)؛ لا تعمم تعريفه على ECU آخر",
+      "ecu": "ECM",
+      "definition_en": "Fuel Tank Empty [Opel Z16XEP context only]",
+      "translation_ar": "خزان الوقود فارغ، وفق توصيف HELLA لهذا المحرك",
+      "category": "P",
+      "applicability": "موديلات Opel المختلفة المزودة بمحرك Z16XEP بنزين؛ السنوات/الأسواق والطرازات الدقيقة: غير مؤكدة",
+      "symptoms": "ضعف قدرة المحرك؛ إضاءة لمبة المحرك على فترات؛ الأكواد قد تظهر منفردة أو مجتمعة",
+      "causes": "انسداد قنوات EGR في مجمع السحب (سبب حالة HELLA)؛ حالة صمام EGR ومحيطه يجب استبعادها أولاً؛ أعطال الإشعال/التسريب/الوقود احتمالات تشخيصية تحتاج تحقق",
+      "diagnostic_steps": "[HELLA] افحص محيط نظام EGR لاستبعاد الصمام ومشكلات أخرى؛ اقرأ جميع الأكواد ثم نظف مجاري EGR في مجمع السحب حسب تعليمات المصنع بعد تأكيد الانسداد؛ أعد التجميع وامسح الأكواد ثم اختبر بقيادة السيارة. [استنتاج] للأكواد P030x راجع عدادات misfire لكل أسطوانة ونظام الإشعال/الضغط؛ لـP0171 راجع الوقود والهواء والتسريب قبل تبديل القطع.",
+      "live_data": "EGR Command / Feedback (أمر EGR/التغذية الراجعة إن توافرا)؛ Misfire Counter Cylinder 1–4 (عداد اختلال الاشتعال)؛ Short/Long Term Fuel Trim (تصحيحات الوقود)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "قنوات EGR داخل مجمع السحب؛ صمام EGR؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%20Opel%20%D8%A7%D9%84%D9%85%D8%AE%D8%AA%D9%84%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%88%D8%AF%D8%A9%20%D8%A8%D9%85%D8%AD%D8%B1%D9%83%20Z16XEP%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20P1300%20%D9%82%D9%86%D9%88%D8%A7%D8%AA%20EGR%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%85%D8%AC%D9%85%D8%B9%20%D8%A7%D9%84%D8%B3%D8%AD%D8%A8",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%20Opel%20%D8%A7%D9%84%D9%85%D8%AE%D8%AA%D9%84%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%88%D8%AF%D8%A9%20%D8%A8%D9%85%D8%AD%D8%B1%D9%83%20Z16XEP%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20P1300%20%D9%82%D9%86%D9%88%D8%A7%D8%AA%20EGR%20%D8%AF%D8%A7%D8%AE%D9%84%20%D9%85%D8%AC%D9%85%D8%B9%20%D8%A7%D9%84%D8%B3%D8%AD%D8%A8%20diagnosis%20repair",
+      "priority_evidence": "حالة إصلاح فنية متعددة الأكواد لمحرك Z16XEP؛ ليست إحصاء وقوع",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Opel various models / Z16XEP; date unspecified",
+          "url": "https://www.hella.com/techworld/en/ti/opel-various-models-insufficient-engine-power/",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P0299",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "ECM",
+      "definition_en": "Turbocharger/Supercharger Underboost",
+      "translation_ar": "ضغط الشحن الفعلي أقل من المطلوب",
+      "category": "P",
+      "applicability": "Insignia A بمحرك 2.0 CDTI ديزل؛ HELLA: منذ 2008؛ رمز المحرك الدقيق/الأسواق غير محددة",
+      "symptoms": "هبوط مفاجئ بالقوة؛ Service Vehicle Soon؛ أحياناً MIL",
+      "causes": "تشقق خرطوم هواء الشحن/السحب (الحالة الفنية الموثقة)؛ مشابك أو وصلات معطوبة؛ بقية الأعطال يحددها فحص ضغط الشحن",
+      "diagnostic_steps": "[HELLA] اقرأ الأخطاء ثم افحص بصرياً مسار هواء الشحن، وخاصة الخرطوم المشقوق، وبدّل الجزء الذي ثبت عيبه؛ امسح الأخطاء وجرب السيارة. [استنتاج] نفذ اختبار ضغط/دخان مناسب لدائرة الشحن، وقارن actual vs desired في حمل آمن.",
+      "live_data": "Boost Pressure Actual / Desired (ضغط التيربو الفعلي/المطلوب)؛ MAP (ضغط مجمع السحب)؛ MAF (كتلة الهواء)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "خرطوم دخول هواء الشحن والشبكات والمشابك؛ المشعب؛ التيربو؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Insignia%20A%20%D8%A8%D9%85%D8%AD%D8%B1%D9%83%202.0%20CDTI%20%D8%AF%D9%8A%D8%B2%D9%84%20P0299%20%D8%AE%D8%B1%D8%B7%D9%88%D9%85%20%D8%AF%D8%AE%D9%88%D9%84%20%D9%87%D9%88%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B4%D8%AD%D9%86%20%D9%88%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%A8%D9%83",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Insignia%20A%20%D8%A8%D9%85%D8%AD%D8%B1%D9%83%202.0%20CDTI%20%D8%AF%D9%8A%D8%B2%D9%84%20P0299%20%D8%AE%D8%B1%D8%B7%D9%88%D9%85%20%D8%AF%D8%AE%D9%88%D9%84%20%D9%87%D9%88%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B4%D8%AD%D9%86%20%D9%88%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%A8%D9%83%20diagnosis%20repair",
+      "priority_evidence": "حالة تقنية HELLA موثقة لمحرك 2.0 CDTI دون بيانات معدل انتشار",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Insignia 2.0 CDTI; date unspecified",
+          "url": "https://www.hella.com/techworld/sg/bi/opel-insignia-loss-of-engine-power/",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "publisher": "SAE",
+          "version_date": "J2012_202509",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P2282",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "ECM",
+      "definition_en": "Air Leak Between Throttle Body and Intake Valves [standard descriptor; verify ECU]",
+      "translation_ar": "تسريب هواء بين الخانق وصمامات السحب وفق الوصف القياسي؛ وصف HELLA للحالة: ضغط هواء السحب غير صحيح",
+      "category": "P",
+      "applicability": "Insignia A بمحرك 2.0 CDTI ديزل؛ HELLA: منذ 2008؛ رمز المحرك الدقيق/الأسواق غير محددة",
+      "symptoms": "هبوط مفاجئ بالقوة؛ Service Vehicle Soon؛ أحياناً MIL",
+      "causes": "تشقق خرطوم هواء الشحن/السحب (الحالة الفنية الموثقة)؛ مشابك أو وصلات معطوبة؛ بقية الأعطال يحددها فحص ضغط الشحن",
+      "diagnostic_steps": "[HELLA] اقرأ الأخطاء ثم افحص بصرياً مسار هواء الشحن، وخاصة الخرطوم المشقوق، وبدّل الجزء الذي ثبت عيبه؛ امسح الأخطاء وجرب السيارة. [استنتاج] نفذ اختبار ضغط/دخان مناسب لدائرة الشحن، وقارن actual vs desired في حمل آمن.",
+      "live_data": "Boost Pressure Actual / Desired (ضغط التيربو الفعلي/المطلوب)؛ MAP (ضغط مجمع السحب)؛ MAF (كتلة الهواء)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "خرطوم دخول هواء الشحن والشبكات والمشابك؛ المشعب؛ التيربو؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Insignia%20A%20%D8%A8%D9%85%D8%AD%D8%B1%D9%83%202.0%20CDTI%20%D8%AF%D9%8A%D8%B2%D9%84%20P2282%20%D8%AE%D8%B1%D8%B7%D9%88%D9%85%20%D8%AF%D8%AE%D9%88%D9%84%20%D9%87%D9%88%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B4%D8%AD%D9%86%20%D9%88%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%A8%D9%83",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Insignia%20A%20%D8%A8%D9%85%D8%AD%D8%B1%D9%83%202.0%20CDTI%20%D8%AF%D9%8A%D8%B2%D9%84%20P2282%20%D8%AE%D8%B1%D8%B7%D9%88%D9%85%20%D8%AF%D8%AE%D9%88%D9%84%20%D9%87%D9%88%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B4%D8%AD%D9%86%20%D9%88%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A7%D8%AA%20%D9%88%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%A8%D9%83%20diagnosis%20repair",
+      "priority_evidence": "حالة تقنية HELLA موثقة لمحرك 2.0 CDTI دون بيانات معدل انتشار",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Insignia 2.0 CDTI; date unspecified",
+          "url": "https://www.hella.com/techworld/sg/bi/opel-insignia-loss-of-engine-power/",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "publisher": "SAE",
+          "version_date": "J2012_202509",
+          "url": "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P0505",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "ECM",
+      "definition_en": "Idle Control System Malfunction",
+      "translation_ar": "خلل في منظومة التحكم بسرعة دوران الخمول",
+      "category": "P",
+      "applicability": "Corsa B بنزين X12XE؛ 1997–2000؛ GM Legacy؛ الأسواق غير مؤكدة",
+      "symptoms": "اختلال سرعة الخمول قد يصل ±100 rpm في حالة HELLA؛ اهتزاز/تقطيع؛ تردد في التسارع؛ قد تضئ MIL",
+      "causes": "مشغل تنظيم الخمول/التحكم في هواء الخمول معيب وفق حالة HELLA؛ يجب استبعاد فيش وأسلاك/اتساخ مجرى الهواء قبل القرار",
+      "diagnostic_steps": "[HELLA] تحقق من نمط الأعطال ووجود P0505، ثم افحص مشغل تنظيم الخمول. [استنتاج] افحص توصيلاته واختبار أمر المشغل ومعاينة التسريب أو انسداد الهواء؛ أكد عيب المشغل بقياس/اختبار فعلي وفق ECU.",
+      "live_data": "Engine Speed (RPM) (سرعة المحرك)؛ Desired Idle Speed (سرعة الخمول المطلوبة إن توفرت)؛ Idle Air Control Command (أمر مشغل الخمول إن توفر)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "مشغل تنظيم سرعة الخمول قرب جسم الخانق/السحب؛ الموقع النهائي والقطعة: غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Corsa%20B%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20X12XE%20P0505%20%D9%85%D8%B4%D8%BA%D9%84%20%D8%AA%D9%86%D8%B8%D9%8A%D9%85%20%D8%B3%D8%B1%D8%B9%D8%A9%20%D8%A7%D9%84%D8%AE%D9%85%D9%88%D9%84%20%D9%82%D8%B1%D8%A8%20%D8%AC%D8%B3%D9%85%20%D8%A7%D9%84%D8%AE%D8%A7%D9%86%D9%82/%D8%A7%D9%84%D8%B3%D8%AD%D8%A8",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Corsa%20B%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20X12XE%20P0505%20%D9%85%D8%B4%D8%BA%D9%84%20%D8%AA%D9%86%D8%B8%D9%8A%D9%85%20%D8%B3%D8%B1%D8%B9%D8%A9%20%D8%A7%D9%84%D8%AE%D9%85%D9%88%D9%84%20%D9%82%D8%B1%D8%A8%20%D8%AC%D8%B3%D9%85%20%D8%A7%D9%84%D8%AE%D8%A7%D9%86%D9%82/%D8%A7%D9%84%D8%B3%D8%AD%D8%A8%20diagnosis%20repair",
+      "priority_evidence": "حالة HELLA محددة بالمحرك والسنوات",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Corsa B X12XE; date unspecified",
+          "url": "https://www.hella.com/techworld/us/bi/opel-corsa-b-engine-jerking-while-driving-irregular-idling/",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P0089",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "ECM",
+      "definition_en": "Fuel Pressure Regulator 1 Performance",
+      "translation_ar": "خلل أداء منظم ضغط الوقود 1",
+      "category": "P",
+      "applicability": "Astra K 1.4 16V Turbo بنزين B14XFT؛ سنة 2019؛ GM Legacy architecture; markets unconfirmed",
+      "symptoms": "محاولات تشغيل متعددة أو عدم التشغيل؛ اهتزاز/قلة قدرة/توقف المحرك أثناء السير",
+      "causes": "ضعف تثبيت سلك تأريض ضفيرة المحرك عند رأس الأسطوانات (تشخيص الحالة HELLA)؛ بقية احتمالات منظم الضغط أو حساس الطرق لا تُثبت بمجرد وجود الأكواد",
+      "diagnostic_steps": "[HELLA] افحص ربط سلك الأرضي لضفيرة المحرك قرب رأس المحرك ونظف موضع الوصلة وتحقق من تلفه، ثم ثبته بصورة صحيحة وافحص مجدداً وجرّب السيارة. [استنتاج] قبل استبدال أي حساس راقب هبوط الجهد على الأرضي تحت الحمل وقارن قراءة fuel-rail actual/desired إذا كانت متاحة.",
+      "live_data": "Fuel Rail Pressure Actual/Desired (ضغط سكة الوقود الفعلي/المطلوب)؛ Fuel Pressure Regulator Command (أمر منظم الوقود)؛ Knock Sensor Signal (إشارة الطرق إذا توفرت)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "وصلة أرضي الضفيرة عند رأس الأسطوانات (موثقة)؛ منظم ضغط الوقود؛ حساس ضغط سكة الوقود؛ حساس الطرق؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Astra%20K%201.4%2016V%20Turbo%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20B14XFT%20P0089%20%D9%88%D8%B5%D9%84%D8%A9%20%D8%A3%D8%B1%D8%B6%D9%8A%20%D8%A7%D9%84%D8%B6%D9%81%D9%8A%D8%B1%D8%A9%20%D8%B9%D9%86%D8%AF%20%D8%B1%D8%A3%D8%B3%20%D8%A7%D9%84%D8%A3%D8%B3%D8%B7%D9%88%D8%A7%D9%86%D8%A7%D8%AA%20%28%D9%85%D9%88%D8%AB%D9%82%D8%A9%29",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Astra%20K%201.4%2016V%20Turbo%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20B14XFT%20P0089%20%D9%88%D8%B5%D9%84%D8%A9%20%D8%A3%D8%B1%D8%B6%D9%8A%20%D8%A7%D9%84%D8%B6%D9%81%D9%8A%D8%B1%D8%A9%20%D8%B9%D9%86%D8%AF%20%D8%B1%D8%A3%D8%B3%20%D8%A7%D9%84%D8%A3%D8%B3%D8%B7%D9%88%D8%A7%D9%86%D8%A7%D8%AA%20%28%D9%85%D9%88%D8%AB%D9%82%D8%A9%29%20diagnosis%20repair",
+      "priority_evidence": "حالة تقنية HELLA محددة بالمحرك والسنة؛ أكواد مشتركة لا يجوز التعامل معها كأعطال قطع مستقلة",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Astra K B14XFT; date unspecified; verified against German variant",
+          "url": "https://www.hella.com/techworld/de/bi/opel-astra-k-motor-startet-nicht-oder-schlecht/",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P228C",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "ECM",
+      "definition_en": "Fuel Pressure Regulator 1 Exceeded Control Limits – Pressure Too Low",
+      "translation_ar": "تجاوز منظم ضغط الوقود 1 حدود التحكم، والضغط أقل من المطلوب",
+      "category": "P",
+      "applicability": "Astra K 1.4 16V Turbo بنزين B14XFT؛ سنة 2019؛ GM Legacy architecture; markets unconfirmed",
+      "symptoms": "محاولات تشغيل متعددة أو عدم التشغيل؛ اهتزاز/قلة قدرة/توقف المحرك أثناء السير",
+      "causes": "ضعف تثبيت سلك تأريض ضفيرة المحرك عند رأس الأسطوانات (تشخيص الحالة HELLA)؛ بقية احتمالات منظم الضغط أو حساس الطرق لا تُثبت بمجرد وجود الأكواد",
+      "diagnostic_steps": "[HELLA] افحص ربط سلك الأرضي لضفيرة المحرك قرب رأس المحرك ونظف موضع الوصلة وتحقق من تلفه، ثم ثبته بصورة صحيحة وافحص مجدداً وجرّب السيارة. [استنتاج] قبل استبدال أي حساس راقب هبوط الجهد على الأرضي تحت الحمل وقارن قراءة fuel-rail actual/desired إذا كانت متاحة.",
+      "live_data": "Fuel Rail Pressure Actual/Desired (ضغط سكة الوقود الفعلي/المطلوب)؛ Fuel Pressure Regulator Command (أمر منظم الوقود)؛ Knock Sensor Signal (إشارة الطرق إذا توفرت)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "وصلة أرضي الضفيرة عند رأس الأسطوانات (موثقة)؛ منظم ضغط الوقود؛ حساس ضغط سكة الوقود؛ حساس الطرق؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Astra%20K%201.4%2016V%20Turbo%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20B14XFT%20P228C%20%D9%88%D8%B5%D9%84%D8%A9%20%D8%A3%D8%B1%D8%B6%D9%8A%20%D8%A7%D9%84%D8%B6%D9%81%D9%8A%D8%B1%D8%A9%20%D8%B9%D9%86%D8%AF%20%D8%B1%D8%A3%D8%B3%20%D8%A7%D9%84%D8%A3%D8%B3%D8%B7%D9%88%D8%A7%D9%86%D8%A7%D8%AA%20%28%D9%85%D9%88%D8%AB%D9%82%D8%A9%29",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Astra%20K%201.4%2016V%20Turbo%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20B14XFT%20P228C%20%D9%88%D8%B5%D9%84%D8%A9%20%D8%A3%D8%B1%D8%B6%D9%8A%20%D8%A7%D9%84%D8%B6%D9%81%D9%8A%D8%B1%D8%A9%20%D8%B9%D9%86%D8%AF%20%D8%B1%D8%A3%D8%B3%20%D8%A7%D9%84%D8%A3%D8%B3%D8%B7%D9%88%D8%A7%D9%86%D8%A7%D8%AA%20%28%D9%85%D9%88%D8%AB%D9%82%D8%A9%29%20diagnosis%20repair",
+      "priority_evidence": "حالة تقنية HELLA محددة بالمحرك والسنة؛ أكواد مشتركة لا يجوز التعامل معها كأعطال قطع مستقلة",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Astra K B14XFT; date unspecified; verified against German variant",
+          "url": "https://www.hella.com/techworld/de/bi/opel-astra-k-motor-startet-nicht-oder-schlecht/",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P0325",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "ECM",
+      "definition_en": "Knock Sensor 1 Circuit (Bank 1)",
+      "translation_ar": "خلل في دائرة حساس الطرق/التصفيق 1 — الصف 1",
+      "category": "P",
+      "applicability": "Astra K 1.4 16V Turbo بنزين B14XFT؛ سنة 2019؛ GM Legacy architecture; markets unconfirmed",
+      "symptoms": "محاولات تشغيل متعددة أو عدم التشغيل؛ اهتزاز/قلة قدرة/توقف المحرك أثناء السير",
+      "causes": "ضعف تثبيت سلك تأريض ضفيرة المحرك عند رأس الأسطوانات (تشخيص الحالة HELLA)؛ بقية احتمالات منظم الضغط أو حساس الطرق لا تُثبت بمجرد وجود الأكواد",
+      "diagnostic_steps": "[HELLA] افحص ربط سلك الأرضي لضفيرة المحرك قرب رأس المحرك ونظف موضع الوصلة وتحقق من تلفه، ثم ثبته بصورة صحيحة وافحص مجدداً وجرّب السيارة. [استنتاج] قبل استبدال أي حساس راقب هبوط الجهد على الأرضي تحت الحمل وقارن قراءة fuel-rail actual/desired إذا كانت متاحة.",
+      "live_data": "Fuel Rail Pressure Actual/Desired (ضغط سكة الوقود الفعلي/المطلوب)؛ Fuel Pressure Regulator Command (أمر منظم الوقود)؛ Knock Sensor Signal (إشارة الطرق إذا توفرت)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "وصلة أرضي الضفيرة عند رأس الأسطوانات (موثقة)؛ منظم ضغط الوقود؛ حساس ضغط سكة الوقود؛ حساس الطرق؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Astra%20K%201.4%2016V%20Turbo%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20B14XFT%20P0325%20%D9%88%D8%B5%D9%84%D8%A9%20%D8%A3%D8%B1%D8%B6%D9%8A%20%D8%A7%D9%84%D8%B6%D9%81%D9%8A%D8%B1%D8%A9%20%D8%B9%D9%86%D8%AF%20%D8%B1%D8%A3%D8%B3%20%D8%A7%D9%84%D8%A3%D8%B3%D8%B7%D9%88%D8%A7%D9%86%D8%A7%D8%AA%20%28%D9%85%D9%88%D8%AB%D9%82%D8%A9%29",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Astra%20K%201.4%2016V%20Turbo%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20B14XFT%20P0325%20%D9%88%D8%B5%D9%84%D8%A9%20%D8%A3%D8%B1%D8%B6%D9%8A%20%D8%A7%D9%84%D8%B6%D9%81%D9%8A%D8%B1%D8%A9%20%D8%B9%D9%86%D8%AF%20%D8%B1%D8%A3%D8%B3%20%D8%A7%D9%84%D8%A3%D8%B3%D8%B7%D9%88%D8%A7%D9%86%D8%A7%D8%AA%20%28%D9%85%D9%88%D8%AB%D9%82%D8%A9%29%20diagnosis%20repair",
+      "priority_evidence": "حالة تقنية HELLA محددة بالمحرك والسنة؛ أكواد مشتركة لا يجوز التعامل معها كأعطال قطع مستقلة",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Astra K B14XFT; date unspecified; verified against German variant",
+          "url": "https://www.hella.com/techworld/de/bi/opel-astra-k-motor-startet-nicht-oder-schlecht/",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P16E5",
+      "code_format": "خاص بالمصنّع (Manufacturer-specific)؛ لا تعمم تعريفه على ECU آخر",
+      "ecu": "ECM",
+      "definition_en": "Fuel Rail Pressure Sensor Signal Too High [HELLA vehicle-specific wording]",
+      "translation_ar": "إشارة حساس ضغط سكة الوقود مرتفعة جداً (بحسب حالة HELLA)",
+      "category": "P",
+      "applicability": "Astra K 1.4 16V Turbo بنزين B14XFT؛ سنة 2019؛ GM Legacy architecture; markets unconfirmed",
+      "symptoms": "محاولات تشغيل متعددة أو عدم التشغيل؛ اهتزاز/قلة قدرة/توقف المحرك أثناء السير",
+      "causes": "ضعف تثبيت سلك تأريض ضفيرة المحرك عند رأس الأسطوانات (تشخيص الحالة HELLA)؛ بقية احتمالات منظم الضغط أو حساس الطرق لا تُثبت بمجرد وجود الأكواد",
+      "diagnostic_steps": "[HELLA] افحص ربط سلك الأرضي لضفيرة المحرك قرب رأس المحرك ونظف موضع الوصلة وتحقق من تلفه، ثم ثبته بصورة صحيحة وافحص مجدداً وجرّب السيارة. [استنتاج] قبل استبدال أي حساس راقب هبوط الجهد على الأرضي تحت الحمل وقارن قراءة fuel-rail actual/desired إذا كانت متاحة.",
+      "live_data": "Fuel Rail Pressure Actual/Desired (ضغط سكة الوقود الفعلي/المطلوب)؛ Fuel Pressure Regulator Command (أمر منظم الوقود)؛ Knock Sensor Signal (إشارة الطرق إذا توفرت)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "وصلة أرضي الضفيرة عند رأس الأسطوانات (موثقة)؛ منظم ضغط الوقود؛ حساس ضغط سكة الوقود؛ حساس الطرق؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Astra%20K%201.4%2016V%20Turbo%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20B14XFT%20P16E5%20%D9%88%D8%B5%D9%84%D8%A9%20%D8%A3%D8%B1%D8%B6%D9%8A%20%D8%A7%D9%84%D8%B6%D9%81%D9%8A%D8%B1%D8%A9%20%D8%B9%D9%86%D8%AF%20%D8%B1%D8%A3%D8%B3%20%D8%A7%D9%84%D8%A3%D8%B3%D8%B7%D9%88%D8%A7%D9%86%D8%A7%D8%AA%20%28%D9%85%D9%88%D8%AB%D9%82%D8%A9%29",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Astra%20K%201.4%2016V%20Turbo%20%D8%A8%D9%86%D8%B2%D9%8A%D9%86%20B14XFT%20P16E5%20%D9%88%D8%B5%D9%84%D8%A9%20%D8%A3%D8%B1%D8%B6%D9%8A%20%D8%A7%D9%84%D8%B6%D9%81%D9%8A%D8%B1%D8%A9%20%D8%B9%D9%86%D8%AF%20%D8%B1%D8%A3%D8%B3%20%D8%A7%D9%84%D8%A3%D8%B3%D8%B7%D9%88%D8%A7%D9%86%D8%A7%D8%AA%20%28%D9%85%D9%88%D8%AB%D9%82%D8%A9%29%20diagnosis%20repair",
+      "priority_evidence": "حالة تقنية HELLA محددة بالمحرك والسنة؛ أكواد مشتركة لا يجوز التعامل معها كأعطال قطع مستقلة",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Astra K B14XFT; date unspecified; verified against German variant",
+          "url": "https://www.hella.com/techworld/de/bi/opel-astra-k-motor-startet-nicht-oder-schlecht/",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P0100",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "ECM",
+      "definition_en": "Mass or Volume Air Flow A Circuit",
+      "translation_ar": "خلل في دائرة حساس قياس كتلة/حجم الهواء A",
+      "category": "P",
+      "applicability": "Vivaro 1.9 DI/DTI ديزل F9Q-760 أو F9Q-762؛ 2001–2007؛ منصة تعاون Renault/Opel (ليست PSA الحديثة)",
+      "symptoms": "إضاءة MIL وصعوبة التشغيل، خصوصاً بعد تلف توربو واستبداله",
+      "causes": "بقايا برادة معدنية من تعطل التيربو قد تتلف عنصر قياس MAF؛ احتمال تسريب أو أسلاك يحتاج فحص",
+      "diagnostic_steps": "[HELLA] في حالات ما بعد تلف التيربو افحص بقايا المعدن في دائرة الهواء ونظف السحب/أنابيب هواء الشحن قبل تغيير MAF، وراجع حالة مبرد الهواء؛ [استنتاج] قارن قراءة MAF بمعدل تدفق معقول وحالة الحساس والأسلاك.",
+      "live_data": "Mass Air Flow (g/s) (كتلة الهواء غ/ث)؛ MAP (ضغط السحب)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "حساس MAF بمجرى هواء السحب؛ مبرد الهواء؛ خرطوم ما بعد التيربو؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Vivaro%201.9%20DI/DTI%20%D8%AF%D9%8A%D8%B2%D9%84%20F9Q-760%20%D8%A3%D9%88%20F9Q-762%20P0100%20%D8%AD%D8%B3%D8%A7%D8%B3%20MAF%20%D8%A8%D9%85%D8%AC%D8%B1%D9%89%20%D9%87%D9%88%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B3%D8%AD%D8%A8",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Vivaro%201.9%20DI/DTI%20%D8%AF%D9%8A%D8%B2%D9%84%20F9Q-760%20%D8%A3%D9%88%20F9Q-762%20P0100%20%D8%AD%D8%B3%D8%A7%D8%B3%20MAF%20%D8%A8%D9%85%D8%AC%D8%B1%D9%89%20%D9%87%D9%88%D8%A7%D8%A1%20%D8%A7%D9%84%D8%B3%D8%AD%D8%A8%20diagnosis%20repair",
+      "priority_evidence": "بلاغ HELLA إصلاح مرتبط بعطل تيربو سابق",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Vivaro F9Q; date unspecified",
+          "url": "https://www.hella.com/techworld/cz/bi/opel-vivaro-engine-control-light-is-on/",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P0100",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "ECM (exact ECU part number unconfirmed)",
+      "definition_en": "Mass or Volume Air Flow A Circuit",
+      "translation_ar": "خلل دائرة حساس كتلة/حجم الهواء A",
+      "category": "P",
+      "applicability": "Astra G 1998–2001؛ Vectra B 1998–2001؛ Zafira 1999–2001؛ محرك بنزين X18XE1 فقط؛ الأسواق غير محددة",
+      "symptoms": "اختلال احتراق/تقطيع؛ P0100 و/أو P0110",
+      "causes": "خلل تأريض داخل شبكة أرضي ECU إلى حساس MAF/حساس حرارة سائل التبريد وفق نشرة HELLA بتاريخ 2007-04-10؛ تحقق من الضفيرة والفياش",
+      "diagnostic_steps": "[HELLA 2007-04-10] افصل البطارية وراجع الضفيرة؛ اختبر استمرارية أرضي MAF (سلك أصفر) إلى ECU pin 48 وأرضي حساس حرارة سائل التبريد (بني) إلى ECU pin 7، فقط إذا كانت نسخة ECU مطابقة؛ إجراء إضافة أسلاك أرضي/تعديل الضفيرة موصوف في الوثيقة؛ تنفيذه مشروط بمطابقة الأسلاك الفعلية والتصريح. [استنتاج] فحص هبوط الجهد أثناء التشغيل مناسب ولا قيمة مرجعية منشورة هنا.",
+      "live_data": "MAF (g/s) (معدل كتلة الهواء)؛ Intake Air Temperature (حرارة هواء السحب)؛ Engine Coolant Temperature (حرارة سائل التبريد)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "ECU مثبت جهة ناقل الحركة من المحرك، حسب النشرة؛ سلك أرضي MAF الأصفر؛ سلك أرضي حساس حرارة سائل التبريد البني؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Astra%20G%201998%E2%80%932001%20P0100%20ECU%20%D9%85%D8%AB%D8%A8%D8%AA%20%D8%AC%D9%87%D8%A9%20%D9%86%D8%A7%D9%82%D9%84%20%D8%A7%D9%84%D8%AD%D8%B1%D9%83%D8%A9%20%D9%85%D9%86%20%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83%D8%8C%20%D8%AD%D8%B3%D8%A8%20%D8%A7%D9%84%D9%86%D8%B4%D8%B1%D8%A9",
+      "wiring": "موثق بشرط مطابقة نسخة X18XE1 الموصوفة: أرضي MAF سلك أصفر إلى ECU pin 48؛ أرضي حساس حرارة سائل التبريد سلك بني إلى ECU pin 7. لا تعمّم هذه الأطراف على أي ECU آخر.",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Astra%20G%201998%E2%80%932001%20P0100%20ECU%20%D9%85%D8%AB%D8%A8%D8%AA%20%D8%AC%D9%87%D8%A9%20%D9%86%D8%A7%D9%82%D9%84%20%D8%A7%D9%84%D8%AD%D8%B1%D9%83%D8%A9%20%D9%85%D9%86%20%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83%D8%8C%20%D8%AD%D8%B3%D8%A8%20%D8%A7%D9%84%D9%86%D8%B4%D8%B1%D8%A9%20diagnosis%20repair",
+      "priority_evidence": "نشرة HELLA مؤرخة 10-04-2007 مع سنة/محرك وطرفيات مؤكدة",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Bulletin dated 2007-04-10, engine X18XE1",
+          "url": "https://www.hella.com/tibi/bi/en/electronics/bi_en_electronics_opel_astra_vectra_zafira_earth_connection_engine_control_unit.pdf",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P0110",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "ECM (exact ECU part number unconfirmed)",
+      "definition_en": "Intake Air Temperature Sensor 1 Circuit [generic descriptor; bulletin mentions coolant-temperature sensor ground]",
+      "translation_ar": "خلل دائرة حساس حرارة هواء السحب 1؛ مع ملاحظة أن النشرة تشير لسلك أرضي حساس حرارة سائل التبريد",
+      "category": "P",
+      "applicability": "Astra G 1998–2001؛ Vectra B 1998–2001؛ Zafira 1999–2001؛ محرك بنزين X18XE1 فقط؛ الأسواق غير محددة",
+      "symptoms": "اختلال احتراق/تقطيع؛ P0100 و/أو P0110",
+      "causes": "خلل تأريض داخل شبكة أرضي ECU إلى حساس MAF/حساس حرارة سائل التبريد وفق نشرة HELLA بتاريخ 2007-04-10؛ تحقق من الضفيرة والفياش",
+      "diagnostic_steps": "[HELLA 2007-04-10] افصل البطارية وراجع الضفيرة؛ اختبر استمرارية أرضي MAF (سلك أصفر) إلى ECU pin 48 وأرضي حساس حرارة سائل التبريد (بني) إلى ECU pin 7، فقط إذا كانت نسخة ECU مطابقة؛ إجراء إضافة أسلاك أرضي/تعديل الضفيرة موصوف في الوثيقة؛ تنفيذه مشروط بمطابقة الأسلاك الفعلية والتصريح. [استنتاج] فحص هبوط الجهد أثناء التشغيل مناسب ولا قيمة مرجعية منشورة هنا.",
+      "live_data": "MAF (g/s) (معدل كتلة الهواء)؛ Intake Air Temperature (حرارة هواء السحب)؛ Engine Coolant Temperature (حرارة سائل التبريد)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "ECU مثبت جهة ناقل الحركة من المحرك، حسب النشرة؛ سلك أرضي MAF الأصفر؛ سلك أرضي حساس حرارة سائل التبريد البني؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Astra%20G%201998%E2%80%932001%20P0110%20ECU%20%D9%85%D8%AB%D8%A8%D8%AA%20%D8%AC%D9%87%D8%A9%20%D9%86%D8%A7%D9%82%D9%84%20%D8%A7%D9%84%D8%AD%D8%B1%D9%83%D8%A9%20%D9%85%D9%86%20%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83%D8%8C%20%D8%AD%D8%B3%D8%A8%20%D8%A7%D9%84%D9%86%D8%B4%D8%B1%D8%A9",
+      "wiring": "موثق بشرط مطابقة نسخة X18XE1 الموصوفة: أرضي MAF سلك أصفر إلى ECU pin 48؛ أرضي حساس حرارة سائل التبريد سلك بني إلى ECU pin 7. لا تعمّم هذه الأطراف على أي ECU آخر.",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Astra%20G%201998%E2%80%932001%20P0110%20ECU%20%D9%85%D8%AB%D8%A8%D8%AA%20%D8%AC%D9%87%D8%A9%20%D9%86%D8%A7%D9%82%D9%84%20%D8%A7%D9%84%D8%AD%D8%B1%D9%83%D8%A9%20%D9%85%D9%86%20%D8%A7%D9%84%D9%85%D8%AD%D8%B1%D9%83%D8%8C%20%D8%AD%D8%B3%D8%A8%20%D8%A7%D9%84%D9%86%D8%B4%D8%B1%D8%A9%20diagnosis%20repair",
+      "priority_evidence": "نشرة HELLA مؤرخة 10-04-2007 مع سنة/محرك وطرفيات مؤكدة",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Bulletin dated 2007-04-10, engine X18XE1",
+          "url": "https://www.hella.com/tibi/bi/en/electronics/bi_en_electronics_opel_astra_vectra_zafira_earth_connection_engine_control_unit.pdf",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P1106",
+      "code_format": "خاص بالمصنّع (Manufacturer-specific)؛ لا تعمم تعريفه على ECU آخر",
+      "ecu": "ECM",
+      "definition_en": "Atmospheric Pressure / Altitude Sensor Fault [Opel context, OEM-specific]",
+      "translation_ar": "خلل حساس الضغط الجوي/الارتفاع وفق أوبل",
+      "category": "P",
+      "applicability": "Astra H وZafira B المجهزتان بتيربو؛ سنوات والمحركات الدقيقة غير محددة؛ GM Legacy",
+      "symptoms": "تقطيع، انخفاض القوة، إضاءة لمبة المحرك (Astra H)",
+      "causes": "حساس ضغط جوي تالف أو غير مناسب/مركّب خطأ؛ HELLA يذكر الرقم 261002137 كقرينة استبدال في الحالة المحددة؛ تحقق من التوافق قبل اعتماد الرقم",
+      "diagnostic_steps": "[HELLA] افحص رقم المكوّن المطبوع على حساس الضغط الجوي؛ إن كان 261002137 فالنشرة توصي بالتغيير في التطبيق المحدد؛ المرجع البديل الوارد HELLA 6PP 009 400-461، لكن الملاءمة يلزم التحقق منها حسب VIN. [استنتاج] قارن Atmospheric Pressure بالبيئة وMAP مع كون المحرك متوقفاً.",
+      "live_data": "Barometric Pressure / Atmospheric Pressure (الضغط الجوي)؛ MAP (ضغط المجمع)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "حساس الضغط الجوي/الارتفاع؛ الموقع الميكانيكي الدقيق بحسب المحرك غير مؤكد؛ المرجع المذكور بالنشرة HELLA 6PP 009 400-461 (يجب مطابقة التطبيق)",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Astra%20H%20%D9%88Zafira%20B%20%D8%A7%D9%84%D9%85%D8%AC%D9%87%D8%B2%D8%AA%D8%A7%D9%86%20%D8%A8%D8%AA%D9%8A%D8%B1%D8%A8%D9%88%20P1106%20%D8%AD%D8%B3%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B6%D8%BA%D8%B7%20%D8%A7%D9%84%D8%AC%D9%88%D9%8A/%D8%A7%D9%84%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Astra%20H%20%D9%88Zafira%20B%20%D8%A7%D9%84%D9%85%D8%AC%D9%87%D8%B2%D8%AA%D8%A7%D9%86%20%D8%A8%D8%AA%D9%8A%D8%B1%D8%A8%D9%88%20P1106%20%D8%AD%D8%B3%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B6%D8%BA%D8%B7%20%D8%A7%D9%84%D8%AC%D9%88%D9%8A/%D8%A7%D9%84%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9%20diagnosis%20repair",
+      "priority_evidence": "نشرات HELLA عن Astra H وZafira B بنفس الكود",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Astra H; date unspecified",
+          "url": "https://www.hella.com/techworld/de/bi/opel-astra-h-fehlercode-p1106/",
+          "checked_on": "2026-10-15"
+        },
+        {
+          "publisher": "HELLA",
+          "version_date": "Zafira B; date unspecified",
+          "url": "https://www.hella.com/techworld/de/bi/opel-zafira-b-fehlercode-p1106/",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P0523",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "ECM",
+      "definition_en": "Engine Oil Pressure Sensor/Switch Circuit High [generic description; HELLA says circuit fault]",
+      "translation_ar": "ارتفاع إشارة دائرة حساس/مفتاح ضغط زيت المحرك؛ وصف HELLA: خلل دائرة الحساس",
+      "category": "P",
+      "applicability": "Insignia B 1.6 16V CDTI بمحرك 16 DTH؛ سنة 2019؛ ديزل",
+      "symptoms": "لمبة ضغط الزيت تضيء على فترات",
+      "causes": "ابدأ بإثبات عدم وجود مشكلة ميكانيكية في الزيت/المضخة/صمام التحكم؛ بعد ذلك مقاومة مرتفعة أو تآكل نقطة أرضي ECU قرب برج المساعد الأمامي الأيسر، حسب HELLA",
+      "diagnostic_steps": "[HELLA] افحص الحساس/المفتاح والمضخة وصمام تنظيم الزيت أولاً؛ إذا ثبت سلامة ضغط الزيت الميكانيكي، افحص تغذية وأرضي ECU وبالذات مسمار الأرضي قرب قبة المساعد اليسرى ونظّف وأعد الحماية من التآكل. [استنتاج] استخدم مقياس ضغط زيت ميكانيكياً مناسباً؛ حد ضغط المصنع بالأرقام غير مؤكد هنا، ولا تحكم بسلامة المحرك اعتماداً على Live Data فقط.",
+      "live_data": "Engine Oil Pressure (ضغط زيت المحرك)؛ Engine Speed RPM (دورات المحرك)؛ Oil Pressure Switch Status (حالة المفتاح)؛ ECU Supply Voltage (جهد وحدة التحكم)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "حساس/مفتاح ضغط الزيت؛ مضخة وصمام ضغط الزيت؛ موضع الأرضي بجوار قبة المساعد الأيسر موثق؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Insignia%20B%201.6%2016V%20CDTI%20%D8%A8%D9%85%D8%AD%D8%B1%D9%83%2016%20DTH%20P0523%20%D8%AD%D8%B3%D8%A7%D8%B3/%D9%85%D9%81%D8%AA%D8%A7%D8%AD%20%D8%B6%D8%BA%D8%B7%20%D8%A7%D9%84%D8%B2%D9%8A%D8%AA",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Insignia%20B%201.6%2016V%20CDTI%20%D8%A8%D9%85%D8%AD%D8%B1%D9%83%2016%20DTH%20P0523%20%D8%AD%D8%B3%D8%A7%D8%B3/%D9%85%D9%81%D8%AA%D8%A7%D8%AD%20%D8%B6%D8%BA%D8%B7%20%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%20diagnosis%20repair",
+      "priority_evidence": "HELLA حالة محددة 2019 ومحرك 16 DTH؛ أهمية سلامة عالية",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Insignia B 16 DTH 2019; date unspecified",
+          "url": "https://www.hella.com/techworld/uk/bi/opel-oil-pressure-warning-lamp-comes-on-sporadically-error-code-p0523/",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "B1517 (03)",
+      "code_format": "خاص بالمصنّع (Manufacturer-specific)؛ لا تعمم تعريفه على ECU آخر",
+      "ecu": "Control module reporting B1517 (module ID not stated by HELLA)",
+      "definition_en": "Battery Voltage Below Nominal Value [vehicle-specific descriptor]",
+      "translation_ar": "جهد البطارية أقل من القيمة الاسمية؛ اللاحقة 03 محفوظة كما ظهرت",
+      "category": "B",
+      "applicability": "Astra J موديلات 2010–2012؛ المحركات/الأسواق غير محددة",
+      "symptoms": "مصباح شحن الدينامو مضاء رغم أن جهد البطارية والدينامو يبدو طبيعياً",
+      "causes": "خلل حقيقي في شحن البطارية يجب استبعاده أولاً؛ حساسية زائدة في برمجية وحدة التحكم (احتمال موثق من HELLA)",
+      "diagnostic_steps": "[HELLA] افحص البطارية والمولد والشحن تحت ظروف الشكوى؛ إن كانت سليمة، تحقق من توفر تحديث برمجي مناسب؛ [استنتاج] اختبر فرق الجهد والاتصالات وفولت الشحن تحت حمل ولا تستبدل المولد استناداً للكود وحده.",
+      "live_data": "Battery Voltage (جهد البطارية)؛ Generator Voltage (جهد المولد)؛ Charging System Command (أمر الشحن إن توفر)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "بطارية؛ مولد كهرباء؛ وحدة التحكم صاحبة الرمز غير مؤكدة حتى القراءة الكاملة؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Astra%20J%20%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%202010%E2%80%932012%20B1517%20%D8%A8%D8%B7%D8%A7%D8%B1%D9%8A%D8%A9",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Astra%20J%20%D9%85%D9%88%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%202010%E2%80%932012%20B1517%20%D8%A8%D8%B7%D8%A7%D8%B1%D9%8A%D8%A9%20diagnosis%20repair",
+      "priority_evidence": "HELLA عطل مؤكد بنوع/جيل/سنوات؛ برمجيات قد تكون سبباً بدلاً من تغيير مولد",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Astra J 2010-2012; published original German note ca. 2017",
+          "url": "https://www.hella.com/techworld/us/bi/opel-astra-j-alternator-control-light-illuminates/",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "B001A 02",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "SRS / Airbag ECU",
+      "definition_en": "Driver Seat Belt Pretensioner Ignition Circuit – Short to Ground [HELLA vehicle-specific descriptor]",
+      "translation_ar": "قصر إلى الأرض في دائرة إشعال شداد حزام مقعد السائق",
+      "category": "B",
+      "applicability": "Astra J 2010–2012؛ HELLA تحدد نطاقات شاسيه جزئية A2000001/A8000001/C1000001–A3000001 تحتاج مطابقة VIN قبل التطبيق؛ المحرك غير مؤثر في سبب النشرة",
+      "symptoms": "إضاءة لمبة Airbag/SRS",
+      "causes": "تلف/احتكاك ضفيرة نظام الأمان بجوار سكة تحريك المقعد الأمامي من جهة السائق في الحالة المحددة",
+      "diagnostic_steps": "[HELLA] فحص بصري متخصص لضفيرة نظام SRS في مجرى حركة المقعد، لا سيما الاحتكاك والسلك المنحشر؛ إصلاح وتثبيت الضفيرة وقطع الأمان حسب نشرة المصنع ثم إعادة قراءة الأكواد. ممنوع قياس مقاومة دائرة مشعل الوسادة/الشداد أو توصيل فولت مباشر؛ العمل فقط للفني المؤهل مع إجراء فصل وتحييد SRS الخاص بالمصنع.",
+      "live_data": "SRS DTC Status (حالة كود الوسادة)؛ Pretensioner Circuit Status (حالة دائرة الشداد إن كانت مدعومة)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "ضفيرة المقعد الأمامي؛ شداد حزام أمان جهة السائق؛ سكة المقاعد وغطاؤها؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Astra%20J%202010%E2%80%932012%20B001A%20%D8%B6%D9%81%D9%8A%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D9%82%D8%B9%D8%AF%20%D8%A7%D9%84%D8%A3%D9%85%D8%A7%D9%85%D9%8A",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Astra%20J%202010%E2%80%932012%20B001A%20%D8%B6%D9%81%D9%8A%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D9%82%D8%B9%D8%AF%20%D8%A7%D9%84%D8%A3%D9%85%D8%A7%D9%85%D9%8A%20diagnosis%20repair",
+      "priority_evidence": "HELLA تحدد خلل السلامة وشكوى ضفيرة المقعد وفق سنوات/شاسيه",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Astra J 2010-2012; date unspecified",
+          "url": "https://www.hella.com/techworld/tr/bi/opel-astra-j-airbag-indicator-lamp-lights-up/",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "B001B 02",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "SRS / Airbag ECU",
+      "definition_en": "Passenger Seat Belt Pretensioner Ignition Circuit – Short to Ground [HELLA vehicle-specific descriptor]",
+      "translation_ar": "قصر إلى الأرض في دائرة إشعال شداد حزام مقعد الراكب",
+      "category": "B",
+      "applicability": "Astra J 2010–2012؛ HELLA تحدد نطاقات شاسيه جزئية A2000001/A8000001/C1000001–A3000001 تحتاج مطابقة VIN قبل التطبيق؛ المحرك غير مؤثر في سبب النشرة",
+      "symptoms": "إضاءة لمبة Airbag/SRS",
+      "causes": "تلف/احتكاك ضفيرة نظام الأمان بجوار سكة تحريك المقعد الأمامي من جهة الراكب في الحالة المحددة",
+      "diagnostic_steps": "[HELLA] فحص بصري متخصص لضفيرة نظام SRS في مجرى حركة المقعد، لا سيما الاحتكاك والسلك المنحشر؛ إصلاح وتثبيت الضفيرة وقطع الأمان حسب نشرة المصنع ثم إعادة قراءة الأكواد. ممنوع قياس مقاومة دائرة مشعل الوسادة/الشداد أو توصيل فولت مباشر؛ العمل فقط للفني المؤهل مع إجراء فصل وتحييد SRS الخاص بالمصنع.",
+      "live_data": "SRS DTC Status (حالة كود الوسادة)؛ Pretensioner Circuit Status (حالة دائرة الشداد إن كانت مدعومة)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "ضفيرة المقعد الأمامي؛ شداد حزام أمان جهة الراكب؛ سكة المقاعد وغطاؤها؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Astra%20J%202010%E2%80%932012%20B001B%20%D8%B6%D9%81%D9%8A%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D9%82%D8%B9%D8%AF%20%D8%A7%D9%84%D8%A3%D9%85%D8%A7%D9%85%D9%8A",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Astra%20J%202010%E2%80%932012%20B001B%20%D8%B6%D9%81%D9%8A%D8%B1%D8%A9%20%D8%A7%D9%84%D9%85%D9%82%D8%B9%D8%AF%20%D8%A7%D9%84%D8%A3%D9%85%D8%A7%D9%85%D9%8A%20diagnosis%20repair",
+      "priority_evidence": "HELLA تحدد خلل السلامة وشكوى ضفيرة المقعد وفق سنوات/شاسيه",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Astra J 2010-2012; date unspecified",
+          "url": "https://www.hella.com/techworld/tr/bi/opel-astra-j-airbag-indicator-lamp-lights-up/",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "B0233",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "HVAC / Climate Control Module",
+      "definition_en": "HVAC Air Distribution / Mode Door Control Fault [exact Opel descriptor not confirmed]",
+      "translation_ar": "خلل التحكم ببوابة توزيع الهواء؛ التعريف الدقيق لأوبل غير مؤكد",
+      "category": "B",
+      "applicability": "Insignia A إنتاج يناير–مارس 2011؛ نطاق VIN منشور جزئياً في HELLA ويحتاج مطابقة أصلية؛ جميع المحركات غير مؤكدة",
+      "symptoms": "توقف استجابة بوابات الحرارة أو اتجاه الهواء؛ تكاثف زجاج بسبب خلل التهوية؛ تراجع الراحة",
+      "causes": "خلل برمجي يعطّل التحكم بمحركات البوابات في السلسلة المذكورة؛ الأعطال الميكانيكية/الكهربائية يجب استبعادها حسب الحالة",
+      "diagnostic_steps": "[HELLA] تحقق من النطاق الإنتاجي وبرمجية HVAC؛ بعد استبعاد الأعطال الواضحة، نفذ تحديث برنامج وحدة HVAC وفق إجراء المصنع مع فحص الحركة بعد الإصلاح. [استنتاج] نفذ actuator test واقرأ المطلوب مقابل الفعلي حيث يتاح، ولا تبدل المشغلات قبل تقييم البرمجية.",
+      "live_data": "Mode Door Command/Feedback (أمر/موضع بوابة توزيع الهواء)؛ Temperature Blend Door Command/Feedback (أمر/موضع بوابة الحرارة)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "محركات بوابات توزيع وحرارة الهواء داخل HVAC؛ موقع كل محرك بحسب تجهيز السيارة يحتاج مخطط؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Insignia%20A%20%D8%A5%D9%86%D8%AA%D8%A7%D8%AC%20%D9%8A%D9%86%D8%A7%D9%8A%D8%B1%E2%80%93%D9%85%D8%A7%D8%B1%D8%B3%202011%20B0233%20%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A7%D8%AA%20%D8%AA%D9%88%D8%B2%D9%8A%D8%B9%20%D9%88%D8%AD%D8%B1%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D9%87%D9%88%D8%A7%D8%A1%20%D8%AF%D8%A7%D8%AE%D9%84%20HVAC",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Insignia%20A%20%D8%A5%D9%86%D8%AA%D8%A7%D8%AC%20%D9%8A%D9%86%D8%A7%D9%8A%D8%B1%E2%80%93%D9%85%D8%A7%D8%B1%D8%B3%202011%20B0233%20%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A7%D8%AA%20%D8%AA%D9%88%D8%B2%D9%8A%D8%B9%20%D9%88%D8%AD%D8%B1%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D9%87%D9%88%D8%A7%D8%A1%20%D8%AF%D8%A7%D8%AE%D9%84%20HVAC%20diagnosis%20repair",
+      "priority_evidence": "HELLA نشرة محددة إنتاج يناير–مارس 2011؛ أولوية بسبب معالجة برمجية مشتركة",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Insignia Jan-Mar 2011; date unspecified",
+          "url": "https://www.hella.com/techworld/en/bi/opel-insignia-heating-climate-control/",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "B0408",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "HVAC / Climate Control Module",
+      "definition_en": "HVAC Temperature Blend Flap Actuator Fault [exact Opel descriptor not confirmed]",
+      "translation_ar": "خلل مشغل بوابة مزج حرارة التكييف؛ التحديد يمين/يسار غير مؤكد",
+      "category": "B",
+      "applicability": "Insignia A إنتاج يناير–مارس 2011؛ نطاق VIN منشور جزئياً في HELLA ويحتاج مطابقة أصلية؛ جميع المحركات غير مؤكدة",
+      "symptoms": "توقف استجابة بوابات الحرارة أو اتجاه الهواء؛ تكاثف زجاج بسبب خلل التهوية؛ تراجع الراحة",
+      "causes": "خلل برمجي يعطّل التحكم بمحركات البوابات في السلسلة المذكورة؛ الأعطال الميكانيكية/الكهربائية يجب استبعادها حسب الحالة",
+      "diagnostic_steps": "[HELLA] تحقق من النطاق الإنتاجي وبرمجية HVAC؛ بعد استبعاد الأعطال الواضحة، نفذ تحديث برنامج وحدة HVAC وفق إجراء المصنع مع فحص الحركة بعد الإصلاح. [استنتاج] نفذ actuator test واقرأ المطلوب مقابل الفعلي حيث يتاح، ولا تبدل المشغلات قبل تقييم البرمجية.",
+      "live_data": "Mode Door Command/Feedback (أمر/موضع بوابة توزيع الهواء)؛ Temperature Blend Door Command/Feedback (أمر/موضع بوابة الحرارة)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "محركات بوابات توزيع وحرارة الهواء داخل HVAC؛ موقع كل محرك بحسب تجهيز السيارة يحتاج مخطط؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Insignia%20A%20%D8%A5%D9%86%D8%AA%D8%A7%D8%AC%20%D9%8A%D9%86%D8%A7%D9%8A%D8%B1%E2%80%93%D9%85%D8%A7%D8%B1%D8%B3%202011%20B0408%20%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A7%D8%AA%20%D8%AA%D9%88%D8%B2%D9%8A%D8%B9%20%D9%88%D8%AD%D8%B1%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D9%87%D9%88%D8%A7%D8%A1%20%D8%AF%D8%A7%D8%AE%D9%84%20HVAC",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Insignia%20A%20%D8%A5%D9%86%D8%AA%D8%A7%D8%AC%20%D9%8A%D9%86%D8%A7%D9%8A%D8%B1%E2%80%93%D9%85%D8%A7%D8%B1%D8%B3%202011%20B0408%20%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A7%D8%AA%20%D8%AA%D9%88%D8%B2%D9%8A%D8%B9%20%D9%88%D8%AD%D8%B1%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D9%87%D9%88%D8%A7%D8%A1%20%D8%AF%D8%A7%D8%AE%D9%84%20HVAC%20diagnosis%20repair",
+      "priority_evidence": "HELLA نشرة محددة إنتاج يناير–مارس 2011؛ أولوية بسبب معالجة برمجية مشتركة",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Insignia Jan-Mar 2011; date unspecified",
+          "url": "https://www.hella.com/techworld/en/bi/opel-insignia-heating-climate-control/",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "B0418",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "HVAC / Climate Control Module",
+      "definition_en": "HVAC Temperature Blend Flap Actuator Fault [exact Opel descriptor not confirmed]",
+      "translation_ar": "خلل مشغل بوابة مزج حرارة أخرى؛ التحديد الدقيق غير مؤكد",
+      "category": "B",
+      "applicability": "Insignia A إنتاج يناير–مارس 2011؛ نطاق VIN منشور جزئياً في HELLA ويحتاج مطابقة أصلية؛ جميع المحركات غير مؤكدة",
+      "symptoms": "توقف استجابة بوابات الحرارة أو اتجاه الهواء؛ تكاثف زجاج بسبب خلل التهوية؛ تراجع الراحة",
+      "causes": "خلل برمجي يعطّل التحكم بمحركات البوابات في السلسلة المذكورة؛ الأعطال الميكانيكية/الكهربائية يجب استبعادها حسب الحالة",
+      "diagnostic_steps": "[HELLA] تحقق من النطاق الإنتاجي وبرمجية HVAC؛ بعد استبعاد الأعطال الواضحة، نفذ تحديث برنامج وحدة HVAC وفق إجراء المصنع مع فحص الحركة بعد الإصلاح. [استنتاج] نفذ actuator test واقرأ المطلوب مقابل الفعلي حيث يتاح، ولا تبدل المشغلات قبل تقييم البرمجية.",
+      "live_data": "Mode Door Command/Feedback (أمر/موضع بوابة توزيع الهواء)؛ Temperature Blend Door Command/Feedback (أمر/موضع بوابة الحرارة)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "محركات بوابات توزيع وحرارة الهواء داخل HVAC؛ موقع كل محرك بحسب تجهيز السيارة يحتاج مخطط؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Insignia%20A%20%D8%A5%D9%86%D8%AA%D8%A7%D8%AC%20%D9%8A%D9%86%D8%A7%D9%8A%D8%B1%E2%80%93%D9%85%D8%A7%D8%B1%D8%B3%202011%20B0418%20%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A7%D8%AA%20%D8%AA%D9%88%D8%B2%D9%8A%D8%B9%20%D9%88%D8%AD%D8%B1%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D9%87%D9%88%D8%A7%D8%A1%20%D8%AF%D8%A7%D8%AE%D9%84%20HVAC",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Insignia%20A%20%D8%A5%D9%86%D8%AA%D8%A7%D8%AC%20%D9%8A%D9%86%D8%A7%D9%8A%D8%B1%E2%80%93%D9%85%D8%A7%D8%B1%D8%B3%202011%20B0418%20%D9%85%D8%AD%D8%B1%D9%83%D8%A7%D8%AA%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A7%D8%AA%20%D8%AA%D9%88%D8%B2%D9%8A%D8%B9%20%D9%88%D8%AD%D8%B1%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D9%87%D9%88%D8%A7%D8%A1%20%D8%AF%D8%A7%D8%AE%D9%84%20HVAC%20diagnosis%20repair",
+      "priority_evidence": "HELLA نشرة محددة إنتاج يناير–مارس 2011؛ أولوية بسبب معالجة برمجية مشتركة",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Insignia Jan-Mar 2011; date unspecified",
+          "url": "https://www.hella.com/techworld/en/bi/opel-insignia-heating-climate-control/",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "C0035",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "ABS / ESP",
+      "definition_en": "Left Front Wheel Speed Sensor Circuit [generic family; HELLA: front-left sensor]",
+      "translation_ar": "دائرة حساس سرعة العجلة الأمامية اليسرى",
+      "category": "C",
+      "applicability": "Corsa D من سنة 2007 فصاعداً وفق HELLA؛ جميع المحركات في الحالات المشار إليها؛ تحديد نهاية الإنتاج/الأسواق غير مؤكد",
+      "symptoms": "لمبة ABS مضاءة",
+      "causes": "اتساخ حلقة الحساس (من الحالات الموثقة)؛ خلل حساس أو ضفيرة أو حلقة ممغنطة احتمال يجب اختباره",
+      "diagnostic_steps": "[HELLA] قبل تغيير الحساس افحص الحلقة بواسطة فتحة محور التوجيه بعد إخراج الحساس، ونظف تراكم الشحم/الأوساخ إن وجد ونظف وجفف وفق تعليمات السلامة؛ بعدها تحقق من نجاح العملية. [استنتاج] قارن سرعة العجلات الأربع أثناء تدحرج آمن وافحص إشارة الحساس/التوصيل إن استمر العطل.",
+      "live_data": "Wheel Speed Front Left/Right (سرعة العجلة الأمامي الأيسر)؛ Other Wheel Speeds (بقية العجلات)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "حساس سرعة العجلة الأمامي الأيسر؛ حلقة/مسار قراءة ABS عند الحاملة الأمامية؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Corsa%20D%20%D9%85%D9%86%20%D8%B3%D9%86%D8%A9%202007%20%D9%81%D8%B5%D8%A7%D8%B9%D8%AF%D8%A7%D9%8B%20%D9%88%D9%81%D9%82%20HELLA%20C0035%20%D8%AD%D8%B3%D8%A7%D8%B3%20%D8%B3%D8%B1%D8%B9%D8%A9%20%D8%A7%D9%84%D8%B9%D8%AC%D9%84%D8%A9%20%D8%A7%D9%84%D8%A3%D9%85%D8%A7%D9%85%D9%8A%20%D8%A7%D9%84%D8%A3%D9%8A%D8%B3%D8%B1",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Corsa%20D%20%D9%85%D9%86%20%D8%B3%D9%86%D8%A9%202007%20%D9%81%D8%B5%D8%A7%D8%B9%D8%AF%D8%A7%D9%8B%20%D9%88%D9%81%D9%82%20HELLA%20C0035%20%D8%AD%D8%B3%D8%A7%D8%B3%20%D8%B3%D8%B1%D8%B9%D8%A9%20%D8%A7%D9%84%D8%B9%D8%AC%D9%84%D8%A9%20%D8%A7%D9%84%D8%A3%D9%85%D8%A7%D9%85%D9%8A%20%D8%A7%D9%84%D8%A3%D9%8A%D8%B3%D8%B1%20diagnosis%20repair",
+      "priority_evidence": "HELLA حالة تقنية محددة للجيل Corsa D، دون إحصاء للانتشار",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Corsa D from 2007; date unspecified",
+          "url": "https://www.hella.com/techworld/za/bi/opel-corsa-d-anti-lock-braking-system-abs-warning-light-activated/",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "C0040",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "ABS / ESP",
+      "definition_en": "Right Front Wheel Speed Sensor Circuit [generic family; HELLA: front-right sensor]",
+      "translation_ar": "دائرة حساس سرعة العجلة الأمامية اليمنى",
+      "category": "C",
+      "applicability": "Corsa D من سنة 2007 فصاعداً وفق HELLA؛ جميع المحركات في الحالات المشار إليها؛ تحديد نهاية الإنتاج/الأسواق غير مؤكد",
+      "symptoms": "لمبة ABS مضاءة",
+      "causes": "اتساخ حلقة الحساس (من الحالات الموثقة)؛ خلل حساس أو ضفيرة أو حلقة ممغنطة احتمال يجب اختباره",
+      "diagnostic_steps": "[HELLA] قبل تغيير الحساس افحص الحلقة بواسطة فتحة محور التوجيه بعد إخراج الحساس، ونظف تراكم الشحم/الأوساخ إن وجد ونظف وجفف وفق تعليمات السلامة؛ بعدها تحقق من نجاح العملية. [استنتاج] قارن سرعة العجلات الأربع أثناء تدحرج آمن وافحص إشارة الحساس/التوصيل إن استمر العطل.",
+      "live_data": "Wheel Speed Front Left/Right (سرعة العجلة الأمامي الأيمن)؛ Other Wheel Speeds (بقية العجلات)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "حساس سرعة العجلة الأمامي الأيمن؛ حلقة/مسار قراءة ABS عند الحاملة الأمامية؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Corsa%20D%20%D9%85%D9%86%20%D8%B3%D9%86%D8%A9%202007%20%D9%81%D8%B5%D8%A7%D8%B9%D8%AF%D8%A7%D9%8B%20%D9%88%D9%81%D9%82%20HELLA%20C0040%20%D8%AD%D8%B3%D8%A7%D8%B3%20%D8%B3%D8%B1%D8%B9%D8%A9%20%D8%A7%D9%84%D8%B9%D8%AC%D9%84%D8%A9%20%D8%A7%D9%84%D8%A3%D9%85%D8%A7%D9%85%D9%8A%20%D8%A7%D9%84%D8%A3%D9%8A%D9%85%D9%86",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Corsa%20D%20%D9%85%D9%86%20%D8%B3%D9%86%D8%A9%202007%20%D9%81%D8%B5%D8%A7%D8%B9%D8%AF%D8%A7%D9%8B%20%D9%88%D9%81%D9%82%20HELLA%20C0040%20%D8%AD%D8%B3%D8%A7%D8%B3%20%D8%B3%D8%B1%D8%B9%D8%A9%20%D8%A7%D9%84%D8%B9%D8%AC%D9%84%D8%A9%20%D8%A7%D9%84%D8%A3%D9%85%D8%A7%D9%85%D9%8A%20%D8%A7%D9%84%D8%A3%D9%8A%D9%85%D9%86%20diagnosis%20repair",
+      "priority_evidence": "HELLA حالة تقنية محددة للجيل Corsa D، دون إحصاء للانتشار",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Corsa D from 2007; date unspecified",
+          "url": "https://www.hella.com/techworld/za/bi/opel-corsa-d-anti-lock-braking-system-abs-warning-light-activated/",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "U0140",
+      "code_format": "نطاق عام/قياسي (Generic DTC family)؛ التعريف الخاص بوحدة ECU واللاحقة بحاجة إلى تحقق من المعيار ووثائق المصنع",
+      "ecu": "Multiple network ECUs; storing module must be identified",
+      "definition_en": "Lost Communication With Body Control Module (BCM) [generic descriptor]",
+      "translation_ar": "فقد الاتصال بوحدة التحكم بالهيكل BCM",
+      "category": "U",
+      "applicability": "Insignia A 2013–2015 مجهزة بمساعد تغيير المسار؛ أسواق/محركات غير محددة",
+      "symptoms": "أعطال متعددة بالباركينغ والراديو والمكيف والبوابة الكهربائية والعدادات؛ تعذر التواصل مع بعض الوحدات",
+      "causes": "في حالة HELLA: دخول رطوبة إلى رادار مساعد تغيير المسار خلف الصدام يساراً قد يسبب تشويشاً على حافلة الاتصال؛ لا يعني U0140 دائماً تعطل BCM",
+      "diagnostic_steps": "[HELLA] أجرِ مسحاً شاملاً لوحدات الشبكة وحدد الوحدات المفقودة؛ إن انطبقت الحالة ومحيط الأنظمة سليم افحص رادار الصدام الخلفي الأيسر للرطوبة والتآكل وأصلح فيشته أو العتاد المعطوب؛ اتبع إجراء معايرة الرادار بعد الإصلاح. [استنتاج] افحص تغذية/أرضي وحدات الشبكة قبل الحكم بتلف BCM؛ اختبارات CAN العددية غير مؤكدة لهذا ECU.",
+      "live_data": "ECU Online Status (حالة اتصال الوحدات)؛ Network Fault Counters (عداد أخطاء الشبكة إن توفر)؛ Battery Voltage (جهد البطارية)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "حساس رادار مساعد تغيير المسار خلف الصدام الخلفي يساراً موثق؛ فيشة وضفيرة CAN؛ وحدة BCM؛ غير مؤكد: رقم مرجعي مطابق للمحرك غير متاح في المصدر المفتوح",
+      "images": "بحث صور فقط (النتائج غير مُحققة؛ لا تعرض كصورة قطعة مؤكدة): https://www.google.com/search?tbm=isch&q=Opel%20Vauxhall%20Insignia%20A%202013%E2%80%932015%20%D9%85%D8%AC%D9%87%D8%B2%D8%A9%20%D8%A8%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%20%D8%AA%D8%BA%D9%8A%D9%8A%D8%B1%20%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%20U0140%20%D8%AD%D8%B3%D8%A7%D8%B3%20%D8%B1%D8%A7%D8%AF%D8%A7%D8%B1%20%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%20%D8%AA%D8%BA%D9%8A%D9%8A%D8%B1%20%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%20%D8%AE%D9%84%D9%81%20%D8%A7%D9%84%D8%B5%D8%AF%D8%A7%D9%85%20%D8%A7%D9%84%D8%AE%D9%84%D9%81%D9%8A%20%D9%8A%D8%B3",
+      "wiring": "غير مؤكد: يلزم مخطط مطابق لرقم VIN/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Insignia%20A%202013%E2%80%932015%20%D9%85%D8%AC%D9%87%D8%B2%D8%A9%20%D8%A8%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%20%D8%AA%D8%BA%D9%8A%D9%8A%D8%B1%20%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%20U0140%20%D8%AD%D8%B3%D8%A7%D8%B3%20%D8%B1%D8%A7%D8%AF%D8%A7%D8%B1%20%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%20%D8%AA%D8%BA%D9%8A%D9%8A%D8%B1%20%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1%20%D8%AE%D9%84%D9%81%20%D8%A7%D9%84%D8%B5%D8%AF%D8%A7%D9%85%20%D8%A7%D9%84%D8%AE%D9%84%D9%81%D9%8A%20%D9%8A%D8%B3%20diagnosis%20repair",
+      "priority_evidence": "HELLA حالة موثقة بمحرك غير مقيد 2013–2015؛ تفسير السبب يتطلب قراءة جميع وحدات الشبكة",
+      "sources": [
+        {
+          "publisher": "HELLA",
+          "version_date": "Insignia A 2013-2015 with Lane Change Assistant; date unspecified",
+          "url": "https://www.hella.com/techworld/en/bi/opel-insignia-electronics-failure/",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P15A0",
+      "code_format": "خاص بالمصنّع (Manufacturer-specific)؛ لا تعمم تعريفه على ECU آخر",
+      "ecu": "Engine control unit / ECU, exact PSA controller not established",
+      "definition_en": "Manufacturer-specific engine DTC mentioned by Schaeffler INA 0199; exact OEM fault definition NOT VERIFIED",
+      "translation_ar": "كود خاص بالمصنّع مرتبط في نشرة Schaeffler بتآكل سير التوقيت داخل الزيت؛ التعريف الرسمي المحدد غير مؤكد",
+      "category": "P",
+      "applicability": "Opel/Vauxhall؛ محركات البنزين ثلاثية الأسطوانات 1.2L من عائلة PSA/EB بوجود سير توقيت داخل الزيت؛ المصدر لا يحدد الطراز والسنوات والأسواق؛ يجب تأكيد VIN/رمز المحرك ونوع ECU قبل التطبيق؛ PSA/Stellantis",
+      "symptoms": "يمكن تخزين P15A0 مع تآكل غير طبيعي لسير التوقيت داخل الزيت؛ النشرة لا تخصص عرضاً مختلفاً لكل رمز؛ احتمال انسداد سحب مضخة الزيت وتلف المحرك إذا استمر التشغيل",
+      "causes": "في الحالة الموثقة: تفتت مادة سير التوقيت داخل الزيت ثم انسداد مصفاة سحب مضخة الزيت أو قنوات الزيت. تعريف الكود المفرد وعتبة تسجيله غير مذكورين، فلا تجزم بأن كل P15A0 سببه السير",
+      "diagnostic_steps": "[Schaeffler INA 0199/04.2023] افحص السير بصرياً عبر فتحة خدمة غطاء التوقيت بحثاً عن تشقق/تفكك/تفتت؛ عند إثبات المشكلة تحقق من مصفاة سحب الزيت والقنوات ونظافتها؛ نظف حسب تعليمات المصنع وقد يلزم فحص أو تبديل مضخة الزيت في الحالات الشديدة؛ استعمل زيتاً مطابقاً لاعتماد المصنع. [إجراء مهني مستنتج] افحص ضغط الزيت الفعلي بمقياس مناسب عند الاشتباه؛ لا تتابع تشغيل المحرك مع دليل على غياب ضغط الزيت؛ القيم المرجعية الدقيقة غير مؤكدة.",
+      "live_data": "Engine Oil Pressure (ضغط زيت المحرك، إذا تدعمه وحدة ECU)؛ Oil Pressure Regulation Status (حالة تنظيم ضغط الزيت، إن توفرت)؛ Engine Speed (سرعة دوران المحرك)؛ Engine Oil Temperature (درجة حرارة زيت المحرك)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "سير التوقيت المغمور في الزيت (داخل غطاء التوقيت)؛ أنبوب/مصفاة سحب مضخة الزيت؛ قنوات الزيت؛ مضخة الزيت (فحص أو تبديل فقط إذا ثبت الضرر). أرقام القطع ومواقع الوصول حسب طراز EB غير مؤكدة",
+      "images": "رابط وثيقة تحتوي صورة فوتوغرافية موثقة لانسداد مدخل مضخة الزيت (Figure 1): https://vehiclelifetimesolutions.schaeffler.com/medias/INA-0199-en.PDF?context=bWFzdGVyfGRvY3VtZW50c3wyMTcxNDN8YXBwbGljYXRpb24vcGRmfGRvY3VtZW50cy9oNDEvaDIxLzkzMDY1ODk2MjYzOTgucGRmfGNkYTk4MWQ1NDM0YzM5YjYzODdkN2E2YjNmMjQ1YWFiMTcyOGY3Mjc0ODFiMzAxNDc1ZDU0Y2EyOTMyMTQ5MGY ؛ لا تعاد استضافة الصورة أو نسخها",
+      "wiring": "غير متاح المصدر: Schaeffler لا تنشر pinout أو مخطط ECU؛ يلزم مخطط مطابق VIN/نوع EB/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Opel/Vauxhall%20P15A0%20%D8%B3%D9%8A%D8%B1%20%D8%A7%D9%84%D8%AA%D9%88%D9%82%D9%8A%D8%AA%20%D8%A7%D9%84%D9%85%D8%BA%D9%85%D9%88%D8%B1%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%20%28%D8%AF%D8%A7%D8%AE%D9%84%20%D8%BA%D8%B7%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AA%D9%88%D9%82%D9%8A%D8%AA%29%20diagnosis%20repair",
+      "priority_evidence": "نشرة فنية INA 0199 بتاريخ 04.2023 تسمي Opel/Vauxhall وPSA/EB1.2 والأكواد الثلاثة صراحة؛ أولوية سلامة المحرك؛ ليست إحصاء تكرار",
+      "sources": [
+        {
+          "publisher": "Schaeffler INA/REPXPERT",
+          "version_date": "INA Service Info INA 0199, issued 04.2023",
+          "url": "https://vehiclelifetimesolutions.schaeffler.com/medias/INA-0199-en.PDF?context=bWFzdGVyfGRvY3VtZW50c3wyMTcxNDN8YXBwbGljYXRpb24vcGRmfGRvY3VtZW50cy9oNDEvaDIxLzkzMDY1ODk2MjYzOTgucGRmfGNkYTk4MWQ1NDM0YzM5YjYzODdkN2E2YjNmMjQ1YWFiMTcyOGY3Mjc0ODFiMzAxNDc1ZDU0Y2EyOTMyMTQ5MGY",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P15A1",
+      "code_format": "خاص بالمصنّع (Manufacturer-specific)؛ لا تعمم تعريفه على ECU آخر",
+      "ecu": "Engine control unit / ECU, exact PSA controller not established",
+      "definition_en": "Manufacturer-specific engine DTC mentioned by Schaeffler INA 0199; exact OEM fault definition NOT VERIFIED",
+      "translation_ar": "كود خاص بالمصنّع مرتبط في نشرة Schaeffler بتآكل سير التوقيت داخل الزيت؛ التعريف الرسمي المحدد غير مؤكد",
+      "category": "P",
+      "applicability": "Opel/Vauxhall؛ محركات البنزين ثلاثية الأسطوانات 1.2L من عائلة PSA/EB بوجود سير توقيت داخل الزيت؛ المصدر لا يحدد الطراز والسنوات والأسواق؛ يجب تأكيد VIN/رمز المحرك ونوع ECU قبل التطبيق؛ PSA/Stellantis",
+      "symptoms": "يمكن تخزين P15A1 مع تآكل غير طبيعي لسير التوقيت داخل الزيت؛ النشرة لا تخصص عرضاً مختلفاً لكل رمز؛ احتمال انسداد سحب مضخة الزيت وتلف المحرك إذا استمر التشغيل",
+      "causes": "في الحالة الموثقة: تفتت مادة سير التوقيت داخل الزيت ثم انسداد مصفاة سحب مضخة الزيت أو قنوات الزيت. تعريف الكود المفرد وعتبة تسجيله غير مذكورين، فلا تجزم بأن كل P15A1 سببه السير",
+      "diagnostic_steps": "[Schaeffler INA 0199/04.2023] افحص السير بصرياً عبر فتحة خدمة غطاء التوقيت بحثاً عن تشقق/تفكك/تفتت؛ عند إثبات المشكلة تحقق من مصفاة سحب الزيت والقنوات ونظافتها؛ نظف حسب تعليمات المصنع وقد يلزم فحص أو تبديل مضخة الزيت في الحالات الشديدة؛ استعمل زيتاً مطابقاً لاعتماد المصنع. [إجراء مهني مستنتج] افحص ضغط الزيت الفعلي بمقياس مناسب عند الاشتباه؛ لا تتابع تشغيل المحرك مع دليل على غياب ضغط الزيت؛ القيم المرجعية الدقيقة غير مؤكدة.",
+      "live_data": "Engine Oil Pressure (ضغط زيت المحرك، إذا تدعمه وحدة ECU)؛ Oil Pressure Regulation Status (حالة تنظيم ضغط الزيت، إن توفرت)؛ Engine Speed (سرعة دوران المحرك)؛ Engine Oil Temperature (درجة حرارة زيت المحرك)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "سير التوقيت المغمور في الزيت (داخل غطاء التوقيت)؛ أنبوب/مصفاة سحب مضخة الزيت؛ قنوات الزيت؛ مضخة الزيت (فحص أو تبديل فقط إذا ثبت الضرر). أرقام القطع ومواقع الوصول حسب طراز EB غير مؤكدة",
+      "images": "رابط وثيقة تحتوي صورة فوتوغرافية موثقة لانسداد مدخل مضخة الزيت (Figure 1): https://vehiclelifetimesolutions.schaeffler.com/medias/INA-0199-en.PDF?context=bWFzdGVyfGRvY3VtZW50c3wyMTcxNDN8YXBwbGljYXRpb24vcGRmfGRvY3VtZW50cy9oNDEvaDIxLzkzMDY1ODk2MjYzOTgucGRmfGNkYTk4MWQ1NDM0YzM5YjYzODdkN2E2YjNmMjQ1YWFiMTcyOGY3Mjc0ODFiMzAxNDc1ZDU0Y2EyOTMyMTQ5MGY ؛ لا تعاد استضافة الصورة أو نسخها",
+      "wiring": "غير متاح المصدر: Schaeffler لا تنشر pinout أو مخطط ECU؛ يلزم مخطط مطابق VIN/نوع EB/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Opel/Vauxhall%20P15A1%20%D8%B3%D9%8A%D8%B1%20%D8%A7%D9%84%D8%AA%D9%88%D9%82%D9%8A%D8%AA%20%D8%A7%D9%84%D9%85%D8%BA%D9%85%D9%88%D8%B1%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%20%28%D8%AF%D8%A7%D8%AE%D9%84%20%D8%BA%D8%B7%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AA%D9%88%D9%82%D9%8A%D8%AA%29%20diagnosis%20repair",
+      "priority_evidence": "نشرة فنية INA 0199 بتاريخ 04.2023 تسمي Opel/Vauxhall وPSA/EB1.2 والأكواد الثلاثة صراحة؛ أولوية سلامة المحرك؛ ليست إحصاء تكرار",
+      "sources": [
+        {
+          "publisher": "Schaeffler INA/REPXPERT",
+          "version_date": "INA Service Info INA 0199, issued 04.2023",
+          "url": "https://vehiclelifetimesolutions.schaeffler.com/medias/INA-0199-en.PDF?context=bWFzdGVyfGRvY3VtZW50c3wyMTcxNDN8YXBwbGljYXRpb24vcGRmfGRvY3VtZW50cy9oNDEvaDIxLzkzMDY1ODk2MjYzOTgucGRmfGNkYTk4MWQ1NDM0YzM5YjYzODdkN2E2YjNmMjQ1YWFiMTcyOGY3Mjc0ODFiMzAxNDc1ZDU0Y2EyOTMyMTQ5MGY",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "code": "P15A8",
+      "code_format": "خاص بالمصنّع (Manufacturer-specific)؛ لا تعمم تعريفه على ECU آخر",
+      "ecu": "Engine control unit / ECU, exact PSA controller not established",
+      "definition_en": "Manufacturer-specific engine DTC mentioned by Schaeffler INA 0199; exact OEM fault definition NOT VERIFIED",
+      "translation_ar": "كود خاص بالمصنّع مرتبط في نشرة Schaeffler بتآكل سير التوقيت داخل الزيت؛ التعريف الرسمي المحدد غير مؤكد",
+      "category": "P",
+      "applicability": "Opel/Vauxhall؛ محركات البنزين ثلاثية الأسطوانات 1.2L من عائلة PSA/EB بوجود سير توقيت داخل الزيت؛ المصدر لا يحدد الطراز والسنوات والأسواق؛ يجب تأكيد VIN/رمز المحرك ونوع ECU قبل التطبيق؛ PSA/Stellantis",
+      "symptoms": "يمكن تخزين P15A8 مع تآكل غير طبيعي لسير التوقيت داخل الزيت؛ النشرة لا تخصص عرضاً مختلفاً لكل رمز؛ احتمال انسداد سحب مضخة الزيت وتلف المحرك إذا استمر التشغيل",
+      "causes": "في الحالة الموثقة: تفتت مادة سير التوقيت داخل الزيت ثم انسداد مصفاة سحب مضخة الزيت أو قنوات الزيت. تعريف الكود المفرد وعتبة تسجيله غير مذكورين، فلا تجزم بأن كل P15A8 سببه السير",
+      "diagnostic_steps": "[Schaeffler INA 0199/04.2023] افحص السير بصرياً عبر فتحة خدمة غطاء التوقيت بحثاً عن تشقق/تفكك/تفتت؛ عند إثبات المشكلة تحقق من مصفاة سحب الزيت والقنوات ونظافتها؛ نظف حسب تعليمات المصنع وقد يلزم فحص أو تبديل مضخة الزيت في الحالات الشديدة؛ استعمل زيتاً مطابقاً لاعتماد المصنع. [إجراء مهني مستنتج] افحص ضغط الزيت الفعلي بمقياس مناسب عند الاشتباه؛ لا تتابع تشغيل المحرك مع دليل على غياب ضغط الزيت؛ القيم المرجعية الدقيقة غير مؤكدة.",
+      "live_data": "Engine Oil Pressure (ضغط زيت المحرك، إذا تدعمه وحدة ECU)؛ Oil Pressure Regulation Status (حالة تنظيم ضغط الزيت، إن توفرت)؛ Engine Speed (سرعة دوران المحرك)؛ Engine Oil Temperature (درجة حرارة زيت المحرك)؛ القيم المرجعية العددية: غير مؤكد؛ قارن فقط بعد تحديد ECU/VIN والدليل الفني.",
+      "parts": "سير التوقيت المغمور في الزيت (داخل غطاء التوقيت)؛ أنبوب/مصفاة سحب مضخة الزيت؛ قنوات الزيت؛ مضخة الزيت (فحص أو تبديل فقط إذا ثبت الضرر). أرقام القطع ومواقع الوصول حسب طراز EB غير مؤكدة",
+      "images": "رابط وثيقة تحتوي صورة فوتوغرافية موثقة لانسداد مدخل مضخة الزيت (Figure 1): https://vehiclelifetimesolutions.schaeffler.com/medias/INA-0199-en.PDF?context=bWFzdGVyfGRvY3VtZW50c3wyMTcxNDN8YXBwbGljYXRpb24vcGRmfGRvY3VtZW50cy9oNDEvaDIxLzkzMDY1ODk2MjYzOTgucGRmfGNkYTk4MWQ1NDM0YzM5YjYzODdkN2E2YjNmMjQ1YWFiMTcyOGY3Mjc0ODFiMzAxNDc1ZDU0Y2EyOTMyMTQ5MGY ؛ لا تعاد استضافة الصورة أو نسخها",
+      "wiring": "غير متاح المصدر: Schaeffler لا تنشر pinout أو مخطط ECU؛ يلزم مخطط مطابق VIN/نوع EB/ECU",
+      "video": "رابط نتائج بحث فيديو غير متحقق من المقاطع: https://www.youtube.com/results?search_query=Opel%20Vauxhall%20Opel/Vauxhall%20P15A8%20%D8%B3%D9%8A%D8%B1%20%D8%A7%D9%84%D8%AA%D9%88%D9%82%D9%8A%D8%AA%20%D8%A7%D9%84%D9%85%D8%BA%D9%85%D9%88%D8%B1%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%20%28%D8%AF%D8%A7%D8%AE%D9%84%20%D8%BA%D8%B7%D8%A7%D8%A1%20%D8%A7%D9%84%D8%AA%D9%88%D9%82%D9%8A%D8%AA%29%20diagnosis%20repair",
+      "priority_evidence": "نشرة فنية INA 0199 بتاريخ 04.2023 تسمي Opel/Vauxhall وPSA/EB1.2 والأكواد الثلاثة صراحة؛ أولوية سلامة المحرك؛ ليست إحصاء تكرار",
+      "sources": [
+        {
+          "publisher": "Schaeffler INA/REPXPERT",
+          "version_date": "INA Service Info INA 0199, issued 04.2023",
+          "url": "https://vehiclelifetimesolutions.schaeffler.com/medias/INA-0199-en.PDF?context=bWFzdGVyfGRvY3VtZW50c3wyMTcxNDN8YXBwbGljYXRpb24vcGRmfGRvY3VtZW50cy9oNDEvaDIxLzkzMDY1ODk2MjYzOTgucGRmfGNkYTk4MWQ1NDM0YzM5YjYzODdkN2E2YjNmMjQ1YWFiMTcyOGY3Mjc0ODFiMzAxNDc1ZDU0Y2EyOTMyMTQ5MGY",
+          "checked_on": "2026-10-15"
+        }
+      ],
+      "verification_status": "قيد التوثيق"
+    }
+  ]
+}

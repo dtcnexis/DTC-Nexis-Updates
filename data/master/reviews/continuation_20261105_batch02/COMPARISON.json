@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-05",
+  "parent_commit": "1d683050744e573605f8f06e6572202c83b93bcb",
+  "source_rows_preserved": 108,
+  "new_counted_rows": 0,
+  "total_counted_rows": 8983,
+  "total_counted_files": 44,
+  "comparison_policy": "Exact raw code within brand; original source scopes retained separately. No deletion/merging across ECU, model, year, suffix or engine. EN/AR checks compare stored wording only and do not establish OEM correctness.",
+  "sources": [
+    {
+      "name": "opel_vauxhall_dtc_batch01.json",
+      "source_rows": 34,
+      "matched_code_rows": 34,
+      "matching_en_ar": 33,
+      "matching_ecu": 33,
+      "definition_conflicts": [
+        {
+          "source_row_index": 19,
+          "code": "P0100",
+          "definition_en": "Mass or Volume Air Flow A Circuit",
+          "translation_ar": "خلل دائرة حساس كتلة/حجم الهواء A",
+          "existing": [
+            {
+              "definition_en": "Mass or Volume Air Flow A Circuit",
+              "translation_ar": "خلل في دائرة حساس قياس كتلة/حجم الهواء A"
+            }
+          ]
+        }
+      ],
+      "blank_en_ar": [],
+      "original_distinct_codes": 33,
+      "preservation_path": "data/master/enrichment/opel_vauxhall_batch01_source_values_20261105.json",
+      "additional_counted_rows": 0,
+      "all_definitions_technically_approved": false
+    },
+    {
+      "name": "polestar_dtc_batch01.json",
+      "source_rows": 31,
+      "matched_code_rows": 31,
+      "matching_en_ar": 31,
+      "matching_ecu": 0,
+      "definition_conflicts": [],
+      "blank_en_ar": [
+        "B109A4A",
+        "C007768",
+        "P060C00",
+        "P060C04",
+        "P0A9500",
+        "P0D1513",
+        "P0D1556",
+        "P0D1800",
+        "P0D67A2",
+        "P0E0500",
+        "P0E2F00",
+        "U116E00",
+        "U116E00",
+        "U201F00",
+        "U210993",
+        "P060C66",
+        "P060C66",
+        "P0A7A66",
+        "P0A7A66",
+        "P0A8187",
+        "P0D320A",
+        "P0D3224",
+        "P0D6787",
+        "P0AA800",
+        "P127900",
+        "B1A0213",
+        "U002888",
+        "U007388",
+        "U112700",
+        "P2BE017",
+        "B15381B"
+      ],
+      "original_distinct_codes": 28,
+      "preservation_path": "data/master/enrichment/polestar_batch01_source_values_20261105.json",
+      "additional_counted_rows": 0,
+      "all_definitions_technically_approved": false
+    },
+    {
+      "name": "skoda_dtc_batch01.json",
+      "source_rows": 43,
+      "matched_code_rows": 43,
+      "matching_en_ar": 43,
+      "matching_ecu": 43,
+      "definition_conflicts": [],
+      "blank_en_ar": [],
+      "original_distinct_codes": 39,
+      "preservation_path": "data/master/enrichment/skoda_batch01_source_values_20261105.json",
+      "additional_counted_rows": 0,
+      "all_definitions_technically_approved": false
+    }
+  ]
+}
