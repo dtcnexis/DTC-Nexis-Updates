@@ -1,0 +1,61 @@
+{
+  "brand": "Citroën",
+  "status": "review_only",
+  "date": "2026-11-16",
+  "policy": "Not approved for data/master; no release publication",
+  "source_batches": [
+    "Citroen_DTC_NEXIS_Batch01_2026-10-15.zip",
+    "Citroen_DTC_NEXIS_Expansion_Batch02.zip"
+  ],
+  "records": [
+    {
+      "code": "P0598",
+      "engine": "8FP",
+      "vehicle": "C3 1.4 petrol",
+      "ecu": "engine",
+      "reason": "Verify exact ECU failure type and VIN applicability",
+      "source": "https://www.hella.com/techworld/uk/bi/citroen-c3-radiator-fan-permanently-on-engine-control-lamp/"
+    },
+    {
+      "code": "P023B",
+      "engine": "8FP",
+      "vehicle": "C3 1.4 petrol",
+      "ecu": "engine",
+      "reason": "Generic SAE definition may not match actual component in HELLA repair case",
+      "source": "https://www.hella.com/techworld/uk/bi/citroen-c3-radiator-fan-permanently-on-engine-control-lamp/"
+    },
+    {
+      "code": "P0947",
+      "engine": "8FP",
+      "vehicle": "C3 1.4 petrol",
+      "ecu": "engine",
+      "reason": "Generic SAE definition may not match actual component in HELLA repair case",
+      "source": "https://www.hella.com/techworld/uk/bi/citroen-c3-radiator-fan-permanently-on-engine-control-lamp/"
+    },
+    {
+      "code": "P0335",
+      "engine": "DW12B",
+      "vehicle": "C5 2.2 HDi",
+      "ecu": "engine",
+      "reason": "Confirm ECU and specific production date applicability",
+      "source": "https://www.hella.com/techworld/uk/bi/citroen-c5-irregular-engine-running/"
+    },
+    {
+      "code": "P0336",
+      "engine": "DW12B",
+      "vehicle": "C5 2.2 HDi",
+      "ecu": "engine",
+      "reason": "Confirm ECU and specific production date applicability",
+      "source": "https://www.hella.com/techworld/uk/bi/citroen-c5-irregular-engine-running/"
+    },
+    {
+      "code": "P0606",
+      "engine": "DW12B",
+      "vehicle": "C5 2.2 HDi",
+      "ecu": "engine",
+      "reason": "Do not infer ECU replacement from generic processor-fault descriptor; inspect CKP connector bulletin",
+      "source": "https://www.hella.com/techworld/uk/bi/citroen-c5-irregular-engine-running/"
+    }
+  ],
+  "note": "Six priority cases only; other 82 source-batch records remain unapproved and require separate inventory reconciliation."
+}
