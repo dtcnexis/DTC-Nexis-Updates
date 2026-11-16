@@ -1,0 +1,3415 @@
+{
+  "schema": "dtc-nexis-permanent-brand-code-records-v1",
+  "brand": "Opel / Vauxhall",
+  "batch": "batch05_20261116",
+  "collected_on": "2026-11-16",
+  "branch": "data/opel-vauxhall-dtc-continuation-20261116",
+  "release_to_app": "NOT_ACTIVE",
+  "existing_base_code_count": 57,
+  "new_distinct_base_codes": 30,
+  "new_variant_records": 32,
+  "source_count": 7,
+  "source_policy": "Source confirms DTC occurrence as group in vehicle context. Do not claim OEM approval. Family-level Easytronic DTCs not assigned to model/year/engine.",
+  "no_images_collected": true,
+  "source_records": [
+    {
+      "id": "hella_meriva_b_bcm",
+      "title": "Opel Meriva B – BCM failure, immobilizer/no-start",
+      "url": "https://www.hella.com/techworld/de/bi/opel-mervia-ausfall-bcm-bordnetzsteuergeraet/",
+      "publisher": "HELLA Tech World",
+      "coverage": "Meriva B, 2014–2017 build years, BCM module, source codes as group",
+      "checked_at": "2026-11-16",
+      "published_date": "not independently confirmed for this exact version",
+      "source_quality": "vehicle_specific_aftermarket_technical_bulletin",
+      "copyright": "Link and independently paraphrased diagnosis only; no copied imagery or diagrams"
+    },
+    {
+      "id": "hella_mokka_afs",
+      "title": "Opel Mokka – LED headlamps cause a humming/rattling noise",
+      "url": "https://www.hella.com/techworld/ae/bi/opel-mokka-led-headlamps-causing-noise/",
+      "publisher": "HELLA Tech World",
+      "coverage": "Mokka 2012–2016 with AFS/LED headlamps; codes in common symptom group",
+      "checked_at": "2026-11-16",
+      "published_date": "not independently confirmed for this exact version",
+      "source_quality": "vehicle_specific_aftermarket_technical_bulletin",
+      "copyright": "Link and independently paraphrased diagnosis only; no copied imagery or diagrams"
+    },
+    {
+      "id": "hella_astra_h_zafira_b_abs",
+      "title": "Opel Astra H/Zafira B - ABS warning lamp lights up",
+      "url": "https://www.hella.com/techworld/en/bi/opel-astra-h-zafira-b-the-abs-warning-lamp-lights-up/",
+      "publisher": "HELLA Tech World",
+      "coverage": "Astra H and Zafira B, from MY2005, rear wheel-speed sensor connector moisture",
+      "checked_at": "2026-11-16",
+      "published_date": "not independently confirmed for this exact version",
+      "source_quality": "vehicle_specific_aftermarket_technical_bulletin",
+      "copyright": "Link and independently paraphrased diagnosis only; no copied imagery or diagrams"
+    },
+    {
+      "id": "hella_meriva_b_c0298",
+      "title": "Opel Meriva B - Parking brake release switch circuit faulty, C0298",
+      "url": "https://www.hella.com/techworld/uk/bi/opel-meriva-b-fehlercode-c0298/",
+      "publisher": "HELLA Tech World",
+      "coverage": "Meriva B MY2010–2013 with electric parking brake",
+      "checked_at": "2026-11-16",
+      "published_date": "not independently confirmed for this exact version",
+      "source_quality": "vehicle_specific_aftermarket_technical_bulletin",
+      "copyright": "Link and independently paraphrased diagnosis only; no copied imagery or diagrams"
+    },
+    {
+      "id": "hella_adam_u_codes",
+      "title": "Opel ADAM - U0077, U0073, U0401 and sporadic ABS/ESP lamp",
+      "url": "https://www.hella.com/techworld/ae/bi/opel-adam-abs-esp-control-lamp-lights-up/",
+      "publisher": "HELLA Tech World",
+      "coverage": "ADAM 2012–2019, 1.0i / 1.2i / 1.4i",
+      "checked_at": "2026-11-16",
+      "published_date": "not independently confirmed for this exact version",
+      "source_quality": "vehicle_specific_aftermarket_technical_bulletin",
+      "copyright": "Link and independently paraphrased diagnosis only; no copied imagery or diagrams"
+    },
+    {
+      "id": "actronics_f13f17_tcu_guide",
+      "title": "ACTRONICS LTD Diagnosis Guide: Transmission Control Unit, Edition 1, Bosch Easytronic F13/F17 MTA pp.88–91",
+      "url": "https://api-aftermarket.schaeffler.de/medias/AC-Tronics-Diagnostic-guide.pdf?attachment=true&context=bWFzdGVyfHJvb3R8MTMxOTY4NzR8YXBwbGljYXRpb24vcGRmfGgxNC9oNjUvOTM5MDgzMjA1ODM5OC5wZGZ8OTllNzhlZDg0ZTM3MDRiNzg0MmI4MjVhMDZmOWYzNTAzODFkNTk0YzUzZDViNThlNTMwZDMxMGM3Y2RkNDQ3Yw",
+      "publisher": "ACTRONICS LTD; PDF hosted by Schaeffler aftermarket",
+      "coverage": "Bosch Easytronic F13/F17 MTA product family; model lists do not establish DTC occurrence for every engine/ECU variant",
+      "checked_at": "2026-11-16",
+      "published_date": "not independently confirmed for this exact version",
+      "source_quality": "transmission_module_specialist_reference",
+      "copyright": "Link and independently paraphrased diagnosis only; no copied imagery or diagrams"
+    },
+    {
+      "id": "actronics_se_p1607",
+      "title": "Lösning för felkod P1607: Easytronic TCU/kopplingsställdon",
+      "url": "https://www.actronics.se/nyheter/losning-for-felkod-p1607",
+      "publisher": "ACTRONICS AB Sweden",
+      "coverage": "P1607, Easytronic F13/F17 MTA, broad Opel model examples",
+      "checked_at": "2026-11-16",
+      "published_date": "not independently confirmed for this exact version",
+      "source_quality": "transmission_module_specialist_reference",
+      "copyright": "Link and independently paraphrased diagnosis only; no copied imagery or diagrams"
+    }
+  ],
+  "records": [
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "source_confirmed_group_code_and_vehicle_context_not_OEM_validated",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_b101d_meriva_b_bcm_2014_2017",
+      "raw_code": "B101D",
+      "base_code": "B101D",
+      "category": "B",
+      "code_type": "B_manufacturer_specific_definition_from_HELLA_case",
+      "ecu": "BCM / security authorization network (storing ECU to verify)",
+      "variant": "meriva_b_bcm_2014_2017",
+      "model": "Meriva B",
+      "applicability": {
+        "model": "Meriva B",
+        "year_type": "production_years",
+        "years": "2014–2017",
+        "engine_code": null,
+        "ecu": "BCM implicated, individual code-storing module not identified for all six DTCs",
+        "fuel": null,
+        "market": null,
+        "vehicle_identity": "BCM references 39013500/39013501 named in repair notice; not proof of universal fit"
+      },
+      "definition_en": "Electronic control module hardware (HELLA contextual descriptor)",
+      "translation_ar": "خلل عتادي في وحدة التحكم الإلكترونية",
+      "symptoms": [
+        "No start",
+        "Immobilizer indicator illuminated",
+        "BCM not communicating",
+        "Remote key/security authorization malfunction"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "BCM internally failing in the HELLA repair case; diagnosis must prove, not infer automatically",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "BCM power/ground/communications fault or battery supply issue",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Key or HVAC identity mismatch may be a symptom or configuration condition, not necessarily faulty hardware",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Scan all modules; record storing ECU, freeze frame and other immobilizer codes",
+        "Check system voltage, BCM supply/fuses, grounds, network integrity without probing security circuits improperly",
+        "Confirm part number and configuration with official Opel service data; ensure authorized module programming if BCM is repaired/replaced",
+        "Clear codes with authorized equipment and recheck no-start/security functions"
+      ],
+      "live_data": [
+        {
+          "name_en": "BCM Communication Status",
+          "name_ar": "حالة الاتصال بوحدة BCM",
+          "threshold": "unknown"
+        },
+        {
+          "name_en": "Immobilizer Authentication Status",
+          "name_ar": "حالة التحقق من مانع التشغيل",
+          "threshold": "unknown"
+        }
+      ],
+      "parts": [
+        "BCM module (do not replace without proof)",
+        "Key transponder/remote for diagnosis",
+        "BCM wiring/connectors"
+      ],
+      "source_ids": [
+        "hella_meriva_b_bcm"
+      ],
+      "related_codes": [
+        "B3057",
+        "B3114",
+        "B3115",
+        "B3925",
+        "B3935"
+      ],
+      "risk": "security_related_no_bypass_procedures"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "source_confirmed_group_code_and_vehicle_context_not_OEM_validated",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_b3057_meriva_b_bcm_2014_2017",
+      "raw_code": "B3057",
+      "base_code": "B3057",
+      "category": "B",
+      "code_type": "B_manufacturer_specific_definition_from_HELLA_case",
+      "ecu": "BCM / security authorization network (storing ECU to verify)",
+      "variant": "meriva_b_bcm_2014_2017",
+      "model": "Meriva B",
+      "applicability": {
+        "model": "Meriva B",
+        "year_type": "production_years",
+        "years": "2014–2017",
+        "engine_code": null,
+        "ecu": "BCM implicated, individual code-storing module not identified for all six DTCs",
+        "fuel": null,
+        "market": null,
+        "vehicle_identity": "BCM references 39013500/39013501 named in repair notice; not proof of universal fit"
+      },
+      "definition_en": "Security code not programmed (HELLA contextual descriptor)",
+      "translation_ar": "رمز الأمان غير مبرمج",
+      "symptoms": [
+        "No start",
+        "Immobilizer indicator illuminated",
+        "BCM not communicating",
+        "Remote key/security authorization malfunction"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "BCM internally failing in the HELLA repair case; diagnosis must prove, not infer automatically",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "BCM power/ground/communications fault or battery supply issue",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Key or HVAC identity mismatch may be a symptom or configuration condition, not necessarily faulty hardware",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Scan all modules; record storing ECU, freeze frame and other immobilizer codes",
+        "Check system voltage, BCM supply/fuses, grounds, network integrity without probing security circuits improperly",
+        "Confirm part number and configuration with official Opel service data; ensure authorized module programming if BCM is repaired/replaced",
+        "Clear codes with authorized equipment and recheck no-start/security functions"
+      ],
+      "live_data": [
+        {
+          "name_en": "BCM Communication Status",
+          "name_ar": "حالة الاتصال بوحدة BCM",
+          "threshold": "unknown"
+        },
+        {
+          "name_en": "Immobilizer Authentication Status",
+          "name_ar": "حالة التحقق من مانع التشغيل",
+          "threshold": "unknown"
+        }
+      ],
+      "parts": [
+        "BCM module (do not replace without proof)",
+        "Key transponder/remote for diagnosis",
+        "BCM wiring/connectors"
+      ],
+      "source_ids": [
+        "hella_meriva_b_bcm"
+      ],
+      "related_codes": [
+        "B101D",
+        "B3114",
+        "B3115",
+        "B3925",
+        "B3935"
+      ],
+      "risk": "security_related_no_bypass_procedures"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "source_confirmed_group_code_and_vehicle_context_not_OEM_validated",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_b3114_meriva_b_bcm_2014_2017",
+      "raw_code": "B3114",
+      "base_code": "B3114",
+      "category": "B",
+      "code_type": "B_manufacturer_specific_definition_from_HELLA_case",
+      "ecu": "BCM / security authorization network (storing ECU to verify)",
+      "variant": "meriva_b_bcm_2014_2017",
+      "model": "Meriva B",
+      "applicability": {
+        "model": "Meriva B",
+        "year_type": "production_years",
+        "years": "2014–2017",
+        "engine_code": null,
+        "ecu": "BCM implicated, individual code-storing module not identified for all six DTCs",
+        "fuel": null,
+        "market": null,
+        "vehicle_identity": "BCM references 39013500/39013501 named in repair notice; not proof of universal fit"
+      },
+      "definition_en": "Remote control key 1 – Invalid data",
+      "translation_ar": "بيانات غير صالحة للمفتاح ذي التحكم عن بُعد رقم 1",
+      "symptoms": [
+        "No start",
+        "Immobilizer indicator illuminated",
+        "BCM not communicating",
+        "Remote key/security authorization malfunction"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "BCM internally failing in the HELLA repair case; diagnosis must prove, not infer automatically",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "BCM power/ground/communications fault or battery supply issue",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Key or HVAC identity mismatch may be a symptom or configuration condition, not necessarily faulty hardware",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Scan all modules; record storing ECU, freeze frame and other immobilizer codes",
+        "Check system voltage, BCM supply/fuses, grounds, network integrity without probing security circuits improperly",
+        "Confirm part number and configuration with official Opel service data; ensure authorized module programming if BCM is repaired/replaced",
+        "Clear codes with authorized equipment and recheck no-start/security functions"
+      ],
+      "live_data": [
+        {
+          "name_en": "BCM Communication Status",
+          "name_ar": "حالة الاتصال بوحدة BCM",
+          "threshold": "unknown"
+        },
+        {
+          "name_en": "Immobilizer Authentication Status",
+          "name_ar": "حالة التحقق من مانع التشغيل",
+          "threshold": "unknown"
+        }
+      ],
+      "parts": [
+        "BCM module (do not replace without proof)",
+        "Key transponder/remote for diagnosis",
+        "BCM wiring/connectors"
+      ],
+      "source_ids": [
+        "hella_meriva_b_bcm"
+      ],
+      "related_codes": [
+        "B101D",
+        "B3057",
+        "B3115",
+        "B3925",
+        "B3935"
+      ],
+      "risk": "security_related_no_bypass_procedures"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "source_confirmed_group_code_and_vehicle_context_not_OEM_validated",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_b3115_meriva_b_bcm_2014_2017",
+      "raw_code": "B3115",
+      "base_code": "B3115",
+      "category": "B",
+      "code_type": "B_manufacturer_specific_definition_from_HELLA_case",
+      "ecu": "BCM / security authorization network (storing ECU to verify)",
+      "variant": "meriva_b_bcm_2014_2017",
+      "model": "Meriva B",
+      "applicability": {
+        "model": "Meriva B",
+        "year_type": "production_years",
+        "years": "2014–2017",
+        "engine_code": null,
+        "ecu": "BCM implicated, individual code-storing module not identified for all six DTCs",
+        "fuel": null,
+        "market": null,
+        "vehicle_identity": "BCM references 39013500/39013501 named in repair notice; not proof of universal fit"
+      },
+      "definition_en": "Remote control key 2 – Invalid data",
+      "translation_ar": "بيانات غير صالحة للمفتاح ذي التحكم عن بُعد رقم 2",
+      "symptoms": [
+        "No start",
+        "Immobilizer indicator illuminated",
+        "BCM not communicating",
+        "Remote key/security authorization malfunction"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "BCM internally failing in the HELLA repair case; diagnosis must prove, not infer automatically",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "BCM power/ground/communications fault or battery supply issue",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Key or HVAC identity mismatch may be a symptom or configuration condition, not necessarily faulty hardware",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Scan all modules; record storing ECU, freeze frame and other immobilizer codes",
+        "Check system voltage, BCM supply/fuses, grounds, network integrity without probing security circuits improperly",
+        "Confirm part number and configuration with official Opel service data; ensure authorized module programming if BCM is repaired/replaced",
+        "Clear codes with authorized equipment and recheck no-start/security functions"
+      ],
+      "live_data": [
+        {
+          "name_en": "BCM Communication Status",
+          "name_ar": "حالة الاتصال بوحدة BCM",
+          "threshold": "unknown"
+        },
+        {
+          "name_en": "Immobilizer Authentication Status",
+          "name_ar": "حالة التحقق من مانع التشغيل",
+          "threshold": "unknown"
+        }
+      ],
+      "parts": [
+        "BCM module (do not replace without proof)",
+        "Key transponder/remote for diagnosis",
+        "BCM wiring/connectors"
+      ],
+      "source_ids": [
+        "hella_meriva_b_bcm"
+      ],
+      "related_codes": [
+        "B101D",
+        "B3057",
+        "B3114",
+        "B3925",
+        "B3935"
+      ],
+      "risk": "security_related_no_bypass_procedures"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "source_confirmed_group_code_and_vehicle_context_not_OEM_validated",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_b3925_meriva_b_bcm_2014_2017",
+      "raw_code": "B3925",
+      "base_code": "B3925",
+      "category": "B",
+      "code_type": "B_manufacturer_specific_definition_from_HELLA_case",
+      "ecu": "BCM / security authorization network (storing ECU to verify)",
+      "variant": "meriva_b_bcm_2014_2017",
+      "model": "Meriva B",
+      "applicability": {
+        "model": "Meriva B",
+        "year_type": "production_years",
+        "years": "2014–2017",
+        "engine_code": null,
+        "ecu": "BCM implicated, individual code-storing module not identified for all six DTCs",
+        "fuel": null,
+        "market": null,
+        "vehicle_identity": "BCM references 39013500/39013501 named in repair notice; not proof of universal fit"
+      },
+      "definition_en": "Incorrect HVAC control module environment identifier received",
+      "translation_ar": "استلام معرّف بيئة غير صحيح من وحدة التحكم بالتكييف HVAC",
+      "symptoms": [
+        "No start",
+        "Immobilizer indicator illuminated",
+        "BCM not communicating",
+        "Remote key/security authorization malfunction"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "BCM internally failing in the HELLA repair case; diagnosis must prove, not infer automatically",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "BCM power/ground/communications fault or battery supply issue",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Key or HVAC identity mismatch may be a symptom or configuration condition, not necessarily faulty hardware",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Scan all modules; record storing ECU, freeze frame and other immobilizer codes",
+        "Check system voltage, BCM supply/fuses, grounds, network integrity without probing security circuits improperly",
+        "Confirm part number and configuration with official Opel service data; ensure authorized module programming if BCM is repaired/replaced",
+        "Clear codes with authorized equipment and recheck no-start/security functions"
+      ],
+      "live_data": [
+        {
+          "name_en": "BCM Communication Status",
+          "name_ar": "حالة الاتصال بوحدة BCM",
+          "threshold": "unknown"
+        },
+        {
+          "name_en": "Immobilizer Authentication Status",
+          "name_ar": "حالة التحقق من مانع التشغيل",
+          "threshold": "unknown"
+        }
+      ],
+      "parts": [
+        "BCM module (do not replace without proof)",
+        "Key transponder/remote for diagnosis",
+        "BCM wiring/connectors"
+      ],
+      "source_ids": [
+        "hella_meriva_b_bcm"
+      ],
+      "related_codes": [
+        "B101D",
+        "B3057",
+        "B3114",
+        "B3115",
+        "B3935"
+      ],
+      "risk": "security_related_no_bypass_procedures"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "source_confirmed_group_code_and_vehicle_context_not_OEM_validated",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_b3935_meriva_b_bcm_2014_2017",
+      "raw_code": "B3935",
+      "base_code": "B3935",
+      "category": "B",
+      "code_type": "B_manufacturer_specific_definition_from_HELLA_case",
+      "ecu": "BCM / security authorization network (storing ECU to verify)",
+      "variant": "meriva_b_bcm_2014_2017",
+      "model": "Meriva B",
+      "applicability": {
+        "model": "Meriva B",
+        "year_type": "production_years",
+        "years": "2014–2017",
+        "engine_code": null,
+        "ecu": "BCM implicated, individual code-storing module not identified for all six DTCs",
+        "fuel": null,
+        "market": null,
+        "vehicle_identity": "BCM references 39013500/39013501 named in repair notice; not proof of universal fit"
+      },
+      "definition_en": "Transponder identification malfunction",
+      "translation_ar": "خلل التعرف على مرسل المفتاح الإلكتروني (Transponder)",
+      "symptoms": [
+        "No start",
+        "Immobilizer indicator illuminated",
+        "BCM not communicating",
+        "Remote key/security authorization malfunction"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "BCM internally failing in the HELLA repair case; diagnosis must prove, not infer automatically",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "BCM power/ground/communications fault or battery supply issue",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Key or HVAC identity mismatch may be a symptom or configuration condition, not necessarily faulty hardware",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Scan all modules; record storing ECU, freeze frame and other immobilizer codes",
+        "Check system voltage, BCM supply/fuses, grounds, network integrity without probing security circuits improperly",
+        "Confirm part number and configuration with official Opel service data; ensure authorized module programming if BCM is repaired/replaced",
+        "Clear codes with authorized equipment and recheck no-start/security functions"
+      ],
+      "live_data": [
+        {
+          "name_en": "BCM Communication Status",
+          "name_ar": "حالة الاتصال بوحدة BCM",
+          "threshold": "unknown"
+        },
+        {
+          "name_en": "Immobilizer Authentication Status",
+          "name_ar": "حالة التحقق من مانع التشغيل",
+          "threshold": "unknown"
+        }
+      ],
+      "parts": [
+        "BCM module (do not replace without proof)",
+        "Key transponder/remote for diagnosis",
+        "BCM wiring/connectors"
+      ],
+      "source_ids": [
+        "hella_meriva_b_bcm"
+      ],
+      "related_codes": [
+        "B101D",
+        "B3057",
+        "B3114",
+        "B3115",
+        "B3925"
+      ],
+      "risk": "security_related_no_bypass_procedures"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "source_confirmed_group_code_and_vehicle_context_not_OEM_validated",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_b0984_mokka_afs_led_2012_2016",
+      "raw_code": "B0984",
+      "base_code": "B0984",
+      "category": "B",
+      "code_type": "B_manufacturer_specific_group_no_individual_descriptor",
+      "ecu": "AFS / headlamp control module (storing ECU must be checked)",
+      "variant": "mokka_afs_led_2012_2016",
+      "model": "Mokka",
+      "applicability": {
+        "model": "Mokka",
+        "year_type": "production_years_as_HELLA",
+        "years": "2012–2016",
+        "engine_code": null,
+        "fuel": null,
+        "required_equipment": "Adaptive front lighting AFS / LED headlights",
+        "ecu": "Headlamp control module/AFS; exact storing ECU and each code's semantics unconfirmed",
+        "market": null
+      },
+      "definition_en": "DTC in adaptive headlamp control/actuator fault group; individual code meaning not established by HELLA",
+      "translation_ar": "رمز ضمن مجموعة أعطال وحدة المصابيح التكيفية أو محرك ضبط إضاءة المنعطفات؛ معنى الرمز الفردي غير موثق",
+      "symptoms": [
+        "Rattling/humming from LED headlamp after ignition",
+        "AFS/lighting warning lamp"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "Control unit software problem when supply and connectors check good",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Loose AFS connector or bad control-module power supply",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Actual actuator/gear mechanism fault to verify",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Identify AFS version and read all headlamp module DTCs",
+        "Check module supply voltage, ground and secure connectors before programming",
+        "Inspect headlamp initialization/actuator motion without forcing mechanism",
+        "If applicable to VIN, carry out manufacturer's authorized headlamp ECU software update and re-test"
+      ],
+      "live_data": [
+        {
+          "name_en": "Headlamp Levelling Command",
+          "name_ar": "أمر تسوية المصابيح",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "AFS Actuator Feedback",
+          "name_ar": "تغذية راجعة لمشغل المصباح التكيفي",
+          "threshold": "not documented"
+        }
+      ],
+      "parts": [
+        "Headlamp control module",
+        "AFS adjustment actuator",
+        "Connectors/supply"
+      ],
+      "source_ids": [
+        "hella_mokka_afs"
+      ],
+      "related_codes": [
+        "B0985",
+        "B1461",
+        "B1462"
+      ]
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "source_confirmed_group_code_and_vehicle_context_not_OEM_validated",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_b0985_mokka_afs_led_2012_2016",
+      "raw_code": "B0985",
+      "base_code": "B0985",
+      "category": "B",
+      "code_type": "B_manufacturer_specific_group_no_individual_descriptor",
+      "ecu": "AFS / headlamp control module (storing ECU must be checked)",
+      "variant": "mokka_afs_led_2012_2016",
+      "model": "Mokka",
+      "applicability": {
+        "model": "Mokka",
+        "year_type": "production_years_as_HELLA",
+        "years": "2012–2016",
+        "engine_code": null,
+        "fuel": null,
+        "required_equipment": "Adaptive front lighting AFS / LED headlights",
+        "ecu": "Headlamp control module/AFS; exact storing ECU and each code's semantics unconfirmed",
+        "market": null
+      },
+      "definition_en": "DTC in adaptive headlamp control/actuator fault group; individual code meaning not established by HELLA",
+      "translation_ar": "رمز ضمن مجموعة أعطال وحدة المصابيح التكيفية أو محرك ضبط إضاءة المنعطفات؛ معنى الرمز الفردي غير موثق",
+      "symptoms": [
+        "Rattling/humming from LED headlamp after ignition",
+        "AFS/lighting warning lamp"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "Control unit software problem when supply and connectors check good",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Loose AFS connector or bad control-module power supply",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Actual actuator/gear mechanism fault to verify",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Identify AFS version and read all headlamp module DTCs",
+        "Check module supply voltage, ground and secure connectors before programming",
+        "Inspect headlamp initialization/actuator motion without forcing mechanism",
+        "If applicable to VIN, carry out manufacturer's authorized headlamp ECU software update and re-test"
+      ],
+      "live_data": [
+        {
+          "name_en": "Headlamp Levelling Command",
+          "name_ar": "أمر تسوية المصابيح",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "AFS Actuator Feedback",
+          "name_ar": "تغذية راجعة لمشغل المصباح التكيفي",
+          "threshold": "not documented"
+        }
+      ],
+      "parts": [
+        "Headlamp control module",
+        "AFS adjustment actuator",
+        "Connectors/supply"
+      ],
+      "source_ids": [
+        "hella_mokka_afs"
+      ],
+      "related_codes": [
+        "B0984",
+        "B1461",
+        "B1462"
+      ]
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "source_confirmed_group_code_and_vehicle_context_not_OEM_validated",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_b1461_mokka_afs_led_2012_2016",
+      "raw_code": "B1461",
+      "base_code": "B1461",
+      "category": "B",
+      "code_type": "B_manufacturer_specific_group_no_individual_descriptor",
+      "ecu": "AFS / headlamp control module (storing ECU must be checked)",
+      "variant": "mokka_afs_led_2012_2016",
+      "model": "Mokka",
+      "applicability": {
+        "model": "Mokka",
+        "year_type": "production_years_as_HELLA",
+        "years": "2012–2016",
+        "engine_code": null,
+        "fuel": null,
+        "required_equipment": "Adaptive front lighting AFS / LED headlights",
+        "ecu": "Headlamp control module/AFS; exact storing ECU and each code's semantics unconfirmed",
+        "market": null
+      },
+      "definition_en": "DTC in adaptive headlamp control/actuator fault group; individual code meaning not established by HELLA",
+      "translation_ar": "رمز ضمن مجموعة أعطال وحدة المصابيح التكيفية أو محرك ضبط إضاءة المنعطفات؛ معنى الرمز الفردي غير موثق",
+      "symptoms": [
+        "Rattling/humming from LED headlamp after ignition",
+        "AFS/lighting warning lamp"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "Control unit software problem when supply and connectors check good",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Loose AFS connector or bad control-module power supply",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Actual actuator/gear mechanism fault to verify",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Identify AFS version and read all headlamp module DTCs",
+        "Check module supply voltage, ground and secure connectors before programming",
+        "Inspect headlamp initialization/actuator motion without forcing mechanism",
+        "If applicable to VIN, carry out manufacturer's authorized headlamp ECU software update and re-test"
+      ],
+      "live_data": [
+        {
+          "name_en": "Headlamp Levelling Command",
+          "name_ar": "أمر تسوية المصابيح",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "AFS Actuator Feedback",
+          "name_ar": "تغذية راجعة لمشغل المصباح التكيفي",
+          "threshold": "not documented"
+        }
+      ],
+      "parts": [
+        "Headlamp control module",
+        "AFS adjustment actuator",
+        "Connectors/supply"
+      ],
+      "source_ids": [
+        "hella_mokka_afs"
+      ],
+      "related_codes": [
+        "B0984",
+        "B0985",
+        "B1462"
+      ]
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "source_confirmed_group_code_and_vehicle_context_not_OEM_validated",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_b1462_mokka_afs_led_2012_2016",
+      "raw_code": "B1462",
+      "base_code": "B1462",
+      "category": "B",
+      "code_type": "B_manufacturer_specific_group_no_individual_descriptor",
+      "ecu": "AFS / headlamp control module (storing ECU must be checked)",
+      "variant": "mokka_afs_led_2012_2016",
+      "model": "Mokka",
+      "applicability": {
+        "model": "Mokka",
+        "year_type": "production_years_as_HELLA",
+        "years": "2012–2016",
+        "engine_code": null,
+        "fuel": null,
+        "required_equipment": "Adaptive front lighting AFS / LED headlights",
+        "ecu": "Headlamp control module/AFS; exact storing ECU and each code's semantics unconfirmed",
+        "market": null
+      },
+      "definition_en": "DTC in adaptive headlamp control/actuator fault group; individual code meaning not established by HELLA",
+      "translation_ar": "رمز ضمن مجموعة أعطال وحدة المصابيح التكيفية أو محرك ضبط إضاءة المنعطفات؛ معنى الرمز الفردي غير موثق",
+      "symptoms": [
+        "Rattling/humming from LED headlamp after ignition",
+        "AFS/lighting warning lamp"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "Control unit software problem when supply and connectors check good",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Loose AFS connector or bad control-module power supply",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Actual actuator/gear mechanism fault to verify",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Identify AFS version and read all headlamp module DTCs",
+        "Check module supply voltage, ground and secure connectors before programming",
+        "Inspect headlamp initialization/actuator motion without forcing mechanism",
+        "If applicable to VIN, carry out manufacturer's authorized headlamp ECU software update and re-test"
+      ],
+      "live_data": [
+        {
+          "name_en": "Headlamp Levelling Command",
+          "name_ar": "أمر تسوية المصابيح",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "AFS Actuator Feedback",
+          "name_ar": "تغذية راجعة لمشغل المصباح التكيفي",
+          "threshold": "not documented"
+        }
+      ],
+      "parts": [
+        "Headlamp control module",
+        "AFS adjustment actuator",
+        "Connectors/supply"
+      ],
+      "source_ids": [
+        "hella_mokka_afs"
+      ],
+      "related_codes": [
+        "B0984",
+        "B0985",
+        "B1461"
+      ]
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "source_confirmed_group_code_and_vehicle_context_not_OEM_validated",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_c0045_rear_axle_moisture_astra_h",
+      "raw_code": "C0045",
+      "base_code": "C0045",
+      "category": "C",
+      "code_type": "C_chassis_context_verified_individual_subdefinition_pending",
+      "ecu": "ABS/ESP",
+      "variant": "rear_axle_moisture_astra_h",
+      "model": "Astra H",
+      "applicability": {
+        "model": "Astra H",
+        "year_type": "model_years",
+        "years": "from MY2005 (end not provided)",
+        "engine_code": null,
+        "ecu": "ABS/ESP ECU; source names only ABS lamp",
+        "fuel": null,
+        "market": null
+      },
+      "definition_en": "Rear wheel-speed sensor system fault in bulletin group; exact individual left/right designation not confirmed",
+      "translation_ar": "عطل ضمن منظومة حساسات سرعة العجلات الخلفية؛ تحديد الجهة لكل رمز يحتاج توثيقاً إضافياً",
+      "symptoms": [
+        "ABS warning lamp illuminated"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "Water in rear wheel-speed sensor harness connector as documented by HELLA",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Corrosion or damaged rear wheel-speed sensor connector",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Sensor fault to prove with circuit and live-data tests",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Read exact code, ABS ECU and current/historical status",
+        "Check rear sensor connector at wheel hub for water or corrosion",
+        "Compare rear wheel-speed values while wheels turn under safe conditions; do not infer a fixed resistance threshold",
+        "Repair corroded connector/sensor only when defect is demonstrated; follow permitted assembly instructions"
+      ],
+      "live_data": [
+        {
+          "name_en": "Rear Left Wheel Speed",
+          "name_ar": "سرعة العجلة الخلفية اليسرى",
+          "threshold": "no numerical reference documented"
+        },
+        {
+          "name_en": "Rear Right Wheel Speed",
+          "name_ar": "سرعة العجلة الخلفية اليمنى",
+          "threshold": "no numerical reference documented"
+        }
+      ],
+      "parts": [
+        "Rear ABS sensor connectors",
+        "Rear wheel-speed sensors"
+      ],
+      "source_ids": [
+        "hella_astra_h_zafira_b_abs"
+      ],
+      "related_codes": []
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "source_confirmed_group_code_and_vehicle_context_not_OEM_validated",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_c0045_rear_axle_moisture_zafira_b",
+      "raw_code": "C0045",
+      "base_code": "C0045",
+      "category": "C",
+      "code_type": "C_chassis_context_verified_individual_subdefinition_pending",
+      "ecu": "ABS/ESP",
+      "variant": "rear_axle_moisture_zafira_b",
+      "model": "Zafira B",
+      "applicability": {
+        "model": "Zafira B",
+        "year_type": "model_years",
+        "years": "from MY2005 (end not provided)",
+        "engine_code": null,
+        "ecu": "ABS/ESP ECU; source names only ABS lamp",
+        "fuel": null,
+        "market": null
+      },
+      "definition_en": "Rear wheel-speed sensor system fault in bulletin group; exact individual left/right designation not confirmed",
+      "translation_ar": "عطل ضمن منظومة حساسات سرعة العجلات الخلفية؛ تحديد الجهة لكل رمز يحتاج توثيقاً إضافياً",
+      "symptoms": [
+        "ABS warning lamp illuminated"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "Water in rear wheel-speed sensor harness connector as documented by HELLA",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Corrosion or damaged rear wheel-speed sensor connector",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Sensor fault to prove with circuit and live-data tests",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Read exact code, ABS ECU and current/historical status",
+        "Check rear sensor connector at wheel hub for water or corrosion",
+        "Compare rear wheel-speed values while wheels turn under safe conditions; do not infer a fixed resistance threshold",
+        "Repair corroded connector/sensor only when defect is demonstrated; follow permitted assembly instructions"
+      ],
+      "live_data": [
+        {
+          "name_en": "Rear Left Wheel Speed",
+          "name_ar": "سرعة العجلة الخلفية اليسرى",
+          "threshold": "no numerical reference documented"
+        },
+        {
+          "name_en": "Rear Right Wheel Speed",
+          "name_ar": "سرعة العجلة الخلفية اليمنى",
+          "threshold": "no numerical reference documented"
+        }
+      ],
+      "parts": [
+        "Rear ABS sensor connectors",
+        "Rear wheel-speed sensors"
+      ],
+      "source_ids": [
+        "hella_astra_h_zafira_b_abs"
+      ],
+      "related_codes": []
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "source_confirmed_group_code_and_vehicle_context_not_OEM_validated",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_c0050_rear_axle_moisture_astra_h",
+      "raw_code": "C0050",
+      "base_code": "C0050",
+      "category": "C",
+      "code_type": "C_chassis_context_verified_individual_subdefinition_pending",
+      "ecu": "ABS/ESP",
+      "variant": "rear_axle_moisture_astra_h",
+      "model": "Astra H",
+      "applicability": {
+        "model": "Astra H",
+        "year_type": "model_years",
+        "years": "from MY2005 (end not provided)",
+        "engine_code": null,
+        "ecu": "ABS/ESP ECU; source names only ABS lamp",
+        "fuel": null,
+        "market": null
+      },
+      "definition_en": "Rear wheel-speed sensor system fault in bulletin group; exact individual left/right designation not confirmed",
+      "translation_ar": "عطل ضمن منظومة حساسات سرعة العجلات الخلفية؛ تحديد الجهة لكل رمز يحتاج توثيقاً إضافياً",
+      "symptoms": [
+        "ABS warning lamp illuminated"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "Water in rear wheel-speed sensor harness connector as documented by HELLA",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Corrosion or damaged rear wheel-speed sensor connector",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Sensor fault to prove with circuit and live-data tests",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Read exact code, ABS ECU and current/historical status",
+        "Check rear sensor connector at wheel hub for water or corrosion",
+        "Compare rear wheel-speed values while wheels turn under safe conditions; do not infer a fixed resistance threshold",
+        "Repair corroded connector/sensor only when defect is demonstrated; follow permitted assembly instructions"
+      ],
+      "live_data": [
+        {
+          "name_en": "Rear Left Wheel Speed",
+          "name_ar": "سرعة العجلة الخلفية اليسرى",
+          "threshold": "no numerical reference documented"
+        },
+        {
+          "name_en": "Rear Right Wheel Speed",
+          "name_ar": "سرعة العجلة الخلفية اليمنى",
+          "threshold": "no numerical reference documented"
+        }
+      ],
+      "parts": [
+        "Rear ABS sensor connectors",
+        "Rear wheel-speed sensors"
+      ],
+      "source_ids": [
+        "hella_astra_h_zafira_b_abs"
+      ],
+      "related_codes": []
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "source_confirmed_group_code_and_vehicle_context_not_OEM_validated",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_c0050_rear_axle_moisture_zafira_b",
+      "raw_code": "C0050",
+      "base_code": "C0050",
+      "category": "C",
+      "code_type": "C_chassis_context_verified_individual_subdefinition_pending",
+      "ecu": "ABS/ESP",
+      "variant": "rear_axle_moisture_zafira_b",
+      "model": "Zafira B",
+      "applicability": {
+        "model": "Zafira B",
+        "year_type": "model_years",
+        "years": "from MY2005 (end not provided)",
+        "engine_code": null,
+        "ecu": "ABS/ESP ECU; source names only ABS lamp",
+        "fuel": null,
+        "market": null
+      },
+      "definition_en": "Rear wheel-speed sensor system fault in bulletin group; exact individual left/right designation not confirmed",
+      "translation_ar": "عطل ضمن منظومة حساسات سرعة العجلات الخلفية؛ تحديد الجهة لكل رمز يحتاج توثيقاً إضافياً",
+      "symptoms": [
+        "ABS warning lamp illuminated"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "Water in rear wheel-speed sensor harness connector as documented by HELLA",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Corrosion or damaged rear wheel-speed sensor connector",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Sensor fault to prove with circuit and live-data tests",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Read exact code, ABS ECU and current/historical status",
+        "Check rear sensor connector at wheel hub for water or corrosion",
+        "Compare rear wheel-speed values while wheels turn under safe conditions; do not infer a fixed resistance threshold",
+        "Repair corroded connector/sensor only when defect is demonstrated; follow permitted assembly instructions"
+      ],
+      "live_data": [
+        {
+          "name_en": "Rear Left Wheel Speed",
+          "name_ar": "سرعة العجلة الخلفية اليسرى",
+          "threshold": "no numerical reference documented"
+        },
+        {
+          "name_en": "Rear Right Wheel Speed",
+          "name_ar": "سرعة العجلة الخلفية اليمنى",
+          "threshold": "no numerical reference documented"
+        }
+      ],
+      "parts": [
+        "Rear ABS sensor connectors",
+        "Rear wheel-speed sensors"
+      ],
+      "source_ids": [
+        "hella_astra_h_zafira_b_abs"
+      ],
+      "related_codes": []
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "source_confirmed_group_code_and_vehicle_context_not_OEM_validated",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_c0298_meriva_b_epb_2010_2013",
+      "raw_code": "C0298",
+      "base_code": "C0298",
+      "category": "C",
+      "code_type": "C_chassis_manufacturer_specific_context",
+      "ecu": "EPB / brake control (storing module unspecified)",
+      "variant": "meriva_b_epb_2010_2013",
+      "model": "Meriva B",
+      "applicability": {
+        "model": "Meriva B",
+        "year_type": "model_years",
+        "years": "2010–2013",
+        "required_equipment": "Electric parking brake EPB",
+        "ecu": "EPB/Brake controller, exact storing ECU not specified",
+        "engine_code": null
+      },
+      "definition_en": "Parking brake release switch circuit fault (HELLA vehicle-specific description)",
+      "translation_ar": "خلل دائرة مفتاح تحرير فرامل التوقف الكهربائية",
+      "symptoms": [
+        "EPB warning lamp on"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "Chromed gearlever surround/trim deformed and trapping EPB release switch",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Switch electrical malfunction, to verify",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Wiring/connectors faults, to verify",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm EPB option, retrieve full brake module DTCs",
+        "Inspect EPB release switch movement and clearance relative to trim at gear lever",
+        "Check switch state in live data against physical operation; verify wiring only with appropriate diagram",
+        "Renew trim/fairing if observed interference; retest EPB switch and clear fault"
+      ],
+      "live_data": [
+        {
+          "name_en": "Parking Brake Release Switch State",
+          "name_ar": "حالة مفتاح تحرير فرامل التوقف",
+          "threshold": "not specified"
+        }
+      ],
+      "parts": [
+        "EPB release switch",
+        "Gearlever chrome trim/fairing"
+      ],
+      "source_ids": [
+        "hella_meriva_b_c0298"
+      ],
+      "related_codes": []
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "source_confirmed_group_code_and_vehicle_context_not_OEM_validated",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_u0077_adam_2012_2019_petrol",
+      "raw_code": "U0077",
+      "base_code": "U0077",
+      "category": "U",
+      "code_type": "U_network_generic_family_exact_OEM_wording_unconfirmed",
+      "ecu": "ABS/ESP + CAN network (storing module unverified)",
+      "variant": "adam_2012_2019_petrol",
+      "model": "ADAM",
+      "applicability": {
+        "model": "ADAM",
+        "year_type": "production_years",
+        "years": "2012–2019",
+        "engine_family": [
+          "1.0i",
+          "1.2i",
+          "1.4i"
+        ],
+        "engine_code": null,
+        "ecu": "storing controller unspecified; ABS/ESP warning and multi-module bus communication",
+        "fuel": "petrol",
+        "market": null
+      },
+      "definition_en": "Control module communication bus fault, network subset; exact bus designation pending",
+      "translation_ar": "عطل اتصال في شبكة وحدات التحكم؛ تحديد قناة الاتصال الدقيقة غير مؤكد",
+      "symptoms": [
+        "Intermittent ABS/ESP warning lamp"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "Ignition coil/spark-plug insulation or corrosion generating disturbance as noted by HELLA",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Battery/system supply voltage or grounding issue",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Real CAN wiring/module signal fault remains possible",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Read entire vehicle network DTC list including stored ECU and code timestamps",
+        "Check battery, vehicle electrical supply and grounds, then engine ignition condition",
+        "Visually inspect ignition module, spark plugs, plug contacts for corrosion/burn marks and insulation damage",
+        "Replace proven ignition defects only after tests; clear and road-test, verify bus stability"
+      ],
+      "live_data": [
+        {
+          "name_en": "Battery Voltage",
+          "name_ar": "جهد البطارية",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "CAN Bus Status",
+          "name_ar": "حالة شبكة CAN",
+          "threshold": "no thresholds from source"
+        },
+        {
+          "name_en": "ABS/ESP Communication Status",
+          "name_ar": "حالة اتصال ABS/ESP",
+          "threshold": "not documented"
+        }
+      ],
+      "parts": [
+        "Ignition coil/module",
+        "Spark plugs",
+        "CAN harness/connectors",
+        "Battery"
+      ],
+      "source_ids": [
+        "hella_adam_u_codes"
+      ],
+      "related_codes": [
+        "U0073",
+        "U0401"
+      ]
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "source_confirmed_group_code_and_vehicle_context_not_OEM_validated",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_u0073_adam_2012_2019_petrol",
+      "raw_code": "U0073",
+      "base_code": "U0073",
+      "category": "U",
+      "code_type": "U_network_generic_family_exact_OEM_wording_unconfirmed",
+      "ecu": "ABS/ESP + CAN network (storing module unverified)",
+      "variant": "adam_2012_2019_petrol",
+      "model": "ADAM",
+      "applicability": {
+        "model": "ADAM",
+        "year_type": "production_years",
+        "years": "2012–2019",
+        "engine_family": [
+          "1.0i",
+          "1.2i",
+          "1.4i"
+        ],
+        "engine_code": null,
+        "ecu": "storing controller unspecified; ABS/ESP warning and multi-module bus communication",
+        "fuel": "petrol",
+        "market": null
+      },
+      "definition_en": "Control module communication bus fault / bus off (general descriptor; ECU-dependent)",
+      "translation_ar": "خلل اتصال شبكة وحدات التحكم أو انقطاع عمل الناقل بحسب ECU",
+      "symptoms": [
+        "Intermittent ABS/ESP warning lamp"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "Ignition coil/spark-plug insulation or corrosion generating disturbance as noted by HELLA",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Battery/system supply voltage or grounding issue",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Real CAN wiring/module signal fault remains possible",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Read entire vehicle network DTC list including stored ECU and code timestamps",
+        "Check battery, vehicle electrical supply and grounds, then engine ignition condition",
+        "Visually inspect ignition module, spark plugs, plug contacts for corrosion/burn marks and insulation damage",
+        "Replace proven ignition defects only after tests; clear and road-test, verify bus stability"
+      ],
+      "live_data": [
+        {
+          "name_en": "Battery Voltage",
+          "name_ar": "جهد البطارية",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "CAN Bus Status",
+          "name_ar": "حالة شبكة CAN",
+          "threshold": "no thresholds from source"
+        },
+        {
+          "name_en": "ABS/ESP Communication Status",
+          "name_ar": "حالة اتصال ABS/ESP",
+          "threshold": "not documented"
+        }
+      ],
+      "parts": [
+        "Ignition coil/module",
+        "Spark plugs",
+        "CAN harness/connectors",
+        "Battery"
+      ],
+      "source_ids": [
+        "hella_adam_u_codes"
+      ],
+      "related_codes": [
+        "U0077",
+        "U0401"
+      ]
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "source_confirmed_group_code_and_vehicle_context_not_OEM_validated",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_u0401_adam_2012_2019_petrol",
+      "raw_code": "U0401",
+      "base_code": "U0401",
+      "category": "U",
+      "code_type": "U_network_generic_family_exact_OEM_wording_unconfirmed",
+      "ecu": "ABS/ESP + CAN network (storing module unverified)",
+      "variant": "adam_2012_2019_petrol",
+      "model": "ADAM",
+      "applicability": {
+        "model": "ADAM",
+        "year_type": "production_years",
+        "years": "2012–2019",
+        "engine_family": [
+          "1.0i",
+          "1.2i",
+          "1.4i"
+        ],
+        "engine_code": null,
+        "ecu": "storing controller unspecified; ABS/ESP warning and multi-module bus communication",
+        "fuel": "petrol",
+        "market": null
+      },
+      "definition_en": "Invalid data received from Engine Control Module / PCM (generic descriptor pending standards verification)",
+      "translation_ar": "بيانات غير صالحة واردة من وحدة التحكم بالمحرك ECM/PCM؛ المعنى المعياري يحتاج تأكيداً",
+      "symptoms": [
+        "Intermittent ABS/ESP warning lamp"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "Ignition coil/spark-plug insulation or corrosion generating disturbance as noted by HELLA",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Battery/system supply voltage or grounding issue",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Real CAN wiring/module signal fault remains possible",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Read entire vehicle network DTC list including stored ECU and code timestamps",
+        "Check battery, vehicle electrical supply and grounds, then engine ignition condition",
+        "Visually inspect ignition module, spark plugs, plug contacts for corrosion/burn marks and insulation damage",
+        "Replace proven ignition defects only after tests; clear and road-test, verify bus stability"
+      ],
+      "live_data": [
+        {
+          "name_en": "Battery Voltage",
+          "name_ar": "جهد البطارية",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "CAN Bus Status",
+          "name_ar": "حالة شبكة CAN",
+          "threshold": "no thresholds from source"
+        },
+        {
+          "name_en": "ABS/ESP Communication Status",
+          "name_ar": "حالة اتصال ABS/ESP",
+          "threshold": "not documented"
+        }
+      ],
+      "parts": [
+        "Ignition coil/module",
+        "Spark plugs",
+        "CAN harness/connectors",
+        "Battery"
+      ],
+      "source_ids": [
+        "hella_adam_u_codes"
+      ],
+      "related_codes": [
+        "U0077",
+        "U0073"
+      ]
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "component_family_code_confirmed_vehicle_engine_year_NOT_confirmed",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_p1607_boscheasytronic_f13_f17_tcu",
+      "raw_code": "P1607",
+      "base_code": "P1607",
+      "category": "P",
+      "code_type": "P1_manufacturer_specific_Easytronic_context",
+      "ecu": "Bosch Easytronic F13/F17 MTA TCU",
+      "variant": "boscheasytronic_f13_f17_tcu",
+      "model": "UNSPECIFIED MODEL — TCU FAMILY ONLY",
+      "applicability": {
+        "system": "Bosch Easytronic F13/F17 MTA",
+        "manufacturer": "Vauxhall / Opel",
+        "vehicle_model": null,
+        "year_type": null,
+        "years": null,
+        "model_assignment": "NOT MADE: guide lists many model families but does not establish this DTC on a specific engine+ECU+VIN",
+        "engine_code": null,
+        "ecu": "TCU Easytronic (software and part-number dependent)",
+        "market": null
+      },
+      "definition_en": "Clutch actuator position control error",
+      "translation_ar": "خلل التحكم بموضع مشغل القابض",
+      "symptoms": [
+        "F shown in gear display",
+        "No-start",
+        "Poor/no gear shifting or clutch operation"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "TCU, actuator or related mechatronic failure, case-dependent",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Damaged harness/connectors or worn selector contacts",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Unfinished adaptation or incorrect configuration, depending on DTC",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Identify exact gearbox family, TCU part number, ECU software and VIN before applying code meaning",
+        "Record fault memory, battery state, freeze frame, available actuator and selector parameters",
+        "Inspect appropriate actuator/TCU, selector contacts and harness, then compare actual vs commanded state",
+        "Re-test system with authorized calibration/learning where required, and repair only demonstrated faults"
+      ],
+      "live_data": [
+        {
+          "name_en": "Gear Selector Position",
+          "name_ar": "موضع محدد التروس",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "Clutch Actuator Position",
+          "name_ar": "موضع مشغل القابض",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "TCU Battery Voltage",
+          "name_ar": "جهد تغذية وحدة ناقل الحركة",
+          "threshold": "not documented"
+        }
+      ],
+      "parts": [
+        "TCU",
+        "Clutch actuator",
+        "Shift/select motor",
+        "Selector contacts",
+        "Harness"
+      ],
+      "source_ids": [
+        "actronics_f13f17_tcu_guide",
+        "actronics_se_p1607"
+      ],
+      "related_codes": [
+        "P1609",
+        "P1700",
+        "P1723",
+        "P1728",
+        "P1729",
+        "P1730",
+        "P1735",
+        "P1740",
+        "P1725",
+        "P1726",
+        "P1734",
+        "P1703",
+        "P1733"
+      ]
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "component_family_code_confirmed_vehicle_engine_year_NOT_confirmed",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_p1609_boscheasytronic_f13_f17_tcu",
+      "raw_code": "P1609",
+      "base_code": "P1609",
+      "category": "P",
+      "code_type": "P1_manufacturer_specific_Easytronic_context",
+      "ecu": "Bosch Easytronic F13/F17 MTA TCU",
+      "variant": "boscheasytronic_f13_f17_tcu",
+      "model": "UNSPECIFIED MODEL — TCU FAMILY ONLY",
+      "applicability": {
+        "system": "Bosch Easytronic F13/F17 MTA",
+        "manufacturer": "Vauxhall / Opel",
+        "vehicle_model": null,
+        "year_type": null,
+        "years": null,
+        "model_assignment": "NOT MADE: guide lists many model families but does not establish this DTC on a specific engine+ECU+VIN",
+        "engine_code": null,
+        "ecu": "TCU Easytronic (software and part-number dependent)",
+        "market": null
+      },
+      "definition_en": "Clutch actuator position sensor fault",
+      "translation_ar": "خلل حساس موضع مشغل القابض",
+      "symptoms": [
+        "F shown in gear display",
+        "No-start",
+        "Poor/no gear shifting or clutch operation"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "TCU, actuator or related mechatronic failure, case-dependent",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Damaged harness/connectors or worn selector contacts",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Unfinished adaptation or incorrect configuration, depending on DTC",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Identify exact gearbox family, TCU part number, ECU software and VIN before applying code meaning",
+        "Record fault memory, battery state, freeze frame, available actuator and selector parameters",
+        "Inspect appropriate actuator/TCU, selector contacts and harness, then compare actual vs commanded state",
+        "Re-test system with authorized calibration/learning where required, and repair only demonstrated faults"
+      ],
+      "live_data": [
+        {
+          "name_en": "Gear Selector Position",
+          "name_ar": "موضع محدد التروس",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "Clutch Actuator Position",
+          "name_ar": "موضع مشغل القابض",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "TCU Battery Voltage",
+          "name_ar": "جهد تغذية وحدة ناقل الحركة",
+          "threshold": "not documented"
+        }
+      ],
+      "parts": [
+        "TCU",
+        "Clutch actuator",
+        "Shift/select motor",
+        "Selector contacts",
+        "Harness"
+      ],
+      "source_ids": [
+        "actronics_f13f17_tcu_guide"
+      ],
+      "related_codes": [
+        "P1607",
+        "P1700",
+        "P1723",
+        "P1728",
+        "P1729",
+        "P1730",
+        "P1735",
+        "P1740",
+        "P1725",
+        "P1726",
+        "P1734",
+        "P1703",
+        "P1733"
+      ]
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "component_family_code_confirmed_vehicle_engine_year_NOT_confirmed",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_p1700_boscheasytronic_f13_f17_tcu",
+      "raw_code": "P1700",
+      "base_code": "P1700",
+      "category": "P",
+      "code_type": "P1_manufacturer_specific_Easytronic_context",
+      "ecu": "Bosch Easytronic F13/F17 MTA TCU",
+      "variant": "boscheasytronic_f13_f17_tcu",
+      "model": "UNSPECIFIED MODEL — TCU FAMILY ONLY",
+      "applicability": {
+        "system": "Bosch Easytronic F13/F17 MTA",
+        "manufacturer": "Vauxhall / Opel",
+        "vehicle_model": null,
+        "year_type": null,
+        "years": null,
+        "model_assignment": "NOT MADE: guide lists many model families but does not establish this DTC on a specific engine+ECU+VIN",
+        "engine_code": null,
+        "ecu": "TCU Easytronic (software and part-number dependent)",
+        "market": null
+      },
+      "definition_en": "Gearbox control system operation fault",
+      "translation_ar": "خلل تشغيل نظام التحكم بناقل الحركة",
+      "symptoms": [
+        "F shown in gear display",
+        "No-start",
+        "Poor/no gear shifting or clutch operation"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "TCU, actuator or related mechatronic failure, case-dependent",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Damaged harness/connectors or worn selector contacts",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Unfinished adaptation or incorrect configuration, depending on DTC",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Identify exact gearbox family, TCU part number, ECU software and VIN before applying code meaning",
+        "Record fault memory, battery state, freeze frame, available actuator and selector parameters",
+        "Inspect appropriate actuator/TCU, selector contacts and harness, then compare actual vs commanded state",
+        "Re-test system with authorized calibration/learning where required, and repair only demonstrated faults"
+      ],
+      "live_data": [
+        {
+          "name_en": "Gear Selector Position",
+          "name_ar": "موضع محدد التروس",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "Clutch Actuator Position",
+          "name_ar": "موضع مشغل القابض",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "TCU Battery Voltage",
+          "name_ar": "جهد تغذية وحدة ناقل الحركة",
+          "threshold": "not documented"
+        }
+      ],
+      "parts": [
+        "TCU",
+        "Clutch actuator",
+        "Shift/select motor",
+        "Selector contacts",
+        "Harness"
+      ],
+      "source_ids": [
+        "actronics_f13f17_tcu_guide"
+      ],
+      "related_codes": [
+        "P1607",
+        "P1609",
+        "P1723",
+        "P1728",
+        "P1729",
+        "P1730",
+        "P1735",
+        "P1740",
+        "P1725",
+        "P1726",
+        "P1734",
+        "P1703",
+        "P1733"
+      ]
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "component_family_code_confirmed_vehicle_engine_year_NOT_confirmed",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_p1723_boscheasytronic_f13_f17_tcu",
+      "raw_code": "P1723",
+      "base_code": "P1723",
+      "category": "P",
+      "code_type": "P1_manufacturer_specific_Easytronic_context",
+      "ecu": "Bosch Easytronic F13/F17 MTA TCU",
+      "variant": "boscheasytronic_f13_f17_tcu",
+      "model": "UNSPECIFIED MODEL — TCU FAMILY ONLY",
+      "applicability": {
+        "system": "Bosch Easytronic F13/F17 MTA",
+        "manufacturer": "Vauxhall / Opel",
+        "vehicle_model": null,
+        "year_type": null,
+        "years": null,
+        "model_assignment": "NOT MADE: guide lists many model families but does not establish this DTC on a specific engine+ECU+VIN",
+        "engine_code": null,
+        "ecu": "TCU Easytronic (software and part-number dependent)",
+        "market": null
+      },
+      "definition_en": "Gear selector redundant/unused line data fault",
+      "translation_ar": "خلل بيانات خط الاحتياط/الخط غير المستخدم بمحدد ناقل الحركة",
+      "symptoms": [
+        "F shown in gear display",
+        "No-start",
+        "Poor/no gear shifting or clutch operation"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "TCU, actuator or related mechatronic failure, case-dependent",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Damaged harness/connectors or worn selector contacts",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Unfinished adaptation or incorrect configuration, depending on DTC",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Identify exact gearbox family, TCU part number, ECU software and VIN before applying code meaning",
+        "Record fault memory, battery state, freeze frame, available actuator and selector parameters",
+        "Inspect appropriate actuator/TCU, selector contacts and harness, then compare actual vs commanded state",
+        "Re-test system with authorized calibration/learning where required, and repair only demonstrated faults"
+      ],
+      "live_data": [
+        {
+          "name_en": "Gear Selector Position",
+          "name_ar": "موضع محدد التروس",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "Clutch Actuator Position",
+          "name_ar": "موضع مشغل القابض",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "TCU Battery Voltage",
+          "name_ar": "جهد تغذية وحدة ناقل الحركة",
+          "threshold": "not documented"
+        }
+      ],
+      "parts": [
+        "TCU",
+        "Clutch actuator",
+        "Shift/select motor",
+        "Selector contacts",
+        "Harness"
+      ],
+      "source_ids": [
+        "actronics_f13f17_tcu_guide"
+      ],
+      "related_codes": [
+        "P1607",
+        "P1609",
+        "P1700",
+        "P1728",
+        "P1729",
+        "P1730",
+        "P1735",
+        "P1740",
+        "P1725",
+        "P1726",
+        "P1734",
+        "P1703",
+        "P1733"
+      ]
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "component_family_code_confirmed_vehicle_engine_year_NOT_confirmed",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_p1728_boscheasytronic_f13_f17_tcu",
+      "raw_code": "P1728",
+      "base_code": "P1728",
+      "category": "P",
+      "code_type": "P1_manufacturer_specific_Easytronic_context",
+      "ecu": "Bosch Easytronic F13/F17 MTA TCU",
+      "variant": "boscheasytronic_f13_f17_tcu",
+      "model": "UNSPECIFIED MODEL — TCU FAMILY ONLY",
+      "applicability": {
+        "system": "Bosch Easytronic F13/F17 MTA",
+        "manufacturer": "Vauxhall / Opel",
+        "vehicle_model": null,
+        "year_type": null,
+        "years": null,
+        "model_assignment": "NOT MADE: guide lists many model families but does not establish this DTC on a specific engine+ECU+VIN",
+        "engine_code": null,
+        "ecu": "TCU Easytronic (software and part-number dependent)",
+        "market": null
+      },
+      "definition_en": "Shift motor mechanical failure",
+      "translation_ar": "خلل ميكانيكي في محرك تغيير التروس",
+      "symptoms": [
+        "F shown in gear display",
+        "No-start",
+        "Poor/no gear shifting or clutch operation"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "TCU, actuator or related mechatronic failure, case-dependent",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Damaged harness/connectors or worn selector contacts",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Unfinished adaptation or incorrect configuration, depending on DTC",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Identify exact gearbox family, TCU part number, ECU software and VIN before applying code meaning",
+        "Record fault memory, battery state, freeze frame, available actuator and selector parameters",
+        "Inspect appropriate actuator/TCU, selector contacts and harness, then compare actual vs commanded state",
+        "Re-test system with authorized calibration/learning where required, and repair only demonstrated faults"
+      ],
+      "live_data": [
+        {
+          "name_en": "Gear Selector Position",
+          "name_ar": "موضع محدد التروس",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "Clutch Actuator Position",
+          "name_ar": "موضع مشغل القابض",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "TCU Battery Voltage",
+          "name_ar": "جهد تغذية وحدة ناقل الحركة",
+          "threshold": "not documented"
+        }
+      ],
+      "parts": [
+        "TCU",
+        "Clutch actuator",
+        "Shift/select motor",
+        "Selector contacts",
+        "Harness"
+      ],
+      "source_ids": [
+        "actronics_f13f17_tcu_guide"
+      ],
+      "related_codes": [
+        "P1607",
+        "P1609",
+        "P1700",
+        "P1723",
+        "P1729",
+        "P1730",
+        "P1735",
+        "P1740",
+        "P1725",
+        "P1726",
+        "P1734",
+        "P1703",
+        "P1733"
+      ]
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "component_family_code_confirmed_vehicle_engine_year_NOT_confirmed",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_p1729_boscheasytronic_f13_f17_tcu",
+      "raw_code": "P1729",
+      "base_code": "P1729",
+      "category": "P",
+      "code_type": "P1_manufacturer_specific_Easytronic_context",
+      "ecu": "Bosch Easytronic F13/F17 MTA TCU",
+      "variant": "boscheasytronic_f13_f17_tcu",
+      "model": "UNSPECIFIED MODEL — TCU FAMILY ONLY",
+      "applicability": {
+        "system": "Bosch Easytronic F13/F17 MTA",
+        "manufacturer": "Vauxhall / Opel",
+        "vehicle_model": null,
+        "year_type": null,
+        "years": null,
+        "model_assignment": "NOT MADE: guide lists many model families but does not establish this DTC on a specific engine+ECU+VIN",
+        "engine_code": null,
+        "ecu": "TCU Easytronic (software and part-number dependent)",
+        "market": null
+      },
+      "definition_en": "Shift motor electrical failure",
+      "translation_ar": "خلل كهربائي في محرك تغيير التروس",
+      "symptoms": [
+        "F shown in gear display",
+        "No-start",
+        "Poor/no gear shifting or clutch operation"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "TCU, actuator or related mechatronic failure, case-dependent",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Damaged harness/connectors or worn selector contacts",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Unfinished adaptation or incorrect configuration, depending on DTC",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Identify exact gearbox family, TCU part number, ECU software and VIN before applying code meaning",
+        "Record fault memory, battery state, freeze frame, available actuator and selector parameters",
+        "Inspect appropriate actuator/TCU, selector contacts and harness, then compare actual vs commanded state",
+        "Re-test system with authorized calibration/learning where required, and repair only demonstrated faults"
+      ],
+      "live_data": [
+        {
+          "name_en": "Gear Selector Position",
+          "name_ar": "موضع محدد التروس",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "Clutch Actuator Position",
+          "name_ar": "موضع مشغل القابض",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "TCU Battery Voltage",
+          "name_ar": "جهد تغذية وحدة ناقل الحركة",
+          "threshold": "not documented"
+        }
+      ],
+      "parts": [
+        "TCU",
+        "Clutch actuator",
+        "Shift/select motor",
+        "Selector contacts",
+        "Harness"
+      ],
+      "source_ids": [
+        "actronics_f13f17_tcu_guide"
+      ],
+      "related_codes": [
+        "P1607",
+        "P1609",
+        "P1700",
+        "P1723",
+        "P1728",
+        "P1730",
+        "P1735",
+        "P1740",
+        "P1725",
+        "P1726",
+        "P1734",
+        "P1703",
+        "P1733"
+      ]
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "component_family_code_confirmed_vehicle_engine_year_NOT_confirmed",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_p1730_boscheasytronic_f13_f17_tcu",
+      "raw_code": "P1730",
+      "base_code": "P1730",
+      "category": "P",
+      "code_type": "P1_manufacturer_specific_Easytronic_context",
+      "ecu": "Bosch Easytronic F13/F17 MTA TCU",
+      "variant": "boscheasytronic_f13_f17_tcu",
+      "model": "UNSPECIFIED MODEL — TCU FAMILY ONLY",
+      "applicability": {
+        "system": "Bosch Easytronic F13/F17 MTA",
+        "manufacturer": "Vauxhall / Opel",
+        "vehicle_model": null,
+        "year_type": null,
+        "years": null,
+        "model_assignment": "NOT MADE: guide lists many model families but does not establish this DTC on a specific engine+ECU+VIN",
+        "engine_code": null,
+        "ecu": "TCU Easytronic (software and part-number dependent)",
+        "market": null
+      },
+      "definition_en": "Gearbox control fault",
+      "translation_ar": "خلل التحكم في ناقل الحركة",
+      "symptoms": [
+        "F shown in gear display",
+        "No-start",
+        "Poor/no gear shifting or clutch operation"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "TCU, actuator or related mechatronic failure, case-dependent",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Damaged harness/connectors or worn selector contacts",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Unfinished adaptation or incorrect configuration, depending on DTC",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Identify exact gearbox family, TCU part number, ECU software and VIN before applying code meaning",
+        "Record fault memory, battery state, freeze frame, available actuator and selector parameters",
+        "Inspect appropriate actuator/TCU, selector contacts and harness, then compare actual vs commanded state",
+        "Re-test system with authorized calibration/learning where required, and repair only demonstrated faults"
+      ],
+      "live_data": [
+        {
+          "name_en": "Gear Selector Position",
+          "name_ar": "موضع محدد التروس",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "Clutch Actuator Position",
+          "name_ar": "موضع مشغل القابض",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "TCU Battery Voltage",
+          "name_ar": "جهد تغذية وحدة ناقل الحركة",
+          "threshold": "not documented"
+        }
+      ],
+      "parts": [
+        "TCU",
+        "Clutch actuator",
+        "Shift/select motor",
+        "Selector contacts",
+        "Harness"
+      ],
+      "source_ids": [
+        "actronics_f13f17_tcu_guide"
+      ],
+      "related_codes": [
+        "P1607",
+        "P1609",
+        "P1700",
+        "P1723",
+        "P1728",
+        "P1729",
+        "P1735",
+        "P1740",
+        "P1725",
+        "P1726",
+        "P1734",
+        "P1703",
+        "P1733"
+      ]
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "component_family_code_confirmed_vehicle_engine_year_NOT_confirmed",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_p1735_boscheasytronic_f13_f17_tcu",
+      "raw_code": "P1735",
+      "base_code": "P1735",
+      "category": "P",
+      "code_type": "P1_manufacturer_specific_Easytronic_context",
+      "ecu": "Bosch Easytronic F13/F17 MTA TCU",
+      "variant": "boscheasytronic_f13_f17_tcu",
+      "model": "UNSPECIFIED MODEL — TCU FAMILY ONLY",
+      "applicability": {
+        "system": "Bosch Easytronic F13/F17 MTA",
+        "manufacturer": "Vauxhall / Opel",
+        "vehicle_model": null,
+        "year_type": null,
+        "years": null,
+        "model_assignment": "NOT MADE: guide lists many model families but does not establish this DTC on a specific engine+ECU+VIN",
+        "engine_code": null,
+        "ecu": "TCU Easytronic (software and part-number dependent)",
+        "market": null
+      },
+      "definition_en": "Gearbox parameters not learned",
+      "translation_ar": "لم تكتمل عملية تعلّم معلمات ناقل الحركة",
+      "symptoms": [
+        "F shown in gear display",
+        "No-start",
+        "Poor/no gear shifting or clutch operation"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "TCU, actuator or related mechatronic failure, case-dependent",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Damaged harness/connectors or worn selector contacts",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Unfinished adaptation or incorrect configuration, depending on DTC",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Identify exact gearbox family, TCU part number, ECU software and VIN before applying code meaning",
+        "Record fault memory, battery state, freeze frame, available actuator and selector parameters",
+        "Perform authorized clutch/gearchange basic setting and recheck learned state",
+        "Re-test system with authorized calibration/learning where required, and repair only demonstrated faults"
+      ],
+      "live_data": [
+        {
+          "name_en": "Gear Selector Position",
+          "name_ar": "موضع محدد التروس",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "Clutch Actuator Position",
+          "name_ar": "موضع مشغل القابض",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "TCU Battery Voltage",
+          "name_ar": "جهد تغذية وحدة ناقل الحركة",
+          "threshold": "not documented"
+        }
+      ],
+      "parts": [
+        "TCU",
+        "Clutch actuator",
+        "Shift/select motor",
+        "Selector contacts",
+        "Harness"
+      ],
+      "source_ids": [
+        "actronics_f13f17_tcu_guide"
+      ],
+      "related_codes": [
+        "P1607",
+        "P1609",
+        "P1700",
+        "P1723",
+        "P1728",
+        "P1729",
+        "P1730",
+        "P1740",
+        "P1725",
+        "P1726",
+        "P1734",
+        "P1703",
+        "P1733"
+      ]
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "component_family_code_confirmed_vehicle_engine_year_NOT_confirmed",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_p1740_boscheasytronic_f13_f17_tcu",
+      "raw_code": "P1740",
+      "base_code": "P1740",
+      "category": "P",
+      "code_type": "P1_manufacturer_specific_Easytronic_context",
+      "ecu": "Bosch Easytronic F13/F17 MTA TCU",
+      "variant": "boscheasytronic_f13_f17_tcu",
+      "model": "UNSPECIFIED MODEL — TCU FAMILY ONLY",
+      "applicability": {
+        "system": "Bosch Easytronic F13/F17 MTA",
+        "manufacturer": "Vauxhall / Opel",
+        "vehicle_model": null,
+        "year_type": null,
+        "years": null,
+        "model_assignment": "NOT MADE: guide lists many model families but does not establish this DTC on a specific engine+ECU+VIN",
+        "engine_code": null,
+        "ecu": "TCU Easytronic (software and part-number dependent)",
+        "market": null
+      },
+      "definition_en": "Shift motor malfunction (may co-occur with P1728)",
+      "translation_ar": "خلل محرك تغيير التروس (قد يظهر مع P1728)",
+      "symptoms": [
+        "F shown in gear display",
+        "No-start",
+        "Poor/no gear shifting or clutch operation"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "TCU, actuator or related mechatronic failure, case-dependent",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Damaged harness/connectors or worn selector contacts",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Unfinished adaptation or incorrect configuration, depending on DTC",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Identify exact gearbox family, TCU part number, ECU software and VIN before applying code meaning",
+        "Record fault memory, battery state, freeze frame, available actuator and selector parameters",
+        "Inspect appropriate actuator/TCU, selector contacts and harness, then compare actual vs commanded state",
+        "Re-test system with authorized calibration/learning where required, and repair only demonstrated faults"
+      ],
+      "live_data": [
+        {
+          "name_en": "Gear Selector Position",
+          "name_ar": "موضع محدد التروس",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "Clutch Actuator Position",
+          "name_ar": "موضع مشغل القابض",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "TCU Battery Voltage",
+          "name_ar": "جهد تغذية وحدة ناقل الحركة",
+          "threshold": "not documented"
+        }
+      ],
+      "parts": [
+        "TCU",
+        "Clutch actuator",
+        "Shift/select motor",
+        "Selector contacts",
+        "Harness"
+      ],
+      "source_ids": [
+        "actronics_f13f17_tcu_guide"
+      ],
+      "related_codes": [
+        "P1607",
+        "P1609",
+        "P1700",
+        "P1723",
+        "P1728",
+        "P1729",
+        "P1730",
+        "P1735",
+        "P1725",
+        "P1726",
+        "P1734",
+        "P1703",
+        "P1733"
+      ]
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "component_family_code_confirmed_vehicle_engine_year_NOT_confirmed",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_p1725_boscheasytronic_f13_f17_tcu",
+      "raw_code": "P1725",
+      "base_code": "P1725",
+      "category": "P",
+      "code_type": "P1_manufacturer_specific_Easytronic_context",
+      "ecu": "Bosch Easytronic F13/F17 MTA TCU",
+      "variant": "boscheasytronic_f13_f17_tcu",
+      "model": "UNSPECIFIED MODEL — TCU FAMILY ONLY",
+      "applicability": {
+        "system": "Bosch Easytronic F13/F17 MTA",
+        "manufacturer": "Vauxhall / Opel",
+        "vehicle_model": null,
+        "year_type": null,
+        "years": null,
+        "model_assignment": "NOT MADE: guide lists many model families but does not establish this DTC on a specific engine+ECU+VIN",
+        "engine_code": null,
+        "ecu": "TCU Easytronic (software and part-number dependent)",
+        "market": null
+      },
+      "definition_en": "Shift motor sensor supply-voltage fault",
+      "translation_ar": "خلل جهد تغذية حساس محرك تغيير التروس",
+      "symptoms": [
+        "F shown in gear display",
+        "No-start",
+        "Poor/no gear shifting or clutch operation"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "TCU, actuator or related mechatronic failure, case-dependent",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Damaged harness/connectors or worn selector contacts",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Unfinished adaptation or incorrect configuration, depending on DTC",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Identify exact gearbox family, TCU part number, ECU software and VIN before applying code meaning",
+        "Record fault memory, battery state, freeze frame, available actuator and selector parameters",
+        "Inspect harness between mechatronics and shift/select motors, then supply/ground measurements to VIN manual",
+        "Re-test system with authorized calibration/learning where required, and repair only demonstrated faults"
+      ],
+      "live_data": [
+        {
+          "name_en": "Gear Selector Position",
+          "name_ar": "موضع محدد التروس",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "Clutch Actuator Position",
+          "name_ar": "موضع مشغل القابض",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "TCU Battery Voltage",
+          "name_ar": "جهد تغذية وحدة ناقل الحركة",
+          "threshold": "not documented"
+        }
+      ],
+      "parts": [
+        "TCU",
+        "Clutch actuator",
+        "Shift/select motor",
+        "Selector contacts",
+        "Harness"
+      ],
+      "source_ids": [
+        "actronics_f13f17_tcu_guide"
+      ],
+      "related_codes": [
+        "P1607",
+        "P1609",
+        "P1700",
+        "P1723",
+        "P1728",
+        "P1729",
+        "P1730",
+        "P1735",
+        "P1740",
+        "P1726",
+        "P1734",
+        "P1703",
+        "P1733"
+      ]
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "component_family_code_confirmed_vehicle_engine_year_NOT_confirmed",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_p1726_boscheasytronic_f13_f17_tcu",
+      "raw_code": "P1726",
+      "base_code": "P1726",
+      "category": "P",
+      "code_type": "P1_manufacturer_specific_Easytronic_context",
+      "ecu": "Bosch Easytronic F13/F17 MTA TCU",
+      "variant": "boscheasytronic_f13_f17_tcu",
+      "model": "UNSPECIFIED MODEL — TCU FAMILY ONLY",
+      "applicability": {
+        "system": "Bosch Easytronic F13/F17 MTA",
+        "manufacturer": "Vauxhall / Opel",
+        "vehicle_model": null,
+        "year_type": null,
+        "years": null,
+        "model_assignment": "NOT MADE: guide lists many model families but does not establish this DTC on a specific engine+ECU+VIN",
+        "engine_code": null,
+        "ecu": "TCU Easytronic (software and part-number dependent)",
+        "market": null
+      },
+      "definition_en": "Select motor sensor supply-voltage fault",
+      "translation_ar": "خلل جهد تغذية حساس محرك اختيار التروس",
+      "symptoms": [
+        "F shown in gear display",
+        "No-start",
+        "Poor/no gear shifting or clutch operation"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "TCU, actuator or related mechatronic failure, case-dependent",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Damaged harness/connectors or worn selector contacts",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Unfinished adaptation or incorrect configuration, depending on DTC",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Identify exact gearbox family, TCU part number, ECU software and VIN before applying code meaning",
+        "Record fault memory, battery state, freeze frame, available actuator and selector parameters",
+        "Inspect harness between mechatronics and shift/select motors, then supply/ground measurements to VIN manual",
+        "Re-test system with authorized calibration/learning where required, and repair only demonstrated faults"
+      ],
+      "live_data": [
+        {
+          "name_en": "Gear Selector Position",
+          "name_ar": "موضع محدد التروس",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "Clutch Actuator Position",
+          "name_ar": "موضع مشغل القابض",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "TCU Battery Voltage",
+          "name_ar": "جهد تغذية وحدة ناقل الحركة",
+          "threshold": "not documented"
+        }
+      ],
+      "parts": [
+        "TCU",
+        "Clutch actuator",
+        "Shift/select motor",
+        "Selector contacts",
+        "Harness"
+      ],
+      "source_ids": [
+        "actronics_f13f17_tcu_guide"
+      ],
+      "related_codes": [
+        "P1607",
+        "P1609",
+        "P1700",
+        "P1723",
+        "P1728",
+        "P1729",
+        "P1730",
+        "P1735",
+        "P1740",
+        "P1725",
+        "P1734",
+        "P1703",
+        "P1733"
+      ]
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "component_family_code_confirmed_vehicle_engine_year_NOT_confirmed",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_p1734_boscheasytronic_f13_f17_tcu",
+      "raw_code": "P1734",
+      "base_code": "P1734",
+      "category": "P",
+      "code_type": "P1_manufacturer_specific_Easytronic_context",
+      "ecu": "Bosch Easytronic F13/F17 MTA TCU",
+      "variant": "boscheasytronic_f13_f17_tcu",
+      "model": "UNSPECIFIED MODEL — TCU FAMILY ONLY",
+      "applicability": {
+        "system": "Bosch Easytronic F13/F17 MTA",
+        "manufacturer": "Vauxhall / Opel",
+        "vehicle_model": null,
+        "year_type": null,
+        "years": null,
+        "model_assignment": "NOT MADE: guide lists many model families but does not establish this DTC on a specific engine+ECU+VIN",
+        "engine_code": null,
+        "ecu": "TCU Easytronic (software and part-number dependent)",
+        "market": null
+      },
+      "definition_en": "Clutch touch-point adaptation not done",
+      "translation_ar": "لم تُنجز معايرة نقطة تعشيق القابض",
+      "symptoms": [
+        "F shown in gear display",
+        "No-start",
+        "Poor/no gear shifting or clutch operation"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "TCU, actuator or related mechatronic failure, case-dependent",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Damaged harness/connectors or worn selector contacts",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Unfinished adaptation or incorrect configuration, depending on DTC",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Identify exact gearbox family, TCU part number, ECU software and VIN before applying code meaning",
+        "Record fault memory, battery state, freeze frame, available actuator and selector parameters",
+        "Perform authorized clutch/gearchange basic setting and recheck learned state",
+        "Re-test system with authorized calibration/learning where required, and repair only demonstrated faults"
+      ],
+      "live_data": [
+        {
+          "name_en": "Gear Selector Position",
+          "name_ar": "موضع محدد التروس",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "Clutch Actuator Position",
+          "name_ar": "موضع مشغل القابض",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "TCU Battery Voltage",
+          "name_ar": "جهد تغذية وحدة ناقل الحركة",
+          "threshold": "not documented"
+        }
+      ],
+      "parts": [
+        "TCU",
+        "Clutch actuator",
+        "Shift/select motor",
+        "Selector contacts",
+        "Harness"
+      ],
+      "source_ids": [
+        "actronics_f13f17_tcu_guide"
+      ],
+      "related_codes": [
+        "P1607",
+        "P1609",
+        "P1700",
+        "P1723",
+        "P1728",
+        "P1729",
+        "P1730",
+        "P1735",
+        "P1740",
+        "P1725",
+        "P1726",
+        "P1703",
+        "P1733"
+      ]
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "component_family_code_confirmed_vehicle_engine_year_NOT_confirmed",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_p1703_boscheasytronic_f13_f17_tcu",
+      "raw_code": "P1703",
+      "base_code": "P1703",
+      "category": "P",
+      "code_type": "P1_manufacturer_specific_Easytronic_context",
+      "ecu": "Bosch Easytronic F13/F17 MTA TCU",
+      "variant": "boscheasytronic_f13_f17_tcu",
+      "model": "UNSPECIFIED MODEL — TCU FAMILY ONLY",
+      "applicability": {
+        "system": "Bosch Easytronic F13/F17 MTA",
+        "manufacturer": "Vauxhall / Opel",
+        "vehicle_model": null,
+        "year_type": null,
+        "years": null,
+        "model_assignment": "NOT MADE: guide lists many model families but does not establish this DTC on a specific engine+ECU+VIN",
+        "engine_code": null,
+        "ecu": "TCU Easytronic (software and part-number dependent)",
+        "market": null
+      },
+      "definition_en": "Brake light switch signal out of nominal range",
+      "translation_ar": "إشارة مفتاح ضوء المكابح خارج المجال المتوقع",
+      "symptoms": [
+        "F shown in gear display",
+        "No-start",
+        "Poor/no gear shifting or clutch operation"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "TCU, actuator or related mechatronic failure, case-dependent",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Damaged harness/connectors or worn selector contacts",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Unfinished adaptation or incorrect configuration, depending on DTC",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Identify exact gearbox family, TCU part number, ECU software and VIN before applying code meaning",
+        "Record fault memory, battery state, freeze frame, available actuator and selector parameters",
+        "Read brake pedal switch, brake lamps and tail-lamp moisture status",
+        "Re-test system with authorized calibration/learning where required, and repair only demonstrated faults"
+      ],
+      "live_data": [
+        {
+          "name_en": "Gear Selector Position",
+          "name_ar": "موضع محدد التروس",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "Clutch Actuator Position",
+          "name_ar": "موضع مشغل القابض",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "TCU Battery Voltage",
+          "name_ar": "جهد تغذية وحدة ناقل الحركة",
+          "threshold": "not documented"
+        }
+      ],
+      "parts": [
+        "TCU",
+        "Clutch actuator",
+        "Shift/select motor",
+        "Selector contacts",
+        "Harness"
+      ],
+      "source_ids": [
+        "actronics_f13f17_tcu_guide"
+      ],
+      "related_codes": [
+        "P1607",
+        "P1609",
+        "P1700",
+        "P1723",
+        "P1728",
+        "P1729",
+        "P1730",
+        "P1735",
+        "P1740",
+        "P1725",
+        "P1726",
+        "P1734",
+        "P1733"
+      ]
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "manufacturer": "Opel / Vauxhall",
+      "release_to_app": "NOT_ACTIVE",
+      "language": "en/ar",
+      "code_suffix": null,
+      "market": "Europe/Sweden not independently specified",
+      "engine_code": null,
+      "engine_family": null,
+      "transmission": null,
+      "actual_storing_ecu_confirmation": "Check actual storing ECU, tool and software variant",
+      "failure_conditions": "Manufacturer-specific DTC-setting thresholds not published in the cited open source",
+      "wiring": "unverified: require vehicle, ECU/part-number and VIN-variant diagram",
+      "images": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "diagnostic_status": "review_required",
+      "verification_date": "2026-11-16",
+      "verification_status": "component_family_code_confirmed_vehicle_engine_year_NOT_confirmed",
+      "source_license": "Reference URLs only; no protected HELLA/ACTRONICS schematic copied",
+      "record_id": "opel_20261116_batch05_p1733_boscheasytronic_f13_f17_tcu",
+      "raw_code": "P1733",
+      "base_code": "P1733",
+      "category": "P",
+      "code_type": "P1_manufacturer_specific_Easytronic_context",
+      "ecu": "Bosch Easytronic F13/F17 MTA TCU",
+      "variant": "boscheasytronic_f13_f17_tcu",
+      "model": "UNSPECIFIED MODEL — TCU FAMILY ONLY",
+      "applicability": {
+        "system": "Bosch Easytronic F13/F17 MTA",
+        "manufacturer": "Vauxhall / Opel",
+        "vehicle_model": null,
+        "year_type": null,
+        "years": null,
+        "model_assignment": "NOT MADE: guide lists many model families but does not establish this DTC on a specific engine+ECU+VIN",
+        "engine_code": null,
+        "ecu": "TCU Easytronic (software and part-number dependent)",
+        "market": null
+      },
+      "definition_en": "Incorrect transmission/gearbox variant configuration",
+      "translation_ar": "برمجة نوع ناقل حركة غير صحيح",
+      "symptoms": [
+        "F shown in gear display",
+        "No-start",
+        "Poor/no gear shifting or clutch operation"
+      ],
+      "causes": [
+        {
+          "diagnostic_test_order": 1,
+          "hypothesis": "TCU, actuator or related mechatronic failure, case-dependent",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 2,
+          "hypothesis": "Damaged harness/connectors or worn selector contacts",
+          "not_statistical_probability": true
+        },
+        {
+          "diagnostic_test_order": 3,
+          "hypothesis": "Unfinished adaptation or incorrect configuration, depending on DTC",
+          "not_statistical_probability": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Identify exact gearbox family, TCU part number, ECU software and VIN before applying code meaning",
+        "Record fault memory, battery state, freeze frame, available actuator and selector parameters",
+        "Read gearbox/TCU variant coding and verify fitted assembly is correct",
+        "Re-test system with authorized calibration/learning where required, and repair only demonstrated faults"
+      ],
+      "live_data": [
+        {
+          "name_en": "Gear Selector Position",
+          "name_ar": "موضع محدد التروس",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "Clutch Actuator Position",
+          "name_ar": "موضع مشغل القابض",
+          "threshold": "not documented"
+        },
+        {
+          "name_en": "TCU Battery Voltage",
+          "name_ar": "جهد تغذية وحدة ناقل الحركة",
+          "threshold": "not documented"
+        }
+      ],
+      "parts": [
+        "TCU",
+        "Clutch actuator",
+        "Shift/select motor",
+        "Selector contacts",
+        "Harness"
+      ],
+      "source_ids": [
+        "actronics_f13f17_tcu_guide"
+      ],
+      "related_codes": [
+        "P1607",
+        "P1609",
+        "P1700",
+        "P1723",
+        "P1728",
+        "P1729",
+        "P1730",
+        "P1735",
+        "P1740",
+        "P1725",
+        "P1726",
+        "P1734",
+        "P1703"
+      ]
+    }
+  ]
+}
