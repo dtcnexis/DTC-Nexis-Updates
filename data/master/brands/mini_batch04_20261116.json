@@ -1,0 +1,3288 @@
+{
+  "schema": "dtc-nexis-permanent-brand-code-records-v1-plus",
+  "brand": "MINI",
+  "batch_id": "MINI_BATCH04_20261116",
+  "record_count": 13,
+  "distinct_code_count": 12,
+  "special_variants": {
+    "code": "135608",
+    "count": 2,
+    "why": "Separate F55/F56 no-start versus F60 PHEV benign DME software entry"
+  },
+  "baseline": {
+    "legacy_count": 45,
+    "batch03_count": 15,
+    "baseline_path": "data/master/brands/",
+    "existing_raw_codes": 60
+  },
+  "duplicates_with_existing": 0,
+  "release_status": "DRAFT_NOT_ACTIVE",
+  "source_records": [
+    {
+      "record_id": "MINI-B04-ACSM-02010A",
+      "brand": "MINI",
+      "raw_code": "02010A",
+      "base_code": "02010A",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "ACSM",
+      "definition_en": "Coding: Coding data not qualified",
+      "translation_ar": "الترميز: بيانات الترميز غير مؤهلة",
+      "applicability": {
+        "chassis": [
+          "F65",
+          "F66",
+          "F67",
+          "U25"
+        ],
+        "variant_by_chassis": {
+          "F65": "Cooper/Cooper S 4-door",
+          "F66": "Cooper/Cooper S/JCW 2-door",
+          "F67": "Cooper/Cooper S/JCW Convertible",
+          "U25": "Countryman SE ALL4"
+        },
+        "production_start_by_chassis": {
+          "F65": "2025-07",
+          "F66": "2025-07",
+          "F67": "2025-07",
+          "U25": "2025-11"
+        },
+        "service_pack": "21",
+        "integration_target": "U006-26-03-530",
+        "engine_code": "not supplied in bulletin",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "Drive carefully. Driving stabilisation warning on startup",
+        "Codes may appear within 40 s of each other across modules"
+      ],
+      "causes": [
+        {
+          "cause": "Software error in BCP Secure Element under simultaneous multi-module startup complaint",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "تأكيد VIN والطراز وتاريخ الإنتاج وService Pack 21 قبل تفسير مجموعة الأكواد.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "افحص رموز ACSM وVIP وIB وHKFM وتوقيت ظهورها، ثم اقرأ I-level.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "إذا كان I-level أقل من U006-26-03-530 وانطبقت الحالة، برمج BCP عبر ISTA 4.58.2x أو أحدث وفق النشرة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "إذا كان مستوى البرنامج مساوياً/أعلى، لا تبرمج بناء على هذه النشرة واستكمل ISTA؛ لا تبدّل القطع لعلاج سيناريو البرنامج.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 5,
+          "instruction_ar": "بعد البرمجة افحص ذاكرة الأعطال مجدداً وتحقق من اختفاء رسائل التحذير.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Vehicle integration level (I-level)",
+          "name_ar": "مستوى تكامل برمجيات السيارة",
+          "test_condition": "ISTA/AIR vehicle identification",
+          "reference": "Only the I-level quoted from OEM bulletin; no inferred analog measurements"
+        }
+      ],
+      "parts_related": [
+        "BCP software; not a defective ACSM/IB/VIP/HKFM part on evidence of code alone"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M610126-REV2"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M61 01 26 revision 2",
+          "url": "https://static.oemdtc.com/NHTSA-PDFs/MC-11034472-0001.pdf",
+          "date": "2026-06-10"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "parts": [
+        "BCP software; not a defective ACSM/IB/VIP/HKFM part on evidence of code alone"
+      ],
+      "associated_codes": [
+        "02390A",
+        "02290A",
+        "020D0A"
+      ]
+    },
+    {
+      "record_id": "MINI-B04-VIP-02390A",
+      "brand": "MINI",
+      "raw_code": "02390A",
+      "base_code": "02390A",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "VIP",
+      "definition_en": "VIP control unit: Coding data not released, signature",
+      "translation_ar": "وحدة VIP: بيانات الترميز لم تُعتمد؛ التوقيع الرقمي غير مقبول",
+      "applicability": {
+        "chassis": [
+          "F65",
+          "F66",
+          "F67",
+          "U25"
+        ],
+        "variant_by_chassis": {
+          "F65": "Cooper/Cooper S 4-door",
+          "F66": "Cooper/Cooper S/JCW 2-door",
+          "F67": "Cooper/Cooper S/JCW Convertible",
+          "U25": "Countryman SE ALL4"
+        },
+        "production_start_by_chassis": {
+          "F65": "2025-07",
+          "F66": "2025-07",
+          "F67": "2025-07",
+          "U25": "2025-11"
+        },
+        "service_pack": "21",
+        "integration_target": "U006-26-03-530",
+        "engine_code": "not supplied in bulletin",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "Drive carefully. Driving stabilisation warning on startup",
+        "Codes may appear within 40 s of each other across modules"
+      ],
+      "causes": [
+        {
+          "cause": "Software error in BCP Secure Element under simultaneous multi-module startup complaint",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "تأكيد VIN والطراز وتاريخ الإنتاج وService Pack 21 قبل تفسير مجموعة الأكواد.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "افحص رموز ACSM وVIP وIB وHKFM وتوقيت ظهورها، ثم اقرأ I-level.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "إذا كان I-level أقل من U006-26-03-530 وانطبقت الحالة، برمج BCP عبر ISTA 4.58.2x أو أحدث وفق النشرة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "إذا كان مستوى البرنامج مساوياً/أعلى، لا تبرمج بناء على هذه النشرة واستكمل ISTA؛ لا تبدّل القطع لعلاج سيناريو البرنامج.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 5,
+          "instruction_ar": "بعد البرمجة افحص ذاكرة الأعطال مجدداً وتحقق من اختفاء رسائل التحذير.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Vehicle integration level (I-level)",
+          "name_ar": "مستوى تكامل برمجيات السيارة",
+          "test_condition": "ISTA/AIR vehicle identification",
+          "reference": "Only the I-level quoted from OEM bulletin; no inferred analog measurements"
+        }
+      ],
+      "parts_related": [
+        "BCP software; not a defective ACSM/IB/VIP/HKFM part on evidence of code alone"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M610126-REV2"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M61 01 26 revision 2",
+          "url": "https://static.oemdtc.com/NHTSA-PDFs/MC-11034472-0001.pdf",
+          "date": "2026-06-10"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "parts": [
+        "BCP software; not a defective ACSM/IB/VIP/HKFM part on evidence of code alone"
+      ],
+      "associated_codes": [
+        "02010A",
+        "02290A",
+        "020D0A"
+      ]
+    },
+    {
+      "record_id": "MINI-B04-IBDSC-02290A",
+      "brand": "MINI",
+      "raw_code": "02290A",
+      "base_code": "02290A",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "IB/DSC",
+      "definition_en": "DSC control unit: Coding data not released, signature",
+      "translation_ar": "وحدة DSC: بيانات الترميز لم تُعتمد؛ خلل متعلق بالتوقيع",
+      "applicability": {
+        "chassis": [
+          "F65",
+          "F66",
+          "F67",
+          "U25"
+        ],
+        "variant_by_chassis": {
+          "F65": "Cooper/Cooper S 4-door",
+          "F66": "Cooper/Cooper S/JCW 2-door",
+          "F67": "Cooper/Cooper S/JCW Convertible",
+          "U25": "Countryman SE ALL4"
+        },
+        "production_start_by_chassis": {
+          "F65": "2025-07",
+          "F66": "2025-07",
+          "F67": "2025-07",
+          "U25": "2025-11"
+        },
+        "service_pack": "21",
+        "integration_target": "U006-26-03-530",
+        "engine_code": "not supplied in bulletin",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "Drive carefully. Driving stabilisation warning on startup",
+        "Codes may appear within 40 s of each other across modules"
+      ],
+      "causes": [
+        {
+          "cause": "Software error in BCP Secure Element under simultaneous multi-module startup complaint",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "تأكيد VIN والطراز وتاريخ الإنتاج وService Pack 21 قبل تفسير مجموعة الأكواد.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "افحص رموز ACSM وVIP وIB وHKFM وتوقيت ظهورها، ثم اقرأ I-level.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "إذا كان I-level أقل من U006-26-03-530 وانطبقت الحالة، برمج BCP عبر ISTA 4.58.2x أو أحدث وفق النشرة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "إذا كان مستوى البرنامج مساوياً/أعلى، لا تبرمج بناء على هذه النشرة واستكمل ISTA؛ لا تبدّل القطع لعلاج سيناريو البرنامج.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 5,
+          "instruction_ar": "بعد البرمجة افحص ذاكرة الأعطال مجدداً وتحقق من اختفاء رسائل التحذير.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Vehicle integration level (I-level)",
+          "name_ar": "مستوى تكامل برمجيات السيارة",
+          "test_condition": "ISTA/AIR vehicle identification",
+          "reference": "Only the I-level quoted from OEM bulletin; no inferred analog measurements"
+        }
+      ],
+      "parts_related": [
+        "BCP software; not a defective ACSM/IB/VIP/HKFM part on evidence of code alone"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M610126-REV2"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M61 01 26 revision 2",
+          "url": "https://static.oemdtc.com/NHTSA-PDFs/MC-11034472-0001.pdf",
+          "date": "2026-06-10"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "parts": [
+        "BCP software; not a defective ACSM/IB/VIP/HKFM part on evidence of code alone"
+      ],
+      "associated_codes": [
+        "02010A",
+        "02390A",
+        "020D0A"
+      ]
+    },
+    {
+      "record_id": "MINI-B04-HKFM-020D0A",
+      "brand": "MINI",
+      "raw_code": "020D0A",
+      "base_code": "020D0A",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "HKFM",
+      "definition_en": "HKFM: Coding data are not qualified",
+      "translation_ar": "وحدة HKFM: بيانات الترميز غير مؤهلة",
+      "applicability": {
+        "chassis": [
+          "F65",
+          "F66",
+          "F67",
+          "U25"
+        ],
+        "variant_by_chassis": {
+          "F65": "Cooper/Cooper S 4-door",
+          "F66": "Cooper/Cooper S/JCW 2-door",
+          "F67": "Cooper/Cooper S/JCW Convertible",
+          "U25": "Countryman SE ALL4"
+        },
+        "production_start_by_chassis": {
+          "F65": "2025-07",
+          "F66": "2025-07",
+          "F67": "2025-07",
+          "U25": "2025-11"
+        },
+        "service_pack": "21",
+        "integration_target": "U006-26-03-530",
+        "engine_code": "not supplied in bulletin",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "Drive carefully. Driving stabilisation warning on startup",
+        "Codes may appear within 40 s of each other across modules"
+      ],
+      "causes": [
+        {
+          "cause": "Software error in BCP Secure Element under simultaneous multi-module startup complaint",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "تأكيد VIN والطراز وتاريخ الإنتاج وService Pack 21 قبل تفسير مجموعة الأكواد.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "افحص رموز ACSM وVIP وIB وHKFM وتوقيت ظهورها، ثم اقرأ I-level.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "إذا كان I-level أقل من U006-26-03-530 وانطبقت الحالة، برمج BCP عبر ISTA 4.58.2x أو أحدث وفق النشرة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "إذا كان مستوى البرنامج مساوياً/أعلى، لا تبرمج بناء على هذه النشرة واستكمل ISTA؛ لا تبدّل القطع لعلاج سيناريو البرنامج.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 5,
+          "instruction_ar": "بعد البرمجة افحص ذاكرة الأعطال مجدداً وتحقق من اختفاء رسائل التحذير.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Vehicle integration level (I-level)",
+          "name_ar": "مستوى تكامل برمجيات السيارة",
+          "test_condition": "ISTA/AIR vehicle identification",
+          "reference": "Only the I-level quoted from OEM bulletin; no inferred analog measurements"
+        }
+      ],
+      "parts_related": [
+        "BCP software; not a defective ACSM/IB/VIP/HKFM part on evidence of code alone"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M610126-REV2"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M61 01 26 revision 2",
+          "url": "https://static.oemdtc.com/NHTSA-PDFs/MC-11034472-0001.pdf",
+          "date": "2026-06-10"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "parts": [
+        "BCP software; not a defective ACSM/IB/VIP/HKFM part on evidence of code alone"
+      ],
+      "associated_codes": [
+        "02010A",
+        "02390A",
+        "02290A"
+      ]
+    },
+    {
+      "record_id": "MINI-B04-BDC-D91C86",
+      "brand": "MINI",
+      "raw_code": "D91C86",
+      "base_code": "D91C86",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "BDC",
+      "definition_en": "CAN message, status functional safety (ST_FSSY): Timeout-BDC",
+      "translation_ar": "رسالة CAN لحالة السلامة الوظيفية ST_FSSY: انتهت المهلة في BDC",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57",
+          "F60"
+        ],
+        "production_end": "2018-07-01",
+        "engines": "bulletin does not specify unique engine-code pairs",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "Display/navigation screen goes black or resets",
+        "Engine off may require three emergency presses",
+        "Multiple check-control messages"
+      ],
+      "causes": [
+        {
+          "cause": "BDC central-gateway software error in bulletin case",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "افحص الأعراض وتاريخ الإنتاج وأكواد BDC المرافقة عبر ISTA.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "بعد اتباع تعليمات السلامة الرسمية، نفّذ إعادة ضبط البطارية الموصوفة بالنشرة فقط إذا تحققت ظروفها.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "حدّث برمجيات السيارة باستعمال ISTA/P 4.12.3x أو أحدث مع مزود قدرة مناسب.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "لا تستبدل BDC أو الشاشة اعتماداً على هذا الرمز وحده؛ إذا بقي العطل استخدم خطة ISTA للشبكة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "BDC central gateway programming level",
+          "name_ar": "مستوى برمجة بوابة BDC",
+          "test_condition": "ISTA/AIR vehicle identification",
+          "reference": "Only the I-level quoted from OEM bulletin; no inferred analog measurements"
+        }
+      ],
+      "parts_related": [
+        "BDC central gateway software"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M610318"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M61 03 18",
+          "url": "https://oemdtc.com/tsb/10145372/",
+          "date": "2018-07"
+        }
+      ],
+      "verification_status": "OEM_bulletin_text_secondary_transcript_review",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "parts": [
+        "BDC central gateway software"
+      ],
+      "review_caveat": "Full OEM MINI PDF not directly retrieved; secondary reproduction of manufacturer service bulletin"
+    },
+    {
+      "record_id": "MINI-B04-ACSMseatmodule-C95462",
+      "brand": "MINI",
+      "raw_code": "C95462",
+      "base_code": "C95462",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "ACSM/seat module",
+      "definition_en": "Driver's seat module (seat position, back rest lock): Communication fault",
+      "translation_ar": "وحدة مقعد السائق (وضع المقعد وقفل المسند): خلل اتصال",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57",
+          "F60"
+        ],
+        "engines": "not specified in bulletin",
+        "scenario": "Sporadic SRS alert around front-seat occupant exit, electrostatic discharge",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "Sporadic airbag warning light when front occupant exits",
+        "CC 108/109/97 may display",
+        "Electrostatic discharge may be felt"
+      ],
+      "causes": [
+        {
+          "cause": "Electrostatic discharge disrupts communication between seat and restraint control module in described bulletin",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "تأكد من ظهور رمز الاتصال الصحيح ضمن ACSM/وحدة المقعد عند خروج الراكب أو السائق.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "طابق رمز المقعد والجهة مع المركبة وراجع النشرة المنقحة مارس 2019.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "يتولى فني مؤهل أنظمة SRS تنفيذ خطوات السلامة وفحص توصيل أرضي وحدة المقعد.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "عند تأكيد سبب ESD، طبّق إجراء MINI الرسمي لإضافة تأريض الوحدة؛ لا تفحص مفجرات الوسائد مباشرة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [],
+      "parts_related": [
+        "driver seat module grounding lead",
+        "seat module/ACSM communication network"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M650117-2019"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M65 01 17 revision March 2019",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10159157-9999.pdf",
+          "date": "2019-03"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "parts": [
+        "driver seat module grounding lead",
+        "seat module/ACSM communication network"
+      ],
+      "srs_safety": "Never probe airbag igniter circuits; follow official restraint safety procedure",
+      "associated_codes": [
+        "C95463"
+      ]
+    },
+    {
+      "record_id": "MINI-B04-ACSMseatmodule-C95463",
+      "brand": "MINI",
+      "raw_code": "C95463",
+      "base_code": "C95463",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "ACSM/seat module",
+      "definition_en": "Front passenger seat module (seat position, back rest lock): Communication fault",
+      "translation_ar": "وحدة مقعد الراكب الأمامي (الوضع وقفل المسند): خلل اتصال",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57",
+          "F60"
+        ],
+        "engines": "not specified in bulletin",
+        "scenario": "Sporadic SRS alert around front-seat occupant exit, electrostatic discharge",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "Sporadic airbag warning light when front occupant exits",
+        "CC 108/109/97 may display",
+        "Electrostatic discharge may be felt"
+      ],
+      "causes": [
+        {
+          "cause": "Electrostatic discharge disrupts communication between seat and restraint control module in described bulletin",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "تأكد من ظهور رمز الاتصال الصحيح ضمن ACSM/وحدة المقعد عند خروج الراكب أو السائق.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "طابق رمز المقعد والجهة مع المركبة وراجع النشرة المنقحة مارس 2019.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "يتولى فني مؤهل أنظمة SRS تنفيذ خطوات السلامة وفحص توصيل أرضي وحدة المقعد.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "عند تأكيد سبب ESD، طبّق إجراء MINI الرسمي لإضافة تأريض الوحدة؛ لا تفحص مفجرات الوسائد مباشرة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [],
+      "parts_related": [
+        "passenger seat module grounding lead",
+        "seat module/ACSM communication network"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M650117-2019"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M65 01 17 revision March 2019",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10159157-9999.pdf",
+          "date": "2019-03"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "parts": [
+        "passenger seat module grounding lead",
+        "seat module/ACSM communication network"
+      ],
+      "srs_safety": "Never probe airbag igniter circuits; follow official restraint safety procedure",
+      "associated_codes": [
+        "C95462"
+      ]
+    },
+    {
+      "record_id": "MINI-B04-EME-222F96",
+      "brand": "MINI",
+      "raw_code": "222F96",
+      "base_code": "222F96",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "EME",
+      "definition_en": null,
+      "translation_ar": "الرمز 222F96 مسجل في وحدة الإلكترونيات الكهربائية EME؛ الوصف الحرفي لم يُذكر في النشرة",
+      "applicability": {
+        "chassis": [
+          "F60"
+        ],
+        "version": "Cooper S E Countryman ALL4",
+        "fuel": "PHEV",
+        "production_years": "not explicitly established by bulletin",
+        "engine_code": "not specified",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "MIL illuminated",
+        "CCM 34 displayed"
+      ],
+      "causes": [
+        {
+          "cause": "Potential EME hardware fault, but OEM requires programming and repeated fault check first",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "اقرأ الرمز من EME وسجّل مستوى برنامج السيارة باستخدام ISTA.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "وفق النشرة، حدّث البرمجيات إلى 17-07-500 أو أحدث (مع تفضيل 18-03-500 عند توفره وتطبيقه).",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "امسح ذاكرة الأعطال، نفّذ تغيير الطرفية ودع السيارة تدخل وضع السكون، ثم اقرأ الذاكرة مرة ثانية.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "إذا عاد 222F96، اتبع تعليمات MINI لاستبدال EME بفني مؤهل للجهد العالي؛ إن لم يعد فلا تستبدل الوحدة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "EME fault memory and I-level",
+          "name_ar": "ذاكرة أعطال وحدة EME ومستوى البرمجة",
+          "test_condition": "ISTA/AIR vehicle identification",
+          "reference": "Only the I-level quoted from OEM bulletin; no inferred analog measurements"
+        }
+      ],
+      "parts_related": [
+        "Electrical Machine Electronics (EME)"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M610217"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M61 02 17",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10215030-9999.pdf",
+          "date": "2017-06"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "parts": [
+        "Electrical Machine Electronics (EME)"
+      ],
+      "safety": "HV qualified personnel; code alone insufficient to replace EME",
+      "unknown_definition": true
+    },
+    {
+      "record_id": "MINI-B04-SME-21F156",
+      "brand": "MINI",
+      "raw_code": "21F156",
+      "base_code": "21F156",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "SME",
+      "definition_en": "High-voltage battery, preloading: Safety box, precondition not fulfilled",
+      "translation_ar": "بطارية الجهد العالي، التحميل التمهيدي: لم يتحقق شرط صندوق الأمان",
+      "applicability": {
+        "chassis": [
+          "F60"
+        ],
+        "version": "Cooper S E Countryman ALL4",
+        "fuel": "PHEV",
+        "engine_code": "not specified",
+        "integration_level_condition": "I-level 16-11-5xx or lower when no 21F1F6",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "No customer-visible indication of a problem in bulletin scenario"
+      ],
+      "causes": [
+        {
+          "cause": "SME software error when 21F1F6 is absent under specified conditions",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "اقرأ ذاكرة أعطال SME، وابحث تحديداً عن الرمز 21F1F6 المصاحب.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "إذا وُجد 21F1F6، لا تتبع فرع الإصلاح البرمجي المختصر واستكمل ISTA.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "إن لم يوجد، افحص I-level؛ إذا كان 16-11-5xx أو أدنى، نفّذ البرمجة الموصى بها للنظام.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "إذا كان البرنامج أحدث، امسح الذاكرة وفق النشرة وتحقق؛ لا تستبدل SME لمجرد هذين الرمزين.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "SME fault memory / coexisting 21F1F6",
+          "name_ar": "ذاكرة SME ووجود 21F1F6",
+          "test_condition": "ISTA in safe HV diagnostic state",
+          "reference": "21F1F6 triggers further diagnosis; software branch if absent"
+        },
+        {
+          "name_en": "Integration level",
+          "name_ar": "مستوى تكامل البرمجيات",
+          "test_condition": "ISTA",
+          "reference": "16-11-5xx or lower bulletin threshold"
+        }
+      ],
+      "parts_related": [
+        "SME software",
+        "HV battery precharge/safety box; no proven hardware failure"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M610218"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M61 02 18",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10143578-9999.pdf",
+          "date": "2018-05"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "parts": [
+        "SME software",
+        "HV battery precharge/safety box; no proven hardware failure"
+      ],
+      "associated_codes": [
+        "21F1F7",
+        "21F1F6"
+      ],
+      "safety": "Only authorized HV technician; fault wording does not prove physical overheating"
+    },
+    {
+      "record_id": "MINI-B04-SME-21F1F7",
+      "brand": "MINI",
+      "raw_code": "21F1F7",
+      "base_code": "21F1F7",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "SME",
+      "definition_en": "High-voltage battery, preloading: temporarily blocked due to overheating",
+      "translation_ar": "بطارية الجهد العالي، التحميل التمهيدي: حُجب مؤقتاً بسبب تجاوز الحرارة",
+      "applicability": {
+        "chassis": [
+          "F60"
+        ],
+        "version": "Cooper S E Countryman ALL4",
+        "fuel": "PHEV",
+        "engine_code": "not specified",
+        "integration_level_condition": "I-level 16-11-5xx or lower when no 21F1F6",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "No customer-visible indication of a problem in bulletin scenario"
+      ],
+      "causes": [
+        {
+          "cause": "SME software error when 21F1F6 is absent under specified conditions",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "اقرأ ذاكرة أعطال SME، وابحث تحديداً عن الرمز 21F1F6 المصاحب.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "إذا وُجد 21F1F6، لا تتبع فرع الإصلاح البرمجي المختصر واستكمل ISTA.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "إن لم يوجد، افحص I-level؛ إذا كان 16-11-5xx أو أدنى، نفّذ البرمجة الموصى بها للنظام.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "إذا كان البرنامج أحدث، امسح الذاكرة وفق النشرة وتحقق؛ لا تستبدل SME لمجرد هذين الرمزين.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "SME fault memory / coexisting 21F1F6",
+          "name_ar": "ذاكرة SME ووجود 21F1F6",
+          "test_condition": "ISTA in safe HV diagnostic state",
+          "reference": "21F1F6 triggers further diagnosis; software branch if absent"
+        },
+        {
+          "name_en": "Integration level",
+          "name_ar": "مستوى تكامل البرمجيات",
+          "test_condition": "ISTA",
+          "reference": "16-11-5xx or lower bulletin threshold"
+        }
+      ],
+      "parts_related": [
+        "SME software",
+        "HV battery precharge/safety box; no proven hardware failure"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M610218"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M61 02 18",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10143578-9999.pdf",
+          "date": "2018-05"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "parts": [
+        "SME software",
+        "HV battery precharge/safety box; no proven hardware failure"
+      ],
+      "associated_codes": [
+        "21F156",
+        "21F1F6"
+      ],
+      "safety": "Only authorized HV technician; fault wording does not prove physical overheating"
+    },
+    {
+      "record_id": "MINI-B04-DME-1E0001",
+      "brand": "MINI",
+      "raw_code": "1E0001",
+      "base_code": "1E0001",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "DME",
+      "definition_en": "Idle speed control: Speed too high",
+      "translation_ar": "التحكم بسرعة الخمول: عدد دورات المحرك مرتفع جداً",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57",
+          "F60"
+        ],
+        "engine_family_codes": [
+          "B36M",
+          "B38M",
+          "B46M",
+          "B48M",
+          "B48O",
+          "XB2H"
+        ],
+        "production_end": "2017-06-30",
+        "chassis_engine_pairs": "source names group jointly; do not infer every combination",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "MIL on",
+        "Occasional elevated idle up to approx. 1200 rpm at operating temperature, often above 1500 m altitude"
+      ],
+      "causes": [
+        {
+          "cause": "DME software error in high altitude bulletin situation",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "اقرأ رمز DME وسجل ظروف ظهوره، درجة حرارة المحرك والارتفاع الذي حدثت فيه المشكلة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "اقرأ I-level وقارنه بالمستوى XXXX-17-07-50x المذكور بالنشرة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "إذا كان المستوى أقدم، نفّذ التحديث الرسمي باستخدام ISTA وفق VIN/محرك السيارة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "عند مستوى أحدث أو استمرار خمول مرتفع، لا تُرجع جميع الأسباب إلى البرمجيات؛ نفّذ ISTA تشخيص الخمول.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine speed (actual idle RPM)",
+          "name_ar": "عدد دورات المحرك الفعلي بالخمول",
+          "test_condition": "engine at operating temperature and high altitude in bulletin conditions",
+          "reference": "sporadic observed up to about 1200 rpm is a symptom, not a global pass/fail threshold"
+        },
+        {
+          "name_en": "Vehicle I-level",
+          "name_ar": "مستوى تكامل البرنامج",
+          "test_condition": "ISTA",
+          "reference": "XXXX-17-07-50x (vehicle-family-specific prefix)"
+        }
+      ],
+      "parts_related": [
+        "DME software; no part replacement justified by this bulletin"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M120317"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M12 03 17",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10149266-9999.pdf",
+          "date": "2017-05"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "parts": [
+        "DME software; no part replacement justified by this bulletin"
+      ]
+    },
+    {
+      "record_id": "MINI-B04-DME-135608-F55F56-WARM-NOSTART",
+      "brand": "MINI",
+      "raw_code": "135608",
+      "base_code": "135608",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "DME",
+      "definition_en": "Valvetronic: No movement identified",
+      "translation_ar": "نظام Valvetronic: لم تُكتشف حركة",
+      "applicability": {
+        "chassis": [
+          "F55",
+          "F56"
+        ],
+        "engine_codes": [
+          "B38M",
+          "B46M",
+          "B48M"
+        ],
+        "date_scope": "May 2015 revised bulletin; exact production window must be confirmed by VIN",
+        "scenario": "Warm engine no-start, Valvetronic held at minimum lift",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "Engine fails to restart when warm",
+        "Valvetronic stuck at minimum valve lift"
+      ],
+      "causes": [
+        {
+          "cause": "DME software fault producing Valvetronic minimum-lift condition in specified vehicles",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "أكد أن المحرك دافئ وأن المحرك لا يبدأ، وأن Valvetronic عالق عند أدنى رفع قبل استخدام هذا الإجراء.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "شغّل خطة MINI ISTA، وراجع النشرة لمهمة فك احتجاز آلية Valvetronic ميكانيكياً بواسطة فني مؤهل.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "نفّذ تحديث ISTA/P إلى I-level F056-15-03-500 أو أحدث وفق النشرة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "افحص عدد مرات ظهور الرمز وسجل فشل التشغيل؛ قد تتطلب النشرة استبدال بادئ الحركة ضمن شروط خاصة لا تُعمّم على جميع الحالات.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "DME fault counter / Vehicle I-level",
+          "name_ar": "عداد ظهور عطل DME ومستوى البرنامج",
+          "test_condition": "ISTA/AIR vehicle identification",
+          "reference": "Only the I-level quoted from OEM bulletin; no inferred analog measurements"
+        }
+      ],
+      "parts_related": [
+        "Valvetronic drive motor/shaft",
+        "Starter only if specific bulletin criteria satisfied"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M121614"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M12 16 14 revised May 2015",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2015/MC-10147161-9999.pdf",
+          "date": "2015-05"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "variant_id": "F55F56-WARM-NOSTART",
+      "parts": [
+        "Valvetronic drive motor/shaft",
+        "Starter only if specific bulletin criteria satisfied"
+      ],
+      "warning": "Mechanical release/90 degree operation requires official repair instruction, not generic home procedure"
+    },
+    {
+      "record_id": "MINI-B04-DME-135608-F60PHEV-ERRONEOUS",
+      "brand": "MINI",
+      "raw_code": "135608",
+      "base_code": "135608",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "DME",
+      "definition_en": "Valvetronic: No movement identified",
+      "translation_ar": "نظام Valvetronic: لم تُكتشف حركة",
+      "applicability": {
+        "chassis": [
+          "F60"
+        ],
+        "variant": "Cooper S E Countryman ALL4",
+        "fuel": "PHEV",
+        "engine_code": "not identified in bulletin",
+        "scenario": "No MIL, no drivability complaint; detected during ISTA scan; may occur upon plugging charger",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "No customer complaint",
+        "MIL not illuminated; no impaired engine operation in specific scenario"
+      ],
+      "causes": [
+        {
+          "cause": "Erroneous DME software entry, possibly stored when charging plug inserted",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "أكد أن المركبة F60 PHEV وأن الرمز ظهر أثناء ISTA دون أي أعراض تشغيل أو MIL.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "إذا كانت الحالة مطابقة للنشرة، امسح الكود غير الحقيقي دون استبدال قطع.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "إذا صاحب الرمز عجز عن التشغيل أو أعطال أخرى، لا تطبق هذه النشرة وأكمل خطة MINI ISTA للمحرك.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "DME fault memory; MIL status",
+          "name_ar": "ذاكرة DME وحالة مصباح MIL",
+          "test_condition": "No drivability complaint; ISTA",
+          "reference": "MIL not illuminated per scenario"
+        }
+      ],
+      "parts_related": [
+        "No replacement recommended for specific scenario"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M121118"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M12 11 18",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10143576-9999.pdf",
+          "date": "2018-05"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "variant_id": "F60PHEV-ERRONEOUS",
+      "parts": [
+        "No replacement recommended for specific scenario"
+      ],
+      "warning": "Do not apply this false-code interpretation to F55/F56 warm no-start"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "MINI-B04-ACSM-02010A",
+      "brand": "MINI",
+      "raw_code": "02010A",
+      "base_code": "02010A",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "ACSM",
+      "definition_en": "Coding: Coding data not qualified",
+      "translation_ar": "الترميز: بيانات الترميز غير مؤهلة",
+      "applicability": {
+        "chassis": [
+          "F65",
+          "F66",
+          "F67",
+          "U25"
+        ],
+        "variant_by_chassis": {
+          "F65": "Cooper/Cooper S 4-door",
+          "F66": "Cooper/Cooper S/JCW 2-door",
+          "F67": "Cooper/Cooper S/JCW Convertible",
+          "U25": "Countryman SE ALL4"
+        },
+        "production_start_by_chassis": {
+          "F65": "2025-07",
+          "F66": "2025-07",
+          "F67": "2025-07",
+          "U25": "2025-11"
+        },
+        "service_pack": "21",
+        "integration_target": "U006-26-03-530",
+        "engine_code": "not supplied in bulletin",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "Drive carefully. Driving stabilisation warning on startup",
+        "Codes may appear within 40 s of each other across modules"
+      ],
+      "causes": [
+        {
+          "cause": "Software error in BCP Secure Element under simultaneous multi-module startup complaint",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "تأكيد VIN والطراز وتاريخ الإنتاج وService Pack 21 قبل تفسير مجموعة الأكواد.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "افحص رموز ACSM وVIP وIB وHKFM وتوقيت ظهورها، ثم اقرأ I-level.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "إذا كان I-level أقل من U006-26-03-530 وانطبقت الحالة، برمج BCP عبر ISTA 4.58.2x أو أحدث وفق النشرة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "إذا كان مستوى البرنامج مساوياً/أعلى، لا تبرمج بناء على هذه النشرة واستكمل ISTA؛ لا تبدّل القطع لعلاج سيناريو البرنامج.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 5,
+          "instruction_ar": "بعد البرمجة افحص ذاكرة الأعطال مجدداً وتحقق من اختفاء رسائل التحذير.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Vehicle integration level (I-level)",
+          "name_ar": "مستوى تكامل برمجيات السيارة",
+          "test_condition": "ISTA/AIR vehicle identification",
+          "reference": "Only the I-level quoted from OEM bulletin; no inferred analog measurements"
+        }
+      ],
+      "parts_related": [
+        "BCP software; not a defective ACSM/IB/VIP/HKFM part on evidence of code alone"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M610126-REV2"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M61 01 26 revision 2",
+          "url": "https://static.oemdtc.com/NHTSA-PDFs/MC-11034472-0001.pdf",
+          "date": "2026-06-10"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "parts": [
+        "BCP software; not a defective ACSM/IB/VIP/HKFM part on evidence of code alone"
+      ],
+      "associated_codes": [
+        "02390A",
+        "02290A",
+        "020D0A"
+      ]
+    },
+    {
+      "record_id": "MINI-B04-VIP-02390A",
+      "brand": "MINI",
+      "raw_code": "02390A",
+      "base_code": "02390A",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "VIP",
+      "definition_en": "VIP control unit: Coding data not released, signature",
+      "translation_ar": "وحدة VIP: بيانات الترميز لم تُعتمد؛ التوقيع الرقمي غير مقبول",
+      "applicability": {
+        "chassis": [
+          "F65",
+          "F66",
+          "F67",
+          "U25"
+        ],
+        "variant_by_chassis": {
+          "F65": "Cooper/Cooper S 4-door",
+          "F66": "Cooper/Cooper S/JCW 2-door",
+          "F67": "Cooper/Cooper S/JCW Convertible",
+          "U25": "Countryman SE ALL4"
+        },
+        "production_start_by_chassis": {
+          "F65": "2025-07",
+          "F66": "2025-07",
+          "F67": "2025-07",
+          "U25": "2025-11"
+        },
+        "service_pack": "21",
+        "integration_target": "U006-26-03-530",
+        "engine_code": "not supplied in bulletin",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "Drive carefully. Driving stabilisation warning on startup",
+        "Codes may appear within 40 s of each other across modules"
+      ],
+      "causes": [
+        {
+          "cause": "Software error in BCP Secure Element under simultaneous multi-module startup complaint",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "تأكيد VIN والطراز وتاريخ الإنتاج وService Pack 21 قبل تفسير مجموعة الأكواد.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "افحص رموز ACSM وVIP وIB وHKFM وتوقيت ظهورها، ثم اقرأ I-level.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "إذا كان I-level أقل من U006-26-03-530 وانطبقت الحالة، برمج BCP عبر ISTA 4.58.2x أو أحدث وفق النشرة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "إذا كان مستوى البرنامج مساوياً/أعلى، لا تبرمج بناء على هذه النشرة واستكمل ISTA؛ لا تبدّل القطع لعلاج سيناريو البرنامج.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 5,
+          "instruction_ar": "بعد البرمجة افحص ذاكرة الأعطال مجدداً وتحقق من اختفاء رسائل التحذير.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Vehicle integration level (I-level)",
+          "name_ar": "مستوى تكامل برمجيات السيارة",
+          "test_condition": "ISTA/AIR vehicle identification",
+          "reference": "Only the I-level quoted from OEM bulletin; no inferred analog measurements"
+        }
+      ],
+      "parts_related": [
+        "BCP software; not a defective ACSM/IB/VIP/HKFM part on evidence of code alone"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M610126-REV2"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M61 01 26 revision 2",
+          "url": "https://static.oemdtc.com/NHTSA-PDFs/MC-11034472-0001.pdf",
+          "date": "2026-06-10"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "parts": [
+        "BCP software; not a defective ACSM/IB/VIP/HKFM part on evidence of code alone"
+      ],
+      "associated_codes": [
+        "02010A",
+        "02290A",
+        "020D0A"
+      ]
+    },
+    {
+      "record_id": "MINI-B04-IBDSC-02290A",
+      "brand": "MINI",
+      "raw_code": "02290A",
+      "base_code": "02290A",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "IB/DSC",
+      "definition_en": "DSC control unit: Coding data not released, signature",
+      "translation_ar": "وحدة DSC: بيانات الترميز لم تُعتمد؛ خلل متعلق بالتوقيع",
+      "applicability": {
+        "chassis": [
+          "F65",
+          "F66",
+          "F67",
+          "U25"
+        ],
+        "variant_by_chassis": {
+          "F65": "Cooper/Cooper S 4-door",
+          "F66": "Cooper/Cooper S/JCW 2-door",
+          "F67": "Cooper/Cooper S/JCW Convertible",
+          "U25": "Countryman SE ALL4"
+        },
+        "production_start_by_chassis": {
+          "F65": "2025-07",
+          "F66": "2025-07",
+          "F67": "2025-07",
+          "U25": "2025-11"
+        },
+        "service_pack": "21",
+        "integration_target": "U006-26-03-530",
+        "engine_code": "not supplied in bulletin",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "Drive carefully. Driving stabilisation warning on startup",
+        "Codes may appear within 40 s of each other across modules"
+      ],
+      "causes": [
+        {
+          "cause": "Software error in BCP Secure Element under simultaneous multi-module startup complaint",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "تأكيد VIN والطراز وتاريخ الإنتاج وService Pack 21 قبل تفسير مجموعة الأكواد.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "افحص رموز ACSM وVIP وIB وHKFM وتوقيت ظهورها، ثم اقرأ I-level.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "إذا كان I-level أقل من U006-26-03-530 وانطبقت الحالة، برمج BCP عبر ISTA 4.58.2x أو أحدث وفق النشرة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "إذا كان مستوى البرنامج مساوياً/أعلى، لا تبرمج بناء على هذه النشرة واستكمل ISTA؛ لا تبدّل القطع لعلاج سيناريو البرنامج.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 5,
+          "instruction_ar": "بعد البرمجة افحص ذاكرة الأعطال مجدداً وتحقق من اختفاء رسائل التحذير.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Vehicle integration level (I-level)",
+          "name_ar": "مستوى تكامل برمجيات السيارة",
+          "test_condition": "ISTA/AIR vehicle identification",
+          "reference": "Only the I-level quoted from OEM bulletin; no inferred analog measurements"
+        }
+      ],
+      "parts_related": [
+        "BCP software; not a defective ACSM/IB/VIP/HKFM part on evidence of code alone"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M610126-REV2"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M61 01 26 revision 2",
+          "url": "https://static.oemdtc.com/NHTSA-PDFs/MC-11034472-0001.pdf",
+          "date": "2026-06-10"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "parts": [
+        "BCP software; not a defective ACSM/IB/VIP/HKFM part on evidence of code alone"
+      ],
+      "associated_codes": [
+        "02010A",
+        "02390A",
+        "020D0A"
+      ]
+    },
+    {
+      "record_id": "MINI-B04-HKFM-020D0A",
+      "brand": "MINI",
+      "raw_code": "020D0A",
+      "base_code": "020D0A",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "HKFM",
+      "definition_en": "HKFM: Coding data are not qualified",
+      "translation_ar": "وحدة HKFM: بيانات الترميز غير مؤهلة",
+      "applicability": {
+        "chassis": [
+          "F65",
+          "F66",
+          "F67",
+          "U25"
+        ],
+        "variant_by_chassis": {
+          "F65": "Cooper/Cooper S 4-door",
+          "F66": "Cooper/Cooper S/JCW 2-door",
+          "F67": "Cooper/Cooper S/JCW Convertible",
+          "U25": "Countryman SE ALL4"
+        },
+        "production_start_by_chassis": {
+          "F65": "2025-07",
+          "F66": "2025-07",
+          "F67": "2025-07",
+          "U25": "2025-11"
+        },
+        "service_pack": "21",
+        "integration_target": "U006-26-03-530",
+        "engine_code": "not supplied in bulletin",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "Drive carefully. Driving stabilisation warning on startup",
+        "Codes may appear within 40 s of each other across modules"
+      ],
+      "causes": [
+        {
+          "cause": "Software error in BCP Secure Element under simultaneous multi-module startup complaint",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "تأكيد VIN والطراز وتاريخ الإنتاج وService Pack 21 قبل تفسير مجموعة الأكواد.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "افحص رموز ACSM وVIP وIB وHKFM وتوقيت ظهورها، ثم اقرأ I-level.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "إذا كان I-level أقل من U006-26-03-530 وانطبقت الحالة، برمج BCP عبر ISTA 4.58.2x أو أحدث وفق النشرة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "إذا كان مستوى البرنامج مساوياً/أعلى، لا تبرمج بناء على هذه النشرة واستكمل ISTA؛ لا تبدّل القطع لعلاج سيناريو البرنامج.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 5,
+          "instruction_ar": "بعد البرمجة افحص ذاكرة الأعطال مجدداً وتحقق من اختفاء رسائل التحذير.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Vehicle integration level (I-level)",
+          "name_ar": "مستوى تكامل برمجيات السيارة",
+          "test_condition": "ISTA/AIR vehicle identification",
+          "reference": "Only the I-level quoted from OEM bulletin; no inferred analog measurements"
+        }
+      ],
+      "parts_related": [
+        "BCP software; not a defective ACSM/IB/VIP/HKFM part on evidence of code alone"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M610126-REV2"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M61 01 26 revision 2",
+          "url": "https://static.oemdtc.com/NHTSA-PDFs/MC-11034472-0001.pdf",
+          "date": "2026-06-10"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "parts": [
+        "BCP software; not a defective ACSM/IB/VIP/HKFM part on evidence of code alone"
+      ],
+      "associated_codes": [
+        "02010A",
+        "02390A",
+        "02290A"
+      ]
+    },
+    {
+      "record_id": "MINI-B04-BDC-D91C86",
+      "brand": "MINI",
+      "raw_code": "D91C86",
+      "base_code": "D91C86",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "BDC",
+      "definition_en": "CAN message, status functional safety (ST_FSSY): Timeout-BDC",
+      "translation_ar": "رسالة CAN لحالة السلامة الوظيفية ST_FSSY: انتهت المهلة في BDC",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57",
+          "F60"
+        ],
+        "production_end": "2018-07-01",
+        "engines": "bulletin does not specify unique engine-code pairs",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "Display/navigation screen goes black or resets",
+        "Engine off may require three emergency presses",
+        "Multiple check-control messages"
+      ],
+      "causes": [
+        {
+          "cause": "BDC central-gateway software error in bulletin case",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "افحص الأعراض وتاريخ الإنتاج وأكواد BDC المرافقة عبر ISTA.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "بعد اتباع تعليمات السلامة الرسمية، نفّذ إعادة ضبط البطارية الموصوفة بالنشرة فقط إذا تحققت ظروفها.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "حدّث برمجيات السيارة باستعمال ISTA/P 4.12.3x أو أحدث مع مزود قدرة مناسب.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "لا تستبدل BDC أو الشاشة اعتماداً على هذا الرمز وحده؛ إذا بقي العطل استخدم خطة ISTA للشبكة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "BDC central gateway programming level",
+          "name_ar": "مستوى برمجة بوابة BDC",
+          "test_condition": "ISTA/AIR vehicle identification",
+          "reference": "Only the I-level quoted from OEM bulletin; no inferred analog measurements"
+        }
+      ],
+      "parts_related": [
+        "BDC central gateway software"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M610318"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M61 03 18",
+          "url": "https://oemdtc.com/tsb/10145372/",
+          "date": "2018-07"
+        }
+      ],
+      "verification_status": "OEM_bulletin_text_secondary_transcript_review",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "parts": [
+        "BDC central gateway software"
+      ],
+      "review_caveat": "Full OEM MINI PDF not directly retrieved; secondary reproduction of manufacturer service bulletin"
+    },
+    {
+      "record_id": "MINI-B04-ACSMseatmodule-C95462",
+      "brand": "MINI",
+      "raw_code": "C95462",
+      "base_code": "C95462",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "ACSM/seat module",
+      "definition_en": "Driver's seat module (seat position, back rest lock): Communication fault",
+      "translation_ar": "وحدة مقعد السائق (وضع المقعد وقفل المسند): خلل اتصال",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57",
+          "F60"
+        ],
+        "engines": "not specified in bulletin",
+        "scenario": "Sporadic SRS alert around front-seat occupant exit, electrostatic discharge",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "Sporadic airbag warning light when front occupant exits",
+        "CC 108/109/97 may display",
+        "Electrostatic discharge may be felt"
+      ],
+      "causes": [
+        {
+          "cause": "Electrostatic discharge disrupts communication between seat and restraint control module in described bulletin",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "تأكد من ظهور رمز الاتصال الصحيح ضمن ACSM/وحدة المقعد عند خروج الراكب أو السائق.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "طابق رمز المقعد والجهة مع المركبة وراجع النشرة المنقحة مارس 2019.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "يتولى فني مؤهل أنظمة SRS تنفيذ خطوات السلامة وفحص توصيل أرضي وحدة المقعد.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "عند تأكيد سبب ESD، طبّق إجراء MINI الرسمي لإضافة تأريض الوحدة؛ لا تفحص مفجرات الوسائد مباشرة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [],
+      "parts_related": [
+        "driver seat module grounding lead",
+        "seat module/ACSM communication network"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M650117-2019"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M65 01 17 revision March 2019",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10159157-9999.pdf",
+          "date": "2019-03"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "parts": [
+        "driver seat module grounding lead",
+        "seat module/ACSM communication network"
+      ],
+      "srs_safety": "Never probe airbag igniter circuits; follow official restraint safety procedure",
+      "associated_codes": [
+        "C95463"
+      ]
+    },
+    {
+      "record_id": "MINI-B04-ACSMseatmodule-C95463",
+      "brand": "MINI",
+      "raw_code": "C95463",
+      "base_code": "C95463",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "ACSM/seat module",
+      "definition_en": "Front passenger seat module (seat position, back rest lock): Communication fault",
+      "translation_ar": "وحدة مقعد الراكب الأمامي (الوضع وقفل المسند): خلل اتصال",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57",
+          "F60"
+        ],
+        "engines": "not specified in bulletin",
+        "scenario": "Sporadic SRS alert around front-seat occupant exit, electrostatic discharge",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "Sporadic airbag warning light when front occupant exits",
+        "CC 108/109/97 may display",
+        "Electrostatic discharge may be felt"
+      ],
+      "causes": [
+        {
+          "cause": "Electrostatic discharge disrupts communication between seat and restraint control module in described bulletin",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "تأكد من ظهور رمز الاتصال الصحيح ضمن ACSM/وحدة المقعد عند خروج الراكب أو السائق.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "طابق رمز المقعد والجهة مع المركبة وراجع النشرة المنقحة مارس 2019.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "يتولى فني مؤهل أنظمة SRS تنفيذ خطوات السلامة وفحص توصيل أرضي وحدة المقعد.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "عند تأكيد سبب ESD، طبّق إجراء MINI الرسمي لإضافة تأريض الوحدة؛ لا تفحص مفجرات الوسائد مباشرة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [],
+      "parts_related": [
+        "passenger seat module grounding lead",
+        "seat module/ACSM communication network"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M650117-2019"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M65 01 17 revision March 2019",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10159157-9999.pdf",
+          "date": "2019-03"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "parts": [
+        "passenger seat module grounding lead",
+        "seat module/ACSM communication network"
+      ],
+      "srs_safety": "Never probe airbag igniter circuits; follow official restraint safety procedure",
+      "associated_codes": [
+        "C95462"
+      ]
+    },
+    {
+      "record_id": "MINI-B04-EME-222F96",
+      "brand": "MINI",
+      "raw_code": "222F96",
+      "base_code": "222F96",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "EME",
+      "definition_en": null,
+      "translation_ar": "الرمز 222F96 مسجل في وحدة الإلكترونيات الكهربائية EME؛ الوصف الحرفي لم يُذكر في النشرة",
+      "applicability": {
+        "chassis": [
+          "F60"
+        ],
+        "version": "Cooper S E Countryman ALL4",
+        "fuel": "PHEV",
+        "production_years": "not explicitly established by bulletin",
+        "engine_code": "not specified",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "MIL illuminated",
+        "CCM 34 displayed"
+      ],
+      "causes": [
+        {
+          "cause": "Potential EME hardware fault, but OEM requires programming and repeated fault check first",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "اقرأ الرمز من EME وسجّل مستوى برنامج السيارة باستخدام ISTA.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "وفق النشرة، حدّث البرمجيات إلى 17-07-500 أو أحدث (مع تفضيل 18-03-500 عند توفره وتطبيقه).",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "امسح ذاكرة الأعطال، نفّذ تغيير الطرفية ودع السيارة تدخل وضع السكون، ثم اقرأ الذاكرة مرة ثانية.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "إذا عاد 222F96، اتبع تعليمات MINI لاستبدال EME بفني مؤهل للجهد العالي؛ إن لم يعد فلا تستبدل الوحدة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "EME fault memory and I-level",
+          "name_ar": "ذاكرة أعطال وحدة EME ومستوى البرمجة",
+          "test_condition": "ISTA/AIR vehicle identification",
+          "reference": "Only the I-level quoted from OEM bulletin; no inferred analog measurements"
+        }
+      ],
+      "parts_related": [
+        "Electrical Machine Electronics (EME)"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M610217"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M61 02 17",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10215030-9999.pdf",
+          "date": "2017-06"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "parts": [
+        "Electrical Machine Electronics (EME)"
+      ],
+      "safety": "HV qualified personnel; code alone insufficient to replace EME",
+      "unknown_definition": true
+    },
+    {
+      "record_id": "MINI-B04-SME-21F156",
+      "brand": "MINI",
+      "raw_code": "21F156",
+      "base_code": "21F156",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "SME",
+      "definition_en": "High-voltage battery, preloading: Safety box, precondition not fulfilled",
+      "translation_ar": "بطارية الجهد العالي، التحميل التمهيدي: لم يتحقق شرط صندوق الأمان",
+      "applicability": {
+        "chassis": [
+          "F60"
+        ],
+        "version": "Cooper S E Countryman ALL4",
+        "fuel": "PHEV",
+        "engine_code": "not specified",
+        "integration_level_condition": "I-level 16-11-5xx or lower when no 21F1F6",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "No customer-visible indication of a problem in bulletin scenario"
+      ],
+      "causes": [
+        {
+          "cause": "SME software error when 21F1F6 is absent under specified conditions",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "اقرأ ذاكرة أعطال SME، وابحث تحديداً عن الرمز 21F1F6 المصاحب.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "إذا وُجد 21F1F6، لا تتبع فرع الإصلاح البرمجي المختصر واستكمل ISTA.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "إن لم يوجد، افحص I-level؛ إذا كان 16-11-5xx أو أدنى، نفّذ البرمجة الموصى بها للنظام.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "إذا كان البرنامج أحدث، امسح الذاكرة وفق النشرة وتحقق؛ لا تستبدل SME لمجرد هذين الرمزين.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "SME fault memory / coexisting 21F1F6",
+          "name_ar": "ذاكرة SME ووجود 21F1F6",
+          "test_condition": "ISTA in safe HV diagnostic state",
+          "reference": "21F1F6 triggers further diagnosis; software branch if absent"
+        },
+        {
+          "name_en": "Integration level",
+          "name_ar": "مستوى تكامل البرمجيات",
+          "test_condition": "ISTA",
+          "reference": "16-11-5xx or lower bulletin threshold"
+        }
+      ],
+      "parts_related": [
+        "SME software",
+        "HV battery precharge/safety box; no proven hardware failure"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M610218"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M61 02 18",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10143578-9999.pdf",
+          "date": "2018-05"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "parts": [
+        "SME software",
+        "HV battery precharge/safety box; no proven hardware failure"
+      ],
+      "associated_codes": [
+        "21F1F7",
+        "21F1F6"
+      ],
+      "safety": "Only authorized HV technician; fault wording does not prove physical overheating"
+    },
+    {
+      "record_id": "MINI-B04-SME-21F1F7",
+      "brand": "MINI",
+      "raw_code": "21F1F7",
+      "base_code": "21F1F7",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "SME",
+      "definition_en": "High-voltage battery, preloading: temporarily blocked due to overheating",
+      "translation_ar": "بطارية الجهد العالي، التحميل التمهيدي: حُجب مؤقتاً بسبب تجاوز الحرارة",
+      "applicability": {
+        "chassis": [
+          "F60"
+        ],
+        "version": "Cooper S E Countryman ALL4",
+        "fuel": "PHEV",
+        "engine_code": "not specified",
+        "integration_level_condition": "I-level 16-11-5xx or lower when no 21F1F6",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "No customer-visible indication of a problem in bulletin scenario"
+      ],
+      "causes": [
+        {
+          "cause": "SME software error when 21F1F6 is absent under specified conditions",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "اقرأ ذاكرة أعطال SME، وابحث تحديداً عن الرمز 21F1F6 المصاحب.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "إذا وُجد 21F1F6، لا تتبع فرع الإصلاح البرمجي المختصر واستكمل ISTA.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "إن لم يوجد، افحص I-level؛ إذا كان 16-11-5xx أو أدنى، نفّذ البرمجة الموصى بها للنظام.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "إذا كان البرنامج أحدث، امسح الذاكرة وفق النشرة وتحقق؛ لا تستبدل SME لمجرد هذين الرمزين.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "SME fault memory / coexisting 21F1F6",
+          "name_ar": "ذاكرة SME ووجود 21F1F6",
+          "test_condition": "ISTA in safe HV diagnostic state",
+          "reference": "21F1F6 triggers further diagnosis; software branch if absent"
+        },
+        {
+          "name_en": "Integration level",
+          "name_ar": "مستوى تكامل البرمجيات",
+          "test_condition": "ISTA",
+          "reference": "16-11-5xx or lower bulletin threshold"
+        }
+      ],
+      "parts_related": [
+        "SME software",
+        "HV battery precharge/safety box; no proven hardware failure"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M610218"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M61 02 18",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10143578-9999.pdf",
+          "date": "2018-05"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "parts": [
+        "SME software",
+        "HV battery precharge/safety box; no proven hardware failure"
+      ],
+      "associated_codes": [
+        "21F156",
+        "21F1F6"
+      ],
+      "safety": "Only authorized HV technician; fault wording does not prove physical overheating"
+    },
+    {
+      "record_id": "MINI-B04-DME-1E0001",
+      "brand": "MINI",
+      "raw_code": "1E0001",
+      "base_code": "1E0001",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "DME",
+      "definition_en": "Idle speed control: Speed too high",
+      "translation_ar": "التحكم بسرعة الخمول: عدد دورات المحرك مرتفع جداً",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57",
+          "F60"
+        ],
+        "engine_family_codes": [
+          "B36M",
+          "B38M",
+          "B46M",
+          "B48M",
+          "B48O",
+          "XB2H"
+        ],
+        "production_end": "2017-06-30",
+        "chassis_engine_pairs": "source names group jointly; do not infer every combination",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "MIL on",
+        "Occasional elevated idle up to approx. 1200 rpm at operating temperature, often above 1500 m altitude"
+      ],
+      "causes": [
+        {
+          "cause": "DME software error in high altitude bulletin situation",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "اقرأ رمز DME وسجل ظروف ظهوره، درجة حرارة المحرك والارتفاع الذي حدثت فيه المشكلة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "اقرأ I-level وقارنه بالمستوى XXXX-17-07-50x المذكور بالنشرة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "إذا كان المستوى أقدم، نفّذ التحديث الرسمي باستخدام ISTA وفق VIN/محرك السيارة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "عند مستوى أحدث أو استمرار خمول مرتفع، لا تُرجع جميع الأسباب إلى البرمجيات؛ نفّذ ISTA تشخيص الخمول.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine speed (actual idle RPM)",
+          "name_ar": "عدد دورات المحرك الفعلي بالخمول",
+          "test_condition": "engine at operating temperature and high altitude in bulletin conditions",
+          "reference": "sporadic observed up to about 1200 rpm is a symptom, not a global pass/fail threshold"
+        },
+        {
+          "name_en": "Vehicle I-level",
+          "name_ar": "مستوى تكامل البرنامج",
+          "test_condition": "ISTA",
+          "reference": "XXXX-17-07-50x (vehicle-family-specific prefix)"
+        }
+      ],
+      "parts_related": [
+        "DME software; no part replacement justified by this bulletin"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M120317"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M12 03 17",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10149266-9999.pdf",
+          "date": "2017-05"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "parts": [
+        "DME software; no part replacement justified by this bulletin"
+      ]
+    },
+    {
+      "record_id": "MINI-B04-DME-135608-F55F56-WARM-NOSTART",
+      "brand": "MINI",
+      "raw_code": "135608",
+      "base_code": "135608",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "DME",
+      "definition_en": "Valvetronic: No movement identified",
+      "translation_ar": "نظام Valvetronic: لم تُكتشف حركة",
+      "applicability": {
+        "chassis": [
+          "F55",
+          "F56"
+        ],
+        "engine_codes": [
+          "B38M",
+          "B46M",
+          "B48M"
+        ],
+        "date_scope": "May 2015 revised bulletin; exact production window must be confirmed by VIN",
+        "scenario": "Warm engine no-start, Valvetronic held at minimum lift",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "Engine fails to restart when warm",
+        "Valvetronic stuck at minimum valve lift"
+      ],
+      "causes": [
+        {
+          "cause": "DME software fault producing Valvetronic minimum-lift condition in specified vehicles",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "أكد أن المحرك دافئ وأن المحرك لا يبدأ، وأن Valvetronic عالق عند أدنى رفع قبل استخدام هذا الإجراء.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "شغّل خطة MINI ISTA، وراجع النشرة لمهمة فك احتجاز آلية Valvetronic ميكانيكياً بواسطة فني مؤهل.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "نفّذ تحديث ISTA/P إلى I-level F056-15-03-500 أو أحدث وفق النشرة.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 4,
+          "instruction_ar": "افحص عدد مرات ظهور الرمز وسجل فشل التشغيل؛ قد تتطلب النشرة استبدال بادئ الحركة ضمن شروط خاصة لا تُعمّم على جميع الحالات.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "DME fault counter / Vehicle I-level",
+          "name_ar": "عداد ظهور عطل DME ومستوى البرنامج",
+          "test_condition": "ISTA/AIR vehicle identification",
+          "reference": "Only the I-level quoted from OEM bulletin; no inferred analog measurements"
+        }
+      ],
+      "parts_related": [
+        "Valvetronic drive motor/shaft",
+        "Starter only if specific bulletin criteria satisfied"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M121614"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M12 16 14 revised May 2015",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2015/MC-10147161-9999.pdf",
+          "date": "2015-05"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "variant_id": "F55F56-WARM-NOSTART",
+      "parts": [
+        "Valvetronic drive motor/shaft",
+        "Starter only if specific bulletin criteria satisfied"
+      ],
+      "warning": "Mechanical release/90 degree operation requires official repair instruction, not generic home procedure"
+    },
+    {
+      "record_id": "MINI-B04-DME-135608-F60PHEV-ERRONEOUS",
+      "brand": "MINI",
+      "raw_code": "135608",
+      "base_code": "135608",
+      "code_format": "MINI_OEM_hex",
+      "code_family": "manufacturer_specific",
+      "ecu_context": "DME",
+      "definition_en": "Valvetronic: No movement identified",
+      "translation_ar": "نظام Valvetronic: لم تُكتشف حركة",
+      "applicability": {
+        "chassis": [
+          "F60"
+        ],
+        "variant": "Cooper S E Countryman ALL4",
+        "fuel": "PHEV",
+        "engine_code": "not identified in bulletin",
+        "scenario": "No MIL, no drivability complaint; detected during ISTA scan; may occur upon plugging charger",
+        "market": "MINI USA bulletin; SE/EU applicability not established; verify VIN"
+      },
+      "symptoms": [
+        "No customer complaint",
+        "MIL not illuminated; no impaired engine operation in specific scenario"
+      ],
+      "causes": [
+        {
+          "cause": "Erroneous DME software entry, possibly stored when charging plug inserted",
+          "evidence": "MINI bulletin scenario only; not an unconditional parts diagnosis"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "instruction_ar": "أكد أن المركبة F60 PHEV وأن الرمز ظهر أثناء ISTA دون أي أعراض تشغيل أو MIL.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 2,
+          "instruction_ar": "إذا كانت الحالة مطابقة للنشرة، امسح الكود غير الحقيقي دون استبدال قطع.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        },
+        {
+          "step": 3,
+          "instruction_ar": "إذا صاحب الرمز عجز عن التشغيل أو أعطال أخرى، لا تطبق هذه النشرة وأكمل خطة MINI ISTA للمحرك.",
+          "tools": [
+            "MINI ISTA",
+            "VIN-specific MINI repair information"
+          ],
+          "verification": "Check scenario before action; unsupported electrical values unspecified"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "DME fault memory; MIL status",
+          "name_ar": "ذاكرة DME وحالة مصباح MIL",
+          "test_condition": "No drivability complaint; ISTA",
+          "reference": "MIL not illuminated per scenario"
+        }
+      ],
+      "parts_related": [
+        "No replacement recommended for specific scenario"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verified": false
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null,
+        "licensing_status": "not_available"
+      },
+      "source_ids": [
+        "MINI-M121118"
+      ],
+      "sources": [
+        {
+          "title": "MINI SI M12 11 18",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10143576-9999.pdf",
+          "date": "2018-05"
+        }
+      ],
+      "verification_status": "OEM_bulletin_scope_verified",
+      "review_status": "draft_enrichment_needed",
+      "verification_gaps": [
+        "No approved Swedish/European VIN match",
+        "No verified ECU-specific pinout",
+        "No approved vehicle-specific wiring/photograph",
+        "Live data beyond cited programming/condition not established"
+      ],
+      "release_to_app": false,
+      "variant_id": "F60PHEV-ERRONEOUS",
+      "parts": [
+        "No replacement recommended for specific scenario"
+      ],
+      "warning": "Do not apply this false-code interpretation to F55/F56 warm no-start"
+    }
+  ]
+}
