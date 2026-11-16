@@ -1,0 +1,790 @@
+{
+  "schema": "DTC_NEXIS_VOLVO_TJ_SUPPLEMENT_V1",
+  "manufacturer": "Volvo",
+  "created_on": "2026-11-16",
+  "base_catalog": "data/master/brands/volvo.json",
+  "base_catalog_rows": 60,
+  "new_unique_code_rows": 12,
+  "source_confirmation_level": "OEM_TJ_occurrence_not_complete_VIDA_code_definition",
+  "approval_status": "review_only_not_for_app_release",
+  "sources": [
+    {
+      "id": "TJ36318-6",
+      "tj": "TJ 36318.6.0",
+      "title": "DIM message and DTC VCU1 U016800",
+      "date": "2024-11-21",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11011747-0001.pdf",
+      "markets": [
+        "US",
+        "Canada"
+      ]
+    },
+    {
+      "id": "TJ36726-2",
+      "tj": "TJ 36726.2.0",
+      "title": "Transmission performance reduced message in DIM",
+      "date": "2024-02-29",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-10251609-0001.pdf",
+      "markets": [
+        "US",
+        "Canada"
+      ]
+    },
+    {
+      "id": "TJ36285-2",
+      "tj": "TJ 36285.2.1",
+      "title": "Long range PHEV BECM DTC P065800",
+      "date": "2022-09-22",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10224585-9999.pdf",
+      "markets": [
+        "US"
+      ]
+    },
+    {
+      "id": "TJ36195-1",
+      "tj": "TJ 36195.1.1",
+      "title": "Cannot lock/unlock vehicle with remote control key",
+      "date": "2022-05-11",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10213891-9999.pdf",
+      "markets": [
+        "US",
+        "Canada"
+      ]
+    },
+    {
+      "id": "TJ36944-2",
+      "tj": "TJ 36944.2.0",
+      "title": "Intermittent DTC CEM B124713 and CEM B124813",
+      "date": "2025-01-24",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11014119-0001.pdf",
+      "markets": [
+        "US",
+        "Canada"
+      ]
+    },
+    {
+      "id": "TJ36801-1",
+      "tj": "TJ 36801.1.0",
+      "title": "Check Engine Lamp and Misfire DTC ECM P030098",
+      "date": "2024-01-04",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-10249188-0001.pdf",
+      "markets": [
+        "US",
+        "Canada"
+      ]
+    },
+    {
+      "id": "TJ36920-2",
+      "tj": "TJ 36920.2.1",
+      "title": "Check engine light DTC ECM P061C48/P060C48",
+      "date": "2025-02-17",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11015996-0001.pdf",
+      "markets": [
+        "US",
+        "Canada"
+      ]
+    },
+    {
+      "id": "TJ36963-2",
+      "tj": "TJ 36963.2.0",
+      "title": "DIM message and DTC ECM P0DF400",
+      "date": "2025-03-10",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11016887-0001.pdf",
+      "markets": [
+        "US",
+        "Canada"
+      ]
+    },
+    {
+      "id": "TJ33533-2",
+      "tj": "TJ 33533.2.0",
+      "title": "Petrol engine and misfire codes",
+      "date": "2018-05-10",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10149952-9999.pdf",
+      "markets": [
+        "US",
+        "Canada"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "id": "volvo-tj-20261116-vcu1-u016800",
+      "brand": "Volvo",
+      "raw_code": "VCU1-U016800",
+      "base_code": "U0168",
+      "failure_type": "00",
+      "code_family": "U",
+      "ecu": "VCU1",
+      "source_confirmed_as_displayed": true,
+      "definition_en": null,
+      "translation_ar": null,
+      "formal_vida_definition_status": "unverified",
+      "sae_vs_oem_classification": "not verified for full 7-character code; 5-character base retained separately",
+      "context_en": "Collision avoidance unavailable message; ASDM not responding in VIDA when both codes occur",
+      "diagnostic_steps": [
+        "Read all module DTCs and confirm the pair plus ASDM not responding in VIDA",
+        "Use VIDA advanced Software Installation test; follow approved procedure to enter ASDM programming mode and attempt hardware/serial read",
+        "Retry per bulletin (up to at least 8 attempts) and reload ASDM software when recognized",
+        "Consider ASDM replacement only after documented unsuccessful recovery"
+      ],
+      "live_data": [],
+      "wiring": [],
+      "parts": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "applicability": {
+        "vehicle_types": [
+          "224",
+          "225",
+          "227",
+          "234",
+          "235",
+          "236",
+          "238",
+          "246",
+          "256",
+          "536",
+          "539"
+        ],
+        "model_years_per_tj": "2021-9999 depending vehicle type, open-ended bulletin scope, NOT verified for every current model year",
+        "engine_spec": "not stated",
+        "market": "US/Canada"
+      },
+      "market_evidence": "Volvo Car USA technical journal; Sweden/EU applicability not established",
+      "source": {
+        "id": "TJ36318-6",
+        "title": "DIM message and DTC VCU1 U016800",
+        "tj": "TJ 36318.6.0",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11011747-0001.pdf",
+        "status_date": "2024-11-21",
+        "verified_scope": "Volvo TJ confirms occurrence and specified case service path, not universal code definition"
+      },
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostic__not_approved",
+      "review_status": "pending_formal_VIDA_definition_and_EU_fitment",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-tj-20261116-cem-u110082",
+      "brand": "Volvo",
+      "raw_code": "CEM-U110082",
+      "base_code": "U1100",
+      "failure_type": "82",
+      "code_family": "U",
+      "ecu": "CEM",
+      "source_confirmed_as_displayed": true,
+      "definition_en": null,
+      "translation_ar": null,
+      "formal_vida_definition_status": "unverified",
+      "sae_vs_oem_classification": "not verified for full 7-character code; 5-character base retained separately",
+      "context_en": "Collision avoidance unavailable message; ASDM not responding in VIDA when both codes occur",
+      "diagnostic_steps": [
+        "Read all module DTCs and confirm the pair plus ASDM not responding in VIDA",
+        "Use VIDA advanced Software Installation test; follow approved procedure to enter ASDM programming mode and attempt hardware/serial read",
+        "Retry per bulletin (up to at least 8 attempts) and reload ASDM software when recognized",
+        "Consider ASDM replacement only after documented unsuccessful recovery"
+      ],
+      "live_data": [],
+      "wiring": [],
+      "parts": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "applicability": {
+        "vehicle_types": [
+          "224",
+          "225",
+          "227",
+          "234",
+          "235",
+          "236",
+          "238",
+          "246",
+          "256",
+          "536",
+          "539"
+        ],
+        "model_years_per_tj": "2021-9999 depending vehicle type, open-ended bulletin scope, NOT verified for every current model year",
+        "engine_spec": "not stated",
+        "market": "US/Canada"
+      },
+      "market_evidence": "Volvo Car USA technical journal; Sweden/EU applicability not established",
+      "source": {
+        "id": "TJ36318-6",
+        "title": "DIM message and DTC VCU1 U016800",
+        "tj": "TJ 36318.6.0",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11011747-0001.pdf",
+        "status_date": "2024-11-21",
+        "verified_scope": "Volvo TJ confirms occurrence and specified case service path, not universal code definition"
+      },
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostic__not_approved",
+      "review_status": "pending_formal_VIDA_definition_and_EU_fitment",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-tj-20261116-tcm-p073168",
+      "brand": "Volvo",
+      "raw_code": "TCM-P073168",
+      "base_code": "P0731",
+      "failure_type": "68",
+      "code_family": "P",
+      "ecu": "TCM",
+      "source_confirmed_as_displayed": true,
+      "definition_en": null,
+      "translation_ar": null,
+      "formal_vida_definition_status": "unverified",
+      "sae_vs_oem_classification": "not verified for full 7-character code; 5-character base retained separately",
+      "context_en": "Transmission performance reduced message without other symptoms",
+      "diagnostic_steps": [
+        "Confirm no other symptoms and vehicle type/engine/gear and structure-week fitment",
+        "Check TCM software; Volvo states software version 2.12 and later addresses this condition",
+        "Install applicable TCM software via VIDA following TJ31543; do not replace transmission for this specific documented scenario"
+      ],
+      "live_data": [],
+      "wiring": [],
+      "parts": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "applicability": {
+        "vehicle_types": [
+          "224",
+          "227",
+          "246",
+          "256"
+        ],
+        "model_years_per_tj": "2024-9999 (scope of bulletin; production structure weeks 202317-202341)",
+        "structure_weeks": "202317-202341",
+        "engine_designation_as_printed": "L1 / BL1KERS",
+        "transmission_codes_as_printed": [
+          "C",
+          "D"
+        ],
+        "market": "US/Canada"
+      },
+      "market_evidence": "Volvo Car USA technical journal; Sweden/EU applicability not established",
+      "source": {
+        "id": "TJ36726-2",
+        "title": "Transmission performance reduced message in DIM",
+        "tj": "TJ 36726.2.0",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-10251609-0001.pdf",
+        "status_date": "2024-02-29",
+        "verified_scope": "Volvo TJ confirms occurrence and specified case service path, not universal code definition"
+      },
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostic__not_approved",
+      "review_status": "pending_formal_VIDA_definition_and_EU_fitment",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-tj-20261116-becm-p065800",
+      "brand": "Volvo",
+      "raw_code": "BECM-P065800",
+      "base_code": "P0658",
+      "failure_type": "00",
+      "code_family": "P",
+      "ecu": "BECM",
+      "source_confirmed_as_displayed": true,
+      "definition_en": null,
+      "translation_ar": null,
+      "formal_vida_definition_status": "unverified",
+      "sae_vs_oem_classification": "not verified for full 7-character code; 5-character base retained separately",
+      "context_en": "PHEV check-engine light; interrupted charging can produce a false DTC",
+      "diagnostic_steps": [
+        "Confirm DTC is set as confirmed/permanent and correct long-range PHEV applicability",
+        "Review interrupted charging conditions and use correct charger practices",
+        "Perform software Total Upgrade following TJ31543 and choose applicable BECM software package by actual vehicle",
+        "Recheck BECM DTC before any BDU hardware conclusion; HV work only by qualified personnel"
+      ],
+      "live_data": [],
+      "wiring": [],
+      "parts": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "applicability": {
+        "vehicle_types": [
+          "224",
+          "225",
+          "235",
+          "238",
+          "246",
+          "256"
+        ],
+        "model_years_per_tj": "2022-2023",
+        "engine_designation_as_printed": "H6 / BH6PHEV",
+        "structure_weeks": "202147-202552",
+        "market": "US"
+      },
+      "market_evidence": "Volvo Car USA technical journal; Sweden/EU applicability not established",
+      "source": {
+        "id": "TJ36285-2",
+        "title": "Long range PHEV BECM DTC P065800",
+        "tj": "TJ 36285.2.1",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10224585-9999.pdf",
+        "status_date": "2022-09-22",
+        "verified_scope": "Volvo TJ confirms occurrence and specified case service path, not universal code definition"
+      },
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostic__not_approved",
+      "review_status": "pending_formal_VIDA_definition_and_EU_fitment",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-tj-20261116-cem-u201f00",
+      "brand": "Volvo",
+      "raw_code": "CEM-U201F00",
+      "base_code": "U201F",
+      "failure_type": "00",
+      "code_family": "U",
+      "ecu": "CEM",
+      "source_confirmed_as_displayed": true,
+      "definition_en": null,
+      "translation_ar": null,
+      "formal_vida_definition_status": "unverified",
+      "sae_vs_oem_classification": "not verified for full 7-character code; 5-character base retained separately",
+      "context_en": "Key remote lock/unlock and/or key-not-found/SOS error with TCAM equipped",
+      "diagnostic_steps": [
+        "Check TCAM option and distinguish mechanical key, backup key recognition, and VIDA connectivity symptoms",
+        "Apply the TCAM power-cycle procedure specified by TJ (TCAM fuse plus backup battery connector) only using verified model-specific instructions",
+        "Install the appropriate updated software using VIDA, then reassess symptoms; do not infer connector pinouts"
+      ],
+      "live_data": [],
+      "wiring": [],
+      "parts": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "applicability": {
+        "vehicle_types": [
+          "235",
+          "236",
+          "238",
+          "246",
+          "536",
+          "539"
+        ],
+        "model_years_per_tj": "2021 or 2022 onward according to vehicle type, as of 2022 document",
+        "required_option": "TCAM fitted",
+        "engine_spec": "not universally specified",
+        "market": "US/Canada"
+      },
+      "market_evidence": "Volvo Car USA technical journal; Sweden/EU applicability not established",
+      "source": {
+        "id": "TJ36195-1",
+        "title": "Cannot lock/unlock vehicle with remote control key",
+        "tj": "TJ 36195.1.1",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10213891-9999.pdf",
+        "status_date": "2022-05-11",
+        "verified_scope": "Volvo TJ confirms occurrence and specified case service path, not universal code definition"
+      },
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostic__not_approved",
+      "review_status": "pending_formal_VIDA_definition_and_EU_fitment",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-tj-20261116-cem-b124713",
+      "brand": "Volvo",
+      "raw_code": "CEM-B124713",
+      "base_code": "B1247",
+      "failure_type": "13",
+      "code_family": "B",
+      "ecu": "CEM",
+      "source_confirmed_as_displayed": true,
+      "definition_en": null,
+      "translation_ar": null,
+      "formal_vida_definition_status": "unverified",
+      "sae_vs_oem_classification": "not verified for full 7-character code; 5-character base retained separately",
+      "context_en": "Intermittent left turn signal malfunction message; side indicator lamp",
+      "diagnostic_steps": [
+        "Visually verify if left rear turn indicator works",
+        "If indicator works despite intermittent DTC, do not replace parts; check upgrade availability 3.3.16+ according to TJ31543",
+        "If indicator does not work, continue specific VIDA fault tracing before replacement"
+      ],
+      "live_data": [],
+      "wiring": [],
+      "parts": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "applicability": {
+        "vehicle_types": [
+          "224",
+          "225",
+          "227",
+          "235",
+          "236",
+          "238",
+          "246",
+          "256"
+        ],
+        "model_years_per_tj": "2024-2025",
+        "structure_weeks": "202317-202447",
+        "engine_spec": "not stated",
+        "market": "US/Canada"
+      },
+      "market_evidence": "Volvo Car USA technical journal; Sweden/EU applicability not established",
+      "source": {
+        "id": "TJ36944-2",
+        "title": "Intermittent DTC CEM B124713 and CEM B124813",
+        "tj": "TJ 36944.2.0",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11014119-0001.pdf",
+        "status_date": "2025-01-24",
+        "verified_scope": "Volvo TJ confirms occurrence and specified case service path, not universal code definition"
+      },
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostic__not_approved",
+      "review_status": "pending_formal_VIDA_definition_and_EU_fitment",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-tj-20261116-cem-b124813",
+      "brand": "Volvo",
+      "raw_code": "CEM-B124813",
+      "base_code": "B1248",
+      "failure_type": "13",
+      "code_family": "B",
+      "ecu": "CEM",
+      "source_confirmed_as_displayed": true,
+      "definition_en": null,
+      "translation_ar": null,
+      "formal_vida_definition_status": "unverified",
+      "sae_vs_oem_classification": "not verified for full 7-character code; 5-character base retained separately",
+      "context_en": "Intermittent left turn signal malfunction message; side indicator lamp",
+      "diagnostic_steps": [
+        "Visually verify if left rear turn indicator works",
+        "If indicator works despite intermittent DTC, do not replace parts; check upgrade availability 3.3.16+ according to TJ31543",
+        "If indicator does not work, continue specific VIDA fault tracing before replacement"
+      ],
+      "live_data": [],
+      "wiring": [],
+      "parts": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "applicability": {
+        "vehicle_types": [
+          "224",
+          "225",
+          "227",
+          "235",
+          "236",
+          "238",
+          "246",
+          "256"
+        ],
+        "model_years_per_tj": "2024-2025",
+        "structure_weeks": "202317-202447",
+        "engine_spec": "not stated",
+        "market": "US/Canada"
+      },
+      "market_evidence": "Volvo Car USA technical journal; Sweden/EU applicability not established",
+      "source": {
+        "id": "TJ36944-2",
+        "title": "Intermittent DTC CEM B124713 and CEM B124813",
+        "tj": "TJ 36944.2.0",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11014119-0001.pdf",
+        "status_date": "2025-01-24",
+        "verified_scope": "Volvo TJ confirms occurrence and specified case service path, not universal code definition"
+      },
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostic__not_approved",
+      "review_status": "pending_formal_VIDA_definition_and_EU_fitment",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-tj-20261116-ecm-p030098",
+      "brand": "Volvo",
+      "raw_code": "ECM-P030098",
+      "base_code": "P0300",
+      "failure_type": "98",
+      "code_family": "P",
+      "ecu": "ECM",
+      "source_confirmed_as_displayed": true,
+      "definition_en": null,
+      "translation_ar": null,
+      "formal_vida_definition_status": "unverified",
+      "sae_vs_oem_classification": "not verified for full 7-character code; 5-character base retained separately",
+      "context_en": "Check engine light and misfire event; Volvo notes software/flywheel adaptation contribution in specified PHEV",
+      "diagnostic_steps": [
+        "Confirm vehicle H6/PHEV and VIDA fault status, check current software",
+        "If software older than 2.13.1, perform Total Upgrade using TJ31543",
+        "Reset flywheel adaptation via VIDA ECM diagnostic sequence and verify; do not replace parts based only on this TJ"
+      ],
+      "live_data": [],
+      "wiring": [],
+      "parts": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "applicability": {
+        "vehicle_types": [
+          "224",
+          "225",
+          "238",
+          "246",
+          "256"
+        ],
+        "model_years_per_tj": "2022-2024",
+        "structure_weeks": "202147-202347",
+        "engine_designation_as_printed": "H6 / BH6PHEV",
+        "market": "US/Canada"
+      },
+      "market_evidence": "Volvo Car USA technical journal; Sweden/EU applicability not established",
+      "source": {
+        "id": "TJ36801-1",
+        "title": "Check Engine Lamp and Misfire DTC ECM P030098",
+        "tj": "TJ 36801.1.0",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-10249188-0001.pdf",
+        "status_date": "2024-01-04",
+        "verified_scope": "Volvo TJ confirms occurrence and specified case service path, not universal code definition"
+      },
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostic__not_approved",
+      "review_status": "pending_formal_VIDA_definition_and_EU_fitment",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-tj-20261116-ecm-p061c48",
+      "brand": "Volvo",
+      "raw_code": "ECM-P061C48",
+      "base_code": "P061C",
+      "failure_type": "48",
+      "code_family": "P",
+      "ecu": "ECM",
+      "source_confirmed_as_displayed": true,
+      "definition_en": null,
+      "translation_ar": null,
+      "formal_vida_definition_status": "unverified",
+      "sae_vs_oem_classification": "not verified for full 7-character code; 5-character base retained separately",
+      "context_en": "Check engine light and/or DIM message with camshaft-related context",
+      "diagnostic_steps": [
+        "For vehicles within the bulletin, clear DTCs and place transmission in PARK",
+        "Hold engine at 1500-2200 RPM for 10 s, return to idle and wait 3 s; repeat 10 times as prescribed",
+        "Check recurrence; if absent road test and repeat relevant check",
+        "Only if DTC returns, follow VIDA for intake camshaft and timing belt; use hand tools only as required by TJ"
+      ],
+      "live_data": [],
+      "wiring": [],
+      "parts": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "applicability": {
+        "vehicle_types": [
+          "224",
+          "225",
+          "227",
+          "235",
+          "236",
+          "238",
+          "246",
+          "256",
+          "536"
+        ],
+        "model_years_per_tj": "varies 2020/2021/2022 onward; 9999 is open-ended document notation",
+        "engine_designations_as_printed": [
+          "L1 / BL1KERS",
+          "06 / B06KERS",
+          "L5 / BL5KERS",
+          "K9 / BK9KERS"
+        ],
+        "market": "US/Canada",
+        "note": "Exact vehicle-type/engine/year tuples in TJ 36920.2.1; do not take Cartesian product of listed categories"
+      },
+      "market_evidence": "Volvo Car USA technical journal; Sweden/EU applicability not established",
+      "source": {
+        "id": "TJ36920-2",
+        "title": "Check engine light DTC ECM P061C48/P060C48",
+        "tj": "TJ 36920.2.1",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11015996-0001.pdf",
+        "status_date": "2025-02-17",
+        "verified_scope": "Volvo TJ confirms occurrence and specified case service path, not universal code definition"
+      },
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostic__not_approved",
+      "review_status": "pending_formal_VIDA_definition_and_EU_fitment",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-tj-20261116-ecm-p060c48",
+      "brand": "Volvo",
+      "raw_code": "ECM-P060C48",
+      "base_code": "P060C",
+      "failure_type": "48",
+      "code_family": "P",
+      "ecu": "ECM",
+      "source_confirmed_as_displayed": true,
+      "definition_en": null,
+      "translation_ar": null,
+      "formal_vida_definition_status": "unverified",
+      "sae_vs_oem_classification": "not verified for full 7-character code; 5-character base retained separately",
+      "context_en": "Check engine light and/or DIM message with camshaft-related context",
+      "diagnostic_steps": [
+        "For vehicles within the bulletin, clear DTCs and place transmission in PARK",
+        "Hold engine at 1500-2200 RPM for 10 s, return to idle and wait 3 s; repeat 10 times as prescribed",
+        "Check recurrence; if absent road test and repeat relevant check",
+        "Only if DTC returns, follow VIDA for intake camshaft and timing belt; use hand tools only as required by TJ"
+      ],
+      "live_data": [],
+      "wiring": [],
+      "parts": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "applicability": {
+        "vehicle_types": [
+          "224",
+          "225",
+          "227",
+          "235",
+          "236",
+          "238",
+          "246",
+          "256",
+          "536"
+        ],
+        "model_years_per_tj": "varies 2020/2021/2022 onward; 9999 is open-ended document notation",
+        "engine_designations_as_printed": [
+          "L1 / BL1KERS",
+          "06 / B06KERS",
+          "L5 / BL5KERS",
+          "K9 / BK9KERS"
+        ],
+        "market": "US/Canada",
+        "note": "Exact vehicle-type/engine/year tuples in TJ 36920.2.1; do not take Cartesian product of listed categories"
+      },
+      "market_evidence": "Volvo Car USA technical journal; Sweden/EU applicability not established",
+      "source": {
+        "id": "TJ36920-2",
+        "title": "Check engine light DTC ECM P061C48/P060C48",
+        "tj": "TJ 36920.2.1",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11015996-0001.pdf",
+        "status_date": "2025-02-17",
+        "verified_scope": "Volvo TJ confirms occurrence and specified case service path, not universal code definition"
+      },
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostic__not_approved",
+      "review_status": "pending_formal_VIDA_definition_and_EU_fitment",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-tj-20261116-ecm-p0df400",
+      "brand": "Volvo",
+      "raw_code": "ECM-P0DF400",
+      "base_code": "P0DF4",
+      "failure_type": "00",
+      "code_family": "P",
+      "ecu": "ECM",
+      "source_confirmed_as_displayed": true,
+      "definition_en": null,
+      "translation_ar": null,
+      "formal_vida_definition_status": "unverified",
+      "sae_vs_oem_classification": "not verified for full 7-character code; 5-character base retained separately",
+      "context_en": "Propulsion System Service Required may be a false report; check turtle warning and drivability",
+      "diagnostic_steps": [
+        "Check if drivable and whether turtle warning is shown",
+        "For structure weeks 202147-202446 follow approved ECM software upgrade v3.4.4 per TJ31543",
+        "If no turtle warning and vehicle drivable, follow TJ: do not replace parts based on code alone",
+        "For turtle warning, erase code, allow Abandoned mode for at least 20 min, idle 3 min, then reread VIDA; escalate persistent code"
+      ],
+      "live_data": [],
+      "wiring": [],
+      "parts": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "applicability": {
+        "vehicle_types": [
+          "224",
+          "225",
+          "238",
+          "246",
+          "256"
+        ],
+        "model_years_per_tj": "2022 onward in 2025 TJ; not proof for later years",
+        "engine_designation_as_printed": "H6 / BH6PHEV",
+        "market": "US/Canada"
+      },
+      "market_evidence": "Volvo Car USA technical journal; Sweden/EU applicability not established",
+      "source": {
+        "id": "TJ36963-2",
+        "title": "DIM message and DTC ECM P0DF400",
+        "tj": "TJ 36963.2.0",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11016887-0001.pdf",
+        "status_date": "2025-03-10",
+        "verified_scope": "Volvo TJ confirms occurrence and specified case service path, not universal code definition"
+      },
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostic__not_approved",
+      "review_status": "pending_formal_VIDA_definition_and_EU_fitment",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-tj-20261116-ecm-p030092",
+      "brand": "Volvo",
+      "raw_code": "ECM-P030092",
+      "base_code": "P0300",
+      "failure_type": "92",
+      "code_family": "P",
+      "ecu": "ECM",
+      "source_confirmed_as_displayed": true,
+      "definition_en": "Random misfire detected (descriptive wording in TJ 33533; not confirmed as exact VIDA definition)",
+      "translation_ar": "رصد اختلال إشعال عشوائي (وصف النشرة؛ التعريف الرسمي في VIDA يحتاج تدقيقاً)",
+      "formal_vida_definition_status": "unverified",
+      "sae_vs_oem_classification": "not verified for full 7-character code; 5-character base retained separately",
+      "context_en": "Random misfire event near 5000 rpm under extreme acceleration; flywheel-adaptation background noise noted",
+      "diagnostic_steps": [
+        "Check VIN, engine code, years, driving condition and freeze-frame where available",
+        "Compare VIDA DTCs against TJ scenario; this 2018 bulletin says do not replace parts for this particular symptom pattern",
+        "Check for later manufacturer service updates before any action; no measurements supplied by TJ"
+      ],
+      "live_data": [],
+      "wiring": [],
+      "parts": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "applicability": {
+        "vehicle_types": [
+          "23X",
+          "246",
+          "256"
+        ],
+        "model_years_per_tj": "2018-2019",
+        "engine_designations_as_printed": [
+          "B4204T20 (type 256)",
+          "B4204T23 (types 23X,246,256)",
+          "B4204T27 (types 23X,246,256)",
+          "B1FPHEV (types 23X,246,256)"
+        ],
+        "structure_weeks": "201717-201840",
+        "market": "US/Canada"
+      },
+      "market_evidence": "Volvo Car USA technical journal; Sweden/EU applicability not established",
+      "source": {
+        "id": "TJ33533-2",
+        "title": "Petrol engine and misfire codes",
+        "tj": "TJ 33533.2.0",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10149952-9999.pdf",
+        "status_date": "2018-05-10",
+        "verified_scope": "Volvo TJ confirms occurrence and specified case service path, not universal code definition"
+      },
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostic__not_approved",
+      "review_status": "pending_formal_VIDA_definition_and_EU_fitment",
+      "import_approved": false
+    }
+  ],
+  "limitations": [
+    "No primary VIDA diagnostic definition confirmed for full code including failure-type byte.",
+    "Volvo vehicle type is not converted to named model/engine where factory bulletin lacks explicit linkage.",
+    "References concern US/Canada; Sweden/EU fitment remains unproven.",
+    "Source PDF content not redistributed; only document metadata, original code strings and original brief paraphrased service guidance.",
+    "No protected wiring/images copied and no changes to application or update feed."
+  ]
+}
