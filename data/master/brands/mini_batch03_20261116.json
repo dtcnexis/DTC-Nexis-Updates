@@ -47,39 +47,39 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Check DME and VIN/engine",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "اقرأ رمز DME وبيانات VIN والمحرك وتاريخ الإنتاج.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         },
         {
           "step": 2,
-          "action_ar": "inspect I-level",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "افحص مستوى تكامل برنامج DME باستخدام ISTA.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         },
         {
           "step": 3,
-          "action_ar": "program ISTA/P to F056-14-03-500 or later in bulletin scenario",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "عند تطابق ظروف النشرة، حدّث البرمجة إلى F056-14-03-500 أو أحدث بمصدر قدرة معتمد.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         },
         {
           "step": 4,
-          "action_ar": "otherwise perform ISTA test plan",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "إذا استمر الخلل بعد البرمجة فتابع خطة اختبار مضخة التبريد داخل ISTA دون استبدالها تلقائياً.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         }
       ],
       "live_data": [
@@ -91,7 +91,7 @@
         }
       ],
       "parts": [
-        "Only components mentioned in bulletin context; no part replacement based on DTC alone"
+        "مضخة تبريد التيربو؛ العطل البرمجي هو تفسير النشرة وليس دليلاً على تلف المضخة"
       ],
       "wiring": {
         "pins": null,
@@ -151,30 +151,39 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Check DME, VIN and I-level",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "اقرأ DME وحدد الطراز وتاريخ الإنتاج.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         },
         {
           "step": 2,
-          "action_ar": "program ISTA/P 3.59.0+ to F056-15-11-500+ if indicated",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "افحص I-level الحالي وقارنه بـ F056-15-11-500.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         },
         {
           "step": 3,
-          "action_ar": "if persists, ISTA electrical fan test plan",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "إذا كانت شروط النشرة متحققة، برمج باستخدام ISTA/P 3.59.0 أو أحدث.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا بقي الكود أو كان I-level حديثاً، استخدم خطة ISTA لفحص اتصال المروحة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         }
       ],
       "live_data": [
@@ -186,7 +195,7 @@
         }
       ],
       "parts": [
-        "Only components mentioned in bulletin context; no part replacement based on DTC alone"
+        "مروحة تبريد كهربائية؛ لا تغيير قبل التشخيص"
       ],
       "wiring": {
         "pins": null,
@@ -287,30 +296,39 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Check exact chassis/engine and factory I-level",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "تحقق من مجموعة الهيكل والمحرك ورقم مستوى البرمجة المصنعي.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         },
         {
           "step": 2,
-          "action_ar": "B3x target F056-19-11-550+, B4x F056-19-11-534+",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "حدد عدد الأسطوانات ونوع المحرك، ثم طبّق هدف البرمجة الموثق لتلك العائلة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         },
         {
           "step": 3,
-          "action_ar": "do not replace crankshaft sensor just for this code",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "لـB3x الهدف F056-19-11-550 أو أحدث؛ ولـB4x الهدف F056-19-11-534 أو أحدث.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "لا تستبدل حساس عمود المرفق اعتماداً على هذا الرمز وحده؛ اتبع خطة ISTA إذا استمر العطل.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         }
       ],
       "live_data": [
@@ -322,7 +340,7 @@
         }
       ],
       "parts": [
-        "Only components mentioned in bulletin context; no part replacement based on DTC alone"
+        "عجلة إشارة عمود المرفق؛ لا تغيير قبل اختبار الأثر البرمجي"
       ],
       "wiring": {
         "pins": null,
@@ -381,12 +399,39 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Read BDC fault and VIN, diagnose switch in ISTA, update to F056-14-07-502+ with approved charger if bulletin conditions met",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "تأكد من فترة إنتاج F56 وسلوك زر Start/Stop.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 2,
+          "action_ar": "افحص الرمز من BDC وأجْرِ اختبار المفتاح وفق ISTA.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 3,
+          "action_ar": "عند تطابق الحالة، حدّث البرنامج إلى F056-14-07-502 أو أحدث باستخدام مصدر قدرة معتمد.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا لم تختفِ المشكلة، استكمل تشخيص المفتاح والأسلاك وفق بيانات VIN.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         }
       ],
       "live_data": [
@@ -398,7 +443,7 @@
         }
       ],
       "parts": [
-        "Only components mentioned in bulletin context; no part replacement based on DTC alone"
+        "مفتاح Start/Stop ووحدة BDC؛ النشرة تعزو الحالة للبرنامج"
       ],
       "wiring": {
         "pins": null,
@@ -459,39 +504,48 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Inspect OUC without accessing HV internals",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "افحص كابل الشحن OUC والموصل ظاهرياً دون فتح منظومة الجهد العالي.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         },
         {
           "step": 2,
-          "action_ar": "test correct latching and cable self-test",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "تأكد من تثبيت قابس الشحن واستجابة مؤشرات كابل الشحن حسب دليل MINI.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         },
         {
           "step": 3,
-          "action_ar": "compare known-good OUC",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "جرّب كابل OUC سليم ومعتمد وفق تعليمات الجهة المصنعة مع مراعاة متطلبات شبكة الكهرباء المحلية.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         },
         {
           "step": 4,
-          "action_ar": "ISTA charging diagnosis by qualified HV personnel",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "عند عدم نجاح المقارنة، تُجرى خطة تشخيص EME/الشحن بواسطة فني مخوّل للجهد العالي.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 5,
+          "action_ar": "لا تُطبَّق عتبة 90V الأمريكية الواردة بالنشرة كمعيار لشبكة السويد أو أوروبا.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         }
       ],
       "live_data": [
@@ -503,7 +557,8 @@
         }
       ],
       "parts": [
-        "Only components mentioned in bulletin context; no part replacement based on DTC alone"
+        "Occasional Use Cable (OUC)",
+        "قابس ومنفذ الشحن؛ لا تفترض التلف"
       ],
       "wiring": {
         "pins": null,
@@ -569,30 +624,48 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Inspect OUC and latching",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "افحص كابل الشحن OUC والموصل ظاهرياً دون فتح منظومة الجهد العالي.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         },
         {
           "step": 2,
-          "action_ar": "test known-good approved OUC",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "تأكد من تثبيت قابس الشحن واستجابة مؤشرات كابل الشحن حسب دليل MINI.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         },
         {
           "step": 3,
-          "action_ar": "qualified HV technician performs ISTA charging diagnosis if no charge",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "جرّب كابل OUC سليم ومعتمد وفق تعليمات الجهة المصنعة مع مراعاة متطلبات شبكة الكهرباء المحلية.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "عند عدم نجاح المقارنة، تُجرى خطة تشخيص EME/الشحن بواسطة فني مخوّل للجهد العالي.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 5,
+          "action_ar": "لا تُطبَّق عتبة 90V الأمريكية الواردة بالنشرة كمعيار لشبكة السويد أو أوروبا.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         }
       ],
       "live_data": [
@@ -604,7 +677,8 @@
         }
       ],
       "parts": [
-        "Only components mentioned in bulletin context; no part replacement based on DTC alone"
+        "Occasional Use Cable (OUC)",
+        "قابس ومنفذ الشحن؛ لا تفترض التلف"
       ],
       "wiring": {
         "pins": null,
@@ -670,30 +744,48 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Check OUC condition and latch",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "افحص كابل الشحن OUC والموصل ظاهرياً دون فتح منظومة الجهد العالي.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         },
         {
           "step": 2,
-          "action_ar": "compare known-good OUC",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "تأكد من تثبيت قابس الشحن واستجابة مؤشرات كابل الشحن حسب دليل MINI.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         },
         {
           "step": 3,
-          "action_ar": "use ISTA charging test plan with trained HV staff",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "جرّب كابل OUC سليم ومعتمد وفق تعليمات الجهة المصنعة مع مراعاة متطلبات شبكة الكهرباء المحلية.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "عند عدم نجاح المقارنة، تُجرى خطة تشخيص EME/الشحن بواسطة فني مخوّل للجهد العالي.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 5,
+          "action_ar": "لا تُطبَّق عتبة 90V الأمريكية الواردة بالنشرة كمعيار لشبكة السويد أو أوروبا.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         }
       ],
       "live_data": [
@@ -705,7 +797,8 @@
         }
       ],
       "parts": [
-        "Only components mentioned in bulletin context; no part replacement based on DTC alone"
+        "Occasional Use Cable (OUC)",
+        "قابس ومنفذ الشحن؛ لا تفترض التلف"
       ],
       "wiring": {
         "pins": null,
@@ -771,30 +864,48 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Check OUC condition and latch",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "افحص كابل الشحن OUC والموصل ظاهرياً دون فتح منظومة الجهد العالي.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         },
         {
           "step": 2,
-          "action_ar": "compare known-good OUC",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "تأكد من تثبيت قابس الشحن واستجابة مؤشرات كابل الشحن حسب دليل MINI.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         },
         {
           "step": 3,
-          "action_ar": "use ISTA charging test plan with trained HV staff",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "جرّب كابل OUC سليم ومعتمد وفق تعليمات الجهة المصنعة مع مراعاة متطلبات شبكة الكهرباء المحلية.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "عند عدم نجاح المقارنة، تُجرى خطة تشخيص EME/الشحن بواسطة فني مخوّل للجهد العالي.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 5,
+          "action_ar": "لا تُطبَّق عتبة 90V الأمريكية الواردة بالنشرة كمعيار لشبكة السويد أو أوروبا.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         }
       ],
       "live_data": [
@@ -806,7 +917,8 @@
         }
       ],
       "parts": [
-        "Only components mentioned in bulletin context; no part replacement based on DTC alone"
+        "Occasional Use Cable (OUC)",
+        "قابس ومنفذ الشحن؛ لا تفترض التلف"
       ],
       "wiring": {
         "pins": null,
@@ -875,17 +987,45 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Read 2-digit MRS code with ISTA/D, verify VIN and affected seat, trained SRS technician follows MINI safety and harness repair steps",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "اقرأ الرمز المحلي ذي الرقمين من وحدة MRS بواسطة ISTA/D، ولا تخلطه مع رموز SAE.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 2,
+          "action_ar": "تحقق من رقم الهيكل وفترة الإنتاج ونطاق VIN الوارد بالنشرة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 3,
+          "action_ar": "يتولى فني أنظمة SRS المؤهل تطبيق تعليمات فصل مصدر الطاقة والسلامة ثم فحص ضفيرة وموصلات المقعد طبقاً لدليل MINI.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "لا تستخدم أجهزة قياس أومية أو اختبارات توصيل مباشرة على دوائر إشعال الوسائد الهوائية أو شدادات الأحزمة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         }
       ],
       "live_data": [],
       "parts": [
-        "Only components mentioned in bulletin context; no part replacement based on DTC alone"
+        "موصلات وضفيرة المقعد",
+        "دائرة شداد الحزام أو وسادة المقعد حسب الكود"
       ],
       "wiring": {
         "pins": null,
@@ -954,17 +1094,45 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Read 2-digit MRS code with ISTA/D, verify VIN and affected seat, trained SRS technician follows MINI safety and harness repair steps",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "اقرأ الرمز المحلي ذي الرقمين من وحدة MRS بواسطة ISTA/D، ولا تخلطه مع رموز SAE.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 2,
+          "action_ar": "تحقق من رقم الهيكل وفترة الإنتاج ونطاق VIN الوارد بالنشرة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 3,
+          "action_ar": "يتولى فني أنظمة SRS المؤهل تطبيق تعليمات فصل مصدر الطاقة والسلامة ثم فحص ضفيرة وموصلات المقعد طبقاً لدليل MINI.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "لا تستخدم أجهزة قياس أومية أو اختبارات توصيل مباشرة على دوائر إشعال الوسائد الهوائية أو شدادات الأحزمة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         }
       ],
       "live_data": [],
       "parts": [
-        "Only components mentioned in bulletin context; no part replacement based on DTC alone"
+        "موصلات وضفيرة المقعد",
+        "دائرة شداد الحزام أو وسادة المقعد حسب الكود"
       ],
       "wiring": {
         "pins": null,
@@ -1033,17 +1201,45 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Read 2-digit MRS code with ISTA/D, verify VIN and affected seat, trained SRS technician follows MINI safety and harness repair steps",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "اقرأ الرمز المحلي ذي الرقمين من وحدة MRS بواسطة ISTA/D، ولا تخلطه مع رموز SAE.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 2,
+          "action_ar": "تحقق من رقم الهيكل وفترة الإنتاج ونطاق VIN الوارد بالنشرة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 3,
+          "action_ar": "يتولى فني أنظمة SRS المؤهل تطبيق تعليمات فصل مصدر الطاقة والسلامة ثم فحص ضفيرة وموصلات المقعد طبقاً لدليل MINI.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "لا تستخدم أجهزة قياس أومية أو اختبارات توصيل مباشرة على دوائر إشعال الوسائد الهوائية أو شدادات الأحزمة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         }
       ],
       "live_data": [],
       "parts": [
-        "Only components mentioned in bulletin context; no part replacement based on DTC alone"
+        "موصلات وضفيرة المقعد",
+        "دائرة شداد الحزام أو وسادة المقعد حسب الكود"
       ],
       "wiring": {
         "pins": null,
@@ -1112,17 +1308,45 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Read 2-digit MRS code with ISTA/D, verify VIN and affected seat, trained SRS technician follows MINI safety and harness repair steps",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "اقرأ الرمز المحلي ذي الرقمين من وحدة MRS بواسطة ISTA/D، ولا تخلطه مع رموز SAE.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 2,
+          "action_ar": "تحقق من رقم الهيكل وفترة الإنتاج ونطاق VIN الوارد بالنشرة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 3,
+          "action_ar": "يتولى فني أنظمة SRS المؤهل تطبيق تعليمات فصل مصدر الطاقة والسلامة ثم فحص ضفيرة وموصلات المقعد طبقاً لدليل MINI.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "لا تستخدم أجهزة قياس أومية أو اختبارات توصيل مباشرة على دوائر إشعال الوسائد الهوائية أو شدادات الأحزمة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         }
       ],
       "live_data": [],
       "parts": [
-        "Only components mentioned in bulletin context; no part replacement based on DTC alone"
+        "موصلات وضفيرة المقعد",
+        "دائرة شداد الحزام أو وسادة المقعد حسب الكود"
       ],
       "wiring": {
         "pins": null,
@@ -1201,30 +1425,39 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Confirm AISIN, engine, build, I-level",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "تحقق من ناقل AISIN ومن المحرك وتاريخ الإنتاج قبل ربط الكود بالسيارة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         },
         {
           "step": 2,
-          "action_ar": "if affected update DME to F056-16-11-500+",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "اقرأ I-level وتحقق من الإصدارات المتأثرة F056-16-03-50x وF056-16-07-50x.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         },
         {
           "step": 3,
-          "action_ar": "do not replace components to address software issue",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "عند تطابق الحالة، نفّذ تحديث DME إلى F056-16-11-500 أو أحدث.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا استمر عطل الشبكة، نفّذ خطة ISTA لاختبار PT-CAN2 ولا تستبدل أجزاء بسبب الكود وحده.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         }
       ],
       "live_data": [
@@ -1236,7 +1469,7 @@
         }
       ],
       "parts": [
-        "DME software in stated bulletin condition; replace no hardware on the strength of code CF0486 alone"
+        "EGS/DME والناقل AISIN؛ لا تُبدّل قطع لأجل حالة البرنامج الموصوفة"
       ],
       "wiring": {
         "pins": null,
@@ -1299,30 +1532,39 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Check BDC codes and I-level",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "اقرأ جميع وحدات BDC/ZGM وسجل رسائل Check Control المصاحبة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         },
         {
           "step": 2,
-          "action_ar": "if below F056-20-03-530 program with ISTA 4.22.2x+",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "تحقق من مستوى I-level الحالي؛ النشرة تعالج حالة البرمجة الأقدم من F056-20-03-530.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         },
         {
           "step": 3,
-          "action_ar": "otherwise run ISTA test module",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "نفّذ التحديث الموثق إذا انطبقت شروط النشرة، مع مصدر قدرة مناسب.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "عند استمرار الخطأ أو وجود برنامج أحدث، اتبع خطة ISTA الخاصة بشبكة FlexRay.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         }
       ],
       "live_data": [
@@ -1334,7 +1576,7 @@
         }
       ],
       "parts": [
-        "Only components mentioned in bulletin context; no part replacement based on DTC alone"
+        "BDC/ZGM وممر FlexRay؛ التلف المادي غير مثبت بالنشرة"
       ],
       "wiring": {
         "pins": null,
@@ -1399,21 +1641,39 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Check receiver BDC/ZGM, associated CD0420 and I-level",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "اقرأ رموز BDC وZGM وابحث عن CD0420 المرتبط في نطاق النشرة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         },
         {
           "step": 2,
-          "action_ar": "update to F056-20-03-530+ if indicated, else run ISTA network test module",
-          "equipment": [
-            "MINI ISTA",
-            "VIN-specific service documentation"
+          "action_ar": "تحقق من مستوى I-level الحالي ومن الرسائل المصاحبة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
           ],
-          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 3,
+          "action_ar": "إذا كان أقدم من F056-20-03-530 ووافقت ظروف النشرة، نفّذ البرمجة الرسمية.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا لم تُحل الحالة، افحص نظام الاتصال وفق ISTA قبل استبدال وحدة إلكترونية.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
         }
       ],
       "live_data": [
@@ -1425,7 +1685,7 @@
         }
       ],
       "parts": [
-        "Only components mentioned in bulletin context; no part replacement based on DTC alone"
+        "BDC/ZGM وممر FlexRay؛ التلف المادي غير مثبت بالنشرة"
       ],
       "wiring": {
         "pins": null,
