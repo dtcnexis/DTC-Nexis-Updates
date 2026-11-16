@@ -1,0 +1,736 @@
+{
+  "schema": "dtc-nexis-permanent-brand-code-records-v1",
+  "brand": "tesla",
+  "archive_status": "PERMANENT_COLLECTED_SOURCE_DATA",
+  "release_to_app": "NOT_ACTIVE",
+  "batch": "05",
+  "record_count": 8,
+  "previous_oem_evidenced_alert_identifiers": 191,
+  "duplicate_existing": 0,
+  "original_code_format_preserved": true,
+  "important_note": "These are Tesla owner-manual alerts, not necessarily latched ECU DTCs. Cybertruck region US; Model Y region Europe. Do not generalize fitment to Sweden/Cybertruck or any specific VIN.",
+  "records": [
+    {
+      "id": "TESLA|CP_a141|CYBERTRUCK|OWNER_MANUAL_20261116",
+      "brand": "Tesla",
+      "raw_code": "CP_a141",
+      "base_code": "CP_a141",
+      "code_format": "TESLA_OEM_ALERT_NOT_SAE_DTC",
+      "definition_en": "Charging equipment reports error — check equipment",
+      "translation_ar": "معدة الشحن الخارجية تبلغ عن عطل يمنع الشحن",
+      "definition_type": "faithful technical paraphrase of OEM troubleshooting alert",
+      "category": "charging_external_evidence",
+      "ecu_prefix": "CP",
+      "ecu_hardware_id": null,
+      "ecu_dtc_status_confirmed": false,
+      "applicability": {
+        "documented_model": "Cybertruck",
+        "owner_manual_region": "US",
+        "manual_section": "Troubleshooting Alerts",
+        "production_year": null,
+        "model_year": null,
+        "generation": null,
+        "engine_code": null,
+        "ecu_variant": null,
+        "vin": null,
+        "market_specific_vehicle_confirmation": false
+      },
+      "symptoms": [
+        "Charging interrupted"
+      ],
+      "causes_evidence_ranked": [
+        {
+          "rank": 1,
+          "description": "External charger reported fault",
+          "evidence_type": "OEM described condition; not necessarily replaceable defective part"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "action_en": "Check station display/error lights and operator instructions",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        },
+        {
+          "order": 2,
+          "action_en": "Retry charging at different compatible equipment",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        },
+        {
+          "order": 3,
+          "action_en": "If charging still fails at independent sites, inspect vehicle charge-port operation with Tesla documentation",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        }
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "name": "Charging station (external, not vehicle ECU)",
+          "part_number": null,
+          "location": null,
+          "replace_decision": "Requires confirmation for vehicle VIN/part variant"
+        }
+      ],
+      "images": [],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "source": "not documented"
+      },
+      "source": {
+        "title": "Cybertruck Owner's Manual — Troubleshooting Alerts",
+        "publisher": "Tesla",
+        "url": "https://www.tesla.com/ownersmanual/cybertruck/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+        "section_anchor": "CP_a141",
+        "accessed_on": "2026-11-16",
+        "edition_date": "Online rolling guide; revision/date for individual VIN not established"
+      },
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; YEAR_VIN_ECU_PINOUT_ROOT_CAUSE_PART_SELECTION_PENDING",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|CP_a143|CYBERTRUCK|OWNER_MANUAL_20261116",
+      "brand": "Tesla",
+      "raw_code": "CP_a143",
+      "base_code": "CP_a143",
+      "code_format": "TESLA_OEM_ALERT_NOT_SAE_DTC",
+      "definition_en": "Charging adapter has electric arc flash hazard — use different charging equipment",
+      "translation_ar": "خطر حدوث قوس كهربائي في محوّل الشحن؛ يجب استخدام معدات شحن أخرى",
+      "definition_type": "faithful technical paraphrase of OEM troubleshooting alert",
+      "category": "charging_adapter_safety",
+      "ecu_prefix": "CP",
+      "ecu_hardware_id": null,
+      "ecu_dtc_status_confirmed": false,
+      "applicability": {
+        "documented_model": "Cybertruck",
+        "owner_manual_region": "US",
+        "manual_section": "Troubleshooting Alerts",
+        "production_year": null,
+        "model_year": null,
+        "generation": null,
+        "engine_code": null,
+        "ecu_variant": null,
+        "vin": null,
+        "market_specific_vehicle_confirmation": false
+      },
+      "symptoms": [
+        "Charging unavailable"
+      ],
+      "causes_evidence_ranked": [
+        {
+          "rank": 1,
+          "description": "CCS third-party charging adapter hazard detected",
+          "evidence_type": "OEM described condition; not necessarily replaceable defective part"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "action_en": "Stop charging completely on vehicle and station before handling cable",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        },
+        {
+          "order": 2,
+          "action_en": "Verify charging is inactive before disconnecting as the manufacturer's manual instructs",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        },
+        {
+          "order": 3,
+          "action_en": "Use different certified compatible charging equipment; never bypass the hazard",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        }
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "name": "Third-party CCS charging adapter",
+          "part_number": null,
+          "location": null,
+          "replace_decision": "Requires confirmation for vehicle VIN/part variant"
+        }
+      ],
+      "images": [],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "source": "not documented"
+      },
+      "source": {
+        "title": "Cybertruck Owner's Manual — Troubleshooting Alerts",
+        "publisher": "Tesla",
+        "url": "https://www.tesla.com/ownersmanual/cybertruck/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+        "section_anchor": "CP_a143",
+        "accessed_on": "2026-11-16",
+        "edition_date": "Online rolling guide; revision/date for individual VIN not established"
+      },
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; YEAR_VIN_ECU_PINOUT_ROOT_CAUSE_PART_SELECTION_PENDING",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|CP_a171|CYBERTRUCK|OWNER_MANUAL_20261116",
+      "brand": "Tesla",
+      "raw_code": "CP_a171",
+      "base_code": "CP_a171",
+      "code_format": "TESLA_OEM_ALERT_NOT_SAE_DTC",
+      "definition_en": "Bed outlet door sensor error detected — outlet unavailable",
+      "translation_ar": "خلل حساس باب مقابس صندوق الحمولة؛ قد تصبح المقابس غير متاحة",
+      "definition_type": "faithful technical paraphrase of OEM troubleshooting alert",
+      "category": "body_power_outlets",
+      "ecu_prefix": "CP",
+      "ecu_hardware_id": null,
+      "ecu_dtc_status_confirmed": false,
+      "applicability": {
+        "documented_model": "Cybertruck",
+        "owner_manual_region": "US",
+        "manual_section": "Troubleshooting Alerts",
+        "production_year": null,
+        "model_year": null,
+        "generation": null,
+        "engine_code": null,
+        "ecu_variant": null,
+        "vin": null,
+        "market_specific_vehicle_confirmation": false
+      },
+      "symptoms": [
+        "Bed outlet may be unavailable"
+      ],
+      "causes_evidence_ranked": [
+        {
+          "rank": 1,
+          "description": "Sensor for bed outlet door not functioning normally",
+          "evidence_type": "OEM described condition; not necessarily replaceable defective part"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "action_en": "Close and reopen cargo-bed outlet door",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        },
+        {
+          "order": 2,
+          "action_en": "Observe whether outlets return after proper door position is detected",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        },
+        {
+          "order": 3,
+          "action_en": "If persistent, inspect using Tesla approved service workflow before replacing parts",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        }
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "name": "Cargo-bed outlet door position sensor (part and location details pending)",
+          "part_number": null,
+          "location": null,
+          "replace_decision": "Requires confirmation for vehicle VIN/part variant"
+        }
+      ],
+      "images": [],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "source": "not documented"
+      },
+      "source": {
+        "title": "Cybertruck Owner's Manual — Troubleshooting Alerts",
+        "publisher": "Tesla",
+        "url": "https://www.tesla.com/ownersmanual/cybertruck/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+        "section_anchor": "CP_a171",
+        "accessed_on": "2026-11-16",
+        "edition_date": "Online rolling guide; revision/date for individual VIN not established"
+      },
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; YEAR_VIN_ECU_PINOUT_ROOT_CAUSE_PART_SELECTION_PENDING",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|UMC_a013|CYBERTRUCK|OWNER_MANUAL_20261116",
+      "brand": "Tesla",
+      "raw_code": "UMC_a013",
+      "base_code": "UMC_a013",
+      "code_format": "TESLA_OEM_ALERT_NOT_SAE_DTC",
+      "definition_en": "Wall plug adapter error — charge rate reduced",
+      "translation_ar": "مشكلة في اتصال محوّل القابس بشاحن Mobile Connector؛ ينخفض تيار الشحن",
+      "definition_type": "faithful technical paraphrase of OEM troubleshooting alert",
+      "category": "external_mobile_connector",
+      "ecu_prefix": "UMC",
+      "ecu_hardware_id": null,
+      "ecu_dtc_status_confirmed": false,
+      "applicability": {
+        "documented_model": "Cybertruck",
+        "owner_manual_region": "US",
+        "manual_section": "Troubleshooting Alerts",
+        "production_year": null,
+        "model_year": null,
+        "generation": null,
+        "engine_code": null,
+        "ecu_variant": null,
+        "vin": null,
+        "market_specific_vehicle_confirmation": false
+      },
+      "symptoms": [
+        "Charging limited to 8 A"
+      ],
+      "causes_evidence_ranked": [
+        {
+          "rank": 1,
+          "description": "Mobile Connector cannot communicate with wall plug adapter, cannot monitor adapter temperature",
+          "evidence_type": "OEM described condition; not necessarily replaceable defective part"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "action_en": "Fully disconnect the connector and adapter from wall socket",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        },
+        {
+          "order": 2,
+          "action_en": "Unplug and securely reseat adapter into Mobile Connector control unit",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        },
+        {
+          "order": 3,
+          "action_en": "Retry, then test alternate compatible wall adapter if the alert persists",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        }
+      ],
+      "live_data": [
+        {
+          "signal_en": "AC Charge Current Limit",
+          "translation_ar": "حد تيار الشحن المتردد",
+          "value": 8,
+          "unit": "A",
+          "context": "Active UMC_a013: externally imposed equipment limit, NOT an internal Tesla ECU diagnostic voltage limit"
+        }
+      ],
+      "parts": [
+        {
+          "name": "Mobile Connector wall-plug adapter",
+          "part_number": null,
+          "location": null,
+          "replace_decision": "Requires confirmation for vehicle VIN/part variant"
+        },
+        {
+          "name": "Mobile Connector external control unit",
+          "part_number": null,
+          "location": null,
+          "replace_decision": "Requires confirmation for vehicle VIN/part variant"
+        }
+      ],
+      "images": [],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "source": "not documented"
+      },
+      "source": {
+        "title": "Cybertruck Owner's Manual — Troubleshooting Alerts",
+        "publisher": "Tesla",
+        "url": "https://www.tesla.com/ownersmanual/cybertruck/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+        "section_anchor": "UMC_a013",
+        "accessed_on": "2026-11-16",
+        "edition_date": "Online rolling guide; revision/date for individual VIN not established"
+      },
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; YEAR_VIN_ECU_PINOUT_ROOT_CAUSE_PART_SELECTION_PENDING",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|VCLEFT_a130|CYBERTRUCK|OWNER_MANUAL_20261116",
+      "brand": "Tesla",
+      "raw_code": "VCLEFT_a130",
+      "base_code": "VCLEFT_a130",
+      "code_format": "TESLA_OEM_ALERT_NOT_SAE_DTC",
+      "definition_en": "Critical issue detected — pull over safely",
+      "translation_ar": "مشكلة حرجة محتملة في النظام الكهربائي أو التوجيه بسلك التحكم — توقف بأمان",
+      "definition_type": "faithful technical paraphrase of OEM troubleshooting alert",
+      "category": "steer_by_wire_or_electrical",
+      "ecu_prefix": "VCLEFT",
+      "ecu_hardware_id": null,
+      "ecu_dtc_status_confirmed": false,
+      "applicability": {
+        "documented_model": "Cybertruck",
+        "owner_manual_region": "US",
+        "manual_section": "Troubleshooting Alerts",
+        "production_year": null,
+        "model_year": null,
+        "generation": null,
+        "engine_code": null,
+        "ecu_variant": null,
+        "vin": null,
+        "market_specific_vehicle_confirmation": false
+      },
+      "symptoms": [
+        "Vehicle power/speed limited",
+        "Controlled loss of drive torque"
+      ],
+      "causes_evidence_ranked": [
+        {
+          "rank": 1,
+          "description": "Possible electrical power-support fault or redundant steer-by-wire sensor/actuator issue; precise subsystem not isolated",
+          "evidence_type": "OEM described condition; not necessarily replaceable defective part"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "action_en": "Pull over safely promptly, not an ordinary service-reset scenario",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        },
+        {
+          "order": 2,
+          "action_en": "Review all related active alerts using Tesla Service Mode after safe recovery",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        },
+        {
+          "order": 3,
+          "action_en": "Do not infer steering components require replacement from this warning alone",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        }
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "name": "Steer-by-wire redundant sensors/actuators (exact implicated part unknown)",
+          "part_number": null,
+          "location": null,
+          "replace_decision": "Requires confirmation for vehicle VIN/part variant"
+        }
+      ],
+      "images": [],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "source": "not documented"
+      },
+      "source": {
+        "title": "Cybertruck Owner's Manual — Troubleshooting Alerts",
+        "publisher": "Tesla",
+        "url": "https://www.tesla.com/ownersmanual/cybertruck/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+        "section_anchor": "VCLEFT_a130",
+        "accessed_on": "2026-11-16",
+        "edition_date": "Online rolling guide; revision/date for individual VIN not established"
+      },
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; YEAR_VIN_ECU_PINOUT_ROOT_CAUSE_PART_SELECTION_PENDING",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|VCREAR_a130|CYBERTRUCK|OWNER_MANUAL_20261116",
+      "brand": "Tesla",
+      "raw_code": "VCREAR_a130",
+      "base_code": "VCREAR_a130",
+      "code_format": "TESLA_OEM_ALERT_NOT_SAE_DTC",
+      "definition_en": "Critical issue detected — pull over safely",
+      "translation_ar": "مشكلة حرجة محتملة في النظام الكهربائي أو التوجيه بسلك التحكم — توقف بأمان",
+      "definition_type": "faithful technical paraphrase of OEM troubleshooting alert",
+      "category": "steer_by_wire_or_electrical",
+      "ecu_prefix": "VCREAR",
+      "ecu_hardware_id": null,
+      "ecu_dtc_status_confirmed": false,
+      "applicability": {
+        "documented_model": "Cybertruck",
+        "owner_manual_region": "US",
+        "manual_section": "Troubleshooting Alerts",
+        "production_year": null,
+        "model_year": null,
+        "generation": null,
+        "engine_code": null,
+        "ecu_variant": null,
+        "vin": null,
+        "market_specific_vehicle_confirmation": false
+      },
+      "symptoms": [
+        "Vehicle power/speed limited",
+        "Controlled loss of drive torque"
+      ],
+      "causes_evidence_ranked": [
+        {
+          "rank": 1,
+          "description": "Possible electrical power-support fault or redundant steer-by-wire sensor/actuator issue; precise subsystem not isolated",
+          "evidence_type": "OEM described condition; not necessarily replaceable defective part"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "action_en": "Pull over safely promptly, not an ordinary service-reset scenario",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        },
+        {
+          "order": 2,
+          "action_en": "Review all related active alerts using Tesla Service Mode after safe recovery",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        },
+        {
+          "order": 3,
+          "action_en": "Do not infer steering components require replacement from this warning alone",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        }
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "name": "Steer-by-wire redundant sensors/actuators (exact implicated part unknown)",
+          "part_number": null,
+          "location": null,
+          "replace_decision": "Requires confirmation for vehicle VIN/part variant"
+        }
+      ],
+      "images": [],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "source": "not documented"
+      },
+      "source": {
+        "title": "Cybertruck Owner's Manual — Troubleshooting Alerts",
+        "publisher": "Tesla",
+        "url": "https://www.tesla.com/ownersmanual/cybertruck/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+        "section_anchor": "VCREAR_a130",
+        "accessed_on": "2026-11-16",
+        "edition_date": "Online rolling guide; revision/date for individual VIN not established"
+      },
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; YEAR_VIN_ECU_PINOUT_ROOT_CAUSE_PART_SELECTION_PENDING",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|VCLEFT_a402|CYBERTRUCK|OWNER_MANUAL_20261116",
+      "brand": "Tesla",
+      "raw_code": "VCLEFT_a402",
+      "base_code": "VCLEFT_a402",
+      "code_format": "TESLA_OEM_ALERT_NOT_SAE_DTC",
+      "definition_en": "Electrical system backup power is unavailable — vehicle will consume more energy while idle",
+      "translation_ar": "مصدر الطاقة الاحتياطي للنظام الكهربائي غير متاح؛ قد يزداد استهلاك الطاقة أثناء الوقوف",
+      "definition_type": "faithful technical paraphrase of OEM troubleshooting alert",
+      "category": "low_voltage_backup_supply",
+      "ecu_prefix": "VCLEFT",
+      "ecu_hardware_id": null,
+      "ecu_dtc_status_confirmed": false,
+      "applicability": {
+        "documented_model": "Cybertruck",
+        "owner_manual_region": "US",
+        "manual_section": "Troubleshooting Alerts",
+        "production_year": null,
+        "model_year": null,
+        "generation": null,
+        "engine_code": null,
+        "ecu_variant": null,
+        "vin": null,
+        "market_specific_vehicle_confirmation": false
+      },
+      "symptoms": [
+        "Higher idle energy consumption",
+        "Some nonessential functions may be unavailable"
+      ],
+      "causes_evidence_ranked": [
+        {
+          "rank": 1,
+          "description": "Low-voltage backup source unavailable or unable to supply required voltage; specific failed part not proven",
+          "evidence_type": "OEM described condition; not necessarily replaceable defective part"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "action_en": "Check accompanying low voltage alerts and system state through Service Mode",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        },
+        {
+          "order": 2,
+          "action_en": "Avoid nonessential loads and arrange service",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        },
+        {
+          "order": 3,
+          "action_en": "Do not guess a fixed low-voltage battery replacement without system diagnosis",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        }
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "name": "Low-voltage backup supply (specific battery topology/part pending)",
+          "part_number": null,
+          "location": null,
+          "replace_decision": "Requires confirmation for vehicle VIN/part variant"
+        }
+      ],
+      "images": [],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "source": "not documented"
+      },
+      "source": {
+        "title": "Cybertruck Owner's Manual — Troubleshooting Alerts",
+        "publisher": "Tesla",
+        "url": "https://www.tesla.com/ownersmanual/cybertruck/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+        "section_anchor": "VCLEFT_a402",
+        "accessed_on": "2026-11-16",
+        "edition_date": "Online rolling guide; revision/date for individual VIN not established"
+      },
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; YEAR_VIN_ECU_PINOUT_ROOT_CAUSE_PART_SELECTION_PENDING",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|VCFRONT_a402|MODEL_Y|OWNER_MANUAL_20261116",
+      "brand": "Tesla",
+      "raw_code": "VCFRONT_a402",
+      "base_code": "VCFRONT_a402",
+      "code_format": "TESLA_OEM_ALERT_NOT_SAE_DTC",
+      "definition_en": "Electrical system backup power is unavailable — vehicle will consume more energy while idle",
+      "translation_ar": "مصدر الطاقة الاحتياطي منخفض الجهد غير متاح؛ قد يرتفع استهلاك الطاقة أثناء الوقوف",
+      "definition_type": "faithful technical paraphrase of OEM troubleshooting alert",
+      "category": "low_voltage_backup_supply",
+      "ecu_prefix": "VCFRONT",
+      "ecu_hardware_id": null,
+      "ecu_dtc_status_confirmed": false,
+      "applicability": {
+        "documented_model": "Model Y",
+        "owner_manual_region": "Europe",
+        "manual_section": "Troubleshooting Alerts",
+        "production_year": null,
+        "model_year": null,
+        "generation": null,
+        "engine_code": null,
+        "ecu_variant": null,
+        "vin": null,
+        "market_specific_vehicle_confirmation": false
+      },
+      "symptoms": [
+        "Higher idle energy consumption",
+        "Nonessential vehicle functions may be unavailable"
+      ],
+      "causes_evidence_ranked": [
+        {
+          "rank": 1,
+          "description": "Low-voltage backup supply not providing support; component root cause unconfirmed",
+          "evidence_type": "OEM described condition; not necessarily replaceable defective part"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "action_en": "Review related alerts and charging/vehicle power status",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        },
+        {
+          "order": 2,
+          "action_en": "Limit nonessential vehicle systems until serviced",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        },
+        {
+          "order": 3,
+          "action_en": "Perform VIN-specific low-voltage system diagnosis before changing battery",
+          "tools": [
+            "Tesla Service Mode / Owner Manual as applicable"
+          ],
+          "reference_values": "not specified unless separate verified limit"
+        }
+      ],
+      "live_data": [],
+      "parts": [
+        {
+          "name": "Low-voltage backup supply (part type and location require matching vehicle revision)",
+          "part_number": null,
+          "location": null,
+          "replace_decision": "Requires confirmation for vehicle VIN/part variant"
+        }
+      ],
+      "images": [],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "source": "not documented"
+      },
+      "source": {
+        "title": "Model Y Owner's Manual — Troubleshooting Alerts",
+        "publisher": "Tesla",
+        "url": "https://www.tesla.com/ownersmanual/modely/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+        "section_anchor": "VCFRONT_a402",
+        "accessed_on": "2026-11-16",
+        "edition_date": "Online rolling guide; revision/date for individual VIN not established"
+      },
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; YEAR_VIN_ECU_PINOUT_ROOT_CAUSE_PART_SELECTION_PENDING",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    }
+  ]
+}

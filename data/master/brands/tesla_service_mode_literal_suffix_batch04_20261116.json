@@ -1,0 +1,426 @@
+{
+  "schema": "dtc-nexis-permanent-brand-code-records-v1",
+  "brand": "Tesla",
+  "record_count": 8,
+  "release_to_app": "NOT_ACTIVE",
+  "archive_status": "PERMANENT_COLLECTED_SOURCE_DATA",
+  "verification_note": "8 original raw alert strings directly visible in Tesla official 2024.2.7 Service Mode User Guide screenshot. Not confirmed latched DTCs. These are separate from the shorter base codes.",
+  "records": [
+    {
+      "id": "TESLA|PCS_a053_chgInputVDropHigh|SERVICE_MODE_2024_2_7_DISPLAY_EXAMPLE",
+      "raw_code": "PCS_a053_chgInputVDropHigh",
+      "base_code": "PCS_a053",
+      "code_family": "TESLA_OEM_SERVICE_MODE_ALERT_NOT_SAE_PBCU_DTC",
+      "category": "Tesla manufacturer service alert identifier",
+      "ecu_prefix": "PCS",
+      "ecu_exact": null,
+      "definition_en": "High charging input voltage drop",
+      "translation_ar": "انخفاض كبير في جهد دخل الشحن",
+      "definition_source_quality": "generic base alert described in Tesla Model S EU manual; detailed suffix meaning not validated",
+      "display_context": "Visible in Recent Alerts example screenshot in Tesla Service Mode User Guide, section Service Alerts, page 7 (software 2024.2.7)",
+      "applicability": {
+        "model": null,
+        "vehicle_year": null,
+        "engine": null,
+        "ecu_hardware": null,
+        "markets": null,
+        "reason": "Official screenshot illustrates alert UI; does not certify specific vehicle fitment"
+      },
+      "conditions": null,
+      "causes": null,
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "description_ar": "قراءة تنبيه Service Mode فعلياً مع الحمولة وتاريخ التعيين والمسح ثم الرجوع إلى دليل الخدمة المعتمد للمركبة",
+          "tools": [
+            "Tesla Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "wiring": null,
+      "parts": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "partial",
+      "verification_status": "OEM_DISPLAYED_LITERAL_VERIFIED; SUFFIX_SEMANTICS_AND_FITMENT_PENDING",
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "Service Mode User Guide",
+          "version": "2024.2.7",
+          "url": "https://service.tesla.com/docs/Public/ServiceMode/service_mode_user_guide.pdf",
+          "page": 7,
+          "verified_on": "2026-11-16"
+        }
+      ],
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|PCS_a054_chgInputVDropTooHigh|SERVICE_MODE_2024_2_7_DISPLAY_EXAMPLE",
+      "raw_code": "PCS_a054_chgInputVDropTooHigh",
+      "base_code": "PCS_a054",
+      "code_family": "TESLA_OEM_SERVICE_MODE_ALERT_NOT_SAE_PBCU_DTC",
+      "category": "Tesla manufacturer service alert identifier",
+      "ecu_prefix": "PCS",
+      "ecu_exact": null,
+      "definition_en": "Excessive charging input voltage drop",
+      "translation_ar": "انخفاض شديد في جهد دخل الشحن",
+      "definition_source_quality": "generic base alert described in Tesla Model S EU manual; detailed suffix meaning not validated",
+      "display_context": "Visible in Recent Alerts example screenshot in Tesla Service Mode User Guide, section Service Alerts, page 7 (software 2024.2.7)",
+      "applicability": {
+        "model": null,
+        "vehicle_year": null,
+        "engine": null,
+        "ecu_hardware": null,
+        "markets": null,
+        "reason": "Official screenshot illustrates alert UI; does not certify specific vehicle fitment"
+      },
+      "conditions": null,
+      "causes": null,
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "description_ar": "قراءة تنبيه Service Mode فعلياً مع الحمولة وتاريخ التعيين والمسح ثم الرجوع إلى دليل الخدمة المعتمد للمركبة",
+          "tools": [
+            "Tesla Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "wiring": null,
+      "parts": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "partial",
+      "verification_status": "OEM_DISPLAYED_LITERAL_VERIFIED; SUFFIX_SEMANTICS_AND_FITMENT_PENDING",
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "Service Mode User Guide",
+          "version": "2024.2.7",
+          "url": "https://service.tesla.com/docs/Public/ServiceMode/service_mode_user_guide.pdf",
+          "page": 7,
+          "verified_on": "2026-11-16"
+        }
+      ],
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|BMS_a174_SW_Charge_Failure|SERVICE_MODE_2024_2_7_DISPLAY_EXAMPLE",
+      "raw_code": "BMS_a174_SW_Charge_Failure",
+      "base_code": "BMS_a174",
+      "code_family": "TESLA_OEM_SERVICE_MODE_ALERT_NOT_SAE_PBCU_DTC",
+      "category": "Tesla manufacturer service alert identifier",
+      "ecu_prefix": "BMS",
+      "ecu_exact": null,
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_quality": "identifier_only_no_verified_official_definition",
+      "display_context": "Visible in Recent Alerts example screenshot in Tesla Service Mode User Guide, section Service Alerts, page 7 (software 2024.2.7)",
+      "applicability": {
+        "model": null,
+        "vehicle_year": null,
+        "engine": null,
+        "ecu_hardware": null,
+        "markets": null,
+        "reason": "Official screenshot illustrates alert UI; does not certify specific vehicle fitment"
+      },
+      "conditions": null,
+      "causes": null,
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "description_ar": "قراءة تنبيه Service Mode فعلياً مع الحمولة وتاريخ التعيين والمسح ثم الرجوع إلى دليل الخدمة المعتمد للمركبة",
+          "tools": [
+            "Tesla Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "wiring": null,
+      "parts": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "partial",
+      "verification_status": "OEM_DISPLAYED_LITERAL_VERIFIED; SUFFIX_SEMANTICS_AND_FITMENT_PENDING",
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "Service Mode User Guide",
+          "version": "2024.2.7",
+          "url": "https://service.tesla.com/docs/Public/ServiceMode/service_mode_user_guide.pdf",
+          "page": 7,
+          "verified_on": "2026-11-16"
+        }
+      ],
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|EPBL_a180_dynamicActive|SERVICE_MODE_2024_2_7_DISPLAY_EXAMPLE",
+      "raw_code": "EPBL_a180_dynamicActive",
+      "base_code": "EPBL_a180",
+      "code_family": "TESLA_OEM_SERVICE_MODE_ALERT_NOT_SAE_PBCU_DTC",
+      "category": "Tesla manufacturer service alert identifier",
+      "ecu_prefix": "EPBL",
+      "ecu_exact": null,
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_quality": "identifier_only_no_verified_official_definition",
+      "display_context": "Visible in Recent Alerts example screenshot in Tesla Service Mode User Guide, section Service Alerts, page 7 (software 2024.2.7)",
+      "applicability": {
+        "model": null,
+        "vehicle_year": null,
+        "engine": null,
+        "ecu_hardware": null,
+        "markets": null,
+        "reason": "Official screenshot illustrates alert UI; does not certify specific vehicle fitment"
+      },
+      "conditions": null,
+      "causes": null,
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "description_ar": "قراءة تنبيه Service Mode فعلياً مع الحمولة وتاريخ التعيين والمسح ثم الرجوع إلى دليل الخدمة المعتمد للمركبة",
+          "tools": [
+            "Tesla Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "wiring": null,
+      "parts": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "partial",
+      "verification_status": "OEM_DISPLAYED_LITERAL_VERIFIED; SUFFIX_SEMANTICS_AND_FITMENT_PENDING",
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "Service Mode User Guide",
+          "version": "2024.2.7",
+          "url": "https://service.tesla.com/docs/Public/ServiceMode/service_mode_user_guide.pdf",
+          "page": 7,
+          "verified_on": "2026-11-16"
+        }
+      ],
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|APP_w304_IssCamBlockedStatus|SERVICE_MODE_2024_2_7_DISPLAY_EXAMPLE",
+      "raw_code": "APP_w304_IssCamBlockedStatus",
+      "base_code": "APP_w304",
+      "code_family": "TESLA_OEM_SERVICE_MODE_ALERT_NOT_SAE_PBCU_DTC",
+      "category": "Tesla manufacturer service alert identifier",
+      "ecu_prefix": "APP",
+      "ecu_exact": null,
+      "definition_en": "Camera blocked or impaired",
+      "translation_ar": "رؤية الكاميرا محجوبة أو محدودة",
+      "definition_source_quality": "generic base alert described in Tesla Model S EU manual; detailed suffix meaning not validated",
+      "display_context": "Visible in Recent Alerts example screenshot in Tesla Service Mode User Guide, section Service Alerts, page 7 (software 2024.2.7)",
+      "applicability": {
+        "model": null,
+        "vehicle_year": null,
+        "engine": null,
+        "ecu_hardware": null,
+        "markets": null,
+        "reason": "Official screenshot illustrates alert UI; does not certify specific vehicle fitment"
+      },
+      "conditions": null,
+      "causes": null,
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "description_ar": "قراءة تنبيه Service Mode فعلياً مع الحمولة وتاريخ التعيين والمسح ثم الرجوع إلى دليل الخدمة المعتمد للمركبة",
+          "tools": [
+            "Tesla Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "wiring": null,
+      "parts": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "partial",
+      "verification_status": "OEM_DISPLAYED_LITERAL_VERIFIED; SUFFIX_SEMANTICS_AND_FITMENT_PENDING",
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "Service Mode User Guide",
+          "version": "2024.2.7",
+          "url": "https://service.tesla.com/docs/Public/ServiceMode/service_mode_user_guide.pdf",
+          "page": 7,
+          "verified_on": "2026-11-16"
+        }
+      ],
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|APP_w269_autopilotLimited|SERVICE_MODE_2024_2_7_DISPLAY_EXAMPLE",
+      "raw_code": "APP_w269_autopilotLimited",
+      "base_code": "APP_w269",
+      "code_family": "TESLA_OEM_SERVICE_MODE_ALERT_NOT_SAE_PBCU_DTC",
+      "category": "Tesla manufacturer service alert identifier",
+      "ecu_prefix": "APP",
+      "ecu_exact": null,
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_quality": "identifier_only_no_verified_official_definition",
+      "display_context": "Visible in Recent Alerts example screenshot in Tesla Service Mode User Guide, section Service Alerts, page 7 (software 2024.2.7)",
+      "applicability": {
+        "model": null,
+        "vehicle_year": null,
+        "engine": null,
+        "ecu_hardware": null,
+        "markets": null,
+        "reason": "Official screenshot illustrates alert UI; does not certify specific vehicle fitment"
+      },
+      "conditions": null,
+      "causes": null,
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "description_ar": "قراءة تنبيه Service Mode فعلياً مع الحمولة وتاريخ التعيين والمسح ثم الرجوع إلى دليل الخدمة المعتمد للمركبة",
+          "tools": [
+            "Tesla Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "wiring": null,
+      "parts": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "partial",
+      "verification_status": "OEM_DISPLAYED_LITERAL_VERIFIED; SUFFIX_SEMANTICS_AND_FITMENT_PENDING",
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "Service Mode User Guide",
+          "version": "2024.2.7",
+          "url": "https://service.tesla.com/docs/Public/ServiceMode/service_mode_user_guide.pdf",
+          "page": 7,
+          "verified_on": "2026-11-16"
+        }
+      ],
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|APP_w264_IssFault|SERVICE_MODE_2024_2_7_DISPLAY_EXAMPLE",
+      "raw_code": "APP_w264_IssFault",
+      "base_code": "APP_w264",
+      "code_family": "TESLA_OEM_SERVICE_MODE_ALERT_NOT_SAE_PBCU_DTC",
+      "category": "Tesla manufacturer service alert identifier",
+      "ecu_prefix": "APP",
+      "ecu_exact": null,
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_quality": "identifier_only_no_verified_official_definition",
+      "display_context": "Visible in Recent Alerts example screenshot in Tesla Service Mode User Guide, section Service Alerts, page 7 (software 2024.2.7)",
+      "applicability": {
+        "model": null,
+        "vehicle_year": null,
+        "engine": null,
+        "ecu_hardware": null,
+        "markets": null,
+        "reason": "Official screenshot illustrates alert UI; does not certify specific vehicle fitment"
+      },
+      "conditions": null,
+      "causes": null,
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "description_ar": "قراءة تنبيه Service Mode فعلياً مع الحمولة وتاريخ التعيين والمسح ثم الرجوع إلى دليل الخدمة المعتمد للمركبة",
+          "tools": [
+            "Tesla Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "wiring": null,
+      "parts": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "partial",
+      "verification_status": "OEM_DISPLAYED_LITERAL_VERIFIED; SUFFIX_SEMANTICS_AND_FITMENT_PENDING",
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "Service Mode User Guide",
+          "version": "2024.2.7",
+          "url": "https://service.tesla.com/docs/Public/ServiceMode/service_mode_user_guide.pdf",
+          "page": 7,
+          "verified_on": "2026-11-16"
+        }
+      ],
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|UI_a089_RadioSoftResetError|SERVICE_MODE_2024_2_7_DISPLAY_EXAMPLE",
+      "raw_code": "UI_a089_RadioSoftResetError",
+      "base_code": "UI_a089",
+      "code_family": "TESLA_OEM_SERVICE_MODE_ALERT_NOT_SAE_PBCU_DTC",
+      "category": "Tesla manufacturer service alert identifier",
+      "ecu_prefix": "UI",
+      "ecu_exact": null,
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_quality": "identifier_only_no_verified_official_definition",
+      "display_context": "Visible in Recent Alerts example screenshot in Tesla Service Mode User Guide, section Service Alerts, page 7 (software 2024.2.7)",
+      "applicability": {
+        "model": null,
+        "vehicle_year": null,
+        "engine": null,
+        "ecu_hardware": null,
+        "markets": null,
+        "reason": "Official screenshot illustrates alert UI; does not certify specific vehicle fitment"
+      },
+      "conditions": null,
+      "causes": null,
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "description_ar": "قراءة تنبيه Service Mode فعلياً مع الحمولة وتاريخ التعيين والمسح ثم الرجوع إلى دليل الخدمة المعتمد للمركبة",
+          "tools": [
+            "Tesla Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "wiring": null,
+      "parts": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "partial",
+      "verification_status": "OEM_DISPLAYED_LITERAL_VERIFIED; SUFFIX_SEMANTICS_AND_FITMENT_PENDING",
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "Service Mode User Guide",
+          "version": "2024.2.7",
+          "url": "https://service.tesla.com/docs/Public/ServiceMode/service_mode_user_guide.pdf",
+          "page": 7,
+          "verified_on": "2026-11-16"
+        }
+      ],
+      "release_to_app": "NOT_ACTIVE"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "schema": "dtc-nexis-permanent-brand-code-records-v1",
+  "brand": "tesla",
+  "archive_status": "PERMANENT_COLLECTED_SOURCE_DATA",
+  "release_to_app": "NOT_ACTIVE",
+  "source": {
+    "publisher": "Tesla",
+    "title": "Service Mode Release Notes",
+    "version": "2024.8",
+    "url": "https://service.tesla.com/docs/Public/ServiceMode/release-notes.html",
+    "accessed_on": "2026-11-16",
+    "evidence_tier": "OEM"
+  },
+  "record_count": 1,
+  "records": [
+    {
+      "id": "TESLA|TAS|TAS_a025_CrashEvent|OEM_SERVICE_MODE_2024_8",
+      "raw_code": "TAS_a025_CrashEvent",
+      "base_code": "TAS_a025",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_PBCU",
+      "definition_en": "Crash Event",
+      "translation_ar": "حدث اصطدام مسجّل في نظام التعليق الهوائي",
+      "definition_type": "OEM_ALERT_NAME_WITH_TECHNICAL_CONTEXT",
+      "ecu": "TAS (Tesla Air Suspension)",
+      "system": "Air suspension / chassis",
+      "applicability": {
+        "models": [
+          "Model S",
+          "Model X"
+        ],
+        "model_years": null,
+        "production_years": null,
+        "markets": null,
+        "engine_code": null,
+        "hardware_condition": "TAS air-suspension ECU present; verify against VIN and vehicle software",
+        "source_scope": "Tesla Service Mode 2024.8 release notes explicitly list Model S and Model X; no year or market constraints specified"
+      },
+      "condition_en": "Crash-detected alert present in TAS; the release note does not publish a full set predicate.",
+      "symptoms_ar": [
+        "تعليق هوائي قد يعرض تنبيهاً بعد حادث؛ تفاصيل التأثيرات تعتمد على حالة السيارة وتحتاج فحصاً"
+      ],
+      "causes": [
+        {
+          "cause_ar": "إشارة حادث مسجّلة داخل منظومة السيارة",
+          "source_confidence": "OEM confirms crash-detected alert, but precise originating signal and root-cause logic not in this document"
+        },
+        {
+          "cause_ar": "عطل في بيانات النظام أو الاتصال",
+          "source_confidence": "غير مؤكد؛ لا يعامل كسبب موثق لهذا الرمز"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "step_ar": "افحص تنبيهات Service Mode النشطة والتاريخية وسياق الحادث قبل المسح",
+          "tools": [
+            "Tesla Service Mode"
+          ],
+          "specifications": "غير مؤكد"
+        },
+        {
+          "order": 2,
+          "step_ar": "راجع حالة أنظمة السلامة والقيود بعد أي اصطدام قبل تمكين التعليق الهوائي أو إجراء إصلاح",
+          "tools": [
+            "Tesla OEM service instructions"
+          ],
+          "specifications": "معلومات إجراءات ما بعد الحادث غير مضمنة في هذه الوثيقة"
+        },
+        {
+          "order": 3,
+          "step_ar": "إذا اكتمل إصلاح سبب التنبيه وبواسطة فني مؤهل، استخدم إجراء المسح المخصص من Chassis > Suspension > TAS ECU عند ظهور الزر المرتبط بالتنبيه",
+          "tools": [
+            "Tesla Service Mode Plus where required"
+          ],
+          "specifications": "OEM documents button visibility only when alert is active"
+        }
+      ],
+      "live_data": [
+        {
+          "signal_name_en": null,
+          "translation_ar": null,
+          "expected_range": "غير مؤكد",
+          "reason": "Tesla release note does not specify payload signal names or numerical thresholds"
+        }
+      ],
+      "parts": [
+        {
+          "part": "Tesla Air Suspension controller",
+          "part_number": null,
+          "location": null,
+          "replace_decision": "Do not replace controller on alert alone"
+        }
+      ],
+      "wiring": {
+        "diagram": null,
+        "pinout": null,
+        "reason": "No applicable licensed OEM wiring/pinout in examined source"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "source_urls": [
+        "https://service.tesla.com/docs/Public/ServiceMode/release-notes.html"
+      ],
+      "verification_status": "OEM_ALERT_ID_AND_TAS_ECU_MODEL_FAMILY_CONFIRMED; EXACT_YEAR_VIN_ROOT_CAUSE_NOT_CONFIRMED",
+      "review_status": "PARTIAL_VERIFIED",
+      "verified_on": "2026-11-16"
+    }
+  ]
+}

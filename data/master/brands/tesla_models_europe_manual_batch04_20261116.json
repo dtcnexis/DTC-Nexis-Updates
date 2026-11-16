@@ -1,0 +1,2161 @@
+{
+  "schema": "dtc-nexis-permanent-brand-code-records-v1",
+  "brand": "Tesla",
+  "archive_status": "PERMANENT_COLLECTED_SOURCE_DATA",
+  "release_to_app": "NOT_ACTIVE",
+  "record_count": 32,
+  "compared_against_existing_identifiers": 151,
+  "duplicate_identifiers": 0,
+  "source_scope": "Tesla Model S (2021+) Europe Owner's Manual software 2026.20; model-year vehicle presence not guaranteed",
+  "source": {
+    "publisher": "Tesla",
+    "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+    "checked_on": "2026-11-16"
+  },
+  "records": [
+    {
+      "id": "TESLA|external_wall_connector|CC_a007|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "CC_a007",
+      "base_code": "CC_a007",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "external_wall_connector",
+      "definition_en": "Wall Connector input voltage too high",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "جهد دخل الشاحن الجداري أعلى من المجال المقبول",
+      "ecu": "CC",
+      "ecu_identification_verified": false,
+      "scope_notes": "Charging accessory or site wiring; not proof of vehicle ECU defect",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "جهد دخل الشاحن الجداري أعلى من المجال المقبول"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "على كهربائي مؤهل التحقق من جهد تغذية الشاحن ومطابقته لملصق الجهاز، دون افتراض عطل السيارة",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "CC_a007",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|external_wall_connector|CC_a008|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "CC_a008",
+      "base_code": "CC_a008",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "external_wall_connector",
+      "definition_en": "Wall Connector input voltage too low",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "جهد دخل الشاحن الجداري أقل من المجال المقبول",
+      "ecu": "CC",
+      "ecu_identification_verified": false,
+      "scope_notes": "Charging accessory or site wiring; not proof of vehicle ECU defect",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "جهد دخل الشاحن الجداري أقل من المجال المقبول"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "تُفحص تغذية الدائرة الكهربائية وجهدها بواسطة كهربائي مؤهل؛ قيمة الحد غير محددة هنا",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "CC_a008",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|external_wall_connector|CC_a009|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "CC_a009",
+      "base_code": "CC_a009",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "external_wall_connector",
+      "definition_en": "Wall Connector input wired incorrectly",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "توصيلات دخل الشاحن الجداري غير صحيحة",
+      "ecu": "CC",
+      "ecu_identification_verified": false,
+      "scope_notes": "Charging accessory or site wiring; not proof of vehicle ECU defect",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "توصيلات دخل الشاحن الجداري غير صحيحة"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "يُراجع ترتيب أسلاك التغذية والتأريض على ضوء دليل تركيب وحدة الشحن؛ لا تلمس توصيلات حية",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "CC_a009",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|external_wall_connector|CC_a010|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "CC_a010",
+      "base_code": "CC_a010",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "external_wall_connector",
+      "definition_en": "Wall Connector internal hardware problem",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "مشكلة داخلية في مكونات الشاحن الجداري",
+      "ecu": "CC",
+      "ecu_identification_verified": false,
+      "scope_notes": "Charging accessory or site wiring; not proof of vehicle ECU defect",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "مشكلة داخلية في مكونات الشاحن الجداري"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "افصل جلسة الشحن وأعد المحاولة؛ إذا استمر التنبيه يلزم فحص متخصص لتوصيلات الجهاز ومكوناته",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "CC_a010",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|external_wall_connector|CC_a011|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "CC_a011",
+      "base_code": "CC_a011",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "external_wall_connector",
+      "definition_en": "Wall Connector overtemperature protection",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "حماية من ارتفاع حرارة الشاحن الجداري",
+      "ecu": "CC",
+      "ecu_identification_verified": false,
+      "scope_notes": "Charging accessory or site wiring; not proof of vehicle ECU defect",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "حماية من ارتفاع حرارة الشاحن الجداري"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "تحقق من التهوية ومصادر الحرارة الخارجية قبل أي فحص كهربائي",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "CC_a011",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|external_wall_connector|CC_a012|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "CC_a012",
+      "base_code": "CC_a012",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "external_wall_connector",
+      "definition_en": "Wall Connector building-side connection overheated",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "ارتفاع حرارة وصلة المبنى المغذية للشاحن الجداري",
+      "ecu": "CC",
+      "ecu_identification_verified": false,
+      "scope_notes": "Charging accessory or site wiring; not proof of vehicle ECU defect",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "ارتفاع حرارة وصلة المبنى المغذية للشاحن الجداري"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "يُكلف كهربائي بفحص إحكام وصلات التغذية وسلامة التمديدات حسب دليل التركيب",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "CC_a012",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|external_wall_connector|CC_a019|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "CC_a019",
+      "base_code": "CC_a019",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "external_wall_connector",
+      "definition_en": "Wall Connector-to-vehicle communication error",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "خلل اتصال بين الشاحن الجداري والسيارة",
+      "ecu": "CC",
+      "ecu_identification_verified": false,
+      "scope_notes": "Charging accessory or site wiring; not proof of vehicle ECU defect",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "خلل اتصال بين الشاحن الجداري والسيارة"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "أعد تركيب مقبض الشحن، واختبر بمعدات مختلفة قبل الحكم على طرف معين",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "CC_a019",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|external_wall_connector|CC_a020|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "CC_a020",
+      "base_code": "CC_a020",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "external_wall_connector",
+      "definition_en": "Wall Connector internal hardware problem",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "مشكلة داخلية في الشاحن الجداري",
+      "ecu": "CC",
+      "ecu_identification_verified": false,
+      "scope_notes": "Charging accessory or site wiring; not proof of vehicle ECU defect",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "مشكلة داخلية في الشاحن الجداري"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "اتبع عزل سبب الخلل من دليل الشاحن؛ لا تستبدل شاحن السيارة الداخلي بناء على هذا التنبيه",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "CC_a020",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|external_wall_connector|CC_a021|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "CC_a021",
+      "base_code": "CC_a021",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "external_wall_connector",
+      "definition_en": "Wall Connector load-sharing primary unit missing",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "عدم وجود وحدة رئيسية في شبكة تقاسم حمل الشواحن",
+      "ecu": "CC",
+      "ecu_identification_verified": false,
+      "scope_notes": "Charging accessory or site wiring; not proof of vehicle ECU defect",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "عدم وجود وحدة رئيسية في شبكة تقاسم حمل الشواحن"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "راجع إعدادات الشبكة وتأكد أن بها وحدة رئيسية واحدة فقط",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "CC_a021",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|external_wall_connector|CC_a022|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "CC_a022",
+      "base_code": "CC_a022",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "external_wall_connector",
+      "definition_en": "Wall Connector load-sharing multiple primary units",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "وجود أكثر من وحدة رئيسية في شبكة تقاسم حمل الشواحن",
+      "ecu": "CC",
+      "ecu_identification_verified": false,
+      "scope_notes": "Charging accessory or site wiring; not proof of vehicle ECU defect",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "وجود أكثر من وحدة رئيسية في شبكة تقاسم حمل الشواحن"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "راجع إعدادات الوحدات بحيث تُحدد وحدة رئيسية واحدة فقط",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "CC_a022",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|external_wall_connector|CC_a023|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "CC_a023",
+      "base_code": "CC_a023",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "external_wall_connector",
+      "definition_en": "Too many paired Wall Connectors for load sharing",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "عدد الوحدات التابعة في تقاسم الحمل أكبر من المسموح",
+      "ecu": "CC",
+      "ecu_identification_verified": false,
+      "scope_notes": "Charging accessory or site wiring; not proof of vehicle ECU defect",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "عدد الوحدات التابعة في تقاسم الحمل أكبر من المسموح"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "افصل الوحدات الزائدة عن مجموعة تقاسم الحمل طبقاً لتصميم الجيل المعني من الشاحن",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "CC_a023",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|external_wall_connector|CC_a024|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "CC_a024",
+      "base_code": "CC_a024",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "external_wall_connector",
+      "definition_en": "Wall Connector primary unit current setting too low",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "إعداد تيار الوحدة الرئيسية للشاحن الجداري منخفض جداً",
+      "ecu": "CC",
+      "ecu_identification_verified": false,
+      "scope_notes": "Charging accessory or site wiring; not proof of vehicle ECU defect",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "إعداد تيار الوحدة الرئيسية للشاحن الجداري منخفض جداً"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "يفحص كهربائي إعداد تيار التشغيل الخاص بوحدة الشحن الرئيسية وفق دليل التركيب",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "CC_a024",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|external_wall_connector|CC_a025|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "CC_a025",
+      "base_code": "CC_a025",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "external_wall_connector",
+      "definition_en": "Wall Connector internal hardware problem",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "مشكلة داخلية في مكونات الشاحن الجداري",
+      "ecu": "CC",
+      "ecu_identification_verified": false,
+      "scope_notes": "Charging accessory or site wiring; not proof of vehicle ECU defect",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "مشكلة داخلية في مكونات الشاحن الجداري"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "شخّص الجهاز ومصدر التغذية قبل اعتبار الشاحن الجداري بحاجة إلى الخدمة",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "CC_a025",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|vehicle_charge_port|CP_a043|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "CP_a043",
+      "base_code": "CP_a043",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "vehicle_charge_port",
+      "definition_en": "Charge port door position sensor malfunction",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "خلل حساس موضع باب منفذ الشحن",
+      "ecu": "CP",
+      "ecu_identification_verified": false,
+      "scope_notes": "Vehicle alert; do not treat as latched service DTC without separate DTC evidence",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "خلل حساس موضع باب منفذ الشحن"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "اغلق باب منفذ الشحن وافتحه مجدداً، ثم تحقق من استجابة استشعار الموضع",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "CP_a043",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|vehicle_charge_port|CP_a046|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "CP_a046",
+      "base_code": "CP_a046",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "vehicle_charge_port",
+      "definition_en": "Charging equipment communication interrupted",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "انقطاع الاتصال بمعدات الشحن الخارجية",
+      "ecu": "CP",
+      "ecu_identification_verified": false,
+      "scope_notes": "Vehicle alert; do not treat as latched service DTC without separate DTC evidence",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "انقطاع الاتصال بمعدات الشحن الخارجية"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "تأكد من تغذية محطة الشحن، وجرّب محطة أخرى لفصل مشكلة البنية التحتية عن السيارة",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "CP_a046",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|vehicle_charge_port|CP_a055|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "CP_a055",
+      "base_code": "CP_a055",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "vehicle_charge_port",
+      "definition_en": "Charging equipment communication interrupted",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "انقطاع الاتصال بمعدات الشحن الخارجية",
+      "ecu": "CP",
+      "ecu_identification_verified": false,
+      "scope_notes": "Vehicle alert; do not treat as latched service DTC without separate DTC evidence",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "انقطاع الاتصال بمعدات الشحن الخارجية"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "تحقق من وضع مقبض الشحن وحالة تغذية المحطة ثم اختبر بمعدة شحن أخرى",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "CP_a055",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|vehicle_charge_port|CP_a056|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "CP_a056",
+      "base_code": "CP_a056",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "vehicle_charge_port",
+      "definition_en": "Charge cable connection interrupted during charging",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "انقطع اتصال كابل الشحن أثناء عملية الشحن",
+      "ecu": "CP",
+      "ecu_identification_verified": false,
+      "scope_notes": "Vehicle alert; do not treat as latched service DTC without separate DTC evidence",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "انقطع اتصال كابل الشحن أثناء عملية الشحن"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "أوقف جلسة الشحن بأمان وتحقق من تثبيت الكابل والمقبض قبل إعادة المحاولة",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "CP_a056",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|vehicle_charge_port|CP_a058|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "CP_a058",
+      "base_code": "CP_a058",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "vehicle_charge_port",
+      "definition_en": "Repeated failed AC charging attempts; retry pending",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "فشلت محاولات شحن AC المتكررة وستُعاد المحاولة",
+      "ecu": "CP",
+      "ecu_identification_verified": false,
+      "scope_notes": "Vehicle alert; do not treat as latched service DTC without separate DTC evidence",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "فشلت محاولات شحن AC المتكررة وستُعاد المحاولة"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "اقرأ التنبيهات المصاحبة المتعلقة بالشحن واختبر كابلاً ومحطة مختلفين",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "CP_a058",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|vehicle_charge_port|CP_a079|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "CP_a079",
+      "base_code": "CP_a079",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "vehicle_charge_port",
+      "definition_en": "Charge port latch unable to secure cable in cold conditions",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "قفل منفذ الشحن لا يثبت المقبض في درجات حرارة منخفضة",
+      "ecu": "CP",
+      "ecu_identification_verified": false,
+      "scope_notes": "Vehicle alert; do not treat as latched service DTC without separate DTC evidence",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "قفل منفذ الشحن لا يثبت المقبض في درجات حرارة منخفضة"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "افحص إدخال المقبض والعوائق ثم استخدم وظيفة إزالة الجليد قبل الحكم على آلية القفل",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "CP_a079",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|vehicle_charge_port|CP_a146|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "CP_a146",
+      "base_code": "CP_a146",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "vehicle_charge_port",
+      "definition_en": "External charging station reports a fault",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "محطة الشحن الخارجية تبلغ عن عطل يمنع الشحن",
+      "ecu": "CP",
+      "ecu_identification_verified": false,
+      "scope_notes": "Vehicle alert; do not treat as latched service DTC without separate DTC evidence",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "محطة الشحن الخارجية تبلغ عن عطل يمنع الشحن"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "اقرأ عطل المحطة نفسها وجرّب محطة أخرى؛ لا تفترض خللاً في السيارة",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "CP_a146",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|vehicle_drive_chassis|DI_a245|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "DI_a245",
+      "base_code": "DI_a245",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "vehicle_drive_chassis",
+      "definition_en": "Vehicle Hold function unavailable",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "وظيفة تثبيت السيارة عند التوقف غير متاحة",
+      "ecu": "DI",
+      "ecu_identification_verified": false,
+      "scope_notes": "Vehicle alert; do not treat as latched service DTC without separate DTC evidence",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "وظيفة تثبيت السيارة عند التوقف غير متاحة"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "يجب إبقاء دواسة الفرامل مضغوطة عند الوقوف، ثم مراجعة التنبيهات المصاحبة واستمرار الحالة",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "DI_a245",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|vehicle_power_conversion|PCS_a052|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "PCS_a052",
+      "base_code": "PCS_a052",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "vehicle_power_conversion",
+      "definition_en": "Requested AC supply not detected by onboard charger",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "الشاحن الداخلي لا يرصد تغذية AC المطلوبة",
+      "ecu": "PCS",
+      "ecu_identification_verified": false,
+      "scope_notes": "Vehicle alert; do not treat as latched service DTC without separate DTC evidence",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "الشاحن الداخلي لا يرصد تغذية AC المطلوبة"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "تحقق أولاً من أن معدة الشحن الخارجية تقدم القدرة؛ جرّب مصدر AC آخر مع مراجعة سجل التنبيهات",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "PCS_a052",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|vehicle_power_conversion|PCS_a073|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "PCS_a073",
+      "base_code": "PCS_a073",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "vehicle_power_conversion",
+      "definition_en": "Unrequested AC input voltage detected by onboard charger",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "رُصد جهد على مدخل الشحن AC من دون طلب تشغيله",
+      "ecu": "PCS",
+      "ecu_identification_verified": false,
+      "scope_notes": "Vehicle alert; do not treat as latched service DTC without separate DTC evidence",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "رُصد جهد على مدخل الشحن AC من دون طلب تشغيله"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "اعزل احتمال وجود تلامس عالق في معدة الشحن الخارجية، واختبر باستخدام جهاز آخر مع إجراءات سلامة مناسبة",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "PCS_a073",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|external_mobile_connector|UMC_a002|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "UMC_a002",
+      "base_code": "UMC_a002",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "external_mobile_connector",
+      "definition_en": "Mobile Connector ground fault protection tripped",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "فصلت حماية تسرب التيار في كابل الشحن المحمول",
+      "ecu": "UMC",
+      "ecu_identification_verified": false,
+      "scope_notes": "Charging accessory or site wiring; not proof of vehicle ECU defect",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "فصلت حماية تسرب التيار في كابل الشحن المحمول"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "تحقق من الرطوبة والأضرار في المقبض والمقبس، واختبر وحدة شحن أخرى",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "UMC_a002",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|external_mobile_connector|UMC_a010|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "UMC_a010",
+      "base_code": "UMC_a010",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "external_mobile_connector",
+      "definition_en": "Mobile Connector wall adapter connection overheated",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "ارتفاع حرارة وصلة محوّل القابس بوحدة الشحن المحمولة",
+      "ecu": "UMC",
+      "ecu_identification_verified": false,
+      "scope_notes": "Charging accessory or site wiring; not proof of vehicle ECU defect",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "ارتفاع حرارة وصلة محوّل القابس بوحدة الشحن المحمولة"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "افصل التغذية ثم افحص تثبيت المحول وجفاف الوصلات قبل إعادة التجربة",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "UMC_a010",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|external_mobile_connector|UMC_a017|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "UMC_a017",
+      "base_code": "UMC_a017",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "external_mobile_connector",
+      "definition_en": "Mobile Connector wall plug overtemperature; rate reduced",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "ارتفاع حرارة قابس الشحن المحمول مع خفض التيار",
+      "ecu": "UMC",
+      "ecu_identification_verified": false,
+      "scope_notes": "Charging accessory or site wiring; not proof of vehicle ECU defect",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "ارتفاع حرارة قابس الشحن المحمول مع خفض التيار"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "افحص القابس والمقبس وتوصيلات الحائط بواسطة مختص، وتجنب استخدام المقبس التالف",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "UMC_a017",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|external_mobile_connector|UMC_a040|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "UMC_a040",
+      "base_code": "UMC_a040",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "external_mobile_connector",
+      "definition_en": "Mobile Connector insufficient protective earth",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "تأريض غير كاف لوحدة الشحن المحمولة",
+      "ecu": "UMC",
+      "ecu_identification_verified": false,
+      "scope_notes": "Charging accessory or site wiring; not proof of vehicle ECU defect",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "تأريض غير كاف لوحدة الشحن المحمولة"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "لا تستخدم مأخذاً غير مؤرض؛ اطلب من كهربائي التحقق من التأريض",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "UMC_a040",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|vehicle_low_voltage_and_network|VCFRONT_a173|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "VCFRONT_a173",
+      "base_code": "VCFRONT_a173",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "vehicle_low_voltage_and_network",
+      "definition_en": "Incompatible ECU firmware versions affecting HV operation",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "عدم توافق إصدارات برامج وحدات تحكم مطلوبة لتشغيل الجهد العالي",
+      "ecu": "VCFRONT",
+      "ecu_identification_verified": false,
+      "scope_notes": "Vehicle alert; do not treat as latched service DTC without separate DTC evidence",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "عدم توافق إصدارات برامج وحدات تحكم مطلوبة لتشغيل الجهد العالي"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "قارن إصدارات البرامج وحالة تحديث الوحدات في Service Mode واتبع إجراء Tesla المعتمد دون تغيير معايرات عشوائية",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "VCFRONT_a173",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|vehicle_low_voltage|VCBATT_a180|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "VCBATT_a180",
+      "base_code": "VCBATT_a180",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "vehicle_low_voltage",
+      "definition_en": "Low-voltage electrical system power reduced",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "انخفاض قدرة تغذية النظام الكهربائي منخفض الجهد",
+      "ecu": "VCBATT",
+      "ecu_identification_verified": false,
+      "scope_notes": "Vehicle alert; do not treat as latched service DTC without separate DTC evidence",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "انخفاض قدرة تغذية النظام الكهربائي منخفض الجهد"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "راجع تنبيهات الجهد المنخفض الأخرى وحالة مصدر التغذية قبل استبدال أي بطارية",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "VCBATT_a180",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|vehicle_low_voltage|VCBATT_a220|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "VCBATT_a220",
+      "base_code": "VCBATT_a220",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "vehicle_low_voltage",
+      "definition_en": "Low-voltage battery cannot support all vehicle functions",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "بطارية الجهد المنخفض غير قادرة على دعم وظائف السيارة",
+      "ecu": "VCBATT",
+      "ecu_identification_verified": false,
+      "scope_notes": "Vehicle alert; do not treat as latched service DTC without separate DTC evidence",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "بطارية الجهد المنخفض غير قادرة على دعم وظائف السيارة"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "أوقف السيارة بأمان عند ظهور التنبيه أثناء القيادة واطلب الفحص؛ لا تفترض أن سبب الخلل البطارية وحدها",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "VCBATT_a220",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|vehicle_low_voltage|VCBATT_a402|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "VCBATT_a402",
+      "base_code": "VCBATT_a402",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "vehicle_low_voltage",
+      "definition_en": "Electrical system backup low-voltage supply unavailable",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "مصدر التغذية الاحتياطي منخفض الجهد غير متاح",
+      "ecu": "VCBATT",
+      "ecu_identification_verified": false,
+      "scope_notes": "Vehicle alert; do not treat as latched service DTC without separate DTC evidence",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "مصدر التغذية الاحتياطي منخفض الجهد غير متاح"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "افحص حالة التغذية الاحتياطية والأعراض المصاحبة وفق إجراءات Tesla؛ لا توجد قيم جهد موثقة لهذا الرمز هنا",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "VCBATT_a402",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    },
+    {
+      "id": "TESLA|vehicle_low_voltage|VCBATT_a496|MODELS_EU_MANUAL_2026_20",
+      "raw_code": "VCBATT_a496",
+      "base_code": "VCBATT_a496",
+      "brand": "Tesla",
+      "code_family": "TESLA_MANUFACTURER_ALERT_NOT_SAE_J2012_DTC",
+      "category": "vehicle_low_voltage",
+      "definition_en": "Electrical system preparing to shut down",
+      "definition_en_type": "technical paraphrase of Tesla owner's manual alert, not verbatim official DTC description",
+      "translation_ar": "النظام الكهربائي يستعد لإيقاف التشغيل",
+      "ecu": "VCBATT",
+      "ecu_identification_verified": false,
+      "scope_notes": "Vehicle alert; do not treat as latched service DTC without separate DTC evidence",
+      "applicability": {
+        "manual_model": "Model S (2021+)",
+        "manual_region": "Europe",
+        "manual_version_at_retrieval": "2026.20",
+        "exact_vin_or_year_verified": false,
+        "vehicle_engine_code": null,
+        "hardware_variant": null,
+        "vehicle_ecu_mapping": null,
+        "markets_confirmed_at_vin_level": null
+      },
+      "symptoms_ar": [
+        "النظام الكهربائي يستعد لإيقاف التشغيل"
+      ],
+      "causes_ar": [
+        "السبب الدقيق يحتاج قراءات ميدانية ولا يثبت عطل قطعة واحدة بمجرد التنبيه"
+      ],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "ar": "يجب التوقف بأمان وطلب المساعدة؛ يحظر إجراء فحوص جهد عالٍ دون تأهيل",
+          "tools": [
+            "Tesla Service Mode / Charging interface; qualified electrician for mains-side wiring"
+          ]
+        },
+        {
+          "order": 2,
+          "ar": "تحقق من التنبيهات المصاحبة وتكرار الحالة وسجل التوقيت ثم اتبع دليل Tesla المطابق لنسخة المركبة/معدة الشحن",
+          "tools": [
+            "Tesla OEM manual / Service Mode"
+          ]
+        }
+      ],
+      "live_data": [],
+      "test_specifications": "غير مؤكد — no numerical electrical fault thresholds verified for this record",
+      "parts": [],
+      "parts_location": null,
+      "wiring": null,
+      "images": [],
+      "video": null,
+      "sources": [
+        {
+          "publisher": "Tesla",
+          "title": "2021+ Model S Owner's Manual — Troubleshooting Alerts",
+          "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+          "section_code": "VCBATT_a496",
+          "document_region": "Europe",
+          "manual_software_version": "2026.20",
+          "accessed_on": "2026-11-16"
+        }
+      ],
+      "verification_status": "OEM_ALERT_CODE_AND_GENERAL_MEANING_VERIFIED; DIAGNOSTIC_THRESHOLD_VIN_ENGINE_ECU_NOT_VERIFIED",
+      "review_status": "partial",
+      "release_to_app": "NOT_ACTIVE"
+    }
+  ]
+}

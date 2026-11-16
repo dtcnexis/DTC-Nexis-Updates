@@ -1,0 +1,125 @@
+{
+  "schema": "dtc-nexis-tesla-oem-diagnostic-workflows-v1",
+  "brand": "Tesla",
+  "release_to_app": "NOT_ACTIVE",
+  "review_on": "2026-11-16",
+  "items": [
+    {
+      "category": "DTC vs Alert",
+      "applies": "All Service Mode supported vehicles as applicable",
+      "observed_version": "reference article 2026-01-22, 2026-02-20",
+      "action_ar": "استخدم Tools > Alerts & DTCs. لا تخلط سجل التنبيهات العامة مع DTCs المثبتة التي تظل مسجلة حتى مسحها بأداة الصيانة.",
+      "live_data": [
+        "DTC set conditions",
+        "DTC impact",
+        "DTC remedy conditions"
+      ],
+      "numeric_thresholds": null,
+      "source_index": 1
+    },
+    {
+      "category": "ABS/ESP",
+      "applies": "Model 3, Model Y, 2021+ Model S, 2021+ Model X",
+      "observed_version": "2023.38 Service Mode",
+      "action_ar": "افحص Chassis > Brakes وقيم حالات حساسات سرعة العجلات ووحدات ESP وEPB قبل استبدال الأجزاء. لم توثق هذه المصادر عتبة قياس لكل رمز.",
+      "live_data": [
+        "Wheel speed sensor live state",
+        "ESP health state",
+        "Electronic Parking Brake status"
+      ],
+      "numeric_thresholds": null,
+      "source_index": 0
+    },
+    {
+      "category": "SRS/RCM safety",
+      "applies": "Tesla model/version-specific; 2024+ Model 3 precautions cited",
+      "observed_version": "2025.44.3 for disarm/resistance panel on listed models",
+      "action_ar": "افحص RCM Alerts والتزم بإجراءات تعطيل الوسائد الرسمية قبل التعامل مع منظومة السلامة. يمنع استخدام ملتيميتر عام لفحص دوائر الوسائد أو شدادات الأحزمة.",
+      "live_data": [
+        "RCM armed state",
+        "Restraints component status",
+        "Approved service resistance panel"
+      ],
+      "numeric_thresholds": null,
+      "source_index": 2
+    },
+    {
+      "category": "CAN/network",
+      "applies": "Model S/3/X/Y/Cybertruck depending installed infotainment",
+      "observed_version": "2025.38 CAN Viewer; 2026.26 Signal Viewer",
+      "action_ar": "استخدم CAN Viewer / Signal Viewer في Service Mode Plus لتفقد وجود الرسائل وأعطال الاتصال، واربط النتائج بطوبولوجيا الشبكة الصحيحة. لا تفترض أطرافاً أو مقاومات شبكة دون مخطط إصدار محدد.",
+      "live_data": [
+        "CAN message present/timeout (exact signal names unavailable)",
+        "Signal Viewer monitored signal"
+      ],
+      "numeric_thresholds": null,
+      "source_index": 0
+    },
+    {
+      "category": "Drive inverter",
+      "applies": "Model 3, Model Y, 2021+ Model S, 2021+ Model X, Cybertruck depending software",
+      "observed_version": "2024.32 Drive Unit panel; 2026.20 chart popups",
+      "action_ar": "راقب حالة وحدة الدفع وتفعيل تنبيهاتها، مع ربطها بإشارات دعسة التسارع حسب نسخة المركبة؛ لا تعتمد مجال تشغيل عددياً غير موثق.",
+      "live_data": [
+        "Drive Unit live status",
+        "Accelerator pedal signal (exact signal names depend on firmware)"
+      ],
+      "numeric_thresholds": null,
+      "source_index": 0
+    },
+    {
+      "category": "HV isolation",
+      "applies": "All vehicles with updated HV Panel; component display depends on installed hardware",
+      "observed_version": "2026.38 HV panel",
+      "action_ar": "تُعرض مقاومة العزل بالصفحة المختصة للمكونات والرموز المصاحبة. لا تنشئ حد مقاومة عام ولا تفحص كابلات الجهد العالي دون تدريب وعزل معتمد.",
+      "live_data": [
+        "Current isolation resistance by component"
+      ],
+      "numeric_thresholds": null,
+      "source_index": 0
+    },
+    {
+      "category": "Charging",
+      "applies": "Model 3, Model Y, S/X 2021+, Cybertruck",
+      "observed_version": "2025.20 charge port ECU reset",
+      "action_ar": "تتوفر أداة TEST-RESET_CP بعد أعمال خدمة منفذ الشحن في بعض النسخ، ولا تُستخدم كبديل عن تحديد سبب التنبيه.",
+      "live_data": [
+        "Charge port ECU reset routine result"
+      ],
+      "numeric_thresholds": null,
+      "source_index": 0
+    }
+  ],
+  "record_count": 7,
+  "sources": [
+    {
+      "title": "Tesla Service Mode Release Notes",
+      "publisher": "Tesla",
+      "url": "https://service.tesla.com/docs/Public/ServiceMode/release-notes.html",
+      "read_on": "2026-11-16",
+      "version_scope": "2023.38 through 2026.38.x"
+    },
+    {
+      "title": "Tesla Diagnostic Trouble Codes (DTCs) – 2024+ Model 3 Service Manual",
+      "publisher": "Tesla",
+      "url": "https://service.tesla.com/docs/Model3/ServiceManual/2024/en-us/GUID-BB78BE60-83DF-49A9-9623-5A2CA9A29A5C.html",
+      "read_on": "2026-11-16",
+      "version_scope": "Article published 2026-01-22, revised 2026-02-20"
+    },
+    {
+      "title": "Tesla Airbag and Supplementary Restraint System Precautions — Model 3 2024+",
+      "publisher": "Tesla",
+      "url": "https://service.tesla.com/docs/Model3/ServiceManual/2024/en-us/GUID-2F9DB994-2578-46CF-BFAE-6E1686458045.html",
+      "read_on": "2026-11-16",
+      "version_scope": "Model 3 2024+ service manual"
+    },
+    {
+      "title": "Tesla Service Mode User Guide (2024.2.7)",
+      "publisher": "Tesla",
+      "url": "https://service.tesla.com/docs/Public/ServiceMode/service_mode_user_guide.pdf",
+      "read_on": "2026-11-16",
+      "version_scope": "Software 2024.2.7"
+    }
+  ],
+  "disclaimer": "These workflows are documentation pointers. Not executable repair instructions or quantitative validation for all Tesla ECUs, and not proof that candidate third-party alert identifiers are genuine."
+}
