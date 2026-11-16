@@ -1,0 +1,89 @@
+{
+  "schema": "dtc-nexis-opel-cumulative-progress-v1",
+  "brand": "Opel / Vauxhall",
+  "date": "2026-11-16",
+  "repository": "dtcnexis/DTC-Nexis-Updates",
+  "branch": "data/opel-vauxhall-dtc-continuation-20261116",
+  "baseline_main_records": 37,
+  "previous_batch03_04_unique_codes": 20,
+  "most_recent_batch05_unique_codes": 30,
+  "latest_batch05_variant_records": 32,
+  "total_distinct_base_codes": 87,
+  "total_variant_records": 90,
+  "total_new_draft_applicability_records": 48,
+  "review_queue_items": 50,
+  "duplicate_base_codes_across_batches": [],
+  "verification": "source/technical context; not all OEM certified, SAE definitions not licensed",
+  "source_policy": "new images not collected; old images preserved",
+  "file_readbacks": [
+    {
+      "path": "data/master/brands/opel_vauxhall.json",
+      "sha": "82981e9f9dd2f8c4e33ca8446e47d85cc6d6ca9e",
+      "rows": 37
+    },
+    {
+      "path": "data/master/brands/opel_vauxhall_batch03_context_20261116.json",
+      "sha": "cb1ed1889ee03f93c70a62eb39683645a130fa12",
+      "rows": 16
+    },
+    {
+      "path": "data/master/brands/opel_vauxhall_batch04_context_20261116.json",
+      "sha": "a1f9ebb5e47d55db7abdc591ddd2dfa9fecba267",
+      "rows": 5
+    },
+    {
+      "path": "data/master/brands/opel_vauxhall_batch05_context_20261116.json",
+      "sha": "01f733801ee9eaa216c0ed751c60ec4da204cd1f",
+      "rows": 32
+    },
+    {
+      "path": "data/master/brands/opel_vauxhall_batch03_applicability_20261116.json",
+      "sha": "40d8345ef3ad25d9df9f34cf3dd71a3f08ce31bf",
+      "rows": 24
+    },
+    {
+      "path": "data/master/brands/opel_vauxhall_batch04_applicability_20261116.json",
+      "sha": "f721f695d7563eaa586a3e6c4ce590be1ffd50ec",
+      "rows": 6
+    },
+    {
+      "path": "data/master/brands/opel_vauxhall_batch05_applicability_20261116.json",
+      "sha": "a656dc548da0d9c7830209d583576d62e0b6ddba",
+      "rows": 18
+    },
+    {
+      "path": "data/review-queue/opel_vauxhall_20261116.json",
+      "sha": "0bb887c10b2e97b3da26adc19ec5bbdc48a37b8f",
+      "rows": 15
+    },
+    {
+      "path": "data/review-queue/opel_vauxhall_20261116_supplement.json",
+      "sha": "dc8309cca959ca27806a12078c33b2f4675d247f",
+      "rows": 2
+    },
+    {
+      "path": "data/review-queue/opel_vauxhall_20261116_batch05.json",
+      "sha": "fa297eacef824f77cf79be08a9a91cdbead109fc",
+      "rows": 33
+    }
+  ],
+  "checks": {
+    "no_cross_batch_base_code_overlap": true,
+    "all_unique_code_ids": true,
+    "links_syntactically_complete": true,
+    "queue_separate": true,
+    "source_links_recorded": true,
+    "no_batch05_images": true
+  },
+  "release_to_app": "NOT_ACTIVE",
+  "pr": "https://github.com/dtcnexis/DTC-Nexis-Updates/pull/8",
+  "remaining": [
+    "OEM/SAE J2012DA authoritative individual DTC descriptors",
+    "All engine/ECU/VIN application variants for Sweden and other regions",
+    "Airbag module-specific GM failures and suffix safety review",
+    "PSA/Stellantis platform coverage",
+    "Reference Live Data values, pinouts, licensed schematics",
+    "Cross-ECU meanings and duplicates from all legacy raw files",
+    "Review 50 deferred items after app development"
+  ]
+}
