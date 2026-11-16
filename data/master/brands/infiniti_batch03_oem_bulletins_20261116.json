@@ -1,0 +1,568 @@
+{
+  "schema": "dtcnexis-infiniti-oem-bulletin-batch03-v1",
+  "brand": "Infiniti",
+  "created": "2026-11-16",
+  "baseline_local_unique_codes": 65,
+  "new_distinct_codes": 5,
+  "records": [
+    {
+      "brand": "Infiniti",
+      "release_to_app": false,
+      "all_markets_verified": false,
+      "market": "North America / bulletin scope only; Sweden and Europe not verified",
+      "status": "OEM_BULLETIN_SCOPE_VERIFIED_NOT_RELEASED",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "review_status": "draft"
+      },
+      "wiring": {
+        "pinouts": null,
+        "schematic": null,
+        "verification": "غير موثق لهذه النسخة"
+      },
+      "source_format": "CONSULT/OBD DTC",
+      "verification_date": "2026-11-16",
+      "record_id": "INF-20261116-P0139",
+      "code": "P0139",
+      "code_base": "P0139",
+      "failure_type": null,
+      "classification": "SAE_generic_code_family_requires_J2012DA_crosscheck",
+      "ecu": "ECM",
+      "definition_en": "Heated oxygen sensor 2 (B1) circuit slow response",
+      "translation_ar": "بطء استجابة دائرة حساس الأكسجين المُسخّن الثاني — البنك 1",
+      "applicability": {
+        "models": [
+          {
+            "model": "Q50 Sedan",
+            "chassis": "V37",
+            "model_years": "2014"
+          },
+          {
+            "model": "Q50 Hybrid",
+            "chassis": "V37",
+            "model_years": "2014"
+          },
+          {
+            "model": "G37 Sedan/Coupe/Convertible",
+            "chassis": "V36",
+            "model_years": "2012-2013"
+          },
+          {
+            "model": "Q60 Coupe/Convertible",
+            "chassis": "V36",
+            "model_years": "2014"
+          },
+          {
+            "model": "FX37",
+            "chassis": "S51",
+            "model_years": "2013",
+            "engine_code": "VQ37HR"
+          },
+          {
+            "model": "QX70",
+            "chassis": "S51",
+            "model_years": "2014",
+            "engine_code": "VQ37HR"
+          },
+          {
+            "model": "EX37",
+            "chassis": "J50",
+            "model_years": "2013"
+          },
+          {
+            "model": "QX50",
+            "chassis": "J50",
+            "model_years": "2014"
+          },
+          {
+            "model": "M37 Sedan",
+            "chassis": "Y51",
+            "model_years": "2013"
+          }
+        ],
+        "year_kind": "MODEL_YEAR",
+        "engine_code": "غير مؤكد ما لم يذكر صراحة في نطاق الموديل",
+        "source_id": "ITB13-056a",
+        "market_scope": "North America / bulletin scope only; Sweden and Europe not verified"
+      },
+      "source_ids": [
+        "ITB13-056a"
+      ],
+      "symptoms_ar": [
+        "MIL مضيئة مع الرمز المسجّل في ECM وفق النشرة"
+      ],
+      "causes_ar": [
+        {
+          "item": "استجابة دائرة حساس الأكسجين الخلفي بطيئة؛ تحديد السبب المادي يتطلب ESM",
+          "certainty": "التعريف موثق؛ السبب التفصيلي غير مؤكد"
+        },
+        {
+          "item": "النسخة البرمجية لوحدة ECM ضمن قائمة النشرة",
+          "certainty": "شرط تطبيق إجراء البرمجة وليس دليلاً على تلف الحساس"
+        }
+      ],
+      "diagnostic_steps_ar": [
+        "اقرأ الرمز المخزن بالـ CONSULT وحدد البنك 1.",
+        "تحقق من الموديل/سنة الموديل وECM Part Number مقابل Table A في ITB13-056a.",
+        "عند عدم مطابقة رقم ECM، ارجع إلى ESM؛ لا تعمم إجراء إعادة البرمجة.",
+        "عند مطابقة رقم ECM، ينفذ متخصص إعادة البرمجة عبر CONSULT وفق النشرة ثم إجراءات التعلم ومسح الرموز."
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (IAVL preparation only)",
+          "name_ar": "حرارة سائل التبريد للتعلم بعد البرمجة فقط",
+          "condition": "عملية IAVL، وليس حد ظهور P0139/P0159",
+          "reference": "70–105 °C",
+          "source": "ITB13-056a"
+        },
+        {
+          "name_en": "Battery Voltage (at idle, IAVL preparation only)",
+          "name_ar": "جهد البطارية عند الخمول لتعلم IAVL فقط",
+          "condition": "IAVL",
+          "reference": ">12.9 V",
+          "source": "ITB13-056a"
+        }
+      ],
+      "tools": [
+        "CONSULT-III plus",
+        "ECM parts catalog",
+        "approved battery maintainer for reprogramming"
+      ],
+      "parts": [
+        {
+          "name": "Rear heated oxygen sensor, bank 1",
+          "location": "غير موثق لهذا الموديل والمحرك"
+        }
+      ],
+      "diagnostic_warning": "النشرة تتناول إجراء ECM محددًا؛ لا تثبت أن تبديل الحساس هو الحل."
+    },
+    {
+      "brand": "Infiniti",
+      "release_to_app": false,
+      "all_markets_verified": false,
+      "market": "North America / bulletin scope only; Sweden and Europe not verified",
+      "status": "OEM_BULLETIN_SCOPE_VERIFIED_NOT_RELEASED",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "review_status": "draft"
+      },
+      "wiring": {
+        "pinouts": null,
+        "schematic": null,
+        "verification": "غير موثق لهذه النسخة"
+      },
+      "source_format": "CONSULT/OBD DTC",
+      "verification_date": "2026-11-16",
+      "record_id": "INF-20261116-P0159",
+      "code": "P0159",
+      "code_base": "P0159",
+      "failure_type": null,
+      "classification": "SAE_generic_code_family_requires_J2012DA_crosscheck",
+      "ecu": "ECM",
+      "definition_en": "Heated oxygen sensor 2 (B2) circuit slow response",
+      "translation_ar": "بطء استجابة دائرة حساس الأكسجين المُسخّن الثاني — البنك 2",
+      "applicability": {
+        "models": [
+          {
+            "model": "Q50 Sedan",
+            "chassis": "V37",
+            "model_years": "2014"
+          },
+          {
+            "model": "Q50 Hybrid",
+            "chassis": "V37",
+            "model_years": "2014"
+          },
+          {
+            "model": "G37 Sedan/Coupe/Convertible",
+            "chassis": "V36",
+            "model_years": "2012-2013"
+          },
+          {
+            "model": "Q60 Coupe/Convertible",
+            "chassis": "V36",
+            "model_years": "2014"
+          },
+          {
+            "model": "FX37",
+            "chassis": "S51",
+            "model_years": "2013",
+            "engine_code": "VQ37HR"
+          },
+          {
+            "model": "QX70",
+            "chassis": "S51",
+            "model_years": "2014",
+            "engine_code": "VQ37HR"
+          },
+          {
+            "model": "EX37",
+            "chassis": "J50",
+            "model_years": "2013"
+          },
+          {
+            "model": "QX50",
+            "chassis": "J50",
+            "model_years": "2014"
+          },
+          {
+            "model": "M37 Sedan",
+            "chassis": "Y51",
+            "model_years": "2013"
+          }
+        ],
+        "year_kind": "MODEL_YEAR",
+        "engine_code": "غير مؤكد ما لم يذكر صراحة في نطاق الموديل",
+        "source_id": "ITB13-056a",
+        "market_scope": "North America / bulletin scope only; Sweden and Europe not verified"
+      },
+      "source_ids": [
+        "ITB13-056a"
+      ],
+      "symptoms_ar": [
+        "MIL مضيئة مع الرمز المسجّل في ECM وفق النشرة"
+      ],
+      "causes_ar": [
+        {
+          "item": "استجابة دائرة حساس الأكسجين الخلفي بطيئة؛ تحديد السبب المادي يتطلب ESM",
+          "certainty": "التعريف موثق؛ السبب التفصيلي غير مؤكد"
+        },
+        {
+          "item": "النسخة البرمجية لوحدة ECM ضمن قائمة النشرة",
+          "certainty": "شرط تطبيق إجراء البرمجة وليس دليلاً على تلف الحساس"
+        }
+      ],
+      "diagnostic_steps_ar": [
+        "اقرأ الرمز المخزن بالـ CONSULT وحدد البنك 2.",
+        "تحقق من الموديل/سنة الموديل وECM Part Number مقابل Table A في ITB13-056a.",
+        "عند عدم مطابقة رقم ECM، ارجع إلى ESM؛ لا تعمم إجراء إعادة البرمجة.",
+        "عند مطابقة رقم ECM، ينفذ متخصص إعادة البرمجة عبر CONSULT وفق النشرة ثم إجراءات التعلم ومسح الرموز."
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (IAVL preparation only)",
+          "name_ar": "حرارة سائل التبريد للتعلم بعد البرمجة فقط",
+          "condition": "عملية IAVL، وليس حد ظهور P0139/P0159",
+          "reference": "70–105 °C",
+          "source": "ITB13-056a"
+        },
+        {
+          "name_en": "Battery Voltage (at idle, IAVL preparation only)",
+          "name_ar": "جهد البطارية عند الخمول لتعلم IAVL فقط",
+          "condition": "IAVL",
+          "reference": ">12.9 V",
+          "source": "ITB13-056a"
+        }
+      ],
+      "tools": [
+        "CONSULT-III plus",
+        "ECM parts catalog",
+        "approved battery maintainer for reprogramming"
+      ],
+      "parts": [
+        {
+          "name": "Rear heated oxygen sensor, bank 2",
+          "location": "غير موثق لهذا الموديل والمحرك"
+        }
+      ],
+      "diagnostic_warning": "النشرة تتناول إجراء ECM محددًا؛ لا تثبت أن تبديل الحساس هو الحل."
+    },
+    {
+      "brand": "Infiniti",
+      "release_to_app": false,
+      "all_markets_verified": false,
+      "market": "North America / bulletin scope only; Sweden and Europe not verified",
+      "status": "OEM_BULLETIN_SCOPE_VERIFIED_NOT_RELEASED",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "review_status": "draft"
+      },
+      "wiring": {
+        "pinouts": null,
+        "schematic": null,
+        "verification": "غير موثق لهذه النسخة"
+      },
+      "source_format": "CONSULT/OBD DTC",
+      "verification_date": "2026-11-16",
+      "record_id": "INF-20261116-C1204",
+      "code": "C1204",
+      "code_base": "C1204",
+      "failure_type": null,
+      "classification": "manufacturer_specific_namespace_C1",
+      "ecu": "AWD Control Unit / Torque Split Controller",
+      "definition_en": "AWD Solenoid",
+      "translation_ar": "خلل دائرة/منظومة ملف تحكم الدفع الرباعي AWD؛ الوصف الرسمي في النشرة: AWD Solenoid",
+      "applicability": {
+        "models": [
+          {
+            "model": "JX35",
+            "chassis": "L50",
+            "model_years": "2013",
+            "drivetrain": "AWD"
+          },
+          {
+            "model": "QX60",
+            "chassis": "L50",
+            "model_years": "2014",
+            "drivetrain": "AWD"
+          },
+          {
+            "model": "QX60 Hybrid",
+            "chassis": "L50",
+            "model_years": "2014",
+            "drivetrain": "AWD",
+            "fuel": "Hybrid"
+          }
+        ],
+        "production_gate": "Built before VIN 5N1(*)L0M(**)EC548571 / August 5, 2014; verify VIN and date",
+        "engine_code": null,
+        "market_scope": "North America / bulletin scope only; Sweden and Europe not verified"
+      },
+      "source_ids": [
+        "ITB15-014A"
+      ],
+      "symptoms_ar": [
+        "AWD ERROR في شاشة المعلومات أثناء الطقس شديد البرودة"
+      ],
+      "trigger_conditions": [
+        "تشغيل في ظروف أقل من نحو −18°C",
+        "ظهور AWD ERROR مع C1204",
+        "انطباق VIN وتاريخ الإنتاج"
+      ],
+      "causes_ar": [
+        {
+          "item": "AWD Control Unit ضمن العينة المحددة في ITB15-014A",
+          "certainty": "قرار المصنع لهذه الحالة المشروطة، وليس لكل C1204"
+        },
+        {
+          "item": "أسباب الأسلاك/الملف خارج تلك الحالة",
+          "certainty": "غير موثقة في هذه النشرة؛ يلزم ESM"
+        }
+      ],
+      "diagnostic_steps_ar": [
+        "تحقق من C1204 بوحدة AWD ومن رسالة AWD ERROR.",
+        "قارن VIN وتاريخ الإنتاج مع النشرة، وتحقق من حدوث العطل في البرد الشديد.",
+        "عند انطباق جميع شروط النشرة، اتبع إجراء المصنع لاستبدال وحدة تحكم AWD مع اختيار رقم القطعة حسب VIN.",
+        "إذا لم تنطبق الشروط، ارجع إلى ESM ولا تعتمد الاستبدال تلقائيًا."
+      ],
+      "live_data": [],
+      "tools": [
+        "CONSULT",
+        "VIN-aware EPC",
+        "ESM DLN"
+      ],
+      "parts": [
+        {
+          "name": "AWD Control Unit (Torque Split Controller)",
+          "location": "Rear storage area, rear panel near rear door latch — OEM bulletin Figure 2 for L50 only",
+          "part_number": "41650-*****; exact part number by VIN"
+        }
+      ]
+    },
+    {
+      "brand": "Infiniti",
+      "release_to_app": false,
+      "all_markets_verified": false,
+      "market": "North America / bulletin scope only; Sweden and Europe not verified",
+      "status": "OEM_BULLETIN_SCOPE_VERIFIED_NOT_RELEASED",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "review_status": "draft"
+      },
+      "wiring": {
+        "pinouts": null,
+        "schematic": null,
+        "verification": "غير موثق لهذه النسخة"
+      },
+      "source_format": "CONSULT/OBD DTC",
+      "verification_date": "2026-11-16",
+      "record_id": "INF-20261116-B2724_23",
+      "code": "B2724-23",
+      "code_base": "B2724",
+      "failure_type": "23",
+      "classification": "manufacturer_specific_namespace_with_OEM_failure_type",
+      "ecu": "SONAR ECU",
+      "definition_en": "SONAR CONTROL UNIT - SONAR ECU INTERNAL FAILURE [UNDER VOLTAGE]",
+      "translation_ar": "وحدة السونار: خلل داخلي مرتبط بانخفاض الجهد",
+      "applicability": {
+        "models": [
+          {
+            "model": "QX50",
+            "chassis": "J55",
+            "model_years": "2020-2021",
+            "system": "Rear Automatic Braking",
+            "production_limit": "built on/before 2021-10-08"
+          }
+        ],
+        "year_kind": "MODEL_YEAR",
+        "engine_code": "غير مؤكد ما لم يذكر صراحة في نطاق الموديل",
+        "source_id": "ITB20-025C",
+        "market_scope": "North America / bulletin scope only; Sweden and Europe not verified"
+      },
+      "source_ids": [
+        "ITB20-025C"
+      ],
+      "symptoms_ar": [
+        "تحذير أو رسالة خلل RAB قد تظهر، بحسب الحالة"
+      ],
+      "trigger_conditions": [
+        "DTC B2724-23 لدى وحدة SONAR/ADAS",
+        "قد يظهر تحذير RAB",
+        "مقارنة إصدار برنامج SONAR"
+      ],
+      "causes_ar": [
+        {
+          "item": "إصدار برمجي مؤهل لتحديث SONAR",
+          "certainty": "مستند إلى إجراء ITB20-025C بعد التحقق من SOFTWARE #"
+        },
+        {
+          "item": "انخفاض جهد/عطل كهربائي آخر",
+          "certainty": "غير محسوم؛ لا تكفي دلالة الاسم لاستبدال الوحدة"
+        }
+      ],
+      "diagnostic_steps_ar": [
+        "تحقق من VIN ونطاق سنة الموديل وتاريخ الإنتاج ووجود RAB.",
+        "افحص كل الوحدات عبر CONSULT-III plus؛ أصلح وامسح أي رموز أخرى غير B2724-23 أو الكود الشقيق أولًا.",
+        "اقرأ Software # من SONAR ECU؛ إن كان A136 لا تنطبق النشرة.",
+        "إذا كانت النسخة مؤهلة، نفّذ تحديث وحدة SONAR وفق ITB20-025C بواسطة مختص مع مثبت جهد؛ لا تستبدل الوحدة بناءً على الكود وحده.",
+        "امسح الأكواد واختبر تفعيل RAB وتشغيله حسب تعليمات النشرة."
+      ],
+      "live_data": [
+        {
+          "name_en": "SOFTWARE # (SONAR ECU Identification)",
+          "name_ar": "نسخة برنامج وحدة السونار",
+          "condition": "قبل التحديث",
+          "reference": "A136 means bulletin does not apply",
+          "source": "ITB20-025C"
+        },
+        {
+          "name_en": "Battery Voltage (programming only)",
+          "name_ar": "جهد البطارية أثناء البرمجة فقط",
+          "condition": "مع مثبت جهد وتوقف المحرك",
+          "reference": "12.0–13.5 V",
+          "source": "ITB20-025C"
+        }
+      ],
+      "tools": [
+        "CONSULT-III plus",
+        "battery maintainer reflash mode",
+        "SONAR ECU identification"
+      ],
+      "parts": [
+        {
+          "name": "Sonar Control Unit",
+          "location": "الموقع الدقيق غير مؤكد في هذه النشرة"
+        }
+      ]
+    },
+    {
+      "brand": "Infiniti",
+      "release_to_app": false,
+      "all_markets_verified": false,
+      "market": "North America / bulletin scope only; Sweden and Europe not verified",
+      "status": "OEM_BULLETIN_SCOPE_VERIFIED_NOT_RELEASED",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "review_status": "draft"
+      },
+      "wiring": {
+        "pinouts": null,
+        "schematic": null,
+        "verification": "غير موثق لهذه النسخة"
+      },
+      "source_format": "CONSULT/OBD DTC",
+      "verification_date": "2026-11-16",
+      "record_id": "INF-20261116-C1B56_04",
+      "code": "C1B56-04",
+      "code_base": "C1B56",
+      "failure_type": "04",
+      "classification": "manufacturer_specific_namespace_with_OEM_failure_type",
+      "ecu": "ICC/ADAS 2 / SONAR ECU (scan-system label to verify)",
+      "definition_en": "SONAR CIRCUIT - SYSTEM INTERNAL MALFUNCTION",
+      "translation_ar": "دائرة السونار: خلل داخلي في النظام",
+      "applicability": {
+        "models": [
+          {
+            "model": "QX50",
+            "chassis": "J55",
+            "model_years": "2020-2021",
+            "system": "Rear Automatic Braking",
+            "production_limit": "built on/before 2021-10-08"
+          }
+        ],
+        "year_kind": "MODEL_YEAR",
+        "engine_code": "غير مؤكد ما لم يذكر صراحة في نطاق الموديل",
+        "source_id": "ITB20-025C",
+        "market_scope": "North America / bulletin scope only; Sweden and Europe not verified"
+      },
+      "source_ids": [
+        "ITB20-025C"
+      ],
+      "symptoms_ar": [
+        "تحذير أو رسالة خلل RAB قد تظهر، بحسب الحالة"
+      ],
+      "trigger_conditions": [
+        "DTC C1B56-04 لدى وحدة SONAR/ADAS",
+        "قد يظهر تحذير RAB",
+        "مقارنة إصدار برنامج SONAR"
+      ],
+      "causes_ar": [
+        {
+          "item": "إصدار برمجي مؤهل لتحديث SONAR",
+          "certainty": "مستند إلى إجراء ITB20-025C بعد التحقق من SOFTWARE #"
+        },
+        {
+          "item": "انخفاض جهد/عطل كهربائي آخر",
+          "certainty": "غير محسوم؛ لا تكفي دلالة الاسم لاستبدال الوحدة"
+        }
+      ],
+      "diagnostic_steps_ar": [
+        "تحقق من VIN ونطاق سنة الموديل وتاريخ الإنتاج ووجود RAB.",
+        "افحص كل الوحدات عبر CONSULT-III plus؛ أصلح وامسح أي رموز أخرى غير C1B56-04 أو الكود الشقيق أولًا.",
+        "اقرأ Software # من SONAR ECU؛ إن كان A136 لا تنطبق النشرة.",
+        "إذا كانت النسخة مؤهلة، نفّذ تحديث وحدة SONAR وفق ITB20-025C بواسطة مختص مع مثبت جهد؛ لا تستبدل الوحدة بناءً على الكود وحده.",
+        "امسح الأكواد واختبر تفعيل RAB وتشغيله حسب تعليمات النشرة."
+      ],
+      "live_data": [
+        {
+          "name_en": "SOFTWARE # (SONAR ECU Identification)",
+          "name_ar": "نسخة برنامج وحدة السونار",
+          "condition": "قبل التحديث",
+          "reference": "A136 means bulletin does not apply",
+          "source": "ITB20-025C"
+        },
+        {
+          "name_en": "Battery Voltage (programming only)",
+          "name_ar": "جهد البطارية أثناء البرمجة فقط",
+          "condition": "مع مثبت جهد وتوقف المحرك",
+          "reference": "12.0–13.5 V",
+          "source": "ITB20-025C"
+        }
+      ],
+      "tools": [
+        "CONSULT-III plus",
+        "battery maintainer reflash mode",
+        "SONAR ECU identification"
+      ],
+      "parts": [
+        {
+          "name": "Sonar Control Unit",
+          "location": "الموقع الدقيق غير مؤكد في هذه النشرة"
+        }
+      ]
+    }
+  ],
+  "source_ids": [
+    "ITB13-056a",
+    "ITB15-014A",
+    "ITB20-025C"
+  ],
+  "quality": "source-defined code meaning and narrowly scoped bulletin applicability verified; all applications still require vehicle/ECM/VIN gates",
+  "release_to_app": false,
+  "automatic_diagnostic_use": false
+}
