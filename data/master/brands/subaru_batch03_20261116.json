@@ -1,0 +1,885 @@
+{
+  "schema": "dtc-nexis-subaru-draft-batch03-v1",
+  "brand": "Subaru",
+  "batch_id": "SUBARU-003",
+  "created": "2026-11-16",
+  "new_code_count": 14,
+  "prior_local_code_count": 203,
+  "release_status": "NOT_ACTIVATED",
+  "source_verification": "bulletin references reviewed; individual VIN and ECU variant applicability pending",
+  "records": [
+    {
+      "record_id": "SUBARU-20261116-P0890",
+      "brand": "Subaru",
+      "code_original": "P0890",
+      "code_base": "P0890",
+      "failure_type": null,
+      "code_type": "SAE_generic",
+      "ecu": "ECM",
+      "definition_en": "TCM Power Relay Sense Circuit Low",
+      "translation_ar": "انخفاض إشارة مراقبة دائرة مرحّل تغذية وحدة ناقل الحركة",
+      "application": [
+        "2025 Forester 2.5L NA CVT (North America)",
+        "2024 Impreza and Crosstrek (North America)",
+        "2019–24 Forester; 2020–24 Legacy/Outback (North America)"
+      ],
+      "market": "North America; Sweden/EU unverified",
+      "engine_code": null,
+      "transmission": "CVT where specified by bulletin; other variants unknown",
+      "symptoms": [
+        "No crank/restart may occur at below 0°C in service-bulletin condition"
+      ],
+      "causes": [
+        "Ignition relay condensation and freezing (bulletin-documented scenario)",
+        "ECM relay self-shutdown calibration variant",
+        "Power/ground/relay circuit fault to rule out"
+      ],
+      "diagnostic_steps": [
+        "Record freeze-frame and companion codes with Subaru Select Monitor",
+        "Inspect battery, ignition relay, related fuses, grounds and connectors",
+        "Check exact ECU CID/VIN against source before any programming or component replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Ambient Temperature",
+          "name_ar": "درجة الحرارة المحيطة",
+          "reference": "Below 0°C described as scenario, not universal threshold"
+        }
+      ],
+      "wiring": null,
+      "parts": [
+        "Ignition M/B-IG relay; Forester 2025 updated 25232KA050 subject to bulletin"
+      ],
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "sources": [
+        {
+          "bulletin": "09-133-25",
+          "date": "2025-03-17",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11016179-0001.pdf",
+          "documented_scope": "2025 Forester 2.5L NA CVT (North America)"
+        },
+        {
+          "bulletin": "06-93-25",
+          "date": "2025-02-10",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11014853-0001.pdf",
+          "documented_scope": "2024 Impreza and Crosstrek (North America)"
+        },
+        {
+          "bulletin": "09-125-24",
+          "date": "2024-07-08",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11005594-0001.pdf",
+          "documented_scope": "2019–24 Forester; 2020–24 Legacy/Outback (North America)"
+        }
+      ],
+      "verification_status": "manufacturer_bulletin_code_confirmed_pending_full_model_ECU_QA",
+      "notes": "Bulletin association does not establish a unique failed component"
+    },
+    {
+      "record_id": "SUBARU-20261116-P0700",
+      "brand": "Subaru",
+      "code_original": "P0700",
+      "code_base": "P0700",
+      "failure_type": null,
+      "code_type": "SAE_generic",
+      "ecu": "ECM / TCM context",
+      "definition_en": "Transmission Control System (MIL Request)",
+      "translation_ar": "طلب نظام ناقل الحركة إضاءة لمبة الأعطال",
+      "application": [
+        "2025 Forester 2.5L NA CVT (North America)",
+        "2024 Impreza and Crosstrek (North America)"
+      ],
+      "market": "North America; Sweden/EU unverified",
+      "engine_code": null,
+      "transmission": "CVT where specified by bulletin; other variants unknown",
+      "symptoms": [
+        "No crank/restart may occur at below 0°C in service-bulletin condition"
+      ],
+      "causes": [
+        "Cause not uniquely established by bulletin; investigate associated module and wiring"
+      ],
+      "diagnostic_steps": [
+        "Record freeze-frame and companion codes with Subaru Select Monitor",
+        "Inspect battery, ignition relay, related fuses, grounds and connectors",
+        "Check exact ECU CID/VIN against source before any programming or component replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Ambient Temperature",
+          "name_ar": "درجة الحرارة المحيطة",
+          "reference": "Below 0°C described as scenario, not universal threshold"
+        }
+      ],
+      "wiring": null,
+      "parts": [],
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "sources": [
+        {
+          "bulletin": "09-133-25",
+          "date": "2025-03-17",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11016179-0001.pdf",
+          "documented_scope": "2025 Forester 2.5L NA CVT (North America)"
+        },
+        {
+          "bulletin": "06-93-25",
+          "date": "2025-02-10",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11014853-0001.pdf",
+          "documented_scope": "2024 Impreza and Crosstrek (North America)"
+        }
+      ],
+      "verification_status": "manufacturer_bulletin_code_confirmed_pending_full_model_ECU_QA",
+      "notes": "Bulletin association does not establish a unique failed component"
+    },
+    {
+      "record_id": "SUBARU-20261116-U1120",
+      "brand": "Subaru",
+      "code_original": "U1120",
+      "code_base": "U1120",
+      "failure_type": null,
+      "code_type": "manufacturer_U1",
+      "ecu": "ECM / CAN",
+      "definition_en": "Lost Communication with Autostart Stop Control Module",
+      "translation_ar": "فقد الاتصال بوحدة التحكم بنظام إيقاف وتشغيل المحرك تلقائياً",
+      "application": [
+        "2025 Forester 2.5L NA CVT (North America)"
+      ],
+      "market": "North America; Sweden/EU unverified",
+      "engine_code": null,
+      "transmission": "CVT where specified by bulletin; other variants unknown",
+      "symptoms": [
+        "No crank/restart may occur at below 0°C in service-bulletin condition"
+      ],
+      "causes": [
+        "Cause not uniquely established by bulletin; investigate associated module and wiring"
+      ],
+      "diagnostic_steps": [
+        "Record freeze-frame and companion codes with Subaru Select Monitor",
+        "Inspect battery, ignition relay, related fuses, grounds and connectors",
+        "Check exact ECU CID/VIN against source before any programming or component replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Ambient Temperature",
+          "name_ar": "درجة الحرارة المحيطة",
+          "reference": "Below 0°C described as scenario, not universal threshold"
+        }
+      ],
+      "wiring": null,
+      "parts": [],
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "sources": [
+        {
+          "bulletin": "09-133-25",
+          "date": "2025-03-17",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11016179-0001.pdf",
+          "documented_scope": "2025 Forester 2.5L NA CVT (North America)"
+        }
+      ],
+      "verification_status": "manufacturer_bulletin_code_confirmed_pending_full_model_ECU_QA",
+      "notes": "Bulletin association does not establish a unique failed component"
+    },
+    {
+      "record_id": "SUBARU-20261116-C1935",
+      "brand": "Subaru",
+      "code_original": "C1935",
+      "code_base": "C1935",
+      "failure_type": null,
+      "code_type": "manufacturer_C1",
+      "ecu": "reporting ECU unverified",
+      "definition_en": "Ignition Switch Circuit",
+      "translation_ar": "خلل في دائرة مفتاح الإشعال",
+      "application": [
+        "2025 Forester 2.5L NA CVT (North America)"
+      ],
+      "market": "North America; Sweden/EU unverified",
+      "engine_code": null,
+      "transmission": "CVT where specified by bulletin; other variants unknown",
+      "symptoms": [
+        "No crank/restart may occur at below 0°C in service-bulletin condition"
+      ],
+      "causes": [
+        "Cause not uniquely established by bulletin; investigate associated module and wiring"
+      ],
+      "diagnostic_steps": [
+        "Record freeze-frame and companion codes with Subaru Select Monitor",
+        "Inspect battery, ignition relay, related fuses, grounds and connectors",
+        "Check exact ECU CID/VIN against source before any programming or component replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Ambient Temperature",
+          "name_ar": "درجة الحرارة المحيطة",
+          "reference": "Below 0°C described as scenario, not universal threshold"
+        }
+      ],
+      "wiring": null,
+      "parts": [],
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "sources": [
+        {
+          "bulletin": "09-133-25",
+          "date": "2025-03-17",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11016179-0001.pdf",
+          "documented_scope": "2025 Forester 2.5L NA CVT (North America)"
+        }
+      ],
+      "verification_status": "manufacturer_bulletin_code_confirmed_pending_full_model_ECU_QA",
+      "notes": "Bulletin association does not establish a unique failed component"
+    },
+    {
+      "record_id": "SUBARU-20261116-B2A0E",
+      "brand": "Subaru",
+      "code_original": "B2A0E",
+      "code_base": "B2A0E",
+      "failure_type": null,
+      "code_type": "manufacturer_B2",
+      "ecu": "DCM / Telematics",
+      "definition_en": "Mute Line Circuit",
+      "translation_ar": "عطل دائرة كتم الصوت بوحدة الاتصال",
+      "application": [
+        "2016–18 Legacy/Outback/Impreza/Crosstrek/Forester; 2017–18 WRX/STI equipped with Gen1 DCM, North America"
+      ],
+      "market": "North America; Sweden/EU unverified",
+      "engine_code": null,
+      "transmission": "CVT where specified by bulletin; other variants unknown",
+      "symptoms": [
+        "Telematics fault indicator / DCM code; exact symptom not verified"
+      ],
+      "causes": [
+        "Older DCM may report transient historical code",
+        "Current mute-line circuit problem only if code returns"
+      ],
+      "diagnostic_steps": [
+        "Use Subaru Select Monitor to read DCM current/history status",
+        "Clear code and ignition cycle; if code returns as current, stop telematics upgrade and follow DCM fault tree"
+      ],
+      "live_data": [
+        {
+          "name_en": "Software Information",
+          "name_ar": "معلومات نسخة برنامج DCM",
+          "reference": "read with SSM; no fault threshold documented"
+        }
+      ],
+      "wiring": null,
+      "parts": [],
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "sources": [
+        {
+          "bulletin": "15-316-24R",
+          "date": "2024-09-10",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11008262-0001.pdf",
+          "documented_scope": "2016–18 Legacy/Outback/Impreza/Crosstrek/Forester; 2017–18 WRX/STI equipped with Gen1 DCM, North America"
+        }
+      ],
+      "verification_status": "manufacturer_bulletin_code_confirmed_pending_full_model_ECU_QA",
+      "notes": "Bulletin association does not establish a unique failed component"
+    },
+    {
+      "record_id": "SUBARU-20261116-B2A0C",
+      "brand": "Subaru",
+      "code_original": "B2A0C",
+      "code_base": "B2A0C",
+      "failure_type": null,
+      "code_type": "manufacturer_B2",
+      "ecu": "DCM / Telematics",
+      "definition_en": null,
+      "translation_ar": null,
+      "application": [
+        "2016–18 Legacy/Outback/Impreza/Crosstrek/Forester; 2017–18 WRX/STI equipped with Gen1 DCM, North America"
+      ],
+      "market": "North America; Sweden/EU unverified",
+      "engine_code": null,
+      "transmission": "CVT where specified by bulletin; other variants unknown",
+      "symptoms": [
+        "Telematics fault indicator / DCM code; exact symptom not verified"
+      ],
+      "causes": [
+        "Cause not uniquely established by bulletin; investigate associated module and wiring"
+      ],
+      "diagnostic_steps": [
+        "Read DCM fault status with SSM",
+        "Obtain ECU-specific Subaru manual definition; do not infer from B2A0E"
+      ],
+      "live_data": [
+        {
+          "name_en": "Ambient Temperature",
+          "name_ar": "درجة الحرارة المحيطة",
+          "reference": "Below 0°C described as scenario, not universal threshold"
+        }
+      ],
+      "wiring": null,
+      "parts": [],
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "sources": [
+        {
+          "bulletin": "15-316-24R",
+          "date": "2024-09-10",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11008262-0001.pdf",
+          "documented_scope": "2016–18 Legacy/Outback/Impreza/Crosstrek/Forester; 2017–18 WRX/STI equipped with Gen1 DCM, North America"
+        }
+      ],
+      "verification_status": "manufacturer_code_mentioned_definition_missing",
+      "notes": "Mentioned as a DCM exception in bulletin; individual meaning not given"
+    },
+    {
+      "record_id": "SUBARU-20261116-C195319",
+      "brand": "Subaru",
+      "code_original": "C195319",
+      "code_base": "C1953",
+      "failure_type": "19",
+      "code_type": "manufacturer_C1_with_failure_type",
+      "ecu": "VDCCM&H/U / brake control EPB",
+      "definition_en": "RIGHT EPB CIRCUIT CURRENT ABOVE THRESHOLD",
+      "translation_ar": "دائرة فرامل التوقف الإلكترونية اليمنى: التيار أعلى من الحد",
+      "application": [
+        "2026+ Outback (North America), specific engine/VIN unverified"
+      ],
+      "market": "North America; Sweden/EU unverified",
+      "engine_code": null,
+      "symptoms": [
+        "EPB/brake warning possible; precise lamp condition not established"
+      ],
+      "causes": [
+        "EPB actuator or caliper fluid ingress where fault-tree confirms",
+        "Open/shorted circuit or connector fault",
+        "VDCCM&H/U only after complete fault-tree"
+      ],
+      "diagnostic_steps": [
+        "Read Brake DTC and Freeze Frame Data with Subaru Select Monitor",
+        "Inspect battery, fuses, grounds and connectors; inspect caliper/actuator for brake fluid intrusion where directed",
+        "Test harness continuity / insulation / unintended voltage against Subaru's documented procedure",
+        "Perform Brake inspection mode and clear/confirm no active DTC after repair"
+      ],
+      "live_data": [
+        {
+          "name_en": "Brake DTC / Freeze Frame Data",
+          "name_ar": "رموز الفرامل وبيانات لحظة العطل",
+          "reference": "SSM; exact failure-specific monitor threshold not supplied"
+        }
+      ],
+      "wiring": {
+        "scope": "2026+ Outback only, confirm exact manual revision",
+        "continuity_pairs": [
+          "B6-2 ↔ n7-2",
+          "B6-3 ↔ n7-1"
+        ],
+        "continuity_limit": "<1 Ω (IG OFF)",
+        "ground_isolation_limit": ">=10 kΩ (IG OFF)",
+        "unwanted_supply_limit": "<1 V (IG ON)"
+      },
+      "parts": [
+        "EPB actuator",
+        "Rear brake caliper",
+        "VDCCM&H/U (only after prescribed checks)"
+      ],
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "sources": [
+        {
+          "bulletin": "18-145-26 (footer) / 18-245-26 (header): unresolved discrepancy",
+          "date": "2026-09-18",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11037939-0001.pdf",
+          "documented_scope": "2026+ Outback (North America), specific engine/VIN unverified"
+        }
+      ],
+      "verification_status": "manufacturer_bulletin_code_confirmed_bulletin_number_conflict",
+      "notes": "Document heading differs from page footer; not approved for production until version conflict resolved"
+    },
+    {
+      "record_id": "SUBARU-20261116-C195349",
+      "brand": "Subaru",
+      "code_original": "C195349",
+      "code_base": "C1953",
+      "failure_type": "49",
+      "code_type": "manufacturer_C1_with_failure_type",
+      "ecu": "VDCCM&H/U / brake control EPB",
+      "definition_en": "RIGHT EPB CIRCUIT INTERNAL ELECTRONIC FAILURE",
+      "translation_ar": "دائرة فرامل التوقف الإلكترونية اليمنى: عطل إلكتروني داخلي",
+      "application": [
+        "2026+ Outback (North America), specific engine/VIN unverified"
+      ],
+      "market": "North America; Sweden/EU unverified",
+      "engine_code": null,
+      "symptoms": [
+        "EPB/brake warning possible; precise lamp condition not established"
+      ],
+      "causes": [
+        "EPB actuator or caliper fluid ingress where fault-tree confirms",
+        "Open/shorted circuit or connector fault",
+        "VDCCM&H/U only after complete fault-tree"
+      ],
+      "diagnostic_steps": [
+        "Read Brake DTC and Freeze Frame Data with Subaru Select Monitor",
+        "Inspect battery, fuses, grounds and connectors; inspect caliper/actuator for brake fluid intrusion where directed",
+        "Test harness continuity / insulation / unintended voltage against Subaru's documented procedure",
+        "Perform Brake inspection mode and clear/confirm no active DTC after repair"
+      ],
+      "live_data": [
+        {
+          "name_en": "Brake DTC / Freeze Frame Data",
+          "name_ar": "رموز الفرامل وبيانات لحظة العطل",
+          "reference": "SSM; exact failure-specific monitor threshold not supplied"
+        }
+      ],
+      "wiring": {
+        "scope": "2026+ Outback only, confirm exact manual revision",
+        "continuity_pairs": [
+          "B6-2 ↔ n7-2",
+          "B6-3 ↔ n7-1"
+        ],
+        "continuity_limit": "<1 Ω (IG OFF)",
+        "ground_isolation_limit": ">=10 kΩ (IG OFF)",
+        "unwanted_supply_limit": "<1 V (IG ON)"
+      },
+      "parts": [
+        "EPB actuator",
+        "Rear brake caliper",
+        "VDCCM&H/U (only after prescribed checks)"
+      ],
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "sources": [
+        {
+          "bulletin": "18-145-26 (footer) / 18-245-26 (header): unresolved discrepancy",
+          "date": "2026-09-18",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11037939-0001.pdf",
+          "documented_scope": "2026+ Outback (North America), specific engine/VIN unverified"
+        }
+      ],
+      "verification_status": "manufacturer_bulletin_code_confirmed_bulletin_number_conflict",
+      "notes": "Document heading differs from page footer; not approved for production until version conflict resolved"
+    },
+    {
+      "record_id": "SUBARU-20261116-C19531B",
+      "brand": "Subaru",
+      "code_original": "C19531B",
+      "code_base": "C1953",
+      "failure_type": "1B",
+      "code_type": "manufacturer_C1_with_failure_type",
+      "ecu": "VDCCM&H/U / brake control EPB",
+      "definition_en": "RIGHT EPB CIRCUIT RESISTANCE ABOVE THRESHOLD",
+      "translation_ar": "دائرة فرامل التوقف الإلكترونية اليمنى: المقاومة أعلى من الحد",
+      "application": [
+        "2026+ Outback (North America), specific engine/VIN unverified"
+      ],
+      "market": "North America; Sweden/EU unverified",
+      "engine_code": null,
+      "symptoms": [
+        "EPB/brake warning possible; precise lamp condition not established"
+      ],
+      "causes": [
+        "EPB actuator or caliper fluid ingress where fault-tree confirms",
+        "Open/shorted circuit or connector fault",
+        "VDCCM&H/U only after complete fault-tree"
+      ],
+      "diagnostic_steps": [
+        "Read Brake DTC and Freeze Frame Data with Subaru Select Monitor",
+        "Inspect battery, fuses, grounds and connectors; inspect caliper/actuator for brake fluid intrusion where directed",
+        "Test harness continuity / insulation / unintended voltage against Subaru's documented procedure",
+        "Perform Brake inspection mode and clear/confirm no active DTC after repair"
+      ],
+      "live_data": [
+        {
+          "name_en": "Brake DTC / Freeze Frame Data",
+          "name_ar": "رموز الفرامل وبيانات لحظة العطل",
+          "reference": "SSM; exact failure-specific monitor threshold not supplied"
+        }
+      ],
+      "wiring": {
+        "scope": "2026+ Outback only, confirm exact manual revision",
+        "continuity_pairs": [
+          "B6-2 ↔ n7-2",
+          "B6-3 ↔ n7-1"
+        ],
+        "continuity_limit": "<1 Ω (IG OFF)",
+        "ground_isolation_limit": ">=10 kΩ (IG OFF)",
+        "unwanted_supply_limit": "<1 V (IG ON)"
+      },
+      "parts": [
+        "EPB actuator",
+        "Rear brake caliper",
+        "VDCCM&H/U (only after prescribed checks)"
+      ],
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "sources": [
+        {
+          "bulletin": "18-145-26 (footer) / 18-245-26 (header): unresolved discrepancy",
+          "date": "2026-09-18",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11037939-0001.pdf",
+          "documented_scope": "2026+ Outback (North America), specific engine/VIN unverified"
+        }
+      ],
+      "verification_status": "manufacturer_bulletin_code_confirmed_bulletin_number_conflict",
+      "notes": "Document heading differs from page footer; not approved for production until version conflict resolved"
+    },
+    {
+      "record_id": "SUBARU-20261116-C195313",
+      "brand": "Subaru",
+      "code_original": "C195313",
+      "code_base": "C1953",
+      "failure_type": "13",
+      "code_type": "manufacturer_C1_with_failure_type",
+      "ecu": "VDCCM&H/U / brake control EPB",
+      "definition_en": "RIGHT EPB CIRCUIT OPEN",
+      "translation_ar": "دائرة فرامل التوقف الإلكترونية اليمنى: دائرة مفتوحة",
+      "application": [
+        "2026+ Outback (North America), specific engine/VIN unverified"
+      ],
+      "market": "North America; Sweden/EU unverified",
+      "engine_code": null,
+      "symptoms": [
+        "EPB/brake warning possible; precise lamp condition not established"
+      ],
+      "causes": [
+        "EPB actuator or caliper fluid ingress where fault-tree confirms",
+        "Open/shorted circuit or connector fault",
+        "VDCCM&H/U only after complete fault-tree"
+      ],
+      "diagnostic_steps": [
+        "Read Brake DTC and Freeze Frame Data with Subaru Select Monitor",
+        "Inspect battery, fuses, grounds and connectors; inspect caliper/actuator for brake fluid intrusion where directed",
+        "Test harness continuity / insulation / unintended voltage against Subaru's documented procedure",
+        "Perform Brake inspection mode and clear/confirm no active DTC after repair"
+      ],
+      "live_data": [
+        {
+          "name_en": "Brake DTC / Freeze Frame Data",
+          "name_ar": "رموز الفرامل وبيانات لحظة العطل",
+          "reference": "SSM; exact failure-specific monitor threshold not supplied"
+        }
+      ],
+      "wiring": {
+        "scope": "2026+ Outback only, confirm exact manual revision",
+        "continuity_pairs": [
+          "B6-2 ↔ n7-2",
+          "B6-3 ↔ n7-1"
+        ],
+        "continuity_limit": "<1 Ω (IG OFF)",
+        "ground_isolation_limit": ">=10 kΩ (IG OFF)",
+        "unwanted_supply_limit": "<1 V (IG ON)"
+      },
+      "parts": [
+        "EPB actuator",
+        "Rear brake caliper",
+        "VDCCM&H/U (only after prescribed checks)"
+      ],
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "sources": [
+        {
+          "bulletin": "18-145-26 (footer) / 18-245-26 (header): unresolved discrepancy",
+          "date": "2026-09-18",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11037939-0001.pdf",
+          "documented_scope": "2026+ Outback (North America), specific engine/VIN unverified"
+        }
+      ],
+      "verification_status": "manufacturer_bulletin_code_confirmed_bulletin_number_conflict",
+      "notes": "Document heading differs from page footer; not approved for production until version conflict resolved"
+    },
+    {
+      "record_id": "SUBARU-20261116-C195419",
+      "brand": "Subaru",
+      "code_original": "C195419",
+      "code_base": "C1954",
+      "failure_type": "19",
+      "code_type": "manufacturer_C1_with_failure_type",
+      "ecu": "VDCCM&H/U / brake control EPB",
+      "definition_en": "LEFT EPB CIRCUIT CURRENT ABOVE THRESHOLD",
+      "translation_ar": "دائرة فرامل التوقف الإلكترونية اليسرى: التيار أعلى من الحد",
+      "application": [
+        "2026+ Outback (North America), specific engine/VIN unverified"
+      ],
+      "market": "North America; Sweden/EU unverified",
+      "engine_code": null,
+      "symptoms": [
+        "EPB/brake warning possible; precise lamp condition not established"
+      ],
+      "causes": [
+        "EPB actuator or caliper fluid ingress where fault-tree confirms",
+        "Open/shorted circuit or connector fault",
+        "VDCCM&H/U only after complete fault-tree"
+      ],
+      "diagnostic_steps": [
+        "Read Brake DTC and Freeze Frame Data with Subaru Select Monitor",
+        "Inspect battery, fuses, grounds and connectors; inspect caliper/actuator for brake fluid intrusion where directed",
+        "Test harness continuity / insulation / unintended voltage against Subaru's documented procedure",
+        "Perform Brake inspection mode and clear/confirm no active DTC after repair"
+      ],
+      "live_data": [
+        {
+          "name_en": "Brake DTC / Freeze Frame Data",
+          "name_ar": "رموز الفرامل وبيانات لحظة العطل",
+          "reference": "SSM; exact failure-specific monitor threshold not supplied"
+        }
+      ],
+      "wiring": {
+        "scope": "2026+ Outback only, confirm exact manual revision",
+        "continuity_pairs": [
+          "B6-13 ↔ n6-2",
+          "B6-12 ↔ n6-1"
+        ],
+        "continuity_limit": "<1 Ω (IG OFF)",
+        "ground_isolation_limit": ">=10 kΩ (IG OFF)",
+        "unwanted_supply_limit": "<1 V (IG ON)"
+      },
+      "parts": [
+        "EPB actuator",
+        "Rear brake caliper",
+        "VDCCM&H/U (only after prescribed checks)"
+      ],
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "sources": [
+        {
+          "bulletin": "18-145-26 (footer) / 18-245-26 (header): unresolved discrepancy",
+          "date": "2026-09-18",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11037939-0001.pdf",
+          "documented_scope": "2026+ Outback (North America), specific engine/VIN unverified"
+        }
+      ],
+      "verification_status": "manufacturer_bulletin_code_confirmed_bulletin_number_conflict",
+      "notes": "Document heading differs from page footer; not approved for production until version conflict resolved"
+    },
+    {
+      "record_id": "SUBARU-20261116-C195449",
+      "brand": "Subaru",
+      "code_original": "C195449",
+      "code_base": "C1954",
+      "failure_type": "49",
+      "code_type": "manufacturer_C1_with_failure_type",
+      "ecu": "VDCCM&H/U / brake control EPB",
+      "definition_en": "LEFT EPB CIRCUIT INTERNAL ELECTRONIC FAILURE",
+      "translation_ar": "دائرة فرامل التوقف الإلكترونية اليسرى: عطل إلكتروني داخلي",
+      "application": [
+        "2026+ Outback (North America), specific engine/VIN unverified"
+      ],
+      "market": "North America; Sweden/EU unverified",
+      "engine_code": null,
+      "symptoms": [
+        "EPB/brake warning possible; precise lamp condition not established"
+      ],
+      "causes": [
+        "EPB actuator or caliper fluid ingress where fault-tree confirms",
+        "Open/shorted circuit or connector fault",
+        "VDCCM&H/U only after complete fault-tree"
+      ],
+      "diagnostic_steps": [
+        "Read Brake DTC and Freeze Frame Data with Subaru Select Monitor",
+        "Inspect battery, fuses, grounds and connectors; inspect caliper/actuator for brake fluid intrusion where directed",
+        "Test harness continuity / insulation / unintended voltage against Subaru's documented procedure",
+        "Perform Brake inspection mode and clear/confirm no active DTC after repair"
+      ],
+      "live_data": [
+        {
+          "name_en": "Brake DTC / Freeze Frame Data",
+          "name_ar": "رموز الفرامل وبيانات لحظة العطل",
+          "reference": "SSM; exact failure-specific monitor threshold not supplied"
+        }
+      ],
+      "wiring": {
+        "scope": "2026+ Outback only, confirm exact manual revision",
+        "continuity_pairs": [
+          "B6-13 ↔ n6-2",
+          "B6-12 ↔ n6-1"
+        ],
+        "continuity_limit": "<1 Ω (IG OFF)",
+        "ground_isolation_limit": ">=10 kΩ (IG OFF)",
+        "unwanted_supply_limit": "<1 V (IG ON)"
+      },
+      "parts": [
+        "EPB actuator",
+        "Rear brake caliper",
+        "VDCCM&H/U (only after prescribed checks)"
+      ],
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "sources": [
+        {
+          "bulletin": "18-145-26 (footer) / 18-245-26 (header): unresolved discrepancy",
+          "date": "2026-09-18",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11037939-0001.pdf",
+          "documented_scope": "2026+ Outback (North America), specific engine/VIN unverified"
+        }
+      ],
+      "verification_status": "manufacturer_bulletin_code_confirmed_bulletin_number_conflict",
+      "notes": "Document heading differs from page footer; not approved for production until version conflict resolved"
+    },
+    {
+      "record_id": "SUBARU-20261116-C19541B",
+      "brand": "Subaru",
+      "code_original": "C19541B",
+      "code_base": "C1954",
+      "failure_type": "1B",
+      "code_type": "manufacturer_C1_with_failure_type",
+      "ecu": "VDCCM&H/U / brake control EPB",
+      "definition_en": "LEFT EPB CIRCUIT RESISTANCE ABOVE THRESHOLD",
+      "translation_ar": "دائرة فرامل التوقف الإلكترونية اليسرى: المقاومة أعلى من الحد",
+      "application": [
+        "2026+ Outback (North America), specific engine/VIN unverified"
+      ],
+      "market": "North America; Sweden/EU unverified",
+      "engine_code": null,
+      "symptoms": [
+        "EPB/brake warning possible; precise lamp condition not established"
+      ],
+      "causes": [
+        "EPB actuator or caliper fluid ingress where fault-tree confirms",
+        "Open/shorted circuit or connector fault",
+        "VDCCM&H/U only after complete fault-tree"
+      ],
+      "diagnostic_steps": [
+        "Read Brake DTC and Freeze Frame Data with Subaru Select Monitor",
+        "Inspect battery, fuses, grounds and connectors; inspect caliper/actuator for brake fluid intrusion where directed",
+        "Test harness continuity / insulation / unintended voltage against Subaru's documented procedure",
+        "Perform Brake inspection mode and clear/confirm no active DTC after repair"
+      ],
+      "live_data": [
+        {
+          "name_en": "Brake DTC / Freeze Frame Data",
+          "name_ar": "رموز الفرامل وبيانات لحظة العطل",
+          "reference": "SSM; exact failure-specific monitor threshold not supplied"
+        }
+      ],
+      "wiring": {
+        "scope": "2026+ Outback only, confirm exact manual revision",
+        "continuity_pairs": [
+          "B6-13 ↔ n6-2",
+          "B6-12 ↔ n6-1"
+        ],
+        "continuity_limit": "<1 Ω (IG OFF)",
+        "ground_isolation_limit": ">=10 kΩ (IG OFF)",
+        "unwanted_supply_limit": "<1 V (IG ON)"
+      },
+      "parts": [
+        "EPB actuator",
+        "Rear brake caliper",
+        "VDCCM&H/U (only after prescribed checks)"
+      ],
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "sources": [
+        {
+          "bulletin": "18-145-26 (footer) / 18-245-26 (header): unresolved discrepancy",
+          "date": "2026-09-18",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11037939-0001.pdf",
+          "documented_scope": "2026+ Outback (North America), specific engine/VIN unverified"
+        }
+      ],
+      "verification_status": "manufacturer_bulletin_code_confirmed_bulletin_number_conflict",
+      "notes": "Document heading differs from page footer; not approved for production until version conflict resolved"
+    },
+    {
+      "record_id": "SUBARU-20261116-C195413",
+      "brand": "Subaru",
+      "code_original": "C195413",
+      "code_base": "C1954",
+      "failure_type": "13",
+      "code_type": "manufacturer_C1_with_failure_type",
+      "ecu": "VDCCM&H/U / brake control EPB",
+      "definition_en": "LEFT EPB CIRCUIT OPEN",
+      "translation_ar": "دائرة فرامل التوقف الإلكترونية اليسرى: دائرة مفتوحة",
+      "application": [
+        "2026+ Outback (North America), specific engine/VIN unverified"
+      ],
+      "market": "North America; Sweden/EU unverified",
+      "engine_code": null,
+      "symptoms": [
+        "EPB/brake warning possible; precise lamp condition not established"
+      ],
+      "causes": [
+        "EPB actuator or caliper fluid ingress where fault-tree confirms",
+        "Open/shorted circuit or connector fault",
+        "VDCCM&H/U only after complete fault-tree"
+      ],
+      "diagnostic_steps": [
+        "Read Brake DTC and Freeze Frame Data with Subaru Select Monitor",
+        "Inspect battery, fuses, grounds and connectors; inspect caliper/actuator for brake fluid intrusion where directed",
+        "Test harness continuity / insulation / unintended voltage against Subaru's documented procedure",
+        "Perform Brake inspection mode and clear/confirm no active DTC after repair"
+      ],
+      "live_data": [
+        {
+          "name_en": "Brake DTC / Freeze Frame Data",
+          "name_ar": "رموز الفرامل وبيانات لحظة العطل",
+          "reference": "SSM; exact failure-specific monitor threshold not supplied"
+        }
+      ],
+      "wiring": {
+        "scope": "2026+ Outback only, confirm exact manual revision",
+        "continuity_pairs": [
+          "B6-13 ↔ n6-2",
+          "B6-12 ↔ n6-1"
+        ],
+        "continuity_limit": "<1 Ω (IG OFF)",
+        "ground_isolation_limit": ">=10 kΩ (IG OFF)",
+        "unwanted_supply_limit": "<1 V (IG ON)"
+      },
+      "parts": [
+        "EPB actuator",
+        "Rear brake caliper",
+        "VDCCM&H/U (only after prescribed checks)"
+      ],
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "sources": [
+        {
+          "bulletin": "18-145-26 (footer) / 18-245-26 (header): unresolved discrepancy",
+          "date": "2026-09-18",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11037939-0001.pdf",
+          "documented_scope": "2026+ Outback (North America), specific engine/VIN unverified"
+        }
+      ],
+      "verification_status": "manufacturer_bulletin_code_confirmed_bulletin_number_conflict",
+      "notes": "Document heading differs from page footer; not approved for production until version conflict resolved"
+    }
+  ],
+  "existing_code_enrichment": [
+    {
+      "code": "P06EF",
+      "definition_en": "Engine Restart Performance",
+      "translation_ar": "خلل أداء إعادة تشغيل المحرك",
+      "documented_application": "2014-16MY Crosstrek Hybrid only",
+      "source": {
+        "bulletin": "16-156-25",
+        "date": "2025-09-30",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11023523-0001.pdf",
+        "documented_scope": "2014–16 Crosstrek Hybrid (P06EF); expanded CVT model scope for P2757/P2762"
+      },
+      "disposition": "existing in SUBARU-001; do not add duplicate"
+    }
+  ]
+}
