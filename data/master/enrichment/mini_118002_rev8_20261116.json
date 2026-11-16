@@ -1,0 +1,127 @@
+{
+  "schema": "dtc-nexis-brand-code-enrichment-v1",
+  "brand": "MINI",
+  "batch_id": "MINI_BATCH04_20261116",
+  "link_to_existing": {
+    "path": "data/master/brands/mini.json",
+    "record_id": "MINI-DTC-024",
+    "raw_code": "118002",
+    "ecu": "DME",
+    "do_not_duplicate_in_code_count": true
+  },
+  "new_code_count": 0,
+  "review_status": "DRAFT_TECHNICAL_ENRICHMENT",
+  "source": {
+    "id": "MINI-M110117-REV8",
+    "title": "MINI SI M11 01 17 Revision 8",
+    "date": "2020-01-06",
+    "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171510-9999.pdf",
+    "revision_note": "Replaces May 2019 bulletin; deleted explicit reliance on winter fuel"
+  },
+  "official_definition_en": "Mixture control: Fuel-air mixture too rich",
+  "translation_ar": "التحكم بالخليط: خليط الوقود والهواء غني أكثر من اللازم",
+  "applicability_by_chassis": [
+    {
+      "chassis": "F54",
+      "production_start": "2014-12",
+      "production_end": "2019-06",
+      "engines": [
+        "B36M",
+        "B46M",
+        "B48O"
+      ]
+    },
+    {
+      "chassis": "F55",
+      "production_start": "2013-10",
+      "production_end": "2019-06",
+      "engines": [
+        "B36M",
+        "B38M",
+        "B46M"
+      ]
+    },
+    {
+      "chassis": "F56",
+      "production_start": "2013-04",
+      "production_end": "2019-07",
+      "engines": [
+        "B36M",
+        "B38M",
+        "B46M",
+        "B48M",
+        "B48O"
+      ]
+    },
+    {
+      "chassis": "F57",
+      "production_start": "2014-11",
+      "production_end": "2019-06",
+      "engines": [
+        "B36M",
+        "B46M",
+        "B48O"
+      ]
+    },
+    {
+      "chassis": "F60",
+      "production_start": "2015-11",
+      "production_end": "2019-09",
+      "engines": [
+        "B36M",
+        "B46M",
+        "B48O",
+        "XB2H"
+      ]
+    }
+  ],
+  "market": "North American MINI service bulletin; Swedish/European VIN fitment not confirmed",
+  "fault_context": "MIL during cold winter months, often cold starts/short trips without full operating temperature; other causes possible",
+  "diagnostic_steps": [
+    "افحص حالة خليط غني فعلياً قبل نسبة العطل إلى معايرة البرنامج؛ استخدم MINI ISTA Next على DME.",
+    "في ISTA اتبع ECU function → DME → Diagnostic scan → 721 Mixture Adaptation؛ دع المحرك بالخمول بعد بلوغ حرارة التشغيل.",
+    "إذا هبط تكيف الخليط بدرجة ملحوظة تحت 1.0 فقد يشير إلى خليط غني؛ هذا توصيف حالة النشرة لا حد قرار عالمي لكل سيارة.",
+    "نفّذ خطوات MINI الرسمية للزيت والفلتر عند انطباق الحالة؛ لا تعِد ضبط CBS إلا إذا استحقت الخدمة.",
+    "قارن I-level بهدف F056-19-03-540 أو أحدث للمحركات باستثناء XB2H؛ أما F60 XB2H فهدف F056-19-11-510 أو أحدث.",
+    "في سيارات B36/B38 المنتجة حتى 2015-10-31، افحص إصدار غطاء رأس الأسطوانات وفتحات تهوية علبة المرفق؛ يستبدل إذا تطابقت نسخة الغطاء القديمة مع وصف النشرة.",
+    "لا تغيّر قطعاً لمجرد وجود الكود؛ أثبت العطل بأدوات ISTA والمستند الخاص برقم الهيكل."
+  ],
+  "live_data": [
+    {
+      "name_en": "Mixture Adaptation",
+      "name_ar": "تكيف خليط الوقود والهواء",
+      "test_conditions": "Engine at full operating temperature, idle; ISTA DME diagnostic scan 721",
+      "bulletin_guidance": "Drops significantly below 1.0 supports rich mixture",
+      "scope": "OEM bulletin only; not a universal threshold"
+    },
+    {
+      "name_en": "Vehicle integration level",
+      "name_ar": "مستوى برمجيات السيارة",
+      "test_conditions": "ISTA vehicle identification",
+      "reference_by_engine": {
+        "B36/B38/B46/B48": "F056-19-03-540 or later",
+        "XB2H": "F056-19-11-510 or later"
+      }
+    }
+  ],
+  "parts": [
+    {
+      "part": "Engine oil/filter",
+      "conditional": "Per bulletin procedure and VIN-specific specifications"
+    },
+    {
+      "part": "Cylinder head cover",
+      "conditional": "Only B36/B38 produced by 2015-10-31 and verified older part version"
+    }
+  ],
+  "permissions": {
+    "image_copy": false,
+    "wire_copy": false
+  },
+  "qa_gaps": [
+    "VIN-specific EU/Sweden applicability",
+    "Test value interpretation when different DME software",
+    "Wiring and component placement by engine"
+  ],
+  "release_to_app": false
+}
