@@ -1,0 +1,72 @@
+{
+  "schema": "dtc-nexis-brand-batch-qa-v1",
+  "date": "2026-11-16",
+  "brand": "Subaru",
+  "batch_id": "SUBARU-003",
+  "baseline": {
+    "local_original_file": "DTC_NEXIS_SUBARU_001.json",
+    "local_original_sha256": "f1892f9112c69204a4929c76d379271140991dca895ffd65d26cfce853c8ecf4",
+    "local_original_count": 203,
+    "persisted_to_main": false
+  },
+  "github_before_batch": {
+    "default_branch": "main",
+    "sha_at_start": "c31da1ee655bf20e96ceab2c496b5a04d0657e35",
+    "subaru_specific_master_brands_file_count": 0,
+    "existing_review_system": "data/master/reviews",
+    "dedicated_review_queue_folder_on_main": false
+  },
+  "new_unique_dtc_records": 14,
+  "duplicate_source_codes_excluded": 1,
+  "duplicate_code": "P06EF",
+  "existing_code_enrichments": 1,
+  "provisional_unique_total_not_merged": 217,
+  "manufacturer_bulletin_confirmed_code_occurrences": 14,
+  "vehicle_VIN_engine_ECU_fully_verified_records": 0,
+  "review_queue_records": 14,
+  "images_new": 0,
+  "images_previous_untouched": true,
+  "source_bulletins": [
+    [
+      "09-133-25",
+      "https://static.nhtsa.gov/odi/tsbs/2025/MC-11016179-0001.pdf"
+    ],
+    [
+      "06-93-25",
+      "https://static.nhtsa.gov/odi/tsbs/2025/MC-11014853-0001.pdf"
+    ],
+    [
+      "09-125-24",
+      "https://static.nhtsa.gov/odi/tsbs/2024/MC-11005594-0001.pdf"
+    ],
+    [
+      "16-156-25",
+      "https://static.nhtsa.gov/odi/tsbs/2025/MC-11023523-0001.pdf"
+    ],
+    [
+      "15-316-24R",
+      "https://static.nhtsa.gov/odi/tsbs/2024/MC-11008262-0001.pdf"
+    ],
+    [
+      "2026 EPB bulletin—number unresolved",
+      "https://static.nhtsa.gov/odi/tsbs/2026/MC-11037939-0001.pdf"
+    ]
+  ],
+  "limits": [
+    "2026 EPB PDF heading and footer report different bulletin numbers",
+    "B2A0C meaning not stated in reviewed Subaru bulletin",
+    "203 original codes in local source but NOT in GitHub main/data/master",
+    "No vehicle-specific Sweden/EU applicability or ECU software variant established for this batch",
+    "No new images created under project image pause",
+    "Full Subaru brand coverage and Subaru Select Monitor extended codes remain incomplete"
+  ],
+  "files_to_create": [
+    "data/master/brands/subaru_batch03_20261116.json",
+    "data/master/reviews/subaru_20261116_batch03/REVIEW_QUEUE.json",
+    "data/master/reviews/subaru_20261116_batch03/QA_REPORT.json"
+  ],
+  "release_status": "DRAFT_FOR_PR_REVIEW_ONLY",
+  "program_changed": false,
+  "stable_channel_changed": false,
+  "github_main_modified": false
+}
