@@ -1,0 +1,45 @@
+{
+  "schema": "dtcnexis-infiniti-scoped-notes-v1",
+  "brand": "Infiniti",
+  "counts_towards_unique_ledger": false,
+  "existing_codes": [
+    "P17F0",
+    "P17F1",
+    "P0101",
+    "P010B",
+    "P0087",
+    "P0448"
+  ],
+  "notes": [
+    {
+      "codes": [
+        "P17F0",
+        "P17F1"
+      ],
+      "scope": "2019 QX50 J55 TCM permanent DTC screen; only if ESM drive pattern cannot clear",
+      "source": "ITB20-027",
+      "caution": "Do not inherit QX60 CVT diagnostic chain or automatically replace the transmission."
+    },
+    {
+      "codes": [
+        "P0101",
+        "P010B"
+      ],
+      "scope": "Listed Infiniti 2011-2015 non-hybrid V6 model-year vehicles; MIL without drivability problems, specific ECM part numbers",
+      "source": "ITB13-054d",
+      "caution": "Software reprogramming only after ECM part number match; DO NOT replace MAF sensor in bulletin-qualified case."
+    },
+    {
+      "codes": [
+        "P0087",
+        "P0101",
+        "P0448"
+      ],
+      "scope": "Q50 VR30DDTT/Q60 VR30DDTT/QX60 VQ35DE/VQ35DD as shown separately in Table A; US out-of-California registration",
+      "source": "ITB19-027a",
+      "caution": "ECM reprogram does NOT repair DTC cause; ESM diagnosis and repair first, check ECM PN."
+    }
+  ],
+  "publisher": "Nissan North America / Infiniti",
+  "release_to_app": false
+}
