@@ -1,0 +1,75 @@
+{
+  "schema": "dtcnexis-byd-continuation-QA-v1",
+  "date": "2026-11-16",
+  "brand": "BYD",
+  "branch": "work/byd-dtc-catalogue-20261116",
+  "status": "REVIEW_ONLY_OEM_UNVERIFIED",
+  "counts": {
+    "previous_rows": 274,
+    "previous_distinct_codes": 255,
+    "candidates_reviewed": 83,
+    "duplicates_skipped": 9,
+    "new_indexed_rows": 74,
+    "new_OEM_verified": 0,
+    "total_rows": 348,
+    "distinct_code_strings": 329,
+    "review_queue_rows": 348,
+    "known_conflict_flags": 6,
+    "unverified_engine_codes": 348,
+    "source_urls_missing": 0,
+    "by_family_new": {
+      "P": 26,
+      "U": 8,
+      "C": 17,
+      "B": 23
+    },
+    "by_family_total": {
+      "P": 201,
+      "U": 32,
+      "B": 66,
+      "C": 49
+    }
+  },
+  "checks": {
+    "existing_preserved": true,
+    "all_original_code_strings_preserved": true,
+    "source_index_only": true,
+    "technical_OEM_approval": false,
+    "sae_code_mapping_verified": false,
+    "automatic_vehicle_matching": false,
+    "changed_main": false,
+    "updated_release_feed": false
+  },
+  "sources": [
+    {
+      "name": "17VIN 2024–2025 BYD Qin Plus DM-i public manual index",
+      "url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/9884.html",
+      "accessed": "2026-11-16",
+      "access": "Search-index headings; full manual not viewed"
+    },
+    {
+      "name": "17VIN 2024 Qin PLUS DM-i Glory Edition public manual index",
+      "url": "https://en.17vin.com/automotive_repair_manual_wiring_diagrams/BYD/2129.html",
+      "accessed": "2026-11-16",
+      "access": "Public contents; same third-party publisher"
+    },
+    {
+      "name": "BYD TIS",
+      "url": "https://tis.byd.com/",
+      "access": "Original vehicle-specific repair procedures restricted"
+    },
+    {
+      "name": "SAE J2012_202511",
+      "url": "https://saemobilus.sae.org/standards/j2012_202511-diagnostic-trouble-code-definitions",
+      "access": "Public scope only, full standard not accessed"
+    }
+  ],
+  "open_issues": [
+    "OEM condition thresholds and full definition unavailable",
+    "No VIN/engine/ECU software applicability confirmed",
+    "EU and Sweden usage not proven from China catalogues",
+    "Legacy semantic conflicts 6",
+    "Extra two digits cannot be assumed to be standardized failure types",
+    "No manufacturer-approved HV measurement or pinouts"
+  ]
+}
