@@ -1,0 +1,62 @@
+{
+  "schema": "dtcnexis-lexus-batch05-QA-v1",
+  "brand": "Lexus",
+  "created_on": "2026-11-16",
+  "branch": "work/lexus-dtc-batch05-20261116",
+  "baseline": {
+    "main_source_records": 72,
+    "source_preserved_files": 3,
+    "batch03_oem_code_records": 3,
+    "previous_branch_distinct_codes": 75,
+    "batch03_deferred": 33,
+    "batch04_deferred": 2,
+    "preexisting_primary_definition_review_total": 72,
+    "older_primary_definition_pending": 42
+  },
+  "added": {
+    "oem_sourced_code_records": 12,
+    "oem_sourced_B": 10,
+    "oem_sourced_P": 2,
+    "oem_sourced_C": 0,
+    "oem_sourced_U": 0,
+    "new_unique_codes": 12,
+    "after_batch05_branch_distinct_codes": 87,
+    "exact_vehicle_engine_DTC_scopes": 6,
+    "HVAC_family_conditional_scopes": 34,
+    "application_total": 40,
+    "OEM_sources": 2,
+    "additional_deferred": 4,
+    "total_deferred_after_batch05_excluding_older_42": 39,
+    "images_created": 0
+  },
+  "checks": {
+    "duplicate_against_prior_75": 0,
+    "duplicate_new_code_ids": 0,
+    "duplicate_new_applicability_ids": 0,
+    "applicability_orphan_record_refs": 0,
+    "applicability_missing_source_refs": 0,
+    "record_missing_source_refs": 0,
+    "non_null_image_paths": 0,
+    "all_new_records_draft": true
+  },
+  "known_limitations": [
+    "Sweden and EU market fitment NOT documented for batch05; USA bulletins only",
+    "HVAC matrix is code-by-servo family for IS/RC/GS/GS F; equipment, VIN, model year and calibration must be checked in TIS; not exact VIN fitment",
+    "P268111 and P268115 exact model/engine/years documented in Lexus US bulletin; vehicle-specific VIN/campaign qualification not independently confirmed",
+    "HVAC motor part numbers vary by model/date; source only lists candidates, not permission to order for a VIN",
+    "P0A80-123 Europe source lead only in deferred queue; not promoted",
+    "Full wiring, ECU connector terminal values, allowed image licenses and additional TIS specs still pending",
+    "OEM bulletin screenshots viewed for HVAC; cooling PDF textual content confirmed, screenshot cache unavailable",
+    "Do not collect or generate new code images under current owner hold",
+    "Old 72 records still pending final technical approval; 42 old definitions lack primary verification",
+    "No application/release changes; merge requires owner approval"
+  ],
+  "source_identifiers": [
+    "L-SB-0001-21 Rev1",
+    "L-SB-0051-24 Rev1"
+  ],
+  "release_authorized": false,
+  "git_main_changed": false,
+  "app_modified": false,
+  "PR_review_required": true
+}

@@ -1,0 +1,3095 @@
+{
+  "schema": "dtcnexis-lexus-batch05-primary-evidence-v1",
+  "brand": "Lexus",
+  "date": "2026-11-16",
+  "parent_branch": "work/lexus-oem-evidence-batch04-20261116",
+  "review_only": true,
+  "originals_untouched": true,
+  "approval_status": "NOT_APPROVED",
+  "market_priority_note": "Only USA manufacturer TSBs proven this batch; Sweden/EU applicability requires Lexus-Tech / VIN verification",
+  "source_documents": [
+    {
+      "id": "LEX-B05-OEM-COOL-2025",
+      "publisher": "Lexus / Toyota Motor Sales USA",
+      "kind": "OEM_TSB",
+      "bulletin": "L-SB-0051-24 Rev1",
+      "title": "Engine Maintenance Required Message with DTC(s) P268111 and/or P268115",
+      "document_date": "2024-12-05",
+      "revision_notice_date": "2025-01-07",
+      "market": "USA",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11014175-0001.pdf",
+      "pages": "1-4",
+      "verified_on": "2026-11-16",
+      "evidence": "Explicit code definitions, 3 model/engine scopes, conditional water-valve repair, and part-number table",
+      "rights": "Lexus/Toyota; reference metadata only, figures not redistributed",
+      "screen_verification": "Web PDF text retrieved, screenshot service cache unavailable"
+    },
+    {
+      "id": "LEX-B05-OEM-HVAC-2021",
+      "publisher": "Lexus / Toyota Motor Sales USA",
+      "kind": "OEM_TSB",
+      "bulletin": "L-SB-0001-21 Rev1",
+      "title": "HVAC Servo Motor Malfunction",
+      "document_date": "2021-01-11",
+      "revision_notice_date": "2021-02-11",
+      "market": "USA",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10188921-9999.pdf",
+      "pages": "1-25 and diagnostic procedures",
+      "verified_on": "2026-11-16",
+      "evidence": "Ten distinct HVAC body DTC definitions, model-year applicability, IS/RC vs GS/GS F servo-location tables, Active Test item names, and servo utility workflow",
+      "rights": "Lexus/Toyota; source link retained; drawings not redistributed",
+      "screen_verification": "Web PDF text and screenshots of pages 1, 2, 24 retrieved"
+    }
+  ],
+  "code_count": 12,
+  "codes": [
+    {
+      "record_id": "LEX-B05-B-B1441-HVAC",
+      "brand": "Lexus",
+      "code_original": "B1441",
+      "base_code": "B1441",
+      "code_format": "5-character DTC",
+      "failure_type": null,
+      "category": "B",
+      "code_type": "Lexus_manufacturer_specific_body_DTC; SAE_J2012DA_direct_check_pending",
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "definition_en": "Air Mix Damper Control Servo Motor Circuit (Front Passenger Side Lower Air Mix)",
+      "translation_ar": "خلل في دائرة محرك سيرفو بوابة مزج الهواء السفلي الأمامي جهة الراكب",
+      "symptoms": [
+        "Uneven passenger-compartment vent temperature or airflow",
+        "Little or no air from certain vents",
+        "Wrong MODE/blend operation"
+      ],
+      "causes": [
+        {
+          "cause": "HVAC ECU calibration/servo control or servo sticking",
+          "evidence": "L-SB-0001-21 Rev1 directs calibration update and conditioning utility before motor replacement"
+        },
+        {
+          "cause": "Particular damper servo remains flagged by cleaning utility",
+          "evidence": "Replace ONLY flagged part after tool check, vehicle variant and exact parts table"
+        },
+        {
+          "cause": "Other electrical / power / connector or damper mechanical faults",
+          "evidence": "Not diagnosed by this bulletin alone; OEM Repair Manual necessary"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action": "Verify VIN, exact equipment (HVAC servo layout), production/model year and calibration with Lexus TIS; confirm bulletin and vehicle eligibility."
+        },
+        {
+          "step": 2,
+          "action": "Capture HVAC symptoms (uneven temperature/airflow, little/no outlet airflow, incorrect MODE) and read the air conditioning ECU DTC with Techstream."
+        },
+        {
+          "step": 3,
+          "action": "Check AC amplifier calibration ID. If eligible, follow OEM one-time A/C amplifier flash reprogramming; use approved battery support in Power Supply Mode. 13.5 V target; minimum above 11.4 V per this bulletin only."
+        },
+        {
+          "step": 4,
+          "action": "Complete the prescribed servo cleaning utility with MODE=Face, temperature=Max Cold, Air Inlet=Recirculation. Use the utility only with new HVAC ECU calibration."
+        },
+        {
+          "step": 5,
+          "action": "Recheck which DTCs remain after the utility. Replace only the specific servo still flagged after matching hardware, Active Test item, group and exact part number to VIN. If B1497/B149A occurs, this bulletin does not apply; diagnose communication per Repair Manual."
+        },
+        {
+          "step": 6,
+          "action": "Re-read DTC and verify HVAC operation; if conditions remain, continue OEM Repair Manual rather than guessing connector pins or replacing all servos."
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Air Mix Servo Targ Pulse (P)",
+          "name_ar": "موضع/نبض السيرفو المستهدف (اختبار تحكم فعّال)",
+          "test_method": "Techstream Active Test / HVAC servo utility",
+          "normal_value": "غير مؤكد — لا توجد قيمة رقمية ثابتة معتمدة لكل VIN",
+          "reference": "L-SB-0001-21 Rev1, IS/RC and GS/GS F servo tables"
+        }
+      ],
+      "tools": [
+        "Techstream >=15.30.027 according to bulletin",
+        "A/C damper servo operation check tool",
+        "Approved battery support DCA-8000 for reprogramming"
+      ],
+      "parts": [
+        {
+          "vehicle_group": "IS",
+          "possible_part_numbers": [
+            "87106-30550"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "RC",
+          "possible_part_numbers": [
+            "87106-30550"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "GS",
+          "possible_part_numbers": [
+            "87106-30550",
+            "87106-30560"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "GS F",
+          "possible_part_numbers": [
+            "87106-30550",
+            "87106-30560"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        }
+      ],
+      "wiring": null,
+      "connector_pins": null,
+      "part_location": {
+        "status": "OEM_location_guide_by_IS_RC_GS_GSF_not_redistributed",
+        "exact_engine_position": null,
+        "source_id": "LEX-B05-OEM-HVAC-2021"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft",
+      "oem_definition_verified": true,
+      "individual_VIN_fitment_verified": false,
+      "source_ids": [
+        "LEX-B05-OEM-HVAC-2021"
+      ],
+      "module_configuration_notes": [
+        "IS",
+        "RC",
+        "GS",
+        "GS F"
+      ]
+    },
+    {
+      "record_id": "LEX-B05-B-B1442-HVAC",
+      "brand": "Lexus",
+      "code_original": "B1442",
+      "base_code": "B1442",
+      "code_format": "5-character DTC",
+      "failure_type": null,
+      "category": "B",
+      "code_type": "Lexus_manufacturer_specific_body_DTC; SAE_J2012DA_direct_check_pending",
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "definition_en": "Air Inlet Damper Control Servo Motor Circuit",
+      "translation_ar": "خلل في دائرة محرك سيرفو بوابة مدخل الهواء",
+      "symptoms": [
+        "Uneven passenger-compartment vent temperature or airflow",
+        "Little or no air from certain vents",
+        "Wrong MODE/blend operation"
+      ],
+      "causes": [
+        {
+          "cause": "HVAC ECU calibration/servo control or servo sticking",
+          "evidence": "L-SB-0001-21 Rev1 directs calibration update and conditioning utility before motor replacement"
+        },
+        {
+          "cause": "Particular damper servo remains flagged by cleaning utility",
+          "evidence": "Replace ONLY flagged part after tool check, vehicle variant and exact parts table"
+        },
+        {
+          "cause": "Other electrical / power / connector or damper mechanical faults",
+          "evidence": "Not diagnosed by this bulletin alone; OEM Repair Manual necessary"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action": "Verify VIN, exact equipment (HVAC servo layout), production/model year and calibration with Lexus TIS; confirm bulletin and vehicle eligibility."
+        },
+        {
+          "step": 2,
+          "action": "Capture HVAC symptoms (uneven temperature/airflow, little/no outlet airflow, incorrect MODE) and read the air conditioning ECU DTC with Techstream."
+        },
+        {
+          "step": 3,
+          "action": "Check AC amplifier calibration ID. If eligible, follow OEM one-time A/C amplifier flash reprogramming; use approved battery support in Power Supply Mode. 13.5 V target; minimum above 11.4 V per this bulletin only."
+        },
+        {
+          "step": 4,
+          "action": "Complete the prescribed servo cleaning utility with MODE=Face, temperature=Max Cold, Air Inlet=Recirculation. Use the utility only with new HVAC ECU calibration."
+        },
+        {
+          "step": 5,
+          "action": "Recheck which DTCs remain after the utility. Replace only the specific servo still flagged after matching hardware, Active Test item, group and exact part number to VIN. If B1497/B149A occurs, this bulletin does not apply; diagnose communication per Repair Manual."
+        },
+        {
+          "step": 6,
+          "action": "Re-read DTC and verify HVAC operation; if conditions remain, continue OEM Repair Manual rather than guessing connector pins or replacing all servos."
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Air Inlet Damper Targ Pulse",
+          "name_ar": "موضع/نبض السيرفو المستهدف (اختبار تحكم فعّال)",
+          "test_method": "Techstream Active Test / HVAC servo utility",
+          "normal_value": "غير مؤكد — لا توجد قيمة رقمية ثابتة معتمدة لكل VIN",
+          "reference": "L-SB-0001-21 Rev1, IS/RC and GS/GS F servo tables"
+        }
+      ],
+      "tools": [
+        "Techstream >=15.30.027 according to bulletin",
+        "A/C damper servo operation check tool",
+        "Approved battery support DCA-8000 for reprogramming"
+      ],
+      "parts": [
+        {
+          "vehicle_group": "IS",
+          "possible_part_numbers": [
+            "87106-30510"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "RC",
+          "possible_part_numbers": [
+            "87106-30510"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "GS",
+          "possible_part_numbers": [
+            "87106-30510"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "GS F",
+          "possible_part_numbers": [
+            "87106-30510"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        }
+      ],
+      "wiring": null,
+      "connector_pins": null,
+      "part_location": {
+        "status": "OEM_location_guide_by_IS_RC_GS_GSF_not_redistributed",
+        "exact_engine_position": null,
+        "source_id": "LEX-B05-OEM-HVAC-2021"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft",
+      "oem_definition_verified": true,
+      "individual_VIN_fitment_verified": false,
+      "source_ids": [
+        "LEX-B05-OEM-HVAC-2021"
+      ],
+      "module_configuration_notes": [
+        "IS",
+        "RC",
+        "GS",
+        "GS F"
+      ]
+    },
+    {
+      "record_id": "LEX-B05-B-B1443-HVAC",
+      "brand": "Lexus",
+      "code_original": "B1443",
+      "base_code": "B1443",
+      "code_format": "5-character DTC",
+      "failure_type": null,
+      "category": "B",
+      "code_type": "Lexus_manufacturer_specific_body_DTC; SAE_J2012DA_direct_check_pending",
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "definition_en": "Air Outlet Damper Control Servo Motor Circuit",
+      "translation_ar": "خلل في دائرة محرك سيرفو بوابة توزيع الهواء",
+      "symptoms": [
+        "Uneven passenger-compartment vent temperature or airflow",
+        "Little or no air from certain vents",
+        "Wrong MODE/blend operation"
+      ],
+      "causes": [
+        {
+          "cause": "HVAC ECU calibration/servo control or servo sticking",
+          "evidence": "L-SB-0001-21 Rev1 directs calibration update and conditioning utility before motor replacement"
+        },
+        {
+          "cause": "Particular damper servo remains flagged by cleaning utility",
+          "evidence": "Replace ONLY flagged part after tool check, vehicle variant and exact parts table"
+        },
+        {
+          "cause": "Other electrical / power / connector or damper mechanical faults",
+          "evidence": "Not diagnosed by this bulletin alone; OEM Repair Manual necessary"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action": "Verify VIN, exact equipment (HVAC servo layout), production/model year and calibration with Lexus TIS; confirm bulletin and vehicle eligibility."
+        },
+        {
+          "step": 2,
+          "action": "Capture HVAC symptoms (uneven temperature/airflow, little/no outlet airflow, incorrect MODE) and read the air conditioning ECU DTC with Techstream."
+        },
+        {
+          "step": 3,
+          "action": "Check AC amplifier calibration ID. If eligible, follow OEM one-time A/C amplifier flash reprogramming; use approved battery support in Power Supply Mode. 13.5 V target; minimum above 11.4 V per this bulletin only."
+        },
+        {
+          "step": 4,
+          "action": "Complete the prescribed servo cleaning utility with MODE=Face, temperature=Max Cold, Air Inlet=Recirculation. Use the utility only with new HVAC ECU calibration."
+        },
+        {
+          "step": 5,
+          "action": "Recheck which DTCs remain after the utility. Replace only the specific servo still flagged after matching hardware, Active Test item, group and exact part number to VIN. If B1497/B149A occurs, this bulletin does not apply; diagnose communication per Repair Manual."
+        },
+        {
+          "step": 6,
+          "action": "Re-read DTC and verify HVAC operation; if conditions remain, continue OEM Repair Manual rather than guessing connector pins or replacing all servos."
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Air Outlet Servo Pulse (D)",
+          "name_ar": "موضع/نبض السيرفو المستهدف (اختبار تحكم فعّال)",
+          "test_method": "Techstream Active Test / HVAC servo utility",
+          "normal_value": "غير مؤكد — لا توجد قيمة رقمية ثابتة معتمدة لكل VIN",
+          "reference": "L-SB-0001-21 Rev1, IS/RC and GS/GS F servo tables"
+        }
+      ],
+      "tools": [
+        "Techstream >=15.30.027 according to bulletin",
+        "A/C damper servo operation check tool",
+        "Approved battery support DCA-8000 for reprogramming"
+      ],
+      "parts": [
+        {
+          "vehicle_group": "IS",
+          "possible_part_numbers": [
+            "87106-30540"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "RC",
+          "possible_part_numbers": [
+            "87106-30540"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "GS",
+          "possible_part_numbers": [
+            "87106-30590"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "GS F",
+          "possible_part_numbers": [
+            "87106-30590"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        }
+      ],
+      "wiring": null,
+      "connector_pins": null,
+      "part_location": {
+        "status": "OEM_location_guide_by_IS_RC_GS_GSF_not_redistributed",
+        "exact_engine_position": null,
+        "source_id": "LEX-B05-OEM-HVAC-2021"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft",
+      "oem_definition_verified": true,
+      "individual_VIN_fitment_verified": false,
+      "source_ids": [
+        "LEX-B05-OEM-HVAC-2021"
+      ],
+      "module_configuration_notes": [
+        "IS",
+        "RC",
+        "GS",
+        "GS F"
+      ]
+    },
+    {
+      "record_id": "LEX-B05-B-B1446-HVAC",
+      "brand": "Lexus",
+      "code_original": "B1446",
+      "base_code": "B1446",
+      "code_format": "5-character DTC",
+      "failure_type": null,
+      "category": "B",
+      "code_type": "Lexus_manufacturer_specific_body_DTC; SAE_J2012DA_direct_check_pending",
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "definition_en": "Air Mix Damper Control Servo Motor Circuit (Driver Side Lower Air Mix)",
+      "translation_ar": "خلل في دائرة محرك سيرفو بوابة مزج الهواء السفلي جهة السائق",
+      "symptoms": [
+        "Uneven passenger-compartment vent temperature or airflow",
+        "Little or no air from certain vents",
+        "Wrong MODE/blend operation"
+      ],
+      "causes": [
+        {
+          "cause": "HVAC ECU calibration/servo control or servo sticking",
+          "evidence": "L-SB-0001-21 Rev1 directs calibration update and conditioning utility before motor replacement"
+        },
+        {
+          "cause": "Particular damper servo remains flagged by cleaning utility",
+          "evidence": "Replace ONLY flagged part after tool check, vehicle variant and exact parts table"
+        },
+        {
+          "cause": "Other electrical / power / connector or damper mechanical faults",
+          "evidence": "Not diagnosed by this bulletin alone; OEM Repair Manual necessary"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action": "Verify VIN, exact equipment (HVAC servo layout), production/model year and calibration with Lexus TIS; confirm bulletin and vehicle eligibility."
+        },
+        {
+          "step": 2,
+          "action": "Capture HVAC symptoms (uneven temperature/airflow, little/no outlet airflow, incorrect MODE) and read the air conditioning ECU DTC with Techstream."
+        },
+        {
+          "step": 3,
+          "action": "Check AC amplifier calibration ID. If eligible, follow OEM one-time A/C amplifier flash reprogramming; use approved battery support in Power Supply Mode. 13.5 V target; minimum above 11.4 V per this bulletin only."
+        },
+        {
+          "step": 4,
+          "action": "Complete the prescribed servo cleaning utility with MODE=Face, temperature=Max Cold, Air Inlet=Recirculation. Use the utility only with new HVAC ECU calibration."
+        },
+        {
+          "step": 5,
+          "action": "Recheck which DTCs remain after the utility. Replace only the specific servo still flagged after matching hardware, Active Test item, group and exact part number to VIN. If B1497/B149A occurs, this bulletin does not apply; diagnose communication per Repair Manual."
+        },
+        {
+          "step": 6,
+          "action": "Re-read DTC and verify HVAC operation; if conditions remain, continue OEM Repair Manual rather than guessing connector pins or replacing all servos."
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Air Mix Servo Targ Pulse (D)",
+          "name_ar": "موضع/نبض السيرفو المستهدف (اختبار تحكم فعّال)",
+          "test_method": "Techstream Active Test / HVAC servo utility",
+          "normal_value": "غير مؤكد — لا توجد قيمة رقمية ثابتة معتمدة لكل VIN",
+          "reference": "L-SB-0001-21 Rev1, IS/RC and GS/GS F servo tables"
+        }
+      ],
+      "tools": [
+        "Techstream >=15.30.027 according to bulletin",
+        "A/C damper servo operation check tool",
+        "Approved battery support DCA-8000 for reprogramming"
+      ],
+      "parts": [
+        {
+          "vehicle_group": "IS",
+          "possible_part_numbers": [
+            "87106-30570"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "RC",
+          "possible_part_numbers": [
+            "87106-30570"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "GS",
+          "possible_part_numbers": [
+            "87106-30570"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "GS F",
+          "possible_part_numbers": [
+            "87106-30570"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        }
+      ],
+      "wiring": null,
+      "connector_pins": null,
+      "part_location": {
+        "status": "OEM_location_guide_by_IS_RC_GS_GSF_not_redistributed",
+        "exact_engine_position": null,
+        "source_id": "LEX-B05-OEM-HVAC-2021"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft",
+      "oem_definition_verified": true,
+      "individual_VIN_fitment_verified": false,
+      "source_ids": [
+        "LEX-B05-OEM-HVAC-2021"
+      ],
+      "module_configuration_notes": [
+        "IS",
+        "RC",
+        "GS",
+        "GS F"
+      ]
+    },
+    {
+      "record_id": "LEX-B05-B-B1447-HVAC",
+      "brand": "Lexus",
+      "code_original": "B1447",
+      "base_code": "B1447",
+      "code_format": "5-character DTC",
+      "failure_type": null,
+      "category": "B",
+      "code_type": "Lexus_manufacturer_specific_body_DTC; SAE_J2012DA_direct_check_pending",
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "definition_en": "Rear Air Mix Damper Control Servo Motor Circuit",
+      "translation_ar": "خلل في دائرة محرك سيرفو بوابة مزج الهواء الخلفية",
+      "symptoms": [
+        "Uneven passenger-compartment vent temperature or airflow",
+        "Little or no air from certain vents",
+        "Wrong MODE/blend operation"
+      ],
+      "causes": [
+        {
+          "cause": "HVAC ECU calibration/servo control or servo sticking",
+          "evidence": "L-SB-0001-21 Rev1 directs calibration update and conditioning utility before motor replacement"
+        },
+        {
+          "cause": "Particular damper servo remains flagged by cleaning utility",
+          "evidence": "Replace ONLY flagged part after tool check, vehicle variant and exact parts table"
+        },
+        {
+          "cause": "Other electrical / power / connector or damper mechanical faults",
+          "evidence": "Not diagnosed by this bulletin alone; OEM Repair Manual necessary"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action": "Verify VIN, exact equipment (HVAC servo layout), production/model year and calibration with Lexus TIS; confirm bulletin and vehicle eligibility."
+        },
+        {
+          "step": 2,
+          "action": "Capture HVAC symptoms (uneven temperature/airflow, little/no outlet airflow, incorrect MODE) and read the air conditioning ECU DTC with Techstream."
+        },
+        {
+          "step": 3,
+          "action": "Check AC amplifier calibration ID. If eligible, follow OEM one-time A/C amplifier flash reprogramming; use approved battery support in Power Supply Mode. 13.5 V target; minimum above 11.4 V per this bulletin only."
+        },
+        {
+          "step": 4,
+          "action": "Complete the prescribed servo cleaning utility with MODE=Face, temperature=Max Cold, Air Inlet=Recirculation. Use the utility only with new HVAC ECU calibration."
+        },
+        {
+          "step": 5,
+          "action": "Recheck which DTCs remain after the utility. Replace only the specific servo still flagged after matching hardware, Active Test item, group and exact part number to VIN. If B1497/B149A occurs, this bulletin does not apply; diagnose communication per Repair Manual."
+        },
+        {
+          "step": 6,
+          "action": "Re-read DTC and verify HVAC operation; if conditions remain, continue OEM Repair Manual rather than guessing connector pins or replacing all servos."
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Rear Air Mix Servo Targ Pulse",
+          "name_ar": "موضع/نبض السيرفو المستهدف (اختبار تحكم فعّال)",
+          "test_method": "Techstream Active Test / HVAC servo utility",
+          "normal_value": "غير مؤكد — لا توجد قيمة رقمية ثابتة معتمدة لكل VIN",
+          "reference": "L-SB-0001-21 Rev1, IS/RC and GS/GS F servo tables"
+        }
+      ],
+      "tools": [
+        "Techstream >=15.30.027 according to bulletin",
+        "A/C damper servo operation check tool",
+        "Approved battery support DCA-8000 for reprogramming"
+      ],
+      "parts": [
+        {
+          "vehicle_group": "GS",
+          "possible_part_numbers": [
+            "87106-30560"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "GS F",
+          "possible_part_numbers": [
+            "87106-30560"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        }
+      ],
+      "wiring": null,
+      "connector_pins": null,
+      "part_location": {
+        "status": "OEM_location_guide_by_IS_RC_GS_GSF_not_redistributed",
+        "exact_engine_position": null,
+        "source_id": "LEX-B05-OEM-HVAC-2021"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft",
+      "oem_definition_verified": true,
+      "individual_VIN_fitment_verified": false,
+      "source_ids": [
+        "LEX-B05-OEM-HVAC-2021"
+      ],
+      "module_configuration_notes": [
+        "GS",
+        "GS F"
+      ]
+    },
+    {
+      "record_id": "LEX-B05-B-B1448-HVAC",
+      "brand": "Lexus",
+      "code_original": "B1448",
+      "base_code": "B1448",
+      "code_format": "5-character DTC",
+      "failure_type": null,
+      "category": "B",
+      "code_type": "Lexus_manufacturer_specific_body_DTC; SAE_J2012DA_direct_check_pending",
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "definition_en": "Passenger Side Face Servo Motor Circuit",
+      "translation_ar": "خلل في دائرة محرك سيرفو توزيع الهواء إلى فتحات الوجه جهة الراكب",
+      "symptoms": [
+        "Uneven passenger-compartment vent temperature or airflow",
+        "Little or no air from certain vents",
+        "Wrong MODE/blend operation"
+      ],
+      "causes": [
+        {
+          "cause": "HVAC ECU calibration/servo control or servo sticking",
+          "evidence": "L-SB-0001-21 Rev1 directs calibration update and conditioning utility before motor replacement"
+        },
+        {
+          "cause": "Particular damper servo remains flagged by cleaning utility",
+          "evidence": "Replace ONLY flagged part after tool check, vehicle variant and exact parts table"
+        },
+        {
+          "cause": "Other electrical / power / connector or damper mechanical faults",
+          "evidence": "Not diagnosed by this bulletin alone; OEM Repair Manual necessary"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action": "Verify VIN, exact equipment (HVAC servo layout), production/model year and calibration with Lexus TIS; confirm bulletin and vehicle eligibility."
+        },
+        {
+          "step": 2,
+          "action": "Capture HVAC symptoms (uneven temperature/airflow, little/no outlet airflow, incorrect MODE) and read the air conditioning ECU DTC with Techstream."
+        },
+        {
+          "step": 3,
+          "action": "Check AC amplifier calibration ID. If eligible, follow OEM one-time A/C amplifier flash reprogramming; use approved battery support in Power Supply Mode. 13.5 V target; minimum above 11.4 V per this bulletin only."
+        },
+        {
+          "step": 4,
+          "action": "Complete the prescribed servo cleaning utility with MODE=Face, temperature=Max Cold, Air Inlet=Recirculation. Use the utility only with new HVAC ECU calibration."
+        },
+        {
+          "step": 5,
+          "action": "Recheck which DTCs remain after the utility. Replace only the specific servo still flagged after matching hardware, Active Test item, group and exact part number to VIN. If B1497/B149A occurs, this bulletin does not apply; diagnose communication per Repair Manual."
+        },
+        {
+          "step": 6,
+          "action": "Re-read DTC and verify HVAC operation; if conditions remain, continue OEM Repair Manual rather than guessing connector pins or replacing all servos."
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Air Outlet Servo Pulse (P)",
+          "name_ar": "موضع/نبض السيرفو المستهدف (اختبار تحكم فعّال)",
+          "test_method": "Techstream Active Test / HVAC servo utility",
+          "normal_value": "غير مؤكد — لا توجد قيمة رقمية ثابتة معتمدة لكل VIN",
+          "reference": "L-SB-0001-21 Rev1, IS/RC and GS/GS F servo tables"
+        }
+      ],
+      "tools": [
+        "Techstream >=15.30.027 according to bulletin",
+        "A/C damper servo operation check tool",
+        "Approved battery support DCA-8000 for reprogramming"
+      ],
+      "parts": [
+        {
+          "vehicle_group": "GS",
+          "possible_part_numbers": [
+            "87106-30580"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "GS F",
+          "possible_part_numbers": [
+            "87106-30580"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        }
+      ],
+      "wiring": null,
+      "connector_pins": null,
+      "part_location": {
+        "status": "OEM_location_guide_by_IS_RC_GS_GSF_not_redistributed",
+        "exact_engine_position": null,
+        "source_id": "LEX-B05-OEM-HVAC-2021"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft",
+      "oem_definition_verified": true,
+      "individual_VIN_fitment_verified": false,
+      "source_ids": [
+        "LEX-B05-OEM-HVAC-2021"
+      ],
+      "module_configuration_notes": [
+        "GS",
+        "GS F"
+      ]
+    },
+    {
+      "record_id": "LEX-B05-B-B1449-HVAC",
+      "brand": "Lexus",
+      "code_original": "B1449",
+      "base_code": "B1449",
+      "code_format": "5-character DTC",
+      "failure_type": null,
+      "category": "B",
+      "code_type": "Lexus_manufacturer_specific_body_DTC; SAE_J2012DA_direct_check_pending",
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "definition_en": "Rear Air Outlet Damper Control Servo Motor Circuit",
+      "translation_ar": "خلل في دائرة محرك سيرفو بوابة توزيع الهواء الخلفية",
+      "symptoms": [
+        "Uneven passenger-compartment vent temperature or airflow",
+        "Little or no air from certain vents",
+        "Wrong MODE/blend operation"
+      ],
+      "causes": [
+        {
+          "cause": "HVAC ECU calibration/servo control or servo sticking",
+          "evidence": "L-SB-0001-21 Rev1 directs calibration update and conditioning utility before motor replacement"
+        },
+        {
+          "cause": "Particular damper servo remains flagged by cleaning utility",
+          "evidence": "Replace ONLY flagged part after tool check, vehicle variant and exact parts table"
+        },
+        {
+          "cause": "Other electrical / power / connector or damper mechanical faults",
+          "evidence": "Not diagnosed by this bulletin alone; OEM Repair Manual necessary"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action": "Verify VIN, exact equipment (HVAC servo layout), production/model year and calibration with Lexus TIS; confirm bulletin and vehicle eligibility."
+        },
+        {
+          "step": 2,
+          "action": "Capture HVAC symptoms (uneven temperature/airflow, little/no outlet airflow, incorrect MODE) and read the air conditioning ECU DTC with Techstream."
+        },
+        {
+          "step": 3,
+          "action": "Check AC amplifier calibration ID. If eligible, follow OEM one-time A/C amplifier flash reprogramming; use approved battery support in Power Supply Mode. 13.5 V target; minimum above 11.4 V per this bulletin only."
+        },
+        {
+          "step": 4,
+          "action": "Complete the prescribed servo cleaning utility with MODE=Face, temperature=Max Cold, Air Inlet=Recirculation. Use the utility only with new HVAC ECU calibration."
+        },
+        {
+          "step": 5,
+          "action": "Recheck which DTCs remain after the utility. Replace only the specific servo still flagged after matching hardware, Active Test item, group and exact part number to VIN. If B1497/B149A occurs, this bulletin does not apply; diagnose communication per Repair Manual."
+        },
+        {
+          "step": 6,
+          "action": "Re-read DTC and verify HVAC operation; if conditions remain, continue OEM Repair Manual rather than guessing connector pins or replacing all servos."
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "A/O Servo Pulse (Rr D)",
+          "name_ar": "موضع/نبض السيرفو المستهدف (اختبار تحكم فعّال)",
+          "test_method": "Techstream Active Test / HVAC servo utility",
+          "normal_value": "غير مؤكد — لا توجد قيمة رقمية ثابتة معتمدة لكل VIN",
+          "reference": "L-SB-0001-21 Rev1, IS/RC and GS/GS F servo tables"
+        }
+      ],
+      "tools": [
+        "Techstream >=15.30.027 according to bulletin",
+        "A/C damper servo operation check tool",
+        "Approved battery support DCA-8000 for reprogramming"
+      ],
+      "parts": [
+        {
+          "vehicle_group": "GS",
+          "possible_part_numbers": [
+            "87106-30600",
+            "87106-30620"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "GS F",
+          "possible_part_numbers": [
+            "87106-30620"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        }
+      ],
+      "wiring": null,
+      "connector_pins": null,
+      "part_location": {
+        "status": "OEM_location_guide_by_IS_RC_GS_GSF_not_redistributed",
+        "exact_engine_position": null,
+        "source_id": "LEX-B05-OEM-HVAC-2021"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft",
+      "oem_definition_verified": true,
+      "individual_VIN_fitment_verified": false,
+      "source_ids": [
+        "LEX-B05-OEM-HVAC-2021"
+      ],
+      "module_configuration_notes": [
+        "GS",
+        "GS F"
+      ]
+    },
+    {
+      "record_id": "LEX-B05-B-B1453-HVAC",
+      "brand": "Lexus",
+      "code_original": "B1453",
+      "base_code": "B1453",
+      "code_format": "5-character DTC",
+      "failure_type": null,
+      "category": "B",
+      "code_type": "Lexus_manufacturer_specific_body_DTC; SAE_J2012DA_direct_check_pending",
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "definition_en": "Driver Side Air Outlet Damper COOL Control Servo Motor Circuit",
+      "translation_ar": "خلل في دائرة محرك سيرفو تبريد مخرج الهواء جهة السائق",
+      "symptoms": [
+        "Uneven passenger-compartment vent temperature or airflow",
+        "Little or no air from certain vents",
+        "Wrong MODE/blend operation"
+      ],
+      "causes": [
+        {
+          "cause": "HVAC ECU calibration/servo control or servo sticking",
+          "evidence": "L-SB-0001-21 Rev1 directs calibration update and conditioning utility before motor replacement"
+        },
+        {
+          "cause": "Particular damper servo remains flagged by cleaning utility",
+          "evidence": "Replace ONLY flagged part after tool check, vehicle variant and exact parts table"
+        },
+        {
+          "cause": "Other electrical / power / connector or damper mechanical faults",
+          "evidence": "Not diagnosed by this bulletin alone; OEM Repair Manual necessary"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action": "Verify VIN, exact equipment (HVAC servo layout), production/model year and calibration with Lexus TIS; confirm bulletin and vehicle eligibility."
+        },
+        {
+          "step": 2,
+          "action": "Capture HVAC symptoms (uneven temperature/airflow, little/no outlet airflow, incorrect MODE) and read the air conditioning ECU DTC with Techstream."
+        },
+        {
+          "step": 3,
+          "action": "Check AC amplifier calibration ID. If eligible, follow OEM one-time A/C amplifier flash reprogramming; use approved battery support in Power Supply Mode. 13.5 V target; minimum above 11.4 V per this bulletin only."
+        },
+        {
+          "step": 4,
+          "action": "Complete the prescribed servo cleaning utility with MODE=Face, temperature=Max Cold, Air Inlet=Recirculation. Use the utility only with new HVAC ECU calibration."
+        },
+        {
+          "step": 5,
+          "action": "Recheck which DTCs remain after the utility. Replace only the specific servo still flagged after matching hardware, Active Test item, group and exact part number to VIN. If B1497/B149A occurs, this bulletin does not apply; diagnose communication per Repair Manual."
+        },
+        {
+          "step": 6,
+          "action": "Re-read DTC and verify HVAC operation; if conditions remain, continue OEM Repair Manual rather than guessing connector pins or replacing all servos."
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Cool A/M Servo Pulse (D)",
+          "name_ar": "موضع/نبض السيرفو المستهدف (اختبار تحكم فعّال)",
+          "test_method": "Techstream Active Test / HVAC servo utility",
+          "normal_value": "غير مؤكد — لا توجد قيمة رقمية ثابتة معتمدة لكل VIN",
+          "reference": "L-SB-0001-21 Rev1, IS/RC and GS/GS F servo tables"
+        }
+      ],
+      "tools": [
+        "Techstream >=15.30.027 according to bulletin",
+        "A/C damper servo operation check tool",
+        "Approved battery support DCA-8000 for reprogramming"
+      ],
+      "parts": [
+        {
+          "vehicle_group": "IS",
+          "possible_part_numbers": [
+            "87106-30530",
+            "87106-30610"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "RC",
+          "possible_part_numbers": [
+            "87106-30610"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "GS",
+          "possible_part_numbers": [
+            "87106-30530",
+            "87106-30610"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "GS F",
+          "possible_part_numbers": [
+            "87106-30610"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        }
+      ],
+      "wiring": null,
+      "connector_pins": null,
+      "part_location": {
+        "status": "OEM_location_guide_by_IS_RC_GS_GSF_not_redistributed",
+        "exact_engine_position": null,
+        "source_id": "LEX-B05-OEM-HVAC-2021"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft",
+      "oem_definition_verified": true,
+      "individual_VIN_fitment_verified": false,
+      "source_ids": [
+        "LEX-B05-OEM-HVAC-2021"
+      ],
+      "module_configuration_notes": [
+        "IS",
+        "RC",
+        "GS",
+        "GS F"
+      ]
+    },
+    {
+      "record_id": "LEX-B05-B-B1454-HVAC",
+      "brand": "Lexus",
+      "code_original": "B1454",
+      "base_code": "B1454",
+      "code_format": "5-character DTC",
+      "failure_type": null,
+      "category": "B",
+      "code_type": "Lexus_manufacturer_specific_body_DTC; SAE_J2012DA_direct_check_pending",
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "definition_en": "Passenger Side Air Outlet Damper COOL Control Servo Motor Circuit",
+      "translation_ar": "خلل في دائرة محرك سيرفو تبريد مخرج الهواء جهة الراكب",
+      "symptoms": [
+        "Uneven passenger-compartment vent temperature or airflow",
+        "Little or no air from certain vents",
+        "Wrong MODE/blend operation"
+      ],
+      "causes": [
+        {
+          "cause": "HVAC ECU calibration/servo control or servo sticking",
+          "evidence": "L-SB-0001-21 Rev1 directs calibration update and conditioning utility before motor replacement"
+        },
+        {
+          "cause": "Particular damper servo remains flagged by cleaning utility",
+          "evidence": "Replace ONLY flagged part after tool check, vehicle variant and exact parts table"
+        },
+        {
+          "cause": "Other electrical / power / connector or damper mechanical faults",
+          "evidence": "Not diagnosed by this bulletin alone; OEM Repair Manual necessary"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action": "Verify VIN, exact equipment (HVAC servo layout), production/model year and calibration with Lexus TIS; confirm bulletin and vehicle eligibility."
+        },
+        {
+          "step": 2,
+          "action": "Capture HVAC symptoms (uneven temperature/airflow, little/no outlet airflow, incorrect MODE) and read the air conditioning ECU DTC with Techstream."
+        },
+        {
+          "step": 3,
+          "action": "Check AC amplifier calibration ID. If eligible, follow OEM one-time A/C amplifier flash reprogramming; use approved battery support in Power Supply Mode. 13.5 V target; minimum above 11.4 V per this bulletin only."
+        },
+        {
+          "step": 4,
+          "action": "Complete the prescribed servo cleaning utility with MODE=Face, temperature=Max Cold, Air Inlet=Recirculation. Use the utility only with new HVAC ECU calibration."
+        },
+        {
+          "step": 5,
+          "action": "Recheck which DTCs remain after the utility. Replace only the specific servo still flagged after matching hardware, Active Test item, group and exact part number to VIN. If B1497/B149A occurs, this bulletin does not apply; diagnose communication per Repair Manual."
+        },
+        {
+          "step": 6,
+          "action": "Re-read DTC and verify HVAC operation; if conditions remain, continue OEM Repair Manual rather than guessing connector pins or replacing all servos."
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Cool A/M Servo Pulse (P)",
+          "name_ar": "موضع/نبض السيرفو المستهدف (اختبار تحكم فعّال)",
+          "test_method": "Techstream Active Test / HVAC servo utility",
+          "normal_value": "غير مؤكد — لا توجد قيمة رقمية ثابتة معتمدة لكل VIN",
+          "reference": "L-SB-0001-21 Rev1, IS/RC and GS/GS F servo tables"
+        }
+      ],
+      "tools": [
+        "Techstream >=15.30.027 according to bulletin",
+        "A/C damper servo operation check tool",
+        "Approved battery support DCA-8000 for reprogramming"
+      ],
+      "parts": [
+        {
+          "vehicle_group": "IS",
+          "possible_part_numbers": [
+            "87106-30530",
+            "87106-30610"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "RC",
+          "possible_part_numbers": [
+            "87106-30610"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "GS",
+          "possible_part_numbers": [
+            "87106-30530",
+            "87106-30610"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "GS F",
+          "possible_part_numbers": [
+            "87106-30610"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        }
+      ],
+      "wiring": null,
+      "connector_pins": null,
+      "part_location": {
+        "status": "OEM_location_guide_by_IS_RC_GS_GSF_not_redistributed",
+        "exact_engine_position": null,
+        "source_id": "LEX-B05-OEM-HVAC-2021"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft",
+      "oem_definition_verified": true,
+      "individual_VIN_fitment_verified": false,
+      "source_ids": [
+        "LEX-B05-OEM-HVAC-2021"
+      ],
+      "module_configuration_notes": [
+        "IS",
+        "RC",
+        "GS",
+        "GS F"
+      ]
+    },
+    {
+      "record_id": "LEX-B05-B-B1455-HVAC",
+      "brand": "Lexus",
+      "code_original": "B1455",
+      "base_code": "B1455",
+      "code_format": "5-character DTC",
+      "failure_type": null,
+      "category": "B",
+      "code_type": "Lexus_manufacturer_specific_body_DTC; SAE_J2012DA_direct_check_pending",
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "definition_en": "Driver Side Air Outlet Damper FOOT/DEF Control Servo Motor Circuit",
+      "translation_ar": "خلل في دائرة محرك سيرفو توجيه الهواء للأقدام/إزالة الضباب جهة السائق",
+      "symptoms": [
+        "Uneven passenger-compartment vent temperature or airflow",
+        "Little or no air from certain vents",
+        "Wrong MODE/blend operation"
+      ],
+      "causes": [
+        {
+          "cause": "HVAC ECU calibration/servo control or servo sticking",
+          "evidence": "L-SB-0001-21 Rev1 directs calibration update and conditioning utility before motor replacement"
+        },
+        {
+          "cause": "Particular damper servo remains flagged by cleaning utility",
+          "evidence": "Replace ONLY flagged part after tool check, vehicle variant and exact parts table"
+        },
+        {
+          "cause": "Other electrical / power / connector or damper mechanical faults",
+          "evidence": "Not diagnosed by this bulletin alone; OEM Repair Manual necessary"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action": "Verify VIN, exact equipment (HVAC servo layout), production/model year and calibration with Lexus TIS; confirm bulletin and vehicle eligibility."
+        },
+        {
+          "step": 2,
+          "action": "Capture HVAC symptoms (uneven temperature/airflow, little/no outlet airflow, incorrect MODE) and read the air conditioning ECU DTC with Techstream."
+        },
+        {
+          "step": 3,
+          "action": "Check AC amplifier calibration ID. If eligible, follow OEM one-time A/C amplifier flash reprogramming; use approved battery support in Power Supply Mode. 13.5 V target; minimum above 11.4 V per this bulletin only."
+        },
+        {
+          "step": 4,
+          "action": "Complete the prescribed servo cleaning utility with MODE=Face, temperature=Max Cold, Air Inlet=Recirculation. Use the utility only with new HVAC ECU calibration."
+        },
+        {
+          "step": 5,
+          "action": "Recheck which DTCs remain after the utility. Replace only the specific servo still flagged after matching hardware, Active Test item, group and exact part number to VIN. If B1497/B149A occurs, this bulletin does not apply; diagnose communication per Repair Manual."
+        },
+        {
+          "step": 6,
+          "action": "Re-read DTC and verify HVAC operation; if conditions remain, continue OEM Repair Manual rather than guessing connector pins or replacing all servos."
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "DEF A/O Servo Pulse (D)",
+          "name_ar": "موضع/نبض السيرفو المستهدف (اختبار تحكم فعّال)",
+          "test_method": "Techstream Active Test / HVAC servo utility",
+          "normal_value": "غير مؤكد — لا توجد قيمة رقمية ثابتة معتمدة لكل VIN",
+          "reference": "L-SB-0001-21 Rev1, IS/RC and GS/GS F servo tables"
+        }
+      ],
+      "tools": [
+        "Techstream >=15.30.027 according to bulletin",
+        "A/C damper servo operation check tool",
+        "Approved battery support DCA-8000 for reprogramming"
+      ],
+      "parts": [
+        {
+          "vehicle_group": "IS",
+          "possible_part_numbers": [
+            "87106-30500"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "RC",
+          "possible_part_numbers": [
+            "87106-30500"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "GS",
+          "possible_part_numbers": [
+            "87106-30500"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        },
+        {
+          "vehicle_group": "GS F",
+          "possible_part_numbers": [
+            "87106-30500"
+          ],
+          "scope": "Not a VIN-specific parts order; choose by dated OEM application and installed equipment"
+        }
+      ],
+      "wiring": null,
+      "connector_pins": null,
+      "part_location": {
+        "status": "OEM_location_guide_by_IS_RC_GS_GSF_not_redistributed",
+        "exact_engine_position": null,
+        "source_id": "LEX-B05-OEM-HVAC-2021"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft",
+      "oem_definition_verified": true,
+      "individual_VIN_fitment_verified": false,
+      "source_ids": [
+        "LEX-B05-OEM-HVAC-2021"
+      ],
+      "module_configuration_notes": [
+        "IS",
+        "RC",
+        "GS",
+        "GS F"
+      ]
+    },
+    {
+      "record_id": "LEX-B05-P-P268111-COOLANT",
+      "brand": "Lexus",
+      "code_original": "P268111",
+      "base_code": "P2681",
+      "code_format": "7-character base DTC+failure type",
+      "failure_type": "11",
+      "category": "P",
+      "code_type": "OEM_extended_DTC; base_FTB_standard_classification_not_independently_verified",
+      "ecu": "Engine/Hybrid System cooling; exact reporting ECU to confirm with GTS+",
+      "definition_en": "Engine Coolant Bypass Valve Circuit Short to Ground",
+      "translation_ar": "قصر إلى الأرضي في دائرة صمام تجاوز سائل تبريد المحرك",
+      "symptoms": [
+        "\"Engine Maintenance Required\" message in MID",
+        "DTC detected during health check (MIL state not stated in bulletin)"
+      ],
+      "causes": [
+        {
+          "cause": "Water bypass/flow-shutting valve or hose-valve assembly as applicable",
+          "evidence": "Lexus L-SB-0051-24 Rev1 conditional targeted repair"
+        },
+        {
+          "cause": "Harness, connector, supply or valve circuit fault",
+          "evidence": "Circuit nature suggests checks; wiring pinout and electrical threshold absent in bulletin; not ranked or certified by this bulletin"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action": "Confirm the vehicle and Engine Maintenance Required message are present; if not, bulletin does not apply."
+        },
+        {
+          "step": 2,
+          "action": "Use GTS+ Health Check and confirm P268111 is stored; check for both P268111 and P268115 and freeze-frame if available."
+        },
+        {
+          "step": 3,
+          "action": "Match vehicle to UX200 MY2019–2021 M20A-FKS, ES300h MY2019–2021 A25A-FXS, or ES250 MY2021 A25A-FKS; market USA. Match VIN and campaign 24LE02 before ordering parts."
+        },
+        {
+          "step": 4,
+          "action": "Visually examine valve connector and wiring safely for corrosion, separation, or damage; electrical pin/voltage targets unknown and require the matching Lexus Repair Manual."
+        },
+        {
+          "step": 5,
+          "action": "Only within bulletin eligibility, replace exact model-specific water valve or water bypass valve hose assembly as listed; use applicable Lexus TIS model-year removal/installation."
+        },
+        {
+          "step": 6,
+          "action": "Use GTS+ clear codes and road-test. If code persists, follow VIN-specific cooling diagnostics; no universal ECU pinout or specified resistance supplied."
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "GTS+ Health Check / DTC",
+          "name_ar": "فحص شامل للأعطال باستخدام GTS+",
+          "test_condition": "Engine Maintenance Required message present, correct model and year",
+          "expected": "P268111 and/or P268115; exact detection criteria not given"
+        },
+        {
+          "name_en": "Engine Coolant Temperature",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "test_condition": "Not specified for this bulletin; optional for general coolant evaluation",
+          "expected": "غير مؤكد — لا تُستخدم عتبة مختلقة"
+        }
+      ],
+      "tools": [
+        "GTS+ >=2024.04.004.02 per TSB",
+        "Techstream device supported by TSB",
+        "Basic non-invasive circuit inspection tools per Repair Manual"
+      ],
+      "parts": [
+        {
+          "model": "UX 200",
+          "model_year_scope": "2019-2021",
+          "engine": "M20A-FKS",
+          "part_name": "Valve, Water",
+          "previous_part_no": "16671-F2010",
+          "updated_part_no": "16671-F2030",
+          "selection_rule": "Only exact vehicle, VIN and service campaign eligibility"
+        },
+        {
+          "model": "ES 300h",
+          "model_year_scope": "2019-2021",
+          "engine": "A25A-FXS",
+          "part_name": "Hose Assy, Water By-Pass No. 1",
+          "previous_part_no": "16260-F0021",
+          "updated_part_no": "16260-F0310",
+          "selection_rule": "Only exact vehicle, VIN and service campaign eligibility"
+        },
+        {
+          "model": "ES 250",
+          "model_year_scope": "2021-2021",
+          "engine": "A25A-FKS",
+          "part_name": "Hose Assy, Water By-Pass No. 1",
+          "previous_part_no": "16260-F0010",
+          "updated_part_no": "16260-F0300",
+          "selection_rule": "Only exact vehicle, VIN and service campaign eligibility"
+        }
+      ],
+      "wiring": null,
+      "connector_pins": null,
+      "part_location": {
+        "status": "Specific Lexus TIS repair-manual section linked by bulletin, no verified installation drawing in dataset",
+        "model_engine_specific_picture": null
+      },
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft",
+      "oem_definition_verified": true,
+      "individual_VIN_fitment_verified": false,
+      "source_ids": [
+        "LEX-B05-OEM-COOL-2025"
+      ],
+      "other_related_codes": [
+        "P268115"
+      ]
+    },
+    {
+      "record_id": "LEX-B05-P-P268115-COOLANT",
+      "brand": "Lexus",
+      "code_original": "P268115",
+      "base_code": "P2681",
+      "code_format": "7-character base DTC+failure type",
+      "failure_type": "15",
+      "category": "P",
+      "code_type": "OEM_extended_DTC; base_FTB_standard_classification_not_independently_verified",
+      "ecu": "Engine/Hybrid System cooling; exact reporting ECU to confirm with GTS+",
+      "definition_en": "Engine Coolant Bypass Valve Circuit Short to Battery or Open",
+      "translation_ar": "قصر إلى موجب البطارية أو انقطاع في دائرة صمام تجاوز سائل تبريد المحرك",
+      "symptoms": [
+        "\"Engine Maintenance Required\" message in MID",
+        "DTC detected during health check (MIL state not stated in bulletin)"
+      ],
+      "causes": [
+        {
+          "cause": "Water bypass/flow-shutting valve or hose-valve assembly as applicable",
+          "evidence": "Lexus L-SB-0051-24 Rev1 conditional targeted repair"
+        },
+        {
+          "cause": "Harness, connector, supply or valve circuit fault",
+          "evidence": "Circuit nature suggests checks; wiring pinout and electrical threshold absent in bulletin; not ranked or certified by this bulletin"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action": "Confirm the vehicle and Engine Maintenance Required message are present; if not, bulletin does not apply."
+        },
+        {
+          "step": 2,
+          "action": "Use GTS+ Health Check and confirm P268115 is stored; check for both P268111 and P268115 and freeze-frame if available."
+        },
+        {
+          "step": 3,
+          "action": "Match vehicle to UX200 MY2019–2021 M20A-FKS, ES300h MY2019–2021 A25A-FXS, or ES250 MY2021 A25A-FKS; market USA. Match VIN and campaign 24LE02 before ordering parts."
+        },
+        {
+          "step": 4,
+          "action": "Visually examine valve connector and wiring safely for corrosion, separation, or damage; electrical pin/voltage targets unknown and require the matching Lexus Repair Manual."
+        },
+        {
+          "step": 5,
+          "action": "Only within bulletin eligibility, replace exact model-specific water valve or water bypass valve hose assembly as listed; use applicable Lexus TIS model-year removal/installation."
+        },
+        {
+          "step": 6,
+          "action": "Use GTS+ clear codes and road-test. If code persists, follow VIN-specific cooling diagnostics; no universal ECU pinout or specified resistance supplied."
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "GTS+ Health Check / DTC",
+          "name_ar": "فحص شامل للأعطال باستخدام GTS+",
+          "test_condition": "Engine Maintenance Required message present, correct model and year",
+          "expected": "P268111 and/or P268115; exact detection criteria not given"
+        },
+        {
+          "name_en": "Engine Coolant Temperature",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "test_condition": "Not specified for this bulletin; optional for general coolant evaluation",
+          "expected": "غير مؤكد — لا تُستخدم عتبة مختلقة"
+        }
+      ],
+      "tools": [
+        "GTS+ >=2024.04.004.02 per TSB",
+        "Techstream device supported by TSB",
+        "Basic non-invasive circuit inspection tools per Repair Manual"
+      ],
+      "parts": [
+        {
+          "model": "UX 200",
+          "model_year_scope": "2019-2021",
+          "engine": "M20A-FKS",
+          "part_name": "Valve, Water",
+          "previous_part_no": "16671-F2010",
+          "updated_part_no": "16671-F2030",
+          "selection_rule": "Only exact vehicle, VIN and service campaign eligibility"
+        },
+        {
+          "model": "ES 300h",
+          "model_year_scope": "2019-2021",
+          "engine": "A25A-FXS",
+          "part_name": "Hose Assy, Water By-Pass No. 1",
+          "previous_part_no": "16260-F0021",
+          "updated_part_no": "16260-F0310",
+          "selection_rule": "Only exact vehicle, VIN and service campaign eligibility"
+        },
+        {
+          "model": "ES 250",
+          "model_year_scope": "2021-2021",
+          "engine": "A25A-FKS",
+          "part_name": "Hose Assy, Water By-Pass No. 1",
+          "previous_part_no": "16260-F0010",
+          "updated_part_no": "16260-F0300",
+          "selection_rule": "Only exact vehicle, VIN and service campaign eligibility"
+        }
+      ],
+      "wiring": null,
+      "connector_pins": null,
+      "part_location": {
+        "status": "Specific Lexus TIS repair-manual section linked by bulletin, no verified installation drawing in dataset",
+        "model_engine_specific_picture": null
+      },
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft",
+      "oem_definition_verified": true,
+      "individual_VIN_fitment_verified": false,
+      "source_ids": [
+        "LEX-B05-OEM-COOL-2025"
+      ],
+      "other_related_codes": [
+        "P268111"
+      ]
+    }
+  ],
+  "applicability_count": 40,
+  "applicability": [
+    {
+      "link_id": "LEX-B05-APP-B1441-IS",
+      "record_id": "LEX-B05-B-B1441-HVAC",
+      "code": "B1441",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "IS",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "IS 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "IS 250",
+          "years": [
+            2014,
+            2015
+          ]
+        },
+        {
+          "model": "IS 300",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "IS 350",
+          "years": [
+            2014,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "21-22",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1441-RC",
+      "record_id": "LEX-B05-B-B1441-HVAC",
+      "code": "B1441",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "RC",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "RC 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "RC 300",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "RC 350",
+          "years": [
+            2015,
+            2017
+          ]
+        },
+        {
+          "model": "RC F",
+          "years": [
+            2015,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "21-22",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1441-GS",
+      "record_id": "LEX-B05-B-B1441-HVAC",
+      "code": "B1441",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "GS",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "GS 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "GS 350",
+          "years": [
+            2013,
+            2017
+          ]
+        },
+        {
+          "model": "GS 450h",
+          "years": [
+            2013,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "23-24",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1441-GSF",
+      "record_id": "LEX-B05-B-B1441-HVAC",
+      "code": "B1441",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "GS F",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "GS F",
+          "years": [
+            2016,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "23-24",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1442-IS",
+      "record_id": "LEX-B05-B-B1442-HVAC",
+      "code": "B1442",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "IS",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "IS 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "IS 250",
+          "years": [
+            2014,
+            2015
+          ]
+        },
+        {
+          "model": "IS 300",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "IS 350",
+          "years": [
+            2014,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "21-22",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1442-RC",
+      "record_id": "LEX-B05-B-B1442-HVAC",
+      "code": "B1442",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "RC",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "RC 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "RC 300",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "RC 350",
+          "years": [
+            2015,
+            2017
+          ]
+        },
+        {
+          "model": "RC F",
+          "years": [
+            2015,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "21-22",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1442-GS",
+      "record_id": "LEX-B05-B-B1442-HVAC",
+      "code": "B1442",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "GS",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "GS 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "GS 350",
+          "years": [
+            2013,
+            2017
+          ]
+        },
+        {
+          "model": "GS 450h",
+          "years": [
+            2013,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "23-24",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1442-GSF",
+      "record_id": "LEX-B05-B-B1442-HVAC",
+      "code": "B1442",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "GS F",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "GS F",
+          "years": [
+            2016,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "23-24",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1443-IS",
+      "record_id": "LEX-B05-B-B1443-HVAC",
+      "code": "B1443",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "IS",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "IS 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "IS 250",
+          "years": [
+            2014,
+            2015
+          ]
+        },
+        {
+          "model": "IS 300",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "IS 350",
+          "years": [
+            2014,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "21-22",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1443-RC",
+      "record_id": "LEX-B05-B-B1443-HVAC",
+      "code": "B1443",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "RC",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "RC 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "RC 300",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "RC 350",
+          "years": [
+            2015,
+            2017
+          ]
+        },
+        {
+          "model": "RC F",
+          "years": [
+            2015,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "21-22",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1443-GS",
+      "record_id": "LEX-B05-B-B1443-HVAC",
+      "code": "B1443",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "GS",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "GS 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "GS 350",
+          "years": [
+            2013,
+            2017
+          ]
+        },
+        {
+          "model": "GS 450h",
+          "years": [
+            2013,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "23-24",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1443-GSF",
+      "record_id": "LEX-B05-B-B1443-HVAC",
+      "code": "B1443",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "GS F",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "GS F",
+          "years": [
+            2016,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "23-24",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1446-IS",
+      "record_id": "LEX-B05-B-B1446-HVAC",
+      "code": "B1446",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "IS",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "IS 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "IS 250",
+          "years": [
+            2014,
+            2015
+          ]
+        },
+        {
+          "model": "IS 300",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "IS 350",
+          "years": [
+            2014,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "21-22",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1446-RC",
+      "record_id": "LEX-B05-B-B1446-HVAC",
+      "code": "B1446",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "RC",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "RC 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "RC 300",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "RC 350",
+          "years": [
+            2015,
+            2017
+          ]
+        },
+        {
+          "model": "RC F",
+          "years": [
+            2015,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "21-22",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1446-GS",
+      "record_id": "LEX-B05-B-B1446-HVAC",
+      "code": "B1446",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "GS",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "GS 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "GS 350",
+          "years": [
+            2013,
+            2017
+          ]
+        },
+        {
+          "model": "GS 450h",
+          "years": [
+            2013,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "23-24",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1446-GSF",
+      "record_id": "LEX-B05-B-B1446-HVAC",
+      "code": "B1446",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "GS F",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "GS F",
+          "years": [
+            2016,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "23-24",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1447-GS",
+      "record_id": "LEX-B05-B-B1447-HVAC",
+      "code": "B1447",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "GS",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "GS 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "GS 350",
+          "years": [
+            2013,
+            2017
+          ]
+        },
+        {
+          "model": "GS 450h",
+          "years": [
+            2013,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "23-24",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1447-GSF",
+      "record_id": "LEX-B05-B-B1447-HVAC",
+      "code": "B1447",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "GS F",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "GS F",
+          "years": [
+            2016,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "23-24",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1448-GS",
+      "record_id": "LEX-B05-B-B1448-HVAC",
+      "code": "B1448",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "GS",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "GS 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "GS 350",
+          "years": [
+            2013,
+            2017
+          ]
+        },
+        {
+          "model": "GS 450h",
+          "years": [
+            2013,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "23-24",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1448-GSF",
+      "record_id": "LEX-B05-B-B1448-HVAC",
+      "code": "B1448",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "GS F",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "GS F",
+          "years": [
+            2016,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "23-24",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1449-GS",
+      "record_id": "LEX-B05-B-B1449-HVAC",
+      "code": "B1449",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "GS",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "GS 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "GS 350",
+          "years": [
+            2013,
+            2017
+          ]
+        },
+        {
+          "model": "GS 450h",
+          "years": [
+            2013,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "23-24",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1449-GSF",
+      "record_id": "LEX-B05-B-B1449-HVAC",
+      "code": "B1449",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "GS F",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "GS F",
+          "years": [
+            2016,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "23-24",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1453-IS",
+      "record_id": "LEX-B05-B-B1453-HVAC",
+      "code": "B1453",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "IS",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "IS 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "IS 250",
+          "years": [
+            2014,
+            2015
+          ]
+        },
+        {
+          "model": "IS 300",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "IS 350",
+          "years": [
+            2014,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "21-22",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1453-RC",
+      "record_id": "LEX-B05-B-B1453-HVAC",
+      "code": "B1453",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "RC",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "RC 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "RC 300",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "RC 350",
+          "years": [
+            2015,
+            2017
+          ]
+        },
+        {
+          "model": "RC F",
+          "years": [
+            2015,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "21-22",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1453-GS",
+      "record_id": "LEX-B05-B-B1453-HVAC",
+      "code": "B1453",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "GS",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "GS 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "GS 350",
+          "years": [
+            2013,
+            2017
+          ]
+        },
+        {
+          "model": "GS 450h",
+          "years": [
+            2013,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "23-24",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1453-GSF",
+      "record_id": "LEX-B05-B-B1453-HVAC",
+      "code": "B1453",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "GS F",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "GS F",
+          "years": [
+            2016,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "23-24",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1454-IS",
+      "record_id": "LEX-B05-B-B1454-HVAC",
+      "code": "B1454",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "IS",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "IS 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "IS 250",
+          "years": [
+            2014,
+            2015
+          ]
+        },
+        {
+          "model": "IS 300",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "IS 350",
+          "years": [
+            2014,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "21-22",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1454-RC",
+      "record_id": "LEX-B05-B-B1454-HVAC",
+      "code": "B1454",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "RC",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "RC 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "RC 300",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "RC 350",
+          "years": [
+            2015,
+            2017
+          ]
+        },
+        {
+          "model": "RC F",
+          "years": [
+            2015,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "21-22",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1454-GS",
+      "record_id": "LEX-B05-B-B1454-HVAC",
+      "code": "B1454",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "GS",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "GS 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "GS 350",
+          "years": [
+            2013,
+            2017
+          ]
+        },
+        {
+          "model": "GS 450h",
+          "years": [
+            2013,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "23-24",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1454-GSF",
+      "record_id": "LEX-B05-B-B1454-HVAC",
+      "code": "B1454",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "GS F",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "GS F",
+          "years": [
+            2016,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "23-24",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1455-IS",
+      "record_id": "LEX-B05-B-B1455-HVAC",
+      "code": "B1455",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "IS",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "IS 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "IS 250",
+          "years": [
+            2014,
+            2015
+          ]
+        },
+        {
+          "model": "IS 300",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "IS 350",
+          "years": [
+            2014,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "21-22",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1455-RC",
+      "record_id": "LEX-B05-B-B1455-HVAC",
+      "code": "B1455",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "RC",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "RC 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "RC 300",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "RC 350",
+          "years": [
+            2015,
+            2017
+          ]
+        },
+        {
+          "model": "RC F",
+          "years": [
+            2015,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "21-22",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1455-GS",
+      "record_id": "LEX-B05-B-B1455-HVAC",
+      "code": "B1455",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "GS",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "GS 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "GS 350",
+          "years": [
+            2013,
+            2017
+          ]
+        },
+        {
+          "model": "GS 450h",
+          "years": [
+            2013,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "23-24",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-B1455-GSF",
+      "record_id": "LEX-B05-B-B1455-HVAC",
+      "code": "B1455",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model_group": "GS F",
+      "bulletin_model_year_scopes": [
+        {
+          "model": "GS F",
+          "years": [
+            2016,
+            2017
+          ]
+        }
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "transmission": null,
+      "ecu": "Air Conditioning Amplifier / HVAC control",
+      "evidence_scope": "OEM_code_to_HVAC_family_matrix; individual_trim_and_VIN_eligibility_required",
+      "equipment_required": "Servo for this DTC must be actually fitted; other model variants may lack it",
+      "reference_pages": "23-24",
+      "source_id": "LEX-B05-OEM-HVAC-2021",
+      "verification_status": "OEM_bulletin_scope_conditional_not_exact_VIN",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-P268111-UX200",
+      "record_id": "LEX-B05-P-P268111-COOLANT",
+      "code": "P268111",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model": "UX 200",
+      "model_year_from": 2019,
+      "model_year_to": 2021,
+      "engine_code": "M20A-FKS",
+      "fuel": "Petrol",
+      "ecu": "Engine/Hybrid System cooling; Techstream ECU needs scan",
+      "part_prior_no": "16671-F2010",
+      "part_new_no": "16671-F2030",
+      "transmission": null,
+      "production_years": null,
+      "source_id": "LEX-B05-OEM-COOL-2025",
+      "source_evidence": "OEM TSB p.1, p.2 and p.3–4 explicit application",
+      "code_to_model_status": "OEM_bulletin_listed_both_DTCs_conditional_eligibility",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-P268111-ES300h",
+      "record_id": "LEX-B05-P-P268111-COOLANT",
+      "code": "P268111",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model": "ES 300h",
+      "model_year_from": 2019,
+      "model_year_to": 2021,
+      "engine_code": "A25A-FXS",
+      "fuel": "Hybrid",
+      "ecu": "Engine/Hybrid System cooling; Techstream ECU needs scan",
+      "part_prior_no": "16260-F0021",
+      "part_new_no": "16260-F0310",
+      "transmission": null,
+      "production_years": null,
+      "source_id": "LEX-B05-OEM-COOL-2025",
+      "source_evidence": "OEM TSB p.1, p.2 and p.3–4 explicit application",
+      "code_to_model_status": "OEM_bulletin_listed_both_DTCs_conditional_eligibility",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-P268111-ES250",
+      "record_id": "LEX-B05-P-P268111-COOLANT",
+      "code": "P268111",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model": "ES 250",
+      "model_year_from": 2021,
+      "model_year_to": 2021,
+      "engine_code": "A25A-FKS",
+      "fuel": "Petrol",
+      "ecu": "Engine/Hybrid System cooling; Techstream ECU needs scan",
+      "part_prior_no": "16260-F0010",
+      "part_new_no": "16260-F0300",
+      "transmission": null,
+      "production_years": null,
+      "source_id": "LEX-B05-OEM-COOL-2025",
+      "source_evidence": "OEM TSB p.1, p.2 and p.3–4 explicit application",
+      "code_to_model_status": "OEM_bulletin_listed_both_DTCs_conditional_eligibility",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-P268115-UX200",
+      "record_id": "LEX-B05-P-P268115-COOLANT",
+      "code": "P268115",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model": "UX 200",
+      "model_year_from": 2019,
+      "model_year_to": 2021,
+      "engine_code": "M20A-FKS",
+      "fuel": "Petrol",
+      "ecu": "Engine/Hybrid System cooling; Techstream ECU needs scan",
+      "part_prior_no": "16671-F2010",
+      "part_new_no": "16671-F2030",
+      "transmission": null,
+      "production_years": null,
+      "source_id": "LEX-B05-OEM-COOL-2025",
+      "source_evidence": "OEM TSB p.1, p.2 and p.3–4 explicit application",
+      "code_to_model_status": "OEM_bulletin_listed_both_DTCs_conditional_eligibility",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-P268115-ES300h",
+      "record_id": "LEX-B05-P-P268115-COOLANT",
+      "code": "P268115",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model": "ES 300h",
+      "model_year_from": 2019,
+      "model_year_to": 2021,
+      "engine_code": "A25A-FXS",
+      "fuel": "Hybrid",
+      "ecu": "Engine/Hybrid System cooling; Techstream ECU needs scan",
+      "part_prior_no": "16260-F0021",
+      "part_new_no": "16260-F0310",
+      "transmission": null,
+      "production_years": null,
+      "source_id": "LEX-B05-OEM-COOL-2025",
+      "source_evidence": "OEM TSB p.1, p.2 and p.3–4 explicit application",
+      "code_to_model_status": "OEM_bulletin_listed_both_DTCs_conditional_eligibility",
+      "approval_status": "unapproved"
+    },
+    {
+      "link_id": "LEX-B05-APP-P268115-ES250",
+      "record_id": "LEX-B05-P-P268115-COOLANT",
+      "code": "P268115",
+      "manufacturer": "Lexus",
+      "market": "USA",
+      "model": "ES 250",
+      "model_year_from": 2021,
+      "model_year_to": 2021,
+      "engine_code": "A25A-FKS",
+      "fuel": "Petrol",
+      "ecu": "Engine/Hybrid System cooling; Techstream ECU needs scan",
+      "part_prior_no": "16260-F0010",
+      "part_new_no": "16260-F0300",
+      "transmission": null,
+      "production_years": null,
+      "source_id": "LEX-B05-OEM-COOL-2025",
+      "source_evidence": "OEM TSB p.1, p.2 and p.3–4 explicit application",
+      "code_to_model_status": "OEM_bulletin_listed_both_DTCs_conditional_eligibility",
+      "approval_status": "unapproved"
+    }
+  ],
+  "vehicle_model_group_scopes": [
+    {
+      "group": "IS",
+      "models": [
+        {
+          "model": "IS 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "IS 250",
+          "years": [
+            2014,
+            2015
+          ]
+        },
+        {
+          "model": "IS 300",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "IS 350",
+          "years": [
+            2014,
+            2017
+          ]
+        }
+      ],
+      "guide_pages": "21-22"
+    },
+    {
+      "group": "RC",
+      "models": [
+        {
+          "model": "RC 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "RC 300",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "RC 350",
+          "years": [
+            2015,
+            2017
+          ]
+        },
+        {
+          "model": "RC F",
+          "years": [
+            2015,
+            2017
+          ]
+        }
+      ],
+      "guide_pages": "21-22"
+    },
+    {
+      "group": "GS",
+      "models": [
+        {
+          "model": "GS 200t",
+          "years": [
+            2016,
+            2017
+          ]
+        },
+        {
+          "model": "GS 350",
+          "years": [
+            2013,
+            2017
+          ]
+        },
+        {
+          "model": "GS 450h",
+          "years": [
+            2013,
+            2017
+          ]
+        }
+      ],
+      "guide_pages": "23-24"
+    },
+    {
+      "group": "GS F",
+      "models": [
+        {
+          "model": "GS F",
+          "years": [
+            2016,
+            2017
+          ]
+        }
+      ],
+      "guide_pages": "23-24"
+    }
+  ],
+  "safety_notes": [
+    "P268111/P268115 are signal electrical failure modes, not proof of coolant overtemperature",
+    "HVAC Part number and servo-location reference conditional on equipment; no OEM images or wiring figures copied",
+    "Do not reprogram control units without approved workshop process, stable supply and matching VIN",
+    "Do not connect B1447/B1449/B1448 with IS/RC: GS/GS F only per family table",
+    "No VIN or Swedish vehicle confirmed; link status is scoped to US bulletin only"
+  ],
+  "images_collected_this_batch": 0
+}
