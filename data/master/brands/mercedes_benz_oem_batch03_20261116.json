@@ -1,0 +1,2342 @@
+{
+  "schema": "dtc-nexis-mercedes-oem-bulletin-batch-v1",
+  "brand": "Mercedes-Benz",
+  "batch": "20261116-03",
+  "release_to_app": false,
+  "storage_purpose": "permanent-source-records-on-unmerged-review-branch",
+  "prior_main_brand_records": 66,
+  "new_record_count": 31,
+  "new_unique_raw_codes": 29,
+  "new_primary_oem_codes": 26,
+  "mirror_only_codes": 3,
+  "duplicate_with_prior_main": [],
+  "dataset_has_duplicate_identity": false,
+  "source_list": [
+    {
+      "id": "MB-LI49.20-N-079593",
+      "topic": "LI49.20-N-079593",
+      "version": "1",
+      "date": "2025-07-25",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11021173-0001.pdf",
+      "scope": "907 OM651 CDI N3/47; SCR GEN3 N118/5, MY2019-2021 software remedy"
+    },
+    {
+      "id": "MB-LI49.20-N-079157",
+      "topic": "LI49.20-N-079157",
+      "version": "6",
+      "date": "2025-06-24",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11019973-0001.pdf",
+      "scope": "907 OM654 SCR Gen4; production/MY distinctions apply"
+    },
+    {
+      "id": "MB-LI08.20-P-077050",
+      "topic": "LI08.20-P-077050",
+      "version": "1",
+      "date": "2023-10-27",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10244642-0001.pdf",
+      "scope": "model 243, N129/2 rear axle power electronics; remedy explicitly US market"
+    },
+    {
+      "id": "MB-LI14.20-N-079253",
+      "topic": "LI14.20-N-079253",
+      "version": "2",
+      "date": "2025-05-19",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11018921-0001.pdf",
+      "scope": "907 OM654 with H12 equipment code"
+    },
+    {
+      "id": "MB-LI14.30-N-075882",
+      "topic": "LI14.30-N-075882",
+      "version": "5",
+      "date": "2024-12-09",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11012267-0001.pdf",
+      "scope": "907 engine OM654; N3/40 CDI; software subconditions MU1/3/5/6"
+    },
+    {
+      "id": "MB-LI54.10-P-057753",
+      "topic": "LI54.10-P-057753",
+      "version": null,
+      "date": "2013-11-18",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2013/SB-10063628-2280.pdf",
+      "scope": "222.077,222.178,197.377 with equipment P98; differing front/rear SAM"
+    },
+    {
+      "id": "MB-LI47.50-P-078804",
+      "topic": "LI47.50-P-078804",
+      "version": "1",
+      "date": "2025-01-24",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11013179-0001.pdf",
+      "scope": "FSCM_GEN4/5/6 (N118/N118/3); model/year not exhaustively listed"
+    },
+    {
+      "id": "MB-LI09.00-P-081076",
+      "topic": "LI09.00-P-081076",
+      "version": "1",
+      "date": "2026-10-27",
+      "url": "https://oemdtc.com/tsb/11039096/",
+      "scope": "167,290,463 with M177.98 and ME N3/10; secondary republication, primary PDF not inspected"
+    }
+  ],
+  "records": [
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P20EEFE",
+      "base_code": "P20EE",
+      "failure_type_suffix": "FE",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N3/47 CDI43",
+      "ecu_variant": "SCR GEN3 N118/5",
+      "vehicle": "Sprinter VS30 model 907",
+      "engine": "OM651",
+      "model_years": "2019–2021 software action explicitly listed; overall 907 OM651 scope",
+      "transmission": null,
+      "market": "not specified; software action per bulletin",
+      "definition_en": "SCR catalytic converter conversion efficiency is insufficient",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "كفاءة تحويل المحفز الانتقائي SCR أقل من المطلوب",
+      "symptoms": [
+        "MIL / check-engine lamp"
+      ],
+      "causes": [
+        "SCR-related software/IUMPR calibration effect",
+        "Excess DEF dosing or dosing-valve / NOx sensor issue",
+        "Low catalyst temperature/poor reagent quality",
+        "Catalyst damage only after testing"
+      ],
+      "diagnostic_steps": [
+        "Record XENTRY quick test and freeze frame in N3/47.",
+        "Verify installed CDI43 and SCR GEN3 software versions, particularly MY2019–2021; update where directed by TIPS.",
+        "If no update is available, document the SCR guided test results and open manufacturer TIPS case; do not replace catalyst from code alone."
+      ],
+      "live_data": [
+        {
+          "en": "SCR efficiency monitor / IUMPR",
+          "ar": "مراقبة كفاءة SCR ونسبة IUMPR",
+          "reference": "not specified"
+        },
+        {
+          "en": "NOx sensor readings",
+          "ar": "قراءات حساسات أكاسيد النيتروجين",
+          "reference": "not specified"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "SCR catalyst",
+        "NOx sensors",
+        "DEF dosing system"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "907 OM651 CDI N3/47; SCR GEN3 N118/5, MY2019-2021 software remedy",
+      "source_id": "MB-LI49.20-N-079593",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11021173-0001.pdf",
+      "source_date": "2025-07-25",
+      "source_version": "1",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P20EEFE-01",
+      "identity_key": "P20EEFE|N3/47 CDI43|Sprinter VS30 model 907|OM651|SCR GEN3 N118/5"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P20F409",
+      "base_code": "P20F4",
+      "failure_type_suffix": "09",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "SCR GEN4",
+      "ecu_variant": null,
+      "vehicle": "Sprinter model 907",
+      "engine": "OM654",
+      "model_years": null,
+      "transmission": null,
+      "market": "not specified",
+      "definition_en": "AdBlue consumption below expected threshold; component-related error",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "استهلاك AdBlue أقل من المتوقع مع خلل متعلق بمكوّن",
+      "symptoms": [
+        "MIL",
+        "Possible AdBlue warning"
+      ],
+      "causes": [
+        "AdBlue leak",
+        "Dosing valve fault",
+        "Air pocket in dosing line"
+      ],
+      "diagnostic_steps": [
+        "Read all SCR GEN4 DTCs and XENTRY guided tests.",
+        "Check tank, pump, delivery line, both metering valves and routing for fluid leaks; follow LI guided pressure-build procedure (2–3 cycles) when applicable.",
+        "For P202E84, test engine-side dosing valve; replace only if failed by guided test.",
+        "If all tests pass, evaluate air trapped in the dosing line per LI; do not replace parts without a failed test."
+      ],
+      "live_data": [
+        {
+          "en": "AdBlue pressure build-up test",
+          "ar": "اختبار بناء ضغط AdBlue",
+          "reference": "2–3 cycles for specified leak test; pressure threshold unspecified"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "DEF tank",
+        "DEF pump",
+        "DEF hoses",
+        "Metering valves"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "907 OM654 SCR Gen4; production/MY distinctions apply",
+      "source_id": "MB-LI49.20-N-079157",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11019973-0001.pdf",
+      "source_date": "2025-06-24",
+      "source_version": "6",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P20F409-01",
+      "identity_key": "P20F409|SCR GEN4|Sprinter model 907|OM654|unspecified"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P202E84",
+      "base_code": "P202E",
+      "failure_type_suffix": "84",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "SCR GEN4",
+      "ecu_variant": null,
+      "vehicle": "Sprinter model 907",
+      "engine": "OM654",
+      "model_years": null,
+      "transmission": null,
+      "market": null,
+      "definition_en": "Engine-side AdBlue metering valve 1 signal below permitted limit",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "إشارة صمام حقن AdBlue رقم 1 جهة المحرك أدنى من الحد المسموح",
+      "symptoms": [
+        "MIL",
+        "Possible AdBlue warning"
+      ],
+      "causes": [
+        "Leak in AdBlue line",
+        "Defective metering valve 1",
+        "Air in supply line"
+      ],
+      "diagnostic_steps": [
+        "Read all SCR GEN4 DTCs and XENTRY guided tests.",
+        "Check tank, pump, delivery line, both metering valves and routing for fluid leaks; follow LI guided pressure-build procedure (2–3 cycles) when applicable.",
+        "For P202E84, test engine-side dosing valve; replace only if failed by guided test.",
+        "If all tests pass, evaluate air trapped in the dosing line per LI; do not replace parts without a failed test."
+      ],
+      "live_data": [
+        {
+          "en": "AdBlue metering valve guided test",
+          "ar": "اختبار صمام حقن AdBlue الموجّه",
+          "reference": "limit not specified"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "AdBlue dosing valve 1 (engine side)",
+        "DEF supply line"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "907 OM654 SCR Gen4; production/MY distinctions apply",
+      "source_id": "MB-LI49.20-N-079157",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11019973-0001.pdf",
+      "source_date": "2025-06-24",
+      "source_version": "6",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P202E84-01",
+      "identity_key": "P202E84|SCR GEN4|Sprinter model 907|OM654|unspecified"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P061AE9",
+      "base_code": "P061A",
+      "failure_type_suffix": "E9",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N129/2 rear-axle power electronics (EP-T10EM03)",
+      "ecu_variant": null,
+      "vehicle": "Model series 243",
+      "engine": "Electric drive, precise motor variant unverified",
+      "model_years": null,
+      "transmission": null,
+      "market": "US software remedy explicitly mentioned; EU/SE unspecified",
+      "definition_en": "Power electronics torque control diagnostic fault",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "خلل بمراقبة التحكم بالعزم لوحدة إلكترونيات الدفع",
+      "symptoms": [
+        "Instrument cluster warnings",
+        "Possible reduced electric drive power"
+      ],
+      "causes": [
+        "Low-voltage condition during vehicle-unlock state",
+        "Power-electronics software state",
+        "Other listed EV CAN/temperature/controller faults require independent guided testing"
+      ],
+      "diagnostic_steps": [
+        "Record N129/2 fault memory and time of event, vehicle unlock / pre-entry climate control state, charge-cable connection.",
+        "Check actual low-voltage supply and installation state through XENTRY; threshold not specified in bulletin.",
+        "For US application, verify availability of N129/2 firmware update and perform guided programming if applicable; escalate recurring fault to TIPS."
+      ],
+      "live_data": [
+        {
+          "en": "N129/2 low-voltage supply",
+          "ar": "جهد التغذية المنخفض لوحدة N129/2",
+          "reference": "not specified"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "N129/2 power electronics",
+        "LV supply",
+        "E-drive CAN wiring"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "model 243, N129/2 rear axle power electronics; remedy explicitly US market",
+      "source_id": "MB-LI08.20-P-077050",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10244642-0001.pdf",
+      "source_date": "2023-10-27",
+      "source_version": "1",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P061AE9-01",
+      "identity_key": "P061AE9|N129/2 rear-axle power electronics (EP-T10EM03)|Model series 243|Electric drive, precise motor variant unverified|unspecified"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "U009BFF",
+      "base_code": "U009B",
+      "failure_type_suffix": "FF",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "U",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N129/2 rear-axle power electronics (EP-T10EM03)",
+      "ecu_variant": null,
+      "vehicle": "Model series 243",
+      "engine": "Electric drive, precise motor variant unverified",
+      "model_years": null,
+      "transmission": null,
+      "market": "US software remedy explicitly mentioned; EU/SE unspecified",
+      "definition_en": "Electric-drive CAN communication fault",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "خلل في اتصال شبكة CAN الخاصة بالدفع الكهربائي",
+      "symptoms": [
+        "Instrument cluster warnings",
+        "Possible reduced electric drive power"
+      ],
+      "causes": [
+        "Low-voltage condition during vehicle-unlock state",
+        "Power-electronics software state",
+        "Other listed EV CAN/temperature/controller faults require independent guided testing"
+      ],
+      "diagnostic_steps": [
+        "Record N129/2 fault memory and time of event, vehicle unlock / pre-entry climate control state, charge-cable connection.",
+        "Check actual low-voltage supply and installation state through XENTRY; threshold not specified in bulletin.",
+        "For US application, verify availability of N129/2 firmware update and perform guided programming if applicable; escalate recurring fault to TIPS."
+      ],
+      "live_data": [
+        {
+          "en": "N129/2 low-voltage supply",
+          "ar": "جهد التغذية المنخفض لوحدة N129/2",
+          "reference": "not specified"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "N129/2 power electronics",
+        "LV supply",
+        "E-drive CAN wiring"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "model 243, N129/2 rear axle power electronics; remedy explicitly US market",
+      "source_id": "MB-LI08.20-P-077050",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10244642-0001.pdf",
+      "source_date": "2023-10-27",
+      "source_version": "1",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-U009BFF-01",
+      "identity_key": "U009BFF|N129/2 rear-axle power electronics (EP-T10EM03)|Model series 243|Electric drive, precise motor variant unverified|unspecified"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P0A31FF",
+      "base_code": "P0A31",
+      "failure_type_suffix": "FF",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N129/2 rear-axle power electronics (EP-T10EM03)",
+      "ecu_variant": null,
+      "vehicle": "Model series 243",
+      "engine": "Electric drive, precise motor variant unverified",
+      "model_years": null,
+      "transmission": null,
+      "market": "US software remedy explicitly mentioned; EU/SE unspecified",
+      "definition_en": "Electric machine B temperature sensor diagnostic fault",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "خلل بحساس حرارة الآلة الكهربائية B",
+      "symptoms": [
+        "Instrument cluster warnings",
+        "Possible reduced electric drive power"
+      ],
+      "causes": [
+        "Low-voltage condition during vehicle-unlock state",
+        "Power-electronics software state",
+        "Other listed EV CAN/temperature/controller faults require independent guided testing"
+      ],
+      "diagnostic_steps": [
+        "Record N129/2 fault memory and time of event, vehicle unlock / pre-entry climate control state, charge-cable connection.",
+        "Check actual low-voltage supply and installation state through XENTRY; threshold not specified in bulletin.",
+        "For US application, verify availability of N129/2 firmware update and perform guided programming if applicable; escalate recurring fault to TIPS."
+      ],
+      "live_data": [
+        {
+          "en": "N129/2 low-voltage supply",
+          "ar": "جهد التغذية المنخفض لوحدة N129/2",
+          "reference": "not specified"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "N129/2 power electronics",
+        "LV supply",
+        "E-drive CAN wiring"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "model 243, N129/2 rear axle power electronics; remedy explicitly US market",
+      "source_id": "MB-LI08.20-P-077050",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10244642-0001.pdf",
+      "source_date": "2023-10-27",
+      "source_version": "1",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P0A31FF-01",
+      "identity_key": "P0A31FF|N129/2 rear-axle power electronics (EP-T10EM03)|Model series 243|Electric drive, precise motor variant unverified|unspecified"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P0A1C9A",
+      "base_code": "P0A1C",
+      "failure_type_suffix": "9A",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N129/2 rear-axle power electronics (EP-T10EM03)",
+      "ecu_variant": null,
+      "vehicle": "Model series 243",
+      "engine": "Electric drive, precise motor variant unverified",
+      "model_years": null,
+      "transmission": null,
+      "market": "US software remedy explicitly mentioned; EU/SE unspecified",
+      "definition_en": "Electric machine B controller operating conditions not met",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "عدم تحقق شروط تشغيل وحدة تحكم الآلة الكهربائية B",
+      "symptoms": [
+        "Instrument cluster warnings",
+        "Possible reduced electric drive power"
+      ],
+      "causes": [
+        "Low-voltage condition during vehicle-unlock state",
+        "Power-electronics software state",
+        "Other listed EV CAN/temperature/controller faults require independent guided testing"
+      ],
+      "diagnostic_steps": [
+        "Record N129/2 fault memory and time of event, vehicle unlock / pre-entry climate control state, charge-cable connection.",
+        "Check actual low-voltage supply and installation state through XENTRY; threshold not specified in bulletin.",
+        "For US application, verify availability of N129/2 firmware update and perform guided programming if applicable; escalate recurring fault to TIPS."
+      ],
+      "live_data": [
+        {
+          "en": "N129/2 low-voltage supply",
+          "ar": "جهد التغذية المنخفض لوحدة N129/2",
+          "reference": "not specified"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "N129/2 power electronics",
+        "LV supply",
+        "E-drive CAN wiring"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "model 243, N129/2 rear axle power electronics; remedy explicitly US market",
+      "source_id": "MB-LI08.20-P-077050",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10244642-0001.pdf",
+      "source_date": "2023-10-27",
+      "source_version": "1",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P0A1C9A-01",
+      "identity_key": "P0A1C9A|N129/2 rear-axle power electronics (EP-T10EM03)|Model series 243|Electric drive, precise motor variant unverified|unspecified"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P060AFD",
+      "base_code": "P060A",
+      "failure_type_suffix": "FD",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N129/2 rear-axle power electronics (EP-T10EM03)",
+      "ecu_variant": null,
+      "vehicle": "Model series 243",
+      "engine": "Electric drive, precise motor variant unverified",
+      "model_years": null,
+      "transmission": null,
+      "market": "US software remedy explicitly mentioned; EU/SE unspecified",
+      "definition_en": "Control-unit monitoring function malfunction",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "خلل بوظيفة المراقبة الداخلية لوحدة التحكم",
+      "symptoms": [
+        "Instrument cluster warnings",
+        "Possible reduced electric drive power"
+      ],
+      "causes": [
+        "Low-voltage condition during vehicle-unlock state",
+        "Power-electronics software state",
+        "Other listed EV CAN/temperature/controller faults require independent guided testing"
+      ],
+      "diagnostic_steps": [
+        "Record N129/2 fault memory and time of event, vehicle unlock / pre-entry climate control state, charge-cable connection.",
+        "Check actual low-voltage supply and installation state through XENTRY; threshold not specified in bulletin.",
+        "For US application, verify availability of N129/2 firmware update and perform guided programming if applicable; escalate recurring fault to TIPS."
+      ],
+      "live_data": [
+        {
+          "en": "N129/2 low-voltage supply",
+          "ar": "جهد التغذية المنخفض لوحدة N129/2",
+          "reference": "not specified"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "N129/2 power electronics",
+        "LV supply",
+        "E-drive CAN wiring"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "model 243, N129/2 rear axle power electronics; remedy explicitly US market",
+      "source_id": "MB-LI08.20-P-077050",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10244642-0001.pdf",
+      "source_date": "2023-10-27",
+      "source_version": "1",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P060AFD-01",
+      "identity_key": "P060AFD|N129/2 rear-axle power electronics (EP-T10EM03)|Model series 243|Electric drive, precise motor variant unverified|unspecified"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P060BFF",
+      "base_code": "P060B",
+      "failure_type_suffix": "FF",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N129/2 rear-axle power electronics (EP-T10EM03)",
+      "ecu_variant": null,
+      "vehicle": "Model series 243",
+      "engine": "Electric drive, precise motor variant unverified",
+      "model_years": null,
+      "transmission": null,
+      "market": "US software remedy explicitly mentioned; EU/SE unspecified",
+      "definition_en": "Control-unit analog/digital converter internal malfunction",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "خلل داخلي بمحوّل الإشارة التماثلية/الرقمية في وحدة التحكم",
+      "symptoms": [
+        "Instrument cluster warnings",
+        "Possible reduced electric drive power"
+      ],
+      "causes": [
+        "Low-voltage condition during vehicle-unlock state",
+        "Power-electronics software state",
+        "Other listed EV CAN/temperature/controller faults require independent guided testing"
+      ],
+      "diagnostic_steps": [
+        "Record N129/2 fault memory and time of event, vehicle unlock / pre-entry climate control state, charge-cable connection.",
+        "Check actual low-voltage supply and installation state through XENTRY; threshold not specified in bulletin.",
+        "For US application, verify availability of N129/2 firmware update and perform guided programming if applicable; escalate recurring fault to TIPS."
+      ],
+      "live_data": [
+        {
+          "en": "N129/2 low-voltage supply",
+          "ar": "جهد التغذية المنخفض لوحدة N129/2",
+          "reference": "not specified"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "N129/2 power electronics",
+        "LV supply",
+        "E-drive CAN wiring"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "model 243, N129/2 rear axle power electronics; remedy explicitly US market",
+      "source_id": "MB-LI08.20-P-077050",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10244642-0001.pdf",
+      "source_date": "2023-10-27",
+      "source_version": "1",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P060BFF-01",
+      "identity_key": "P060BFF|N129/2 rear-axle power electronics (EP-T10EM03)|Model series 243|Electric drive, precise motor variant unverified|unspecified"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P300E55",
+      "base_code": "P300E",
+      "failure_type_suffix": "55",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "CDI engine control / HVAC177 coding implicated",
+      "ecu_variant": null,
+      "vehicle": "Sprinter 907 with equipment H12",
+      "engine": "OM654",
+      "model_years": null,
+      "transmission": null,
+      "market": null,
+      "definition_en": "Low-pressure EGR cooler efficiency diagnostic failure",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "انخفاض كفاءة مبرد تدوير غازات العادم منخفض الضغط",
+      "symptoms": [
+        "MIL"
+      ],
+      "causes": [
+        "HVAC177 coding issue identified by LI; EGR cooler damage not established"
+      ],
+      "diagnostic_steps": [
+        "Confirm 907 OM654 and H12 coding, and record the fault/freeze frame.",
+        "Inspect HVAC177 coding/software level against current XENTRY instructions; listed LI attributed condition to coding error, not EGR cooler failure.",
+        "Apply current approved OEM remedy; historical 2025 interim bulletin advised fault-memory clearance only. Recheck for newer bulletin before acting."
+      ],
+      "live_data": [
+        {
+          "en": "EGR cooler efficiency monitor",
+          "ar": "مراقبة كفاءة مبرد EGR",
+          "reference": "not stated"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "HVAC177 control software",
+        "Low-pressure EGR cooler (monitored, not automatically defective)"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "907 OM654 with H12 equipment code",
+      "source_id": "MB-LI14.20-N-079253",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11018921-0001.pdf",
+      "source_date": "2025-05-19",
+      "source_version": "2",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P300E55-01",
+      "identity_key": "P300E55|CDI engine control / HVAC177 coding implicated|Sprinter 907 with equipment H12|OM654|unspecified"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P3007F1",
+      "base_code": "P3007",
+      "failure_type_suffix": "F1",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N3/40 CDI",
+      "ecu_variant": null,
+      "vehicle": "Sprinter model 907",
+      "engine": "OM654",
+      "model_years": null,
+      "transmission": null,
+      "market": null,
+      "definition_en": "Intake system leak detected (upstream air path)",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "رصد تسريب هواء في مجرى السحب، غالباً قبل الشاحن التوربيني",
+      "symptoms": [
+        "MIL"
+      ],
+      "causes": [
+        "Intake leak before turbo",
+        "Carbonized EGR pressure-sensor flange; check intake correction below -8% condition",
+        "Incorrect engine timing",
+        "HFM sensor/air filter flow problem"
+      ],
+      "diagnostic_steps": [
+        "Record CDI N3/40 control-unit software version and air intake correction factors.",
+        "Check clean-air and charge-air couplings, air filter, EGR and exhaust pressure intermediate flange as directed by LI.",
+        "Perform guided manual air-leak test in XENTRY; the bulletin describes 0.25 bar for its specified test configuration.",
+        "Check affected EGR valves, carbon buildup and adaptations; after repair reset air-mass correction learned values before clearing the codes."
+      ],
+      "live_data": [
+        {
+          "en": "Intake air correction factor, load range 1",
+          "ar": "عامل تصحيح هواء السحب عند نطاق الحمل 1",
+          "reference": "<-8% triggers specific intermediate-flange check"
+        },
+        {
+          "en": "Intake air correction factor, load range 4",
+          "ar": "عامل تصحيح هواء السحب بنطاق الحمل 4",
+          "reference": "software effect noted for P300CA8/CA9; no numeric range"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "Charge-air and clean-air hoses",
+        "Turbocharger seals",
+        "MAF hot film sensor",
+        "EGR valves",
+        "Air filter"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "907 engine OM654; N3/40 CDI; software subconditions MU1/3/5/6",
+      "source_id": "MB-LI14.30-N-075882",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11012267-0001.pdf",
+      "source_date": "2024-12-09",
+      "source_version": "5",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P3007F1-01",
+      "identity_key": "P3007F1|N3/40 CDI|Sprinter model 907|OM654|unspecified"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P3007F2",
+      "base_code": "P3007",
+      "failure_type_suffix": "F2",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N3/40 CDI",
+      "ecu_variant": null,
+      "vehicle": "Sprinter model 907",
+      "engine": "OM654",
+      "model_years": null,
+      "transmission": null,
+      "market": null,
+      "definition_en": "Intake air mass plausibility failure (bank 1)",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "خلل في معقولية كتلة هواء السحب للبنك 1",
+      "symptoms": [
+        "MIL"
+      ],
+      "causes": [
+        "Intake/charge air leakage",
+        "Air-flow sensor or filter fault",
+        "Intake EGR carbonization",
+        "Specific software release effect on MU1/MU3/MU5/MU6 variants (P300CA8/CA9)"
+      ],
+      "diagnostic_steps": [
+        "Record CDI N3/40 control-unit software version and air intake correction factors.",
+        "Check clean-air and charge-air couplings, air filter, EGR and exhaust pressure intermediate flange as directed by LI.",
+        "Perform guided manual air-leak test in XENTRY; the bulletin describes 0.25 bar for its specified test configuration.",
+        "Check affected EGR valves, carbon buildup and adaptations; after repair reset air-mass correction learned values before clearing the codes."
+      ],
+      "live_data": [
+        {
+          "en": "Intake air correction factor, load range 1",
+          "ar": "عامل تصحيح هواء السحب عند نطاق الحمل 1",
+          "reference": "value not specified"
+        },
+        {
+          "en": "Intake air correction factor, load range 4",
+          "ar": "عامل تصحيح هواء السحب بنطاق الحمل 4",
+          "reference": "software effect noted for P300CA8/CA9; no numeric range"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "Charge-air and clean-air hoses",
+        "Turbocharger seals",
+        "MAF hot film sensor",
+        "EGR valves",
+        "Air filter"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "907 engine OM654; N3/40 CDI; software subconditions MU1/3/5/6",
+      "source_id": "MB-LI14.30-N-075882",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11012267-0001.pdf",
+      "source_date": "2024-12-09",
+      "source_version": "5",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P3007F2-01",
+      "identity_key": "P3007F2|N3/40 CDI|Sprinter model 907|OM654|unspecified"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P300CA8",
+      "base_code": "P300C",
+      "failure_type_suffix": "A8",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N3/40 CDI",
+      "ecu_variant": null,
+      "vehicle": "Sprinter model 907",
+      "engine": "OM654",
+      "model_years": null,
+      "transmission": null,
+      "market": null,
+      "definition_en": "Intake system leak diagnostic, software-dependent variant",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "تشخيص تسريب هواء السحب بصيغة تعتمد على إصدار البرمجية",
+      "symptoms": [
+        "MIL"
+      ],
+      "causes": [
+        "Intake/charge air leakage",
+        "Air-flow sensor or filter fault",
+        "Intake EGR carbonization",
+        "Specific software release effect on MU1/MU3/MU5/MU6 variants (P300CA8/CA9)"
+      ],
+      "diagnostic_steps": [
+        "Record CDI N3/40 control-unit software version and air intake correction factors.",
+        "Check clean-air and charge-air couplings, air filter, EGR and exhaust pressure intermediate flange as directed by LI.",
+        "Perform guided manual air-leak test in XENTRY; the bulletin describes 0.25 bar for its specified test configuration.",
+        "Check affected EGR valves, carbon buildup and adaptations; after repair reset air-mass correction learned values before clearing the codes."
+      ],
+      "live_data": [
+        {
+          "en": "Intake air correction factor, load range 1",
+          "ar": "عامل تصحيح هواء السحب عند نطاق الحمل 1",
+          "reference": "value not specified"
+        },
+        {
+          "en": "Intake air correction factor, load range 4",
+          "ar": "عامل تصحيح هواء السحب بنطاق الحمل 4",
+          "reference": "software effect noted for P300CA8/CA9; no numeric range"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "Charge-air and clean-air hoses",
+        "Turbocharger seals",
+        "MAF hot film sensor",
+        "EGR valves",
+        "Air filter"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "907 engine OM654; N3/40 CDI; software subconditions MU1/3/5/6",
+      "source_id": "MB-LI14.30-N-075882",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11012267-0001.pdf",
+      "source_date": "2024-12-09",
+      "source_version": "5",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P300CA8-01",
+      "identity_key": "P300CA8|N3/40 CDI|Sprinter model 907|OM654|unspecified"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P300CA9",
+      "base_code": "P300C",
+      "failure_type_suffix": "A9",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N3/40 CDI",
+      "ecu_variant": null,
+      "vehicle": "Sprinter model 907",
+      "engine": "OM654",
+      "model_years": null,
+      "transmission": null,
+      "market": null,
+      "definition_en": "Intake air mass plausibility fault, software-dependent variant",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "خلل معقولية كتلة هواء السحب بصيغة مرتبطة بإصدار البرمجية",
+      "symptoms": [
+        "MIL"
+      ],
+      "causes": [
+        "Intake/charge air leakage",
+        "Air-flow sensor or filter fault",
+        "Intake EGR carbonization",
+        "Specific software release effect on MU1/MU3/MU5/MU6 variants (P300CA8/CA9)"
+      ],
+      "diagnostic_steps": [
+        "Record CDI N3/40 control-unit software version and air intake correction factors.",
+        "Check clean-air and charge-air couplings, air filter, EGR and exhaust pressure intermediate flange as directed by LI.",
+        "Perform guided manual air-leak test in XENTRY; the bulletin describes 0.25 bar for its specified test configuration.",
+        "Check affected EGR valves, carbon buildup and adaptations; after repair reset air-mass correction learned values before clearing the codes."
+      ],
+      "live_data": [
+        {
+          "en": "Intake air correction factor, load range 1",
+          "ar": "عامل تصحيح هواء السحب عند نطاق الحمل 1",
+          "reference": "value not specified"
+        },
+        {
+          "en": "Intake air correction factor, load range 4",
+          "ar": "عامل تصحيح هواء السحب بنطاق الحمل 4",
+          "reference": "software effect noted for P300CA8/CA9; no numeric range"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "Charge-air and clean-air hoses",
+        "Turbocharger seals",
+        "MAF hot film sensor",
+        "EGR valves",
+        "Air filter"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "907 engine OM654; N3/40 CDI; software subconditions MU1/3/5/6",
+      "source_id": "MB-LI14.30-N-075882",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11012267-0001.pdf",
+      "source_date": "2024-12-09",
+      "source_version": "5",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P300CA9-01",
+      "identity_key": "P300CA9|N3/40 CDI|Sprinter model 907|OM654|unspecified"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "B1FC287",
+      "base_code": "B1FC2",
+      "failure_type_suffix": "87",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "B",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N10/6 front driver-side SAM BC_F222",
+      "ecu_variant": null,
+      "vehicle": "222.077 with option P98",
+      "engine": "M157.985",
+      "model_years": null,
+      "transmission": "722.931",
+      "market": null,
+      "definition_en": "Missing LIN message from lithium starter battery",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "رسالة بطارية بدء الليثيوم مفقودة عبر اتصال LIN",
+      "symptoms": [
+        "Possible on-board electrical system / battery warning"
+      ],
+      "causes": [
+        "Transient absence of LIN battery messages"
+      ],
+      "diagnostic_steps": [
+        "Verify model variant and equipment P98, and identify front/rear SAM matching vehicle.",
+        "Confirm whether code is intermittent and LIN messages from lithium starter battery are restored.",
+        "Bulletin permits deleting transient code; if additional symptoms persist, contact OEM support before replacing battery/SAM."
+      ],
+      "live_data": [
+        {
+          "en": "Lithium starter battery LIN communication status",
+          "ar": "حالة اتصال LIN مع بطارية بدء الليثيوم",
+          "reference": "not published"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "Lithium starter battery",
+        "LIN data link",
+        "SAM"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "222.077,222.178,197.377 with equipment P98; differing front/rear SAM",
+      "source_id": "MB-LI54.10-P-057753",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2013/SB-10063628-2280.pdf",
+      "source_date": "2013-11-18",
+      "source_version": null,
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-B1FC287-222077",
+      "identity_key": "222077"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "B1FC287",
+      "base_code": "B1FC2",
+      "failure_type_suffix": "87",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "B",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N10/6 front driver-side SAM BC_F222",
+      "ecu_variant": null,
+      "vehicle": "222.178 with option P98",
+      "engine": "M157.985",
+      "model_years": null,
+      "transmission": "722.971",
+      "market": null,
+      "definition_en": "Missing LIN message from lithium starter battery",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "رسالة بطارية بدء الليثيوم مفقودة عبر اتصال LIN",
+      "symptoms": [
+        "Possible on-board electrical system / battery warning"
+      ],
+      "causes": [
+        "Transient absence of LIN battery messages"
+      ],
+      "diagnostic_steps": [
+        "Verify model variant and equipment P98, and identify front/rear SAM matching vehicle.",
+        "Confirm whether code is intermittent and LIN messages from lithium starter battery are restored.",
+        "Bulletin permits deleting transient code; if additional symptoms persist, contact OEM support before replacing battery/SAM."
+      ],
+      "live_data": [
+        {
+          "en": "Lithium starter battery LIN communication status",
+          "ar": "حالة اتصال LIN مع بطارية بدء الليثيوم",
+          "reference": "not published"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "Lithium starter battery",
+        "LIN data link",
+        "SAM"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "222.077,222.178,197.377 with equipment P98; differing front/rear SAM",
+      "source_id": "MB-LI54.10-P-057753",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2013/SB-10063628-2280.pdf",
+      "source_date": "2013-11-18",
+      "source_version": null,
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-B1FC287-222178",
+      "identity_key": "222178"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "B1FC287",
+      "base_code": "B1FC2",
+      "failure_type_suffix": "87",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "B",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N10/2 rear SAM SAMR_231",
+      "ecu_variant": null,
+      "vehicle": "197.377 with option P98",
+      "engine": "M159.980",
+      "model_years": null,
+      "transmission": "700.400",
+      "market": null,
+      "definition_en": "Missing LIN message from lithium starter battery",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "رسالة بطارية بدء الليثيوم مفقودة عبر اتصال LIN",
+      "symptoms": [
+        "Possible on-board electrical system / battery warning"
+      ],
+      "causes": [
+        "Transient absence of LIN battery messages"
+      ],
+      "diagnostic_steps": [
+        "Verify model variant and equipment P98, and identify front/rear SAM matching vehicle.",
+        "Confirm whether code is intermittent and LIN messages from lithium starter battery are restored.",
+        "Bulletin permits deleting transient code; if additional symptoms persist, contact OEM support before replacing battery/SAM."
+      ],
+      "live_data": [
+        {
+          "en": "Lithium starter battery LIN communication status",
+          "ar": "حالة اتصال LIN مع بطارية بدء الليثيوم",
+          "reference": "not published"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "Lithium starter battery",
+        "LIN data link",
+        "SAM"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "222.077,222.178,197.377 with equipment P98; differing front/rear SAM",
+      "source_id": "MB-LI54.10-P-057753",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2013/SB-10063628-2280.pdf",
+      "source_date": "2013-11-18",
+      "source_version": null,
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-B1FC287-197377",
+      "identity_key": "197377"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P046100",
+      "base_code": "P0461",
+      "failure_type_suffix": "00",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N118 / N118/3 FSCM (generation per bulletin)",
+      "ecu_variant": "FSCM GEN4/5/6 family; exact code mapping under review",
+      "vehicle": "not restricted to model/year in public LI header; see WIS for specific VIN",
+      "engine": null,
+      "model_years": null,
+      "transmission": null,
+      "market": null,
+      "definition_en": "Primary fuel level sensor malfunction",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "خلل بحساس مستوى الوقود الأساسي",
+      "symptoms": [
+        "Fuel gauge reading implausible",
+        "MIL dependent on market"
+      ],
+      "causes": [
+        "Damaged harness or connector/routing",
+        "Sensor failure if confirmed by tests"
+      ],
+      "diagnostic_steps": [
+        "Perform XENTRY-guided FSCM test; capture monitor graphs for primary and secondary fuel level sensors.",
+        "For P046100/P206600 verify connector couplings and harness routing before any part replacement.",
+        "For component faults or suction jet pump faults, inspect sensor/pump-over function using authorised XENTRY routine, with tank safety procedures. No arbitrary resistance values."
+      ],
+      "live_data": [
+        {
+          "en": "Primary and secondary fuel level sender monitor graphs",
+          "ar": "منحنيات مراقبة حساسَي مستوى الوقود",
+          "reference": "no numeric limit in bulletin"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "Primary lever-type level sender",
+        "Harness / connectors"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "FSCM_GEN4/5/6 (N118/N118/3); model/year not exhaustively listed",
+      "source_id": "MB-LI47.50-P-078804",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11013179-0001.pdf",
+      "source_date": "2025-01-24",
+      "source_version": "1",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P046100-01",
+      "identity_key": "P046100|N118 / N118/3 FSCM (generation per bulletin)|not restricted to model/year in public LI header; see WIS for specific VIN|unspecified|FSCM GEN4/5/6 family; exact code mapping under review"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P046109",
+      "base_code": "P0461",
+      "failure_type_suffix": "09",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N118 / N118/3 FSCM (generation per bulletin)",
+      "ecu_variant": "FSCM GEN4/5/6 family; exact code mapping under review",
+      "vehicle": "not restricted to model/year in public LI header; see WIS for specific VIN",
+      "engine": null,
+      "model_years": null,
+      "transmission": null,
+      "market": null,
+      "definition_en": "Primary fuel level sensor component fault",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "خلل داخلي بمكوّن حساس مستوى الوقود الأساسي",
+      "symptoms": [
+        "Fuel gauge reading implausible",
+        "MIL dependent on market"
+      ],
+      "causes": [
+        "Sensor or suction jet pump function requires XENTRY graph interpretation"
+      ],
+      "diagnostic_steps": [
+        "Perform XENTRY-guided FSCM test; capture monitor graphs for primary and secondary fuel level sensors.",
+        "For P046100/P206600 verify connector couplings and harness routing before any part replacement.",
+        "For component faults or suction jet pump faults, inspect sensor/pump-over function using authorised XENTRY routine, with tank safety procedures. No arbitrary resistance values."
+      ],
+      "live_data": [
+        {
+          "en": "Primary and secondary fuel level sender monitor graphs",
+          "ar": "منحنيات مراقبة حساسَي مستوى الوقود",
+          "reference": "no numeric limit in bulletin"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "Primary lever-type level sender",
+        "Harness / connectors"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "FSCM_GEN4/5/6 (N118/N118/3); model/year not exhaustively listed",
+      "source_id": "MB-LI47.50-P-078804",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11013179-0001.pdf",
+      "source_date": "2025-01-24",
+      "source_version": "1",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P046109-01",
+      "identity_key": "P046109|N118 / N118/3 FSCM (generation per bulletin)|not restricted to model/year in public LI header; see WIS for specific VIN|unspecified|FSCM GEN4/5/6 family; exact code mapping under review"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P206600",
+      "base_code": "P2066",
+      "failure_type_suffix": "00",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N118 / N118/3 FSCM (generation per bulletin)",
+      "ecu_variant": "FSCM GEN4/5/6 family; exact code mapping under review",
+      "vehicle": "not restricted to model/year in public LI header; see WIS for specific VIN",
+      "engine": null,
+      "model_years": null,
+      "transmission": null,
+      "market": null,
+      "definition_en": "Secondary fuel level sensor malfunction",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "خلل بحساس مستوى الوقود الثانوي",
+      "symptoms": [
+        "Fuel gauge reading implausible",
+        "MIL dependent on market"
+      ],
+      "causes": [
+        "Damaged harness or connector/routing",
+        "Sensor failure if confirmed by tests"
+      ],
+      "diagnostic_steps": [
+        "Perform XENTRY-guided FSCM test; capture monitor graphs for primary and secondary fuel level sensors.",
+        "For P046100/P206600 verify connector couplings and harness routing before any part replacement.",
+        "For component faults or suction jet pump faults, inspect sensor/pump-over function using authorised XENTRY routine, with tank safety procedures. No arbitrary resistance values."
+      ],
+      "live_data": [
+        {
+          "en": "Primary and secondary fuel level sender monitor graphs",
+          "ar": "منحنيات مراقبة حساسَي مستوى الوقود",
+          "reference": "no numeric limit in bulletin"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "Secondary lever-type level sender",
+        "Harness / connectors"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "FSCM_GEN4/5/6 (N118/N118/3); model/year not exhaustively listed",
+      "source_id": "MB-LI47.50-P-078804",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11013179-0001.pdf",
+      "source_date": "2025-01-24",
+      "source_version": "1",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P206600-01",
+      "identity_key": "P206600|N118 / N118/3 FSCM (generation per bulletin)|not restricted to model/year in public LI header; see WIS for specific VIN|unspecified|FSCM GEN4/5/6 family; exact code mapping under review"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P206609",
+      "base_code": "P2066",
+      "failure_type_suffix": "09",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N118 / N118/3 FSCM (generation per bulletin)",
+      "ecu_variant": "FSCM GEN4/5/6 family; exact code mapping under review",
+      "vehicle": "not restricted to model/year in public LI header; see WIS for specific VIN",
+      "engine": null,
+      "model_years": null,
+      "transmission": null,
+      "market": null,
+      "definition_en": "Secondary fuel level sensor component fault",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "خلل داخلي بحساس مستوى الوقود الثانوي",
+      "symptoms": [
+        "Fuel gauge reading implausible",
+        "MIL dependent on market"
+      ],
+      "causes": [
+        "Sensor or suction jet pump function requires XENTRY graph interpretation"
+      ],
+      "diagnostic_steps": [
+        "Perform XENTRY-guided FSCM test; capture monitor graphs for primary and secondary fuel level sensors.",
+        "For P046100/P206600 verify connector couplings and harness routing before any part replacement.",
+        "For component faults or suction jet pump faults, inspect sensor/pump-over function using authorised XENTRY routine, with tank safety procedures. No arbitrary resistance values."
+      ],
+      "live_data": [
+        {
+          "en": "Primary and secondary fuel level sender monitor graphs",
+          "ar": "منحنيات مراقبة حساسَي مستوى الوقود",
+          "reference": "no numeric limit in bulletin"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "Secondary lever-type level sender",
+        "Harness / connectors"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "FSCM_GEN4/5/6 (N118/N118/3); model/year not exhaustively listed",
+      "source_id": "MB-LI47.50-P-078804",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11013179-0001.pdf",
+      "source_date": "2025-01-24",
+      "source_version": "1",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P206609-01",
+      "identity_key": "P206609|N118 / N118/3 FSCM (generation per bulletin)|not restricted to model/year in public LI header; see WIS for specific VIN|unspecified|FSCM GEN4/5/6 family; exact code mapping under review"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P13E600",
+      "base_code": "P13E6",
+      "failure_type_suffix": "00",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N118 / N118/3 FSCM (generation per bulletin)",
+      "ecu_variant": "FSCM GEN4/5/6 family; exact code mapping under review",
+      "vehicle": "not restricted to model/year in public LI header; see WIS for specific VIN",
+      "engine": null,
+      "model_years": null,
+      "transmission": null,
+      "market": null,
+      "definition_en": "Suction jet transfer pump fault",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "خلل في مضخة نقل الوقود النفاثة داخل الخزان",
+      "symptoms": [
+        "Fuel gauge reading implausible",
+        "MIL dependent on market"
+      ],
+      "causes": [
+        "Sensor or suction jet pump function requires XENTRY graph interpretation"
+      ],
+      "diagnostic_steps": [
+        "Perform XENTRY-guided FSCM test; capture monitor graphs for primary and secondary fuel level sensors.",
+        "For P046100/P206600 verify connector couplings and harness routing before any part replacement.",
+        "For component faults or suction jet pump faults, inspect sensor/pump-over function using authorised XENTRY routine, with tank safety procedures. No arbitrary resistance values."
+      ],
+      "live_data": [
+        {
+          "en": "Secondary-to-primary transfer / pump-over function",
+          "ar": "مراقبة نقل الوقود بين جانبي الخزان",
+          "reference": "no numeric limit in bulletin"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "Suction jet pump",
+        "Harness / connectors"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "FSCM_GEN4/5/6 (N118/N118/3); model/year not exhaustively listed",
+      "source_id": "MB-LI47.50-P-078804",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11013179-0001.pdf",
+      "source_date": "2025-01-24",
+      "source_version": "1",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P13E600-01",
+      "identity_key": "P13E600|N118 / N118/3 FSCM (generation per bulletin)|not restricted to model/year in public LI header; see WIS for specific VIN|unspecified|FSCM GEN4/5/6 family; exact code mapping under review"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P206800",
+      "base_code": "P2068",
+      "failure_type_suffix": "00",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N118 / N118/3 FSCM (generation per bulletin)",
+      "ecu_variant": "GEN4/GEN5 (documented); GEN6 unresolved",
+      "vehicle": "not restricted to model/year in public LI header; see WIS for specific VIN",
+      "engine": null,
+      "model_years": null,
+      "transmission": null,
+      "market": null,
+      "definition_en": "Secondary fuel level sensor short circuit to positive",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "قصر إلى الموجب في دائرة حساس مستوى الوقود الثانوي",
+      "symptoms": [
+        "Fuel gauge reading implausible",
+        "MIL dependent on market"
+      ],
+      "causes": [
+        "Circuit short requiring harness/connector tests",
+        "Sensor internal short only when electrical isolation confirms"
+      ],
+      "diagnostic_steps": [
+        "Perform XENTRY-guided FSCM test; capture monitor graphs for primary and secondary fuel level sensors.",
+        "For P046100/P206600 verify connector couplings and harness routing before any part replacement.",
+        "For component faults or suction jet pump faults, inspect sensor/pump-over function using authorised XENTRY routine, with tank safety procedures. No arbitrary resistance values."
+      ],
+      "live_data": [
+        {
+          "en": "Primary and secondary fuel level sender monitor graphs",
+          "ar": "منحنيات مراقبة حساسَي مستوى الوقود",
+          "reference": "no numeric limit in bulletin"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "Secondary lever-type level sender",
+        "Harness / connectors"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "FSCM_GEN4/5/6 (N118/N118/3); model/year not exhaustively listed",
+      "source_id": "MB-LI47.50-P-078804",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11013179-0001.pdf",
+      "source_date": "2025-01-24",
+      "source_version": "1",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P206800-01",
+      "identity_key": "P206800|N118 / N118/3 FSCM (generation per bulletin)|not restricted to model/year in public LI header; see WIS for specific VIN|unspecified|GEN4/GEN5 (documented); GEN6 unresolved"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P206700",
+      "base_code": "P2067",
+      "failure_type_suffix": "00",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N118 / N118/3 FSCM (generation per bulletin)",
+      "ecu_variant": "GEN4/GEN5 (documented); GEN6 unresolved",
+      "vehicle": "not restricted to model/year in public LI header; see WIS for specific VIN",
+      "engine": null,
+      "model_years": null,
+      "transmission": null,
+      "market": null,
+      "definition_en": "Secondary fuel level sensor short circuit to ground",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "قصر إلى الأرضي في دائرة حساس مستوى الوقود الثانوي",
+      "symptoms": [
+        "Fuel gauge reading implausible",
+        "MIL dependent on market"
+      ],
+      "causes": [
+        "Circuit short requiring harness/connector tests",
+        "Sensor internal short only when electrical isolation confirms"
+      ],
+      "diagnostic_steps": [
+        "Perform XENTRY-guided FSCM test; capture monitor graphs for primary and secondary fuel level sensors.",
+        "For P046100/P206600 verify connector couplings and harness routing before any part replacement.",
+        "For component faults or suction jet pump faults, inspect sensor/pump-over function using authorised XENTRY routine, with tank safety procedures. No arbitrary resistance values."
+      ],
+      "live_data": [
+        {
+          "en": "Primary and secondary fuel level sender monitor graphs",
+          "ar": "منحنيات مراقبة حساسَي مستوى الوقود",
+          "reference": "no numeric limit in bulletin"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "Secondary lever-type level sender",
+        "Harness / connectors"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "FSCM_GEN4/5/6 (N118/N118/3); model/year not exhaustively listed",
+      "source_id": "MB-LI47.50-P-078804",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11013179-0001.pdf",
+      "source_date": "2025-01-24",
+      "source_version": "1",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P206700-01",
+      "identity_key": "P206700|N118 / N118/3 FSCM (generation per bulletin)|not restricted to model/year in public LI header; see WIS for specific VIN|unspecified|GEN4/GEN5 (documented); GEN6 unresolved"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P046300",
+      "base_code": "P0463",
+      "failure_type_suffix": "00",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N118 / N118/3 FSCM (generation per bulletin)",
+      "ecu_variant": "FSCM GEN4/5/6 family; exact code mapping under review",
+      "vehicle": "not restricted to model/year in public LI header; see WIS for specific VIN",
+      "engine": null,
+      "model_years": null,
+      "transmission": null,
+      "market": null,
+      "definition_en": "Primary fuel level sensor short circuit to positive",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "قصر إلى الموجب في دائرة حساس مستوى الوقود الأساسي",
+      "symptoms": [
+        "Fuel gauge reading implausible",
+        "MIL dependent on market"
+      ],
+      "causes": [
+        "Circuit short requiring harness/connector tests",
+        "Sensor internal short only when electrical isolation confirms"
+      ],
+      "diagnostic_steps": [
+        "Perform XENTRY-guided FSCM test; capture monitor graphs for primary and secondary fuel level sensors.",
+        "For P046100/P206600 verify connector couplings and harness routing before any part replacement.",
+        "For component faults or suction jet pump faults, inspect sensor/pump-over function using authorised XENTRY routine, with tank safety procedures. No arbitrary resistance values."
+      ],
+      "live_data": [
+        {
+          "en": "Primary and secondary fuel level sender monitor graphs",
+          "ar": "منحنيات مراقبة حساسَي مستوى الوقود",
+          "reference": "no numeric limit in bulletin"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "Primary lever-type level sender",
+        "Harness / connectors"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "FSCM_GEN4/5/6 (N118/N118/3); model/year not exhaustively listed",
+      "source_id": "MB-LI47.50-P-078804",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11013179-0001.pdf",
+      "source_date": "2025-01-24",
+      "source_version": "1",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P046300-01",
+      "identity_key": "P046300|N118 / N118/3 FSCM (generation per bulletin)|not restricted to model/year in public LI header; see WIS for specific VIN|unspecified|FSCM GEN4/5/6 family; exact code mapping under review"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P046200",
+      "base_code": "P0462",
+      "failure_type_suffix": "00",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N118 / N118/3 FSCM (generation per bulletin)",
+      "ecu_variant": "FSCM GEN4/5/6 family; exact code mapping under review",
+      "vehicle": "not restricted to model/year in public LI header; see WIS for specific VIN",
+      "engine": null,
+      "model_years": null,
+      "transmission": null,
+      "market": null,
+      "definition_en": "Primary fuel level sensor short circuit to ground",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "قصر إلى الأرضي في دائرة حساس مستوى الوقود الأساسي",
+      "symptoms": [
+        "Fuel gauge reading implausible",
+        "MIL dependent on market"
+      ],
+      "causes": [
+        "Circuit short requiring harness/connector tests",
+        "Sensor internal short only when electrical isolation confirms"
+      ],
+      "diagnostic_steps": [
+        "Perform XENTRY-guided FSCM test; capture monitor graphs for primary and secondary fuel level sensors.",
+        "For P046100/P206600 verify connector couplings and harness routing before any part replacement.",
+        "For component faults or suction jet pump faults, inspect sensor/pump-over function using authorised XENTRY routine, with tank safety procedures. No arbitrary resistance values."
+      ],
+      "live_data": [
+        {
+          "en": "Primary and secondary fuel level sender monitor graphs",
+          "ar": "منحنيات مراقبة حساسَي مستوى الوقود",
+          "reference": "no numeric limit in bulletin"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "Primary lever-type level sender",
+        "Harness / connectors"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "FSCM_GEN4/5/6 (N118/N118/3); model/year not exhaustively listed",
+      "source_id": "MB-LI47.50-P-078804",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11013179-0001.pdf",
+      "source_date": "2025-01-24",
+      "source_version": "1",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P046200-01",
+      "identity_key": "P046200|N118 / N118/3 FSCM (generation per bulletin)|not restricted to model/year in public LI header; see WIS for specific VIN|unspecified|FSCM GEN4/5/6 family; exact code mapping under review"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P046400",
+      "base_code": "P0464",
+      "failure_type_suffix": "00",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N118 / N118/3 FSCM (generation per bulletin)",
+      "ecu_variant": "FSCM GEN4",
+      "vehicle": "not restricted to model/year in public LI header; see WIS for specific VIN",
+      "engine": null,
+      "model_years": null,
+      "transmission": null,
+      "market": null,
+      "definition_en": "Primary fuel level sensor short circuit to positive (GEN4 variant)",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "قصر إلى الموجب في دائرة حساس المستوى الأساسي (صيغة GEN4)",
+      "symptoms": [
+        "Fuel gauge reading implausible",
+        "MIL dependent on market"
+      ],
+      "causes": [
+        "Circuit short requiring harness/connector tests",
+        "Sensor internal short only when electrical isolation confirms"
+      ],
+      "diagnostic_steps": [
+        "Perform XENTRY-guided FSCM test; capture monitor graphs for primary and secondary fuel level sensors.",
+        "For P046100/P206600 verify connector couplings and harness routing before any part replacement.",
+        "For component faults or suction jet pump faults, inspect sensor/pump-over function using authorised XENTRY routine, with tank safety procedures. No arbitrary resistance values."
+      ],
+      "live_data": [
+        {
+          "en": "Primary and secondary fuel level sender monitor graphs",
+          "ar": "منحنيات مراقبة حساسَي مستوى الوقود",
+          "reference": "no numeric limit in bulletin"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "Primary lever-type level sender",
+        "Harness / connectors"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "FSCM_GEN4/5/6 (N118/N118/3); model/year not exhaustively listed",
+      "source_id": "MB-LI47.50-P-078804",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11013179-0001.pdf",
+      "source_date": "2025-01-24",
+      "source_version": "1",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P046400-01",
+      "identity_key": "P046400|N118 / N118/3 FSCM (generation per bulletin)|not restricted to model/year in public LI header; see WIS for specific VIN|unspecified|FSCM GEN4"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P206900",
+      "base_code": "P2069",
+      "failure_type_suffix": "00",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "N118 / N118/3 FSCM (generation per bulletin)",
+      "ecu_variant": "FSCM GEN4",
+      "vehicle": "not restricted to model/year in public LI header; see WIS for specific VIN",
+      "engine": null,
+      "model_years": null,
+      "transmission": null,
+      "market": null,
+      "definition_en": "Secondary fuel level sensor intermittent fault",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "خلل متقطع بحساس مستوى الوقود الثانوي",
+      "symptoms": [
+        "Fuel gauge reading implausible",
+        "MIL dependent on market"
+      ],
+      "causes": [
+        "Intermittent wiring/sensor signal requiring live monitoring"
+      ],
+      "diagnostic_steps": [
+        "Perform XENTRY-guided FSCM test; capture monitor graphs for primary and secondary fuel level sensors.",
+        "For P046100/P206600 verify connector couplings and harness routing before any part replacement.",
+        "For component faults or suction jet pump faults, inspect sensor/pump-over function using authorised XENTRY routine, with tank safety procedures. No arbitrary resistance values."
+      ],
+      "live_data": [
+        {
+          "en": "Primary and secondary fuel level sender monitor graphs",
+          "ar": "منحنيات مراقبة حساسَي مستوى الوقود",
+          "reference": "no numeric limit in bulletin"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "Secondary lever-type level sender",
+        "Harness / connectors"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "FSCM_GEN4/5/6 (N118/N118/3); model/year not exhaustively listed",
+      "source_id": "MB-LI47.50-P-078804",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11013179-0001.pdf",
+      "source_date": "2025-01-24",
+      "source_version": "1",
+      "information_confidence": "oem_bulletin_code_and_scope_confirmed",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P206900-01",
+      "identity_key": "P206900|N118 / N118/3 FSCM (generation per bulletin)|not restricted to model/year in public LI header; see WIS for specific VIN|unspecified|FSCM GEN4"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P227900",
+      "base_code": "P2279",
+      "failure_type_suffix": "00",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "ME N3/10",
+      "ecu_variant": null,
+      "vehicle": "167 / 290 / 463",
+      "engine": "M177.98",
+      "model_years": null,
+      "transmission": null,
+      "market": null,
+      "definition_en": "Intake air system leakage detected",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "رصد تسريب في نظام هواء السحب",
+      "symptoms": [
+        "MIL",
+        "Rough running"
+      ],
+      "causes": [
+        "Intake or evaporative system leak; root cause varies"
+      ],
+      "diagnostic_steps": [
+        "Record ME N3/10 freeze frame and intake/EVAP leaks.",
+        "Inspect relevant intake and evaporative-emission plumbing for actual leaks and repair defects found.",
+        "Clear codes and road test; if recurrence, obtain primary LI attachment and open TIPS rather than guessing a part."
+      ],
+      "live_data": [
+        {
+          "en": "Fuel trim / intake leak diagnostic monitors",
+          "ar": "تصحيح الوقود ومراقبات تسريب هواء السحب",
+          "reference": "not specified"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "Intake plumbing",
+        "EVAP hoses"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "167,290,463 with M177.98 and ME N3/10; secondary republication, primary PDF not inspected",
+      "source_id": "MB-LI09.00-P-081076",
+      "source_url": "https://oemdtc.com/tsb/11039096/",
+      "source_date": "2026-10-27",
+      "source_version": "1",
+      "information_confidence": "secondary_republication_pending_primary_document",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P227900-01",
+      "identity_key": "P227900|ME N3/10|167 / 290 / 463|M177.98|unspecified"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P152B00",
+      "base_code": "P152B",
+      "failure_type_suffix": "00",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "ME N3/10",
+      "ecu_variant": null,
+      "vehicle": "167 / 290 / 463",
+      "engine": "M177.98",
+      "model_years": null,
+      "transmission": null,
+      "market": null,
+      "definition_en": "Intake air leak detected on bank 1",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "رصد تسريب بمنظومة السحب للبنك 1",
+      "symptoms": [
+        "MIL",
+        "Rough running"
+      ],
+      "causes": [
+        "Intake or evaporative system leak; root cause varies"
+      ],
+      "diagnostic_steps": [
+        "Record ME N3/10 freeze frame and intake/EVAP leaks.",
+        "Inspect relevant intake and evaporative-emission plumbing for actual leaks and repair defects found.",
+        "Clear codes and road test; if recurrence, obtain primary LI attachment and open TIPS rather than guessing a part."
+      ],
+      "live_data": [
+        {
+          "en": "Fuel trim / intake leak diagnostic monitors",
+          "ar": "تصحيح الوقود ومراقبات تسريب هواء السحب",
+          "reference": "not specified"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "Intake plumbing",
+        "EVAP hoses"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "167,290,463 with M177.98 and ME N3/10; secondary republication, primary PDF not inspected",
+      "source_id": "MB-LI09.00-P-081076",
+      "source_url": "https://oemdtc.com/tsb/11039096/",
+      "source_date": "2026-10-27",
+      "source_version": "1",
+      "information_confidence": "secondary_republication_pending_primary_document",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P152B00-01",
+      "identity_key": "P152B00|ME N3/10|167 / 290 / 463|M177.98|unspecified"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "code": "P152C00",
+      "base_code": "P152C",
+      "failure_type_suffix": "00",
+      "code_format": "MB_XENTRY_7_CHARACTER",
+      "code_family": "P",
+      "classification": "Mercedes XENTRY enhanced; SAE base allocation not independently verified",
+      "ecu": "ME N3/10",
+      "ecu_variant": null,
+      "vehicle": "167 / 290 / 463",
+      "engine": "M177.98",
+      "model_years": null,
+      "transmission": null,
+      "market": null,
+      "definition_en": "Intake air leak detected on bank 2",
+      "definition_en_relation": "technical paraphrase grounded in OEM bulletin",
+      "translation_ar": "رصد تسريب بمنظومة السحب للبنك 2",
+      "symptoms": [
+        "MIL",
+        "Rough running"
+      ],
+      "causes": [
+        "Intake or evaporative system leak; root cause varies"
+      ],
+      "diagnostic_steps": [
+        "Record ME N3/10 freeze frame and intake/EVAP leaks.",
+        "Inspect relevant intake and evaporative-emission plumbing for actual leaks and repair defects found.",
+        "Clear codes and road test; if recurrence, obtain primary LI attachment and open TIPS rather than guessing a part."
+      ],
+      "live_data": [
+        {
+          "en": "Fuel trim / intake leak diagnostic monitors",
+          "ar": "تصحيح الوقود ومراقبات تسريب هواء السحب",
+          "reference": "not specified"
+        }
+      ],
+      "tools": [
+        "XENTRY/STAR diagnostic interface",
+        "workshop tools as required by cited procedure"
+      ],
+      "parts": [
+        "Intake plumbing",
+        "EVAP hoses"
+      ],
+      "wiring": null,
+      "images": {
+        "path": null,
+        "code_matched": false
+      },
+      "image_generation_status": "paused",
+      "source_scope": "167,290,463 with M177.98 and ME N3/10; secondary republication, primary PDF not inspected",
+      "source_id": "MB-LI09.00-P-081076",
+      "source_url": "https://oemdtc.com/tsb/11039096/",
+      "source_date": "2026-10-27",
+      "source_version": "1",
+      "information_confidence": "secondary_republication_pending_primary_document",
+      "verification_status": "OEM_DTC_PRESENT_BUT_RECORD_INCOMPLETE",
+      "review_status": "pending_deferred_review",
+      "missing": [
+        "VIN/production and market-specific applicability not completely verified",
+        "ECU-specific electrical terminal/wiring diagrams unavailable",
+        "live-data reference values unavailable unless noted",
+        "image licence and exact component location not verified"
+      ],
+      "release_to_app": false,
+      "origin_batch": "2026-11-16-B03",
+      "id": "MB-B03-P152C00-01",
+      "identity_key": "P152C00|ME N3/10|167 / 290 / 463|M177.98|unspecified"
+    }
+  ],
+  "notes": [
+    "Code definition and bulletin scope are documented; blank VIN applicability or ECU subtypes remain under review.",
+    "Model years only asserted where printed explicitly.",
+    "Photos/diagrams not collected according to image suspension.",
+    "Source PDFs are not copied or redistributed."
+  ]
+}
