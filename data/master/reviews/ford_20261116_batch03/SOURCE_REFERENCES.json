@@ -1,0 +1,81 @@
+{
+  "schema": "dtcnexis-ford-citations-v1",
+  "brand": "Ford",
+  "batch": "20261116-03",
+  "created_on": "2026-11-16",
+  "confidence_policy": "OEM evidence establishes listed condition/module only; where exact manufacturer DTC definition or engine fitment absent, mark review needed",
+  "sources": [
+    {
+      "source_id": "FORD-2013-GAS-OBD",
+      "title": "Ford/Lincoln 2013 Model Year Gasoline OBD System Operation Summary",
+      "url": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1300.pdf",
+      "publication_date": "2013-03-08",
+      "source_type": "OEM_OBD_OPERATION",
+      "scope": "Ford/Lincoln gasoline diagnostic monitors, specific model-year and calibration must be checked",
+      "usage": "DTC monitor definitions, threshold contexts and UDS equivalents for P0112 etc., plus VCT correction"
+    },
+    {
+      "source_id": "FORD-2024-GAS-OBD",
+      "title": "Ford/Lincoln 2024–2025 MY Gasoline OBD System Operation Summary V2",
+      "url": "https://www.fordservicecontent.com/Ford_Content/catalog/motorcraft/OBDSM2400OUTPUT_16Jul2024_WSM_final_V2_MCS7001.pdf",
+      "publication_date": "2024-07-16",
+      "source_type": "OEM_OBD_OPERATION",
+      "scope": "2024–2025 gasoline monitor overview; not Europe or VIN-specific fitment evidence",
+      "usage": "P0299, P0234, P04DB/P2C90, P2AB8/9 and wastegate codes"
+    },
+    {
+      "source_id": "FORD-14M02-2022",
+      "title": "Ford 14M02 TCM Warranty Extension – Supplement #6",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10226944-0001.pdf",
+      "publication_date": "2022-11-07",
+      "source_type": "OEM_SERVICE_PROGRAM",
+      "scope": "US Fiesta 2011–2015 / Focus 2012–2016 DPS6 and eligibility via OASIS",
+      "usage": "P0606, U0100, U0101, U1013; do not attribute P0015/16/17 to DPS6"
+    },
+    {
+      "source_id": "FORD-TSB-21-2252",
+      "title": "Ford TSB 21-2252 - PSCM/ABS Steering Related DTCs",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10200738-0001.pdf",
+      "publication_date": "2021-07-30",
+      "source_type": "OEM_TSB",
+      "scope": "2020–2021 North American Ford Escape",
+      "usage": "C1B00:62 in PSCM and C0051:67 in ABS"
+    },
+    {
+      "source_id": "FORD-SSM-52105",
+      "title": "Ford SSM 52105 - PSCM DTC C1B00:62",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10247150-0001.pdf",
+      "publication_date": null,
+      "source_type": "OEM_SSM",
+      "scope": "2023 North American F-Super Duty",
+      "usage": "C1B00:62 PSCM steering-related warnings and software diagnostic workflow"
+    },
+    {
+      "source_id": "FORD-TSB-16-2066",
+      "title": "Ford TSB 16-2066 - Active Steering Malfunction",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2016/SB-10095966-2532.pdf",
+      "publication_date": "2016-11-03",
+      "source_type": "OEM_TSB",
+      "scope": "2016 Ford Edge with adaptive/active steering",
+      "usage": "C1B00 in SECM"
+    },
+    {
+      "source_id": "FORD-SSM-55298",
+      "title": "Ford SSM 55298 - PSCM DTCs After SCCM/GSM Programming",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11039144-0001.pdf",
+      "publication_date": null,
+      "source_type": "OEM_SSM",
+      "scope": "2025–2027 North American Explorer / Police Interceptor Utility",
+      "usage": "C1B00/U2016/U211B PSCM and documented module authentication, actual calibration to confirm"
+    },
+    {
+      "source_id": "FORD-TSB-25-2142",
+      "title": "Ford TSB 25-2142 - PowerBoost BCM Code B11D9:09",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11018197-0001.pdf",
+      "publication_date": "2025-04-30",
+      "source_type": "OEM_TSB",
+      "scope": "2021–2024 F-150 3.5L PowerBoost",
+      "usage": "Supersedes TSB 24-2442; BCM/ACCM/TCCM calibration and battery testing"
+    }
+  ]
+}
