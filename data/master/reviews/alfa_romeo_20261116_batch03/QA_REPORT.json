@@ -1,0 +1,42 @@
+{
+  "schema": "dtc-nexis-brand-batch-qa-v1",
+  "brand": "Alfa Romeo",
+  "audited_on": "2026-11-16",
+  "scope": "GitHub ref comparison and JSON structure only; not a substitute for vehicle-level validation",
+  "base_file": "data/master/brands/alfa_romeo.json",
+  "base_file_blob_sha": "79d90be78abd100b0d6d921794cafd93d52bc533",
+  "new_file": "data/master/brands/alfa_romeo_20261116_batch03.json",
+  "new_file_blob_sha": "d27cb35c56ff5a901cc22e5932972001b661b68f",
+  "review_file": "data/master/reviews/alfa_romeo_20261116_batch03/REVIEW_QUEUE.json",
+  "review_file_blob_sha": "9e356f100c3188ee62587c94520bbe7fbad4ffea",
+  "previous_unique_code_count": 59,
+  "new_unique_code_count": 16,
+  "duplicate_against_previous_count": 0,
+  "duplicate_new_internal_count": 0,
+  "total_different_code_count": 75,
+  "new_code_family_counts": {
+    "P": 4,
+    "B": 6,
+    "C": 3,
+    "U": 3
+  },
+  "new_source_document_count": 10,
+  "unresolved_review_entries": 75,
+  "known_legacy_scope_suffix_issues": 6,
+  "missing_source_reference_codes": [],
+  "invalid_code_format": [],
+  "missing_required_fields": [],
+  "expected_coverage_note": "Only source-noted model scope; none of the 16 new codes have verified Swedish VIN/ECU electrical measurements",
+  "readback_verified": true,
+  "errors": [],
+  "warnings": [
+    "No full repair-manual pinouts or voltage/resistance thresholds verified",
+    "SAE J2012DA code ownership/classification not verified",
+    "Engine code and precise EU/Sweden applicability unverified",
+    "P006C source typography may resemble P006C-MAP; source form preserved",
+    "STAR TBM bulletin does not establish exact fitted modules for each listed model year",
+    "Manufacturer PDF screenshot retrieval succeeded for 21-032-24, 21-037-24, 18-028-25; other PDF screenshots encountered cache misses; extracted text was used instead",
+    "No GitHub main merge, app update or stable feed modification"
+  ],
+  "publish_state": "NOT_RELEASED"
+}

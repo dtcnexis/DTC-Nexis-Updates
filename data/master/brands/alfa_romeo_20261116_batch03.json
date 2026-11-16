@@ -1,0 +1,1926 @@
+{
+  "schema": "dtc-nexis-permanent-brand-source-batch-v1",
+  "brand": "Alfa Romeo",
+  "batch_id": "ALFA_20261116_03",
+  "archive_status": "PERMANENT_COLLECTED_SOURCE_DATA_NOT_PUBLISHED",
+  "release_to_app": "NOT_ACTIVE",
+  "created_on": "2026-11-16",
+  "base_library_path": "data/master/brands/alfa_romeo.json",
+  "base_record_count": 59,
+  "new_unique_code_count": 16,
+  "duplicate_with_base_count": 0,
+  "scope": "Manufacturer TSB evidence, mostly North America. Each record requires model VIN/ECU confirmation; no Sweden assumption",
+  "sources": [
+    {
+      "source_id": "tsb_08_045_20",
+      "document_type": "OEM service bulletin",
+      "bulletin_id": "08-045-20",
+      "publication_date": "2020-04-09",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10175724-9999.pdf",
+      "publisher": "FCA US",
+      "scope": "North America: Giulia/Stelvio MY2020",
+      "verified_on": "2026-11-16",
+      "reuse_rights": "Link and factual indexing only; do not reproduce entire bulletin",
+      "evidence_grade": "manufacturer_document_text"
+    },
+    {
+      "source_id": "tsb_08_233_23",
+      "document_type": "OEM service bulletin",
+      "bulletin_id": "08-233-23",
+      "publication_date": "2023-10-21",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10247481-9999.pdf",
+      "publisher": "Stellantis",
+      "scope": "North America: Tonale MY2023, LMS",
+      "verified_on": "2026-11-16",
+      "reuse_rights": "Link and factual indexing only; do not reproduce entire bulletin",
+      "evidence_grade": "manufacturer_document_text"
+    },
+    {
+      "source_id": "tsb_08_236_23",
+      "document_type": "OEM service bulletin",
+      "bulletin_id": "08-236-23",
+      "publication_date": "2023-10-21",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10247485-9999.pdf",
+      "publisher": "Stellantis",
+      "scope": "Tonale MY2024, LMS; market checkbox needs confirmation",
+      "verified_on": "2026-11-16",
+      "reuse_rights": "Link and factual indexing only; do not reproduce entire bulletin",
+      "evidence_grade": "manufacturer_document_text"
+    },
+    {
+      "source_id": "tsb_21_032_24",
+      "document_type": "OEM service bulletin",
+      "bulletin_id": "21-032-24",
+      "publication_date": "2024-05-16",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11001253-0001.pdf",
+      "publisher": "Stellantis",
+      "scope": "North America: Tonale MY2023, DFH",
+      "verified_on": "2026-11-16",
+      "reuse_rights": "Link and factual indexing only; do not reproduce entire bulletin",
+      "evidence_grade": "manufacturer_document_text"
+    },
+    {
+      "source_id": "tsb_21_037_24",
+      "document_type": "OEM service bulletin",
+      "bulletin_id": "21-037-24",
+      "publication_date": "2024-05-23",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11001294-0001.pdf",
+      "publisher": "Stellantis",
+      "scope": "North America/MEA/SA/EE: Tonale MY2024, DFH",
+      "verified_on": "2026-11-16",
+      "reuse_rights": "Link and factual indexing only; do not reproduce entire bulletin",
+      "evidence_grade": "manufacturer_document_text"
+    },
+    {
+      "source_id": "tsb_08_295_25",
+      "document_type": "OEM service bulletin",
+      "bulletin_id": "08-295-25",
+      "publication_date": "2025-09-04",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11023068-0001.pdf",
+      "publisher": "Stellantis",
+      "scope": "North America: Tonale MY2025 LSU",
+      "verified_on": "2026-11-16",
+      "reuse_rights": "Link and factual indexing only; do not reproduce entire bulletin",
+      "evidence_grade": "manufacturer_document_text"
+    },
+    {
+      "source_id": "tsb_18_099_25",
+      "document_type": "OEM service bulletin",
+      "bulletin_id": "18-099-25",
+      "publication_date": "2025-11-15",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11025635-0001.pdf",
+      "publisher": "Stellantis",
+      "scope": "North America: Tonale MY2024 EYG",
+      "verified_on": "2026-11-16",
+      "reuse_rights": "Link and factual indexing only; do not reproduce entire bulletin",
+      "evidence_grade": "manufacturer_document_text"
+    },
+    {
+      "source_id": "tsb_18_100_25",
+      "document_type": "OEM service bulletin",
+      "bulletin_id": "18-100-25",
+      "publication_date": "2025-11-18",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11025714-0001.pdf",
+      "publisher": "Stellantis",
+      "scope": "North America: Tonale MY2025 EYG",
+      "verified_on": "2026-11-16",
+      "reuse_rights": "Link and factual indexing only; do not reproduce entire bulletin",
+      "evidence_grade": "manufacturer_document_text"
+    },
+    {
+      "source_id": "tsb_18_028_25",
+      "document_type": "OEM service bulletin",
+      "bulletin_id": "18-028-25",
+      "publication_date": "2025-06-05",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11019436-0001.pdf",
+      "publisher": "Stellantis",
+      "scope": "Tonale MY2021-2025 as printed; EYF/EYG; verify actual Alfa market years",
+      "verified_on": "2026-11-16",
+      "reuse_rights": "Link and factual indexing only; do not reproduce entire bulletin",
+      "evidence_grade": "manufacturer_document_text"
+    },
+    {
+      "source_id": "star_s2508000101",
+      "document_type": "STAR manufacturer communication",
+      "bulletin_id": "S2508000101",
+      "publication_date": "2025-11",
+      "url": "https://static.oemdtc.com/NHTSA-PDFs/MC-11025514-0001.pdf",
+      "publisher": "Stellantis STAR",
+      "scope": "Alfa Romeo Giulia/Stelvio/Tonale listed by NHTSA index; exact VIN scope missing",
+      "verified_on": "2026-11-16",
+      "reuse_rights": "Link and factual indexing only; do not reproduce entire bulletin",
+      "evidence_grade": "manufacturer_document_text"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "alfa-b03-b1006-49",
+      "brand": "Alfa Romeo",
+      "code": "B1006-49",
+      "base_code": "B1006",
+      "failure_type_byte": "49",
+      "definition_en": "Camera - Internal Electronic Failure",
+      "translation_ar": "عطل إلكتروني داخلي في الكاميرا",
+      "category": "B",
+      "code_ownership": "OEM bulletin explicitly associates code with model; SAE/J2012DA generic-vs-manufacturer final determination pending",
+      "ecu": "FFCM/Camera (module reporting exact DTC requires scan confirmation)",
+      "applicability": [
+        {
+          "model": "Giulia",
+          "model_year": 2020,
+          "platform": "GA",
+          "market": "North America",
+          "build_end": "2019-12-31",
+          "engine_code": null
+        },
+        {
+          "model": "Stelvio",
+          "model_year": 2020,
+          "platform": "GU",
+          "market": "North America",
+          "build_end": "2019-12-20",
+          "engine_code": null
+        }
+      ],
+      "source_ids": [
+        "tsb_08_045_20"
+      ],
+      "symptoms": [
+        "FCW limited functionality / front camera service required",
+        "MIL may illuminate"
+      ],
+      "possible_causes": [
+        {
+          "rank": 1,
+          "cause": "BCM configuration/software in listed production window",
+          "evidence": "OEM bulletin for described symptom and vehicle scope"
+        },
+        {
+          "rank": 2,
+          "cause": "Wiring/connector/component fault remains possible if code active or persists",
+          "evidence": "Diagnostic hypothesis only; OEM electrical validation not supplied"
+        }
+      ],
+      "diagnostic_steps": [
+        "Scan all modules and preserve DTC status and VIN",
+        "Compare GA/GU manufacturing date with bulletin and check BCM/FFCM proxy and configuration",
+        "Run OEM proxy/configuration restoration and BCM service procedure only when eligible",
+        "Clear codes, perform controlled FCW functional validation; check camera wiring only by matched OEM diagram"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "BCM Configuration Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "Camera Communication Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        }
+      ],
+      "tools": [
+        "wiTECH or equivalent OEM-capable scan tool",
+        "OEM service information by VIN",
+        "Electrical test instruments only when correct wiring is available"
+      ],
+      "parts": [
+        {
+          "name_en": "Forward-facing camera",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "BCM",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "CAN harness",
+          "location_by_engine": null,
+          "location_verified": false
+        }
+      ],
+      "wiring": {
+        "pinout": null,
+        "fuse_identifiers": null,
+        "reference_measurements": null,
+        "reason": "Matching VIN/ECU wiring diagrams not verified"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "license": null
+      },
+      "raw_source_notation": "B1006-49",
+      "source_provenance": "Manufacturer bulletin; document code and scope corroborated; not a full OEM troubleshooting procedure",
+      "code_presence_verified": true,
+      "diagnostic_verification": "incomplete",
+      "eu_sweden_applicability_verified": false,
+      "review_status": "deferred_for_OEM_VIN_ECU_and_measurements",
+      "approved_for_app": false
+    },
+    {
+      "record_id": "alfa-b03-c141c-86",
+      "brand": "Alfa Romeo",
+      "code": "C141C-86",
+      "base_code": "C141C",
+      "failure_type_byte": "86",
+      "definition_en": "Video Camera Private CAN Communication Failure - Signal Invalid",
+      "translation_ar": "فشل اتصال شبكة CAN الخاصة بالكاميرا — الإشارة غير صالحة",
+      "category": "C",
+      "code_ownership": "OEM bulletin explicitly associates code with model; SAE/J2012DA generic-vs-manufacturer final determination pending",
+      "ecu": "FFCM/Camera or BCM (reporting ECU verify)",
+      "applicability": [
+        {
+          "model": "Giulia",
+          "model_year": 2020,
+          "platform": "GA",
+          "market": "North America",
+          "build_end": "2019-12-31",
+          "engine_code": null
+        },
+        {
+          "model": "Stelvio",
+          "model_year": 2020,
+          "platform": "GU",
+          "market": "North America",
+          "build_end": "2019-12-20",
+          "engine_code": null
+        }
+      ],
+      "source_ids": [
+        "tsb_08_045_20"
+      ],
+      "symptoms": [
+        "FCW limited functionality / front camera service required",
+        "MIL may illuminate"
+      ],
+      "possible_causes": [
+        {
+          "rank": 1,
+          "cause": "BCM configuration/software in listed production window",
+          "evidence": "OEM bulletin for described symptom and vehicle scope"
+        },
+        {
+          "rank": 2,
+          "cause": "Wiring/connector/component fault remains possible if code active or persists",
+          "evidence": "Diagnostic hypothesis only; OEM electrical validation not supplied"
+        }
+      ],
+      "diagnostic_steps": [
+        "Scan all modules and preserve DTC status and VIN",
+        "Compare GA/GU manufacturing date with bulletin and check BCM/FFCM proxy and configuration",
+        "Run OEM proxy/configuration restoration and BCM service procedure only when eligible",
+        "Clear codes, perform controlled FCW functional validation; check camera wiring only by matched OEM diagram"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "BCM Configuration Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "Camera Communication Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        }
+      ],
+      "tools": [
+        "wiTECH or equivalent OEM-capable scan tool",
+        "OEM service information by VIN",
+        "Electrical test instruments only when correct wiring is available"
+      ],
+      "parts": [
+        {
+          "name_en": "Forward-facing camera",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "BCM",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "CAN harness",
+          "location_by_engine": null,
+          "location_verified": false
+        }
+      ],
+      "wiring": {
+        "pinout": null,
+        "fuse_identifiers": null,
+        "reference_measurements": null,
+        "reason": "Matching VIN/ECU wiring diagrams not verified"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "license": null
+      },
+      "raw_source_notation": "C141C-86",
+      "source_provenance": "Manufacturer bulletin; document code and scope corroborated; not a full OEM troubleshooting procedure",
+      "code_presence_verified": true,
+      "diagnostic_verification": "incomplete",
+      "eu_sweden_applicability_verified": false,
+      "review_status": "deferred_for_OEM_VIN_ECU_and_measurements",
+      "approved_for_app": false
+    },
+    {
+      "record_id": "alfa-b03-c1999-86",
+      "brand": "Alfa Romeo",
+      "code": "C1999-86",
+      "base_code": "C1999",
+      "failure_type_byte": "86",
+      "definition_en": "Dataset Failure - Signal Invalid",
+      "translation_ar": "فشل مجموعة بيانات التهيئة — الإشارة غير صالحة",
+      "category": "C",
+      "code_ownership": "OEM bulletin explicitly associates code with model; SAE/J2012DA generic-vs-manufacturer final determination pending",
+      "ecu": "FFCM/Camera or BCM (reporting ECU verify)",
+      "applicability": [
+        {
+          "model": "Giulia",
+          "model_year": 2020,
+          "platform": "GA",
+          "market": "North America",
+          "build_end": "2019-12-31",
+          "engine_code": null
+        },
+        {
+          "model": "Stelvio",
+          "model_year": 2020,
+          "platform": "GU",
+          "market": "North America",
+          "build_end": "2019-12-20",
+          "engine_code": null
+        }
+      ],
+      "source_ids": [
+        "tsb_08_045_20"
+      ],
+      "symptoms": [
+        "FCW limited functionality / front camera service required",
+        "MIL may illuminate"
+      ],
+      "possible_causes": [
+        {
+          "rank": 1,
+          "cause": "BCM configuration/software in listed production window",
+          "evidence": "OEM bulletin for described symptom and vehicle scope"
+        },
+        {
+          "rank": 2,
+          "cause": "Wiring/connector/component fault remains possible if code active or persists",
+          "evidence": "Diagnostic hypothesis only; OEM electrical validation not supplied"
+        }
+      ],
+      "diagnostic_steps": [
+        "Scan all modules and preserve DTC status and VIN",
+        "Compare GA/GU manufacturing date with bulletin and check BCM/FFCM proxy and configuration",
+        "Run OEM proxy/configuration restoration and BCM service procedure only when eligible",
+        "Clear codes, perform controlled FCW functional validation; check camera wiring only by matched OEM diagram"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "BCM Configuration Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "Camera Communication Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        }
+      ],
+      "tools": [
+        "wiTECH or equivalent OEM-capable scan tool",
+        "OEM service information by VIN",
+        "Electrical test instruments only when correct wiring is available"
+      ],
+      "parts": [
+        {
+          "name_en": "Forward-facing camera",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "BCM",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "CAN harness",
+          "location_by_engine": null,
+          "location_verified": false
+        }
+      ],
+      "wiring": {
+        "pinout": null,
+        "fuse_identifiers": null,
+        "reference_measurements": null,
+        "reason": "Matching VIN/ECU wiring diagrams not verified"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "license": null
+      },
+      "raw_source_notation": "C1999-86",
+      "source_provenance": "Manufacturer bulletin; document code and scope corroborated; not a full OEM troubleshooting procedure",
+      "code_presence_verified": true,
+      "diagnostic_verification": "incomplete",
+      "eu_sweden_applicability_verified": false,
+      "review_status": "deferred_for_OEM_VIN_ECU_and_measurements",
+      "approved_for_app": false
+    },
+    {
+      "record_id": "alfa-b03-b25c9",
+      "brand": "Alfa Romeo",
+      "code": "B25C9",
+      "base_code": "B25C9",
+      "failure_type_byte": null,
+      "definition_en": "Driver Door Ajar Switch 2 Stuck Closed",
+      "translation_ar": "مفتاح حالة باب السائق 2 عالق في وضع الإغلاق",
+      "category": "B",
+      "code_ownership": "OEM bulletin explicitly associates code with model; SAE/J2012DA generic-vs-manufacturer final determination pending",
+      "ecu": "BCM",
+      "applicability": [
+        {
+          "model": "Tonale",
+          "model_year": 2023,
+          "platform": "GC",
+          "market": "North America",
+          "build_end": "2023-07-04",
+          "equipment_sales_code": "LMS",
+          "engine_code": null
+        },
+        {
+          "model": "Tonale",
+          "model_year": 2024,
+          "platform": "GC",
+          "market": "market checkbox unconfirmed in parsed version",
+          "build_start": "2023-02-22",
+          "build_end": "2023-07-22",
+          "equipment_sales_code": "LMS",
+          "engine_code": null
+        }
+      ],
+      "source_ids": [
+        "tsb_08_233_23",
+        "tsb_08_236_23"
+      ],
+      "symptoms": [
+        "MIL may illuminate",
+        "Headlights-on warning chime may sound unexpectedly in headlamp off-delay mode"
+      ],
+      "possible_causes": [
+        {
+          "rank": 1,
+          "cause": "BCM software on listed LMS-equipped production subset",
+          "evidence": "OEM bulletin for described symptom and vehicle scope"
+        },
+        {
+          "rank": 2,
+          "cause": "Wiring/connector/component fault remains possible if code active or persists",
+          "evidence": "Diagnostic hypothesis only; OEM electrical validation not supplied"
+        }
+      ],
+      "diagnostic_steps": [
+        "Record BCM DTCs, VIN, MDH and LMS equipment option",
+        "Check driver-door status in live data; compare with physical door operation",
+        "Check applicable software/RSU VIN list",
+        "Use authorized BCM flash when VIN/conditions match; retest warning and DTCs"
+      ],
+      "live_data": [
+        {
+          "name_en": "Driver Door Ajar Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "BCM Software Part Number",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "DTC Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        }
+      ],
+      "tools": [
+        "wiTECH or equivalent OEM-capable scan tool",
+        "OEM service information by VIN",
+        "Electrical test instruments only when correct wiring is available"
+      ],
+      "parts": [
+        {
+          "name_en": "BCM",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "Driver door switch",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "ASU/UAM communication network",
+          "location_by_engine": null,
+          "location_verified": false
+        }
+      ],
+      "wiring": {
+        "pinout": null,
+        "fuse_identifiers": null,
+        "reference_measurements": null,
+        "reason": "Matching VIN/ECU wiring diagrams not verified"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "license": null
+      },
+      "raw_source_notation": "B25C9",
+      "source_provenance": "Manufacturer bulletin; document code and scope corroborated; not a full OEM troubleshooting procedure",
+      "code_presence_verified": true,
+      "diagnostic_verification": "incomplete",
+      "eu_sweden_applicability_verified": false,
+      "review_status": "deferred_for_OEM_VIN_ECU_and_measurements",
+      "approved_for_app": false
+    },
+    {
+      "record_id": "alfa-b03-u1412-09",
+      "brand": "Alfa Romeo",
+      "code": "U1412-09",
+      "base_code": "U1412",
+      "failure_type_byte": "09",
+      "definition_en": "ASU (Alarm Siren Unit) - Component Failures",
+      "translation_ar": "أعطال مكوّن وحدة صفارة الإنذار ASU",
+      "category": "U",
+      "code_ownership": "OEM bulletin explicitly associates code with model; SAE/J2012DA generic-vs-manufacturer final determination pending",
+      "ecu": "BCM network / ASU",
+      "applicability": [
+        {
+          "model": "Tonale",
+          "model_year": 2023,
+          "platform": "GC",
+          "market": "North America",
+          "build_end": "2023-07-04",
+          "equipment_sales_code": "LMS",
+          "engine_code": null
+        },
+        {
+          "model": "Tonale",
+          "model_year": 2024,
+          "platform": "GC",
+          "market": "market checkbox unconfirmed in parsed version",
+          "build_start": "2023-02-22",
+          "build_end": "2023-07-22",
+          "equipment_sales_code": "LMS",
+          "engine_code": null
+        }
+      ],
+      "source_ids": [
+        "tsb_08_233_23",
+        "tsb_08_236_23"
+      ],
+      "symptoms": [
+        "MIL may illuminate",
+        "Headlights-on warning chime may sound unexpectedly in headlamp off-delay mode"
+      ],
+      "possible_causes": [
+        {
+          "rank": 1,
+          "cause": "BCM software on listed LMS-equipped production subset",
+          "evidence": "OEM bulletin for described symptom and vehicle scope"
+        },
+        {
+          "rank": 2,
+          "cause": "Wiring/connector/component fault remains possible if code active or persists",
+          "evidence": "Diagnostic hypothesis only; OEM electrical validation not supplied"
+        }
+      ],
+      "diagnostic_steps": [
+        "Record BCM DTCs, VIN, MDH and LMS equipment option",
+        "Check driver-door status in live data; compare with physical door operation",
+        "Check applicable software/RSU VIN list",
+        "Use authorized BCM flash when VIN/conditions match; retest warning and DTCs"
+      ],
+      "live_data": [
+        {
+          "name_en": "Driver Door Ajar Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "BCM Software Part Number",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "DTC Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        }
+      ],
+      "tools": [
+        "wiTECH or equivalent OEM-capable scan tool",
+        "OEM service information by VIN",
+        "Electrical test instruments only when correct wiring is available"
+      ],
+      "parts": [
+        {
+          "name_en": "BCM",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "Driver door switch",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "ASU/UAM communication network",
+          "location_by_engine": null,
+          "location_verified": false
+        }
+      ],
+      "wiring": {
+        "pinout": null,
+        "fuse_identifiers": null,
+        "reference_measurements": null,
+        "reason": "Matching VIN/ECU wiring diagrams not verified"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "license": null
+      },
+      "raw_source_notation": "U1412-09",
+      "source_provenance": "Manufacturer bulletin; document code and scope corroborated; not a full OEM troubleshooting procedure",
+      "code_presence_verified": true,
+      "diagnostic_verification": "incomplete",
+      "eu_sweden_applicability_verified": false,
+      "review_status": "deferred_for_OEM_VIN_ECU_and_measurements",
+      "approved_for_app": false
+    },
+    {
+      "record_id": "alfa-b03-u1413-09",
+      "brand": "Alfa Romeo",
+      "code": "U1413-09",
+      "base_code": "U1413",
+      "failure_type_byte": "09",
+      "definition_en": "UAM (Ultrasonic And Antitilt Module) - Component Failures",
+      "translation_ar": "أعطال مكوّن وحدة الموجات فوق الصوتية وميل المركبة UAM",
+      "category": "U",
+      "code_ownership": "OEM bulletin explicitly associates code with model; SAE/J2012DA generic-vs-manufacturer final determination pending",
+      "ecu": "BCM network / UAM",
+      "applicability": [
+        {
+          "model": "Tonale",
+          "model_year": 2023,
+          "platform": "GC",
+          "market": "North America",
+          "build_end": "2023-07-04",
+          "equipment_sales_code": "LMS",
+          "engine_code": null
+        },
+        {
+          "model": "Tonale",
+          "model_year": 2024,
+          "platform": "GC",
+          "market": "market checkbox unconfirmed in parsed version",
+          "build_start": "2023-02-22",
+          "build_end": "2023-07-22",
+          "equipment_sales_code": "LMS",
+          "engine_code": null
+        }
+      ],
+      "source_ids": [
+        "tsb_08_233_23",
+        "tsb_08_236_23"
+      ],
+      "symptoms": [
+        "MIL may illuminate",
+        "Headlights-on warning chime may sound unexpectedly in headlamp off-delay mode"
+      ],
+      "possible_causes": [
+        {
+          "rank": 1,
+          "cause": "BCM software on listed LMS-equipped production subset",
+          "evidence": "OEM bulletin for described symptom and vehicle scope"
+        },
+        {
+          "rank": 2,
+          "cause": "Wiring/connector/component fault remains possible if code active or persists",
+          "evidence": "Diagnostic hypothesis only; OEM electrical validation not supplied"
+        }
+      ],
+      "diagnostic_steps": [
+        "Record BCM DTCs, VIN, MDH and LMS equipment option",
+        "Check driver-door status in live data; compare with physical door operation",
+        "Check applicable software/RSU VIN list",
+        "Use authorized BCM flash when VIN/conditions match; retest warning and DTCs"
+      ],
+      "live_data": [
+        {
+          "name_en": "Driver Door Ajar Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "BCM Software Part Number",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "DTC Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        }
+      ],
+      "tools": [
+        "wiTECH or equivalent OEM-capable scan tool",
+        "OEM service information by VIN",
+        "Electrical test instruments only when correct wiring is available"
+      ],
+      "parts": [
+        {
+          "name_en": "BCM",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "Driver door switch",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "ASU/UAM communication network",
+          "location_by_engine": null,
+          "location_verified": false
+        }
+      ],
+      "wiring": {
+        "pinout": null,
+        "fuse_identifiers": null,
+        "reference_measurements": null,
+        "reason": "Matching VIN/ECU wiring diagrams not verified"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "license": null
+      },
+      "raw_source_notation": "U1413-09",
+      "source_provenance": "Manufacturer bulletin; document code and scope corroborated; not a full OEM troubleshooting procedure",
+      "code_presence_verified": true,
+      "diagnostic_verification": "incomplete",
+      "eu_sweden_applicability_verified": false,
+      "review_status": "deferred_for_OEM_VIN_ECU_and_measurements",
+      "approved_for_app": false
+    },
+    {
+      "record_id": "alfa-b03-u1767-87",
+      "brand": "Alfa Romeo",
+      "code": "U1767-87",
+      "base_code": "U1767",
+      "failure_type_byte": "87",
+      "definition_en": "Drivetrain Control Module Node (DTCM) Drivetrain1 Missing",
+      "translation_ar": "غياب رسالة عقدة وحدة التحكم بمجموعة الدفع DTCM ضمن شبكة Drivetrain1",
+      "category": "U",
+      "code_ownership": "OEM bulletin explicitly associates code with model; SAE/J2012DA generic-vs-manufacturer final determination pending",
+      "ecu": "ABS records DTC; DTCM implicated",
+      "applicability": [
+        {
+          "model": "Tonale",
+          "model_year": 2023,
+          "platform": "GC",
+          "market": "North America",
+          "transmission": "9-SPD 948TE FWD/AWD",
+          "transmission_sales_code": "DFH",
+          "engine_code": null
+        },
+        {
+          "model": "Tonale",
+          "model_year": 2024,
+          "platform": "GC",
+          "market": "NA/MEA/SA/EE as printed, not confirmed Sweden",
+          "transmission": "9-SPD 948TE FWD/AWD",
+          "transmission_sales_code": "DFH",
+          "engine_code": null
+        }
+      ],
+      "source_ids": [
+        "tsb_21_032_24",
+        "tsb_21_037_24"
+      ],
+      "symptoms": [
+        "U1767-87 may appear in ABS scan",
+        "Auto versus Sport AWD behavior may not differ under certain conditions"
+      ],
+      "possible_causes": [
+        {
+          "rank": 1,
+          "cause": "DTCM software in manufacturer bulletin",
+          "evidence": "OEM bulletin for described symptom and vehicle scope"
+        },
+        {
+          "rank": 2,
+          "cause": "Wiring/connector/component fault remains possible if code active or persists",
+          "evidence": "Diagnostic hypothesis only; OEM electrical validation not supplied"
+        }
+      ],
+      "diagnostic_steps": [
+        "Read full vehicle scan report from ABS and DTCM",
+        "Verify DFH sales code, model year, VIN and current DTCM calibration",
+        "Check DTCM module online state and network errors with matching OEM service procedures",
+        "Apply eligible DTCM reprogramming only with authorized diagnostic platform; clear codes and road-test safely"
+      ],
+      "live_data": [
+        {
+          "name_en": "DTCM Communication Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "ABS DTC Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "Drive Mode Request",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        }
+      ],
+      "tools": [
+        "wiTECH or equivalent OEM-capable scan tool",
+        "OEM service information by VIN",
+        "Electrical test instruments only when correct wiring is available"
+      ],
+      "parts": [
+        {
+          "name_en": "DTCM",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "ABS module",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "Drivetrain CAN wiring",
+          "location_by_engine": null,
+          "location_verified": false
+        }
+      ],
+      "wiring": {
+        "pinout": null,
+        "fuse_identifiers": null,
+        "reference_measurements": null,
+        "reason": "Matching VIN/ECU wiring diagrams not verified"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "license": null
+      },
+      "raw_source_notation": "U1767-87",
+      "source_provenance": "Manufacturer bulletin; document code and scope corroborated; not a full OEM troubleshooting procedure",
+      "code_presence_verified": true,
+      "diagnostic_verification": "incomplete",
+      "eu_sweden_applicability_verified": false,
+      "review_status": "deferred_for_OEM_VIN_ECU_and_measurements",
+      "approved_for_app": false
+    },
+    {
+      "record_id": "alfa-b03-c1409-97",
+      "brand": "Alfa Romeo",
+      "code": "C1409-97",
+      "base_code": "C1409",
+      "failure_type_byte": "97",
+      "definition_en": "Radar Sensor Blind - Component Or System Obstructed Or Blocked",
+      "translation_ar": "حجب مستشعر الرادار — المكوّن أو النظام محجوب أو مسدود",
+      "category": "C",
+      "code_ownership": "OEM bulletin explicitly associates code with model; SAE/J2012DA generic-vs-manufacturer final determination pending",
+      "ecu": "DASM",
+      "applicability": [
+        {
+          "model": "Tonale",
+          "model_year": 2025,
+          "platform": "GC",
+          "market": "North America",
+          "build_end": "2025-06-30",
+          "equipment_sales_code": "LSU",
+          "engine_code": null
+        }
+      ],
+      "source_ids": [
+        "tsb_08_295_25"
+      ],
+      "symptoms": [
+        "ACC not available message",
+        "Highway Assist not available message",
+        "Highway Assist steering wheel vibration"
+      ],
+      "possible_causes": [
+        {
+          "rank": 1,
+          "cause": "DASM software on covered MY2025 Tonale",
+          "evidence": "OEM bulletin for described symptom and vehicle scope"
+        },
+        {
+          "rank": 2,
+          "cause": "Wiring/connector/component fault remains possible if code active or persists",
+          "evidence": "Diagnostic hypothesis only; OEM electrical validation not supplied"
+        }
+      ],
+      "diagnostic_steps": [
+        "Save DASM DTCs and verify VIN, LSU and build date",
+        "Check radar line of sight and surface for actual obstruction before assuming software",
+        "Check DASM software level and related modules",
+        "Perform authorized DASM software procedure if applicable, clear and confirm assist operation under safe conditions"
+      ],
+      "live_data": [
+        {
+          "name_en": "Front Radar Obstruction Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "DASM Software Version",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "DTC Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        }
+      ],
+      "tools": [
+        "wiTECH or equivalent OEM-capable scan tool",
+        "OEM service information by VIN",
+        "Electrical test instruments only when correct wiring is available"
+      ],
+      "parts": [
+        {
+          "name_en": "Front radar",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "DASM",
+          "location_by_engine": null,
+          "location_verified": false
+        }
+      ],
+      "wiring": {
+        "pinout": null,
+        "fuse_identifiers": null,
+        "reference_measurements": null,
+        "reason": "Matching VIN/ECU wiring diagrams not verified"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "license": null
+      },
+      "raw_source_notation": "C1409-97",
+      "source_provenance": "Manufacturer bulletin; document code and scope corroborated; not a full OEM troubleshooting procedure",
+      "code_presence_verified": true,
+      "diagnostic_verification": "incomplete",
+      "eu_sweden_applicability_verified": false,
+      "review_status": "deferred_for_OEM_VIN_ECU_and_measurements",
+      "approved_for_app": false
+    },
+    {
+      "record_id": "alfa-b03-p2450",
+      "brand": "Alfa Romeo",
+      "code": "P2450",
+      "base_code": "P2450",
+      "failure_type_byte": null,
+      "definition_en": "Fuel Tank Isolation Valve A Circuit Open",
+      "translation_ar": "دائرة مفتوحة لصمام عزل خزان الوقود A",
+      "category": "P",
+      "code_ownership": "OEM bulletin explicitly associates code with model; SAE/J2012DA generic-vs-manufacturer final determination pending",
+      "ecu": "PCM",
+      "applicability": [
+        {
+          "model": "Tonale",
+          "model_year": 2024,
+          "platform": "GC",
+          "market": "North America",
+          "fuel": "PHEV",
+          "engine_sales_code": "EYG",
+          "engine_code": null
+        },
+        {
+          "model": "Tonale",
+          "model_year": 2025,
+          "platform": "GC",
+          "market": "North America",
+          "fuel": "PHEV",
+          "engine_sales_code": "EYG",
+          "build_end": "2025-10-20",
+          "engine_code": null
+        }
+      ],
+      "source_ids": [
+        "tsb_18_099_25",
+        "tsb_18_100_25"
+      ],
+      "symptoms": [
+        "MIL may illuminate",
+        "Fuel filler door may not open"
+      ],
+      "possible_causes": [
+        {
+          "rank": 1,
+          "cause": "PCM software on covered EYG PHEV model years",
+          "evidence": "OEM bulletin for described symptom and vehicle scope"
+        },
+        {
+          "rank": 2,
+          "cause": "Wiring/connector/component fault remains possible if code active or persists",
+          "evidence": "Diagnostic hypothesis only; OEM electrical validation not supplied"
+        }
+      ],
+      "diagnostic_steps": [
+        "Record PCM DTCs and fuel door symptom; verify VIN, engine sales code EYG and market",
+        "Check approved PCM calibration level before parts diagnosis",
+        "Follow eligible PCM flash bulletin if applicable",
+        "If fault remains active, use factory electrical test for fuel tank isolation valve circuit; specifications and pinout not supplied by source"
+      ],
+      "live_data": [
+        {
+          "name_en": "Fuel Tank Isolation Valve Command",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "Fuel Door Request Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "PCM Software Version",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        }
+      ],
+      "tools": [
+        "wiTECH or equivalent OEM-capable scan tool",
+        "OEM service information by VIN",
+        "Electrical test instruments only when correct wiring is available"
+      ],
+      "parts": [
+        {
+          "name_en": "Fuel tank isolation valve",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "Fuel door control",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "PCM",
+          "location_by_engine": null,
+          "location_verified": false
+        }
+      ],
+      "wiring": {
+        "pinout": null,
+        "fuse_identifiers": null,
+        "reference_measurements": null,
+        "reason": "Matching VIN/ECU wiring diagrams not verified"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "license": null
+      },
+      "raw_source_notation": "P2450",
+      "source_provenance": "Manufacturer bulletin; document code and scope corroborated; not a full OEM troubleshooting procedure",
+      "code_presence_verified": true,
+      "diagnostic_verification": "incomplete",
+      "eu_sweden_applicability_verified": false,
+      "review_status": "deferred_for_OEM_VIN_ECU_and_measurements",
+      "approved_for_app": false
+    },
+    {
+      "record_id": "alfa-b03-p012c",
+      "brand": "Alfa Romeo",
+      "code": "P012C",
+      "base_code": "P012C",
+      "failure_type_byte": null,
+      "definition_en": "Turbocharger/Supercharger Inlet Air Pressure Sensor 1 Circuit Low",
+      "translation_ar": "انخفاض إشارة دائرة حساس ضغط هواء مدخل الشاحن 1",
+      "category": "P",
+      "code_ownership": "OEM bulletin explicitly associates code with model; SAE/J2012DA generic-vs-manufacturer final determination pending",
+      "ecu": "PCM/ECU",
+      "applicability": [
+        {
+          "model": "Tonale",
+          "model_year": "2021–2025 per multi-brand TSB; actual model years require VIN check",
+          "platform": "GC",
+          "market": "NA/IAP/EE/MEA/SA in TSB; Sweden NOT confirmed",
+          "engine_sales_codes": [
+            "EYF",
+            "EYG"
+          ],
+          "engine_code": null
+        }
+      ],
+      "source_ids": [
+        "tsb_18_028_25"
+      ],
+      "symptoms": [
+        "MIL may illuminate",
+        "Possible erroneous intake-pressure sensor DTC"
+      ],
+      "possible_causes": [
+        {
+          "rank": 1,
+          "cause": "False intake pressure/temperature readings possible according to informational bulletin; harness issues must first be ruled out",
+          "evidence": "OEM bulletin for described symptom and vehicle scope"
+        },
+        {
+          "rank": 2,
+          "cause": "Wiring/connector/component fault remains possible if code active or persists",
+          "evidence": "Diagnostic hypothesis only; OEM electrical validation not supplied"
+        }
+      ],
+      "diagnostic_steps": [
+        "Save full vehicle scan report and capture PCM freeze frame",
+        "Inspect IAP and MAP sensor electrical connectors for real wiring/connection defects",
+        "Repair confirmed harness fault; do NOT replace IAP or MAP sensor merely due to these DTCs",
+        "If connectors sound, clear DTCs and conduct test drive; do not replace parts if faults do not recur"
+      ],
+      "live_data": [
+        {
+          "name_en": "Turbocharger Inlet Air Pressure",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "MAP Sensor Pressure",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "Intake Air Temperature",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        }
+      ],
+      "tools": [
+        "wiTECH or equivalent OEM-capable scan tool",
+        "OEM service information by VIN",
+        "Electrical test instruments only when correct wiring is available"
+      ],
+      "parts": [
+        {
+          "name_en": "Inlet air pressure sensor (IAP)",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "MAP sensor",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "Related connector/harness",
+          "location_by_engine": null,
+          "location_verified": false
+        }
+      ],
+      "wiring": {
+        "pinout": null,
+        "fuse_identifiers": null,
+        "reference_measurements": null,
+        "reason": "Matching VIN/ECU wiring diagrams not verified"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "license": null
+      },
+      "raw_source_notation": "P012C",
+      "source_provenance": "Manufacturer bulletin; document code and scope corroborated; not a full OEM troubleshooting procedure",
+      "code_presence_verified": true,
+      "diagnostic_verification": "incomplete",
+      "eu_sweden_applicability_verified": false,
+      "review_status": "deferred_for_OEM_VIN_ECU_and_measurements",
+      "approved_for_app": false
+    },
+    {
+      "record_id": "alfa-b03-p012d",
+      "brand": "Alfa Romeo",
+      "code": "P012D",
+      "base_code": "P012D",
+      "failure_type_byte": null,
+      "definition_en": "Turbocharger/Supercharger Inlet Air Pressure Sensor 1 Circuit High",
+      "translation_ar": "ارتفاع إشارة دائرة حساس ضغط هواء مدخل الشاحن 1",
+      "category": "P",
+      "code_ownership": "OEM bulletin explicitly associates code with model; SAE/J2012DA generic-vs-manufacturer final determination pending",
+      "ecu": "PCM/ECU",
+      "applicability": [
+        {
+          "model": "Tonale",
+          "model_year": "2021–2025 per multi-brand TSB; actual model years require VIN check",
+          "platform": "GC",
+          "market": "NA/IAP/EE/MEA/SA in TSB; Sweden NOT confirmed",
+          "engine_sales_codes": [
+            "EYF",
+            "EYG"
+          ],
+          "engine_code": null
+        }
+      ],
+      "source_ids": [
+        "tsb_18_028_25"
+      ],
+      "symptoms": [
+        "MIL may illuminate",
+        "Possible erroneous intake-pressure sensor DTC"
+      ],
+      "possible_causes": [
+        {
+          "rank": 1,
+          "cause": "False intake pressure/temperature readings possible according to informational bulletin; harness issues must first be ruled out",
+          "evidence": "OEM bulletin for described symptom and vehicle scope"
+        },
+        {
+          "rank": 2,
+          "cause": "Wiring/connector/component fault remains possible if code active or persists",
+          "evidence": "Diagnostic hypothesis only; OEM electrical validation not supplied"
+        }
+      ],
+      "diagnostic_steps": [
+        "Save full vehicle scan report and capture PCM freeze frame",
+        "Inspect IAP and MAP sensor electrical connectors for real wiring/connection defects",
+        "Repair confirmed harness fault; do NOT replace IAP or MAP sensor merely due to these DTCs",
+        "If connectors sound, clear DTCs and conduct test drive; do not replace parts if faults do not recur"
+      ],
+      "live_data": [
+        {
+          "name_en": "Turbocharger Inlet Air Pressure",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "MAP Sensor Pressure",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "Intake Air Temperature",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        }
+      ],
+      "tools": [
+        "wiTECH or equivalent OEM-capable scan tool",
+        "OEM service information by VIN",
+        "Electrical test instruments only when correct wiring is available"
+      ],
+      "parts": [
+        {
+          "name_en": "Inlet air pressure sensor (IAP)",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "MAP sensor",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "Related connector/harness",
+          "location_by_engine": null,
+          "location_verified": false
+        }
+      ],
+      "wiring": {
+        "pinout": null,
+        "fuse_identifiers": null,
+        "reference_measurements": null,
+        "reason": "Matching VIN/ECU wiring diagrams not verified"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "license": null
+      },
+      "raw_source_notation": "P012D",
+      "source_provenance": "Manufacturer bulletin; document code and scope corroborated; not a full OEM troubleshooting procedure",
+      "code_presence_verified": true,
+      "diagnostic_verification": "incomplete",
+      "eu_sweden_applicability_verified": false,
+      "review_status": "deferred_for_OEM_VIN_ECU_and_measurements",
+      "approved_for_app": false
+    },
+    {
+      "record_id": "alfa-b03-p006c",
+      "brand": "Alfa Romeo",
+      "code": "P006C",
+      "base_code": "P006C",
+      "failure_type_byte": null,
+      "definition_en": "MAP - Turbocharger Inlet Air Pressure Correlation",
+      "translation_ar": "عدم تطابق قراءة ضغط مجمع السحب MAP مع ضغط هواء مدخل الشاحن",
+      "category": "P",
+      "code_ownership": "OEM bulletin explicitly associates code with model; SAE/J2012DA generic-vs-manufacturer final determination pending",
+      "ecu": "PCM/ECU",
+      "applicability": [
+        {
+          "model": "Tonale",
+          "model_year": "2021–2025 per multi-brand TSB; actual model years require VIN check",
+          "platform": "GC",
+          "market": "NA/IAP/EE/MEA/SA in TSB; Sweden NOT confirmed",
+          "engine_sales_codes": [
+            "EYF",
+            "EYG"
+          ],
+          "engine_code": null
+        }
+      ],
+      "source_ids": [
+        "tsb_18_028_25"
+      ],
+      "symptoms": [
+        "MIL may illuminate",
+        "Possible erroneous intake-pressure sensor DTC"
+      ],
+      "possible_causes": [
+        {
+          "rank": 1,
+          "cause": "False intake pressure/temperature readings possible according to informational bulletin; harness issues must first be ruled out",
+          "evidence": "OEM bulletin for described symptom and vehicle scope"
+        },
+        {
+          "rank": 2,
+          "cause": "Wiring/connector/component fault remains possible if code active or persists",
+          "evidence": "Diagnostic hypothesis only; OEM electrical validation not supplied"
+        }
+      ],
+      "diagnostic_steps": [
+        "Save full vehicle scan report and capture PCM freeze frame",
+        "Inspect IAP and MAP sensor electrical connectors for real wiring/connection defects",
+        "Repair confirmed harness fault; do NOT replace IAP or MAP sensor merely due to these DTCs",
+        "If connectors sound, clear DTCs and conduct test drive; do not replace parts if faults do not recur"
+      ],
+      "live_data": [
+        {
+          "name_en": "Turbocharger Inlet Air Pressure",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "MAP Sensor Pressure",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "Intake Air Temperature",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        }
+      ],
+      "tools": [
+        "wiTECH or equivalent OEM-capable scan tool",
+        "OEM service information by VIN",
+        "Electrical test instruments only when correct wiring is available"
+      ],
+      "parts": [
+        {
+          "name_en": "Inlet air pressure sensor (IAP)",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "MAP sensor",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "Related connector/harness",
+          "location_by_engine": null,
+          "location_verified": false
+        }
+      ],
+      "wiring": {
+        "pinout": null,
+        "fuse_identifiers": null,
+        "reference_measurements": null,
+        "reason": "Matching VIN/ECU wiring diagrams not verified"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "license": null
+      },
+      "raw_source_notation": "P006C-MAP - Turbocharger Inlet Air Pressure Correlation (bulletin punctuation; no verified extra DTC suffix)",
+      "source_provenance": "Manufacturer bulletin; document code and scope corroborated; not a full OEM troubleshooting procedure",
+      "code_presence_verified": true,
+      "diagnostic_verification": "incomplete",
+      "eu_sweden_applicability_verified": false,
+      "review_status": "deferred_for_OEM_VIN_ECU_and_measurements",
+      "approved_for_app": false
+    },
+    {
+      "record_id": "alfa-b03-b22a9-96",
+      "brand": "Alfa Romeo",
+      "code": "B22A9-96",
+      "base_code": "B22A9",
+      "failure_type_byte": "96",
+      "definition_en": "ECU Internal Performance - Component Internal Failure",
+      "translation_ar": "خلل أداء داخلي لوحدة التحكم — فشل مكوّن داخلي",
+      "category": "B",
+      "code_ownership": "OEM bulletin explicitly associates code with model; SAE/J2012DA generic-vs-manufacturer final determination pending",
+      "ecu": "TBM",
+      "applicability": [
+        {
+          "models": [
+            "Giulia",
+            "Stelvio",
+            "Tonale"
+          ],
+          "model_years": "See NHTSA manufacturer-communication index; not guaranteed for every MY/VIN",
+          "market": "North America bulletin index; Swedish applicability unconfirmed",
+          "equipment": "TBM",
+          "engine_code": null
+        }
+      ],
+      "source_ids": [
+        "star_s2508000101"
+      ],
+      "symptoms": [
+        "Intermittent Uconnect Box Requires Service pop-up"
+      ],
+      "possible_causes": [
+        {
+          "rank": 1,
+          "cause": "Possible TBM software issue affecting DTC maturation time when code is stored/pending",
+          "evidence": "OEM bulletin for described symptom and vehicle scope"
+        },
+        {
+          "rank": 2,
+          "cause": "Wiring/connector/component fault remains possible if code active or persists",
+          "evidence": "Diagnostic hypothesis only; OEM electrical validation not supplied"
+        }
+      ],
+      "diagnostic_steps": [
+        "Read TBM codes and explicitly distinguish Active from Stored/Pending",
+        "For stored/pending codes in STAR case, do not replace TBM solely due to warning",
+        "For Active codes, follow code-specific OEM antenna or TBM diagnostics",
+        "Check current OEM guidance and approved software availability by VIN; no assumed installation or parts replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "TBM DTC Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "Cellular Antenna Diagnostic State",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "GPS Antenna Diagnostic State",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        }
+      ],
+      "tools": [
+        "wiTECH or equivalent OEM-capable scan tool",
+        "OEM service information by VIN",
+        "Electrical test instruments only when correct wiring is available"
+      ],
+      "parts": [
+        {
+          "name_en": "Telematics Box Module",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "Cellular or GPS antenna circuits",
+          "location_by_engine": null,
+          "location_verified": false
+        }
+      ],
+      "wiring": {
+        "pinout": null,
+        "fuse_identifiers": null,
+        "reference_measurements": null,
+        "reason": "Matching VIN/ECU wiring diagrams not verified"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "license": null
+      },
+      "raw_source_notation": "B22A9-96",
+      "source_provenance": "Manufacturer bulletin; document code and scope corroborated; not a full OEM troubleshooting procedure",
+      "code_presence_verified": true,
+      "diagnostic_verification": "incomplete",
+      "eu_sweden_applicability_verified": false,
+      "review_status": "deferred_for_OEM_VIN_ECU_and_measurements",
+      "approved_for_app": false
+    },
+    {
+      "record_id": "alfa-b03-b1560-11",
+      "brand": "Alfa Romeo",
+      "code": "B1560-11",
+      "base_code": "B1560",
+      "failure_type_byte": "11",
+      "definition_en": "Cellular Antenna 1 Short To Ground",
+      "translation_ar": "قصر إلى الأرضي في دائرة هوائي الاتصال الخلوي 1",
+      "category": "B",
+      "code_ownership": "OEM bulletin explicitly associates code with model; SAE/J2012DA generic-vs-manufacturer final determination pending",
+      "ecu": "TBM",
+      "applicability": [
+        {
+          "models": [
+            "Giulia",
+            "Stelvio",
+            "Tonale"
+          ],
+          "model_years": "See NHTSA manufacturer-communication index; not guaranteed for every MY/VIN",
+          "market": "North America bulletin index; Swedish applicability unconfirmed",
+          "equipment": "TBM",
+          "engine_code": null
+        }
+      ],
+      "source_ids": [
+        "star_s2508000101"
+      ],
+      "symptoms": [
+        "Intermittent Uconnect Box Requires Service pop-up"
+      ],
+      "possible_causes": [
+        {
+          "rank": 1,
+          "cause": "Possible TBM software issue affecting DTC maturation time when code is stored/pending",
+          "evidence": "OEM bulletin for described symptom and vehicle scope"
+        },
+        {
+          "rank": 2,
+          "cause": "Wiring/connector/component fault remains possible if code active or persists",
+          "evidence": "Diagnostic hypothesis only; OEM electrical validation not supplied"
+        }
+      ],
+      "diagnostic_steps": [
+        "Read TBM codes and explicitly distinguish Active from Stored/Pending",
+        "For stored/pending codes in STAR case, do not replace TBM solely due to warning",
+        "For Active codes, follow code-specific OEM antenna or TBM diagnostics",
+        "Check current OEM guidance and approved software availability by VIN; no assumed installation or parts replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "TBM DTC Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "Cellular Antenna Diagnostic State",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "GPS Antenna Diagnostic State",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        }
+      ],
+      "tools": [
+        "wiTECH or equivalent OEM-capable scan tool",
+        "OEM service information by VIN",
+        "Electrical test instruments only when correct wiring is available"
+      ],
+      "parts": [
+        {
+          "name_en": "Telematics Box Module",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "Cellular or GPS antenna circuits",
+          "location_by_engine": null,
+          "location_verified": false
+        }
+      ],
+      "wiring": {
+        "pinout": null,
+        "fuse_identifiers": null,
+        "reference_measurements": null,
+        "reason": "Matching VIN/ECU wiring diagrams not verified"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "license": null
+      },
+      "raw_source_notation": "B1560-11",
+      "source_provenance": "Manufacturer bulletin; document code and scope corroborated; not a full OEM troubleshooting procedure",
+      "code_presence_verified": true,
+      "diagnostic_verification": "incomplete",
+      "eu_sweden_applicability_verified": false,
+      "review_status": "deferred_for_OEM_VIN_ECU_and_measurements",
+      "approved_for_app": false
+    },
+    {
+      "record_id": "alfa-b03-b1561-11",
+      "brand": "Alfa Romeo",
+      "code": "B1561-11",
+      "base_code": "B1561",
+      "failure_type_byte": "11",
+      "definition_en": "Cellular Antenna 2 Short To Ground",
+      "translation_ar": "قصر إلى الأرضي في دائرة هوائي الاتصال الخلوي 2",
+      "category": "B",
+      "code_ownership": "OEM bulletin explicitly associates code with model; SAE/J2012DA generic-vs-manufacturer final determination pending",
+      "ecu": "TBM",
+      "applicability": [
+        {
+          "models": [
+            "Giulia",
+            "Stelvio",
+            "Tonale"
+          ],
+          "model_years": "See NHTSA manufacturer-communication index; not guaranteed for every MY/VIN",
+          "market": "North America bulletin index; Swedish applicability unconfirmed",
+          "equipment": "TBM",
+          "engine_code": null
+        }
+      ],
+      "source_ids": [
+        "star_s2508000101"
+      ],
+      "symptoms": [
+        "Intermittent Uconnect Box Requires Service pop-up"
+      ],
+      "possible_causes": [
+        {
+          "rank": 1,
+          "cause": "Possible TBM software issue affecting DTC maturation time when code is stored/pending",
+          "evidence": "OEM bulletin for described symptom and vehicle scope"
+        },
+        {
+          "rank": 2,
+          "cause": "Wiring/connector/component fault remains possible if code active or persists",
+          "evidence": "Diagnostic hypothesis only; OEM electrical validation not supplied"
+        }
+      ],
+      "diagnostic_steps": [
+        "Read TBM codes and explicitly distinguish Active from Stored/Pending",
+        "For stored/pending codes in STAR case, do not replace TBM solely due to warning",
+        "For Active codes, follow code-specific OEM antenna or TBM diagnostics",
+        "Check current OEM guidance and approved software availability by VIN; no assumed installation or parts replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "TBM DTC Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "Cellular Antenna Diagnostic State",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "GPS Antenna Diagnostic State",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        }
+      ],
+      "tools": [
+        "wiTECH or equivalent OEM-capable scan tool",
+        "OEM service information by VIN",
+        "Electrical test instruments only when correct wiring is available"
+      ],
+      "parts": [
+        {
+          "name_en": "Telematics Box Module",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "Cellular or GPS antenna circuits",
+          "location_by_engine": null,
+          "location_verified": false
+        }
+      ],
+      "wiring": {
+        "pinout": null,
+        "fuse_identifiers": null,
+        "reference_measurements": null,
+        "reason": "Matching VIN/ECU wiring diagrams not verified"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "license": null
+      },
+      "raw_source_notation": "B1561-11",
+      "source_provenance": "Manufacturer bulletin; document code and scope corroborated; not a full OEM troubleshooting procedure",
+      "code_presence_verified": true,
+      "diagnostic_verification": "incomplete",
+      "eu_sweden_applicability_verified": false,
+      "review_status": "deferred_for_OEM_VIN_ECU_and_measurements",
+      "approved_for_app": false
+    },
+    {
+      "record_id": "alfa-b03-b1562-14",
+      "brand": "Alfa Romeo",
+      "code": "B1562-14",
+      "base_code": "B1562",
+      "failure_type_byte": "14",
+      "definition_en": "GPS Antenna Short To Ground Or Open",
+      "translation_ar": "قصر إلى الأرضي أو قطع في دائرة هوائي GPS",
+      "category": "B",
+      "code_ownership": "OEM bulletin explicitly associates code with model; SAE/J2012DA generic-vs-manufacturer final determination pending",
+      "ecu": "TBM",
+      "applicability": [
+        {
+          "models": [
+            "Giulia",
+            "Stelvio",
+            "Tonale"
+          ],
+          "model_years": "See NHTSA manufacturer-communication index; not guaranteed for every MY/VIN",
+          "market": "North America bulletin index; Swedish applicability unconfirmed",
+          "equipment": "TBM",
+          "engine_code": null
+        }
+      ],
+      "source_ids": [
+        "star_s2508000101"
+      ],
+      "symptoms": [
+        "Intermittent Uconnect Box Requires Service pop-up"
+      ],
+      "possible_causes": [
+        {
+          "rank": 1,
+          "cause": "Possible TBM software issue affecting DTC maturation time when code is stored/pending",
+          "evidence": "OEM bulletin for described symptom and vehicle scope"
+        },
+        {
+          "rank": 2,
+          "cause": "Wiring/connector/component fault remains possible if code active or persists",
+          "evidence": "Diagnostic hypothesis only; OEM electrical validation not supplied"
+        }
+      ],
+      "diagnostic_steps": [
+        "Read TBM codes and explicitly distinguish Active from Stored/Pending",
+        "For stored/pending codes in STAR case, do not replace TBM solely due to warning",
+        "For Active codes, follow code-specific OEM antenna or TBM diagnostics",
+        "Check current OEM guidance and approved software availability by VIN; no assumed installation or parts replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "TBM DTC Status",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "Cellular Antenna Diagnostic State",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        },
+        {
+          "name_en": "GPS Antenna Diagnostic State",
+          "translation_ar": null,
+          "actual_pid_name_verified": false,
+          "reference_value": "غير مؤكد — requires matching OEM VIN/ECU specifications"
+        }
+      ],
+      "tools": [
+        "wiTECH or equivalent OEM-capable scan tool",
+        "OEM service information by VIN",
+        "Electrical test instruments only when correct wiring is available"
+      ],
+      "parts": [
+        {
+          "name_en": "Telematics Box Module",
+          "location_by_engine": null,
+          "location_verified": false
+        },
+        {
+          "name_en": "Cellular or GPS antenna circuits",
+          "location_by_engine": null,
+          "location_verified": false
+        }
+      ],
+      "wiring": {
+        "pinout": null,
+        "fuse_identifiers": null,
+        "reference_measurements": null,
+        "reason": "Matching VIN/ECU wiring diagrams not verified"
+      },
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "license": null
+      },
+      "raw_source_notation": "B1562-14",
+      "source_provenance": "Manufacturer bulletin; document code and scope corroborated; not a full OEM troubleshooting procedure",
+      "code_presence_verified": true,
+      "diagnostic_verification": "incomplete",
+      "eu_sweden_applicability_verified": false,
+      "review_status": "deferred_for_OEM_VIN_ECU_and_measurements",
+      "approved_for_app": false
+    }
+  ]
+}
