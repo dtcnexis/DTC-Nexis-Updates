@@ -1,0 +1,470 @@
+{
+  "schema": "dtcnexis-jeep-batch03-enrichment-v1",
+  "brand": "Jeep",
+  "date": "2026-11-16",
+  "branch_only": true,
+  "release_to_app": false,
+  "baseline": {
+    "github_batch01_rows": 111,
+    "github_batch01_distinct": 108,
+    "local_previous_v2_distinct": 115,
+    "local_previous_v2_applicability": 127
+  },
+  "verified_new_definitions": [
+    {
+      "record_id": "jeep_v3_p1db7_00",
+      "brand": "Jeep",
+      "code_original": "P1DB7-00",
+      "base_code": "P1DB7",
+      "failure_type": "00",
+      "classification": "manufacturer",
+      "ecu": "TCM",
+      "definition_en": "Torque Converter Clutch Performance",
+      "translation_ar": "خلل في أداء قابض محوّل عزم الدوران",
+      "category": "Powertrain",
+      "source_ids": [
+        "jeep_src_2025_tcm_jl22",
+        "jeep_src_2025_tcm_jl23",
+        "jeep_src_2025_tcm_jl24",
+        "jeep_src_2025_tcm_jt22"
+      ],
+      "state": "manufacturer_bulletin_definition_and_scope_verified_not_vin_approved",
+      "measured_thresholds": "غير مؤكد",
+      "images": [],
+      "wiring": "غير موثق"
+    },
+    {
+      "record_id": "jeep_v3_p0701",
+      "brand": "Jeep",
+      "code_original": "P0701",
+      "base_code": "P0701",
+      "failure_type": null,
+      "classification": "standard_range_candidate",
+      "ecu": "TCM",
+      "definition_en": "Transmission Control System Range/Performance",
+      "translation_ar": "خلل نطاق أو أداء نظام التحكم بناقل الحركة",
+      "category": "Powertrain",
+      "source_ids": [
+        "jeep_src_2025_tcm_jl22"
+      ],
+      "state": "manufacturer_bulletin_definition_and_scope_verified_not_vin_approved",
+      "measured_thresholds": "غير مؤكد",
+      "images": [],
+      "wiring": "غير موثق"
+    },
+    {
+      "record_id": "jeep_v3_b22a9_17",
+      "brand": "Jeep",
+      "code_original": "B22A9-17",
+      "base_code": "B22A9",
+      "failure_type": "17",
+      "classification": "manufacturer",
+      "ecu": "IDCM",
+      "definition_en": "ECU Internal Performance - Circuit Voltage Above Threshold",
+      "translation_ar": "خلل أداء داخلي بوحدة التحكم: جهد الدائرة أعلى من الحد",
+      "category": "Body",
+      "source_ids": [
+        "jeep_src_2021_idcm_m7"
+      ],
+      "state": "manufacturer_bulletin_definition_and_scope_verified_not_vin_approved",
+      "measured_thresholds": "غير مؤكد",
+      "images": [],
+      "wiring": "غير موثق"
+    },
+    {
+      "record_id": "jeep_v3_p0d2a00",
+      "brand": "Jeep",
+      "code_original": "P0D2A00",
+      "base_code": "P0D2A",
+      "failure_type": "00",
+      "classification": "standard_range_candidate",
+      "ecu": "IDCM",
+      "definition_en": "Battery Charger 1 Input Current Too High",
+      "translation_ar": "تيار دخل شاحن البطارية رقم 1 مرتفع جداً",
+      "category": "Powertrain",
+      "source_ids": [
+        "jeep_src_2021_idcm_m7"
+      ],
+      "state": "manufacturer_bulletin_definition_and_scope_verified_not_vin_approved",
+      "measured_thresholds": "غير مؤكد",
+      "images": [],
+      "wiring": "غير موثق"
+    },
+    {
+      "record_id": "jeep_v3_p0cf3_00",
+      "brand": "Jeep",
+      "code_original": "P0CF3-00",
+      "base_code": "P0CF3",
+      "failure_type": "00",
+      "classification": "standard_range_candidate",
+      "ecu": "IDCM",
+      "definition_en": "Control Pilot Circuit Open",
+      "translation_ar": "انقطاع دائرة إشارة التحكم في الشحن",
+      "category": "Powertrain",
+      "source_ids": [
+        "jeep_src_2021_idcm_m7"
+      ],
+      "state": "manufacturer_bulletin_definition_and_scope_verified_not_vin_approved",
+      "measured_thresholds": "غير مؤكد",
+      "images": [],
+      "wiring": "غير موثق"
+    },
+    {
+      "record_id": "jeep_v3_p0cf4_00",
+      "brand": "Jeep",
+      "code_original": "P0CF4-00",
+      "base_code": "P0CF4",
+      "failure_type": "00",
+      "classification": "standard_range_candidate",
+      "ecu": "IDCM",
+      "definition_en": "Control Pilot Circuit Performance",
+      "translation_ar": "خلل أداء دائرة إشارة التحكم في الشحن",
+      "category": "Powertrain",
+      "source_ids": [
+        "jeep_src_2021_idcm_m7"
+      ],
+      "state": "manufacturer_bulletin_definition_and_scope_verified_not_vin_approved",
+      "measured_thresholds": "غير مؤكد",
+      "images": [],
+      "wiring": "غير موثق"
+    },
+    {
+      "record_id": "jeep_v3_b22a9_87",
+      "brand": "Jeep",
+      "code_original": "B22A9-87",
+      "base_code": "B22A9",
+      "failure_type": "87",
+      "classification": "manufacturer",
+      "ecu": "IDCM",
+      "definition_en": "ECU Internal Performance - Missing Message",
+      "translation_ar": "خلل أداء داخلي بوحدة التحكم: رسالة مفقودة",
+      "category": "Body",
+      "source_ids": [
+        "jeep_src_2021_idcm_m7",
+        "jeep_src_2023_idcm_jl"
+      ],
+      "state": "manufacturer_bulletin_definition_and_scope_verified_not_vin_approved",
+      "measured_thresholds": "غير مؤكد",
+      "images": [],
+      "wiring": "غير موثق"
+    }
+  ],
+  "new_bulletin_applicability": [
+    {
+      "id": "jeep_v3_compass_2020_B22A9-17",
+      "code": "B22A9-17",
+      "model": "Compass",
+      "generation": "M7",
+      "model_year": 2020,
+      "engine_sales_code": "EYG",
+      "powertrain": "1.3L Turbo PHEV",
+      "markets": [
+        "EMEA"
+      ],
+      "ecu": "IDCM",
+      "source_id": "jeep_src_2021_idcm_m7",
+      "qualification": "VIN/ECU calibration must be checked",
+      "approved_for_import": false
+    },
+    {
+      "id": "jeep_v3_compass_2020_P0D2A00",
+      "code": "P0D2A00",
+      "model": "Compass",
+      "generation": "M7",
+      "model_year": 2020,
+      "engine_sales_code": "EYG",
+      "powertrain": "1.3L Turbo PHEV",
+      "markets": [
+        "EMEA"
+      ],
+      "ecu": "IDCM",
+      "source_id": "jeep_src_2021_idcm_m7",
+      "qualification": "VIN/ECU calibration must be checked",
+      "approved_for_import": false
+    },
+    {
+      "id": "jeep_v3_compass_2020_P0CF3-00",
+      "code": "P0CF3-00",
+      "model": "Compass",
+      "generation": "M7",
+      "model_year": 2020,
+      "engine_sales_code": "EYG",
+      "powertrain": "1.3L Turbo PHEV",
+      "markets": [
+        "EMEA"
+      ],
+      "ecu": "IDCM",
+      "source_id": "jeep_src_2021_idcm_m7",
+      "qualification": "VIN/ECU calibration must be checked",
+      "approved_for_import": false
+    },
+    {
+      "id": "jeep_v3_compass_2020_P0CF4-00",
+      "code": "P0CF4-00",
+      "model": "Compass",
+      "generation": "M7",
+      "model_year": 2020,
+      "engine_sales_code": "EYG",
+      "powertrain": "1.3L Turbo PHEV",
+      "markets": [
+        "EMEA"
+      ],
+      "ecu": "IDCM",
+      "source_id": "jeep_src_2021_idcm_m7",
+      "qualification": "VIN/ECU calibration must be checked",
+      "approved_for_import": false
+    },
+    {
+      "id": "jeep_v3_compass_2020_B22A9-87",
+      "code": "B22A9-87",
+      "model": "Compass",
+      "generation": "M7",
+      "model_year": 2020,
+      "engine_sales_code": "EYG",
+      "powertrain": "1.3L Turbo PHEV",
+      "markets": [
+        "EMEA"
+      ],
+      "ecu": "IDCM",
+      "source_id": "jeep_src_2021_idcm_m7",
+      "qualification": "VIN/ECU calibration must be checked",
+      "approved_for_import": false
+    },
+    {
+      "id": "jeep_v3_wrangler_2022_B22A9-87",
+      "code": "B22A9-87",
+      "model": "Wrangler",
+      "generation": "JL",
+      "model_year": 2022,
+      "engine_sales_code": "ECX",
+      "powertrain": "2.0L Turbo PHEV",
+      "markets": [
+        "NA",
+        "IAP",
+        "CH"
+      ],
+      "ecu": "IDCM",
+      "source_id": "jeep_src_2023_idcm_jl",
+      "qualification": "Build 2022-03-01 through 2022-05-13; VIN/RSU eligibility; HV safety",
+      "approved_for_import": false
+    },
+    {
+      "id": "jeep_v3_wrangler_2022_P1DB7-00",
+      "code": "P1DB7-00",
+      "model": "Wrangler",
+      "generation": "JL",
+      "model_year": 2022,
+      "engine_sales_code": "ERC",
+      "powertrain": "3.6L ESS gasoline",
+      "transmission_sales_code": "DFT",
+      "transmission": "850RE 8-speed auto",
+      "markets": [
+        "NA",
+        "SA",
+        "EE",
+        "MEA",
+        "IAP",
+        "CH"
+      ],
+      "ecu": "TCM",
+      "source_id": "jeep_src_2025_tcm_jl22",
+      "qualification": "VIN/TCM software version required; TSB is not proof of mechanical converter failure",
+      "approved_for_import": false
+    },
+    {
+      "id": "jeep_v3_wrangler_2022_P0701",
+      "code": "P0701",
+      "model": "Wrangler",
+      "generation": "JL",
+      "model_year": 2022,
+      "engine_sales_code": "ERC",
+      "powertrain": "3.6L ESS gasoline",
+      "transmission_sales_code": "DFT",
+      "transmission": "850RE 8-speed auto",
+      "markets": [
+        "NA",
+        "SA",
+        "EE",
+        "MEA",
+        "IAP",
+        "CH"
+      ],
+      "ecu": "TCM",
+      "source_id": "jeep_src_2025_tcm_jl22",
+      "qualification": "VIN/TCM software version required; TSB is not proof of mechanical converter failure",
+      "approved_for_import": false
+    },
+    {
+      "id": "jeep_v3_wrangler_2023_P1DB7-00",
+      "code": "P1DB7-00",
+      "model": "Wrangler",
+      "generation": "JL",
+      "model_year": 2023,
+      "engine_sales_code": "ERC",
+      "powertrain": "3.6L ESS gasoline",
+      "transmission_sales_code": "DFT",
+      "transmission": "850RE 8-speed auto",
+      "markets": [
+        "NA",
+        "SA",
+        "EE",
+        "MEA",
+        "IAP",
+        "CH"
+      ],
+      "ecu": "TCM",
+      "source_id": "jeep_src_2025_tcm_jl23",
+      "qualification": "VIN/TCM software version required; TSB is not proof of mechanical converter failure",
+      "approved_for_import": false
+    },
+    {
+      "id": "jeep_v3_wrangler_2024_P1DB7-00",
+      "code": "P1DB7-00",
+      "model": "Wrangler",
+      "generation": "JL",
+      "model_year": 2024,
+      "engine_sales_code": "ERC",
+      "powertrain": "3.6L ESS gasoline",
+      "transmission_sales_code": "DFT",
+      "transmission": "850RE 8-speed auto",
+      "markets": [
+        "NA",
+        "SA",
+        "EE",
+        "MEA",
+        "IAP",
+        "CH"
+      ],
+      "ecu": "TCM",
+      "source_id": "jeep_src_2025_tcm_jl24",
+      "qualification": "VIN/TCM software version required; TSB is not proof of mechanical converter failure",
+      "approved_for_import": false
+    },
+    {
+      "id": "jeep_v3_gladiator_2022_P1DB7-00",
+      "code": "P1DB7-00",
+      "model": "Gladiator",
+      "generation": "JT",
+      "model_year": 2022,
+      "engine_sales_code": "ERC",
+      "powertrain": "3.6L ESS gasoline",
+      "transmission_sales_code": "DFT",
+      "transmission": "850RE 8-speed auto",
+      "markets": [
+        "NA",
+        "SA",
+        "EE",
+        "MEA",
+        "IAP",
+        "CH"
+      ],
+      "ecu": "TCM",
+      "source_id": "jeep_src_2025_tcm_jt22",
+      "qualification": "VIN/TCM software version required; TSB is not proof of mechanical converter failure",
+      "approved_for_import": false
+    }
+  ],
+  "sources": [
+    {
+      "id": "jeep_src_2021_idcm_m7",
+      "tsb": "08-059-21",
+      "date": "2021-04-15",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10194051-9999.pdf",
+      "scope": "2020 Compass M7 1.3L PHEV EYG; EMEA"
+    },
+    {
+      "id": "jeep_src_2023_idcm_jl",
+      "tsb": "08-058-23",
+      "date": "2023-02-25",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10234519-9999.pdf",
+      "scope": "2022 Wrangler JL 2.0L PHEV ECX; 2022-03-01 to 2022-05-13; NA IAP CH"
+    },
+    {
+      "id": "jeep_src_2025_tcm_jl22",
+      "tsb": "21-022-25 Rev.A",
+      "date": "2025-03-29",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11016276-0001.pdf",
+      "scope": "2022 Wrangler JL 3.6L ERC, DFT 850RE"
+    },
+    {
+      "id": "jeep_src_2025_tcm_jl23",
+      "tsb": "21-018-25 Rev.A",
+      "date": "2025-03-29",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11016270-0001.pdf",
+      "scope": "2023 Wrangler JL 3.6L ERC, DFT 850RE"
+    },
+    {
+      "id": "jeep_src_2025_tcm_jl24",
+      "tsb": "21-020-25 Rev.A",
+      "date": "2025-03-29",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11016273-0001.pdf",
+      "scope": "2024 Wrangler JL 3.6L ERC, DFT 850RE"
+    },
+    {
+      "id": "jeep_src_2025_tcm_jt22",
+      "tsb": "21-023-25 Rev.A",
+      "date": "2025-03-29",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11016277-0001.pdf",
+      "scope": "2022 Gladiator JT 3.6L ERC, DFT 850RE"
+    }
+  ],
+  "diagnostics": [
+    {
+      "procedure_id": "COMPASS_M7_IDCM",
+      "scope": "2020 Compass M7 EYG EMEA",
+      "source_id": "jeep_src_2021_idcm_m7",
+      "steps_ar": [
+        "سجل رموز وأعطال IDCM واختبر أهلية VIN والنشرة",
+        "افحص وجود DTC خارج النشرة أولاً",
+        "إذا انطبقت النشرة استخدم wiTECH لدعم فلاش IDCM؛ بطارية 12V أثناء الفلاش 13.2 إلى 13.5 فولت فقط",
+        "أعد قراءة الأخطاء بعد البرمجة"
+      ],
+      "live_data": [
+        "DTC status",
+        "IDCM calibration level"
+      ],
+      "live_data_numeric_thresholds": "غير مؤكد"
+    },
+    {
+      "procedure_id": "WRANGLER_JL_IDCM",
+      "scope": "2022 JL ECX, build 03-01 to 05-13 NA/IAP/CH",
+      "source_id": "jeep_src_2023_idcm_jl",
+      "steps_ar": [
+        "تأكد من VIN ونطاق التصنيع وأعراض عدم شحن السيارة",
+        "تحقق من حالة B22A9-87 الفعلي",
+        "اتبع إجراء High-Voltage Power Down فقط بواسطة فني مؤهل وبمعدات الوقاية",
+        "فحص/استبدال IDCM إذا انطبقت شروط الوثيقة ثم High-Voltage Power Up وامسح الأكواد"
+      ],
+      "live_data_numeric_thresholds": "غير مؤكد"
+    },
+    {
+      "procedure_id": "ERC_DFT_TCM",
+      "scope": "2022-2024 JL ERC/DFT and 2022 JT ERC/DFT",
+      "source_ids": [
+        "jeep_src_2025_tcm_jl22",
+        "jeep_src_2025_tcm_jl23",
+        "jeep_src_2025_tcm_jl24",
+        "jeep_src_2025_tcm_jt22"
+      ],
+      "steps_ar": [
+        "سجل أكواد TCM وأعراض MIL/حرارة زيت ناقل الحركة",
+        "تحقق من VIN وERC وDFT ومن معايرة الوحدة",
+        "شخص الأكواد الأخرى وفق مكتبة المصنع قبل الفلاش",
+        "طبّق تحديث TCM باستخدام wiTECH ومصدر كهربائي مستقر حسب تعليمات المصنع",
+        "امسح الأكواد وتحقق من زوال العطل دون افتراض تلف محول العزم"
+      ],
+      "live_data": [
+        "TCM DTC status",
+        "Transmission fluid temperature",
+        "TCC slip RPM"
+      ],
+      "live_data_numeric_thresholds": "غير مؤكد"
+    }
+  ],
+  "classification_note": "Code-range categorization is not a claim of individually verified SAE J2012DA code definitions.",
+  "remarks": [
+    "P0D2A00 retained byte-for-byte as bulletin spelling (without hyphen); split of 00 is a normalized indexing inference.",
+    "B22A9-87 has different application procedures for Compass and Wrangler; not duplicate records.",
+    "No imagery collected or generated."
+  ]
+}

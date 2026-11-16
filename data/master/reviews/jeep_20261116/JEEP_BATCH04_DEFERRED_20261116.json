@@ -1,0 +1,815 @@
+{
+  "schema": "dtcnexis-jeep-review-queue-v1",
+  "brand": "Jeep",
+  "as_of": "2026-11-16",
+  "review_dir": "data/master/reviews/jeep_20261116",
+  "relationship_to_existing_queue": "Append-only Batch04; previous Batch03 file contains 46 entries unchanged",
+  "counts": {
+    "new_code_records_needing_additional_review": 28,
+    "existing_code_new_relation_needing_review": 1,
+    "extra_candidate_codes_not_imported": 2,
+    "queue_rows": 31,
+    "existing_batch03_queue_rows": 46,
+    "cumulative_review_rows": 77
+  },
+  "source_data_path": "data/master/enrichment/jeep_batch04_20261116.json",
+  "records": [
+    {
+      "review_id": "jeep_b04_review_U1223_00",
+      "brand": "Jeep",
+      "code": "U1223-00",
+      "ecu": "BCM",
+      "engine": "غير مؤكد",
+      "model": "Grand Cherokee",
+      "model_years": [
+        2021
+      ],
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2022/MC-10227756-9999.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_U121E_00",
+      "brand": "Jeep",
+      "code": "U121E-00",
+      "ecu": "BCM",
+      "engine": "غير مؤكد",
+      "model": "Grand Cherokee",
+      "model_years": [
+        2021
+      ],
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2022/MC-10227756-9999.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_U1207_00",
+      "brand": "Jeep",
+      "code": "U1207-00",
+      "ecu": "BCM",
+      "engine": "غير مؤكد",
+      "model": "Grand Cherokee",
+      "model_years": [
+        2021
+      ],
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2022/MC-10227756-9999.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_U1191_00",
+      "brand": "Jeep",
+      "code": "U1191-00",
+      "ecu": "BCM",
+      "engine": "غير مؤكد",
+      "model": "Grand Cherokee",
+      "model_years": [
+        2021
+      ],
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2022/MC-10227756-9999.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_U1153_00",
+      "brand": "Jeep",
+      "code": "U1153-00",
+      "ecu": "BCM",
+      "engine": "غير مؤكد",
+      "model": "Grand Cherokee",
+      "model_years": [
+        2021
+      ],
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2022/MC-10227756-9999.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_U114F_00",
+      "brand": "Jeep",
+      "code": "U114F-00",
+      "ecu": "BCM",
+      "engine": "غير مؤكد",
+      "model": "Grand Cherokee",
+      "model_years": [
+        2021
+      ],
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2022/MC-10227756-9999.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_U114D_87",
+      "brand": "Jeep",
+      "code": "U114D-87",
+      "ecu": "BCM",
+      "engine": "غير مؤكد",
+      "model": "Grand Cherokee",
+      "model_years": [
+        2021
+      ],
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2022/MC-10227756-9999.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_U113B_00",
+      "brand": "Jeep",
+      "code": "U113B-00",
+      "ecu": "BCM",
+      "engine": "غير مؤكد",
+      "model": "Grand Cherokee",
+      "model_years": [
+        2021
+      ],
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2022/MC-10227756-9999.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_U112D_00",
+      "brand": "Jeep",
+      "code": "U112D-00",
+      "ecu": "BCM",
+      "engine": "غير مؤكد",
+      "model": "Grand Cherokee",
+      "model_years": [
+        2021
+      ],
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2022/MC-10227756-9999.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_U1125_00",
+      "brand": "Jeep",
+      "code": "U1125-00",
+      "ecu": "BCM",
+      "engine": "غير مؤكد",
+      "model": "Grand Cherokee",
+      "model_years": [
+        2021
+      ],
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2022/MC-10227756-9999.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_U1123_00",
+      "brand": "Jeep",
+      "code": "U1123-00",
+      "ecu": "BCM",
+      "engine": "غير مؤكد",
+      "model": "Grand Cherokee",
+      "model_years": [
+        2021
+      ],
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2022/MC-10227756-9999.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_U1122_00",
+      "brand": "Jeep",
+      "code": "U1122-00",
+      "ecu": "BCM",
+      "engine": "غير مؤكد",
+      "model": "Grand Cherokee",
+      "model_years": [
+        2021
+      ],
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2022/MC-10227756-9999.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_U1008_00",
+      "brand": "Jeep",
+      "code": "U1008-00",
+      "ecu": "BCM",
+      "engine": "غير مؤكد",
+      "model": "Grand Cherokee",
+      "model_years": [
+        2021
+      ],
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2022/MC-10227756-9999.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_U0231_00",
+      "brand": "Jeep",
+      "code": "U0231-00",
+      "ecu": "BCM",
+      "engine": "غير مؤكد",
+      "model": "Grand Cherokee",
+      "model_years": [
+        2021
+      ],
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2022/MC-10227756-9999.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_B1A10_00",
+      "brand": "Jeep",
+      "code": "B1A10-00",
+      "ecu": "RFHM",
+      "engine": "غير مؤكد",
+      "model": "Grand Cherokee / Grand Cherokee L",
+      "model_years": [
+        2024
+      ],
+      "source_ids": [
+        "JEEP_B04_S02"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-11011927-0001.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_B1A11_00",
+      "brand": "Jeep",
+      "code": "B1A11-00",
+      "ecu": "RFHM",
+      "engine": "غير مؤكد",
+      "model": "Grand Cherokee / Grand Cherokee L",
+      "model_years": [
+        2024
+      ],
+      "source_ids": [
+        "JEEP_B04_S02"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-11011927-0001.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_B23D7_14",
+      "brand": "Jeep",
+      "code": "B23D7-14",
+      "ecu": "RFHM",
+      "engine": "غير مؤكد",
+      "model": "Grand Cherokee / Grand Cherokee L",
+      "model_years": [
+        2024
+      ],
+      "source_ids": [
+        "JEEP_B04_S02"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-11011927-0001.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_C140E_00",
+      "brand": "Jeep",
+      "code": "C140E-00",
+      "ecu": "DTCM",
+      "engine": "ESG",
+      "model": "Wrangler",
+      "model_years": [
+        2021,
+        2022,
+        2023
+      ],
+      "source_ids": [
+        "JEEP_B04_S03"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-11004888-0001.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_C1403_15",
+      "brand": "Jeep",
+      "code": "C1403-15",
+      "ecu": "DTCM",
+      "engine": "غير مؤكد",
+      "model": "Gladiator (Wrangler Pickup)",
+      "model_years": null,
+      "source_ids": [
+        "JEEP_B04_S04"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2022/MC-10228000-9999.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope",
+        "Exact model years not printed in inspected manufacturer document"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_C1403_92",
+      "brand": "Jeep",
+      "code": "C1403-92",
+      "ecu": "DTCM",
+      "engine": "غير مؤكد",
+      "model": "Gladiator (Wrangler Pickup)",
+      "model_years": null,
+      "source_ids": [
+        "JEEP_B04_S04"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2022/MC-10228000-9999.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope",
+        "Exact model years not printed in inspected manufacturer document"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_C0061_29",
+      "brand": "Jeep",
+      "code": "C0061-29",
+      "ecu": "ABS",
+      "engine": "غير مؤكد",
+      "model": "Compass",
+      "model_years": [
+        2022
+      ],
+      "source_ids": [
+        "JEEP_B04_S05"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10231774-9999.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_C0062_29",
+      "brand": "Jeep",
+      "code": "C0062-29",
+      "ecu": "ABS",
+      "engine": "غير مؤكد",
+      "model": "Compass",
+      "model_years": [
+        2022
+      ],
+      "source_ids": [
+        "JEEP_B04_S05"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10231774-9999.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_C0063_29",
+      "brand": "Jeep",
+      "code": "C0063-29",
+      "ecu": "ABS",
+      "engine": "غير مؤكد",
+      "model": "Compass",
+      "model_years": [
+        2022
+      ],
+      "source_ids": [
+        "JEEP_B04_S05"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10231774-9999.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_B2770_13",
+      "brand": "Jeep",
+      "code": "B2770-13",
+      "ecu": "ORC/SRS (reported module not stated)",
+      "engine": "غير مؤكد",
+      "model": "Wrangler",
+      "model_years": null,
+      "source_ids": [
+        "JEEP_B04_S06"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2022/MC-10221440-9999.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope",
+        "Exact model years not printed in inspected manufacturer document",
+        "Reporting ECU was not explicitly stated; ORC/SRS is a diagnostic-system inference"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_C0508_00",
+      "brand": "Jeep",
+      "code": "C0508-00",
+      "ecu": "ABS for C codes; receiving ECU not stated for U codes",
+      "engine": "غير مؤكد",
+      "model": "Wrangler",
+      "model_years": [
+        2024
+      ],
+      "source_ids": [
+        "JEEP_B04_S07"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-11005434-0001.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_C2227_00",
+      "brand": "Jeep",
+      "code": "C2227-00",
+      "ecu": "ABS for C codes; receiving ECU not stated for U codes",
+      "engine": "غير مؤكد",
+      "model": "Wrangler",
+      "model_years": [
+        2024
+      ],
+      "source_ids": [
+        "JEEP_B04_S07"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-11005434-0001.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_U140A",
+      "brand": "Jeep",
+      "code": "U140A",
+      "ecu": "ABS for C codes; receiving ECU not stated for U codes",
+      "engine": "غير مؤكد",
+      "model": "Wrangler",
+      "model_years": [
+        2024
+      ],
+      "source_ids": [
+        "JEEP_B04_S07"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-11005434-0001.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope",
+        "Receiving ECU not identified in STAR case"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_U1412_00",
+      "brand": "Jeep",
+      "code": "U1412-00",
+      "ecu": "ABS for C codes; receiving ECU not stated for U codes",
+      "engine": "غير مؤكد",
+      "model": "Wrangler",
+      "model_years": [
+        2024
+      ],
+      "source_ids": [
+        "JEEP_B04_S07"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-11005434-0001.pdf"
+      ],
+      "reason": [
+        "Individual SAE J2012DA standard/manufacturer status not checked",
+        "VIN/ECU software/RSU applicability not confirmed",
+        "Diagnostic Live Data numeric limits not published in reviewed bulletin",
+        "Engine code not documented for this scope",
+        "Receiving ECU not identified in STAR case"
+      ],
+      "verification_status": "source_description_verified_but_incomplete_for_release",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_review_existing_U0415_00",
+      "brand": "Jeep",
+      "code": "U0415-00",
+      "ecu": "receiving ECU not stated",
+      "engine": "غير مؤكد",
+      "model": "Wrangler",
+      "model_years": [
+        2024
+      ],
+      "source_ids": [
+        "JEEP_B04_S07",
+        "JEEP_B04_S08"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-11005434-0001.pdf",
+        "https://dot.report/manufacturer-communications/11005434"
+      ],
+      "reason": [
+        "Existing code definition in V2; newly linked to 2024 Wrangler as an accompanying DTC",
+        "Receiving ECU, engine and independent VIN fitment not confirmed"
+      ],
+      "verification_status": "existing_definition_new_application_in_review",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_candidate_B1751_11",
+      "brand": "Jeep (candidate only; model not proved)",
+      "code": "B1751-11",
+      "ecu": "BCM",
+      "engine": "غير مؤكد",
+      "model": null,
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-11008148-0001.pdf"
+      ],
+      "reason": [
+        "Multibrand STAR case S2408000107 includes code, but Jeep model/year context cannot be established from inspected text",
+        "Cannot promote a multibrand case to confirmed Jeep application without vehicle documentation"
+      ],
+      "verification_status": "candidate_only",
+      "status": "deferred",
+      "publish_as_verified": false
+    },
+    {
+      "review_id": "jeep_b04_candidate_C147B_92",
+      "brand": "Jeep",
+      "code": "C147B-92",
+      "ecu": "DTCM",
+      "engine": "غير مؤكد",
+      "model": "Wrangler JL (reported)",
+      "source_urls": [
+        "https://www.aboutautomobile.com/Technical-Service-Bulletin/2024/Jeep/Wrangler/Electrical-System"
+      ],
+      "reason": [
+        "Secondary listing alleges 08-355-26 (2026-10-09) but direct official PDF for exact model/year was not accessible",
+        "No verified original PDF or VIN/market coverage for code mapping"
+      ],
+      "verification_status": "candidate_only",
+      "status": "deferred",
+      "publish_as_verified": false
+    }
+  ],
+  "remarks": [
+    "Each verified bulletin description can still lack a VIN-specific valid application; these queued items do not negate bulletin provenance.",
+    "Do not count B1751-11 and C147B-92 as verified new Jeep codes.",
+    "No technical photos created, altered, or requested.",
+    "None of these rows are suitable for publishing as vehicle-specific repair instructions without independent validation."
+  ]
+}
