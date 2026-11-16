@@ -6,9 +6,9 @@
   "storage_repository": "dtcnexis/DTC-Nexis-Updates",
   "storage_branch": "main",
   "storage_directory": "data/master",
-  "current_saved_row_count": 9589,
+  "current_saved_row_count": 9594,
   "distinct_worldwide_codes": "UNKNOWN: cross-manufacturer duplicates/suffixes and same-code ECU variants are deliberately preserved",
-  "file_count": 53,
+  "file_count": 54,
   "collections": [
     {
       "kind": "generic_trilingual",
@@ -405,6 +405,13 @@
       "path": "data/master/brands/jaguar_batch01_preserved_part02.json",
       "rows": 59,
       "verification": "EXACT_SOURCE_BYTES_PRESERVED_ALL_ROWS_PENDING_FULL_TECHNICAL_QA_NO_RELEASE"
+    },
+    {
+      "kind": "infiniti_oem_bulletin_batch03",
+      "brand": "Infiniti",
+      "path": "data/master/brands/infiniti_batch03_oem_bulletins_20261116.json",
+      "rows": 5,
+      "verification": "BULLETIN_SCOPE_AND_CODE_MEANING_CHECKED_PENDING_FULL_TECHNICAL_QA_NO_RELEASE"
     }
   ],
   "saved_groups": {
@@ -432,7 +439,8 @@
     "Infiniti_batch01_preserved": 37,
     "Jeep_batch01_preserved": 111,
     "Fiat_batch01_preserved": 221,
-    "Jaguar_batch01_preserved": 149
+    "Jaguar_batch01_preserved": 149,
+    "Infiniti_batch03_oem_bulletin_scoped": 5
   },
   "source_lists_still_to_reconcile": [
     {
@@ -767,5 +775,15 @@
     "bulk_overlap_rows_not_counted": 1,
     "report": "data/master/reviews/continuation_20261106_batch03/REPORT_AR.md",
     "sha256_originals": "data/master/reviews/continuation_20261106_batch03/ORIGINALS_SHA256.json"
+  },
+  "continuation_20261116_infiniti": {
+    "branch_only": "data/infiniti-dtc-20261116-batch03",
+    "new_scoped_codes": 5,
+    "existing_code_scope_rediscovered": 6,
+    "unverified_review_queue": 14,
+    "source_path": "data/master/brands/infiniti_batch03_oem_bulletins_20261116.json",
+    "report_path": "data/master/reviews/infiniti_20261116_batch03/REPORT_AR.md",
+    "approved_for_release": false,
+    "no_main_update_at_creation": true
   }
 }
