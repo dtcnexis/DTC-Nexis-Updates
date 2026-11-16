@@ -1,0 +1,1118 @@
+{
+  "schema": "dtcnexis-land-rover-review-queue-v1",
+  "date": "2026-11-16",
+  "brand": "Land Rover",
+  "legacy_contexts": 55,
+  "new_contexts": 14,
+  "total_review_contexts": 69,
+  "full_technical_approval_count": 0,
+  "auto_release": false,
+  "source_policy": "Persistent GitHub review metadata. Original LR-001/LR-002 files remain local with SHA-256 references; not reconstructed and not represented as stored GitHub originals.",
+  "items": [
+    {
+      "id": "LR-REVIEW-LEGACY-001",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "C1A20-64",
+      "ecu": "Ride Level Control Module / Air Suspension ECU",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LTB00420"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-002",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "C1A13-54",
+      "ecu": "Air Suspension / Ride Level ECU",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LTB00793"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context. Source bulletin appears to conflict on failure-type suffix (-54 vs -64).",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-003",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "C1A13-64",
+      "ecu": "Air Suspension / Ride Level ECU",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LTB00793"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context. Source bulletin appears to conflict on failure-type suffix (-54 vs -64).",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-004",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "C1130-7A",
+      "ecu": "Ride Level Control Module",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_LTB269"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-005",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "C1131-92",
+      "ecu": "Ride Level Control Module",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_LTB269"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-006",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "C1A27-14",
+      "ecu": "Ride Level Control Module",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_LTB269"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-007",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "C1A27-12",
+      "ecu": "Ride Level Control Module",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_LTB269"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-008",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "C1A30-7A",
+      "ecu": "Ride Level Control Module",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_LTB269"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-009",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "P186D",
+      "ecu": "Transfer Case Control Module",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_LA308"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context. Same base code appears under two different ECUs; preserve both.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-010",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "P186D",
+      "ecu": "Rear Differential Control Module",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_LTB228"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context. Same base code appears under two different ECUs; preserve both.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-011",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "P080A",
+      "ecu": "Rear Differential Control Module",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_LTB228"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-012",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "P0806",
+      "ecu": "Rear Differential Control Module",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_LTB228"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-013",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "P0089-29",
+      "ecu": "ECM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_Q379"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-014",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "P00C6",
+      "ecu": "ECM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LTB00730"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-015",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "P228D-00",
+      "ecu": "ECM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LTB00730"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-016",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "P228C-77",
+      "ecu": "ECM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LTB00730"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-017",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "P0300",
+      "ecu": "ECM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LTB00730"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-018",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "P0301",
+      "ecu": "ECM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LTB00730"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-019",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "P0302",
+      "ecu": "ECM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LTB00730"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-020",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "P0303",
+      "ecu": "ECM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LTB00730"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-021",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "P0304",
+      "ecu": "ECM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LTB00730"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-022",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "P1315",
+      "ecu": "ECM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LTB00730"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-023",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "P0299-77",
+      "ecu": "PCM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_LTB1254"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-024",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "P0299-84",
+      "ecu": "PCM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "SSM75757"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-025",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "P2261-72",
+      "ecu": "PCM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "SSM75757"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-026",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "P2002-00",
+      "ecu": "PCM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_SHOP2018"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-027",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "U3000-04",
+      "ecu": "CHCM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_N135"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-028",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "U3000-49",
+      "ecu": "EESM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_SSM75970"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context. Same code occurs in separate EESM and EPICE modules; preserve separately.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-029",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "U3000-49",
+      "ecu": "EPICE",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_SSM75970"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context. Same code occurs in separate EESM and EPICE modules; preserve separately.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-030",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "B1646-01",
+      "ecu": "GWM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_SSM75970"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-031",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "U3000-96",
+      "ecu": "IPMB",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_SSM74543"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-032",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "U0126-87",
+      "ecu": "ABS",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_SSM72133"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-033",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "B10A2-32",
+      "ecu": "ECM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_SLIDESINDEX"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-034",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "B10A2-35",
+      "ecu": "ECM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_SLIDESINDEX"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-035",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "B10A2-36",
+      "ecu": "ECM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_SLIDESINDEX"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-036",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "B10A2-37",
+      "ecu": "ECM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_SLIDESINDEX"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-037",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "B1DD3-11",
+      "ecu": "RFA",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_RFA"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-038",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "B1DD3-15",
+      "ecu": "RFA",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_RFA"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-039",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "B1DD3-53",
+      "ecu": "RFA",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_RFA"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-040",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "B1DD9-11",
+      "ecu": "RFA",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_RFA"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-041",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "B1DD9-15",
+      "ecu": "RFA",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_RFA"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-042",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "B1DD9-53",
+      "ecu": "RFA",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_RFA"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-043",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "B113E-23",
+      "ecu": "RFA",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_RFA"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-044",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "B12D5-16",
+      "ecu": "RFA",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_RFA"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-045",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "C2005-11",
+      "ecu": "TGCM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_GATE"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-046",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "C2005-13",
+      "ecu": "TGCM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_GATE"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-047",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "C2005-31",
+      "ecu": "TGCM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_GATE"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-048",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "C2006-11",
+      "ecu": "TGCM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_GATE"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-049",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "C2006-13",
+      "ecu": "TGCM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_GATE"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-050",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "C2006-31",
+      "ecu": "TGCM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_GATE"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-051",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "U0140-00",
+      "ecu": "TGCM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_GATE"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-052",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "U0401-68",
+      "ecu": "TGCM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_GATE"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-053",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "U0415-68",
+      "ecu": "TGCM",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LEGACY_GATE"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-054",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "C1A36-01",
+      "ecu": "Ride Level Control Module / Air Suspension ECU",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LTB00438",
+        "SSM63277"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-LEGACY-055",
+      "brand": "Land Rover",
+      "batch": "LR-001/LR-002",
+      "code": "P1889-14",
+      "ecu": "Active On-Demand Coupling Control Module",
+      "engine_code": null,
+      "model_year_scope": "original batch only; see LR-002 applicability source",
+      "source_refs": [
+        "LTB00795"
+      ],
+      "source_filename": "land_rover_lr002_package.zip:land_rover_lr002/dtc_codes.json",
+      "reason": "Exact engine-code/VIN/market(Sweden/EU) applicability not yet verified for this code/ECU context.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-NEW-001",
+      "brand": "Land Rover",
+      "batch": "LR-003",
+      "code": "B0001-11",
+      "ecu": "RCM",
+      "engine_code": null,
+      "model_year_scope": "listed in OEM bulletin, see brand file",
+      "source_refs": [
+        "JLR-SSM71958-2014"
+      ],
+      "source_filename": "data/master/brands/land_rover_20261116_batch03.json",
+      "reason": "Full engine/VIN/Swedish EU applicability and SAE/OEM classification unresolved; precise workshop procedure requires VIN.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-NEW-002",
+      "brand": "Land Rover",
+      "batch": "LR-003",
+      "code": "B0001-12",
+      "ecu": "RCM",
+      "engine_code": null,
+      "model_year_scope": "listed in OEM bulletin, see brand file",
+      "source_refs": [
+        "JLR-SSM71958-2014"
+      ],
+      "source_filename": "data/master/brands/land_rover_20261116_batch03.json",
+      "reason": "Full engine/VIN/Swedish EU applicability and SAE/OEM classification unresolved; precise workshop procedure requires VIN.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-NEW-003",
+      "brand": "Land Rover",
+      "batch": "LR-003",
+      "code": "B0001-13",
+      "ecu": "RCM",
+      "engine_code": null,
+      "model_year_scope": "listed in OEM bulletin, see brand file",
+      "source_refs": [
+        "JLR-SSM71958-2014"
+      ],
+      "source_filename": "data/master/brands/land_rover_20261116_batch03.json",
+      "reason": "Full engine/VIN/Swedish EU applicability and SAE/OEM classification unresolved; precise workshop procedure requires VIN.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-NEW-004",
+      "brand": "Land Rover",
+      "batch": "LR-003",
+      "code": "B0001-2B",
+      "ecu": "RCM",
+      "engine_code": null,
+      "model_year_scope": "listed in OEM bulletin, see brand file",
+      "source_refs": [
+        "JLR-SSM71958-2014"
+      ],
+      "source_filename": "data/master/brands/land_rover_20261116_batch03.json",
+      "reason": "Full engine/VIN/Swedish EU applicability and SAE/OEM classification unresolved; precise workshop procedure requires VIN.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-NEW-005",
+      "brand": "Land Rover",
+      "batch": "LR-003",
+      "code": "B0002-11",
+      "ecu": "RCM",
+      "engine_code": null,
+      "model_year_scope": "listed in OEM bulletin, see brand file",
+      "source_refs": [
+        "JLR-SSM71958-2014"
+      ],
+      "source_filename": "data/master/brands/land_rover_20261116_batch03.json",
+      "reason": "Full engine/VIN/Swedish EU applicability and SAE/OEM classification unresolved; precise workshop procedure requires VIN.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-NEW-006",
+      "brand": "Land Rover",
+      "batch": "LR-003",
+      "code": "B0002-12",
+      "ecu": "RCM",
+      "engine_code": null,
+      "model_year_scope": "listed in OEM bulletin, see brand file",
+      "source_refs": [
+        "JLR-SSM71958-2014"
+      ],
+      "source_filename": "data/master/brands/land_rover_20261116_batch03.json",
+      "reason": "Full engine/VIN/Swedish EU applicability and SAE/OEM classification unresolved; precise workshop procedure requires VIN.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-NEW-007",
+      "brand": "Land Rover",
+      "batch": "LR-003",
+      "code": "B0002-13",
+      "ecu": "RCM",
+      "engine_code": null,
+      "model_year_scope": "listed in OEM bulletin, see brand file",
+      "source_refs": [
+        "JLR-SSM71958-2014"
+      ],
+      "source_filename": "data/master/brands/land_rover_20261116_batch03.json",
+      "reason": "Full engine/VIN/Swedish EU applicability and SAE/OEM classification unresolved; precise workshop procedure requires VIN.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-NEW-008",
+      "brand": "Land Rover",
+      "batch": "LR-003",
+      "code": "B0002-2B",
+      "ecu": "RCM",
+      "engine_code": null,
+      "model_year_scope": "listed in OEM bulletin, see brand file",
+      "source_refs": [
+        "JLR-SSM71958-2014"
+      ],
+      "source_filename": "data/master/brands/land_rover_20261116_batch03.json",
+      "reason": "Full engine/VIN/Swedish EU applicability and SAE/OEM classification unresolved; precise workshop procedure requires VIN.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-NEW-009",
+      "brand": "Land Rover",
+      "batch": "LR-003",
+      "code": "C105A-01",
+      "ecu": "CHCM",
+      "engine_code": null,
+      "model_year_scope": "listed in OEM bulletin, see brand file",
+      "source_refs": [
+        "JLR-CHASSIS-2022-37"
+      ],
+      "source_filename": "data/master/brands/land_rover_20261116_batch03.json",
+      "reason": "Full engine/VIN/Swedish EU applicability and SAE/OEM classification unresolved; precise workshop procedure requires VIN.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-NEW-010",
+      "brand": "Land Rover",
+      "batch": "LR-003",
+      "code": "C105B-01",
+      "ecu": "CHCM",
+      "engine_code": null,
+      "model_year_scope": "listed in OEM bulletin, see brand file",
+      "source_refs": [
+        "JLR-CHASSIS-2022-37"
+      ],
+      "source_filename": "data/master/brands/land_rover_20261116_batch03.json",
+      "reason": "Full engine/VIN/Swedish EU applicability and SAE/OEM classification unresolved; precise workshop procedure requires VIN.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-NEW-011",
+      "brand": "Land Rover",
+      "batch": "LR-003",
+      "code": "P0480-13",
+      "ecu": "PCM",
+      "engine_code": null,
+      "model_year_scope": "listed in OEM bulletin, see brand file",
+      "source_refs": [
+        "JLR-PWRTRAIN-2023-43"
+      ],
+      "source_filename": "data/master/brands/land_rover_20261116_batch03.json",
+      "reason": "Full engine/VIN/Swedish EU applicability and SAE/OEM classification unresolved; precise workshop procedure requires VIN.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-NEW-012",
+      "brand": "Land Rover",
+      "batch": "LR-003",
+      "code": "P025C-11",
+      "ecu": "PCM",
+      "engine_code": null,
+      "model_year_scope": "listed in OEM bulletin, see brand file",
+      "source_refs": [
+        "JLR-PWRTRAIN-2024-36"
+      ],
+      "source_filename": "data/master/brands/land_rover_20261116_batch03.json",
+      "reason": "Full engine/VIN/Swedish EU applicability and SAE/OEM classification unresolved; precise workshop procedure requires VIN.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-NEW-013",
+      "brand": "Land Rover",
+      "batch": "LR-003",
+      "code": "P1338-38",
+      "ecu": "PCM",
+      "engine_code": null,
+      "model_year_scope": "listed in OEM bulletin, see brand file",
+      "source_refs": [
+        "JLR-PWRTRAIN-2024-36"
+      ],
+      "source_filename": "data/master/brands/land_rover_20261116_batch03.json",
+      "reason": "Individual full code definition missing; engine/VIN/Swedish EU applicability and code classification unresolved.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    },
+    {
+      "id": "LR-REVIEW-NEW-014",
+      "brand": "Land Rover",
+      "batch": "LR-003",
+      "code": "C508D-01",
+      "ecu": "CHCMB",
+      "engine_code": null,
+      "model_year_scope": "listed in OEM bulletin, see brand file",
+      "source_refs": [
+        "JLR-CHASSIS-2023-33"
+      ],
+      "source_filename": "data/master/brands/land_rover_20261116_batch03.json",
+      "reason": "Individual full code definition missing; engine/VIN/Swedish EU applicability and code classification unresolved.",
+      "automatic_diagnostic_use": false,
+      "status": "PENDING_TECHNICAL_REVIEW"
+    }
+  ]
+}
