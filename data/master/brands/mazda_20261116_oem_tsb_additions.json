@@ -1,0 +1,1602 @@
+{
+  "schema": "dtc-nexis-mazda-oem-bulletin-increment-v1",
+  "brand": "Mazda",
+  "batch_date": "2026-11-16",
+  "publication": "NOT_FOR_APP",
+  "branch": "data/mazda-continuation-20261116",
+  "old_repository_file": "data/master/brands/mazda.json",
+  "old_repository_git_sha": "70a3e8c3291ce33ac866c9d3a4feda99b055f23b",
+  "old_unique_codes": 376,
+  "new_unique_codes": 20,
+  "new_context_records": 22,
+  "notice": "These are documentary manufacturer bulletin claims for US-market scope; no comprehensive technical verification for Sweden/Europe, no pinouts, no measurements, and no images.",
+  "sources": {
+    "MSP66": {
+      "title": "Mazda Service Program MSP66: P0DAB / CX-90 and CX-70",
+      "publisher": "Mazda North American Operations",
+      "document_date": "2025-12-17",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11026921-0001.pdf",
+      "market": "North America"
+    },
+    "TSB0500125": {
+      "title": "TSB 05-001/25: P073D:00 TCM start-up calibration",
+      "publisher": "Mazda North American Operations",
+      "document_date": "2025-05-22",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11019089-0001.pdf",
+      "market": "North America"
+    },
+    "SA02920": {
+      "title": "Service Alert SA-029/20: In-Vehicle Network Malfunction",
+      "publisher": "Mazda North American Operations",
+      "document_date": "2020-09-10",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10180787-0001.pdf",
+      "market": "North America"
+    },
+    "SA01226": {
+      "title": "Service Alert SA-012/26: TCU Malfunction",
+      "publisher": "Mazda North American Operations",
+      "document_date": "2026-03-04",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11030631-0001.pdf",
+      "market": "North America"
+    },
+    "SA04126": {
+      "title": "Service Alert SA-041/26: Aftermarket electrical DTCs",
+      "publisher": "Mazda North American Operations",
+      "document_date": "2026-09-10",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11037899-0001.pdf",
+      "market": "North America"
+    }
+  },
+  "records": [
+    {
+      "record_id": "MZD-20261116-P0DAB-MHB-BECM",
+      "brand": "Mazda",
+      "code": "P0DAB",
+      "raw_code_as_documented": "P0DAB",
+      "base_code": "P0DAB",
+      "dtc_family": "P",
+      "code_type": "undetermined_until_SAE_J2012DA_check",
+      "ecu": "MHB/BECM",
+      "definition_en": "Cell voltage variation malfunction",
+      "translation_ar": "خلل تفاوت جهود خلايا البطارية",
+      "manufacturer_definition_confirmed": true,
+      "verification_status": "manufacturer_bulletin_definition_for_specific_context",
+      "market": "North America",
+      "source_ids": [
+        "MSP66"
+      ],
+      "applicability": {
+        "models": [
+          {
+            "model": "CX-90",
+            "model_years": "2024-2026",
+            "engine": "H3T M Hybrid Boost",
+            "production_date_range": "2022-12-27..2025-11-17",
+            "vin": "JM3KK**** R1 100044–189861; S1 189862–261073; T1 350010–367752"
+          },
+          {
+            "model": "CX-70",
+            "model_years": "2025-2026",
+            "engine": "H3T M Hybrid Boost",
+            "production_date_range": "2023-12-05..2025-11-17",
+            "vin": "JM3KJ**** S1 100014–134448; T1 200004–202573"
+          }
+        ],
+        "scope_quality": "manufacturer_subject_vehicle_table_requires_vin_confirmation"
+      },
+      "symptoms": [
+        "engine warning light",
+        "engine-only fail-safe; motor assist/i-stop/regeneration may be disabled"
+      ],
+      "possible_causes": [
+        "PCM/BECM software concern documented in MSP66; other 48-V battery faults not excluded"
+      ],
+      "diagnostic_steps": [
+        "Read all MHB/BECM and PCM DTCs; check subject VIN and production date",
+        "Check current official MSP66 procedure, then reprogram PCM and MHB/BECM through MDARS only if campaign eligibility confirmed",
+        "Do not replace battery based solely on P0DAB"
+      ],
+      "live_data": [],
+      "parts": [
+        "48V mild-hybrid battery/BECM (not confirmed defective)"
+      ],
+      "wiring": "not_documented",
+      "images": [],
+      "review_status": "draft_pending_individual_vin_and_ecu_validation",
+      "scope_note": "Published bulletin range is not proof that every listed vehicle/engine has this DTC; verify VIN and ECU using Mazda RMI."
+    },
+    {
+      "record_id": "MZD-20261116-P073D-00-TCM",
+      "brand": "Mazda",
+      "code": "P073D:00",
+      "raw_code_as_documented": "P073D:00-TCM",
+      "base_code": "P073D",
+      "dtc_family": "P",
+      "code_type": "undetermined_until_SAE_J2012DA_check",
+      "ecu": "TCM",
+      "definition_en": "Turbine/input shaft speed sensor: Sensor output range malfunction",
+      "translation_ar": "خلل في نطاق خرج حساس سرعة عمود التوربين/الدخل",
+      "manufacturer_definition_confirmed": true,
+      "verification_status": "manufacturer_bulletin_definition_for_specific_context",
+      "market": "North America",
+      "source_ids": [
+        "TSB0500125"
+      ],
+      "applicability": {
+        "models": [
+          {
+            "model": "CX-30",
+            "model_years": "2023-2025",
+            "engine": "SKYACTIV-G 2.5",
+            "market": "North America",
+            "vin": "Mexico-built 3MV DM**** ** below 844741",
+            "production": "before 2025-04-21"
+          },
+          {
+            "model": "Mazda3",
+            "model_years": "2023-2025",
+            "engine": "SKYACTIV-G 2.5",
+            "vin": "Japan-built JM1 BP**** ** below 788031",
+            "production": "before 2025-04-21"
+          },
+          {
+            "model": "Mazda3",
+            "model_years": "2023-2025",
+            "engine": "SKYACTIV-G 2.5",
+            "vin": "Mexico-built 3MZ BP**** ** below 473323",
+            "production": "before 2025-04-21"
+          }
+        ],
+        "scope_quality": "manufacturer_vin_restriction"
+      },
+      "symptoms": [
+        "automatic transmission warning light during or just after start"
+      ],
+      "possible_causes": [
+        "Improper TCM DTC detection logic in listed calibration; sensor failure not established by this TSB"
+      ],
+      "diagnostic_steps": [
+        "Verify VIN, start-up event and freeze-frame",
+        "Read TCM ECU FILENAME and compare with official calibration revision",
+        "If eligible, update TCM with MDARS and perform TCM initial learning; collect ODR data"
+      ],
+      "live_data": [
+        {
+          "name_en": "Turbine/Input Shaft Speed",
+          "translation_ar": "سرعة عمود التوربين/الدخل",
+          "numeric_range": "unconfirmed"
+        }
+      ],
+      "parts": [
+        "TCM (calibration)",
+        "input speed sensor (not presumed faulty)"
+      ],
+      "wiring": "not_documented",
+      "images": [],
+      "review_status": "draft_pending_individual_vin_and_ecu_validation",
+      "scope_note": "Published bulletin range is not proof that every listed vehicle/engine has this DTC; verify VIN and ECU using Mazda RMI."
+    },
+    {
+      "record_id": "MZD-20261116-B119F-01-TCU",
+      "brand": "Mazda",
+      "code": "B119F:01",
+      "raw_code_as_documented": "B119F:01",
+      "base_code": "B119F",
+      "dtc_family": "B",
+      "code_type": "undetermined_until_SAE_J2012DA_check",
+      "ecu": "TCU",
+      "definition_en": "TEL antenna No.1 malfunction",
+      "translation_ar": "خلل هوائي الهاتف رقم 1",
+      "manufacturer_definition_confirmed": true,
+      "verification_status": "manufacturer_bulletin_definition_for_specific_context",
+      "market": "North America",
+      "source_ids": [
+        "SA02920",
+        "SA04126"
+      ],
+      "applicability": {
+        "models": [
+          {
+            "model": "Mazda3",
+            "model_years": "2019-2020"
+          },
+          {
+            "model": "CX-30",
+            "model_years": "2020"
+          }
+        ],
+        "scope_quality": "manufacturer_alert_scope_not_per_variant_fitment"
+      },
+      "symptoms": [
+        "in-vehicle network malfunction warning"
+      ],
+      "possible_causes": [
+        "Antenna or RF interference from nearby aftermarket devices is a documented possibility"
+      ],
+      "diagnostic_steps": [
+        "Check nearby dash cam/radar detector/toll devices and repeat warning check",
+        "Follow Mazda MGSS TCU antenna circuit diagnosis; no connector pin assumptions"
+      ],
+      "live_data": [],
+      "parts": [],
+      "wiring": "not_documented",
+      "images": [],
+      "review_status": "draft_pending_individual_vin_and_ecu_validation",
+      "scope_note": "Published bulletin range is not proof that every listed vehicle/engine has this DTC; verify VIN and ECU using Mazda RMI."
+    },
+    {
+      "record_id": "MZD-20261116-B119F-13-TCU",
+      "brand": "Mazda",
+      "code": "B119F:13",
+      "raw_code_as_documented": "B119F:13",
+      "base_code": "B119F",
+      "dtc_family": "B",
+      "code_type": "undetermined_until_SAE_J2012DA_check",
+      "ecu": "TCU",
+      "definition_en": "TEL antenna No.1 circuit malfunction",
+      "translation_ar": "خلل دائرة هوائي الهاتف رقم 1",
+      "manufacturer_definition_confirmed": true,
+      "verification_status": "manufacturer_bulletin_definition_for_specific_context",
+      "market": "North America",
+      "source_ids": [
+        "SA02920"
+      ],
+      "applicability": {
+        "models": [
+          {
+            "model": "Mazda3",
+            "model_years": "2019-2020"
+          },
+          {
+            "model": "CX-30",
+            "model_years": "2020"
+          }
+        ],
+        "scope_quality": "manufacturer_alert_scope_not_per_variant_fitment"
+      },
+      "symptoms": [],
+      "possible_causes": [],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "wiring": "not_documented",
+      "images": [],
+      "review_status": "draft_pending_individual_vin_and_ecu_validation",
+      "scope_note": "Published bulletin range is not proof that every listed vehicle/engine has this DTC; verify VIN and ECU using Mazda RMI."
+    },
+    {
+      "record_id": "MZD-20261116-B119F-2B-CMU",
+      "brand": "Mazda",
+      "code": "B119F:2B",
+      "raw_code_as_documented": "B119F:2B",
+      "base_code": "B119F",
+      "dtc_family": "B",
+      "code_type": "undetermined_until_SAE_J2012DA_check",
+      "ecu": "CMU",
+      "definition_en": "GPS antenna signal circuit malfunction",
+      "translation_ar": "خلل في دائرة إشارة هوائي GPS",
+      "manufacturer_definition_confirmed": true,
+      "verification_status": "manufacturer_bulletin_definition_for_specific_context",
+      "market": "North America",
+      "source_ids": [
+        "SA02920"
+      ],
+      "applicability": {
+        "models": [
+          {
+            "model": "Mazda3",
+            "model_years": "2019-2020"
+          },
+          {
+            "model": "CX-30",
+            "model_years": "2020"
+          }
+        ],
+        "scope_quality": "manufacturer_alert_scope_not_per_variant_fitment"
+      },
+      "symptoms": [],
+      "possible_causes": [],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "wiring": "not_documented",
+      "images": [],
+      "review_status": "draft_pending_individual_vin_and_ecu_validation",
+      "scope_note": "Published bulletin range is not proof that every listed vehicle/engine has this DTC; verify VIN and ECU using Mazda RMI."
+    },
+    {
+      "record_id": "MZD-20261116-B1252-87-TCU",
+      "brand": "Mazda",
+      "code": "B1252:87",
+      "raw_code_as_documented": "B1252:87-8B:TCU (SA-012/26 display)",
+      "base_code": "B1252",
+      "dtc_family": "B",
+      "code_type": "undetermined_until_SAE_J2012DA_check",
+      "ecu": "TCU",
+      "definition_en": "Communication error with connectivity master unit (CMU)",
+      "translation_ar": "خطأ اتصال مع وحدة إدارة الاتصال المركزية CMU",
+      "manufacturer_definition_confirmed": true,
+      "verification_status": "manufacturer_bulletin_definition_for_specific_context",
+      "market": "North America",
+      "source_ids": [
+        "SA02920",
+        "SA01226"
+      ],
+      "applicability": {
+        "models": [
+          {
+            "model": "Mazda3",
+            "model_years": "2024-2026"
+          },
+          {
+            "model": "CX-30",
+            "model_years": "2024-2026"
+          },
+          {
+            "model": "CX-90",
+            "model_years": "2024-2026"
+          },
+          {
+            "model": "CX-70",
+            "model_years": "2025-2026"
+          },
+          {
+            "model": "CX-50",
+            "model_years": "2025-2026"
+          }
+        ],
+        "scope_quality": "manufacturer_alert_scope_not_per_vin_fitment"
+      },
+      "symptoms": [
+        "TCU malfunction warning",
+        "connected-vehicle remote or OTP functions may fail"
+      ],
+      "possible_causes": [],
+      "diagnostic_steps": [
+        "Scan TCU and CMU together; preserve DTC status bytes",
+        "Check 12V battery and CMU/TCU connections; apply applicable current Mazda service alert"
+      ],
+      "live_data": [],
+      "parts": [],
+      "wiring": "not_documented",
+      "images": [],
+      "review_status": "draft_pending_individual_vin_and_ecu_validation",
+      "scope_note": "8B appears as diagnostic status in the bulletin display, not verified as a separate failure type code"
+    },
+    {
+      "record_id": "MZD-20261116-U0156-00-VCM",
+      "brand": "Mazda",
+      "code": "U0156:00",
+      "raw_code_as_documented": "U0156:00",
+      "base_code": "U0156",
+      "dtc_family": "U",
+      "code_type": "undetermined_until_SAE_J2012DA_check",
+      "ecu": "VCM",
+      "definition_en": "Communication error with connectivity master unit (CMU)",
+      "translation_ar": "خطأ اتصال وحدة VCM مع وحدة إدارة الاتصال CMU",
+      "manufacturer_definition_confirmed": true,
+      "verification_status": "manufacturer_bulletin_definition_for_specific_context",
+      "market": "North America",
+      "source_ids": [
+        "SA02920"
+      ],
+      "applicability": {
+        "models": [
+          {
+            "model": "Mazda3",
+            "model_years": "2019-2020"
+          },
+          {
+            "model": "CX-30",
+            "model_years": "2020"
+          }
+        ],
+        "scope_quality": "manufacturer_alert_scope_not_per_variant_fitment"
+      },
+      "symptoms": [],
+      "possible_causes": [],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "wiring": "not_documented",
+      "images": [],
+      "review_status": "draft_pending_individual_vin_and_ecu_validation",
+      "scope_note": "Published bulletin range is not proof that every listed vehicle/engine has this DTC; verify VIN and ECU using Mazda RMI."
+    },
+    {
+      "record_id": "MZD-20261116-U0156-00-BCM",
+      "brand": "Mazda",
+      "code": "U0156:00",
+      "raw_code_as_documented": "U0156:00",
+      "base_code": "U0156",
+      "dtc_family": "U",
+      "code_type": "undetermined_until_SAE_J2012DA_check",
+      "ecu": "BCM",
+      "definition_en": "Communication error with connectivity master unit (CMU)",
+      "translation_ar": "خطأ اتصال وحدة BCM مع وحدة إدارة الاتصال CMU",
+      "manufacturer_definition_confirmed": true,
+      "verification_status": "manufacturer_bulletin_definition_for_specific_context",
+      "market": "North America",
+      "source_ids": [
+        "SA02920"
+      ],
+      "applicability": {
+        "models": [
+          {
+            "model": "Mazda3",
+            "model_years": "2019-2020"
+          },
+          {
+            "model": "CX-30",
+            "model_years": "2020"
+          }
+        ],
+        "scope_quality": "manufacturer_alert_scope_not_per_variant_fitment"
+      },
+      "symptoms": [],
+      "possible_causes": [],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "wiring": "not_documented",
+      "images": [],
+      "review_status": "draft_pending_individual_vin_and_ecu_validation",
+      "scope_note": "Published bulletin range is not proof that every listed vehicle/engine has this DTC; verify VIN and ECU using Mazda RMI."
+    },
+    {
+      "record_id": "MZD-20261116-U0198-00-BCM",
+      "brand": "Mazda",
+      "code": "U0198:00",
+      "raw_code_as_documented": "U0198:00",
+      "base_code": "U0198",
+      "dtc_family": "U",
+      "code_type": "undetermined_until_SAE_J2012DA_check",
+      "ecu": "BCM",
+      "definition_en": "Communication error with emergency call unit",
+      "translation_ar": "خطأ اتصال مع وحدة مكالمات الطوارئ",
+      "manufacturer_definition_confirmed": true,
+      "verification_status": "manufacturer_bulletin_definition_for_specific_context",
+      "market": "North America",
+      "source_ids": [
+        "SA02920"
+      ],
+      "applicability": {
+        "models": [
+          {
+            "model": "Mazda3",
+            "model_years": "2019-2020"
+          },
+          {
+            "model": "CX-30",
+            "model_years": "2020"
+          }
+        ],
+        "scope_quality": "manufacturer_alert_scope_not_per_variant_fitment"
+      },
+      "symptoms": [],
+      "possible_causes": [],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "wiring": "not_documented",
+      "images": [],
+      "review_status": "draft_pending_individual_vin_and_ecu_validation",
+      "scope_note": "Published bulletin range is not proof that every listed vehicle/engine has this DTC; verify VIN and ECU using Mazda RMI."
+    },
+    {
+      "record_id": "MZD-20261116-U0198-00-CMU",
+      "brand": "Mazda",
+      "code": "U0198:00",
+      "raw_code_as_documented": "U0198:00-03:CMU (SA-012/26 display)",
+      "base_code": "U0198",
+      "dtc_family": "U",
+      "code_type": "undetermined_until_SAE_J2012DA_check",
+      "ecu": "CMU",
+      "definition_en": "Communication error with emergency call unit/telematics communication unit",
+      "translation_ar": "خطأ اتصال مع وحدة مكالمة الطوارئ/الاتصالات عن بُعد",
+      "manufacturer_definition_confirmed": true,
+      "verification_status": "manufacturer_bulletin_definition_for_specific_context",
+      "market": "North America",
+      "source_ids": [
+        "SA01226"
+      ],
+      "applicability": {
+        "models": [
+          {
+            "model": "Mazda3",
+            "model_years": "2024-2026"
+          },
+          {
+            "model": "CX-30",
+            "model_years": "2024-2026"
+          },
+          {
+            "model": "CX-90",
+            "model_years": "2024-2026"
+          },
+          {
+            "model": "CX-70",
+            "model_years": "2025-2026"
+          },
+          {
+            "model": "CX-50",
+            "model_years": "2025-2026"
+          }
+        ],
+        "scope_quality": "manufacturer_alert_scope_not_per_vin_fitment"
+      },
+      "symptoms": [
+        "TCU malfunction message",
+        "connected remote functions may fail"
+      ],
+      "possible_causes": [],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "wiring": "not_documented",
+      "images": [],
+      "review_status": "draft_pending_individual_vin_and_ecu_validation",
+      "scope_note": "03 is a displayed diagnostic status byte in SA-012/26; verify with MDARS; model scope is SA-012/26 only"
+    },
+    {
+      "record_id": "MZD-20261116-U212D-00-BCM",
+      "brand": "Mazda",
+      "code": "U212D:00",
+      "raw_code_as_documented": "U212D:00",
+      "base_code": "U212D",
+      "dtc_family": "U",
+      "code_type": "undetermined_until_SAE_J2012DA_check",
+      "ecu": "BCM",
+      "definition_en": "Communication error with light control module (RH)",
+      "translation_ar": "خطأ اتصال مع وحدة التحكم بالإضاءة اليمنى",
+      "manufacturer_definition_confirmed": true,
+      "verification_status": "manufacturer_bulletin_definition_for_specific_context",
+      "market": "North America",
+      "source_ids": [
+        "SA02920"
+      ],
+      "applicability": {
+        "models": [
+          {
+            "model": "Mazda3",
+            "model_years": "2019-2020"
+          },
+          {
+            "model": "CX-30",
+            "model_years": "2020"
+          }
+        ],
+        "scope_quality": "manufacturer_alert_scope_not_per_variant_fitment"
+      },
+      "symptoms": [],
+      "possible_causes": [],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "wiring": "not_documented",
+      "images": [],
+      "review_status": "draft_pending_individual_vin_and_ecu_validation",
+      "scope_note": "Published bulletin range is not proof that every listed vehicle/engine has this DTC; verify VIN and ECU using Mazda RMI."
+    },
+    {
+      "record_id": "MZD-20261116-B1041-54-AFS-control-module",
+      "brand": "Mazda",
+      "code": "B1041:54",
+      "raw_code_as_documented": "B1041:54",
+      "base_code": "B1041",
+      "dtc_family": "B",
+      "code_type": "undetermined_until_SAE_J2012DA_check",
+      "ecu": "AFS control module",
+      "definition_en": null,
+      "translation_ar": null,
+      "manufacturer_definition_confirmed": false,
+      "verification_status": "manufacturer_code_and_ecu_mention_only_definition_pending",
+      "market": "North America",
+      "source_ids": [
+        "SA04126"
+      ],
+      "applicability": {
+        "models": [
+          {
+            "model": "Mazda3",
+            "model_years": "2007-2026"
+          },
+          {
+            "model": "Mazda5",
+            "model_years": "2007-2015"
+          },
+          {
+            "model": "CX-5",
+            "model_years": "2013-2026"
+          },
+          {
+            "model": "CX-50",
+            "model_years": "2023-2026"
+          },
+          {
+            "model": "Mazda6",
+            "model_years": "2007-2021"
+          },
+          {
+            "model": "CX-7",
+            "model_years": "2007-2012"
+          },
+          {
+            "model": "CX-3",
+            "model_years": "2016-2023"
+          },
+          {
+            "model": "CX-70",
+            "model_years": "2025-2026"
+          },
+          {
+            "model": "MX-5",
+            "model_years": "2007-2026"
+          },
+          {
+            "model": "CX-9",
+            "model_years": "2007-2023"
+          },
+          {
+            "model": "CX-30",
+            "model_years": "2020-2026"
+          },
+          {
+            "model": "CX-90",
+            "model_years": "2024-2026"
+          },
+          {
+            "model": "RX-8",
+            "model_years": "2007-2011"
+          },
+          {
+            "model": "Mazda2",
+            "model_years": "2011-2023"
+          },
+          {
+            "model": "MX-30",
+            "model_years": "2022-2023"
+          }
+        ],
+        "scope_quality": "alert_overall_models_do_not_assume_every_listed_code_applies_every_year"
+      },
+      "symptoms": [],
+      "possible_causes": [],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "wiring": "not_documented",
+      "images": [],
+      "review_status": "draft_pending_individual_vin_and_ecu_validation",
+      "scope_note": "Published bulletin range is not proof that every listed vehicle/engine has this DTC; verify VIN and ECU using Mazda RMI."
+    },
+    {
+      "record_id": "MZD-20261116-B108E-04-Center-display",
+      "brand": "Mazda",
+      "code": "B108E:04",
+      "raw_code_as_documented": "B108E:04",
+      "base_code": "B108E",
+      "dtc_family": "B",
+      "code_type": "undetermined_until_SAE_J2012DA_check",
+      "ecu": "Center display",
+      "definition_en": "Center display internal malfunction",
+      "translation_ar": "خلل داخلي في الشاشة المركزية",
+      "manufacturer_definition_confirmed": true,
+      "verification_status": "manufacturer_bulletin_definition_for_specific_context",
+      "market": "North America",
+      "source_ids": [
+        "SA04126"
+      ],
+      "applicability": {
+        "models": [
+          {
+            "model": "Mazda3",
+            "model_years": "2007-2026"
+          },
+          {
+            "model": "Mazda5",
+            "model_years": "2007-2015"
+          },
+          {
+            "model": "CX-5",
+            "model_years": "2013-2026"
+          },
+          {
+            "model": "CX-50",
+            "model_years": "2023-2026"
+          },
+          {
+            "model": "Mazda6",
+            "model_years": "2007-2021"
+          },
+          {
+            "model": "CX-7",
+            "model_years": "2007-2012"
+          },
+          {
+            "model": "CX-3",
+            "model_years": "2016-2023"
+          },
+          {
+            "model": "CX-70",
+            "model_years": "2025-2026"
+          },
+          {
+            "model": "MX-5",
+            "model_years": "2007-2026"
+          },
+          {
+            "model": "CX-9",
+            "model_years": "2007-2023"
+          },
+          {
+            "model": "CX-30",
+            "model_years": "2020-2026"
+          },
+          {
+            "model": "CX-90",
+            "model_years": "2024-2026"
+          },
+          {
+            "model": "RX-8",
+            "model_years": "2007-2011"
+          },
+          {
+            "model": "Mazda2",
+            "model_years": "2011-2023"
+          },
+          {
+            "model": "MX-30",
+            "model_years": "2022-2023"
+          }
+        ],
+        "scope_quality": "alert_overall_models_do_not_assume_every_listed_code_applies_every_year"
+      },
+      "symptoms": [],
+      "possible_causes": [],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "wiring": "not_documented",
+      "images": [],
+      "review_status": "draft_pending_individual_vin_and_ecu_validation",
+      "scope_note": "Published bulletin range is not proof that every listed vehicle/engine has this DTC; verify VIN and ECU using Mazda RMI."
+    },
+    {
+      "record_id": "MZD-20261116-C1001-92-Forward-sensing-camera--FSC-",
+      "brand": "Mazda",
+      "code": "C1001:92",
+      "raw_code_as_documented": "C1001:92",
+      "base_code": "C1001",
+      "dtc_family": "C",
+      "code_type": "undetermined_until_SAE_J2012DA_check",
+      "ecu": "Forward sensing camera (FSC)",
+      "definition_en": null,
+      "translation_ar": null,
+      "manufacturer_definition_confirmed": false,
+      "verification_status": "manufacturer_code_and_ecu_mention_only_definition_pending",
+      "market": "North America",
+      "source_ids": [
+        "SA04126"
+      ],
+      "applicability": {
+        "models": [
+          {
+            "model": "Mazda3",
+            "model_years": "2007-2026"
+          },
+          {
+            "model": "Mazda5",
+            "model_years": "2007-2015"
+          },
+          {
+            "model": "CX-5",
+            "model_years": "2013-2026"
+          },
+          {
+            "model": "CX-50",
+            "model_years": "2023-2026"
+          },
+          {
+            "model": "Mazda6",
+            "model_years": "2007-2021"
+          },
+          {
+            "model": "CX-7",
+            "model_years": "2007-2012"
+          },
+          {
+            "model": "CX-3",
+            "model_years": "2016-2023"
+          },
+          {
+            "model": "CX-70",
+            "model_years": "2025-2026"
+          },
+          {
+            "model": "MX-5",
+            "model_years": "2007-2026"
+          },
+          {
+            "model": "CX-9",
+            "model_years": "2007-2023"
+          },
+          {
+            "model": "CX-30",
+            "model_years": "2020-2026"
+          },
+          {
+            "model": "CX-90",
+            "model_years": "2024-2026"
+          },
+          {
+            "model": "RX-8",
+            "model_years": "2007-2011"
+          },
+          {
+            "model": "Mazda2",
+            "model_years": "2011-2023"
+          },
+          {
+            "model": "MX-30",
+            "model_years": "2022-2023"
+          }
+        ],
+        "scope_quality": "alert_overall_models_do_not_assume_every_listed_code_applies_every_year"
+      },
+      "symptoms": [],
+      "possible_causes": [],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "wiring": "not_documented",
+      "images": [],
+      "review_status": "draft_pending_individual_vin_and_ecu_validation",
+      "scope_note": "Published bulletin range is not proof that every listed vehicle/engine has this DTC; verify VIN and ECU using Mazda RMI."
+    },
+    {
+      "record_id": "MZD-20261116-C1001-97-Forward-sensing-camera--FSC-",
+      "brand": "Mazda",
+      "code": "C1001:97",
+      "raw_code_as_documented": "C1001:97",
+      "base_code": "C1001",
+      "dtc_family": "C",
+      "code_type": "undetermined_until_SAE_J2012DA_check",
+      "ecu": "Forward sensing camera (FSC)",
+      "definition_en": null,
+      "translation_ar": null,
+      "manufacturer_definition_confirmed": false,
+      "verification_status": "manufacturer_code_and_ecu_mention_only_definition_pending",
+      "market": "North America",
+      "source_ids": [
+        "SA04126"
+      ],
+      "applicability": {
+        "models": [
+          {
+            "model": "Mazda3",
+            "model_years": "2007-2026"
+          },
+          {
+            "model": "Mazda5",
+            "model_years": "2007-2015"
+          },
+          {
+            "model": "CX-5",
+            "model_years": "2013-2026"
+          },
+          {
+            "model": "CX-50",
+            "model_years": "2023-2026"
+          },
+          {
+            "model": "Mazda6",
+            "model_years": "2007-2021"
+          },
+          {
+            "model": "CX-7",
+            "model_years": "2007-2012"
+          },
+          {
+            "model": "CX-3",
+            "model_years": "2016-2023"
+          },
+          {
+            "model": "CX-70",
+            "model_years": "2025-2026"
+          },
+          {
+            "model": "MX-5",
+            "model_years": "2007-2026"
+          },
+          {
+            "model": "CX-9",
+            "model_years": "2007-2023"
+          },
+          {
+            "model": "CX-30",
+            "model_years": "2020-2026"
+          },
+          {
+            "model": "CX-90",
+            "model_years": "2024-2026"
+          },
+          {
+            "model": "RX-8",
+            "model_years": "2007-2011"
+          },
+          {
+            "model": "Mazda2",
+            "model_years": "2011-2023"
+          },
+          {
+            "model": "MX-30",
+            "model_years": "2022-2023"
+          }
+        ],
+        "scope_quality": "alert_overall_models_do_not_assume_every_listed_code_applies_every_year"
+      },
+      "symptoms": [],
+      "possible_causes": [],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "wiring": "not_documented",
+      "images": [],
+      "review_status": "draft_pending_individual_vin_and_ecu_validation",
+      "scope_note": "Published bulletin range is not proof that every listed vehicle/engine has this DTC; verify VIN and ECU using Mazda RMI."
+    },
+    {
+      "record_id": "MZD-20261116-U300A-62-Electric-parking-brake--EPB-",
+      "brand": "Mazda",
+      "code": "U300A:62",
+      "raw_code_as_documented": "U300A:62",
+      "base_code": "U300A",
+      "dtc_family": "U",
+      "code_type": "undetermined_until_SAE_J2012DA_check",
+      "ecu": "Electric parking brake (EPB)",
+      "definition_en": null,
+      "translation_ar": null,
+      "manufacturer_definition_confirmed": false,
+      "verification_status": "manufacturer_code_and_ecu_mention_only_definition_pending",
+      "market": "North America",
+      "source_ids": [
+        "SA04126"
+      ],
+      "applicability": {
+        "models": [
+          {
+            "model": "Mazda3",
+            "model_years": "2007-2026"
+          },
+          {
+            "model": "Mazda5",
+            "model_years": "2007-2015"
+          },
+          {
+            "model": "CX-5",
+            "model_years": "2013-2026"
+          },
+          {
+            "model": "CX-50",
+            "model_years": "2023-2026"
+          },
+          {
+            "model": "Mazda6",
+            "model_years": "2007-2021"
+          },
+          {
+            "model": "CX-7",
+            "model_years": "2007-2012"
+          },
+          {
+            "model": "CX-3",
+            "model_years": "2016-2023"
+          },
+          {
+            "model": "CX-70",
+            "model_years": "2025-2026"
+          },
+          {
+            "model": "MX-5",
+            "model_years": "2007-2026"
+          },
+          {
+            "model": "CX-9",
+            "model_years": "2007-2023"
+          },
+          {
+            "model": "CX-30",
+            "model_years": "2020-2026"
+          },
+          {
+            "model": "CX-90",
+            "model_years": "2024-2026"
+          },
+          {
+            "model": "RX-8",
+            "model_years": "2007-2011"
+          },
+          {
+            "model": "Mazda2",
+            "model_years": "2011-2023"
+          },
+          {
+            "model": "MX-30",
+            "model_years": "2022-2023"
+          }
+        ],
+        "scope_quality": "alert_overall_models_do_not_assume_every_listed_code_applies_every_year"
+      },
+      "symptoms": [],
+      "possible_causes": [],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "wiring": "not_documented",
+      "images": [],
+      "review_status": "draft_pending_individual_vin_and_ecu_validation",
+      "scope_note": "Published bulletin range is not proof that every listed vehicle/engine has this DTC; verify VIN and ECU using Mazda RMI."
+    },
+    {
+      "record_id": "MZD-20261116-U3004-17-ACC-relay-circuit",
+      "brand": "Mazda",
+      "code": "U3004:17",
+      "raw_code_as_documented": "U3004:17",
+      "base_code": "U3004",
+      "dtc_family": "U",
+      "code_type": "undetermined_until_SAE_J2012DA_check",
+      "ecu": "ACC relay circuit",
+      "definition_en": "ACC relay circuit malfunction",
+      "translation_ar": "خلل في دائرة مرحّل ACC",
+      "manufacturer_definition_confirmed": true,
+      "verification_status": "manufacturer_bulletin_definition_for_specific_context",
+      "market": "North America",
+      "source_ids": [
+        "SA04126"
+      ],
+      "applicability": {
+        "models": [
+          {
+            "model": "Mazda3",
+            "model_years": "2007-2026"
+          },
+          {
+            "model": "Mazda5",
+            "model_years": "2007-2015"
+          },
+          {
+            "model": "CX-5",
+            "model_years": "2013-2026"
+          },
+          {
+            "model": "CX-50",
+            "model_years": "2023-2026"
+          },
+          {
+            "model": "Mazda6",
+            "model_years": "2007-2021"
+          },
+          {
+            "model": "CX-7",
+            "model_years": "2007-2012"
+          },
+          {
+            "model": "CX-3",
+            "model_years": "2016-2023"
+          },
+          {
+            "model": "CX-70",
+            "model_years": "2025-2026"
+          },
+          {
+            "model": "MX-5",
+            "model_years": "2007-2026"
+          },
+          {
+            "model": "CX-9",
+            "model_years": "2007-2023"
+          },
+          {
+            "model": "CX-30",
+            "model_years": "2020-2026"
+          },
+          {
+            "model": "CX-90",
+            "model_years": "2024-2026"
+          },
+          {
+            "model": "RX-8",
+            "model_years": "2007-2011"
+          },
+          {
+            "model": "Mazda2",
+            "model_years": "2011-2023"
+          },
+          {
+            "model": "MX-30",
+            "model_years": "2022-2023"
+          }
+        ],
+        "scope_quality": "alert_overall_models_do_not_assume_every_listed_code_applies_every_year"
+      },
+      "symptoms": [],
+      "possible_causes": [],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "wiring": "not_documented",
+      "images": [],
+      "review_status": "draft_pending_individual_vin_and_ecu_validation",
+      "scope_note": "Published bulletin range is not proof that every listed vehicle/engine has this DTC; verify VIN and ECU using Mazda RMI."
+    },
+    {
+      "record_id": "MZD-20261116-U0415-00-MRCC-SBS",
+      "brand": "Mazda",
+      "code": "U0415:00",
+      "raw_code_as_documented": "U0415:00",
+      "base_code": "U0415",
+      "dtc_family": "U",
+      "code_type": "undetermined_until_SAE_J2012DA_check",
+      "ecu": "MRCC/SBS",
+      "definition_en": null,
+      "translation_ar": null,
+      "manufacturer_definition_confirmed": false,
+      "verification_status": "manufacturer_code_and_ecu_mention_only_definition_pending",
+      "market": "North America",
+      "source_ids": [
+        "SA04126"
+      ],
+      "applicability": {
+        "models": [
+          {
+            "model": "Mazda3",
+            "model_years": "2007-2026"
+          },
+          {
+            "model": "Mazda5",
+            "model_years": "2007-2015"
+          },
+          {
+            "model": "CX-5",
+            "model_years": "2013-2026"
+          },
+          {
+            "model": "CX-50",
+            "model_years": "2023-2026"
+          },
+          {
+            "model": "Mazda6",
+            "model_years": "2007-2021"
+          },
+          {
+            "model": "CX-7",
+            "model_years": "2007-2012"
+          },
+          {
+            "model": "CX-3",
+            "model_years": "2016-2023"
+          },
+          {
+            "model": "CX-70",
+            "model_years": "2025-2026"
+          },
+          {
+            "model": "MX-5",
+            "model_years": "2007-2026"
+          },
+          {
+            "model": "CX-9",
+            "model_years": "2007-2023"
+          },
+          {
+            "model": "CX-30",
+            "model_years": "2020-2026"
+          },
+          {
+            "model": "CX-90",
+            "model_years": "2024-2026"
+          },
+          {
+            "model": "RX-8",
+            "model_years": "2007-2011"
+          },
+          {
+            "model": "Mazda2",
+            "model_years": "2011-2023"
+          },
+          {
+            "model": "MX-30",
+            "model_years": "2022-2023"
+          }
+        ],
+        "scope_quality": "alert_overall_models_do_not_assume_every_listed_code_applies_every_year"
+      },
+      "symptoms": [],
+      "possible_causes": [],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "wiring": "not_documented",
+      "images": [],
+      "review_status": "draft_pending_individual_vin_and_ecu_validation",
+      "scope_note": "Published bulletin range is not proof that every listed vehicle/engine has this DTC; verify VIN and ECU using Mazda RMI."
+    },
+    {
+      "record_id": "MZD-20261116-U0420-00-MRCC-SBS",
+      "brand": "Mazda",
+      "code": "U0420:00",
+      "raw_code_as_documented": "U0420:00",
+      "base_code": "U0420",
+      "dtc_family": "U",
+      "code_type": "undetermined_until_SAE_J2012DA_check",
+      "ecu": "MRCC/SBS",
+      "definition_en": null,
+      "translation_ar": null,
+      "manufacturer_definition_confirmed": false,
+      "verification_status": "manufacturer_code_and_ecu_mention_only_definition_pending",
+      "market": "North America",
+      "source_ids": [
+        "SA04126"
+      ],
+      "applicability": {
+        "models": [
+          {
+            "model": "Mazda3",
+            "model_years": "2007-2026"
+          },
+          {
+            "model": "Mazda5",
+            "model_years": "2007-2015"
+          },
+          {
+            "model": "CX-5",
+            "model_years": "2013-2026"
+          },
+          {
+            "model": "CX-50",
+            "model_years": "2023-2026"
+          },
+          {
+            "model": "Mazda6",
+            "model_years": "2007-2021"
+          },
+          {
+            "model": "CX-7",
+            "model_years": "2007-2012"
+          },
+          {
+            "model": "CX-3",
+            "model_years": "2016-2023"
+          },
+          {
+            "model": "CX-70",
+            "model_years": "2025-2026"
+          },
+          {
+            "model": "MX-5",
+            "model_years": "2007-2026"
+          },
+          {
+            "model": "CX-9",
+            "model_years": "2007-2023"
+          },
+          {
+            "model": "CX-30",
+            "model_years": "2020-2026"
+          },
+          {
+            "model": "CX-90",
+            "model_years": "2024-2026"
+          },
+          {
+            "model": "RX-8",
+            "model_years": "2007-2011"
+          },
+          {
+            "model": "Mazda2",
+            "model_years": "2011-2023"
+          },
+          {
+            "model": "MX-30",
+            "model_years": "2022-2023"
+          }
+        ],
+        "scope_quality": "alert_overall_models_do_not_assume_every_listed_code_applies_every_year"
+      },
+      "symptoms": [],
+      "possible_causes": [],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "wiring": "not_documented",
+      "images": [],
+      "review_status": "draft_pending_individual_vin_and_ecu_validation",
+      "scope_note": "Published bulletin range is not proof that every listed vehicle/engine has this DTC; verify VIN and ECU using Mazda RMI."
+    },
+    {
+      "record_id": "MZD-20261116-B13D3-94-Remote-key-receiver",
+      "brand": "Mazda",
+      "code": "B13D3:94",
+      "raw_code_as_documented": "B13D3:94",
+      "base_code": "B13D3",
+      "dtc_family": "B",
+      "code_type": "undetermined_until_SAE_J2012DA_check",
+      "ecu": "Remote key receiver",
+      "definition_en": "Communication error with remote transmitter",
+      "translation_ar": "خطأ اتصال مع جهاز الإرسال في المفتاح عن بُعد",
+      "manufacturer_definition_confirmed": true,
+      "verification_status": "manufacturer_bulletin_definition_for_specific_context",
+      "market": "North America",
+      "source_ids": [
+        "SA04126"
+      ],
+      "applicability": {
+        "models": [
+          {
+            "model": "Mazda3",
+            "model_years": "2007-2026"
+          },
+          {
+            "model": "Mazda5",
+            "model_years": "2007-2015"
+          },
+          {
+            "model": "CX-5",
+            "model_years": "2013-2026"
+          },
+          {
+            "model": "CX-50",
+            "model_years": "2023-2026"
+          },
+          {
+            "model": "Mazda6",
+            "model_years": "2007-2021"
+          },
+          {
+            "model": "CX-7",
+            "model_years": "2007-2012"
+          },
+          {
+            "model": "CX-3",
+            "model_years": "2016-2023"
+          },
+          {
+            "model": "CX-70",
+            "model_years": "2025-2026"
+          },
+          {
+            "model": "MX-5",
+            "model_years": "2007-2026"
+          },
+          {
+            "model": "CX-9",
+            "model_years": "2007-2023"
+          },
+          {
+            "model": "CX-30",
+            "model_years": "2020-2026"
+          },
+          {
+            "model": "CX-90",
+            "model_years": "2024-2026"
+          },
+          {
+            "model": "RX-8",
+            "model_years": "2007-2011"
+          },
+          {
+            "model": "Mazda2",
+            "model_years": "2011-2023"
+          },
+          {
+            "model": "MX-30",
+            "model_years": "2022-2023"
+          }
+        ],
+        "scope_quality": "alert_overall_models_do_not_assume_every_listed_code_applies_every_year"
+      },
+      "symptoms": [],
+      "possible_causes": [],
+      "diagnostic_steps": [],
+      "live_data": [],
+      "parts": [],
+      "wiring": "not_documented",
+      "images": [],
+      "review_status": "draft_pending_individual_vin_and_ecu_validation",
+      "scope_note": "Published bulletin range is not proof that every listed vehicle/engine has this DTC; verify VIN and ECU using Mazda RMI."
+    },
+    {
+      "record_id": "MZD-20261116-C0023-14-Brake-light-circuit",
+      "brand": "Mazda",
+      "code": "C0023:14",
+      "raw_code_as_documented": "C0023:14",
+      "base_code": "C0023",
+      "dtc_family": "C",
+      "code_type": "undetermined_until_SAE_J2012DA_check",
+      "ecu": "Brake light circuit",
+      "definition_en": "Brake light circuit malfunction",
+      "translation_ar": "خلل في دائرة مصابيح الفرامل",
+      "manufacturer_definition_confirmed": true,
+      "verification_status": "manufacturer_bulletin_definition_for_specific_context",
+      "market": "North America",
+      "source_ids": [
+        "SA04126"
+      ],
+      "applicability": {
+        "models": [
+          {
+            "model": "Mazda3",
+            "model_years": "2007-2026"
+          },
+          {
+            "model": "Mazda5",
+            "model_years": "2007-2015"
+          },
+          {
+            "model": "CX-5",
+            "model_years": "2013-2026"
+          },
+          {
+            "model": "CX-50",
+            "model_years": "2023-2026"
+          },
+          {
+            "model": "Mazda6",
+            "model_years": "2007-2021"
+          },
+          {
+            "model": "CX-7",
+            "model_years": "2007-2012"
+          },
+          {
+            "model": "CX-3",
+            "model_years": "2016-2023"
+          },
+          {
+            "model": "CX-70",
+            "model_years": "2025-2026"
+          },
+          {
+            "model": "MX-5",
+            "model_years": "2007-2026"
+          },
+          {
+            "model": "CX-9",
+            "model_years": "2007-2023"
+          },
+          {
+            "model": "CX-30",
+            "model_years": "2020-2026"
+          },
+          {
+            "model": "CX-90",
+            "model_years": "2024-2026"
+          },
+          {
+            "model": "RX-8",
+            "model_years": "2007-2011"
+          },
+          {
+            "model": "Mazda2",
+            "model_years": "2011-2023"
+          },
+          {
+            "model": "MX-30",
+            "model_years": "2022-2023"
+          }
+        ],
+        "scope_quality": "alert_overall_models_do_not_assume_every_listed_code_applies_every_year"
+      },
+      "symptoms": [],
+      "possible_causes": [
+        "Aftermarket brake-light strobe may affect circuit; do not assume OEM lamp failure"
+      ],
+      "diagnostic_steps": [
+        "Inspect aftermarket brake light flasher wiring before replacing original components"
+      ],
+      "live_data": [],
+      "parts": [],
+      "wiring": "not_documented",
+      "images": [],
+      "review_status": "draft_pending_individual_vin_and_ecu_validation",
+      "scope_note": "Published bulletin range is not proof that every listed vehicle/engine has this DTC; verify VIN and ECU using Mazda RMI."
+    },
+    {
+      "record_id": "MZD-20261116-B1182-06-Tire-position-detection",
+      "brand": "Mazda",
+      "code": "B1182:06",
+      "raw_code_as_documented": "B1182:06",
+      "base_code": "B1182",
+      "dtc_family": "B",
+      "code_type": "undetermined_until_SAE_J2012DA_check",
+      "ecu": "Tire position detection",
+      "definition_en": "Tire position not detected",
+      "translation_ar": "تعذّر تحديد موضع الإطار",
+      "manufacturer_definition_confirmed": true,
+      "verification_status": "manufacturer_bulletin_definition_for_specific_context",
+      "market": "North America",
+      "source_ids": [
+        "SA04126"
+      ],
+      "applicability": {
+        "models": [
+          {
+            "model": "Mazda3",
+            "model_years": "2007-2026"
+          },
+          {
+            "model": "Mazda5",
+            "model_years": "2007-2015"
+          },
+          {
+            "model": "CX-5",
+            "model_years": "2013-2026"
+          },
+          {
+            "model": "CX-50",
+            "model_years": "2023-2026"
+          },
+          {
+            "model": "Mazda6",
+            "model_years": "2007-2021"
+          },
+          {
+            "model": "CX-7",
+            "model_years": "2007-2012"
+          },
+          {
+            "model": "CX-3",
+            "model_years": "2016-2023"
+          },
+          {
+            "model": "CX-70",
+            "model_years": "2025-2026"
+          },
+          {
+            "model": "MX-5",
+            "model_years": "2007-2026"
+          },
+          {
+            "model": "CX-9",
+            "model_years": "2007-2023"
+          },
+          {
+            "model": "CX-30",
+            "model_years": "2020-2026"
+          },
+          {
+            "model": "CX-90",
+            "model_years": "2024-2026"
+          },
+          {
+            "model": "RX-8",
+            "model_years": "2007-2011"
+          },
+          {
+            "model": "Mazda2",
+            "model_years": "2011-2023"
+          },
+          {
+            "model": "MX-30",
+            "model_years": "2022-2023"
+          }
+        ],
+        "scope_quality": "alert_overall_models_do_not_assume_every_listed_code_applies_every_year"
+      },
+      "symptoms": [],
+      "possible_causes": [
+        "Aftermarket powered air freshener may cause RF interference"
+      ],
+      "diagnostic_steps": [
+        "Check for aftermarket electrically powered diffuser and retest with it disconnected"
+      ],
+      "live_data": [],
+      "parts": [],
+      "wiring": "not_documented",
+      "images": [],
+      "review_status": "draft_pending_individual_vin_and_ecu_validation",
+      "scope_note": "Published bulletin range is not proof that every listed vehicle/engine has this DTC; verify VIN and ECU using Mazda RMI."
+    }
+  ]
+}
