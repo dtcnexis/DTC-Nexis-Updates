@@ -1,0 +1,1868 @@
+{
+  "schema": "dtcnexis.volkswagen.oem-tsb-context.v1",
+  "batch": "VOLKSWAGEN_20261116_BATCH02",
+  "brand": "Volkswagen",
+  "created_on": "2026-11-16",
+  "records": [
+    {
+      "brand": "Volkswagen",
+      "code_original": "P0C29",
+      "code_base": "P0C29",
+      "code_format": "5-character OBD/VAG-form as stated by bulletin; NO UDS suffix available",
+      "family": "P",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Transmission Control Module J217 (DSG 0GC)",
+      "ecu_address": "0002",
+      "definition_en": "Auxiliary gearbox oil hydraulic pump activation implausible",
+      "translation_ar": "إشارة غير منطقية لتنشيط المضخة الهيدروليكية المساعدة لزيت ناقل الحركة",
+      "model": "Golf R",
+      "model_years": [
+        2018
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": "DJJA",
+      "transmission_code": "0GC DSG",
+      "vin_range": {
+        "from": "AU_JW035525",
+        "to": "AU_JW181595",
+        "comparison_requires_correct_vin_format": true
+      },
+      "symptom_codes": [],
+      "diagnostic_steps": [
+        "Capture original scan, freeze frame, hardware/software and confirm UDS suffix if available; bulletin lists only 5-character code.",
+        "Confirm VIN scope, engine DJJA, DSG 0GC and whether 34K1 was completed.",
+        "For secondary code, check presence of P0C29; without P0C29 the bulletin does not authorize applying the same procedure.",
+        "Do not decide transmission replacement solely from these faults; use official Service Action 34K1 section C / Elsa VIN-matched repair procedure.",
+        "After authorized action, run ODIS GFF and retest as manufacturer directs."
+      ],
+      "source_ids": [
+        "VW-2070973-2",
+        "VW-2070973-1"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250796-0001.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10241181-0001.pdf"
+      ],
+      "precondition": "Golf R VIN in listed range; code P0C29 occurs AFTER Service Action 34K1 for bulletin logic",
+      "dtc_role": "primary bulletin DTC",
+      "affected_parts": [
+        "Auxiliary gearbox oil pump V475 is identified as system context; do not automatically infer failure or part replacement."
+      ],
+      "source_verification": "official_document_context_verified",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2070973-J217-DJJA-0GC-P0C29",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": "The listed primary fault is mandatory for this specific TSB."
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "P175E",
+      "code_base": "P175E",
+      "code_format": "5-character OBD/VAG-form as stated by bulletin; NO UDS suffix available",
+      "family": "P",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Transmission Control Module J217 (DSG 0GC)",
+      "ecu_address": "0002",
+      "definition_en": "Clutch 1 closes without command",
+      "translation_ar": "انغلاق القابض الأول دون طلب",
+      "model": "Golf R",
+      "model_years": [
+        2018
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": "DJJA",
+      "transmission_code": "0GC DSG",
+      "vin_range": {
+        "from": "AU_JW035525",
+        "to": "AU_JW181595",
+        "comparison_requires_correct_vin_format": true
+      },
+      "symptom_codes": [],
+      "diagnostic_steps": [
+        "Capture original scan, freeze frame, hardware/software and confirm UDS suffix if available; bulletin lists only 5-character code.",
+        "Confirm VIN scope, engine DJJA, DSG 0GC and whether 34K1 was completed.",
+        "For secondary code, check presence of P0C29; without P0C29 the bulletin does not authorize applying the same procedure.",
+        "Do not decide transmission replacement solely from these faults; use official Service Action 34K1 section C / Elsa VIN-matched repair procedure.",
+        "After authorized action, run ODIS GFF and retest as manufacturer directs."
+      ],
+      "source_ids": [
+        "VW-2070973-2",
+        "VW-2070973-1"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250796-0001.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10241181-0001.pdf"
+      ],
+      "precondition": "Golf R VIN in listed range; code P0C29 occurs AFTER Service Action 34K1 for bulletin logic",
+      "dtc_role": "secondary code ONLY when accompanied by P0C29",
+      "affected_parts": [
+        "Auxiliary gearbox oil pump V475 is identified as system context; do not automatically infer failure or part replacement."
+      ],
+      "source_verification": "official_document_context_verified",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2070973-J217-DJJA-0GC-P175E",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": "The source calls this a possible consequential fault; not proof of failed individual valve/clutch/gear-positioner."
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "P176F",
+      "code_base": "P176F",
+      "code_format": "5-character OBD/VAG-form as stated by bulletin; NO UDS suffix available",
+      "family": "P",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Transmission Control Module J217 (DSG 0GC)",
+      "ecu_address": "0002",
+      "definition_en": "Clutch 2 closes without command",
+      "translation_ar": "انغلاق القابض الثاني دون طلب",
+      "model": "Golf R",
+      "model_years": [
+        2018
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": "DJJA",
+      "transmission_code": "0GC DSG",
+      "vin_range": {
+        "from": "AU_JW035525",
+        "to": "AU_JW181595",
+        "comparison_requires_correct_vin_format": true
+      },
+      "symptom_codes": [],
+      "diagnostic_steps": [
+        "Capture original scan, freeze frame, hardware/software and confirm UDS suffix if available; bulletin lists only 5-character code.",
+        "Confirm VIN scope, engine DJJA, DSG 0GC and whether 34K1 was completed.",
+        "For secondary code, check presence of P0C29; without P0C29 the bulletin does not authorize applying the same procedure.",
+        "Do not decide transmission replacement solely from these faults; use official Service Action 34K1 section C / Elsa VIN-matched repair procedure.",
+        "After authorized action, run ODIS GFF and retest as manufacturer directs."
+      ],
+      "source_ids": [
+        "VW-2070973-2",
+        "VW-2070973-1"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250796-0001.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10241181-0001.pdf"
+      ],
+      "precondition": "Golf R VIN in listed range; code P0C29 occurs AFTER Service Action 34K1 for bulletin logic",
+      "dtc_role": "secondary code ONLY when accompanied by P0C29",
+      "affected_parts": [
+        "Auxiliary gearbox oil pump V475 is identified as system context; do not automatically infer failure or part replacement."
+      ],
+      "source_verification": "official_document_context_verified",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2070973-J217-DJJA-0GC-P176F",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": "The source calls this a possible consequential fault; not proof of failed individual valve/clutch/gear-positioner."
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "P175D",
+      "code_base": "P175D",
+      "code_format": "5-character OBD/VAG-form as stated by bulletin; NO UDS suffix available",
+      "family": "P",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Transmission Control Module J217 (DSG 0GC)",
+      "ecu_address": "0002",
+      "definition_en": "Clutch 1 opens without command",
+      "translation_ar": "فتح القابض الأول دون طلب",
+      "model": "Golf R",
+      "model_years": [
+        2018
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": "DJJA",
+      "transmission_code": "0GC DSG",
+      "vin_range": {
+        "from": "AU_JW035525",
+        "to": "AU_JW181595",
+        "comparison_requires_correct_vin_format": true
+      },
+      "symptom_codes": [],
+      "diagnostic_steps": [
+        "Capture original scan, freeze frame, hardware/software and confirm UDS suffix if available; bulletin lists only 5-character code.",
+        "Confirm VIN scope, engine DJJA, DSG 0GC and whether 34K1 was completed.",
+        "For secondary code, check presence of P0C29; without P0C29 the bulletin does not authorize applying the same procedure.",
+        "Do not decide transmission replacement solely from these faults; use official Service Action 34K1 section C / Elsa VIN-matched repair procedure.",
+        "After authorized action, run ODIS GFF and retest as manufacturer directs."
+      ],
+      "source_ids": [
+        "VW-2070973-2",
+        "VW-2070973-1"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250796-0001.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10241181-0001.pdf"
+      ],
+      "precondition": "Golf R VIN in listed range; code P0C29 occurs AFTER Service Action 34K1 for bulletin logic",
+      "dtc_role": "secondary code ONLY when accompanied by P0C29",
+      "affected_parts": [
+        "Auxiliary gearbox oil pump V475 is identified as system context; do not automatically infer failure or part replacement."
+      ],
+      "source_verification": "official_document_context_verified",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2070973-J217-DJJA-0GC-P175D",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": "The source calls this a possible consequential fault; not proof of failed individual valve/clutch/gear-positioner."
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "P176E",
+      "code_base": "P176E",
+      "code_format": "5-character OBD/VAG-form as stated by bulletin; NO UDS suffix available",
+      "family": "P",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Transmission Control Module J217 (DSG 0GC)",
+      "ecu_address": "0002",
+      "definition_en": "Clutch 2 opens without command",
+      "translation_ar": "فتح القابض الثاني دون طلب",
+      "model": "Golf R",
+      "model_years": [
+        2018
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": "DJJA",
+      "transmission_code": "0GC DSG",
+      "vin_range": {
+        "from": "AU_JW035525",
+        "to": "AU_JW181595",
+        "comparison_requires_correct_vin_format": true
+      },
+      "symptom_codes": [],
+      "diagnostic_steps": [
+        "Capture original scan, freeze frame, hardware/software and confirm UDS suffix if available; bulletin lists only 5-character code.",
+        "Confirm VIN scope, engine DJJA, DSG 0GC and whether 34K1 was completed.",
+        "For secondary code, check presence of P0C29; without P0C29 the bulletin does not authorize applying the same procedure.",
+        "Do not decide transmission replacement solely from these faults; use official Service Action 34K1 section C / Elsa VIN-matched repair procedure.",
+        "After authorized action, run ODIS GFF and retest as manufacturer directs."
+      ],
+      "source_ids": [
+        "VW-2070973-2",
+        "VW-2070973-1"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250796-0001.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10241181-0001.pdf"
+      ],
+      "precondition": "Golf R VIN in listed range; code P0C29 occurs AFTER Service Action 34K1 for bulletin logic",
+      "dtc_role": "secondary code ONLY when accompanied by P0C29",
+      "affected_parts": [
+        "Auxiliary gearbox oil pump V475 is identified as system context; do not automatically infer failure or part replacement."
+      ],
+      "source_verification": "official_document_context_verified",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2070973-J217-DJJA-0GC-P176E",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": "The source calls this a possible consequential fault; not proof of failed individual valve/clutch/gear-positioner."
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "P072C",
+      "code_base": "P072C",
+      "code_format": "5-character OBD/VAG-form as stated by bulletin; NO UDS suffix available",
+      "family": "P",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Transmission Control Module J217 (DSG 0GC)",
+      "ecu_address": "0002",
+      "definition_en": "First gear cannot be engaged/adjusted",
+      "translation_ar": "تعذر تعشيق أو ضبط الترس الأول",
+      "model": "Golf R",
+      "model_years": [
+        2018
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": "DJJA",
+      "transmission_code": "0GC DSG",
+      "vin_range": {
+        "from": "AU_JW035525",
+        "to": "AU_JW181595",
+        "comparison_requires_correct_vin_format": true
+      },
+      "symptom_codes": [],
+      "diagnostic_steps": [
+        "Capture original scan, freeze frame, hardware/software and confirm UDS suffix if available; bulletin lists only 5-character code.",
+        "Confirm VIN scope, engine DJJA, DSG 0GC and whether 34K1 was completed.",
+        "For secondary code, check presence of P0C29; without P0C29 the bulletin does not authorize applying the same procedure.",
+        "Do not decide transmission replacement solely from these faults; use official Service Action 34K1 section C / Elsa VIN-matched repair procedure.",
+        "After authorized action, run ODIS GFF and retest as manufacturer directs."
+      ],
+      "source_ids": [
+        "VW-2070973-2",
+        "VW-2070973-1"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250796-0001.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10241181-0001.pdf"
+      ],
+      "precondition": "Golf R VIN in listed range; code P0C29 occurs AFTER Service Action 34K1 for bulletin logic",
+      "dtc_role": "secondary code ONLY when accompanied by P0C29",
+      "affected_parts": [
+        "Auxiliary gearbox oil pump V475 is identified as system context; do not automatically infer failure or part replacement."
+      ],
+      "source_verification": "official_document_context_verified",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2070973-J217-DJJA-0GC-P072C",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": "The source calls this a possible consequential fault; not proof of failed individual valve/clutch/gear-positioner."
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "P176A",
+      "code_base": "P176A",
+      "code_format": "5-character OBD/VAG-form as stated by bulletin; NO UDS suffix available",
+      "family": "P",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Transmission Control Module J217 (DSG 0GC)",
+      "ecu_address": "0002",
+      "definition_en": "Gear positioner 1 cannot be regulated",
+      "translation_ar": "تعذر تنظيم موضع مشغل التروس الأول",
+      "model": "Golf R",
+      "model_years": [
+        2018
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": "DJJA",
+      "transmission_code": "0GC DSG",
+      "vin_range": {
+        "from": "AU_JW035525",
+        "to": "AU_JW181595",
+        "comparison_requires_correct_vin_format": true
+      },
+      "symptom_codes": [],
+      "diagnostic_steps": [
+        "Capture original scan, freeze frame, hardware/software and confirm UDS suffix if available; bulletin lists only 5-character code.",
+        "Confirm VIN scope, engine DJJA, DSG 0GC and whether 34K1 was completed.",
+        "For secondary code, check presence of P0C29; without P0C29 the bulletin does not authorize applying the same procedure.",
+        "Do not decide transmission replacement solely from these faults; use official Service Action 34K1 section C / Elsa VIN-matched repair procedure.",
+        "After authorized action, run ODIS GFF and retest as manufacturer directs."
+      ],
+      "source_ids": [
+        "VW-2070973-2",
+        "VW-2070973-1"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250796-0001.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10241181-0001.pdf"
+      ],
+      "precondition": "Golf R VIN in listed range; code P0C29 occurs AFTER Service Action 34K1 for bulletin logic",
+      "dtc_role": "secondary code ONLY when accompanied by P0C29",
+      "affected_parts": [
+        "Auxiliary gearbox oil pump V475 is identified as system context; do not automatically infer failure or part replacement."
+      ],
+      "source_verification": "official_document_context_verified",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2070973-J217-DJJA-0GC-P176A",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": "The source calls this a possible consequential fault; not proof of failed individual valve/clutch/gear-positioner."
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "P176B",
+      "code_base": "P176B",
+      "code_format": "5-character OBD/VAG-form as stated by bulletin; NO UDS suffix available",
+      "family": "P",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Transmission Control Module J217 (DSG 0GC)",
+      "ecu_address": "0002",
+      "definition_en": "Gear positioner 2 cannot be regulated",
+      "translation_ar": "تعذر تنظيم موضع مشغل التروس الثاني",
+      "model": "Golf R",
+      "model_years": [
+        2018
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": "DJJA",
+      "transmission_code": "0GC DSG",
+      "vin_range": {
+        "from": "AU_JW035525",
+        "to": "AU_JW181595",
+        "comparison_requires_correct_vin_format": true
+      },
+      "symptom_codes": [],
+      "diagnostic_steps": [
+        "Capture original scan, freeze frame, hardware/software and confirm UDS suffix if available; bulletin lists only 5-character code.",
+        "Confirm VIN scope, engine DJJA, DSG 0GC and whether 34K1 was completed.",
+        "For secondary code, check presence of P0C29; without P0C29 the bulletin does not authorize applying the same procedure.",
+        "Do not decide transmission replacement solely from these faults; use official Service Action 34K1 section C / Elsa VIN-matched repair procedure.",
+        "After authorized action, run ODIS GFF and retest as manufacturer directs."
+      ],
+      "source_ids": [
+        "VW-2070973-2",
+        "VW-2070973-1"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250796-0001.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10241181-0001.pdf"
+      ],
+      "precondition": "Golf R VIN in listed range; code P0C29 occurs AFTER Service Action 34K1 for bulletin logic",
+      "dtc_role": "secondary code ONLY when accompanied by P0C29",
+      "affected_parts": [
+        "Auxiliary gearbox oil pump V475 is identified as system context; do not automatically infer failure or part replacement."
+      ],
+      "source_verification": "official_document_context_verified",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2070973-J217-DJJA-0GC-P176B",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": "The source calls this a possible consequential fault; not proof of failed individual valve/clutch/gear-positioner."
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "P176C",
+      "code_base": "P176C",
+      "code_format": "5-character OBD/VAG-form as stated by bulletin; NO UDS suffix available",
+      "family": "P",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Transmission Control Module J217 (DSG 0GC)",
+      "ecu_address": "0002",
+      "definition_en": "Gear positioner 3 cannot be regulated",
+      "translation_ar": "تعذر تنظيم موضع مشغل التروس الثالث",
+      "model": "Golf R",
+      "model_years": [
+        2018
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": "DJJA",
+      "transmission_code": "0GC DSG",
+      "vin_range": {
+        "from": "AU_JW035525",
+        "to": "AU_JW181595",
+        "comparison_requires_correct_vin_format": true
+      },
+      "symptom_codes": [],
+      "diagnostic_steps": [
+        "Capture original scan, freeze frame, hardware/software and confirm UDS suffix if available; bulletin lists only 5-character code.",
+        "Confirm VIN scope, engine DJJA, DSG 0GC and whether 34K1 was completed.",
+        "For secondary code, check presence of P0C29; without P0C29 the bulletin does not authorize applying the same procedure.",
+        "Do not decide transmission replacement solely from these faults; use official Service Action 34K1 section C / Elsa VIN-matched repair procedure.",
+        "After authorized action, run ODIS GFF and retest as manufacturer directs."
+      ],
+      "source_ids": [
+        "VW-2070973-2",
+        "VW-2070973-1"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250796-0001.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10241181-0001.pdf"
+      ],
+      "precondition": "Golf R VIN in listed range; code P0C29 occurs AFTER Service Action 34K1 for bulletin logic",
+      "dtc_role": "secondary code ONLY when accompanied by P0C29",
+      "affected_parts": [
+        "Auxiliary gearbox oil pump V475 is identified as system context; do not automatically infer failure or part replacement."
+      ],
+      "source_verification": "official_document_context_verified",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2070973-J217-DJJA-0GC-P176C",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": "The source calls this a possible consequential fault; not proof of failed individual valve/clutch/gear-positioner."
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "P176D",
+      "code_base": "P176D",
+      "code_format": "5-character OBD/VAG-form as stated by bulletin; NO UDS suffix available",
+      "family": "P",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Transmission Control Module J217 (DSG 0GC)",
+      "ecu_address": "0002",
+      "definition_en": "Gear positioner 4 cannot be regulated",
+      "translation_ar": "تعذر تنظيم موضع مشغل التروس الرابع",
+      "model": "Golf R",
+      "model_years": [
+        2018
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": "DJJA",
+      "transmission_code": "0GC DSG",
+      "vin_range": {
+        "from": "AU_JW035525",
+        "to": "AU_JW181595",
+        "comparison_requires_correct_vin_format": true
+      },
+      "symptom_codes": [],
+      "diagnostic_steps": [
+        "Capture original scan, freeze frame, hardware/software and confirm UDS suffix if available; bulletin lists only 5-character code.",
+        "Confirm VIN scope, engine DJJA, DSG 0GC and whether 34K1 was completed.",
+        "For secondary code, check presence of P0C29; without P0C29 the bulletin does not authorize applying the same procedure.",
+        "Do not decide transmission replacement solely from these faults; use official Service Action 34K1 section C / Elsa VIN-matched repair procedure.",
+        "After authorized action, run ODIS GFF and retest as manufacturer directs."
+      ],
+      "source_ids": [
+        "VW-2070973-2",
+        "VW-2070973-1"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250796-0001.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10241181-0001.pdf"
+      ],
+      "precondition": "Golf R VIN in listed range; code P0C29 occurs AFTER Service Action 34K1 for bulletin logic",
+      "dtc_role": "secondary code ONLY when accompanied by P0C29",
+      "affected_parts": [
+        "Auxiliary gearbox oil pump V475 is identified as system context; do not automatically infer failure or part replacement."
+      ],
+      "source_verification": "official_document_context_verified",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2070973-J217-DJJA-0GC-P176D",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": "The source calls this a possible consequential fault; not proof of failed individual valve/clutch/gear-positioner."
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "P072B",
+      "code_base": "P072B",
+      "code_format": "5-character OBD/VAG-form as stated by bulletin; NO UDS suffix available",
+      "family": "P",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Transmission Control Module J217 (DSG 0GC)",
+      "ecu_address": "0002",
+      "definition_en": "Reverse gear cannot be engaged/adjusted",
+      "translation_ar": "تعذر تعشيق أو ضبط ترس الرجوع للخلف",
+      "model": "Golf R",
+      "model_years": [
+        2018
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": "DJJA",
+      "transmission_code": "0GC DSG",
+      "vin_range": {
+        "from": "AU_JW035525",
+        "to": "AU_JW181595",
+        "comparison_requires_correct_vin_format": true
+      },
+      "symptom_codes": [],
+      "diagnostic_steps": [
+        "Capture original scan, freeze frame, hardware/software and confirm UDS suffix if available; bulletin lists only 5-character code.",
+        "Confirm VIN scope, engine DJJA, DSG 0GC and whether 34K1 was completed.",
+        "For secondary code, check presence of P0C29; without P0C29 the bulletin does not authorize applying the same procedure.",
+        "Do not decide transmission replacement solely from these faults; use official Service Action 34K1 section C / Elsa VIN-matched repair procedure.",
+        "After authorized action, run ODIS GFF and retest as manufacturer directs."
+      ],
+      "source_ids": [
+        "VW-2070973-2",
+        "VW-2070973-1"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250796-0001.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10241181-0001.pdf"
+      ],
+      "precondition": "Golf R VIN in listed range; code P0C29 occurs AFTER Service Action 34K1 for bulletin logic",
+      "dtc_role": "secondary code ONLY when accompanied by P0C29",
+      "affected_parts": [
+        "Auxiliary gearbox oil pump V475 is identified as system context; do not automatically infer failure or part replacement."
+      ],
+      "source_verification": "official_document_context_verified",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2070973-J217-DJJA-0GC-P072B",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": "The source calls this a possible consequential fault; not proof of failed individual valve/clutch/gear-positioner."
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "P0810",
+      "code_base": "P0810",
+      "code_format": "5-character OBD/VAG-form as stated by bulletin; NO UDS suffix available",
+      "family": "P",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Transmission Control Module J217 (DSG 0GC)",
+      "ecu_address": "0002",
+      "definition_en": "Clutch control malfunction",
+      "translation_ar": "خلل بمنظومة التحكم بالقابض",
+      "model": "Golf R",
+      "model_years": [
+        2018
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": "DJJA",
+      "transmission_code": "0GC DSG",
+      "vin_range": {
+        "from": "AU_JW035525",
+        "to": "AU_JW181595",
+        "comparison_requires_correct_vin_format": true
+      },
+      "symptom_codes": [],
+      "diagnostic_steps": [
+        "Capture original scan, freeze frame, hardware/software and confirm UDS suffix if available; bulletin lists only 5-character code.",
+        "Confirm VIN scope, engine DJJA, DSG 0GC and whether 34K1 was completed.",
+        "For secondary code, check presence of P0C29; without P0C29 the bulletin does not authorize applying the same procedure.",
+        "Do not decide transmission replacement solely from these faults; use official Service Action 34K1 section C / Elsa VIN-matched repair procedure.",
+        "After authorized action, run ODIS GFF and retest as manufacturer directs."
+      ],
+      "source_ids": [
+        "VW-2070973-2",
+        "VW-2070973-1"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250796-0001.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10241181-0001.pdf"
+      ],
+      "precondition": "Golf R VIN in listed range; code P0C29 occurs AFTER Service Action 34K1 for bulletin logic",
+      "dtc_role": "secondary code ONLY when accompanied by P0C29",
+      "affected_parts": [
+        "Auxiliary gearbox oil pump V475 is identified as system context; do not automatically infer failure or part replacement."
+      ],
+      "source_verification": "official_document_context_verified",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2070973-J217-DJJA-0GC-P0810",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": "The source calls this a possible consequential fault; not proof of failed individual valve/clutch/gear-positioner."
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "P0607",
+      "code_base": "P0607",
+      "code_format": "5-character OBD/VAG-form as stated by bulletin; NO UDS suffix available",
+      "family": "P",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Transmission Control Module J217 (DSG 0GC)",
+      "ecu_address": "0002",
+      "definition_en": "Control unit implausible response",
+      "translation_ar": "استجابة غير منطقية من وحدة التحكم",
+      "model": "Golf R",
+      "model_years": [
+        2018
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": "DJJA",
+      "transmission_code": "0GC DSG",
+      "vin_range": {
+        "from": "AU_JW035525",
+        "to": "AU_JW181595",
+        "comparison_requires_correct_vin_format": true
+      },
+      "symptom_codes": [],
+      "diagnostic_steps": [
+        "Capture original scan, freeze frame, hardware/software and confirm UDS suffix if available; bulletin lists only 5-character code.",
+        "Confirm VIN scope, engine DJJA, DSG 0GC and whether 34K1 was completed.",
+        "For secondary code, check presence of P0C29; without P0C29 the bulletin does not authorize applying the same procedure.",
+        "Do not decide transmission replacement solely from these faults; use official Service Action 34K1 section C / Elsa VIN-matched repair procedure.",
+        "After authorized action, run ODIS GFF and retest as manufacturer directs."
+      ],
+      "source_ids": [
+        "VW-2070973-2",
+        "VW-2070973-1"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250796-0001.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10241181-0001.pdf"
+      ],
+      "precondition": "Golf R VIN in listed range; code P0C29 occurs AFTER Service Action 34K1 for bulletin logic",
+      "dtc_role": "secondary code ONLY when accompanied by P0C29",
+      "affected_parts": [
+        "Auxiliary gearbox oil pump V475 is identified as system context; do not automatically infer failure or part replacement."
+      ],
+      "source_verification": "official_document_context_verified",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2070973-J217-DJJA-0GC-P0607",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": "The source calls this a possible consequential fault; not proof of failed individual valve/clutch/gear-positioner."
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "P1899",
+      "code_base": "P1899",
+      "code_format": "5-character OBD/VAG-form as stated by bulletin; NO UDS suffix available",
+      "family": "P",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Transmission Control Module J217 (DSG 0GC)",
+      "ecu_address": "0002",
+      "definition_en": "Clutch 2 function restricted",
+      "translation_ar": "تقييد وظيفة القابض الثاني",
+      "model": "Golf R",
+      "model_years": [
+        2018
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": "DJJA",
+      "transmission_code": "0GC DSG",
+      "vin_range": {
+        "from": "AU_JW035525",
+        "to": "AU_JW181595",
+        "comparison_requires_correct_vin_format": true
+      },
+      "symptom_codes": [],
+      "diagnostic_steps": [
+        "Capture original scan, freeze frame, hardware/software and confirm UDS suffix if available; bulletin lists only 5-character code.",
+        "Confirm VIN scope, engine DJJA, DSG 0GC and whether 34K1 was completed.",
+        "For secondary code, check presence of P0C29; without P0C29 the bulletin does not authorize applying the same procedure.",
+        "Do not decide transmission replacement solely from these faults; use official Service Action 34K1 section C / Elsa VIN-matched repair procedure.",
+        "After authorized action, run ODIS GFF and retest as manufacturer directs."
+      ],
+      "source_ids": [
+        "VW-2070973-2",
+        "VW-2070973-1"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250796-0001.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10241181-0001.pdf"
+      ],
+      "precondition": "Golf R VIN in listed range; code P0C29 occurs AFTER Service Action 34K1 for bulletin logic",
+      "dtc_role": "secondary code ONLY when accompanied by P0C29",
+      "affected_parts": [
+        "Auxiliary gearbox oil pump V475 is identified as system context; do not automatically infer failure or part replacement."
+      ],
+      "source_verification": "official_document_context_verified",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2070973-J217-DJJA-0GC-P1899",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": "The source calls this a possible consequential fault; not proof of failed individual valve/clutch/gear-positioner."
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "C10AC07",
+      "code_base": "C10AC",
+      "code_format": "VAG UDS 7-character original text",
+      "family": "C",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Steering Gear Control Module J500",
+      "ecu_address": "0044",
+      "definition_en": "Steering mechanical malfunction",
+      "translation_ar": "خلل ميكانيكي مبلّغ عنه بمنظومة التوجيه",
+      "model": "Jetta",
+      "model_years": [
+        2019
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": null,
+      "transmission_code": null,
+      "vin_range": {
+        "from": "BU_KM000250",
+        "to": "BU_KM270162",
+        "comparison_requires_correct_vin_format": true
+      },
+      "symptom_codes": [],
+      "diagnostic_steps": [
+        "Confirm VIN, model year and exact J500 identification (address 0044).",
+        "Match original steering control unit software part and version to bulletin; do not apply if mismatch.",
+        "Do not replace steering gear solely for C10AC07 before manufacturer SVM 430F update assessment.",
+        "Authorized ODIS programming only, with battery supported and monitored; follow VW SVM procedure.",
+        "Re-scan and check steering function after update; diagnose physical faults individually if symptom remains."
+      ],
+      "source_ids": [
+        "VW-2056436-1"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2019/MC-10169517-0001.pdf"
+      ],
+      "precondition": "VIN and exact software/hardware part match required; source documents erroneous software-side steering fault under scope",
+      "dtc_role": "bulletin-listed fault",
+      "affected_parts": [],
+      "source_verification": "official_document_context_verified",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2056436-J500-JETTA-2019-C10AC07",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [
+        {
+          "name_en": "Supply voltage during programming",
+          "name_ar": "جهد التغذية أثناء البرمجة",
+          "verified_threshold": "> 12.5 V",
+          "test_condition": "Only for SVM programming, NOT a sensor failure threshold",
+          "source_id": "VW-2056436-1"
+        }
+      ],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": {
+        "old_sw_part": "5QM 909 144 B",
+        "old_sw_version": "1081",
+        "updated_sw_part": "5QM 909 144 C",
+        "updated_sw_version_or_higher": "1082",
+        "svm_unit_code": "430F"
+      }
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "C10AC07",
+      "code_base": "C10AC",
+      "code_format": "VAG UDS 7-character original text",
+      "family": "C",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Steering Gear Control Module J500",
+      "ecu_address": "0044",
+      "definition_en": "Steering mechanical malfunction",
+      "translation_ar": "خلل ميكانيكي مبلّغ عنه بمنظومة التوجيه",
+      "model": "Jetta GLI",
+      "model_years": [
+        2019
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": null,
+      "transmission_code": null,
+      "vin_range": {
+        "from": "BU_KM100374",
+        "to": "BU_KM260444",
+        "comparison_requires_correct_vin_format": true
+      },
+      "symptom_codes": [],
+      "diagnostic_steps": [
+        "Confirm VIN, model year and exact J500 identification (address 0044).",
+        "Match original steering control unit software part and version to bulletin; do not apply if mismatch.",
+        "Do not replace steering gear solely for C10AC07 before manufacturer SVM 430F update assessment.",
+        "Authorized ODIS programming only, with battery supported and monitored; follow VW SVM procedure.",
+        "Re-scan and check steering function after update; diagnose physical faults individually if symptom remains."
+      ],
+      "source_ids": [
+        "VW-2056436-1"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2019/MC-10169517-0001.pdf"
+      ],
+      "precondition": "VIN and exact software/hardware part match required; source documents erroneous software-side steering fault under scope",
+      "dtc_role": "bulletin-listed fault",
+      "affected_parts": [],
+      "source_verification": "official_document_context_verified",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2056436-J500-JETTAGLI-2019-C10AC07",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [
+        {
+          "name_en": "Supply voltage during programming",
+          "name_ar": "جهد التغذية أثناء البرمجة",
+          "verified_threshold": "> 12.5 V",
+          "test_condition": "Only for SVM programming, NOT a sensor failure threshold",
+          "source_id": "VW-2056436-1"
+        }
+      ],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": {
+        "old_sw_part": "5QN 909 144 A",
+        "old_sw_version": "5081",
+        "updated_sw_part": "5QN 909 144 B",
+        "updated_sw_version_or_higher": "5082",
+        "svm_unit_code": "430F"
+      }
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "C10AC07",
+      "code_base": "C10AC",
+      "code_format": "VAG UDS 7-character original text",
+      "family": "C",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Steering Gear Control Module J500",
+      "ecu_address": "0044",
+      "definition_en": "Steering mechanical malfunction",
+      "translation_ar": "خلل ميكانيكي مبلّغ عنه بمنظومة التوجيه",
+      "model": "Golf",
+      "model_years": [
+        2018,
+        2019
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": null,
+      "transmission_code": null,
+      "vin_range": {
+        "from": "AU_JM272003",
+        "to": "AU_KM037049",
+        "comparison_requires_correct_vin_format": true
+      },
+      "symptom_codes": [],
+      "diagnostic_steps": [
+        "Confirm VIN, model year and exact J500 identification (address 0044).",
+        "Match original steering control unit software part and version to bulletin; do not apply if mismatch.",
+        "Do not replace steering gear solely for C10AC07 before manufacturer SVM 430F update assessment.",
+        "Authorized ODIS programming only, with battery supported and monitored; follow VW SVM procedure.",
+        "Re-scan and check steering function after update; diagnose physical faults individually if symptom remains."
+      ],
+      "source_ids": [
+        "VW-2056436-1"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2019/MC-10169517-0001.pdf"
+      ],
+      "precondition": "VIN and exact software/hardware part match required; source documents erroneous software-side steering fault under scope",
+      "dtc_role": "bulletin-listed fault",
+      "affected_parts": [],
+      "source_verification": "official_document_context_verified",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2056436-J500-GOLF-2018-C10AC07",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [
+        {
+          "name_en": "Supply voltage during programming",
+          "name_ar": "جهد التغذية أثناء البرمجة",
+          "verified_threshold": "> 12.5 V",
+          "test_condition": "Only for SVM programming, NOT a sensor failure threshold",
+          "source_id": "VW-2056436-1"
+        }
+      ],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": {
+        "old_sw_part": "5QM 909 144 B",
+        "old_sw_version": "1081",
+        "updated_sw_part": "5QM 909 144 C",
+        "updated_sw_version_or_higher": "1082",
+        "svm_unit_code": "430F"
+      }
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "C10AC07",
+      "code_base": "C10AC",
+      "code_format": "VAG UDS 7-character original text",
+      "family": "C",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Steering Gear Control Module J500",
+      "ecu_address": "0044",
+      "definition_en": "Steering mechanical malfunction",
+      "translation_ar": "خلل ميكانيكي مبلّغ عنه بمنظومة التوجيه",
+      "model": "Golf GTI",
+      "model_years": [
+        2018,
+        2019
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": null,
+      "transmission_code": null,
+      "vin_range": {
+        "from": "AU_JM272019",
+        "to": "AU_KM034945",
+        "comparison_requires_correct_vin_format": true
+      },
+      "symptom_codes": [],
+      "diagnostic_steps": [
+        "Confirm VIN, model year and exact J500 identification (address 0044).",
+        "Match original steering control unit software part and version to bulletin; do not apply if mismatch.",
+        "Do not replace steering gear solely for C10AC07 before manufacturer SVM 430F update assessment.",
+        "Authorized ODIS programming only, with battery supported and monitored; follow VW SVM procedure.",
+        "Re-scan and check steering function after update; diagnose physical faults individually if symptom remains."
+      ],
+      "source_ids": [
+        "VW-2056436-1"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2019/MC-10169517-0001.pdf"
+      ],
+      "precondition": "VIN and exact software/hardware part match required; source documents erroneous software-side steering fault under scope",
+      "dtc_role": "bulletin-listed fault",
+      "affected_parts": [],
+      "source_verification": "official_document_context_verified",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2056436-J500-GOLFGTI-2018-C10AC07",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [
+        {
+          "name_en": "Supply voltage during programming",
+          "name_ar": "جهد التغذية أثناء البرمجة",
+          "verified_threshold": "> 12.5 V",
+          "test_condition": "Only for SVM programming, NOT a sensor failure threshold",
+          "source_id": "VW-2056436-1"
+        }
+      ],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": {
+        "old_sw_part": "5QN 909 144 A",
+        "old_sw_version": "5081",
+        "updated_sw_part": "5QN 909 144 B",
+        "updated_sw_version_or_higher": "5082",
+        "svm_unit_code": "430F"
+      }
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "C10AC07",
+      "code_base": "C10AC",
+      "code_format": "VAG UDS 7-character original text",
+      "family": "C",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Steering Gear Control Module J500",
+      "ecu_address": "0044",
+      "definition_en": "Steering mechanical malfunction",
+      "translation_ar": "خلل ميكانيكي مبلّغ عنه بمنظومة التوجيه",
+      "model": "Golf SportWagen",
+      "model_years": [
+        2018,
+        2019
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": null,
+      "transmission_code": null,
+      "vin_range": {
+        "from": "BX_JM761978",
+        "to": "BX_KM521513",
+        "comparison_requires_correct_vin_format": true
+      },
+      "symptom_codes": [],
+      "diagnostic_steps": [
+        "Confirm VIN, model year and exact J500 identification (address 0044).",
+        "Match original steering control unit software part and version to bulletin; do not apply if mismatch.",
+        "Do not replace steering gear solely for C10AC07 before manufacturer SVM 430F update assessment.",
+        "Authorized ODIS programming only, with battery supported and monitored; follow VW SVM procedure.",
+        "Re-scan and check steering function after update; diagnose physical faults individually if symptom remains."
+      ],
+      "source_ids": [
+        "VW-2056436-1"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2019/MC-10169517-0001.pdf"
+      ],
+      "precondition": "VIN and exact software/hardware part match required; source documents erroneous software-side steering fault under scope",
+      "dtc_role": "bulletin-listed fault",
+      "affected_parts": [],
+      "source_verification": "official_document_context_verified",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2056436-J500-GOLFSPORTWAGEN-2018-C10AC07",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [
+        {
+          "name_en": "Supply voltage during programming",
+          "name_ar": "جهد التغذية أثناء البرمجة",
+          "verified_threshold": "> 12.5 V",
+          "test_condition": "Only for SVM programming, NOT a sensor failure threshold",
+          "source_id": "VW-2056436-1"
+        }
+      ],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": {
+        "old_sw_part": "5QM 909 144 B",
+        "old_sw_version": "1081",
+        "updated_sw_part": "5QM 909 144 C",
+        "updated_sw_version_or_higher": "1082",
+        "svm_unit_code": "430F"
+      }
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "C10AC07",
+      "code_base": "C10AC",
+      "code_format": "VAG UDS 7-character original text",
+      "family": "C",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Steering Gear Control Module J500",
+      "ecu_address": "0044",
+      "definition_en": "Steering mechanical malfunction",
+      "translation_ar": "خلل ميكانيكي مبلّغ عنه بمنظومة التوجيه",
+      "model": "Tiguan",
+      "model_years": [
+        2019,
+        2020
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": null,
+      "transmission_code": null,
+      "vin_range": {
+        "from": "AX_KM011157",
+        "to": "AX_LM016972",
+        "comparison_requires_correct_vin_format": true
+      },
+      "symptom_codes": [],
+      "diagnostic_steps": [
+        "Confirm VIN, model year and exact J500 identification (address 0044).",
+        "Match original steering control unit software part and version to bulletin; do not apply if mismatch.",
+        "Do not replace steering gear solely for C10AC07 before manufacturer SVM 430F update assessment.",
+        "Authorized ODIS programming only, with battery supported and monitored; follow VW SVM procedure.",
+        "Re-scan and check steering function after update; diagnose physical faults individually if symptom remains."
+      ],
+      "source_ids": [
+        "VW-2056436-1"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2019/MC-10169517-0001.pdf"
+      ],
+      "precondition": "VIN and exact software/hardware part match required; source documents erroneous software-side steering fault under scope",
+      "dtc_role": "bulletin-listed fault",
+      "affected_parts": [],
+      "source_verification": "official_document_context_verified",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2056436-J500-TIGUAN-2019-C10AC07",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [
+        {
+          "name_en": "Supply voltage during programming",
+          "name_ar": "جهد التغذية أثناء البرمجة",
+          "verified_threshold": "> 12.5 V",
+          "test_condition": "Only for SVM programming, NOT a sensor failure threshold",
+          "source_id": "VW-2056436-1"
+        }
+      ],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": {
+        "old_sw_part": "5QM 909 144 B",
+        "old_sw_version": "1081",
+        "updated_sw_part": "5QM 909 144 C",
+        "updated_sw_version_or_higher": "1082",
+        "svm_unit_code": "430F"
+      }
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "B200FF0",
+      "code_base": "B200F",
+      "code_format": "VAG UDS 7-character original text",
+      "family": "B",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Front Radar for Driver Assistance / Distance Control J428",
+      "ecu_address": "0013",
+      "definition_en": "Front radar control unit internal malfunction (NVM error)",
+      "translation_ar": "خلل داخلي بوحدة رادار المساعدة الأمامي (ذاكرة غير متطايرة)",
+      "model": "Jetta",
+      "model_years": [
+        2024,
+        2025
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": null,
+      "transmission_code": null,
+      "vin_range": null,
+      "symptom_codes": [
+        "196672"
+      ],
+      "diagnostic_steps": [
+        "Check DTC in control unit 0013 with exact symptom 196672 and current state.",
+        "Record J428 old SW part 2Q0907567B (0534) or 2Q0907567C (0541) before considering applicability.",
+        "Official listed target is SW 2Q0907567D version 0543 or later (SVM code 5263); do not flash on unsupported hardware.",
+        "VW requires an external charger ≥70 A and supply >12.5 V during flashing. Authorized ODIS SVM action only.",
+        "After update verify radar/ACC readiness and residual codes; do not replace module solely on this bulletin condition."
+      ],
+      "source_ids": [
+        "VW-2080198-1"
+      ],
+      "source_urls": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-11027266-0001.pdf"
+      ],
+      "precondition": "B200FF0 active with symptom 196672; model 2024–2025 and original software/version match bulletin",
+      "dtc_role": "bulletin-listed fault",
+      "affected_parts": [],
+      "source_verification": "manufacturer_authored_pdf_mirror_checked_original_host_not_verified",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2080198-J428-JETTA-B200FF0-S196672",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [
+        {
+          "name_en": "Power supply voltage (during SVM operation)",
+          "name_ar": "جهد تغذية البرمجة",
+          "verified_threshold": "> 12.5 V",
+          "test_condition": "Programming safety requirement; not a fault diagnostic threshold",
+          "source_id": "VW-2080198-1"
+        }
+      ],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": {
+        "source_quality_warning": "Manufacturer-authored TSB mirrored outside Volkswagen/NHTSA site; independent official PDF readback pending",
+        "svm_unit_code": "5263",
+        "sw_old_options": [
+          {
+            "part": "2Q0907567B",
+            "version": "0534"
+          },
+          {
+            "part": "2Q0907567C",
+            "version": "0541"
+          }
+        ],
+        "sw_new": {
+          "part": "2Q0907567D",
+          "version_or_higher": "0543"
+        }
+      }
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "B200FF0",
+      "code_base": "B200F",
+      "code_format": "VAG UDS 7-character original text",
+      "family": "B",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Front Radar for Driver Assistance / Distance Control J428",
+      "ecu_address": "0013",
+      "definition_en": "Front radar control unit internal malfunction (NVM error)",
+      "translation_ar": "خلل داخلي بوحدة رادار المساعدة الأمامي (ذاكرة غير متطايرة)",
+      "model": "Taos",
+      "model_years": [
+        2024,
+        2025
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": null,
+      "transmission_code": null,
+      "vin_range": null,
+      "symptom_codes": [
+        "196672"
+      ],
+      "diagnostic_steps": [
+        "Check DTC in control unit 0013 with exact symptom 196672 and current state.",
+        "Record J428 old SW part 2Q0907567B (0534) or 2Q0907567C (0541) before considering applicability.",
+        "Official listed target is SW 2Q0907567D version 0543 or later (SVM code 5263); do not flash on unsupported hardware.",
+        "VW requires an external charger ≥70 A and supply >12.5 V during flashing. Authorized ODIS SVM action only.",
+        "After update verify radar/ACC readiness and residual codes; do not replace module solely on this bulletin condition."
+      ],
+      "source_ids": [
+        "VW-2080198-1"
+      ],
+      "source_urls": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-11027266-0001.pdf"
+      ],
+      "precondition": "B200FF0 active with symptom 196672; model 2024–2025 and original software/version match bulletin",
+      "dtc_role": "bulletin-listed fault",
+      "affected_parts": [],
+      "source_verification": "manufacturer_authored_pdf_mirror_checked_original_host_not_verified",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2080198-J428-TAOS-B200FF0-S196672",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [
+        {
+          "name_en": "Power supply voltage (during SVM operation)",
+          "name_ar": "جهد تغذية البرمجة",
+          "verified_threshold": "> 12.5 V",
+          "test_condition": "Programming safety requirement; not a fault diagnostic threshold",
+          "source_id": "VW-2080198-1"
+        }
+      ],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": {
+        "source_quality_warning": "Manufacturer-authored TSB mirrored outside Volkswagen/NHTSA site; independent official PDF readback pending",
+        "svm_unit_code": "5263",
+        "sw_old_options": [
+          {
+            "part": "2Q0907567B",
+            "version": "0534"
+          },
+          {
+            "part": "2Q0907567C",
+            "version": "0541"
+          }
+        ],
+        "sw_new": {
+          "part": "2Q0907567D",
+          "version_or_higher": "0543"
+        }
+      }
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "B200FF0",
+      "code_base": "B200F",
+      "code_format": "VAG UDS 7-character original text",
+      "family": "B",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Front Radar / ACC Module J428",
+      "ecu_address": "0013",
+      "definition_en": "Front radar module internal malfunction related to NVM memory",
+      "translation_ar": "خلل داخلي بوحدة رادار المساعدة الأمامي مرتبط بذاكرة NVM",
+      "model": "Tiguan",
+      "model_years": [
+        2024
+      ],
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": null,
+      "transmission_code": null,
+      "vin_range": null,
+      "symptom_codes": [
+        "196672"
+      ],
+      "diagnostic_steps": [
+        "Check MY2024 Tiguan, control address 0013, DTC B200FF0 static and exact symptom 196672.",
+        "Compare current part and software IDs with the bulletin; software action is conditional on exact match.",
+        "Do not replace J428 before manufacturer-prescribed software update assessment.",
+        "Carry out software work through approved ODIS repair pathway only; re-check and road test assist features."
+      ],
+      "source_ids": [
+        "VW-2080430-2"
+      ],
+      "source_urls": [
+        "https://oemdtc.com/tsb/11038151/"
+      ],
+      "precondition": "Static B200FF0 with symptom 196672 on Tiguan MY2024; manufacturer bulletin revision 2080430/2",
+      "dtc_role": "bulletin-listed fault",
+      "affected_parts": [],
+      "source_verification": "secondary_transcription_requires_OEM_pdf_recheck",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-2080430-J428-TIGUAN2024-B200FF0-S196672",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": {
+        "source_quality_warning": "Source is third-party reproduction, official full PDF not retrieved in this batch; keep in review",
+        "software_old": {
+          "part": "2Q0907567B",
+          "version": "0534"
+        },
+        "software_new": {
+          "part": "2Q0907567D",
+          "version_or_higher": "0543"
+        }
+      }
+    },
+    {
+      "brand": "Volkswagen",
+      "code_original": "P20EE",
+      "code_base": "P20EE",
+      "code_format": "5-character OBD/VAG-form as stated by bulletin; NO UDS suffix available",
+      "family": "P",
+      "code_type": "SAE generic versus manufacturer-specific NOT independently established",
+      "ecu": "Engine electronics (address not stated in software circular)",
+      "ecu_address": null,
+      "definition_en": "SCR NOx catalyst efficiency below threshold, bank 1",
+      "translation_ar": "انخفاض كفاءة محفز خفض أكاسيد النيتروجين SCR بالبنك الأول عن الحد المطلوب",
+      "model": "Touareg 7L",
+      "model_years": null,
+      "market": "USA bulletin only; EU/SE applicability not established",
+      "engine_code": "CATA",
+      "transmission_code": null,
+      "vin_range": null,
+      "symptom_codes": [],
+      "diagnostic_steps": [
+        "Record OEM scan and exact ECU SW / vehicle VIN before any fitment assertion.",
+        "If using historical ODIS 2017 diagnostic content, note test loop correction in 2.34.14 for CATA Touareg SCR test.",
+        "Do not interpret test loop as SCR catalyst failure; check current erWin/ODIS guided fault plans for the actual vehicle.",
+        "No sensor thresholds, wiring, or SCR regeneration actions supplied by this source."
+      ],
+      "source_ids": [
+        "VW-VOS-17-29"
+      ],
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2017/MC-10133489-9999.pdf"
+      ],
+      "precondition": "2017 ODIS diagnostic content 2.34.14 has corrected completion of SCR system test for this Touareg engine; bulletin is tool fix, not vehicle component TSB",
+      "dtc_role": "bulletin-listed fault",
+      "affected_parts": [],
+      "source_verification": "source_confirms_tool_test_applicability_not_vehicle_fault_occurrence",
+      "documentation_gaps": [
+        "ECU-specific full detection threshold",
+        "Complete official pinout/wiring",
+        "Sweden/European applicability",
+        "Independent full repair procedure",
+        "Reuse-cleared vehicle images"
+      ],
+      "record_id": "VW-B02-VOS1729-TOUAREG7L-CATA-P20EE",
+      "image": {
+        "path": null,
+        "code_matched": false,
+        "alt_ar": null
+      },
+      "wiring": null,
+      "parts": [],
+      "live_data": [],
+      "cause_ranked": [],
+      "repair_decision_not_automatic": true,
+      "release_status": "STAGING_NOT_APPROVED",
+      "review_status": "PENDING_TECHNICAL_VALIDATION",
+      "readiness": "source_supported_narrow_applicability_not_release_ready",
+      "verified_for_sweden_europe": false,
+      "notes": {
+        "odi_service_application": "4.2.3",
+        "odi_content": "2.34.14",
+        "test_id": "SYS26_7L_CATA_1_0309_11_SCR_Gesamttest_00011"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "VW-2070973-2",
+      "publisher": "Volkswagen Group of America",
+      "name": "37-23-01 Transmission Control Module J217 – P0C29 after Service Action 34K1",
+      "document": "TSB 2070973/2",
+      "published_on": "2024-02-22",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250796-0001.pdf",
+      "type": "official_vw_bulletin_public_copy",
+      "checked_on": "2026-11-16",
+      "scope": "United States Golf R 2018 DJJA DSG with VIN AU_JW035525..AU_JW181595. Auxiliary fault codes require P0C29 present and 34K1 performed."
+    },
+    {
+      "id": "VW-2070973-1",
+      "publisher": "Volkswagen Group of America",
+      "name": "37-23-01 original bulletin – DSG 0GC / DJJA",
+      "document": "TSB 2070973/1",
+      "published_on": "2023-08-10",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10241181-0001.pdf",
+      "type": "official_vw_bulletin_public_copy",
+      "checked_on": "2026-11-16",
+      "scope": "United States Golf R 2018 DJJA DSG 0GC; same VIN interval."
+    },
+    {
+      "id": "VW-2056436-1",
+      "publisher": "Volkswagen Group of America",
+      "name": "48-19-01 Steering Gear Fault C10AC07",
+      "document": "TSB 2056436/1",
+      "published_on": "2019-12-16",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10169517-0001.pdf",
+      "type": "official_vw_bulletin_public_copy",
+      "checked_on": "2026-11-16",
+      "scope": "USA Jetta / GLI / Golf / GTI / SportWagen / Tiguan; specific VIN ranges and J500 software versions."
+    },
+    {
+      "id": "VW-2080198-1",
+      "publisher": "Volkswagen Group of America",
+      "name": "98-25-01 B200FF0 with symptom 196672 J428",
+      "document": "TSB 2080198/1",
+      "published_on": "2025-12-03",
+      "url": "https://static.oemdtc.com/NHTSA-PDFs/MC-11027266-0001.pdf",
+      "type": "manufacturer_authored_technical_bulletin_third_party_mirror",
+      "checked_on": "2026-11-16",
+      "scope": "USA Jetta and Taos MY2024–2025, J428 addr 0013, active B200FF0 with symptom 196672; OEM official server PDF unavailable in current review; original text visible via mirror."
+    },
+    {
+      "id": "VW-2080430-2",
+      "publisher": "Volkswagen Group of America",
+      "name": "91-25-05 Front Assist / ACC temporarily disabled",
+      "document": "TSB 2080430/2",
+      "published_on": "2026-09-01",
+      "url": "https://oemdtc.com/tsb/11038151/",
+      "type": "third_party_transcription_of_vw_bulletin_not_official_pdf_verified",
+      "checked_on": "2026-11-16",
+      "scope": "USA Tiguan 2024, J428 addr 0013; B200FF0 symptom 196672; publication revision 2080430/2."
+    },
+    {
+      "id": "VW-VOS-17-29",
+      "publisher": "Volkswagen Group of America",
+      "name": "ODIS Service diagnostic content software update / fixes",
+      "document": "VOS-17-29",
+      "published_on": "2017-11-08",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10133489-9999.pdf",
+      "type": "official_vw_service_information_public_copy",
+      "checked_on": "2026-11-16",
+      "scope": "ODIS v4.2.3 content 2.34.14; SCR test P20EE 7L Touareg 3.0 CATA; document is an ODIS software note, NOT repair specification."
+    }
+  ],
+  "summary": {
+    "total_records": 24,
+    "unique_raw_code_strings": 17,
+    "brand_new_raw_codes_vs_prior_vw_catalog": [
+      "P0C29",
+      "P175E",
+      "P176F",
+      "P175D",
+      "P176E",
+      "P072C",
+      "P176A",
+      "P176B",
+      "P176C",
+      "P176D",
+      "P072B",
+      "P0810",
+      "P0607",
+      "P1899",
+      "B200FF0"
+    ],
+    "count_new_unique_code_strings": 15,
+    "existing_codes_with_new_context": [
+      "C10AC07",
+      "P20EE"
+    ],
+    "staging_only": true,
+    "photos_created": 0,
+    "legacy_data_changed": false
+  },
+  "restrictions": [
+    "Release prohibited until owner approves",
+    "No photos or diagrams generated",
+    "USA bulletin vehicle/VIN scope not extrapolated to EU or Swedish cars",
+    "Some secondary-mirror sourced material requires independent factory PDF revalidation",
+    "Auxiliary DSG fault codes are conditioned on P0C29 and Service Action 34K1"
+  ]
+}

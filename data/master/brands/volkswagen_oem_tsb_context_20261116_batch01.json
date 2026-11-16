@@ -1,0 +1,2980 @@
+{
+  "schema": "dtcnexis.volkswagen.oem-tsb-context.v1",
+  "brand": "Volkswagen",
+  "created_on": "2026-11-16",
+  "release_status": "STAGING_UNRELEASED",
+  "backward_compatibility": "Append-only supplementary source evidence; no changes to VW022 or existing 644 VAG candidate rows",
+  "sources": [
+    {
+      "id": "VW-TSB-2073355-2",
+      "publisher": "Volkswagen Group of America",
+      "type": "Official Technical Service Bulletin",
+      "title": "01-24-02 Irrelevant DTCs logged in various control units",
+      "transaction": "2073355/2",
+      "release_date": "2024-04-25",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf",
+      "scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+      "copyright": "VW rights reserved; only factual DTC metadata transcribed, no OEM diagrams"
+    },
+    {
+      "id": "VW-TSB-2071701-2",
+      "publisher": "Volkswagen Group of America",
+      "type": "Official Technical Service Bulletin",
+      "title": "93-23-07 Front Electric Drive Power Electronics Software Update",
+      "transaction": "2071701/2",
+      "release_date": "2024-02-07",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250289-0001.pdf",
+      "scope": "USA; ID.4 MY2022, PR 1X1; VIN must be within 97HB or 97HC campaign",
+      "copyright": "VW rights reserved; only factual DTC metadata transcribed"
+    },
+    {
+      "id": "VW-TSB-2061220-7",
+      "publisher": "Volkswagen Group of America",
+      "type": "Official Technical Service Bulletin",
+      "title": "69-20-02 Airbag module B101612 update programming",
+      "transaction": "2061220/7",
+      "release_date": "2023-01-09",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10230571-0001.pdf",
+      "scope": "USA; Atlas MY2019–2021 VIN CA_KC530794..CA_MC521445; Atlas Cross Sport MY2020 VIN CA_LC200001..CA_LC225415",
+      "copyright": "VW rights reserved; no OEM diagrams copied"
+    },
+    {
+      "id": "VW-TSB-2035369-2",
+      "publisher": "Volkswagen Group of America",
+      "type": "Official Technical Service Bulletin",
+      "title": "69-13-05 Airbag lamp B200009/B200049/U101200",
+      "transaction": "2035369/2",
+      "release_date": "2023-08-03",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10241183-0001.pdf",
+      "scope": "USA; Jetta GLI and Passat MY2012–2014; additional DTCs exclude bulletin",
+      "copyright": "VW rights reserved; no OEM diagrams copied"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "Volkswagen:P164700:0001:VW-TSB-2073355-2:44181",
+      "brand": "Volkswagen",
+      "code_original": "P164700",
+      "code_base": "P1647",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "P",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0001",
+      "ecu": "Powertrain/engine controller",
+      "definition_en": "Powertrain coding or version check",
+      "translation_ar": "التحقق من ترميز وإصدارات نظام الدفع",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        44181
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:U014000:0001:VW-TSB-2073355-2:46740",
+      "brand": "Volkswagen",
+      "code_original": "U014000",
+      "code_base": "U0140",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "U",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0001",
+      "ecu": "Powertrain/engine controller",
+      "definition_en": "Body control module communication lost",
+      "translation_ar": "فقد الاتصال بوحدة التحكم بالهيكل",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        46740
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:B2F0100:0003:VW-TSB-2073355-2:593168",
+      "brand": "Volkswagen",
+      "code_original": "B2F0100",
+      "code_base": "B2F01",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "B",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0003",
+      "ecu": "Brake Electronics / ABS-EPB",
+      "definition_en": "Development code 1",
+      "translation_ar": "رمز تطوير داخلي رقم 1",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        593168
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:C100C01:0003:VW-TSB-2073355-2:262288",
+      "brand": "Volkswagen",
+      "code_original": "C100C01",
+      "code_base": "C100C",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "C",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0003",
+      "ecu": "Brake Electronics / ABS-EPB",
+      "definition_en": "Electromechanical parking-brake switch electrical issue",
+      "translation_ar": "خلل كهربائي بمفتاح فرامل الركن الكهروميكانيكية",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        262288
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:C114602:0003:VW-TSB-2073355-2:16390",
+      "brand": "Volkswagen",
+      "code_original": "C114602",
+      "code_base": "C1146",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "C",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0003",
+      "ecu": "Brake Electronics / ABS-EPB",
+      "definition_en": "Tire-pressure monitoring signal malfunction",
+      "translation_ar": "خلل إشارة مراقبة ضغط الإطارات",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        16390
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:C1246F5:0003:VW-TSB-2073355-2:393469",
+      "brand": "Volkswagen",
+      "code_original": "C1246F5",
+      "code_base": "C1246",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "C",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0003",
+      "ecu": "Brake Electronics / ABS-EPB",
+      "definition_en": "Electromechanical parking brake test mode active",
+      "translation_ar": "وضع اختبار فرامل الركن الكهروميكانيكية نشط",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        393469
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:C1254F0:0003:VW-TSB-2073355-2:9478148",
+      "brand": "Volkswagen",
+      "code_original": "C1254F0",
+      "code_base": "C1254",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "C",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0003",
+      "ecu": "Brake Electronics / ABS-EPB",
+      "definition_en": "Brake-light signal implausible from comfort controller",
+      "translation_ar": "إشارة ضوء الفرامل غير منطقية من وحدة الراحة",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        9478148
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:B14CC31:0008:VW-TSB-2073355-2:5245444",
+      "brand": "Volkswagen",
+      "code_original": "B14CC31",
+      "code_base": "B14CC",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "B",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0008",
+      "ecu": "Climate Control",
+      "definition_en": "Left seat cushion fan 2 missing signal",
+      "translation_ar": "غياب إشارة مروحة وسادة المقعد اليسرى الثانية",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        5245444
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:B14D031:0008:VW-TSB-2073355-2:5246468",
+      "brand": "Volkswagen",
+      "code_original": "B14D031",
+      "code_base": "B14D0",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "B",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0008",
+      "ecu": "Climate Control",
+      "definition_en": "Right seat cushion fan 2 missing signal",
+      "translation_ar": "غياب إشارة مروحة وسادة المقعد اليمنى الثانية",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        5246468
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:B201000:0008:VW-TSB-2073355-2:65543",
+      "brand": "Volkswagen",
+      "code_original": "B201000",
+      "code_base": "B2010",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "B",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0008",
+      "ecu": "Climate Control",
+      "definition_en": "Basic setting not performed",
+      "translation_ar": "عدم إجراء الضبط الأساسي",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        65543
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:U112100:0009:VW-TSB-2073355-2:8667507",
+      "brand": "Volkswagen",
+      "code_original": "U112100",
+      "code_base": "U1121",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "U",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0009",
+      "ecu": "Body/Electronic Central Electrical",
+      "definition_en": "Data-bus message missing",
+      "translation_ar": "غياب رسالة على ناقل البيانات",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        8667507
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:U14FF00:0009:VW-TSB-2073355-2:15401472",
+      "brand": "Volkswagen",
+      "code_original": "U14FF00",
+      "code_base": "U14FF",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "U",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0009",
+      "ecu": "Body/Electronic Central Electrical",
+      "definition_en": "Secure onboard signature generation unsuccessful",
+      "translation_ar": "فشل إنشاء توقيع اتصال آمن داخل السيارة",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        15401472
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:B131D29:0019:VW-TSB-2073355-2:267032",
+      "brand": "Volkswagen",
+      "code_original": "B131D29",
+      "code_base": "B131D",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "B",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0019",
+      "ecu": "Data Bus OBD Gateway J533",
+      "definition_en": "Anti-theft siren performance outside expected range",
+      "translation_ar": "خلل نطاق أو أداء بوق نظام منع السرقة",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        267032
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:P0CF400:0019:VW-TSB-2073355-2:8515664",
+      "brand": "Volkswagen",
+      "code_original": "P0CF400",
+      "code_base": "P0CF4",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "P",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0019",
+      "ecu": "Data Bus OBD Gateway J533",
+      "definition_en": "Charging control-pilot circuit range/performance",
+      "translation_ar": "خلل نطاق أو أداء دائرة إشارة التحكم بالشحن",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        8515664
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:P1BFE00:0019:VW-TSB-2073355-2:8516608",
+      "brand": "Volkswagen",
+      "code_original": "P1BFE00",
+      "code_base": "P1BFE",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "P",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0019",
+      "ecu": "Data Bus OBD Gateway J533",
+      "definition_en": "Expanded charging sequence control error",
+      "translation_ar": "خلل تتابع التحكم بوظائف الشحن الموسعة",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        8516608
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:P1BFF00:0019:VW-TSB-2073355-2:8516609",
+      "brand": "Volkswagen",
+      "code_original": "P1BFF00",
+      "code_base": "P1BFF",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "P",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0019",
+      "ecu": "Data Bus OBD Gateway J533",
+      "definition_en": "Expanded charging request unsuccessful",
+      "translation_ar": "فشل طلب الشحن الموسع",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        8516609
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:P1CC300:0019:VW-TSB-2073355-2:8516354",
+      "brand": "Volkswagen",
+      "code_original": "P1CC300",
+      "code_base": "P1CC3",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "P",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0019",
+      "ecu": "Data Bus OBD Gateway J533",
+      "definition_en": "External charging equipment malfunction",
+      "translation_ar": "خلل في تجهيزات الشحن الخارجية",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        8516354
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:P1DCB00:0019:VW-TSB-2073355-2:8516869",
+      "brand": "Volkswagen",
+      "code_original": "P1DCB00",
+      "code_base": "P1DCB",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "P",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0019",
+      "ecu": "Data Bus OBD Gateway J533",
+      "definition_en": "Charging socket A not ready for charging",
+      "translation_ar": "عدم جاهزية مقبس الشحن A",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        8516869
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:U150100:0019:VW-TSB-2073355-2:1048918",
+      "brand": "Volkswagen",
+      "code_original": "U150100",
+      "code_base": "U1501",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "U",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0019",
+      "ecu": "Data Bus OBD Gateway J533",
+      "definition_en": "Local data bus 6 electrical error",
+      "translation_ar": "خلل كهربائي بناقل البيانات المحلي رقم 6",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        1048918
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:U164200:0019:VW-TSB-2073355-2:2502759",
+      "brand": "Volkswagen",
+      "code_original": "U164200",
+      "code_base": "U1642",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "U",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0019",
+      "ecu": "Data Bus OBD Gateway J533",
+      "definition_en": "Emergency call module Ethernet communication absent",
+      "translation_ar": "غياب اتصال إيثرنت مع وحدة مكالمات الطوارئ",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        2502759
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:U173E00:0019:VW-TSB-2073355-2:8511745",
+      "brand": "Volkswagen",
+      "code_original": "U173E00",
+      "code_base": "U173E",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "U",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0019",
+      "ecu": "Data Bus OBD Gateway J533",
+      "definition_en": "Occupant detection function restricted by implausible message",
+      "translation_ar": "تقييد كشف الراكب بسبب رسالة غير منطقية",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        8511745
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:U112300:003C:VW-TSB-2073355-2:2236437:2240584",
+      "brand": "Volkswagen",
+      "code_original": "U112300",
+      "code_base": "U1123",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "U",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "003C",
+      "ecu": "Lane Change Assistance",
+      "definition_en": "Data-bus value flagged as erroneous",
+      "translation_ar": "استقبال قيمة خاطئة عبر ناقل البيانات",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        2236437,
+        2240584
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:B1B1706:0076:VW-TSB-2073355-2:13640965",
+      "brand": "Volkswagen",
+      "code_original": "B1B1706",
+      "code_base": "B1B17",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "B",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0076",
+      "ecu": "Parking Aid",
+      "definition_en": "Parking assistance module software fault",
+      "translation_ar": "خلل برمجي في وحدة مساعد الركن",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        13640965
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:U110F00:0076:VW-TSB-2073355-2:12587099:12587177",
+      "brand": "Volkswagen",
+      "code_original": "U110F00",
+      "code_base": "U110F",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "U",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0076",
+      "ecu": "Parking Aid",
+      "definition_en": "Subfunction unavailable",
+      "translation_ar": "تعذر تنفيذ وظيفة فرعية",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        12587099,
+        12587177
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:U163F00:008C:VW-TSB-2073355-2:42860",
+      "brand": "Volkswagen",
+      "code_original": "U163F00",
+      "code_base": "U163F",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "U",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "008C",
+      "ecu": "HV Battery Management",
+      "definition_en": "High-voltage battery system cannot reach application server",
+      "translation_ar": "غياب الاتصال بين بطارية الجهد العالي وخادم التطبيقات",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        42860
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:B1802F1:00C6:VW-TSB-2073355-2:401419:401437:401459",
+      "brand": "Volkswagen",
+      "code_original": "B1802F1",
+      "code_base": "B1802",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "B",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "00C6",
+      "ecu": "HV Battery Charger",
+      "definition_en": "Energy management alarm triggered",
+      "translation_ar": "تفعيل إنذار إدارة الطاقة",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        401419,
+        401437,
+        401459
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:B193D21:00C6:VW-TSB-2073355-2:397343",
+      "brand": "Volkswagen",
+      "code_original": "B193D21",
+      "code_base": "B193D",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "B",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "00C6",
+      "ecu": "HV Battery Charger",
+      "definition_en": "Intermediate circuit voltage sensor below lower limit",
+      "translation_ar": "إشارة حساس جهد الدائرة الوسيطة أدنى الحد السفلي",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        397343
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:P0A9500:00C6:VW-TSB-2073355-2:401501",
+      "brand": "Volkswagen",
+      "code_original": "P0A9500",
+      "code_base": "P0A95",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "P",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "00C6",
+      "ecu": "HV Battery Charger",
+      "definition_en": "High-voltage fuse status fault",
+      "translation_ar": "خلل مرتبط بحالة مصهر الجهد العالي",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        401501
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:U195500:00C6:VW-TSB-2073355-2:397386:397387:397388",
+      "brand": "Volkswagen",
+      "code_original": "U195500",
+      "code_base": "U1955",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "U",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "00C6",
+      "ecu": "HV Battery Charger",
+      "definition_en": "High-voltage distribution warning active",
+      "translation_ar": "تحذير وحدة توزيع الجهد العالي نشط",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        397386,
+        397387,
+        397388
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:U192A00:00CE:VW-TSB-2073355-2:43400",
+      "brand": "Volkswagen",
+      "code_original": "U192A00",
+      "code_base": "U192A",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "U",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "00CE",
+      "ecu": "Electric Drive Control 2 JX4",
+      "definition_en": "Remote software update signal missing",
+      "translation_ar": "غياب إشارة التحديث البرمجي عن بعد",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        43400
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:U175D00:8124:VW-TSB-2073355-2:479232",
+      "brand": "Volkswagen",
+      "code_original": "U175D00",
+      "code_base": "U175D",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "U",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "8124",
+      "ecu": "Application Server 1 System 2",
+      "definition_en": "Software recovery basic setting required",
+      "translation_ar": "يلزم ضبط أساسي لاستعادة البرنامج",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        479232
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:U15EB00:C002:VW-TSB-2073355-2:8516632",
+      "brand": "Volkswagen",
+      "code_original": "U15EB00",
+      "code_base": "U15EB",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "U",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "C002",
+      "ecu": "Embedded Software Cluster 1",
+      "definition_en": "Expanded charging battery energy calculation counter error",
+      "translation_ar": "خلل عداد حساب احتياج الطاقة للشحن الموسع",
+      "model": "ID.4",
+      "model_years": [
+        2024
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2024 E81* Chattanooga production, PR J9D and V7B; J533 address 19 SW part 1EE.937.012.D, SW version 0411 only",
+        "pr_codes": [
+          "J9D",
+          "V7B"
+        ],
+        "ecu_required": {
+          "address": "0019",
+          "part": "1EE.937.012.D",
+          "sw": "0411"
+        },
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [
+        8516632
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Manufacturer states listed DTC + symptom combinations are irrelevant to complaints under exact bulletin scope",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify ID.4 MY2024 E81*, Chattanooga and PR J9D/V7B. 2. Check J533 1EE.937.012.D version 0411 and match ECU, DTC and symptom number. 3. If exact bulletin combination and no linked customer complaint, VW says ignore the entry; it may recur after erasure. 4. Investigate a relevant actual complaint independently; do not replace parts only for this listed entry.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2073355-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10253931-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:P30A000:00CE:VW-TSB-2071701-2:42124:42146",
+      "brand": "Volkswagen",
+      "code_original": "P30A000",
+      "code_base": "P30A0",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "P",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "00CE",
+      "ecu": "Electric Drive Control 2 JX4",
+      "definition_en": "Intermediate circuit capacitor did not discharge",
+      "translation_ar": "عدم تفريغ مكثف الدائرة الوسيطة",
+      "model": "ID.4",
+      "model_years": [
+        2022
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2022, PR 1X1; VIN must be within 97HB or 97HC campaign",
+        "pr_codes": [
+          "1X1"
+        ],
+        "ecu_required": null,
+        "campaign_required": [
+          "97HB",
+          "97HC"
+        ],
+        "vin_range": null
+      },
+      "symptom_codes": [
+        42124,
+        42146
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Electric drive warning, possible intermittent failure to enter Ready mode",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify VIN campaign 97HB/97HC and PR 1X1. 2. Match DTC with at least one specified symptom number in ECU 00CE before applying bulletin. 3. Dealer/authorized high-voltage technician to carry out full ID.Software sequence, never individual controller flashing. 4. Recheck fault memory and drive readiness using ODIS; exact procedures in TSB.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2071701-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250289-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:P18F100:00CE:VW-TSB-2071701-2:42204:42330",
+      "brand": "Volkswagen",
+      "code_original": "P18F100",
+      "code_base": "P18F1",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "P",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "00CE",
+      "ecu": "Electric Drive Control 2 JX4",
+      "definition_en": "Function restricted by wheel-speed discrepancy",
+      "translation_ar": "تقييد وظيفة بسبب اختلاف سرعات العجلات",
+      "model": "ID.4",
+      "model_years": [
+        2022
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2022, PR 1X1; VIN must be within 97HB or 97HC campaign",
+        "pr_codes": [
+          "1X1"
+        ],
+        "ecu_required": null,
+        "campaign_required": [
+          "97HB",
+          "97HC"
+        ],
+        "vin_range": null
+      },
+      "symptom_codes": [
+        42204,
+        42330
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Electric drive warning, possible intermittent failure to enter Ready mode",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify VIN campaign 97HB/97HC and PR 1X1. 2. Match DTC with at least one specified symptom number in ECU 00CE before applying bulletin. 3. Dealer/authorized high-voltage technician to carry out full ID.Software sequence, never individual controller flashing. 4. Recheck fault memory and drive readiness using ODIS; exact procedures in TSB.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2071701-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250289-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:P0A1B00:00CE:VW-TSB-2071701-2:42297:42175:42267:42322:42323:42328",
+      "brand": "Volkswagen",
+      "code_original": "P0A1B00",
+      "code_base": "P0A1B",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "P",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "00CE",
+      "ecu": "Electric Drive Control 2 JX4",
+      "definition_en": "Drive motor A control module fault",
+      "translation_ar": "خلل وحدة التحكم بمحرك الدفع الكهربائي A",
+      "model": "ID.4",
+      "model_years": [
+        2022
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2022, PR 1X1; VIN must be within 97HB or 97HC campaign",
+        "pr_codes": [
+          "1X1"
+        ],
+        "ecu_required": null,
+        "campaign_required": [
+          "97HB",
+          "97HC"
+        ],
+        "vin_range": null
+      },
+      "symptom_codes": [
+        42297,
+        42175,
+        42267,
+        42322,
+        42323,
+        42328
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Electric drive warning, possible intermittent failure to enter Ready mode",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify VIN campaign 97HB/97HC and PR 1X1. 2. Match DTC with at least one specified symptom number in ECU 00CE before applying bulletin. 3. Dealer/authorized high-voltage technician to carry out full ID.Software sequence, never individual controller flashing. 4. Recheck fault memory and drive readiness using ODIS; exact procedures in TSB.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2071701-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250289-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:P060600:00CE:VW-TSB-2071701-2:42130",
+      "brand": "Volkswagen",
+      "code_original": "P060600",
+      "code_base": "P0606",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "P",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "00CE",
+      "ecu": "Electric Drive Control 2 JX4",
+      "definition_en": "Control module processor fault",
+      "translation_ar": "خلل معالج وحدة التحكم",
+      "model": "ID.4",
+      "model_years": [
+        2022
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2022, PR 1X1; VIN must be within 97HB or 97HC campaign",
+        "pr_codes": [
+          "1X1"
+        ],
+        "ecu_required": null,
+        "campaign_required": [
+          "97HB",
+          "97HC"
+        ],
+        "vin_range": null
+      },
+      "symptom_codes": [
+        42130
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Electric drive warning, possible intermittent failure to enter Ready mode",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify VIN campaign 97HB/97HC and PR 1X1. 2. Match DTC with at least one specified symptom number in ECU 00CE before applying bulletin. 3. Dealer/authorized high-voltage technician to carry out full ID.Software sequence, never individual controller flashing. 4. Recheck fault memory and drive readiness using ODIS; exact procedures in TSB.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2071701-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250289-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:P0C0500:00CE:VW-TSB-2071701-2:42237",
+      "brand": "Volkswagen",
+      "code_original": "P0C0500",
+      "code_base": "P0C05",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "P",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "00CE",
+      "ecu": "Electric Drive Control 2 JX4",
+      "definition_en": "Drive motor A three-phase circuit open",
+      "translation_ar": "انقطاع دائرة أطوار محرك الدفع A",
+      "model": "ID.4",
+      "model_years": [
+        2022
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2022, PR 1X1; VIN must be within 97HB or 97HC campaign",
+        "pr_codes": [
+          "1X1"
+        ],
+        "ecu_required": null,
+        "campaign_required": [
+          "97HB",
+          "97HC"
+        ],
+        "vin_range": null
+      },
+      "symptom_codes": [
+        42237
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Electric drive warning, possible intermittent failure to enter Ready mode",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify VIN campaign 97HB/97HC and PR 1X1. 2. Match DTC with at least one specified symptom number in ECU 00CE before applying bulletin. 3. Dealer/authorized high-voltage technician to carry out full ID.Software sequence, never individual controller flashing. 4. Recheck fault memory and drive readiness using ODIS; exact procedures in TSB.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2071701-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250289-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:P0A5F00:00CE:VW-TSB-2071701-2:41955",
+      "brand": "Volkswagen",
+      "code_original": "P0A5F00",
+      "code_base": "P0A5F",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "P",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "00CE",
+      "ecu": "Electric Drive Control 2 JX4",
+      "definition_en": "Drive motor A phase U current too high",
+      "translation_ar": "ارتفاع تيار الطور U بمحرك الدفع A",
+      "model": "ID.4",
+      "model_years": [
+        2022
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2022, PR 1X1; VIN must be within 97HB or 97HC campaign",
+        "pr_codes": [
+          "1X1"
+        ],
+        "ecu_required": null,
+        "campaign_required": [
+          "97HB",
+          "97HC"
+        ],
+        "vin_range": null
+      },
+      "symptom_codes": [
+        41955
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Electric drive warning, possible intermittent failure to enter Ready mode",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify VIN campaign 97HB/97HC and PR 1X1. 2. Match DTC with at least one specified symptom number in ECU 00CE before applying bulletin. 3. Dealer/authorized high-voltage technician to carry out full ID.Software sequence, never individual controller flashing. 4. Recheck fault memory and drive readiness using ODIS; exact procedures in TSB.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2071701-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250289-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:P0A6200:00CE:VW-TSB-2071701-2:41933",
+      "brand": "Volkswagen",
+      "code_original": "P0A6200",
+      "code_base": "P0A62",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "P",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "00CE",
+      "ecu": "Electric Drive Control 2 JX4",
+      "definition_en": "Drive motor A phase V current too high",
+      "translation_ar": "ارتفاع تيار الطور V بمحرك الدفع A",
+      "model": "ID.4",
+      "model_years": [
+        2022
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2022, PR 1X1; VIN must be within 97HB or 97HC campaign",
+        "pr_codes": [
+          "1X1"
+        ],
+        "ecu_required": null,
+        "campaign_required": [
+          "97HB",
+          "97HC"
+        ],
+        "vin_range": null
+      },
+      "symptom_codes": [
+        41933
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Electric drive warning, possible intermittent failure to enter Ready mode",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify VIN campaign 97HB/97HC and PR 1X1. 2. Match DTC with at least one specified symptom number in ECU 00CE before applying bulletin. 3. Dealer/authorized high-voltage technician to carry out full ID.Software sequence, never individual controller flashing. 4. Recheck fault memory and drive readiness using ODIS; exact procedures in TSB.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2071701-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250289-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:P0A6500:00CE:VW-TSB-2071701-2:41937",
+      "brand": "Volkswagen",
+      "code_original": "P0A6500",
+      "code_base": "P0A65",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "P",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "00CE",
+      "ecu": "Electric Drive Control 2 JX4",
+      "definition_en": "Drive motor A phase W current too high",
+      "translation_ar": "ارتفاع تيار الطور W بمحرك الدفع A",
+      "model": "ID.4",
+      "model_years": [
+        2022
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2022, PR 1X1; VIN must be within 97HB or 97HC campaign",
+        "pr_codes": [
+          "1X1"
+        ],
+        "ecu_required": null,
+        "campaign_required": [
+          "97HB",
+          "97HC"
+        ],
+        "vin_range": null
+      },
+      "symptom_codes": [
+        41937
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Electric drive warning, possible intermittent failure to enter Ready mode",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify VIN campaign 97HB/97HC and PR 1X1. 2. Match DTC with at least one specified symptom number in ECU 00CE before applying bulletin. 3. Dealer/authorized high-voltage technician to carry out full ID.Software sequence, never individual controller flashing. 4. Recheck fault memory and drive readiness using ODIS; exact procedures in TSB.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2071701-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250289-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:P0C7900:00CE:VW-TSB-2071701-2:41826",
+      "brand": "Volkswagen",
+      "code_original": "P0C7900",
+      "code_base": "P0C79",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "P",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "00CE",
+      "ecu": "Electric Drive Control 2 JX4",
+      "definition_en": "Drive motor inverter voltage too high",
+      "translation_ar": "ارتفاع جهد عاكس محرك الدفع A",
+      "model": "ID.4",
+      "model_years": [
+        2022
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; ID.4 MY2022, PR 1X1; VIN must be within 97HB or 97HC campaign",
+        "pr_codes": [
+          "1X1"
+        ],
+        "ecu_required": null,
+        "campaign_required": [
+          "97HB",
+          "97HC"
+        ],
+        "vin_range": null
+      },
+      "symptom_codes": [
+        41826
+      ],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Electric drive warning, possible intermittent failure to enter Ready mode",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "1. Verify VIN campaign 97HB/97HC and PR 1X1. 2. Match DTC with at least one specified symptom number in ECU 00CE before applying bulletin. 3. Dealer/authorized high-voltage technician to carry out full ID.Software sequence, never individual controller flashing. 4. Recheck fault memory and drive readiness using ODIS; exact procedures in TSB.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2071701-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-10250289-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:B101612:0015:VW-TSB-2061220-7",
+      "brand": "Volkswagen",
+      "code_original": "B101612",
+      "code_base": "B1016",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "B",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0015",
+      "ecu": "Airbag controller J234",
+      "definition_en": "Passenger airbag deactivation indicator short to battery positive",
+      "translation_ar": "قصر بمؤشر تعطيل وسادة الراكب الهوائية إلى موجب البطارية",
+      "model": [
+        "Atlas",
+        "Atlas Cross Sport"
+      ],
+      "model_years": {
+        "Atlas": [
+          2019,
+          2020,
+          2021
+        ],
+        "Atlas Cross Sport": [
+          2020
+        ]
+      },
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; Atlas MY2019–2021 VIN CA_KC530794..CA_MC521445; Atlas Cross Sport MY2020 VIN CA_LC200001..CA_LC225415",
+        "pr_codes": [],
+        "ecu_required": null,
+        "campaign_required": null,
+        "vin_range": {
+          "Atlas": [
+            "CA_KC530794",
+            "CA_MC521445"
+          ],
+          "Atlas Cross Sport": [
+            "CA_LC200001",
+            "CA_LC225415"
+          ]
+        }
+      },
+      "symptom_codes": [],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Airbag warning indicator in cluster",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "Verify VIN eligibility, address 0015, airbag controller 3Q0959655DB SW 720 and HW 006/007. Follow official ODIS SVM path: HW006 may qualify for SW 721 or later; HW007 directed to controller replacement under bulletin. Authorized SRS workshop only.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2061220-7"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10230571-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:B200009:0015:VW-TSB-2035369-2",
+      "brand": "Volkswagen",
+      "code_original": "B200009",
+      "code_base": "B2000",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "B",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0015",
+      "ecu": "Airbag controller J234",
+      "definition_en": "Transm.Contr. Unit Malfunction (abbreviation as printed by VW; expansion unverified)",
+      "translation_ar": "خلل في وحدة تحكم مذكورة بالاختصار الأصلي «Transm.Contr. Unit»؛ توسيع الاختصار غير مؤكد",
+      "model": [
+        "Jetta GLI",
+        "Passat"
+      ],
+      "model_years": [
+        2012,
+        2013,
+        2014
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; Jetta GLI and Passat MY2012–2014; additional DTCs exclude bulletin",
+        "pr_codes": [],
+        "ecu_required": null,
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Airbag warning indicator; bulletin requires only listed codes",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "Check Jetta GLI/Passat MY2012–2014, full SRS scan and absence of unrelated DTC. TSB treats a specific self-test/alarm-horn resonance condition; authorized workshop to consult the complete bulletin and exact VIN documentation before intervention.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2035369-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10241183-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse",
+        "Exact interpretation of abbreviation Transm.Contr. Unit"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:B200049:0015:VW-TSB-2035369-2",
+      "brand": "Volkswagen",
+      "code_original": "B200049",
+      "code_base": "B2000",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "B",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0015",
+      "ecu": "Airbag controller J234",
+      "definition_en": "Control module RAM fault",
+      "translation_ar": "خلل ذاكرة الوصول العشوائي لوحدة التحكم",
+      "model": [
+        "Jetta GLI",
+        "Passat"
+      ],
+      "model_years": [
+        2012,
+        2013,
+        2014
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; Jetta GLI and Passat MY2012–2014; additional DTCs exclude bulletin",
+        "pr_codes": [],
+        "ecu_required": null,
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Airbag warning indicator; bulletin requires only listed codes",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "Check Jetta GLI/Passat MY2012–2014, full SRS scan and absence of unrelated DTC. TSB treats a specific self-test/alarm-horn resonance condition; authorized workshop to consult the complete bulletin and exact VIN documentation before intervention.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2035369-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10241183-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    },
+    {
+      "record_id": "Volkswagen:U101200:0015:VW-TSB-2035369-2",
+      "brand": "Volkswagen",
+      "code_original": "U101200",
+      "code_base": "U1012",
+      "code_format": "VAG UDS 7-character diagnostic code; symptom identifiers stored separately",
+      "family": "U",
+      "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
+      "ecu_address": "0015",
+      "ecu": "Airbag controller J234",
+      "definition_en": "Control-unit supply voltage excessive",
+      "translation_ar": "ارتفاع جهد تغذية وحدة التحكم",
+      "model": [
+        "Jetta GLI",
+        "Passat"
+      ],
+      "model_years": [
+        2012,
+        2013,
+        2014
+      ],
+      "market": "United States (not established for Sweden/EU)",
+      "engine_code": null,
+      "transmission_code": null,
+      "applicability_proof": {
+        "bulletin_scope": "USA; Jetta GLI and Passat MY2012–2014; additional DTCs exclude bulletin",
+        "pr_codes": [],
+        "ecu_required": null,
+        "campaign_required": null,
+        "vin_range": null
+      },
+      "symptom_codes": [],
+      "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
+      "symptoms": "Airbag warning indicator; bulletin requires only listed codes",
+      "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
+      "diagnostic_steps": "Check Jetta GLI/Passat MY2012–2014, full SRS scan and absence of unrelated DTC. TSB treats a specific self-test/alarm-horn resonance condition; authorized workshop to consult the complete bulletin and exact VIN documentation before intervention.",
+      "live_data": [],
+      "parts": [],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "VW-TSB-2035369-2"
+      ],
+      "sources": [
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10241183-0001.pdf"
+      ],
+      "verification_status": "source_context_verified_diagnostics_pending",
+      "unverified_fields": [
+        "EU/Sweden model fitment",
+        "Engine-specific ECU hardware except where specified",
+        "Pinout and measured electrical tolerances",
+        "Full diagnostic thresholds",
+        "Parts placement",
+        "Commercial image reuse"
+      ],
+      "review_status": "PENDING_NOT_RELEASED",
+      "source_checked_on": "2026-11-16"
+    }
+  ],
+  "verification_notes": [
+    "Code + ECU + symptom source evidence is verified for the listed US bulletin conditions only",
+    "Not a general DTC meaning or Swedish/European fitment claim",
+    "No automated software update, SRS repair or high-voltage operation authorized by this file",
+    "No OEM images or protected wiring drawings embedded"
+  ]
+}
