@@ -1,0 +1,56 @@
+{
+  "schema": "dtc-nexis-mini-batch05-qa-v1",
+  "brand": "MINI",
+  "date": "2026-11-16",
+  "repo": "dtcnexis/DTC-Nexis-Updates",
+  "work_branch": "work/mini-dtc-batch03-20261116",
+  "baseline_shas": [
+    {
+      "path": "data/master/brands/mini.json",
+      "sha": "dedf5681a07d8867f80a2a3daffdbfa165869e83"
+    },
+    {
+      "path": "data/master/brands/mini_batch03_20261116.json",
+      "sha": "58ccea854a2deb6b2e9eeb2aaa69f1df12ae20af"
+    },
+    {
+      "path": "data/master/brands/mini_batch04_20261116.json",
+      "sha": "5f75b9684946d01f4bd6de4262cafc180f829264"
+    }
+  ],
+  "counts": {
+    "legacy": 45,
+    "batch03": 15,
+    "batch04_records": 13,
+    "batch04_distinct_codes": 12,
+    "batch05_records": 27,
+    "batch05_distinct_codes": 27,
+    "total_records": 100,
+    "total_distinct_codes": 99,
+    "duplicate_with_previous": 0,
+    "duplicate_within_batch05": 0,
+    "intentional_multiple_variant_code": "135608",
+    "source_references": 9,
+    "review_queue_batch05": 31,
+    "review_queue_all": 107
+  },
+  "duplicate_previous_codes": [],
+  "duplicate_within_new": [],
+  "duplicate_record_ids": [],
+  "unresolved_source_ids": [],
+  "missing_core_fields": [],
+  "code_prefix_caution": "B7F935 and C/D first character are manufacturer 6-char hex DTC identifiers, not OBD B/C format by letter prefix.",
+  "known_limitations": [
+    "UK/EU and Sweden application is not verified from US MINI bulletin",
+    "Screenshots for some OEM PDF documents failed, whereas extracted text was accessible",
+    "Record-specific complete wiring and pinouts unavailable",
+    "No new image files; paused collection per project decision",
+    "2014 EPS hardware replacement procedure superseded by 2020 revised bulletin; preserve version context",
+    "Module location in 10 EPS-related network codes not uniformly proven",
+    "Review count measures tasks, not unique DTC codes",
+    "No claim of complete global MINI DTC coverage"
+  ],
+  "release_status": "NOT_ACTIVE",
+  "original_files_preserved": true,
+  "main_modified": false
+}

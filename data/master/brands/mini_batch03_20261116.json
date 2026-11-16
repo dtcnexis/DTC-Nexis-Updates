@@ -1,0 +1,1716 @@
+{
+  "schema": "dtc-nexis-permanent-brand-code-records-v1-plus",
+  "brand": "MINI",
+  "batch_id": "MINI_BATCH03_20261116",
+  "release_to_app": "NOT_ACTIVE",
+  "review_status": "DRAFT",
+  "existing_library_path": "data/master/brands/mini.json",
+  "existing_code_count": 45,
+  "record_count": 15,
+  "duplicates_against_existing": 0,
+  "records": [
+    {
+      "record_id": "MINI-B03-DME-20A503",
+      "brand": "MINI",
+      "raw_code": "20A503",
+      "base_code": "20A503",
+      "code_family": "manufacturer_OEM_hex",
+      "ecu_context": "DME",
+      "definition_en": "Turbocharger coolant pump, self diagnosis: Signal implausible",
+      "translation_ar": "مضخة تبريد الشاحن التوربيني: إشارة غير منطقية أثناء الاختبار الذاتي",
+      "applicability": {
+        "models": [
+          "F56"
+        ],
+        "engines_or_candidates": [
+          "B38M",
+          "B48M"
+        ],
+        "condition": "produced through 2014-04",
+        "market": "US bulletin; applicability to Sweden/EU not established",
+        "model_years": "not confirmed independently",
+        "transmission": null,
+        "VIN_ranges": null,
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true,
+        "production_end": "2014-04"
+      },
+      "symptoms": [
+        "Drive Faulty"
+      ],
+      "causes_ranked": [
+        {
+          "cause": "Unfavorable DME software",
+          "evidence": "MINI OEM technical bulletin in stated scope"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ رمز DME وبيانات VIN والمحرك وتاريخ الإنتاج.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 2,
+          "action_ar": "افحص مستوى تكامل برنامج DME باستخدام ISTA.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 3,
+          "action_ar": "عند تطابق ظروف النشرة، حدّث البرمجة إلى F056-14-03-500 أو أحدث بمصدر قدرة معتمد.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا استمر الخلل بعد البرمجة فتابع خطة اختبار مضخة التبريد داخل ISTA دون استبدالها تلقائياً.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Fault memory and integration level / I-level",
+          "name_ar": "ذاكرة الأعطال ومستوى تكامل البرمجيات",
+          "test_condition": "read via ISTA",
+          "value": "no universal numeric live-data criterion; consult source bulletin"
+        }
+      ],
+      "parts": [
+        "مضخة تبريد التيربو؛ العطل البرمجي هو تفسير النشرة وليس دليلاً على تلف المضخة"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verification_status": "not_available"
+      },
+      "related_codes": [],
+      "source": [
+        {
+          "publisher": "MINI USA",
+          "bulletin_id": "M120414",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2015/MC-10216768-9999.pdf"
+        }
+      ],
+      "verification_status": "OEM_bulletin_text_and_scope_checked",
+      "review_status": "DRAFT_more_details_needed",
+      "release_status": "NOT_ACTIVE",
+      "missing": [
+        "Full model-specific ECU test parameters",
+        "Swedish VIN applicability",
+        "Sensor/connector pinout",
+        "Licensed component image"
+      ]
+    },
+    {
+      "record_id": "MINI-B03-DME-1A2005",
+      "brand": "MINI",
+      "raw_code": "1A2005",
+      "base_code": "1A2005",
+      "code_family": "manufacturer_OEM_hex",
+      "ecu_context": "DME",
+      "definition_en": "Electric fan: Communication fault",
+      "translation_ar": "مروحة التبريد الكهربائية: خلل اتصال",
+      "applicability": {
+        "models": [
+          "F55",
+          "F56"
+        ],
+        "engines_or_candidates": [],
+        "condition": "produced through 2015-10-31",
+        "market": "US bulletin; applicability to Sweden/EU not established",
+        "model_years": "not confirmed independently",
+        "transmission": null,
+        "VIN_ranges": null,
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true
+      },
+      "symptoms": [
+        "Service Engine Soon"
+      ],
+      "causes_ranked": [
+        {
+          "cause": "DME software calibration in bulletin scenario",
+          "evidence": "MINI OEM technical bulletin in stated scope"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ DME وحدد الطراز وتاريخ الإنتاج.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 2,
+          "action_ar": "افحص I-level الحالي وقارنه بـ F056-15-11-500.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 3,
+          "action_ar": "إذا كانت شروط النشرة متحققة، برمج باستخدام ISTA/P 3.59.0 أو أحدث.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا بقي الكود أو كان I-level حديثاً، استخدم خطة ISTA لفحص اتصال المروحة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Fault memory and integration level / I-level",
+          "name_ar": "ذاكرة الأعطال ومستوى تكامل البرمجيات",
+          "test_condition": "read via ISTA",
+          "value": "no universal numeric live-data criterion; consult source bulletin"
+        }
+      ],
+      "parts": [
+        "مروحة تبريد كهربائية؛ لا تغيير قبل التشخيص"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verification_status": "not_available"
+      },
+      "related_codes": [],
+      "source": [
+        {
+          "publisher": "MINI USA",
+          "bulletin_id": "M120716",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10146974-9999.pdf"
+        }
+      ],
+      "verification_status": "OEM_bulletin_text_and_scope_checked",
+      "review_status": "DRAFT_more_details_needed",
+      "release_status": "NOT_ACTIVE",
+      "missing": [
+        "Full model-specific ECU test parameters",
+        "Swedish VIN applicability",
+        "Sensor/connector pinout",
+        "Licensed component image"
+      ]
+    },
+    {
+      "record_id": "MINI-B03-DME-213A2B",
+      "brand": "MINI",
+      "raw_code": "213A2B",
+      "base_code": "213A2B",
+      "code_family": "manufacturer_OEM_hex",
+      "ecu_context": "DME",
+      "definition_en": "Increment wheel adaption faulty",
+      "translation_ar": "خلل في تكيّف عجلة إشارة موضع عمود المرفق",
+      "applicability": {
+        "models": [
+          "F54",
+          "F55",
+          "F56",
+          "F57",
+          "F60"
+        ],
+        "engines_or_candidates": [
+          "B36C",
+          "B46C",
+          "B46D",
+          "B48E"
+        ],
+        "condition": "from 2018-05/06 per chassis, factory I-level 19-07-500+",
+        "market": "US bulletin; applicability to Sweden/EU not established",
+        "model_years": "not confirmed independently",
+        "transmission": null,
+        "VIN_ranges": null,
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true,
+        "verified_engine_chassis_map": {
+          "F54": [
+            "B46C",
+            "B48E"
+          ],
+          "F55": [
+            "B36C",
+            "B46C"
+          ],
+          "F56": [
+            "B36C",
+            "B46C",
+            "B46D"
+          ],
+          "F57": [
+            "B36C",
+            "B46C",
+            "B46D"
+          ],
+          "F60": [
+            "B36C",
+            "B46C",
+            "B48E"
+          ]
+        },
+        "production_from_by_chassis": {
+          "F54": "2018-05",
+          "F55": "2018-06",
+          "F56": "2018-06",
+          "F57": "2018-05",
+          "F60": "2018-05"
+        },
+        "factory_ilevel_condition": "19-07-500 or later"
+      },
+      "symptoms": [
+        "MIL, usually no driveability complaint"
+      ],
+      "causes_ranked": [
+        {
+          "cause": "Unfavorable DME diagnostic calibration",
+          "evidence": "MINI OEM technical bulletin in stated scope"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "تحقق من مجموعة الهيكل والمحرك ورقم مستوى البرمجة المصنعي.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 2,
+          "action_ar": "حدد عدد الأسطوانات ونوع المحرك، ثم طبّق هدف البرمجة الموثق لتلك العائلة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 3,
+          "action_ar": "لـB3x الهدف F056-19-11-550 أو أحدث؛ ولـB4x الهدف F056-19-11-534 أو أحدث.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "لا تستبدل حساس عمود المرفق اعتماداً على هذا الرمز وحده؛ اتبع خطة ISTA إذا استمر العطل.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Fault memory and integration level / I-level",
+          "name_ar": "ذاكرة الأعطال ومستوى تكامل البرمجيات",
+          "test_condition": "read via ISTA",
+          "value": "no universal numeric live-data criterion; consult source bulletin"
+        }
+      ],
+      "parts": [
+        "عجلة إشارة عمود المرفق؛ لا تغيير قبل اختبار الأثر البرمجي"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verification_status": "not_available"
+      },
+      "related_codes": [],
+      "source": [
+        {
+          "publisher": "MINI USA",
+          "bulletin_id": "M110120",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171511-9999.pdf"
+        }
+      ],
+      "verification_status": "OEM_bulletin_text_and_scope_checked",
+      "review_status": "DRAFT_more_details_needed",
+      "release_status": "NOT_ACTIVE",
+      "missing": [
+        "Full model-specific ECU test parameters",
+        "Swedish VIN applicability",
+        "Sensor/connector pinout",
+        "Licensed component image"
+      ]
+    },
+    {
+      "record_id": "MINI-B03-BDC-8040A9",
+      "brand": "MINI",
+      "raw_code": "8040A9",
+      "base_code": "8040A9",
+      "code_family": "manufacturer_OEM_hex",
+      "ecu_context": "BDC",
+      "definition_en": "Start-stop button SST: Incorrect operation (pushed at an angle)",
+      "translation_ar": "زر تشغيل/إيقاف المحرك: تشغيل غير صحيح أو ضغط بزاوية",
+      "applicability": {
+        "models": [
+          "F56"
+        ],
+        "engines_or_candidates": [],
+        "condition": "2013-06-30 through 2014-07-31",
+        "market": "US bulletin; applicability to Sweden/EU not established",
+        "model_years": "not confirmed independently",
+        "transmission": null,
+        "VIN_ranges": null,
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true
+      },
+      "symptoms": [
+        "Multiple presses to stop engine; starting unaffected"
+      ],
+      "causes_ranked": [
+        {
+          "cause": "BDC application software defect",
+          "evidence": "MINI OEM technical bulletin in stated scope"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "تأكد من فترة إنتاج F56 وسلوك زر Start/Stop.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 2,
+          "action_ar": "افحص الرمز من BDC وأجْرِ اختبار المفتاح وفق ISTA.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 3,
+          "action_ar": "عند تطابق الحالة، حدّث البرنامج إلى F056-14-07-502 أو أحدث باستخدام مصدر قدرة معتمد.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا لم تختفِ المشكلة، استكمل تشخيص المفتاح والأسلاك وفق بيانات VIN.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Fault memory and integration level / I-level",
+          "name_ar": "ذاكرة الأعطال ومستوى تكامل البرمجيات",
+          "test_condition": "read via ISTA",
+          "value": "no universal numeric live-data criterion; consult source bulletin"
+        }
+      ],
+      "parts": [
+        "مفتاح Start/Stop ووحدة BDC؛ النشرة تعزو الحالة للبرنامج"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verification_status": "not_available"
+      },
+      "related_codes": [],
+      "source": [
+        {
+          "publisher": "MINI USA",
+          "bulletin_id": "M610614",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2014/MC-10149399-9999.pdf"
+        }
+      ],
+      "verification_status": "OEM_bulletin_text_and_scope_checked",
+      "review_status": "DRAFT_more_details_needed",
+      "release_status": "NOT_ACTIVE",
+      "missing": [
+        "Full model-specific ECU test parameters",
+        "Swedish VIN applicability",
+        "Sensor/connector pinout",
+        "Licensed component image"
+      ]
+    },
+    {
+      "record_id": "MINI-B03-EME-222833",
+      "brand": "MINI",
+      "raw_code": "222833",
+      "base_code": "222833",
+      "code_family": "manufacturer_OEM_hex",
+      "ecu_context": "EME",
+      "definition_en": "Charge management: CC message 803, grid power too low",
+      "translation_ar": "إدارة الشحن: الرسالة 803 تشير إلى انخفاض جهد الشبكة",
+      "applicability": {
+        "models": [
+          "F60"
+        ],
+        "engines_or_candidates": [],
+        "condition": "PHEV Cooper S E Countryman ALL4, precise production window unspecified",
+        "market": "US bulletin; applicability to Sweden/EU not established",
+        "model_years": "not confirmed independently",
+        "transmission": null,
+        "VIN_ranges": null,
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true,
+        "fuel": "PHEV",
+        "variant": "Cooper S E Countryman ALL4"
+      },
+      "symptoms": [
+        "Charging stops or fails; grid power low message"
+      ],
+      "causes_ranked": [
+        {
+          "cause": "OUC charging plug/cable/ground-fault trip or input supply; confirm rather than assume",
+          "evidence": "MINI OEM technical bulletin in stated scope"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "افحص كابل الشحن OUC والموصل ظاهرياً دون فتح منظومة الجهد العالي.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 2,
+          "action_ar": "تأكد من تثبيت قابس الشحن واستجابة مؤشرات كابل الشحن حسب دليل MINI.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 3,
+          "action_ar": "جرّب كابل OUC سليم ومعتمد وفق تعليمات الجهة المصنعة مع مراعاة متطلبات شبكة الكهرباء المحلية.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "عند عدم نجاح المقارنة، تُجرى خطة تشخيص EME/الشحن بواسطة فني مخوّل للجهد العالي.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 5,
+          "action_ar": "لا تُطبَّق عتبة 90V الأمريكية الواردة بالنشرة كمعيار لشبكة السويد أو أوروبا.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "EME charge management fault memory",
+          "name_ar": "ذاكرة أعطال إدارة الشحن EME",
+          "test_condition": "Charging complaint; ISTA scan",
+          "value": "No fixed numeric live data range established for this code by bulletin"
+        }
+      ],
+      "parts": [
+        "Occasional Use Cable (OUC)",
+        "قابس ومنفذ الشحن؛ لا تفترض التلف"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verification_status": "not_available"
+      },
+      "related_codes": [
+        "222834",
+        "222842",
+        "222846"
+      ],
+      "source": [
+        {
+          "publisher": "MINI USA",
+          "bulletin_id": "M610119",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10161586-9999.pdf"
+        }
+      ],
+      "verification_status": "OEM_bulletin_text_and_scope_checked",
+      "review_status": "DRAFT_more_details_needed",
+      "release_status": "NOT_ACTIVE",
+      "missing": [
+        "Full model-specific ECU test parameters",
+        "Swedish VIN applicability",
+        "Sensor/connector pinout",
+        "Licensed component image"
+      ],
+      "safety_warning": "Never access high-voltage components without HV authorization; published 90 VAC behavior relates to US-specified OUC and is NOT a Swedish/EU grid reference."
+    },
+    {
+      "record_id": "MINI-B03-EME-222834",
+      "brand": "MINI",
+      "raw_code": "222834",
+      "base_code": "222834",
+      "code_family": "manufacturer_OEM_hex",
+      "ecu_context": "EME",
+      "definition_en": "Charge management: CC message 804, charging not possible",
+      "translation_ar": "إدارة الشحن: الرسالة 804، الشحن غير ممكن",
+      "applicability": {
+        "models": [
+          "F60"
+        ],
+        "engines_or_candidates": [],
+        "condition": "PHEV Cooper S E Countryman ALL4, precise production window unspecified",
+        "market": "US bulletin; applicability to Sweden/EU not established",
+        "model_years": "not confirmed independently",
+        "transmission": null,
+        "VIN_ranges": null,
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true,
+        "fuel": "PHEV",
+        "variant": "Cooper S E Countryman ALL4"
+      },
+      "symptoms": [
+        "Charging fails or aborts"
+      ],
+      "causes_ranked": [
+        {
+          "cause": "OUC connection/cable or supply issue; differential diagnosis required",
+          "evidence": "MINI OEM technical bulletin in stated scope"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "افحص كابل الشحن OUC والموصل ظاهرياً دون فتح منظومة الجهد العالي.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 2,
+          "action_ar": "تأكد من تثبيت قابس الشحن واستجابة مؤشرات كابل الشحن حسب دليل MINI.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 3,
+          "action_ar": "جرّب كابل OUC سليم ومعتمد وفق تعليمات الجهة المصنعة مع مراعاة متطلبات شبكة الكهرباء المحلية.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "عند عدم نجاح المقارنة، تُجرى خطة تشخيص EME/الشحن بواسطة فني مخوّل للجهد العالي.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 5,
+          "action_ar": "لا تُطبَّق عتبة 90V الأمريكية الواردة بالنشرة كمعيار لشبكة السويد أو أوروبا.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "EME charge management fault memory",
+          "name_ar": "ذاكرة أعطال إدارة الشحن EME",
+          "test_condition": "Charging complaint; ISTA scan",
+          "value": "No fixed numeric live data range established for this code by bulletin"
+        }
+      ],
+      "parts": [
+        "Occasional Use Cable (OUC)",
+        "قابس ومنفذ الشحن؛ لا تفترض التلف"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verification_status": "not_available"
+      },
+      "related_codes": [
+        "222833",
+        "222842",
+        "222846"
+      ],
+      "source": [
+        {
+          "publisher": "MINI USA",
+          "bulletin_id": "M610119",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10161586-9999.pdf"
+        }
+      ],
+      "verification_status": "OEM_bulletin_text_and_scope_checked",
+      "review_status": "DRAFT_more_details_needed",
+      "release_status": "NOT_ACTIVE",
+      "missing": [
+        "Full model-specific ECU test parameters",
+        "Swedish VIN applicability",
+        "Sensor/connector pinout",
+        "Licensed component image"
+      ],
+      "safety_warning": "Never access high-voltage components without HV authorization; published 90 VAC behavior relates to US-specified OUC and is NOT a Swedish/EU grid reference."
+    },
+    {
+      "record_id": "MINI-B03-EME-222842",
+      "brand": "MINI",
+      "raw_code": "222842",
+      "base_code": "222842",
+      "code_family": "manufacturer_OEM_hex",
+      "ecu_context": "EME",
+      "definition_en": "Charge management function: Fault during the charging procedure",
+      "translation_ar": "إدارة الشحن: خلل أثناء عملية الشحن",
+      "applicability": {
+        "models": [
+          "F60"
+        ],
+        "engines_or_candidates": [],
+        "condition": "PHEV Cooper S E Countryman ALL4, precise production window unspecified",
+        "market": "US bulletin; applicability to Sweden/EU not established",
+        "model_years": "not confirmed independently",
+        "transmission": null,
+        "VIN_ranges": null,
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true,
+        "fuel": "PHEV",
+        "variant": "Cooper S E Countryman ALL4"
+      },
+      "symptoms": [
+        "Charging interruption/failure"
+      ],
+      "causes_ranked": [
+        {
+          "cause": "OUC/cable/grid/vehicle charging causes not singled out by code",
+          "evidence": "MINI OEM technical bulletin in stated scope"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "افحص كابل الشحن OUC والموصل ظاهرياً دون فتح منظومة الجهد العالي.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 2,
+          "action_ar": "تأكد من تثبيت قابس الشحن واستجابة مؤشرات كابل الشحن حسب دليل MINI.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 3,
+          "action_ar": "جرّب كابل OUC سليم ومعتمد وفق تعليمات الجهة المصنعة مع مراعاة متطلبات شبكة الكهرباء المحلية.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "عند عدم نجاح المقارنة، تُجرى خطة تشخيص EME/الشحن بواسطة فني مخوّل للجهد العالي.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 5,
+          "action_ar": "لا تُطبَّق عتبة 90V الأمريكية الواردة بالنشرة كمعيار لشبكة السويد أو أوروبا.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "EME charge management fault memory",
+          "name_ar": "ذاكرة أعطال إدارة الشحن EME",
+          "test_condition": "Charging complaint; ISTA scan",
+          "value": "No fixed numeric live data range established for this code by bulletin"
+        }
+      ],
+      "parts": [
+        "Occasional Use Cable (OUC)",
+        "قابس ومنفذ الشحن؛ لا تفترض التلف"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verification_status": "not_available"
+      },
+      "related_codes": [
+        "222833",
+        "222834",
+        "222846"
+      ],
+      "source": [
+        {
+          "publisher": "MINI USA",
+          "bulletin_id": "M610119",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10161586-9999.pdf"
+        }
+      ],
+      "verification_status": "OEM_bulletin_text_and_scope_checked",
+      "review_status": "DRAFT_more_details_needed",
+      "release_status": "NOT_ACTIVE",
+      "missing": [
+        "Full model-specific ECU test parameters",
+        "Swedish VIN applicability",
+        "Sensor/connector pinout",
+        "Licensed component image"
+      ],
+      "safety_warning": "Never access high-voltage components without HV authorization; published 90 VAC behavior relates to US-specified OUC and is NOT a Swedish/EU grid reference."
+    },
+    {
+      "record_id": "MINI-B03-EME-222846",
+      "brand": "MINI",
+      "raw_code": "222846",
+      "base_code": "222846",
+      "code_family": "manufacturer_OEM_hex",
+      "ecu_context": "EME",
+      "definition_en": "Charge management function: Fault during the charging procedure",
+      "translation_ar": "إدارة الشحن: خلل أثناء عملية الشحن",
+      "applicability": {
+        "models": [
+          "F60"
+        ],
+        "engines_or_candidates": [],
+        "condition": "PHEV Cooper S E Countryman ALL4, precise production window unspecified",
+        "market": "US bulletin; applicability to Sweden/EU not established",
+        "model_years": "not confirmed independently",
+        "transmission": null,
+        "VIN_ranges": null,
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true,
+        "fuel": "PHEV",
+        "variant": "Cooper S E Countryman ALL4"
+      },
+      "symptoms": [
+        "Charging interruption/failure"
+      ],
+      "causes_ranked": [
+        {
+          "cause": "OUC/cable/grid/vehicle charging causes not singled out by code",
+          "evidence": "MINI OEM technical bulletin in stated scope"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "افحص كابل الشحن OUC والموصل ظاهرياً دون فتح منظومة الجهد العالي.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 2,
+          "action_ar": "تأكد من تثبيت قابس الشحن واستجابة مؤشرات كابل الشحن حسب دليل MINI.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 3,
+          "action_ar": "جرّب كابل OUC سليم ومعتمد وفق تعليمات الجهة المصنعة مع مراعاة متطلبات شبكة الكهرباء المحلية.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "عند عدم نجاح المقارنة، تُجرى خطة تشخيص EME/الشحن بواسطة فني مخوّل للجهد العالي.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 5,
+          "action_ar": "لا تُطبَّق عتبة 90V الأمريكية الواردة بالنشرة كمعيار لشبكة السويد أو أوروبا.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "EME charge management fault memory",
+          "name_ar": "ذاكرة أعطال إدارة الشحن EME",
+          "test_condition": "Charging complaint; ISTA scan",
+          "value": "No fixed numeric live data range established for this code by bulletin"
+        }
+      ],
+      "parts": [
+        "Occasional Use Cable (OUC)",
+        "قابس ومنفذ الشحن؛ لا تفترض التلف"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verification_status": "not_available"
+      },
+      "related_codes": [
+        "222833",
+        "222834",
+        "222842"
+      ],
+      "source": [
+        {
+          "publisher": "MINI USA",
+          "bulletin_id": "M610119",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10161586-9999.pdf"
+        }
+      ],
+      "verification_status": "OEM_bulletin_text_and_scope_checked",
+      "review_status": "DRAFT_more_details_needed",
+      "release_status": "NOT_ACTIVE",
+      "missing": [
+        "Full model-specific ECU test parameters",
+        "Swedish VIN applicability",
+        "Sensor/connector pinout",
+        "Licensed component image"
+      ],
+      "safety_warning": "Never access high-voltage components without HV authorization; published 90 VAC behavior relates to US-specified OUC and is NOT a Swedish/EU grid reference."
+    },
+    {
+      "record_id": "MINI-B03-MRS-02",
+      "brand": "MINI",
+      "raw_code": "02",
+      "base_code": "02",
+      "code_family": "MRS_local_not_SAE",
+      "ecu_context": "MRS",
+      "definition_en": "Driver's side belt tensioner ignition circuit",
+      "translation_ar": "دائرة إشعال شدّاد حزام الأمان في مقعد السائق",
+      "applicability": {
+        "models": [
+          "R50",
+          "R53"
+        ],
+        "engines_or_candidates": [],
+        "condition": "start of production to 2003-02-17; R53 manual only; listed VIN ranges apply",
+        "market": "US bulletin; applicability to Sweden/EU not established",
+        "model_years": "not confirmed independently",
+        "transmission": "R53 manual only; R50 manual/automatic per VIN",
+        "VIN_ranges": {
+          "R50_manual": "TC30047-TC43963",
+          "R50_automatic": "TE10037-TE17624",
+          "R53_manual": "TD50072-TD65791"
+        },
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true
+      },
+      "symptoms": [
+        "Airbag warning lamp"
+      ],
+      "causes_ranked": [
+        {
+          "cause": "Faulty crimps at under-seat connector in stated bulletin scenario",
+          "evidence": "MINI OEM technical bulletin in stated scope"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ الرمز المحلي ذي الرقمين من وحدة MRS بواسطة ISTA/D، ولا تخلطه مع رموز SAE.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 2,
+          "action_ar": "تحقق من رقم الهيكل وفترة الإنتاج ونطاق VIN الوارد بالنشرة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 3,
+          "action_ar": "يتولى فني أنظمة SRS المؤهل تطبيق تعليمات فصل مصدر الطاقة والسلامة ثم فحص ضفيرة وموصلات المقعد طبقاً لدليل MINI.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "لا تستخدم أجهزة قياس أومية أو اختبارات توصيل مباشرة على دوائر إشعال الوسائد الهوائية أو شدادات الأحزمة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        }
+      ],
+      "live_data": [],
+      "parts": [
+        "موصلات وضفيرة المقعد",
+        "دائرة شداد الحزام أو وسادة المقعد حسب الكود"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verification_status": "not_available"
+      },
+      "related_codes": [
+        "03",
+        "05",
+        "06"
+      ],
+      "source": [
+        {
+          "publisher": "MINI USA",
+          "bulletin_id": "M650803",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2012/SB-10043927-2032.pdf"
+        }
+      ],
+      "verification_status": "OEM_bulletin_text_and_scope_checked",
+      "review_status": "DRAFT_more_details_needed",
+      "release_status": "NOT_ACTIVE",
+      "missing": [
+        "Full model-specific ECU test parameters",
+        "Swedish VIN applicability",
+        "Sensor/connector pinout",
+        "Licensed component image"
+      ],
+      "safety_warning": "SRS pyrotechnic circuits: qualified technician only; no direct ohmmeter/probe on igniter circuits. Follow MINI safety procedure."
+    },
+    {
+      "record_id": "MINI-B03-MRS-03",
+      "brand": "MINI",
+      "raw_code": "03",
+      "base_code": "03",
+      "code_family": "MRS_local_not_SAE",
+      "ecu_context": "MRS",
+      "definition_en": "Passenger's side belt tensioner ignition circuit",
+      "translation_ar": "دائرة إشعال شدّاد حزام الأمان في مقعد الراكب",
+      "applicability": {
+        "models": [
+          "R50",
+          "R53"
+        ],
+        "engines_or_candidates": [],
+        "condition": "start of production to 2003-02-17; R53 manual only; listed VIN ranges apply",
+        "market": "US bulletin; applicability to Sweden/EU not established",
+        "model_years": "not confirmed independently",
+        "transmission": "R53 manual only; R50 manual/automatic per VIN",
+        "VIN_ranges": {
+          "R50_manual": "TC30047-TC43963",
+          "R50_automatic": "TE10037-TE17624",
+          "R53_manual": "TD50072-TD65791"
+        },
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true
+      },
+      "symptoms": [
+        "Airbag warning lamp"
+      ],
+      "causes_ranked": [
+        {
+          "cause": "Faulty crimps at under-seat connector in stated bulletin scenario",
+          "evidence": "MINI OEM technical bulletin in stated scope"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ الرمز المحلي ذي الرقمين من وحدة MRS بواسطة ISTA/D، ولا تخلطه مع رموز SAE.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 2,
+          "action_ar": "تحقق من رقم الهيكل وفترة الإنتاج ونطاق VIN الوارد بالنشرة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 3,
+          "action_ar": "يتولى فني أنظمة SRS المؤهل تطبيق تعليمات فصل مصدر الطاقة والسلامة ثم فحص ضفيرة وموصلات المقعد طبقاً لدليل MINI.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "لا تستخدم أجهزة قياس أومية أو اختبارات توصيل مباشرة على دوائر إشعال الوسائد الهوائية أو شدادات الأحزمة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        }
+      ],
+      "live_data": [],
+      "parts": [
+        "موصلات وضفيرة المقعد",
+        "دائرة شداد الحزام أو وسادة المقعد حسب الكود"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verification_status": "not_available"
+      },
+      "related_codes": [
+        "02",
+        "05",
+        "06"
+      ],
+      "source": [
+        {
+          "publisher": "MINI USA",
+          "bulletin_id": "M650803",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2012/SB-10043927-2032.pdf"
+        }
+      ],
+      "verification_status": "OEM_bulletin_text_and_scope_checked",
+      "review_status": "DRAFT_more_details_needed",
+      "release_status": "NOT_ACTIVE",
+      "missing": [
+        "Full model-specific ECU test parameters",
+        "Swedish VIN applicability",
+        "Sensor/connector pinout",
+        "Licensed component image"
+      ],
+      "safety_warning": "SRS pyrotechnic circuits: qualified technician only; no direct ohmmeter/probe on igniter circuits. Follow MINI safety procedure."
+    },
+    {
+      "record_id": "MINI-B03-MRS-05",
+      "brand": "MINI",
+      "raw_code": "05",
+      "base_code": "05",
+      "code_family": "MRS_local_not_SAE",
+      "ecu_context": "MRS",
+      "definition_en": "Driver's side seat airbag ignition coil",
+      "translation_ar": "دائرة إشعال الوسادة الهوائية الجانبية في مقعد السائق",
+      "applicability": {
+        "models": [
+          "R50",
+          "R53"
+        ],
+        "engines_or_candidates": [],
+        "condition": "start of production to 2003-02-17; R53 manual only; listed VIN ranges apply",
+        "market": "US bulletin; applicability to Sweden/EU not established",
+        "model_years": "not confirmed independently",
+        "transmission": "R53 manual only; R50 manual/automatic per VIN",
+        "VIN_ranges": {
+          "R50_manual": "TC30047-TC43963",
+          "R50_automatic": "TE10037-TE17624",
+          "R53_manual": "TD50072-TD65791"
+        },
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true
+      },
+      "symptoms": [
+        "Airbag warning lamp"
+      ],
+      "causes_ranked": [
+        {
+          "cause": "Faulty crimps at under-seat connector in stated bulletin scenario",
+          "evidence": "MINI OEM technical bulletin in stated scope"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ الرمز المحلي ذي الرقمين من وحدة MRS بواسطة ISTA/D، ولا تخلطه مع رموز SAE.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 2,
+          "action_ar": "تحقق من رقم الهيكل وفترة الإنتاج ونطاق VIN الوارد بالنشرة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 3,
+          "action_ar": "يتولى فني أنظمة SRS المؤهل تطبيق تعليمات فصل مصدر الطاقة والسلامة ثم فحص ضفيرة وموصلات المقعد طبقاً لدليل MINI.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "لا تستخدم أجهزة قياس أومية أو اختبارات توصيل مباشرة على دوائر إشعال الوسائد الهوائية أو شدادات الأحزمة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        }
+      ],
+      "live_data": [],
+      "parts": [
+        "موصلات وضفيرة المقعد",
+        "دائرة شداد الحزام أو وسادة المقعد حسب الكود"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verification_status": "not_available"
+      },
+      "related_codes": [
+        "02",
+        "03",
+        "06"
+      ],
+      "source": [
+        {
+          "publisher": "MINI USA",
+          "bulletin_id": "M650803",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2012/SB-10043927-2032.pdf"
+        }
+      ],
+      "verification_status": "OEM_bulletin_text_and_scope_checked",
+      "review_status": "DRAFT_more_details_needed",
+      "release_status": "NOT_ACTIVE",
+      "missing": [
+        "Full model-specific ECU test parameters",
+        "Swedish VIN applicability",
+        "Sensor/connector pinout",
+        "Licensed component image"
+      ],
+      "safety_warning": "SRS pyrotechnic circuits: qualified technician only; no direct ohmmeter/probe on igniter circuits. Follow MINI safety procedure."
+    },
+    {
+      "record_id": "MINI-B03-MRS-06",
+      "brand": "MINI",
+      "raw_code": "06",
+      "base_code": "06",
+      "code_family": "MRS_local_not_SAE",
+      "ecu_context": "MRS",
+      "definition_en": "Passenger's side seat airbag ignition coil",
+      "translation_ar": "دائرة إشعال الوسادة الهوائية الجانبية في مقعد الراكب",
+      "applicability": {
+        "models": [
+          "R50",
+          "R53"
+        ],
+        "engines_or_candidates": [],
+        "condition": "start of production to 2003-02-17; R53 manual only; listed VIN ranges apply",
+        "market": "US bulletin; applicability to Sweden/EU not established",
+        "model_years": "not confirmed independently",
+        "transmission": "R53 manual only; R50 manual/automatic per VIN",
+        "VIN_ranges": {
+          "R50_manual": "TC30047-TC43963",
+          "R50_automatic": "TE10037-TE17624",
+          "R53_manual": "TD50072-TD65791"
+        },
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true
+      },
+      "symptoms": [
+        "Airbag warning lamp"
+      ],
+      "causes_ranked": [
+        {
+          "cause": "Faulty crimps at under-seat connector in stated bulletin scenario",
+          "evidence": "MINI OEM technical bulletin in stated scope"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ الرمز المحلي ذي الرقمين من وحدة MRS بواسطة ISTA/D، ولا تخلطه مع رموز SAE.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 2,
+          "action_ar": "تحقق من رقم الهيكل وفترة الإنتاج ونطاق VIN الوارد بالنشرة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 3,
+          "action_ar": "يتولى فني أنظمة SRS المؤهل تطبيق تعليمات فصل مصدر الطاقة والسلامة ثم فحص ضفيرة وموصلات المقعد طبقاً لدليل MINI.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "لا تستخدم أجهزة قياس أومية أو اختبارات توصيل مباشرة على دوائر إشعال الوسائد الهوائية أو شدادات الأحزمة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        }
+      ],
+      "live_data": [],
+      "parts": [
+        "موصلات وضفيرة المقعد",
+        "دائرة شداد الحزام أو وسادة المقعد حسب الكود"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verification_status": "not_available"
+      },
+      "related_codes": [
+        "02",
+        "03",
+        "05"
+      ],
+      "source": [
+        {
+          "publisher": "MINI USA",
+          "bulletin_id": "M650803",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2012/SB-10043927-2032.pdf"
+        }
+      ],
+      "verification_status": "OEM_bulletin_text_and_scope_checked",
+      "review_status": "DRAFT_more_details_needed",
+      "release_status": "NOT_ACTIVE",
+      "missing": [
+        "Full model-specific ECU test parameters",
+        "Swedish VIN applicability",
+        "Sensor/connector pinout",
+        "Licensed component image"
+      ],
+      "safety_warning": "SRS pyrotechnic circuits: qualified technician only; no direct ohmmeter/probe on igniter circuits. Follow MINI safety procedure."
+    },
+    {
+      "record_id": "MINI-B03-EGS-CF0486",
+      "brand": "MINI",
+      "raw_code": "CF0486",
+      "base_code": "CF0486",
+      "code_family": "manufacturer_OEM_hex",
+      "ecu_context": "EGS",
+      "definition_en": "EGS,PT-CAN2: Line fault/electrical fault",
+      "translation_ar": "ناقل PT-CAN2 لوحدة EGS: خلل كهربائي أو خلل بالخط",
+      "applicability": {
+        "models": [
+          "F54",
+          "F55",
+          "F56",
+          "F57"
+        ],
+        "engines_or_candidates": [
+          "B36M",
+          "B38M",
+          "B46M",
+          "B46O",
+          "B48M"
+        ],
+        "condition": "AISIN automatic; produced through 2016-11-07; affected I-level 16-03-50x/16-07-50x",
+        "market": "US bulletin; applicability to Sweden/EU not established",
+        "model_years": "not confirmed independently",
+        "transmission": "AISIN automatic",
+        "VIN_ranges": null,
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true,
+        "production_end": "2016-11-07",
+        "affected_ilevels": [
+          "F056-16-03-50x",
+          "F056-16-07-50x"
+        ],
+        "exact_model_engine_combination": "Do not cross join model list × engine list without independent evidence"
+      },
+      "symptoms": [
+        "MIL; engine power loss; transmission emergency program"
+      ],
+      "causes_ranked": [
+        {
+          "cause": "DME software incompatibility in bulletin scenario",
+          "evidence": "MINI OEM technical bulletin in stated scope"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "تحقق من ناقل AISIN ومن المحرك وتاريخ الإنتاج قبل ربط الكود بالسيارة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 2,
+          "action_ar": "اقرأ I-level وتحقق من الإصدارات المتأثرة F056-16-03-50x وF056-16-07-50x.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 3,
+          "action_ar": "عند تطابق الحالة، نفّذ تحديث DME إلى F056-16-11-500 أو أحدث.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا استمر عطل الشبكة، نفّذ خطة ISTA لاختبار PT-CAN2 ولا تستبدل أجزاء بسبب الكود وحده.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Fault memory and integration level / I-level",
+          "name_ar": "ذاكرة الأعطال ومستوى تكامل البرمجيات",
+          "test_condition": "read via ISTA",
+          "value": "no universal numeric live-data criterion; consult source bulletin"
+        }
+      ],
+      "parts": [
+        "EGS/DME والناقل AISIN؛ لا تُبدّل قطع لأجل حالة البرنامج الموصوفة"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verification_status": "not_available"
+      },
+      "related_codes": [],
+      "source": [
+        {
+          "publisher": "MINI USA",
+          "bulletin_id": "M120117",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10146614-9999.pdf"
+        }
+      ],
+      "verification_status": "OEM_bulletin_text_and_scope_checked",
+      "review_status": "DRAFT_more_details_needed",
+      "release_status": "NOT_ACTIVE",
+      "missing": [
+        "Full model-specific ECU test parameters",
+        "Swedish VIN applicability",
+        "Sensor/connector pinout",
+        "Licensed component image"
+      ]
+    },
+    {
+      "record_id": "MINI-B03-BDC-CD0420",
+      "brand": "MINI",
+      "raw_code": "CD0420",
+      "base_code": "CD0420",
+      "code_family": "manufacturer_OEM_hex",
+      "ecu_context": "BDC",
+      "definition_en": "Error of Flexray controller on Flexray bus",
+      "translation_ar": "خطأ متحكم الاتصال بشبكة FlexRay",
+      "applicability": {
+        "models": [
+          "F54",
+          "F55",
+          "F56",
+          "F57",
+          "F60"
+        ],
+        "engines_or_candidates": [],
+        "condition": "from start of production, end not stated",
+        "market": "US bulletin; applicability to Sweden/EU not established",
+        "model_years": "not confirmed independently",
+        "transmission": null,
+        "VIN_ranges": null,
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true
+      },
+      "symptoms": [
+        "Brake/suspension/airbag CCM; steering assist reduction"
+      ],
+      "causes_ranked": [
+        {
+          "cause": "BDC software in defined bulletin scenario",
+          "evidence": "MINI OEM technical bulletin in stated scope"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ جميع وحدات BDC/ZGM وسجل رسائل Check Control المصاحبة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 2,
+          "action_ar": "تحقق من مستوى I-level الحالي؛ النشرة تعالج حالة البرمجة الأقدم من F056-20-03-530.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 3,
+          "action_ar": "نفّذ التحديث الموثق إذا انطبقت شروط النشرة، مع مصدر قدرة مناسب.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "عند استمرار الخطأ أو وجود برنامج أحدث، اتبع خطة ISTA الخاصة بشبكة FlexRay.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Fault memory and integration level / I-level",
+          "name_ar": "ذاكرة الأعطال ومستوى تكامل البرمجيات",
+          "test_condition": "read via ISTA",
+          "value": "no universal numeric live-data criterion; consult source bulletin"
+        }
+      ],
+      "parts": [
+        "BDC/ZGM وممر FlexRay؛ التلف المادي غير مثبت بالنشرة"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verification_status": "not_available"
+      },
+      "related_codes": [
+        "D91FF9"
+      ],
+      "source": [
+        {
+          "publisher": "MINI USA",
+          "bulletin_id": "M610220",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10174371-9999.pdf"
+        }
+      ],
+      "verification_status": "OEM_bulletin_text_and_scope_checked",
+      "review_status": "DRAFT_more_details_needed",
+      "release_status": "NOT_ACTIVE",
+      "missing": [
+        "Full model-specific ECU test parameters",
+        "Swedish VIN applicability",
+        "Sensor/connector pinout",
+        "Licensed component image"
+      ]
+    },
+    {
+      "record_id": "MINI-B03-BDCZGM-D91FF9",
+      "brand": "MINI",
+      "raw_code": "D91FF9",
+      "base_code": "D91FF9",
+      "code_family": "manufacturer_OEM_hex",
+      "ecu_context": "BDC/ZGM",
+      "definition_en": "Flexray message, data drivetrain 2 (DT_PT_2): Timeout",
+      "translation_ar": "مهلة رسالة FlexRay لبيانات مجموعة الدفع 2 انتهت",
+      "applicability": {
+        "models": [
+          "F54",
+          "F55",
+          "F56",
+          "F57",
+          "F60"
+        ],
+        "engines_or_candidates": [],
+        "condition": "from start of production, end not stated",
+        "market": "US bulletin; applicability to Sweden/EU not established",
+        "model_years": "not confirmed independently",
+        "transmission": null,
+        "VIN_ranges": null,
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true
+      },
+      "symptoms": [
+        "Brake/suspension/airbag CCM; steering assist reduction"
+      ],
+      "causes_ranked": [
+        {
+          "cause": "BDC software in defined bulletin scenario",
+          "evidence": "MINI OEM technical bulletin in stated scope"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ رموز BDC وZGM وابحث عن CD0420 المرتبط في نطاق النشرة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 2,
+          "action_ar": "تحقق من مستوى I-level الحالي ومن الرسائل المصاحبة.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 3,
+          "action_ar": "إذا كان أقدم من F056-20-03-530 ووافقت ظروف النشرة، نفّذ البرمجة الرسمية.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا لم تُحل الحالة، افحص نظام الاتصال وفق ISTA قبل استبدال وحدة إلكترونية.",
+          "tools": [
+            "ISTA",
+            "تعليمات MINI الخاصة بالهيكل والمحرك"
+          ],
+          "criterion": "لا تُستخدم عتبة كهربائية أو بيانات أرجل دون مرجع خاص بالمركبة"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Fault memory and integration level / I-level",
+          "name_ar": "ذاكرة الأعطال ومستوى تكامل البرمجيات",
+          "test_condition": "read via ISTA",
+          "value": "no universal numeric live-data criterion; consult source bulletin"
+        }
+      ],
+      "parts": [
+        "BDC/ZGM وممر FlexRay؛ التلف المادي غير مثبت بالنشرة"
+      ],
+      "wiring": {
+        "pins": null,
+        "diagram": null,
+        "verification_status": "not_available"
+      },
+      "related_codes": [
+        "CD0420"
+      ],
+      "source": [
+        {
+          "publisher": "MINI USA",
+          "bulletin_id": "M610220",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10174371-9999.pdf"
+        }
+      ],
+      "verification_status": "OEM_bulletin_text_and_scope_checked",
+      "review_status": "DRAFT_more_details_needed",
+      "release_status": "NOT_ACTIVE",
+      "missing": [
+        "Full model-specific ECU test parameters",
+        "Swedish VIN applicability",
+        "Sensor/connector pinout",
+        "Licensed component image"
+      ]
+    }
+  ]
+}

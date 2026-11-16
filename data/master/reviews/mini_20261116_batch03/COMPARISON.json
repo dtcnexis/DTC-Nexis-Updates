@@ -1,0 +1,90 @@
+{
+  "brand": "MINI",
+  "batch": "CONTINUE-DTC-NEXIS-BRAND-LIBRARY-20261116",
+  "repository": "dtcnexis/DTC-Nexis-Updates",
+  "baseline_branch": "main",
+  "work_branch": "work/mini-dtc-batch03-20261116",
+  "main_commit_at_start": "c31da1ee655bf20e96ceab2c496b5a04d0657e35",
+  "baseline_file_sha": "dedf5681a07d8867f80a2a3daffdbfa165869e83",
+  "counts": {
+    "existing_legacy_codes": 45,
+    "new_oem_bulletin_scoped_codes": 15,
+    "duplicates_with_legacy": 0,
+    "duplicates_within_new": 0,
+    "review_queue_total": 61,
+    "review_queue_legacy": 45,
+    "review_queue_new_enrichment": 15,
+    "review_queue_secondary_candidate": 1,
+    "bulletin_sources": 8
+  },
+  "new_codes": [
+    "20A503",
+    "1A2005",
+    "213A2B",
+    "8040A9",
+    "222833",
+    "222834",
+    "222842",
+    "222846",
+    "02",
+    "03",
+    "05",
+    "06",
+    "CF0486",
+    "CD0420",
+    "D91FF9"
+  ],
+  "new_files_on_branch": [
+    "data/master/brands/mini_batch03_20261116.json",
+    "data/master/reviews/mini_20261116_batch03/REVIEW_QUEUE.json",
+    "data/master/reviews/mini_20261116_batch03/SOURCES.json"
+  ],
+  "original_local_files_preserved_unmodified": [
+    {
+      "name": "MINI_DTC_NEXIS_batch01.json",
+      "sha256": "50d08556deb58caa5414bbee8d355a71895587c7a00e2a8e29a6f5ded7499e0b"
+    },
+    {
+      "name": "MINI_DTC_NEXIS_batch01.csv",
+      "sha256": "9eea62654e8a33ee228ed119078b53a30bb91b75bff109ea044f728fb9e14669"
+    },
+    {
+      "name": "MINI_DTC_NEXIS_batch01_README.md",
+      "sha256": "19297b8b39ee7f0ff26fa1b3a8ed44f72222b1b4531651a13b7b5ccac650333a"
+    },
+    {
+      "name": "MINI_DTC_NEXIS_batch01_manifest.json",
+      "sha256": "56cdcbb2627db1f354b417d25b266e23dd5e469f2a7d1f75734bb511ca20be6b"
+    },
+    {
+      "name": "MINI_DTC_NEXIS_expansion_batch02_review.json",
+      "sha256": "48ef464ad7c1ddadcc3dddad3dd245d2fca4d69fcaacf87be403e1138c90f1d0"
+    },
+    {
+      "name": "MINI_vehicles_batch02_review.csv",
+      "sha256": "e24fe9f7e86d39c2ae4a8fdac68e1f8225b0b557461ffa427917dcddd6685453"
+    },
+    {
+      "name": "MINI_engines_batch02_review.csv",
+      "sha256": "dea6fe2dd3708d143a52e68a30b90e0080bf5effc00d53dc45841181d5f90c11"
+    }
+  ],
+  "scope_and_limitations": [
+    "Legacy 45-core permanent records remain unchanged and not yet fully independently validated.",
+    "15 new records have OEM bulletin text and limited production/vehicle scenarios corroborated, but are draft until VIN/market/ECU validation.",
+    "One secondary-source-only airbag code 93BF is held in review queue, not counted as a new confirmed OEM entry.",
+    "Market USA bulletin claims cannot automatically be extended to Sweden/EU.",
+    "All 60 previously/newly stored codes remain pending some depth of technical enrichment; no production images or connector diagrams approved.",
+    "All files committed only to work branch; no main merge or app release.",
+    "The source archive GitHub pointer and 7 local original files have distinct provenance; no reconstruction of original source bytes on GitHub is claimed.",
+    "Safety-critical SRS/HV procedures are not simplified into generic wiring resistance/pinout steps."
+  ],
+  "validation": {
+    "file_readback": true,
+    "record_counts_checked": true,
+    "code_uniqueness_check": true,
+    "linked_references_checks": "source references manually checked for new records; historical source links not revalidated here",
+    "no_main_changes_intended": true,
+    "release_status": "NOT_ACTIVATED"
+  }
+}

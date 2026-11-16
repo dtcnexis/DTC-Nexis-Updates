@@ -1,0 +1,435 @@
+{
+  "schema": "dtc-nexis-review-queue-v1",
+  "brand": "MINI",
+  "batch": "MINI_BATCH04_20261116",
+  "existing_queue_count": 61,
+  "new_queue_count": 15,
+  "total_across_batches": 76,
+  "record_enrichment_tasks": 13,
+  "unpromoted_related_code": 1,
+  "existing_code_enrichment": 1,
+  "queue": [
+    {
+      "queue_id": "MINI-B04-VERIFY-MINI-B04-ACSM-02010A",
+      "brand": "MINI",
+      "code": "02010A",
+      "code_format": "MINI_OEM_hex",
+      "ecu": "ACSM",
+      "engine": "not supplied in bulletin",
+      "chassis": [
+        "F65",
+        "F66",
+        "F67",
+        "U25"
+      ],
+      "manufacturer_source_ids": [
+        "MINI-M610126-REV2"
+      ],
+      "source_links": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-11034472-0001.pdf"
+      ],
+      "reason": "Needs independent SE/EU VIN/ECU applicability and precise measured values; OEM source proves only bulletin case",
+      "missing_data": [
+        "Exact Scandinavian VIN applicability",
+        "Full ECU variant test criteria",
+        "Validated wiring/pins",
+        "Legal code-matched technical image"
+      ],
+      "verification_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "queue_id": "MINI-B04-VERIFY-MINI-B04-VIP-02390A",
+      "brand": "MINI",
+      "code": "02390A",
+      "code_format": "MINI_OEM_hex",
+      "ecu": "VIP",
+      "engine": "not supplied in bulletin",
+      "chassis": [
+        "F65",
+        "F66",
+        "F67",
+        "U25"
+      ],
+      "manufacturer_source_ids": [
+        "MINI-M610126-REV2"
+      ],
+      "source_links": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-11034472-0001.pdf"
+      ],
+      "reason": "Needs independent SE/EU VIN/ECU applicability and precise measured values; OEM source proves only bulletin case",
+      "missing_data": [
+        "Exact Scandinavian VIN applicability",
+        "Full ECU variant test criteria",
+        "Validated wiring/pins",
+        "Legal code-matched technical image"
+      ],
+      "verification_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "queue_id": "MINI-B04-VERIFY-MINI-B04-IBDSC-02290A",
+      "brand": "MINI",
+      "code": "02290A",
+      "code_format": "MINI_OEM_hex",
+      "ecu": "IB/DSC",
+      "engine": "not supplied in bulletin",
+      "chassis": [
+        "F65",
+        "F66",
+        "F67",
+        "U25"
+      ],
+      "manufacturer_source_ids": [
+        "MINI-M610126-REV2"
+      ],
+      "source_links": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-11034472-0001.pdf"
+      ],
+      "reason": "Needs independent SE/EU VIN/ECU applicability and precise measured values; OEM source proves only bulletin case",
+      "missing_data": [
+        "Exact Scandinavian VIN applicability",
+        "Full ECU variant test criteria",
+        "Validated wiring/pins",
+        "Legal code-matched technical image"
+      ],
+      "verification_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "queue_id": "MINI-B04-VERIFY-MINI-B04-HKFM-020D0A",
+      "brand": "MINI",
+      "code": "020D0A",
+      "code_format": "MINI_OEM_hex",
+      "ecu": "HKFM",
+      "engine": "not supplied in bulletin",
+      "chassis": [
+        "F65",
+        "F66",
+        "F67",
+        "U25"
+      ],
+      "manufacturer_source_ids": [
+        "MINI-M610126-REV2"
+      ],
+      "source_links": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-11034472-0001.pdf"
+      ],
+      "reason": "Needs independent SE/EU VIN/ECU applicability and precise measured values; OEM source proves only bulletin case",
+      "missing_data": [
+        "Exact Scandinavian VIN applicability",
+        "Full ECU variant test criteria",
+        "Validated wiring/pins",
+        "Legal code-matched technical image"
+      ],
+      "verification_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "queue_id": "MINI-B04-VERIFY-MINI-B04-BDC-D91C86",
+      "brand": "MINI",
+      "code": "D91C86",
+      "code_format": "MINI_OEM_hex",
+      "ecu": "BDC",
+      "engine": "bulletin does not specify unique engine-code pairs",
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57",
+        "F60"
+      ],
+      "manufacturer_source_ids": [
+        "MINI-M610318"
+      ],
+      "source_links": [
+        "https://oemdtc.com/tsb/10145372/"
+      ],
+      "reason": "Manufacturer bulletin secondary transcript; re-open original MINI document; also check Swedish VIN and BDC calibration",
+      "missing_data": [
+        "Exact Scandinavian VIN applicability",
+        "Full ECU variant test criteria",
+        "Validated wiring/pins",
+        "Legal code-matched technical image"
+      ],
+      "verification_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "queue_id": "MINI-B04-VERIFY-MINI-B04-ACSMseatmodule-C95462",
+      "brand": "MINI",
+      "code": "C95462",
+      "code_format": "MINI_OEM_hex",
+      "ecu": "ACSM/seat module",
+      "engine": "not specified in bulletin",
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57",
+        "F60"
+      ],
+      "manufacturer_source_ids": [
+        "MINI-M650117-2019"
+      ],
+      "source_links": [
+        "https://static.nhtsa.gov/odi/tsbs/2019/MC-10159157-9999.pdf"
+      ],
+      "reason": "Confirm SRS seat electronic architecture by VIN; no inference of direct squib circuit fault",
+      "missing_data": [
+        "Exact Scandinavian VIN applicability",
+        "Full ECU variant test criteria",
+        "Validated wiring/pins",
+        "Legal code-matched technical image"
+      ],
+      "verification_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "queue_id": "MINI-B04-VERIFY-MINI-B04-ACSMseatmodule-C95463",
+      "brand": "MINI",
+      "code": "C95463",
+      "code_format": "MINI_OEM_hex",
+      "ecu": "ACSM/seat module",
+      "engine": "not specified in bulletin",
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57",
+        "F60"
+      ],
+      "manufacturer_source_ids": [
+        "MINI-M650117-2019"
+      ],
+      "source_links": [
+        "https://static.nhtsa.gov/odi/tsbs/2019/MC-10159157-9999.pdf"
+      ],
+      "reason": "Confirm SRS seat electronic architecture by VIN; no inference of direct squib circuit fault",
+      "missing_data": [
+        "Exact Scandinavian VIN applicability",
+        "Full ECU variant test criteria",
+        "Validated wiring/pins",
+        "Legal code-matched technical image"
+      ],
+      "verification_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "queue_id": "MINI-B04-VERIFY-MINI-B04-EME-222F96",
+      "brand": "MINI",
+      "code": "222F96",
+      "code_format": "MINI_OEM_hex",
+      "ecu": "EME",
+      "engine": "not specified",
+      "chassis": [
+        "F60"
+      ],
+      "manufacturer_source_ids": [
+        "MINI-M610217"
+      ],
+      "source_links": [
+        "https://static.nhtsa.gov/odi/tsbs/2017/MC-10215030-9999.pdf"
+      ],
+      "reason": "Original bulletin lists EME FC and repair workflow but does not provide full fault text; ensure exact ECU meaning",
+      "missing_data": [
+        "Exact Scandinavian VIN applicability",
+        "Full ECU variant test criteria",
+        "Validated wiring/pins",
+        "Legal code-matched technical image"
+      ],
+      "verification_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "queue_id": "MINI-B04-VERIFY-MINI-B04-SME-21F156",
+      "brand": "MINI",
+      "code": "21F156",
+      "code_format": "MINI_OEM_hex",
+      "ecu": "SME",
+      "engine": "not specified",
+      "chassis": [
+        "F60"
+      ],
+      "manufacturer_source_ids": [
+        "MINI-M610218"
+      ],
+      "source_links": [
+        "https://static.nhtsa.gov/odi/tsbs/2018/MC-10143578-9999.pdf"
+      ],
+      "reason": "Needs independent SE/EU VIN/ECU applicability and precise measured values; OEM source proves only bulletin case",
+      "missing_data": [
+        "Exact Scandinavian VIN applicability",
+        "Full ECU variant test criteria",
+        "Validated wiring/pins",
+        "Legal code-matched technical image"
+      ],
+      "verification_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "queue_id": "MINI-B04-VERIFY-MINI-B04-SME-21F1F7",
+      "brand": "MINI",
+      "code": "21F1F7",
+      "code_format": "MINI_OEM_hex",
+      "ecu": "SME",
+      "engine": "not specified",
+      "chassis": [
+        "F60"
+      ],
+      "manufacturer_source_ids": [
+        "MINI-M610218"
+      ],
+      "source_links": [
+        "https://static.nhtsa.gov/odi/tsbs/2018/MC-10143578-9999.pdf"
+      ],
+      "reason": "Needs independent SE/EU VIN/ECU applicability and precise measured values; OEM source proves only bulletin case",
+      "missing_data": [
+        "Exact Scandinavian VIN applicability",
+        "Full ECU variant test criteria",
+        "Validated wiring/pins",
+        "Legal code-matched technical image"
+      ],
+      "verification_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "queue_id": "MINI-B04-VERIFY-MINI-B04-DME-1E0001",
+      "brand": "MINI",
+      "code": "1E0001",
+      "code_format": "MINI_OEM_hex",
+      "ecu": "DME",
+      "engine": [
+        "B36M",
+        "B38M",
+        "B46M",
+        "B48M",
+        "B48O",
+        "XB2H"
+      ],
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57",
+        "F60"
+      ],
+      "manufacturer_source_ids": [
+        "MINI-M120317"
+      ],
+      "source_links": [
+        "https://static.nhtsa.gov/odi/tsbs/2017/MC-10149266-9999.pdf"
+      ],
+      "reason": "Needs independent SE/EU VIN/ECU applicability and precise measured values; OEM source proves only bulletin case",
+      "missing_data": [
+        "Exact Scandinavian VIN applicability",
+        "Full ECU variant test criteria",
+        "Validated wiring/pins",
+        "Legal code-matched technical image"
+      ],
+      "verification_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "queue_id": "MINI-B04-VERIFY-MINI-B04-DME-135608-F55F56-WARM-NOSTART",
+      "brand": "MINI",
+      "code": "135608",
+      "code_format": "MINI_OEM_hex",
+      "ecu": "DME",
+      "engine": [
+        "B38M",
+        "B46M",
+        "B48M"
+      ],
+      "chassis": [
+        "F55",
+        "F56"
+      ],
+      "manufacturer_source_ids": [
+        "MINI-M121614"
+      ],
+      "source_links": [
+        "https://static.nhtsa.gov/odi/tsbs/2015/MC-10147161-9999.pdf"
+      ],
+      "reason": "Same raw DTC has two manufacturer-confirmed divergent contexts; preserve variant-specific action, verify engine ECU and production",
+      "missing_data": [
+        "Exact Scandinavian VIN applicability",
+        "Full ECU variant test criteria",
+        "Validated wiring/pins",
+        "Legal code-matched technical image"
+      ],
+      "verification_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "queue_id": "MINI-B04-VERIFY-MINI-B04-DME-135608-F60PHEV-ERRONEOUS",
+      "brand": "MINI",
+      "code": "135608",
+      "code_format": "MINI_OEM_hex",
+      "ecu": "DME",
+      "engine": "not identified in bulletin",
+      "chassis": [
+        "F60"
+      ],
+      "manufacturer_source_ids": [
+        "MINI-M121118"
+      ],
+      "source_links": [
+        "https://static.nhtsa.gov/odi/tsbs/2018/MC-10143576-9999.pdf"
+      ],
+      "reason": "Same raw DTC has two manufacturer-confirmed divergent contexts; preserve variant-specific action, verify engine ECU and production",
+      "missing_data": [
+        "Exact Scandinavian VIN applicability",
+        "Full ECU variant test criteria",
+        "Validated wiring/pins",
+        "Legal code-matched technical image"
+      ],
+      "verification_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "queue_id": "MINI-B04-RELATED-SME-21F1F6",
+      "brand": "MINI",
+      "code": "21F1F6",
+      "ecu": "SME",
+      "engine": "not specified",
+      "chassis": [
+        "F60 PHEV"
+      ],
+      "manufacturer_source_ids": [
+        "MINI-M610218"
+      ],
+      "source_links": [
+        "https://static.nhtsa.gov/odi/tsbs/2018/MC-10143578-9999.pdf"
+      ],
+      "reason": "Bulletin names High-voltage battery switch contactors: Switch-off after a fault only as a co-occurring code triggering full ISTA diagnosis. It is not a software-only fault; applicability and diagnostic definition are incomplete.",
+      "status": "OEM_CODE_MENTIONED_NEEDS_SEPARATE_FULL_RECORD",
+      "not_counted_as_new_complete_code": true,
+      "release_to_app": false
+    },
+    {
+      "queue_id": "MINI-B04-ENRICH-118002",
+      "brand": "MINI",
+      "code": "118002",
+      "ecu": "DME",
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57",
+        "F60"
+      ],
+      "engine": "B36M, B38M, B46M, B48M, B48O, XB2H as mapped in OEM bulletin",
+      "manufacturer_source_ids": [
+        "MINI-M110117-REV8"
+      ],
+      "source_links": [
+        "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171510-9999.pdf"
+      ],
+      "reason": "Enrichment attaches revised OEM chassis/engine map to existing MINI-DTC-024; requires checking original record mapping before approval; not a new code.",
+      "status": "EXISTING_CODE_ENRICHMENT_REVIEW",
+      "not_counted_as_new_code": true,
+      "release_to_app": false
+    }
+  ]
+}

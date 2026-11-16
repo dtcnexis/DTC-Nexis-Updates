@@ -1,0 +1,1001 @@
+{
+  "schema": "dtc-nexis-review-queue-v1",
+  "brand": "MINI",
+  "batch": "MINI_BATCH05_20261116",
+  "reviewed_on": "2026-11-16",
+  "previous_tasks": 76,
+  "added_code_enrichment_tasks": 27,
+  "added_crosscheck_tasks": 4,
+  "new_tasks": 31,
+  "total_deferred_tasks": 107,
+  "queue": [
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-480A46-DSC",
+      "brand": "MINI",
+      "code": "480A46",
+      "ecu": "DSC",
+      "ecu_certainty": "explicit_in_bulletin",
+      "engine": "not stated in bulletin",
+      "chassis": [
+        "F55",
+        "F56",
+        "F57",
+        "F60"
+      ],
+      "source": {
+        "id": "MINI-M610319",
+        "bulletin_date": "2019-10-25",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10168020-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "standard",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-D35694-DSC",
+      "brand": "MINI",
+      "code": "D35694",
+      "ecu": "DSC",
+      "ecu_certainty": "explicit_in_bulletin",
+      "engine": "not stated in bulletin",
+      "chassis": [
+        "F55",
+        "F56",
+        "F57",
+        "F60"
+      ],
+      "source": {
+        "id": "MINI-M610319",
+        "bulletin_date": "2019-10-25",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10168020-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "standard",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-B7F935-HUH6",
+      "brand": "MINI",
+      "code": "B7F935",
+      "ecu": "HU-H6",
+      "ecu_certainty": "explicit_in_bulletin",
+      "engine": "not specified in source",
+      "chassis": [
+        "F65",
+        "F66",
+        "F67",
+        "U25"
+      ],
+      "source": {
+        "id": "MINI-M651124-REV1",
+        "bulletin_date": "2025-06-03",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11019583-0001.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "standard",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-10170C-DME",
+      "brand": "MINI",
+      "code": "10170C",
+      "ecu": "DME",
+      "ecu_certainty": "explicit_in_bulletin",
+      "engine": {
+        "F54": [
+          "B46C",
+          "B48E"
+        ],
+        "F55": [
+          "B36C",
+          "B46C"
+        ],
+        "F56": [
+          "B36C",
+          "B46C",
+          "B46D"
+        ],
+        "F57": [
+          "B36C",
+          "B46C",
+          "B46D"
+        ],
+        "F60": [
+          "B36C",
+          "B46C",
+          "B48E"
+        ]
+      },
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57",
+        "F60"
+      ],
+      "source": {
+        "id": "MINI-M120120-REV1",
+        "bulletin_date": "2020-03-02",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10174325-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "standard",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-100213-DME",
+      "brand": "MINI",
+      "code": "100213",
+      "ecu": "DME",
+      "ecu_certainty": "explicit_in_bulletin",
+      "engine": {
+        "F54": [
+          "B46C",
+          "B48E"
+        ],
+        "F55": [
+          "B36C",
+          "B46C"
+        ],
+        "F56": [
+          "B36C",
+          "B46C",
+          "B46D"
+        ],
+        "F57": [
+          "B36C",
+          "B46C",
+          "B46D"
+        ],
+        "F60": [
+          "B36C",
+          "B46C",
+          "B48E"
+        ]
+      },
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57",
+        "F60"
+      ],
+      "source": {
+        "id": "MINI-M120120-REV1",
+        "bulletin_date": "2020-03-02",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10174325-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "standard",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-160001-DME",
+      "brand": "MINI",
+      "code": "160001",
+      "ecu": "DME",
+      "ecu_certainty": "explicit_in_bulletin",
+      "engine": [
+        "B36M",
+        "B38M",
+        "B46M",
+        "B48M",
+        "B48O",
+        "XB2H"
+      ],
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57",
+        "F60"
+      ],
+      "source": {
+        "id": "MINI-M120219",
+        "bulletin_date": "2019-07-01",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10164019-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "high_due_to_safety_or_component_replacement",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-160020-DME",
+      "brand": "MINI",
+      "code": "160020",
+      "ecu": "DME",
+      "ecu_certainty": "explicit_in_bulletin",
+      "engine": [
+        "B36M",
+        "B38M",
+        "B46M",
+        "B48M",
+        "B48O",
+        "XB2H"
+      ],
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57",
+        "F60"
+      ],
+      "source": {
+        "id": "MINI-M120219",
+        "bulletin_date": "2019-07-01",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10164019-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "high_due_to_safety_or_component_replacement",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-11A002-DME",
+      "brand": "MINI",
+      "code": "11A002",
+      "ecu": "DME",
+      "ecu_certainty": "explicit_in_bulletin",
+      "engine": [
+        "B36M",
+        "B38M",
+        "B46M",
+        "B48M",
+        "B48O",
+        "XB2H"
+      ],
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57",
+        "F60"
+      ],
+      "source": {
+        "id": "MINI-M120219",
+        "bulletin_date": "2019-07-01",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10164019-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "high_due_to_safety_or_component_replacement",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-180001-DME",
+      "brand": "MINI",
+      "code": "180001",
+      "ecu": "DME",
+      "ecu_certainty": "explicit_in_bulletin",
+      "engine": [
+        "B36M",
+        "B38M",
+        "B46M",
+        "B48M",
+        "B48O",
+        "XB2H"
+      ],
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57",
+        "F60"
+      ],
+      "source": {
+        "id": "MINI-M120219",
+        "bulletin_date": "2019-07-01",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10164019-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "standard",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-180101-DME",
+      "brand": "MINI",
+      "code": "180101",
+      "ecu": "DME",
+      "ecu_certainty": "explicit_in_bulletin",
+      "engine": [
+        "B36M",
+        "B38M",
+        "B46M",
+        "B48M",
+        "B48O",
+        "XB2H"
+      ],
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57",
+        "F60"
+      ],
+      "source": {
+        "id": "MINI-M120219",
+        "bulletin_date": "2019-07-01",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10164019-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "standard",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-1B2002-DMEMEVD1723",
+      "brand": "MINI",
+      "code": "1B2002",
+      "ecu": "DME MEVD17.2.3",
+      "ecu_certainty": "explicit_in_bulletin",
+      "engine": {
+        "F54": [
+          "B36",
+          "B46"
+        ],
+        "F55": [
+          "B36",
+          "B46",
+          "B48"
+        ],
+        "F56": [
+          "B36",
+          "B38",
+          "B46",
+          "B48"
+        ],
+        "F57": [
+          "B36",
+          "B46",
+          "B48"
+        ]
+      },
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57"
+      ],
+      "source": {
+        "id": "MINI-M120616",
+        "bulletin_date": "2016-09",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10146868-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "high_due_to_safety_or_component_replacement",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-1F1A51-DMEMEVD1723",
+      "brand": "MINI",
+      "code": "1F1A51",
+      "ecu": "DME MEVD17.2.3",
+      "ecu_certainty": "explicit_in_bulletin",
+      "engine": {
+        "F54": [
+          "B36",
+          "B46"
+        ],
+        "F55": [
+          "B36",
+          "B46",
+          "B48"
+        ],
+        "F56": [
+          "B36",
+          "B38",
+          "B46",
+          "B48"
+        ],
+        "F57": [
+          "B36",
+          "B46",
+          "B48"
+        ]
+      },
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57"
+      ],
+      "source": {
+        "id": "MINI-M120616",
+        "bulletin_date": "2016-09",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10146868-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "high_due_to_safety_or_component_replacement",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-D356A5-EPSRELATEDNETWORKFAULTMEMORYEXACTREPORTINGECUNOTSTATED",
+      "brand": "MINI",
+      "code": "D356A5",
+      "ecu": "EPS-related network fault memory (exact reporting ECU not stated)",
+      "ecu_certainty": "reporting_module_not_confirmed",
+      "engine": "not specified by bulletin",
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57"
+      ],
+      "source": {
+        "id": "MINI-M320114-REV1",
+        "bulletin_date": "2020-01-10",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171512-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "standard",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-D359BF-DSC2014BULLETIN2020EPSNETWORKCONTEXT",
+      "brand": "MINI",
+      "code": "D359BF",
+      "ecu": "DSC (2014 bulletin) / 2020 EPS network context",
+      "ecu_certainty": "DSC_older_2014_bulletin",
+      "engine": "not specified by bulletin",
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57"
+      ],
+      "source": {
+        "id": "MINI-M320114-REV1",
+        "bulletin_date": "2020-01-10",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171512-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "standard",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-D356B6-EPSRELATEDNETWORKFAULTMEMORYEXACTREPORTINGECUNOTSTATED",
+      "brand": "MINI",
+      "code": "D356B6",
+      "ecu": "EPS-related network fault memory (exact reporting ECU not stated)",
+      "ecu_certainty": "reporting_module_not_confirmed",
+      "engine": "not specified by bulletin",
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57"
+      ],
+      "source": {
+        "id": "MINI-M320114-REV1",
+        "bulletin_date": "2020-01-10",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171512-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "standard",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-480AB8-EPSRELATEDNETWORKFAULTMEMORYEXACTREPORTINGECUNOTSTATED",
+      "brand": "MINI",
+      "code": "480AB8",
+      "ecu": "EPS-related network fault memory (exact reporting ECU not stated)",
+      "ecu_certainty": "reporting_module_not_confirmed",
+      "engine": "not specified by bulletin",
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57"
+      ],
+      "source": {
+        "id": "MINI-M320114-REV1",
+        "bulletin_date": "2020-01-10",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171512-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "standard",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-CDA451-EPSRELATEDNETWORKFAULTMEMORYEXACTREPORTINGECUNOTSTATED",
+      "brand": "MINI",
+      "code": "CDA451",
+      "ecu": "EPS-related network fault memory (exact reporting ECU not stated)",
+      "ecu_certainty": "reporting_module_not_confirmed",
+      "engine": "not specified by bulletin",
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57"
+      ],
+      "source": {
+        "id": "MINI-M320114-REV1",
+        "bulletin_date": "2020-01-10",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171512-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "standard",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-CDA452-EPSRELATEDNETWORKFAULTMEMORYEXACTREPORTINGECUNOTSTATED",
+      "brand": "MINI",
+      "code": "CDA452",
+      "ecu": "EPS-related network fault memory (exact reporting ECU not stated)",
+      "ecu_certainty": "reporting_module_not_confirmed",
+      "engine": "not specified by bulletin",
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57"
+      ],
+      "source": {
+        "id": "MINI-M320114-REV1",
+        "bulletin_date": "2020-01-10",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171512-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "standard",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-D35B26-DSC2014BULLETIN2020EPSNETWORKCONTEXT",
+      "brand": "MINI",
+      "code": "D35B26",
+      "ecu": "DSC (2014 bulletin) / 2020 EPS network context",
+      "ecu_certainty": "DSC_older_2014_bulletin",
+      "engine": "not specified by bulletin",
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57"
+      ],
+      "source": {
+        "id": "MINI-M320114-REV1",
+        "bulletin_date": "2020-01-10",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171512-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "standard",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-D355C4-DSC2014BULLETIN2020EPSNETWORKCONTEXT",
+      "brand": "MINI",
+      "code": "D355C4",
+      "ecu": "DSC (2014 bulletin) / 2020 EPS network context",
+      "ecu_certainty": "DSC_older_2014_bulletin",
+      "engine": "not specified by bulletin",
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57"
+      ],
+      "source": {
+        "id": "MINI-M320114-REV1",
+        "bulletin_date": "2020-01-10",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171512-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "standard",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-48083B-EPSRELATEDNETWORKFAULTMEMORYEXACTREPORTINGECUNOTSTATED",
+      "brand": "MINI",
+      "code": "48083B",
+      "ecu": "EPS-related network fault memory (exact reporting ECU not stated)",
+      "ecu_certainty": "reporting_module_not_confirmed",
+      "engine": "not specified by bulletin",
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57"
+      ],
+      "source": {
+        "id": "MINI-M320114-REV1",
+        "bulletin_date": "2020-01-10",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171512-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "standard",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-D35C0C-DSC2014BULLETIN2020EPSNETWORKCONTEXT",
+      "brand": "MINI",
+      "code": "D35C0C",
+      "ecu": "DSC (2014 bulletin) / 2020 EPS network context",
+      "ecu_certainty": "DSC_older_2014_bulletin",
+      "engine": "not specified by bulletin",
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57"
+      ],
+      "source": {
+        "id": "MINI-M320114-REV1",
+        "bulletin_date": "2020-01-10",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171512-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "standard",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-4823FA-EPS",
+      "brand": "MINI",
+      "code": "4823FA",
+      "ecu": "EPS",
+      "ecu_certainty": "explicit_in_bulletin",
+      "engine": "not specified",
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57"
+      ],
+      "source": {
+        "id": "MINI-M320116",
+        "bulletin_date": "2017-12",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10136747-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "standard",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-801189-IHKA",
+      "brand": "MINI",
+      "code": "801189",
+      "ecu": "IHKA",
+      "ecu_certainty": "explicit_in_bulletin",
+      "engine": "not specified in source",
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57",
+        "F60"
+      ],
+      "source": {
+        "id": "MINI-M640221-REV1",
+        "bulletin_date": "2021-09-08",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10204664-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "standard",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-801126-IHKA",
+      "brand": "MINI",
+      "code": "801126",
+      "ecu": "IHKA",
+      "ecu_certainty": "explicit_in_bulletin",
+      "engine": "not specified in source",
+      "chassis": [
+        "F54",
+        "F55",
+        "F56",
+        "F57",
+        "F60"
+      ],
+      "source": {
+        "id": "MINI-M640221-REV1",
+        "bulletin_date": "2021-09-08",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10204664-9999.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "standard",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-930C19-ACSM6",
+      "brand": "MINI",
+      "code": "930C19",
+      "ecu": "ACSM6",
+      "ecu_certainty": "explicit_in_bulletin",
+      "engine": "not specified in source",
+      "chassis": [
+        "U25"
+      ],
+      "source": {
+        "id": "MINI-M520125-REV1",
+        "bulletin_date": "2025-04-21",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11017297-0001.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "high_due_to_safety_or_component_replacement",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-PENDING-MINI-B05-930D76-ACSM6",
+      "brand": "MINI",
+      "code": "930D76",
+      "ecu": "ACSM6",
+      "ecu_certainty": "explicit_in_bulletin",
+      "engine": "not specified in source",
+      "chassis": [
+        "U25"
+      ],
+      "source": {
+        "id": "MINI-M520125-REV1",
+        "bulletin_date": "2025-04-21",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11017297-0001.pdf"
+      },
+      "reason": "OEM bulletin confirms code in a scoped fault pattern but Swedish/European VIN/ECU test values and applicable variant confirmation remain incomplete",
+      "missing_data": [
+        "Swedish/EU VIN confirmation",
+        "Individual reporting ECU where ambiguous",
+        "Full ISTA test plan and circuit readings",
+        "Licensed technical images and exact fitment"
+      ],
+      "status": "deferred_technical_enrichment_not_active",
+      "review_priority": "high_due_to_safety_or_component_replacement",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-CROSSCHECK-EPS-2014-VS-2020",
+      "brand": "MINI",
+      "codes": [
+        "D35B26",
+        "D359BF",
+        "D355C4",
+        "D35C0C",
+        "D356A5",
+        "D356B6",
+        "480AB8",
+        "CDA451",
+        "CDA452",
+        "48083B"
+      ],
+      "ecu": "DSC/EPS reporting module depending on variant",
+      "engine": "not specified",
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2014/MC-10148393-9999.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171512-9999.pdf"
+      ],
+      "reason": "2014 service bulletin prescribed conditional EPS rack replacement, but 2020 revision supersedes that guidance and favors programming; need preserve versioned distinction and module receiver validation",
+      "status": "superseded_guidance_check",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-CROSSCHECK-CRANK-MILEAGE",
+      "brand": "MINI",
+      "codes": [
+        "160001",
+        "160020",
+        "11A002",
+        "180001",
+        "180101"
+      ],
+      "ecu": "DME",
+      "engine": "B36M/B38M/B46M/B48M/B48O/XB2H listed family only",
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2019/MC-10164019-9999.pdf"
+      ],
+      "reason": "620 miles conditional catalyst assessment is US OEM scenario, not universally applicable; inspect source and VIN-specific check before parts decision",
+      "status": "safety_and_warranty_scope_review",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-CROSSCHECK-THROTTLE-LOWTEMP",
+      "brand": "MINI",
+      "codes": [
+        "10170C",
+        "100213"
+      ],
+      "ecu": "DME",
+      "engine": "chassis-specific B36C/B46C/B46D/B48E",
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2020/MC-10174325-9999.pdf"
+      ],
+      "reason": "Text extraction of 2020 PDF collapses table and temperature test conditions; original screenshot unavailable; independently recheck threshold values and exact programming target before applying",
+      "status": "pdf_layout_and_parameter_review",
+      "not_for_release": true
+    },
+    {
+      "queue_id": "MINI-B05-CROSSCHECK-U25-SRS",
+      "brand": "MINI",
+      "codes": [
+        "930C19",
+        "930D76"
+      ],
+      "ecu": "ACSM6",
+      "engine": "not specified; includes petrol and BEV repair procedure variants",
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2025/MC-11017297-0001.pdf"
+      ],
+      "reason": "Microswitch part number stated but electrical voltage/pinout not published and front airbag igniter electrical probing prohibited; check EU equipment and original diagram rights",
+      "status": "srs_electrical_application_review",
+      "not_for_release": true
+    }
+  ],
+  "status": "DRAFT_ONLY"
+}
