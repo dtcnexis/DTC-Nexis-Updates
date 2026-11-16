@@ -1,373 +1,30 @@
 {
+  "schema": "dtcnexis-lexus-batch04-evidence-enrichment-v2",
   "date": "2026-11-16",
   "brand": "Lexus",
-  "repo": "dtcnexis/DTC-Nexis-Updates",
-  "schema": "dtcnexis-lexus-primary-evidence-batch04-v1",
-  "status": "REVIEW_ONLY_NOT_MERGED",
-  "prior_main_lexus_records": 72,
-  "prior_local_expansion_records": 73,
-  "oem_evidence_code_records": 3,
-  "oem_evidence_applicability_links": 15,
-  "codes_absent_from_main": [
-    "P2610",
-    "P0430",
-    "P07457F"
-  ],
-  "codes_absent_from_local_expansion": [
-    "P0430",
-    "P07457F"
-  ],
-  "carry_forward_deferred_queue": "data/master/reviews/lexus_20261116_batch03/LEXUS_DEFERRED_REVIEW.json",
-  "deferred_queue_count_from_parent": 33,
-  "prior_definition_review_pending": 42,
-  "candidate_issues": [
+  "review_only": true,
+  "extends_without_replacing": "data/master/brands/lexus_batch03_new_oem.json",
+  "original_main_unchanged": "data/master/brands/lexus_batch01_preserved_part01..03.json",
+  "existing_code_ids": [
     {
-      "code": "P07457F",
-      "market": "USA",
-      "reason": "2019 RX350L appears in VIN/calibration tables but not formal Rev1 applicability line; maintain separate pending status"
+      "code": "P2610",
+      "record_id": "LXB03-D-ECM-P2610-USA"
     },
     {
       "code": "P0430",
-      "reason": "L-SB-0127-11 Rev2 (2010–2011) explicitly superseded by L-SB-0005-15 (2010); do not extend active TSB to 2011 without a current primary source"
+      "record_id": "LXB03-D-ECM-P0430-RX450H2010"
     },
     {
-      "code": "P2610",
-      "model": "LS 600h",
-      "reason": "L-SB-0002-18 formal applicability 2014–2016 conflicts with 2016–2017 calibration table: 2017 excluded pending OEM clarification"
-    },
-    {
-      "code": "P2610",
-      "model": "RX 450h 2016",
-      "reason": "Specific TSB states 2GR-FXE; other Lexus bulletin contexts have 2GR-FXS near these years, verify VIN/engine/ECU"
-    },
-    {
-      "code": "P0116/P0128/B0111/B0116",
-      "reason": "Secondary copies exist in preexisting deferred queue, not moved into primary-OEM-verified file"
+      "code": "P07457F",
+      "record_id": "LXB03-D-ECM-P07457F-RX3502019"
     }
   ],
-  "link_verification": "OEM PDF source content inspected by web retrieval; downloadable file bytes not mirrored; no copyrighted diagrams reproduced",
-  "engineering_limitations": [
-    "EU/SE applicability unverified",
-    "ECU wiring/pinout pending",
-    "Failure type standard license check pending",
-    "No image rights verified",
-    "Owner approval required",
-    "No production import"
-  ],
-  "sources": [
-    {
-      "id": "LEX-B04-S01",
-      "title": "L-SB-0026-16 — MIL ON DTC P2610",
-      "issued": "2016-06-23",
-      "market": "USA",
-      "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10134105-9999.pdf",
-      "type": "Lexus OEM TSB",
-      "scope": "GX 460 MY2014–2016"
-    },
-    {
-      "id": "LEX-B04-S02",
-      "title": "L-SB-0167-17 — MIL ON DTC P2610",
-      "issued": "2017-10-23",
-      "market": "USA",
-      "url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10132686-9999.pdf",
-      "type": "Lexus OEM TSB",
-      "scope": "GS F MY2016; RC F MY2015–2016"
-    },
-    {
-      "id": "LEX-B04-S03",
-      "title": "L-SB-0002-18 — MIL ON DTC P2610",
-      "issued": "2018-01-23",
-      "market": "USA",
-      "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10129208-9999.pdf",
-      "type": "Lexus OEM TSB",
-      "scope": "GS350, GS450h, IS300/350, LX570, RX450h, LS460, LS600h, RC300/350 with model years shown per applicability"
-    },
-    {
-      "id": "LEX-B04-S04",
-      "title": "L-SB-0005-15 — MIL ON DTC P0430 (supersedes L-SB-0127-11)",
-      "issued": "2015-02-10",
-      "market": "USA",
-      "url": "https://static.nhtsa.gov/odi/tsbs/2015/MC-10111225-9999.pdf",
-      "type": "Lexus OEM TSB",
-      "scope": "RX450h MY2010 2GR-FXE"
-    },
-    {
-      "id": "LEX-B04-S05",
-      "title": "L-SB-0127-11 Rev2 — MIL ON DTC P0430 (obsolete)",
-      "issued": "2014-04-07",
-      "market": "USA",
-      "url": "https://static.nhtsa.gov/odi/tsbs/2011/SB-10060760-2280.pdf",
-      "type": "Lexus OEM historical TSB",
-      "scope": "RX450h MY2010–2011, obsolete; 2011 revalidation pending"
-    },
-    {
-      "id": "LEX-B04-S06",
-      "title": "L-SB-0005-19 Rev1 — MIL ON DTC P07457F",
-      "issued": "2019-04-15",
-      "market": "USA",
-      "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10159714-9999.pdf",
-      "type": "Lexus OEM TSB",
-      "scope": "Formal applicability RX350 MY2019 8AT; RX350L occurs in calibration/VIN chart but not formal applicability row"
-    }
-  ],
-  "records": [
-    {
-      "record_id": "LEX-B04-DTC-P2610-ECM",
-      "manufacturer": "Lexus",
-      "code_original": "P2610",
-      "base_code": "P2610",
-      "failure_type": null,
-      "ecu": "ECM/PCM",
-      "category": "P",
-      "code_type": "generic_range_claim_unverified_against_SAE_J2012DA",
-      "definition_en": "ECM/PCM Engine Off Timer Performance",
-      "translation_ar": "خلل أداء مؤقّت توقف المحرك في وحدة التحكم ECM/PCM",
-      "symptoms": [
-        "MIL illuminated in applicable bulletin cases"
-      ],
-      "cause_candidates": [
-        {
-          "condition": "Outdated ECM calibration relative to exact VIN/ECU",
-          "evidence": "OEM USA TSBs S01/S02/S03 prescribe calibration checking; not a proof of defective ECM"
-        },
-        {
-          "condition": "Other engine-off timing/ECM or power issues",
-          "evidence": "If latest calibration, bulletin ceases to apply and model Repair Manual diagnosis required"
-        }
-      ],
-      "diagnostic_steps": [
-        "Record DTC and freeze-frame via Techstream; verify ECU and VIN.",
-        "Check ECM calibration ID and any Authorized Modifications Label against the matching Lexus bulletin for that exact vehicle.",
-        "Only if calibration is outdated and all bulletin prerequisites match, carry out authorized ECM calibration update with controlled supply following OEM reflash procedure.",
-        "If calibration is current or DTC returns after update, diagnose using the vehicle-specific Repair Manual; never replace ECM solely from this code."
-      ],
-      "live_data": [
-        {
-          "name_en": "ECM Calibration ID",
-          "name_ar": "معرّف معايرة وحدة التحكم بالمحرك",
-          "test_condition": "Techstream ECM information, compare per exact ECU and bulletin",
-          "normal_value": "غير مؤكد دون تحديد VIN/ECU",
-          "verified_in_OEM_bulletin": true
-        }
-      ],
-      "tools": [
-        "Lexus Techstream",
-        "Approved battery support for OEM reprogramming"
-      ],
-      "parts": [
-        {
-          "part": "ECM calibration/software",
-          "location": "غير مؤكد",
-          "note": "No automatic ECM replacement"
-        }
-      ],
-      "wiring": null,
-      "code_matched_image": null,
-      "source_ids": [
-        "LEX-B04-S01",
-        "LEX-B04-S02",
-        "LEX-B04-S03"
-      ],
-      "verification_status": "OEM_definition_and_USA_applicability_supported; full_diagnostic_pending",
-      "approval_status": "not_approved"
-    },
-    {
-      "record_id": "LEX-B04-DTC-P0430-ECM-RX450H2010",
-      "manufacturer": "Lexus",
-      "code_original": "P0430",
-      "base_code": "P0430",
-      "failure_type": null,
-      "ecu": "ECM/PCM",
-      "category": "P",
-      "code_type": "SAE_generic_definition_from_OEM; J2012DA_license_not_checked",
-      "definition_en": "Catalyst System Efficiency Below Threshold (Bank 2)",
-      "translation_ar": "كفاءة نظام المحفّز أقل من الحد المحدد — جهة الأسطوانات الثانية (Bank 2)",
-      "symptoms": [
-        "MIL illuminated"
-      ],
-      "cause_candidates": [
-        {
-          "condition": "O2 sensor Bank 2 Sensor 2 signal/impedance condition within TSB",
-          "evidence": "Specified conditional tests in L-SB-0005-15"
-        },
-        {
-          "condition": "Other catalyst, sensor, exhaust or mixture issues",
-          "evidence": "OEM bulletin requires return to normal Repair Manual diagnostics if criteria not met; alternatives not ranked"
-        }
-      ],
-      "diagnostic_steps": [
-        "Verify the displayed P0430 using Techstream and match 2010 RX450h 2GR-FXE US vehicle scope.",
-        "With engine at normal operating temperature, check O2 B2S2 voltage and O2 B2S2 impedance under the OEM bulletin procedure.",
-        "For this bulletin ONLY: if voltage equals 1.275 V OR impedance is above 300 ohms, follow bulletin for Bank 2 downstream O2 sensor and harness clamp; no generalization to other models.",
-        "If neither threshold is reached, bulletin does not apply. Follow VIN-matched diagnostic manual rather than replacing sensor/catalyst automatically.",
-        "Clear DTC and verify after repair under bulletin conditions."
-      ],
-      "live_data": [
-        {
-          "name_en": "O2 B2S2 Voltage",
-          "name_ar": "جهد حساس الأكسجين الثاني في Bank 2",
-          "test_condition": "Engine at normal operating temperature; exact Lexus bulletin method",
-          "oem_bulletin_trigger": "1.275 V",
-          "not_a_universal_range": true
-        },
-        {
-          "name_en": "O2 Impedance B2S2",
-          "name_ar": "ممانعة حساس الأكسجين الثاني في Bank 2",
-          "test_condition": "Engine at normal operating temperature",
-          "oem_bulletin_trigger": ">300 ohms",
-          "not_a_universal_range": true
-        }
-      ],
-      "tools": [
-        "Techstream",
-        "Oxygen sensor socket per bulletin"
-      ],
-      "parts": [
-        {
-          "part": "Bank 2 Sensor 2 oxygen sensor",
-          "location": "Not supplied; match TIS for 2GR-FXE and VIN"
-        },
-        {
-          "part": "Wire harness clamp",
-          "location": "Not supplied"
-        }
-      ],
-      "wiring": null,
-      "code_matched_image": null,
-      "source_ids": [
-        "LEX-B04-S04",
-        "LEX-B04-S05"
-      ],
-      "supersedes": "L-SB-0127-11",
-      "verification_status": "OEM_definition_and_USA_2010_applicability_supported; full_diagnostic_pending",
-      "approval_status": "not_approved"
-    },
-    {
-      "record_id": "LEX-B04-DTC-P07457F-ECM-RX3502019",
-      "manufacturer": "Lexus",
-      "code_original": "P07457F",
-      "base_code": "P0745",
-      "failure_type": "7F",
-      "ecu": "ECM/PCM",
-      "category": "P",
-      "code_type": "extended_seven_character_OEM_bulletin_format; exact_SAE_failure_type_catalog_pending",
-      "definition_en": "Pressure Control Solenoid \"A\" Actuator Stuck Off",
-      "translation_ar": "مشغّل صمام التحكم بضغط ناقل الحركة «A» عالق في وضع عدم التشغيل",
-      "symptoms": [
-        "MIL illuminated",
-        "Harsh engagement when shifting into Drive (may occur without DTC)"
-      ],
-      "cause_candidates": [
-        {
-          "condition": "Outdated ECM main/sub calibration matching bulletin and VIN",
-          "evidence": "OEM L-SB-0005-19 Rev1"
-        },
-        {
-          "condition": "Other hydraulic/electrical transmission defect",
-          "evidence": "If current calibration, continue VIN-matched Repair Manual; no assumed solenoid defect"
-        }
-      ],
-      "diagnostic_steps": [
-        "Confirm P07457F and/or harsh engagement when shifting into D on RX350 MY2019 with 8AT.",
-        "Check Techstream ECM main/sub calibration IDs and Authorized Modifications Label against correct production plant, trim, drivetrain, and VIN threshold in Rev1 bulletin.",
-        "If calibration already latest, stop applying TSB and continue vehicle-specific transmission diagnostic tree.",
-        "If out of date and eligible, reprogram ECM per L-SB-0001-18 using GR8 Power Supply Mode holding 13.5 V and qualified service workflow; do not replace ECM.",
-        "Perform specified post-flash 12V reset and road test; if fault remains, follow Repair Manual."
-      ],
-      "live_data": [
-        {
-          "name_en": "ECM Main/Sub Calibration ID",
-          "name_ar": "معرّفا المعايرة الرئيسية والفرعية لوحدة المحرك",
-          "test_condition": "Techstream and VIN/trim/plant-match in Rev1 table",
-          "normal_value": "غير مؤكد دون بيانات VIN وECU",
-          "verified_in_OEM_bulletin": true
-        },
-        {
-          "name_en": "12V Supply during reprogramming",
-          "name_ar": "جهد التغذية أثناء إعادة البرمجة",
-          "test_condition": "GR8 power-supply mode while ECM flash is underway",
-          "oem_process_setpoint": "13.5 V",
-          "not_general_vehicle_voltage_spec": true
-        }
-      ],
-      "tools": [
-        "Techstream (Rev1 bulletin specifies software 14.00.019 or later)",
-        "GR8 battery diagnostic station, Power Supply Mode"
-      ],
-      "parts": [
-        {
-          "part": "ECM software calibration",
-          "location": "غير مؤكد"
-        },
-        {
-          "part": "Pressure Control Solenoid A",
-          "location": "غير مؤكد — code name alone does not justify replacement"
-        }
-      ],
-      "wiring": null,
-      "code_matched_image": null,
-      "source_ids": [
-        "LEX-B04-S06"
-      ],
-      "verification_status": "OEM_definition_and_USA_RX350_2019_8AT_supported; RX350L_ambiguous",
-      "approval_status": "not_approved"
-    }
-  ],
-  "applicability": [
-    {
-      "applicability_id": "LEX-B04-A001",
-      "manufacturer": "Lexus",
-      "code": "P2610",
-      "model": "GX 460",
-      "model_year_from": 2014,
-      "model_year_to": 2016,
-      "production_years": null,
-      "market": "USA",
-      "engine_code": null,
-      "transmission": null,
-      "drivetrain": null,
-      "ecu": "ECM/PCM",
-      "source_id": "LEX-B04-S01",
-      "confirmation": "bulletin_named_vehicle_and_year",
-      "restriction": "VIN, ECU calibration, trim/production threshold and actual engine must be matched; no EU/SE applicability confirmed",
-      "approval_status": "not_approved"
-    },
-    {
-      "applicability_id": "LEX-B04-A002",
-      "manufacturer": "Lexus",
-      "code": "P2610",
-      "model": "GS F",
-      "model_year_from": 2016,
-      "model_year_to": 2016,
-      "production_years": null,
-      "market": "USA",
-      "engine_code": null,
-      "transmission": null,
-      "drivetrain": null,
-      "ecu": "ECM/PCM",
-      "source_id": "LEX-B04-S02",
-      "confirmation": "bulletin_named_vehicle_and_year",
-      "restriction": "VIN, ECU calibration, trim/production threshold and actual engine must be matched; no EU/SE applicability confirmed",
-      "approval_status": "not_approved"
-    },
-    {
-      "applicability_id": "LEX-B04-A003",
-      "manufacturer": "Lexus",
-      "code": "P2610",
-      "model": "RC F",
-      "model_year_from": 2015,
-      "model_year_to": 2016,
-      "production_years": null,
-      "market": "USA",
-      "engine_code": null,
-      "transmission": null,
-      "drivetrain": null,
-      "ecu": "ECM/PCM",
-      "source_id": "LEX-B04-S02",
-      "confirmation": "bulletin_named_vehicle_and_year",
-      "restriction": "VIN, ECU calibration, trim/production threshold and actual engine must be matched; no EU/SE applicability confirmed",
-      "approval_status": "not_approved"
-    },
+  "new_code_records": [],
+  "new_code_count": 0,
+  "preexisting_code_count": 3,
+  "removed_redundant_code_projections": 3,
+  "newly_supported_applicability_count": 10,
+  "newly_supported_applicability": [
     {
       "applicability_id": "LEX-B04-A004",
       "manufacturer": "Lexus",
@@ -384,7 +41,9 @@
       "source_id": "LEX-B04-S03",
       "confirmation": "bulletin_named_vehicle_and_year",
       "restriction": "VIN, ECU calibration, trim/production threshold and actual engine must be matched; no EU/SE applicability confirmed",
-      "approval_status": "not_approved"
+      "approval_status": "not_approved",
+      "preexisting_record_id": "LXB03-D-ECM-P2610-USA",
+      "verification_status": "OEM_bulletin_USA_scope_review_only"
     },
     {
       "applicability_id": "LEX-B04-A005",
@@ -402,7 +61,9 @@
       "source_id": "LEX-B04-S03",
       "confirmation": "bulletin_named_vehicle_and_year",
       "restriction": "VIN, ECU calibration, trim/production threshold and actual engine must be matched; no EU/SE applicability confirmed",
-      "approval_status": "not_approved"
+      "approval_status": "not_approved",
+      "preexisting_record_id": "LXB03-D-ECM-P2610-USA",
+      "verification_status": "OEM_bulletin_USA_scope_review_only"
     },
     {
       "applicability_id": "LEX-B04-A006",
@@ -420,7 +81,9 @@
       "source_id": "LEX-B04-S03",
       "confirmation": "bulletin_named_vehicle_and_year",
       "restriction": "VIN, ECU calibration, trim/production threshold and actual engine must be matched; no EU/SE applicability confirmed",
-      "approval_status": "not_approved"
+      "approval_status": "not_approved",
+      "preexisting_record_id": "LXB03-D-ECM-P2610-USA",
+      "verification_status": "OEM_bulletin_USA_scope_review_only"
     },
     {
       "applicability_id": "LEX-B04-A007",
@@ -438,7 +101,9 @@
       "source_id": "LEX-B04-S03",
       "confirmation": "bulletin_named_vehicle_and_year",
       "restriction": "VIN, ECU calibration, trim/production threshold and actual engine must be matched; no EU/SE applicability confirmed",
-      "approval_status": "not_approved"
+      "approval_status": "not_approved",
+      "preexisting_record_id": "LXB03-D-ECM-P2610-USA",
+      "verification_status": "OEM_bulletin_USA_scope_review_only"
     },
     {
       "applicability_id": "LEX-B04-A008",
@@ -456,7 +121,9 @@
       "source_id": "LEX-B04-S03",
       "confirmation": "bulletin_named_vehicle_and_year",
       "restriction": "VIN, ECU calibration, trim/production threshold and actual engine must be matched; no EU/SE applicability confirmed",
-      "approval_status": "not_approved"
+      "approval_status": "not_approved",
+      "preexisting_record_id": "LXB03-D-ECM-P2610-USA",
+      "verification_status": "OEM_bulletin_USA_scope_review_only"
     },
     {
       "applicability_id": "LEX-B04-A009",
@@ -474,7 +141,9 @@
       "source_id": "LEX-B04-S03",
       "confirmation": "bulletin_named_vehicle_and_year",
       "restriction": "VIN, ECU calibration, trim/production threshold and actual engine must be matched; no EU/SE applicability confirmed",
-      "approval_status": "not_approved"
+      "approval_status": "not_approved",
+      "preexisting_record_id": "LXB03-D-ECM-P2610-USA",
+      "verification_status": "OEM_bulletin_USA_scope_review_only"
     },
     {
       "applicability_id": "LEX-B04-A010",
@@ -492,7 +161,9 @@
       "source_id": "LEX-B04-S03",
       "confirmation": "bulletin_named_vehicle_and_year",
       "restriction": "VIN, ECU calibration, trim/production threshold and actual engine must be matched; no EU/SE applicability confirmed",
-      "approval_status": "not_approved"
+      "approval_status": "not_approved",
+      "preexisting_record_id": "LXB03-D-ECM-P2610-USA",
+      "verification_status": "OEM_bulletin_USA_scope_review_only"
     },
     {
       "applicability_id": "LEX-B04-A011",
@@ -510,7 +181,9 @@
       "source_id": "LEX-B04-S03",
       "confirmation": "bulletin_named_vehicle_and_year",
       "restriction": "VIN, ECU calibration, trim/production threshold and actual engine must be matched; no EU/SE applicability confirmed",
-      "approval_status": "not_approved"
+      "approval_status": "not_approved",
+      "preexisting_record_id": "LXB03-D-ECM-P2610-USA",
+      "verification_status": "OEM_bulletin_USA_scope_review_only"
     },
     {
       "applicability_id": "LEX-B04-A012",
@@ -528,7 +201,9 @@
       "source_id": "LEX-B04-S03",
       "confirmation": "bulletin_named_vehicle_and_year",
       "restriction": "VIN, ECU calibration, trim/production threshold and actual engine must be matched; no EU/SE applicability confirmed",
-      "approval_status": "not_approved"
+      "approval_status": "not_approved",
+      "preexisting_record_id": "LXB03-D-ECM-P2610-USA",
+      "verification_status": "OEM_bulletin_USA_scope_review_only"
     },
     {
       "applicability_id": "LEX-B04-A013",
@@ -546,43 +221,54 @@
       "source_id": "LEX-B04-S03",
       "confirmation": "bulletin_named_vehicle_and_year",
       "restriction": "VIN, ECU calibration, trim/production threshold and actual engine must be matched; no EU/SE applicability confirmed",
-      "approval_status": "not_approved"
-    },
-    {
-      "applicability_id": "LEX-B04-A014",
-      "manufacturer": "Lexus",
-      "code": "P0430",
-      "model": "RX 450h",
-      "model_year_from": 2010,
-      "model_year_to": 2010,
-      "production_years": null,
-      "market": "USA",
-      "engine_code": "2GR-FXE",
-      "transmission": null,
-      "drivetrain": null,
-      "ecu": "ECM/PCM",
-      "source_id": "LEX-B04-S04",
-      "confirmation": "bulletin_named_vehicle_and_year",
-      "restriction": "VIN, ECU calibration, trim/production threshold and actual engine must be matched; no EU/SE applicability confirmed",
-      "approval_status": "not_approved"
-    },
-    {
-      "applicability_id": "LEX-B04-A015",
-      "manufacturer": "Lexus",
-      "code": "P07457F",
-      "model": "RX 350",
-      "model_year_from": 2019,
-      "model_year_to": 2019,
-      "production_years": null,
-      "market": "USA",
-      "engine_code": null,
-      "transmission": "8AT",
-      "drivetrain": null,
-      "ecu": "ECM/PCM",
-      "source_id": "LEX-B04-S06",
-      "confirmation": "bulletin_named_vehicle_and_year",
-      "restriction": "VIN, ECU calibration, trim/production threshold and actual engine must be matched; no EU/SE applicability confirmed",
-      "approval_status": "not_approved"
+      "approval_status": "not_approved",
+      "preexisting_record_id": "LXB03-D-ECM-P2610-USA",
+      "verification_status": "OEM_bulletin_USA_scope_review_only"
     }
-  ]
+  ],
+  "supplementary_sources": [
+    {
+      "id": "LEX-B04-S03",
+      "title": "L-SB-0002-18 — MIL ON DTC P2610",
+      "issued": "2018-01-23",
+      "market": "USA",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10129208-9999.pdf",
+      "type": "Lexus OEM TSB",
+      "scope": "GS350, GS450h, IS300/350, LX570, RX450h, LS460, LS600h, RC300/350 with model years shown per applicability"
+    },
+    {
+      "id": "LEX-B04-S05",
+      "title": "L-SB-0127-11 Rev2 — MIL ON DTC P0430 (obsolete)",
+      "issued": "2014-04-07",
+      "market": "USA",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2011/SB-10060760-2280.pdf",
+      "type": "Lexus OEM historical TSB",
+      "scope": "RX450h MY2010–2011, obsolete; 2011 revalidation pending"
+    }
+  ],
+  "supplementary_findings": [
+    {
+      "code": "P2610",
+      "source_id": "LEX-B04-S03",
+      "finding": "L-SB-0002-18 expands USA fitment and specifies many engine codes and calibration conditions by model; 10 model/year ranges not present in Batch03.",
+      "caution": "LS600h 2017 appears in calibration chart but not formal applicability row; excluded."
+    },
+    {
+      "code": "P0430",
+      "source_id": "LEX-B04-S05",
+      "finding": "Older L-SB-0127-11 Rev2 listed 2010–2011 RX450h but was superseded by L-SB-0005-15 that lists 2010 only.",
+      "caution": "2011 remains deferred, no current procedure inferred."
+    },
+    {
+      "code": "P07457F",
+      "source_id": "LEX-B04-S06",
+      "finding": "Rev1 specifies Techstream 14.00.019+ and 13.5V stabilized power during reflash; RX350L occurs in VIN and calibration tables but not formal applicability row.",
+      "caution": "RX350L remains in previous deferred queue, not promoted."
+    }
+  ],
+  "deduplication_key": "code|ECU|model|market|model_year range|engine_when_confirmed; same code is not duplicated as a separate definition",
+  "prior_batch03_applicability_variants": 6,
+  "checked_against_parent_sha": "29fac710d7eaa3baa8956a83edd97817518e715c",
+  "approval_status": "owner_and_technical_review_pending",
+  "not_for_app_update": true
 }
