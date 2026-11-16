@@ -1,0 +1,41 @@
+{
+  "schema": "dtcnexis-polestar-continuation-qa-v1",
+  "brand": "Polestar",
+  "date": "2026-11-16",
+  "branch": "work/polestar-dtc-continuation-20261116",
+  "counting_basis": "Distinct original seven-character codes within archived Polestar batches 01/03/04; applicability variants count separately.",
+  "baseline_distinct_codes_in_main": 29,
+  "previous_batch03_distinct_added": 13,
+  "prior_total_distinct": 42,
+  "new_batch04_distinct": 21,
+  "new_code_duplicates": 0,
+  "post_batch04_distinct": 63,
+  "new_records_by_ecu": {
+    "GHCA": 19,
+    "GCCC": 1,
+    "IEM": 1
+  },
+  "new_applicability_rows": 21,
+  "historical_review_contexts": 45,
+  "new_review_contexts": 21,
+  "combined_review_contexts": 66,
+  "manufacturer_bulletins_current_batch": 2,
+  "full_official_dtc_definitions_verified_current_batch": 0,
+  "eu_sweden_applicability_confirmed_current_batch": 0,
+  "motor_code_links_verified_current_batch": 0,
+  "images_added": 0,
+  "images_approved": 0,
+  "new_original_files_modified": 0,
+  "retained_existing": [
+    "data/master/brands/polestar.json",
+    "data/master/enrichment/polestar_batch01_source_values_20261105.json",
+    "data/master/brands/polestar_batch03_oem_occurrences_20261116.json"
+  ],
+  "source_gaps": [
+    "SAE J2012DA full licensed code definitions not accessed",
+    "VIDA VIN/ECU trigger logic not available",
+    "EU/Sweden manufacturer bulletins for these cases unavailable",
+    "GHCA hardware specifics may change in newer TJs, verify current VIDA bulletin"
+  ],
+  "no_merge_no_deployment": true
+}
