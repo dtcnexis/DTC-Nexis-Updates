@@ -1,0 +1,144 @@
+{
+  "schema": "dtc-nexis-tesla-oem-crosschecks-v1",
+  "brand": "Tesla",
+  "date": "2026-11-16",
+  "release_to_app": "NOT_ACTIVE",
+  "purpose": "Strengthen primary-source evidence for four EXISTING codes; none counted as new.",
+  "source_note": "PDF text reviewed. Screenshot rendering failed; no claim of visual review. Later bulletin revisions may supersede this revision.",
+  "record_count": 4,
+  "records": [
+    {
+      "code": "CP_a054",
+      "base_code": "CP_a054",
+      "ecu": "CP (charge port; exact controller applicability pending)",
+      "models": [
+        "Model Y"
+      ],
+      "source_scope": "Tesla Model Y Swedish online owner's manual (rolling edition; VIN years not determined)",
+      "definition_en": "Charge port latch not engaged",
+      "translation_ar": "قفل منفذ الشحن لم يتعشّق مع مقبض الشحن",
+      "symptoms": [
+        "AC charging limited to 16 A if latch is not engaged",
+        "DC Fast Charging/Supercharging unavailable while latch disengaged",
+        "Amber charge port indicator"
+      ],
+      "diagnostic_steps_ar": [
+        "تحقق من إدخال مقبض الشحن بالكامل، ونظافة مدخل الشحن وعدم وجود عائق، قبل افتراض عطل بوحدة القفل",
+        "أعد الاختبار بكابل ومحطة متوافقين مختلفين حيث يلزم؛ راجع الرسالة وحالة ضوء منفذ الشحن"
+      ],
+      "live_data": [],
+      "measurements_verified": [
+        {
+          "parameter": "AC charge current limit while unlatch condition active",
+          "value": 16,
+          "unit": "A",
+          "scope": "Owner's manual condition, not a vehicle-wide test threshold"
+        }
+      ],
+      "source": {
+        "title": "Felsökningsvarningar, Model Y, Sweden",
+        "url": "https://www.tesla.com/ownersmanual/modely/sv_se/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html"
+      },
+      "status": "OEM_ALERT_MEANING_AND_MANUAL_SCOPE_VERIFIED; VIN/engine/pinouts_pending"
+    },
+    {
+      "code": "BMS_a079",
+      "base_code": "BMS_a079",
+      "ecu": "BMS (battery management system; hardware variant pending)",
+      "models": [
+        "Model 3"
+      ],
+      "source_scope": "Tesla Model 3 Swedish guide edition hosted under sv_us; regional vehicle availability not VIN verified",
+      "definition_en": "Unable to charge — maximum charge level reached",
+      "translation_ar": "تعذّر الشحن بسبب الوصول إلى الحد الأقصى المخفّض للشحن",
+      "symptoms": [
+        "Battery SOC charge ceiling around 50% under alert; no charge starting at or above 50%"
+      ],
+      "diagnostic_steps_ar": [
+        "اقرأ SOC الحالي، وحالة التنبيه، ولا تعتبر الرسالة دليلاً وحده على وجوب تبديل الحزمة",
+        "اتبع تعليمات حجز الخدمة؛ لا تبدأ إجراء فحص جهد عالٍ دون صلاحية Tesla"
+      ],
+      "live_data": [
+        {
+          "name_en": "State of Charge",
+          "translation_ar": "نسبة شحن البطارية",
+          "reference_limit_percent": 50,
+          "note": "Published operational charge restriction; not an ECU fault threshold"
+        }
+      ],
+      "source": {
+        "title": "Felsökningsvarningar, Model 3",
+        "url": "https://www.tesla.com/ownersmanual/model3/sv_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html"
+      },
+      "status": "OEM_ALERT_MEANING_VERIFIED; VIN/ECU/calibration_pending"
+    },
+    {
+      "code": "VCFRONT_a233_autopilot1EFuseFault",
+      "base_code": "VCFRONT_a233",
+      "ecu": "VCFRONT",
+      "models": [
+        "Model S",
+        "Model X",
+        "Model 3",
+        "Model Y"
+      ],
+      "source_scope": "SB-25-00-001 R1 dated 2025-03-11: Model S 2024–2025; X 2023–2025; 3 2024–2025; Y 2023–2025; North America, Europe, APAC excluding China, Middle East; affected VINs require bulletin tracker",
+      "definition_en": "Autopilot electronic fuse fault indicator listed in recall service bulletin",
+      "translation_ar": "تنبيه عطل الفيوز الإلكتروني لدائرة Autopilot بحسب نشرة الاستدعاء",
+      "symptoms": [
+        "Potential loss of rearview camera display on affected HW4 computer"
+      ],
+      "diagnostic_steps_ar": [
+        "تحقق من VIN ونطاق النشرة SB-25-00-001 قبل أي قرار إصلاح",
+        "تحقق من إصدار برمجيات السيارة وفق النشرة، وحدّثه بالنسخة المعتمدة عند انطباق الإجراء",
+        "اختبر صورة كاميرا الرجوع قبل الحكم على الحاسوب، ثم راجع Active/Recent Alerts في Service Mode",
+        "استبدال الحاسوب وارد فقط وفق شروط النشرة والإصلاح المعتمد، وليس لمجرد ظهور الرمز"
+      ],
+      "live_data": [],
+      "parts": [
+        "HW4 car computer — exact Tesla part number and vehicle variant require VIN-based parts validation"
+      ],
+      "source": {
+        "title": "Tesla SB-25-00-001 R1 (2025-03-11)",
+        "url": "https://service.tesla.com/docs/ServiceBulletins/External/SB/SB-25-00-001_Update_Vehicle_Software_Or_Replace_Car_Computer_To_Correct_Loss_Of_Rearview_Display_R1.pdf",
+        "revision": "R1",
+        "date": "2025-03-11"
+      },
+      "status": "OEM_CODE_LISTING_AND_BULLETIN_APPROXIMATE_FITMENT_VERIFIED; PER_VIN_APPLICABILITY_PENDING"
+    },
+    {
+      "code": "VCFRONT_a234_autopilot2EFuseFault",
+      "base_code": "VCFRONT_a234",
+      "ecu": "VCFRONT",
+      "models": [
+        "Model S",
+        "Model X",
+        "Model 3",
+        "Model Y"
+      ],
+      "source_scope": "SB-25-00-001 R1 dated 2025-03-11: Model S 2024–2025; X 2023–2025; 3 2024–2025; Y 2023–2025; North America, Europe, APAC excluding China, Middle East; affected VINs require bulletin tracker",
+      "definition_en": "Autopilot electronic fuse fault indicator listed in recall service bulletin",
+      "translation_ar": "تنبيه عطل الفيوز الإلكتروني لدائرة Autopilot بحسب نشرة الاستدعاء",
+      "symptoms": [
+        "Potential loss of rearview camera display on affected HW4 computer"
+      ],
+      "diagnostic_steps_ar": [
+        "تحقق من VIN ونطاق النشرة SB-25-00-001 قبل أي قرار إصلاح",
+        "تحقق من إصدار برمجيات السيارة وفق النشرة، وحدّثه بالنسخة المعتمدة عند انطباق الإجراء",
+        "اختبر صورة كاميرا الرجوع قبل الحكم على الحاسوب، ثم راجع Active/Recent Alerts في Service Mode",
+        "استبدال الحاسوب وارد فقط وفق شروط النشرة والإصلاح المعتمد، وليس لمجرد ظهور الرمز"
+      ],
+      "live_data": [],
+      "parts": [
+        "HW4 car computer — exact Tesla part number and vehicle variant require VIN-based parts validation"
+      ],
+      "source": {
+        "title": "Tesla SB-25-00-001 R1 (2025-03-11)",
+        "url": "https://service.tesla.com/docs/ServiceBulletins/External/SB/SB-25-00-001_Update_Vehicle_Software_Or_Replace_Car_Computer_To_Correct_Loss_Of_Rearview_Display_R1.pdf",
+        "revision": "R1",
+        "date": "2025-03-11"
+      },
+      "status": "OEM_CODE_LISTING_AND_BULLETIN_APPROXIMATE_FITMENT_VERIFIED; PER_VIN_APPLICABILITY_PENDING"
+    }
+  ]
+}
