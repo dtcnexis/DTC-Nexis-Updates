@@ -1,0 +1,27 @@
+{
+  "brand": "Škoda",
+  "date": "2026-11-16",
+  "baseline_main_records": 48,
+  "baseline_master_path": "data/master/brands/skoda.json",
+  "previous_local_expansion_records": 58,
+  "previous_local_unique_new_vs_master": 10,
+  "new_candidate_definitions": 13,
+  "duplicates_vs_master": 0,
+  "review_queue_entries": 23,
+  "fully_OEM_verified_added": 0,
+  "main_modified": false,
+  "release_modified": false,
+  "review_reason": "No demonstrated Škoda engine/ECU applicability, and manufacturer-specific thresholds and fitment unresolved",
+  "source_links": [
+    "https://wiki.ross-tech.com/wiki/index.php/00522",
+    "https://workshop-manuals.com/volkswagen/polo-mk3/power_unit/simos_injection_and_ignition_system/self_diagnosis_v.a.g_inspection_service/fault_table_sae_p0_codes/",
+    "https://wiki.ross-tech.com/wiki/index.php/16502/P0118/000280"
+  ],
+  "notes": [
+    "Existing review framework data/master/reviews used; no new data/review-queue parallel framework",
+    "Previous master 48 records preserved unchanged",
+    "Previous local RC3.8.2 draft contains 10 further definitions; not promoted",
+    "VW Polo technical definitions do not verify Škoda applicability",
+    "Review queue entries are not production-certified DTC records"
+  ]
+}
