@@ -1,0 +1,349 @@
+{
+  "schema": "dtcnexis-lexus-batch03-oem-v1",
+  "date": "2026-11-16",
+  "brand": "Lexus",
+  "branch": "work/lexus-dtc-batch03-20261116",
+  "base_library": "main/data/master",
+  "source_baseline": "72 original rows preserved in lexus_batch01_preserved_part01..03.json",
+  "source_metadata": [
+    {
+      "id": "LXB03-S-GX-P2610",
+      "title": "Lexus L-SB-0026-16 — MIL ON DTC P2610",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10134105-9999.pdf",
+      "issued": "2016-06-23",
+      "market": "USA",
+      "scope": "GX 460 model years 2014–2016",
+      "type": "Lexus OEM bulletin distributed via NHTSA",
+      "checked_on": "2026-11-16",
+      "rights": "Lexus/Toyota copyright; reference metadata only, no copied figure",
+      "primary_technical_source": true
+    },
+    {
+      "id": "LXB03-S-F-P2610",
+      "title": "Lexus L-SB-0167-17 — MIL ON DTC P2610",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10132686-9999.pdf",
+      "issued": "2017-10-23",
+      "market": "USA",
+      "scope": "GS F MY2016, RC F MY2015–2016",
+      "type": "Lexus OEM bulletin distributed via NHTSA",
+      "checked_on": "2026-11-16",
+      "rights": "Lexus/Toyota copyright; reference metadata only, no copied figure",
+      "primary_technical_source": true
+    },
+    {
+      "id": "LXB03-S-RX-P0430",
+      "title": "Lexus L-SB-0005-15 — MIL ON DTC P0430",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2015/MC-10111225-9999.pdf",
+      "issued": "2015-02-10",
+      "market": "USA",
+      "scope": "RX 450h MY2010, 2GR-FXE (TIS procedure refs)",
+      "type": "Lexus OEM bulletin distributed via NHTSA",
+      "checked_on": "2026-11-16",
+      "rights": "Lexus/Toyota copyright; reference metadata only, no copied figure",
+      "primary_technical_source": true
+    },
+    {
+      "id": "LXB03-S-RX-P07457F",
+      "title": "Lexus L-SB-0005-19 Rev1 — MIL ON DTC P07457F",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10159714-9999.pdf",
+      "issued": "2019-04-15 (revision; original 2019-02-08)",
+      "market": "USA",
+      "scope": "RX 350 MY2019 8AT; production VIN restriction; RX350L listed in production section, not formal applicability table",
+      "type": "Lexus OEM bulletin distributed via NHTSA",
+      "checked_on": "2026-11-16",
+      "rights": "Lexus/Toyota copyright; reference metadata only, no copied figure",
+      "primary_technical_source": true
+    }
+  ],
+  "record_count": 3,
+  "distinct_new_code_count": 3,
+  "records": [
+    {
+      "record_id": "LXB03-D-ECM-P2610-USA",
+      "brand": "Lexus",
+      "code": "P2610",
+      "base_code": "P2610",
+      "code_format": "five_character",
+      "code_type": "standardized_range_SAE_style_J2012_definition_not_directly_licensed",
+      "ecu": "ECM/PCM",
+      "category": "P",
+      "definition_en": "ECM/PCM Engine Off Timer Performance",
+      "translation_ar": "خلل أداء مؤقت توقف المحرك داخل وحدة التحكم ECM/PCM",
+      "symptoms": [
+        "MIL on"
+      ],
+      "causes": [
+        {
+          "item": "ECM software calibration condition",
+          "evidence": "OEM bulletin on named vehicles"
+        },
+        {
+          "item": "Other timer/power/ECM faults",
+          "evidence": "Requires factory repair manual if calibration already current"
+        }
+      ],
+      "diagnostic_steps": [
+        "Read P2610 and Freeze Frame with Techstream",
+        "Verify vehicle, ECM calibration ID and modification label against year-specific TSB",
+        "If existing calibration is latest, bulletin does not apply; follow matched Lexus Repair Manual",
+        "Only for bulletin-eligible calibration, perform authorized ECM flash with stable 13.5 V power supply",
+        "Road test and recheck DTC; never automatically replace ECM"
+      ],
+      "live_data": [
+        {
+          "name_en": "ECM Calibration ID",
+          "name_ar": "معرّف معايرة وحدة التحكم",
+          "requirement": "Match exact model-year bulletin",
+          "normal_spec": "See model-specific calibration table; no generic range"
+        }
+      ],
+      "parts": [
+        {
+          "name": "ECM/PCM",
+          "action": "reprogram only per TSB; do not replace ECM"
+        }
+      ],
+      "wiring": null,
+      "images": [],
+      "applicability": [
+        {
+          "variant_id": "GX460_MY2014_2015",
+          "model": "GX 460",
+          "model_years": [
+            2014,
+            2015
+          ],
+          "market": "USA",
+          "engine_code": null,
+          "ecu": "ECM",
+          "source_id": "LXB03-S-GX-P2610",
+          "calibration_before": [
+            "360Q9000",
+            "360Q9100"
+          ],
+          "calibration_after": [
+            "360Q9200"
+          ]
+        },
+        {
+          "variant_id": "GX460_MY2016",
+          "model": "GX 460",
+          "model_years": [
+            2016
+          ],
+          "market": "USA",
+          "engine_code": null,
+          "ecu": "ECM",
+          "source_id": "LXB03-S-GX-P2610",
+          "calibration_before": [
+            "360X8000"
+          ],
+          "calibration_after": [
+            "360X8100"
+          ]
+        },
+        {
+          "variant_id": "GSF_MY2016",
+          "model": "GS F",
+          "model_years": [
+            2016
+          ],
+          "market": "USA",
+          "engine_code": null,
+          "ecu": "ECM",
+          "source_id": "LXB03-S-F-P2610",
+          "calibration_before": [
+            "33075000",
+            "33075100"
+          ],
+          "calibration_after": [
+            "33075200"
+          ]
+        },
+        {
+          "variant_id": "RCF_MY2015_2016",
+          "model": "RC F",
+          "model_years": [
+            2015,
+            2016
+          ],
+          "market": "USA",
+          "engine_code": null,
+          "ecu": "ECM",
+          "source_id": "LXB03-S-F-P2610",
+          "calibration_before": [
+            "32428000",
+            "32428100",
+            "32428300"
+          ],
+          "calibration_after": [
+            "32428400"
+          ]
+        }
+      ],
+      "source_ids": [
+        "LXB03-S-GX-P2610",
+        "LXB03-S-F-P2610"
+      ],
+      "verification_status": "OEM_USA_code_and_applicability_verified; full_system_diagnosis_pending",
+      "review_status": "pending_owner_review",
+      "not_eu_verified": true
+    },
+    {
+      "record_id": "LXB03-D-ECM-P0430-RX450H2010",
+      "brand": "Lexus",
+      "code": "P0430",
+      "base_code": "P0430",
+      "code_format": "five_character",
+      "code_type": "SAE_general_definition_in_OEM_bulletin",
+      "ecu": "ECM/PCM",
+      "category": "P",
+      "definition_en": "Catalyst System Efficiency Below Threshold (Bank 2)",
+      "translation_ar": "كفاءة نظام المحول الحفاز أقل من الحد المطلوب — بنك الأسطوانات 2",
+      "symptoms": [
+        "MIL on"
+      ],
+      "causes": [
+        {
+          "item": "Downstream oxygen sensor B2S2 signal/impedance abnormal",
+          "evidence": "Conditional OEM TSB threshold; sensor replacement only if criterion satisfied"
+        },
+        {
+          "item": "Catalyst efficiency/exhaust/combustion or sensor wiring fault",
+          "evidence": "Requires matched repair-manual diagnosis when TSB threshold not met; not isolated by code alone"
+        }
+      ],
+      "diagnostic_steps": [
+        "With Techstream confirm P0430 and scan accompanying DTC",
+        "With engine at normal operating temperature, inspect O2 B2S2 Voltage and O2 Impedance B2S2",
+        "If B2S2 voltage is 1.275 V OR impedance exceeds 300 ohms under TSB conditions, follow bulletin for B2 O2 sensor and harness clamp replacement",
+        "If neither criterion is met, bulletin does not apply: follow matched Lexus TIS for catalyst/air-fuel system diagnostics",
+        "Clear codes and confirm after drive cycle"
+      ],
+      "live_data": [
+        {
+          "name_en": "O2 B2S2 Voltage",
+          "name_ar": "جهد حساس الأكسجين بنك 2 حساس 2",
+          "condition": "Engine at normal operating temperature",
+          "bulletin_trigger": "1.275 V; conditional diagnosis, NOT general normal voltage"
+        },
+        {
+          "name_en": "O2 Impedance B2S2",
+          "name_ar": "ممانعة حساس الأكسجين بنك 2 حساس 2",
+          "condition": "Engine at normal operating temperature",
+          "bulletin_trigger": ">300 ohms; conditional diagnosis, NOT general normal impedance"
+        }
+      ],
+      "parts": [
+        {
+          "name": "Oxygen Sensor No. 2, Bank 2",
+          "location": "Factory TIS for 2010 RX450h 2GR-FXE required for verified installation position",
+          "replacement_criterion": "Only when TSB criteria are met"
+        },
+        {
+          "name": "Wire harness clamp",
+          "replacement_criterion": "Per TSB when sensor replacement is indicated"
+        }
+      ],
+      "wiring": null,
+      "images": [],
+      "applicability": [
+        {
+          "variant_id": "RX450H_MY2010_USA_2GRFXE",
+          "model": "RX 450h",
+          "model_years": [
+            2010
+          ],
+          "market": "USA",
+          "engine_code": "2GR-FXE",
+          "ecu": "ECM",
+          "source_id": "LXB03-S-RX-P0430"
+        }
+      ],
+      "source_ids": [
+        "LXB03-S-RX-P0430"
+      ],
+      "verification_status": "OEM_USA_code_applicability_and_specific_measurements_verified; complete_wiring_pending",
+      "review_status": "pending_owner_review",
+      "not_eu_verified": true
+    },
+    {
+      "record_id": "LXB03-D-ECM-P07457F-RX3502019",
+      "brand": "Lexus",
+      "code": "P07457F",
+      "base_code": "P0745",
+      "failure_type_suffix": "7F",
+      "code_format": "seven_character_OEM_bulletin_display",
+      "code_type": "SAE_base_with_OEM_reported_suffix; classification_of_7F_pending_J2012DA",
+      "ecu": "ECM/PCM (transaxle function)",
+      "category": "P",
+      "definition_en": "Pressure Control Solenoid 'A' Actuator Stuck Off",
+      "translation_ar": "تعطل تشغيل مشغل صمام التحكم بالضغط A وبقاؤه في وضع الإيقاف",
+      "symptoms": [
+        "MIL on",
+        "Harsh engagement when shifting into Drive"
+      ],
+      "causes": [
+        {
+          "item": "ECM software calibration condition",
+          "evidence": "Lexus L-SB-0005-19 Rev1; verify VIN and calibration"
+        },
+        {
+          "item": "Transmission hydraulic/solenoid/wiring condition",
+          "evidence": "Not excluded by bulletin; factory repair manual required if updated or not eligible"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm P07457F with Techstream; capture freeze-frame and ECM calibration ID",
+        "Verify RX350 MY2019 8AT production plant, trim, drivetrain and VIN relative to TSB production-change thresholds",
+        "If covered and calibration is old, follow authorized ECM flash procedure with stabilized power",
+        "ECM replacement is explicitly NOT part of bulletin repair",
+        "If vehicle outside TSB or calibration current, diagnose solenoid/hydraulic/wiring using vehicle-specific Lexus TIS",
+        "Clear DTC and verify Drive engagement after road test"
+      ],
+      "live_data": [
+        {
+          "name_en": "ECM Calibration ID",
+          "name_ar": "معرّف معايرة ECM",
+          "requirement": "Check against bulletin and precise VIN",
+          "normal_spec": "No universal ID; variant-dependent"
+        }
+      ],
+      "parts": [
+        {
+          "name": "ECM/PCM software",
+          "action": "reprogram if eligible; do NOT replace ECM"
+        }
+      ],
+      "wiring": null,
+      "images": [],
+      "applicability": [
+        {
+          "variant_id": "RX350_MY2019_8AT_USA",
+          "model": "RX 350",
+          "model_years": [
+            2019
+          ],
+          "market": "USA",
+          "engine_code": null,
+          "transmission": "8AT",
+          "ecu": "ECM",
+          "source_id": "LXB03-S-RX-P07457F",
+          "vin_condition": "Only vehicles built before production change effective VINs in Rev1; select plant/trim/drivetrain first"
+        }
+      ],
+      "source_ids": [
+        "LXB03-S-RX-P07457F"
+      ],
+      "verification_status": "OEM_USA_code_applicability_verified; exact_engine_and_EU_scope_pending",
+      "review_status": "pending_owner_review",
+      "not_eu_verified": true,
+      "notes": [
+        "RX350L is listed within production-change table but formal applicability table specifies RX350 only; RX350L mapping deferred"
+      ]
+    }
+  ],
+  "release_to_app": false,
+  "owner_approved": false,
+  "market_warning": "USA bulletin applicability is not European/Swedish applicability"
+}
