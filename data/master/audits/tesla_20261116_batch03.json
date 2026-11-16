@@ -1,0 +1,105 @@
+{
+  "schema": "dtc-nexis-tesla-continuation-audit-v1",
+  "brand": "Tesla",
+  "date": "2026-11-16",
+  "branch": "work/tesla-dtc-20261116",
+  "base_branch": "main",
+  "status": "DRAFT_PR_ONLY_NOT_MERGED",
+  "public_release": false,
+  "repo_observed": {
+    "default_branch": "main",
+    "repository": "https://github.com/dtcnexis/DTC-Nexis-Updates",
+    "master_catalog": "data/master",
+    "tesla_prior_master_brand_file": "NOT_FOUND_ON_MAIN_AS_OF_2026-11-16",
+    "review_queue_on_main": "NOT_FOUND_ON_MAIN_AS_OF_2026-11-16",
+    "other_existing_reviews": "data/master/reviews; not equivalent to required dedicated review-queue"
+  },
+  "local_previous": {
+    "batch01_code_count": 143,
+    "batch02_combined_code_count": 150,
+    "batch02_incremental_code_count": 7,
+    "sha256_batch01_json": "d418e463b1f9edc6813963d021be1808f8932a8535442fedb3b1dff934ebc5de",
+    "sha256_batch02_master_json": "3a6f68fa256e37d28380797c420e349ae6882bb77286193e6fb792b5e374fb6d",
+    "original_full_files_in_repo": false,
+    "reason": "Raw previous detailed files are preserved in session, but not uploaded as raw content to public GitHub in this batch; only identifier index plus SHA pointers is stored here."
+  },
+  "reconciliation": {
+    "prior_unique_code_identifiers": 150,
+    "prior_duplicates_within_batch02": 0,
+    "new_primary_oem_code_identifiers": 1,
+    "primary_oem_new_codes": [
+      "TAS_a025_CrashEvent"
+    ],
+    "existing_codes_enriched_with_oem_source": 4,
+    "existing_codes_enriched": [
+      "CP_a054",
+      "BMS_a079",
+      "VCFRONT_a233_autopilot1EFuseFault",
+      "VCFRONT_a234_autopilot2EFuseFault"
+    ],
+    "new_thirdparty_only_candidates_not_counted_verified": 25,
+    "new_prior_identifier_total_in_branch": 151,
+    "sae_p_b_c_u_vehicles_confirmed_in_this_batch": 0,
+    "review_queue_items": 176
+  },
+  "files": [
+    "data/master/brands/tesla_prior_batch01_batch02_index_20261116.json",
+    "data/master/brands/tesla_service_mode_2024_8_additions_20261116.json",
+    "data/master/enrichment/tesla_oem_crosschecks_20261116.json",
+    "data/review-queue/tesla_20261116.json"
+  ],
+  "source_list": [
+    {
+      "type": "OEM",
+      "title": "Tesla Service Mode Release Notes",
+      "edition": "2024.8 (entry for TAS_a025); page also has later updates",
+      "url": "https://service.tesla.com/docs/Public/ServiceMode/release-notes.html",
+      "verified_on": "2026-11-16"
+    },
+    {
+      "type": "OEM",
+      "title": "Tesla Model Y Sweden troubleshooting alerts",
+      "edition": "Rolling guide; exact vehicle model year must be checked",
+      "url": "https://www.tesla.com/ownersmanual/modely/sv_se/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+      "verified_on": "2026-11-16"
+    },
+    {
+      "type": "OEM",
+      "title": "Tesla Model 3 Swedish-language troubleshooting alerts",
+      "edition": "sv_us rolling guide, regional matching not independently established",
+      "url": "https://www.tesla.com/ownersmanual/model3/sv_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+      "verified_on": "2026-11-16"
+    },
+    {
+      "type": "OEM",
+      "title": "Tesla SB-25-00-001 R1",
+      "edition": "2025-03-11, bulletin applicability only approximate without VIN tracker",
+      "url": "https://service.tesla.com/docs/ServiceBulletins/External/SB/SB-25-00-001_Update_Vehicle_Software_Or_Replace_Car_Computer_To_Correct_Loss_Of_Rearview_Display_R1.pdf",
+      "verified_on": "2026-11-16",
+      "visual_review": "PDF screenshot unavailable; text source inspected"
+    },
+    {
+      "type": "third_party_unverified",
+      "title": "Tesware TAS alert index, legacy Model S/X",
+      "url": "https://tesware.net/alerts/modelS/ecu/TAS",
+      "verified_on": "2026-11-16",
+      "caveat": "Not Tesla OEM; candidate code spellings must be rechecked for accurate suffix, conditions and rights"
+    }
+  ],
+  "open_items": [
+    "Tesla 150 previous records need independent source-by-source and VIN-level validation",
+    "Check differing SB-25-00-001 revisions; February text lists two APS_w284/w285 codes not carried in March R1 text used for enrichment; no inference about code withdrawal",
+    "Tesla DTCs (not just alerts) require authorised Toolbox or published OEM procedures for definitions and P/B/C/U applicability",
+    "ABS, RCM/Airbag, CAN/network, drive inverter and body ECUs need further directly sourced code harvest",
+    "Electrical pins, isolation test targets, part-number matching and engine/drive unit VIN applications are not confirmed",
+    "Original full detailed Batch01/02 were not copied byte-for-byte to GitHub in this batch; need authorized archive workflow",
+    "Review third-party candidates before public technical use"
+  ],
+  "shipping_controls": {
+    "modified_update_feed": false,
+    "modified_rc380": false,
+    "modified_rc382": false,
+    "merged_into_main": false,
+    "notes": "Only data and draft review work-branch commits; no Windows release or update channel modifications."
+  }
+}
