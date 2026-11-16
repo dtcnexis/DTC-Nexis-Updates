@@ -1,0 +1,29 @@
+{
+  "schema": "DTC_NEXIS_REVIEW_QUEUE_V1",
+  "brand": "Volvo",
+  "date": "2026-11-16",
+  "catalog_ref": "data/master/brands/volvo_tj_20261116_batch02_brake.json",
+  "items": [
+    {
+      "brand": "Volvo",
+      "code": "ECM-P25A268",
+      "ecu": "ECM",
+      "engine": "multiple; consult the exact table in TJ 36899.1.0",
+      "source": "https://static.nhtsa.gov/odi/tsbs/2024/MC-10254406-0001.pdf",
+      "reason": "Manufacturer confirms code and software-first case; full engine/model table, code semantics, Sweden/EU applicability and Live Data require VIDA verification",
+      "linked_catalog_record_id": "volvo-tj-20261116-ecm-p25a268",
+      "status": "deferred_for_formal_verification"
+    },
+    {
+      "brand": "Volvo",
+      "code": "BCM2-U003700",
+      "ecu": "BCM2",
+      "engine": "multiple; consult the exact table in TJ 36899.1.0",
+      "source": "https://static.nhtsa.gov/odi/tsbs/2024/MC-10254406-0001.pdf",
+      "reason": "Manufacturer confirms code and software-first case; full engine/model table, code semantics, Sweden/EU applicability and Live Data require VIDA verification",
+      "linked_catalog_record_id": "volvo-tj-20261116-bcm2-u003700",
+      "status": "deferred_for_formal_verification"
+    }
+  ],
+  "queued_count": 2
+}

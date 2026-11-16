@@ -1,0 +1,237 @@
+{
+  "schema": "DTC_NEXIS_VOLVO_TJ_SUPPLEMENT_V1",
+  "manufacturer": "Volvo",
+  "created_on": "2026-11-16",
+  "base_catalog": "data/master/brands/volvo.json",
+  "previous_addition_file": "data/master/brands/volvo_tj_20261116_batch01.json",
+  "new_unique_code_rows": 2,
+  "records": [
+    {
+      "id": "volvo-tj-20261116-ecm-p25a268",
+      "brand": "Volvo",
+      "raw_code": "ECM-P25A268",
+      "base_code": "P25A2",
+      "failure_type": "68",
+      "ecu": "ECM",
+      "definition_en": "Brake System Control Module Requested MIL Illumination (wording in TJ 35460.1.5)",
+      "translation_ar": "طلبت وحدة التحكم بالفرامل إضاءة مصباح العطل MIL (وصف نشرة، لا يُعد تعريف VIDA المعتمد)",
+      "case_specific_fault_context": "MIL check engine light together with both ECM and BCM2 DTCs; diagnostic procedure is software first rather than hardware",
+      "steps": [
+        "Verify presence of both listed DTCs and the documented symptom",
+        "Confirm exact Volvo vehicle type, engine designation and structure week in TJ 36899 (sample tuples stored, not exhaustive)",
+        "Check VIDA software version; Volvo identified improved software in release 3.0.3 available from 2024 week 16 / via OTA, otherwise use TJ31543",
+        "Re-evaluate after software install; do not replace brake components solely based on this bulletin"
+      ],
+      "applicability": {
+        "market": "US and Canada",
+        "examples_from_bulletin": [
+          {
+            "volvo_type": "224",
+            "engine_as_tj": "B4204T23",
+            "model_years": "2019-2021",
+            "structure_weeks": "201835-202121"
+          },
+          {
+            "volvo_type": "224",
+            "engine_as_tj": "B4204T27",
+            "model_years": "2019-2021",
+            "structure_weeks": "201835-202045"
+          },
+          {
+            "volvo_type": "224",
+            "engine_as_tj": "BH6PHEV",
+            "model_years": "2022-2024",
+            "structure_weeks": "202147-202415"
+          },
+          {
+            "volvo_type": "225",
+            "engine_as_tj": "B4204T23",
+            "model_years": "2019-2021",
+            "structure_weeks": "201817-202116"
+          },
+          {
+            "volvo_type": "225",
+            "engine_as_tj": "B4204T27",
+            "model_years": "2019-2023",
+            "structure_weeks": "201826-202220"
+          },
+          {
+            "volvo_type": "236",
+            "engine_as_tj": "D4204T14",
+            "model_years": "2017-2021",
+            "structure_weeks": "201646-202115"
+          },
+          {
+            "volvo_type": "246",
+            "engine_as_tj": "D4204T23",
+            "model_years": "2018-2021",
+            "structure_weeks": "201717-202121"
+          },
+          {
+            "volvo_type": "246",
+            "engine_as_tj": "B4204T26",
+            "model_years": "2018-2022",
+            "structure_weeks": "201746-202121"
+          },
+          {
+            "volvo_type": "256",
+            "engine_as_tj": "BH6PHEV",
+            "model_years": "2022-2024",
+            "structure_weeks": "202147-202415"
+          },
+          {
+            "volvo_type": "536",
+            "engine_as_tj": "B4204T14",
+            "model_years": "2018-2021",
+            "structure_weeks": "201746-202116"
+          },
+          {
+            "volvo_type": "536",
+            "engine_as_tj": "B3154T9",
+            "model_years": "2020-2024",
+            "structure_weeks": "201917-202409"
+          }
+        ],
+        "full_scope_source": "https://static.nhtsa.gov/odi/tsbs/2024/MC-10254406-0001.pdf",
+        "completeness": "selected exact manufacturer table tuples only, consult source full table",
+        "fuel_type": "mixed petrol/diesel/PHEV; only exact engine designation listed per tuple"
+      },
+      "source": {
+        "publisher": "Volvo Car USA",
+        "title": "Check Engine Light in DIM (BCM2 P25A268 / U003700)",
+        "tj": "TJ 36899.1.0",
+        "status_date": "2024-05-02",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-10254406-0001.pdf",
+        "secondary_tj": "TJ 35460.1.5",
+        "secondary_url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10175794-9999.pdf",
+        "markets": [
+          "United States",
+          "Canada"
+        ]
+      },
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostic__not_approved",
+      "review_status": "pending_VIDA_definition_EU_fitment_and_full_application_table",
+      "images": [],
+      "wiring": [],
+      "live_data": [],
+      "import_approved": false
+    },
+    {
+      "id": "volvo-tj-20261116-bcm2-u003700",
+      "brand": "Volvo",
+      "raw_code": "BCM2-U003700",
+      "base_code": "U0037",
+      "failure_type": "00",
+      "ecu": "BCM2",
+      "definition_en": "Vehicle Communication Bus B (wording in TJ 35460.1.5)",
+      "translation_ar": "شبكة اتصال المركبة B (وصف نشرة، لا يُعد تعريف VIDA المعتمد)",
+      "case_specific_fault_context": "MIL check engine light together with both ECM and BCM2 DTCs; diagnostic procedure is software first rather than hardware",
+      "steps": [
+        "Verify presence of both listed DTCs and the documented symptom",
+        "Confirm exact Volvo vehicle type, engine designation and structure week in TJ 36899 (sample tuples stored, not exhaustive)",
+        "Check VIDA software version; Volvo identified improved software in release 3.0.3 available from 2024 week 16 / via OTA, otherwise use TJ31543",
+        "Re-evaluate after software install; do not replace brake components solely based on this bulletin"
+      ],
+      "applicability": {
+        "market": "US and Canada",
+        "examples_from_bulletin": [
+          {
+            "volvo_type": "224",
+            "engine_as_tj": "B4204T23",
+            "model_years": "2019-2021",
+            "structure_weeks": "201835-202121"
+          },
+          {
+            "volvo_type": "224",
+            "engine_as_tj": "B4204T27",
+            "model_years": "2019-2021",
+            "structure_weeks": "201835-202045"
+          },
+          {
+            "volvo_type": "224",
+            "engine_as_tj": "BH6PHEV",
+            "model_years": "2022-2024",
+            "structure_weeks": "202147-202415"
+          },
+          {
+            "volvo_type": "225",
+            "engine_as_tj": "B4204T23",
+            "model_years": "2019-2021",
+            "structure_weeks": "201817-202116"
+          },
+          {
+            "volvo_type": "225",
+            "engine_as_tj": "B4204T27",
+            "model_years": "2019-2023",
+            "structure_weeks": "201826-202220"
+          },
+          {
+            "volvo_type": "236",
+            "engine_as_tj": "D4204T14",
+            "model_years": "2017-2021",
+            "structure_weeks": "201646-202115"
+          },
+          {
+            "volvo_type": "246",
+            "engine_as_tj": "D4204T23",
+            "model_years": "2018-2021",
+            "structure_weeks": "201717-202121"
+          },
+          {
+            "volvo_type": "246",
+            "engine_as_tj": "B4204T26",
+            "model_years": "2018-2022",
+            "structure_weeks": "201746-202121"
+          },
+          {
+            "volvo_type": "256",
+            "engine_as_tj": "BH6PHEV",
+            "model_years": "2022-2024",
+            "structure_weeks": "202147-202415"
+          },
+          {
+            "volvo_type": "536",
+            "engine_as_tj": "B4204T14",
+            "model_years": "2018-2021",
+            "structure_weeks": "201746-202116"
+          },
+          {
+            "volvo_type": "536",
+            "engine_as_tj": "B3154T9",
+            "model_years": "2020-2024",
+            "structure_weeks": "201917-202409"
+          }
+        ],
+        "full_scope_source": "https://static.nhtsa.gov/odi/tsbs/2024/MC-10254406-0001.pdf",
+        "completeness": "selected exact manufacturer table tuples only, consult source full table",
+        "fuel_type": "mixed petrol/diesel/PHEV; only exact engine designation listed per tuple"
+      },
+      "source": {
+        "publisher": "Volvo Car USA",
+        "title": "Check Engine Light in DIM (BCM2 P25A268 / U003700)",
+        "tj": "TJ 36899.1.0",
+        "status_date": "2024-05-02",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-10254406-0001.pdf",
+        "secondary_tj": "TJ 35460.1.5",
+        "secondary_url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10175794-9999.pdf",
+        "markets": [
+          "United States",
+          "Canada"
+        ]
+      },
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostic__not_approved",
+      "review_status": "pending_VIDA_definition_EU_fitment_and_full_application_table",
+      "images": [],
+      "wiring": [],
+      "live_data": [],
+      "import_approved": false
+    }
+  ],
+  "notes": [
+    "Vehicle type/engine tuples are selected exact samples, not full vehicle scope",
+    "No confirmed Swedish/EU applicability",
+    "Source PDF never copied into public repo",
+    "Vehicle safety diagnostics should use vehicle-specific VIDA procedure",
+    "Do not import into live DTC application without review"
+  ]
+}
