@@ -1,0 +1,5133 @@
+{
+  "schema": "dtc-nexis-permanent-brand-code-records-v1",
+  "brand": "Land Rover",
+  "batch": "LR-004",
+  "archived_at": "2026-11-16",
+  "archive_status": "DRAFT_SOURCE_PRESERVED",
+  "release_to_app": "NOT_ACTIVE",
+  "verification_statement": "JLR bulletin code presence verified for limited models/engine contexts. Not all definitions, markets, VINs or standalone OEM failure-type meanings confirmed.",
+  "source_count": 11,
+  "record_count": 51,
+  "distinct_raw_codes": 47,
+  "new_to_prior_distinct_codes": 46,
+  "prior_overlaps": [
+    "P025C-11"
+  ],
+  "intra_batch_multi_engine_variants": [
+    [
+      "P3498-71",
+      2
+    ],
+    [
+      "P3499-71",
+      2
+    ],
+    [
+      "P349A-71",
+      2
+    ],
+    [
+      "P349B-71",
+      2
+    ]
+  ],
+  "source_registry": [
+    {
+      "id": "JLR-SSM74588-2019",
+      "date": "2019-10-16",
+      "title": "SSM74588 — 16MY onward AJ126 S/C Petrol high-pressure fuel-pump noise / MIL",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10167326-0001.pdf",
+      "scope": "Discovery L462, Discovery 4 L319, Range Rover L405, RR Sport L494, Velar L560; only AJ126 supercharged V6; 16MY onward conditional",
+      "market": "not proven for EU/Sweden"
+    },
+    {
+      "id": "JLR-LTB00772NAS1-2015",
+      "date": "2015-05-26",
+      "title": "LTB00772NAS1 — Gearbox fault P07DC-07/P07DD-07/P2702-07",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2015/MC-10104521-9340.pdf",
+      "scope": "2015MY RR L405 VIN FA197042–FA222580; RR Sport L494 VIN FA504511–FA523685 or FA601763–FA619670; 3.0 SC V6 + ZF 8HP45",
+      "market": "NAS only"
+    },
+    {
+      "id": "JLR-SSM72978-2016",
+      "date": "2016-09-27",
+      "title": "SSM72978 — HDC and stability assist unavailable, U0140-87 in ABS",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2016/SB-10097241-1020.pdf",
+      "scope": "Range Rover L405 and RR Sport L494; 16MY onwards",
+      "market": "not proven for EU/Sweden"
+    },
+    {
+      "id": "JLR-SSM73424-2018",
+      "date": "2018-08-04",
+      "title": "SSM73424 — U0001-82 stored in ABS (inactive LabsSIEB CAN message)",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10146355-9999.pdf",
+      "scope": "up to and including 17MY, VIN ceiling per L405/L494/L462; list in bulletin",
+      "market": "not proven for EU/Sweden"
+    },
+    {
+      "id": "JLR-SSM75647-2022",
+      "date": "2022-09-29",
+      "title": "SSM75647 — SOS limited availability / TCU backup battery U2109-09",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10222683-0001.pdf",
+      "scope": "Velar 18–20MY; RR/RR Sport/Discovery 18MY onward; Evoque & Discovery Sport 18–20MY per page 2",
+      "market": "not proven for EU/Sweden"
+    },
+    {
+      "id": "JLR-SSM76039-2023",
+      "date": "2023-07-17",
+      "title": "SSM76039 — Vehicle will not charge, PCM U019B-87 and BECM U0064-87",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10240274-0001.pdf",
+      "scope": "Defender L663; Discovery L462; Discovery Sport L550; RR L460/L405; RR Sport L461/L494; Evoque L551; Velar L560; only variants with HV charging system",
+      "market": "not proven for EU/Sweden"
+    },
+    {
+      "id": "JLR-SSM76104-2023",
+      "date": "2023-10-20",
+      "title": "SSM76104 — No power steering at start of cycle, ADAS DADC U0400-81",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10245032-0001.pdf",
+      "scope": "Defender 20MY+; Discovery 21MY+; RR L460 22MY+; RR Sport L461 23MY+",
+      "market": "not proven for EU/Sweden"
+    },
+    {
+      "id": "JLR-SSM76008-2023",
+      "date": "2023-06-02",
+      "title": "SSM76008 — Red suspension lamp, CHCM U3000-47",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10239033-0001.pdf",
+      "scope": "Range Rover L460, Range Rover Sport L461, model years not specified",
+      "market": "not proven for EU/Sweden"
+    },
+    {
+      "id": "JLR-SSM75930-2023",
+      "date": "2023-02-01",
+      "title": "SSM75930 — AJ20-P4M/AJ20-P4H misfires and CVVL, PCM DTCs",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10232700-0001.pdf",
+      "scope": "Defender L663; Discovery Sport L550; Evoque L551; RR L405; RR Sport L494; Velar L560; only AJ20-P4M/P4H derivatives",
+      "market": "not proven for EU/Sweden"
+    },
+    {
+      "id": "JLR-SSM76306-2025",
+      "date": "2025-04-18",
+      "title": "SSM76306 — PCM mid-catalyst HO2S DTCs on 4.4L V8",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11017761-0001.pdf",
+      "scope": "RR L460 22-23MY 4.4L V8 petrol only; RR Sport L461 23MY 4.4L V8 petrol only",
+      "market": "not proven for EU/Sweden"
+    },
+    {
+      "id": "JLR-SSM000030-2026",
+      "date": "2026-04",
+      "title": "April 2026 JLR Powertrain — SSM000030 AJ20P6 combustion instability (slide 33)",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11032550-0001.pdf",
+      "scope": "Range Rover L460 and RR Sport L461 24MY onwards; AJ20P6 3.0L I6 petrol engine family",
+      "market": "not proven for EU/Sweden"
+    }
+  ],
+  "records": [
+    {
+      "id": "LR004-JLRSSM745882019-P228F85-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P228F-85",
+      "base_code": "P228F",
+      "code_family": "P",
+      "failure_type": "85",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Discovery L462",
+          "Discovery 4 L319",
+          "Range Rover L405",
+          "Range Rover Sport L494",
+          "Range Rover Velar L560"
+        ],
+        "model_years": {
+          "from": 2016,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ126 3.0L V6 supercharged petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "MIL illuminated",
+        "high pressure fuel pump noise possible"
+      ],
+      "causes_evidence": [
+        "Root cause under investigation in SSM74588. Do not ascribe fuel pump failure without tests."
+      ],
+      "diagnostic_steps": [
+        "Confirm engine is AJ126 and identify stored PCM codes",
+        "If listed code is present or noise from high-pressure fuel pump is audible, submit Technical Assistance with session file and sound/video evidence if relevant",
+        "Use TOPIx Workshop Manual DTC Index: V6 S/C 3.0L Petrol for VIN-specific confirmation"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P025C-11",
+        "P0251-13",
+        "P064A-38",
+        "P0256-13"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM74588-2019"
+      },
+      "sources": [
+        "JLR-SSM74588-2019"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_source_code_and_engine_family_confirmed_exact_failure_type_definition_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null
+    },
+    {
+      "id": "LR004-JLRSSM745882019-P025C11-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P025C-11",
+      "base_code": "P025C",
+      "code_family": "P",
+      "failure_type": "11",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Discovery L462",
+          "Discovery 4 L319",
+          "Range Rover L405",
+          "Range Rover Sport L494",
+          "Range Rover Velar L560"
+        ],
+        "model_years": {
+          "from": 2016,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ126 3.0L V6 supercharged petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "MIL illuminated",
+        "high pressure fuel pump noise possible"
+      ],
+      "causes_evidence": [
+        "Root cause under investigation in SSM74588. Do not ascribe fuel pump failure without tests."
+      ],
+      "diagnostic_steps": [
+        "Confirm engine is AJ126 and identify stored PCM codes",
+        "If listed code is present or noise from high-pressure fuel pump is audible, submit Technical Assistance with session file and sound/video evidence if relevant",
+        "Use TOPIx Workshop Manual DTC Index: V6 S/C 3.0L Petrol for VIN-specific confirmation"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P228F-85",
+        "P0251-13",
+        "P064A-38",
+        "P0256-13"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM74588-2019"
+      },
+      "sources": [
+        "JLR-SSM74588-2019"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_source_code_and_engine_family_confirmed_exact_failure_type_definition_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "Existing raw code in LR-003, but new OEM-confirmed AJ126 engine context; preserve separate applicability, do NOT count as new unique code."
+    },
+    {
+      "id": "LR004-JLRSSM745882019-P025113-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P0251-13",
+      "base_code": "P0251",
+      "code_family": "P",
+      "failure_type": "13",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Discovery L462",
+          "Discovery 4 L319",
+          "Range Rover L405",
+          "Range Rover Sport L494",
+          "Range Rover Velar L560"
+        ],
+        "model_years": {
+          "from": 2016,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ126 3.0L V6 supercharged petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "MIL illuminated",
+        "high pressure fuel pump noise possible"
+      ],
+      "causes_evidence": [
+        "Root cause under investigation in SSM74588. Do not ascribe fuel pump failure without tests."
+      ],
+      "diagnostic_steps": [
+        "Confirm engine is AJ126 and identify stored PCM codes",
+        "If listed code is present or noise from high-pressure fuel pump is audible, submit Technical Assistance with session file and sound/video evidence if relevant",
+        "Use TOPIx Workshop Manual DTC Index: V6 S/C 3.0L Petrol for VIN-specific confirmation"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P228F-85",
+        "P025C-11",
+        "P064A-38",
+        "P0256-13"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM74588-2019"
+      },
+      "sources": [
+        "JLR-SSM74588-2019"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_source_code_and_engine_family_confirmed_exact_failure_type_definition_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null
+    },
+    {
+      "id": "LR004-JLRSSM745882019-P064A38-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P064A-38",
+      "base_code": "P064A",
+      "code_family": "P",
+      "failure_type": "38",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Discovery L462",
+          "Discovery 4 L319",
+          "Range Rover L405",
+          "Range Rover Sport L494",
+          "Range Rover Velar L560"
+        ],
+        "model_years": {
+          "from": 2016,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ126 3.0L V6 supercharged petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "MIL illuminated",
+        "high pressure fuel pump noise possible"
+      ],
+      "causes_evidence": [
+        "Root cause under investigation in SSM74588. Do not ascribe fuel pump failure without tests."
+      ],
+      "diagnostic_steps": [
+        "Confirm engine is AJ126 and identify stored PCM codes",
+        "If listed code is present or noise from high-pressure fuel pump is audible, submit Technical Assistance with session file and sound/video evidence if relevant",
+        "Use TOPIx Workshop Manual DTC Index: V6 S/C 3.0L Petrol for VIN-specific confirmation"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P228F-85",
+        "P025C-11",
+        "P0251-13",
+        "P0256-13"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM74588-2019"
+      },
+      "sources": [
+        "JLR-SSM74588-2019"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_source_code_and_engine_family_confirmed_exact_failure_type_definition_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null
+    },
+    {
+      "id": "LR004-JLRSSM745882019-P025613-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P0256-13",
+      "base_code": "P0256",
+      "code_family": "P",
+      "failure_type": "13",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Discovery L462",
+          "Discovery 4 L319",
+          "Range Rover L405",
+          "Range Rover Sport L494",
+          "Range Rover Velar L560"
+        ],
+        "model_years": {
+          "from": 2016,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ126 3.0L V6 supercharged petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "MIL illuminated",
+        "high pressure fuel pump noise possible"
+      ],
+      "causes_evidence": [
+        "Root cause under investigation in SSM74588. Do not ascribe fuel pump failure without tests."
+      ],
+      "diagnostic_steps": [
+        "Confirm engine is AJ126 and identify stored PCM codes",
+        "If listed code is present or noise from high-pressure fuel pump is audible, submit Technical Assistance with session file and sound/video evidence if relevant",
+        "Use TOPIx Workshop Manual DTC Index: V6 S/C 3.0L Petrol for VIN-specific confirmation"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P228F-85",
+        "P025C-11",
+        "P0251-13",
+        "P064A-38"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM74588-2019"
+      },
+      "sources": [
+        "JLR-SSM74588-2019"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_source_code_and_engine_family_confirmed_exact_failure_type_definition_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null
+    },
+    {
+      "id": "LR004-JLRLTB00772NAS12015-P07DC07-TCM",
+      "brand": "Land Rover",
+      "raw_code": "P07DC-07",
+      "base_code": "P07DC",
+      "code_family": "P",
+      "failure_type": "07",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "TCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L405 (LG)",
+          "Range Rover Sport L494 (LW)"
+        ],
+        "model_years": {
+          "from": 2015,
+          "until": 2015
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "3.0L V6 S/C Petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": "ZF 8HP45 8-speed automatic",
+        "drive": "AWD",
+        "market": "NAS",
+        "vin_scope": [
+          "RR LG FA197042-FA222580",
+          "RR Sport LW FA504511-FA523685",
+          "RR Sport LW FA601763-FA619670"
+        ],
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Gearbox fault message",
+        "limp home / fixed gear"
+      ],
+      "causes_evidence": [
+        "Software-related stuck first gear or failure to release C-clutch pressure, per LTB00772NAS1; bulletin also specifies transmission replacement subject to authorization."
+      ],
+      "diagnostic_steps": [
+        "Verify VIN, model year, petrol engine and 8HP45 (NAS bulletin only)",
+        "Read stored DTC in TCM and confirm complaint",
+        "Use stable power supply and SDD; follow TOPIx latest repair instructions and obtain required authorization BEFORE considering transmission replacement",
+        "Configure TCM as per bulletin after authorized remedy, clear DTC and retest"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR SDD (DVD 141.07 v207 or later per 2015 bulletin)",
+        "JLR-approved Midtronics battery support"
+      ],
+      "parts": [
+        "Transmission assembly LR062438 – bulletin specific, not automatic replacement"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P07DD-07",
+        "P2702-07"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-LTB00772NAS1-2015"
+      },
+      "sources": [
+        "JLR-LTB00772NAS1-2015"
+      ],
+      "review_status": "draft",
+      "verification_status": "manufacturer_bulletin_code_model_or_engine_scope_verified;individual_definition_or_EU_VIN_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null
+    },
+    {
+      "id": "LR004-JLRLTB00772NAS12015-P07DD07-TCM",
+      "brand": "Land Rover",
+      "raw_code": "P07DD-07",
+      "base_code": "P07DD",
+      "code_family": "P",
+      "failure_type": "07",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "TCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L405 (LG)",
+          "Range Rover Sport L494 (LW)"
+        ],
+        "model_years": {
+          "from": 2015,
+          "until": 2015
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "3.0L V6 S/C Petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": "ZF 8HP45 8-speed automatic",
+        "drive": "AWD",
+        "market": "NAS",
+        "vin_scope": [
+          "RR LG FA197042-FA222580",
+          "RR Sport LW FA504511-FA523685",
+          "RR Sport LW FA601763-FA619670"
+        ],
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Gearbox fault message",
+        "limp home / fixed gear"
+      ],
+      "causes_evidence": [
+        "Software-related stuck first gear or failure to release C-clutch pressure, per LTB00772NAS1; bulletin also specifies transmission replacement subject to authorization."
+      ],
+      "diagnostic_steps": [
+        "Verify VIN, model year, petrol engine and 8HP45 (NAS bulletin only)",
+        "Read stored DTC in TCM and confirm complaint",
+        "Use stable power supply and SDD; follow TOPIx latest repair instructions and obtain required authorization BEFORE considering transmission replacement",
+        "Configure TCM as per bulletin after authorized remedy, clear DTC and retest"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR SDD (DVD 141.07 v207 or later per 2015 bulletin)",
+        "JLR-approved Midtronics battery support"
+      ],
+      "parts": [
+        "Transmission assembly LR062438 – bulletin specific, not automatic replacement"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P07DC-07",
+        "P2702-07"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-LTB00772NAS1-2015"
+      },
+      "sources": [
+        "JLR-LTB00772NAS1-2015"
+      ],
+      "review_status": "draft",
+      "verification_status": "manufacturer_bulletin_code_model_or_engine_scope_verified;individual_definition_or_EU_VIN_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null
+    },
+    {
+      "id": "LR004-JLRLTB00772NAS12015-P270207-TCM",
+      "brand": "Land Rover",
+      "raw_code": "P2702-07",
+      "base_code": "P2702",
+      "code_family": "P",
+      "failure_type": "07",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "TCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L405 (LG)",
+          "Range Rover Sport L494 (LW)"
+        ],
+        "model_years": {
+          "from": 2015,
+          "until": 2015
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "3.0L V6 S/C Petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": "ZF 8HP45 8-speed automatic",
+        "drive": "AWD",
+        "market": "NAS",
+        "vin_scope": [
+          "RR LG FA197042-FA222580",
+          "RR Sport LW FA504511-FA523685",
+          "RR Sport LW FA601763-FA619670"
+        ],
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Gearbox fault message",
+        "limp home / fixed gear"
+      ],
+      "causes_evidence": [
+        "Software-related stuck first gear or failure to release C-clutch pressure, per LTB00772NAS1; bulletin also specifies transmission replacement subject to authorization."
+      ],
+      "diagnostic_steps": [
+        "Verify VIN, model year, petrol engine and 8HP45 (NAS bulletin only)",
+        "Read stored DTC in TCM and confirm complaint",
+        "Use stable power supply and SDD; follow TOPIx latest repair instructions and obtain required authorization BEFORE considering transmission replacement",
+        "Configure TCM as per bulletin after authorized remedy, clear DTC and retest"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR SDD (DVD 141.07 v207 or later per 2015 bulletin)",
+        "JLR-approved Midtronics battery support"
+      ],
+      "parts": [
+        "Transmission assembly LR062438 – bulletin specific, not automatic replacement"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P07DC-07",
+        "P07DD-07"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-LTB00772NAS1-2015"
+      },
+      "sources": [
+        "JLR-LTB00772NAS1-2015"
+      ],
+      "review_status": "draft",
+      "verification_status": "manufacturer_bulletin_code_model_or_engine_scope_verified;individual_definition_or_EU_VIN_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null
+    },
+    {
+      "id": "LR004-JLRSSM729782016-U014087-ABS",
+      "brand": "Land Rover",
+      "raw_code": "U0140-87",
+      "base_code": "U0140",
+      "code_family": "U",
+      "failure_type": "87",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "ABS",
+      "definition_en": "Lost Communication with Body Control Module - Missing Message",
+      "translation_ar": "فقدان الاتصال بوحدة التحكم بهيكل السيارة — رسالة مفقودة",
+      "definition_provenance": "wording_supported_by_OEM_bulletin_or_group_description",
+      "applicability": {
+        "models": [
+          "Range Rover L405",
+          "Range Rover Sport L494"
+        ],
+        "model_years": {
+          "from": 2016,
+          "until": null
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": null,
+        "engine_code_exact": null,
+        "fuel": null,
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Intermittent HDC unavailable and stability assist unavailable when ignition left on before engine start"
+      ],
+      "causes_evidence": [
+        "ABS fails to receive complete vehicle Car Configuration File parameters within expected 16-second period; condition after ignition-on delay of about 32 seconds."
+      ],
+      "diagnostic_steps": [
+        "Read ABS DTC and capture ignition timing",
+        "Check whether warnings clear at next ignition cycle",
+        "Check latest CCF/as-built/software information before electrical repairs"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "U0140-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM72978-2016"
+      },
+      "sources": [
+        "JLR-SSM72978-2016"
+      ],
+      "review_status": "draft",
+      "verification_status": "manufacturer_bulletin_code_model_or_engine_scope_verified;individual_definition_or_EU_VIN_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null
+    },
+    {
+      "id": "LR004-JLRSSM734242018-U000182-ABS",
+      "brand": "Land Rover",
+      "raw_code": "U0001-82",
+      "base_code": "U0001",
+      "code_family": "U",
+      "failure_type": "82",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "ABS",
+      "definition_en": "High Speed CAN Communication Bus - Alive/sequence counter incorrect / not updated",
+      "translation_ar": "شبكة CAN عالية السرعة — عداد التتابع أو نبضات الاستمرار غير صحيح أو لم يُحدَّث",
+      "definition_provenance": "wording_supported_by_OEM_bulletin_or_group_description",
+      "applicability": {
+        "models": [
+          "Discovery L462",
+          "Range Rover L405",
+          "Range Rover Sport L494"
+        ],
+        "model_years": {
+          "until": 2017
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": null,
+        "engine_code_exact": null,
+        "fuel": null,
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": [
+          "RR up to SALGS2RE5JA380217",
+          "RR Sport up to SALWR2RE1JA181320 or SALWA2BK1JA695613",
+          "Discovery up to SALRA2BK9JA047448"
+        ],
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Normally no ABS warning light; may be found during diagnostic scan"
+      ],
+      "causes_evidence": [
+        "Missing expected LabsSIEB CAN message on vehicles without active LabsSIEB; bulletin describes benign stored code when no warnings."
+      ],
+      "diagnostic_steps": [
+        "Confirm VIN <= JLR bulletin limit and model year <=17MY",
+        "Confirm DSC warning lamp is NOT illuminated",
+        "If no DSC warning, follow SSM73424: no action needed for this code alone; do not replace ABS control module"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR-approved scan tool"
+      ],
+      "parts": [],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM73424-2018"
+      },
+      "sources": [
+        "JLR-SSM73424-2018"
+      ],
+      "review_status": "draft",
+      "verification_status": "manufacturer_bulletin_code_model_or_engine_scope_verified;individual_definition_or_EU_VIN_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null
+    },
+    {
+      "id": "LR004-JLRSSM756472022-U210909-TCU3",
+      "brand": "Land Rover",
+      "raw_code": "U2109-09",
+      "base_code": "U2109",
+      "code_family": "U",
+      "failure_type": "09",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "TCU3",
+      "definition_en": "Telematics Back-up Battery Component Failure / Low Voltage (TCU context)",
+      "translation_ar": "خلل مكوّن بطارية الطوارئ في وحدة الاتصالات نتيجة انخفاض جهدها (بحسب تطبيق TCU)",
+      "definition_provenance": "wording_supported_by_OEM_bulletin_or_group_description",
+      "applicability": {
+        "models": [
+          "Discovery L462",
+          "Discovery Sport L550",
+          "Range Rover Evoque L551",
+          "Range Rover L405",
+          "Range Rover Evoque L538",
+          "Range Rover Sport L494",
+          "Range Rover Velar L560"
+        ],
+        "model_years": {
+          "model_specific": "Velar 18-20MY; RR/RR Sport/Discovery 18MY onward; Evoque/Discovery Sport 18-20MY"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": null,
+        "engine_code_exact": null,
+        "fuel": null,
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "SOS Limited Availability",
+        "SOS Not Available"
+      ],
+      "causes_evidence": [
+        "TCU uses internal backup battery when vehicle 12V battery has been flat."
+      ],
+      "diagnostic_steps": [
+        "Connect approved scan equipment and main-battery support; inspect TCU backup-battery voltage",
+        "If back-up battery voltage <3.3 V, assess/charge 12V startup battery, then run engine at least 60 minutes (Power Mode 7)",
+        "Verify back-up battery voltage >3.9 V, clear DTC and wait 10 seconds, rescan",
+        "Do not replace backup battery immediately per SSM75647"
+      ],
+      "live_data": [
+        {
+          "name_en": "Back-up Battery Voltage",
+          "name_ar": "جهد بطارية الطوارئ داخل وحدة TCU",
+          "conditions": "At TCU ECU Diagnostics session; engine running for recharge (Power Mode 7)",
+          "source_rule": "<3.3 V action; after recovery >3.9 V",
+          "units": "V",
+          "source_id": "JLR-SSM75647-2022"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "TCU3 backup battery (do not replace without failed approved procedure)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM75647-2022"
+      },
+      "sources": [
+        "JLR-SSM75647-2022"
+      ],
+      "review_status": "draft",
+      "verification_status": "manufacturer_bulletin_code_model_or_engine_scope_verified;individual_definition_or_EU_VIN_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null
+    },
+    {
+      "id": "LR004-JLRSSM760392023-U019B87-PCM",
+      "brand": "Land Rover",
+      "raw_code": "U019B-87",
+      "base_code": "U019B",
+      "code_family": "U",
+      "failure_type": "87",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Defender L663",
+          "Discovery L462",
+          "Discovery Sport L550",
+          "Range Rover L460",
+          "Range Rover Evoque L551",
+          "Range Rover Sport L461",
+          "Range Rover L405",
+          "Range Rover Sport L494",
+          "Range Rover Velar L560"
+        ],
+        "model_years": null,
+        "model_year_scope_by_model": null,
+        "engine_family": null,
+        "engine_code_exact": null,
+        "fuel": null,
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": "Only equipped variants with high-voltage charging system; listed model family ≠ every engine"
+      },
+      "symptoms": [
+        "HV battery does not charge when cable connected",
+        "charging-related warnings"
+      ],
+      "causes_evidence": [
+        "Software level or wiring continuity, according to SSM76039; do not assume HVJB damaged."
+      ],
+      "diagnostic_steps": [
+        "Verify HV charging system is equipped; follow TOPIx VIN-specific HV safety / diagnosis procedures",
+        "Inspect relevant wiring continuity per approved diagrams and repair damage",
+        "Follow 12 V battery isolation/reconnection routine for 10 min as outlined in SSM (qualified HV technician)",
+        "Check HVJB fuse and software levels of BCCM/BECM before HVJB replacement"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR TOPIx Cloud Diagnostics",
+        "OEM high-voltage electrical safety equipment; qualified technician"
+      ],
+      "parts": [
+        "HV Junction Box (HVJB) – do not replace without confirmation",
+        "BCCM",
+        "BECM"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "U0064-87"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM76039-2023"
+      },
+      "sources": [
+        "JLR-SSM76039-2023"
+      ],
+      "review_status": "draft",
+      "verification_status": "manufacturer_bulletin_code_model_or_engine_scope_verified;individual_definition_or_EU_VIN_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null
+    },
+    {
+      "id": "LR004-JLRSSM760392023-U006487-BECM",
+      "brand": "Land Rover",
+      "raw_code": "U0064-87",
+      "base_code": "U0064",
+      "code_family": "U",
+      "failure_type": "87",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "BECM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Defender L663",
+          "Discovery L462",
+          "Discovery Sport L550",
+          "Range Rover L460",
+          "Range Rover Evoque L551",
+          "Range Rover Sport L461",
+          "Range Rover L405",
+          "Range Rover Sport L494",
+          "Range Rover Velar L560"
+        ],
+        "model_years": null,
+        "model_year_scope_by_model": null,
+        "engine_family": null,
+        "engine_code_exact": null,
+        "fuel": null,
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": "Only equipped variants with high-voltage charging system; listed model family ≠ every engine"
+      },
+      "symptoms": [
+        "HV battery does not charge when cable connected",
+        "charging-related warnings"
+      ],
+      "causes_evidence": [
+        "Software level or wiring continuity, according to SSM76039; do not assume HVJB damaged."
+      ],
+      "diagnostic_steps": [
+        "Verify HV charging system is equipped; follow TOPIx VIN-specific HV safety / diagnosis procedures",
+        "Inspect relevant wiring continuity per approved diagrams and repair damage",
+        "Follow 12 V battery isolation/reconnection routine for 10 min as outlined in SSM (qualified HV technician)",
+        "Check HVJB fuse and software levels of BCCM/BECM before HVJB replacement"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR TOPIx Cloud Diagnostics",
+        "OEM high-voltage electrical safety equipment; qualified technician"
+      ],
+      "parts": [
+        "HV Junction Box (HVJB) – do not replace without confirmation",
+        "BCCM",
+        "BECM"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "U019B-87"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM76039-2023"
+      },
+      "sources": [
+        "JLR-SSM76039-2023"
+      ],
+      "review_status": "draft",
+      "verification_status": "manufacturer_bulletin_code_model_or_engine_scope_verified;individual_definition_or_EU_VIN_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null
+    },
+    {
+      "id": "LR004-JLRSSM761042023-U040081-DADC",
+      "brand": "Land Rover",
+      "raw_code": "U0400-81",
+      "base_code": "U0400",
+      "code_family": "U",
+      "failure_type": "81",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "DADC",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Defender L663",
+          "Discovery L462",
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": null,
+        "model_year_scope_by_model": {
+          "Defender L663": "MY2020 onward",
+          "Discovery L462": "MY2021 onward",
+          "Range Rover L460": "MY2022 onward",
+          "Range Rover Sport L461": "MY2023 onward"
+        },
+        "engine_family": null,
+        "engine_code_exact": null,
+        "fuel": null,
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "No power steering assistance at beginning of drive cycle",
+        "ADAS warning"
+      ],
+      "causes_evidence": [
+        "Software error cited in 2023 OEM SSM."
+      ],
+      "diagnostic_steps": [
+        "Do not replace parts immediately when symptoms match",
+        "Run Network Integrity Test (NIT)",
+        "Run PSCM data collection application",
+        "Complete 12V disconnect/connect procedure per VIN-specific TOPIx",
+        "Check for recurrence; use latest JLR technical guidance"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "DADC",
+        "PSCM (diagnostic module; no automatic replacement)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM76104-2023"
+      },
+      "sources": [
+        "JLR-SSM76104-2023"
+      ],
+      "review_status": "draft",
+      "verification_status": "manufacturer_bulletin_code_model_or_engine_scope_verified;individual_definition_or_EU_VIN_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null
+    },
+    {
+      "id": "LR004-JLRSSM760082023-U300047-CHCM",
+      "brand": "Land Rover",
+      "raw_code": "U3000-47",
+      "base_code": "U3000",
+      "code_family": "U",
+      "failure_type": "47",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "CHCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": null,
+        "model_year_scope_by_model": null,
+        "engine_family": null,
+        "engine_code_exact": null,
+        "fuel": null,
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Red suspension warning after engine startup"
+      ],
+      "causes_evidence": [
+        "CHCM internal reset at startup; root cause of reset under investigation in SSM76008."
+      ],
+      "diagnostic_steps": [
+        "Check U3000-47 is present in CHCM and conditions match",
+        "Clear DTC; cycle ignition; recheck warning and DTC",
+        "Do not replace CHCM simply for this code"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "Chassis Control Module (CHCM; not proven faulty)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM76008-2023"
+      },
+      "sources": [
+        "JLR-SSM76008-2023"
+      ],
+      "review_status": "draft",
+      "verification_status": "manufacturer_bulletin_code_model_or_engine_scope_verified;individual_definition_or_EU_VIN_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null
+    },
+    {
+      "id": "LR004-JLRSSM759302023-P030000-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P0300-00",
+      "base_code": "P0300",
+      "code_family": "P",
+      "failure_type": "00",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Defender L663",
+          "Discovery Sport L550",
+          "Range Rover Evoque L551",
+          "Range Rover L405",
+          "Range Rover Sport L494",
+          "Range Rover Velar L560"
+        ],
+        "model_years": null,
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20-P4M or AJ20-P4H (confirmed engine derivative only)",
+        "engine_code_exact": null,
+        "fuel": null,
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Confirmed engine misfire"
+      ],
+      "causes_evidence": [
+        "Underlying cause still under engineering investigation, per SSM75930."
+      ],
+      "diagnostic_steps": [
+        "Use TOPIx Cloud diagnostics and VIN-specific DTC help text",
+        "If the diagnostic flow indicates CVVL replacement, check removed assembly / engine oil for sludge",
+        "If oil has sludge appearance, collect 100 mL used oil and file TA PTS-100; otherwise continue normal TOPIx diagnostic path"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL assembly (only if confirmed by vehicle-specific testing)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0316",
+        "P1315-00",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM75930-2023"
+      },
+      "sources": [
+        "JLR-SSM75930-2023"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_bulletin_code_family_and_engine_derivative_confirmed; precise suffix in body/PCM check pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "The JLR bulletin heading includes -00 for P0300 and P1315; body lists the base codes without suffix. Treat suffix-specific description as requiring confirmation."
+    },
+    {
+      "id": "LR004-JLRSSM759302023-P0316-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P0316",
+      "base_code": "P0316",
+      "code_family": "P",
+      "failure_type": null,
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Defender L663",
+          "Discovery Sport L550",
+          "Range Rover Evoque L551",
+          "Range Rover L405",
+          "Range Rover Sport L494",
+          "Range Rover Velar L560"
+        ],
+        "model_years": null,
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20-P4M or AJ20-P4H (confirmed engine derivative only)",
+        "engine_code_exact": null,
+        "fuel": null,
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Confirmed engine misfire"
+      ],
+      "causes_evidence": [
+        "Underlying cause still under engineering investigation, per SSM75930."
+      ],
+      "diagnostic_steps": [
+        "Use TOPIx Cloud diagnostics and VIN-specific DTC help text",
+        "If the diagnostic flow indicates CVVL replacement, check removed assembly / engine oil for sludge",
+        "If oil has sludge appearance, collect 100 mL used oil and file TA PTS-100; otherwise continue normal TOPIx diagnostic path"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL assembly (only if confirmed by vehicle-specific testing)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0300-00",
+        "P1315-00",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM75930-2023"
+      },
+      "sources": [
+        "JLR-SSM75930-2023"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_bulletin_code_family_and_engine_derivative_confirmed; precise suffix in body/PCM check pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "The JLR bulletin heading includes -00 for P0300 and P1315; body lists the base codes without suffix. Treat suffix-specific description as requiring confirmation."
+    },
+    {
+      "id": "LR004-JLRSSM759302023-P131500-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P1315-00",
+      "base_code": "P1315",
+      "code_family": "P",
+      "failure_type": "00",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Defender L663",
+          "Discovery Sport L550",
+          "Range Rover Evoque L551",
+          "Range Rover L405",
+          "Range Rover Sport L494",
+          "Range Rover Velar L560"
+        ],
+        "model_years": null,
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20-P4M or AJ20-P4H (confirmed engine derivative only)",
+        "engine_code_exact": null,
+        "fuel": null,
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Confirmed engine misfire"
+      ],
+      "causes_evidence": [
+        "Underlying cause still under engineering investigation, per SSM75930."
+      ],
+      "diagnostic_steps": [
+        "Use TOPIx Cloud diagnostics and VIN-specific DTC help text",
+        "If the diagnostic flow indicates CVVL replacement, check removed assembly / engine oil for sludge",
+        "If oil has sludge appearance, collect 100 mL used oil and file TA PTS-100; otherwise continue normal TOPIx diagnostic path"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL assembly (only if confirmed by vehicle-specific testing)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0300-00",
+        "P0316",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM75930-2023"
+      },
+      "sources": [
+        "JLR-SSM75930-2023"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_bulletin_code_family_and_engine_derivative_confirmed; precise suffix in body/PCM check pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "The JLR bulletin heading includes -00 for P0300 and P1315; body lists the base codes without suffix. Treat suffix-specific description as requiring confirmation."
+    },
+    {
+      "id": "LR004-JLRSSM759302023-P349871-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P3498-71",
+      "base_code": "P3498",
+      "code_family": "P",
+      "failure_type": "71",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Defender L663",
+          "Discovery Sport L550",
+          "Range Rover Evoque L551",
+          "Range Rover L405",
+          "Range Rover Sport L494",
+          "Range Rover Velar L560"
+        ],
+        "model_years": null,
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20-P4M or AJ20-P4H (confirmed engine derivative only)",
+        "engine_code_exact": null,
+        "fuel": null,
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Confirmed engine misfire"
+      ],
+      "causes_evidence": [
+        "Underlying cause still under engineering investigation, per SSM75930."
+      ],
+      "diagnostic_steps": [
+        "Use TOPIx Cloud diagnostics and VIN-specific DTC help text",
+        "If the diagnostic flow indicates CVVL replacement, check removed assembly / engine oil for sludge",
+        "If oil has sludge appearance, collect 100 mL used oil and file TA PTS-100; otherwise continue normal TOPIx diagnostic path"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL assembly (only if confirmed by vehicle-specific testing)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0300-00",
+        "P0316",
+        "P1315-00",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM75930-2023"
+      },
+      "sources": [
+        "JLR-SSM75930-2023"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_bulletin_code_family_and_engine_derivative_confirmed; precise suffix in body/PCM check pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "The JLR bulletin heading includes -00 for P0300 and P1315; body lists the base codes without suffix. Treat suffix-specific description as requiring confirmation."
+    },
+    {
+      "id": "LR004-JLRSSM759302023-P349971-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P3499-71",
+      "base_code": "P3499",
+      "code_family": "P",
+      "failure_type": "71",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Defender L663",
+          "Discovery Sport L550",
+          "Range Rover Evoque L551",
+          "Range Rover L405",
+          "Range Rover Sport L494",
+          "Range Rover Velar L560"
+        ],
+        "model_years": null,
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20-P4M or AJ20-P4H (confirmed engine derivative only)",
+        "engine_code_exact": null,
+        "fuel": null,
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Confirmed engine misfire"
+      ],
+      "causes_evidence": [
+        "Underlying cause still under engineering investigation, per SSM75930."
+      ],
+      "diagnostic_steps": [
+        "Use TOPIx Cloud diagnostics and VIN-specific DTC help text",
+        "If the diagnostic flow indicates CVVL replacement, check removed assembly / engine oil for sludge",
+        "If oil has sludge appearance, collect 100 mL used oil and file TA PTS-100; otherwise continue normal TOPIx diagnostic path"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL assembly (only if confirmed by vehicle-specific testing)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0300-00",
+        "P0316",
+        "P1315-00",
+        "P3498-71",
+        "P349A-71",
+        "P349B-71"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM75930-2023"
+      },
+      "sources": [
+        "JLR-SSM75930-2023"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_bulletin_code_family_and_engine_derivative_confirmed; precise suffix in body/PCM check pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "The JLR bulletin heading includes -00 for P0300 and P1315; body lists the base codes without suffix. Treat suffix-specific description as requiring confirmation."
+    },
+    {
+      "id": "LR004-JLRSSM759302023-P349A71-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P349A-71",
+      "base_code": "P349A",
+      "code_family": "P",
+      "failure_type": "71",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Defender L663",
+          "Discovery Sport L550",
+          "Range Rover Evoque L551",
+          "Range Rover L405",
+          "Range Rover Sport L494",
+          "Range Rover Velar L560"
+        ],
+        "model_years": null,
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20-P4M or AJ20-P4H (confirmed engine derivative only)",
+        "engine_code_exact": null,
+        "fuel": null,
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Confirmed engine misfire"
+      ],
+      "causes_evidence": [
+        "Underlying cause still under engineering investigation, per SSM75930."
+      ],
+      "diagnostic_steps": [
+        "Use TOPIx Cloud diagnostics and VIN-specific DTC help text",
+        "If the diagnostic flow indicates CVVL replacement, check removed assembly / engine oil for sludge",
+        "If oil has sludge appearance, collect 100 mL used oil and file TA PTS-100; otherwise continue normal TOPIx diagnostic path"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL assembly (only if confirmed by vehicle-specific testing)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0300-00",
+        "P0316",
+        "P1315-00",
+        "P3498-71",
+        "P3499-71",
+        "P349B-71"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM75930-2023"
+      },
+      "sources": [
+        "JLR-SSM75930-2023"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_bulletin_code_family_and_engine_derivative_confirmed; precise suffix in body/PCM check pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "The JLR bulletin heading includes -00 for P0300 and P1315; body lists the base codes without suffix. Treat suffix-specific description as requiring confirmation."
+    },
+    {
+      "id": "LR004-JLRSSM759302023-P349B71-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P349B-71",
+      "base_code": "P349B",
+      "code_family": "P",
+      "failure_type": "71",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Defender L663",
+          "Discovery Sport L550",
+          "Range Rover Evoque L551",
+          "Range Rover L405",
+          "Range Rover Sport L494",
+          "Range Rover Velar L560"
+        ],
+        "model_years": null,
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20-P4M or AJ20-P4H (confirmed engine derivative only)",
+        "engine_code_exact": null,
+        "fuel": null,
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Confirmed engine misfire"
+      ],
+      "causes_evidence": [
+        "Underlying cause still under engineering investigation, per SSM75930."
+      ],
+      "diagnostic_steps": [
+        "Use TOPIx Cloud diagnostics and VIN-specific DTC help text",
+        "If the diagnostic flow indicates CVVL replacement, check removed assembly / engine oil for sludge",
+        "If oil has sludge appearance, collect 100 mL used oil and file TA PTS-100; otherwise continue normal TOPIx diagnostic path"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL assembly (only if confirmed by vehicle-specific testing)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0300-00",
+        "P0316",
+        "P1315-00",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM75930-2023"
+      },
+      "sources": [
+        "JLR-SSM75930-2023"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_bulletin_code_family_and_engine_derivative_confirmed; precise suffix in body/PCM check pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "The JLR bulletin heading includes -00 for P0300 and P1315; body lists the base codes without suffix. Treat suffix-specific description as requiring confirmation."
+    },
+    {
+      "id": "LR004-JLRSSM763062025-P013E00-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P013E-00",
+      "base_code": "P013E",
+      "code_family": "P",
+      "failure_type": "00",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": null,
+        "model_year_scope_by_model": {
+          "Range Rover L460": "MY2022–2023",
+          "Range Rover Sport L461": "MY2023"
+        },
+        "engine_family": "V8 T/C 4.4L Petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL illuminated"
+      ],
+      "causes_evidence": [
+        "Mid-catalyst heated oxygen sensor concern on affected V8s; exact root cause under investigation."
+      ],
+      "diagnostic_steps": [
+        "Confirm 4.4L V8 variant and model year against SSM76306",
+        "Match left/right mid-catalyst HO2S to actual DTC; use TOPIx to validate bank before part choice",
+        "If applicable per SSM76306, replace affected mid-cat HO2S LR159844, preserve removed part for JLR quality return",
+        "Record EPQR with bulletin identifiers and retained part confirmation"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "Mid-catalyst heated oxygen sensor LR159844 (affected bank only; verify VIN)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P014A-00",
+        "P2270-00",
+        "P2272-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM76306-2025"
+      },
+      "sources": [
+        "JLR-SSM76306-2025"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_bulletin_code_model_year_engine_displacement_confirmed; individual_full_failure_definition_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null
+    },
+    {
+      "id": "LR004-JLRSSM763062025-P014A00-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P014A-00",
+      "base_code": "P014A",
+      "code_family": "P",
+      "failure_type": "00",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": null,
+        "model_year_scope_by_model": {
+          "Range Rover L460": "MY2022–2023",
+          "Range Rover Sport L461": "MY2023"
+        },
+        "engine_family": "V8 T/C 4.4L Petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL illuminated"
+      ],
+      "causes_evidence": [
+        "Mid-catalyst heated oxygen sensor concern on affected V8s; exact root cause under investigation."
+      ],
+      "diagnostic_steps": [
+        "Confirm 4.4L V8 variant and model year against SSM76306",
+        "Match left/right mid-catalyst HO2S to actual DTC; use TOPIx to validate bank before part choice",
+        "If applicable per SSM76306, replace affected mid-cat HO2S LR159844, preserve removed part for JLR quality return",
+        "Record EPQR with bulletin identifiers and retained part confirmation"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "Mid-catalyst heated oxygen sensor LR159844 (affected bank only; verify VIN)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P013E-00",
+        "P2270-00",
+        "P2272-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM76306-2025"
+      },
+      "sources": [
+        "JLR-SSM76306-2025"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_bulletin_code_model_year_engine_displacement_confirmed; individual_full_failure_definition_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null
+    },
+    {
+      "id": "LR004-JLRSSM763062025-P227000-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P2270-00",
+      "base_code": "P2270",
+      "code_family": "P",
+      "failure_type": "00",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": null,
+        "model_year_scope_by_model": {
+          "Range Rover L460": "MY2022–2023",
+          "Range Rover Sport L461": "MY2023"
+        },
+        "engine_family": "V8 T/C 4.4L Petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL illuminated"
+      ],
+      "causes_evidence": [
+        "Mid-catalyst heated oxygen sensor concern on affected V8s; exact root cause under investigation."
+      ],
+      "diagnostic_steps": [
+        "Confirm 4.4L V8 variant and model year against SSM76306",
+        "Match left/right mid-catalyst HO2S to actual DTC; use TOPIx to validate bank before part choice",
+        "If applicable per SSM76306, replace affected mid-cat HO2S LR159844, preserve removed part for JLR quality return",
+        "Record EPQR with bulletin identifiers and retained part confirmation"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "Mid-catalyst heated oxygen sensor LR159844 (affected bank only; verify VIN)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P013E-00",
+        "P014A-00",
+        "P2272-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM76306-2025"
+      },
+      "sources": [
+        "JLR-SSM76306-2025"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_bulletin_code_model_year_engine_displacement_confirmed; individual_full_failure_definition_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null
+    },
+    {
+      "id": "LR004-JLRSSM763062025-P227200-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P2272-00",
+      "base_code": "P2272",
+      "code_family": "P",
+      "failure_type": "00",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": null,
+        "model_year_scope_by_model": {
+          "Range Rover L460": "MY2022–2023",
+          "Range Rover Sport L461": "MY2023"
+        },
+        "engine_family": "V8 T/C 4.4L Petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL illuminated"
+      ],
+      "causes_evidence": [
+        "Mid-catalyst heated oxygen sensor concern on affected V8s; exact root cause under investigation."
+      ],
+      "diagnostic_steps": [
+        "Confirm 4.4L V8 variant and model year against SSM76306",
+        "Match left/right mid-catalyst HO2S to actual DTC; use TOPIx to validate bank before part choice",
+        "If applicable per SSM76306, replace affected mid-cat HO2S LR159844, preserve removed part for JLR quality return",
+        "Record EPQR with bulletin identifiers and retained part confirmation"
+      ],
+      "live_data": [],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "Mid-catalyst heated oxygen sensor LR159844 (affected bank only; verify VIN)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P013E-00",
+        "P014A-00",
+        "P2270-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM76306-2025"
+      },
+      "sources": [
+        "JLR-SSM76306-2025"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_bulletin_code_model_year_engine_displacement_confirmed; individual_full_failure_definition_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P030100-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P0301-00",
+      "base_code": "P0301",
+      "code_family": "P",
+      "failure_type": "00",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": "Cylinder 1 misfire detected",
+      "translation_ar": "اكتشاف اختلال احتراق في الأسطوانة 1",
+      "definition_provenance": "wording_supported_by_OEM_bulletin_or_group_description",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0302-00",
+        "P0303-00",
+        "P0304-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71",
+        "P349C-71",
+        "P349D-71",
+        "P219C-84",
+        "P219D-84",
+        "P219E-84",
+        "P219F-84",
+        "P219C-85",
+        "P219D-85",
+        "P219E-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P030200-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P0302-00",
+      "base_code": "P0302",
+      "code_family": "P",
+      "failure_type": "00",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": "Cylinder 2 misfire detected",
+      "translation_ar": "اكتشاف اختلال احتراق في الأسطوانة 2",
+      "definition_provenance": "wording_supported_by_OEM_bulletin_or_group_description",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0303-00",
+        "P0304-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71",
+        "P349C-71",
+        "P349D-71",
+        "P219C-84",
+        "P219D-84",
+        "P219E-84",
+        "P219F-84",
+        "P219C-85",
+        "P219D-85",
+        "P219E-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P030300-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P0303-00",
+      "base_code": "P0303",
+      "code_family": "P",
+      "failure_type": "00",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": "Cylinder 3 misfire detected",
+      "translation_ar": "اكتشاف اختلال احتراق في الأسطوانة 3",
+      "definition_provenance": "wording_supported_by_OEM_bulletin_or_group_description",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0304-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71",
+        "P349C-71",
+        "P349D-71",
+        "P219C-84",
+        "P219D-84",
+        "P219E-84",
+        "P219F-84",
+        "P219C-85",
+        "P219D-85",
+        "P219E-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P030400-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P0304-00",
+      "base_code": "P0304",
+      "code_family": "P",
+      "failure_type": "00",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": "Cylinder 4 misfire detected",
+      "translation_ar": "اكتشاف اختلال احتراق في الأسطوانة 4",
+      "definition_provenance": "wording_supported_by_OEM_bulletin_or_group_description",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0303-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71",
+        "P349C-71",
+        "P349D-71",
+        "P219C-84",
+        "P219D-84",
+        "P219E-84",
+        "P219F-84",
+        "P219C-85",
+        "P219D-85",
+        "P219E-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P030500-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P0305-00",
+      "base_code": "P0305",
+      "code_family": "P",
+      "failure_type": "00",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": "Cylinder 5 misfire detected",
+      "translation_ar": "اكتشاف اختلال احتراق في الأسطوانة 5",
+      "definition_provenance": "wording_supported_by_OEM_bulletin_or_group_description",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0303-00",
+        "P0304-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71",
+        "P349C-71",
+        "P349D-71",
+        "P219C-84",
+        "P219D-84",
+        "P219E-84",
+        "P219F-84",
+        "P219C-85",
+        "P219D-85",
+        "P219E-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P030600-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P0306-00",
+      "base_code": "P0306",
+      "code_family": "P",
+      "failure_type": "00",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": "Cylinder 6 misfire detected",
+      "translation_ar": "اكتشاف اختلال احتراق في الأسطوانة 6",
+      "definition_provenance": "wording_supported_by_OEM_bulletin_or_group_description",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0303-00",
+        "P0304-00",
+        "P0305-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71",
+        "P349C-71",
+        "P349D-71",
+        "P219C-84",
+        "P219D-84",
+        "P219E-84",
+        "P219F-84",
+        "P219C-85",
+        "P219D-85",
+        "P219E-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P21A084-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P21A0-84",
+      "base_code": "P21A0",
+      "code_family": "P",
+      "failure_type": "84",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0303-00",
+        "P0304-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A1-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71",
+        "P349C-71",
+        "P349D-71",
+        "P219C-84",
+        "P219D-84",
+        "P219E-84",
+        "P219F-84",
+        "P219C-85",
+        "P219D-85",
+        "P219E-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P21A184-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P21A1-84",
+      "base_code": "P21A1",
+      "code_family": "P",
+      "failure_type": "84",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0303-00",
+        "P0304-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71",
+        "P349C-71",
+        "P349D-71",
+        "P219C-84",
+        "P219D-84",
+        "P219E-84",
+        "P219F-84",
+        "P219C-85",
+        "P219D-85",
+        "P219E-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P21A085-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P21A0-85",
+      "base_code": "P21A0",
+      "code_family": "P",
+      "failure_type": "85",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0303-00",
+        "P0304-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A1-85",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71",
+        "P349C-71",
+        "P349D-71",
+        "P219C-84",
+        "P219D-84",
+        "P219E-84",
+        "P219F-84",
+        "P219C-85",
+        "P219D-85",
+        "P219E-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P21A185-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P21A1-85",
+      "base_code": "P21A1",
+      "code_family": "P",
+      "failure_type": "85",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0303-00",
+        "P0304-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A0-85",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71",
+        "P349C-71",
+        "P349D-71",
+        "P219C-84",
+        "P219D-84",
+        "P219E-84",
+        "P219F-84",
+        "P219C-85",
+        "P219D-85",
+        "P219E-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P349871-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P3498-71",
+      "base_code": "P3498",
+      "code_family": "P",
+      "failure_type": "71",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0303-00",
+        "P0304-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71",
+        "P349C-71",
+        "P349D-71",
+        "P219C-84",
+        "P219D-84",
+        "P219E-84",
+        "P219F-84",
+        "P219C-85",
+        "P219D-85",
+        "P219E-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P349971-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P3499-71",
+      "base_code": "P3499",
+      "code_family": "P",
+      "failure_type": "71",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0303-00",
+        "P0304-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3498-71",
+        "P349A-71",
+        "P349B-71",
+        "P349C-71",
+        "P349D-71",
+        "P219C-84",
+        "P219D-84",
+        "P219E-84",
+        "P219F-84",
+        "P219C-85",
+        "P219D-85",
+        "P219E-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P349A71-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P349A-71",
+      "base_code": "P349A",
+      "code_family": "P",
+      "failure_type": "71",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0303-00",
+        "P0304-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3498-71",
+        "P3499-71",
+        "P349B-71",
+        "P349C-71",
+        "P349D-71",
+        "P219C-84",
+        "P219D-84",
+        "P219E-84",
+        "P219F-84",
+        "P219C-85",
+        "P219D-85",
+        "P219E-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P349B71-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P349B-71",
+      "base_code": "P349B",
+      "code_family": "P",
+      "failure_type": "71",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0303-00",
+        "P0304-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349C-71",
+        "P349D-71",
+        "P219C-84",
+        "P219D-84",
+        "P219E-84",
+        "P219F-84",
+        "P219C-85",
+        "P219D-85",
+        "P219E-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P349C71-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P349C-71",
+      "base_code": "P349C",
+      "code_family": "P",
+      "failure_type": "71",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0303-00",
+        "P0304-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71",
+        "P349D-71",
+        "P219C-84",
+        "P219D-84",
+        "P219E-84",
+        "P219F-84",
+        "P219C-85",
+        "P219D-85",
+        "P219E-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P349D71-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P349D-71",
+      "base_code": "P349D",
+      "code_family": "P",
+      "failure_type": "71",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0303-00",
+        "P0304-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71",
+        "P349C-71",
+        "P219C-84",
+        "P219D-84",
+        "P219E-84",
+        "P219F-84",
+        "P219C-85",
+        "P219D-85",
+        "P219E-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P219C84-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P219C-84",
+      "base_code": "P219C",
+      "code_family": "P",
+      "failure_type": "84",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0303-00",
+        "P0304-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71",
+        "P349C-71",
+        "P349D-71",
+        "P219D-84",
+        "P219E-84",
+        "P219F-84",
+        "P219C-85",
+        "P219D-85",
+        "P219E-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P219D84-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P219D-84",
+      "base_code": "P219D",
+      "code_family": "P",
+      "failure_type": "84",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0303-00",
+        "P0304-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71",
+        "P349C-71",
+        "P349D-71",
+        "P219C-84",
+        "P219E-84",
+        "P219F-84",
+        "P219C-85",
+        "P219D-85",
+        "P219E-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P219E84-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P219E-84",
+      "base_code": "P219E",
+      "code_family": "P",
+      "failure_type": "84",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0303-00",
+        "P0304-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71",
+        "P349C-71",
+        "P349D-71",
+        "P219C-84",
+        "P219D-84",
+        "P219F-84",
+        "P219C-85",
+        "P219D-85",
+        "P219E-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P219F84-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P219F-84",
+      "base_code": "P219F",
+      "code_family": "P",
+      "failure_type": "84",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0303-00",
+        "P0304-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71",
+        "P349C-71",
+        "P349D-71",
+        "P219C-84",
+        "P219D-84",
+        "P219E-84",
+        "P219C-85",
+        "P219D-85",
+        "P219E-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P219C85-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P219C-85",
+      "base_code": "P219C",
+      "code_family": "P",
+      "failure_type": "85",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0303-00",
+        "P0304-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71",
+        "P349C-71",
+        "P349D-71",
+        "P219C-84",
+        "P219D-84",
+        "P219E-84",
+        "P219F-84",
+        "P219D-85",
+        "P219E-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P219D85-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P219D-85",
+      "base_code": "P219D",
+      "code_family": "P",
+      "failure_type": "85",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0303-00",
+        "P0304-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71",
+        "P349C-71",
+        "P349D-71",
+        "P219C-84",
+        "P219D-84",
+        "P219E-84",
+        "P219F-84",
+        "P219C-85",
+        "P219E-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P219E85-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P219E-85",
+      "base_code": "P219E",
+      "code_family": "P",
+      "failure_type": "85",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0303-00",
+        "P0304-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71",
+        "P349C-71",
+        "P349D-71",
+        "P219C-84",
+        "P219D-84",
+        "P219E-84",
+        "P219F-84",
+        "P219C-85",
+        "P219D-85",
+        "P219F-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P219F85-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P219F-85",
+      "base_code": "P219F",
+      "code_family": "P",
+      "failure_type": "85",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_provenance": "OEM_bulletin_confirms_code_presence_but_not_individual_definition",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0303-00",
+        "P0304-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71",
+        "P349C-71",
+        "P349D-71",
+        "P219C-84",
+        "P219D-84",
+        "P219E-84",
+        "P219F-84",
+        "P219C-85",
+        "P219D-85",
+        "P219E-85",
+        "P0316-00"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    },
+    {
+      "id": "LR004-JLRSSM0000302026-P031600-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P0316-00",
+      "base_code": "P0316",
+      "code_family": "P",
+      "failure_type": "00",
+      "code_classification": "pending_SAE_J2012DA_and_OEM_index",
+      "ecu_context": "PCM",
+      "definition_en": "Misfire detected on startup (first 1000 revolutions)",
+      "translation_ar": "اختلال احتراق خلال أول 1000 دورة عند تشغيل المحرك",
+      "definition_provenance": "wording_supported_by_OEM_bulletin_or_group_description",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": {
+          "from": 2024,
+          "until": "not specified"
+        },
+        "model_year_scope_by_model": null,
+        "engine_family": "AJ20P6 I6 petrol",
+        "engine_code_exact": null,
+        "fuel": "Petrol",
+        "transmission": null,
+        "drive": null,
+        "market": "unconfirmed_EU_Sweden",
+        "vin_scope": null,
+        "equipment_constraint": null
+      },
+      "symptoms": [
+        "Engine MIL on",
+        "Engine rough running",
+        "Lack of power during acceleration"
+      ],
+      "causes_evidence": [
+        "Root cause under engineering investigation as of April 2026; do not infer component fault directly."
+      ],
+      "diagnostic_steps": [
+        "Connect approved JLR tools and battery support; open Powertrain Data Collect new Datalogger",
+        "Import AJ20P6 Misfire_AFR_CVVL.json and capture relevant live data",
+        "From cold engine (>=8 hours off), allow catalyst heat cycle; drive once coolant >=40°C",
+        "Maintain 1200–2800 rpm in 6th gear or higher for 10 minutes, then run Engine Health Check",
+        "If reproduced, submit TA PTS_100 with recording; if not, use latest PCM/TCM/EPIC software and approved adaptation/network tests before any parts change"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature (ECT)",
+          "name_ar": "درجة حرارة سائل تبريد المحرك",
+          "conditions": "Before driving under bulletin test",
+          "source_rule": ">=40 °C",
+          "units": "°C",
+          "source_id": "JLR-SSM000030-2026"
+        },
+        {
+          "name_en": "Engine Speed (RPM)",
+          "name_ar": "سرعة دوران المحرك",
+          "conditions": "Steady road test in 6th gear or higher for 10 min",
+          "source_rule": "1200–2800 rpm",
+          "units": "rpm",
+          "source_id": "JLR-SSM000030-2026"
+        }
+      ],
+      "tools": [
+        "JLR-approved diagnostic equipment and battery stabilizer"
+      ],
+      "parts": [
+        "CVVL system (diagnostic context only; replacement unproven)"
+      ],
+      "wiring": {
+        "pins": null,
+        "circuits": "refer to VIN-specific TOPIx diagrams",
+        "verification_status": "not_documented_in_this_batch"
+      },
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "related_codes": [
+        "P0301-00",
+        "P0302-00",
+        "P0303-00",
+        "P0304-00",
+        "P0305-00",
+        "P0306-00",
+        "P21A0-84",
+        "P21A1-84",
+        "P21A0-85",
+        "P21A1-85",
+        "P3498-71",
+        "P3499-71",
+        "P349A-71",
+        "P349B-71",
+        "P349C-71",
+        "P349D-71",
+        "P219C-84",
+        "P219D-84",
+        "P219E-84",
+        "P219F-84",
+        "P219C-85",
+        "P219D-85",
+        "P219E-85",
+        "P219F-85"
+      ],
+      "priority_evidence": {
+        "kind": "JLR manufacturer bulletin; frequency not measured",
+        "source_id": "JLR-SSM000030-2026"
+      },
+      "sources": [
+        "JLR-SSM000030-2026"
+      ],
+      "review_status": "draft",
+      "verification_status": "JLR_2026_technical_update_confirms_code_in_AJ20P6_group; component_cause_pending",
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2026 JLR SSM000030 is an engineering data collection workflow, not a claim of code-specific component failure."
+    }
+  ]
+}
