@@ -31,5 +31,24 @@
     "Four OEM-copyrighted manuals are linked only, not copied or embedded.",
     "SAE J2012DA text not accessed."
   ],
-  "not_a_release": true
+  "not_a_release": true,
+  "cross_batch_reconciliation": {
+    "local_batch02_distinct_codes": 65,
+    "batch03_new_distinct_codes": 5,
+    "batch04_new_distinct_codes": 154,
+    "all_combined_distinct_codes": 224,
+    "overlap_between_batch04_and_previous": 0,
+    "duplicate_batch04_ids": 0,
+    "prior_pending_review_rows": 14,
+    "new_pending_review_rows": 154,
+    "total_pending_review_rows": 168
+  },
+  "git_readback": {
+    "confirmed": true,
+    "branch_projected_master_rows": 9748,
+    "branch_projected_counted_files": 55,
+    "main_unchanged_master_rows": 9589,
+    "main_unchanged_counted_files": 53,
+    "automated_app_release": false
+  }
 }
