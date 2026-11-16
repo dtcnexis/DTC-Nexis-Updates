@@ -1,0 +1,123 @@
+{
+  "brand": "BMW",
+  "batch": "2026-11-16-03",
+  "status": "review_only",
+  "records": [
+    {
+      "brand": "BMW",
+      "code": "930C1E",
+      "code_original": "0x930C1E",
+      "code_format": "BMW manufacturer hex",
+      "ecu": "ACSM",
+      "definition_en": "Internal ECU error",
+      "translation_ar": "خطأ داخلي في وحدة التحكم",
+      "category": "Safety/Airbag",
+      "applicability": "F91/F92/G12/G14/G15/G16/G30; production from October 2019; verify exact vehicle and software",
+      "symptoms": "Airbag, DSC and check-engine warning lamps may illuminate",
+      "causes": "Root cause under investigation in bulletin",
+      "diagnostic_steps": "Run ISTA; if this is the only ACSM fault, program with ISTA 4.21.2x or later; recheck, replace ACSM only if fault persists",
+      "live_data": "Reference values not specified in cited bulletin",
+      "parts": "Do not replace parts without bulletin decision tree",
+      "images": null,
+      "wiring": null,
+      "video": null,
+      "priority_evidence": "BMW SI B65 05 20",
+      "sources": [
+        {
+          "title": "BMW SI B65 05 20",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10174029-9999.pdf",
+          "scope": "F91/F92/G12/G14/G15/G16/G30; production from October 2019; verify exact vehicle and software"
+        }
+      ],
+      "verification_status": "bulletin_scope_verified;vehicle_vin_not_verified",
+      "review_status": "draft"
+    },
+    {
+      "brand": "BMW",
+      "code": "D35F3B",
+      "code_original": "0xD35F3B",
+      "code_format": "BMW manufacturer hex",
+      "ecu": "DSC",
+      "definition_en": "D-OBD 1 - ICM or ACSM - OBD-diagnostic status message timeout",
+      "translation_ar": "انتهاء مهلة رسالة حالة تشخيص OBD من ICM أو ACSM",
+      "category": "Chassis/DSC",
+      "applicability": "G12 740e xDrive iPerformance PHEV and G30 530e iPerformance PHEV; after programming",
+      "symptoms": "May be stored without MIL",
+      "causes": "DSC software state transition after programming (bulletin scope)",
+      "diagnostic_steps": "Check MIL and perform test drive; no parts replacement if MIL off; if MIL on, run ISTA diagnosis",
+      "live_data": "Reference values not specified in cited bulletin",
+      "parts": "Do not replace parts without bulletin decision tree",
+      "images": null,
+      "wiring": null,
+      "video": null,
+      "priority_evidence": "BMW SI B34 01 18",
+      "sources": [
+        {
+          "title": "BMW SI B34 01 18",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10142932-9999.pdf",
+          "scope": "G12 740e xDrive iPerformance PHEV and G30 530e iPerformance PHEV; after programming"
+        }
+      ],
+      "verification_status": "bulletin_scope_verified;vehicle_vin_not_verified",
+      "review_status": "draft"
+    },
+    {
+      "brand": "BMW",
+      "code": "D35F3F",
+      "code_original": "0xD35F3F",
+      "code_format": "BMW manufacturer hex",
+      "ecu": "DSC",
+      "definition_en": "D-OBD 2 - LMV - OBD-diagnostic status message timeout",
+      "translation_ar": "انتهاء مهلة رسالة حالة تشخيص OBD من LMV",
+      "category": "Chassis/DSC",
+      "applicability": "G12 740e xDrive iPerformance PHEV and G30 530e iPerformance PHEV; after programming",
+      "symptoms": "May be stored without MIL",
+      "causes": "DSC software state transition after programming (bulletin scope)",
+      "diagnostic_steps": "Check MIL and perform test drive; no parts replacement if MIL off; if MIL on, run ISTA diagnosis",
+      "live_data": "Reference values not specified in cited bulletin",
+      "parts": "Do not replace parts without bulletin decision tree",
+      "images": null,
+      "wiring": null,
+      "video": null,
+      "priority_evidence": "BMW SI B34 01 18",
+      "sources": [
+        {
+          "title": "BMW SI B34 01 18",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10142932-9999.pdf",
+          "scope": "G12 740e xDrive iPerformance PHEV and G30 530e iPerformance PHEV; after programming"
+        }
+      ],
+      "verification_status": "bulletin_scope_verified;vehicle_vin_not_verified",
+      "review_status": "draft"
+    },
+    {
+      "brand": "BMW",
+      "code": "D35F42",
+      "code_original": "0xD35F42",
+      "code_format": "BMW manufacturer hex",
+      "ecu": "DSC",
+      "definition_en": "D-OBD 3 - EPS - OBD-diagnostic status message timeout",
+      "translation_ar": "انتهاء مهلة رسالة حالة تشخيص OBD من EPS",
+      "category": "Chassis/DSC",
+      "applicability": "G12 740e xDrive iPerformance PHEV and G30 530e iPerformance PHEV; after programming",
+      "symptoms": "May be stored without MIL",
+      "causes": "DSC software state transition after programming (bulletin scope)",
+      "diagnostic_steps": "Check MIL and perform test drive; no parts replacement if MIL off; if MIL on, run ISTA diagnosis",
+      "live_data": "Reference values not specified in cited bulletin",
+      "parts": "Do not replace parts without bulletin decision tree",
+      "images": null,
+      "wiring": null,
+      "video": null,
+      "priority_evidence": "BMW SI B34 01 18",
+      "sources": [
+        {
+          "title": "BMW SI B34 01 18",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10142932-9999.pdf",
+          "scope": "G12 740e xDrive iPerformance PHEV and G30 530e iPerformance PHEV; after programming"
+        }
+      ],
+      "verification_status": "bulletin_scope_verified;vehicle_vin_not_verified",
+      "review_status": "draft"
+    }
+  ]
+}
