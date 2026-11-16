@@ -30,7 +30,10 @@
         "market": "US bulletin; applicability to Sweden/EU not established",
         "model_years": "not confirmed independently",
         "transmission": null,
-        "VIN_ranges": null
+        "VIN_ranges": null,
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true,
+        "production_end": "2014-04"
       },
       "symptoms": [
         "Drive Faulty"
@@ -44,9 +47,39 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Check DME and VIN/engine; inspect I-level; program ISTA/P to F056-14-03-500 or later in bulletin scenario; otherwise perform ISTA test plan",
-          "required_tool": "MINI ISTA; qualified technician",
-          "reference_values": "Only programming targets in bulletin; voltage/pinout values unverified"
+          "action_ar": "Check DME and VIN/engine",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+        },
+        {
+          "step": 2,
+          "action_ar": "inspect I-level",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+        },
+        {
+          "step": 3,
+          "action_ar": "program ISTA/P to F056-14-03-500 or later in bulletin scenario",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+        },
+        {
+          "step": 4,
+          "action_ar": "otherwise perform ISTA test plan",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
         }
       ],
       "live_data": [
@@ -102,7 +135,9 @@
         "market": "US bulletin; applicability to Sweden/EU not established",
         "model_years": "not confirmed independently",
         "transmission": null,
-        "VIN_ranges": null
+        "VIN_ranges": null,
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true
       },
       "symptoms": [
         "Service Engine Soon"
@@ -116,9 +151,30 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Check DME, VIN and I-level; program ISTA/P 3.59.0+ to F056-15-11-500+ if indicated; if persists, ISTA electrical fan test plan",
-          "required_tool": "MINI ISTA; qualified technician",
-          "reference_values": "Only programming targets in bulletin; voltage/pinout values unverified"
+          "action_ar": "Check DME, VIN and I-level",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+        },
+        {
+          "step": 2,
+          "action_ar": "program ISTA/P 3.59.0+ to F056-15-11-500+ if indicated",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+        },
+        {
+          "step": 3,
+          "action_ar": "if persists, ISTA electrical fan test plan",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
         }
       ],
       "live_data": [
@@ -182,7 +238,42 @@
         "market": "US bulletin; applicability to Sweden/EU not established",
         "model_years": "not confirmed independently",
         "transmission": null,
-        "VIN_ranges": null
+        "VIN_ranges": null,
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true,
+        "verified_engine_chassis_map": {
+          "F54": [
+            "B46C",
+            "B48E"
+          ],
+          "F55": [
+            "B36C",
+            "B46C"
+          ],
+          "F56": [
+            "B36C",
+            "B46C",
+            "B46D"
+          ],
+          "F57": [
+            "B36C",
+            "B46C",
+            "B46D"
+          ],
+          "F60": [
+            "B36C",
+            "B46C",
+            "B48E"
+          ]
+        },
+        "production_from_by_chassis": {
+          "F54": "2018-05",
+          "F55": "2018-06",
+          "F56": "2018-06",
+          "F57": "2018-05",
+          "F60": "2018-05"
+        },
+        "factory_ilevel_condition": "19-07-500 or later"
       },
       "symptoms": [
         "MIL, usually no driveability complaint"
@@ -196,9 +287,30 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Check exact chassis/engine and factory I-level; B3x target F056-19-11-550+, B4x F056-19-11-534+; do not replace crankshaft sensor just for this code",
-          "required_tool": "MINI ISTA; qualified technician",
-          "reference_values": "Only programming targets in bulletin; voltage/pinout values unverified"
+          "action_ar": "Check exact chassis/engine and factory I-level",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+        },
+        {
+          "step": 2,
+          "action_ar": "B3x target F056-19-11-550+, B4x F056-19-11-534+",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+        },
+        {
+          "step": 3,
+          "action_ar": "do not replace crankshaft sensor just for this code",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
         }
       ],
       "live_data": [
@@ -253,7 +365,9 @@
         "market": "US bulletin; applicability to Sweden/EU not established",
         "model_years": "not confirmed independently",
         "transmission": null,
-        "VIN_ranges": null
+        "VIN_ranges": null,
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true
       },
       "symptoms": [
         "Multiple presses to stop engine; starting unaffected"
@@ -268,8 +382,11 @@
         {
           "step": 1,
           "action_ar": "Read BDC fault and VIN, diagnose switch in ISTA, update to F056-14-07-502+ with approved charger if bulletin conditions met",
-          "required_tool": "MINI ISTA; qualified technician",
-          "reference_values": "Only programming targets in bulletin; voltage/pinout values unverified"
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
         }
       ],
       "live_data": [
@@ -324,7 +441,11 @@
         "market": "US bulletin; applicability to Sweden/EU not established",
         "model_years": "not confirmed independently",
         "transmission": null,
-        "VIN_ranges": null
+        "VIN_ranges": null,
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true,
+        "fuel": "PHEV",
+        "variant": "Cooper S E Countryman ALL4"
       },
       "symptoms": [
         "Charging stops or fails; grid power low message"
@@ -338,17 +459,47 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Inspect OUC without accessing HV internals; test correct latching and cable self-test; compare known-good OUC; ISTA charging diagnosis by qualified HV personnel",
-          "required_tool": "MINI ISTA; qualified technician",
-          "reference_values": "Only programming targets in bulletin; voltage/pinout values unverified"
+          "action_ar": "Inspect OUC without accessing HV internals",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+        },
+        {
+          "step": 2,
+          "action_ar": "test correct latching and cable self-test",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+        },
+        {
+          "step": 3,
+          "action_ar": "compare known-good OUC",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+        },
+        {
+          "step": 4,
+          "action_ar": "ISTA charging diagnosis by qualified HV personnel",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
         }
       ],
       "live_data": [
         {
-          "name_en": "Fault memory and integration level / I-level",
-          "name_ar": "ذاكرة الأعطال ومستوى تكامل البرمجيات",
-          "test_condition": "read via ISTA",
-          "value": "no universal numeric live-data criterion; consult source bulletin"
+          "name_en": "EME charge management fault memory",
+          "name_ar": "ذاكرة أعطال إدارة الشحن EME",
+          "test_condition": "Charging complaint; ISTA scan",
+          "value": "No fixed numeric live data range established for this code by bulletin"
         }
       ],
       "parts": [
@@ -379,7 +530,8 @@
         "Swedish VIN applicability",
         "Sensor/connector pinout",
         "Licensed component image"
-      ]
+      ],
+      "safety_warning": "Never access high-voltage components without HV authorization; published 90 VAC behavior relates to US-specified OUC and is NOT a Swedish/EU grid reference."
     },
     {
       "record_id": "MINI-B03-EME-222834",
@@ -399,7 +551,11 @@
         "market": "US bulletin; applicability to Sweden/EU not established",
         "model_years": "not confirmed independently",
         "transmission": null,
-        "VIN_ranges": null
+        "VIN_ranges": null,
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true,
+        "fuel": "PHEV",
+        "variant": "Cooper S E Countryman ALL4"
       },
       "symptoms": [
         "Charging fails or aborts"
@@ -413,17 +569,38 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Inspect OUC and latching; test known-good approved OUC; qualified HV technician performs ISTA charging diagnosis if no charge",
-          "required_tool": "MINI ISTA; qualified technician",
-          "reference_values": "Only programming targets in bulletin; voltage/pinout values unverified"
+          "action_ar": "Inspect OUC and latching",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+        },
+        {
+          "step": 2,
+          "action_ar": "test known-good approved OUC",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+        },
+        {
+          "step": 3,
+          "action_ar": "qualified HV technician performs ISTA charging diagnosis if no charge",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
         }
       ],
       "live_data": [
         {
-          "name_en": "Fault memory and integration level / I-level",
-          "name_ar": "ذاكرة الأعطال ومستوى تكامل البرمجيات",
-          "test_condition": "read via ISTA",
-          "value": "no universal numeric live-data criterion; consult source bulletin"
+          "name_en": "EME charge management fault memory",
+          "name_ar": "ذاكرة أعطال إدارة الشحن EME",
+          "test_condition": "Charging complaint; ISTA scan",
+          "value": "No fixed numeric live data range established for this code by bulletin"
         }
       ],
       "parts": [
@@ -454,7 +631,8 @@
         "Swedish VIN applicability",
         "Sensor/connector pinout",
         "Licensed component image"
-      ]
+      ],
+      "safety_warning": "Never access high-voltage components without HV authorization; published 90 VAC behavior relates to US-specified OUC and is NOT a Swedish/EU grid reference."
     },
     {
       "record_id": "MINI-B03-EME-222842",
@@ -474,7 +652,11 @@
         "market": "US bulletin; applicability to Sweden/EU not established",
         "model_years": "not confirmed independently",
         "transmission": null,
-        "VIN_ranges": null
+        "VIN_ranges": null,
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true,
+        "fuel": "PHEV",
+        "variant": "Cooper S E Countryman ALL4"
       },
       "symptoms": [
         "Charging interruption/failure"
@@ -488,17 +670,38 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Check OUC condition and latch; compare known-good OUC; use ISTA charging test plan with trained HV staff",
-          "required_tool": "MINI ISTA; qualified technician",
-          "reference_values": "Only programming targets in bulletin; voltage/pinout values unverified"
+          "action_ar": "Check OUC condition and latch",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+        },
+        {
+          "step": 2,
+          "action_ar": "compare known-good OUC",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+        },
+        {
+          "step": 3,
+          "action_ar": "use ISTA charging test plan with trained HV staff",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
         }
       ],
       "live_data": [
         {
-          "name_en": "Fault memory and integration level / I-level",
-          "name_ar": "ذاكرة الأعطال ومستوى تكامل البرمجيات",
-          "test_condition": "read via ISTA",
-          "value": "no universal numeric live-data criterion; consult source bulletin"
+          "name_en": "EME charge management fault memory",
+          "name_ar": "ذاكرة أعطال إدارة الشحن EME",
+          "test_condition": "Charging complaint; ISTA scan",
+          "value": "No fixed numeric live data range established for this code by bulletin"
         }
       ],
       "parts": [
@@ -529,7 +732,8 @@
         "Swedish VIN applicability",
         "Sensor/connector pinout",
         "Licensed component image"
-      ]
+      ],
+      "safety_warning": "Never access high-voltage components without HV authorization; published 90 VAC behavior relates to US-specified OUC and is NOT a Swedish/EU grid reference."
     },
     {
       "record_id": "MINI-B03-EME-222846",
@@ -549,7 +753,11 @@
         "market": "US bulletin; applicability to Sweden/EU not established",
         "model_years": "not confirmed independently",
         "transmission": null,
-        "VIN_ranges": null
+        "VIN_ranges": null,
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true,
+        "fuel": "PHEV",
+        "variant": "Cooper S E Countryman ALL4"
       },
       "symptoms": [
         "Charging interruption/failure"
@@ -563,17 +771,38 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Check OUC condition and latch; compare known-good OUC; use ISTA charging test plan with trained HV staff",
-          "required_tool": "MINI ISTA; qualified technician",
-          "reference_values": "Only programming targets in bulletin; voltage/pinout values unverified"
+          "action_ar": "Check OUC condition and latch",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+        },
+        {
+          "step": 2,
+          "action_ar": "compare known-good OUC",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+        },
+        {
+          "step": 3,
+          "action_ar": "use ISTA charging test plan with trained HV staff",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
         }
       ],
       "live_data": [
         {
-          "name_en": "Fault memory and integration level / I-level",
-          "name_ar": "ذاكرة الأعطال ومستوى تكامل البرمجيات",
-          "test_condition": "read via ISTA",
-          "value": "no universal numeric live-data criterion; consult source bulletin"
+          "name_en": "EME charge management fault memory",
+          "name_ar": "ذاكرة أعطال إدارة الشحن EME",
+          "test_condition": "Charging complaint; ISTA scan",
+          "value": "No fixed numeric live data range established for this code by bulletin"
         }
       ],
       "parts": [
@@ -604,7 +833,8 @@
         "Swedish VIN applicability",
         "Sensor/connector pinout",
         "Licensed component image"
-      ]
+      ],
+      "safety_warning": "Never access high-voltage components without HV authorization; published 90 VAC behavior relates to US-specified OUC and is NOT a Swedish/EU grid reference."
     },
     {
       "record_id": "MINI-B03-MRS-02",
@@ -629,7 +859,9 @@
           "R50_manual": "TC30047-TC43963",
           "R50_automatic": "TE10037-TE17624",
           "R53_manual": "TD50072-TD65791"
-        }
+        },
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true
       },
       "symptoms": [
         "Airbag warning lamp"
@@ -644,18 +876,14 @@
         {
           "step": 1,
           "action_ar": "Read 2-digit MRS code with ISTA/D, verify VIN and affected seat, trained SRS technician follows MINI safety and harness repair steps",
-          "required_tool": "MINI ISTA; qualified technician",
-          "reference_values": "Only programming targets in bulletin; voltage/pinout values unverified"
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
         }
       ],
-      "live_data": [
-        {
-          "name_en": "Fault memory and integration level / I-level",
-          "name_ar": "ذاكرة الأعطال ومستوى تكامل البرمجيات",
-          "test_condition": "read via ISTA",
-          "value": "no universal numeric live-data criterion; consult source bulletin"
-        }
-      ],
+      "live_data": [],
       "parts": [
         "Only components mentioned in bulletin context; no part replacement based on DTC alone"
       ],
@@ -684,7 +912,8 @@
         "Swedish VIN applicability",
         "Sensor/connector pinout",
         "Licensed component image"
-      ]
+      ],
+      "safety_warning": "SRS pyrotechnic circuits: qualified technician only; no direct ohmmeter/probe on igniter circuits. Follow MINI safety procedure."
     },
     {
       "record_id": "MINI-B03-MRS-03",
@@ -709,7 +938,9 @@
           "R50_manual": "TC30047-TC43963",
           "R50_automatic": "TE10037-TE17624",
           "R53_manual": "TD50072-TD65791"
-        }
+        },
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true
       },
       "symptoms": [
         "Airbag warning lamp"
@@ -724,18 +955,14 @@
         {
           "step": 1,
           "action_ar": "Read 2-digit MRS code with ISTA/D, verify VIN and affected seat, trained SRS technician follows MINI safety and harness repair steps",
-          "required_tool": "MINI ISTA; qualified technician",
-          "reference_values": "Only programming targets in bulletin; voltage/pinout values unverified"
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
         }
       ],
-      "live_data": [
-        {
-          "name_en": "Fault memory and integration level / I-level",
-          "name_ar": "ذاكرة الأعطال ومستوى تكامل البرمجيات",
-          "test_condition": "read via ISTA",
-          "value": "no universal numeric live-data criterion; consult source bulletin"
-        }
-      ],
+      "live_data": [],
       "parts": [
         "Only components mentioned in bulletin context; no part replacement based on DTC alone"
       ],
@@ -764,7 +991,8 @@
         "Swedish VIN applicability",
         "Sensor/connector pinout",
         "Licensed component image"
-      ]
+      ],
+      "safety_warning": "SRS pyrotechnic circuits: qualified technician only; no direct ohmmeter/probe on igniter circuits. Follow MINI safety procedure."
     },
     {
       "record_id": "MINI-B03-MRS-05",
@@ -789,7 +1017,9 @@
           "R50_manual": "TC30047-TC43963",
           "R50_automatic": "TE10037-TE17624",
           "R53_manual": "TD50072-TD65791"
-        }
+        },
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true
       },
       "symptoms": [
         "Airbag warning lamp"
@@ -804,18 +1034,14 @@
         {
           "step": 1,
           "action_ar": "Read 2-digit MRS code with ISTA/D, verify VIN and affected seat, trained SRS technician follows MINI safety and harness repair steps",
-          "required_tool": "MINI ISTA; qualified technician",
-          "reference_values": "Only programming targets in bulletin; voltage/pinout values unverified"
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
         }
       ],
-      "live_data": [
-        {
-          "name_en": "Fault memory and integration level / I-level",
-          "name_ar": "ذاكرة الأعطال ومستوى تكامل البرمجيات",
-          "test_condition": "read via ISTA",
-          "value": "no universal numeric live-data criterion; consult source bulletin"
-        }
-      ],
+      "live_data": [],
       "parts": [
         "Only components mentioned in bulletin context; no part replacement based on DTC alone"
       ],
@@ -844,7 +1070,8 @@
         "Swedish VIN applicability",
         "Sensor/connector pinout",
         "Licensed component image"
-      ]
+      ],
+      "safety_warning": "SRS pyrotechnic circuits: qualified technician only; no direct ohmmeter/probe on igniter circuits. Follow MINI safety procedure."
     },
     {
       "record_id": "MINI-B03-MRS-06",
@@ -869,7 +1096,9 @@
           "R50_manual": "TC30047-TC43963",
           "R50_automatic": "TE10037-TE17624",
           "R53_manual": "TD50072-TD65791"
-        }
+        },
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true
       },
       "symptoms": [
         "Airbag warning lamp"
@@ -884,18 +1113,14 @@
         {
           "step": 1,
           "action_ar": "Read 2-digit MRS code with ISTA/D, verify VIN and affected seat, trained SRS technician follows MINI safety and harness repair steps",
-          "required_tool": "MINI ISTA; qualified technician",
-          "reference_values": "Only programming targets in bulletin; voltage/pinout values unverified"
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
         }
       ],
-      "live_data": [
-        {
-          "name_en": "Fault memory and integration level / I-level",
-          "name_ar": "ذاكرة الأعطال ومستوى تكامل البرمجيات",
-          "test_condition": "read via ISTA",
-          "value": "no universal numeric live-data criterion; consult source bulletin"
-        }
-      ],
+      "live_data": [],
       "parts": [
         "Only components mentioned in bulletin context; no part replacement based on DTC alone"
       ],
@@ -924,7 +1149,8 @@
         "Swedish VIN applicability",
         "Sensor/connector pinout",
         "Licensed component image"
-      ]
+      ],
+      "safety_warning": "SRS pyrotechnic circuits: qualified technician only; no direct ohmmeter/probe on igniter circuits. Follow MINI safety procedure."
     },
     {
       "record_id": "MINI-B03-EGS-CF0486",
@@ -953,7 +1179,15 @@
         "market": "US bulletin; applicability to Sweden/EU not established",
         "model_years": "not confirmed independently",
         "transmission": "AISIN automatic",
-        "VIN_ranges": null
+        "VIN_ranges": null,
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true,
+        "production_end": "2016-11-07",
+        "affected_ilevels": [
+          "F056-16-03-50x",
+          "F056-16-07-50x"
+        ],
+        "exact_model_engine_combination": "Do not cross join model list × engine list without independent evidence"
       },
       "symptoms": [
         "MIL; engine power loss; transmission emergency program"
@@ -967,9 +1201,30 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Confirm AISIN, engine, build, I-level; if affected update DME to F056-16-11-500+; do not replace components to address software issue",
-          "required_tool": "MINI ISTA; qualified technician",
-          "reference_values": "Only programming targets in bulletin; voltage/pinout values unverified"
+          "action_ar": "Confirm AISIN, engine, build, I-level",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+        },
+        {
+          "step": 2,
+          "action_ar": "if affected update DME to F056-16-11-500+",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+        },
+        {
+          "step": 3,
+          "action_ar": "do not replace components to address software issue",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
         }
       ],
       "live_data": [
@@ -981,7 +1236,7 @@
         }
       ],
       "parts": [
-        "Only components mentioned in bulletin context; no part replacement based on DTC alone"
+        "DME software in stated bulletin condition; replace no hardware on the strength of code CF0486 alone"
       ],
       "wiring": {
         "pins": null,
@@ -1028,7 +1283,9 @@
         "market": "US bulletin; applicability to Sweden/EU not established",
         "model_years": "not confirmed independently",
         "transmission": null,
-        "VIN_ranges": null
+        "VIN_ranges": null,
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true
       },
       "symptoms": [
         "Brake/suspension/airbag CCM; steering assist reduction"
@@ -1042,9 +1299,30 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Check BDC codes and I-level; if below F056-20-03-530 program with ISTA 4.22.2x+; otherwise run ISTA test module",
-          "required_tool": "MINI ISTA; qualified technician",
-          "reference_values": "Only programming targets in bulletin; voltage/pinout values unverified"
+          "action_ar": "Check BDC codes and I-level",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+        },
+        {
+          "step": 2,
+          "action_ar": "if below F056-20-03-530 program with ISTA 4.22.2x+",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+        },
+        {
+          "step": 3,
+          "action_ar": "otherwise run ISTA test module",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
         }
       ],
       "live_data": [
@@ -1105,7 +1383,9 @@
         "market": "US bulletin; applicability to Sweden/EU not established",
         "model_years": "not confirmed independently",
         "transmission": null,
-        "VIN_ranges": null
+        "VIN_ranges": null,
+        "applies_only_if_bulletin_conditions_verified": true,
+        "chassis_engine_pairs_unchecked_expansion_forbidden": true
       },
       "symptoms": [
         "Brake/suspension/airbag CCM; steering assist reduction"
@@ -1119,9 +1399,21 @@
       "diagnostic_steps": [
         {
           "step": 1,
-          "action_ar": "Check receiver BDC/ZGM, associated CD0420 and I-level; update to F056-20-03-530+ if indicated, else run ISTA network test module",
-          "required_tool": "MINI ISTA; qualified technician",
-          "reference_values": "Only programming targets in bulletin; voltage/pinout values unverified"
+          "action_ar": "Check receiver BDC/ZGM, associated CD0420 and I-level",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
+        },
+        {
+          "step": 2,
+          "action_ar": "update to F056-20-03-530+ if indicated, else run ISTA network test module",
+          "equipment": [
+            "MINI ISTA",
+            "VIN-specific service documentation"
+          ],
+          "acceptance_criteria": "Only explicitly stated target I-level is verified; other numeric thresholds require VIN-specific source"
         }
       ],
       "live_data": [
