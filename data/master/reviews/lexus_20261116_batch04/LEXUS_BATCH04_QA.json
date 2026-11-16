@@ -1,0 +1,57 @@
+{
+  "schema": "dtcnexis-lexus-batch04-QA-v1",
+  "brand": "Lexus",
+  "created_on": "2026-11-16",
+  "review_only": true,
+  "baseline": {
+    "github_main_lexus_records": 72,
+    "main_unique_raw_codes": 72,
+    "local_batch02_records": 73,
+    "local_batch02_unique_codes": 73,
+    "preceding_git_work_branch_deferred": 33
+  },
+  "batch": {
+    "primary_OEM_evidenced_new_codes_v_main": 3,
+    "primary_OEM_evidenced_new_codes_v_batch02": 2,
+    "primary_OEM_evidenced_USA_links": 15,
+    "primary_OEM_bulletin_sources": 6,
+    "new_deferred_cases": 2,
+    "carried_deferred_cases": 33
+  },
+  "comparison": {
+    "new_codes": [
+      "P2610",
+      "P0430",
+      "P07457F"
+    ],
+    "duplicates_v_main": [],
+    "duplicates_in_new_candidates": [],
+    "duplicate_applicability_ids": [],
+    "missing_source_refs": [],
+    "new_failed_crossreferences": []
+  },
+  "safety": {
+    "sweden_europe_dtc_fitment_confirmed": 0,
+    "owner_approved": false,
+    "merge_to_main": false,
+    "windows_software_changed": false,
+    "published_update": false,
+    "production_import_ready": false,
+    "original_files_replaced": false
+  },
+  "technical_gaps": [
+    "2011 RX450h P0430 bulletin supersession scope",
+    "2017 LS600h P2610 main applicability vs calibration-table year mismatch",
+    "2019 RX350L P07457F formal row vs VIN/calibration table discrepancy (existing 33-item queue)",
+    "P0116/P0128/B0111/B0116 remain secondary copies until official complete bulletin is accessed",
+    "42 preexisting Lexus definitions still await primary validation",
+    "Exact VIN, ECU calibration, live-data thresholds beyond named tests, wiring, images and EU/SE applicability pending"
+  ],
+  "files_required": [
+    "LEXUS_PRIMARY_OEM_CANDIDATES.json",
+    "LEXUS_DEFERRED_INCREMENT.json",
+    "LEXUS_BATCH04_QA.json",
+    "REPORT_AR.md"
+  ],
+  "source_trace": "Primary PDFs at static.nhtsa.gov; checked 2026-11-16. CHARM/other mirrors in the parent queue are not OEM originals."
+}
