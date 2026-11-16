@@ -1,0 +1,50 @@
+{
+  "schema": "dtcnexis-ford-source-registry-v1",
+  "brand": "Ford",
+  "batch": "20261116-04",
+  "verified_on": "2026-11-16",
+  "technical_approval": false,
+  "sources": [
+    {
+      "source_id": "FORD-TSB-20-2221",
+      "title": "Ford TSB 20-2221: 2020 Escape HEV MIL with BECM DTCs",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10177858-0001.pdf",
+      "publication_date": "2020-07-28",
+      "document_type": "Ford OEM service bulletin",
+      "scope": "2020 Ford Escape HEV, produced on/before 2020-06-10, North American bulletin",
+      "evidence": "Code membership in BECM and vehicle condition; no per-DTC definition"
+    },
+    {
+      "source_id": "FORD-TSB-20-2345",
+      "title": "Ford TSB 20-2345: 2020 Explorer/Police Interceptor Utility Hybrid MIL",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10181918-0001.pdf",
+      "publication_date": "2020-10-01",
+      "document_type": "Ford OEM service bulletin",
+      "scope": "2020 Ford Explorer Hybrid and Police Interceptor Utility Hybrid, North American bulletin; supersedes 20-2293",
+      "evidence": "Code membership in PCM and software condition related to BECM, no per-DTC definition"
+    },
+    {
+      "source_id": "FORD-SSM-51437",
+      "title": "Ford SSM 51437: Driver Assist Warnings and DTCs PSCM/ABS/IPMA",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10233713-0001.pdf",
+      "publication_date": null,
+      "document_type": "Ford OEM special service message",
+      "scope": "2020–2022 Escape, 2021–2022 Bronco Sport, 2022 Maverick, build through 2022-03-23, North American bulletin",
+      "evidence": "Three DTCs and exact recording modules with PSCM software remediation"
+    },
+    {
+      "source_id": "FORD-NHTSA-PE23-021-RESPONSE",
+      "title": "Ford response to NHTSA PE23-021 Request 2: Pretensioner B007E/B007F",
+      "url": "https://static.nhtsa.gov/odi/inv/2023/INRD-PE23021-16709.pdf",
+      "publication_date": "2024-02-05",
+      "document_type": "Ford submitted investigative response, not a WSM pinpoint test",
+      "scope": "Ford reports in seatbelt-retractor-pretensioner inquiry; no exhaustive VIN or model applicability per individual DTC",
+      "evidence": "B007E and B007F code occurrence with airbag warning and high-resistance/open pretensioner circuit condition"
+    }
+  ],
+  "limitations": [
+    "Bulletins confirm code occurrence and conditional fitment, not universal English definitions",
+    "SRS Ford response does not establish B007E/B007F exact module or model and has no approved code-to-side mapping",
+    "NHTSA-hosted Ford bulletins are Ford OEM service publications; NHTSA is the host, not a generic code definition source"
+  ]
+}
