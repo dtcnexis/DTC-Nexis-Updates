@@ -1,0 +1,779 @@
+{
+  "schema": "dtcnexis-review-queue-v1",
+  "brand": "polestar",
+  "date": "2026-11-16",
+  "existing_review_system": "data/master/reviews",
+  "no_new_parallel_review_queue_root": true,
+  "source_preservation": "Original Batch01 source-values untouched; historical details pointed to by source paths",
+  "total_pending": 45,
+  "legacy_contexts": 31,
+  "new_contexts": 14,
+  "codes_new_verifiable": [
+    "U100B68",
+    "U101E01",
+    "U101E11",
+    "U101E12",
+    "U101E13",
+    "U210191",
+    "U230055",
+    "U230056",
+    "U2E0E4B",
+    "U300096",
+    "U30009A",
+    "U300362",
+    "P26FD68"
+  ],
+  "review_records": [
+    {
+      "review_id": "POL-RQ-LEGACY-001",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "B109A4A",
+      "ecu": "CEM",
+      "engine_code_verified": null,
+      "model_years_from_source": "2025+; structural weeks 202349+",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://oemdtc.com/tsb/11020569/",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-002",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "C007768",
+      "ecu": "BCM2",
+      "engine_code_verified": null,
+      "model_years_from_source": "2021+ within TJ broad scope",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2025/MC-11014147-0001.pdf",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-003",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "P060C00",
+      "ecu": "IHFA",
+      "engine_code_verified": null,
+      "model_years_from_source": "2021–2023; ED/EG variants",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://oemdtc.com/tsb/10226635/",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-004",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "P060C04",
+      "ecu": "IHFA",
+      "engine_code_verified": null,
+      "model_years_from_source": "2021–2023; ED/EG variants",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://oemdtc.com/tsb/10226635/",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-005",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "P0A9500",
+      "ecu": "BECM",
+      "engine_code_verified": null,
+      "model_years_from_source": "2021+ in TJ scope; verify VIN",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://oemdtc.com/tsb/11031083/",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-006",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "P0D1513",
+      "ecu": "OBC",
+      "engine_code_verified": null,
+      "model_years_from_source": "2021-2023",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-10235012-9999.pdf",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-007",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "P0D1556",
+      "ecu": "OBC",
+      "engine_code_verified": null,
+      "model_years_from_source": "2021-2023",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-10235012-9999.pdf",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-008",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "P0D1800",
+      "ecu": "BECM",
+      "engine_code_verified": null,
+      "model_years_from_source": "2021–2023; structural weeks 201935–202316",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://oemdtc.com/tsb/10242241/",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-009",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "P0D67A2",
+      "ecu": "OBC",
+      "engine_code_verified": null,
+      "model_years_from_source": "2020-2023",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-10235010-9999.pdf",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-010",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "P0E0500",
+      "ecu": "IEM",
+      "engine_code_verified": null,
+      "model_years_from_source": "2024; model build weeks from 202317",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://oemdtc.com/tsb/11005715/",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-011",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "P0E2F00",
+      "ecu": "BECM",
+      "engine_code_verified": null,
+      "model_years_from_source": "2021+ in TJ scope; verify VIN",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://oemdtc.com/tsb/11031083/",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-012",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "U116E00",
+      "ecu": "VCU1",
+      "engine_code_verified": null,
+      "model_years_from_source": "2020–2023",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://oemdtc.com/tsb/10243623/",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-013",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "U116E00",
+      "ecu": "VCU1",
+      "engine_code_verified": null,
+      "model_years_from_source": "2024–2025; build weeks 202346–202427",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://oemdtc.com/tsb/11005714/",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-014",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "U201F00",
+      "ecu": "CEM",
+      "engine_code_verified": null,
+      "model_years_from_source": "2021+ in manufacturer document",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-10230751-9999.pdf",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-015",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "U210993",
+      "ecu": "TCAM",
+      "engine_code_verified": null,
+      "model_years_from_source": "2021–2023; 202007–202352",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://oemdtc.com/tsb/10232124/",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-016",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "P060C66",
+      "ecu": "IHFA",
+      "engine_code_verified": null,
+      "model_years_from_source": "2024–2025; structure weeks 202402–202524",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://oemdtc.com/tsb/11020571/",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-017",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "P060C66",
+      "ecu": "IHRA",
+      "engine_code_verified": null,
+      "model_years_from_source": "2024–2025; structure weeks 202402–202524",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://oemdtc.com/tsb/11020571/",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-018",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "P0A7A66",
+      "ecu": "IHFA",
+      "engine_code_verified": null,
+      "model_years_from_source": "2024–2025; structure weeks 202402–202524",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://oemdtc.com/tsb/11020571/",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-019",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "P0A7A66",
+      "ecu": "IHRA",
+      "engine_code_verified": null,
+      "model_years_from_source": "2024–2025; structure weeks 202402–202524",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://oemdtc.com/tsb/11020571/",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-020",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "P0A8187",
+      "ecu": "FIOC",
+      "engine_code_verified": null,
+      "model_years_from_source": "2025+; structural weeks from 202425",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://oemdtc.com/tsb/11015988/",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-021",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "P0D320A",
+      "ecu": "HLCM",
+      "engine_code_verified": null,
+      "model_years_from_source": "2025–2027; structure weeks 202402–202752",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://oemdtc.com/tsb/11035007/",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-022",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "P0D3224",
+      "ecu": "HLCM",
+      "engine_code_verified": null,
+      "model_years_from_source": "2025–2027; structure weeks 202402–202752",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://oemdtc.com/tsb/11035007/",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-023",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "P0D6787",
+      "ecu": "OBC",
+      "engine_code_verified": null,
+      "model_years_from_source": "2025; structural weeks 202431–202502",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://oemdtc.com/tsb/11019500/",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-024",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "P0AA800",
+      "ecu": "BECM",
+      "engine_code_verified": null,
+      "model_years_from_source": "2025–2026; structure weeks 202447–202613",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://oemdtc.com/tsb/11032615/",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-025",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "P127900",
+      "ecu": "BECM",
+      "engine_code_verified": null,
+      "model_years_from_source": "2025–2026; structure weeks 202447–202613",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://oemdtc.com/tsb/11032615/",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-026",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "B1A0213",
+      "ecu": "ESM",
+      "engine_code_verified": null,
+      "model_years_from_source": "2021+ in TJ; verify exact variant",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-11002689-0001.pdf",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-027",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "U002888",
+      "ecu": "ESM",
+      "engine_code_verified": null,
+      "model_years_from_source": "2021+ in TJ; verify exact variant",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-11002689-0001.pdf",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-028",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "U007388",
+      "ecu": "BECM",
+      "engine_code_verified": null,
+      "model_years_from_source": "2021+ in TJ; verify exact variant",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-11002689-0001.pdf",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-029",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "U112700",
+      "ecu": "VCU1",
+      "engine_code_verified": null,
+      "model_years_from_source": "2021+ in TJ; verify exact variant",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-11002689-0001.pdf",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-030",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "P2BE017",
+      "ecu": "FIOC",
+      "engine_code_verified": null,
+      "model_years_from_source": "2025+",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://oemdtc.com/tsb/11023311/",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-LEGACY-031",
+      "source_batch": "Batch01 preserved via GitHub enrichment",
+      "brand": "Polestar",
+      "raw_code": "B15381B",
+      "ecu": "SRS",
+      "engine_code_verified": null,
+      "model_years_from_source": "2021+ in table, diagnostic applicability NOT established",
+      "market_status": "EU/Sweden not independently verified",
+      "source_urls": [
+        "https://oemdtc.com/tsb/11000078/",
+        "https://saemobilus.sae.org/standards/j2012_202509-diagnostic-trouble-code-definitions"
+      ],
+      "reason": "Full OEM English DTC definition and exact motor/ECU firmware applicability not confirmed; original source values retained without alteration ; original bulletin contextual mismatch flagged",
+      "status": "DEFERRED_REVIEW_LEGACY_NOT_REVALIDATED_THIS_BATCH",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-B03-001",
+      "source_batch": "2026-11-16 OEM bulletin extension",
+      "brand": "Polestar",
+      "raw_code": "U100B68",
+      "ecu": "ADPU",
+      "engine_code_verified": null,
+      "model_years_from_source": "2024–2026 (as stated in bulletin)",
+      "market_status": "TJ US/CA only; Europe/Sweden applicability unconfirmed",
+      "source_urls": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-11023532-0001.pdf"
+      ],
+      "reason": "Official full DTC definition, ISO/SAE vs manufacturer classification, vehicle software/engine fitment, trigger thresholds and pinouts not supplied in cited journal",
+      "status": "DEFERRED_REVIEW_OCCURRENCE_VERIFIED_DEFINITION_PENDING",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-B03-002",
+      "source_batch": "2026-11-16 OEM bulletin extension",
+      "brand": "Polestar",
+      "raw_code": "U101E01",
+      "ecu": "ADPU",
+      "engine_code_verified": null,
+      "model_years_from_source": "2024–2026 (as stated in bulletin)",
+      "market_status": "TJ US/CA only; Europe/Sweden applicability unconfirmed",
+      "source_urls": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-11023532-0001.pdf"
+      ],
+      "reason": "Official full DTC definition, ISO/SAE vs manufacturer classification, vehicle software/engine fitment, trigger thresholds and pinouts not supplied in cited journal",
+      "status": "DEFERRED_REVIEW_OCCURRENCE_VERIFIED_DEFINITION_PENDING",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-B03-003",
+      "source_batch": "2026-11-16 OEM bulletin extension",
+      "brand": "Polestar",
+      "raw_code": "U101E11",
+      "ecu": "ADPU",
+      "engine_code_verified": null,
+      "model_years_from_source": "2024–2026 (as stated in bulletin)",
+      "market_status": "TJ US/CA only; Europe/Sweden applicability unconfirmed",
+      "source_urls": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-11023532-0001.pdf"
+      ],
+      "reason": "Official full DTC definition, ISO/SAE vs manufacturer classification, vehicle software/engine fitment, trigger thresholds and pinouts not supplied in cited journal",
+      "status": "DEFERRED_REVIEW_OCCURRENCE_VERIFIED_DEFINITION_PENDING",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-B03-004",
+      "source_batch": "2026-11-16 OEM bulletin extension",
+      "brand": "Polestar",
+      "raw_code": "U101E12",
+      "ecu": "ADPU",
+      "engine_code_verified": null,
+      "model_years_from_source": "2024–2026 (as stated in bulletin)",
+      "market_status": "TJ US/CA only; Europe/Sweden applicability unconfirmed",
+      "source_urls": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-11023532-0001.pdf"
+      ],
+      "reason": "Official full DTC definition, ISO/SAE vs manufacturer classification, vehicle software/engine fitment, trigger thresholds and pinouts not supplied in cited journal",
+      "status": "DEFERRED_REVIEW_OCCURRENCE_VERIFIED_DEFINITION_PENDING",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-B03-005",
+      "source_batch": "2026-11-16 OEM bulletin extension",
+      "brand": "Polestar",
+      "raw_code": "U101E13",
+      "ecu": "ADPU",
+      "engine_code_verified": null,
+      "model_years_from_source": "2024–2026 (as stated in bulletin)",
+      "market_status": "TJ US/CA only; Europe/Sweden applicability unconfirmed",
+      "source_urls": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-11023532-0001.pdf"
+      ],
+      "reason": "Official full DTC definition, ISO/SAE vs manufacturer classification, vehicle software/engine fitment, trigger thresholds and pinouts not supplied in cited journal",
+      "status": "DEFERRED_REVIEW_OCCURRENCE_VERIFIED_DEFINITION_PENDING",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-B03-006",
+      "source_batch": "2026-11-16 OEM bulletin extension",
+      "brand": "Polestar",
+      "raw_code": "U210191",
+      "ecu": "ADPU",
+      "engine_code_verified": null,
+      "model_years_from_source": "2024–2026 (as stated in bulletin)",
+      "market_status": "TJ US/CA only; Europe/Sweden applicability unconfirmed",
+      "source_urls": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-11023532-0001.pdf"
+      ],
+      "reason": "Official full DTC definition, ISO/SAE vs manufacturer classification, vehicle software/engine fitment, trigger thresholds and pinouts not supplied in cited journal",
+      "status": "DEFERRED_REVIEW_OCCURRENCE_VERIFIED_DEFINITION_PENDING",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-B03-007",
+      "source_batch": "2026-11-16 OEM bulletin extension",
+      "brand": "Polestar",
+      "raw_code": "U230055",
+      "ecu": "ADPU",
+      "engine_code_verified": null,
+      "model_years_from_source": "2024–2026 (as stated in bulletin)",
+      "market_status": "TJ US/CA only; Europe/Sweden applicability unconfirmed",
+      "source_urls": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-11023532-0001.pdf"
+      ],
+      "reason": "Official full DTC definition, ISO/SAE vs manufacturer classification, vehicle software/engine fitment, trigger thresholds and pinouts not supplied in cited journal",
+      "status": "DEFERRED_REVIEW_OCCURRENCE_VERIFIED_DEFINITION_PENDING",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-B03-008",
+      "source_batch": "2026-11-16 OEM bulletin extension",
+      "brand": "Polestar",
+      "raw_code": "U230056",
+      "ecu": "ADPU",
+      "engine_code_verified": null,
+      "model_years_from_source": "2024–2026 (as stated in bulletin)",
+      "market_status": "TJ US/CA only; Europe/Sweden applicability unconfirmed",
+      "source_urls": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-11023532-0001.pdf"
+      ],
+      "reason": "Official full DTC definition, ISO/SAE vs manufacturer classification, vehicle software/engine fitment, trigger thresholds and pinouts not supplied in cited journal",
+      "status": "DEFERRED_REVIEW_OCCURRENCE_VERIFIED_DEFINITION_PENDING",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-B03-009",
+      "source_batch": "2026-11-16 OEM bulletin extension",
+      "brand": "Polestar",
+      "raw_code": "U2E0E4B",
+      "ecu": "ADPU",
+      "engine_code_verified": null,
+      "model_years_from_source": "2024–2026 (as stated in bulletin)",
+      "market_status": "TJ US/CA only; Europe/Sweden applicability unconfirmed",
+      "source_urls": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-11023532-0001.pdf"
+      ],
+      "reason": "Official full DTC definition, ISO/SAE vs manufacturer classification, vehicle software/engine fitment, trigger thresholds and pinouts not supplied in cited journal",
+      "status": "DEFERRED_REVIEW_OCCURRENCE_VERIFIED_DEFINITION_PENDING",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-B03-010",
+      "source_batch": "2026-11-16 OEM bulletin extension",
+      "brand": "Polestar",
+      "raw_code": "U300096",
+      "ecu": "ADPU",
+      "engine_code_verified": null,
+      "model_years_from_source": "2024–2026 (as stated in bulletin)",
+      "market_status": "TJ US/CA only; Europe/Sweden applicability unconfirmed",
+      "source_urls": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-11023532-0001.pdf"
+      ],
+      "reason": "Official full DTC definition, ISO/SAE vs manufacturer classification, vehicle software/engine fitment, trigger thresholds and pinouts not supplied in cited journal",
+      "status": "DEFERRED_REVIEW_OCCURRENCE_VERIFIED_DEFINITION_PENDING",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-B03-011",
+      "source_batch": "2026-11-16 OEM bulletin extension",
+      "brand": "Polestar",
+      "raw_code": "U30009A",
+      "ecu": "ADPU",
+      "engine_code_verified": null,
+      "model_years_from_source": "2024–2026 (as stated in bulletin)",
+      "market_status": "TJ US/CA only; Europe/Sweden applicability unconfirmed",
+      "source_urls": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-11023532-0001.pdf"
+      ],
+      "reason": "Official full DTC definition, ISO/SAE vs manufacturer classification, vehicle software/engine fitment, trigger thresholds and pinouts not supplied in cited journal",
+      "status": "DEFERRED_REVIEW_OCCURRENCE_VERIFIED_DEFINITION_PENDING",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-B03-012",
+      "source_batch": "2026-11-16 OEM bulletin extension",
+      "brand": "Polestar",
+      "raw_code": "U300362",
+      "ecu": "ADPU",
+      "engine_code_verified": null,
+      "model_years_from_source": "2024–2026 (as stated in bulletin)",
+      "market_status": "TJ US/CA only; Europe/Sweden applicability unconfirmed",
+      "source_urls": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-11023532-0001.pdf"
+      ],
+      "reason": "Official full DTC definition, ISO/SAE vs manufacturer classification, vehicle software/engine fitment, trigger thresholds and pinouts not supplied in cited journal",
+      "status": "DEFERRED_REVIEW_OCCURRENCE_VERIFIED_DEFINITION_PENDING",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-B03-013",
+      "source_batch": "2026-11-16 OEM bulletin extension",
+      "brand": "Polestar",
+      "raw_code": "P26FD68",
+      "ecu": "HPA",
+      "engine_code_verified": null,
+      "model_years_from_source": "2025",
+      "market_status": "TJ US/CA only; Europe/Sweden applicability unconfirmed",
+      "source_urls": [
+        "https://oemdtc.com/tsb/11022804/"
+      ],
+      "reason": "Official full DTC definition, ISO/SAE vs manufacturer classification, vehicle software/engine fitment, trigger thresholds and pinouts not supplied in cited journal",
+      "status": "DEFERRED_REVIEW_OCCURRENCE_VERIFIED_DEFINITION_PENDING",
+      "automatic_diagnosis_allowed": false
+    },
+    {
+      "review_id": "POL-RQ-B03-014",
+      "source_batch": "2026-11-16 OEM bulletin extension",
+      "brand": "Polestar",
+      "raw_code": "B1A0213",
+      "ecu": "AUD",
+      "engine_code_verified": null,
+      "model_years_from_source": "2026+ per TJ; actual later model-year fitment requires VIN confirmation",
+      "market_status": "TJ US/CA only; Europe/Sweden applicability unconfirmed",
+      "source_urls": [
+        "https://oemdtc.com/tsb/11028332/"
+      ],
+      "reason": "Official full DTC definition, ISO/SAE vs manufacturer classification, vehicle software/engine fitment, trigger thresholds and pinouts not supplied in cited journal",
+      "status": "DEFERRED_REVIEW_OCCURRENCE_VERIFIED_DEFINITION_PENDING",
+      "automatic_diagnosis_allowed": false
+    }
+  ]
+}
