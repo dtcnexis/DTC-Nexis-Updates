@@ -1,0 +1,1792 @@
+{
+  "schema": "dtcnexis-ford-source-scoped-incremental-v1",
+  "brand": "Ford",
+  "batch": "20261116-03",
+  "repository_base": "main",
+  "base_legacy_path": "data/master/brands/ford.json",
+  "base_legacy_records": 409,
+  "prior_local_batch02_unique_code_count": 413,
+  "record_count": 32,
+  "unique_new_codes": 32,
+  "duplicate_codes_vs_legacy_and_local_batch02": 0,
+  "no_vehicle_engine_fitment_inferred": true,
+  "release": "NOT_ACTIVATED",
+  "source_docs": [
+    {
+      "source_id": "FORD-OBD-2013-GAS",
+      "title": "Ford/Lincoln 2013 MY Gasoline OBD System Operation Summary",
+      "url": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1300.pdf",
+      "revision_date": "2013-03-08",
+      "scope": "2013 Ford/Lincoln gasoline OBD monitor overview; vehicle fitment not universal"
+    },
+    {
+      "source_id": "FORD-OBD-2024-GAS-V2",
+      "title": "Ford/Lincoln 2024–2025 MY V2 Gasoline OBD Summary (PCED Pinpoint Test)",
+      "url": "https://www.fordservicecontent.com/Ford_Content/catalog/motorcraft/OBDSM2400OUTPUT_16Jul2024_WSM_final_V2_MCS7001.pdf",
+      "revision_date": "2024-07-16",
+      "scope": "2024-2025 gasoline monitor definitions and paired UDS codes; vehicle fitment not universal"
+    }
+  ],
+  "entries": [
+    {
+      "record_id": "FORD-OBD-2013-P0112",
+      "brand": "Ford",
+      "raw_code": "P0112",
+      "base_code": "P0112",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Intake Air Temperature Sensor 1 Circuit Low (Bank 1)",
+      "translation_ar": "إشارة منخفضة في دائرة حساس حرارة هواء السحب 1 (البنك 1)",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P0110_16",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "IAT",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Intake Air Temperature",
+          "name_ar": "درجة حرارة هواء السحب",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "IAT1 signal voltage < 0.244 V; typical threshold; 5 s",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2013-GAS",
+      "source_url": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1300.pdf",
+      "source_revision": "2013-03-08",
+      "source_pdf_page": 137,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2013-P0113",
+      "brand": "Ford",
+      "raw_code": "P0113",
+      "base_code": "P0113",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Intake Air Temperature Sensor 1 Circuit High (Bank 1)",
+      "translation_ar": "إشارة مرتفعة في دائرة حساس حرارة هواء السحب 1 (البنك 1)",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P0110_17",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "IAT",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Intake Air Temperature",
+          "name_ar": "درجة حرارة هواء السحب",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "IAT1 signal voltage > 4.96 V; typical threshold; 5 s",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2013-GAS",
+      "source_url": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1300.pdf",
+      "source_revision": "2013-03-08",
+      "source_pdf_page": 137,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2013-P0114",
+      "brand": "Ford",
+      "raw_code": "P0114",
+      "base_code": "P0114",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Intake Air Temperature Sensor 1 Intermittent/Erratic (Bank 1)",
+      "translation_ar": "إشارة متقطعة أو غير منتظمة من حساس حرارة هواء السحب 1 (البنك 1)",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P0110_1F",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "IAT",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Intake Air Temperature",
+          "name_ar": "درجة حرارة هواء السحب",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "10 intermittent out-of-range events per drive cycle; 2013 GTDI/GDI monitor example",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2013-GAS",
+      "source_url": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1300.pdf",
+      "source_revision": "2013-03-08",
+      "source_pdf_page": 137,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2013-P0117",
+      "brand": "Ford",
+      "raw_code": "P0117",
+      "base_code": "P0117",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Engine Coolant Temperature Sensor Circuit Low Input",
+      "translation_ar": "إشارة منخفضة في دائرة حساس درجة حرارة سائل تبريد المحرك",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P0115_16",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "ECT",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature",
+          "name_ar": "حرارة سائل التبريد",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "ECT sensor voltage < 0.244 V; typical threshold; 5 s",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2013-GAS",
+      "source_url": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1300.pdf",
+      "source_revision": "2013-03-08",
+      "source_pdf_page": 177,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2013-P0118",
+      "brand": "Ford",
+      "raw_code": "P0118",
+      "base_code": "P0118",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Engine Coolant Temperature Sensor Circuit High Input",
+      "translation_ar": "إشارة مرتفعة في دائرة حساس درجة حرارة سائل تبريد المحرك",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P0115_17",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "ECT",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Temperature",
+          "name_ar": "حرارة سائل التبريد",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "ECT sensor voltage > 4.96 V; typical threshold; 5 s",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2013-GAS",
+      "source_url": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1300.pdf",
+      "source_revision": "2013-03-08",
+      "source_pdf_page": 177,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2013-P1289",
+      "brand": "Ford",
+      "raw_code": "P1289",
+      "base_code": "P1289",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Cylinder Head Temperature Sensor High Input",
+      "translation_ar": "إشارة مرتفعة في دائرة حساس حرارة رأس الأسطوانات",
+      "code_assignment": "manufacturer-controlled code range; specific allocation requires standard confirmation",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P1289_00",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "CHT",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Cylinder Head Temperature",
+          "name_ar": "حرارة رأس الأسطوانات",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "CHT signal high input; typical sensor threshold > 4.96 V; 5 s",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2013-GAS",
+      "source_url": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1300.pdf",
+      "source_revision": "2013-03-08",
+      "source_pdf_page": 178,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2013-P1290",
+      "brand": "Ford",
+      "raw_code": "P1290",
+      "base_code": "P1290",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Cylinder Head Temperature Sensor Low Input",
+      "translation_ar": "إشارة منخفضة في دائرة حساس حرارة رأس الأسطوانات",
+      "code_assignment": "manufacturer-controlled code range; specific allocation requires standard confirmation",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P1290_00",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "CHT",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Cylinder Head Temperature",
+          "name_ar": "حرارة رأس الأسطوانات",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "CHT signal low input; typical sensor threshold < 0.244 V; 5 s",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2013-GAS",
+      "source_url": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1300.pdf",
+      "source_revision": "2013-03-08",
+      "source_pdf_page": 178,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2013-P1299",
+      "brand": "Ford",
+      "raw_code": "P1299",
+      "base_code": "P1299",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Fail-safe cooling activated",
+      "translation_ar": "تفعيل وضع التبريد الوقائي للمحرك",
+      "code_assignment": "manufacturer-controlled code range; specific allocation requires standard confirmation",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P1299_00",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "CHT",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Cylinder Head Temperature",
+          "name_ar": "حرارة رأس الأسطوانات",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "2013 source states protection activated when cylinder head temperature exceeds 270 °; unit not specified in extracted source, therefore numeric threshold not approved for general use",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2013-GAS",
+      "source_url": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1300.pdf",
+      "source_revision": "2013-03-08",
+      "source_pdf_page": 178,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2013-P0106",
+      "brand": "Ford",
+      "raw_code": "P0106",
+      "base_code": "P0106",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "MAP Sensor Rationality Check / Circuit Range-Performance",
+      "translation_ar": "عدم منطقية قراءة حساس الضغط المطلق لمجمع السحب أو خلل بنطاق الأداء",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P0105_92",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "MAP",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Manifold Absolute Pressure",
+          "name_ar": "الضغط المطلق لمجمع السحب",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "2013 MAP rationality monitor: inferred minus actual MAP > 10 in Hg; 10 s; document has inconsistent description in separate correlation section",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2013-GAS",
+      "source_url": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1300.pdf",
+      "source_revision": "2013-03-08",
+      "source_pdf_page": 117,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": "2013 source uses conflicting textual attribution of P0106 in MAP/BARO correlation section"
+    },
+    {
+      "record_id": "FORD-OBD-2013-P0107",
+      "brand": "Ford",
+      "raw_code": "P0107",
+      "base_code": "P0107",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "MAP Sensor Low Input",
+      "translation_ar": "إشارة منخفضة في دائرة حساس الضغط المطلق بمجمع السحب",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P0105_16",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "MAP",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Manifold Absolute Pressure",
+          "name_ar": "الضغط المطلق لمجمع السحب",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "MAP signal voltage < 0.024 V; 5 s; battery voltage > 11 V",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2013-GAS",
+      "source_url": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1300.pdf",
+      "source_revision": "2013-03-08",
+      "source_pdf_page": 116,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2013-P0108",
+      "brand": "Ford",
+      "raw_code": "P0108",
+      "base_code": "P0108",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "MAP Sensor High Input",
+      "translation_ar": "إشارة مرتفعة في دائرة حساس الضغط المطلق بمجمع السحب",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P0105_17",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "MAP",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Manifold Absolute Pressure",
+          "name_ar": "الضغط المطلق لمجمع السحب",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "MAP signal voltage > 4.96 V; 5 s; battery voltage > 11 V",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2013-GAS",
+      "source_url": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1300.pdf",
+      "source_revision": "2013-03-08",
+      "source_pdf_page": 116,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2013-P0109",
+      "brand": "Ford",
+      "raw_code": "P0109",
+      "base_code": "P0109",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "MAP Sensor Intermittent",
+      "translation_ar": "إشارة متقطعة من حساس الضغط المطلق بمجمع السحب",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P0105_1F",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "MAP",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Manifold Absolute Pressure",
+          "name_ar": "الضغط المطلق لمجمع السحب",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "2013 MAP intermittent check 2 s; voltage < 0.024 or > 4.96 V; monitor marked non-MIL",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2013-GAS",
+      "source_url": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1300.pdf",
+      "source_revision": "2013-03-08",
+      "source_pdf_page": 117,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2013-P0034",
+      "brand": "Ford",
+      "raw_code": "P0034",
+      "base_code": "P0034",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Turbocharger/Supercharger Bypass Valve A Control Circuit Low",
+      "translation_ar": "إشارة منخفضة في دائرة التحكم بصمام تجاوز ضاغط الشاحن التوربيني A",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": null,
+        "failure_type_verified_in_source": false
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "BYPASS",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Compressor Bypass Valve",
+          "name_ar": "صمام تجاوز الضاغط",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "Ford 2013: compressor bypass valve electrical circuit check; no universally valid pin values",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2013-GAS",
+      "source_url": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1300.pdf",
+      "source_revision": "2013-03-08",
+      "source_pdf_page": 149,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2013-P0035",
+      "brand": "Ford",
+      "raw_code": "P0035",
+      "base_code": "P0035",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Turbocharger/Supercharger Bypass Valve A Control Circuit High",
+      "translation_ar": "إشارة مرتفعة في دائرة التحكم بصمام تجاوز ضاغط الشاحن التوربيني A",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": null,
+        "failure_type_verified_in_source": false
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "BYPASS",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Compressor Bypass Valve",
+          "name_ar": "صمام تجاوز الضاغط",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "Ford 2013: compressor bypass valve electrical circuit check; no universally valid pin values",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2013-GAS",
+      "source_url": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1300.pdf",
+      "source_revision": "2013-03-08",
+      "source_pdf_page": 149,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2013-P00C1",
+      "brand": "Ford",
+      "raw_code": "P00C1",
+      "base_code": "P00C1",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Turbocharger/Supercharger Bypass Valve B Control Circuit Low",
+      "translation_ar": "إشارة منخفضة في دائرة التحكم بصمام تجاوز ضاغط الشاحن التوربيني B",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": null,
+        "failure_type_verified_in_source": false
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "BYPASS",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Compressor Bypass Valve",
+          "name_ar": "صمام تجاوز الضاغط",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "Ford 2013: compressor bypass valve electrical circuit check; no universally valid pin values",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2013-GAS",
+      "source_url": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1300.pdf",
+      "source_revision": "2013-03-08",
+      "source_pdf_page": 149,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2013-P00C2",
+      "brand": "Ford",
+      "raw_code": "P00C2",
+      "base_code": "P00C2",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Turbocharger/Supercharger Bypass Valve B Control Circuit High",
+      "translation_ar": "إشارة مرتفعة في دائرة التحكم بصمام تجاوز ضاغط الشاحن التوربيني B",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": null,
+        "failure_type_verified_in_source": false
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "BYPASS",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Compressor Bypass Valve",
+          "name_ar": "صمام تجاوز الضاغط",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "Ford 2013: compressor bypass valve electrical circuit check; no universally valid pin values",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2013-GAS",
+      "source_url": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1300.pdf",
+      "source_revision": "2013-03-08",
+      "source_pdf_page": 149,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2024-P0299",
+      "brand": "Ford",
+      "raw_code": "P0299",
+      "base_code": "P0299",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Turbocharger/Supercharger A Underboost Condition",
+      "translation_ar": "ضغط الشحن الفعلي أقل من الضغط المطلوب في نظام الشاحن A",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P0299_00",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "BOOST",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Boost Pressure Desired / Boost Pressure Actual",
+          "name_ar": "ضغط الشحن المطلوب / الفعلي",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "Ford 2024-25: desired minus actual boost > 4 psi; 5 s during monitor enablement; threshold is calibration/application-dependent",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2024-GAS-V2",
+      "source_url": "https://www.fordservicecontent.com/Ford_Content/catalog/motorcraft/OBDSM2400OUTPUT_16Jul2024_WSM_final_V2_MCS7001.pdf",
+      "source_revision": "2024-07-16",
+      "source_pdf_page": 90,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2024-P0234",
+      "brand": "Ford",
+      "raw_code": "P0234",
+      "base_code": "P0234",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Turbocharger/Supercharger A Overboost Condition",
+      "translation_ar": "ارتفاع ضغط الشحن عن المطلوب في نظام الشاحن A",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P0234_00",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "BOOST",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Boost Pressure Desired / Boost Pressure Actual",
+          "name_ar": "ضغط الشحن المطلوب / الفعلي",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "Ford 2024-25 overboost monitor; 5 s; source threshold table should be reviewed for sign convention before use",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2024-GAS-V2",
+      "source_url": "https://www.fordservicecontent.com/Ford_Content/catalog/motorcraft/OBDSM2400OUTPUT_16Jul2024_WSM_final_V2_MCS7001.pdf",
+      "source_revision": "2024-07-16",
+      "source_pdf_page": 90,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2024-P04DB",
+      "brand": "Ford",
+      "raw_code": "P04DB",
+      "base_code": "P04DB",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Crankcase Ventilation System – Hose A Disconnected",
+      "translation_ar": "انفصال خرطوم A في نظام تهوية علبة المرافق",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": null,
+        "failure_type_verified_in_source": false
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "PCV",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Crankcase Ventilation",
+          "name_ar": "تهوية علبة المرافق",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "Ford 2024-25 notes that P04DB is being replaced by P2C90 in applicable calibrations",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2024-GAS-V2",
+      "source_url": "https://www.fordservicecontent.com/Ford_Content/catalog/motorcraft/OBDSM2400OUTPUT_16Jul2024_WSM_final_V2_MCS7001.pdf",
+      "source_revision": "2024-07-16",
+      "source_pdf_page": 72,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2024-P2C90",
+      "brand": "Ford",
+      "raw_code": "P2C90",
+      "base_code": "P2C90",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Crankcase Ventilation System – Hose A Disconnected",
+      "translation_ar": "انفصال خرطوم A في نظام تهوية علبة المرافق",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P2C90_00",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "PCV",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Crankcase Ventilation",
+          "name_ar": "تهوية علبة المرافق",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "Ford 2024-25: replaces P04DB in applicable calibrations; exact fitment must be checked",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2024-GAS-V2",
+      "source_url": "https://www.fordservicecontent.com/Ford_Content/catalog/motorcraft/OBDSM2400OUTPUT_16Jul2024_WSM_final_V2_MCS7001.pdf",
+      "source_revision": "2024-07-16",
+      "source_pdf_page": 72,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2024-P017C",
+      "brand": "Ford",
+      "raw_code": "P017C",
+      "base_code": "P017C",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Cylinder Head Temperature Sensor Low Input",
+      "translation_ar": "إشارة منخفضة في دائرة حساس حرارة رأس الأسطوانات",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P017A_16",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "CHT",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Cylinder Head Temperature",
+          "name_ar": "حرارة رأس الأسطوانات",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "Ford 2024-25 describes P017C/P017A_16 as CHT low input; 5 s monitor",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2024-GAS-V2",
+      "source_url": "https://www.fordservicecontent.com/Ford_Content/catalog/motorcraft/OBDSM2400OUTPUT_16Jul2024_WSM_final_V2_MCS7001.pdf",
+      "source_revision": "2024-07-16",
+      "source_pdf_page": 111,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2024-P017D",
+      "brand": "Ford",
+      "raw_code": "P017D",
+      "base_code": "P017D",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Cylinder Head Temperature Sensor High Input",
+      "translation_ar": "إشارة مرتفعة في دائرة حساس حرارة رأس الأسطوانات",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P017A_17",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "CHT",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Cylinder Head Temperature",
+          "name_ar": "حرارة رأس الأسطوانات",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "Ford 2024-25 describes P017D/P017A_17 as CHT high input; 5 s monitor",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2024-GAS-V2",
+      "source_url": "https://www.fordservicecontent.com/Ford_Content/catalog/motorcraft/OBDSM2400OUTPUT_16Jul2024_WSM_final_V2_MCS7001.pdf",
+      "source_revision": "2024-07-16",
+      "source_pdf_page": 111,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2024-P2AB8",
+      "brand": "Ford",
+      "raw_code": "P2AB8",
+      "base_code": "P2AB8",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Wastegate Position Sensor A Circuit Low",
+      "translation_ar": "إشارة منخفضة في دائرة حساس موضع بوابة الشاحن التوربيني A",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P2AB7_16",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "WASTEGATE",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Wastegate Position / Command",
+          "name_ar": "موضع بوابة الشاحن / أمر التحكم",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "Wastegate A position sensor voltage < 0.50 V; 4 s monitor",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2024-GAS-V2",
+      "source_url": "https://www.fordservicecontent.com/Ford_Content/catalog/motorcraft/OBDSM2400OUTPUT_16Jul2024_WSM_final_V2_MCS7001.pdf",
+      "source_revision": "2024-07-16",
+      "source_pdf_page": 88,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2024-P2AB9",
+      "brand": "Ford",
+      "raw_code": "P2AB9",
+      "base_code": "P2AB9",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Wastegate Position Sensor A Circuit High",
+      "translation_ar": "إشارة مرتفعة في دائرة حساس موضع بوابة الشاحن التوربيني A",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P2AB7_17",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "WASTEGATE",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Wastegate Position / Command",
+          "name_ar": "موضع بوابة الشاحن / أمر التحكم",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "Wastegate A position sensor voltage > 4.50 V; 4 s monitor",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2024-GAS-V2",
+      "source_url": "https://www.fordservicecontent.com/Ford_Content/catalog/motorcraft/OBDSM2400OUTPUT_16Jul2024_WSM_final_V2_MCS7001.pdf",
+      "source_revision": "2024-07-16",
+      "source_pdf_page": 88,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2024-P0247",
+      "brand": "Ford",
+      "raw_code": "P0247",
+      "base_code": "P0247",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Turbocharger/Supercharger Wastegate Solenoid B Low",
+      "translation_ar": "إشارة منخفضة لدائرة الملف اللولبي لبوابة الشاحن التوربيني B",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P0247_95",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "WASTEGATE",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Wastegate Position / Command",
+          "name_ar": "موضع بوابة الشاحن / أمر التحكم",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "Ford smart-driver fault; 0.4 s monitor; variant-specific control hardware",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2024-GAS-V2",
+      "source_url": "https://www.fordservicecontent.com/Ford_Content/catalog/motorcraft/OBDSM2400OUTPUT_16Jul2024_WSM_final_V2_MCS7001.pdf",
+      "source_revision": "2024-07-16",
+      "source_pdf_page": 89,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2024-P2ABE",
+      "brand": "Ford",
+      "raw_code": "P2ABE",
+      "base_code": "P2ABE",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Turbocharger/Supercharger Wastegate Actuator B Driver Current/Temperature Too High",
+      "translation_ar": "زيادة تيار أو حرارة مشغل بوابة الشاحن التوربيني B عن الحد",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P0247_1D",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "WASTEGATE",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Wastegate Position / Command",
+          "name_ar": "موضع بوابة الشاحن / أمر التحكم",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "Ford smart-driver monitored 0.4 s; exact test data requires calibrated PCED",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2024-GAS-V2",
+      "source_url": "https://www.fordservicecontent.com/Ford_Content/catalog/motorcraft/OBDSM2400OUTPUT_16Jul2024_WSM_final_V2_MCS7001.pdf",
+      "source_revision": "2024-07-16",
+      "source_pdf_page": 89,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2024-P25B5",
+      "brand": "Ford",
+      "raw_code": "P25B5",
+      "base_code": "P25B5",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Turbocharger/Supercharger Wastegate B Stuck Open",
+      "translation_ar": "تعليق بوابة الشاحن التوربيني B في الوضع المفتوح",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P0247_72",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "WASTEGATE",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Wastegate Position / Command",
+          "name_ar": "موضع بوابة الشاحن / أمر التحكم",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "Wastegate position error > 20 mm; monitored 2.5 s",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2024-GAS-V2",
+      "source_url": "https://www.fordservicecontent.com/Ford_Content/catalog/motorcraft/OBDSM2400OUTPUT_16Jul2024_WSM_final_V2_MCS7001.pdf",
+      "source_revision": "2024-07-16",
+      "source_pdf_page": 89,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2024-P25B6",
+      "brand": "Ford",
+      "raw_code": "P25B6",
+      "base_code": "P25B6",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Turbocharger/Supercharger Wastegate B Stuck Closed",
+      "translation_ar": "تعليق بوابة الشاحن التوربيني B في الوضع المغلق",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P0247_73",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "WASTEGATE",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Wastegate Position / Command",
+          "name_ar": "موضع بوابة الشاحن / أمر التحكم",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "Wastegate position error > 20 mm; monitored 2.5 s",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2024-GAS-V2",
+      "source_url": "https://www.fordservicecontent.com/Ford_Content/catalog/motorcraft/OBDSM2400OUTPUT_16Jul2024_WSM_final_V2_MCS7001.pdf",
+      "source_revision": "2024-07-16",
+      "source_pdf_page": 89,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2024-P2ABB",
+      "brand": "Ford",
+      "raw_code": "P2ABB",
+      "base_code": "P2ABB",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Wastegate Position Sensor B Circuit Low",
+      "translation_ar": "إشارة منخفضة في دائرة حساس موضع بوابة الشاحن التوربيني B",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P2ABA_16",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "WASTEGATE",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Wastegate Position / Command",
+          "name_ar": "موضع بوابة الشاحن / أمر التحكم",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "Ford table lists B DTC but threshold text says sensor A: apparent publication discrepancy; voltage threshold withheld",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2024-GAS-V2",
+      "source_url": "https://www.fordservicecontent.com/Ford_Content/catalog/motorcraft/OBDSM2400OUTPUT_16Jul2024_WSM_final_V2_MCS7001.pdf",
+      "source_revision": "2024-07-16",
+      "source_pdf_page": 89,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": "Ford 2024 B-sensor threshold description refers to A; do not adopt threshold without clarification"
+    },
+    {
+      "record_id": "FORD-OBD-2024-P2ABC",
+      "brand": "Ford",
+      "raw_code": "P2ABC",
+      "base_code": "P2ABC",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Wastegate Position Sensor B Circuit High",
+      "translation_ar": "إشارة مرتفعة في دائرة حساس موضع بوابة الشاحن التوربيني B",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P2ABA_17",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "WASTEGATE",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Wastegate Position / Command",
+          "name_ar": "موضع بوابة الشاحن / أمر التحكم",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "Ford table lists B DTC but threshold text says sensor A: apparent publication discrepancy; voltage threshold withheld",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2024-GAS-V2",
+      "source_url": "https://www.fordservicecontent.com/Ford_Content/catalog/motorcraft/OBDSM2400OUTPUT_16Jul2024_WSM_final_V2_MCS7001.pdf",
+      "source_revision": "2024-07-16",
+      "source_pdf_page": 89,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": "Ford 2024 B-sensor threshold description refers to A; do not adopt threshold without clarification"
+    },
+    {
+      "record_id": "FORD-OBD-2024-P25B3",
+      "brand": "Ford",
+      "raw_code": "P25B3",
+      "base_code": "P25B3",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Turbocharger/Supercharger Wastegate A Stuck Open",
+      "translation_ar": "تعليق بوابة الشاحن التوربيني A في الوضع المفتوح",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P0243_72",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "WASTEGATE",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Wastegate Position / Command",
+          "name_ar": "موضع بوابة الشاحن / أمر التحكم",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "Wastegate position error > 20 mm; 2.5 s monitor",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2024-GAS-V2",
+      "source_url": "https://www.fordservicecontent.com/Ford_Content/catalog/motorcraft/OBDSM2400OUTPUT_16Jul2024_WSM_final_V2_MCS7001.pdf",
+      "source_revision": "2024-07-16",
+      "source_pdf_page": 88,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    },
+    {
+      "record_id": "FORD-OBD-2024-P25B4",
+      "brand": "Ford",
+      "raw_code": "P25B4",
+      "base_code": "P25B4",
+      "code_family": "P",
+      "ecu": "PCM",
+      "definition_en": "Turbocharger/Supercharger Wastegate A Stuck Closed",
+      "translation_ar": "تعليق بوابة الشاحن التوربيني A في الوضع المغلق",
+      "code_assignment": "general-code range by prefix; exact SAE J2012DA allocation not independently checked",
+      "manufacturer": "Ford",
+      "manufacturer_variant": {
+        "ford_alternate_reporting_code": "P0243_73",
+        "failure_type_verified_in_source": true
+      },
+      "applicable_vehicle": {
+        "model": null,
+        "generation": null,
+        "model_year": null,
+        "engine_code": null,
+        "engine": null,
+        "market": null,
+        "vin": null,
+        "scope": "OBD system operation document only; NO vehicle-specific fitment claim"
+      },
+      "related_system": "WASTEGATE",
+      "symptoms": [],
+      "causes": [],
+      "causes_ranked_by_evidence": false,
+      "diagnostic_steps": [
+        "Read PCM current/pending/stored DTCs and freeze-frame; confirm module and vehicle calibration",
+        "Inspect affected system connectors, harness routing, corrosion and fuses; do not replace parts from DTC alone",
+        "Monitor live data and compare with source-specific check condition, if the vehicle's calibrated PCED supports this exact test",
+        "Perform pinpoint testing with Ford WSM/PCED for exact VIN/engine before replacement"
+      ],
+      "live_data": [
+        {
+          "name_en": "Wastegate Position / Command",
+          "name_ar": "موضع بوابة الشاحن / أمر التحكم",
+          "test_conditions": "Only within applicable OEM calibration; verify PID availability",
+          "reference": "Refer to source monitor and calibrated PCED"
+        }
+      ],
+      "verified_monitor_information": "Wastegate position error > 20 mm; 2.5 s monitor",
+      "electrical_pinouts": null,
+      "component_installation_location": null,
+      "source_doc": "FORD-OBD-2024-GAS-V2",
+      "source_url": "https://www.fordservicecontent.com/Ford_Content/catalog/motorcraft/OBDSM2400OUTPUT_16Jul2024_WSM_final_V2_MCS7001.pdf",
+      "source_revision": "2024-07-16",
+      "source_pdf_page": 88,
+      "verification_status": "source_code_and_monitor_documented; vehicle_engine_fitment_unverified",
+      "review_status": "pending_VIN_engine_WSM_confirmation",
+      "release_status": "NOT_ACTIVATED",
+      "risk_note": null
+    }
+  ]
+}
