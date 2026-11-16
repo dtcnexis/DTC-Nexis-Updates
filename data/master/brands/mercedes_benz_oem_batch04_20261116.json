@@ -1,0 +1,4189 @@
+{
+  "schema": "dtc-nexis-mercedes-oem-bulletin-batch-v1",
+  "brand": "Mercedes-Benz",
+  "batch": "2026-11-16-B04",
+  "release_to_app": false,
+  "base_branch": "main",
+  "intended_work_branch": "work/mercedes-benz-oem-dtc-20261116-batch03",
+  "previous_raw_records_on_main": 66,
+  "previous_new_variant_records_batch03": 31,
+  "additional_records": 45,
+  "additional_unique_codes": 45,
+  "code_family_counts": {
+    "B": 21,
+    "C": 14,
+    "P": 10
+  },
+  "raw_code_duplicates_with_existing": 0,
+  "classification_note": "SAE J2012DA byte allocation not independently verified; do not infer generic/manufacturer class by letter alone.",
+  "sources": [
+    {
+      "id": "MB-LI91.60-P-076303-v3",
+      "title": "Rear airbag and/or window airbag electrical fault",
+      "date": "2026-04-08",
+      "version": "3",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11031201-0001.pdf",
+      "scope": "206,223,254,296 with vehicle code 293",
+      "kind": "Mercedes-Benz XENTRY Tips official PDF"
+    },
+    {
+      "id": "MB-LI42.45-P-063066-v1",
+      "title": "ABS/BAS/ESP rear wheel speed discrepancies",
+      "date": "2016-01-07",
+      "version": "1",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10205172-9999.pdf",
+      "scope": "117,156,176,246 built 2015-10-10 to 2015-11-13",
+      "kind": "Mercedes-Benz XENTRY Tips official PDF"
+    },
+    {
+      "id": "MB-LI42.47-P-068826-v1",
+      "title": "Stationary ESP wheel speed plausibility",
+      "date": "2018-09-24",
+      "version": "1",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10150729-9999.pdf",
+      "scope": "117,156,176,246; logged at standstill",
+      "kind": "Mercedes-Benz XENTRY Tips official PDF"
+    },
+    {
+      "id": "MB-LI42.47-P-059422-v1",
+      "title": "Front axle wheel-speed-sensor implausible",
+      "date": "2014-07-17",
+      "version": "1",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2014/SB-10063124-2280.pdf",
+      "scope": "204 or 172 with production/data codes 802,803,804",
+      "kind": "Mercedes-Benz XENTRY official PDF"
+    },
+    {
+      "id": "MB-LI27.60-P-064292-v1",
+      "title": "9G-TRONIC VGS PDI fault pair",
+      "date": "2016-06-14",
+      "version": "1",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10136072-9999.pdf",
+      "scope": "205,213,222 with transmission 725.0; new delivery only",
+      "kind": "Mercedes-Benz XENTRY Tips official PDF"
+    },
+    {
+      "id": "MB-LI27.00-P-078372-v1",
+      "title": "724.1 dual clutch reverse unavailable",
+      "date": "2024-09-10",
+      "version": "1",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11007793-0001.pdf",
+      "scope": "MY2024 118,177,247 with 724.1",
+      "kind": "Mercedes-Benz XENTRY Tips official PDF"
+    },
+    {
+      "id": "MB-LI27.60-P-077704-v5",
+      "title": "Center DSI park button P malfunction",
+      "date": "2024-10-22",
+      "version": "5",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11009205-0001.pdf",
+      "scope": "290 and 190 facelift fitted with center DSI",
+      "kind": "Mercedes-Benz XENTRY Tips official PDF"
+    },
+    {
+      "id": "MB-LI32.50-P-064601-v1",
+      "title": "AIRMATIC compressor moisture and connector corrosion",
+      "date": "2016-07-29",
+      "version": "1",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10205163-9999.pdf",
+      "scope": "205 with code 489",
+      "kind": "Mercedes-Benz XENTRY Tips official PDF"
+    },
+    {
+      "id": "MB-LI54.10-P-069698-v22",
+      "title": "48V electrical system impairment",
+      "date": "2026-02-26",
+      "version": "22",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11029087-0001.pdf",
+      "scope": "167,257,213,238,290 with code B01, not 206/223",
+      "kind": "Mercedes-Benz XENTRY Tips official PDF"
+    }
+  ],
+  "records": [
+    {
+      "id": "MB-20261116-B04-B002111",
+      "brand": "Mercedes-Benz",
+      "raw_code": "B002111",
+      "base_code": "B0021",
+      "failure_type_byte": "11",
+      "code_family": "B",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Left window/head airbag initiator circuit short to ground",
+      "translation_ar": "قصر إلى الأرضي في دائرة مفجر وسادة النافذة/الرأس اليسرى",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N2/5 SRS",
+      "ecu_variant": "ORC223",
+      "applicability": {
+        "model_series": [
+          "206",
+          "223",
+          "254",
+          "296"
+        ],
+        "equipment_codes": [
+          "293"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "206,223,254,296 with vehicle code 293"
+      },
+      "symptoms": [
+        "SRS warning light"
+      ],
+      "probable_causes": [
+        "Intermittent pin contact or conductor-to-conductor/ground short",
+        "Connector contact defect",
+        "Squib assembly fault only if OEM approved tests establish it"
+      ],
+      "diagnostic_steps": [
+        "Record exact SRS DTC and vehicle data codes via XENTRY and confirm affected ignition circuit.",
+        "Follow Mercedes-Benz SRS service deactivation and approved fault test instructions; never use ordinary resistance meter on a deployed or live pyrotechnic circuit.",
+        "If guided OEM test identifies contact problems, inspect correct connector; verify service bulletin LI91.60-P-076303 and SI91.00-P-0005A before any repair.",
+        "Replace the connector or airbag only after the OEM controlled procedure differentiates the fault; recheck SRS."
+      ],
+      "live_data": [
+        {
+          "name_en": "SRS firing circuit resistance (XENTRY guided)",
+          "name_ar": "مقاومة دائرة إشعال الوسادة ضمن اختبار XENTRY الموجّه",
+          "condition": "According to SI91.00-P-0005A",
+          "reference": "Not listed in public LI; do not assume resistance value"
+        }
+      ],
+      "parts": [
+        "Correct rear/window airbag assembly depending on code",
+        "SRS squib connector / associated harness"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI91.60-P-076303-v3"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI91.60-P-076303-v3",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11031201-0001.pdf",
+          "title": "Rear airbag and/or window airbag electrical fault",
+          "date": "2026-04-08",
+          "version": "3",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Specific model-year and per-VIN airbag equipment confirmation",
+        "WIS SI91.00-P-0005A resistance specification and exact safe procedure not publicly available",
+        "Wiring/connector cavities unavailable",
+        "No technical image produced"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-B00212B",
+      "brand": "Mercedes-Benz",
+      "raw_code": "B00212B",
+      "base_code": "B0021",
+      "failure_type_byte": "2B",
+      "code_family": "B",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Left window/head airbag initiator circuit lines shorted together",
+      "translation_ar": "تماس بين سلكي دائرة مفجر وسادة النافذة/الرأس اليسرى",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N2/5 SRS",
+      "ecu_variant": "ORC223",
+      "applicability": {
+        "model_series": [
+          "206",
+          "223",
+          "254",
+          "296"
+        ],
+        "equipment_codes": [
+          "293"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "206,223,254,296 with vehicle code 293"
+      },
+      "symptoms": [
+        "SRS warning light"
+      ],
+      "probable_causes": [
+        "Intermittent pin contact or conductor-to-conductor/ground short",
+        "Connector contact defect",
+        "Squib assembly fault only if OEM approved tests establish it"
+      ],
+      "diagnostic_steps": [
+        "Record exact SRS DTC and vehicle data codes via XENTRY and confirm affected ignition circuit.",
+        "Follow Mercedes-Benz SRS service deactivation and approved fault test instructions; never use ordinary resistance meter on a deployed or live pyrotechnic circuit.",
+        "If guided OEM test identifies contact problems, inspect correct connector; verify service bulletin LI91.60-P-076303 and SI91.00-P-0005A before any repair.",
+        "Replace the connector or airbag only after the OEM controlled procedure differentiates the fault; recheck SRS."
+      ],
+      "live_data": [
+        {
+          "name_en": "SRS firing circuit resistance (XENTRY guided)",
+          "name_ar": "مقاومة دائرة إشعال الوسادة ضمن اختبار XENTRY الموجّه",
+          "condition": "According to SI91.00-P-0005A",
+          "reference": "Not listed in public LI; do not assume resistance value"
+        }
+      ],
+      "parts": [
+        "Correct rear/window airbag assembly depending on code",
+        "SRS squib connector / associated harness"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI91.60-P-076303-v3"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI91.60-P-076303-v3",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11031201-0001.pdf",
+          "title": "Rear airbag and/or window airbag electrical fault",
+          "date": "2026-04-08",
+          "version": "3",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Specific model-year and per-VIN airbag equipment confirmation",
+        "WIS SI91.00-P-0005A resistance specification and exact safe procedure not publicly available",
+        "Wiring/connector cavities unavailable",
+        "No technical image produced"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-B002911",
+      "brand": "Mercedes-Benz",
+      "raw_code": "B002911",
+      "base_code": "B0029",
+      "failure_type_byte": "11",
+      "code_family": "B",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Right window/head airbag initiator circuit short to ground",
+      "translation_ar": "قصر إلى الأرضي في دائرة مفجر وسادة النافذة/الرأس اليمنى",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N2/5 SRS",
+      "ecu_variant": "ORC223",
+      "applicability": {
+        "model_series": [
+          "206",
+          "223",
+          "254",
+          "296"
+        ],
+        "equipment_codes": [
+          "293"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "206,223,254,296 with vehicle code 293"
+      },
+      "symptoms": [
+        "SRS warning light"
+      ],
+      "probable_causes": [
+        "Intermittent pin contact or conductor-to-conductor/ground short",
+        "Connector contact defect",
+        "Squib assembly fault only if OEM approved tests establish it"
+      ],
+      "diagnostic_steps": [
+        "Record exact SRS DTC and vehicle data codes via XENTRY and confirm affected ignition circuit.",
+        "Follow Mercedes-Benz SRS service deactivation and approved fault test instructions; never use ordinary resistance meter on a deployed or live pyrotechnic circuit.",
+        "If guided OEM test identifies contact problems, inspect correct connector; verify service bulletin LI91.60-P-076303 and SI91.00-P-0005A before any repair.",
+        "Replace the connector or airbag only after the OEM controlled procedure differentiates the fault; recheck SRS."
+      ],
+      "live_data": [
+        {
+          "name_en": "SRS firing circuit resistance (XENTRY guided)",
+          "name_ar": "مقاومة دائرة إشعال الوسادة ضمن اختبار XENTRY الموجّه",
+          "condition": "According to SI91.00-P-0005A",
+          "reference": "Not listed in public LI; do not assume resistance value"
+        }
+      ],
+      "parts": [
+        "Correct rear/window airbag assembly depending on code",
+        "SRS squib connector / associated harness"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI91.60-P-076303-v3"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI91.60-P-076303-v3",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11031201-0001.pdf",
+          "title": "Rear airbag and/or window airbag electrical fault",
+          "date": "2026-04-08",
+          "version": "3",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Specific model-year and per-VIN airbag equipment confirmation",
+        "WIS SI91.00-P-0005A resistance specification and exact safe procedure not publicly available",
+        "Wiring/connector cavities unavailable",
+        "No technical image produced"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-B00292B",
+      "brand": "Mercedes-Benz",
+      "raw_code": "B00292B",
+      "base_code": "B0029",
+      "failure_type_byte": "2B",
+      "code_family": "B",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Right window/head airbag initiator circuit lines shorted together",
+      "translation_ar": "تماس بين سلكي دائرة مفجر وسادة النافذة/الرأس اليمنى",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N2/5 SRS",
+      "ecu_variant": "ORC223",
+      "applicability": {
+        "model_series": [
+          "206",
+          "223",
+          "254",
+          "296"
+        ],
+        "equipment_codes": [
+          "293"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "206,223,254,296 with vehicle code 293"
+      },
+      "symptoms": [
+        "SRS warning light"
+      ],
+      "probable_causes": [
+        "Intermittent pin contact or conductor-to-conductor/ground short",
+        "Connector contact defect",
+        "Squib assembly fault only if OEM approved tests establish it"
+      ],
+      "diagnostic_steps": [
+        "Record exact SRS DTC and vehicle data codes via XENTRY and confirm affected ignition circuit.",
+        "Follow Mercedes-Benz SRS service deactivation and approved fault test instructions; never use ordinary resistance meter on a deployed or live pyrotechnic circuit.",
+        "If guided OEM test identifies contact problems, inspect correct connector; verify service bulletin LI91.60-P-076303 and SI91.00-P-0005A before any repair.",
+        "Replace the connector or airbag only after the OEM controlled procedure differentiates the fault; recheck SRS."
+      ],
+      "live_data": [
+        {
+          "name_en": "SRS firing circuit resistance (XENTRY guided)",
+          "name_ar": "مقاومة دائرة إشعال الوسادة ضمن اختبار XENTRY الموجّه",
+          "condition": "According to SI91.00-P-0005A",
+          "reference": "Not listed in public LI; do not assume resistance value"
+        }
+      ],
+      "parts": [
+        "Correct rear/window airbag assembly depending on code",
+        "SRS squib connector / associated harness"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI91.60-P-076303-v3"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI91.60-P-076303-v3",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11031201-0001.pdf",
+          "title": "Rear airbag and/or window airbag electrical fault",
+          "date": "2026-04-08",
+          "version": "3",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Specific model-year and per-VIN airbag equipment confirmation",
+        "WIS SI91.00-P-0005A resistance specification and exact safe procedure not publicly available",
+        "Wiring/connector cavities unavailable",
+        "No technical image produced"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-B002211",
+      "brand": "Mercedes-Benz",
+      "raw_code": "B002211",
+      "base_code": "B0022",
+      "failure_type_byte": "11",
+      "code_family": "B",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Left rear window/head airbag initiator circuit short to ground",
+      "translation_ar": "قصر إلى الأرضي في دائرة مفجر وسادة النافذة الخلفية اليسرى",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N2/5 SRS",
+      "ecu_variant": "ORC223",
+      "applicability": {
+        "model_series": [
+          "206",
+          "223",
+          "254",
+          "296"
+        ],
+        "equipment_codes": [
+          "293"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "206,223,254,296 with vehicle code 293"
+      },
+      "symptoms": [
+        "SRS warning light"
+      ],
+      "probable_causes": [
+        "Intermittent pin contact or conductor-to-conductor/ground short",
+        "Connector contact defect",
+        "Squib assembly fault only if OEM approved tests establish it"
+      ],
+      "diagnostic_steps": [
+        "Record exact SRS DTC and vehicle data codes via XENTRY and confirm affected ignition circuit.",
+        "Follow Mercedes-Benz SRS service deactivation and approved fault test instructions; never use ordinary resistance meter on a deployed or live pyrotechnic circuit.",
+        "If guided OEM test identifies contact problems, inspect correct connector; verify service bulletin LI91.60-P-076303 and SI91.00-P-0005A before any repair.",
+        "Replace the connector or airbag only after the OEM controlled procedure differentiates the fault; recheck SRS."
+      ],
+      "live_data": [
+        {
+          "name_en": "SRS firing circuit resistance (XENTRY guided)",
+          "name_ar": "مقاومة دائرة إشعال الوسادة ضمن اختبار XENTRY الموجّه",
+          "condition": "According to SI91.00-P-0005A",
+          "reference": "Not listed in public LI; do not assume resistance value"
+        }
+      ],
+      "parts": [
+        "Correct rear/window airbag assembly depending on code",
+        "SRS squib connector / associated harness"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI91.60-P-076303-v3"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI91.60-P-076303-v3",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11031201-0001.pdf",
+          "title": "Rear airbag and/or window airbag electrical fault",
+          "date": "2026-04-08",
+          "version": "3",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Specific model-year and per-VIN airbag equipment confirmation",
+        "WIS SI91.00-P-0005A resistance specification and exact safe procedure not publicly available",
+        "Wiring/connector cavities unavailable",
+        "No technical image produced"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-B00222B",
+      "brand": "Mercedes-Benz",
+      "raw_code": "B00222B",
+      "base_code": "B0022",
+      "failure_type_byte": "2B",
+      "code_family": "B",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Left rear window/head airbag initiator circuit lines shorted together",
+      "translation_ar": "تماس بين سلكي دائرة مفجر وسادة النافذة الخلفية اليسرى",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N2/5 SRS",
+      "ecu_variant": "ORC223",
+      "applicability": {
+        "model_series": [
+          "206",
+          "223",
+          "254",
+          "296"
+        ],
+        "equipment_codes": [
+          "293"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "206,223,254,296 with vehicle code 293"
+      },
+      "symptoms": [
+        "SRS warning light"
+      ],
+      "probable_causes": [
+        "Intermittent pin contact or conductor-to-conductor/ground short",
+        "Connector contact defect",
+        "Squib assembly fault only if OEM approved tests establish it"
+      ],
+      "diagnostic_steps": [
+        "Record exact SRS DTC and vehicle data codes via XENTRY and confirm affected ignition circuit.",
+        "Follow Mercedes-Benz SRS service deactivation and approved fault test instructions; never use ordinary resistance meter on a deployed or live pyrotechnic circuit.",
+        "If guided OEM test identifies contact problems, inspect correct connector; verify service bulletin LI91.60-P-076303 and SI91.00-P-0005A before any repair.",
+        "Replace the connector or airbag only after the OEM controlled procedure differentiates the fault; recheck SRS."
+      ],
+      "live_data": [
+        {
+          "name_en": "SRS firing circuit resistance (XENTRY guided)",
+          "name_ar": "مقاومة دائرة إشعال الوسادة ضمن اختبار XENTRY الموجّه",
+          "condition": "According to SI91.00-P-0005A",
+          "reference": "Not listed in public LI; do not assume resistance value"
+        }
+      ],
+      "parts": [
+        "Correct rear/window airbag assembly depending on code",
+        "SRS squib connector / associated harness"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI91.60-P-076303-v3"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI91.60-P-076303-v3",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11031201-0001.pdf",
+          "title": "Rear airbag and/or window airbag electrical fault",
+          "date": "2026-04-08",
+          "version": "3",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Specific model-year and per-VIN airbag equipment confirmation",
+        "WIS SI91.00-P-0005A resistance specification and exact safe procedure not publicly available",
+        "Wiring/connector cavities unavailable",
+        "No technical image produced"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-B002A11",
+      "brand": "Mercedes-Benz",
+      "raw_code": "B002A11",
+      "base_code": "B002A",
+      "failure_type_byte": "11",
+      "code_family": "B",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Right rear window/head airbag initiator circuit short to ground",
+      "translation_ar": "قصر إلى الأرضي في دائرة مفجر وسادة النافذة الخلفية اليمنى",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N2/5 SRS",
+      "ecu_variant": "ORC223",
+      "applicability": {
+        "model_series": [
+          "206",
+          "223",
+          "254",
+          "296"
+        ],
+        "equipment_codes": [
+          "293"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "206,223,254,296 with vehicle code 293"
+      },
+      "symptoms": [
+        "SRS warning light"
+      ],
+      "probable_causes": [
+        "Intermittent pin contact or conductor-to-conductor/ground short",
+        "Connector contact defect",
+        "Squib assembly fault only if OEM approved tests establish it"
+      ],
+      "diagnostic_steps": [
+        "Record exact SRS DTC and vehicle data codes via XENTRY and confirm affected ignition circuit.",
+        "Follow Mercedes-Benz SRS service deactivation and approved fault test instructions; never use ordinary resistance meter on a deployed or live pyrotechnic circuit.",
+        "If guided OEM test identifies contact problems, inspect correct connector; verify service bulletin LI91.60-P-076303 and SI91.00-P-0005A before any repair.",
+        "Replace the connector or airbag only after the OEM controlled procedure differentiates the fault; recheck SRS."
+      ],
+      "live_data": [
+        {
+          "name_en": "SRS firing circuit resistance (XENTRY guided)",
+          "name_ar": "مقاومة دائرة إشعال الوسادة ضمن اختبار XENTRY الموجّه",
+          "condition": "According to SI91.00-P-0005A",
+          "reference": "Not listed in public LI; do not assume resistance value"
+        }
+      ],
+      "parts": [
+        "Correct rear/window airbag assembly depending on code",
+        "SRS squib connector / associated harness"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI91.60-P-076303-v3"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI91.60-P-076303-v3",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11031201-0001.pdf",
+          "title": "Rear airbag and/or window airbag electrical fault",
+          "date": "2026-04-08",
+          "version": "3",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Specific model-year and per-VIN airbag equipment confirmation",
+        "WIS SI91.00-P-0005A resistance specification and exact safe procedure not publicly available",
+        "Wiring/connector cavities unavailable",
+        "No technical image produced"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-B002A2B",
+      "brand": "Mercedes-Benz",
+      "raw_code": "B002A2B",
+      "base_code": "B002A",
+      "failure_type_byte": "2B",
+      "code_family": "B",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Right rear window/head airbag initiator circuit lines shorted together",
+      "translation_ar": "تماس بين سلكي دائرة مفجر وسادة النافذة الخلفية اليمنى",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N2/5 SRS",
+      "ecu_variant": "ORC223",
+      "applicability": {
+        "model_series": [
+          "206",
+          "223",
+          "254",
+          "296"
+        ],
+        "equipment_codes": [
+          "293"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "206,223,254,296 with vehicle code 293"
+      },
+      "symptoms": [
+        "SRS warning light"
+      ],
+      "probable_causes": [
+        "Intermittent pin contact or conductor-to-conductor/ground short",
+        "Connector contact defect",
+        "Squib assembly fault only if OEM approved tests establish it"
+      ],
+      "diagnostic_steps": [
+        "Record exact SRS DTC and vehicle data codes via XENTRY and confirm affected ignition circuit.",
+        "Follow Mercedes-Benz SRS service deactivation and approved fault test instructions; never use ordinary resistance meter on a deployed or live pyrotechnic circuit.",
+        "If guided OEM test identifies contact problems, inspect correct connector; verify service bulletin LI91.60-P-076303 and SI91.00-P-0005A before any repair.",
+        "Replace the connector or airbag only after the OEM controlled procedure differentiates the fault; recheck SRS."
+      ],
+      "live_data": [
+        {
+          "name_en": "SRS firing circuit resistance (XENTRY guided)",
+          "name_ar": "مقاومة دائرة إشعال الوسادة ضمن اختبار XENTRY الموجّه",
+          "condition": "According to SI91.00-P-0005A",
+          "reference": "Not listed in public LI; do not assume resistance value"
+        }
+      ],
+      "parts": [
+        "Correct rear/window airbag assembly depending on code",
+        "SRS squib connector / associated harness"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI91.60-P-076303-v3"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI91.60-P-076303-v3",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11031201-0001.pdf",
+          "title": "Rear airbag and/or window airbag electrical fault",
+          "date": "2026-04-08",
+          "version": "3",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Specific model-year and per-VIN airbag equipment confirmation",
+        "WIS SI91.00-P-0005A resistance specification and exact safe procedure not publicly available",
+        "Wiring/connector cavities unavailable",
+        "No technical image produced"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-B003111",
+      "brand": "Mercedes-Benz",
+      "raw_code": "B003111",
+      "base_code": "B0031",
+      "failure_type_byte": "11",
+      "code_family": "B",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Left rear side airbag initiator circuit short to ground",
+      "translation_ar": "قصر إلى الأرضي في دائرة مفجر الوسادة الجانبية الخلفية اليسرى",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N2/5 SRS",
+      "ecu_variant": "ORC223",
+      "applicability": {
+        "model_series": [
+          "206",
+          "223",
+          "254",
+          "296"
+        ],
+        "equipment_codes": [
+          "293"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "206,223,254,296 with vehicle code 293"
+      },
+      "symptoms": [
+        "SRS warning light"
+      ],
+      "probable_causes": [
+        "Intermittent pin contact or conductor-to-conductor/ground short",
+        "Connector contact defect",
+        "Squib assembly fault only if OEM approved tests establish it"
+      ],
+      "diagnostic_steps": [
+        "Record exact SRS DTC and vehicle data codes via XENTRY and confirm affected ignition circuit.",
+        "Follow Mercedes-Benz SRS service deactivation and approved fault test instructions; never use ordinary resistance meter on a deployed or live pyrotechnic circuit.",
+        "If guided OEM test identifies contact problems, inspect correct connector; verify service bulletin LI91.60-P-076303 and SI91.00-P-0005A before any repair.",
+        "Replace the connector or airbag only after the OEM controlled procedure differentiates the fault; recheck SRS."
+      ],
+      "live_data": [
+        {
+          "name_en": "SRS firing circuit resistance (XENTRY guided)",
+          "name_ar": "مقاومة دائرة إشعال الوسادة ضمن اختبار XENTRY الموجّه",
+          "condition": "According to SI91.00-P-0005A",
+          "reference": "Not listed in public LI; do not assume resistance value"
+        }
+      ],
+      "parts": [
+        "Correct rear/window airbag assembly depending on code",
+        "SRS squib connector / associated harness"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI91.60-P-076303-v3"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI91.60-P-076303-v3",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11031201-0001.pdf",
+          "title": "Rear airbag and/or window airbag electrical fault",
+          "date": "2026-04-08",
+          "version": "3",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Specific model-year and per-VIN airbag equipment confirmation",
+        "WIS SI91.00-P-0005A resistance specification and exact safe procedure not publicly available",
+        "Wiring/connector cavities unavailable",
+        "No technical image produced"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-B00312B",
+      "brand": "Mercedes-Benz",
+      "raw_code": "B00312B",
+      "base_code": "B0031",
+      "failure_type_byte": "2B",
+      "code_family": "B",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Left rear side airbag initiator circuit lines shorted together",
+      "translation_ar": "تماس بين سلكي دائرة مفجر الوسادة الجانبية الخلفية اليسرى",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N2/5 SRS",
+      "ecu_variant": "ORC223",
+      "applicability": {
+        "model_series": [
+          "206",
+          "223",
+          "254",
+          "296"
+        ],
+        "equipment_codes": [
+          "293"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "206,223,254,296 with vehicle code 293"
+      },
+      "symptoms": [
+        "SRS warning light"
+      ],
+      "probable_causes": [
+        "Intermittent pin contact or conductor-to-conductor/ground short",
+        "Connector contact defect",
+        "Squib assembly fault only if OEM approved tests establish it"
+      ],
+      "diagnostic_steps": [
+        "Record exact SRS DTC and vehicle data codes via XENTRY and confirm affected ignition circuit.",
+        "Follow Mercedes-Benz SRS service deactivation and approved fault test instructions; never use ordinary resistance meter on a deployed or live pyrotechnic circuit.",
+        "If guided OEM test identifies contact problems, inspect correct connector; verify service bulletin LI91.60-P-076303 and SI91.00-P-0005A before any repair.",
+        "Replace the connector or airbag only after the OEM controlled procedure differentiates the fault; recheck SRS."
+      ],
+      "live_data": [
+        {
+          "name_en": "SRS firing circuit resistance (XENTRY guided)",
+          "name_ar": "مقاومة دائرة إشعال الوسادة ضمن اختبار XENTRY الموجّه",
+          "condition": "According to SI91.00-P-0005A",
+          "reference": "Not listed in public LI; do not assume resistance value"
+        }
+      ],
+      "parts": [
+        "Correct rear/window airbag assembly depending on code",
+        "SRS squib connector / associated harness"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI91.60-P-076303-v3"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI91.60-P-076303-v3",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11031201-0001.pdf",
+          "title": "Rear airbag and/or window airbag electrical fault",
+          "date": "2026-04-08",
+          "version": "3",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Specific model-year and per-VIN airbag equipment confirmation",
+        "WIS SI91.00-P-0005A resistance specification and exact safe procedure not publicly available",
+        "Wiring/connector cavities unavailable",
+        "No technical image produced"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-B003911",
+      "brand": "Mercedes-Benz",
+      "raw_code": "B003911",
+      "base_code": "B0039",
+      "failure_type_byte": "11",
+      "code_family": "B",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Right rear side airbag initiator circuit short to ground",
+      "translation_ar": "قصر إلى الأرضي في دائرة مفجر الوسادة الجانبية الخلفية اليمنى",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N2/5 SRS",
+      "ecu_variant": "ORC223",
+      "applicability": {
+        "model_series": [
+          "206",
+          "223",
+          "254",
+          "296"
+        ],
+        "equipment_codes": [
+          "293"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "206,223,254,296 with vehicle code 293"
+      },
+      "symptoms": [
+        "SRS warning light"
+      ],
+      "probable_causes": [
+        "Intermittent pin contact or conductor-to-conductor/ground short",
+        "Connector contact defect",
+        "Squib assembly fault only if OEM approved tests establish it"
+      ],
+      "diagnostic_steps": [
+        "Record exact SRS DTC and vehicle data codes via XENTRY and confirm affected ignition circuit.",
+        "Follow Mercedes-Benz SRS service deactivation and approved fault test instructions; never use ordinary resistance meter on a deployed or live pyrotechnic circuit.",
+        "If guided OEM test identifies contact problems, inspect correct connector; verify service bulletin LI91.60-P-076303 and SI91.00-P-0005A before any repair.",
+        "Replace the connector or airbag only after the OEM controlled procedure differentiates the fault; recheck SRS."
+      ],
+      "live_data": [
+        {
+          "name_en": "SRS firing circuit resistance (XENTRY guided)",
+          "name_ar": "مقاومة دائرة إشعال الوسادة ضمن اختبار XENTRY الموجّه",
+          "condition": "According to SI91.00-P-0005A",
+          "reference": "Not listed in public LI; do not assume resistance value"
+        }
+      ],
+      "parts": [
+        "Correct rear/window airbag assembly depending on code",
+        "SRS squib connector / associated harness"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI91.60-P-076303-v3"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI91.60-P-076303-v3",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11031201-0001.pdf",
+          "title": "Rear airbag and/or window airbag electrical fault",
+          "date": "2026-04-08",
+          "version": "3",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Specific model-year and per-VIN airbag equipment confirmation",
+        "WIS SI91.00-P-0005A resistance specification and exact safe procedure not publicly available",
+        "Wiring/connector cavities unavailable",
+        "No technical image produced"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-B00392B",
+      "brand": "Mercedes-Benz",
+      "raw_code": "B00392B",
+      "base_code": "B0039",
+      "failure_type_byte": "2B",
+      "code_family": "B",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Right rear side airbag initiator circuit lines shorted together",
+      "translation_ar": "تماس بين سلكي دائرة مفجر الوسادة الجانبية الخلفية اليمنى",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N2/5 SRS",
+      "ecu_variant": "ORC223",
+      "applicability": {
+        "model_series": [
+          "206",
+          "223",
+          "254",
+          "296"
+        ],
+        "equipment_codes": [
+          "293"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "206,223,254,296 with vehicle code 293"
+      },
+      "symptoms": [
+        "SRS warning light"
+      ],
+      "probable_causes": [
+        "Intermittent pin contact or conductor-to-conductor/ground short",
+        "Connector contact defect",
+        "Squib assembly fault only if OEM approved tests establish it"
+      ],
+      "diagnostic_steps": [
+        "Record exact SRS DTC and vehicle data codes via XENTRY and confirm affected ignition circuit.",
+        "Follow Mercedes-Benz SRS service deactivation and approved fault test instructions; never use ordinary resistance meter on a deployed or live pyrotechnic circuit.",
+        "If guided OEM test identifies contact problems, inspect correct connector; verify service bulletin LI91.60-P-076303 and SI91.00-P-0005A before any repair.",
+        "Replace the connector or airbag only after the OEM controlled procedure differentiates the fault; recheck SRS."
+      ],
+      "live_data": [
+        {
+          "name_en": "SRS firing circuit resistance (XENTRY guided)",
+          "name_ar": "مقاومة دائرة إشعال الوسادة ضمن اختبار XENTRY الموجّه",
+          "condition": "According to SI91.00-P-0005A",
+          "reference": "Not listed in public LI; do not assume resistance value"
+        }
+      ],
+      "parts": [
+        "Correct rear/window airbag assembly depending on code",
+        "SRS squib connector / associated harness"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI91.60-P-076303-v3"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI91.60-P-076303-v3",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11031201-0001.pdf",
+          "title": "Rear airbag and/or window airbag electrical fault",
+          "date": "2026-04-08",
+          "version": "3",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Specific model-year and per-VIN airbag equipment confirmation",
+        "WIS SI91.00-P-0005A resistance specification and exact safe procedure not publicly available",
+        "Wiring/connector cavities unavailable",
+        "No technical image produced"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-C031400",
+      "brand": "Mercedes-Benz",
+      "raw_code": "C031400",
+      "base_code": "C0314",
+      "failure_type_byte": "00",
+      "code_family": "C",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Implausible values from one or more wheel speed sensors",
+      "translation_ar": "قراءات غير منطقية من حساس أو أكثر لسرعة العجلات",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N30/4 ESP",
+      "ecu_variant": "ESP9MFA",
+      "applicability": {
+        "model_series": [
+          "117",
+          "156",
+          "176",
+          "246"
+        ],
+        "equipment_codes": [],
+        "production_dates": "2015-10-10 to 2015-11-13",
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "117,156,176,246 built 2015-10-10 to 2015-11-13"
+      },
+      "symptoms": [
+        "ESP unavailable message",
+        "ABS or BAS warning"
+      ],
+      "probable_causes": [
+        "Defective rear hub multipole encoder ring in specified production batch",
+        "Wheel speed sensor/connector issue remains possible elsewhere"
+      ],
+      "diagnostic_steps": [
+        "Confirm vehicle build date is within 2015-10-10 to 2015-11-13 and read ESP fault memory.",
+        "Open XENTRY N30/4 > Current data > Wheel speeds and road test straight at 40–50 km/h in safe conditions.",
+        "Compare all four wheel-speed signals, identify sensor or axle reading approximately 10% low per bulletin; verify mechanical encoder/assembly before replacing bearing.",
+        "Recheck DTCs after targeted repair; avoid applying bearing remedy outside this narrow production range."
+      ],
+      "live_data": [
+        {
+          "name_en": "Wheel speeds",
+          "name_ar": "سرعات العجلات",
+          "condition": "Straight steady 40–50 km/h with trained driver",
+          "reference": "One rear reading ~10% lower than others is indicator in this LI"
+        }
+      ],
+      "parts": [
+        "Wheel speed sensors",
+        "Rear wheel bearing integrated multipole ring"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI42.45-P-063066-v1"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI42.45-P-063066-v1",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10205172-9999.pdf",
+          "title": "ABS/BAS/ESP rear wheel speed discrepancies",
+          "date": "2016-01-07",
+          "version": "1",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Per-VIN installation and exact ECU coding not yet checked",
+        "Complete OEM pinout/wiring not accessible",
+        "Exact specified live data limits not published",
+        "No licensed image on file"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-C050B00",
+      "brand": "Mercedes-Benz",
+      "raw_code": "C050B00",
+      "base_code": "C050B",
+      "failure_type_byte": "00",
+      "code_family": "C",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Implausible signal from right rear wheel speed sensor L6/4",
+      "translation_ar": "إشارة غير منطقية من حساس سرعة العجلة الخلفية اليمنى L6/4",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N30/4 ESP",
+      "ecu_variant": "ESP9MFA",
+      "applicability": {
+        "model_series": [
+          "117",
+          "156",
+          "176",
+          "246"
+        ],
+        "equipment_codes": [],
+        "production_dates": "2015-10-10 to 2015-11-13",
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "117,156,176,246 built 2015-10-10 to 2015-11-13"
+      },
+      "symptoms": [
+        "ESP unavailable message",
+        "ABS or BAS warning"
+      ],
+      "probable_causes": [
+        "Defective rear hub multipole encoder ring in specified production batch",
+        "Wheel speed sensor/connector issue remains possible elsewhere"
+      ],
+      "diagnostic_steps": [
+        "Confirm vehicle build date is within 2015-10-10 to 2015-11-13 and read ESP fault memory.",
+        "Open XENTRY N30/4 > Current data > Wheel speeds and road test straight at 40–50 km/h in safe conditions.",
+        "Compare all four wheel-speed signals, identify sensor or axle reading approximately 10% low per bulletin; verify mechanical encoder/assembly before replacing bearing.",
+        "Recheck DTCs after targeted repair; avoid applying bearing remedy outside this narrow production range."
+      ],
+      "live_data": [
+        {
+          "name_en": "Wheel speeds",
+          "name_ar": "سرعات العجلات",
+          "condition": "Straight steady 40–50 km/h with trained driver",
+          "reference": "One rear reading ~10% lower than others is indicator in this LI"
+        }
+      ],
+      "parts": [
+        "L6/4",
+        "Rear wheel bearing integrated multipole ring"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI42.45-P-063066-v1"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI42.45-P-063066-v1",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10205172-9999.pdf",
+          "title": "ABS/BAS/ESP rear wheel speed discrepancies",
+          "date": "2016-01-07",
+          "version": "1",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Per-VIN installation and exact ECU coding not yet checked",
+        "Complete OEM pinout/wiring not accessible",
+        "Exact specified live data limits not published",
+        "No licensed image on file"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-C04EB00",
+      "brand": "Mercedes-Benz",
+      "raw_code": "C04EB00",
+      "base_code": "C04EB",
+      "failure_type_byte": "00",
+      "code_family": "C",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Implausible signal from left rear wheel speed sensor L6/3",
+      "translation_ar": "إشارة غير منطقية من حساس سرعة العجلة الخلفية اليسرى L6/3",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N30/4 ESP",
+      "ecu_variant": "ESP9MFA",
+      "applicability": {
+        "model_series": [
+          "117",
+          "156",
+          "176",
+          "246"
+        ],
+        "equipment_codes": [],
+        "production_dates": "2015-10-10 to 2015-11-13",
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "117,156,176,246 built 2015-10-10 to 2015-11-13"
+      },
+      "symptoms": [
+        "ESP unavailable message",
+        "ABS or BAS warning"
+      ],
+      "probable_causes": [
+        "Defective rear hub multipole encoder ring in specified production batch",
+        "Wheel speed sensor/connector issue remains possible elsewhere"
+      ],
+      "diagnostic_steps": [
+        "Confirm vehicle build date is within 2015-10-10 to 2015-11-13 and read ESP fault memory.",
+        "Open XENTRY N30/4 > Current data > Wheel speeds and road test straight at 40–50 km/h in safe conditions.",
+        "Compare all four wheel-speed signals, identify sensor or axle reading approximately 10% low per bulletin; verify mechanical encoder/assembly before replacing bearing.",
+        "Recheck DTCs after targeted repair; avoid applying bearing remedy outside this narrow production range."
+      ],
+      "live_data": [
+        {
+          "name_en": "Wheel speeds",
+          "name_ar": "سرعات العجلات",
+          "condition": "Straight steady 40–50 km/h with trained driver",
+          "reference": "One rear reading ~10% lower than others is indicator in this LI"
+        }
+      ],
+      "parts": [
+        "L6/3",
+        "Rear wheel bearing integrated multipole ring"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI42.45-P-063066-v1"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI42.45-P-063066-v1",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10205172-9999.pdf",
+          "title": "ABS/BAS/ESP rear wheel speed discrepancies",
+          "date": "2016-01-07",
+          "version": "1",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Per-VIN installation and exact ECU coding not yet checked",
+        "Complete OEM pinout/wiring not accessible",
+        "Exact specified live data limits not published",
+        "No licensed image on file"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-C04A600",
+      "brand": "Mercedes-Benz",
+      "raw_code": "C04A600",
+      "base_code": "C04A6",
+      "failure_type_byte": "00",
+      "code_family": "C",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": null,
+      "translation_ar": "رمز محفوظ في وحدة ESP أثناء توقف السيارة؛ لم تُذكر صياغة معناه الفردي في النشرة",
+      "definition_evidence": "oem_code_list_only_exact_definition_unavailable",
+      "ecu": "N30/4 ESP",
+      "ecu_variant": null,
+      "applicability": {
+        "model_series": [
+          "117",
+          "156",
+          "176",
+          "246"
+        ],
+        "equipment_codes": [],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "117,156,176,246; logged at standstill"
+      },
+      "symptoms": [
+        "ESP/ABS service required",
+        "Tire pressure monitoring unavailable"
+      ],
+      "probable_causes": [
+        "Software monitoring of gap between wheel-speed sensor and multipole ring; no evidence that sensor has failed solely from DTC"
+      ],
+      "diagnostic_steps": [
+        "Confirm DTC was logged while vehicle stationary; record vehicle coding and ESP part/software version.",
+        "Check VeDoc SA code 08o applicability with manufacturer support; perform complete ESP control-unit initial startup per XENTRY when authorized.",
+        "Check current software and repeat fault-memory test; do not replace sensors solely on listed DTCs."
+      ],
+      "live_data": [
+        {
+          "name_en": "Wheel speed sensor plausibility / gap monitoring",
+          "name_ar": "معقولية حساسات سرعة العجلات ومراقبة الفجوة",
+          "condition": "At standstill as specified in LI",
+          "reference": "Not specified"
+        }
+      ],
+      "parts": [
+        "ESP controller software / configuration",
+        "Wheel speed sensor and multipole encoder ring (monitored)"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI42.47-P-068826-v1"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI42.47-P-068826-v1",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10150729-9999.pdf",
+          "title": "Stationary ESP wheel speed plausibility",
+          "date": "2018-09-24",
+          "version": "1",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Individual OEM DTC English definition not printed in bulletin",
+        "Market coding and authorized VeDoc code 08o required",
+        "All ECU electrical specifications not published",
+        "Images unavailable"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-C04C600",
+      "brand": "Mercedes-Benz",
+      "raw_code": "C04C600",
+      "base_code": "C04C6",
+      "failure_type_byte": "00",
+      "code_family": "C",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": null,
+      "translation_ar": "رمز محفوظ في وحدة ESP أثناء توقف السيارة؛ لم تُذكر صياغة معناه الفردي في النشرة",
+      "definition_evidence": "oem_code_list_only_exact_definition_unavailable",
+      "ecu": "N30/4 ESP",
+      "ecu_variant": null,
+      "applicability": {
+        "model_series": [
+          "117",
+          "156",
+          "176",
+          "246"
+        ],
+        "equipment_codes": [],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "117,156,176,246; logged at standstill"
+      },
+      "symptoms": [
+        "ESP/ABS service required",
+        "Tire pressure monitoring unavailable"
+      ],
+      "probable_causes": [
+        "Software monitoring of gap between wheel-speed sensor and multipole ring; no evidence that sensor has failed solely from DTC"
+      ],
+      "diagnostic_steps": [
+        "Confirm DTC was logged while vehicle stationary; record vehicle coding and ESP part/software version.",
+        "Check VeDoc SA code 08o applicability with manufacturer support; perform complete ESP control-unit initial startup per XENTRY when authorized.",
+        "Check current software and repeat fault-memory test; do not replace sensors solely on listed DTCs."
+      ],
+      "live_data": [
+        {
+          "name_en": "Wheel speed sensor plausibility / gap monitoring",
+          "name_ar": "معقولية حساسات سرعة العجلات ومراقبة الفجوة",
+          "condition": "At standstill as specified in LI",
+          "reference": "Not specified"
+        }
+      ],
+      "parts": [
+        "ESP controller software / configuration",
+        "Wheel speed sensor and multipole encoder ring (monitored)"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI42.47-P-068826-v1"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI42.47-P-068826-v1",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10150729-9999.pdf",
+          "title": "Stationary ESP wheel speed plausibility",
+          "date": "2018-09-24",
+          "version": "1",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Individual OEM DTC English definition not printed in bulletin",
+        "Market coding and authorized VeDoc code 08o required",
+        "All ECU electrical specifications not published",
+        "Images unavailable"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-C04E600",
+      "brand": "Mercedes-Benz",
+      "raw_code": "C04E600",
+      "base_code": "C04E6",
+      "failure_type_byte": "00",
+      "code_family": "C",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": null,
+      "translation_ar": "رمز محفوظ في وحدة ESP أثناء توقف السيارة؛ لم تُذكر صياغة معناه الفردي في النشرة",
+      "definition_evidence": "oem_code_list_only_exact_definition_unavailable",
+      "ecu": "N30/4 ESP",
+      "ecu_variant": null,
+      "applicability": {
+        "model_series": [
+          "117",
+          "156",
+          "176",
+          "246"
+        ],
+        "equipment_codes": [],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "117,156,176,246; logged at standstill"
+      },
+      "symptoms": [
+        "ESP/ABS service required",
+        "Tire pressure monitoring unavailable"
+      ],
+      "probable_causes": [
+        "Software monitoring of gap between wheel-speed sensor and multipole ring; no evidence that sensor has failed solely from DTC"
+      ],
+      "diagnostic_steps": [
+        "Confirm DTC was logged while vehicle stationary; record vehicle coding and ESP part/software version.",
+        "Check VeDoc SA code 08o applicability with manufacturer support; perform complete ESP control-unit initial startup per XENTRY when authorized.",
+        "Check current software and repeat fault-memory test; do not replace sensors solely on listed DTCs."
+      ],
+      "live_data": [
+        {
+          "name_en": "Wheel speed sensor plausibility / gap monitoring",
+          "name_ar": "معقولية حساسات سرعة العجلات ومراقبة الفجوة",
+          "condition": "At standstill as specified in LI",
+          "reference": "Not specified"
+        }
+      ],
+      "parts": [
+        "ESP controller software / configuration",
+        "Wheel speed sensor and multipole encoder ring (monitored)"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI42.47-P-068826-v1"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI42.47-P-068826-v1",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10150729-9999.pdf",
+          "title": "Stationary ESP wheel speed plausibility",
+          "date": "2018-09-24",
+          "version": "1",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Individual OEM DTC English definition not printed in bulletin",
+        "Market coding and authorized VeDoc code 08o required",
+        "All ECU electrical specifications not published",
+        "Images unavailable"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-C050600",
+      "brand": "Mercedes-Benz",
+      "raw_code": "C050600",
+      "base_code": "C0506",
+      "failure_type_byte": "00",
+      "code_family": "C",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": null,
+      "translation_ar": "رمز محفوظ في وحدة ESP أثناء توقف السيارة؛ لم تُذكر صياغة معناه الفردي في النشرة",
+      "definition_evidence": "oem_code_list_only_exact_definition_unavailable",
+      "ecu": "N30/4 ESP",
+      "ecu_variant": null,
+      "applicability": {
+        "model_series": [
+          "117",
+          "156",
+          "176",
+          "246"
+        ],
+        "equipment_codes": [],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "117,156,176,246; logged at standstill"
+      },
+      "symptoms": [
+        "ESP/ABS service required",
+        "Tire pressure monitoring unavailable"
+      ],
+      "probable_causes": [
+        "Software monitoring of gap between wheel-speed sensor and multipole ring; no evidence that sensor has failed solely from DTC"
+      ],
+      "diagnostic_steps": [
+        "Confirm DTC was logged while vehicle stationary; record vehicle coding and ESP part/software version.",
+        "Check VeDoc SA code 08o applicability with manufacturer support; perform complete ESP control-unit initial startup per XENTRY when authorized.",
+        "Check current software and repeat fault-memory test; do not replace sensors solely on listed DTCs."
+      ],
+      "live_data": [
+        {
+          "name_en": "Wheel speed sensor plausibility / gap monitoring",
+          "name_ar": "معقولية حساسات سرعة العجلات ومراقبة الفجوة",
+          "condition": "At standstill as specified in LI",
+          "reference": "Not specified"
+        }
+      ],
+      "parts": [
+        "ESP controller software / configuration",
+        "Wheel speed sensor and multipole encoder ring (monitored)"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI42.47-P-068826-v1"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI42.47-P-068826-v1",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10150729-9999.pdf",
+          "title": "Stationary ESP wheel speed plausibility",
+          "date": "2018-09-24",
+          "version": "1",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Individual OEM DTC English definition not printed in bulletin",
+        "Market coding and authorized VeDoc code 08o required",
+        "All ECU electrical specifications not published",
+        "Images unavailable"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-C110200",
+      "brand": "Mercedes-Benz",
+      "raw_code": "C110200",
+      "base_code": "C1102",
+      "failure_type_byte": "00",
+      "code_family": "C",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Implausible signal from left front wheel speed sensor L6/1",
+      "translation_ar": "إشارة غير منطقية من حساس سرعة العجلة الأمامية اليسرى L6/1",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N30/4 ESP",
+      "ecu_variant": "ABR2XT",
+      "applicability": {
+        "model_series": [
+          "204",
+          "172"
+        ],
+        "equipment_codes": [
+          "802",
+          "803",
+          "804"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "204 or 172 with production/data codes 802,803,804"
+      },
+      "symptoms": [
+        "ESP/BAS malfunction warning",
+        "ABS message"
+      ],
+      "probable_causes": [
+        "Implausible front wheel speed sensor signal in source-specific batch",
+        "Sensor connection/ring defects require confirmation in vehicle"
+      ],
+      "diagnostic_steps": [
+        "Verify production/data code 802/803/804 and series 204 or 172 before applying LI.",
+        "Read fault memory for L6/1 or L6/2 and inspect sensor wiring and corresponding front wheel speed signal plausibility.",
+        "Follow OEM-guided test and source repair where cause is reproduced; bulletin directs replacement of both front speed sensors in affected variant.",
+        "Use VIN to select correct variant-specific replacement part; clear and recheck."
+      ],
+      "live_data": [
+        {
+          "name_en": "Front axle wheel speeds L6/1 and L6/2",
+          "name_ar": "سرعتا العجلتين الأماميتين L6/1 وL6/2",
+          "condition": "OEM guided monitoring",
+          "reference": "No numeric threshold stated"
+        }
+      ],
+      "parts": [
+        "L6/1",
+        "Front ABS speed sensors; parts vary by 204 4x2/4x4/AMG or 172"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI42.47-P-059422-v1"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI42.47-P-059422-v1",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2014/SB-10063124-2280.pdf",
+          "title": "Front axle wheel-speed-sensor implausible",
+          "date": "2014-07-17",
+          "version": "1",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Individual ECU test limits not given",
+        "VIN-specific part number selection must follow EPC (bulletin has different part numbers)",
+        "Swedish market fitting not independently verified",
+        "No image licensed"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-C110700",
+      "brand": "Mercedes-Benz",
+      "raw_code": "C110700",
+      "base_code": "C1107",
+      "failure_type_byte": "00",
+      "code_family": "C",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Implausible signal from left front wheel speed sensor L6/1",
+      "translation_ar": "إشارة غير منطقية من حساس سرعة العجلة الأمامية اليسرى L6/1",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N30/4 ESP",
+      "ecu_variant": "ABR2XT",
+      "applicability": {
+        "model_series": [
+          "204",
+          "172"
+        ],
+        "equipment_codes": [
+          "802",
+          "803",
+          "804"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "204 or 172 with production/data codes 802,803,804"
+      },
+      "symptoms": [
+        "ESP/BAS malfunction warning",
+        "ABS message"
+      ],
+      "probable_causes": [
+        "Implausible front wheel speed sensor signal in source-specific batch",
+        "Sensor connection/ring defects require confirmation in vehicle"
+      ],
+      "diagnostic_steps": [
+        "Verify production/data code 802/803/804 and series 204 or 172 before applying LI.",
+        "Read fault memory for L6/1 or L6/2 and inspect sensor wiring and corresponding front wheel speed signal plausibility.",
+        "Follow OEM-guided test and source repair where cause is reproduced; bulletin directs replacement of both front speed sensors in affected variant.",
+        "Use VIN to select correct variant-specific replacement part; clear and recheck."
+      ],
+      "live_data": [
+        {
+          "name_en": "Front axle wheel speeds L6/1 and L6/2",
+          "name_ar": "سرعتا العجلتين الأماميتين L6/1 وL6/2",
+          "condition": "OEM guided monitoring",
+          "reference": "No numeric threshold stated"
+        }
+      ],
+      "parts": [
+        "L6/1",
+        "Front ABS speed sensors; parts vary by 204 4x2/4x4/AMG or 172"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI42.47-P-059422-v1"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI42.47-P-059422-v1",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2014/SB-10063124-2280.pdf",
+          "title": "Front axle wheel-speed-sensor implausible",
+          "date": "2014-07-17",
+          "version": "1",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Individual ECU test limits not given",
+        "VIN-specific part number selection must follow EPC (bulletin has different part numbers)",
+        "Swedish market fitting not independently verified",
+        "No image licensed"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-C111200",
+      "brand": "Mercedes-Benz",
+      "raw_code": "C111200",
+      "base_code": "C1112",
+      "failure_type_byte": "00",
+      "code_family": "C",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Implausible signal from right front wheel speed sensor L6/2",
+      "translation_ar": "إشارة غير منطقية من حساس سرعة العجلة الأمامية اليمنى L6/2",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N30/4 ESP",
+      "ecu_variant": "ABR2XT",
+      "applicability": {
+        "model_series": [
+          "204",
+          "172"
+        ],
+        "equipment_codes": [
+          "802",
+          "803",
+          "804"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "204 or 172 with production/data codes 802,803,804"
+      },
+      "symptoms": [
+        "ESP/BAS malfunction warning",
+        "ABS message"
+      ],
+      "probable_causes": [
+        "Implausible front wheel speed sensor signal in source-specific batch",
+        "Sensor connection/ring defects require confirmation in vehicle"
+      ],
+      "diagnostic_steps": [
+        "Verify production/data code 802/803/804 and series 204 or 172 before applying LI.",
+        "Read fault memory for L6/1 or L6/2 and inspect sensor wiring and corresponding front wheel speed signal plausibility.",
+        "Follow OEM-guided test and source repair where cause is reproduced; bulletin directs replacement of both front speed sensors in affected variant.",
+        "Use VIN to select correct variant-specific replacement part; clear and recheck."
+      ],
+      "live_data": [
+        {
+          "name_en": "Front axle wheel speeds L6/1 and L6/2",
+          "name_ar": "سرعتا العجلتين الأماميتين L6/1 وL6/2",
+          "condition": "OEM guided monitoring",
+          "reference": "No numeric threshold stated"
+        }
+      ],
+      "parts": [
+        "L6/2",
+        "Front ABS speed sensors; parts vary by 204 4x2/4x4/AMG or 172"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI42.47-P-059422-v1"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI42.47-P-059422-v1",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2014/SB-10063124-2280.pdf",
+          "title": "Front axle wheel-speed-sensor implausible",
+          "date": "2014-07-17",
+          "version": "1",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Individual ECU test limits not given",
+        "VIN-specific part number selection must follow EPC (bulletin has different part numbers)",
+        "Swedish market fitting not independently verified",
+        "No image licensed"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-C111700",
+      "brand": "Mercedes-Benz",
+      "raw_code": "C111700",
+      "base_code": "C1117",
+      "failure_type_byte": "00",
+      "code_family": "C",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Implausible signal from right front wheel speed sensor L6/2",
+      "translation_ar": "إشارة غير منطقية من حساس سرعة العجلة الأمامية اليمنى L6/2",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N30/4 ESP",
+      "ecu_variant": "ABR2XT",
+      "applicability": {
+        "model_series": [
+          "204",
+          "172"
+        ],
+        "equipment_codes": [
+          "802",
+          "803",
+          "804"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "204 or 172 with production/data codes 802,803,804"
+      },
+      "symptoms": [
+        "ESP/BAS malfunction warning",
+        "ABS message"
+      ],
+      "probable_causes": [
+        "Implausible front wheel speed sensor signal in source-specific batch",
+        "Sensor connection/ring defects require confirmation in vehicle"
+      ],
+      "diagnostic_steps": [
+        "Verify production/data code 802/803/804 and series 204 or 172 before applying LI.",
+        "Read fault memory for L6/1 or L6/2 and inspect sensor wiring and corresponding front wheel speed signal plausibility.",
+        "Follow OEM-guided test and source repair where cause is reproduced; bulletin directs replacement of both front speed sensors in affected variant.",
+        "Use VIN to select correct variant-specific replacement part; clear and recheck."
+      ],
+      "live_data": [
+        {
+          "name_en": "Front axle wheel speeds L6/1 and L6/2",
+          "name_ar": "سرعتا العجلتين الأماميتين L6/1 وL6/2",
+          "condition": "OEM guided monitoring",
+          "reference": "No numeric threshold stated"
+        }
+      ],
+      "parts": [
+        "L6/2",
+        "Front ABS speed sensors; parts vary by 204 4x2/4x4/AMG or 172"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI42.47-P-059422-v1"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI42.47-P-059422-v1",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2014/SB-10063124-2280.pdf",
+          "title": "Front axle wheel-speed-sensor implausible",
+          "date": "2014-07-17",
+          "version": "1",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Individual ECU test limits not given",
+        "VIN-specific part number selection must follow EPC (bulletin has different part numbers)",
+        "Swedish market fitting not independently verified",
+        "No image licensed"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-P060C00",
+      "brand": "Mercedes-Benz",
+      "raw_code": "P060C00",
+      "base_code": "P060C",
+      "failure_type_byte": "00",
+      "code_family": "P",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Internal VGS control unit processor fault recorded during pre-delivery inspection",
+      "translation_ar": "خلل داخلي بوحدة التحكم بناقل الحركة VGS أثناء فحص ما قبل التسليم",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "Y3/8n4 9G-Tronic VGS",
+      "ecu_variant": "VGSNAG3",
+      "applicability": {
+        "model_series": [
+          "205",
+          "213",
+          "222"
+        ],
+        "equipment_codes": [],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": "725.0",
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "205,213,222 with transmission 725.0; new delivery only"
+      },
+      "symptoms": [
+        "Stored or active VGS fault during pre-delivery inspection"
+      ],
+      "probable_causes": [
+        "Signal timing while leaving transport mode in new-delivery PDI scenario",
+        "Other unrelated causes possible outside PDI"
+      ],
+      "diagnostic_steps": [
+        "Check for co-occurring P282212 and verify vehicle is in PDI/transport-mode exit scenario.",
+        "Allow the vehicle to enter full sleep before clearing stored DTCs as directed by LI.",
+        "If fault recurs in normal service, do not assume transport-mode timing; perform full XENTRY guided VGS tests."
+      ],
+      "live_data": [
+        {
+          "name_en": "VGS fault status (Current/Stored)",
+          "name_ar": "حالة عطل VGS (حالي/محفوظ)",
+          "condition": "New-delivery PDI only",
+          "reference": "No numeric value"
+        }
+      ],
+      "parts": [
+        "9G-Tronic VGS module monitored, not automatically faulty"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI27.60-P-064292-v1"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI27.60-P-064292-v1",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10136072-9999.pdf",
+          "title": "9G-TRONIC VGS PDI fault pair",
+          "date": "2016-06-14",
+          "version": "1",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Per-VIN installation and exact ECU coding not yet checked",
+        "Complete OEM pinout/wiring not accessible",
+        "Exact specified live data limits not published",
+        "No licensed image on file"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-P282212",
+      "brand": "Mercedes-Benz",
+      "raw_code": "P282212",
+      "base_code": "P2822",
+      "failure_type_byte": "12",
+      "code_family": "P",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Pressure-regulating valve 9 electrical fault: short to positive",
+      "translation_ar": "خلل كهربائي بصمام تنظيم الضغط رقم 9: قصر إلى الموجب",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "Y3/8n4 9G-Tronic VGS",
+      "ecu_variant": "VGSNAG3",
+      "applicability": {
+        "model_series": [
+          "205",
+          "213",
+          "222"
+        ],
+        "equipment_codes": [],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": "725.0",
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "205,213,222 with transmission 725.0; new delivery only"
+      },
+      "symptoms": [
+        "Stored or active VGS code at PDI"
+      ],
+      "probable_causes": [
+        "Transient timing condition leaving transport mode in PDI scenario",
+        "Actual valve circuit short possible in other vehicle contexts"
+      ],
+      "diagnostic_steps": [
+        "Confirm PDI-only event and paired P060C00.",
+        "Allow full vehicle sleep to change fault from active to stored before clearing per LI.",
+        "If persistent, do not replace valve from PDI remedy alone; follow XENTRY VGS electrical tests."
+      ],
+      "live_data": [
+        {
+          "name_en": "VGS valve 9 fault status",
+          "name_ar": "حالة عطل صمام تنظيم الضغط 9",
+          "condition": "After transport-mode exit",
+          "reference": "Not given"
+        }
+      ],
+      "parts": [
+        "VGS pressure regulating valve 9",
+        "Associated harness monitored"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI27.60-P-064292-v1"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI27.60-P-064292-v1",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10136072-9999.pdf",
+          "title": "9G-TRONIC VGS PDI fault pair",
+          "date": "2016-06-14",
+          "version": "1",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Per-VIN installation and exact ECU coding not yet checked",
+        "Complete OEM pinout/wiring not accessible",
+        "Exact specified live data limits not published",
+        "No licensed image on file"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-P092100",
+      "brand": "Mercedes-Benz",
+      "raw_code": "P092100",
+      "base_code": "P0921",
+      "failure_type_byte": "00",
+      "code_family": "P",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Inner-shaft shift valve malfunction (specific DCT software context)",
+      "translation_ar": "خلل في صمام تعشيق العمود الداخلي لناقل الحركة",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "Y3/14 TCM8FDCT_PT4",
+      "ecu_variant": null,
+      "applicability": {
+        "model_series": [
+          "118",
+          "177",
+          "247"
+        ],
+        "equipment_codes": [],
+        "production_dates": null,
+        "model_year": "2024",
+        "engine": null,
+        "transmission": "724.1",
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "MY2024 118,177,247 with 724.1"
+      },
+      "symptoms": [
+        "Reverse unavailable message",
+        "Possible limp-home mode",
+        "Possible check-engine lamp"
+      ],
+      "probable_causes": [
+        "Transmission software behavior in exact freeze-frame signature",
+        "Mechanical/electrical valve condition not excluded if signature differs"
+      ],
+      "diagnostic_steps": [
+        "Confirm model year 2024, 724.1 transmission, P092100 and fault environment HEX begins 01 01 00 08 02 00 40 08 02.",
+        "Check whether P07FF00 is also stored and fault resolves after key cycle.",
+        "Apply current transmission control software update through XENTRY only for matching conditions.",
+        "For different freeze-frame values, use independent guided DCT tests before component replacement."
+      ],
+      "live_data": [
+        {
+          "name_en": "DTC freeze-frame/environment hexadecimal prefix",
+          "name_ar": "بادئة البيانات البيئية للعطل بالنظام الست عشري",
+          "condition": "P092100",
+          "reference": "01 01 00 08 02 00 40 08 02"
+        }
+      ],
+      "parts": [
+        "TCM Y3/14 software",
+        "Shift valve of inner shaft (monitored)"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI27.00-P-078372-v1"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI27.00-P-078372-v1",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11007793-0001.pdf",
+          "title": "724.1 dual clutch reverse unavailable",
+          "date": "2024-09-10",
+          "version": "1",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Per-VIN installation and exact ECU coding not yet checked",
+        "Complete OEM pinout/wiring not accessible",
+        "Exact specified live data limits not published",
+        "No licensed image on file"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-P07FF00",
+      "brand": "Mercedes-Benz",
+      "raw_code": "P07FF00",
+      "base_code": "P07FF",
+      "failure_type_byte": "00",
+      "code_family": "P",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Transmission malfunction during cold start",
+      "translation_ar": "خلل في وظيفة ناقل الحركة أثناء بدء التشغيل البارد",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "Y3/14 TCM8FDCT_PT4",
+      "ecu_variant": null,
+      "applicability": {
+        "model_series": [
+          "118",
+          "177",
+          "247"
+        ],
+        "equipment_codes": [],
+        "production_dates": null,
+        "model_year": "2024",
+        "engine": null,
+        "transmission": "724.1",
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "MY2024 118,177,247 with 724.1"
+      },
+      "symptoms": [
+        "Reverse unavailable at cold start",
+        "May enter limp-home"
+      ],
+      "probable_causes": [
+        "Software condition associated with P092100 in specified bulletin"
+      ],
+      "diagnostic_steps": [
+        "Read paired P092100 and DCT freeze frame.",
+        "Confirm specified 2024 724.1 configuration and check current TCM calibration in XENTRY.",
+        "Use OEM software update when matching case; test cold-start behavior afterward."
+      ],
+      "live_data": [
+        {
+          "name_en": "Transmission cold-start fault status",
+          "name_ar": "حالة عطل الناقل عند التشغيل البارد",
+          "condition": "Cold start",
+          "reference": "No numerical value"
+        }
+      ],
+      "parts": [
+        "Transmission TCM software"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI27.00-P-078372-v1"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI27.00-P-078372-v1",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11007793-0001.pdf",
+          "title": "724.1 dual clutch reverse unavailable",
+          "date": "2024-09-10",
+          "version": "1",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Per-VIN installation and exact ECU coding not yet checked",
+        "Complete OEM pinout/wiring not accessible",
+        "Exact specified live data limits not published",
+        "No licensed image on file"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-P085015",
+      "brand": "Mercedes-Benz",
+      "raw_code": "P085015",
+      "base_code": "P0850",
+      "failure_type_byte": "15",
+      "code_family": "P",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Park gear-selection button P circuit: short to positive or open circuit",
+      "translation_ar": "خلل زر وضع الوقوف P: قصر إلى الموجب أو انقطاع بالدائرة",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N150 DIRECT SELECT interface",
+      "ecu_variant": "DSI290",
+      "applicability": {
+        "model_series": [
+          "290",
+          "190 facelift"
+        ],
+        "equipment_codes": [],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": "Center DSI; transmission variant not independently specified",
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "290 and 190 facelift fitted with center DSI"
+      },
+      "symptoms": [
+        "Cannot select P using center DSI pushbutton",
+        "Park may engage automatically when ignition is turned off or driver door is opened"
+      ],
+      "probable_causes": [
+        "Dust contamination on DSI P button/PCB",
+        "Moisture residue producing circuit short"
+      ],
+      "diagnostic_steps": [
+        "Scan N150 for code and confirm series 290 or 190 facelift with center-mounted DSI.",
+        "Inspect DSI unit with OEM WIS AR27.60-P-0901FRX procedure; look for moisture/contamination of PCB and P-button.",
+        "Clean affected PCB/button areas with approved electronics contact cleaner per LI; verify operation before considering replacement.",
+        "Perform safe Park-selection operation test and re-scan."
+      ],
+      "live_data": [
+        {
+          "name_en": "Gear range P button status",
+          "name_ar": "حالة زر تعشيق وضع P",
+          "condition": "Using XENTRY DSI switch diagnostics",
+          "reference": "No numeric limit given"
+        }
+      ],
+      "parts": [
+        "Center DSI N150 control unit",
+        "P switch / PCB"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI27.60-P-077704-v5"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI27.60-P-077704-v5",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11009205-0001.pdf",
+          "title": "Center DSI park button P malfunction",
+          "date": "2024-10-22",
+          "version": "5",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Circuit pinout and resistance not provided",
+        "Market and detailed engine compatibility need VIN/WIS",
+        "No OEM graphics redistributed"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-P085011",
+      "brand": "Mercedes-Benz",
+      "raw_code": "P085011",
+      "base_code": "P0850",
+      "failure_type_byte": "11",
+      "code_family": "P",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Park gear-selection button P circuit: short to ground",
+      "translation_ar": "خلل زر وضع الوقوف P: قصر إلى الأرضي",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N150 DIRECT SELECT interface",
+      "ecu_variant": "DSI290",
+      "applicability": {
+        "model_series": [
+          "290",
+          "190 facelift"
+        ],
+        "equipment_codes": [],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": "Center DSI; transmission variant not independently specified",
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "290 and 190 facelift fitted with center DSI"
+      },
+      "symptoms": [
+        "Cannot select P using center DSI pushbutton",
+        "Park may engage automatically when ignition is turned off or driver door is opened"
+      ],
+      "probable_causes": [
+        "Dust contamination on DSI P button/PCB",
+        "Moisture residue producing circuit short"
+      ],
+      "diagnostic_steps": [
+        "Scan N150 for code and confirm series 290 or 190 facelift with center-mounted DSI.",
+        "Inspect DSI unit with OEM WIS AR27.60-P-0901FRX procedure; look for moisture/contamination of PCB and P-button.",
+        "Clean affected PCB/button areas with approved electronics contact cleaner per LI; verify operation before considering replacement.",
+        "Perform safe Park-selection operation test and re-scan."
+      ],
+      "live_data": [
+        {
+          "name_en": "Gear range P button status",
+          "name_ar": "حالة زر تعشيق وضع P",
+          "condition": "Using XENTRY DSI switch diagnostics",
+          "reference": "No numeric limit given"
+        }
+      ],
+      "parts": [
+        "Center DSI N150 control unit",
+        "P switch / PCB"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI27.60-P-077704-v5"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI27.60-P-077704-v5",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11009205-0001.pdf",
+          "title": "Center DSI park button P malfunction",
+          "date": "2024-10-22",
+          "version": "5",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Circuit pinout and resistance not provided",
+        "Market and detailed engine compatibility need VIN/WIS",
+        "No OEM graphics redistributed"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-C155664",
+      "brand": "Mercedes-Benz",
+      "raw_code": "C155664",
+      "base_code": "C1556",
+      "failure_type_byte": "64",
+      "code_family": "C",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Implausible compressed-air system pressure sensor signal",
+      "translation_ar": "إشارة غير منطقية من حساس ضغط منظومة الهواء المضغوط",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N51/3 AIRMATIC",
+      "ecu_variant": "SPC222",
+      "applicability": {
+        "model_series": [
+          "205"
+        ],
+        "equipment_codes": [
+          "489"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "205 with code 489"
+      },
+      "symptoms": [
+        "Vehicle level warning",
+        "Air suspension malfunction",
+        "Fuse f114 at K40/8 overloaded in illustrated complaint"
+      ],
+      "probable_causes": [
+        "Moisture or corrosion in compressor A9/1 connector m1",
+        "Connector/harness short circuit",
+        "Pressure sensor/air reservoir issue must be independently demonstrated"
+      ],
+      "diagnostic_steps": [
+        "Verify 205 has code 489, scan N51/3 and identify corresponding fault.",
+        "Inspect engine fuse/relay unit K40/8 fuse f114 and compressor A9/1 connector m1 for moisture, damaged seal or corrosion.",
+        "Follow OEM-safe depressurization and moisture/corrosion remediation procedure, using approved repair parts and wiring repair instructions.",
+        "If no connector defect found, run approved AIRMATIC pressure/reservoir/actuator guided tests; do not replace compressor solely on fault text."
+      ],
+      "live_data": [
+        {
+          "name_en": "AIRMATIC system pressure / reservoir status",
+          "name_ar": "ضغط نظام AIRMATIC وحالة خزان الهواء",
+          "condition": "Mercedes XENTRY guided test",
+          "reference": "Reference pressure not published in LI"
+        }
+      ],
+      "parts": [
+        "A9/1 air compressor",
+        "m1 connector",
+        "K40/8 fuse f114",
+        "Compressor wiring harness"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI32.50-P-064601-v1"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI32.50-P-064601-v1",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10205163-9999.pdf",
+          "title": "AIRMATIC compressor moisture and connector corrosion",
+          "date": "2016-07-29",
+          "version": "1",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Per-VIN installation and exact ECU coding not yet checked",
+        "Complete OEM pinout/wiring not accessible",
+        "Exact specified live data limits not published",
+        "No licensed image on file"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-P065712",
+      "brand": "Mercedes-Benz",
+      "raw_code": "P065712",
+      "base_code": "P0657",
+      "failure_type_byte": "12",
+      "code_family": "P",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Actuator power supply electrical fault: short to positive",
+      "translation_ar": "خلل بتغذية مشغلات النظام الكهربائية: قصر إلى الموجب",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N51/3 AIRMATIC",
+      "ecu_variant": "SPC222",
+      "applicability": {
+        "model_series": [
+          "205"
+        ],
+        "equipment_codes": [
+          "489"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "205 with code 489"
+      },
+      "symptoms": [
+        "Vehicle level warning",
+        "Air suspension malfunction",
+        "Fuse f114 at K40/8 overloaded in illustrated complaint"
+      ],
+      "probable_causes": [
+        "Moisture or corrosion in compressor A9/1 connector m1",
+        "Connector/harness short circuit",
+        "Pressure sensor/air reservoir issue must be independently demonstrated"
+      ],
+      "diagnostic_steps": [
+        "Verify 205 has code 489, scan N51/3 and identify corresponding fault.",
+        "Inspect engine fuse/relay unit K40/8 fuse f114 and compressor A9/1 connector m1 for moisture, damaged seal or corrosion.",
+        "Follow OEM-safe depressurization and moisture/corrosion remediation procedure, using approved repair parts and wiring repair instructions.",
+        "If no connector defect found, run approved AIRMATIC pressure/reservoir/actuator guided tests; do not replace compressor solely on fault text."
+      ],
+      "live_data": [
+        {
+          "name_en": "AIRMATIC system pressure / reservoir status",
+          "name_ar": "ضغط نظام AIRMATIC وحالة خزان الهواء",
+          "condition": "Mercedes XENTRY guided test",
+          "reference": "Reference pressure not published in LI"
+        }
+      ],
+      "parts": [
+        "A9/1 air compressor",
+        "m1 connector",
+        "K40/8 fuse f114",
+        "Compressor wiring harness"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI32.50-P-064601-v1"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI32.50-P-064601-v1",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10205163-9999.pdf",
+          "title": "AIRMATIC compressor moisture and connector corrosion",
+          "date": "2016-07-29",
+          "version": "1",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Per-VIN installation and exact ECU coding not yet checked",
+        "Complete OEM pinout/wiring not accessible",
+        "Exact specified live data limits not published",
+        "No licensed image on file"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-P065711",
+      "brand": "Mercedes-Benz",
+      "raw_code": "P065711",
+      "base_code": "P0657",
+      "failure_type_byte": "11",
+      "code_family": "P",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Actuator power supply electrical fault: short to ground",
+      "translation_ar": "خلل بتغذية مشغلات النظام الكهربائية: قصر إلى الأرضي",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N51/3 AIRMATIC",
+      "ecu_variant": "SPC222",
+      "applicability": {
+        "model_series": [
+          "205"
+        ],
+        "equipment_codes": [
+          "489"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "205 with code 489"
+      },
+      "symptoms": [
+        "Vehicle level warning",
+        "Air suspension malfunction",
+        "Fuse f114 at K40/8 overloaded in illustrated complaint"
+      ],
+      "probable_causes": [
+        "Moisture or corrosion in compressor A9/1 connector m1",
+        "Connector/harness short circuit",
+        "Pressure sensor/air reservoir issue must be independently demonstrated"
+      ],
+      "diagnostic_steps": [
+        "Verify 205 has code 489, scan N51/3 and identify corresponding fault.",
+        "Inspect engine fuse/relay unit K40/8 fuse f114 and compressor A9/1 connector m1 for moisture, damaged seal or corrosion.",
+        "Follow OEM-safe depressurization and moisture/corrosion remediation procedure, using approved repair parts and wiring repair instructions.",
+        "If no connector defect found, run approved AIRMATIC pressure/reservoir/actuator guided tests; do not replace compressor solely on fault text."
+      ],
+      "live_data": [
+        {
+          "name_en": "AIRMATIC system pressure / reservoir status",
+          "name_ar": "ضغط نظام AIRMATIC وحالة خزان الهواء",
+          "condition": "Mercedes XENTRY guided test",
+          "reference": "Reference pressure not published in LI"
+        }
+      ],
+      "parts": [
+        "A9/1 air compressor",
+        "m1 connector",
+        "K40/8 fuse f114",
+        "Compressor wiring harness"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI32.50-P-064601-v1"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI32.50-P-064601-v1",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10205163-9999.pdf",
+          "title": "AIRMATIC compressor moisture and connector corrosion",
+          "date": "2016-07-29",
+          "version": "1",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Per-VIN installation and exact ECU coding not yet checked",
+        "Complete OEM pinout/wiring not accessible",
+        "Exact specified live data limits not published",
+        "No licensed image on file"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-C156D00",
+      "brand": "Mercedes-Benz",
+      "raw_code": "C156D00",
+      "base_code": "C156D",
+      "failure_type_byte": "00",
+      "code_family": "C",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Air reservoir leakage detected",
+      "translation_ar": "رصد تسرب في خزان الهواء المضغوط",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N51/3 AIRMATIC",
+      "ecu_variant": "SPC222",
+      "applicability": {
+        "model_series": [
+          "205"
+        ],
+        "equipment_codes": [
+          "489"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "205 with code 489"
+      },
+      "symptoms": [
+        "Vehicle level warning",
+        "Air suspension malfunction",
+        "Fuse f114 at K40/8 overloaded in illustrated complaint"
+      ],
+      "probable_causes": [
+        "Moisture or corrosion in compressor A9/1 connector m1",
+        "Connector/harness short circuit",
+        "Pressure sensor/air reservoir issue must be independently demonstrated"
+      ],
+      "diagnostic_steps": [
+        "Verify 205 has code 489, scan N51/3 and identify corresponding fault.",
+        "Inspect engine fuse/relay unit K40/8 fuse f114 and compressor A9/1 connector m1 for moisture, damaged seal or corrosion.",
+        "Follow OEM-safe depressurization and moisture/corrosion remediation procedure, using approved repair parts and wiring repair instructions.",
+        "If no connector defect found, run approved AIRMATIC pressure/reservoir/actuator guided tests; do not replace compressor solely on fault text."
+      ],
+      "live_data": [
+        {
+          "name_en": "AIRMATIC system pressure / reservoir status",
+          "name_ar": "ضغط نظام AIRMATIC وحالة خزان الهواء",
+          "condition": "Mercedes XENTRY guided test",
+          "reference": "Reference pressure not published in LI"
+        }
+      ],
+      "parts": [
+        "A9/1 air compressor",
+        "m1 connector",
+        "K40/8 fuse f114",
+        "Compressor wiring harness"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI32.50-P-064601-v1"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI32.50-P-064601-v1",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10205163-9999.pdf",
+          "title": "AIRMATIC compressor moisture and connector corrosion",
+          "date": "2016-07-29",
+          "version": "1",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Per-VIN installation and exact ECU coding not yet checked",
+        "Complete OEM pinout/wiring not accessible",
+        "Exact specified live data limits not published",
+        "No licensed image on file"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-C157300",
+      "brand": "Mercedes-Benz",
+      "raw_code": "C157300",
+      "base_code": "C1573",
+      "failure_type_byte": "00",
+      "code_family": "C",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Time required for air release correction is too long",
+      "translation_ar": "مدة تصحيح خفض مستوى التعليق عبر تفريغ الهواء أطول من المطلوب",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N51/3 AIRMATIC",
+      "ecu_variant": "SPC222",
+      "applicability": {
+        "model_series": [
+          "205"
+        ],
+        "equipment_codes": [
+          "489"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "205 with code 489"
+      },
+      "symptoms": [
+        "Vehicle level warning",
+        "Air suspension malfunction",
+        "Fuse f114 at K40/8 overloaded in illustrated complaint"
+      ],
+      "probable_causes": [
+        "Moisture or corrosion in compressor A9/1 connector m1",
+        "Connector/harness short circuit",
+        "Pressure sensor/air reservoir issue must be independently demonstrated"
+      ],
+      "diagnostic_steps": [
+        "Verify 205 has code 489, scan N51/3 and identify corresponding fault.",
+        "Inspect engine fuse/relay unit K40/8 fuse f114 and compressor A9/1 connector m1 for moisture, damaged seal or corrosion.",
+        "Follow OEM-safe depressurization and moisture/corrosion remediation procedure, using approved repair parts and wiring repair instructions.",
+        "If no connector defect found, run approved AIRMATIC pressure/reservoir/actuator guided tests; do not replace compressor solely on fault text."
+      ],
+      "live_data": [
+        {
+          "name_en": "AIRMATIC system pressure / reservoir status",
+          "name_ar": "ضغط نظام AIRMATIC وحالة خزان الهواء",
+          "condition": "Mercedes XENTRY guided test",
+          "reference": "Reference pressure not published in LI"
+        }
+      ],
+      "parts": [
+        "A9/1 air compressor",
+        "m1 connector",
+        "K40/8 fuse f114",
+        "Compressor wiring harness"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI32.50-P-064601-v1"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI32.50-P-064601-v1",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10205163-9999.pdf",
+          "title": "AIRMATIC compressor moisture and connector corrosion",
+          "date": "2016-07-29",
+          "version": "1",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Per-VIN installation and exact ECU coding not yet checked",
+        "Complete OEM pinout/wiring not accessible",
+        "Exact specified live data limits not published",
+        "No licensed image on file"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-B183301",
+      "brand": "Mercedes-Benz",
+      "raw_code": "B183301",
+      "base_code": "B1833",
+      "failure_type_byte": "01",
+      "code_family": "B",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "General electrical fault associated with 48 V on-board battery",
+      "translation_ar": "عطل كهربائي عام مرتبط ببطارية منظومة 48 فولت",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N83/1 DC/DC (DCDC48_222 shown in fault table) / G1/3 48V battery",
+      "ecu_variant": "LIB48_222 reference in XENTRY table; exact DTC origin must be verified",
+      "applicability": {
+        "model_series": [
+          "167",
+          "257",
+          "213",
+          "238",
+          "290"
+        ],
+        "equipment_codes": [
+          "B01"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "167,257,213,238,290 with code B01, not 206/223"
+      },
+      "symptoms": [
+        "No-start",
+        "48 V electrical system warning",
+        "Reduced propulsion / limp mode",
+        "Check-engine lamp",
+        "Cooling or AC impaired"
+      ],
+      "probable_causes": [
+        "Software/48V battery state or isolation as specified by related code patterns",
+        "Short or faulty 48V cable/component",
+        "Battery contact or DC/DC power issue"
+      ],
+      "diagnostic_steps": [
+        "Confirm affected model (exclude 223 and 206) and equipment B01, read fault and freeze frame in correct 48 V unit.",
+        "Verify 12V supply and LIN communications and distinguish Current from Stored faults.",
+        "Use OEM XENTRY guided test, software revision and battery/DC/DC diagnosis matching the exact fault combination.",
+        "Do not indiscriminately disconnect high-current 48V connections; only qualified technicians following manufacturer isolation procedure may inspect related wiring."
+      ],
+      "live_data": [
+        {
+          "name_en": "48V battery DTC status and 12V supply",
+          "name_ar": "حالة أكواد بطارية 48 فولت وجهد تغذية 12 فولت",
+          "condition": "Current/Stored status with XENTRY",
+          "reference": "Exact voltage cutoffs not specified"
+        }
+      ],
+      "parts": [
+        "G1/3 48V battery",
+        "N83/1 DC/DC converter",
+        "48V prefuse and wiring"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI54.10-P-069698-v22"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI54.10-P-069698-v22",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11029087-0001.pdf",
+          "title": "48V electrical system impairment",
+          "date": "2026-02-26",
+          "version": "22",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Source control unit table repeats ambiguous LIB48_222 / DCDC48_222 labels despite 223/206 exclusion: exact DTC origin requires VIN XENTRY confirmation",
+        "Exact electrical thresholds and meter test values not provided",
+        "Per-model connector map not wholly accessible",
+        "No images"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-B183214",
+      "brand": "Mercedes-Benz",
+      "raw_code": "B183214",
+      "base_code": "B1832",
+      "failure_type_byte": "14",
+      "code_family": "B",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "48 V on-board system circuit short to ground or open circuit",
+      "translation_ar": "قصر إلى الأرضي أو انقطاع بدائرة نظام 48 فولت",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N83/1 DC/DC (DCDC48_222 shown in fault table) / G1/3 48V battery",
+      "ecu_variant": "LIB48_222 reference in XENTRY table; exact DTC origin must be verified",
+      "applicability": {
+        "model_series": [
+          "167",
+          "257",
+          "213",
+          "238",
+          "290"
+        ],
+        "equipment_codes": [
+          "B01"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "167,257,213,238,290 with code B01, not 206/223"
+      },
+      "symptoms": [
+        "No-start",
+        "48 V electrical system warning",
+        "Reduced propulsion / limp mode",
+        "Check-engine lamp",
+        "Cooling or AC impaired"
+      ],
+      "probable_causes": [
+        "Software/48V battery state or isolation as specified by related code patterns",
+        "Short or faulty 48V cable/component",
+        "Battery contact or DC/DC power issue"
+      ],
+      "diagnostic_steps": [
+        "Confirm affected model (exclude 223 and 206) and equipment B01, read fault and freeze frame in correct 48 V unit.",
+        "Verify 12V supply and LIN communications and distinguish Current from Stored faults.",
+        "Use OEM XENTRY guided test, software revision and battery/DC/DC diagnosis matching the exact fault combination.",
+        "Do not indiscriminately disconnect high-current 48V connections; only qualified technicians following manufacturer isolation procedure may inspect related wiring."
+      ],
+      "live_data": [
+        {
+          "name_en": "48V battery DTC status and 12V supply",
+          "name_ar": "حالة أكواد بطارية 48 فولت وجهد تغذية 12 فولت",
+          "condition": "Current/Stored status with XENTRY",
+          "reference": "Exact voltage cutoffs not specified"
+        }
+      ],
+      "parts": [
+        "G1/3 48V battery",
+        "N83/1 DC/DC converter",
+        "48V prefuse and wiring"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI54.10-P-069698-v22"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI54.10-P-069698-v22",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11029087-0001.pdf",
+          "title": "48V electrical system impairment",
+          "date": "2026-02-26",
+          "version": "22",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Source control unit table repeats ambiguous LIB48_222 / DCDC48_222 labels despite 223/206 exclusion: exact DTC origin requires VIN XENTRY confirmation",
+        "Exact electrical thresholds and meter test values not provided",
+        "Per-model connector map not wholly accessible",
+        "No images"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-B183216",
+      "brand": "Mercedes-Benz",
+      "raw_code": "B183216",
+      "base_code": "B1832",
+      "failure_type_byte": "16",
+      "code_family": "B",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "48 V on-board system voltage below permissible threshold",
+      "translation_ar": "جهد نظام 48 فولت أقل من الحد المسموح",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N83/1 DC/DC (DCDC48_222 shown in fault table) / G1/3 48V battery",
+      "ecu_variant": "LIB48_222 reference in XENTRY table; exact DTC origin must be verified",
+      "applicability": {
+        "model_series": [
+          "167",
+          "257",
+          "213",
+          "238",
+          "290"
+        ],
+        "equipment_codes": [
+          "B01"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "167,257,213,238,290 with code B01, not 206/223"
+      },
+      "symptoms": [
+        "No-start",
+        "48 V electrical system warning",
+        "Reduced propulsion / limp mode",
+        "Check-engine lamp",
+        "Cooling or AC impaired"
+      ],
+      "probable_causes": [
+        "Software/48V battery state or isolation as specified by related code patterns",
+        "Short or faulty 48V cable/component",
+        "Battery contact or DC/DC power issue"
+      ],
+      "diagnostic_steps": [
+        "Confirm affected model (exclude 223 and 206) and equipment B01, read fault and freeze frame in correct 48 V unit.",
+        "Verify 12V supply and LIN communications and distinguish Current from Stored faults.",
+        "Use OEM XENTRY guided test, software revision and battery/DC/DC diagnosis matching the exact fault combination.",
+        "Do not indiscriminately disconnect high-current 48V connections; only qualified technicians following manufacturer isolation procedure may inspect related wiring."
+      ],
+      "live_data": [
+        {
+          "name_en": "48V battery DTC status and 12V supply",
+          "name_ar": "حالة أكواد بطارية 48 فولت وجهد تغذية 12 فولت",
+          "condition": "Current/Stored status with XENTRY",
+          "reference": "Exact voltage cutoffs not specified"
+        }
+      ],
+      "parts": [
+        "G1/3 48V battery",
+        "N83/1 DC/DC converter",
+        "48V prefuse and wiring"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI54.10-P-069698-v22"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI54.10-P-069698-v22",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11029087-0001.pdf",
+          "title": "48V electrical system impairment",
+          "date": "2026-02-26",
+          "version": "22",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Source control unit table repeats ambiguous LIB48_222 / DCDC48_222 labels despite 223/206 exclusion: exact DTC origin requires VIN XENTRY confirmation",
+        "Exact electrical thresholds and meter test values not provided",
+        "Per-model connector map not wholly accessible",
+        "No images"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-B183217",
+      "brand": "Mercedes-Benz",
+      "raw_code": "B183217",
+      "base_code": "B1832",
+      "failure_type_byte": "17",
+      "code_family": "B",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "48 V on-board system voltage above permissible threshold",
+      "translation_ar": "جهد نظام 48 فولت أعلى من الحد المسموح",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N83/1 DC/DC (DCDC48_222 shown in fault table) / G1/3 48V battery",
+      "ecu_variant": "LIB48_222 reference in XENTRY table; exact DTC origin must be verified",
+      "applicability": {
+        "model_series": [
+          "167",
+          "257",
+          "213",
+          "238",
+          "290"
+        ],
+        "equipment_codes": [
+          "B01"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "167,257,213,238,290 with code B01, not 206/223"
+      },
+      "symptoms": [
+        "No-start",
+        "48 V electrical system warning",
+        "Reduced propulsion / limp mode",
+        "Check-engine lamp",
+        "Cooling or AC impaired"
+      ],
+      "probable_causes": [
+        "Software/48V battery state or isolation as specified by related code patterns",
+        "Short or faulty 48V cable/component",
+        "Battery contact or DC/DC power issue"
+      ],
+      "diagnostic_steps": [
+        "Confirm affected model (exclude 223 and 206) and equipment B01, read fault and freeze frame in correct 48 V unit.",
+        "Verify 12V supply and LIN communications and distinguish Current from Stored faults.",
+        "Use OEM XENTRY guided test, software revision and battery/DC/DC diagnosis matching the exact fault combination.",
+        "Do not indiscriminately disconnect high-current 48V connections; only qualified technicians following manufacturer isolation procedure may inspect related wiring."
+      ],
+      "live_data": [
+        {
+          "name_en": "48V battery DTC status and 12V supply",
+          "name_ar": "حالة أكواد بطارية 48 فولت وجهد تغذية 12 فولت",
+          "condition": "Current/Stored status with XENTRY",
+          "reference": "Exact voltage cutoffs not specified"
+        }
+      ],
+      "parts": [
+        "G1/3 48V battery",
+        "N83/1 DC/DC converter",
+        "48V prefuse and wiring"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI54.10-P-069698-v22"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI54.10-P-069698-v22",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11029087-0001.pdf",
+          "title": "48V electrical system impairment",
+          "date": "2026-02-26",
+          "version": "22",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Source control unit table repeats ambiguous LIB48_222 / DCDC48_222 labels despite 223/206 exclusion: exact DTC origin requires VIN XENTRY confirmation",
+        "Exact electrical thresholds and meter test values not provided",
+        "Per-model connector map not wholly accessible",
+        "No images"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-B183371",
+      "brand": "Mercedes-Benz",
+      "raw_code": "B183371",
+      "base_code": "B1833",
+      "failure_type_byte": "71",
+      "code_family": "B",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "48 V battery actuator blocked",
+      "translation_ar": "مشغّل بطارية 48 فولت عالق",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N83/1 DC/DC (DCDC48_222 shown in fault table) / G1/3 48V battery",
+      "ecu_variant": "LIB48_222 reference in XENTRY table; exact DTC origin must be verified",
+      "applicability": {
+        "model_series": [
+          "167",
+          "257",
+          "213",
+          "238",
+          "290"
+        ],
+        "equipment_codes": [
+          "B01"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "167,257,213,238,290 with code B01, not 206/223"
+      },
+      "symptoms": [
+        "No-start",
+        "48 V electrical system warning",
+        "Reduced propulsion / limp mode",
+        "Check-engine lamp",
+        "Cooling or AC impaired"
+      ],
+      "probable_causes": [
+        "Software/48V battery state or isolation as specified by related code patterns",
+        "Short or faulty 48V cable/component",
+        "Battery contact or DC/DC power issue"
+      ],
+      "diagnostic_steps": [
+        "Confirm affected model (exclude 223 and 206) and equipment B01, read fault and freeze frame in correct 48 V unit.",
+        "Verify 12V supply and LIN communications and distinguish Current from Stored faults.",
+        "Use OEM XENTRY guided test, software revision and battery/DC/DC diagnosis matching the exact fault combination.",
+        "Do not indiscriminately disconnect high-current 48V connections; only qualified technicians following manufacturer isolation procedure may inspect related wiring."
+      ],
+      "live_data": [
+        {
+          "name_en": "48V battery DTC status and 12V supply",
+          "name_ar": "حالة أكواد بطارية 48 فولت وجهد تغذية 12 فولت",
+          "condition": "Current/Stored status with XENTRY",
+          "reference": "Exact voltage cutoffs not specified"
+        }
+      ],
+      "parts": [
+        "G1/3 48V battery",
+        "N83/1 DC/DC converter",
+        "48V prefuse and wiring"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI54.10-P-069698-v22"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI54.10-P-069698-v22",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11029087-0001.pdf",
+          "title": "48V electrical system impairment",
+          "date": "2026-02-26",
+          "version": "22",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Source control unit table repeats ambiguous LIB48_222 / DCDC48_222 labels despite 223/206 exclusion: exact DTC origin requires VIN XENTRY confirmation",
+        "Exact electrical thresholds and meter test values not provided",
+        "Per-model connector map not wholly accessible",
+        "No images"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-B183319",
+      "brand": "Mercedes-Benz",
+      "raw_code": "B183319",
+      "base_code": "B1833",
+      "failure_type_byte": "19",
+      "code_family": "B",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "48 V battery current above permissible threshold",
+      "translation_ar": "تيار بطارية 48 فولت فوق الحد المسموح",
+      "definition_evidence": "oem_table_explicit",
+      "ecu": "N83/1 DC/DC (DCDC48_222 shown in fault table) / G1/3 48V battery",
+      "ecu_variant": "LIB48_222 reference in XENTRY table; exact DTC origin must be verified",
+      "applicability": {
+        "model_series": [
+          "167",
+          "257",
+          "213",
+          "238",
+          "290"
+        ],
+        "equipment_codes": [
+          "B01"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "167,257,213,238,290 with code B01, not 206/223"
+      },
+      "symptoms": [
+        "No-start",
+        "48 V electrical system warning",
+        "Reduced propulsion / limp mode",
+        "Check-engine lamp",
+        "Cooling or AC impaired"
+      ],
+      "probable_causes": [
+        "Software/48V battery state or isolation as specified by related code patterns",
+        "Short or faulty 48V cable/component",
+        "Battery contact or DC/DC power issue"
+      ],
+      "diagnostic_steps": [
+        "Confirm affected model (exclude 223 and 206) and equipment B01, read fault and freeze frame in correct 48 V unit.",
+        "Verify 12V supply and LIN communications and distinguish Current from Stored faults.",
+        "Use OEM XENTRY guided test, software revision and battery/DC/DC diagnosis matching the exact fault combination.",
+        "Do not indiscriminately disconnect high-current 48V connections; only qualified technicians following manufacturer isolation procedure may inspect related wiring."
+      ],
+      "live_data": [
+        {
+          "name_en": "48V battery DTC status and 12V supply",
+          "name_ar": "حالة أكواد بطارية 48 فولت وجهد تغذية 12 فولت",
+          "condition": "Current/Stored status with XENTRY",
+          "reference": "Exact voltage cutoffs not specified"
+        }
+      ],
+      "parts": [
+        "G1/3 48V battery",
+        "N83/1 DC/DC converter",
+        "48V prefuse and wiring"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI54.10-P-069698-v22"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI54.10-P-069698-v22",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11029087-0001.pdf",
+          "title": "48V electrical system impairment",
+          "date": "2026-02-26",
+          "version": "22",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Source control unit table repeats ambiguous LIB48_222 / DCDC48_222 labels despite 223/206 exclusion: exact DTC origin requires VIN XENTRY confirmation",
+        "Exact electrical thresholds and meter test values not provided",
+        "Per-model connector map not wholly accessible",
+        "No images"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-B183387",
+      "brand": "Mercedes-Benz",
+      "raw_code": "B183387",
+      "base_code": "B1833",
+      "failure_type_byte": "87",
+      "code_family": "B",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "48V battery/ DC-DC system fault related to intermittent no-start software condition",
+      "translation_ar": "خلل مرتبط بحالة برمجية تسبب تعذّر تشغيل متقطع في منظومة 48 فولت",
+      "definition_evidence": "oem_cause_section_code_reference_only_individual_fault_table_text_missing",
+      "ecu": "N83/1 DC/DC",
+      "ecu_variant": null,
+      "applicability": {
+        "model_series": [
+          "167",
+          "257",
+          "213",
+          "238",
+          "290"
+        ],
+        "equipment_codes": [
+          "B01"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "167,257,213,238,290 with code B01, not 206/223"
+      },
+      "symptoms": [
+        "48V battery warning or no start, depending on fault",
+        "Possible CEL"
+      ],
+      "probable_causes": [
+        "Specific 48V hardware/software condition in LI - must select matching cause/remedy",
+        "Other unrelated causes not ruled out"
+      ],
+      "diagnostic_steps": [
+        "Obtain XENTRY quick-test report and identify exact Cause number in LI54.10-P-069698.",
+        "Follow only the remedy mapped by LI to this particular cause, including 12V battery / LIN check and approved guided test when applicable.",
+        "If the code persists, or current software already present, raise TIPS case with measurements and fault log."
+      ],
+      "live_data": [
+        {
+          "name_en": "48V G1/3 and N83/1 Current/Stored status",
+          "name_ar": "حالة الأعطال الحالية/المخزنة للبطارية G1/3 ومحوّل N83/1",
+          "condition": "At no-start or warning event",
+          "reference": "No threshold published for this individual code"
+        }
+      ],
+      "parts": [
+        "48V battery G1/3",
+        "48V converter N83/1 / associated software"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI54.10-P-069698-v22"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI54.10-P-069698-v22",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11029087-0001.pdf",
+          "title": "48V electrical system impairment",
+          "date": "2026-02-26",
+          "version": "22",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Individual complete English XENTRY DTC text not printed for code in the source Cause section",
+        "Per-VIN ECU variant and MY confirmation needed",
+        "Numerical voltage limits not specified",
+        "OEM schematics and photos not licensed"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-B183349",
+      "brand": "Mercedes-Benz",
+      "raw_code": "B183349",
+      "base_code": "B1833",
+      "failure_type_byte": "49",
+      "code_family": "B",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "48V battery fault associated with permanent no-start state",
+      "translation_ar": "عطل مرتبط بمنظومة 48 فولت مع تعذّر تشغيل دائم",
+      "definition_evidence": "oem_cause_section_code_reference_only_individual_fault_table_text_missing",
+      "ecu": "G1/3 48V battery",
+      "ecu_variant": null,
+      "applicability": {
+        "model_series": [
+          "167",
+          "257",
+          "213",
+          "238",
+          "290"
+        ],
+        "equipment_codes": [
+          "B01"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "167,257,213,238,290 with code B01, not 206/223"
+      },
+      "symptoms": [
+        "48V battery warning or no start, depending on fault",
+        "Possible CEL"
+      ],
+      "probable_causes": [
+        "Specific 48V hardware/software condition in LI - must select matching cause/remedy",
+        "Other unrelated causes not ruled out"
+      ],
+      "diagnostic_steps": [
+        "Obtain XENTRY quick-test report and identify exact Cause number in LI54.10-P-069698.",
+        "Follow only the remedy mapped by LI to this particular cause, including 12V battery / LIN check and approved guided test when applicable.",
+        "If the code persists, or current software already present, raise TIPS case with measurements and fault log."
+      ],
+      "live_data": [
+        {
+          "name_en": "48V G1/3 and N83/1 Current/Stored status",
+          "name_ar": "حالة الأعطال الحالية/المخزنة للبطارية G1/3 ومحوّل N83/1",
+          "condition": "At no-start or warning event",
+          "reference": "No threshold published for this individual code"
+        }
+      ],
+      "parts": [
+        "48V battery G1/3",
+        "48V converter N83/1 / associated software"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI54.10-P-069698-v22"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI54.10-P-069698-v22",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11029087-0001.pdf",
+          "title": "48V electrical system impairment",
+          "date": "2026-02-26",
+          "version": "22",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Individual complete English XENTRY DTC text not printed for code in the source Cause section",
+        "Per-VIN ECU variant and MY confirmation needed",
+        "Numerical voltage limits not specified",
+        "OEM schematics and photos not licensed"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-B183397",
+      "brand": "Mercedes-Benz",
+      "raw_code": "B183397",
+      "base_code": "B1833",
+      "failure_type_byte": "97",
+      "code_family": "B",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "48V battery internal Peltier cooling element malfunction",
+      "translation_ar": "خلل داخلي بعنصر تبريد بلتيير في بطارية 48 فولت",
+      "definition_evidence": "oem_cause_section_code_reference_only_individual_fault_table_text_missing",
+      "ecu": "G1/3 48V battery",
+      "ecu_variant": null,
+      "applicability": {
+        "model_series": [
+          "167",
+          "257",
+          "213",
+          "238",
+          "290"
+        ],
+        "equipment_codes": [
+          "B01"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "167,257,213,238,290 with code B01, not 206/223"
+      },
+      "symptoms": [
+        "48V battery warning or no start, depending on fault",
+        "Possible CEL"
+      ],
+      "probable_causes": [
+        "Specific 48V hardware/software condition in LI - must select matching cause/remedy",
+        "Other unrelated causes not ruled out"
+      ],
+      "diagnostic_steps": [
+        "Obtain XENTRY quick-test report and identify exact Cause number in LI54.10-P-069698.",
+        "Follow only the remedy mapped by LI to this particular cause, including 12V battery / LIN check and approved guided test when applicable.",
+        "If the code persists, or current software already present, raise TIPS case with measurements and fault log."
+      ],
+      "live_data": [
+        {
+          "name_en": "48V G1/3 and N83/1 Current/Stored status",
+          "name_ar": "حالة الأعطال الحالية/المخزنة للبطارية G1/3 ومحوّل N83/1",
+          "condition": "At no-start or warning event",
+          "reference": "No threshold published for this individual code"
+        }
+      ],
+      "parts": [
+        "48V battery G1/3",
+        "48V converter N83/1 / associated software"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI54.10-P-069698-v22"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI54.10-P-069698-v22",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11029087-0001.pdf",
+          "title": "48V electrical system impairment",
+          "date": "2026-02-26",
+          "version": "22",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Individual complete English XENTRY DTC text not printed for code in the source Cause section",
+        "Per-VIN ECU variant and MY confirmation needed",
+        "Numerical voltage limits not specified",
+        "OEM schematics and photos not licensed"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-P0606F1",
+      "brand": "Mercedes-Benz",
+      "raw_code": "P0606F1",
+      "base_code": "P0606",
+      "failure_type_byte": "F1",
+      "code_family": "P",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Control-unit diagnostic fault in PTCU (precise original fault text not in source)",
+      "translation_ar": "رمز عطل بوحدة PTCU؛ الوصف الرسمي الفردي غير متاح في النشرة",
+      "definition_evidence": "oem_cause_section_code_reference_only_individual_fault_table_text_missing",
+      "ecu": "N127 PTCU",
+      "ecu_variant": null,
+      "applicability": {
+        "model_series": [
+          "167",
+          "257",
+          "213",
+          "238",
+          "290"
+        ],
+        "equipment_codes": [
+          "B01"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "167,257,213,238,290 with code B01, not 206/223"
+      },
+      "symptoms": [
+        "48V battery warning or no start, depending on fault",
+        "Possible CEL"
+      ],
+      "probable_causes": [
+        "Specific 48V hardware/software condition in LI - must select matching cause/remedy",
+        "Other unrelated causes not ruled out"
+      ],
+      "diagnostic_steps": [
+        "Obtain XENTRY quick-test report and identify exact Cause number in LI54.10-P-069698.",
+        "Follow only the remedy mapped by LI to this particular cause, including 12V battery / LIN check and approved guided test when applicable.",
+        "If the code persists, or current software already present, raise TIPS case with measurements and fault log."
+      ],
+      "live_data": [
+        {
+          "name_en": "48V G1/3 and N83/1 Current/Stored status",
+          "name_ar": "حالة الأعطال الحالية/المخزنة للبطارية G1/3 ومحوّل N83/1",
+          "condition": "At no-start or warning event",
+          "reference": "No threshold published for this individual code"
+        }
+      ],
+      "parts": [
+        "48V battery G1/3",
+        "48V converter N83/1 / associated software"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI54.10-P-069698-v22"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI54.10-P-069698-v22",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11029087-0001.pdf",
+          "title": "48V electrical system impairment",
+          "date": "2026-02-26",
+          "version": "22",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Individual complete English XENTRY DTC text not printed for code in the source Cause section",
+        "Per-VIN ECU variant and MY confirmation needed",
+        "Numerical voltage limits not specified",
+        "OEM schematics and photos not licensed"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    },
+    {
+      "id": "MB-20261116-B04-P057FF1",
+      "brand": "Mercedes-Benz",
+      "raw_code": "P057FF1",
+      "base_code": "P057F",
+      "failure_type_byte": "F1",
+      "code_family": "P",
+      "code_allocation": "NOT_DETERMINED_J2012DA_LOOKUP_REQUIRED",
+      "manufacturer_description_en": "Diagnostic fault associated with CEL / possible no-start (exact fault text unavailable)",
+      "translation_ar": "رمز عطل مرتبط بلمبة المحرك واحتمال عدم التشغيل؛ التعريف الفردي غير متاح",
+      "definition_evidence": "oem_cause_section_code_reference_only_individual_fault_table_text_missing",
+      "ecu": "ECU not precisely identified in LI",
+      "ecu_variant": null,
+      "applicability": {
+        "model_series": [
+          "167",
+          "257",
+          "213",
+          "238",
+          "290"
+        ],
+        "equipment_codes": [
+          "B01"
+        ],
+        "production_dates": null,
+        "model_year": null,
+        "engine": null,
+        "transmission": null,
+        "market": "Not independently established for Sweden/EU; bulletin metadata may reflect US distribution",
+        "scope_notes": "167,257,213,238,290 with code B01, not 206/223"
+      },
+      "symptoms": [
+        "48V battery warning or no start, depending on fault",
+        "Possible CEL"
+      ],
+      "probable_causes": [
+        "Specific 48V hardware/software condition in LI - must select matching cause/remedy",
+        "Other unrelated causes not ruled out"
+      ],
+      "diagnostic_steps": [
+        "Obtain XENTRY quick-test report and identify exact Cause number in LI54.10-P-069698.",
+        "Follow only the remedy mapped by LI to this particular cause, including 12V battery / LIN check and approved guided test when applicable.",
+        "If the code persists, or current software already present, raise TIPS case with measurements and fault log."
+      ],
+      "live_data": [
+        {
+          "name_en": "48V G1/3 and N83/1 Current/Stored status",
+          "name_ar": "حالة الأعطال الحالية/المخزنة للبطارية G1/3 ومحوّل N83/1",
+          "condition": "At no-start or warning event",
+          "reference": "No threshold published for this individual code"
+        }
+      ],
+      "parts": [
+        "48V battery G1/3",
+        "48V converter N83/1 / associated software"
+      ],
+      "wiring": {
+        "diagram": null,
+        "terminals": null,
+        "evidence": "Not published in referenced bulletin"
+      },
+      "image": {
+        "path": null,
+        "alt_ar": null,
+        "code_matched": false
+      },
+      "visual_asset_status": "PAUSED_BY_OWNER",
+      "source_ids": [
+        "MB-LI54.10-P-069698-v22"
+      ],
+      "sources": [
+        {
+          "id": "MB-LI54.10-P-069698-v22",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11029087-0001.pdf",
+          "title": "48V electrical system impairment",
+          "date": "2026-02-26",
+          "version": "22",
+          "license": "reference only; OEM document not redistributed"
+        }
+      ],
+      "applicability_confirmation": "Documented bulletin group only; per-VIN confirmation required",
+      "missing": [
+        "Individual complete English XENTRY DTC text not printed for code in the source Cause section",
+        "Per-VIN ECU variant and MY confirmation needed",
+        "Numerical voltage limits not specified",
+        "OEM schematics and photos not licensed"
+      ],
+      "verification_status": "OEM_CODE_DOCUMENTED_DEFERRED_VIN_TECH_QA",
+      "review_status": "DEFERRED_REVIEW",
+      "release_to_app": false
+    }
+  ]
+}
