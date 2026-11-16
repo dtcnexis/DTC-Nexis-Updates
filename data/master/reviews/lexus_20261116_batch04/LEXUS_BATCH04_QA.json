@@ -1,0 +1,59 @@
+{
+  "schema": "dtcnexis-lexus-batch04-QA-v2",
+  "brand": "Lexus",
+  "created_on": "2026-11-16",
+  "review_only": true,
+  "baseline": {
+    "github_main_lexus_records": 72,
+    "main_unique_raw_codes": 72,
+    "local_batch02_records": 73,
+    "existing_batch03_oem_code_records": 3,
+    "combined_main_plus_batch03_unique_raw_codes": 75,
+    "preceding_work_branch_deferred_queue": 33,
+    "prior_definition_review_rows_pending_full_approval": 72,
+    "prior_definitions_needing_primary_verification": 42
+  },
+  "batch04": {
+    "new_raw_code_records": 0,
+    "additional_oem_sourced_USA_applicability_ranges": 10,
+    "source_documents_new_to_batch03": 2,
+    "prior_batch03_applicability_variants": 6,
+    "additional_deferred_cases": 2,
+    "current_deferred_queue_items_without_original_review_42": 35
+  },
+  "deduplication": {
+    "candidate_duplicate_code_records_detected_and_removed": 3,
+    "duplicate_scope_applicability_claims_excluded": 5,
+    "duplicate_added_code_records": 0,
+    "duplicate_new_applicability_ids": 0,
+    "missing_source_references": 0,
+    "missing_parent_code_references": 0,
+    "main_data_preserved": true
+  },
+  "source_details": {
+    "new_oem_bulletin": "L-SB-0002-18 (P2610 across more USA model families)",
+    "historic_superseded_bulletin": "L-SB-0127-11 Rev2, superseded by L-SB-0005-15",
+    "RX350L_ambiguity": "already in Batch03 deferred list; no new link generated"
+  },
+  "remaining": [
+    "33 earlier deferred cases plus 2 incremental issues",
+    "No EU/SE applicability verified",
+    "42 older definitions still require primary check",
+    "No OEM ECU pinouts, actual images, or general live-data thresholds",
+    "Owner acceptance needed before merge"
+  ],
+  "safety": {
+    "owner_approved": false,
+    "merge_to_main": false,
+    "windows_software_changed": false,
+    "published_update": false,
+    "production_import_ready": false,
+    "original_files_replaced": false
+  },
+  "file_refs": [
+    "data/master/brands/lexus_batch03_new_oem.json",
+    "data/master/reviews/lexus_20261116_batch03/LEXUS_DEFERRED_REVIEW.json",
+    "data/master/reviews/lexus_20261116_batch04/LEXUS_PRIMARY_OEM_CANDIDATES.json",
+    "data/master/reviews/lexus_20261116_batch04/LEXUS_DEFERRED_INCREMENT.json"
+  ]
+}

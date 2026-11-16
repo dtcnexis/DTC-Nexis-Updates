@@ -1,0 +1,51 @@
+{
+  "schema": "dtcnexis-lexus-deferred-increment-v1",
+  "brand": "Lexus",
+  "created_on": "2026-11-16",
+  "count": 2,
+  "companion_existing_queue": "data/master/reviews/lexus_20261116_batch03/LEXUS_DEFERRED_REVIEW.json",
+  "existing_queue_count": 33,
+  "rows": [
+    {
+      "review_id": "LEX-B04-Q01",
+      "brand": "Lexus",
+      "code": "P0430",
+      "ecu": "ECM",
+      "model": "RX 450h",
+      "engine_code": "2GR-FXE",
+      "market": "USA",
+      "model_year": 2011,
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2011/SB-10060760-2280.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2015/MC-10111225-9999.pdf"
+      ],
+      "reason": "Historical Rev2 L-SB-0127-11 lists MY2010–2011, but latest L-SB-0005-15 supersedes it and formally lists only MY2010. Cannot apply current bulletin diagnostic thresholds to MY2011 automatically.",
+      "status": "deferred",
+      "production_release": false
+    },
+    {
+      "review_id": "LEX-B04-Q02",
+      "brand": "Lexus",
+      "code": "P2610",
+      "ecu": "ECM",
+      "model": "LS 600h",
+      "engine_code": "2UR-FSE",
+      "market": "USA",
+      "model_year": 2017,
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2018/MC-10129208-9999.pdf"
+      ],
+      "reason": "L-SB-0002-18 applicability row states LS600h MY2014–2016 while calibration tables include 2016–2017. The 2017 fitment requires primary OEM clarification before linking.",
+      "status": "deferred",
+      "production_release": false
+    }
+  ],
+  "preexisting_scope_conflicts_not_duplicated": [
+    {
+      "code": "P07457F",
+      "model": "RX 350L",
+      "reference": "LEXUS_DEFERRED_REVIEW.json entry LEX-B03-RQ-005",
+      "reason": "Calibration and VIN tables include RX350L, formal Rev1 applicability is RX350"
+    }
+  ]
+}
