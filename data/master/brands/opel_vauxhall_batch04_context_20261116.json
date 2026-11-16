@@ -1,0 +1,407 @@
+{
+  "schema": "dtc-nexis-permanent-brand-code-records-v1",
+  "brand": "Opel / Vauxhall",
+  "batch": "continuation_20261116_02",
+  "release_to_app": "NOT_ACTIVE",
+  "new_distinct_codes": 5,
+  "record_count": 5,
+  "records": [
+    {
+      "record_id": "opel_20261116_p0201_z19_diesel",
+      "raw_code": "P0201",
+      "base_code": "P0201",
+      "code_family": "P",
+      "code_type": "P0 family; normative SAE descriptor not independently licensed",
+      "ecu": "ECM",
+      "manufacturer": "Opel / Vauxhall",
+      "variant": "Astra H / Signum / Vectra C MY2004–2006 with Z19DT/Z19DTH/Z19DTL/Z19DTJ",
+      "definition_en": "Fuel injector cylinder 1 circuit malfunction (vehicle-specific HELLA descriptor)",
+      "translation_ar": "خلل في الدائرة الكهربائية لحاقن الوقود للأسطوانة رقم 1",
+      "fuel": "diesel",
+      "model_years": "2004–2006",
+      "engine_codes": [
+        "Z19DT",
+        "Z19DTH",
+        "Z19DTL",
+        "Z19DTJ"
+      ],
+      "models": [
+        "Astra H",
+        "Signum",
+        "Vectra C"
+      ],
+      "market": "Source does not isolate Swedish specification",
+      "symptoms": [
+        "Engine jerks",
+        "MIL can illuminate"
+      ],
+      "causes": [
+        {
+          "rank_as_test_order": 1,
+          "detail": "ECM software status/correction may be relevant per HELLA bulletin"
+        },
+        {
+          "rank_as_test_order": 2,
+          "detail": "Injector connector/loom may require inspection if software correction does not fix issue"
+        },
+        {
+          "rank_as_test_order": 3,
+          "detail": "Actual injector or driver electrical failure must be separately tested"
+        }
+      ],
+      "diagnostic_steps": [
+        "Read injector DTC and freeze frame, identify ECU calibration",
+        "Apply authorized ECM calibration if bulletin applies to VIN",
+        "If symptoms persist, inspect relevant injector wiring/connectors and perform continuity/insulation/load tests to OE values",
+        "Only on confirmed connector defect use improved connector cable set described by HELLA, cross-section 2.5 mm²; not a universal wiring specification",
+        "Road test and rescan"
+      ],
+      "live_data": [
+        {
+          "name_en": "Cylinder 1 Injector Command",
+          "name_ar": "أمر بخاخ الأسطوانة 1",
+          "reference": "unconfirmed"
+        },
+        {
+          "name_en": "Injector Circuit Status",
+          "name_ar": "حالة دائرة البخاخ",
+          "reference": "unconfirmed"
+        }
+      ],
+      "parts": [
+        "Injector connector and loom",
+        "Injector (test before replacement)",
+        "ECM software calibration"
+      ],
+      "wiring": "HELLA reports improved connector cable cross-section 2.5 mm²; not pinout",
+      "source_ids": [
+        "src_hella_z19_injectors_20261116"
+      ],
+      "verification_status": "source_verified_application",
+      "release_to_app": false,
+      "image_path": null,
+      "review_status": "diagnostic_review_pending"
+    },
+    {
+      "record_id": "opel_20261116_p0202_z19_diesel",
+      "raw_code": "P0202",
+      "base_code": "P0202",
+      "code_family": "P",
+      "code_type": "P0 family; normative SAE descriptor not independently licensed",
+      "ecu": "ECM",
+      "manufacturer": "Opel / Vauxhall",
+      "variant": "Astra H / Signum / Vectra C MY2004–2006 with Z19DT/Z19DTH/Z19DTL/Z19DTJ",
+      "definition_en": "Fuel injector cylinder 2 circuit malfunction (vehicle-specific HELLA descriptor)",
+      "translation_ar": "خلل في الدائرة الكهربائية لحاقن الوقود للأسطوانة رقم 2",
+      "fuel": "diesel",
+      "model_years": "2004–2006",
+      "engine_codes": [
+        "Z19DT",
+        "Z19DTH",
+        "Z19DTL",
+        "Z19DTJ"
+      ],
+      "models": [
+        "Astra H",
+        "Signum",
+        "Vectra C"
+      ],
+      "market": "Source does not isolate Swedish specification",
+      "symptoms": [
+        "Engine jerks",
+        "MIL can illuminate"
+      ],
+      "causes": [
+        {
+          "rank_as_test_order": 1,
+          "detail": "ECM software status/correction may be relevant per HELLA bulletin"
+        },
+        {
+          "rank_as_test_order": 2,
+          "detail": "Injector connector/loom may require inspection if software correction does not fix issue"
+        },
+        {
+          "rank_as_test_order": 3,
+          "detail": "Actual injector or driver electrical failure must be separately tested"
+        }
+      ],
+      "diagnostic_steps": [
+        "Read injector DTC and freeze frame, identify ECU calibration",
+        "Apply authorized ECM calibration if bulletin applies to VIN",
+        "If symptoms persist, inspect relevant injector wiring/connectors and perform continuity/insulation/load tests to OE values",
+        "Only on confirmed connector defect use improved connector cable set described by HELLA, cross-section 2.5 mm²; not a universal wiring specification",
+        "Road test and rescan"
+      ],
+      "live_data": [
+        {
+          "name_en": "Cylinder 2 Injector Command",
+          "name_ar": "أمر بخاخ الأسطوانة 2",
+          "reference": "unconfirmed"
+        },
+        {
+          "name_en": "Injector Circuit Status",
+          "name_ar": "حالة دائرة البخاخ",
+          "reference": "unconfirmed"
+        }
+      ],
+      "parts": [
+        "Injector connector and loom",
+        "Injector (test before replacement)",
+        "ECM software calibration"
+      ],
+      "wiring": "HELLA reports improved connector cable cross-section 2.5 mm²; not pinout",
+      "source_ids": [
+        "src_hella_z19_injectors_20261116"
+      ],
+      "verification_status": "source_verified_application",
+      "release_to_app": false,
+      "image_path": null,
+      "review_status": "diagnostic_review_pending"
+    },
+    {
+      "record_id": "opel_20261116_p0203_z19_diesel",
+      "raw_code": "P0203",
+      "base_code": "P0203",
+      "code_family": "P",
+      "code_type": "P0 family; normative SAE descriptor not independently licensed",
+      "ecu": "ECM",
+      "manufacturer": "Opel / Vauxhall",
+      "variant": "Astra H / Signum / Vectra C MY2004–2006 with Z19DT/Z19DTH/Z19DTL/Z19DTJ",
+      "definition_en": "Fuel injector cylinder 3 circuit malfunction (vehicle-specific HELLA descriptor)",
+      "translation_ar": "خلل في الدائرة الكهربائية لحاقن الوقود للأسطوانة رقم 3",
+      "fuel": "diesel",
+      "model_years": "2004–2006",
+      "engine_codes": [
+        "Z19DT",
+        "Z19DTH",
+        "Z19DTL",
+        "Z19DTJ"
+      ],
+      "models": [
+        "Astra H",
+        "Signum",
+        "Vectra C"
+      ],
+      "market": "Source does not isolate Swedish specification",
+      "symptoms": [
+        "Engine jerks",
+        "MIL can illuminate"
+      ],
+      "causes": [
+        {
+          "rank_as_test_order": 1,
+          "detail": "ECM software status/correction may be relevant per HELLA bulletin"
+        },
+        {
+          "rank_as_test_order": 2,
+          "detail": "Injector connector/loom may require inspection if software correction does not fix issue"
+        },
+        {
+          "rank_as_test_order": 3,
+          "detail": "Actual injector or driver electrical failure must be separately tested"
+        }
+      ],
+      "diagnostic_steps": [
+        "Read injector DTC and freeze frame, identify ECU calibration",
+        "Apply authorized ECM calibration if bulletin applies to VIN",
+        "If symptoms persist, inspect relevant injector wiring/connectors and perform continuity/insulation/load tests to OE values",
+        "Only on confirmed connector defect use improved connector cable set described by HELLA, cross-section 2.5 mm²; not a universal wiring specification",
+        "Road test and rescan"
+      ],
+      "live_data": [
+        {
+          "name_en": "Cylinder 3 Injector Command",
+          "name_ar": "أمر بخاخ الأسطوانة 3",
+          "reference": "unconfirmed"
+        },
+        {
+          "name_en": "Injector Circuit Status",
+          "name_ar": "حالة دائرة البخاخ",
+          "reference": "unconfirmed"
+        }
+      ],
+      "parts": [
+        "Injector connector and loom",
+        "Injector (test before replacement)",
+        "ECM software calibration"
+      ],
+      "wiring": "HELLA reports improved connector cable cross-section 2.5 mm²; not pinout",
+      "source_ids": [
+        "src_hella_z19_injectors_20261116"
+      ],
+      "verification_status": "source_verified_application",
+      "release_to_app": false,
+      "image_path": null,
+      "review_status": "diagnostic_review_pending"
+    },
+    {
+      "record_id": "opel_20261116_p0204_z19_diesel",
+      "raw_code": "P0204",
+      "base_code": "P0204",
+      "code_family": "P",
+      "code_type": "P0 family; normative SAE descriptor not independently licensed",
+      "ecu": "ECM",
+      "manufacturer": "Opel / Vauxhall",
+      "variant": "Astra H / Signum / Vectra C MY2004–2006 with Z19DT/Z19DTH/Z19DTL/Z19DTJ",
+      "definition_en": "Fuel injector cylinder 4 circuit malfunction (vehicle-specific HELLA descriptor)",
+      "translation_ar": "خلل في الدائرة الكهربائية لحاقن الوقود للأسطوانة رقم 4",
+      "fuel": "diesel",
+      "model_years": "2004–2006",
+      "engine_codes": [
+        "Z19DT",
+        "Z19DTH",
+        "Z19DTL",
+        "Z19DTJ"
+      ],
+      "models": [
+        "Astra H",
+        "Signum",
+        "Vectra C"
+      ],
+      "market": "Source does not isolate Swedish specification",
+      "symptoms": [
+        "Engine jerks",
+        "MIL can illuminate"
+      ],
+      "causes": [
+        {
+          "rank_as_test_order": 1,
+          "detail": "ECM software status/correction may be relevant per HELLA bulletin"
+        },
+        {
+          "rank_as_test_order": 2,
+          "detail": "Injector connector/loom may require inspection if software correction does not fix issue"
+        },
+        {
+          "rank_as_test_order": 3,
+          "detail": "Actual injector or driver electrical failure must be separately tested"
+        }
+      ],
+      "diagnostic_steps": [
+        "Read injector DTC and freeze frame, identify ECU calibration",
+        "Apply authorized ECM calibration if bulletin applies to VIN",
+        "If symptoms persist, inspect relevant injector wiring/connectors and perform continuity/insulation/load tests to OE values",
+        "Only on confirmed connector defect use improved connector cable set described by HELLA, cross-section 2.5 mm²; not a universal wiring specification",
+        "Road test and rescan"
+      ],
+      "live_data": [
+        {
+          "name_en": "Cylinder 4 Injector Command",
+          "name_ar": "أمر بخاخ الأسطوانة 4",
+          "reference": "unconfirmed"
+        },
+        {
+          "name_en": "Injector Circuit Status",
+          "name_ar": "حالة دائرة البخاخ",
+          "reference": "unconfirmed"
+        }
+      ],
+      "parts": [
+        "Injector connector and loom",
+        "Injector (test before replacement)",
+        "ECM software calibration"
+      ],
+      "wiring": "HELLA reports improved connector cable cross-section 2.5 mm²; not pinout",
+      "source_ids": [
+        "src_hella_z19_injectors_20261116"
+      ],
+      "verification_status": "source_verified_application",
+      "release_to_app": false,
+      "image_path": null,
+      "review_status": "diagnostic_review_pending"
+    },
+    {
+      "record_id": "opel_20261116_p0234_insignia_a16let",
+      "raw_code": "P0234",
+      "base_code": "P0234",
+      "code_family": "P",
+      "code_type": "P0 family; normative SAE descriptor not independently licensed",
+      "ecu": "ECM",
+      "manufacturer": "Opel / Vauxhall",
+      "variant": "Insignia A MY2012–2013 A16LET (LLU)",
+      "definition_en": "Turbocharger boost/wastegate related fault; HELLA scenario, normative SAE definition pending",
+      "translation_ar": "عطل مرتبط بتنظيم شحن التيربو وصمام التحكم بالويستغيت وفق الحالة الفنية؛ التعريف المعياري قيد التحقق",
+      "fuel": "petrol",
+      "model_years": "2012–2013",
+      "engine_codes": [
+        "A16LET (LLU)"
+      ],
+      "models": [
+        "Insignia A"
+      ],
+      "market": "not explicitly specified",
+      "symptoms": [
+        "Loss of engine power",
+        "MIL illuminated"
+      ],
+      "causes": [
+        {
+          "rank_as_test_order": 1,
+          "detail": "Sticky manufacturing/assembly residue obstructing wastegate solenoid valve (HELLA documented scenario)"
+        },
+        {
+          "rank_as_test_order": 2,
+          "detail": "Vacuum/pressure connections, electrical supply or genuine boost problem, verify independently"
+        }
+      ],
+      "diagnostic_steps": [
+        "Check both P0234 and co-occurring P0299 and note module/conditions",
+        "Inspect turbocharger control solenoid, hoses, connectors and actuation",
+        "Check for sticky residue at solenoid steel nozzle per HELLA procedure",
+        "If defective, HELLA cites replacement GM 55574902 / part 8 50 350 for this context; confirm by VIN before fitting",
+        "Clear code, road test and verify measured boost actual vs target against matching specifications"
+      ],
+      "live_data": [
+        {
+          "name_en": "Boost Pressure Desired",
+          "name_ar": "ضغط الشحن المطلوب",
+          "reference": "not specified"
+        },
+        {
+          "name_en": "Boost Pressure Actual",
+          "name_ar": "ضغط الشحن الفعلي",
+          "reference": "not specified"
+        },
+        {
+          "name_en": "Wastegate Solenoid Duty Cycle",
+          "name_ar": "نسبة تشغيل ملف صمام الويستغيت",
+          "reference": "not specified"
+        }
+      ],
+      "parts": [
+        "Turbo control solenoid GM 55574902 only after VIN matching",
+        "Vacuum/pressure hoses and wiring"
+      ],
+      "wiring": "pinout not available in cited bulletin",
+      "source_ids": [
+        "src_hella_insignia_a16let_turbo_20261116"
+      ],
+      "verification_status": "source_verified_application_normative_definition_pending",
+      "release_to_app": false,
+      "image_path": null,
+      "review_status": "diagnostic_review_pending"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "src_hella_z19_injectors_20261116",
+      "publisher": "HELLA Tech World",
+      "title": "Opel Astra H / Signum / Vectra C - Engine jolts, MIL may illuminate",
+      "url": "https://www.hella.com/techworld/us/bi/opel-astra-h-signum-vectra-c-engine-jolts-the-engine-control-lamp-may-illuminate/",
+      "scope": "MY2004–2006 Z19DT, Z19DTH, Z19DTL, Z19DTJ",
+      "date": "not explicitly listed on HTML page",
+      "verified_on": "2026-11-16",
+      "rights": "link/paraphrase only"
+    },
+    {
+      "source_id": "src_hella_insignia_a16let_turbo_20261116",
+      "publisher": "HELLA Tech World",
+      "title": "Vauxhall Insignia - Engine warning light comes on",
+      "url": "https://www.hella.com/techworld/uk/bi/vauxhall-insignia-engine-warning-light-comes-on/",
+      "scope": "Insignia MY2012–2013 A16LET (LLU)",
+      "date": "not explicitly listed on HTML page",
+      "verified_on": "2026-11-16",
+      "rights": "link/paraphrase only"
+    }
+  ]
+}

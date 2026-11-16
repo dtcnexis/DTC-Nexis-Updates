@@ -1,0 +1,1351 @@
+{
+  "schema": "dtc-nexis-permanent-brand-code-records-v1",
+  "brand": "Opel / Vauxhall",
+  "batch": "continuation_20261116",
+  "record_count": 16,
+  "distinct_new_base_codes": 15,
+  "baseline": {
+    "repo_file": "data/master/brands/opel_vauxhall.json",
+    "existing_records": 37,
+    "sha": "82981e9f9dd2f8c4e33ca8446e47d85cc6d6ca9e"
+  },
+  "release_to_app": "NOT_ACTIVE",
+  "status": "preserved_evidence_not_oem_approved",
+  "scope_note": "Only source-confirmed vehicle contexts; not a complete Opel library; individual SAE normative definitions may still require review",
+  "sources": [
+    {
+      "source_id": "src_hella_oxygen",
+      "title": "Opel Astra J - Engine control lamp lights up sporadically",
+      "url": "https://www.hella.com/techworld/us/bi/opel-astra-j-engine-control-lamp-lights-up-sporadically/",
+      "publisher": "HELLA Tech World",
+      "scope": "Astra J MY2010 A16LET oxygen sensor related group",
+      "publication_date": "not explicitly verified on selected page",
+      "verified_on": "2026-11-16",
+      "rights": "Reference URL and original paraphrase only; no HELLA images or copyrighted diagrams copied",
+      "grade": "technical-aftermarket-vehicle-specific"
+    },
+    {
+      "source_id": "src_hella_comp",
+      "title": "Opel Astra K - Engine warning lamp lighting up",
+      "url": "https://www.hella.com/techworld/au/bi/opel-astra-k-engine-warning-lamp-lighting-up/",
+      "publisher": "HELLA Tech World",
+      "scope": "Astra K MY2015-2018 all 1.6 diesel, cylinder contribution group",
+      "publication_date": "not explicitly verified on selected page",
+      "verified_on": "2026-11-16",
+      "rights": "Reference URL and original paraphrase only; no HELLA images or copyrighted diagrams copied",
+      "grade": "technical-aftermarket-vehicle-specific"
+    },
+    {
+      "source_id": "src_hella_pump",
+      "title": "Opel Astra J - Engine management system fault light SVS",
+      "url": "https://www.hella.com/techworld/en/bi/opel-astra-j-engine-management-system-fault-light-svs-lights-up/",
+      "publisher": "HELLA Tech World",
+      "scope": "Astra J MY2012 A17DTE/A17DTF with electrically controlled coolant pump",
+      "publication_date": "not explicitly verified on selected page",
+      "verified_on": "2026-11-16",
+      "rights": "Reference URL and original paraphrase only; no HELLA images or copyrighted diagrams copied",
+      "grade": "technical-aftermarket-vehicle-specific"
+    },
+    {
+      "source_id": "src_hella_intake",
+      "title": "Vauxhall Astra J - Engine does not start or loses power while driving",
+      "url": "https://www.hella.com/techworld/uk/bi/vauxhall-astra-j-engine-does-not-start-or-loses-power-while-driving/",
+      "publisher": "HELLA Tech World",
+      "scope": "Astra J MY2012 A17DTC/A17DTE/A17DTF",
+      "publication_date": "not explicitly verified on selected page",
+      "verified_on": "2026-11-16",
+      "rights": "Reference URL and original paraphrase only; no HELLA images or copyrighted diagrams copied",
+      "grade": "technical-aftermarket-vehicle-specific"
+    },
+    {
+      "source_id": "src_hella_dpf",
+      "title": "Opel Insignia - Driver Information Center shows Code 55",
+      "url": "https://www.hella.com/techworld/en/bi/opel-insignia-driver-information-center-shows-code-55/",
+      "publisher": "HELLA Tech World",
+      "scope": "Insignia A MY from 2009, A20DTC/A20DTH/A20DTJ",
+      "publication_date": "not explicitly verified on selected page",
+      "verified_on": "2026-11-16",
+      "rights": "Reference URL and original paraphrase only; no HELLA images or copyrighted diagrams copied",
+      "grade": "technical-aftermarket-vehicle-specific"
+    },
+    {
+      "source_id": "src_hella_egr2",
+      "title": "Opel Vectra C Signum Zafira B - Vehicle not starting up",
+      "url": "https://www.hella.com/techworld/en/bi/opel-vectra-c-signum-zafira-b-vehicle-not-starting-up/",
+      "publisher": "HELLA Tech World",
+      "scope": "Vectra C, Signum, Zafira B Z22YH through Feb 2006",
+      "publication_date": "not explicitly verified on selected page",
+      "verified_on": "2026-11-16",
+      "rights": "Reference URL and original paraphrase only; no HELLA images or copyrighted diagrams copied",
+      "grade": "technical-aftermarket-vehicle-specific"
+    },
+    {
+      "source_id": "src_hella_egr1",
+      "title": "Opel Corsa C - Engine control light is on",
+      "url": "https://www.hella.com/techworld/en/bi/opel-corsa-c-engine-control-light-is-on/",
+      "publisher": "HELLA Tech World",
+      "scope": "Corsa C Z10XE MY2001-2003",
+      "publication_date": "not explicitly verified on selected page",
+      "verified_on": "2026-11-16",
+      "rights": "Reference URL and original paraphrase only; no HELLA images or copyrighted diagrams copied",
+      "grade": "technical-aftermarket-vehicle-specific"
+    },
+    {
+      "source_id": "src_hella_can",
+      "title": "Opel Insignia - Engine malfunction indicator lamp lights up during thrust phase",
+      "url": "https://www.hella.com/techworld/tr/bi/opel-insignia-engine-malfunction-indicator-lamp-lights-up-during-the-thrust-phase/",
+      "publisher": "HELLA Tech World",
+      "scope": "Insignia A A18XER MY2009-2011 VIN 91000001–B1198549",
+      "publication_date": "not explicitly verified on selected page",
+      "verified_on": "2026-11-16",
+      "rights": "Reference URL and original paraphrase only; no HELLA images or copyrighted diagrams copied",
+      "grade": "technical-aftermarket-vehicle-specific"
+    },
+    {
+      "source_id": "src_hella_brake",
+      "title": "Opel Astra J - Electric parking brake indicator lamp illuminates",
+      "url": "https://www.hella.com/techworld/us/bi/opel-astra-j-error-code-c0277/",
+      "publisher": "HELLA Tech World",
+      "scope": "Astra J MY2010-2011 BCM C0277",
+      "publication_date": "not explicitly verified on selected page",
+      "verified_on": "2026-11-16",
+      "rights": "Reference URL and original paraphrase only; no HELLA images or copyrighted diagrams copied",
+      "grade": "technical-aftermarket-vehicle-specific"
+    }
+  ],
+  "records": [
+    {
+      "brand": "Opel / Vauxhall",
+      "category_scope": "vehicle-specific diagnostic occurrence, not global SAE DTC normative definition",
+      "market": "Europe applicability plausible; Swedish market inclusion not independently documented",
+      "vehicle_production_years": "not independently distinguished from model years in HELLA source",
+      "fuel": "not specified unless engine diesel stated",
+      "transmission": "not specified",
+      "wiring": "PIN / connector diagram unavailable; do not extrapolate",
+      "live_data_numeric_limits": "unconfirmed unless expressly noted",
+      "image_path": null,
+      "release_status": "NOT_ACTIVE",
+      "review_status": "technical_review_required",
+      "record_id": "opel_20261116_p0030_astra_j_a16let_2010",
+      "raw_code": "P0030",
+      "base_code": "P0030",
+      "code_family": "P",
+      "code_type": "generic_family; exact normative SAE status not checked",
+      "ecu": "ECM",
+      "manufacturer": "Opel/Vauxhall",
+      "variant": "astra_j_a16let_2010",
+      "definition_en": "Oxygen-sensor-related fault reported with this code in HELLA; exact individual SAE wording not verified",
+      "translation_ar": "عطل مرتبط بدائرة حساس الأكسجين؛ التعريف المعياري التفصيلي لهذا الرقم قيد التحقق",
+      "applicability": {
+        "model": "Astra J",
+        "model_years": "2010",
+        "engine_code": "A16LET",
+        "ecu": "ECM",
+        "fuel": "petrol",
+        "transmission": null,
+        "market": null
+      },
+      "symptoms": "MIL intermittently illuminated",
+      "causes": [
+        {
+          "rank_as_test_order": 1,
+          "hypothesis": "Moisture/corrosion in engine harness, especially thermostat-area connector, is documented",
+          "not_statistical_prevalence": true
+        },
+        {
+          "rank_as_test_order": 2,
+          "hypothesis": "Possible actual sensor/heater circuit fault; must be differentiated by electrical tests",
+          "not_statistical_prevalence": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Read entire fault memory and freeze frame; inspect thermostat-area connector and engine harness for moisture and oxidation",
+        "Test affected O2 sensor heater/signal circuits using model- and ECU-specific specifications before parts replacement",
+        "Confirm by clearing code and repeat road test"
+      ],
+      "live_data": [
+        {
+          "name_en": "Oxygen Sensor Heater Status",
+          "name_ar": "حالة سخان حساس الأكسجين",
+          "value": "not documented"
+        },
+        {
+          "name_en": "Battery Voltage",
+          "name_ar": "جهد البطارية",
+          "value": "not documented"
+        }
+      ],
+      "tools": [
+        "OBD-capable OE-compatible scan tool",
+        "digital multimeter",
+        "vehicle-specific service procedures where available"
+      ],
+      "parts": [
+        "Engine harness",
+        "Thermostat connector",
+        "Oxygen sensors"
+      ],
+      "source_ids": [
+        "src_hella_oxygen"
+      ],
+      "verification_status": "source_verified_application_exact_standard_definition_pending",
+      "application_evidence": "HELLA case report names the observed code and its specific vehicle context; does not prove all VINs",
+      "verification_date": "2026-11-16"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "category_scope": "vehicle-specific diagnostic occurrence, not global SAE DTC normative definition",
+      "market": "Europe applicability plausible; Swedish market inclusion not independently documented",
+      "vehicle_production_years": "not independently distinguished from model years in HELLA source",
+      "fuel": "not specified unless engine diesel stated",
+      "transmission": "not specified",
+      "wiring": "PIN / connector diagram unavailable; do not extrapolate",
+      "live_data_numeric_limits": "unconfirmed unless expressly noted",
+      "image_path": null,
+      "release_status": "NOT_ACTIVE",
+      "review_status": "technical_review_required",
+      "record_id": "opel_20261116_p0036_astra_j_a16let_2010",
+      "raw_code": "P0036",
+      "base_code": "P0036",
+      "code_family": "P",
+      "code_type": "generic_family; exact normative SAE status not checked",
+      "ecu": "ECM",
+      "manufacturer": "Opel/Vauxhall",
+      "variant": "astra_j_a16let_2010",
+      "definition_en": "Oxygen-sensor-related fault reported with this code in HELLA; exact individual SAE wording not verified",
+      "translation_ar": "عطل مرتبط بدائرة حساس الأكسجين؛ التعريف المعياري التفصيلي لهذا الرقم قيد التحقق",
+      "applicability": {
+        "model": "Astra J",
+        "model_years": "2010",
+        "engine_code": "A16LET",
+        "ecu": "ECM",
+        "fuel": "petrol",
+        "transmission": null,
+        "market": null
+      },
+      "symptoms": "MIL intermittently illuminated",
+      "causes": [
+        {
+          "rank_as_test_order": 1,
+          "hypothesis": "Moisture/corrosion in engine harness, especially thermostat-area connector, is documented",
+          "not_statistical_prevalence": true
+        },
+        {
+          "rank_as_test_order": 2,
+          "hypothesis": "Possible actual sensor/heater circuit fault; must be differentiated by electrical tests",
+          "not_statistical_prevalence": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Read entire fault memory and freeze frame; inspect thermostat-area connector and engine harness for moisture and oxidation",
+        "Test affected O2 sensor heater/signal circuits using model- and ECU-specific specifications before parts replacement",
+        "Confirm by clearing code and repeat road test"
+      ],
+      "live_data": [
+        {
+          "name_en": "Oxygen Sensor Heater Status",
+          "name_ar": "حالة سخان حساس الأكسجين",
+          "value": "not documented"
+        },
+        {
+          "name_en": "Battery Voltage",
+          "name_ar": "جهد البطارية",
+          "value": "not documented"
+        }
+      ],
+      "tools": [
+        "OBD-capable OE-compatible scan tool",
+        "digital multimeter",
+        "vehicle-specific service procedures where available"
+      ],
+      "parts": [
+        "Engine harness",
+        "Thermostat connector",
+        "Oxygen sensors"
+      ],
+      "source_ids": [
+        "src_hella_oxygen"
+      ],
+      "verification_status": "source_verified_application_exact_standard_definition_pending",
+      "application_evidence": "HELLA case report names the observed code and its specific vehicle context; does not prove all VINs",
+      "verification_date": "2026-11-16"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "category_scope": "vehicle-specific diagnostic occurrence, not global SAE DTC normative definition",
+      "market": "Europe applicability plausible; Swedish market inclusion not independently documented",
+      "vehicle_production_years": "not independently distinguished from model years in HELLA source",
+      "fuel": "not specified unless engine diesel stated",
+      "transmission": "not specified",
+      "wiring": "PIN / connector diagram unavailable; do not extrapolate",
+      "live_data_numeric_limits": "unconfirmed unless expressly noted",
+      "image_path": null,
+      "release_status": "NOT_ACTIVE",
+      "review_status": "technical_review_required",
+      "record_id": "opel_20261116_p0053_astra_j_a16let_2010",
+      "raw_code": "P0053",
+      "base_code": "P0053",
+      "code_family": "P",
+      "code_type": "generic_family; exact normative SAE status not checked",
+      "ecu": "ECM",
+      "manufacturer": "Opel/Vauxhall",
+      "variant": "astra_j_a16let_2010",
+      "definition_en": "Oxygen-sensor-related fault reported with this code in HELLA; exact individual SAE wording not verified",
+      "translation_ar": "عطل مرتبط بدائرة حساس الأكسجين؛ التعريف المعياري التفصيلي لهذا الرقم قيد التحقق",
+      "applicability": {
+        "model": "Astra J",
+        "model_years": "2010",
+        "engine_code": "A16LET",
+        "ecu": "ECM",
+        "fuel": "petrol",
+        "transmission": null,
+        "market": null
+      },
+      "symptoms": "MIL intermittently illuminated",
+      "causes": [
+        {
+          "rank_as_test_order": 1,
+          "hypothesis": "Moisture/corrosion in engine harness, especially thermostat-area connector, is documented",
+          "not_statistical_prevalence": true
+        },
+        {
+          "rank_as_test_order": 2,
+          "hypothesis": "Possible actual sensor/heater circuit fault; must be differentiated by electrical tests",
+          "not_statistical_prevalence": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Read entire fault memory and freeze frame; inspect thermostat-area connector and engine harness for moisture and oxidation",
+        "Test affected O2 sensor heater/signal circuits using model- and ECU-specific specifications before parts replacement",
+        "Confirm by clearing code and repeat road test"
+      ],
+      "live_data": [
+        {
+          "name_en": "Oxygen Sensor Heater Status",
+          "name_ar": "حالة سخان حساس الأكسجين",
+          "value": "not documented"
+        },
+        {
+          "name_en": "Battery Voltage",
+          "name_ar": "جهد البطارية",
+          "value": "not documented"
+        }
+      ],
+      "tools": [
+        "OBD-capable OE-compatible scan tool",
+        "digital multimeter",
+        "vehicle-specific service procedures where available"
+      ],
+      "parts": [
+        "Engine harness",
+        "Thermostat connector",
+        "Oxygen sensors"
+      ],
+      "source_ids": [
+        "src_hella_oxygen"
+      ],
+      "verification_status": "source_verified_application_exact_standard_definition_pending",
+      "application_evidence": "HELLA case report names the observed code and its specific vehicle context; does not prove all VINs",
+      "verification_date": "2026-11-16"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "category_scope": "vehicle-specific diagnostic occurrence, not global SAE DTC normative definition",
+      "market": "Europe applicability plausible; Swedish market inclusion not independently documented",
+      "vehicle_production_years": "not independently distinguished from model years in HELLA source",
+      "fuel": "not specified unless engine diesel stated",
+      "transmission": "not specified",
+      "wiring": "PIN / connector diagram unavailable; do not extrapolate",
+      "live_data_numeric_limits": "unconfirmed unless expressly noted",
+      "image_path": null,
+      "release_status": "NOT_ACTIVE",
+      "review_status": "technical_review_required",
+      "record_id": "opel_20261116_p0054_astra_j_a16let_2010",
+      "raw_code": "P0054",
+      "base_code": "P0054",
+      "code_family": "P",
+      "code_type": "generic_family; exact normative SAE status not checked",
+      "ecu": "ECM",
+      "manufacturer": "Opel/Vauxhall",
+      "variant": "astra_j_a16let_2010",
+      "definition_en": "Oxygen-sensor-related fault reported with this code in HELLA; exact individual SAE wording not verified",
+      "translation_ar": "عطل مرتبط بدائرة حساس الأكسجين؛ التعريف المعياري التفصيلي لهذا الرقم قيد التحقق",
+      "applicability": {
+        "model": "Astra J",
+        "model_years": "2010",
+        "engine_code": "A16LET",
+        "ecu": "ECM",
+        "fuel": "petrol",
+        "transmission": null,
+        "market": null
+      },
+      "symptoms": "MIL intermittently illuminated",
+      "causes": [
+        {
+          "rank_as_test_order": 1,
+          "hypothesis": "Moisture/corrosion in engine harness, especially thermostat-area connector, is documented",
+          "not_statistical_prevalence": true
+        },
+        {
+          "rank_as_test_order": 2,
+          "hypothesis": "Possible actual sensor/heater circuit fault; must be differentiated by electrical tests",
+          "not_statistical_prevalence": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Read entire fault memory and freeze frame; inspect thermostat-area connector and engine harness for moisture and oxidation",
+        "Test affected O2 sensor heater/signal circuits using model- and ECU-specific specifications before parts replacement",
+        "Confirm by clearing code and repeat road test"
+      ],
+      "live_data": [
+        {
+          "name_en": "Oxygen Sensor Heater Status",
+          "name_ar": "حالة سخان حساس الأكسجين",
+          "value": "not documented"
+        },
+        {
+          "name_en": "Battery Voltage",
+          "name_ar": "جهد البطارية",
+          "value": "not documented"
+        }
+      ],
+      "tools": [
+        "OBD-capable OE-compatible scan tool",
+        "digital multimeter",
+        "vehicle-specific service procedures where available"
+      ],
+      "parts": [
+        "Engine harness",
+        "Thermostat connector",
+        "Oxygen sensors"
+      ],
+      "source_ids": [
+        "src_hella_oxygen"
+      ],
+      "verification_status": "source_verified_application_exact_standard_definition_pending",
+      "application_evidence": "HELLA case report names the observed code and its specific vehicle context; does not prove all VINs",
+      "verification_date": "2026-11-16"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "category_scope": "vehicle-specific diagnostic occurrence, not global SAE DTC normative definition",
+      "market": "Europe applicability plausible; Swedish market inclusion not independently documented",
+      "vehicle_production_years": "not independently distinguished from model years in HELLA source",
+      "fuel": "not specified unless engine diesel stated",
+      "transmission": "not specified",
+      "wiring": "PIN / connector diagram unavailable; do not extrapolate",
+      "live_data_numeric_limits": "unconfirmed unless expressly noted",
+      "image_path": null,
+      "release_status": "NOT_ACTIVE",
+      "review_status": "technical_review_required",
+      "record_id": "opel_20261116_p0135_astra_j_a16let_2010",
+      "raw_code": "P0135",
+      "base_code": "P0135",
+      "code_family": "P",
+      "code_type": "generic_family; exact normative SAE status not checked",
+      "ecu": "ECM",
+      "manufacturer": "Opel/Vauxhall",
+      "variant": "astra_j_a16let_2010",
+      "definition_en": "Oxygen-sensor-related fault reported with this code in HELLA; exact individual SAE wording not verified",
+      "translation_ar": "عطل مرتبط بدائرة حساس الأكسجين؛ التعريف المعياري التفصيلي لهذا الرقم قيد التحقق",
+      "applicability": {
+        "model": "Astra J",
+        "model_years": "2010",
+        "engine_code": "A16LET",
+        "ecu": "ECM",
+        "fuel": "petrol",
+        "transmission": null,
+        "market": null
+      },
+      "symptoms": "MIL intermittently illuminated",
+      "causes": [
+        {
+          "rank_as_test_order": 1,
+          "hypothesis": "Moisture/corrosion in engine harness, especially thermostat-area connector, is documented",
+          "not_statistical_prevalence": true
+        },
+        {
+          "rank_as_test_order": 2,
+          "hypothesis": "Possible actual sensor/heater circuit fault; must be differentiated by electrical tests",
+          "not_statistical_prevalence": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Read entire fault memory and freeze frame; inspect thermostat-area connector and engine harness for moisture and oxidation",
+        "Test affected O2 sensor heater/signal circuits using model- and ECU-specific specifications before parts replacement",
+        "Confirm by clearing code and repeat road test"
+      ],
+      "live_data": [
+        {
+          "name_en": "Oxygen Sensor Heater Status",
+          "name_ar": "حالة سخان حساس الأكسجين",
+          "value": "not documented"
+        },
+        {
+          "name_en": "Battery Voltage",
+          "name_ar": "جهد البطارية",
+          "value": "not documented"
+        }
+      ],
+      "tools": [
+        "OBD-capable OE-compatible scan tool",
+        "digital multimeter",
+        "vehicle-specific service procedures where available"
+      ],
+      "parts": [
+        "Engine harness",
+        "Thermostat connector",
+        "Oxygen sensors"
+      ],
+      "source_ids": [
+        "src_hella_oxygen"
+      ],
+      "verification_status": "source_verified_application_exact_standard_definition_pending",
+      "application_evidence": "HELLA case report names the observed code and its specific vehicle context; does not prove all VINs",
+      "verification_date": "2026-11-16"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "category_scope": "vehicle-specific diagnostic occurrence, not global SAE DTC normative definition",
+      "market": "Europe applicability plausible; Swedish market inclusion not independently documented",
+      "vehicle_production_years": "not independently distinguished from model years in HELLA source",
+      "fuel": "not specified unless engine diesel stated",
+      "transmission": "not specified",
+      "wiring": "PIN / connector diagram unavailable; do not extrapolate",
+      "live_data_numeric_limits": "unconfirmed unless expressly noted",
+      "image_path": null,
+      "release_status": "NOT_ACTIVE",
+      "review_status": "technical_review_required",
+      "record_id": "opel_20261116_p0263_astra_k_16d_1",
+      "raw_code": "P0263",
+      "base_code": "P0263",
+      "code_family": "P",
+      "code_type": "generic_family; exact normative SAE status not checked",
+      "ecu": "ECM",
+      "manufacturer": "Opel/Vauxhall",
+      "variant": "astra_k_16d_1",
+      "definition_en": "Cylinder 1 contribution / balance fault",
+      "translation_ar": "خلل مساهمة أو موازنة الأسطوانة رقم 1",
+      "applicability": {
+        "model": "Astra K",
+        "model_years": "2015–2018",
+        "engine_family": "1.6 diesel (all per source)",
+        "engine_code": null,
+        "ecu": "ECM",
+        "market": null,
+        "fuel": "diesel"
+      },
+      "symptoms": "MIL while driving",
+      "causes": [
+        {
+          "rank_as_test_order": 1,
+          "hypothesis": "Crankshaft signal calibration error documented in HELLA case",
+          "not_statistical_prevalence": true
+        },
+        {
+          "rank_as_test_order": 2,
+          "hypothesis": "Electrical/mechanical or injector system faults must be excluded first",
+          "not_statistical_prevalence": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Run electrical and mechanical checks to manufacturer specifications",
+        "If no other faults, perform crankshaft sensor / variation relearn with compatible scanner",
+        "Road test and confirm faults do not return"
+      ],
+      "live_data": [
+        {
+          "name_en": "Cylinder 1 Contribution/Balance",
+          "name_ar": "مساهمة/موازنة الأسطوانة 1",
+          "reference": "not documented"
+        },
+        {
+          "name_en": "Crankshaft Relearn Status",
+          "name_ar": "حالة إعادة تعلم عمود المرفق",
+          "reference": "not documented"
+        }
+      ],
+      "tools": [
+        "OBD-capable OE-compatible scan tool",
+        "digital multimeter",
+        "vehicle-specific service procedures where available"
+      ],
+      "parts": [
+        "Crankshaft position sensor for relearn procedure; no replacement implied",
+        "Injection system to inspect"
+      ],
+      "source_ids": [
+        "src_hella_comp"
+      ],
+      "verification_status": "context_verified",
+      "application_evidence": "HELLA case report names the observed code and its specific vehicle context; does not prove all VINs",
+      "verification_date": "2026-11-16"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "category_scope": "vehicle-specific diagnostic occurrence, not global SAE DTC normative definition",
+      "market": "Europe applicability plausible; Swedish market inclusion not independently documented",
+      "vehicle_production_years": "not independently distinguished from model years in HELLA source",
+      "fuel": "not specified unless engine diesel stated",
+      "transmission": "not specified",
+      "wiring": "PIN / connector diagram unavailable; do not extrapolate",
+      "live_data_numeric_limits": "unconfirmed unless expressly noted",
+      "image_path": null,
+      "release_status": "NOT_ACTIVE",
+      "review_status": "technical_review_required",
+      "record_id": "opel_20261116_p0266_astra_k_16d_2",
+      "raw_code": "P0266",
+      "base_code": "P0266",
+      "code_family": "P",
+      "code_type": "generic_family; exact normative SAE status not checked",
+      "ecu": "ECM",
+      "manufacturer": "Opel/Vauxhall",
+      "variant": "astra_k_16d_2",
+      "definition_en": "Cylinder 2 contribution / balance fault",
+      "translation_ar": "خلل مساهمة أو موازنة الأسطوانة رقم 2",
+      "applicability": {
+        "model": "Astra K",
+        "model_years": "2015–2018",
+        "engine_family": "1.6 diesel (all per source)",
+        "engine_code": null,
+        "ecu": "ECM",
+        "market": null,
+        "fuel": "diesel"
+      },
+      "symptoms": "MIL while driving",
+      "causes": [
+        {
+          "rank_as_test_order": 1,
+          "hypothesis": "Crankshaft signal calibration error documented in HELLA case",
+          "not_statistical_prevalence": true
+        },
+        {
+          "rank_as_test_order": 2,
+          "hypothesis": "Electrical/mechanical or injector system faults must be excluded first",
+          "not_statistical_prevalence": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Run electrical and mechanical checks to manufacturer specifications",
+        "If no other faults, perform crankshaft sensor / variation relearn with compatible scanner",
+        "Road test and confirm faults do not return"
+      ],
+      "live_data": [
+        {
+          "name_en": "Cylinder 2 Contribution/Balance",
+          "name_ar": "مساهمة/موازنة الأسطوانة 2",
+          "reference": "not documented"
+        },
+        {
+          "name_en": "Crankshaft Relearn Status",
+          "name_ar": "حالة إعادة تعلم عمود المرفق",
+          "reference": "not documented"
+        }
+      ],
+      "tools": [
+        "OBD-capable OE-compatible scan tool",
+        "digital multimeter",
+        "vehicle-specific service procedures where available"
+      ],
+      "parts": [
+        "Crankshaft position sensor for relearn procedure; no replacement implied",
+        "Injection system to inspect"
+      ],
+      "source_ids": [
+        "src_hella_comp"
+      ],
+      "verification_status": "context_verified",
+      "application_evidence": "HELLA case report names the observed code and its specific vehicle context; does not prove all VINs",
+      "verification_date": "2026-11-16"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "category_scope": "vehicle-specific diagnostic occurrence, not global SAE DTC normative definition",
+      "market": "Europe applicability plausible; Swedish market inclusion not independently documented",
+      "vehicle_production_years": "not independently distinguished from model years in HELLA source",
+      "fuel": "not specified unless engine diesel stated",
+      "transmission": "not specified",
+      "wiring": "PIN / connector diagram unavailable; do not extrapolate",
+      "live_data_numeric_limits": "unconfirmed unless expressly noted",
+      "image_path": null,
+      "release_status": "NOT_ACTIVE",
+      "review_status": "technical_review_required",
+      "record_id": "opel_20261116_p0269_astra_k_16d_3",
+      "raw_code": "P0269",
+      "base_code": "P0269",
+      "code_family": "P",
+      "code_type": "generic_family; exact normative SAE status not checked",
+      "ecu": "ECM",
+      "manufacturer": "Opel/Vauxhall",
+      "variant": "astra_k_16d_3",
+      "definition_en": "Cylinder 3 contribution / balance fault",
+      "translation_ar": "خلل مساهمة أو موازنة الأسطوانة رقم 3",
+      "applicability": {
+        "model": "Astra K",
+        "model_years": "2015–2018",
+        "engine_family": "1.6 diesel (all per source)",
+        "engine_code": null,
+        "ecu": "ECM",
+        "market": null,
+        "fuel": "diesel"
+      },
+      "symptoms": "MIL while driving",
+      "causes": [
+        {
+          "rank_as_test_order": 1,
+          "hypothesis": "Crankshaft signal calibration error documented in HELLA case",
+          "not_statistical_prevalence": true
+        },
+        {
+          "rank_as_test_order": 2,
+          "hypothesis": "Electrical/mechanical or injector system faults must be excluded first",
+          "not_statistical_prevalence": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Run electrical and mechanical checks to manufacturer specifications",
+        "If no other faults, perform crankshaft sensor / variation relearn with compatible scanner",
+        "Road test and confirm faults do not return"
+      ],
+      "live_data": [
+        {
+          "name_en": "Cylinder 3 Contribution/Balance",
+          "name_ar": "مساهمة/موازنة الأسطوانة 3",
+          "reference": "not documented"
+        },
+        {
+          "name_en": "Crankshaft Relearn Status",
+          "name_ar": "حالة إعادة تعلم عمود المرفق",
+          "reference": "not documented"
+        }
+      ],
+      "tools": [
+        "OBD-capable OE-compatible scan tool",
+        "digital multimeter",
+        "vehicle-specific service procedures where available"
+      ],
+      "parts": [
+        "Crankshaft position sensor for relearn procedure; no replacement implied",
+        "Injection system to inspect"
+      ],
+      "source_ids": [
+        "src_hella_comp"
+      ],
+      "verification_status": "context_verified",
+      "application_evidence": "HELLA case report names the observed code and its specific vehicle context; does not prove all VINs",
+      "verification_date": "2026-11-16"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "category_scope": "vehicle-specific diagnostic occurrence, not global SAE DTC normative definition",
+      "market": "Europe applicability plausible; Swedish market inclusion not independently documented",
+      "vehicle_production_years": "not independently distinguished from model years in HELLA source",
+      "fuel": "not specified unless engine diesel stated",
+      "transmission": "not specified",
+      "wiring": "PIN / connector diagram unavailable; do not extrapolate",
+      "live_data_numeric_limits": "unconfirmed unless expressly noted",
+      "image_path": null,
+      "release_status": "NOT_ACTIVE",
+      "review_status": "technical_review_required",
+      "record_id": "opel_20261116_p0272_astra_k_16d_4",
+      "raw_code": "P0272",
+      "base_code": "P0272",
+      "code_family": "P",
+      "code_type": "generic_family; exact normative SAE status not checked",
+      "ecu": "ECM",
+      "manufacturer": "Opel/Vauxhall",
+      "variant": "astra_k_16d_4",
+      "definition_en": "Cylinder 4 contribution / balance fault",
+      "translation_ar": "خلل مساهمة أو موازنة الأسطوانة رقم 4",
+      "applicability": {
+        "model": "Astra K",
+        "model_years": "2015–2018",
+        "engine_family": "1.6 diesel (all per source)",
+        "engine_code": null,
+        "ecu": "ECM",
+        "market": null,
+        "fuel": "diesel"
+      },
+      "symptoms": "MIL while driving",
+      "causes": [
+        {
+          "rank_as_test_order": 1,
+          "hypothesis": "Crankshaft signal calibration error documented in HELLA case",
+          "not_statistical_prevalence": true
+        },
+        {
+          "rank_as_test_order": 2,
+          "hypothesis": "Electrical/mechanical or injector system faults must be excluded first",
+          "not_statistical_prevalence": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Run electrical and mechanical checks to manufacturer specifications",
+        "If no other faults, perform crankshaft sensor / variation relearn with compatible scanner",
+        "Road test and confirm faults do not return"
+      ],
+      "live_data": [
+        {
+          "name_en": "Cylinder 4 Contribution/Balance",
+          "name_ar": "مساهمة/موازنة الأسطوانة 4",
+          "reference": "not documented"
+        },
+        {
+          "name_en": "Crankshaft Relearn Status",
+          "name_ar": "حالة إعادة تعلم عمود المرفق",
+          "reference": "not documented"
+        }
+      ],
+      "tools": [
+        "OBD-capable OE-compatible scan tool",
+        "digital multimeter",
+        "vehicle-specific service procedures where available"
+      ],
+      "parts": [
+        "Crankshaft position sensor for relearn procedure; no replacement implied",
+        "Injection system to inspect"
+      ],
+      "source_ids": [
+        "src_hella_comp"
+      ],
+      "verification_status": "context_verified",
+      "application_evidence": "HELLA case report names the observed code and its specific vehicle context; does not prove all VINs",
+      "verification_date": "2026-11-16"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "category_scope": "vehicle-specific diagnostic occurrence, not global SAE DTC normative definition",
+      "market": "Europe applicability plausible; Swedish market inclusion not independently documented",
+      "vehicle_production_years": "not independently distinguished from model years in HELLA source",
+      "fuel": "not specified unless engine diesel stated",
+      "transmission": "not specified",
+      "wiring": "PIN / connector diagram unavailable; do not extrapolate",
+      "live_data_numeric_limits": "unconfirmed unless expressly noted",
+      "image_path": null,
+      "release_status": "NOT_ACTIVE",
+      "review_status": "technical_review_required",
+      "record_id": "opel_20261116_p261a_astra_j_2012_electrical_pump",
+      "raw_code": "P261A",
+      "base_code": "P261A",
+      "code_family": "P",
+      "code_type": "generic_family; exact normative SAE status not checked",
+      "ecu": "ECM",
+      "manufacturer": "Opel/Vauxhall",
+      "variant": "astra_j_2012_electrical_pump",
+      "definition_en": "Engine-driven electrically controlled coolant-pump related fault on specified application; formal DTC descriptor not independently confirmed",
+      "translation_ar": "عطل متعلق بالمضخة الميكانيكية للمبرد ذات التحكم الكهربائي في هذا التطبيق؛ التعريف المعياري غير مؤكد",
+      "applicability": {
+        "model": "Astra J",
+        "model_years": "2012",
+        "engine_codes": [
+          "A17DTE",
+          "A17DTF"
+        ],
+        "configuration": "engine-driven electrically controlled coolant pump",
+        "ecu": "ECM",
+        "fuel": "diesel"
+      },
+      "symptoms": "Service Vehicle Soon/engine-management warning lamp",
+      "causes": [
+        {
+          "rank_as_test_order": 1,
+          "hypothesis": "ECU software weakness mentioned by HELLA",
+          "not_statistical_prevalence": true
+        },
+        {
+          "rank_as_test_order": 2,
+          "hypothesis": "Pump electrical, wiring, mechanical defects must be checked before replacement",
+          "not_statistical_prevalence": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm engine configuration and do not confuse with auxiliary electric pump",
+        "Perform visual and functional inspection",
+        "Check available approved ECU software calibration/update per VIN; test again"
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine Coolant Pump Command",
+          "name_ar": "أمر التحكم بمضخة التبريد",
+          "reference": "not documented"
+        }
+      ],
+      "tools": [
+        "OBD-capable OE-compatible scan tool",
+        "digital multimeter",
+        "vehicle-specific service procedures where available"
+      ],
+      "parts": [
+        "Engine-driven electrically controlled coolant pump",
+        "ECM"
+      ],
+      "source_ids": [
+        "src_hella_pump"
+      ],
+      "verification_status": "source_verified_application_exact_standard_definition_pending",
+      "application_evidence": "HELLA case report names the observed code and its specific vehicle context; does not prove all VINs",
+      "verification_date": "2026-11-16"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "category_scope": "vehicle-specific diagnostic occurrence, not global SAE DTC normative definition",
+      "market": "Europe applicability plausible; Swedish market inclusion not independently documented",
+      "vehicle_production_years": "not independently distinguished from model years in HELLA source",
+      "fuel": "not specified unless engine diesel stated",
+      "transmission": "not specified",
+      "wiring": "PIN / connector diagram unavailable; do not extrapolate",
+      "live_data_numeric_limits": "unconfirmed unless expressly noted",
+      "image_path": null,
+      "release_status": "NOT_ACTIVE",
+      "review_status": "technical_review_required",
+      "record_id": "opel_20261116_p02e4_astra_j_2012_intake_flap",
+      "raw_code": "P02E4",
+      "base_code": "P02E4",
+      "code_family": "P",
+      "code_type": "generic_family; exact normative SAE status not checked",
+      "ecu": "ECM",
+      "manufacturer": "Opel/Vauxhall",
+      "variant": "astra_j_2012_intake_flap",
+      "definition_en": "Intake air flap actuator stuck open — mechanical malfunction in the documented application",
+      "translation_ar": "تعليق مشغل بوابة هواء السحب في وضع الفتح — خلل ميكانيكي في التطبيق المحدد",
+      "applicability": {
+        "model": "Astra J",
+        "model_years": "2012",
+        "engine_codes": [
+          "A17DTC",
+          "A17DTE",
+          "A17DTF"
+        ],
+        "engine_variants": [
+          "A17DTC (LUE)",
+          "A17DTE (LKR)",
+          "A17DTF (LKR)"
+        ],
+        "ecu": "ECM",
+        "fuel": "diesel"
+      },
+      "symptoms": "No-start or reduced power while driving",
+      "causes": [
+        {
+          "rank_as_test_order": 1,
+          "hypothesis": "Moisture/condensation from charge-air cooler freezing at the intake throttle housing",
+          "not_statistical_prevalence": true
+        },
+        {
+          "rank_as_test_order": 2,
+          "hypothesis": "Flap obstruction or actuator mechanical damage",
+          "not_statistical_prevalence": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Inspect throttle body housing and intake flap for obstruction",
+        "Check charge-air cooler for condensate; drain, clean and dry as per service procedure",
+        "Inspect for damaged components, reassemble and if needed adapt/reprogram following OEM guidance"
+      ],
+      "live_data": [
+        {
+          "name_en": "Intake Air Flap Command",
+          "name_ar": "أمر بوابة هواء السحب",
+          "reference": "not documented"
+        },
+        {
+          "name_en": "Intake Air Flap Position",
+          "name_ar": "موضع بوابة هواء السحب",
+          "reference": "not documented"
+        }
+      ],
+      "tools": [
+        "OBD-capable OE-compatible scan tool",
+        "digital multimeter",
+        "vehicle-specific service procedures where available"
+      ],
+      "parts": [
+        "Intake flap/throttle body",
+        "Charge air cooler"
+      ],
+      "source_ids": [
+        "src_hella_intake"
+      ],
+      "verification_status": "context_verified",
+      "application_evidence": "HELLA case report names the observed code and its specific vehicle context; does not prove all VINs",
+      "verification_date": "2026-11-16"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "category_scope": "vehicle-specific diagnostic occurrence, not global SAE DTC normative definition",
+      "market": "Europe applicability plausible; Swedish market inclusion not independently documented",
+      "vehicle_production_years": "not independently distinguished from model years in HELLA source",
+      "fuel": "not specified unless engine diesel stated",
+      "transmission": "not specified",
+      "wiring": "PIN / connector diagram unavailable; do not extrapolate",
+      "live_data_numeric_limits": "unconfirmed unless expressly noted",
+      "image_path": null,
+      "release_status": "NOT_ACTIVE",
+      "review_status": "technical_review_required",
+      "record_id": "opel_20261116_p2459_insignia_a20dtx_dpf",
+      "raw_code": "P2459",
+      "base_code": "P2459",
+      "code_family": "P",
+      "code_type": "generic_family; exact normative SAE status not checked",
+      "ecu": "ECM",
+      "manufacturer": "Opel/Vauxhall",
+      "variant": "insignia_a20dtx_dpf",
+      "definition_en": "Diesel Particulate Filter regeneration frequency / regeneration events too frequent",
+      "translation_ar": "ارتفاع تواتر دورات تجديد فلتر جسيمات الديزل DPF",
+      "applicability": {
+        "model": "Insignia A",
+        "model_years": "from 2009 (end not stated)",
+        "engine_codes": [
+          "A20DTC",
+          "A20DTH",
+          "A20DTJ"
+        ],
+        "ecu": "ECM",
+        "fuel": "diesel"
+      },
+      "symptoms": "DIC Code 55/check DPF, exhaust noises, rough running",
+      "causes": [
+        {
+          "rank_as_test_order": 1,
+          "hypothesis": "ECM calibration weakness noted in HELLA case",
+          "not_statistical_prevalence": true
+        },
+        {
+          "rank_as_test_order": 2,
+          "hypothesis": "DPF regeneration process fault",
+          "not_statistical_prevalence": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm DTC P2459 via ECM (DIC Code 55 is display message, NOT equivalent to OBD P-code)",
+        "Check DPF regeneration history and exhaust/pressure sensors using VIN-specific thresholds",
+        "Check if OEM software update applies; do not force regeneration without verifying conditions"
+      ],
+      "live_data": [
+        {
+          "name_en": "DPF Regeneration Count",
+          "name_ar": "عدد دورات تجديد DPF",
+          "reference": "not documented"
+        },
+        {
+          "name_en": "DPF Differential Pressure",
+          "name_ar": "فرق ضغط DPF",
+          "reference": "not documented"
+        }
+      ],
+      "tools": [
+        "OBD-capable OE-compatible scan tool",
+        "digital multimeter",
+        "vehicle-specific service procedures where available"
+      ],
+      "parts": [
+        "DPF",
+        "Differential pressure and exhaust temperature sensors",
+        "ECM"
+      ],
+      "source_ids": [
+        "src_hella_dpf"
+      ],
+      "verification_status": "context_verified",
+      "application_evidence": "HELLA case report names the observed code and its specific vehicle context; does not prove all VINs",
+      "verification_date": "2026-11-16"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "category_scope": "vehicle-specific diagnostic occurrence, not global SAE DTC normative definition",
+      "market": "Europe applicability plausible; Swedish market inclusion not independently documented",
+      "vehicle_production_years": "not independently distinguished from model years in HELLA source",
+      "fuel": "not specified unless engine diesel stated",
+      "transmission": "not specified",
+      "wiring": "PIN / connector diagram unavailable; do not extrapolate",
+      "live_data_numeric_limits": "unconfirmed unless expressly noted",
+      "image_path": null,
+      "release_status": "NOT_ACTIVE",
+      "review_status": "technical_review_required",
+      "record_id": "opel_20261116_p1405_corsa_c_z10xe",
+      "raw_code": "P1405",
+      "base_code": "P1405",
+      "code_family": "P",
+      "code_type": "manufacturer_specific_P1_range; exact designation ECU-dependent",
+      "ecu": "ECM",
+      "manufacturer": "Opel/Vauxhall",
+      "variant": "corsa_c_z10xe",
+      "definition_en": "EGR valve implausible feedback signal (vehicle-specific HELLA wording)",
+      "translation_ar": "إشارة تغذية راجعة غير منطقية من صمام تدوير غازات العادم EGR",
+      "applicability": {
+        "model": "Corsa C",
+        "model_years": "2001–2003",
+        "engine_code": "Z10XE",
+        "ecu": "ECM",
+        "fuel": "petrol"
+      },
+      "symptoms": "MIL illuminated",
+      "causes": [
+        {
+          "rank_as_test_order": 1,
+          "hypothesis": "EGR valve feedback voltage too strictly assessed by ECM calibration",
+          "not_statistical_prevalence": true
+        },
+        {
+          "rank_as_test_order": 2,
+          "hypothesis": "EGR signal wiring/valve fault to rule out",
+          "not_statistical_prevalence": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Read EGR feedback voltage and commanded state",
+        "Compare feedback under manufacturer/HELLA procedure, don't apply a generic 1.0 V across other engines",
+        "Check availability of factory ECM calibration and perform follow-up verification"
+      ],
+      "live_data": [
+        {
+          "name_en": "EGR Feedback Voltage",
+          "name_ar": "جهد التغذية الراجعة لصمام EGR",
+          "reference": "1.0 V according to HELLA mega macs for this specific Corsa C Z10XE; ~0.1 V deviation reported as enough to trigger DTC; do NOT extrapolate"
+        }
+      ],
+      "tools": [
+        "OBD-capable OE-compatible scan tool",
+        "digital multimeter",
+        "vehicle-specific service procedures where available"
+      ],
+      "parts": [
+        "EGR valve",
+        "Wiring/connectors",
+        "ECM"
+      ],
+      "source_ids": [
+        "src_hella_egr1"
+      ],
+      "verification_status": "context_verified",
+      "application_evidence": "HELLA case report names the observed code and its specific vehicle context; does not prove all VINs",
+      "verification_date": "2026-11-16"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "category_scope": "vehicle-specific diagnostic occurrence, not global SAE DTC normative definition",
+      "market": "Europe applicability plausible; Swedish market inclusion not independently documented",
+      "vehicle_production_years": "not independently distinguished from model years in HELLA source",
+      "fuel": "not specified unless engine diesel stated",
+      "transmission": "not specified",
+      "wiring": "PIN / connector diagram unavailable; do not extrapolate",
+      "live_data_numeric_limits": "unconfirmed unless expressly noted",
+      "image_path": null,
+      "release_status": "NOT_ACTIVE",
+      "review_status": "technical_review_required",
+      "record_id": "opel_20261116_p1405_z22yh_until_feb2006",
+      "raw_code": "P1405",
+      "base_code": "P1405",
+      "code_family": "P",
+      "code_type": "manufacturer_specific_P1_range; exact designation ECU-dependent",
+      "ecu": "ECM",
+      "manufacturer": "Opel/Vauxhall",
+      "variant": "z22yh_until_feb2006",
+      "definition_en": "EGR system DTC with potential mechanically stuck EGR valve in this application; exact manufacturer descriptor not separately confirmed",
+      "translation_ar": "عطل في منظومة EGR قد يرتبط بانحشار ميكانيكي للصمام؛ التعريف الرسمي الدقيق قيد المراجعة",
+      "applicability": {
+        "models": [
+          "Vectra C",
+          "Signum",
+          "Zafira B"
+        ],
+        "vehicle_scope": "through 2006-02 per HELLA",
+        "engine_code": "Z22YH",
+        "ecu": "ECM",
+        "fuel": "petrol"
+      },
+      "symptoms": "No-start or reduced performance",
+      "causes": [
+        {
+          "rank_as_test_order": 1,
+          "hypothesis": "Mechanically sticking EGR valve in this HELLA repair case",
+          "not_statistical_prevalence": true
+        },
+        {
+          "rank_as_test_order": 2,
+          "hypothesis": "Other causes remain unverified, check before repair",
+          "not_statistical_prevalence": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm exact engine number, VIN and equipment variant",
+        "Inspect EGR valve movement and verify sticking before replacement",
+        "If following GM authorized procedure for engine numbers beyond 11444562, note OEM blanking plate 55562899 and ECU programming; NEVER improvise EGR delete/blanking on in-service cars without legal/approved procedure"
+      ],
+      "live_data": [
+        {
+          "name_en": "EGR Commanded Position",
+          "name_ar": "موضع EGR المطلوب",
+          "reference": "not documented"
+        }
+      ],
+      "tools": [
+        "OBD-capable OE-compatible scan tool",
+        "digital multimeter",
+        "vehicle-specific service procedures where available"
+      ],
+      "parts": [
+        "EGR valve if fitted",
+        "OEM blanking plate part 55562899 only for specified production remedy, requires authorization"
+      ],
+      "source_ids": [
+        "src_hella_egr2"
+      ],
+      "verification_status": "context_verified_official_definition_pending",
+      "application_evidence": "HELLA case report names the observed code and its specific vehicle context; does not prove all VINs",
+      "verification_date": "2026-11-16"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "category_scope": "vehicle-specific diagnostic occurrence, not global SAE DTC normative definition",
+      "market": "Europe applicability plausible; Swedish market inclusion not independently documented",
+      "vehicle_production_years": "not independently distinguished from model years in HELLA source",
+      "fuel": "not specified unless engine diesel stated",
+      "transmission": "not specified",
+      "wiring": "PIN / connector diagram unavailable; do not extrapolate",
+      "live_data_numeric_limits": "unconfirmed unless expressly noted",
+      "image_path": null,
+      "release_status": "NOT_ACTIVE",
+      "review_status": "technical_review_required",
+      "record_id": "opel_20261116_u0100_insignia_a18xer_vin_range",
+      "raw_code": "U0100",
+      "base_code": "U0100",
+      "code_family": "U",
+      "code_type": "generic_family; exact normative SAE status not checked",
+      "ecu": "ECM communication / storing controller unspecified in HELLA report",
+      "manufacturer": "Opel/Vauxhall",
+      "variant": "insignia_a18xer_vin_range",
+      "definition_en": "Lost communication with Engine Control Module A (as reported by HELLA)",
+      "translation_ar": "فقدان الاتصال بوحدة التحكم بالمحرك A",
+      "applicability": {
+        "model": "Insignia A",
+        "model_years": "2009–2011",
+        "engine_code": "A18XER",
+        "vin_range": "91000001–B1198549",
+        "ecu": "ECM communication / storing controller unspecified in HELLA report",
+        "fuel": "petrol"
+      },
+      "symptoms": "MIL in deceleration phase, sometimes co-occurs with P0300",
+      "causes": [
+        {
+          "rank_as_test_order": 1,
+          "hypothesis": "ECM software/calibration behavior in specific HELLA freeze-frame scenario",
+          "not_statistical_prevalence": true
+        },
+        {
+          "rank_as_test_order": 2,
+          "hypothesis": "Physical bus/power/ground fault must be ruled out if communication genuinely fails",
+          "not_statistical_prevalence": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Read the full network scan and module that stored U0100",
+        "Compare occurrence with P0300, throttle position 0% and catalyst temp >900 °C as described in HELLA case (not a generic threshold)",
+        "If symptom context matches and physical network intact, verify authorized ECM firmware update"
+      ],
+      "live_data": [
+        {
+          "name_en": "Throttle Position",
+          "name_ar": "موضع الخانق",
+          "reference": "0% in source's recorded event, not generic DTC threshold"
+        },
+        {
+          "name_en": "Catalyst Temperature",
+          "name_ar": "حرارة المحول الحفاز",
+          "reference": ">900°C in source event, not generic diagnostic limit"
+        }
+      ],
+      "tools": [
+        "OBD-capable OE-compatible scan tool",
+        "digital multimeter",
+        "vehicle-specific service procedures where available"
+      ],
+      "parts": [
+        "ECM",
+        "CAN wiring, only if tested"
+      ],
+      "source_ids": [
+        "src_hella_can"
+      ],
+      "verification_status": "context_verified",
+      "application_evidence": "HELLA case report names the observed code and its specific vehicle context; does not prove all VINs",
+      "verification_date": "2026-11-16"
+    },
+    {
+      "brand": "Opel / Vauxhall",
+      "category_scope": "vehicle-specific diagnostic occurrence, not global SAE DTC normative definition",
+      "market": "Europe applicability plausible; Swedish market inclusion not independently documented",
+      "vehicle_production_years": "not independently distinguished from model years in HELLA source",
+      "fuel": "not specified unless engine diesel stated",
+      "transmission": "not specified",
+      "wiring": "PIN / connector diagram unavailable; do not extrapolate",
+      "live_data_numeric_limits": "unconfirmed unless expressly noted",
+      "image_path": null,
+      "release_status": "NOT_ACTIVE",
+      "review_status": "technical_review_required",
+      "record_id": "opel_20261116_c0277_astra_j_2010_2011_bcm",
+      "raw_code": "C0277",
+      "base_code": "C0277",
+      "code_family": "C",
+      "code_type": "generic_family; exact normative SAE status not checked",
+      "ecu": "BCM",
+      "manufacturer": "Opel/Vauxhall",
+      "variant": "astra_j_2010_2011_bcm",
+      "definition_en": "Brake pedal position sensor current circuit (as reported from BCM)",
+      "translation_ar": "دائرة التيار لحساس موضع دواسة الفرامل في وحدة BCM",
+      "applicability": {
+        "model": "Astra J",
+        "model_years": "2010–2011",
+        "engine_code": null,
+        "ecu": "BCM",
+        "fuel": null,
+        "transmission": "manual / automatic when fitted; source says all models"
+      },
+      "symptoms": "Electric parking brake indicator illuminated; brake lamp flickers",
+      "causes": [
+        {
+          "rank_as_test_order": 1,
+          "hypothesis": "Pedal position sensor adaptation/calibration issue",
+          "not_statistical_prevalence": true
+        },
+        {
+          "rank_as_test_order": 2,
+          "hypothesis": "Pedal sensor fault if calibration and installation are correct",
+          "not_statistical_prevalence": true
+        }
+      ],
+      "diagnostic_steps": [
+        "Inspect installation and electrical connection of pedal sensor",
+        "Use BCM Basic Setting 'Teach Brake Pedal Position' following safety setup with parking brake on and P for automatic transmission",
+        "If code/symptoms persist after correct calibration and wiring inspection, inspect and replace sensor only if proven"
+      ],
+      "live_data": [
+        {
+          "name_en": "Brake Pedal Position",
+          "name_ar": "موضع دواسة الفرامل",
+          "reference": "not documented"
+        },
+        {
+          "name_en": "Brake Pedal Learned Zero",
+          "name_ar": "حالة تعلم نقطة صفر الدواسة",
+          "reference": "not documented"
+        }
+      ],
+      "tools": [
+        "OBD-capable OE-compatible scan tool",
+        "digital multimeter",
+        "vehicle-specific service procedures where available"
+      ],
+      "parts": [
+        "Brake pedal position sensor",
+        "BCM"
+      ],
+      "source_ids": [
+        "src_hella_brake"
+      ],
+      "verification_status": "context_verified",
+      "application_evidence": "HELLA case report names the observed code and its specific vehicle context; does not prove all VINs",
+      "verification_date": "2026-11-16"
+    }
+  ]
+}

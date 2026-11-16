@@ -1,0 +1,72 @@
+{
+  "schema": "dtc-nexis-opel-qa-v1",
+  "brand": "Opel / Vauxhall",
+  "run_date": "2026-11-16",
+  "branch": "data/opel-vauxhall-dtc-continuation-20261116",
+  "base_ref": "main",
+  "previous_records": 37,
+  "previous_distinct_base_codes": 37,
+  "new_unique_base_codes": 20,
+  "new_variant_records": 21,
+  "new_applicability_records": 30,
+  "previous_code_additional_applications": 2,
+  "duplicate_new_codes": [],
+  "review_queue_records": 17,
+  "total_distinct_base_codes_in_branch": 57,
+  "total_core_plus_new_variant_records": 58,
+  "readback_success": {
+    "old": {
+      "path": "data/master/brands/opel_vauxhall.json",
+      "git_blob_sha": "82981e9f9dd2f8c4e33ca8446e47d85cc6d6ca9e"
+    },
+    "b3": {
+      "path": "data/master/brands/opel_vauxhall_batch03_context_20261116.json",
+      "git_blob_sha": "cb1ed1889ee03f93c70a62eb39683645a130fa12"
+    },
+    "a3": {
+      "path": "data/master/brands/opel_vauxhall_batch03_applicability_20261116.json",
+      "git_blob_sha": "40d8345ef3ad25d9df9f34cf3dd71a3f08ce31bf"
+    },
+    "q3": {
+      "path": "data/review-queue/opel_vauxhall_20261116.json",
+      "git_blob_sha": "0bb887c10b2e97b3da26adc19ec5bbdc48a37b8f"
+    },
+    "b4": {
+      "path": "data/master/brands/opel_vauxhall_batch04_context_20261116.json",
+      "git_blob_sha": "a1f9ebb5e47d55db7abdc591ddd2dfa9fecba267"
+    },
+    "a4": {
+      "path": "data/master/brands/opel_vauxhall_batch04_applicability_20261116.json",
+      "git_blob_sha": "f721f695d7563eaa586a3e6c4ce590be1ffd50ec"
+    },
+    "q4": {
+      "path": "data/review-queue/opel_vauxhall_20261116_supplement.json",
+      "git_blob_sha": "dc8309cca959ca27806a12078c33b2f4675d247f"
+    }
+  },
+  "checks": {
+    "no_old_code_overlap": true,
+    "unique_record_ids": true,
+    "unique_app_ids": true,
+    "all_group_app_codes_found": true,
+    "preserve_old_record_count": true,
+    "new_codes_count": true,
+    "new_variant_rows": true,
+    "app_rows": true,
+    "queue_rows": true
+  },
+  "not_oem_approved": true,
+  "source_scope": "HELLA vehicle-specific technical cases, not full SAE J2012/J2012DA license; VIN-level coverage incomplete",
+  "release_feed_unchanged": "not edited in this branch",
+  "raw_originals_unchanged": true,
+  "outstanding": [
+    "Complete Opel/Vauxhall P/B/C/U not yet collected",
+    "Exact OEM definitions/ECU variants require dealer manuals",
+    "Status of individual Swedish market versions unknown",
+    "Source page version/date may be missing",
+    "Missing VIN-exact wiring/pins/Live Data reference ranges",
+    "Astra K 1.6 diesel engine codes not individually proven in source",
+    "P0100 Vivaro separate case retained in review queue",
+    "Companion code P1901 and P0234 (52) require official source verification"
+  ]
+}

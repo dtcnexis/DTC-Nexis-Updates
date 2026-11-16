@@ -1,0 +1,46 @@
+{
+  "schema": "dtc-nexis-opel-qa-report-v1",
+  "brand": "Opel / Vauxhall",
+  "batch": "batch05_20261116",
+  "date": "2026-11-16",
+  "previous_base_codes": 57,
+  "new_unique_base_codes": 30,
+  "new_variant_records": 32,
+  "new_vehicle_scope_links": 18,
+  "new_family_only_records": 14,
+  "duplicate_existing_base_codes": [],
+  "category_rows": {
+    "B": 10,
+    "C": 5,
+    "U": 3,
+    "P": 14
+  },
+  "review_queue_rows": 33,
+  "old_source_files": [
+    "data/master/brands/opel_vauxhall.json",
+    "data/master/brands/opel_vauxhall_batch03_context_20261116.json",
+    "data/master/brands/opel_vauxhall_batch04_context_20261116.json"
+  ],
+  "source_count": 7,
+  "source_urls": [
+    "https://www.hella.com/techworld/de/bi/opel-mervia-ausfall-bcm-bordnetzsteuergeraet/",
+    "https://www.hella.com/techworld/ae/bi/opel-mokka-led-headlamps-causing-noise/",
+    "https://www.hella.com/techworld/en/bi/opel-astra-h-zafira-b-the-abs-warning-lamp-lights-up/",
+    "https://www.hella.com/techworld/uk/bi/opel-meriva-b-fehlercode-c0298/",
+    "https://www.hella.com/techworld/ae/bi/opel-adam-abs-esp-control-lamp-lights-up/",
+    "https://api-aftermarket.schaeffler.de/medias/AC-Tronics-Diagnostic-guide.pdf?attachment=true&context=bWFzdGVyfHJvb3R8MTMxOTY4NzR8YXBwbGljYXRpb24vcGRmfGgxNC9oNjUvOTM5MDgzMjA1ODM5OC5wZGZ8OTllNzhlZDg0ZTM3MDRiNzg0MmI4MjVhMDZmOWYzNTAzODFkNTk0YzUzZDViNThlNTMwZDMxMGM3Y2RkNDQ3Yw",
+    "https://www.actronics.se/nyheter/losning-for-felkod-p1607"
+  ],
+  "checks": {
+    "unique_new_code_ids": true,
+    "no_overlap_existing": true,
+    "no_missing_source_ids": true,
+    "all_scoped_links_to_codes": true,
+    "no_spurious_vehicle_link_for_TCU": true,
+    "no_images_added": true,
+    "no_verified_or_release_claim": true
+  },
+  "status": "DRAFT_TECHNICAL_CANDIDATES_DO_NOT_RELEASE",
+  "known_limitation": "ACTRONICS PDF web screenshot service returned cache miss; text extraction read but image and pin diagrams not copied or used for numerical claims",
+  "no_github_main_change_requested": true
+}
