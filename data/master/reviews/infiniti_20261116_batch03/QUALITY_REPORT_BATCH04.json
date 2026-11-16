@@ -1,0 +1,35 @@
+{
+  "schema": "dtcnexis-quality-report-v1",
+  "brand": "Infiniti",
+  "date": "2026-11-16",
+  "batch": "04",
+  "branch": "data/infiniti-dtc-20261116-batch03",
+  "local_validation": {
+    "rows": 154,
+    "unique_original_codes": 154,
+    "duplicate_keys": 0,
+    "per_system": {
+      "BCM": 44,
+      "ANC": 12,
+      "SRS": 44,
+      "CHASSIS": 54
+    },
+    "all_source_ref": true,
+    "all_release_flag_false": true,
+    "all_images_missing_by_policy": true,
+    "all_ecu_specified": true,
+    "all_record_ids_unique": true
+  },
+  "technical_status": "INDEX_PROVEN_REPAIR_DIAGNOSTICS_NOT_COMPLETE",
+  "review_queue_entries": 154,
+  "approved_for_automatic_diagnosis": 0,
+  "technical_pitfalls": [
+    "Q50 2016 US OEM manual is not proof of EU/Sweden applicability.",
+    "BCM and ANC/Chassis lists include equipment-gated features; no automatic per-VIN fitment.",
+    "SRS coded failure types may not correspond to safe DIY testing; NEVER use an electrical tester on SRS circuits unless OEM service instructions explicitly allow.",
+    "Detailed causal steps/torque/wiring not inferred from index-only entries.",
+    "Four OEM-copyrighted manuals are linked only, not copied or embedded.",
+    "SAE J2012DA text not accessed."
+  ],
+  "not_a_release": true
+}
