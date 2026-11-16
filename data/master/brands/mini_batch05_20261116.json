@@ -1,0 +1,3466 @@
+{
+  "schema": "dtc-nexis-brand-codes-v1-plus",
+  "brand": "MINI",
+  "batch_id": "MINI_BATCH05_20261116",
+  "based_on": {
+    "legacy_file": "data/master/brands/mini.json",
+    "batch03": "data/master/brands/mini_batch03_20261116.json",
+    "batch04": "data/master/brands/mini_batch04_20261116.json",
+    "old_distinct_count": 72,
+    "base_blob_shas": [
+      "dedf5681a07d8867f80a2a3daffdbfa165869e83",
+      "58ccea854a2deb6b2e9eeb2aaa69f1df12ae20af",
+      "5f75b9684946d01f4bd6de4262cafc180f829264"
+    ]
+  },
+  "review_status": "DRAFT_NOT_APPROVED",
+  "release_to_app": "NOT_ACTIVE",
+  "code_format_policy": "Preserve OEM 6-digit hexadecimal DTC as shown; do not misclassify B7F935 as SAE B code",
+  "record_count": 27,
+  "distinct_new_code_count": 27,
+  "duplicates_with_previous": 0,
+  "source_count": 9,
+  "records": [
+    {
+      "record_id": "MINI-B05-480A46-DSC",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "480A46",
+      "base_code": "480A46",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "chassis_network",
+      "ecu_context": "DSC",
+      "ecu_certainty": "explicit_in_bulletin",
+      "definition_en": "Tire Pressure Monitor",
+      "translation_ar": "مراقبة ضغط الإطارات — إدخال عطل في وحدة DSC",
+      "applicability": {
+        "chassis": [
+          "F55",
+          "F56",
+          "F57",
+          "F60"
+        ],
+        "production_end": "2019-11-01",
+        "engines": "not stated in bulletin",
+        "condition": "Key fob unlock fails, Comfort Access operates, tire pressure CCM appears",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "Key remote button does not unlock vehicle",
+        "Comfort Access on front doors and tailgate may still operate",
+        "Tire-pressure Check Control Message on CID"
+      ],
+      "causes": [
+        {
+          "cause": "BDC software error prevents expected downstream DSC/control communication in the stated situation",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "قراءة الذاكرة من DSC وBDC باستخدام ISTA والتحقق من عمل Comfort Access وتاريخ الإنتاج.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "قراءة مستوى تكامل برمجيات السيارة ومقارنته بـ F056-19-11-520.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "إذا كان المستوى أقدم وانطبقت ظروف النشرة، تحديث برنامج السيارة عبر ISTA 4.20.1 أو أحدث مع مزود قدرة معتمد.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا كان المستوى F056-19-11-520 أو أحدث، لا تستخدم معالجة التحديث تلقائياً؛ أكمل خطة تشخيص ISTA.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Vehicle integration level (I-level)",
+          "name_ar": "مستوى تكامل برمجيات السيارة",
+          "test_condition": "ISTA vehicle identification",
+          "reference": "F056-19-11-520 or later is the bulletin target"
+        }
+      ],
+      "parts": [
+        "Body Domain Controller (BDC) software — not confirmed DSC hardware failure"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "D35694"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M610319",
+          "bulletin_date": "2019-10-25",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10168020-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ]
+    },
+    {
+      "record_id": "MINI-B05-D35694-DSC",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "D35694",
+      "base_code": "D35694",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "chassis_network",
+      "ecu_context": "DSC",
+      "ecu_certainty": "explicit_in_bulletin",
+      "definition_en": "Message Missing",
+      "translation_ar": "رسالة مفقودة — خلل اتصال مسجل في وحدة DSC",
+      "applicability": {
+        "chassis": [
+          "F55",
+          "F56",
+          "F57",
+          "F60"
+        ],
+        "production_end": "2019-11-01",
+        "engines": "not stated in bulletin",
+        "condition": "Key fob unlock fails, Comfort Access operates, tire pressure CCM appears",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "Key remote button does not unlock vehicle",
+        "Comfort Access on front doors and tailgate may still operate",
+        "Tire-pressure Check Control Message on CID"
+      ],
+      "causes": [
+        {
+          "cause": "BDC software error prevents expected downstream DSC/control communication in the stated situation",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "قراءة الذاكرة من DSC وBDC باستخدام ISTA والتحقق من عمل Comfort Access وتاريخ الإنتاج.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "قراءة مستوى تكامل برمجيات السيارة ومقارنته بـ F056-19-11-520.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "إذا كان المستوى أقدم وانطبقت ظروف النشرة، تحديث برنامج السيارة عبر ISTA 4.20.1 أو أحدث مع مزود قدرة معتمد.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا كان المستوى F056-19-11-520 أو أحدث، لا تستخدم معالجة التحديث تلقائياً؛ أكمل خطة تشخيص ISTA.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Vehicle integration level (I-level)",
+          "name_ar": "مستوى تكامل برمجيات السيارة",
+          "test_condition": "ISTA vehicle identification",
+          "reference": "F056-19-11-520 or later is the bulletin target"
+        }
+      ],
+      "parts": [
+        "Body Domain Controller (BDC) software — not confirmed DSC hardware failure"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "480A46"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M610319",
+          "bulletin_date": "2019-10-25",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10168020-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ]
+    },
+    {
+      "record_id": "MINI-B05-B7F935-HUH6",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "B7F935",
+      "base_code": "B7F935",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "infotainment",
+      "ecu_context": "HU-H6",
+      "ecu_certainty": "explicit_in_bulletin",
+      "definition_en": "HU: Internal fault (HDCP)",
+      "translation_ar": "الوحدة الرئيسية HU: عطل داخلي متعلق بنظام حماية المحتوى الرقمي HDCP",
+      "applicability": {
+        "chassis": [
+          "F65",
+          "F66",
+          "F67",
+          "U25"
+        ],
+        "trim_by_chassis": {
+          "F65": "Cooper S 4 Door",
+          "F66": "Cooper S 2 Door",
+          "F67": "Cooper S Convertible",
+          "U25": "Countryman S ALL4"
+        },
+        "option": "HU-H6",
+        "date_scope": "2025-06-03 bulletin revision 1; manufacturing cutoff not published",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "MIU flickers intermittently, though bulletin explicitly says this complaint usually has no fault entry",
+        "B7F935 might separately be found at I-level >= 25-03-550"
+      ],
+      "causes": [
+        {
+          "cause": "Manufacturer bulletin instructs investigation of this code via ISTA if it exists; it does not equate HDCP fault to screen flicker",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "تأكد من وجود الرمز B7F935 فعلياً في وحدة HU-H6؛ لا تستنتجه من وميض الشاشة فقط.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "اقرأ I-level؛ عند المستوى 25-03-550 أو أحدث، لا تُبرمج بسبب حالة الوميض في هذه النشرة؛ نفّذ خطة ISTA المناسبة للرمز B7F935.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "إذا كانت شكوى الوميض مع برنامج أقدم ولم يوجد هذا الكود، اتبع فرع النشرة الخاص بتحديث HU-H6 إلى 25-03-550 أو أحدث.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "بعد الإصلاح أعد اختبار الشاشة والذاكرة؛ لا تحكم بتلف الشاشة أو HU-H6 من الرمز وحده.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Head unit fault memory",
+          "name_ar": "ذاكرة أعطال وحدة HU-H6",
+          "test_condition": "ISTA",
+          "reference": "Presence of B7F935 is conditional; no analogue threshold stated"
+        },
+        {
+          "name_en": "Vehicle I-level",
+          "name_ar": "مستوى تكامل البرنامج",
+          "test_condition": "AIR / ISTA",
+          "reference": "25-03-550"
+        }
+      ],
+      "parts": [
+        "HU-H6 (do not replace based solely on flicker)"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [],
+      "sources": [
+        {
+          "id": "MINI-M651124-REV1",
+          "bulletin_date": "2025-06-03",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11019583-0001.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ],
+      "special_notice": "The bulletin explicitly says flicker alone normally stores no DTC; B7F935 is an additional conditional fault, not the defined cause."
+    },
+    {
+      "record_id": "MINI-B05-10170C-DME",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "10170C",
+      "base_code": "10170C",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "powertrain",
+      "ecu_context": "DME",
+      "ecu_certainty": "explicit_in_bulletin",
+      "definition_en": "Throttle valve, function: Jammed briefly",
+      "translation_ar": "صمام الخانق: انحشار مؤقت أثناء العمل",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57",
+          "F60"
+        ],
+        "chassis_engine_map": {
+          "F54": [
+            "B46C",
+            "B48E"
+          ],
+          "F55": [
+            "B36C",
+            "B46C"
+          ],
+          "F56": [
+            "B36C",
+            "B46C",
+            "B46D"
+          ],
+          "F57": [
+            "B36C",
+            "B46C",
+            "B46D"
+          ],
+          "F60": [
+            "B36C",
+            "B46C",
+            "B48E"
+          ]
+        },
+        "production_end": "2019-11-09",
+        "condition": "Starting when low ambient temperature; DME failsafe after start",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "MIL and CCM #29 Engine fault! Power loss",
+        "Engine enters failsafe with RPM limited in described situation"
+      ],
+      "causes": [
+        {
+          "cause": "Bulletin indicates no underlying hardware fault is identified in its specific low-temperature software scenario; other throttle faults must be checked independently",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "تحقق من المحرك وتاريخ الإنتاج ومطابقتهما لخريطة الهيكل/المحرك الواردة بالنشرة.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "سجّل بيانات Freeze Frame: حرارة الهواء المحيط وحرارة سائل التبريد وسرعة المركبة؛ يذكر المصدر شروطاً مرصودة عند أو دون 5°C و60°C و5 km/h على التوالي.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "افحص العطل مع ISTA وخطة DME للبوابة، ولا تفترض انحشاراً ميكانيكياً قبل استبعاد معالجة البرنامج.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "عند تطابق الحالة، برمج وحدات التحكم بالبرمجية الموصى بها في النشرة تحت مصدر قدرة MINI معتمد؛ الهدف العددي التفصيلي لكل VIN غير محسوم من النص المستخرج.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 5,
+          "action_ar": "إذا استمر العطل أو لم تتحقق الشروط البيئية، نفّذ فحوص الخانق الكهربائية/الميكانيكية ضمن ISTA.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Ambient air temperature",
+          "name_ar": "درجة حرارة الهواء المحيط",
+          "test_condition": "Freeze frame during complaint",
+          "reference": "≤5°C in bulletin reported conditions"
+        },
+        {
+          "name_en": "Engine coolant temperature",
+          "name_ar": "درجة حرارة سائل التبريد",
+          "test_condition": "Freeze frame during complaint",
+          "reference": "≤60°C in bulletin reported conditions"
+        },
+        {
+          "name_en": "Vehicle speed",
+          "name_ar": "سرعة المركبة",
+          "test_condition": "Freeze frame during complaint",
+          "reference": "≤5 km/h in bulletin reported conditions"
+        }
+      ],
+      "parts": [
+        "Throttle valve body / DME software — confirm fault cause first"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "100213"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M120120-REV1",
+          "bulletin_date": "2020-03-02",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10174325-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ]
+    },
+    {
+      "record_id": "MINI-B05-100213-DME",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "100213",
+      "base_code": "100213",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "powertrain",
+      "ecu_context": "DME",
+      "ecu_certainty": "explicit_in_bulletin",
+      "definition_en": "Throttle valve, function: Sluggish, too slow",
+      "translation_ar": "صمام الخانق: حركة بطيئة أو استجابة أبطأ من المطلوب",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57",
+          "F60"
+        ],
+        "chassis_engine_map": {
+          "F54": [
+            "B46C",
+            "B48E"
+          ],
+          "F55": [
+            "B36C",
+            "B46C"
+          ],
+          "F56": [
+            "B36C",
+            "B46C",
+            "B46D"
+          ],
+          "F57": [
+            "B36C",
+            "B46C",
+            "B46D"
+          ],
+          "F60": [
+            "B36C",
+            "B46C",
+            "B48E"
+          ]
+        },
+        "production_end": "2019-11-09",
+        "condition": "Starting when low ambient temperature; DME failsafe after start",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "MIL and CCM #29 Engine fault! Power loss",
+        "Engine enters failsafe with RPM limited in described situation"
+      ],
+      "causes": [
+        {
+          "cause": "Bulletin indicates no underlying hardware fault is identified in its specific low-temperature software scenario; other throttle faults must be checked independently",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "تحقق من المحرك وتاريخ الإنتاج ومطابقتهما لخريطة الهيكل/المحرك الواردة بالنشرة.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "سجّل بيانات Freeze Frame: حرارة الهواء المحيط وحرارة سائل التبريد وسرعة المركبة؛ يذكر المصدر شروطاً مرصودة عند أو دون 5°C و60°C و5 km/h على التوالي.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "افحص العطل مع ISTA وخطة DME للبوابة، ولا تفترض انحشاراً ميكانيكياً قبل استبعاد معالجة البرنامج.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "عند تطابق الحالة، برمج وحدات التحكم بالبرمجية الموصى بها في النشرة تحت مصدر قدرة MINI معتمد؛ الهدف العددي التفصيلي لكل VIN غير محسوم من النص المستخرج.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 5,
+          "action_ar": "إذا استمر العطل أو لم تتحقق الشروط البيئية، نفّذ فحوص الخانق الكهربائية/الميكانيكية ضمن ISTA.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Ambient air temperature",
+          "name_ar": "درجة حرارة الهواء المحيط",
+          "test_condition": "Freeze frame during complaint",
+          "reference": "≤5°C in bulletin reported conditions"
+        },
+        {
+          "name_en": "Engine coolant temperature",
+          "name_ar": "درجة حرارة سائل التبريد",
+          "test_condition": "Freeze frame during complaint",
+          "reference": "≤60°C in bulletin reported conditions"
+        },
+        {
+          "name_en": "Vehicle speed",
+          "name_ar": "سرعة المركبة",
+          "test_condition": "Freeze frame during complaint",
+          "reference": "≤5 km/h in bulletin reported conditions"
+        }
+      ],
+      "parts": [
+        "Throttle valve body / DME software — confirm fault cause first"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "10170C"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M120120-REV1",
+          "bulletin_date": "2020-03-02",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10174325-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ]
+    },
+    {
+      "record_id": "MINI-B05-160001-DME",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "160001",
+      "base_code": "160001",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "powertrain",
+      "ecu_context": "DME",
+      "ecu_certainty": "explicit_in_bulletin",
+      "definition_en": "Crankshaft sensor, signal: missing",
+      "translation_ar": "حساس موضع عمود المرفق: إشارة مفقودة",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57",
+          "F60"
+        ],
+        "engine_families_not_cross_joined": [
+          "B36M",
+          "B38M",
+          "B46M",
+          "B48M",
+          "B48O",
+          "XB2H"
+        ],
+        "production_end": "2019-02-28",
+        "condition": "Loss of crankshaft angle signal while driving; potential high pressure and catalyst faults",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "MIL and CCM #29",
+        "Rough operation or reduced power when crank signal is lost"
+      ],
+      "causes": [
+        {
+          "cause": "A lost crankshaft angle signal during driving may lead to catalytic converter damage; high pressure and catalyst entries are context rather than guaranteed causal faults",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ رموز 160001 و160020 و11A002 و180001 و180101 مع Freeze Frame وتواريخ/مسافات التخزين؛ لا تعتبرها سبباً واحداً تلقائياً.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "إذا كان دوران المحرك عند تسجيل خلل موضع العمود أكثر من 1000 RPM، اتبع فرع فحص الضرر بالمحول الحفاز؛ إذا كان 1000 RPM أو أقل فابدأ خطة تشخيص ISTA.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "إذا ظهرت أكواد المحول 180001 أو 180101 مع 11A002 خلال مسافة أقل من 620 ميلاً حسب النشرة الأمريكية، يلزم تقييم المحول الحفاز وفق إجراء MINI؛ هذه ليست قاعدة عامة لأي ظهور منفرد لكود المحول.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "افحص دائرة حساس العمود والضفيرة بحثاً عن تلف مؤكد؛ أصلح الدائرة أولاً إذا ثبت الخلل، ثم فحوص الحساس وفق ISTA.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 5,
+          "action_ar": "عند احتمال ضرر المحول، افحص بنيته وفق إجراء MINI المحمي، ولا تستبدله دون شروط النشرة أو نتيجة الفحص.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 6,
+          "action_ar": "بعد المعالجة نفّذ التحديث المحدد في النشرة إلى F056-19-03-522 أو أحدث فقط عند انطباق VIN والسيناريو.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine speed at fault storage",
+          "name_ar": "عدد دورات المحرك لحظة تسجيل العطل",
+          "test_condition": "Crankshaft sensor freeze frame",
+          "reference": ">1000 rpm triggers catalyst assessment branch; ≤1000 rpm ISTA diagnosis"
+        },
+        {
+          "name_en": "Distance between DTC storage events",
+          "name_ar": "المسافة بين تخزين رموز الأعطال",
+          "test_condition": "Specific sequence of 11A002 and 180001/180101",
+          "reference": "Less than 620 miles in this bulletin scenario; not a universal catalyst replacement threshold"
+        },
+        {
+          "name_en": "DME integration level",
+          "name_ar": "مستوى برنامج DME",
+          "test_condition": "VIN-specific ISTA",
+          "reference": "F056-19-03-522 or later"
+        }
+      ],
+      "parts": [
+        "Crankshaft sensor + circuit",
+        "Fuel high pressure system (not automatically defective)",
+        "Catalytic converter(s) — assess physically"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "160020",
+        "11A002",
+        "180001",
+        "180101"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M120219",
+          "bulletin_date": "2019-07-01",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10164019-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ]
+    },
+    {
+      "record_id": "MINI-B05-160020-DME",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "160020",
+      "base_code": "160020",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "powertrain",
+      "ecu_context": "DME",
+      "ecu_certainty": "explicit_in_bulletin",
+      "definition_en": "Crankshaft sensor, signal: implausible",
+      "translation_ar": "حساس موضع عمود المرفق: إشارة غير منطقية",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57",
+          "F60"
+        ],
+        "engine_families_not_cross_joined": [
+          "B36M",
+          "B38M",
+          "B46M",
+          "B48M",
+          "B48O",
+          "XB2H"
+        ],
+        "production_end": "2019-02-28",
+        "condition": "Loss of crankshaft angle signal while driving; potential high pressure and catalyst faults",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "MIL and CCM #29",
+        "Rough operation or reduced power when crank signal is lost"
+      ],
+      "causes": [
+        {
+          "cause": "A lost crankshaft angle signal during driving may lead to catalytic converter damage; high pressure and catalyst entries are context rather than guaranteed causal faults",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ رموز 160001 و160020 و11A002 و180001 و180101 مع Freeze Frame وتواريخ/مسافات التخزين؛ لا تعتبرها سبباً واحداً تلقائياً.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "إذا كان دوران المحرك عند تسجيل خلل موضع العمود أكثر من 1000 RPM، اتبع فرع فحص الضرر بالمحول الحفاز؛ إذا كان 1000 RPM أو أقل فابدأ خطة تشخيص ISTA.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "إذا ظهرت أكواد المحول 180001 أو 180101 مع 11A002 خلال مسافة أقل من 620 ميلاً حسب النشرة الأمريكية، يلزم تقييم المحول الحفاز وفق إجراء MINI؛ هذه ليست قاعدة عامة لأي ظهور منفرد لكود المحول.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "افحص دائرة حساس العمود والضفيرة بحثاً عن تلف مؤكد؛ أصلح الدائرة أولاً إذا ثبت الخلل، ثم فحوص الحساس وفق ISTA.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 5,
+          "action_ar": "عند احتمال ضرر المحول، افحص بنيته وفق إجراء MINI المحمي، ولا تستبدله دون شروط النشرة أو نتيجة الفحص.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 6,
+          "action_ar": "بعد المعالجة نفّذ التحديث المحدد في النشرة إلى F056-19-03-522 أو أحدث فقط عند انطباق VIN والسيناريو.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine speed at fault storage",
+          "name_ar": "عدد دورات المحرك لحظة تسجيل العطل",
+          "test_condition": "Crankshaft sensor freeze frame",
+          "reference": ">1000 rpm triggers catalyst assessment branch; ≤1000 rpm ISTA diagnosis"
+        },
+        {
+          "name_en": "Distance between DTC storage events",
+          "name_ar": "المسافة بين تخزين رموز الأعطال",
+          "test_condition": "Specific sequence of 11A002 and 180001/180101",
+          "reference": "Less than 620 miles in this bulletin scenario; not a universal catalyst replacement threshold"
+        },
+        {
+          "name_en": "DME integration level",
+          "name_ar": "مستوى برنامج DME",
+          "test_condition": "VIN-specific ISTA",
+          "reference": "F056-19-03-522 or later"
+        }
+      ],
+      "parts": [
+        "Crankshaft sensor + circuit",
+        "Fuel high pressure system (not automatically defective)",
+        "Catalytic converter(s) — assess physically"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "160001",
+        "11A002",
+        "180001",
+        "180101"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M120219",
+          "bulletin_date": "2019-07-01",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10164019-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ]
+    },
+    {
+      "record_id": "MINI-B05-11A002-DME",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "11A002",
+      "base_code": "11A002",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "powertrain",
+      "ecu_context": "DME",
+      "ecu_certainty": "explicit_in_bulletin",
+      "definition_en": "Fuel high pressure, plausibility: Pressure too low",
+      "translation_ar": "ضغط الوقود العالي: قراءة ضغط أقل من المتوقع أو غير منطقية",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57",
+          "F60"
+        ],
+        "engine_families_not_cross_joined": [
+          "B36M",
+          "B38M",
+          "B46M",
+          "B48M",
+          "B48O",
+          "XB2H"
+        ],
+        "production_end": "2019-02-28",
+        "condition": "Loss of crankshaft angle signal while driving; potential high pressure and catalyst faults",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "MIL and CCM #29",
+        "Rough operation or reduced power when crank signal is lost"
+      ],
+      "causes": [
+        {
+          "cause": "A lost crankshaft angle signal during driving may lead to catalytic converter damage; high pressure and catalyst entries are context rather than guaranteed causal faults",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ رموز 160001 و160020 و11A002 و180001 و180101 مع Freeze Frame وتواريخ/مسافات التخزين؛ لا تعتبرها سبباً واحداً تلقائياً.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "إذا كان دوران المحرك عند تسجيل خلل موضع العمود أكثر من 1000 RPM، اتبع فرع فحص الضرر بالمحول الحفاز؛ إذا كان 1000 RPM أو أقل فابدأ خطة تشخيص ISTA.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "إذا ظهرت أكواد المحول 180001 أو 180101 مع 11A002 خلال مسافة أقل من 620 ميلاً حسب النشرة الأمريكية، يلزم تقييم المحول الحفاز وفق إجراء MINI؛ هذه ليست قاعدة عامة لأي ظهور منفرد لكود المحول.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "افحص دائرة حساس العمود والضفيرة بحثاً عن تلف مؤكد؛ أصلح الدائرة أولاً إذا ثبت الخلل، ثم فحوص الحساس وفق ISTA.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 5,
+          "action_ar": "عند احتمال ضرر المحول، افحص بنيته وفق إجراء MINI المحمي، ولا تستبدله دون شروط النشرة أو نتيجة الفحص.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 6,
+          "action_ar": "بعد المعالجة نفّذ التحديث المحدد في النشرة إلى F056-19-03-522 أو أحدث فقط عند انطباق VIN والسيناريو.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine speed at fault storage",
+          "name_ar": "عدد دورات المحرك لحظة تسجيل العطل",
+          "test_condition": "Crankshaft sensor freeze frame",
+          "reference": ">1000 rpm triggers catalyst assessment branch; ≤1000 rpm ISTA diagnosis"
+        },
+        {
+          "name_en": "Distance between DTC storage events",
+          "name_ar": "المسافة بين تخزين رموز الأعطال",
+          "test_condition": "Specific sequence of 11A002 and 180001/180101",
+          "reference": "Less than 620 miles in this bulletin scenario; not a universal catalyst replacement threshold"
+        },
+        {
+          "name_en": "DME integration level",
+          "name_ar": "مستوى برنامج DME",
+          "test_condition": "VIN-specific ISTA",
+          "reference": "F056-19-03-522 or later"
+        }
+      ],
+      "parts": [
+        "Crankshaft sensor + circuit",
+        "Fuel high pressure system (not automatically defective)",
+        "Catalytic converter(s) — assess physically"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "160001",
+        "160020",
+        "180001",
+        "180101"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M120219",
+          "bulletin_date": "2019-07-01",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10164019-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ]
+    },
+    {
+      "record_id": "MINI-B05-180001-DME",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "180001",
+      "base_code": "180001",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "powertrain",
+      "ecu_context": "DME",
+      "ecu_certainty": "explicit_in_bulletin",
+      "definition_en": "Catalytic Converter: efficiency below threshold",
+      "translation_ar": "المحوّل الحفّاز: كفاءة أقل من الحد التشخيصي",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57",
+          "F60"
+        ],
+        "engine_families_not_cross_joined": [
+          "B36M",
+          "B38M",
+          "B46M",
+          "B48M",
+          "B48O",
+          "XB2H"
+        ],
+        "production_end": "2019-02-28",
+        "condition": "Loss of crankshaft angle signal while driving; potential high pressure and catalyst faults",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "MIL and CCM #29",
+        "Rough operation or reduced power when crank signal is lost"
+      ],
+      "causes": [
+        {
+          "cause": "A lost crankshaft angle signal during driving may lead to catalytic converter damage; high pressure and catalyst entries are context rather than guaranteed causal faults",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ رموز 160001 و160020 و11A002 و180001 و180101 مع Freeze Frame وتواريخ/مسافات التخزين؛ لا تعتبرها سبباً واحداً تلقائياً.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "إذا كان دوران المحرك عند تسجيل خلل موضع العمود أكثر من 1000 RPM، اتبع فرع فحص الضرر بالمحول الحفاز؛ إذا كان 1000 RPM أو أقل فابدأ خطة تشخيص ISTA.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "إذا ظهرت أكواد المحول 180001 أو 180101 مع 11A002 خلال مسافة أقل من 620 ميلاً حسب النشرة الأمريكية، يلزم تقييم المحول الحفاز وفق إجراء MINI؛ هذه ليست قاعدة عامة لأي ظهور منفرد لكود المحول.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "افحص دائرة حساس العمود والضفيرة بحثاً عن تلف مؤكد؛ أصلح الدائرة أولاً إذا ثبت الخلل، ثم فحوص الحساس وفق ISTA.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 5,
+          "action_ar": "عند احتمال ضرر المحول، افحص بنيته وفق إجراء MINI المحمي، ولا تستبدله دون شروط النشرة أو نتيجة الفحص.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 6,
+          "action_ar": "بعد المعالجة نفّذ التحديث المحدد في النشرة إلى F056-19-03-522 أو أحدث فقط عند انطباق VIN والسيناريو.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine speed at fault storage",
+          "name_ar": "عدد دورات المحرك لحظة تسجيل العطل",
+          "test_condition": "Crankshaft sensor freeze frame",
+          "reference": ">1000 rpm triggers catalyst assessment branch; ≤1000 rpm ISTA diagnosis"
+        },
+        {
+          "name_en": "Distance between DTC storage events",
+          "name_ar": "المسافة بين تخزين رموز الأعطال",
+          "test_condition": "Specific sequence of 11A002 and 180001/180101",
+          "reference": "Less than 620 miles in this bulletin scenario; not a universal catalyst replacement threshold"
+        },
+        {
+          "name_en": "DME integration level",
+          "name_ar": "مستوى برنامج DME",
+          "test_condition": "VIN-specific ISTA",
+          "reference": "F056-19-03-522 or later"
+        }
+      ],
+      "parts": [
+        "Crankshaft sensor + circuit",
+        "Fuel high pressure system (not automatically defective)",
+        "Catalytic converter(s) — assess physically"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "160001",
+        "160020",
+        "11A002",
+        "180101"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M120219",
+          "bulletin_date": "2019-07-01",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10164019-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ]
+    },
+    {
+      "record_id": "MINI-B05-180101-DME",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "180101",
+      "base_code": "180101",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "powertrain",
+      "ecu_context": "DME",
+      "ecu_certainty": "explicit_in_bulletin",
+      "definition_en": "Catalytic Converter 2: efficiency below threshold",
+      "translation_ar": "المحوّل الحفّاز الثاني: كفاءة أقل من الحد التشخيصي",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57",
+          "F60"
+        ],
+        "engine_families_not_cross_joined": [
+          "B36M",
+          "B38M",
+          "B46M",
+          "B48M",
+          "B48O",
+          "XB2H"
+        ],
+        "production_end": "2019-02-28",
+        "condition": "Loss of crankshaft angle signal while driving; potential high pressure and catalyst faults",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "MIL and CCM #29",
+        "Rough operation or reduced power when crank signal is lost"
+      ],
+      "causes": [
+        {
+          "cause": "A lost crankshaft angle signal during driving may lead to catalytic converter damage; high pressure and catalyst entries are context rather than guaranteed causal faults",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ رموز 160001 و160020 و11A002 و180001 و180101 مع Freeze Frame وتواريخ/مسافات التخزين؛ لا تعتبرها سبباً واحداً تلقائياً.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "إذا كان دوران المحرك عند تسجيل خلل موضع العمود أكثر من 1000 RPM، اتبع فرع فحص الضرر بالمحول الحفاز؛ إذا كان 1000 RPM أو أقل فابدأ خطة تشخيص ISTA.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "إذا ظهرت أكواد المحول 180001 أو 180101 مع 11A002 خلال مسافة أقل من 620 ميلاً حسب النشرة الأمريكية، يلزم تقييم المحول الحفاز وفق إجراء MINI؛ هذه ليست قاعدة عامة لأي ظهور منفرد لكود المحول.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "افحص دائرة حساس العمود والضفيرة بحثاً عن تلف مؤكد؛ أصلح الدائرة أولاً إذا ثبت الخلل، ثم فحوص الحساس وفق ISTA.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 5,
+          "action_ar": "عند احتمال ضرر المحول، افحص بنيته وفق إجراء MINI المحمي، ولا تستبدله دون شروط النشرة أو نتيجة الفحص.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 6,
+          "action_ar": "بعد المعالجة نفّذ التحديث المحدد في النشرة إلى F056-19-03-522 أو أحدث فقط عند انطباق VIN والسيناريو.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Engine speed at fault storage",
+          "name_ar": "عدد دورات المحرك لحظة تسجيل العطل",
+          "test_condition": "Crankshaft sensor freeze frame",
+          "reference": ">1000 rpm triggers catalyst assessment branch; ≤1000 rpm ISTA diagnosis"
+        },
+        {
+          "name_en": "Distance between DTC storage events",
+          "name_ar": "المسافة بين تخزين رموز الأعطال",
+          "test_condition": "Specific sequence of 11A002 and 180001/180101",
+          "reference": "Less than 620 miles in this bulletin scenario; not a universal catalyst replacement threshold"
+        },
+        {
+          "name_en": "DME integration level",
+          "name_ar": "مستوى برنامج DME",
+          "test_condition": "VIN-specific ISTA",
+          "reference": "F056-19-03-522 or later"
+        }
+      ],
+      "parts": [
+        "Crankshaft sensor + circuit",
+        "Fuel high pressure system (not automatically defective)",
+        "Catalytic converter(s) — assess physically"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "160001",
+        "160020",
+        "11A002",
+        "180001"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M120219",
+          "bulletin_date": "2019-07-01",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10164019-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ]
+    },
+    {
+      "record_id": "MINI-B05-1B2002-DMEMEVD1723",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "1B2002",
+      "base_code": "1B2002",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "powertrain_security",
+      "ecu_context": "DME MEVD17.2.3",
+      "ecu_certainty": "explicit_in_bulletin",
+      "definition_en": "EWS protection against tampering: no starting value programmed",
+      "translation_ar": "نظام حماية التشغيل EWS من العبث: لم تُبرمج القيمة الابتدائية",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57"
+        ],
+        "chassis_engine_groups": {
+          "F54": [
+            "B36",
+            "B46"
+          ],
+          "F55": [
+            "B36",
+            "B46",
+            "B48"
+          ],
+          "F56": [
+            "B36",
+            "B38",
+            "B46",
+            "B48"
+          ],
+          "F57": [
+            "B36",
+            "B46",
+            "B48"
+          ]
+        },
+        "ECU_hardware": "MEVD17.2.3",
+        "affected_I_levels": [
+          "16-03-50x",
+          "16-07-50x",
+          "16-11-50x"
+        ],
+        "condition": "Both DME fault codes present simultaneously; otherwise bulletin procedure inapplicable",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "MIL on",
+        "Both listed DME faults must be present to apply this particular bulletin"
+      ],
+      "causes": [
+        {
+          "cause": "Ineffective DME software/EEPROM configuration in affected integration levels; OEM recommends DME replacement only when both stored",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "تأكد أن DME هي MEVD17.2.3 وليست عائلة تحكم أخرى، وأن مستوى التكامل ضمن 16-03-50x أو 16-07-50x أو 16-11-50x.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "لا تعتمد إجراء استبدال DME إذا ظهر أحد الكودين دون الآخر؛ استخدم خطة ISTA العادية.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "إذا ظهر الكودان معاً في وحدة التحكم المشمولة بالنشرة، اتبع إجراء MINI/PuMA والاعتمادات اللازمة لتبديل DME ثم برمجتها وفق تعليمات المصنع.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "احتفظ بنسخة تقرير ISTA والتحقق من مزامنة النظام بعد العمل؛ لا تحاول تجاوز نظام منع التشغيل أو إعادة برمجته بطرق غير مصرح بها.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "DME control unit identifier",
+          "name_ar": "معرف وحدة المحرك",
+          "test_condition": "ISTA vehicle test",
+          "reference": "MEVD17.2.3 only"
+        },
+        {
+          "name_en": "DME I-level",
+          "name_ar": "مستوى برنامج DME",
+          "test_condition": "ISTA",
+          "reference": "16-03-50x / 16-07-50x / 16-11-50x"
+        }
+      ],
+      "parts": [
+        "DME — replacement only if BOTH faults and specified module/I-level conditions are met"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "1F1A51"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M120616",
+          "bulletin_date": "2016-09",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10146868-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ],
+      "special_notice": "Safety/security: manufacturer-approved replacement only; no immobilizer bypass steps."
+    },
+    {
+      "record_id": "MINI-B05-1F1A51-DMEMEVD1723",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "1F1A51",
+      "base_code": "1F1A51",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "powertrain_security",
+      "ecu_context": "DME MEVD17.2.3",
+      "ecu_certainty": "explicit_in_bulletin",
+      "definition_en": "DME, internal fault: Read EEPROM faulty",
+      "translation_ar": "وحدة DME: عطل داخلي في قراءة ذاكرة EEPROM",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57"
+        ],
+        "chassis_engine_groups": {
+          "F54": [
+            "B36",
+            "B46"
+          ],
+          "F55": [
+            "B36",
+            "B46",
+            "B48"
+          ],
+          "F56": [
+            "B36",
+            "B38",
+            "B46",
+            "B48"
+          ],
+          "F57": [
+            "B36",
+            "B46",
+            "B48"
+          ]
+        },
+        "ECU_hardware": "MEVD17.2.3",
+        "affected_I_levels": [
+          "16-03-50x",
+          "16-07-50x",
+          "16-11-50x"
+        ],
+        "condition": "Both DME fault codes present simultaneously; otherwise bulletin procedure inapplicable",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "MIL on",
+        "Both listed DME faults must be present to apply this particular bulletin"
+      ],
+      "causes": [
+        {
+          "cause": "Ineffective DME software/EEPROM configuration in affected integration levels; OEM recommends DME replacement only when both stored",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "تأكد أن DME هي MEVD17.2.3 وليست عائلة تحكم أخرى، وأن مستوى التكامل ضمن 16-03-50x أو 16-07-50x أو 16-11-50x.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "لا تعتمد إجراء استبدال DME إذا ظهر أحد الكودين دون الآخر؛ استخدم خطة ISTA العادية.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "إذا ظهر الكودان معاً في وحدة التحكم المشمولة بالنشرة، اتبع إجراء MINI/PuMA والاعتمادات اللازمة لتبديل DME ثم برمجتها وفق تعليمات المصنع.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "احتفظ بنسخة تقرير ISTA والتحقق من مزامنة النظام بعد العمل؛ لا تحاول تجاوز نظام منع التشغيل أو إعادة برمجته بطرق غير مصرح بها.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "DME control unit identifier",
+          "name_ar": "معرف وحدة المحرك",
+          "test_condition": "ISTA vehicle test",
+          "reference": "MEVD17.2.3 only"
+        },
+        {
+          "name_en": "DME I-level",
+          "name_ar": "مستوى برنامج DME",
+          "test_condition": "ISTA",
+          "reference": "16-03-50x / 16-07-50x / 16-11-50x"
+        }
+      ],
+      "parts": [
+        "DME — replacement only if BOTH faults and specified module/I-level conditions are met"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "1B2002"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M120616",
+          "bulletin_date": "2016-09",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10146868-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ],
+      "special_notice": "Safety/security: manufacturer-approved replacement only; no immobilizer bypass steps."
+    },
+    {
+      "record_id": "MINI-B05-D356A5-EPSRELATEDNETWORKFAULTMEMORYEXACTREPORTINGECUNOTSTATED",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "D356A5",
+      "base_code": "D356A5",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "steering_network",
+      "ecu_context": "EPS-related network fault memory (exact reporting ECU not stated)",
+      "ecu_certainty": "reporting_module_not_confirmed",
+      "definition_en": "Message fault (display of Check Control driving dynamics 02, Disp_CC_DRDY_02): Timeout",
+      "translation_ar": "رسالة عرض حالة ديناميكية القيادة 02: انتهاء مهلة الاتصال",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57"
+        ],
+        "production_from": "2013-10-31",
+        "production_end": "2016-11-30",
+        "engines": "not specified by bulletin",
+        "fault_context": "Steering assistance missing at startup and no communication with EPS",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "Power-assisted steering unavailable at startup",
+        "No communication with EPS",
+        "Possible related faults across DSC/EPS network"
+      ],
+      "causes": [
+        {
+          "cause": "EPS communication / software in bulletin context. Manufacturer revision 2020 shifts procedure to diagnostic test module and programming rather than default steering-rack replacement",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ جميع وحدات DSC وEPS وبوابة الاتصال باستخدام ISTA، وحدد الوحدة التي سجّلت الرمز فعلياً على هذه السيارة.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "تأكد من تطابق فترة الإنتاج والأعراض؛ لا تفترض أن أي خطأ Timeout يعني عطل علبة توجيه مادي.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "نفّذ خطة اختبار ISTA المناسبة للرمز وللوحدة قبل اختيار الإجراء.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا انطبقت نشرة MINI المراجعة 2020، برمج السيارة عبر ISTA 4.21.1x أو أحدث نحو F056-16-11-501 أو إصدار أعلى بحسب بيانات VIN.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 5,
+          "action_ar": "بعد البرمجة اختبر المساعدة الكهربائية وأعد فحص الذاكرة؛ إذا استمر فقد الاتصال اتبع فحص القدرة والاتصال الخاص بالمركبة، دون اختلاق مواقع أو أطراف.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "EPS communication state",
+          "name_ar": "حالة اتصال وحدة EPS",
+          "test_condition": "ISTA full vehicle test",
+          "reference": "Expected communication availability; numeric value not documented"
+        },
+        {
+          "name_en": "Vehicle integration level",
+          "name_ar": "مستوى تكامل البرمجيات",
+          "test_condition": "ISTA",
+          "reference": "F056-16-11-501 or later as printed in 2020 bulletin"
+        }
+      ],
+      "parts": [
+        "EPS and DSC communication interfaces; parts not required for 2020 bulletin software remedy"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "D359BF",
+        "D356B6",
+        "480AB8",
+        "CDA451",
+        "CDA452",
+        "D35B26",
+        "D355C4",
+        "48083B",
+        "D35C0C"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M320114-REV1",
+          "bulletin_date": "2020-01-10",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171512-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ],
+      "special_notice": "Superseding 2020 service bulletin removes historical EPS-replacement guidance; do not use 2014 rack-replacement criteria as universal repair."
+    },
+    {
+      "record_id": "MINI-B05-D359BF-DSC2014BULLETIN2020EPSNETWORKCONTEXT",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "D359BF",
+      "base_code": "D359BF",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "steering_network",
+      "ecu_context": "DSC (2014 bulletin) / 2020 EPS network context",
+      "ecu_certainty": "DSC_older_2014_bulletin",
+      "definition_en": "Message fault (actual steering torque of driver actuator, AVL_STMOM_DV_ACT): Timeout",
+      "translation_ar": "رسالة عزم التوجيه الفعلي لمشغّل السائق: انتهت المهلة",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57"
+        ],
+        "production_from": "2013-10-31",
+        "production_end": "2016-11-30",
+        "engines": "not specified by bulletin",
+        "fault_context": "Steering assistance missing at startup and no communication with EPS",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "Power-assisted steering unavailable at startup",
+        "No communication with EPS",
+        "Possible related faults across DSC/EPS network"
+      ],
+      "causes": [
+        {
+          "cause": "EPS communication / software in bulletin context. Manufacturer revision 2020 shifts procedure to diagnostic test module and programming rather than default steering-rack replacement",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ جميع وحدات DSC وEPS وبوابة الاتصال باستخدام ISTA، وحدد الوحدة التي سجّلت الرمز فعلياً على هذه السيارة.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "تأكد من تطابق فترة الإنتاج والأعراض؛ لا تفترض أن أي خطأ Timeout يعني عطل علبة توجيه مادي.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "نفّذ خطة اختبار ISTA المناسبة للرمز وللوحدة قبل اختيار الإجراء.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا انطبقت نشرة MINI المراجعة 2020، برمج السيارة عبر ISTA 4.21.1x أو أحدث نحو F056-16-11-501 أو إصدار أعلى بحسب بيانات VIN.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 5,
+          "action_ar": "بعد البرمجة اختبر المساعدة الكهربائية وأعد فحص الذاكرة؛ إذا استمر فقد الاتصال اتبع فحص القدرة والاتصال الخاص بالمركبة، دون اختلاق مواقع أو أطراف.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "EPS communication state",
+          "name_ar": "حالة اتصال وحدة EPS",
+          "test_condition": "ISTA full vehicle test",
+          "reference": "Expected communication availability; numeric value not documented"
+        },
+        {
+          "name_en": "Vehicle integration level",
+          "name_ar": "مستوى تكامل البرمجيات",
+          "test_condition": "ISTA",
+          "reference": "F056-16-11-501 or later as printed in 2020 bulletin"
+        }
+      ],
+      "parts": [
+        "EPS and DSC communication interfaces; parts not required for 2020 bulletin software remedy"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "D356A5",
+        "D356B6",
+        "480AB8",
+        "CDA451",
+        "CDA452",
+        "D35B26",
+        "D355C4",
+        "48083B",
+        "D35C0C"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M320114-REV1",
+          "bulletin_date": "2020-01-10",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171512-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ],
+      "special_notice": "Superseding 2020 service bulletin removes historical EPS-replacement guidance; do not use 2014 rack-replacement criteria as universal repair."
+    },
+    {
+      "record_id": "MINI-B05-D356B6-EPSRELATEDNETWORKFAULTMEMORYEXACTREPORTINGECUNOTSTATED",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "D356B6",
+      "base_code": "D356B6",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "steering_network",
+      "ecu_context": "EPS-related network fault memory (exact reporting ECU not stated)",
+      "ecu_certainty": "reporting_module_not_confirmed",
+      "definition_en": "Message fault (display of Check Control driving dynamics 02, DISP_CC_DRDY_02): Alive",
+      "translation_ar": "رسالة عرض ديناميكية القيادة 02: خلل إشارة الحياة Alive",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57"
+        ],
+        "production_from": "2013-10-31",
+        "production_end": "2016-11-30",
+        "engines": "not specified by bulletin",
+        "fault_context": "Steering assistance missing at startup and no communication with EPS",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "Power-assisted steering unavailable at startup",
+        "No communication with EPS",
+        "Possible related faults across DSC/EPS network"
+      ],
+      "causes": [
+        {
+          "cause": "EPS communication / software in bulletin context. Manufacturer revision 2020 shifts procedure to diagnostic test module and programming rather than default steering-rack replacement",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ جميع وحدات DSC وEPS وبوابة الاتصال باستخدام ISTA، وحدد الوحدة التي سجّلت الرمز فعلياً على هذه السيارة.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "تأكد من تطابق فترة الإنتاج والأعراض؛ لا تفترض أن أي خطأ Timeout يعني عطل علبة توجيه مادي.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "نفّذ خطة اختبار ISTA المناسبة للرمز وللوحدة قبل اختيار الإجراء.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا انطبقت نشرة MINI المراجعة 2020، برمج السيارة عبر ISTA 4.21.1x أو أحدث نحو F056-16-11-501 أو إصدار أعلى بحسب بيانات VIN.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 5,
+          "action_ar": "بعد البرمجة اختبر المساعدة الكهربائية وأعد فحص الذاكرة؛ إذا استمر فقد الاتصال اتبع فحص القدرة والاتصال الخاص بالمركبة، دون اختلاق مواقع أو أطراف.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "EPS communication state",
+          "name_ar": "حالة اتصال وحدة EPS",
+          "test_condition": "ISTA full vehicle test",
+          "reference": "Expected communication availability; numeric value not documented"
+        },
+        {
+          "name_en": "Vehicle integration level",
+          "name_ar": "مستوى تكامل البرمجيات",
+          "test_condition": "ISTA",
+          "reference": "F056-16-11-501 or later as printed in 2020 bulletin"
+        }
+      ],
+      "parts": [
+        "EPS and DSC communication interfaces; parts not required for 2020 bulletin software remedy"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "D356A5",
+        "D359BF",
+        "480AB8",
+        "CDA451",
+        "CDA452",
+        "D35B26",
+        "D355C4",
+        "48083B",
+        "D35C0C"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M320114-REV1",
+          "bulletin_date": "2020-01-10",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171512-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ],
+      "special_notice": "Superseding 2020 service bulletin removes historical EPS-replacement guidance; do not use 2014 rack-replacement criteria as universal repair."
+    },
+    {
+      "record_id": "MINI-B05-480AB8-EPSRELATEDNETWORKFAULTMEMORYEXACTREPORTINGECUNOTSTATED",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "480AB8",
+      "base_code": "480AB8",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "steering_network",
+      "ecu_context": "EPS-related network fault memory (exact reporting ECU not stated)",
+      "ecu_certainty": "reporting_module_not_confirmed",
+      "definition_en": "Internal status management of the complete monitoring range",
+      "translation_ar": "إدارة الحالة الداخلية لمجال المراقبة الكامل: خلل",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57"
+        ],
+        "production_from": "2013-10-31",
+        "production_end": "2016-11-30",
+        "engines": "not specified by bulletin",
+        "fault_context": "Steering assistance missing at startup and no communication with EPS",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "Power-assisted steering unavailable at startup",
+        "No communication with EPS",
+        "Possible related faults across DSC/EPS network"
+      ],
+      "causes": [
+        {
+          "cause": "EPS communication / software in bulletin context. Manufacturer revision 2020 shifts procedure to diagnostic test module and programming rather than default steering-rack replacement",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ جميع وحدات DSC وEPS وبوابة الاتصال باستخدام ISTA، وحدد الوحدة التي سجّلت الرمز فعلياً على هذه السيارة.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "تأكد من تطابق فترة الإنتاج والأعراض؛ لا تفترض أن أي خطأ Timeout يعني عطل علبة توجيه مادي.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "نفّذ خطة اختبار ISTA المناسبة للرمز وللوحدة قبل اختيار الإجراء.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا انطبقت نشرة MINI المراجعة 2020، برمج السيارة عبر ISTA 4.21.1x أو أحدث نحو F056-16-11-501 أو إصدار أعلى بحسب بيانات VIN.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 5,
+          "action_ar": "بعد البرمجة اختبر المساعدة الكهربائية وأعد فحص الذاكرة؛ إذا استمر فقد الاتصال اتبع فحص القدرة والاتصال الخاص بالمركبة، دون اختلاق مواقع أو أطراف.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "EPS communication state",
+          "name_ar": "حالة اتصال وحدة EPS",
+          "test_condition": "ISTA full vehicle test",
+          "reference": "Expected communication availability; numeric value not documented"
+        },
+        {
+          "name_en": "Vehicle integration level",
+          "name_ar": "مستوى تكامل البرمجيات",
+          "test_condition": "ISTA",
+          "reference": "F056-16-11-501 or later as printed in 2020 bulletin"
+        }
+      ],
+      "parts": [
+        "EPS and DSC communication interfaces; parts not required for 2020 bulletin software remedy"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "D356A5",
+        "D359BF",
+        "D356B6",
+        "CDA451",
+        "CDA452",
+        "D35B26",
+        "D355C4",
+        "48083B",
+        "D35C0C"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M320114-REV1",
+          "bulletin_date": "2020-01-10",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171512-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ],
+      "special_notice": "Superseding 2020 service bulletin removes historical EPS-replacement guidance; do not use 2014 rack-replacement criteria as universal repair."
+    },
+    {
+      "record_id": "MINI-B05-CDA451-EPSRELATEDNETWORKFAULTMEMORYEXACTREPORTINGECUNOTSTATED",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "CDA451",
+      "base_code": "CDA451",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "steering_network",
+      "ecu_context": "EPS-related network fault memory (exact reporting ECU not stated)",
+      "ecu_certainty": "reporting_module_not_confirmed",
+      "definition_en": "FlexRay, message (actual steering torque of driver actuator, 49.0.2): Missing",
+      "translation_ar": "رسالة FlexRay لعزم التوجيه الفعلي (49.0.2): مفقودة",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57"
+        ],
+        "production_from": "2013-10-31",
+        "production_end": "2016-11-30",
+        "engines": "not specified by bulletin",
+        "fault_context": "Steering assistance missing at startup and no communication with EPS",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "Power-assisted steering unavailable at startup",
+        "No communication with EPS",
+        "Possible related faults across DSC/EPS network"
+      ],
+      "causes": [
+        {
+          "cause": "EPS communication / software in bulletin context. Manufacturer revision 2020 shifts procedure to diagnostic test module and programming rather than default steering-rack replacement",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ جميع وحدات DSC وEPS وبوابة الاتصال باستخدام ISTA، وحدد الوحدة التي سجّلت الرمز فعلياً على هذه السيارة.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "تأكد من تطابق فترة الإنتاج والأعراض؛ لا تفترض أن أي خطأ Timeout يعني عطل علبة توجيه مادي.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "نفّذ خطة اختبار ISTA المناسبة للرمز وللوحدة قبل اختيار الإجراء.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا انطبقت نشرة MINI المراجعة 2020، برمج السيارة عبر ISTA 4.21.1x أو أحدث نحو F056-16-11-501 أو إصدار أعلى بحسب بيانات VIN.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 5,
+          "action_ar": "بعد البرمجة اختبر المساعدة الكهربائية وأعد فحص الذاكرة؛ إذا استمر فقد الاتصال اتبع فحص القدرة والاتصال الخاص بالمركبة، دون اختلاق مواقع أو أطراف.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "EPS communication state",
+          "name_ar": "حالة اتصال وحدة EPS",
+          "test_condition": "ISTA full vehicle test",
+          "reference": "Expected communication availability; numeric value not documented"
+        },
+        {
+          "name_en": "Vehicle integration level",
+          "name_ar": "مستوى تكامل البرمجيات",
+          "test_condition": "ISTA",
+          "reference": "F056-16-11-501 or later as printed in 2020 bulletin"
+        }
+      ],
+      "parts": [
+        "EPS and DSC communication interfaces; parts not required for 2020 bulletin software remedy"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "D356A5",
+        "D359BF",
+        "D356B6",
+        "480AB8",
+        "CDA452",
+        "D35B26",
+        "D355C4",
+        "48083B",
+        "D35C0C"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M320114-REV1",
+          "bulletin_date": "2020-01-10",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171512-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ],
+      "special_notice": "Superseding 2020 service bulletin removes historical EPS-replacement guidance; do not use 2014 rack-replacement criteria as universal repair."
+    },
+    {
+      "record_id": "MINI-B05-CDA452-EPSRELATEDNETWORKFAULTMEMORYEXACTREPORTINGECUNOTSTATED",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "CDA452",
+      "base_code": "CDA452",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "steering_network",
+      "ecu_context": "EPS-related network fault memory (exact reporting ECU not stated)",
+      "ecu_certainty": "reporting_module_not_confirmed",
+      "definition_en": "FlexRay, message (actual force of rack, 49.0.2): Missing",
+      "translation_ar": "رسالة FlexRay لقوة علبة التوجيه الفعلية (49.0.2): مفقودة",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57"
+        ],
+        "production_from": "2013-10-31",
+        "production_end": "2016-11-30",
+        "engines": "not specified by bulletin",
+        "fault_context": "Steering assistance missing at startup and no communication with EPS",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "Power-assisted steering unavailable at startup",
+        "No communication with EPS",
+        "Possible related faults across DSC/EPS network"
+      ],
+      "causes": [
+        {
+          "cause": "EPS communication / software in bulletin context. Manufacturer revision 2020 shifts procedure to diagnostic test module and programming rather than default steering-rack replacement",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ جميع وحدات DSC وEPS وبوابة الاتصال باستخدام ISTA، وحدد الوحدة التي سجّلت الرمز فعلياً على هذه السيارة.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "تأكد من تطابق فترة الإنتاج والأعراض؛ لا تفترض أن أي خطأ Timeout يعني عطل علبة توجيه مادي.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "نفّذ خطة اختبار ISTA المناسبة للرمز وللوحدة قبل اختيار الإجراء.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا انطبقت نشرة MINI المراجعة 2020، برمج السيارة عبر ISTA 4.21.1x أو أحدث نحو F056-16-11-501 أو إصدار أعلى بحسب بيانات VIN.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 5,
+          "action_ar": "بعد البرمجة اختبر المساعدة الكهربائية وأعد فحص الذاكرة؛ إذا استمر فقد الاتصال اتبع فحص القدرة والاتصال الخاص بالمركبة، دون اختلاق مواقع أو أطراف.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "EPS communication state",
+          "name_ar": "حالة اتصال وحدة EPS",
+          "test_condition": "ISTA full vehicle test",
+          "reference": "Expected communication availability; numeric value not documented"
+        },
+        {
+          "name_en": "Vehicle integration level",
+          "name_ar": "مستوى تكامل البرمجيات",
+          "test_condition": "ISTA",
+          "reference": "F056-16-11-501 or later as printed in 2020 bulletin"
+        }
+      ],
+      "parts": [
+        "EPS and DSC communication interfaces; parts not required for 2020 bulletin software remedy"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "D356A5",
+        "D359BF",
+        "D356B6",
+        "480AB8",
+        "CDA451",
+        "D35B26",
+        "D355C4",
+        "48083B",
+        "D35C0C"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M320114-REV1",
+          "bulletin_date": "2020-01-10",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171512-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ],
+      "special_notice": "Superseding 2020 service bulletin removes historical EPS-replacement guidance; do not use 2014 rack-replacement criteria as universal repair."
+    },
+    {
+      "record_id": "MINI-B05-D35B26-DSC2014BULLETIN2020EPSNETWORKCONTEXT",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "D35B26",
+      "base_code": "D35B26",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "steering_network",
+      "ecu_context": "DSC (2014 bulletin) / 2020 EPS network context",
+      "ecu_certainty": "DSC_older_2014_bulletin",
+      "definition_en": "Message fault (actual position of EPS, AVL_PO_EPS): Timeout",
+      "translation_ar": "رسالة الموضع الفعلي للتوجيه الكهربائي EPS: انتهاء مهلة الاتصال",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57"
+        ],
+        "production_from": "2013-10-31",
+        "production_end": "2016-11-30",
+        "engines": "not specified by bulletin",
+        "fault_context": "Steering assistance missing at startup and no communication with EPS",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "Power-assisted steering unavailable at startup",
+        "No communication with EPS",
+        "Possible related faults across DSC/EPS network"
+      ],
+      "causes": [
+        {
+          "cause": "EPS communication / software in bulletin context. Manufacturer revision 2020 shifts procedure to diagnostic test module and programming rather than default steering-rack replacement",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ جميع وحدات DSC وEPS وبوابة الاتصال باستخدام ISTA، وحدد الوحدة التي سجّلت الرمز فعلياً على هذه السيارة.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "تأكد من تطابق فترة الإنتاج والأعراض؛ لا تفترض أن أي خطأ Timeout يعني عطل علبة توجيه مادي.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "نفّذ خطة اختبار ISTA المناسبة للرمز وللوحدة قبل اختيار الإجراء.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا انطبقت نشرة MINI المراجعة 2020، برمج السيارة عبر ISTA 4.21.1x أو أحدث نحو F056-16-11-501 أو إصدار أعلى بحسب بيانات VIN.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 5,
+          "action_ar": "بعد البرمجة اختبر المساعدة الكهربائية وأعد فحص الذاكرة؛ إذا استمر فقد الاتصال اتبع فحص القدرة والاتصال الخاص بالمركبة، دون اختلاق مواقع أو أطراف.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "EPS communication state",
+          "name_ar": "حالة اتصال وحدة EPS",
+          "test_condition": "ISTA full vehicle test",
+          "reference": "Expected communication availability; numeric value not documented"
+        },
+        {
+          "name_en": "Vehicle integration level",
+          "name_ar": "مستوى تكامل البرمجيات",
+          "test_condition": "ISTA",
+          "reference": "F056-16-11-501 or later as printed in 2020 bulletin"
+        }
+      ],
+      "parts": [
+        "EPS and DSC communication interfaces; parts not required for 2020 bulletin software remedy"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "D356A5",
+        "D359BF",
+        "D356B6",
+        "480AB8",
+        "CDA451",
+        "CDA452",
+        "D355C4",
+        "48083B",
+        "D35C0C"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M320114-REV1",
+          "bulletin_date": "2020-01-10",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171512-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ],
+      "special_notice": "Superseding 2020 service bulletin removes historical EPS-replacement guidance; do not use 2014 rack-replacement criteria as universal repair."
+    },
+    {
+      "record_id": "MINI-B05-D355C4-DSC2014BULLETIN2020EPSNETWORKCONTEXT",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "D355C4",
+      "base_code": "D355C4",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "steering_network",
+      "ecu_context": "DSC (2014 bulletin) / 2020 EPS network context",
+      "ecu_certainty": "DSC_older_2014_bulletin",
+      "definition_en": "Message fault (front axle electrical steering status, ST_EST): Timeout",
+      "translation_ar": "رسالة حالة التوجيه الكهربائي للمحور الأمامي: انتهاء مهلة الاتصال",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57"
+        ],
+        "production_from": "2013-10-31",
+        "production_end": "2016-11-30",
+        "engines": "not specified by bulletin",
+        "fault_context": "Steering assistance missing at startup and no communication with EPS",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "Power-assisted steering unavailable at startup",
+        "No communication with EPS",
+        "Possible related faults across DSC/EPS network"
+      ],
+      "causes": [
+        {
+          "cause": "EPS communication / software in bulletin context. Manufacturer revision 2020 shifts procedure to diagnostic test module and programming rather than default steering-rack replacement",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ جميع وحدات DSC وEPS وبوابة الاتصال باستخدام ISTA، وحدد الوحدة التي سجّلت الرمز فعلياً على هذه السيارة.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "تأكد من تطابق فترة الإنتاج والأعراض؛ لا تفترض أن أي خطأ Timeout يعني عطل علبة توجيه مادي.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "نفّذ خطة اختبار ISTA المناسبة للرمز وللوحدة قبل اختيار الإجراء.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا انطبقت نشرة MINI المراجعة 2020، برمج السيارة عبر ISTA 4.21.1x أو أحدث نحو F056-16-11-501 أو إصدار أعلى بحسب بيانات VIN.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 5,
+          "action_ar": "بعد البرمجة اختبر المساعدة الكهربائية وأعد فحص الذاكرة؛ إذا استمر فقد الاتصال اتبع فحص القدرة والاتصال الخاص بالمركبة، دون اختلاق مواقع أو أطراف.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "EPS communication state",
+          "name_ar": "حالة اتصال وحدة EPS",
+          "test_condition": "ISTA full vehicle test",
+          "reference": "Expected communication availability; numeric value not documented"
+        },
+        {
+          "name_en": "Vehicle integration level",
+          "name_ar": "مستوى تكامل البرمجيات",
+          "test_condition": "ISTA",
+          "reference": "F056-16-11-501 or later as printed in 2020 bulletin"
+        }
+      ],
+      "parts": [
+        "EPS and DSC communication interfaces; parts not required for 2020 bulletin software remedy"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "D356A5",
+        "D359BF",
+        "D356B6",
+        "480AB8",
+        "CDA451",
+        "CDA452",
+        "D35B26",
+        "48083B",
+        "D35C0C"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M320114-REV1",
+          "bulletin_date": "2020-01-10",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171512-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ],
+      "special_notice": "Superseding 2020 service bulletin removes historical EPS-replacement guidance; do not use 2014 rack-replacement criteria as universal repair."
+    },
+    {
+      "record_id": "MINI-B05-48083B-EPSRELATEDNETWORKFAULTMEMORYEXACTREPORTINGECUNOTSTATED",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "48083B",
+      "base_code": "48083B",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "steering_network",
+      "ecu_context": "EPS-related network fault memory (exact reporting ECU not stated)",
+      "ecu_certainty": "reporting_module_not_confirmed",
+      "definition_en": "Peripheral/functional error on engine control unit interface: Front axle steering angle signal temporarily invalid",
+      "translation_ar": "خطأ وظيفي بواجهة وحدة المحرك: إشارة زاوية توجيه المحور الأمامي غير صالحة مؤقتاً",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57"
+        ],
+        "production_from": "2013-10-31",
+        "production_end": "2016-11-30",
+        "engines": "not specified by bulletin",
+        "fault_context": "Steering assistance missing at startup and no communication with EPS",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "Power-assisted steering unavailable at startup",
+        "No communication with EPS",
+        "Possible related faults across DSC/EPS network"
+      ],
+      "causes": [
+        {
+          "cause": "EPS communication / software in bulletin context. Manufacturer revision 2020 shifts procedure to diagnostic test module and programming rather than default steering-rack replacement",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ جميع وحدات DSC وEPS وبوابة الاتصال باستخدام ISTA، وحدد الوحدة التي سجّلت الرمز فعلياً على هذه السيارة.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "تأكد من تطابق فترة الإنتاج والأعراض؛ لا تفترض أن أي خطأ Timeout يعني عطل علبة توجيه مادي.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "نفّذ خطة اختبار ISTA المناسبة للرمز وللوحدة قبل اختيار الإجراء.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا انطبقت نشرة MINI المراجعة 2020، برمج السيارة عبر ISTA 4.21.1x أو أحدث نحو F056-16-11-501 أو إصدار أعلى بحسب بيانات VIN.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 5,
+          "action_ar": "بعد البرمجة اختبر المساعدة الكهربائية وأعد فحص الذاكرة؛ إذا استمر فقد الاتصال اتبع فحص القدرة والاتصال الخاص بالمركبة، دون اختلاق مواقع أو أطراف.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "EPS communication state",
+          "name_ar": "حالة اتصال وحدة EPS",
+          "test_condition": "ISTA full vehicle test",
+          "reference": "Expected communication availability; numeric value not documented"
+        },
+        {
+          "name_en": "Vehicle integration level",
+          "name_ar": "مستوى تكامل البرمجيات",
+          "test_condition": "ISTA",
+          "reference": "F056-16-11-501 or later as printed in 2020 bulletin"
+        }
+      ],
+      "parts": [
+        "EPS and DSC communication interfaces; parts not required for 2020 bulletin software remedy"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "D356A5",
+        "D359BF",
+        "D356B6",
+        "480AB8",
+        "CDA451",
+        "CDA452",
+        "D35B26",
+        "D355C4",
+        "D35C0C"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M320114-REV1",
+          "bulletin_date": "2020-01-10",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171512-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ],
+      "special_notice": "Superseding 2020 service bulletin removes historical EPS-replacement guidance; do not use 2014 rack-replacement criteria as universal repair."
+    },
+    {
+      "record_id": "MINI-B05-D35C0C-DSC2014BULLETIN2020EPSNETWORKCONTEXT",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "D35C0C",
+      "base_code": "D35C0C",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "steering_network",
+      "ecu_context": "DSC (2014 bulletin) / 2020 EPS network context",
+      "ecu_certainty": "DSC_older_2014_bulletin",
+      "definition_en": "Message fault (actual force of rack, AVL_FORC_GRD): Timeout",
+      "translation_ar": "رسالة القوة الفعلية لعلبة التوجيه: انتهاء مهلة الاتصال",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57"
+        ],
+        "production_from": "2013-10-31",
+        "production_end": "2016-11-30",
+        "engines": "not specified by bulletin",
+        "fault_context": "Steering assistance missing at startup and no communication with EPS",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "Power-assisted steering unavailable at startup",
+        "No communication with EPS",
+        "Possible related faults across DSC/EPS network"
+      ],
+      "causes": [
+        {
+          "cause": "EPS communication / software in bulletin context. Manufacturer revision 2020 shifts procedure to diagnostic test module and programming rather than default steering-rack replacement",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "اقرأ جميع وحدات DSC وEPS وبوابة الاتصال باستخدام ISTA، وحدد الوحدة التي سجّلت الرمز فعلياً على هذه السيارة.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "تأكد من تطابق فترة الإنتاج والأعراض؛ لا تفترض أن أي خطأ Timeout يعني عطل علبة توجيه مادي.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "نفّذ خطة اختبار ISTA المناسبة للرمز وللوحدة قبل اختيار الإجراء.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا انطبقت نشرة MINI المراجعة 2020، برمج السيارة عبر ISTA 4.21.1x أو أحدث نحو F056-16-11-501 أو إصدار أعلى بحسب بيانات VIN.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 5,
+          "action_ar": "بعد البرمجة اختبر المساعدة الكهربائية وأعد فحص الذاكرة؛ إذا استمر فقد الاتصال اتبع فحص القدرة والاتصال الخاص بالمركبة، دون اختلاق مواقع أو أطراف.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "EPS communication state",
+          "name_ar": "حالة اتصال وحدة EPS",
+          "test_condition": "ISTA full vehicle test",
+          "reference": "Expected communication availability; numeric value not documented"
+        },
+        {
+          "name_en": "Vehicle integration level",
+          "name_ar": "مستوى تكامل البرمجيات",
+          "test_condition": "ISTA",
+          "reference": "F056-16-11-501 or later as printed in 2020 bulletin"
+        }
+      ],
+      "parts": [
+        "EPS and DSC communication interfaces; parts not required for 2020 bulletin software remedy"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "D356A5",
+        "D359BF",
+        "D356B6",
+        "480AB8",
+        "CDA451",
+        "CDA452",
+        "D35B26",
+        "D355C4",
+        "48083B"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M320114-REV1",
+          "bulletin_date": "2020-01-10",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10171512-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ],
+      "special_notice": "Superseding 2020 service bulletin removes historical EPS-replacement guidance; do not use 2014 rack-replacement criteria as universal repair."
+    },
+    {
+      "record_id": "MINI-B05-4823FA-EPS",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "4823FA",
+      "base_code": "4823FA",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "steering",
+      "ecu_context": "EPS",
+      "ecu_certainty": "explicit_in_bulletin",
+      "definition_en": "EPS control unit internally overloaded; reduction in steering assistance",
+      "translation_ar": "زيادة تحميل داخلية بوحدة التوجيه الكهربائي EPS مع تخفيض مستوى المساعدة",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57"
+        ],
+        "option": "Park Maneuver Assistant (PMA)",
+        "production_end": "2016-10-31",
+        "engines": "not specified",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "Assist intermittently lost after repeated parking maneuvers or prolonged steering end stop",
+        "Steering assist recovers after several minutes"
+      ],
+      "causes": [
+        {
+          "cause": "EPS software oversensitive to overload protection",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "سجّل ظروف ظهور العطل، وبخاصة تكرار المناورات أو إبقاء المقود عند نهاية المشوار.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "اقرأ الرمز 4823FA من EPS باستخدام ISTA، وتأكد من وجود خيار PMA وتاريخ الإنتاج.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "إذا تطابقت الحالة، برمج السيارة باستخدام ISTA 4.08.2x أو أحدث إلى I-level F056-17-11-523 أو أحدث.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "بعد البرمجة تحقّق من وظيفة التوجيه دون تعريض النظام لاحتجاز طويل عند نهاية المشوار؛ النشرة لا تنصح بتبديل أجزاء لهذه الحالة.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Vehicle I-level",
+          "name_ar": "مستوى البرنامج",
+          "test_condition": "ISTA identification",
+          "reference": "F056-17-11-523 or later"
+        }
+      ],
+      "parts": [
+        "EPS software (no component exchange recommended)"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [],
+      "sources": [
+        {
+          "id": "MINI-M320116",
+          "bulletin_date": "2017-12",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10136747-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ]
+    },
+    {
+      "record_id": "MINI-B05-801189-IHKA",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "801189",
+      "base_code": "801189",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "body_hvac",
+      "ecu_context": "IHKA",
+      "ecu_certainty": "explicit_in_bulletin",
+      "definition_en": "Engine mixed air right: Initialization fault",
+      "translation_ar": "محرك بوابة مزج الهواء اليمنى: فشل التهيئة",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57",
+          "F60"
+        ],
+        "production_end": "2020-07-28",
+        "production_from": "start of production for each chassis",
+        "engine": "not specified",
+        "component": "right front air mixing flap and actuator (position for VIN needed)",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "Different air temperature at left vs right front vents"
+      ],
+      "causes": [
+        {
+          "cause": "Mechanical pressure on flap end-stop can deform/break an air flap, causing inability to move; motor itself may also be faulty",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "تأكد من اختلاف حرارة تدفق الهواء من فتحتَي التهوية الأماميتين ضمن ظروف تشغيل متكافئة.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "اقرأ أحد الكودين في IHKA، واستخدم اختبار تهيئة مشغّل البوابة من MINI ISTA.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "اتبع تعليمات الوصول إلى مشغّل بوابة مزج الهواء الأمامية اليمنى بحسب الهيكل؛ تختلف تسميته ورقمه بين الإصدارات.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "بعد فصل المشغّل وفق إجراءات المصنع، افحص حركة البوابة يدوياً: إذا تحركت بسلاسة فقد يكفي تغيير المشغّل؛ إن كانت عالقة أو صعبة جداً تتبع النشرة إجراء استبدال هيكل نظام HVAC.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 5,
+          "action_ar": "بعد الإصلاح شغّل اختبار تهيئة المحرك الخطوي ثم اسمح للسيارة بالنوم وأعد فحص الوظيفة والذاكرة.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 6,
+          "action_ar": "عند استبدال هيكل التكييف، تحقّق من رقم تعديل القطعة؛ تذكر النشرة أن مؤشر النسخة الجديدة يجب أن يكون 04 أو أعلى.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Right mixing flap initialization status",
+          "name_ar": "حالة تهيئة بوابة مزج الهواء اليمنى",
+          "test_condition": "ISTA IHKA initialization",
+          "reference": "pass/fail according to test module; numeric value not specified"
+        }
+      ],
+      "parts": [
+        "Right air-mixing flap actuator",
+        "HVAC empty housing only if flap mechanically seized",
+        "part revision index ≥04 only for the replacement housing addressed by bulletin"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "801126"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M640221-REV1",
+          "bulletin_date": "2021-09-08",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10204664-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ]
+    },
+    {
+      "record_id": "MINI-B05-801126-IHKA",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "801126",
+      "base_code": "801126",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "body_hvac",
+      "ecu_context": "IHKA",
+      "ecu_certainty": "explicit_in_bulletin",
+      "definition_en": "Engine mixed air right: Initialization fault",
+      "translation_ar": "محرك بوابة مزج الهواء اليمنى: فشل التهيئة",
+      "applicability": {
+        "chassis": [
+          "F54",
+          "F55",
+          "F56",
+          "F57",
+          "F60"
+        ],
+        "production_end": "2020-07-28",
+        "production_from": "start of production for each chassis",
+        "engine": "not specified",
+        "component": "right front air mixing flap and actuator (position for VIN needed)",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "Different air temperature at left vs right front vents"
+      ],
+      "causes": [
+        {
+          "cause": "Mechanical pressure on flap end-stop can deform/break an air flap, causing inability to move; motor itself may also be faulty",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "تأكد من اختلاف حرارة تدفق الهواء من فتحتَي التهوية الأماميتين ضمن ظروف تشغيل متكافئة.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "اقرأ أحد الكودين في IHKA، واستخدم اختبار تهيئة مشغّل البوابة من MINI ISTA.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "اتبع تعليمات الوصول إلى مشغّل بوابة مزج الهواء الأمامية اليمنى بحسب الهيكل؛ تختلف تسميته ورقمه بين الإصدارات.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "بعد فصل المشغّل وفق إجراءات المصنع، افحص حركة البوابة يدوياً: إذا تحركت بسلاسة فقد يكفي تغيير المشغّل؛ إن كانت عالقة أو صعبة جداً تتبع النشرة إجراء استبدال هيكل نظام HVAC.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 5,
+          "action_ar": "بعد الإصلاح شغّل اختبار تهيئة المحرك الخطوي ثم اسمح للسيارة بالنوم وأعد فحص الوظيفة والذاكرة.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 6,
+          "action_ar": "عند استبدال هيكل التكييف، تحقّق من رقم تعديل القطعة؛ تذكر النشرة أن مؤشر النسخة الجديدة يجب أن يكون 04 أو أعلى.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Right mixing flap initialization status",
+          "name_ar": "حالة تهيئة بوابة مزج الهواء اليمنى",
+          "test_condition": "ISTA IHKA initialization",
+          "reference": "pass/fail according to test module; numeric value not specified"
+        }
+      ],
+      "parts": [
+        "Right air-mixing flap actuator",
+        "HVAC empty housing only if flap mechanically seized",
+        "part revision index ≥04 only for the replacement housing addressed by bulletin"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "801189"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M640221-REV1",
+          "bulletin_date": "2021-09-08",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10204664-9999.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ]
+    },
+    {
+      "record_id": "MINI-B05-930C19-ACSM6",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "930C19",
+      "base_code": "930C19",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "srs_body",
+      "ecu_context": "ACSM6",
+      "ecu_certainty": "explicit_in_bulletin",
+      "definition_en": "Backrest sensor right 2nd seat row: open circuit",
+      "translation_ar": "حساس مسند المقعد الأيمن بالصف الثاني: دائرة مفتوحة",
+      "applicability": {
+        "chassis": [
+          "U25"
+        ],
+        "model": "Countryman",
+        "production_end": "2025-03-01",
+        "fuel": [
+          "petrol",
+          "electric"
+        ],
+        "variants_explicit_in_repair_operations": [
+          "Countryman S ALL4",
+          "Countryman JCW ALL4",
+          "Countryman SE ALL4 BEV"
+        ],
+        "condition": "Right second-row seatback indicates unlocked; original microswitch may move in plastic housing",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "Rear seat unlocked Check Control Message though backrest appears upright",
+        "ACSM6 rear restraint functionality warning"
+      ],
+      "causes": [
+        {
+          "cause": "Dimension deviation may permit right rear backrest microswitch to move in its mount; not every ACSM6 code implies defective airbag hardware",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "تحقق من رقم الهيكل وتاريخ إنتاج U25 ووجود الكودين المناسبين في ACSM6.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "افحص موضع ميكروسويتش مسند المقعد الخلفي الأيمن وثباته في الحامل دون العبث بدوائر إشعال SRS.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "طبق فحص عمل الميكروسويتش بواسطة فولتميتر وفق تعليمات MINI، مع تحديد الموصل والأطراف الخاصة بالمركبة من دليل المصنع؛ لا تُخترع قيم جهد.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا ثبتت حركة الميكروسويتش داخل حامله، تشير النشرة إلى استبداله بالقطعة 52 20 5 A3B 219؛ لا تتبدل وسادة هوائية بسبب الرمز وحده.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 5,
+          "action_ar": "أعد فحص عمل الميكروسويتش ووظيفة قفل المسند ورموز ACSM6 بعد الإصلاح؛ العمل على SRS بواسطة فني مؤهل.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Right 2nd-row backrest locking microswitch state",
+          "name_ar": "حالة مفتاح قفل مسند المقعد الأيمن الخلفي",
+          "test_condition": "Mechanical seatback in upright/locked state and appropriate MINI diagnostic test",
+          "reference": "State transition expected; no voltage threshold or pin numbers specified in bulletin"
+        }
+      ],
+      "parts": [
+        "Right rear seatback microswitch, MINI part no. 52 20 5 A3B 219 (only if confirmed loose)"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "930D76"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M520125-REV1",
+          "bulletin_date": "2025-04-21",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11017297-0001.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ],
+      "special_notice": "Seatback microswitch can be inspected with an appropriate voltmeter per bulletin; never directly measure pyrotechnic SRS circuits."
+    },
+    {
+      "record_id": "MINI-B05-930D76-ACSM6",
+      "brand": "MINI",
+      "manufacturer": "MINI",
+      "raw_code": "930D76",
+      "base_code": "930D76",
+      "code_format": "OEM_hex6",
+      "code_family": "manufacturer_specific",
+      "category": "srs_body",
+      "ecu_context": "ACSM6",
+      "ecu_certainty": "explicit_in_bulletin",
+      "definition_en": "Function rear restraint system restricted",
+      "translation_ar": "وظيفة نظام تقييد الركاب الخلفي محدودة",
+      "applicability": {
+        "chassis": [
+          "U25"
+        ],
+        "model": "Countryman",
+        "production_end": "2025-03-01",
+        "fuel": [
+          "petrol",
+          "electric"
+        ],
+        "variants_explicit_in_repair_operations": [
+          "Countryman S ALL4",
+          "Countryman JCW ALL4",
+          "Countryman SE ALL4 BEV"
+        ],
+        "condition": "Right second-row seatback indicates unlocked; original microswitch may move in plastic housing",
+        "market": "MINI USA bulletin — European and Swedish applicability unverified",
+        "model_year": "not asserted from production date",
+        "individual_VIN_confirmation_required": true
+      },
+      "symptoms": [
+        "Rear seat unlocked Check Control Message though backrest appears upright",
+        "ACSM6 rear restraint functionality warning"
+      ],
+      "causes": [
+        {
+          "cause": "Dimension deviation may permit right rear backrest microswitch to move in its mount; not every ACSM6 code implies defective airbag hardware",
+          "evidence": "OEM bulletin-specific scenario; not proven for every appearance of DTC"
+        }
+      ],
+      "diagnostic_steps": [
+        {
+          "step": 1,
+          "action_ar": "تحقق من رقم الهيكل وتاريخ إنتاج U25 ووجود الكودين المناسبين في ACSM6.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 2,
+          "action_ar": "افحص موضع ميكروسويتش مسند المقعد الخلفي الأيمن وثباته في الحامل دون العبث بدوائر إشعال SRS.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 3,
+          "action_ar": "طبق فحص عمل الميكروسويتش بواسطة فولتميتر وفق تعليمات MINI، مع تحديد الموصل والأطراف الخاصة بالمركبة من دليل المصنع؛ لا تُخترع قيم جهد.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 4,
+          "action_ar": "إذا ثبتت حركة الميكروسويتش داخل حامله، تشير النشرة إلى استبداله بالقطعة 52 20 5 A3B 219؛ لا تتبدل وسادة هوائية بسبب الرمز وحده.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        },
+        {
+          "step": 5,
+          "action_ar": "أعد فحص عمل الميكروسويتش ووظيفة قفل المسند ورموز ACSM6 بعد الإصلاح؛ العمل على SRS بواسطة فني مؤهل.",
+          "tool": "MINI ISTA and VIN-specific service information",
+          "verification_status": "OEM scenario guidance; validate model-specific procedure before work"
+        }
+      ],
+      "live_data": [
+        {
+          "name_en": "Right 2nd-row backrest locking microswitch state",
+          "name_ar": "حالة مفتاح قفل مسند المقعد الأيمن الخلفي",
+          "test_condition": "Mechanical seatback in upright/locked state and appropriate MINI diagnostic test",
+          "reference": "State transition expected; no voltage threshold or pin numbers specified in bulletin"
+        }
+      ],
+      "parts": [
+        "Right rear seatback microswitch, MINI part no. 52 20 5 A3B 219 (only if confirmed loose)"
+      ],
+      "wiring": {
+        "pinouts": null,
+        "diagrams": null,
+        "verification": "not available for specific VIN"
+      },
+      "images": {
+        "path": null,
+        "code_matched": false,
+        "license_status": "no image collection in this batch"
+      },
+      "associated_codes": [
+        "930C19"
+      ],
+      "sources": [
+        {
+          "id": "MINI-M520125-REV1",
+          "bulletin_date": "2025-04-21",
+          "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11017297-0001.pdf"
+        }
+      ],
+      "verification_status": "MINI_bulletin_confirmed_code_and_context_draft_not_fully_diagnosed",
+      "review_status": "pending_eu_vin_ecu_and_full_tests",
+      "approved_for_app": false,
+      "publication_status": "NOT_ACTIVE",
+      "limitations": [
+        "No Swedish vehicle-specific fitment claim",
+        "Only OEM-reported context supported",
+        "No unverified sensor voltage/pinout/torque values"
+      ],
+      "special_notice": "Seatback microswitch can be inspected with an appropriate voltmeter per bulletin; never directly measure pyrotechnic SRS circuits."
+    }
+  ]
+}
