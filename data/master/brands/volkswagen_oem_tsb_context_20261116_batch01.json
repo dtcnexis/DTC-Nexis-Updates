@@ -2760,7 +2760,7 @@
       "dtc_fault_status": "As in bulletin; exact status depends on listed DTC instance",
       "symptoms": "Airbag warning indicator in cluster",
       "causes": "غير مؤكد؛ لا يجوز اشتقاق تلف قطعة من الكود وحده",
-      "diagnostic_steps": "Verify VIN eligibility, address 0015, airbag controller 3Q0959655DB SW 0720 and HW 006/007. Follow official ODIS SVM path: HW006 may qualify for SW0721+; HW007 directed to controller replacement under bulletin. Authorized SRS workshop only.",
+      "diagnostic_steps": "Verify VIN eligibility, address 0015, airbag controller 3Q0959655DB SW 720 and HW 006/007. Follow official ODIS SVM path: HW006 may qualify for SW 721 or later; HW007 directed to controller replacement under bulletin. Authorized SRS workshop only.",
       "live_data": [],
       "parts": [],
       "wiring": null,
@@ -2796,8 +2796,8 @@
       "code_type": "SAE vs manufacturer-specific assignment NOT independently determined",
       "ecu_address": "0015",
       "ecu": "Airbag controller J234",
-      "definition_en": "Airbag control module malfunction reported",
-      "translation_ar": "خلل مُسجل بوحدة التحكم بالوسائد الهوائية",
+      "definition_en": "Transm.Contr. Unit Malfunction (abbreviation as printed by VW; expansion unverified)",
+      "translation_ar": "خلل في وحدة تحكم مذكورة بالاختصار الأصلي «Transm.Contr. Unit»؛ توسيع الاختصار غير مؤكد",
       "model": [
         "Jetta GLI",
         "Passat"
@@ -2842,7 +2842,8 @@
         "Pinout and measured electrical tolerances",
         "Full diagnostic thresholds",
         "Parts placement",
-        "Commercial image reuse"
+        "Commercial image reuse",
+        "Exact interpretation of abbreviation Transm.Contr. Unit"
       ],
       "review_status": "PENDING_NOT_RELEASED",
       "source_checked_on": "2026-11-16"
