@@ -1,0 +1,70 @@
+{
+  "brand": "DS Automobiles",
+  "batch": "03",
+  "status": "draft",
+  "source_scope": "Independent PSA ECU DTC listings; DS model, engine and ECU fitment not verified",
+  "sources": [
+    {
+      "id": "edc17c60",
+      "url": "https://github.com/ludwig-v/arduino-psa-diag/blob/master/dtc/EDC17C60.md"
+    },
+    {
+      "id": "bsi2010",
+      "url": "https://github.com/ludwig-v/arduino-psa-diag/blob/master/dtc/BSI2010.md"
+    }
+  ],
+  "review_entries": [
+    {
+      "code": "P0299",
+      "ecu": "EDC17C60",
+      "system": "turbocharger",
+      "gap": "Confirm DS engine and turbo control variant; compare commanded vs actual boost under OEM test conditions"
+    },
+    {
+      "code": "P0401",
+      "ecu": "EDC17C60",
+      "system": "EGR",
+      "gap": "Verify EGR flow criteria and DS emissions configuration"
+    },
+    {
+      "code": "P1434",
+      "ecu": "EDC17C60",
+      "system": "DPF additive",
+      "gap": "Verify additive pump system fitment; do not confuse with SCR AdBlue pump"
+    },
+    {
+      "code": "P2002",
+      "ecu": "EDC17C60",
+      "system": "DPF",
+      "gap": "Verify DPF differential pressure and regeneration test criteria by engine"
+    },
+    {
+      "code": "P0016",
+      "ecu": "engine ECU variant unverified",
+      "system": "crank/cam correlation",
+      "gap": "Do not equate DTC alone with timing chain or belt failure; require mechanical and signal correlation test"
+    },
+    {
+      "code": "B1003",
+      "ecu": "BSI2010",
+      "system": "body configuration",
+      "gap": "Verify BSI configuration and whether fault is active or phantom before replacement"
+    },
+    {
+      "code": "B1702",
+      "ecu": "BSI2010",
+      "system": "door locking",
+      "gap": "Confirm DS door lock actuator wiring and ECU configuration"
+    },
+    {
+      "code": "P1351",
+      "ecu": "EDC16C34",
+      "system": "preheat",
+      "gap": "Separate ECU-specific definition from other occurrences of same code"
+    }
+  ],
+  "verified_new_codes": 0,
+  "images_created": 0,
+  "applicability_confirmed": 0,
+  "policy": "Review-only data; do not merge into main or release channel."
+}
