@@ -1,0 +1,45 @@
+{
+  "brand": "DS Automobiles",
+  "status": "draft",
+  "date": "2026-11-16",
+  "scope": "Prioritized technical review only; not confirmed model/engine fitment",
+  "entries": [
+    {
+      "code": "P20E8",
+      "ecu": "Bosch EDC17C60",
+      "system": "SCR/AdBlue",
+      "reason": "OEM DS vehicle applicability, pressure thresholds and actuator tests not verified",
+      "source": "https://github.com/ludwig-v/arduino-psa-diag/blob/master/dtc/EDC17C60.md"
+    },
+    {
+      "code": "P0118",
+      "ecu": "Bosch EDC17C60",
+      "system": "ECT signal",
+      "reason": "Exact PSA definition and DS ECU applicability not verified; high input must not be equated with high coolant temperature",
+      "source": "https://github.com/ludwig-v/arduino-psa-diag/blob/master/dtc/EDC17C60.md"
+    },
+    {
+      "code": "P1351",
+      "ecu": "Bosch EDC16C34 / DV6",
+      "system": "Diesel preheating",
+      "reason": "Code also occurs under other ECU variants; do not merge meanings; DS engine fitment unverified",
+      "source": "https://github.com/ludwig-v/arduino-psa-diag"
+    },
+    {
+      "code": "C1331",
+      "ecu": "ABS/ESP PSA variant unverified",
+      "system": "Wheel speed",
+      "reason": "DS ABS ECU and model applicability unverified; do not infer defective sensor",
+      "source": "https://github.com/ludwig-v/arduino-psa-diag"
+    },
+    {
+      "code": "U1118",
+      "ecu": "Bosch EDC17C60",
+      "system": "CAN/BSI",
+      "reason": "Network topology and ECU-specific diagnostic criteria require OEM reference",
+      "source": "https://github.com/ludwig-v/arduino-psa-diag/blob/master/dtc/EDC17C60.md"
+    }
+  ],
+  "verified_new_codes": 0,
+  "notes": "Existing Batch01 records retained; no images generated; OEM confirmation deferred."
+}
