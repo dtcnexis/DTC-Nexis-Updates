@@ -1,0 +1,1002 @@
+{
+  "schema": "dtcnexis-brand-oem-document-dtc-extension-v1",
+  "brand": "polestar",
+  "created_utc": "2026-11-16",
+  "status": "PERMANENT_SOURCE_INDEX_ON_REVIEW_BRANCH_NOT_APPROVED",
+  "baseline": {
+    "path": "data/master/brands/polestar.json",
+    "git_blob_sha": "1ba4278a3f09617b6bbf91f66ca98166ab564595",
+    "unique_codes": 29,
+    "previous_batch01_detailed_source_rows": 31
+  },
+  "new_distinct_codes": 13,
+  "existing_code_new_ecu_applicability_count": 1,
+  "exact_existing_duplicate_count": 0,
+  "definition_complete_count": 0,
+  "records_count": 14,
+  "combined_distinct_codes_if_accepted": 42,
+  "original_files_unchanged": true,
+  "images_included": false,
+  "source_documents": [
+    {
+      "id": "POL-TJ-37468-1-0",
+      "publisher": "Polestar",
+      "title": "PS3 Ignore All DTC in ADPU",
+      "reference": "TJ 37468.1.0",
+      "issue_date": "2025-08-28",
+      "status_date": "2025-09-23",
+      "market": "United States and Canada",
+      "url": "https://static.oemdtc.com/NHTSA-PDFs/MC-11023532-0001.pdf",
+      "evidence": "Exact 12 ADPU DTCs, fault state Intermittent, vehicle type 359, MY2024–2026, structural weeks 202402–202616; service advises no replacement or fault tracing for listed codes"
+    },
+    {
+      "id": "POL-TJ-37452-1-1",
+      "publisher": "Polestar",
+      "title": "Climate System Cooling Performance",
+      "reference": "TJ 37452.1.1",
+      "issue_date": "2025-07-17",
+      "status_date": "2025-08-05",
+      "market": "United States and Canada",
+      "url": "https://oemdtc.com/tsb/11022804/",
+      "alternate_url": "https://static.oemdtc.com/NHTSA-PDFs/MC-11022804-0001.pdf",
+      "evidence": "HPA P26FD68, intermittent/permanent, PS3 MY2025, check QB1052 tag and complete campaign as applicable before VIDA fault tracing"
+    },
+    {
+      "id": "POL-TJ-37594-1-0",
+      "publisher": "Polestar",
+      "title": "PS Exterior Sound DTC",
+      "reference": "TJ 37594.1.0",
+      "issue_date": "2025-11-20",
+      "status_date": "2026-01-12",
+      "market": "United States and Canada",
+      "url": "https://oemdtc.com/tsb/11028332/",
+      "alternate_url": "https://static.oemdtc.com/NHTSA-PDFs/MC-11028332-0001.pdf",
+      "evidence": "AUD B1A0213 permanent; PS3 MY2026+ from structure week 202546; front-right AVAS speaker not installed from factory; no fault tracing/replacement for that isolated DTC"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "POL_B03_ADPU_U100B68_Polestar_3",
+      "brand": "Polestar",
+      "raw_code": "U100B68",
+      "tool_module_prefix": "ADPU",
+      "scanner_full_code_unverified": "ADPU-U100B68",
+      "base_code": "U100B",
+      "failure_type_byte_hex": "68",
+      "code_family": "U",
+      "sae_or_manufacturer_classification": "UNCONFIRMED_WITHOUT_AUTHORIZED_SAE_J2012DA_AND_OEM_DTC_DEFINITION",
+      "ecu": "ADPU",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_status": "EXACT_CODE_OCCURRENCE_CONFIRMED_BUT_FORMAL_CODE_DEFINITION_NOT_AVAILABLE",
+      "manufacturer_document_context_en": "Polestar 3 ADPU DTC listed in TJ 37468.1.0; no fault tracing or parts replacement for the specified variant",
+      "manufacturer_document_context_ar": null,
+      "reported_fault_state": [
+        "Intermittent"
+      ],
+      "applicability": {
+        "model": "Polestar 3",
+        "manufacturer_type": "359",
+        "model_years": "2024–2026 (as stated in bulletin)",
+        "structure_week_range": "202402–202616",
+        "markets_verified": [
+          "United States",
+          "Canada"
+        ],
+        "sweden_eu_verified": false,
+        "engine_codes_verified": [],
+        "fuel": "BEV",
+        "variant": "Not specified in bulletin",
+        "transmission": "Not specified"
+      },
+      "trigger_conditions": "Not defined in the public technical journal",
+      "symptoms": [],
+      "potential_causes": [],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "action_en": "Confirm the ECU is ADPU and the exact code is among TJ 37468.1.0; match vehicle type, model year, build week, and market.",
+          "action_ar": "تأكد من وحدة ADPU والرمز الكامل ومطابقة نوع السيارة وسنة الموديل وأسبوع الإنتاج والسوق للنشرة."
+        },
+        {
+          "order": 2,
+          "action_en": "If this specific TJ applies, do not fault-trace or replace parts for these ADPU codes; this variant does not use the referenced functions.",
+          "action_ar": "إذا انطبقت النشرة حرفياً، لا تبدأ تتبع العطل ولا تستبدل القطع بسبب هذه الأكواد؛ الوظائف المعنية غير مستخدمة في هذا التجهيز."
+        },
+        {
+          "order": 3,
+          "action_en": "Investigate any independent real functional complaint using separate manufacturer diagnostics; never suppress unrelated safety or vehicle faults.",
+          "action_ar": "إذا وُجد عرض وظيفي مستقل فافحصه بإجراء مصنعي منفصل؛ لا تتجاهل أعطال السلامة أو الأنظمة الأخرى."
+        }
+      ],
+      "live_data": [],
+      "measurement_limits": "not documented",
+      "wiring_pins": null,
+      "parts_locations": null,
+      "image_path": null,
+      "source_ids": [
+        "POL-TJ-37468-1-0"
+      ],
+      "verification_status": "OEM_TJ_CODE_OCCURRENCE_VERIFIED_DEFINITION_AND_EU_FITMENT_PENDING",
+      "production_approved": false,
+      "release_to_app": false,
+      "review_required": true
+    },
+    {
+      "record_id": "POL_B03_ADPU_U101E01_Polestar_3",
+      "brand": "Polestar",
+      "raw_code": "U101E01",
+      "tool_module_prefix": "ADPU",
+      "scanner_full_code_unverified": "ADPU-U101E01",
+      "base_code": "U101E",
+      "failure_type_byte_hex": "01",
+      "code_family": "U",
+      "sae_or_manufacturer_classification": "UNCONFIRMED_WITHOUT_AUTHORIZED_SAE_J2012DA_AND_OEM_DTC_DEFINITION",
+      "ecu": "ADPU",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_status": "EXACT_CODE_OCCURRENCE_CONFIRMED_BUT_FORMAL_CODE_DEFINITION_NOT_AVAILABLE",
+      "manufacturer_document_context_en": "Polestar 3 ADPU DTC listed in TJ 37468.1.0; no fault tracing or parts replacement for the specified variant",
+      "manufacturer_document_context_ar": null,
+      "reported_fault_state": [
+        "Intermittent"
+      ],
+      "applicability": {
+        "model": "Polestar 3",
+        "manufacturer_type": "359",
+        "model_years": "2024–2026 (as stated in bulletin)",
+        "structure_week_range": "202402–202616",
+        "markets_verified": [
+          "United States",
+          "Canada"
+        ],
+        "sweden_eu_verified": false,
+        "engine_codes_verified": [],
+        "fuel": "BEV",
+        "variant": "Not specified in bulletin",
+        "transmission": "Not specified"
+      },
+      "trigger_conditions": "Not defined in the public technical journal",
+      "symptoms": [],
+      "potential_causes": [],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "action_en": "Confirm the ECU is ADPU and the exact code is among TJ 37468.1.0; match vehicle type, model year, build week, and market.",
+          "action_ar": "تأكد من وحدة ADPU والرمز الكامل ومطابقة نوع السيارة وسنة الموديل وأسبوع الإنتاج والسوق للنشرة."
+        },
+        {
+          "order": 2,
+          "action_en": "If this specific TJ applies, do not fault-trace or replace parts for these ADPU codes; this variant does not use the referenced functions.",
+          "action_ar": "إذا انطبقت النشرة حرفياً، لا تبدأ تتبع العطل ولا تستبدل القطع بسبب هذه الأكواد؛ الوظائف المعنية غير مستخدمة في هذا التجهيز."
+        },
+        {
+          "order": 3,
+          "action_en": "Investigate any independent real functional complaint using separate manufacturer diagnostics; never suppress unrelated safety or vehicle faults.",
+          "action_ar": "إذا وُجد عرض وظيفي مستقل فافحصه بإجراء مصنعي منفصل؛ لا تتجاهل أعطال السلامة أو الأنظمة الأخرى."
+        }
+      ],
+      "live_data": [],
+      "measurement_limits": "not documented",
+      "wiring_pins": null,
+      "parts_locations": null,
+      "image_path": null,
+      "source_ids": [
+        "POL-TJ-37468-1-0"
+      ],
+      "verification_status": "OEM_TJ_CODE_OCCURRENCE_VERIFIED_DEFINITION_AND_EU_FITMENT_PENDING",
+      "production_approved": false,
+      "release_to_app": false,
+      "review_required": true
+    },
+    {
+      "record_id": "POL_B03_ADPU_U101E11_Polestar_3",
+      "brand": "Polestar",
+      "raw_code": "U101E11",
+      "tool_module_prefix": "ADPU",
+      "scanner_full_code_unverified": "ADPU-U101E11",
+      "base_code": "U101E",
+      "failure_type_byte_hex": "11",
+      "code_family": "U",
+      "sae_or_manufacturer_classification": "UNCONFIRMED_WITHOUT_AUTHORIZED_SAE_J2012DA_AND_OEM_DTC_DEFINITION",
+      "ecu": "ADPU",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_status": "EXACT_CODE_OCCURRENCE_CONFIRMED_BUT_FORMAL_CODE_DEFINITION_NOT_AVAILABLE",
+      "manufacturer_document_context_en": "Polestar 3 ADPU DTC listed in TJ 37468.1.0; no fault tracing or parts replacement for the specified variant",
+      "manufacturer_document_context_ar": null,
+      "reported_fault_state": [
+        "Intermittent"
+      ],
+      "applicability": {
+        "model": "Polestar 3",
+        "manufacturer_type": "359",
+        "model_years": "2024–2026 (as stated in bulletin)",
+        "structure_week_range": "202402–202616",
+        "markets_verified": [
+          "United States",
+          "Canada"
+        ],
+        "sweden_eu_verified": false,
+        "engine_codes_verified": [],
+        "fuel": "BEV",
+        "variant": "Not specified in bulletin",
+        "transmission": "Not specified"
+      },
+      "trigger_conditions": "Not defined in the public technical journal",
+      "symptoms": [],
+      "potential_causes": [],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "action_en": "Confirm the ECU is ADPU and the exact code is among TJ 37468.1.0; match vehicle type, model year, build week, and market.",
+          "action_ar": "تأكد من وحدة ADPU والرمز الكامل ومطابقة نوع السيارة وسنة الموديل وأسبوع الإنتاج والسوق للنشرة."
+        },
+        {
+          "order": 2,
+          "action_en": "If this specific TJ applies, do not fault-trace or replace parts for these ADPU codes; this variant does not use the referenced functions.",
+          "action_ar": "إذا انطبقت النشرة حرفياً، لا تبدأ تتبع العطل ولا تستبدل القطع بسبب هذه الأكواد؛ الوظائف المعنية غير مستخدمة في هذا التجهيز."
+        },
+        {
+          "order": 3,
+          "action_en": "Investigate any independent real functional complaint using separate manufacturer diagnostics; never suppress unrelated safety or vehicle faults.",
+          "action_ar": "إذا وُجد عرض وظيفي مستقل فافحصه بإجراء مصنعي منفصل؛ لا تتجاهل أعطال السلامة أو الأنظمة الأخرى."
+        }
+      ],
+      "live_data": [],
+      "measurement_limits": "not documented",
+      "wiring_pins": null,
+      "parts_locations": null,
+      "image_path": null,
+      "source_ids": [
+        "POL-TJ-37468-1-0"
+      ],
+      "verification_status": "OEM_TJ_CODE_OCCURRENCE_VERIFIED_DEFINITION_AND_EU_FITMENT_PENDING",
+      "production_approved": false,
+      "release_to_app": false,
+      "review_required": true
+    },
+    {
+      "record_id": "POL_B03_ADPU_U101E12_Polestar_3",
+      "brand": "Polestar",
+      "raw_code": "U101E12",
+      "tool_module_prefix": "ADPU",
+      "scanner_full_code_unverified": "ADPU-U101E12",
+      "base_code": "U101E",
+      "failure_type_byte_hex": "12",
+      "code_family": "U",
+      "sae_or_manufacturer_classification": "UNCONFIRMED_WITHOUT_AUTHORIZED_SAE_J2012DA_AND_OEM_DTC_DEFINITION",
+      "ecu": "ADPU",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_status": "EXACT_CODE_OCCURRENCE_CONFIRMED_BUT_FORMAL_CODE_DEFINITION_NOT_AVAILABLE",
+      "manufacturer_document_context_en": "Polestar 3 ADPU DTC listed in TJ 37468.1.0; no fault tracing or parts replacement for the specified variant",
+      "manufacturer_document_context_ar": null,
+      "reported_fault_state": [
+        "Intermittent"
+      ],
+      "applicability": {
+        "model": "Polestar 3",
+        "manufacturer_type": "359",
+        "model_years": "2024–2026 (as stated in bulletin)",
+        "structure_week_range": "202402–202616",
+        "markets_verified": [
+          "United States",
+          "Canada"
+        ],
+        "sweden_eu_verified": false,
+        "engine_codes_verified": [],
+        "fuel": "BEV",
+        "variant": "Not specified in bulletin",
+        "transmission": "Not specified"
+      },
+      "trigger_conditions": "Not defined in the public technical journal",
+      "symptoms": [],
+      "potential_causes": [],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "action_en": "Confirm the ECU is ADPU and the exact code is among TJ 37468.1.0; match vehicle type, model year, build week, and market.",
+          "action_ar": "تأكد من وحدة ADPU والرمز الكامل ومطابقة نوع السيارة وسنة الموديل وأسبوع الإنتاج والسوق للنشرة."
+        },
+        {
+          "order": 2,
+          "action_en": "If this specific TJ applies, do not fault-trace or replace parts for these ADPU codes; this variant does not use the referenced functions.",
+          "action_ar": "إذا انطبقت النشرة حرفياً، لا تبدأ تتبع العطل ولا تستبدل القطع بسبب هذه الأكواد؛ الوظائف المعنية غير مستخدمة في هذا التجهيز."
+        },
+        {
+          "order": 3,
+          "action_en": "Investigate any independent real functional complaint using separate manufacturer diagnostics; never suppress unrelated safety or vehicle faults.",
+          "action_ar": "إذا وُجد عرض وظيفي مستقل فافحصه بإجراء مصنعي منفصل؛ لا تتجاهل أعطال السلامة أو الأنظمة الأخرى."
+        }
+      ],
+      "live_data": [],
+      "measurement_limits": "not documented",
+      "wiring_pins": null,
+      "parts_locations": null,
+      "image_path": null,
+      "source_ids": [
+        "POL-TJ-37468-1-0"
+      ],
+      "verification_status": "OEM_TJ_CODE_OCCURRENCE_VERIFIED_DEFINITION_AND_EU_FITMENT_PENDING",
+      "production_approved": false,
+      "release_to_app": false,
+      "review_required": true
+    },
+    {
+      "record_id": "POL_B03_ADPU_U101E13_Polestar_3",
+      "brand": "Polestar",
+      "raw_code": "U101E13",
+      "tool_module_prefix": "ADPU",
+      "scanner_full_code_unverified": "ADPU-U101E13",
+      "base_code": "U101E",
+      "failure_type_byte_hex": "13",
+      "code_family": "U",
+      "sae_or_manufacturer_classification": "UNCONFIRMED_WITHOUT_AUTHORIZED_SAE_J2012DA_AND_OEM_DTC_DEFINITION",
+      "ecu": "ADPU",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_status": "EXACT_CODE_OCCURRENCE_CONFIRMED_BUT_FORMAL_CODE_DEFINITION_NOT_AVAILABLE",
+      "manufacturer_document_context_en": "Polestar 3 ADPU DTC listed in TJ 37468.1.0; no fault tracing or parts replacement for the specified variant",
+      "manufacturer_document_context_ar": null,
+      "reported_fault_state": [
+        "Intermittent"
+      ],
+      "applicability": {
+        "model": "Polestar 3",
+        "manufacturer_type": "359",
+        "model_years": "2024–2026 (as stated in bulletin)",
+        "structure_week_range": "202402–202616",
+        "markets_verified": [
+          "United States",
+          "Canada"
+        ],
+        "sweden_eu_verified": false,
+        "engine_codes_verified": [],
+        "fuel": "BEV",
+        "variant": "Not specified in bulletin",
+        "transmission": "Not specified"
+      },
+      "trigger_conditions": "Not defined in the public technical journal",
+      "symptoms": [],
+      "potential_causes": [],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "action_en": "Confirm the ECU is ADPU and the exact code is among TJ 37468.1.0; match vehicle type, model year, build week, and market.",
+          "action_ar": "تأكد من وحدة ADPU والرمز الكامل ومطابقة نوع السيارة وسنة الموديل وأسبوع الإنتاج والسوق للنشرة."
+        },
+        {
+          "order": 2,
+          "action_en": "If this specific TJ applies, do not fault-trace or replace parts for these ADPU codes; this variant does not use the referenced functions.",
+          "action_ar": "إذا انطبقت النشرة حرفياً، لا تبدأ تتبع العطل ولا تستبدل القطع بسبب هذه الأكواد؛ الوظائف المعنية غير مستخدمة في هذا التجهيز."
+        },
+        {
+          "order": 3,
+          "action_en": "Investigate any independent real functional complaint using separate manufacturer diagnostics; never suppress unrelated safety or vehicle faults.",
+          "action_ar": "إذا وُجد عرض وظيفي مستقل فافحصه بإجراء مصنعي منفصل؛ لا تتجاهل أعطال السلامة أو الأنظمة الأخرى."
+        }
+      ],
+      "live_data": [],
+      "measurement_limits": "not documented",
+      "wiring_pins": null,
+      "parts_locations": null,
+      "image_path": null,
+      "source_ids": [
+        "POL-TJ-37468-1-0"
+      ],
+      "verification_status": "OEM_TJ_CODE_OCCURRENCE_VERIFIED_DEFINITION_AND_EU_FITMENT_PENDING",
+      "production_approved": false,
+      "release_to_app": false,
+      "review_required": true
+    },
+    {
+      "record_id": "POL_B03_ADPU_U210191_Polestar_3",
+      "brand": "Polestar",
+      "raw_code": "U210191",
+      "tool_module_prefix": "ADPU",
+      "scanner_full_code_unverified": "ADPU-U210191",
+      "base_code": "U2101",
+      "failure_type_byte_hex": "91",
+      "code_family": "U",
+      "sae_or_manufacturer_classification": "UNCONFIRMED_WITHOUT_AUTHORIZED_SAE_J2012DA_AND_OEM_DTC_DEFINITION",
+      "ecu": "ADPU",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_status": "EXACT_CODE_OCCURRENCE_CONFIRMED_BUT_FORMAL_CODE_DEFINITION_NOT_AVAILABLE",
+      "manufacturer_document_context_en": "Polestar 3 ADPU DTC listed in TJ 37468.1.0; no fault tracing or parts replacement for the specified variant",
+      "manufacturer_document_context_ar": null,
+      "reported_fault_state": [
+        "Intermittent"
+      ],
+      "applicability": {
+        "model": "Polestar 3",
+        "manufacturer_type": "359",
+        "model_years": "2024–2026 (as stated in bulletin)",
+        "structure_week_range": "202402–202616",
+        "markets_verified": [
+          "United States",
+          "Canada"
+        ],
+        "sweden_eu_verified": false,
+        "engine_codes_verified": [],
+        "fuel": "BEV",
+        "variant": "Not specified in bulletin",
+        "transmission": "Not specified"
+      },
+      "trigger_conditions": "Not defined in the public technical journal",
+      "symptoms": [],
+      "potential_causes": [],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "action_en": "Confirm the ECU is ADPU and the exact code is among TJ 37468.1.0; match vehicle type, model year, build week, and market.",
+          "action_ar": "تأكد من وحدة ADPU والرمز الكامل ومطابقة نوع السيارة وسنة الموديل وأسبوع الإنتاج والسوق للنشرة."
+        },
+        {
+          "order": 2,
+          "action_en": "If this specific TJ applies, do not fault-trace or replace parts for these ADPU codes; this variant does not use the referenced functions.",
+          "action_ar": "إذا انطبقت النشرة حرفياً، لا تبدأ تتبع العطل ولا تستبدل القطع بسبب هذه الأكواد؛ الوظائف المعنية غير مستخدمة في هذا التجهيز."
+        },
+        {
+          "order": 3,
+          "action_en": "Investigate any independent real functional complaint using separate manufacturer diagnostics; never suppress unrelated safety or vehicle faults.",
+          "action_ar": "إذا وُجد عرض وظيفي مستقل فافحصه بإجراء مصنعي منفصل؛ لا تتجاهل أعطال السلامة أو الأنظمة الأخرى."
+        }
+      ],
+      "live_data": [],
+      "measurement_limits": "not documented",
+      "wiring_pins": null,
+      "parts_locations": null,
+      "image_path": null,
+      "source_ids": [
+        "POL-TJ-37468-1-0"
+      ],
+      "verification_status": "OEM_TJ_CODE_OCCURRENCE_VERIFIED_DEFINITION_AND_EU_FITMENT_PENDING",
+      "production_approved": false,
+      "release_to_app": false,
+      "review_required": true
+    },
+    {
+      "record_id": "POL_B03_ADPU_U230055_Polestar_3",
+      "brand": "Polestar",
+      "raw_code": "U230055",
+      "tool_module_prefix": "ADPU",
+      "scanner_full_code_unverified": "ADPU-U230055",
+      "base_code": "U2300",
+      "failure_type_byte_hex": "55",
+      "code_family": "U",
+      "sae_or_manufacturer_classification": "UNCONFIRMED_WITHOUT_AUTHORIZED_SAE_J2012DA_AND_OEM_DTC_DEFINITION",
+      "ecu": "ADPU",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_status": "EXACT_CODE_OCCURRENCE_CONFIRMED_BUT_FORMAL_CODE_DEFINITION_NOT_AVAILABLE",
+      "manufacturer_document_context_en": "Polestar 3 ADPU DTC listed in TJ 37468.1.0; no fault tracing or parts replacement for the specified variant",
+      "manufacturer_document_context_ar": null,
+      "reported_fault_state": [
+        "Intermittent"
+      ],
+      "applicability": {
+        "model": "Polestar 3",
+        "manufacturer_type": "359",
+        "model_years": "2024–2026 (as stated in bulletin)",
+        "structure_week_range": "202402–202616",
+        "markets_verified": [
+          "United States",
+          "Canada"
+        ],
+        "sweden_eu_verified": false,
+        "engine_codes_verified": [],
+        "fuel": "BEV",
+        "variant": "Not specified in bulletin",
+        "transmission": "Not specified"
+      },
+      "trigger_conditions": "Not defined in the public technical journal",
+      "symptoms": [],
+      "potential_causes": [],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "action_en": "Confirm the ECU is ADPU and the exact code is among TJ 37468.1.0; match vehicle type, model year, build week, and market.",
+          "action_ar": "تأكد من وحدة ADPU والرمز الكامل ومطابقة نوع السيارة وسنة الموديل وأسبوع الإنتاج والسوق للنشرة."
+        },
+        {
+          "order": 2,
+          "action_en": "If this specific TJ applies, do not fault-trace or replace parts for these ADPU codes; this variant does not use the referenced functions.",
+          "action_ar": "إذا انطبقت النشرة حرفياً، لا تبدأ تتبع العطل ولا تستبدل القطع بسبب هذه الأكواد؛ الوظائف المعنية غير مستخدمة في هذا التجهيز."
+        },
+        {
+          "order": 3,
+          "action_en": "Investigate any independent real functional complaint using separate manufacturer diagnostics; never suppress unrelated safety or vehicle faults.",
+          "action_ar": "إذا وُجد عرض وظيفي مستقل فافحصه بإجراء مصنعي منفصل؛ لا تتجاهل أعطال السلامة أو الأنظمة الأخرى."
+        }
+      ],
+      "live_data": [],
+      "measurement_limits": "not documented",
+      "wiring_pins": null,
+      "parts_locations": null,
+      "image_path": null,
+      "source_ids": [
+        "POL-TJ-37468-1-0"
+      ],
+      "verification_status": "OEM_TJ_CODE_OCCURRENCE_VERIFIED_DEFINITION_AND_EU_FITMENT_PENDING",
+      "production_approved": false,
+      "release_to_app": false,
+      "review_required": true
+    },
+    {
+      "record_id": "POL_B03_ADPU_U230056_Polestar_3",
+      "brand": "Polestar",
+      "raw_code": "U230056",
+      "tool_module_prefix": "ADPU",
+      "scanner_full_code_unverified": "ADPU-U230056",
+      "base_code": "U2300",
+      "failure_type_byte_hex": "56",
+      "code_family": "U",
+      "sae_or_manufacturer_classification": "UNCONFIRMED_WITHOUT_AUTHORIZED_SAE_J2012DA_AND_OEM_DTC_DEFINITION",
+      "ecu": "ADPU",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_status": "EXACT_CODE_OCCURRENCE_CONFIRMED_BUT_FORMAL_CODE_DEFINITION_NOT_AVAILABLE",
+      "manufacturer_document_context_en": "Polestar 3 ADPU DTC listed in TJ 37468.1.0; no fault tracing or parts replacement for the specified variant",
+      "manufacturer_document_context_ar": null,
+      "reported_fault_state": [
+        "Intermittent"
+      ],
+      "applicability": {
+        "model": "Polestar 3",
+        "manufacturer_type": "359",
+        "model_years": "2024–2026 (as stated in bulletin)",
+        "structure_week_range": "202402–202616",
+        "markets_verified": [
+          "United States",
+          "Canada"
+        ],
+        "sweden_eu_verified": false,
+        "engine_codes_verified": [],
+        "fuel": "BEV",
+        "variant": "Not specified in bulletin",
+        "transmission": "Not specified"
+      },
+      "trigger_conditions": "Not defined in the public technical journal",
+      "symptoms": [],
+      "potential_causes": [],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "action_en": "Confirm the ECU is ADPU and the exact code is among TJ 37468.1.0; match vehicle type, model year, build week, and market.",
+          "action_ar": "تأكد من وحدة ADPU والرمز الكامل ومطابقة نوع السيارة وسنة الموديل وأسبوع الإنتاج والسوق للنشرة."
+        },
+        {
+          "order": 2,
+          "action_en": "If this specific TJ applies, do not fault-trace or replace parts for these ADPU codes; this variant does not use the referenced functions.",
+          "action_ar": "إذا انطبقت النشرة حرفياً، لا تبدأ تتبع العطل ولا تستبدل القطع بسبب هذه الأكواد؛ الوظائف المعنية غير مستخدمة في هذا التجهيز."
+        },
+        {
+          "order": 3,
+          "action_en": "Investigate any independent real functional complaint using separate manufacturer diagnostics; never suppress unrelated safety or vehicle faults.",
+          "action_ar": "إذا وُجد عرض وظيفي مستقل فافحصه بإجراء مصنعي منفصل؛ لا تتجاهل أعطال السلامة أو الأنظمة الأخرى."
+        }
+      ],
+      "live_data": [],
+      "measurement_limits": "not documented",
+      "wiring_pins": null,
+      "parts_locations": null,
+      "image_path": null,
+      "source_ids": [
+        "POL-TJ-37468-1-0"
+      ],
+      "verification_status": "OEM_TJ_CODE_OCCURRENCE_VERIFIED_DEFINITION_AND_EU_FITMENT_PENDING",
+      "production_approved": false,
+      "release_to_app": false,
+      "review_required": true
+    },
+    {
+      "record_id": "POL_B03_ADPU_U2E0E4B_Polestar_3",
+      "brand": "Polestar",
+      "raw_code": "U2E0E4B",
+      "tool_module_prefix": "ADPU",
+      "scanner_full_code_unverified": "ADPU-U2E0E4B",
+      "base_code": "U2E0E",
+      "failure_type_byte_hex": "4B",
+      "code_family": "U",
+      "sae_or_manufacturer_classification": "UNCONFIRMED_WITHOUT_AUTHORIZED_SAE_J2012DA_AND_OEM_DTC_DEFINITION",
+      "ecu": "ADPU",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_status": "EXACT_CODE_OCCURRENCE_CONFIRMED_BUT_FORMAL_CODE_DEFINITION_NOT_AVAILABLE",
+      "manufacturer_document_context_en": "Polestar 3 ADPU DTC listed in TJ 37468.1.0; no fault tracing or parts replacement for the specified variant",
+      "manufacturer_document_context_ar": null,
+      "reported_fault_state": [
+        "Intermittent"
+      ],
+      "applicability": {
+        "model": "Polestar 3",
+        "manufacturer_type": "359",
+        "model_years": "2024–2026 (as stated in bulletin)",
+        "structure_week_range": "202402–202616",
+        "markets_verified": [
+          "United States",
+          "Canada"
+        ],
+        "sweden_eu_verified": false,
+        "engine_codes_verified": [],
+        "fuel": "BEV",
+        "variant": "Not specified in bulletin",
+        "transmission": "Not specified"
+      },
+      "trigger_conditions": "Not defined in the public technical journal",
+      "symptoms": [],
+      "potential_causes": [],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "action_en": "Confirm the ECU is ADPU and the exact code is among TJ 37468.1.0; match vehicle type, model year, build week, and market.",
+          "action_ar": "تأكد من وحدة ADPU والرمز الكامل ومطابقة نوع السيارة وسنة الموديل وأسبوع الإنتاج والسوق للنشرة."
+        },
+        {
+          "order": 2,
+          "action_en": "If this specific TJ applies, do not fault-trace or replace parts for these ADPU codes; this variant does not use the referenced functions.",
+          "action_ar": "إذا انطبقت النشرة حرفياً، لا تبدأ تتبع العطل ولا تستبدل القطع بسبب هذه الأكواد؛ الوظائف المعنية غير مستخدمة في هذا التجهيز."
+        },
+        {
+          "order": 3,
+          "action_en": "Investigate any independent real functional complaint using separate manufacturer diagnostics; never suppress unrelated safety or vehicle faults.",
+          "action_ar": "إذا وُجد عرض وظيفي مستقل فافحصه بإجراء مصنعي منفصل؛ لا تتجاهل أعطال السلامة أو الأنظمة الأخرى."
+        }
+      ],
+      "live_data": [],
+      "measurement_limits": "not documented",
+      "wiring_pins": null,
+      "parts_locations": null,
+      "image_path": null,
+      "source_ids": [
+        "POL-TJ-37468-1-0"
+      ],
+      "verification_status": "OEM_TJ_CODE_OCCURRENCE_VERIFIED_DEFINITION_AND_EU_FITMENT_PENDING",
+      "production_approved": false,
+      "release_to_app": false,
+      "review_required": true
+    },
+    {
+      "record_id": "POL_B03_ADPU_U300096_Polestar_3",
+      "brand": "Polestar",
+      "raw_code": "U300096",
+      "tool_module_prefix": "ADPU",
+      "scanner_full_code_unverified": "ADPU-U300096",
+      "base_code": "U3000",
+      "failure_type_byte_hex": "96",
+      "code_family": "U",
+      "sae_or_manufacturer_classification": "UNCONFIRMED_WITHOUT_AUTHORIZED_SAE_J2012DA_AND_OEM_DTC_DEFINITION",
+      "ecu": "ADPU",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_status": "EXACT_CODE_OCCURRENCE_CONFIRMED_BUT_FORMAL_CODE_DEFINITION_NOT_AVAILABLE",
+      "manufacturer_document_context_en": "Polestar 3 ADPU DTC listed in TJ 37468.1.0; no fault tracing or parts replacement for the specified variant",
+      "manufacturer_document_context_ar": null,
+      "reported_fault_state": [
+        "Intermittent"
+      ],
+      "applicability": {
+        "model": "Polestar 3",
+        "manufacturer_type": "359",
+        "model_years": "2024–2026 (as stated in bulletin)",
+        "structure_week_range": "202402–202616",
+        "markets_verified": [
+          "United States",
+          "Canada"
+        ],
+        "sweden_eu_verified": false,
+        "engine_codes_verified": [],
+        "fuel": "BEV",
+        "variant": "Not specified in bulletin",
+        "transmission": "Not specified"
+      },
+      "trigger_conditions": "Not defined in the public technical journal",
+      "symptoms": [],
+      "potential_causes": [],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "action_en": "Confirm the ECU is ADPU and the exact code is among TJ 37468.1.0; match vehicle type, model year, build week, and market.",
+          "action_ar": "تأكد من وحدة ADPU والرمز الكامل ومطابقة نوع السيارة وسنة الموديل وأسبوع الإنتاج والسوق للنشرة."
+        },
+        {
+          "order": 2,
+          "action_en": "If this specific TJ applies, do not fault-trace or replace parts for these ADPU codes; this variant does not use the referenced functions.",
+          "action_ar": "إذا انطبقت النشرة حرفياً، لا تبدأ تتبع العطل ولا تستبدل القطع بسبب هذه الأكواد؛ الوظائف المعنية غير مستخدمة في هذا التجهيز."
+        },
+        {
+          "order": 3,
+          "action_en": "Investigate any independent real functional complaint using separate manufacturer diagnostics; never suppress unrelated safety or vehicle faults.",
+          "action_ar": "إذا وُجد عرض وظيفي مستقل فافحصه بإجراء مصنعي منفصل؛ لا تتجاهل أعطال السلامة أو الأنظمة الأخرى."
+        }
+      ],
+      "live_data": [],
+      "measurement_limits": "not documented",
+      "wiring_pins": null,
+      "parts_locations": null,
+      "image_path": null,
+      "source_ids": [
+        "POL-TJ-37468-1-0"
+      ],
+      "verification_status": "OEM_TJ_CODE_OCCURRENCE_VERIFIED_DEFINITION_AND_EU_FITMENT_PENDING",
+      "production_approved": false,
+      "release_to_app": false,
+      "review_required": true
+    },
+    {
+      "record_id": "POL_B03_ADPU_U30009A_Polestar_3",
+      "brand": "Polestar",
+      "raw_code": "U30009A",
+      "tool_module_prefix": "ADPU",
+      "scanner_full_code_unverified": "ADPU-U30009A",
+      "base_code": "U3000",
+      "failure_type_byte_hex": "9A",
+      "code_family": "U",
+      "sae_or_manufacturer_classification": "UNCONFIRMED_WITHOUT_AUTHORIZED_SAE_J2012DA_AND_OEM_DTC_DEFINITION",
+      "ecu": "ADPU",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_status": "EXACT_CODE_OCCURRENCE_CONFIRMED_BUT_FORMAL_CODE_DEFINITION_NOT_AVAILABLE",
+      "manufacturer_document_context_en": "Polestar 3 ADPU DTC listed in TJ 37468.1.0; no fault tracing or parts replacement for the specified variant",
+      "manufacturer_document_context_ar": null,
+      "reported_fault_state": [
+        "Intermittent"
+      ],
+      "applicability": {
+        "model": "Polestar 3",
+        "manufacturer_type": "359",
+        "model_years": "2024–2026 (as stated in bulletin)",
+        "structure_week_range": "202402–202616",
+        "markets_verified": [
+          "United States",
+          "Canada"
+        ],
+        "sweden_eu_verified": false,
+        "engine_codes_verified": [],
+        "fuel": "BEV",
+        "variant": "Not specified in bulletin",
+        "transmission": "Not specified"
+      },
+      "trigger_conditions": "Not defined in the public technical journal",
+      "symptoms": [],
+      "potential_causes": [],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "action_en": "Confirm the ECU is ADPU and the exact code is among TJ 37468.1.0; match vehicle type, model year, build week, and market.",
+          "action_ar": "تأكد من وحدة ADPU والرمز الكامل ومطابقة نوع السيارة وسنة الموديل وأسبوع الإنتاج والسوق للنشرة."
+        },
+        {
+          "order": 2,
+          "action_en": "If this specific TJ applies, do not fault-trace or replace parts for these ADPU codes; this variant does not use the referenced functions.",
+          "action_ar": "إذا انطبقت النشرة حرفياً، لا تبدأ تتبع العطل ولا تستبدل القطع بسبب هذه الأكواد؛ الوظائف المعنية غير مستخدمة في هذا التجهيز."
+        },
+        {
+          "order": 3,
+          "action_en": "Investigate any independent real functional complaint using separate manufacturer diagnostics; never suppress unrelated safety or vehicle faults.",
+          "action_ar": "إذا وُجد عرض وظيفي مستقل فافحصه بإجراء مصنعي منفصل؛ لا تتجاهل أعطال السلامة أو الأنظمة الأخرى."
+        }
+      ],
+      "live_data": [],
+      "measurement_limits": "not documented",
+      "wiring_pins": null,
+      "parts_locations": null,
+      "image_path": null,
+      "source_ids": [
+        "POL-TJ-37468-1-0"
+      ],
+      "verification_status": "OEM_TJ_CODE_OCCURRENCE_VERIFIED_DEFINITION_AND_EU_FITMENT_PENDING",
+      "production_approved": false,
+      "release_to_app": false,
+      "review_required": true
+    },
+    {
+      "record_id": "POL_B03_ADPU_U300362_Polestar_3",
+      "brand": "Polestar",
+      "raw_code": "U300362",
+      "tool_module_prefix": "ADPU",
+      "scanner_full_code_unverified": "ADPU-U300362",
+      "base_code": "U3003",
+      "failure_type_byte_hex": "62",
+      "code_family": "U",
+      "sae_or_manufacturer_classification": "UNCONFIRMED_WITHOUT_AUTHORIZED_SAE_J2012DA_AND_OEM_DTC_DEFINITION",
+      "ecu": "ADPU",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_status": "EXACT_CODE_OCCURRENCE_CONFIRMED_BUT_FORMAL_CODE_DEFINITION_NOT_AVAILABLE",
+      "manufacturer_document_context_en": "Polestar 3 ADPU DTC listed in TJ 37468.1.0; no fault tracing or parts replacement for the specified variant",
+      "manufacturer_document_context_ar": null,
+      "reported_fault_state": [
+        "Intermittent"
+      ],
+      "applicability": {
+        "model": "Polestar 3",
+        "manufacturer_type": "359",
+        "model_years": "2024–2026 (as stated in bulletin)",
+        "structure_week_range": "202402–202616",
+        "markets_verified": [
+          "United States",
+          "Canada"
+        ],
+        "sweden_eu_verified": false,
+        "engine_codes_verified": [],
+        "fuel": "BEV",
+        "variant": "Not specified in bulletin",
+        "transmission": "Not specified"
+      },
+      "trigger_conditions": "Not defined in the public technical journal",
+      "symptoms": [],
+      "potential_causes": [],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "action_en": "Confirm the ECU is ADPU and the exact code is among TJ 37468.1.0; match vehicle type, model year, build week, and market.",
+          "action_ar": "تأكد من وحدة ADPU والرمز الكامل ومطابقة نوع السيارة وسنة الموديل وأسبوع الإنتاج والسوق للنشرة."
+        },
+        {
+          "order": 2,
+          "action_en": "If this specific TJ applies, do not fault-trace or replace parts for these ADPU codes; this variant does not use the referenced functions.",
+          "action_ar": "إذا انطبقت النشرة حرفياً، لا تبدأ تتبع العطل ولا تستبدل القطع بسبب هذه الأكواد؛ الوظائف المعنية غير مستخدمة في هذا التجهيز."
+        },
+        {
+          "order": 3,
+          "action_en": "Investigate any independent real functional complaint using separate manufacturer diagnostics; never suppress unrelated safety or vehicle faults.",
+          "action_ar": "إذا وُجد عرض وظيفي مستقل فافحصه بإجراء مصنعي منفصل؛ لا تتجاهل أعطال السلامة أو الأنظمة الأخرى."
+        }
+      ],
+      "live_data": [],
+      "measurement_limits": "not documented",
+      "wiring_pins": null,
+      "parts_locations": null,
+      "image_path": null,
+      "source_ids": [
+        "POL-TJ-37468-1-0"
+      ],
+      "verification_status": "OEM_TJ_CODE_OCCURRENCE_VERIFIED_DEFINITION_AND_EU_FITMENT_PENDING",
+      "production_approved": false,
+      "release_to_app": false,
+      "review_required": true
+    },
+    {
+      "record_id": "POL_B03_HPA_P26FD68_Polestar_3",
+      "brand": "Polestar",
+      "raw_code": "P26FD68",
+      "tool_module_prefix": "HPA",
+      "scanner_full_code_unverified": "HPA-P26FD68",
+      "base_code": "P26FD",
+      "failure_type_byte_hex": "68",
+      "code_family": "P",
+      "sae_or_manufacturer_classification": "UNCONFIRMED_WITHOUT_AUTHORIZED_SAE_J2012DA_AND_OEM_DTC_DEFINITION",
+      "ecu": "HPA",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_status": "EXACT_CODE_OCCURRENCE_CONFIRMED_BUT_FORMAL_CODE_DEFINITION_NOT_AVAILABLE",
+      "manufacturer_document_context_en": "Intermittent poor A/C cooling performance with HPA P26FD68",
+      "manufacturer_document_context_ar": null,
+      "reported_fault_state": [
+        "Intermittent",
+        "Permanent"
+      ],
+      "applicability": {
+        "model": "Polestar 3",
+        "manufacturer_type": "359",
+        "model_years": "2025",
+        "structure_week_range": "0–0 (bulletin unspecified)",
+        "markets_verified": [
+          "United States",
+          "Canada"
+        ],
+        "sweden_eu_verified": false,
+        "engine_codes_verified": [],
+        "fuel": "BEV",
+        "variant": "Not specified",
+        "transmission": "Not specified"
+      },
+      "trigger_conditions": "Activation thresholds not published; see TJ context",
+      "symptoms": [
+        "Intermittent poor A/C cooling performance"
+      ],
+      "potential_causes": [],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "action_en": "Confirm HPA P26FD68 and intermittent poor A/C performance; verify the model year against the journal.",
+          "action_ar": "تحقق من P26FD68 في HPA ومن ضعف التبريد المتقطع ومطابقة سنة الموديل."
+        },
+        {
+          "order": 2,
+          "action_en": "Check whether the vehicle is tagged for Quality Bulletin QB1052 and complete QB1052 when applicable before unrelated fault tracing.",
+          "action_ar": "افحص ارتباط السيارة بالحملة QB1052 ونفذها إن كانت مطلوبة قبل بدء تتبع الأعطال."
+        },
+        {
+          "order": 3,
+          "action_en": "If not tagged for QB1052, or another A/C complaint remains, follow VIDA fault tracing specific to the VIN.",
+          "action_ar": "إن لم تنطبق الحملة، أو استمر عرض آخر بالمكيف، استخدم فحوص VIDA الخاصة بالـVIN."
+        }
+      ],
+      "live_data": [],
+      "measurement_limits": "not documented",
+      "wiring_pins": null,
+      "parts_locations": null,
+      "image_path": null,
+      "source_ids": [
+        "POL-TJ-37452-1-1"
+      ],
+      "verification_status": "OEM_TJ_CODE_OCCURRENCE_VERIFIED_DEFINITION_AND_EU_FITMENT_PENDING",
+      "production_approved": false,
+      "release_to_app": false,
+      "review_required": true
+    },
+    {
+      "record_id": "POL_B03_AUD_B1A0213_Polestar_3",
+      "brand": "Polestar",
+      "raw_code": "B1A0213",
+      "tool_module_prefix": "AUD",
+      "scanner_full_code_unverified": "AUD-B1A0213",
+      "base_code": "B1A02",
+      "failure_type_byte_hex": "13",
+      "code_family": "B",
+      "sae_or_manufacturer_classification": "UNCONFIRMED_WITHOUT_AUTHORIZED_SAE_J2012DA_AND_OEM_DTC_DEFINITION",
+      "ecu": "AUD",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_status": "EXACT_CODE_OCCURRENCE_CONFIRMED_BUT_FORMAL_CODE_DEFINITION_NOT_AVAILABLE",
+      "manufacturer_document_context_en": "Permanent DTC only, caused by factory specification change removing front-right AVAS speaker; no customer symptom/DIM message caused by this code",
+      "manufacturer_document_context_ar": null,
+      "reported_fault_state": [
+        "Permanent"
+      ],
+      "applicability": {
+        "model": "Polestar 3",
+        "manufacturer_type": "359",
+        "model_years": "2026+ per TJ; actual later model-year fitment requires VIN confirmation",
+        "structure_week_range": "202546–999952",
+        "markets_verified": [
+          "United States",
+          "Canada"
+        ],
+        "sweden_eu_verified": false,
+        "engine_codes_verified": [],
+        "fuel": "BEV",
+        "variant": "Front-right AVAS speaker removed at factory from 2025w46",
+        "transmission": "Not specified"
+      },
+      "trigger_conditions": "DTC stored in production following documented speaker-spec change",
+      "symptoms": [
+        "Code visible in VIDA only; bulletin says no customer-facing symptoms or DIM warning caused by the listed code"
+      ],
+      "potential_causes": [],
+      "diagnostic_steps": [
+        {
+          "order": 1,
+          "action_en": "Verify Polestar 3 AUD B1A0213 and structure week 2025w46 or later.",
+          "action_ar": "تحقق من AUD-B1A0213 في Polestar 3 وأسبوع الإنتاج 2025w46 أو بعده."
+        },
+        {
+          "order": 2,
+          "action_en": "Under TJ 37594.1.0, do not fault-trace or replace hardware for this code: the front-right AVAS speaker is no longer factory-installed.",
+          "action_ar": "وفق TJ 37594.1.0 لا تفحص أو تبدّل عتاداً لهذا الرمز؛ السماعة اليمنى الأمامية لم تعد جزءاً من تجهيز المصنع."
+        },
+        {
+          "order": 3,
+          "action_en": "Do not attribute independent actual AVAS acoustic failures to this ghost code; assess separately if customer has a real complaint.",
+          "action_ar": "إذا وُجد خلل حقيقي في صوت التنبيه الخارجي فلا تنسبه تلقائياً لهذا الكود، بل افحصه بشكل مستقل."
+        }
+      ],
+      "live_data": [],
+      "measurement_limits": "not documented",
+      "wiring_pins": null,
+      "parts_locations": null,
+      "image_path": null,
+      "source_ids": [
+        "POL-TJ-37594-1-0"
+      ],
+      "verification_status": "OEM_TJ_CODE_OCCURRENCE_VERIFIED_DEFINITION_AND_EU_FITMENT_PENDING",
+      "production_approved": false,
+      "release_to_app": false,
+      "review_required": true
+    }
+  ]
+}

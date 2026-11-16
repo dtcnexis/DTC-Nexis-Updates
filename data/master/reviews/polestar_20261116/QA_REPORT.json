@@ -1,0 +1,44 @@
+{
+  "schema": "dtcnexis-polestar-continuation-qa-v1",
+  "date": "2026-11-16",
+  "brand": "Polestar",
+  "repository": "dtcnexis/DTC-Nexis-Updates",
+  "branch": "work/polestar-dtc-continuation-20261116",
+  "baseline_unique_codes": 29,
+  "new_distinct_code_occurrences": 13,
+  "identical_duplicate_codes_skipped": 0,
+  "existing_code_new_ecu_context": 1,
+  "new_application_records": 14,
+  "unique_if_reviewed": 42,
+  "source_records_legacy": 31,
+  "pending_review_contexts": 45,
+  "originals_replaced": 0,
+  "formal_definitions_verified": 0,
+  "exact_motor_dtc_links_verified": 0,
+  "sweden_eu_tj_coverage_verified": 0,
+  "manufacturer_journals_added": 3,
+  "paths": [
+    "data/master/brands/polestar_batch03_oem_occurrences_20261116.json",
+    "data/master/reviews/polestar_20261116/REVIEW_QUEUE.json",
+    "data/master/reviews/polestar_20261116/QA_REPORT.json",
+    "data/master/reviews/polestar_20261116/SOURCES.json"
+  ],
+  "not_changed": [
+    "main",
+    "data/master/brands/polestar.json",
+    "data/master/enrichment/polestar_batch01_source_values_20261105.json",
+    "RC3.8.0",
+    "RC3.8.2",
+    "update-feed.json",
+    "pending-update-feed.json",
+    "release-request.json"
+  ],
+  "notes": [
+    "New 13 codes are occurrence-confirmed in OEM journals, NOT fully official DTC definitions.",
+    "No known European/Swedish applicability for US/CA bulletins without a European bulletin or VIN-level VIDA verification.",
+    "B1A0213 occurs in the previously saved Polestar 2 ESM context and new Polestar 3 AUD context; these must remain separate.",
+    "ADPU TJ instruction to ignore applies only to that ADPU/code/variant/scope; it does not override other diagnostic concerns.",
+    "Proprietary charts, wiring, images and paid SAE definitions were not copied.",
+    "PDF screenshot preview was attempted but unavailable because provider returned a cache miss; textual OEM bulletin contents were cross-referenced with published bulletin metadata."
+  ]
+}

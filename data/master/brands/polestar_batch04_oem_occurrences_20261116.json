@@ -1,0 +1,1955 @@
+{
+  "schema": "dtcnexis-polestar-oem-tj-extension-v1",
+  "brand": "polestar",
+  "batch": "04",
+  "date": "2026-11-16",
+  "branch": "work/polestar-dtc-continuation-20261116",
+  "review_status": "DRAFT_ONLY_NOT_AUTO_DIAGNOSIS",
+  "source_documents": [
+    {
+      "id": "POL-TJ-37630-4-0",
+      "publisher": "Polestar Service and Parts Business",
+      "title": "GHCA Fault Diagnosis and Replacement VST Operation",
+      "document": "TJ 37630.4.0",
+      "issue_date": "2026-01-21",
+      "status_date": "2026-02-05",
+      "market": "United States and Canada",
+      "url": "https://static.oemdtc.com/NHTSA-PDFs/MC-11029165-0001.pdf",
+      "secondary_url": "https://oemdtc.com/tsb/11029165/",
+      "evidence_scope": "Exact 20 DTCs listed (19 GHCA, one GCCC), Permanent; type 359, MY2025–2099 as publication scope, build weeks 202402–209952; DC charge still works, AC charge fails"
+    },
+    {
+      "id": "POL-TJ-37523-1-0",
+      "publisher": "Polestar Service and Parts Business",
+      "title": "Propulsion Warning with IEM P0CBC62",
+      "document": "TJ 37523.1.0",
+      "issue_date": "2025-10-09",
+      "status_date": "2025-10-28",
+      "market": "United States and Canada",
+      "url": "https://static.oemdtc.com/NHTSA-PDFs/MC-11025983-0001.pdf",
+      "secondary_url": "https://oemdtc.com/tsb/11025983/",
+      "evidence_scope": "IEM P0CBC62, Permanent, vehicle type 534 MY2021–9999, coolant one-way valve check, VIDA phase U/V/W temperature graph; 55°C MY2024 display floor, normal driving below 65°C; 80–100°C in example faulty-condition pattern"
+    }
+  ],
+  "baseline_prior_distinct": 42,
+  "new_distinct_codes": 21,
+  "identical_prior_duplicate_count": 0,
+  "records": [
+    {
+      "record_id": "POL_B04_GHCA_B3A1D19",
+      "brand": "Polestar",
+      "code_raw": "B3A1D19",
+      "base_code": "B3A1D",
+      "suffix_hex": "19",
+      "ecu": "GHCA",
+      "full_scanner_prefix": "GHCA-B3A1D19",
+      "category": "B",
+      "code_class": "UNVERIFIED_WITHOUT_AUTHORIZED_SAE_J2012DA_OR_OEM_DEFINITION",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_status": "FULL_OFFICIAL_DTC_DEFINITION_UNAVAILABLE; ONLY_OEM_BULLETIN_OCCURRENCE_VERIFIED",
+      "application": {
+        "vehicle": "Polestar 3",
+        "vehicle_type": "359",
+        "model_years_official_document": "2025–2099",
+        "physical_model_years_independently_verified": "2025–2026 via manufacturer communication listing",
+        "structure_weeks_document": "202402–209952",
+        "engine_code": "UNSPECIFIED",
+        "ecu_software": "UNSPECIFIED",
+        "markets_verified": [
+          "US",
+          "Canada"
+        ],
+        "sweden_europe": "UNVERIFIED",
+        "propulsion": "BEV",
+        "gearbox": "UNSPECIFIED",
+        "variant": "all relevant type 359 variants listed without engine details"
+      },
+      "fault_type_in_TJ": "Permanent",
+      "symptoms": [
+        "AC charging fails but DC charging continues when TJ case applies"
+      ],
+      "activation_conditions": "Undocumented in public technical journal; do not conflate listed DTC with a standalone failure cause",
+      "root_cause_context": "Manufacturer specifies GHCA replacement only after both AC-fails/DC-works and listed DTC conditions are met; GCCC U01BB00 not proof of GCCC hardware failure",
+      "diagnostic_steps": [
+        {
+          "n": 1,
+          "en": "Confirm Polestar 3 type 359 with the exact DTC and relevant model/build range in TJ 37630.4.0.",
+          "ar": "تأكد من Polestar 3 نوع 359، والكود الكامل، والنطاق المصنعي الموجود في النشرة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 2,
+          "en": "Confirm AC charging fails but DC fast charging still functions. Both this condition and a listed DTC are required for the TJ.",
+          "ar": "تحقق من تعطل شحن AC مع استمرار عمل شحن DC؛ يجب اجتماع هذا الشرط مع أحد الرموز المدرجة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 3,
+          "en": "Only when both conditions apply, follow Polestar VIDA procedure for GHCA replacement by qualified HV personnel. A code alone does not prove GHCA failure, particularly U01BB00 in GCCC.",
+          "ar": "فقط عند تحقق الشرطين اتبع إجراء VIDA لاستبدال GHCA بواسطة مختص الجهد العالي؛ وجود الكود وحده لا يثبت تلف GHCA، خصوصاً الرمز الموجود بوحدة GCCC.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 4,
+          "en": "When the charge behavior does not match the bulletin, continue independent VIDA fault tracing instead of applying this replacement path.",
+          "ar": "إذا لم يطابق سلوك الشحن النشرة، انتقل إلى فحص VIDA المستقل ولا تطبق استبدال GHCA تلقائياً.",
+          "evidence": "TJ 37630.4.0"
+        }
+      ],
+      "live_data": [],
+      "tools_needed": [
+        "Polestar VIDA",
+        "Qualified high-voltage workshop capability for manufacturer-approved replacement"
+      ],
+      "fuses_connectors_pinouts": null,
+      "affected_parts": [
+        {
+          "name": "GHCA — Grid to High Voltage Converter A",
+          "replacement": "ONLY_WHEN_TJ_TWO_CONDITIONS_MET",
+          "part_location": "UNVERIFIED"
+        }
+      ],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "source_ids": [
+        "POL-TJ-37630-4-0"
+      ],
+      "source_verified_code_occurrence": true,
+      "source_verified_exact_definition": false,
+      "verified_for_sweden": false,
+      "review_status": "DEFERRED_REVIEW_PENDING_TECHNICAL_OEM_QA",
+      "ready_for_application": false
+    },
+    {
+      "record_id": "POL_B04_GHCA_B3A1D47",
+      "brand": "Polestar",
+      "code_raw": "B3A1D47",
+      "base_code": "B3A1D",
+      "suffix_hex": "47",
+      "ecu": "GHCA",
+      "full_scanner_prefix": "GHCA-B3A1D47",
+      "category": "B",
+      "code_class": "UNVERIFIED_WITHOUT_AUTHORIZED_SAE_J2012DA_OR_OEM_DEFINITION",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_status": "FULL_OFFICIAL_DTC_DEFINITION_UNAVAILABLE; ONLY_OEM_BULLETIN_OCCURRENCE_VERIFIED",
+      "application": {
+        "vehicle": "Polestar 3",
+        "vehicle_type": "359",
+        "model_years_official_document": "2025–2099",
+        "physical_model_years_independently_verified": "2025–2026 via manufacturer communication listing",
+        "structure_weeks_document": "202402–209952",
+        "engine_code": "UNSPECIFIED",
+        "ecu_software": "UNSPECIFIED",
+        "markets_verified": [
+          "US",
+          "Canada"
+        ],
+        "sweden_europe": "UNVERIFIED",
+        "propulsion": "BEV",
+        "gearbox": "UNSPECIFIED",
+        "variant": "all relevant type 359 variants listed without engine details"
+      },
+      "fault_type_in_TJ": "Permanent",
+      "symptoms": [
+        "AC charging fails but DC charging continues when TJ case applies"
+      ],
+      "activation_conditions": "Undocumented in public technical journal; do not conflate listed DTC with a standalone failure cause",
+      "root_cause_context": "Manufacturer specifies GHCA replacement only after both AC-fails/DC-works and listed DTC conditions are met; GCCC U01BB00 not proof of GCCC hardware failure",
+      "diagnostic_steps": [
+        {
+          "n": 1,
+          "en": "Confirm Polestar 3 type 359 with the exact DTC and relevant model/build range in TJ 37630.4.0.",
+          "ar": "تأكد من Polestar 3 نوع 359، والكود الكامل، والنطاق المصنعي الموجود في النشرة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 2,
+          "en": "Confirm AC charging fails but DC fast charging still functions. Both this condition and a listed DTC are required for the TJ.",
+          "ar": "تحقق من تعطل شحن AC مع استمرار عمل شحن DC؛ يجب اجتماع هذا الشرط مع أحد الرموز المدرجة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 3,
+          "en": "Only when both conditions apply, follow Polestar VIDA procedure for GHCA replacement by qualified HV personnel. A code alone does not prove GHCA failure, particularly U01BB00 in GCCC.",
+          "ar": "فقط عند تحقق الشرطين اتبع إجراء VIDA لاستبدال GHCA بواسطة مختص الجهد العالي؛ وجود الكود وحده لا يثبت تلف GHCA، خصوصاً الرمز الموجود بوحدة GCCC.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 4,
+          "en": "When the charge behavior does not match the bulletin, continue independent VIDA fault tracing instead of applying this replacement path.",
+          "ar": "إذا لم يطابق سلوك الشحن النشرة، انتقل إلى فحص VIDA المستقل ولا تطبق استبدال GHCA تلقائياً.",
+          "evidence": "TJ 37630.4.0"
+        }
+      ],
+      "live_data": [],
+      "tools_needed": [
+        "Polestar VIDA",
+        "Qualified high-voltage workshop capability for manufacturer-approved replacement"
+      ],
+      "fuses_connectors_pinouts": null,
+      "affected_parts": [
+        {
+          "name": "GHCA — Grid to High Voltage Converter A",
+          "replacement": "ONLY_WHEN_TJ_TWO_CONDITIONS_MET",
+          "part_location": "UNVERIFIED"
+        }
+      ],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "source_ids": [
+        "POL-TJ-37630-4-0"
+      ],
+      "source_verified_code_occurrence": true,
+      "source_verified_exact_definition": false,
+      "verified_for_sweden": false,
+      "review_status": "DEFERRED_REVIEW_PENDING_TECHNICAL_OEM_QA",
+      "ready_for_application": false
+    },
+    {
+      "record_id": "POL_B04_GHCA_B3A1D56",
+      "brand": "Polestar",
+      "code_raw": "B3A1D56",
+      "base_code": "B3A1D",
+      "suffix_hex": "56",
+      "ecu": "GHCA",
+      "full_scanner_prefix": "GHCA-B3A1D56",
+      "category": "B",
+      "code_class": "UNVERIFIED_WITHOUT_AUTHORIZED_SAE_J2012DA_OR_OEM_DEFINITION",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_status": "FULL_OFFICIAL_DTC_DEFINITION_UNAVAILABLE; ONLY_OEM_BULLETIN_OCCURRENCE_VERIFIED",
+      "application": {
+        "vehicle": "Polestar 3",
+        "vehicle_type": "359",
+        "model_years_official_document": "2025–2099",
+        "physical_model_years_independently_verified": "2025–2026 via manufacturer communication listing",
+        "structure_weeks_document": "202402–209952",
+        "engine_code": "UNSPECIFIED",
+        "ecu_software": "UNSPECIFIED",
+        "markets_verified": [
+          "US",
+          "Canada"
+        ],
+        "sweden_europe": "UNVERIFIED",
+        "propulsion": "BEV",
+        "gearbox": "UNSPECIFIED",
+        "variant": "all relevant type 359 variants listed without engine details"
+      },
+      "fault_type_in_TJ": "Permanent",
+      "symptoms": [
+        "AC charging fails but DC charging continues when TJ case applies"
+      ],
+      "activation_conditions": "Undocumented in public technical journal; do not conflate listed DTC with a standalone failure cause",
+      "root_cause_context": "Manufacturer specifies GHCA replacement only after both AC-fails/DC-works and listed DTC conditions are met; GCCC U01BB00 not proof of GCCC hardware failure",
+      "diagnostic_steps": [
+        {
+          "n": 1,
+          "en": "Confirm Polestar 3 type 359 with the exact DTC and relevant model/build range in TJ 37630.4.0.",
+          "ar": "تأكد من Polestar 3 نوع 359، والكود الكامل، والنطاق المصنعي الموجود في النشرة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 2,
+          "en": "Confirm AC charging fails but DC fast charging still functions. Both this condition and a listed DTC are required for the TJ.",
+          "ar": "تحقق من تعطل شحن AC مع استمرار عمل شحن DC؛ يجب اجتماع هذا الشرط مع أحد الرموز المدرجة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 3,
+          "en": "Only when both conditions apply, follow Polestar VIDA procedure for GHCA replacement by qualified HV personnel. A code alone does not prove GHCA failure, particularly U01BB00 in GCCC.",
+          "ar": "فقط عند تحقق الشرطين اتبع إجراء VIDA لاستبدال GHCA بواسطة مختص الجهد العالي؛ وجود الكود وحده لا يثبت تلف GHCA، خصوصاً الرمز الموجود بوحدة GCCC.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 4,
+          "en": "When the charge behavior does not match the bulletin, continue independent VIDA fault tracing instead of applying this replacement path.",
+          "ar": "إذا لم يطابق سلوك الشحن النشرة، انتقل إلى فحص VIDA المستقل ولا تطبق استبدال GHCA تلقائياً.",
+          "evidence": "TJ 37630.4.0"
+        }
+      ],
+      "live_data": [],
+      "tools_needed": [
+        "Polestar VIDA",
+        "Qualified high-voltage workshop capability for manufacturer-approved replacement"
+      ],
+      "fuses_connectors_pinouts": null,
+      "affected_parts": [
+        {
+          "name": "GHCA — Grid to High Voltage Converter A",
+          "replacement": "ONLY_WHEN_TJ_TWO_CONDITIONS_MET",
+          "part_location": "UNVERIFIED"
+        }
+      ],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "source_ids": [
+        "POL-TJ-37630-4-0"
+      ],
+      "source_verified_code_occurrence": true,
+      "source_verified_exact_definition": false,
+      "verified_for_sweden": false,
+      "review_status": "DEFERRED_REVIEW_PENDING_TECHNICAL_OEM_QA",
+      "ready_for_application": false
+    },
+    {
+      "record_id": "POL_B04_GHCA_B3A1D78",
+      "brand": "Polestar",
+      "code_raw": "B3A1D78",
+      "base_code": "B3A1D",
+      "suffix_hex": "78",
+      "ecu": "GHCA",
+      "full_scanner_prefix": "GHCA-B3A1D78",
+      "category": "B",
+      "code_class": "UNVERIFIED_WITHOUT_AUTHORIZED_SAE_J2012DA_OR_OEM_DEFINITION",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_status": "FULL_OFFICIAL_DTC_DEFINITION_UNAVAILABLE; ONLY_OEM_BULLETIN_OCCURRENCE_VERIFIED",
+      "application": {
+        "vehicle": "Polestar 3",
+        "vehicle_type": "359",
+        "model_years_official_document": "2025–2099",
+        "physical_model_years_independently_verified": "2025–2026 via manufacturer communication listing",
+        "structure_weeks_document": "202402–209952",
+        "engine_code": "UNSPECIFIED",
+        "ecu_software": "UNSPECIFIED",
+        "markets_verified": [
+          "US",
+          "Canada"
+        ],
+        "sweden_europe": "UNVERIFIED",
+        "propulsion": "BEV",
+        "gearbox": "UNSPECIFIED",
+        "variant": "all relevant type 359 variants listed without engine details"
+      },
+      "fault_type_in_TJ": "Permanent",
+      "symptoms": [
+        "AC charging fails but DC charging continues when TJ case applies"
+      ],
+      "activation_conditions": "Undocumented in public technical journal; do not conflate listed DTC with a standalone failure cause",
+      "root_cause_context": "Manufacturer specifies GHCA replacement only after both AC-fails/DC-works and listed DTC conditions are met; GCCC U01BB00 not proof of GCCC hardware failure",
+      "diagnostic_steps": [
+        {
+          "n": 1,
+          "en": "Confirm Polestar 3 type 359 with the exact DTC and relevant model/build range in TJ 37630.4.0.",
+          "ar": "تأكد من Polestar 3 نوع 359، والكود الكامل، والنطاق المصنعي الموجود في النشرة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 2,
+          "en": "Confirm AC charging fails but DC fast charging still functions. Both this condition and a listed DTC are required for the TJ.",
+          "ar": "تحقق من تعطل شحن AC مع استمرار عمل شحن DC؛ يجب اجتماع هذا الشرط مع أحد الرموز المدرجة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 3,
+          "en": "Only when both conditions apply, follow Polestar VIDA procedure for GHCA replacement by qualified HV personnel. A code alone does not prove GHCA failure, particularly U01BB00 in GCCC.",
+          "ar": "فقط عند تحقق الشرطين اتبع إجراء VIDA لاستبدال GHCA بواسطة مختص الجهد العالي؛ وجود الكود وحده لا يثبت تلف GHCA، خصوصاً الرمز الموجود بوحدة GCCC.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 4,
+          "en": "When the charge behavior does not match the bulletin, continue independent VIDA fault tracing instead of applying this replacement path.",
+          "ar": "إذا لم يطابق سلوك الشحن النشرة، انتقل إلى فحص VIDA المستقل ولا تطبق استبدال GHCA تلقائياً.",
+          "evidence": "TJ 37630.4.0"
+        }
+      ],
+      "live_data": [],
+      "tools_needed": [
+        "Polestar VIDA",
+        "Qualified high-voltage workshop capability for manufacturer-approved replacement"
+      ],
+      "fuses_connectors_pinouts": null,
+      "affected_parts": [
+        {
+          "name": "GHCA — Grid to High Voltage Converter A",
+          "replacement": "ONLY_WHEN_TJ_TWO_CONDITIONS_MET",
+          "part_location": "UNVERIFIED"
+        }
+      ],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "source_ids": [
+        "POL-TJ-37630-4-0"
+      ],
+      "source_verified_code_occurrence": true,
+      "source_verified_exact_definition": false,
+      "verified_for_sweden": false,
+      "review_status": "DEFERRED_REVIEW_PENDING_TECHNICAL_OEM_QA",
+      "ready_for_application": false
+    },
+    {
+      "record_id": "POL_B04_GHCA_P06AB11",
+      "brand": "Polestar",
+      "code_raw": "P06AB11",
+      "base_code": "P06AB",
+      "suffix_hex": "11",
+      "ecu": "GHCA",
+      "full_scanner_prefix": "GHCA-P06AB11",
+      "category": "P",
+      "code_class": "UNVERIFIED_WITHOUT_AUTHORIZED_SAE_J2012DA_OR_OEM_DEFINITION",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_status": "FULL_OFFICIAL_DTC_DEFINITION_UNAVAILABLE; ONLY_OEM_BULLETIN_OCCURRENCE_VERIFIED",
+      "application": {
+        "vehicle": "Polestar 3",
+        "vehicle_type": "359",
+        "model_years_official_document": "2025–2099",
+        "physical_model_years_independently_verified": "2025–2026 via manufacturer communication listing",
+        "structure_weeks_document": "202402–209952",
+        "engine_code": "UNSPECIFIED",
+        "ecu_software": "UNSPECIFIED",
+        "markets_verified": [
+          "US",
+          "Canada"
+        ],
+        "sweden_europe": "UNVERIFIED",
+        "propulsion": "BEV",
+        "gearbox": "UNSPECIFIED",
+        "variant": "all relevant type 359 variants listed without engine details"
+      },
+      "fault_type_in_TJ": "Permanent",
+      "symptoms": [
+        "AC charging fails but DC charging continues when TJ case applies"
+      ],
+      "activation_conditions": "Undocumented in public technical journal; do not conflate listed DTC with a standalone failure cause",
+      "root_cause_context": "Manufacturer specifies GHCA replacement only after both AC-fails/DC-works and listed DTC conditions are met; GCCC U01BB00 not proof of GCCC hardware failure",
+      "diagnostic_steps": [
+        {
+          "n": 1,
+          "en": "Confirm Polestar 3 type 359 with the exact DTC and relevant model/build range in TJ 37630.4.0.",
+          "ar": "تأكد من Polestar 3 نوع 359، والكود الكامل، والنطاق المصنعي الموجود في النشرة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 2,
+          "en": "Confirm AC charging fails but DC fast charging still functions. Both this condition and a listed DTC are required for the TJ.",
+          "ar": "تحقق من تعطل شحن AC مع استمرار عمل شحن DC؛ يجب اجتماع هذا الشرط مع أحد الرموز المدرجة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 3,
+          "en": "Only when both conditions apply, follow Polestar VIDA procedure for GHCA replacement by qualified HV personnel. A code alone does not prove GHCA failure, particularly U01BB00 in GCCC.",
+          "ar": "فقط عند تحقق الشرطين اتبع إجراء VIDA لاستبدال GHCA بواسطة مختص الجهد العالي؛ وجود الكود وحده لا يثبت تلف GHCA، خصوصاً الرمز الموجود بوحدة GCCC.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 4,
+          "en": "When the charge behavior does not match the bulletin, continue independent VIDA fault tracing instead of applying this replacement path.",
+          "ar": "إذا لم يطابق سلوك الشحن النشرة، انتقل إلى فحص VIDA المستقل ولا تطبق استبدال GHCA تلقائياً.",
+          "evidence": "TJ 37630.4.0"
+        }
+      ],
+      "live_data": [],
+      "tools_needed": [
+        "Polestar VIDA",
+        "Qualified high-voltage workshop capability for manufacturer-approved replacement"
+      ],
+      "fuses_connectors_pinouts": null,
+      "affected_parts": [
+        {
+          "name": "GHCA — Grid to High Voltage Converter A",
+          "replacement": "ONLY_WHEN_TJ_TWO_CONDITIONS_MET",
+          "part_location": "UNVERIFIED"
+        }
+      ],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "source_ids": [
+        "POL-TJ-37630-4-0"
+      ],
+      "source_verified_code_occurrence": true,
+      "source_verified_exact_definition": false,
+      "verified_for_sweden": false,
+      "review_status": "DEFERRED_REVIEW_PENDING_TECHNICAL_OEM_QA",
+      "ready_for_application": false
+    },
+    {
+      "record_id": "POL_B04_GHCA_P0D2600",
+      "brand": "Polestar",
+      "code_raw": "P0D2600",
+      "base_code": "P0D26",
+      "suffix_hex": "00",
+      "ecu": "GHCA",
+      "full_scanner_prefix": "GHCA-P0D2600",
+      "category": "P",
+      "code_class": "UNVERIFIED_WITHOUT_AUTHORIZED_SAE_J2012DA_OR_OEM_DEFINITION",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_status": "FULL_OFFICIAL_DTC_DEFINITION_UNAVAILABLE; ONLY_OEM_BULLETIN_OCCURRENCE_VERIFIED",
+      "application": {
+        "vehicle": "Polestar 3",
+        "vehicle_type": "359",
+        "model_years_official_document": "2025–2099",
+        "physical_model_years_independently_verified": "2025–2026 via manufacturer communication listing",
+        "structure_weeks_document": "202402–209952",
+        "engine_code": "UNSPECIFIED",
+        "ecu_software": "UNSPECIFIED",
+        "markets_verified": [
+          "US",
+          "Canada"
+        ],
+        "sweden_europe": "UNVERIFIED",
+        "propulsion": "BEV",
+        "gearbox": "UNSPECIFIED",
+        "variant": "all relevant type 359 variants listed without engine details"
+      },
+      "fault_type_in_TJ": "Permanent",
+      "symptoms": [
+        "AC charging fails but DC charging continues when TJ case applies"
+      ],
+      "activation_conditions": "Undocumented in public technical journal; do not conflate listed DTC with a standalone failure cause",
+      "root_cause_context": "Manufacturer specifies GHCA replacement only after both AC-fails/DC-works and listed DTC conditions are met; GCCC U01BB00 not proof of GCCC hardware failure",
+      "diagnostic_steps": [
+        {
+          "n": 1,
+          "en": "Confirm Polestar 3 type 359 with the exact DTC and relevant model/build range in TJ 37630.4.0.",
+          "ar": "تأكد من Polestar 3 نوع 359، والكود الكامل، والنطاق المصنعي الموجود في النشرة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 2,
+          "en": "Confirm AC charging fails but DC fast charging still functions. Both this condition and a listed DTC are required for the TJ.",
+          "ar": "تحقق من تعطل شحن AC مع استمرار عمل شحن DC؛ يجب اجتماع هذا الشرط مع أحد الرموز المدرجة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 3,
+          "en": "Only when both conditions apply, follow Polestar VIDA procedure for GHCA replacement by qualified HV personnel. A code alone does not prove GHCA failure, particularly U01BB00 in GCCC.",
+          "ar": "فقط عند تحقق الشرطين اتبع إجراء VIDA لاستبدال GHCA بواسطة مختص الجهد العالي؛ وجود الكود وحده لا يثبت تلف GHCA، خصوصاً الرمز الموجود بوحدة GCCC.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 4,
+          "en": "When the charge behavior does not match the bulletin, continue independent VIDA fault tracing instead of applying this replacement path.",
+          "ar": "إذا لم يطابق سلوك الشحن النشرة، انتقل إلى فحص VIDA المستقل ولا تطبق استبدال GHCA تلقائياً.",
+          "evidence": "TJ 37630.4.0"
+        }
+      ],
+      "live_data": [],
+      "tools_needed": [
+        "Polestar VIDA",
+        "Qualified high-voltage workshop capability for manufacturer-approved replacement"
+      ],
+      "fuses_connectors_pinouts": null,
+      "affected_parts": [
+        {
+          "name": "GHCA — Grid to High Voltage Converter A",
+          "replacement": "ONLY_WHEN_TJ_TWO_CONDITIONS_MET",
+          "part_location": "UNVERIFIED"
+        }
+      ],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "source_ids": [
+        "POL-TJ-37630-4-0"
+      ],
+      "source_verified_code_occurrence": true,
+      "source_verified_exact_definition": false,
+      "verified_for_sweden": false,
+      "review_status": "DEFERRED_REVIEW_PENDING_TECHNICAL_OEM_QA",
+      "ready_for_application": false
+    },
+    {
+      "record_id": "POL_B04_GHCA_P0E8592",
+      "brand": "Polestar",
+      "code_raw": "P0E8592",
+      "base_code": "P0E85",
+      "suffix_hex": "92",
+      "ecu": "GHCA",
+      "full_scanner_prefix": "GHCA-P0E8592",
+      "category": "P",
+      "code_class": "UNVERIFIED_WITHOUT_AUTHORIZED_SAE_J2012DA_OR_OEM_DEFINITION",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_status": "FULL_OFFICIAL_DTC_DEFINITION_UNAVAILABLE; ONLY_OEM_BULLETIN_OCCURRENCE_VERIFIED",
+      "application": {
+        "vehicle": "Polestar 3",
+        "vehicle_type": "359",
+        "model_years_official_document": "2025–2099",
+        "physical_model_years_independently_verified": "2025–2026 via manufacturer communication listing",
+        "structure_weeks_document": "202402–209952",
+        "engine_code": "UNSPECIFIED",
+        "ecu_software": "UNSPECIFIED",
+        "markets_verified": [
+          "US",
+          "Canada"
+        ],
+        "sweden_europe": "UNVERIFIED",
+        "propulsion": "BEV",
+        "gearbox": "UNSPECIFIED",
+        "variant": "all relevant type 359 variants listed without engine details"
+      },
+      "fault_type_in_TJ": "Permanent",
+      "symptoms": [
+        "AC charging fails but DC charging continues when TJ case applies"
+      ],
+      "activation_conditions": "Undocumented in public technical journal; do not conflate listed DTC with a standalone failure cause",
+      "root_cause_context": "Manufacturer specifies GHCA replacement only after both AC-fails/DC-works and listed DTC conditions are met; GCCC U01BB00 not proof of GCCC hardware failure",
+      "diagnostic_steps": [
+        {
+          "n": 1,
+          "en": "Confirm Polestar 3 type 359 with the exact DTC and relevant model/build range in TJ 37630.4.0.",
+          "ar": "تأكد من Polestar 3 نوع 359، والكود الكامل، والنطاق المصنعي الموجود في النشرة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 2,
+          "en": "Confirm AC charging fails but DC fast charging still functions. Both this condition and a listed DTC are required for the TJ.",
+          "ar": "تحقق من تعطل شحن AC مع استمرار عمل شحن DC؛ يجب اجتماع هذا الشرط مع أحد الرموز المدرجة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 3,
+          "en": "Only when both conditions apply, follow Polestar VIDA procedure for GHCA replacement by qualified HV personnel. A code alone does not prove GHCA failure, particularly U01BB00 in GCCC.",
+          "ar": "فقط عند تحقق الشرطين اتبع إجراء VIDA لاستبدال GHCA بواسطة مختص الجهد العالي؛ وجود الكود وحده لا يثبت تلف GHCA، خصوصاً الرمز الموجود بوحدة GCCC.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 4,
+          "en": "When the charge behavior does not match the bulletin, continue independent VIDA fault tracing instead of applying this replacement path.",
+          "ar": "إذا لم يطابق سلوك الشحن النشرة، انتقل إلى فحص VIDA المستقل ولا تطبق استبدال GHCA تلقائياً.",
+          "evidence": "TJ 37630.4.0"
+        }
+      ],
+      "live_data": [],
+      "tools_needed": [
+        "Polestar VIDA",
+        "Qualified high-voltage workshop capability for manufacturer-approved replacement"
+      ],
+      "fuses_connectors_pinouts": null,
+      "affected_parts": [
+        {
+          "name": "GHCA — Grid to High Voltage Converter A",
+          "replacement": "ONLY_WHEN_TJ_TWO_CONDITIONS_MET",
+          "part_location": "UNVERIFIED"
+        }
+      ],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "source_ids": [
+        "POL-TJ-37630-4-0"
+      ],
+      "source_verified_code_occurrence": true,
+      "source_verified_exact_definition": false,
+      "verified_for_sweden": false,
+      "review_status": "DEFERRED_REVIEW_PENDING_TECHNICAL_OEM_QA",
+      "ready_for_application": false
+    },
+    {
+      "record_id": "POL_B04_GHCA_P0E8B16",
+      "brand": "Polestar",
+      "code_raw": "P0E8B16",
+      "base_code": "P0E8B",
+      "suffix_hex": "16",
+      "ecu": "GHCA",
+      "full_scanner_prefix": "GHCA-P0E8B16",
+      "category": "P",
+      "code_class": "UNVERIFIED_WITHOUT_AUTHORIZED_SAE_J2012DA_OR_OEM_DEFINITION",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_status": "FULL_OFFICIAL_DTC_DEFINITION_UNAVAILABLE; ONLY_OEM_BULLETIN_OCCURRENCE_VERIFIED",
+      "application": {
+        "vehicle": "Polestar 3",
+        "vehicle_type": "359",
+        "model_years_official_document": "2025–2099",
+        "physical_model_years_independently_verified": "2025–2026 via manufacturer communication listing",
+        "structure_weeks_document": "202402–209952",
+        "engine_code": "UNSPECIFIED",
+        "ecu_software": "UNSPECIFIED",
+        "markets_verified": [
+          "US",
+          "Canada"
+        ],
+        "sweden_europe": "UNVERIFIED",
+        "propulsion": "BEV",
+        "gearbox": "UNSPECIFIED",
+        "variant": "all relevant type 359 variants listed without engine details"
+      },
+      "fault_type_in_TJ": "Permanent",
+      "symptoms": [
+        "AC charging fails but DC charging continues when TJ case applies"
+      ],
+      "activation_conditions": "Undocumented in public technical journal; do not conflate listed DTC with a standalone failure cause",
+      "root_cause_context": "Manufacturer specifies GHCA replacement only after both AC-fails/DC-works and listed DTC conditions are met; GCCC U01BB00 not proof of GCCC hardware failure",
+      "diagnostic_steps": [
+        {
+          "n": 1,
+          "en": "Confirm Polestar 3 type 359 with the exact DTC and relevant model/build range in TJ 37630.4.0.",
+          "ar": "تأكد من Polestar 3 نوع 359، والكود الكامل، والنطاق المصنعي الموجود في النشرة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 2,
+          "en": "Confirm AC charging fails but DC fast charging still functions. Both this condition and a listed DTC are required for the TJ.",
+          "ar": "تحقق من تعطل شحن AC مع استمرار عمل شحن DC؛ يجب اجتماع هذا الشرط مع أحد الرموز المدرجة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 3,
+          "en": "Only when both conditions apply, follow Polestar VIDA procedure for GHCA replacement by qualified HV personnel. A code alone does not prove GHCA failure, particularly U01BB00 in GCCC.",
+          "ar": "فقط عند تحقق الشرطين اتبع إجراء VIDA لاستبدال GHCA بواسطة مختص الجهد العالي؛ وجود الكود وحده لا يثبت تلف GHCA، خصوصاً الرمز الموجود بوحدة GCCC.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 4,
+          "en": "When the charge behavior does not match the bulletin, continue independent VIDA fault tracing instead of applying this replacement path.",
+          "ar": "إذا لم يطابق سلوك الشحن النشرة، انتقل إلى فحص VIDA المستقل ولا تطبق استبدال GHCA تلقائياً.",
+          "evidence": "TJ 37630.4.0"
+        }
+      ],
+      "live_data": [],
+      "tools_needed": [
+        "Polestar VIDA",
+        "Qualified high-voltage workshop capability for manufacturer-approved replacement"
+      ],
+      "fuses_connectors_pinouts": null,
+      "affected_parts": [
+        {
+          "name": "GHCA — Grid to High Voltage Converter A",
+          "replacement": "ONLY_WHEN_TJ_TWO_CONDITIONS_MET",
+          "part_location": "UNVERIFIED"
+        }
+      ],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "source_ids": [
+        "POL-TJ-37630-4-0"
+      ],
+      "source_verified_code_occurrence": true,
+      "source_verified_exact_definition": false,
+      "verified_for_sweden": false,
+      "review_status": "DEFERRED_REVIEW_PENDING_TECHNICAL_OEM_QA",
+      "ready_for_application": false
+    },
+    {
+      "record_id": "POL_B04_GHCA_P0E8B68",
+      "brand": "Polestar",
+      "code_raw": "P0E8B68",
+      "base_code": "P0E8B",
+      "suffix_hex": "68",
+      "ecu": "GHCA",
+      "full_scanner_prefix": "GHCA-P0E8B68",
+      "category": "P",
+      "code_class": "UNVERIFIED_WITHOUT_AUTHORIZED_SAE_J2012DA_OR_OEM_DEFINITION",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_status": "FULL_OFFICIAL_DTC_DEFINITION_UNAVAILABLE; ONLY_OEM_BULLETIN_OCCURRENCE_VERIFIED",
+      "application": {
+        "vehicle": "Polestar 3",
+        "vehicle_type": "359",
+        "model_years_official_document": "2025–2099",
+        "physical_model_years_independently_verified": "2025–2026 via manufacturer communication listing",
+        "structure_weeks_document": "202402–209952",
+        "engine_code": "UNSPECIFIED",
+        "ecu_software": "UNSPECIFIED",
+        "markets_verified": [
+          "US",
+          "Canada"
+        ],
+        "sweden_europe": "UNVERIFIED",
+        "propulsion": "BEV",
+        "gearbox": "UNSPECIFIED",
+        "variant": "all relevant type 359 variants listed without engine details"
+      },
+      "fault_type_in_TJ": "Permanent",
+      "symptoms": [
+        "AC charging fails but DC charging continues when TJ case applies"
+      ],
+      "activation_conditions": "Undocumented in public technical journal; do not conflate listed DTC with a standalone failure cause",
+      "root_cause_context": "Manufacturer specifies GHCA replacement only after both AC-fails/DC-works and listed DTC conditions are met; GCCC U01BB00 not proof of GCCC hardware failure",
+      "diagnostic_steps": [
+        {
+          "n": 1,
+          "en": "Confirm Polestar 3 type 359 with the exact DTC and relevant model/build range in TJ 37630.4.0.",
+          "ar": "تأكد من Polestar 3 نوع 359، والكود الكامل، والنطاق المصنعي الموجود في النشرة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 2,
+          "en": "Confirm AC charging fails but DC fast charging still functions. Both this condition and a listed DTC are required for the TJ.",
+          "ar": "تحقق من تعطل شحن AC مع استمرار عمل شحن DC؛ يجب اجتماع هذا الشرط مع أحد الرموز المدرجة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 3,
+          "en": "Only when both conditions apply, follow Polestar VIDA procedure for GHCA replacement by qualified HV personnel. A code alone does not prove GHCA failure, particularly U01BB00 in GCCC.",
+          "ar": "فقط عند تحقق الشرطين اتبع إجراء VIDA لاستبدال GHCA بواسطة مختص الجهد العالي؛ وجود الكود وحده لا يثبت تلف GHCA، خصوصاً الرمز الموجود بوحدة GCCC.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 4,
+          "en": "When the charge behavior does not match the bulletin, continue independent VIDA fault tracing instead of applying this replacement path.",
+          "ar": "إذا لم يطابق سلوك الشحن النشرة، انتقل إلى فحص VIDA المستقل ولا تطبق استبدال GHCA تلقائياً.",
+          "evidence": "TJ 37630.4.0"
+        }
+      ],
+      "live_data": [],
+      "tools_needed": [
+        "Polestar VIDA",
+        "Qualified high-voltage workshop capability for manufacturer-approved replacement"
+      ],
+      "fuses_connectors_pinouts": null,
+      "affected_parts": [
+        {
+          "name": "GHCA — Grid to High Voltage Converter A",
+          "replacement": "ONLY_WHEN_TJ_TWO_CONDITIONS_MET",
+          "part_location": "UNVERIFIED"
+        }
+      ],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "source_ids": [
+        "POL-TJ-37630-4-0"
+      ],
+      "source_verified_code_occurrence": true,
+      "source_verified_exact_definition": false,
+      "verified_for_sweden": false,
+      "review_status": "DEFERRED_REVIEW_PENDING_TECHNICAL_OEM_QA",
+      "ready_for_application": false
+    },
+    {
+      "record_id": "POL_B04_GHCA_P29BC16",
+      "brand": "Polestar",
+      "code_raw": "P29BC16",
+      "base_code": "P29BC",
+      "suffix_hex": "16",
+      "ecu": "GHCA",
+      "full_scanner_prefix": "GHCA-P29BC16",
+      "category": "P",
+      "code_class": "UNVERIFIED_WITHOUT_AUTHORIZED_SAE_J2012DA_OR_OEM_DEFINITION",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_status": "FULL_OFFICIAL_DTC_DEFINITION_UNAVAILABLE; ONLY_OEM_BULLETIN_OCCURRENCE_VERIFIED",
+      "application": {
+        "vehicle": "Polestar 3",
+        "vehicle_type": "359",
+        "model_years_official_document": "2025–2099",
+        "physical_model_years_independently_verified": "2025–2026 via manufacturer communication listing",
+        "structure_weeks_document": "202402–209952",
+        "engine_code": "UNSPECIFIED",
+        "ecu_software": "UNSPECIFIED",
+        "markets_verified": [
+          "US",
+          "Canada"
+        ],
+        "sweden_europe": "UNVERIFIED",
+        "propulsion": "BEV",
+        "gearbox": "UNSPECIFIED",
+        "variant": "all relevant type 359 variants listed without engine details"
+      },
+      "fault_type_in_TJ": "Permanent",
+      "symptoms": [
+        "AC charging fails but DC charging continues when TJ case applies"
+      ],
+      "activation_conditions": "Undocumented in public technical journal; do not conflate listed DTC with a standalone failure cause",
+      "root_cause_context": "Manufacturer specifies GHCA replacement only after both AC-fails/DC-works and listed DTC conditions are met; GCCC U01BB00 not proof of GCCC hardware failure",
+      "diagnostic_steps": [
+        {
+          "n": 1,
+          "en": "Confirm Polestar 3 type 359 with the exact DTC and relevant model/build range in TJ 37630.4.0.",
+          "ar": "تأكد من Polestar 3 نوع 359، والكود الكامل، والنطاق المصنعي الموجود في النشرة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 2,
+          "en": "Confirm AC charging fails but DC fast charging still functions. Both this condition and a listed DTC are required for the TJ.",
+          "ar": "تحقق من تعطل شحن AC مع استمرار عمل شحن DC؛ يجب اجتماع هذا الشرط مع أحد الرموز المدرجة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 3,
+          "en": "Only when both conditions apply, follow Polestar VIDA procedure for GHCA replacement by qualified HV personnel. A code alone does not prove GHCA failure, particularly U01BB00 in GCCC.",
+          "ar": "فقط عند تحقق الشرطين اتبع إجراء VIDA لاستبدال GHCA بواسطة مختص الجهد العالي؛ وجود الكود وحده لا يثبت تلف GHCA، خصوصاً الرمز الموجود بوحدة GCCC.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 4,
+          "en": "When the charge behavior does not match the bulletin, continue independent VIDA fault tracing instead of applying this replacement path.",
+          "ar": "إذا لم يطابق سلوك الشحن النشرة، انتقل إلى فحص VIDA المستقل ولا تطبق استبدال GHCA تلقائياً.",
+          "evidence": "TJ 37630.4.0"
+        }
+      ],
+      "live_data": [],
+      "tools_needed": [
+        "Polestar VIDA",
+        "Qualified high-voltage workshop capability for manufacturer-approved replacement"
+      ],
+      "fuses_connectors_pinouts": null,
+      "affected_parts": [
+        {
+          "name": "GHCA — Grid to High Voltage Converter A",
+          "replacement": "ONLY_WHEN_TJ_TWO_CONDITIONS_MET",
+          "part_location": "UNVERIFIED"
+        }
+      ],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "source_ids": [
+        "POL-TJ-37630-4-0"
+      ],
+      "source_verified_code_occurrence": true,
+      "source_verified_exact_definition": false,
+      "verified_for_sweden": false,
+      "review_status": "DEFERRED_REVIEW_PENDING_TECHNICAL_OEM_QA",
+      "ready_for_application": false
+    },
+    {
+      "record_id": "POL_B04_GHCA_P29BC98",
+      "brand": "Polestar",
+      "code_raw": "P29BC98",
+      "base_code": "P29BC",
+      "suffix_hex": "98",
+      "ecu": "GHCA",
+      "full_scanner_prefix": "GHCA-P29BC98",
+      "category": "P",
+      "code_class": "UNVERIFIED_WITHOUT_AUTHORIZED_SAE_J2012DA_OR_OEM_DEFINITION",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_status": "FULL_OFFICIAL_DTC_DEFINITION_UNAVAILABLE; ONLY_OEM_BULLETIN_OCCURRENCE_VERIFIED",
+      "application": {
+        "vehicle": "Polestar 3",
+        "vehicle_type": "359",
+        "model_years_official_document": "2025–2099",
+        "physical_model_years_independently_verified": "2025–2026 via manufacturer communication listing",
+        "structure_weeks_document": "202402–209952",
+        "engine_code": "UNSPECIFIED",
+        "ecu_software": "UNSPECIFIED",
+        "markets_verified": [
+          "US",
+          "Canada"
+        ],
+        "sweden_europe": "UNVERIFIED",
+        "propulsion": "BEV",
+        "gearbox": "UNSPECIFIED",
+        "variant": "all relevant type 359 variants listed without engine details"
+      },
+      "fault_type_in_TJ": "Permanent",
+      "symptoms": [
+        "AC charging fails but DC charging continues when TJ case applies"
+      ],
+      "activation_conditions": "Undocumented in public technical journal; do not conflate listed DTC with a standalone failure cause",
+      "root_cause_context": "Manufacturer specifies GHCA replacement only after both AC-fails/DC-works and listed DTC conditions are met; GCCC U01BB00 not proof of GCCC hardware failure",
+      "diagnostic_steps": [
+        {
+          "n": 1,
+          "en": "Confirm Polestar 3 type 359 with the exact DTC and relevant model/build range in TJ 37630.4.0.",
+          "ar": "تأكد من Polestar 3 نوع 359، والكود الكامل، والنطاق المصنعي الموجود في النشرة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 2,
+          "en": "Confirm AC charging fails but DC fast charging still functions. Both this condition and a listed DTC are required for the TJ.",
+          "ar": "تحقق من تعطل شحن AC مع استمرار عمل شحن DC؛ يجب اجتماع هذا الشرط مع أحد الرموز المدرجة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 3,
+          "en": "Only when both conditions apply, follow Polestar VIDA procedure for GHCA replacement by qualified HV personnel. A code alone does not prove GHCA failure, particularly U01BB00 in GCCC.",
+          "ar": "فقط عند تحقق الشرطين اتبع إجراء VIDA لاستبدال GHCA بواسطة مختص الجهد العالي؛ وجود الكود وحده لا يثبت تلف GHCA، خصوصاً الرمز الموجود بوحدة GCCC.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 4,
+          "en": "When the charge behavior does not match the bulletin, continue independent VIDA fault tracing instead of applying this replacement path.",
+          "ar": "إذا لم يطابق سلوك الشحن النشرة، انتقل إلى فحص VIDA المستقل ولا تطبق استبدال GHCA تلقائياً.",
+          "evidence": "TJ 37630.4.0"
+        }
+      ],
+      "live_data": [],
+      "tools_needed": [
+        "Polestar VIDA",
+        "Qualified high-voltage workshop capability for manufacturer-approved replacement"
+      ],
+      "fuses_connectors_pinouts": null,
+      "affected_parts": [
+        {
+          "name": "GHCA — Grid to High Voltage Converter A",
+          "replacement": "ONLY_WHEN_TJ_TWO_CONDITIONS_MET",
+          "part_location": "UNVERIFIED"
+        }
+      ],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "source_ids": [
+        "POL-TJ-37630-4-0"
+      ],
+      "source_verified_code_occurrence": true,
+      "source_verified_exact_definition": false,
+      "verified_for_sweden": false,
+      "review_status": "DEFERRED_REVIEW_PENDING_TECHNICAL_OEM_QA",
+      "ready_for_application": false
+    },
+    {
+      "record_id": "POL_B04_GHCA_P2DB701",
+      "brand": "Polestar",
+      "code_raw": "P2DB701",
+      "base_code": "P2DB7",
+      "suffix_hex": "01",
+      "ecu": "GHCA",
+      "full_scanner_prefix": "GHCA-P2DB701",
+      "category": "P",
+      "code_class": "UNVERIFIED_WITHOUT_AUTHORIZED_SAE_J2012DA_OR_OEM_DEFINITION",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_status": "FULL_OFFICIAL_DTC_DEFINITION_UNAVAILABLE; ONLY_OEM_BULLETIN_OCCURRENCE_VERIFIED",
+      "application": {
+        "vehicle": "Polestar 3",
+        "vehicle_type": "359",
+        "model_years_official_document": "2025–2099",
+        "physical_model_years_independently_verified": "2025–2026 via manufacturer communication listing",
+        "structure_weeks_document": "202402–209952",
+        "engine_code": "UNSPECIFIED",
+        "ecu_software": "UNSPECIFIED",
+        "markets_verified": [
+          "US",
+          "Canada"
+        ],
+        "sweden_europe": "UNVERIFIED",
+        "propulsion": "BEV",
+        "gearbox": "UNSPECIFIED",
+        "variant": "all relevant type 359 variants listed without engine details"
+      },
+      "fault_type_in_TJ": "Permanent",
+      "symptoms": [
+        "AC charging fails but DC charging continues when TJ case applies"
+      ],
+      "activation_conditions": "Undocumented in public technical journal; do not conflate listed DTC with a standalone failure cause",
+      "root_cause_context": "Manufacturer specifies GHCA replacement only after both AC-fails/DC-works and listed DTC conditions are met; GCCC U01BB00 not proof of GCCC hardware failure",
+      "diagnostic_steps": [
+        {
+          "n": 1,
+          "en": "Confirm Polestar 3 type 359 with the exact DTC and relevant model/build range in TJ 37630.4.0.",
+          "ar": "تأكد من Polestar 3 نوع 359، والكود الكامل، والنطاق المصنعي الموجود في النشرة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 2,
+          "en": "Confirm AC charging fails but DC fast charging still functions. Both this condition and a listed DTC are required for the TJ.",
+          "ar": "تحقق من تعطل شحن AC مع استمرار عمل شحن DC؛ يجب اجتماع هذا الشرط مع أحد الرموز المدرجة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 3,
+          "en": "Only when both conditions apply, follow Polestar VIDA procedure for GHCA replacement by qualified HV personnel. A code alone does not prove GHCA failure, particularly U01BB00 in GCCC.",
+          "ar": "فقط عند تحقق الشرطين اتبع إجراء VIDA لاستبدال GHCA بواسطة مختص الجهد العالي؛ وجود الكود وحده لا يثبت تلف GHCA، خصوصاً الرمز الموجود بوحدة GCCC.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 4,
+          "en": "When the charge behavior does not match the bulletin, continue independent VIDA fault tracing instead of applying this replacement path.",
+          "ar": "إذا لم يطابق سلوك الشحن النشرة، انتقل إلى فحص VIDA المستقل ولا تطبق استبدال GHCA تلقائياً.",
+          "evidence": "TJ 37630.4.0"
+        }
+      ],
+      "live_data": [],
+      "tools_needed": [
+        "Polestar VIDA",
+        "Qualified high-voltage workshop capability for manufacturer-approved replacement"
+      ],
+      "fuses_connectors_pinouts": null,
+      "affected_parts": [
+        {
+          "name": "GHCA — Grid to High Voltage Converter A",
+          "replacement": "ONLY_WHEN_TJ_TWO_CONDITIONS_MET",
+          "part_location": "UNVERIFIED"
+        }
+      ],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "source_ids": [
+        "POL-TJ-37630-4-0"
+      ],
+      "source_verified_code_occurrence": true,
+      "source_verified_exact_definition": false,
+      "verified_for_sweden": false,
+      "review_status": "DEFERRED_REVIEW_PENDING_TECHNICAL_OEM_QA",
+      "ready_for_application": false
+    },
+    {
+      "record_id": "POL_B04_GHCA_P2E2F17",
+      "brand": "Polestar",
+      "code_raw": "P2E2F17",
+      "base_code": "P2E2F",
+      "suffix_hex": "17",
+      "ecu": "GHCA",
+      "full_scanner_prefix": "GHCA-P2E2F17",
+      "category": "P",
+      "code_class": "UNVERIFIED_WITHOUT_AUTHORIZED_SAE_J2012DA_OR_OEM_DEFINITION",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_status": "FULL_OFFICIAL_DTC_DEFINITION_UNAVAILABLE; ONLY_OEM_BULLETIN_OCCURRENCE_VERIFIED",
+      "application": {
+        "vehicle": "Polestar 3",
+        "vehicle_type": "359",
+        "model_years_official_document": "2025–2099",
+        "physical_model_years_independently_verified": "2025–2026 via manufacturer communication listing",
+        "structure_weeks_document": "202402–209952",
+        "engine_code": "UNSPECIFIED",
+        "ecu_software": "UNSPECIFIED",
+        "markets_verified": [
+          "US",
+          "Canada"
+        ],
+        "sweden_europe": "UNVERIFIED",
+        "propulsion": "BEV",
+        "gearbox": "UNSPECIFIED",
+        "variant": "all relevant type 359 variants listed without engine details"
+      },
+      "fault_type_in_TJ": "Permanent",
+      "symptoms": [
+        "AC charging fails but DC charging continues when TJ case applies"
+      ],
+      "activation_conditions": "Undocumented in public technical journal; do not conflate listed DTC with a standalone failure cause",
+      "root_cause_context": "Manufacturer specifies GHCA replacement only after both AC-fails/DC-works and listed DTC conditions are met; GCCC U01BB00 not proof of GCCC hardware failure",
+      "diagnostic_steps": [
+        {
+          "n": 1,
+          "en": "Confirm Polestar 3 type 359 with the exact DTC and relevant model/build range in TJ 37630.4.0.",
+          "ar": "تأكد من Polestar 3 نوع 359، والكود الكامل، والنطاق المصنعي الموجود في النشرة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 2,
+          "en": "Confirm AC charging fails but DC fast charging still functions. Both this condition and a listed DTC are required for the TJ.",
+          "ar": "تحقق من تعطل شحن AC مع استمرار عمل شحن DC؛ يجب اجتماع هذا الشرط مع أحد الرموز المدرجة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 3,
+          "en": "Only when both conditions apply, follow Polestar VIDA procedure for GHCA replacement by qualified HV personnel. A code alone does not prove GHCA failure, particularly U01BB00 in GCCC.",
+          "ar": "فقط عند تحقق الشرطين اتبع إجراء VIDA لاستبدال GHCA بواسطة مختص الجهد العالي؛ وجود الكود وحده لا يثبت تلف GHCA، خصوصاً الرمز الموجود بوحدة GCCC.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 4,
+          "en": "When the charge behavior does not match the bulletin, continue independent VIDA fault tracing instead of applying this replacement path.",
+          "ar": "إذا لم يطابق سلوك الشحن النشرة، انتقل إلى فحص VIDA المستقل ولا تطبق استبدال GHCA تلقائياً.",
+          "evidence": "TJ 37630.4.0"
+        }
+      ],
+      "live_data": [],
+      "tools_needed": [
+        "Polestar VIDA",
+        "Qualified high-voltage workshop capability for manufacturer-approved replacement"
+      ],
+      "fuses_connectors_pinouts": null,
+      "affected_parts": [
+        {
+          "name": "GHCA — Grid to High Voltage Converter A",
+          "replacement": "ONLY_WHEN_TJ_TWO_CONDITIONS_MET",
+          "part_location": "UNVERIFIED"
+        }
+      ],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "source_ids": [
+        "POL-TJ-37630-4-0"
+      ],
+      "source_verified_code_occurrence": true,
+      "source_verified_exact_definition": false,
+      "verified_for_sweden": false,
+      "review_status": "DEFERRED_REVIEW_PENDING_TECHNICAL_OEM_QA",
+      "ready_for_application": false
+    },
+    {
+      "record_id": "POL_B04_GHCA_P2E9117",
+      "brand": "Polestar",
+      "code_raw": "P2E9117",
+      "base_code": "P2E91",
+      "suffix_hex": "17",
+      "ecu": "GHCA",
+      "full_scanner_prefix": "GHCA-P2E9117",
+      "category": "P",
+      "code_class": "UNVERIFIED_WITHOUT_AUTHORIZED_SAE_J2012DA_OR_OEM_DEFINITION",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_status": "FULL_OFFICIAL_DTC_DEFINITION_UNAVAILABLE; ONLY_OEM_BULLETIN_OCCURRENCE_VERIFIED",
+      "application": {
+        "vehicle": "Polestar 3",
+        "vehicle_type": "359",
+        "model_years_official_document": "2025–2099",
+        "physical_model_years_independently_verified": "2025–2026 via manufacturer communication listing",
+        "structure_weeks_document": "202402–209952",
+        "engine_code": "UNSPECIFIED",
+        "ecu_software": "UNSPECIFIED",
+        "markets_verified": [
+          "US",
+          "Canada"
+        ],
+        "sweden_europe": "UNVERIFIED",
+        "propulsion": "BEV",
+        "gearbox": "UNSPECIFIED",
+        "variant": "all relevant type 359 variants listed without engine details"
+      },
+      "fault_type_in_TJ": "Permanent",
+      "symptoms": [
+        "AC charging fails but DC charging continues when TJ case applies"
+      ],
+      "activation_conditions": "Undocumented in public technical journal; do not conflate listed DTC with a standalone failure cause",
+      "root_cause_context": "Manufacturer specifies GHCA replacement only after both AC-fails/DC-works and listed DTC conditions are met; GCCC U01BB00 not proof of GCCC hardware failure",
+      "diagnostic_steps": [
+        {
+          "n": 1,
+          "en": "Confirm Polestar 3 type 359 with the exact DTC and relevant model/build range in TJ 37630.4.0.",
+          "ar": "تأكد من Polestar 3 نوع 359، والكود الكامل، والنطاق المصنعي الموجود في النشرة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 2,
+          "en": "Confirm AC charging fails but DC fast charging still functions. Both this condition and a listed DTC are required for the TJ.",
+          "ar": "تحقق من تعطل شحن AC مع استمرار عمل شحن DC؛ يجب اجتماع هذا الشرط مع أحد الرموز المدرجة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 3,
+          "en": "Only when both conditions apply, follow Polestar VIDA procedure for GHCA replacement by qualified HV personnel. A code alone does not prove GHCA failure, particularly U01BB00 in GCCC.",
+          "ar": "فقط عند تحقق الشرطين اتبع إجراء VIDA لاستبدال GHCA بواسطة مختص الجهد العالي؛ وجود الكود وحده لا يثبت تلف GHCA، خصوصاً الرمز الموجود بوحدة GCCC.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 4,
+          "en": "When the charge behavior does not match the bulletin, continue independent VIDA fault tracing instead of applying this replacement path.",
+          "ar": "إذا لم يطابق سلوك الشحن النشرة، انتقل إلى فحص VIDA المستقل ولا تطبق استبدال GHCA تلقائياً.",
+          "evidence": "TJ 37630.4.0"
+        }
+      ],
+      "live_data": [],
+      "tools_needed": [
+        "Polestar VIDA",
+        "Qualified high-voltage workshop capability for manufacturer-approved replacement"
+      ],
+      "fuses_connectors_pinouts": null,
+      "affected_parts": [
+        {
+          "name": "GHCA — Grid to High Voltage Converter A",
+          "replacement": "ONLY_WHEN_TJ_TWO_CONDITIONS_MET",
+          "part_location": "UNVERIFIED"
+        }
+      ],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "source_ids": [
+        "POL-TJ-37630-4-0"
+      ],
+      "source_verified_code_occurrence": true,
+      "source_verified_exact_definition": false,
+      "verified_for_sweden": false,
+      "review_status": "DEFERRED_REVIEW_PENDING_TECHNICAL_OEM_QA",
+      "ready_for_application": false
+    },
+    {
+      "record_id": "POL_B04_GHCA_P2E9119",
+      "brand": "Polestar",
+      "code_raw": "P2E9119",
+      "base_code": "P2E91",
+      "suffix_hex": "19",
+      "ecu": "GHCA",
+      "full_scanner_prefix": "GHCA-P2E9119",
+      "category": "P",
+      "code_class": "UNVERIFIED_WITHOUT_AUTHORIZED_SAE_J2012DA_OR_OEM_DEFINITION",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_status": "FULL_OFFICIAL_DTC_DEFINITION_UNAVAILABLE; ONLY_OEM_BULLETIN_OCCURRENCE_VERIFIED",
+      "application": {
+        "vehicle": "Polestar 3",
+        "vehicle_type": "359",
+        "model_years_official_document": "2025–2099",
+        "physical_model_years_independently_verified": "2025–2026 via manufacturer communication listing",
+        "structure_weeks_document": "202402–209952",
+        "engine_code": "UNSPECIFIED",
+        "ecu_software": "UNSPECIFIED",
+        "markets_verified": [
+          "US",
+          "Canada"
+        ],
+        "sweden_europe": "UNVERIFIED",
+        "propulsion": "BEV",
+        "gearbox": "UNSPECIFIED",
+        "variant": "all relevant type 359 variants listed without engine details"
+      },
+      "fault_type_in_TJ": "Permanent",
+      "symptoms": [
+        "AC charging fails but DC charging continues when TJ case applies"
+      ],
+      "activation_conditions": "Undocumented in public technical journal; do not conflate listed DTC with a standalone failure cause",
+      "root_cause_context": "Manufacturer specifies GHCA replacement only after both AC-fails/DC-works and listed DTC conditions are met; GCCC U01BB00 not proof of GCCC hardware failure",
+      "diagnostic_steps": [
+        {
+          "n": 1,
+          "en": "Confirm Polestar 3 type 359 with the exact DTC and relevant model/build range in TJ 37630.4.0.",
+          "ar": "تأكد من Polestar 3 نوع 359، والكود الكامل، والنطاق المصنعي الموجود في النشرة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 2,
+          "en": "Confirm AC charging fails but DC fast charging still functions. Both this condition and a listed DTC are required for the TJ.",
+          "ar": "تحقق من تعطل شحن AC مع استمرار عمل شحن DC؛ يجب اجتماع هذا الشرط مع أحد الرموز المدرجة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 3,
+          "en": "Only when both conditions apply, follow Polestar VIDA procedure for GHCA replacement by qualified HV personnel. A code alone does not prove GHCA failure, particularly U01BB00 in GCCC.",
+          "ar": "فقط عند تحقق الشرطين اتبع إجراء VIDA لاستبدال GHCA بواسطة مختص الجهد العالي؛ وجود الكود وحده لا يثبت تلف GHCA، خصوصاً الرمز الموجود بوحدة GCCC.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 4,
+          "en": "When the charge behavior does not match the bulletin, continue independent VIDA fault tracing instead of applying this replacement path.",
+          "ar": "إذا لم يطابق سلوك الشحن النشرة، انتقل إلى فحص VIDA المستقل ولا تطبق استبدال GHCA تلقائياً.",
+          "evidence": "TJ 37630.4.0"
+        }
+      ],
+      "live_data": [],
+      "tools_needed": [
+        "Polestar VIDA",
+        "Qualified high-voltage workshop capability for manufacturer-approved replacement"
+      ],
+      "fuses_connectors_pinouts": null,
+      "affected_parts": [
+        {
+          "name": "GHCA — Grid to High Voltage Converter A",
+          "replacement": "ONLY_WHEN_TJ_TWO_CONDITIONS_MET",
+          "part_location": "UNVERIFIED"
+        }
+      ],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "source_ids": [
+        "POL-TJ-37630-4-0"
+      ],
+      "source_verified_code_occurrence": true,
+      "source_verified_exact_definition": false,
+      "verified_for_sweden": false,
+      "review_status": "DEFERRED_REVIEW_PENDING_TECHNICAL_OEM_QA",
+      "ready_for_application": false
+    },
+    {
+      "record_id": "POL_B04_GHCA_U359116",
+      "brand": "Polestar",
+      "code_raw": "U359116",
+      "base_code": "U3591",
+      "suffix_hex": "16",
+      "ecu": "GHCA",
+      "full_scanner_prefix": "GHCA-U359116",
+      "category": "U",
+      "code_class": "UNVERIFIED_WITHOUT_AUTHORIZED_SAE_J2012DA_OR_OEM_DEFINITION",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_status": "FULL_OFFICIAL_DTC_DEFINITION_UNAVAILABLE; ONLY_OEM_BULLETIN_OCCURRENCE_VERIFIED",
+      "application": {
+        "vehicle": "Polestar 3",
+        "vehicle_type": "359",
+        "model_years_official_document": "2025–2099",
+        "physical_model_years_independently_verified": "2025–2026 via manufacturer communication listing",
+        "structure_weeks_document": "202402–209952",
+        "engine_code": "UNSPECIFIED",
+        "ecu_software": "UNSPECIFIED",
+        "markets_verified": [
+          "US",
+          "Canada"
+        ],
+        "sweden_europe": "UNVERIFIED",
+        "propulsion": "BEV",
+        "gearbox": "UNSPECIFIED",
+        "variant": "all relevant type 359 variants listed without engine details"
+      },
+      "fault_type_in_TJ": "Permanent",
+      "symptoms": [
+        "AC charging fails but DC charging continues when TJ case applies"
+      ],
+      "activation_conditions": "Undocumented in public technical journal; do not conflate listed DTC with a standalone failure cause",
+      "root_cause_context": "Manufacturer specifies GHCA replacement only after both AC-fails/DC-works and listed DTC conditions are met; GCCC U01BB00 not proof of GCCC hardware failure",
+      "diagnostic_steps": [
+        {
+          "n": 1,
+          "en": "Confirm Polestar 3 type 359 with the exact DTC and relevant model/build range in TJ 37630.4.0.",
+          "ar": "تأكد من Polestar 3 نوع 359، والكود الكامل، والنطاق المصنعي الموجود في النشرة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 2,
+          "en": "Confirm AC charging fails but DC fast charging still functions. Both this condition and a listed DTC are required for the TJ.",
+          "ar": "تحقق من تعطل شحن AC مع استمرار عمل شحن DC؛ يجب اجتماع هذا الشرط مع أحد الرموز المدرجة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 3,
+          "en": "Only when both conditions apply, follow Polestar VIDA procedure for GHCA replacement by qualified HV personnel. A code alone does not prove GHCA failure, particularly U01BB00 in GCCC.",
+          "ar": "فقط عند تحقق الشرطين اتبع إجراء VIDA لاستبدال GHCA بواسطة مختص الجهد العالي؛ وجود الكود وحده لا يثبت تلف GHCA، خصوصاً الرمز الموجود بوحدة GCCC.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 4,
+          "en": "When the charge behavior does not match the bulletin, continue independent VIDA fault tracing instead of applying this replacement path.",
+          "ar": "إذا لم يطابق سلوك الشحن النشرة، انتقل إلى فحص VIDA المستقل ولا تطبق استبدال GHCA تلقائياً.",
+          "evidence": "TJ 37630.4.0"
+        }
+      ],
+      "live_data": [],
+      "tools_needed": [
+        "Polestar VIDA",
+        "Qualified high-voltage workshop capability for manufacturer-approved replacement"
+      ],
+      "fuses_connectors_pinouts": null,
+      "affected_parts": [
+        {
+          "name": "GHCA — Grid to High Voltage Converter A",
+          "replacement": "ONLY_WHEN_TJ_TWO_CONDITIONS_MET",
+          "part_location": "UNVERIFIED"
+        }
+      ],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "source_ids": [
+        "POL-TJ-37630-4-0"
+      ],
+      "source_verified_code_occurrence": true,
+      "source_verified_exact_definition": false,
+      "verified_for_sweden": false,
+      "review_status": "DEFERRED_REVIEW_PENDING_TECHNICAL_OEM_QA",
+      "ready_for_application": false
+    },
+    {
+      "record_id": "POL_B04_GHCA_U359192",
+      "brand": "Polestar",
+      "code_raw": "U359192",
+      "base_code": "U3591",
+      "suffix_hex": "92",
+      "ecu": "GHCA",
+      "full_scanner_prefix": "GHCA-U359192",
+      "category": "U",
+      "code_class": "UNVERIFIED_WITHOUT_AUTHORIZED_SAE_J2012DA_OR_OEM_DEFINITION",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_status": "FULL_OFFICIAL_DTC_DEFINITION_UNAVAILABLE; ONLY_OEM_BULLETIN_OCCURRENCE_VERIFIED",
+      "application": {
+        "vehicle": "Polestar 3",
+        "vehicle_type": "359",
+        "model_years_official_document": "2025–2099",
+        "physical_model_years_independently_verified": "2025–2026 via manufacturer communication listing",
+        "structure_weeks_document": "202402–209952",
+        "engine_code": "UNSPECIFIED",
+        "ecu_software": "UNSPECIFIED",
+        "markets_verified": [
+          "US",
+          "Canada"
+        ],
+        "sweden_europe": "UNVERIFIED",
+        "propulsion": "BEV",
+        "gearbox": "UNSPECIFIED",
+        "variant": "all relevant type 359 variants listed without engine details"
+      },
+      "fault_type_in_TJ": "Permanent",
+      "symptoms": [
+        "AC charging fails but DC charging continues when TJ case applies"
+      ],
+      "activation_conditions": "Undocumented in public technical journal; do not conflate listed DTC with a standalone failure cause",
+      "root_cause_context": "Manufacturer specifies GHCA replacement only after both AC-fails/DC-works and listed DTC conditions are met; GCCC U01BB00 not proof of GCCC hardware failure",
+      "diagnostic_steps": [
+        {
+          "n": 1,
+          "en": "Confirm Polestar 3 type 359 with the exact DTC and relevant model/build range in TJ 37630.4.0.",
+          "ar": "تأكد من Polestar 3 نوع 359، والكود الكامل، والنطاق المصنعي الموجود في النشرة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 2,
+          "en": "Confirm AC charging fails but DC fast charging still functions. Both this condition and a listed DTC are required for the TJ.",
+          "ar": "تحقق من تعطل شحن AC مع استمرار عمل شحن DC؛ يجب اجتماع هذا الشرط مع أحد الرموز المدرجة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 3,
+          "en": "Only when both conditions apply, follow Polestar VIDA procedure for GHCA replacement by qualified HV personnel. A code alone does not prove GHCA failure, particularly U01BB00 in GCCC.",
+          "ar": "فقط عند تحقق الشرطين اتبع إجراء VIDA لاستبدال GHCA بواسطة مختص الجهد العالي؛ وجود الكود وحده لا يثبت تلف GHCA، خصوصاً الرمز الموجود بوحدة GCCC.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 4,
+          "en": "When the charge behavior does not match the bulletin, continue independent VIDA fault tracing instead of applying this replacement path.",
+          "ar": "إذا لم يطابق سلوك الشحن النشرة، انتقل إلى فحص VIDA المستقل ولا تطبق استبدال GHCA تلقائياً.",
+          "evidence": "TJ 37630.4.0"
+        }
+      ],
+      "live_data": [],
+      "tools_needed": [
+        "Polestar VIDA",
+        "Qualified high-voltage workshop capability for manufacturer-approved replacement"
+      ],
+      "fuses_connectors_pinouts": null,
+      "affected_parts": [
+        {
+          "name": "GHCA — Grid to High Voltage Converter A",
+          "replacement": "ONLY_WHEN_TJ_TWO_CONDITIONS_MET",
+          "part_location": "UNVERIFIED"
+        }
+      ],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "source_ids": [
+        "POL-TJ-37630-4-0"
+      ],
+      "source_verified_code_occurrence": true,
+      "source_verified_exact_definition": false,
+      "verified_for_sweden": false,
+      "review_status": "DEFERRED_REVIEW_PENDING_TECHNICAL_OEM_QA",
+      "ready_for_application": false
+    },
+    {
+      "record_id": "POL_B04_GHCA_U35C794",
+      "brand": "Polestar",
+      "code_raw": "U35C794",
+      "base_code": "U35C7",
+      "suffix_hex": "94",
+      "ecu": "GHCA",
+      "full_scanner_prefix": "GHCA-U35C794",
+      "category": "U",
+      "code_class": "UNVERIFIED_WITHOUT_AUTHORIZED_SAE_J2012DA_OR_OEM_DEFINITION",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_status": "FULL_OFFICIAL_DTC_DEFINITION_UNAVAILABLE; ONLY_OEM_BULLETIN_OCCURRENCE_VERIFIED",
+      "application": {
+        "vehicle": "Polestar 3",
+        "vehicle_type": "359",
+        "model_years_official_document": "2025–2099",
+        "physical_model_years_independently_verified": "2025–2026 via manufacturer communication listing",
+        "structure_weeks_document": "202402–209952",
+        "engine_code": "UNSPECIFIED",
+        "ecu_software": "UNSPECIFIED",
+        "markets_verified": [
+          "US",
+          "Canada"
+        ],
+        "sweden_europe": "UNVERIFIED",
+        "propulsion": "BEV",
+        "gearbox": "UNSPECIFIED",
+        "variant": "all relevant type 359 variants listed without engine details"
+      },
+      "fault_type_in_TJ": "Permanent",
+      "symptoms": [
+        "AC charging fails but DC charging continues when TJ case applies"
+      ],
+      "activation_conditions": "Undocumented in public technical journal; do not conflate listed DTC with a standalone failure cause",
+      "root_cause_context": "Manufacturer specifies GHCA replacement only after both AC-fails/DC-works and listed DTC conditions are met; GCCC U01BB00 not proof of GCCC hardware failure",
+      "diagnostic_steps": [
+        {
+          "n": 1,
+          "en": "Confirm Polestar 3 type 359 with the exact DTC and relevant model/build range in TJ 37630.4.0.",
+          "ar": "تأكد من Polestar 3 نوع 359، والكود الكامل، والنطاق المصنعي الموجود في النشرة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 2,
+          "en": "Confirm AC charging fails but DC fast charging still functions. Both this condition and a listed DTC are required for the TJ.",
+          "ar": "تحقق من تعطل شحن AC مع استمرار عمل شحن DC؛ يجب اجتماع هذا الشرط مع أحد الرموز المدرجة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 3,
+          "en": "Only when both conditions apply, follow Polestar VIDA procedure for GHCA replacement by qualified HV personnel. A code alone does not prove GHCA failure, particularly U01BB00 in GCCC.",
+          "ar": "فقط عند تحقق الشرطين اتبع إجراء VIDA لاستبدال GHCA بواسطة مختص الجهد العالي؛ وجود الكود وحده لا يثبت تلف GHCA، خصوصاً الرمز الموجود بوحدة GCCC.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 4,
+          "en": "When the charge behavior does not match the bulletin, continue independent VIDA fault tracing instead of applying this replacement path.",
+          "ar": "إذا لم يطابق سلوك الشحن النشرة، انتقل إلى فحص VIDA المستقل ولا تطبق استبدال GHCA تلقائياً.",
+          "evidence": "TJ 37630.4.0"
+        }
+      ],
+      "live_data": [],
+      "tools_needed": [
+        "Polestar VIDA",
+        "Qualified high-voltage workshop capability for manufacturer-approved replacement"
+      ],
+      "fuses_connectors_pinouts": null,
+      "affected_parts": [
+        {
+          "name": "GHCA — Grid to High Voltage Converter A",
+          "replacement": "ONLY_WHEN_TJ_TWO_CONDITIONS_MET",
+          "part_location": "UNVERIFIED"
+        }
+      ],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "source_ids": [
+        "POL-TJ-37630-4-0"
+      ],
+      "source_verified_code_occurrence": true,
+      "source_verified_exact_definition": false,
+      "verified_for_sweden": false,
+      "review_status": "DEFERRED_REVIEW_PENDING_TECHNICAL_OEM_QA",
+      "ready_for_application": false
+    },
+    {
+      "record_id": "POL_B04_GCCC_U01BB00",
+      "brand": "Polestar",
+      "code_raw": "U01BB00",
+      "base_code": "U01BB",
+      "suffix_hex": "00",
+      "ecu": "GCCC",
+      "full_scanner_prefix": "GCCC-U01BB00",
+      "category": "U",
+      "code_class": "UNVERIFIED_WITHOUT_AUTHORIZED_SAE_J2012DA_OR_OEM_DEFINITION",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_status": "FULL_OFFICIAL_DTC_DEFINITION_UNAVAILABLE; ONLY_OEM_BULLETIN_OCCURRENCE_VERIFIED",
+      "application": {
+        "vehicle": "Polestar 3",
+        "vehicle_type": "359",
+        "model_years_official_document": "2025–2099",
+        "physical_model_years_independently_verified": "2025–2026 via manufacturer communication listing",
+        "structure_weeks_document": "202402–209952",
+        "engine_code": "UNSPECIFIED",
+        "ecu_software": "UNSPECIFIED",
+        "markets_verified": [
+          "US",
+          "Canada"
+        ],
+        "sweden_europe": "UNVERIFIED",
+        "propulsion": "BEV",
+        "gearbox": "UNSPECIFIED",
+        "variant": "all relevant type 359 variants listed without engine details"
+      },
+      "fault_type_in_TJ": "Permanent",
+      "symptoms": [
+        "AC charging fails but DC charging continues when TJ case applies"
+      ],
+      "activation_conditions": "Undocumented in public technical journal; do not conflate listed DTC with a standalone failure cause",
+      "root_cause_context": "Manufacturer specifies GHCA replacement only after both AC-fails/DC-works and listed DTC conditions are met; GCCC U01BB00 not proof of GCCC hardware failure",
+      "diagnostic_steps": [
+        {
+          "n": 1,
+          "en": "Confirm Polestar 3 type 359 with the exact DTC and relevant model/build range in TJ 37630.4.0.",
+          "ar": "تأكد من Polestar 3 نوع 359، والكود الكامل، والنطاق المصنعي الموجود في النشرة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 2,
+          "en": "Confirm AC charging fails but DC fast charging still functions. Both this condition and a listed DTC are required for the TJ.",
+          "ar": "تحقق من تعطل شحن AC مع استمرار عمل شحن DC؛ يجب اجتماع هذا الشرط مع أحد الرموز المدرجة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 3,
+          "en": "Only when both conditions apply, follow Polestar VIDA procedure for GHCA replacement by qualified HV personnel. A code alone does not prove GHCA failure, particularly U01BB00 in GCCC.",
+          "ar": "فقط عند تحقق الشرطين اتبع إجراء VIDA لاستبدال GHCA بواسطة مختص الجهد العالي؛ وجود الكود وحده لا يثبت تلف GHCA، خصوصاً الرمز الموجود بوحدة GCCC.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 4,
+          "en": "When the charge behavior does not match the bulletin, continue independent VIDA fault tracing instead of applying this replacement path.",
+          "ar": "إذا لم يطابق سلوك الشحن النشرة، انتقل إلى فحص VIDA المستقل ولا تطبق استبدال GHCA تلقائياً.",
+          "evidence": "TJ 37630.4.0"
+        }
+      ],
+      "live_data": [],
+      "tools_needed": [
+        "Polestar VIDA",
+        "Qualified high-voltage workshop capability for manufacturer-approved replacement"
+      ],
+      "fuses_connectors_pinouts": null,
+      "affected_parts": [
+        {
+          "name": "GHCA — Grid to High Voltage Converter A",
+          "replacement": "ONLY_WHEN_TJ_TWO_CONDITIONS_MET",
+          "part_location": "UNVERIFIED"
+        }
+      ],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "source_ids": [
+        "POL-TJ-37630-4-0"
+      ],
+      "source_verified_code_occurrence": true,
+      "source_verified_exact_definition": false,
+      "verified_for_sweden": false,
+      "review_status": "DEFERRED_REVIEW_PENDING_TECHNICAL_OEM_QA",
+      "ready_for_application": false
+    },
+    {
+      "record_id": "POL_B04_GHCA_B3A1D04",
+      "brand": "Polestar",
+      "code_raw": "B3A1D04",
+      "base_code": "B3A1D",
+      "suffix_hex": "04",
+      "ecu": "GHCA",
+      "full_scanner_prefix": "GHCA-B3A1D04",
+      "category": "B",
+      "code_class": "UNVERIFIED_WITHOUT_AUTHORIZED_SAE_J2012DA_OR_OEM_DEFINITION",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_status": "FULL_OFFICIAL_DTC_DEFINITION_UNAVAILABLE; ONLY_OEM_BULLETIN_OCCURRENCE_VERIFIED",
+      "application": {
+        "vehicle": "Polestar 3",
+        "vehicle_type": "359",
+        "model_years_official_document": "2025–2099",
+        "physical_model_years_independently_verified": "2025–2026 via manufacturer communication listing",
+        "structure_weeks_document": "202402–209952",
+        "engine_code": "UNSPECIFIED",
+        "ecu_software": "UNSPECIFIED",
+        "markets_verified": [
+          "US",
+          "Canada"
+        ],
+        "sweden_europe": "UNVERIFIED",
+        "propulsion": "BEV",
+        "gearbox": "UNSPECIFIED",
+        "variant": "all relevant type 359 variants listed without engine details"
+      },
+      "fault_type_in_TJ": "Permanent",
+      "symptoms": [
+        "AC charging fails but DC charging continues when TJ case applies"
+      ],
+      "activation_conditions": "Undocumented in public technical journal; do not conflate listed DTC with a standalone failure cause",
+      "root_cause_context": "Manufacturer specifies GHCA replacement only after both AC-fails/DC-works and listed DTC conditions are met; GCCC U01BB00 not proof of GCCC hardware failure",
+      "diagnostic_steps": [
+        {
+          "n": 1,
+          "en": "Confirm Polestar 3 type 359 with the exact DTC and relevant model/build range in TJ 37630.4.0.",
+          "ar": "تأكد من Polestar 3 نوع 359، والكود الكامل، والنطاق المصنعي الموجود في النشرة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 2,
+          "en": "Confirm AC charging fails but DC fast charging still functions. Both this condition and a listed DTC are required for the TJ.",
+          "ar": "تحقق من تعطل شحن AC مع استمرار عمل شحن DC؛ يجب اجتماع هذا الشرط مع أحد الرموز المدرجة.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 3,
+          "en": "Only when both conditions apply, follow Polestar VIDA procedure for GHCA replacement by qualified HV personnel. A code alone does not prove GHCA failure, particularly U01BB00 in GCCC.",
+          "ar": "فقط عند تحقق الشرطين اتبع إجراء VIDA لاستبدال GHCA بواسطة مختص الجهد العالي؛ وجود الكود وحده لا يثبت تلف GHCA، خصوصاً الرمز الموجود بوحدة GCCC.",
+          "evidence": "TJ 37630.4.0"
+        },
+        {
+          "n": 4,
+          "en": "When the charge behavior does not match the bulletin, continue independent VIDA fault tracing instead of applying this replacement path.",
+          "ar": "إذا لم يطابق سلوك الشحن النشرة، انتقل إلى فحص VIDA المستقل ولا تطبق استبدال GHCA تلقائياً.",
+          "evidence": "TJ 37630.4.0"
+        }
+      ],
+      "live_data": [],
+      "tools_needed": [
+        "Polestar VIDA",
+        "Qualified high-voltage workshop capability for manufacturer-approved replacement"
+      ],
+      "fuses_connectors_pinouts": null,
+      "affected_parts": [
+        {
+          "name": "GHCA — Grid to High Voltage Converter A",
+          "replacement": "ONLY_WHEN_TJ_TWO_CONDITIONS_MET",
+          "part_location": "UNVERIFIED"
+        }
+      ],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "source_ids": [
+        "POL-TJ-37630-4-0"
+      ],
+      "source_verified_code_occurrence": true,
+      "source_verified_exact_definition": false,
+      "verified_for_sweden": false,
+      "review_status": "DEFERRED_REVIEW_PENDING_TECHNICAL_OEM_QA",
+      "ready_for_application": false
+    },
+    {
+      "record_id": "POL_B04_IEM_P0CBC62",
+      "brand": "Polestar",
+      "code_raw": "P0CBC62",
+      "base_code": "P0CBC",
+      "suffix_hex": "62",
+      "ecu": "IEM",
+      "full_scanner_prefix": "IEM-P0CBC62",
+      "category": "P",
+      "code_class": "UNVERIFIED_WITHOUT_AUTHORIZED_SAE_J2012DA_OR_OEM_DEFINITION",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_source_status": "FULL_OFFICIAL_DTC_DEFINITION_UNAVAILABLE; ONLY_OEM_BULLETIN_OCCURRENCE_VERIFIED",
+      "application": {
+        "vehicle": "Polestar 2",
+        "vehicle_type": "534",
+        "model_years_official_document": "2021–9999 (open-ended journal table)",
+        "physical_model_years_independently_verified": "2021–2026 for described part-year groups",
+        "structure_weeks_document": "201935–999952",
+        "engine_code": "UNSPECIFIED",
+        "ecu_software": "UNSPECIFIED",
+        "markets_verified": [
+          "US",
+          "Canada"
+        ],
+        "sweden_europe": "UNVERIFIED",
+        "propulsion": "BEV",
+        "gearbox": "UNSPECIFIED",
+        "variant": "IEM-equipped vehicle; one-way valve part varies by drive configuration and model year"
+      },
+      "fault_type_in_TJ": "Permanent",
+      "symptoms": [
+        "Propulsion System Service Required display message",
+        "Potential reduced propulsion; exact behaviour varies with drivetrain"
+      ],
+      "activation_conditions": "Undocumented in public technical journal; do not conflate listed DTC with a standalone failure cause",
+      "root_cause_context": "Manufacturer warns faulty coolant one-way valve may be cause; do not automatically replace IEM",
+      "diagnostic_steps": [
+        {
+          "n": 1,
+          "en": "Confirm IEM-P0CBC62 and Propulsion System Service Required message. Match the Polestar 2 type 534 build/model-year scope.",
+          "ar": "تحقق من IEM-P0CBC62 ورسالة طلب صيانة نظام الدفع، ثم طابق الطراز وسنة الموديل.",
+          "evidence": "TJ 37523.1.0"
+        },
+        {
+          "n": 2,
+          "en": "Use VIDA to trend IEM transistor temperatures of phases U, V and W while the vehicle is driven. Look for phase divergence and abnormal fluctuations.",
+          "ar": "سجّل منحنيات حرارة ترانزستورات IEM للأطوار U وV وW أثناء القيادة باستخدام VIDA، وافحص تباعد القيم وتذبذبها.",
+          "evidence": "TJ 37523.1.0"
+        },
+        {
+          "n": 3,
+          "en": "For MY2024+ sensor outputs do not interpret the 55°C reported floor as actual coolant temperature. Under normal driving source says values below 65°C; faulty valve examples can fluctuate to 80–100°C.",
+          "ar": "في MY2024 وما بعده لا تعتبر 55°C القراءة الدنيا حرارة فعلية؛ تذكر النشرة أقل من 65°C أثناء القيادة الاعتيادية، و80–100°C في مثال صمام معيب.",
+          "evidence": "TJ 37523.1.0"
+        },
+        {
+          "n": 4,
+          "en": "If test pattern matches the defective one-way valve, replace the appropriate hose/valve assembly per VIN and drivetrain; do not preemptively replace IEM.",
+          "ar": "عندما تطابق القراءات نمط تعطل الصمام أحادي الاتجاه، استبدل مجموعة الخرطوم/الصمام الملائمة حسب VIN والدفع دون تغيير IEM مسبقاً.",
+          "evidence": "TJ 37523.1.0"
+        },
+        {
+          "n": 5,
+          "en": "If concern remains after appropriate hose replacement, resume VIDA fault tracing for other causes.",
+          "ar": "إذا استمر العطل بعد الإجراء المناسب، أكمل التشخيص وفق VIDA للأسباب الأخرى.",
+          "evidence": "TJ 37523.1.0"
+        }
+      ],
+      "live_data": [
+        {
+          "document_term_en": "IEM transistor temperatures of phases U, V, W (exact VIDA PID labels unconfirmed)",
+          "translation_ar": "درجة حرارة ترانزستورات العاكس للأطوار U وV وW",
+          "conditions": "While driving; compare phase traces; MY2024+ has minimum displayed 55°C",
+          "reference_from_TJ": "Below 65°C in regular driving; abnormal illustrated fluctuation 80–100°C",
+          "source_id": "POL-TJ-37523-1-0"
+        }
+      ],
+      "tools_needed": [
+        "Polestar VIDA",
+        "VIDA data plotting of phase temperatures"
+      ],
+      "fuses_connectors_pinouts": null,
+      "affected_parts": [
+        {
+          "name": "Coolant hose with one-way valve",
+          "part_applicability": [
+            {
+              "model_year": "2022–2023",
+              "drive": "AWD",
+              "oem_part_number": "32257930"
+            },
+            {
+              "model_year": "2024–2025",
+              "drive": "AWD",
+              "oem_part_number": "32428107"
+            },
+            {
+              "model_year": "2024–2025",
+              "drive": "RWD",
+              "oem_part_number": "32428108"
+            },
+            {
+              "model_year": "2026+",
+              "drive": "RWD",
+              "oem_part_number": "32407055"
+            }
+          ],
+          "location": "UNVERIFIED_DO_NOT_SHOW_OEM_LOCATION"
+        },
+        {
+          "name": "IEM",
+          "replacement": "NOT_AUTHORIZED_WITHOUT_ADDITIONAL_EVIDENCE"
+        }
+      ],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "source_ids": [
+        "POL-TJ-37523-1-0"
+      ],
+      "source_verified_code_occurrence": true,
+      "source_verified_exact_definition": false,
+      "verified_for_sweden": false,
+      "review_status": "DEFERRED_REVIEW_PENDING_TECHNICAL_OEM_QA",
+      "ready_for_application": false
+    }
+  ],
+  "notes": [
+    "Detailed DTC meanings are not disclosed by these TJs; meanings must not be inferred from similar base codes.",
+    "Manufacturer's service decision is conditional, not a definition of the individual DTC.",
+    "All sources are US/CA issue; Swedish and European applicability remains unverified.",
+    "No original manufacturer images or copyrighted technical drawings copied.",
+    "No HV-work instructions provided outside manufacturer-authorized qualified workshops."
+  ]
+}
