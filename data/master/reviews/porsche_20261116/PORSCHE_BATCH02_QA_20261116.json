@@ -1,0 +1,74 @@
+{
+  "brand": "Porsche",
+  "batch": "20261116",
+  "status": "SOURCE_SCOPE_REVIEW_NOT_FINAL",
+  "model_years_market_note": "Porsche NAR bulletin scope; European and Swedish VIN-specific applicability not verified",
+  "repository_snapshot": {
+    "default_branch": "main",
+    "tree_sha_before_changes": "c31da1ee655bf20e96ceab2c496b5a04d0657e35",
+    "existing_porsche_files_on_main": 0,
+    "existing_review_system": "data/master/reviews",
+    "new_branch": "work/porsche-dtc-batch02-20261116"
+  },
+  "counts": {
+    "previous_rows": 310,
+    "previous_distinct_code_strings": 303,
+    "new_oem_bulletin_records": 25,
+    "duplicate_new_exact_raw_code_records_against_batch01": 0,
+    "total_records_in_separate_source_sets": 335,
+    "deferred_review_old": 310,
+    "deferred_review_new": 25,
+    "deferred_review_total": 335,
+    "verified_EU_Sweden_engine_vin_links": 0
+  },
+  "new_category_distribution": {
+    "P": 18,
+    "C": 5,
+    "B": 2,
+    "U": 0
+  },
+  "files_written_on_branch": [
+    "data/master/brands/porsche_batch02_source_scope_20261116.json",
+    "data/master/reviews/porsche_20261116/PORSCHE_PENDING_REVIEW_20261116.json"
+  ],
+  "legacy_originals": [
+    {
+      "name": "DTC_NEXIS_Porsche_Batch01.json",
+      "bytes": 934821,
+      "sha256": "461f85cb51bbba441003a0cc8425d3aa2bcc328c18ed93814644f905921343f7"
+    },
+    {
+      "name": "DTC_NEXIS_Porsche_Batch01.csv",
+      "bytes": 778526,
+      "sha256": "c1819571430947dee2f951d1b30c07a8b28325b984ff3608a84c10308e3ff094"
+    },
+    {
+      "name": "DTC_NEXIS_Porsche_Expansion_Review01.json",
+      "bytes": 1324511,
+      "sha256": "9f76ccf0262ebd47647787c4b5c88649229ac435af859269844581a26a2cd22f"
+    },
+    {
+      "name": "DTC_NEXIS_Porsche_vehicles_Review01.csv",
+      "bytes": 1247,
+      "sha256": "1747687d2b6e998d6d7e38fc99683586344d0a6dfde2bcec007ee5a2a76598bc"
+    },
+    {
+      "name": "DTC_NEXIS_Porsche_engines_Review01.csv",
+      "bytes": 695,
+      "sha256": "7e9ed2ec6a698f53bfbebaeb7cc6b02fdba5731584ea5f64234fb2174260e44f"
+    }
+  ],
+  "policy": "Previous raw originals preserved unchanged locally and not duplicated to public GitHub archive; no engine, ECU, wiring or numeric specifications fabricated; previous source documents may be copyright controlled; no image acquisition per current project policy.",
+  "review_notes": [
+    "Source-confirmed code context does not imply that diagnosis is complete.",
+    "No verified model/engine/ECU VIN applicability for Sweden or Europe.",
+    "Some old entries with the same five-character code refer to distinct source contexts and must not be collapsed.",
+    "P010600 can occur in Cayenne E-Hybrid and 918 Spyder with distinct diagnostic paths, both preserved.",
+    "Porsche bulletin specific notes must not be generalized to all cars or all code suffixes."
+  ],
+  "app_modified": false,
+  "update_feed_modified": false,
+  "stable_channel_modified": false,
+  "pr_created": false,
+  "merged": false
+}
