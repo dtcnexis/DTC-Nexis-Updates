@@ -1,0 +1,125 @@
+{
+  "title": "Mazda continuation review and source audit",
+  "date": "2026-11-16",
+  "brand": "Mazda",
+  "branch": "data/mazda-continuation-20261116",
+  "base": "main",
+  "release_status": "DRAFT_NO_MERGE_NO_APP_UPDATE",
+  "previous_repository": {
+    "path": "data/master/brands/mazda.json",
+    "records": 376,
+    "unique_codes": 376,
+    "blob_sha": "70a3e8c3291ce33ac866c9d3a4feda99b055f23b",
+    "modified": false
+  },
+  "local_available_preserved_as_local_reference_only": [
+    {
+      "filename": "Mazda_DTC_NEXIS_batch01.json",
+      "size": 1331727,
+      "sha256": "1bbda86f76746bc0c9df2ca7208f192b58227929a790926b7e4cf9f4c80469c5",
+      "rows": 384
+    },
+    {
+      "filename": "Mazda_DTC_NEXIS_batch01.csv",
+      "size": 1085473,
+      "sha256": "1049ec3b51ce4636ff52ff602498af9b43f781e3aad0d003f60351818d8d836f"
+    },
+    {
+      "filename": "Mazda_DTC_NEXIS_batch02_review.json",
+      "size": 416421,
+      "sha256": "128d0ce513d7e41503f0e6c14d50c329f66dfa31c0ff1911d9cb9033ff8a6328"
+    },
+    {
+      "filename": "Mazda_DTC_NEXIS_batch02_REVIEW_PACKAGE.zip",
+      "size": 5555793,
+      "sha256": "ee6960c90164e320dd452d62aeef230e14d1dbf38cf660f861b91ef69bf9e795"
+    }
+  ],
+  "local_artifact_limitation": "Previous full recovery ZIP and October DRAFT export not present in the current active /mnt/data runtime; not recreated or claimed reuploaded. Batch01 and Batch02 reference files remain locally available. Images are neither collected nor modified.",
+  "new_additions": {
+    "path": "data/master/brands/mazda_20261116_oem_tsb_additions.json",
+    "unique_code_count": 20,
+    "context_count": 22,
+    "definition_in_manufacturer_bulletin_contexts": 16,
+    "manufacturer_mention_only_contexts": 6,
+    "overlaps_with_old": 0,
+    "duplicate_record_ids": 0,
+    "unresolved_source_ids": 0,
+    "categories": {
+      "P": 2,
+      "B": 9,
+      "C": 3,
+      "U": 6
+    },
+    "coding_standard": "generic_vs_OEM classification not verified against SAE J2012DA; no assertion"
+  },
+  "review_queue": {
+    "path": "data/master/reviews/mazda_20261116/MAZDA_DEFERRED_REVIEW.json",
+    "legacy_pending": 376,
+    "new_contexts_pending": 22,
+    "manual_mirror_candidates": 14,
+    "other_candidate_only": 4,
+    "total_review_rows": 416,
+    "review_rows_do_not_mean_new_unique_codes": true
+  },
+  "combined_verified_as_documented_occurrence_not_full_diagnostic_validation": {
+    "existing_376_plus_new_unique_20": 396,
+    "additional_uncertified_candidates_only": 18
+  },
+  "verified_checks": [
+    "New record IDs unique",
+    "No overlap of new codes with existing Mazda master file",
+    "All referenced source IDs in additions are defined",
+    "Legacy Mazda file unchanged on working branch",
+    "No repository-wide manifests or update-feed files changed"
+  ],
+  "known_gaps": [
+    "Sweden/Europe applicability of US factory bulletins not established",
+    "No individual VIN verified",
+    "No full ECU wiring pinouts or electrical reference limits",
+    "No images generated or published",
+    "SA-041/26 is an overall applicability list, not proof that every listed code applies to every model year",
+    "Some B/C/U definitions listed as only ECU/system mentions and explicitly left null",
+    "Secondary airbag index candidates not included in manufacturer-backed import file",
+    "Original manufacturer-only text and graphics not duplicated beyond brief definitions and diagnostic summary"
+  ],
+  "sources": [
+    {
+      "id": "MSP66",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11026921-0001.pdf",
+      "date": "2025-12-17",
+      "scope": "CX-90 CX-70 M Hybrid Boost P0DAB"
+    },
+    {
+      "id": "TSB0500125",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11019089-0001.pdf",
+      "date": "2025-05-22",
+      "scope": "P073D:00 Mexico/Japan built CX-30 Mazda3 subject VINs"
+    },
+    {
+      "id": "SA02920",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10180787-0001.pdf",
+      "date": "2020-09-10",
+      "scope": "Mazda3 CX-30 2019-2020 TCU CMU networking"
+    },
+    {
+      "id": "SA01226",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11030631-0001.pdf",
+      "date": "2026-03-04",
+      "scope": "2024-2026 connected vehicle TCU CMU message"
+    },
+    {
+      "id": "SA04126",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11037899-0001.pdf",
+      "date": "2026-09-10",
+      "scope": "Aftermarket device interference DTC examples; do not infer broad DTC per-vehicle fitment"
+    }
+  ],
+  "safety": {
+    "github_main_modified": false,
+    "release_channel_modified": false,
+    "windows_app_modified": false,
+    "visuals_modified": false,
+    "pull_request_to_be_draft": true
+  }
+}
