@@ -1,0 +1,97 @@
+{
+  "schema": "dtcnexis-lexus-batch05-deferred-review-v1",
+  "brand": "Lexus",
+  "created_on": "2026-11-16",
+  "records_count": 4,
+  "previous_queue_33": "data/master/reviews/lexus_20261116_batch03/LEXUS_DEFERRED_REVIEW.json",
+  "previous_queue_2": "data/master/reviews/lexus_20261116_batch04/LEXUS_DEFERRED_INCREMENT.json",
+  "policy": "Source lead only, no export to production DTC. No unsupported VIN application or OEM imagery inferred.",
+  "records": [
+    {
+      "id": "LEX-B05-Q001",
+      "brand": "Lexus",
+      "code_original": "U131457",
+      "base_code": "U1314",
+      "failure_type": "57",
+      "ecu": "Multimedia Head Unit / exact diagnostic source ECU unverified",
+      "models": [
+        "NX 250",
+        "NX 350",
+        "NX 350h",
+        "NX 450h+",
+        "LX 600"
+      ],
+      "model_year": "2022 (bulletin eligibility, not confirmed DTC-by-VIN)",
+      "engine_code": null,
+      "market": "USA",
+      "source_title": "L-SB-0007-22 — Head Unit Software Update (Panasonic)",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10214327-9999.pdf",
+      "reason": "Bulletin lists intermittent U131457 as one potential software-update symptom but does NOT supply OEM DTC definition, trigger, reporting ECU or exact VIN-code applicability. Do not present it as verified code/meaning.",
+      "review_status": "deferred",
+      "auto_diagnosis": false
+    },
+    {
+      "id": "LEX-B05-Q002",
+      "brand": "Lexus",
+      "code_original": "B1497",
+      "base_code": "B1497",
+      "failure_type": null,
+      "ecu": "HVAC / air conditioning amplifier; exact reporting ECU verify with Techstream",
+      "models": [
+        "IS",
+        "RC",
+        "GS",
+        "GS F"
+      ],
+      "model_year": "2013–2017 bulletin family range",
+      "engine_code": null,
+      "market": "USA",
+      "source_title": "L-SB-0001-21 Rev1 — HVAC Servo Motor Malfunction",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10188921-9999.pdf",
+      "reason": "OEM bulletin mentions B1497 as HVAC servo-communication problem and expressly excludes it from this repair; no exact OEM long definition, equipment/VIN or diagnostic tree verified.",
+      "review_status": "deferred",
+      "auto_diagnosis": false
+    },
+    {
+      "id": "LEX-B05-Q003",
+      "brand": "Lexus",
+      "code_original": "B149A",
+      "base_code": "B149A",
+      "failure_type": null,
+      "ecu": "HVAC / air conditioning amplifier; exact reporting ECU verify with Techstream",
+      "models": [
+        "IS",
+        "RC",
+        "GS",
+        "GS F"
+      ],
+      "model_year": "2013–2017 bulletin family range",
+      "engine_code": null,
+      "market": "USA",
+      "source_title": "L-SB-0001-21 Rev1 — HVAC Servo Motor Malfunction",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10188921-9999.pdf",
+      "reason": "Bulletin mentions B149A as HVAC servo-communication problem and directs normal Repair Manual diagnostics, not cleaning/replacement; no OEM-specific complete definition/ECU scope verified.",
+      "review_status": "deferred",
+      "auto_diagnosis": false
+    },
+    {
+      "id": "LEX-B05-Q004",
+      "brand": "Lexus",
+      "code_original": "P0A80-123",
+      "base_code": "P0A80",
+      "inf_suffix": "123",
+      "ecu": "Hybrid battery control / Power Management Control ECU (requires OEM exact nomenclature)",
+      "models": [
+        "CT 200h"
+      ],
+      "model_year": "2011–2012 only in third-party manual leads, not approved OEM fitment",
+      "engine_code": "2ZR-FXE, vehicle-to-code application pending OEM VIN/repair-manual confirmation",
+      "market": "Europe (secondary mirror claims Europe manual)",
+      "source_title": "Secondary-hosted CT200h Europe RM1720E manual excerpt, P0A80-123",
+      "source_url": "https://jdmfsm.info/Auto/Japan/Lexus/CT/A10%20CT200h%20%282011-2022%29/CT200h%20Service%20Manual%20Europe%20%28RM1720E%29/rm1720e/repair2/html/contents/rm0000025ai024x.html",
+      "reason": "Original Lexus-Tech European edition, complete procedure, permission and model/VIN coverage not obtained. OEM source absent; do not approve high-voltage repair, numeric limits or image.",
+      "review_status": "deferred",
+      "auto_diagnosis": false
+    }
+  ]
+}
