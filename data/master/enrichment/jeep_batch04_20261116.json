@@ -1,0 +1,1817 @@
+{
+  "schema": "dtcnexis-jeep-batch04-enrichment-v1",
+  "brand": "Jeep",
+  "as_of": "2026-11-16",
+  "release_to_app": false,
+  "branch_only": true,
+  "baseline": {
+    "original_batch01_rows": 111,
+    "original_batch01_unique_codes": 108,
+    "expansion_v2_unique_codes": 115,
+    "batch03_new_codes": 7,
+    "baseline_after_batch03_unique_codes": 122
+  },
+  "batch04": {
+    "new_distinct_codes": 28,
+    "new_code_vehicle_relations": 28,
+    "new_relation_to_existing_code": 1,
+    "total_new_relations": 29,
+    "exact_definition_duplicates_excluded": 1,
+    "new_sources": 8,
+    "images_created": 0,
+    "review_required": true
+  },
+  "sources": [
+    {
+      "id": "JEEP_B04_S01",
+      "document": "FCA Service Bulletin 08-050-22 Rev. B",
+      "date": "2022-10-25",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10227756-9999.pdf",
+      "vehicle_scope": "2021 Jeep Grand Cherokee WL, NA/SA/EE/CH/IAP/MEA",
+      "origin": "manufacturer_bulletin",
+      "note": "VIN/RSU 22-198 checked separately; 2021 model year, not all WL engines"
+    },
+    {
+      "id": "JEEP_B04_S02",
+      "document": "Stellantis TSB 08-169-24 Rev. C",
+      "date": "2024-12-14",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11011927-0001.pdf",
+      "vehicle_scope": "2024 Jeep Grand Cherokee/Grand Cherokee L WL, built on or before 2024-05-13, NA/SA/EE/MEA",
+      "origin": "manufacturer_bulletin",
+      "note": "VIN/RSU 24-106 required for campaign eligibility"
+    },
+    {
+      "id": "JEEP_B04_S03",
+      "document": "Stellantis TSB 08-162-24",
+      "date": "2024-07-11",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11004888-0001.pdf",
+      "vehicle_scope": "2021-2023 Jeep Wrangler JL, engine ESG 6.4L and DHP 2.72:1 4WD, NA/MEA",
+      "origin": "manufacturer_bulletin",
+      "note": "May require actuator replacement only after bulletin reflash/functional test"
+    },
+    {
+      "id": "JEEP_B04_S04",
+      "document": "FCA STAR S2208000097",
+      "date": "2022-04",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10228000-9999.pdf",
+      "vehicle_scope": "Jeep Wrangler Pickup/Gladiator JT referenced in harness illustration, specific model years/engines not identified",
+      "origin": "manufacturer_star_technical_case",
+      "note": "Not conclusive diagnosis or warranty authorization"
+    },
+    {
+      "id": "JEEP_B04_S05",
+      "document": "FCA TSB 08-007-23",
+      "date": "2023-01-10",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10231774-9999.pdf",
+      "vehicle_scope": "2022 Jeep Compass MV, build 2022-01-18 through 2022-09-16, EE/MEA",
+      "origin": "manufacturer_bulletin",
+      "note": "RSU 23-006; requires VIN checking and ABS calibration after flash"
+    },
+    {
+      "id": "JEEP_B04_S06",
+      "document": "Stellantis STAR S1908000122 Rev. A",
+      "date": "2022-06",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10221440-9999.pdf",
+      "vehicle_scope": "Jeep Wrangler JL shown, specific model years/engines not established in STAR document",
+      "origin": "manufacturer_star_technical_case",
+      "note": "SRS safety precautions; not conclusive diagnosis"
+    },
+    {
+      "id": "JEEP_B04_S07",
+      "document": "Stellantis STAR S2408000084",
+      "date": "2024-08",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11005434-0001.pdf",
+      "vehicle_scope": "Jeep Wrangler JL drawing; linked NHTSA record 11005434 identifies 2024 Wrangler, engine unspecified",
+      "origin": "manufacturer_star_technical_case_and_NHTSA_record",
+      "note": "2024 year linked through NHTSA record not explicit in STAR text; secondary codes may be in another ECU"
+    },
+    {
+      "id": "JEEP_B04_S08",
+      "document": "NHTSA manufacturer-communication record 11005434",
+      "date": "2024-08-01",
+      "url": "https://dot.report/manufacturer-communications/11005434",
+      "vehicle_scope": "2024 Jeep Wrangler",
+      "origin": "NHTSA_record_secondary_index",
+      "note": "Used only to scope year for STAR case S2408000084"
+    }
+  ],
+  "code_definitions": [
+    {
+      "record_id": "jeep_b04_U1223_00",
+      "brand": "Jeep",
+      "code_original": "U1223-00",
+      "code_base": "U1223",
+      "failure_type_suffix": "00",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Network",
+      "ecu": "BCM",
+      "definition_en": "Lost Communication with Wireless Charging Pad Module",
+      "translation_ar": "فقدان الاتصال بوحدة لوحة الشحن اللاسلكي",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_BCM_WL2021",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_U121E_00",
+      "brand": "Jeep",
+      "code_original": "U121E-00",
+      "code_base": "U121E",
+      "failure_type_suffix": "00",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Network",
+      "ecu": "BCM",
+      "definition_en": "Lost Communication With Steering Wheel Cruise Control Switch",
+      "translation_ar": "فقدان الاتصال بمفتاح مثبت السرعة في عجلة القيادة",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_BCM_WL2021",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_U1207_00",
+      "brand": "Jeep",
+      "code_original": "U1207-00",
+      "code_base": "U1207",
+      "failure_type_suffix": "00",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Network",
+      "ecu": "BCM",
+      "definition_en": "Lost Communication With Terrain Switch Bank Module",
+      "translation_ar": "فقدان الاتصال بمجموعة مفاتيح اختيار التضاريس",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_BCM_WL2021",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_U1191_00",
+      "brand": "Jeep",
+      "code_original": "U1191-00",
+      "code_base": "U1191",
+      "failure_type_suffix": "00",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Network",
+      "ecu": "BCM",
+      "definition_en": "Lost Communication with Switch Bank Module 2",
+      "translation_ar": "فقدان الاتصال بوحدة مجموعة المفاتيح رقم 2",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_BCM_WL2021",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_U1153_00",
+      "brand": "Jeep",
+      "code_original": "U1153-00",
+      "code_base": "U1153",
+      "failure_type_suffix": "00",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Network",
+      "ecu": "BCM",
+      "definition_en": "Lost Communication With Windshield Wiper Smart Module",
+      "translation_ar": "فقدان الاتصال بوحدة مساحات الزجاج الذكية",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_BCM_WL2021",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_U114F_00",
+      "brand": "Jeep",
+      "code_original": "U114F-00",
+      "code_base": "U114F",
+      "failure_type_suffix": "00",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Network",
+      "ecu": "BCM",
+      "definition_en": "Lost Communication with LIN Overhead Console",
+      "translation_ar": "فقدان الاتصال بوحدة الكونسول العلوي عبر LIN",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_BCM_WL2021",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_U114D_87",
+      "brand": "Jeep",
+      "code_original": "U114D-87",
+      "code_base": "U114D",
+      "failure_type_suffix": "87",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Network",
+      "ecu": "BCM",
+      "definition_en": "Lost Communication with Hands Free Liftgate Module - Missing Message",
+      "translation_ar": "فقدان الاتصال بوحدة الباب الخلفي دون استخدام اليدين — رسالة مفقودة",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_BCM_WL2021",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_U113B_00",
+      "brand": "Jeep",
+      "code_original": "U113B-00",
+      "code_base": "U113B",
+      "failure_type_suffix": "00",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Network",
+      "ecu": "BCM",
+      "definition_en": "Lost Communication With Switch Bank Module",
+      "translation_ar": "فقدان الاتصال بوحدة مجموعة المفاتيح",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_BCM_WL2021",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_U112D_00",
+      "brand": "Jeep",
+      "code_original": "U112D-00",
+      "code_base": "U112D",
+      "failure_type_suffix": "00",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Network",
+      "ecu": "BCM",
+      "definition_en": "Lost Communication With EVIC Steering Wheel Switches",
+      "translation_ar": "فقدان الاتصال بمفاتيح عجلة القيادة الخاصة بشاشة معلومات السيارة EVIC",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_BCM_WL2021",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_U1125_00",
+      "brand": "Jeep",
+      "code_original": "U1125-00",
+      "code_base": "U1125",
+      "failure_type_suffix": "00",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Network",
+      "ecu": "BCM",
+      "definition_en": "Lost Communication With LIN ECU 5 (Ride Height Switch Module)",
+      "translation_ar": "فقدان الاتصال بوحدة LIN رقم 5 (مفاتيح ارتفاع السيارة)",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_BCM_WL2021",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_U1123_00",
+      "brand": "Jeep",
+      "code_original": "U1123-00",
+      "code_base": "U1123",
+      "failure_type_suffix": "00",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Network",
+      "ecu": "BCM",
+      "definition_en": "Lost Communication With LIN ECU 3 (Switch Bank Module Rear Right)",
+      "translation_ar": "فقدان الاتصال بوحدة LIN رقم 3 (مجموعة المفاتيح الخلفية اليمنى)",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_BCM_WL2021",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_U1122_00",
+      "brand": "Jeep",
+      "code_original": "U1122-00",
+      "code_base": "U1122",
+      "failure_type_suffix": "00",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Network",
+      "ecu": "BCM",
+      "definition_en": "Lost Communication With LIN ECU 2 (Switch Bank Module Rear Left)",
+      "translation_ar": "فقدان الاتصال بوحدة LIN رقم 2 (مجموعة المفاتيح الخلفية اليسرى)",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_BCM_WL2021",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_U1008_00",
+      "brand": "Jeep",
+      "code_original": "U1008-00",
+      "code_base": "U1008",
+      "failure_type_suffix": "00",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Network",
+      "ecu": "BCM",
+      "definition_en": "LIN 1 Bus Steering Column Control Module Electrical Diagnostic",
+      "translation_ar": "خلل كهربائي في ناقل LIN 1 الخاص بوحدة التحكم بعمود المقود",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_BCM_WL2021",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_U0231_00",
+      "brand": "Jeep",
+      "code_original": "U0231-00",
+      "code_base": "U0231",
+      "failure_type_suffix": "00",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Network",
+      "ecu": "BCM",
+      "definition_en": "Lost Communication With Rain Sensing Module",
+      "translation_ar": "فقدان الاتصال بوحدة حساس المطر",
+      "classification": "SAE_generic_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_BCM_WL2021",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_B1A10_00",
+      "brand": "Jeep",
+      "code_original": "B1A10-00",
+      "code_base": "B1A10",
+      "failure_type_suffix": "00",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Body",
+      "ecu": "RFHM",
+      "definition_en": "RKE FOB 1 Battery Low",
+      "translation_ar": "انخفاض جهد بطارية جهاز التحكم عن بُعد رقم 1",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S02"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_RFHM",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_B1A11_00",
+      "brand": "Jeep",
+      "code_original": "B1A11-00",
+      "code_base": "B1A11",
+      "failure_type_suffix": "00",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Body",
+      "ecu": "RFHM",
+      "definition_en": "RKE FOB 2 Battery Low",
+      "translation_ar": "انخفاض جهد بطارية جهاز التحكم عن بُعد رقم 2",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S02"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_RFHM",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_B23D7_14",
+      "brand": "Jeep",
+      "code_original": "B23D7-14",
+      "code_base": "B23D7",
+      "failure_type_suffix": "14",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Body",
+      "ecu": "RFHM",
+      "definition_en": "Gated Park Control - Circuit Short To Ground Or Open",
+      "translation_ar": "دائرة التحكم بقفل وضع الركن: قصر إلى الأرض أو دائرة مفتوحة",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S02"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_RFHM",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_C140E_00",
+      "brand": "Jeep",
+      "code_original": "C140E-00",
+      "code_base": "C140E",
+      "failure_type_suffix": "00",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Chassis",
+      "ecu": "DTCM",
+      "definition_en": "Transfer Case Motor Blocked",
+      "translation_ar": "تعذر حركة محرك تشغيل علبة التحويل",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S03"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_4WD_JL",
+      "unknown_engine": false,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_C1403_15",
+      "brand": "Jeep",
+      "code_original": "C1403-15",
+      "code_base": "C1403",
+      "failure_type_suffix": "15",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Chassis",
+      "ecu": "DTCM",
+      "definition_en": "Transfer Case Range Position Sensor - Circuit Short To Battery Or Open",
+      "translation_ar": "حساس موضع نطاق علبة التحويل: قصر إلى موجب البطارية أو دائرة مفتوحة",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S04"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_4WD_JT",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_C1403_92",
+      "brand": "Jeep",
+      "code_original": "C1403-92",
+      "code_base": "C1403",
+      "failure_type_suffix": "92",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Chassis",
+      "ecu": "DTCM",
+      "definition_en": "Transfer Case Range Position Sensor - Performance Or Incorrect Operation",
+      "translation_ar": "حساس موضع نطاق علبة التحويل: خلل في الأداء أو التشغيل",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S04"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_4WD_JT",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_C0061_29",
+      "brand": "Jeep",
+      "code_original": "C0061-29",
+      "code_base": "C0061",
+      "failure_type_suffix": "29",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Chassis",
+      "ecu": "ABS",
+      "definition_en": "Lateral Acceleration Sensor In Airbag System - Signal Invalid",
+      "translation_ar": "حساس التسارع الجانبي في نظام الوسائد الهوائية: إشارة غير صالحة",
+      "classification": "SAE_generic_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S05"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_ABS_MV",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_C0062_29",
+      "brand": "Jeep",
+      "code_original": "C0062-29",
+      "code_base": "C0062",
+      "failure_type_suffix": "29",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Chassis",
+      "ecu": "ABS",
+      "definition_en": "Longitudinal Acceleration Sensor - Invalid Signal",
+      "translation_ar": "حساس التسارع الطولي: إشارة غير صالحة",
+      "classification": "SAE_generic_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S05"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_ABS_MV",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_C0063_29",
+      "brand": "Jeep",
+      "code_original": "C0063-29",
+      "code_base": "C0063",
+      "failure_type_suffix": "29",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Chassis",
+      "ecu": "ABS",
+      "definition_en": "Yaw Rate Sensor - Invalid Signal",
+      "translation_ar": "حساس معدل الانعراج: إشارة غير صالحة",
+      "classification": "SAE_generic_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S05"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_ABS_MV",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_B2770_13",
+      "brand": "Jeep",
+      "code_original": "B2770-13",
+      "code_base": "B2770",
+      "failure_type_suffix": "13",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Body",
+      "ecu": "ORC/SRS (reported module not stated)",
+      "definition_en": "Passenger Airbag Disable Off Lamp - Circuit Open",
+      "translation_ar": "مصباح بيان تعطيل وسادة الراكب (OFF): دائرة مفتوحة",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S06"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_SRS_JL",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_C0508_00",
+      "brand": "Jeep",
+      "code_original": "C0508-00",
+      "code_base": "C0508",
+      "failure_type_suffix": "00",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Chassis/Network",
+      "ecu": "ABS for C codes; receiving ECU not stated for U codes",
+      "definition_en": "Right Front Speed Sensor Circuit 'A' - Circuit Low",
+      "translation_ar": "دائرة حساس سرعة العجلة الأمامية اليمنى A: إشارة منخفضة",
+      "classification": "SAE_generic_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S07"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_ABS_JL",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_C2227_00",
+      "brand": "Jeep",
+      "code_original": "C2227-00",
+      "code_base": "C2227",
+      "failure_type_suffix": "00",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Chassis/Network",
+      "ecu": "ABS for C codes; receiving ECU not stated for U codes",
+      "definition_en": "ABS Disabled",
+      "translation_ar": "نظام منع انغلاق المكابح معطل",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S07"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_ABS_JL",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_U140A",
+      "brand": "Jeep",
+      "code_original": "U140A",
+      "code_base": "U140A",
+      "failure_type_suffix": null,
+      "code_format": "DTC without suffix",
+      "category": "Chassis/Network",
+      "ecu": "ABS for C codes; receiving ECU not stated for U codes",
+      "definition_en": "Implausible Right Front Message",
+      "translation_ar": "استقبال رسالة غير منطقية من الجهة الأمامية اليمنى",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S07"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_ABS_JL",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    },
+    {
+      "record_id": "jeep_b04_U1412_00",
+      "brand": "Jeep",
+      "code_original": "U1412-00",
+      "code_base": "U1412",
+      "failure_type_suffix": "00",
+      "code_format": "DTC with Failure Type Byte",
+      "category": "Chassis/Network",
+      "ecu": "ABS for C codes; receiving ECU not stated for U codes",
+      "definition_en": "Implausible Vehicle Speed",
+      "translation_ar": "إشارة سرعة السيارة غير منطقية",
+      "classification": "manufacturer_range_candidate",
+      "classification_final": "غير مؤكد — تحقق فردي من SAE J2012DA",
+      "source_ids": [
+        "JEEP_B04_S07"
+      ],
+      "verification_status": "OEM_definition_and_vehicle_family_supported_VIN_not_checked",
+      "diagnostic_workflow_id": "JEEP_B04_W_ABS_JL",
+      "unknown_engine": true,
+      "parts": "Do not infer part failure from DTC",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": "غير موثق خارج النشرات المحددة"
+    }
+  ],
+  "dtc_applicability": [
+    {
+      "application_id": "jeep_b04_app_01",
+      "record_id": "jeep_b04_U1223_00",
+      "code": "U1223-00",
+      "brand": "Jeep",
+      "model": "Grand Cherokee",
+      "generation": "WL",
+      "model_years": [
+        2021
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": [
+        "NA",
+        "SA",
+        "EE",
+        "CH",
+        "IAP",
+        "MEA"
+      ],
+      "ecu": "BCM",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "qualification": "OEM TSB 08-050-22 Rev.B; VIN/RSU eligibility and exact vehicle trim required",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_02",
+      "record_id": "jeep_b04_U121E_00",
+      "code": "U121E-00",
+      "brand": "Jeep",
+      "model": "Grand Cherokee",
+      "generation": "WL",
+      "model_years": [
+        2021
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": [
+        "NA",
+        "SA",
+        "EE",
+        "CH",
+        "IAP",
+        "MEA"
+      ],
+      "ecu": "BCM",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "qualification": "OEM TSB 08-050-22 Rev.B; VIN/RSU eligibility and exact vehicle trim required",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_03",
+      "record_id": "jeep_b04_U1207_00",
+      "code": "U1207-00",
+      "brand": "Jeep",
+      "model": "Grand Cherokee",
+      "generation": "WL",
+      "model_years": [
+        2021
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": [
+        "NA",
+        "SA",
+        "EE",
+        "CH",
+        "IAP",
+        "MEA"
+      ],
+      "ecu": "BCM",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "qualification": "OEM TSB 08-050-22 Rev.B; VIN/RSU eligibility and exact vehicle trim required",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_04",
+      "record_id": "jeep_b04_U1191_00",
+      "code": "U1191-00",
+      "brand": "Jeep",
+      "model": "Grand Cherokee",
+      "generation": "WL",
+      "model_years": [
+        2021
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": [
+        "NA",
+        "SA",
+        "EE",
+        "CH",
+        "IAP",
+        "MEA"
+      ],
+      "ecu": "BCM",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "qualification": "OEM TSB 08-050-22 Rev.B; VIN/RSU eligibility and exact vehicle trim required",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_05",
+      "record_id": "jeep_b04_U1153_00",
+      "code": "U1153-00",
+      "brand": "Jeep",
+      "model": "Grand Cherokee",
+      "generation": "WL",
+      "model_years": [
+        2021
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": [
+        "NA",
+        "SA",
+        "EE",
+        "CH",
+        "IAP",
+        "MEA"
+      ],
+      "ecu": "BCM",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "qualification": "OEM TSB 08-050-22 Rev.B; VIN/RSU eligibility and exact vehicle trim required",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_06",
+      "record_id": "jeep_b04_U114F_00",
+      "code": "U114F-00",
+      "brand": "Jeep",
+      "model": "Grand Cherokee",
+      "generation": "WL",
+      "model_years": [
+        2021
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": [
+        "NA",
+        "SA",
+        "EE",
+        "CH",
+        "IAP",
+        "MEA"
+      ],
+      "ecu": "BCM",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "qualification": "OEM TSB 08-050-22 Rev.B; VIN/RSU eligibility and exact vehicle trim required",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_07",
+      "record_id": "jeep_b04_U114D_87",
+      "code": "U114D-87",
+      "brand": "Jeep",
+      "model": "Grand Cherokee",
+      "generation": "WL",
+      "model_years": [
+        2021
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": [
+        "NA",
+        "SA",
+        "EE",
+        "CH",
+        "IAP",
+        "MEA"
+      ],
+      "ecu": "BCM",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "qualification": "OEM TSB 08-050-22 Rev.B; VIN/RSU eligibility and exact vehicle trim required",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_08",
+      "record_id": "jeep_b04_U113B_00",
+      "code": "U113B-00",
+      "brand": "Jeep",
+      "model": "Grand Cherokee",
+      "generation": "WL",
+      "model_years": [
+        2021
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": [
+        "NA",
+        "SA",
+        "EE",
+        "CH",
+        "IAP",
+        "MEA"
+      ],
+      "ecu": "BCM",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "qualification": "OEM TSB 08-050-22 Rev.B; VIN/RSU eligibility and exact vehicle trim required",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_09",
+      "record_id": "jeep_b04_U112D_00",
+      "code": "U112D-00",
+      "brand": "Jeep",
+      "model": "Grand Cherokee",
+      "generation": "WL",
+      "model_years": [
+        2021
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": [
+        "NA",
+        "SA",
+        "EE",
+        "CH",
+        "IAP",
+        "MEA"
+      ],
+      "ecu": "BCM",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "qualification": "OEM TSB 08-050-22 Rev.B; VIN/RSU eligibility and exact vehicle trim required",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_10",
+      "record_id": "jeep_b04_U1125_00",
+      "code": "U1125-00",
+      "brand": "Jeep",
+      "model": "Grand Cherokee",
+      "generation": "WL",
+      "model_years": [
+        2021
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": [
+        "NA",
+        "SA",
+        "EE",
+        "CH",
+        "IAP",
+        "MEA"
+      ],
+      "ecu": "BCM",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "qualification": "OEM TSB 08-050-22 Rev.B; VIN/RSU eligibility and exact vehicle trim required",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_11",
+      "record_id": "jeep_b04_U1123_00",
+      "code": "U1123-00",
+      "brand": "Jeep",
+      "model": "Grand Cherokee",
+      "generation": "WL",
+      "model_years": [
+        2021
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": [
+        "NA",
+        "SA",
+        "EE",
+        "CH",
+        "IAP",
+        "MEA"
+      ],
+      "ecu": "BCM",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "qualification": "OEM TSB 08-050-22 Rev.B; VIN/RSU eligibility and exact vehicle trim required",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_12",
+      "record_id": "jeep_b04_U1122_00",
+      "code": "U1122-00",
+      "brand": "Jeep",
+      "model": "Grand Cherokee",
+      "generation": "WL",
+      "model_years": [
+        2021
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": [
+        "NA",
+        "SA",
+        "EE",
+        "CH",
+        "IAP",
+        "MEA"
+      ],
+      "ecu": "BCM",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "qualification": "OEM TSB 08-050-22 Rev.B; VIN/RSU eligibility and exact vehicle trim required",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_13",
+      "record_id": "jeep_b04_U1008_00",
+      "code": "U1008-00",
+      "brand": "Jeep",
+      "model": "Grand Cherokee",
+      "generation": "WL",
+      "model_years": [
+        2021
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": [
+        "NA",
+        "SA",
+        "EE",
+        "CH",
+        "IAP",
+        "MEA"
+      ],
+      "ecu": "BCM",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "qualification": "OEM TSB 08-050-22 Rev.B; VIN/RSU eligibility and exact vehicle trim required",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_14",
+      "record_id": "jeep_b04_U0231_00",
+      "code": "U0231-00",
+      "brand": "Jeep",
+      "model": "Grand Cherokee",
+      "generation": "WL",
+      "model_years": [
+        2021
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": [
+        "NA",
+        "SA",
+        "EE",
+        "CH",
+        "IAP",
+        "MEA"
+      ],
+      "ecu": "BCM",
+      "source_ids": [
+        "JEEP_B04_S01"
+      ],
+      "qualification": "OEM TSB 08-050-22 Rev.B; VIN/RSU eligibility and exact vehicle trim required",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_15",
+      "record_id": "jeep_b04_B1A10_00",
+      "code": "B1A10-00",
+      "brand": "Jeep",
+      "model": "Grand Cherokee / Grand Cherokee L",
+      "generation": "WL",
+      "model_years": [
+        2024
+      ],
+      "production_cutoff": "2024-05-13",
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": [
+        "NA",
+        "SA",
+        "EE",
+        "MEA"
+      ],
+      "ecu": "RFHM",
+      "source_ids": [
+        "JEEP_B04_S02"
+      ],
+      "qualification": "built on or before MDH 0513XX, RSU 24-106 VIN eligibility",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_16",
+      "record_id": "jeep_b04_B1A11_00",
+      "code": "B1A11-00",
+      "brand": "Jeep",
+      "model": "Grand Cherokee / Grand Cherokee L",
+      "generation": "WL",
+      "model_years": [
+        2024
+      ],
+      "production_cutoff": "2024-05-13",
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": [
+        "NA",
+        "SA",
+        "EE",
+        "MEA"
+      ],
+      "ecu": "RFHM",
+      "source_ids": [
+        "JEEP_B04_S02"
+      ],
+      "qualification": "built on or before MDH 0513XX, RSU 24-106 VIN eligibility",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_17",
+      "record_id": "jeep_b04_B23D7_14",
+      "code": "B23D7-14",
+      "brand": "Jeep",
+      "model": "Grand Cherokee / Grand Cherokee L",
+      "generation": "WL",
+      "model_years": [
+        2024
+      ],
+      "production_cutoff": "2024-05-13",
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": [
+        "NA",
+        "SA",
+        "EE",
+        "MEA"
+      ],
+      "ecu": "RFHM",
+      "source_ids": [
+        "JEEP_B04_S02"
+      ],
+      "qualification": "built on or before MDH 0513XX, RSU 24-106 VIN eligibility",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_18",
+      "record_id": "jeep_b04_C140E_00",
+      "code": "C140E-00",
+      "brand": "Jeep",
+      "model": "Wrangler",
+      "generation": "JL",
+      "model_years": [
+        2021,
+        2022,
+        2023
+      ],
+      "engine_code": "ESG",
+      "fuel": "Petrol 6.4L V8",
+      "gearbox": null,
+      "drivetrain": "DHP 2.72:1 Select-Trac Full Time 4WD",
+      "markets": [
+        "NA",
+        "MEA"
+      ],
+      "ecu": "DTCM",
+      "source_ids": [
+        "JEEP_B04_S03"
+      ],
+      "qualification": "Engine ESG and transfer case DHP both required",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_19",
+      "record_id": "jeep_b04_C1403_15",
+      "code": "C1403-15",
+      "brand": "Jeep",
+      "model": "Gladiator (Wrangler Pickup)",
+      "generation": "JT",
+      "model_years": null,
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": null,
+      "ecu": "DTCM",
+      "source_ids": [
+        "JEEP_B04_S04"
+      ],
+      "qualification": "STAR diagram explicitly JT but model year/engine/VIN not documented",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_20",
+      "record_id": "jeep_b04_C1403_92",
+      "code": "C1403-92",
+      "brand": "Jeep",
+      "model": "Gladiator (Wrangler Pickup)",
+      "generation": "JT",
+      "model_years": null,
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": null,
+      "ecu": "DTCM",
+      "source_ids": [
+        "JEEP_B04_S04"
+      ],
+      "qualification": "STAR diagram explicitly JT but model year/engine/VIN not documented",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_21",
+      "record_id": "jeep_b04_C0061_29",
+      "code": "C0061-29",
+      "brand": "Jeep",
+      "model": "Compass",
+      "generation": "MV",
+      "model_years": [
+        2022
+      ],
+      "build_start": "2022-01-18",
+      "build_end": "2022-09-16",
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": [
+        "EE",
+        "MEA"
+      ],
+      "ecu": "ABS",
+      "source_ids": [
+        "JEEP_B04_S05"
+      ],
+      "qualification": "MDH 0118XX-0916XX; RSU 23-006 VIN check",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_22",
+      "record_id": "jeep_b04_C0062_29",
+      "code": "C0062-29",
+      "brand": "Jeep",
+      "model": "Compass",
+      "generation": "MV",
+      "model_years": [
+        2022
+      ],
+      "build_start": "2022-01-18",
+      "build_end": "2022-09-16",
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": [
+        "EE",
+        "MEA"
+      ],
+      "ecu": "ABS",
+      "source_ids": [
+        "JEEP_B04_S05"
+      ],
+      "qualification": "MDH 0118XX-0916XX; RSU 23-006 VIN check",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_23",
+      "record_id": "jeep_b04_C0063_29",
+      "code": "C0063-29",
+      "brand": "Jeep",
+      "model": "Compass",
+      "generation": "MV",
+      "model_years": [
+        2022
+      ],
+      "build_start": "2022-01-18",
+      "build_end": "2022-09-16",
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": [
+        "EE",
+        "MEA"
+      ],
+      "ecu": "ABS",
+      "source_ids": [
+        "JEEP_B04_S05"
+      ],
+      "qualification": "MDH 0118XX-0916XX; RSU 23-006 VIN check",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_24",
+      "record_id": "jeep_b04_B2770_13",
+      "code": "B2770-13",
+      "brand": "Jeep",
+      "model": "Wrangler",
+      "generation": "JL",
+      "model_years": null,
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": null,
+      "ecu": "ORC/SRS (not explicitly printed)",
+      "source_ids": [
+        "JEEP_B04_S06"
+      ],
+      "qualification": "STAR diagram Wrangler JL; model year/engine not specified; no direct inflator testing",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_25",
+      "record_id": "jeep_b04_C0508_00",
+      "code": "C0508-00",
+      "brand": "Jeep",
+      "model": "Wrangler",
+      "generation": "JL",
+      "model_years": [
+        2024
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": null,
+      "ecu": "ABS",
+      "source_ids": [
+        "JEEP_B04_S07",
+        "JEEP_B04_S08"
+      ],
+      "qualification": "Model year indexed by NHTSA communication 11005434, not explicit in manufacturer STAR text",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_26",
+      "record_id": "jeep_b04_C2227_00",
+      "code": "C2227-00",
+      "brand": "Jeep",
+      "model": "Wrangler",
+      "generation": "JL",
+      "model_years": [
+        2024
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": null,
+      "ecu": "ABS",
+      "source_ids": [
+        "JEEP_B04_S07",
+        "JEEP_B04_S08"
+      ],
+      "qualification": "Model year indexed by NHTSA communication 11005434, not explicit in manufacturer STAR text",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_27",
+      "record_id": "jeep_b04_U140A",
+      "code": "U140A",
+      "brand": "Jeep",
+      "model": "Wrangler",
+      "generation": "JL",
+      "model_years": [
+        2024
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": null,
+      "ecu": "receiving ECU not stated",
+      "source_ids": [
+        "JEEP_B04_S07",
+        "JEEP_B04_S08"
+      ],
+      "qualification": "Model year indexed by NHTSA communication 11005434, not explicit in manufacturer STAR text",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_28",
+      "record_id": "jeep_b04_U1412_00",
+      "code": "U1412-00",
+      "brand": "Jeep",
+      "model": "Wrangler",
+      "generation": "JL",
+      "model_years": [
+        2024
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": null,
+      "ecu": "receiving ECU not stated",
+      "source_ids": [
+        "JEEP_B04_S07",
+        "JEEP_B04_S08"
+      ],
+      "qualification": "Model year indexed by NHTSA communication 11005434, not explicit in manufacturer STAR text",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    },
+    {
+      "application_id": "jeep_b04_app_29",
+      "record_id": "existing_V2_code_U0415-00",
+      "code": "U0415-00",
+      "brand": "Jeep",
+      "model": "Wrangler",
+      "generation": "JL",
+      "model_years": [
+        2024
+      ],
+      "engine_code": null,
+      "fuel": null,
+      "gearbox": null,
+      "markets": null,
+      "ecu": "receiving ECU not stated",
+      "source_ids": [
+        "JEEP_B04_S07",
+        "JEEP_B04_S08"
+      ],
+      "qualification": "existing V2 code — new Jeep JL 2024 manufacturer STAR relation only, no duplicate definition",
+      "vin_confirmed": false,
+      "approved_for_release": false
+    }
+  ],
+  "diagnostic_workflows": [
+    {
+      "id": "JEEP_B04_W_BCM_WL2021",
+      "codes": [
+        "U1223-00",
+        "U121E-00",
+        "U1207-00",
+        "U1191-00",
+        "U1153-00",
+        "U114F-00",
+        "U114D-87",
+        "U113B-00",
+        "U112D-00",
+        "U1125-00",
+        "U1123-00",
+        "U1122-00",
+        "U1008-00",
+        "U0231-00"
+      ],
+      "source_id": "JEEP_B04_S01",
+      "steps_ar": [
+        "احفظ تقرير DTC لكل وحدات السيارة وحالة البطارية وأعراض LIN",
+        "تحقق من موديل WL لعام 2021 وسوق السيارة والأكواد الأخرى قبل تحديث BCM",
+        "افحص حالة معايرة BCM وأهلية VIN للنشرة؛ تأكد من التوصيلات قبل استبدال أي مفاتيح",
+        "إذا انطبقت النشرة، حدّث BCM بواسطة wiTECH واتبع تعليمات الشركة مع 13.2–13.5 فولت خلال الفلاش فقط",
+        "نفذ Restore Vehicle Configuration، دع الوحدات تدخل Sleep نحو دقيقة ثم أعد الفحص"
+      ],
+      "live_data": [
+        {
+          "en": "BCM DTC Status",
+          "ar": "حالة رموز BCM",
+          "threshold": "غير مؤكد"
+        },
+        {
+          "en": "LIN Communication Status",
+          "ar": "حالة اتصال LIN",
+          "threshold": "غير مؤكد"
+        }
+      ],
+      "safety": "Do not flash without approved power support and correct VIN configuration"
+    },
+    {
+      "id": "JEEP_B04_W_RFHM",
+      "codes": [
+        "B1A10-00",
+        "B1A11-00",
+        "B23D7-14"
+      ],
+      "source_id": "JEEP_B04_S02",
+      "steps_ar": [
+        "تحقق من تاريخ الإنتاج وأهلية VIN ثم امسح RFHM بواسطة wiTECH",
+        "تحقق من مفتاح RKE والبطارية الفعلية ومشكلات KIN قبل استبدال أي وحدة",
+        "راجع معايرة RFHM الحالية؛ طبّق تحديث البرمجة إذا انطبق شرط النشرة",
+        "امسح الأكواد وأعد اختبار تشغيل السيارة والمفتاح والدخول غير اليدوي"
+      ],
+      "live_data": [
+        {
+          "en": "RFHM DTC Status",
+          "ar": "حالة أعطال RFHM",
+          "threshold": "غير مؤكد"
+        },
+        {
+          "en": "RKE FOB Battery Status",
+          "ar": "حالة بطارية المفتاح",
+          "threshold": "غير مؤكد"
+        }
+      ],
+      "safety": "Do not infer that code B1A10/B1A11 always means software; physically confirm key condition"
+    },
+    {
+      "id": "JEEP_B04_W_4WD_JL",
+      "codes": [
+        "C140E-00"
+      ],
+      "source_id": "JEEP_B04_S03",
+      "steps_ar": [
+        "تحقق من JL 2021–2023 مع محرك ESG وعلبة نقل DHP",
+        "سجل حالة C140E-00 والأعراض والأكواد الأخرى وبيانات DTCM",
+        "افحص مستوى البرمجة وحدّث DTCM فقط إذا انطبقت النشرة",
+        "جرّب انتقالات علبة التحويل وفق الشروط الآمنة في دليل المصنع",
+        "إذا استمر C140E-00 وفشل اختبار الوظيفة اتبع مسار فحص/استبدال مشغل علبة التحويل كما في النشرة"
+      ],
+      "live_data": [
+        {
+          "en": "Transfer Case Requested Mode",
+          "ar": "وضع علبة التحويل المطلوب",
+          "threshold": "غير مؤكد"
+        },
+        {
+          "en": "Transfer Case Actual Mode",
+          "ar": "وضع علبة التحويل الفعلي",
+          "threshold": "غير مؤكد"
+        }
+      ],
+      "part_number_reference_only": "68391530AA; verify VIN and actual gearcase before ordering"
+    },
+    {
+      "id": "JEEP_B04_W_4WD_JT",
+      "codes": [
+        "C1403-15",
+        "C1403-92"
+      ],
+      "source_id": "JEEP_B04_S04",
+      "steps_ar": [
+        "وثق حالة DTCM والجيل وVIN قبل الإجراء",
+        "افحص تثبيت قفل موصل C1 الأزرق بوحدة DTCM",
+        "افحص طرفيات الموصل XY230A ومسار دائرة T314 من انتشار الأطراف أو دفعها إلى الداخل",
+        "لا تستنتج قيمة قياس كهربائي أو رقم دبوس غير مثبت من الرسم"
+      ],
+      "live_data": [
+        {
+          "en": "Transfer Case Range Position",
+          "ar": "موضع نطاق علبة التحويل",
+          "threshold": "غير مؤكد"
+        }
+      ],
+      "pinout": "T314 circuit and XY230A / C1 connector names only; no invented terminal number"
+    },
+    {
+      "id": "JEEP_B04_W_ABS_MV",
+      "codes": [
+        "C0061-29",
+        "C0062-29",
+        "C0063-29"
+      ],
+      "source_id": "JEEP_B04_S05",
+      "steps_ar": [
+        "تحقق من Compass MV موديل 2022 ونطاق MDH 0118XX–0916XX وسوق EE/MEA",
+        "اقرأ الأكواد النشطة والمحفوظة وأعراض ESC/EPB، واستبعد أعطالاً أخرى",
+        "افحص مستوى معايرة ABS وVIN لدى Stellantis",
+        "حدّث ABS عند انطباق النشرة مع دعم كهربائي 13.2–13.5 فولت خلال الفلاش فقط",
+        "بعد الفلاش نفذ ABS Initialization ثم Brake Pedal Calibration من Misc Functions بواسطة wiTECH، وامسح الأكواد"
+      ],
+      "live_data": [
+        {
+          "en": "Lateral Acceleration Sensor",
+          "ar": "حساس التسارع الجانبي",
+          "threshold": "غير مؤكد"
+        },
+        {
+          "en": "Yaw Rate",
+          "ar": "معدل الانعراج",
+          "threshold": "غير مؤكد"
+        }
+      ],
+      "safety": "Do not replace airbag or yaw-rate sensor from this bulletin alone"
+    },
+    {
+      "id": "JEEP_B04_W_SRS_JL",
+      "codes": [
+        "B2770-13"
+      ],
+      "source_id": "JEEP_B04_S06",
+      "steps_ar": [
+        "تعامل مع إنذار SRS كمسألة سلامة ولا تختبر المكونات النارية بمقياس عادي",
+        "تأكد من DTC B2770-13 ثم افحص مسار الضفيرة قرب مقبض العمود A والموصل XY321A وأسفل العمود قرب الحاجز",
+        "عالج التلف الظاهر وفق تعليمات خدمة SRS ثم أعد قراءة DTC"
+      ],
+      "live_data": [
+        {
+          "en": "SRS Fault Status",
+          "ar": "حالة عطل SRS",
+          "threshold": "غير مؤكد"
+        }
+      ],
+      "safety": "SRS trained technician only; do not probe inflator circuits"
+    },
+    {
+      "id": "JEEP_B04_W_ABS_JL",
+      "codes": [
+        "C0508-00",
+        "C2227-00",
+        "U140A",
+        "U0415-00",
+        "U1412-00"
+      ],
+      "source_id": "JEEP_B04_S07",
+      "steps_ar": [
+        "عند إنذار ABS بعد خدمة حديثة سجل جميع الأكواد خصوصاً C0508-00",
+        "افحص مسار ضفيرة حساس العجلة الأمامية اليمنى للضغط/الانحشار قرب العجلة",
+        "إذا تأكد انحشار الضفيرة، صحّح مسارها وفق وثيقة خدمة السيارة؛ لا تُبدل الحساس بناء على الكود وحده",
+        "أعد فحص قراءات سرعة العجلات وحالة ABS بعد الإصلاح؛ قد تكون بقية الأكواد ثانوية"
+      ],
+      "live_data": [
+        {
+          "en": "Right Front Wheel Speed",
+          "ar": "سرعة العجلة الأمامية اليمنى",
+          "threshold": "غير مؤكد"
+        },
+        {
+          "en": "Other Wheel Speeds",
+          "ar": "سرعات العجلات الأخرى",
+          "threshold": "غير مؤكد"
+        }
+      ],
+      "safety": "Lack of ABS operation is a safety concern; follow service instructions before road test"
+    }
+  ],
+  "methodology": [
+    "Definition strings are paraphrased only where manufacturer has given exact terms; no paywalled SAE codebook copied.",
+    "Engine remains null when bulletin does not state engine; EE does not prove Swedish-VIN applicability.",
+    "One pre-existing V2 U0415-00 definition is referenced for its new Wrangler relation, never duplicated.",
+    "No image collection or generation under DTC NEXIS image-freeze policy.",
+    "Diagnostic actions are conditional on OEM TSB, VIN, ECU calibration and exact vehicle variant.",
+    "Prefix-derived code class is not individually verified SAE J2012DA designation."
+  ],
+  "open_items": [
+    "VIN/RSU applicability",
+    "Exact engine/ECU in unspecified bulletins",
+    "Live Data numeric thresholds and terminal pinouts",
+    "SRS technician safety procedures",
+    "SAE J2012DA per-code classification"
+  ]
+}
