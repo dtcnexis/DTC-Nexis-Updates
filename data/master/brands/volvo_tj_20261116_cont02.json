@@ -1,0 +1,3118 @@
+{
+  "schema": "DTC_NEXIS_VOLVO_TJ_SUPPLEMENT_V1",
+  "brand": "Volvo",
+  "batch": "20261116_cont02",
+  "date": "2026-11-16",
+  "primary_base_path": "data/master/brands/volvo.json",
+  "preceding_verified_catalog_rows": 74,
+  "unique_new_codes": 33,
+  "previously_held_codes_with_new_sources": [
+    {
+      "existing_code": "ECM-P061C48",
+      "journal": "TJ 37618.3.8",
+      "url": "https://oemdtc.com/tsb/11039022/",
+      "why": "updated VVT/camshaft flowchart; do not re-count code"
+    },
+    {
+      "existing_code": "ECM-P017100",
+      "journal": "TJ 37710.2.2",
+      "url": "https://oemdtc.com/tsb/11037303/",
+      "why": "non-return valve inspection in original TJ; do not re-count code"
+    },
+    {
+      "existing_code": "ECM-P030098",
+      "journal": "TJ 37935.2.0",
+      "url": "https://oemdtc.com/tsb/11037972/",
+      "why": "new context BM1KERS 2025-27 with different software version; preserve previous context"
+    },
+    {
+      "existing_code": "ECM-P030092",
+      "journal": "TJ 37935.2.0",
+      "url": "https://oemdtc.com/tsb/11037972/",
+      "why": "new context BM1KERS 2025-27 with different software version; preserve previous context"
+    }
+  ],
+  "source_documents": {
+    "CAM": {
+      "issuer": "Volvo Car USA LLC",
+      "journal": "TJ 37618.3.8",
+      "status_date": "2026-09-30",
+      "url": "https://oemdtc.com/tsb/11039022/",
+      "title": "Check Engine Light with Camshaft or VVT Pulley DTCs",
+      "evidence_access": "Volvo journal reproduced by technical bulletin index; original older 3.0 at https://static.oemdtc.com/NHTSA-PDFs/MC-11032668-0001.pdf",
+      "markets": [
+        "US",
+        "Canada"
+      ]
+    },
+    "CCV": {
+      "issuer": "Volvo Car USA LLC",
+      "journal": "TJ 37710.2.2",
+      "status_date": "2026-07-13",
+      "url": "https://oemdtc.com/tsb/11037303/",
+      "title": "Crankcase ventilation CEL P2A0000 P050700 P250F68 P017100",
+      "evidence_access": "Registration 2.2 whereas reproduced TJ body is 2.1; compare latest VIDA",
+      "markets": [
+        "US",
+        "Canada"
+      ]
+    },
+    "ISGM": {
+      "issuer": "Volvo Car USA LLC",
+      "journal": "TJ 37103.3.0",
+      "status_date": "2025-11-13",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11031098-0001.pdf",
+      "title": "48V Charging Error / ISGM DTCs",
+      "evidence_access": "Volvo primary PDF hosted by NHTSA",
+      "markets": [
+        "US",
+        "Canada"
+      ]
+    },
+    "EVAP": {
+      "issuer": "Volvo Car USA LLC",
+      "journal": "TJ 37236.1.0",
+      "status_date": "2025-02-25",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11016009-0001.pdf",
+      "title": "CEL and ECM-P04F000",
+      "evidence_access": "Volvo primary PDF hosted by NHTSA",
+      "markets": [
+        "US",
+        "Canada"
+      ]
+    },
+    "O2": {
+      "issuer": "Volvo Car USA LLC",
+      "journal": "TJ 37166.3.0",
+      "status_date": "2025-02-27",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11016015-0001.pdf",
+      "title": "CEL and ECM-P013926",
+      "evidence_access": "Volvo primary PDF hosted by NHTSA",
+      "markets": [
+        "US",
+        "Canada"
+      ]
+    },
+    "OIL": {
+      "issuer": "Volvo Car USA LLC",
+      "journal": "TJ 37316.1.0",
+      "status_date": "2025-03-19",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11016907-0001.pdf",
+      "title": "ECM-P06DE00 with no symptoms",
+      "evidence_access": "Volvo primary PDF hosted by NHTSA; later revisions not checked",
+      "markets": [
+        "US",
+        "Canada"
+      ]
+    },
+    "BECM": {
+      "issuer": "Volvo Car USA LLC",
+      "journal": "TJ 37373.8.0",
+      "status_date": "2026-07-27",
+      "url": "https://oemdtc.com/tsb/11036248/",
+      "title": "DIM Drive System Service Required / BECM-P0C7800",
+      "evidence_access": "Volvo journal reproduced by technical bulletin index; newer TJ37373.9.0 exists",
+      "markets": [
+        "US",
+        "Canada"
+      ]
+    },
+    "ECT": {
+      "issuer": "Volvo Car USA LLC",
+      "journal": "TJ 37288.4.0",
+      "status_date": "2026-02-20",
+      "url": "https://oemdtc.com/tsb/11029182/",
+      "title": "MIL with ECM-P012807 and ECM-P01287A",
+      "evidence_access": "Volvo journal reproduced by technical bulletin index; primary earlier TJ37288.2.0 at https://static.nhtsa.gov/odi/tsbs/2025/MC-11016894-0001.pdf",
+      "markets": [
+        "US",
+        "Canada"
+      ]
+    },
+    "IEM": {
+      "issuer": "Volvo Car USA LLC",
+      "journal": "TJ 37495.2.0",
+      "status_date": "2026-03-16",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11031107-0001.pdf",
+      "title": "Propulsion message IEM-P060700 and/or IEM-P061A00",
+      "evidence_access": "Volvo primary PDF hosted by NHTSA",
+      "markets": [
+        "US",
+        "Canada"
+      ]
+    },
+    "CDD": {
+      "issuer": "Volvo Car USA LLC",
+      "journal": "TJ 37771.2.0",
+      "status_date": "2026-05-14",
+      "url": "https://oemdtc.com/tsb/11032677/",
+      "title": "CDD condition paired BECM-P2C871A and VCU1-P128300",
+      "evidence_access": "Volvo journal reproduced by technical bulletin index",
+      "markets": [
+        "US",
+        "Canada"
+      ]
+    },
+    "MISFIRE": {
+      "issuer": "Volvo Car USA LLC",
+      "journal": "TJ 37935.2.0",
+      "status_date": "2026-09-23",
+      "url": "https://oemdtc.com/tsb/11037972/",
+      "title": "Reduced Performance / hesitation / misfire",
+      "evidence_access": "Volvo journal reproduced by technical bulletin index",
+      "markets": [
+        "US",
+        "Canada"
+      ]
+    }
+  },
+  "applicability_tables": {
+    "CAM": [
+      {
+        "vehicle_type": "224",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2022-2025",
+        "structure_weeks_as_documented": "202122-202425",
+        "plant": "70",
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "225",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2023-2023",
+        "structure_weeks_as_documented": "202017-202313",
+        "plant": "21",
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "225",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2023-2023",
+        "structure_weeks_as_documented": "202222-202316",
+        "plant": "22",
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "227",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2023-2024",
+        "structure_weeks_as_documented": "202217-202416",
+        "plant": "21",
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "227",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2023-2026",
+        "structure_weeks_as_documented": "202222-202517",
+        "plant": "22",
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "236",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2022-2026",
+        "structure_weeks_as_documented": "202122-202543",
+        "plant": "21",
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "238",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2022-2025",
+        "structure_weeks_as_documented": "202122-202516",
+        "plant": "35",
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "238",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2026-2026",
+        "structure_weeks_as_documented": "202517-202533",
+        "plant": "35",
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "246",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2022-2023",
+        "structure_weeks_as_documented": "202122-202316",
+        "plant": "21",
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "246",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2022-2023",
+        "structure_weeks_as_documented": "202122-202316",
+        "plant": "36",
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "246",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2022-2024",
+        "structure_weeks_as_documented": "202122-202317",
+        "plant": "21",
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "246",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2022-2024",
+        "structure_weeks_as_documented": "202122-202416",
+        "plant": "36",
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "246",
+        "engine_designation": "M1",
+        "engine_description": "BM1KERS",
+        "model_years_as_documented": "2025-2026",
+        "structure_weeks_as_documented": "202416-202543",
+        "plant": "21",
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "246",
+        "engine_designation": "M1",
+        "engine_description": "BM1KERS",
+        "model_years_as_documented": "2025-2025",
+        "structure_weeks_as_documented": "202417-202516",
+        "plant": "36",
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "256",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2023-2026",
+        "structure_weeks_as_documented": "202222-202543",
+        "plant": "21",
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "256",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2023-2024",
+        "structure_weeks_as_documented": "202217-202416",
+        "plant": "21",
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "256",
+        "engine_designation": "M1",
+        "engine_description": "BM1KERS",
+        "model_years_as_documented": "2025-2026",
+        "structure_weeks_as_documented": "202407-202543",
+        "plant": "21",
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "536",
+        "engine_designation": "K9",
+        "engine_description": "BK9KERS",
+        "model_years_as_documented": "2023-2026",
+        "structure_weeks_as_documented": "202222-202343",
+        "plant": "22",
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "536",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2023-2026",
+        "structure_weeks_as_documented": "202222-202543",
+        "plant": "22",
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      }
+    ],
+    "CCV": [
+      {
+        "vehicle_type": "224",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2022-9999",
+        "structure_weeks_as_documented": "202122-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "225",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2023-9999",
+        "structure_weeks_as_documented": "202222-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "227",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2023-9999",
+        "structure_weeks_as_documented": "202222-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "236",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2022-9999",
+        "structure_weeks_as_documented": "202122-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "238",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2022-9999",
+        "structure_weeks_as_documented": "202123-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "246",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2022-9999",
+        "structure_weeks_as_documented": "202122-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "246",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2022-9999",
+        "structure_weeks_as_documented": "202122-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "246",
+        "engine_designation": "M1",
+        "engine_description": "BM1KERS",
+        "model_years_as_documented": "2025-2026",
+        "structure_weeks_as_documented": "202417-202525",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "256",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2023-9999",
+        "structure_weeks_as_documented": "202222-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "256",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2023-9999",
+        "structure_weeks_as_documented": "202222-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "256",
+        "engine_designation": "M1",
+        "engine_description": "BM1KERS",
+        "model_years_as_documented": "2025-2026",
+        "structure_weeks_as_documented": "202417-202525",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "536",
+        "engine_designation": "K9",
+        "engine_description": "BK9KERS",
+        "model_years_as_documented": "2023-9999",
+        "structure_weeks_as_documented": "202222-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "536",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2023-9999",
+        "structure_weeks_as_documented": "202222-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      }
+    ],
+    "ISGM": [
+      {
+        "vehicle_type": "224",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2024-9999",
+        "structure_weeks_as_documented": "202317-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "227",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2024-9999",
+        "structure_weeks_as_documented": "202317-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "236",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2024-9999",
+        "structure_weeks_as_documented": "202317-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "238",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2024-9999",
+        "structure_weeks_as_documented": "202317-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "246",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2024-9999",
+        "structure_weeks_as_documented": "202317-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "246",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2024-9999",
+        "structure_weeks_as_documented": "202317-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "246",
+        "engine_designation": "M1",
+        "engine_description": "BM1KERS",
+        "model_years_as_documented": "2025-9999",
+        "structure_weeks_as_documented": "202417-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "256",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2024-9999",
+        "structure_weeks_as_documented": "202317-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "256",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2024-9999",
+        "structure_weeks_as_documented": "202317-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "256",
+        "engine_designation": "M1",
+        "engine_description": "BM1KERS",
+        "model_years_as_documented": "2025-9999",
+        "structure_weeks_as_documented": "202417-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "536",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2024-9999",
+        "structure_weeks_as_documented": "202317-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      }
+    ],
+    "EVAP": [
+      {
+        "vehicle_type": "224",
+        "engine_designation": "H6",
+        "engine_description": "BH6PHEV",
+        "model_years_as_documented": "2022-2025",
+        "structure_weeks_as_documented": "202147-202425",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "224",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2022-2025",
+        "structure_weeks_as_documented": "202017-202425",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "225",
+        "engine_designation": "H6",
+        "engine_description": "BH6PHEV",
+        "model_years_as_documented": "2022-2025",
+        "structure_weeks_as_documented": "202147-202426",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "227",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2023-2025",
+        "structure_weeks_as_documented": "202017-202508",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "246",
+        "engine_designation": "H6",
+        "engine_description": "BH6PHEV",
+        "model_years_as_documented": "2022-2025",
+        "structure_weeks_as_documented": "202147-202511",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "246",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2022-2025",
+        "structure_weeks_as_documented": "202022-202504",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "256",
+        "engine_designation": "H6",
+        "engine_description": "BH6PHEV",
+        "model_years_as_documented": "2022-2025",
+        "structure_weeks_as_documented": "202147-202508",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "256",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2023-2025",
+        "structure_weeks_as_documented": "202017-202444",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "536",
+        "engine_designation": "K9",
+        "engine_description": "BK9KERS",
+        "model_years_as_documented": "2023-2024",
+        "structure_weeks_as_documented": "202017-202416",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "536",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2023-2024",
+        "structure_weeks_as_documented": "202017-202416",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      }
+    ],
+    "O2": [
+      {
+        "vehicle_type": "224",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2024-9999",
+        "structure_weeks_as_documented": "202317-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "227",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2024-9999",
+        "structure_weeks_as_documented": "202317-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "246",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2024-9999",
+        "structure_weeks_as_documented": "202317-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "256",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2024-9999",
+        "structure_weeks_as_documented": "202317-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "536",
+        "engine_designation": "K9",
+        "engine_description": "BK9KERS",
+        "model_years_as_documented": "2023-9999",
+        "structure_weeks_as_documented": "202317-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "536",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2024-9999",
+        "structure_weeks_as_documented": "202317-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      }
+    ],
+    "OIL": [
+      {
+        "vehicle_type": "224",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2022-9999",
+        "structure_weeks_as_documented": "202022-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "227",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2023-9999",
+        "structure_weeks_as_documented": "202022-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "236",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2022-9999",
+        "structure_weeks_as_documented": "202122-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "238",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2022-9999",
+        "structure_weeks_as_documented": "202046-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "246",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2022-9999",
+        "structure_weeks_as_documented": "202122-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "246",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2022-9999",
+        "structure_weeks_as_documented": "202122-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "246",
+        "engine_designation": "M1",
+        "engine_description": "BM1KERS",
+        "model_years_as_documented": "2025-9999",
+        "structure_weeks_as_documented": "202417-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "256",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2023-9999",
+        "structure_weeks_as_documented": "202222-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "256",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2023-9999",
+        "structure_weeks_as_documented": "202222-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "256",
+        "engine_designation": "M1",
+        "engine_description": "BM1KERS",
+        "model_years_as_documented": "2025-9999",
+        "structure_weeks_as_documented": "202417-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "536",
+        "engine_designation": "K9",
+        "engine_description": "BK9KERS",
+        "model_years_as_documented": "2023-9999",
+        "structure_weeks_as_documented": "202220-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      },
+      {
+        "vehicle_type": "536",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2023-9999",
+        "structure_weeks_as_documented": "202220-999952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      }
+    ],
+    "BECM": [
+      {
+        "vehicle_type": "224",
+        "engine_designation": "H6",
+        "engine_description": "BH6PHEV",
+        "model_years_as_documented": "2022-2025",
+        "structure_weeks_as_documented": "202147-202426",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "234",
+        "engine_designation": "H6",
+        "engine_description": "BH6PHEV",
+        "model_years_as_documented": "2022-2024",
+        "structure_weeks_as_documented": "202147-202349",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "225",
+        "engine_designation": "H6",
+        "engine_description": "BH6PHEV",
+        "model_years_as_documented": "2022-2025",
+        "structure_weeks_as_documented": "202147-202425",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "238",
+        "engine_designation": "H6",
+        "engine_description": "BH6PHEV",
+        "model_years_as_documented": "2022-2026",
+        "structure_weeks_as_documented": "202147-202517",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "246",
+        "engine_designation": "H6",
+        "engine_description": "BH6PHEV",
+        "model_years_as_documented": "2022-2026",
+        "structure_weeks_as_documented": "202147-202523",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "256",
+        "engine_designation": "H6",
+        "engine_description": "BH6PHEV",
+        "model_years_as_documented": "2022-2026",
+        "structure_weeks_as_documented": "202147-202522",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      }
+    ],
+    "ECT": [
+      {
+        "vehicle_type": "224",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2022-2025",
+        "structure_weeks_as_documented": "202046-202507",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "227",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2023-2025",
+        "structure_weeks_as_documented": "202046-202507",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "236",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2022-2023",
+        "structure_weeks_as_documented": "202122-202222",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "238",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2021-2023",
+        "structure_weeks_as_documented": "202046-202222",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "246",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2021-2023",
+        "structure_weeks_as_documented": "202046-202222",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "246",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2021-2024",
+        "structure_weeks_as_documented": "202046-202417",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "256",
+        "engine_designation": "06",
+        "engine_description": "B06KERS",
+        "model_years_as_documented": "2021-2023",
+        "structure_weeks_as_documented": "202046-202222",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "256",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2021-2024",
+        "structure_weeks_as_documented": "202046-202417",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "536",
+        "engine_designation": "K9",
+        "engine_description": "BK9KERS",
+        "model_years_as_documented": "2021-2025",
+        "structure_weeks_as_documented": "202020-202507",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "536",
+        "engine_designation": "L1",
+        "engine_description": "BL1KERS",
+        "model_years_as_documented": "2023-2025",
+        "structure_weeks_as_documented": "202222-202507",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      }
+    ],
+    "IEM": [
+      {
+        "vehicle_type": "224",
+        "engine_designation": "H6",
+        "engine_description": "BH6PHEV",
+        "model_years_as_documented": "2022-2023",
+        "structure_weeks_as_documented": "202147-202316",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "225",
+        "engine_designation": "H6",
+        "engine_description": "BH6PHEV",
+        "model_years_as_documented": "2022-2023",
+        "structure_weeks_as_documented": "202147-202316",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "238",
+        "engine_designation": "H6",
+        "engine_description": "BH6PHEV",
+        "model_years_as_documented": "2022-2023",
+        "structure_weeks_as_documented": "202147-202316",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "246",
+        "engine_designation": "H6",
+        "engine_description": "BH6PHEV",
+        "model_years_as_documented": "2022-2023",
+        "structure_weeks_as_documented": "202147-202316",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "256",
+        "engine_designation": "H6",
+        "engine_description": "BH6PHEV",
+        "model_years_as_documented": "2022-2023",
+        "structure_weeks_as_documented": "202147-202316",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      }
+    ],
+    "CDD": [
+      {
+        "vehicle_type": "416",
+        "engine_designation": "EL",
+        "engine_description": "E400V18",
+        "model_years_as_documented": "2024-2099",
+        "structure_weeks_as_documented": "202336-209952",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": true
+      }
+    ],
+    "MISFIRE": [
+      {
+        "vehicle_type": "246",
+        "engine_designation": "M1",
+        "engine_description": "BM1KERS",
+        "model_years_as_documented": "2025-2027",
+        "structure_weeks_as_documented": "202417-202638",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      },
+      {
+        "vehicle_type": "256",
+        "engine_designation": "M1",
+        "engine_description": "BM1KERS",
+        "model_years_as_documented": "2025-2027",
+        "structure_weeks_as_documented": "202417-202638",
+        "plant": null,
+        "us_canada_scope": true,
+        "sweden_eu_not_established": true,
+        "open_end_year_is_placeholder": false
+      }
+    ]
+  },
+  "records": [
+    {
+      "id": "volvo-20261116-cont02-ecm-p036692",
+      "brand": "Volvo",
+      "raw_code": "ECM-P036692",
+      "code": "P036692",
+      "base_code": "P0366",
+      "failure_type": "92",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "Check Engine Light with Camshaft or VVT Pulley DTCs",
+      "conditions": "MIL plus listed camshaft/VVT DTC; exact structure week/engine serial must be checked",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "تحقق من DTC وحالة VIDA وكود المحرك وStructure Week.",
+        "للبرنامج أقدم من 5.1.9: تحديث ECM وفق TJ31543.",
+        "اختبار قيادة 15 دقيقة تقريباً بسرعات 50–100 كم/س وأحمال مختلفة وإعادة القراءة.",
+        "إذا تكرر الرمز، استخدم مخطط TJ37618 المعتمد مع رقم المحرك؛ لا تغيّر VVT أو الكامات تلقائياً."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-CAM",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37618.3.8",
+        "status_date": "2026-09-30",
+        "url": "https://oemdtc.com/tsb/11039022/",
+        "title": "Check Engine Light with Camshaft or VVT Pulley DTCs",
+        "access_note": "Volvo journal reproduced by technical bulletin index; original older 3.0 at https://static.oemdtc.com/NHTSA-PDFs/MC-11032668-0001.pdf"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p001500",
+      "brand": "Volvo",
+      "raw_code": "ECM-P001500",
+      "code": "P001500",
+      "base_code": "P0015",
+      "failure_type": "00",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "Check Engine Light with Camshaft or VVT Pulley DTCs",
+      "conditions": "MIL plus listed camshaft/VVT DTC; exact structure week/engine serial must be checked",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "تحقق من DTC وحالة VIDA وكود المحرك وStructure Week.",
+        "للبرنامج أقدم من 5.1.9: تحديث ECM وفق TJ31543.",
+        "اختبار قيادة 15 دقيقة تقريباً بسرعات 50–100 كم/س وأحمال مختلفة وإعادة القراءة.",
+        "إذا تكرر الرمز، استخدم مخطط TJ37618 المعتمد مع رقم المحرك؛ لا تغيّر VVT أو الكامات تلقائياً."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-CAM",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37618.3.8",
+        "status_date": "2026-09-30",
+        "url": "https://oemdtc.com/tsb/11039022/",
+        "title": "Check Engine Light with Camshaft or VVT Pulley DTCs",
+        "access_note": "Volvo journal reproduced by technical bulletin index; original older 3.0 at https://static.oemdtc.com/NHTSA-PDFs/MC-11032668-0001.pdf"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p001400",
+      "brand": "Volvo",
+      "raw_code": "ECM-P001400",
+      "code": "P001400",
+      "base_code": "P0014",
+      "failure_type": "00",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "Check Engine Light with Camshaft or VVT Pulley DTCs",
+      "conditions": "MIL plus listed camshaft/VVT DTC; exact structure week/engine serial must be checked",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "تحقق من DTC وحالة VIDA وكود المحرك وStructure Week.",
+        "للبرنامج أقدم من 5.1.9: تحديث ECM وفق TJ31543.",
+        "اختبار قيادة 15 دقيقة تقريباً بسرعات 50–100 كم/س وأحمال مختلفة وإعادة القراءة.",
+        "إذا تكرر الرمز، استخدم مخطط TJ37618 المعتمد مع رقم المحرك؛ لا تغيّر VVT أو الكامات تلقائياً."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-CAM",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37618.3.8",
+        "status_date": "2026-09-30",
+        "url": "https://oemdtc.com/tsb/11039022/",
+        "title": "Check Engine Light with Camshaft or VVT Pulley DTCs",
+        "access_note": "Volvo journal reproduced by technical bulletin index; original older 3.0 at https://static.oemdtc.com/NHTSA-PDFs/MC-11032668-0001.pdf"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p001200",
+      "brand": "Volvo",
+      "raw_code": "ECM-P001200",
+      "code": "P001200",
+      "base_code": "P0012",
+      "failure_type": "00",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "Check Engine Light with Camshaft or VVT Pulley DTCs",
+      "conditions": "MIL plus listed camshaft/VVT DTC; exact structure week/engine serial must be checked",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "تحقق من DTC وحالة VIDA وكود المحرك وStructure Week.",
+        "للبرنامج أقدم من 5.1.9: تحديث ECM وفق TJ31543.",
+        "اختبار قيادة 15 دقيقة تقريباً بسرعات 50–100 كم/س وأحمال مختلفة وإعادة القراءة.",
+        "إذا تكرر الرمز، استخدم مخطط TJ37618 المعتمد مع رقم المحرك؛ لا تغيّر VVT أو الكامات تلقائياً."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-CAM",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37618.3.8",
+        "status_date": "2026-09-30",
+        "url": "https://oemdtc.com/tsb/11039022/",
+        "title": "Check Engine Light with Camshaft or VVT Pulley DTCs",
+        "access_note": "Volvo journal reproduced by technical bulletin index; original older 3.0 at https://static.oemdtc.com/NHTSA-PDFs/MC-11032668-0001.pdf"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p001100",
+      "brand": "Volvo",
+      "raw_code": "ECM-P001100",
+      "code": "P001100",
+      "base_code": "P0011",
+      "failure_type": "00",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "Check Engine Light with Camshaft or VVT Pulley DTCs",
+      "conditions": "MIL plus listed camshaft/VVT DTC; exact structure week/engine serial must be checked",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "تحقق من DTC وحالة VIDA وكود المحرك وStructure Week.",
+        "للبرنامج أقدم من 5.1.9: تحديث ECM وفق TJ31543.",
+        "اختبار قيادة 15 دقيقة تقريباً بسرعات 50–100 كم/س وأحمال مختلفة وإعادة القراءة.",
+        "إذا تكرر الرمز، استخدم مخطط TJ37618 المعتمد مع رقم المحرك؛ لا تغيّر VVT أو الكامات تلقائياً."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-CAM",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37618.3.8",
+        "status_date": "2026-09-30",
+        "url": "https://oemdtc.com/tsb/11039022/",
+        "title": "Check Engine Light with Camshaft or VVT Pulley DTCs",
+        "access_note": "Volvo journal reproduced by technical bulletin index; original older 3.0 at https://static.oemdtc.com/NHTSA-PDFs/MC-11032668-0001.pdf"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p001792",
+      "brand": "Volvo",
+      "raw_code": "ECM-P001792",
+      "code": "P001792",
+      "base_code": "P0017",
+      "failure_type": "92",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "Check Engine Light with Camshaft or VVT Pulley DTCs",
+      "conditions": "MIL plus listed camshaft/VVT DTC; exact structure week/engine serial must be checked",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "تحقق من DTC وحالة VIDA وكود المحرك وStructure Week.",
+        "للبرنامج أقدم من 5.1.9: تحديث ECM وفق TJ31543.",
+        "اختبار قيادة 15 دقيقة تقريباً بسرعات 50–100 كم/س وأحمال مختلفة وإعادة القراءة.",
+        "إذا تكرر الرمز، استخدم مخطط TJ37618 المعتمد مع رقم المحرك؛ لا تغيّر VVT أو الكامات تلقائياً."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-CAM",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37618.3.8",
+        "status_date": "2026-09-30",
+        "url": "https://oemdtc.com/tsb/11039022/",
+        "title": "Check Engine Light with Camshaft or VVT Pulley DTCs",
+        "access_note": "Volvo journal reproduced by technical bulletin index; original older 3.0 at https://static.oemdtc.com/NHTSA-PDFs/MC-11032668-0001.pdf"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p001721",
+      "brand": "Volvo",
+      "raw_code": "ECM-P001721",
+      "code": "P001721",
+      "base_code": "P0017",
+      "failure_type": "21",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "Check Engine Light with Camshaft or VVT Pulley DTCs",
+      "conditions": "MIL plus listed camshaft/VVT DTC; exact structure week/engine serial must be checked",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "تحقق من DTC وحالة VIDA وكود المحرك وStructure Week.",
+        "للبرنامج أقدم من 5.1.9: تحديث ECM وفق TJ31543.",
+        "اختبار قيادة 15 دقيقة تقريباً بسرعات 50–100 كم/س وأحمال مختلفة وإعادة القراءة.",
+        "إذا تكرر الرمز، استخدم مخطط TJ37618 المعتمد مع رقم المحرك؛ لا تغيّر VVT أو الكامات تلقائياً."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-CAM",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37618.3.8",
+        "status_date": "2026-09-30",
+        "url": "https://oemdtc.com/tsb/11039022/",
+        "title": "Check Engine Light with Camshaft or VVT Pulley DTCs",
+        "access_note": "Volvo journal reproduced by technical bulletin index; original older 3.0 at https://static.oemdtc.com/NHTSA-PDFs/MC-11032668-0001.pdf"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p034100",
+      "brand": "Volvo",
+      "raw_code": "ECM-P034100",
+      "code": "P034100",
+      "base_code": "P0341",
+      "failure_type": "00",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "Check Engine Light with Camshaft or VVT Pulley DTCs",
+      "conditions": "MIL plus listed camshaft/VVT DTC; exact structure week/engine serial must be checked",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "تحقق من DTC وحالة VIDA وكود المحرك وStructure Week.",
+        "للبرنامج أقدم من 5.1.9: تحديث ECM وفق TJ31543.",
+        "اختبار قيادة 15 دقيقة تقريباً بسرعات 50–100 كم/س وأحمال مختلفة وإعادة القراءة.",
+        "إذا تكرر الرمز، استخدم مخطط TJ37618 المعتمد مع رقم المحرك؛ لا تغيّر VVT أو الكامات تلقائياً."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-CAM",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37618.3.8",
+        "status_date": "2026-09-30",
+        "url": "https://oemdtc.com/tsb/11039022/",
+        "title": "Check Engine Light with Camshaft or VVT Pulley DTCs",
+        "access_note": "Volvo journal reproduced by technical bulletin index; original older 3.0 at https://static.oemdtc.com/NHTSA-PDFs/MC-11032668-0001.pdf"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p2a0000",
+      "brand": "Volvo",
+      "raw_code": "ECM-P2A0000",
+      "code": "P2A0000",
+      "base_code": "P2A00",
+      "failure_type": "00",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "Crankcase ventilation CEL P2A0000 P050700 P250F68 P017100",
+      "conditions": "CEL or irregular idle, listed DTC, source-scope engine and turbo-inlet check valve",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "تحقق من تطابق DTC/نوع السيارة في TJ37710.",
+        "افحص غشاء صمام عدم الرجوع 32222712 عند مدخل التيربو كما تحدده النشرة.",
+        "إن ثبت تلف الغشاء، أصلح/استبدل الصمام وفق VIDA.",
+        "إذا كان سليماً، استكمل فحوص VIDA، دون الجزم بأن الصمام سبب الكود."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [
+        "non-return valve PN 32222712 (document scope)"
+      ],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-CCV",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37710.2.2",
+        "status_date": "2026-07-13",
+        "url": "https://oemdtc.com/tsb/11037303/",
+        "title": "Crankcase ventilation CEL P2A0000 P050700 P250F68 P017100",
+        "access_note": "Registration 2.2 whereas reproduced TJ body is 2.1; compare latest VIDA"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p050700",
+      "brand": "Volvo",
+      "raw_code": "ECM-P050700",
+      "code": "P050700",
+      "base_code": "P0507",
+      "failure_type": "00",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "Crankcase ventilation CEL P2A0000 P050700 P250F68 P017100",
+      "conditions": "CEL or irregular idle, listed DTC, source-scope engine and turbo-inlet check valve",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "تحقق من تطابق DTC/نوع السيارة في TJ37710.",
+        "افحص غشاء صمام عدم الرجوع 32222712 عند مدخل التيربو كما تحدده النشرة.",
+        "إن ثبت تلف الغشاء، أصلح/استبدل الصمام وفق VIDA.",
+        "إذا كان سليماً، استكمل فحوص VIDA، دون الجزم بأن الصمام سبب الكود."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [
+        "non-return valve PN 32222712 (document scope)"
+      ],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-CCV",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37710.2.2",
+        "status_date": "2026-07-13",
+        "url": "https://oemdtc.com/tsb/11037303/",
+        "title": "Crankcase ventilation CEL P2A0000 P050700 P250F68 P017100",
+        "access_note": "Registration 2.2 whereas reproduced TJ body is 2.1; compare latest VIDA"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p250f68",
+      "brand": "Volvo",
+      "raw_code": "ECM-P250F68",
+      "code": "P250F68",
+      "base_code": "P250F",
+      "failure_type": "68",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "Crankcase ventilation CEL P2A0000 P050700 P250F68 P017100",
+      "conditions": "CEL or irregular idle, listed DTC, source-scope engine and turbo-inlet check valve",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "تحقق من تطابق DTC/نوع السيارة في TJ37710.",
+        "افحص غشاء صمام عدم الرجوع 32222712 عند مدخل التيربو كما تحدده النشرة.",
+        "إن ثبت تلف الغشاء، أصلح/استبدل الصمام وفق VIDA.",
+        "إذا كان سليماً، استكمل فحوص VIDA، دون الجزم بأن الصمام سبب الكود."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [
+        "non-return valve PN 32222712 (document scope)"
+      ],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-CCV",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37710.2.2",
+        "status_date": "2026-07-13",
+        "url": "https://oemdtc.com/tsb/11037303/",
+        "title": "Crankcase ventilation CEL P2A0000 P050700 P250F68 P017100",
+        "access_note": "Registration 2.2 whereas reproduced TJ body is 2.1; compare latest VIDA"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-isgm-p056200",
+      "brand": "Volvo",
+      "raw_code": "ISGM-P056200",
+      "code": "P056200",
+      "base_code": "P0562",
+      "failure_type": "00",
+      "ecu": "ISGM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "48V Charging Error / ISGM DTCs",
+      "conditions": "48-volt-system voltage issue; check all associated DTCs and start-error symptoms",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "افحص أكواد 48V الأخرى وشكوى التشغيل مع VIDA.",
+        "راجع نسخة البرامج وفق TJ31543 ثم تابع فحوص نظام الجهد المتوسط في VIDA.",
+        "لا تستبدل ISGM لمجرد هذه الأكواد؛ النشرة تصفه كاشفاً لمشكلة 48V.",
+        "بعد مسح DTC عبر VIDA دع السيارة تنام 10 دقائق على الأقل قبل إعادة القراءة."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [
+        "48V system"
+      ],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-ISGM",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37103.3.0",
+        "status_date": "2025-11-13",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11031098-0001.pdf",
+        "title": "48V Charging Error / ISGM DTCs",
+        "access_note": "Volvo primary PDF hosted by NHTSA"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-isgm-p2cc321",
+      "brand": "Volvo",
+      "raw_code": "ISGM-P2CC321",
+      "code": "P2CC321",
+      "base_code": "P2CC3",
+      "failure_type": "21",
+      "ecu": "ISGM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "48V Charging Error / ISGM DTCs",
+      "conditions": "48-volt-system voltage issue; check all associated DTCs and start-error symptoms",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "افحص أكواد 48V الأخرى وشكوى التشغيل مع VIDA.",
+        "راجع نسخة البرامج وفق TJ31543 ثم تابع فحوص نظام الجهد المتوسط في VIDA.",
+        "لا تستبدل ISGM لمجرد هذه الأكواد؛ النشرة تصفه كاشفاً لمشكلة 48V.",
+        "بعد مسح DTC عبر VIDA دع السيارة تنام 10 دقائق على الأقل قبل إعادة القراءة."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [
+        "48V system"
+      ],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-ISGM",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37103.3.0",
+        "status_date": "2025-11-13",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11031098-0001.pdf",
+        "title": "48V Charging Error / ISGM DTCs",
+        "access_note": "Volvo primary PDF hosted by NHTSA"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-isgm-p063c21",
+      "brand": "Volvo",
+      "raw_code": "ISGM-P063C21",
+      "code": "P063C21",
+      "base_code": "P063C",
+      "failure_type": "21",
+      "ecu": "ISGM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "48V Charging Error / ISGM DTCs",
+      "conditions": "48-volt-system voltage issue; check all associated DTCs and start-error symptoms",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "افحص أكواد 48V الأخرى وشكوى التشغيل مع VIDA.",
+        "راجع نسخة البرامج وفق TJ31543 ثم تابع فحوص نظام الجهد المتوسط في VIDA.",
+        "لا تستبدل ISGM لمجرد هذه الأكواد؛ النشرة تصفه كاشفاً لمشكلة 48V.",
+        "بعد مسح DTC عبر VIDA دع السيارة تنام 10 دقائق على الأقل قبل إعادة القراءة."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [
+        "48V system"
+      ],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-ISGM",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37103.3.0",
+        "status_date": "2025-11-13",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11031098-0001.pdf",
+        "title": "48V Charging Error / ISGM DTCs",
+        "access_note": "Volvo primary PDF hosted by NHTSA"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p04f000",
+      "brand": "Volvo",
+      "raw_code": "ECM-P04F000",
+      "code": "P04F000",
+      "base_code": "P04F0",
+      "failure_type": "00",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "CEL and ECM-P04F000",
+      "conditions": "CEL with P04F000 and no other symptoms",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "تحقق أن CEL بلا أعراض إضافية.",
+        "اقرأ مستوى برمجة ECM وقارن بجدول سنة الموديل في TJ37236.",
+        "إذا كانت نسخة أقدم، Total Upgrade وفق TJ31543 ثم أعد قراءة الأعطال.",
+        "إذا استمر العطل أو ظهر عرض آخر، اتبع VIDA لفحص نظام EVAP."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-EVAP",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37236.1.0",
+        "status_date": "2025-02-25",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11016009-0001.pdf",
+        "title": "CEL and ECM-P04F000",
+        "access_note": "Volvo primary PDF hosted by NHTSA"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p013926",
+      "brand": "Volvo",
+      "raw_code": "ECM-P013926",
+      "code": "P013926",
+      "base_code": "P0139",
+      "failure_type": "26",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "CEL and ECM-P013926",
+      "conditions": "CEL with P013926 on listed engine/vehicle and adaptation conditions",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "إزالة الكود وإعادة تعلّم تكيّفات Lambda وفق ملحق TJ37166.",
+        "تحقق من تحديث البرنامج المناسب عبر VIDA.",
+        "قد السيارة بحمولات مختلفة نحو 30 دقيقة عند 50–100 كم/س، ثم أعد قراءة VIDA.",
+        "إذا عاد الكود، اختبر تسرب الهواء النقي والعادم وفق VIDA قبل استبدال الحساس."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-O2",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37166.3.0",
+        "status_date": "2025-02-27",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11016015-0001.pdf",
+        "title": "CEL and ECM-P013926",
+        "access_note": "Volvo primary PDF hosted by NHTSA"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p06de00",
+      "brand": "Volvo",
+      "raw_code": "ECM-P06DE00",
+      "code": "P06DE00",
+      "base_code": "P06DE",
+      "failure_type": "00",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "ECM-P06DE00 with no symptoms",
+      "conditions": "P06DE00 WITHOUT any oil-pressure warning or other symptoms; do not use ghost-code instruction if symptomatic",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "لا تستخدم مسار النشرة إذا كان هناك تحذير ضغط زيت أو أصوات غير معتادة أو عرض تشغيلي؛ اتبع فحص ضغط الزيت الآمن فوراً.",
+        "فقط للحالة الخالية تماماً من الأعراض ضمن نطاق TJ37316.1.0، النشرة القديمة اعتبرت الكود احتمال كشف خاطئ.",
+        "تحقق من أحدث نشرة VIDA قبل التعامل معه ككود وهمي؛ لا تتجاهل خطر ضغط الزيت."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [
+        "oil pump control"
+      ],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-OIL",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37316.1.0",
+        "status_date": "2025-03-19",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11016907-0001.pdf",
+        "title": "ECM-P06DE00 with no symptoms",
+        "access_note": "Volvo primary PDF hosted by NHTSA; later revisions not checked"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-becm-p0c7800",
+      "brand": "Volvo",
+      "raw_code": "BECM-P0C7800",
+      "code": "P0C7800",
+      "base_code": "P0C78",
+      "failure_type": "00",
+      "ecu": "BECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "DIM Drive System Service Required / BECM-P0C7800",
+      "conditions": "PHEV with Drive System Service Required; Security Access generation and structure week important",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "حدد BH6PHEV وStructure Week ونوع Security Access.",
+        "افحص في VIDA إصدار BECM وإتاحة ترقية وفق أحدث TJ37373.",
+        "نسخة 8.0 ذكرت برنامج 3.6.4+ للبنية 2023w47 فأحدث فقط؛ الأقدم لها حل مختلف.",
+        "لا تلمس عناصر الجهد العالي دون فني مؤهل؛ لا تستبدل قطعة بسبب سياق العطل البرمجي وحده."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-BECM",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37373.8.0",
+        "status_date": "2026-07-27",
+        "url": "https://oemdtc.com/tsb/11036248/",
+        "title": "DIM Drive System Service Required / BECM-P0C7800",
+        "access_note": "Volvo journal reproduced by technical bulletin index; newer TJ37373.9.0 exists"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p012807",
+      "brand": "Volvo",
+      "raw_code": "ECM-P012807",
+      "code": "P012807",
+      "base_code": "P0128",
+      "failure_type": "07",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "MIL with ECM-P012807 and ECM-P01287A",
+      "conditions": "MIL with BOTH P012807 and P01287A in bulletin context",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "أكد وجود الرمزين معاً مع شروط المركبة.",
+        "اقرأ مستوى البرنامج في VIDA وقارن بتعليمات TJ37288 الحالية.",
+        "عند الحاجة نفّذ Total Upgrade وفق TJ31543 ثم أعد قراءة DTC.",
+        "إذا استمر، انتقل إلى اختبار الترمـوستات ودورة التبريد حسب VIDA دون اختلاق حدود حرارية."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-ECT",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37288.4.0",
+        "status_date": "2026-02-20",
+        "url": "https://oemdtc.com/tsb/11029182/",
+        "title": "MIL with ECM-P012807 and ECM-P01287A",
+        "access_note": "Volvo journal reproduced by technical bulletin index; primary earlier TJ37288.2.0 at https://static.nhtsa.gov/odi/tsbs/2025/MC-11016894-0001.pdf"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p01287a",
+      "brand": "Volvo",
+      "raw_code": "ECM-P01287A",
+      "code": "P01287A",
+      "base_code": "P0128",
+      "failure_type": "7A",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "MIL with ECM-P012807 and ECM-P01287A",
+      "conditions": "MIL with BOTH P012807 and P01287A in bulletin context",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "أكد وجود الرمزين معاً مع شروط المركبة.",
+        "اقرأ مستوى البرنامج في VIDA وقارن بتعليمات TJ37288 الحالية.",
+        "عند الحاجة نفّذ Total Upgrade وفق TJ31543 ثم أعد قراءة DTC.",
+        "إذا استمر، انتقل إلى اختبار الترمـوستات ودورة التبريد حسب VIDA دون اختلاق حدود حرارية."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-ECT",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37288.4.0",
+        "status_date": "2026-02-20",
+        "url": "https://oemdtc.com/tsb/11029182/",
+        "title": "MIL with ECM-P012807 and ECM-P01287A",
+        "access_note": "Volvo journal reproduced by technical bulletin index; primary earlier TJ37288.2.0 at https://static.nhtsa.gov/odi/tsbs/2025/MC-11016894-0001.pdf"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-iem-p060700",
+      "brand": "Volvo",
+      "raw_code": "IEM-P060700",
+      "code": "P060700",
+      "base_code": "P0607",
+      "failure_type": "00",
+      "ecu": "IEM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "Propulsion message IEM-P060700 and/or IEM-P061A00",
+      "conditions": "Rear-drive inverter warning; possible false detection with no turtle light",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "تأكد من رسالة الأداء والأكواد ولمبة السلحفاة.",
+        "إذا لم توجد أعراض قيادة ولا لمبة سلحفاة، طبق مسار النشرة مع VIDA وتحقق من عدم العودة.",
+        "إذا ظهرت لمبة السلحفاة، امسح الكود وفق النشرة، انتظر وضع Abandoned (قد يستغرق 20 دقيقة)، واختبر القيادة ثم VIDA.",
+        "إذا عاد، اتبع fault tracing ولا تغيّر IEM تلقائياً."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [
+        "rear electric axle inverter"
+      ],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-IEM",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37495.2.0",
+        "status_date": "2026-03-16",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11031107-0001.pdf",
+        "title": "Propulsion message IEM-P060700 and/or IEM-P061A00",
+        "access_note": "Volvo primary PDF hosted by NHTSA"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-iem-p061a00",
+      "brand": "Volvo",
+      "raw_code": "IEM-P061A00",
+      "code": "P061A00",
+      "base_code": "P061A",
+      "failure_type": "00",
+      "ecu": "IEM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "Propulsion message IEM-P060700 and/or IEM-P061A00",
+      "conditions": "Rear-drive inverter warning; possible false detection with no turtle light",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "تأكد من رسالة الأداء والأكواد ولمبة السلحفاة.",
+        "إذا لم توجد أعراض قيادة ولا لمبة سلحفاة، طبق مسار النشرة مع VIDA وتحقق من عدم العودة.",
+        "إذا ظهرت لمبة السلحفاة، امسح الكود وفق النشرة، انتظر وضع Abandoned (قد يستغرق 20 دقيقة)، واختبر القيادة ثم VIDA.",
+        "إذا عاد، اتبع fault tracing ولا تغيّر IEM تلقائياً."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [
+        "rear electric axle inverter"
+      ],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-IEM",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37495.2.0",
+        "status_date": "2026-03-16",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11031107-0001.pdf",
+        "title": "Propulsion message IEM-P060700 and/or IEM-P061A00",
+        "access_note": "Volvo primary PDF hosted by NHTSA"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-becm-p2c871a",
+      "brand": "Volvo",
+      "raw_code": "BECM-P2C871A",
+      "code": "P2C871A",
+      "base_code": "P2C87",
+      "failure_type": "1A",
+      "ecu": "BECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "CDD condition paired BECM-P2C871A and VCU1-P128300",
+      "conditions": "Both BECM-P2C871A and VCU1-P128300 + no gear engagement or reduced power, Volvo type 416",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "تحقق من وجود الكودين معاً والأعراض وسيارة Volvo type 416.",
+        "نفذ فحص VIDA الآمن حسب إجراءات الجهد العالي.",
+        "لا تخلص إلى وجوب استبدال CDD إلا عندما تتحقق كامل معايير TJ37771 وأمر إصلاح VIDA.",
+        "عند اختلاف الأعراض تابع فحوص وحدة BECM وVCU1."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [
+        "CDD"
+      ],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-CDD",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37771.2.0",
+        "status_date": "2026-05-14",
+        "url": "https://oemdtc.com/tsb/11032677/",
+        "title": "CDD condition paired BECM-P2C871A and VCU1-P128300",
+        "access_note": "Volvo journal reproduced by technical bulletin index"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-vcu1-p128300",
+      "brand": "Volvo",
+      "raw_code": "VCU1-P128300",
+      "code": "P128300",
+      "base_code": "P1283",
+      "failure_type": "00",
+      "ecu": "VCU1",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "CDD condition paired BECM-P2C871A and VCU1-P128300",
+      "conditions": "Both BECM-P2C871A and VCU1-P128300 + no gear engagement or reduced power, Volvo type 416",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "تحقق من وجود الكودين معاً والأعراض وسيارة Volvo type 416.",
+        "نفذ فحص VIDA الآمن حسب إجراءات الجهد العالي.",
+        "لا تخلص إلى وجوب استبدال CDD إلا عندما تتحقق كامل معايير TJ37771 وأمر إصلاح VIDA.",
+        "عند اختلاف الأعراض تابع فحوص وحدة BECM وVCU1."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [
+        "CDD"
+      ],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-CDD",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37771.2.0",
+        "status_date": "2026-05-14",
+        "url": "https://oemdtc.com/tsb/11032677/",
+        "title": "CDD condition paired BECM-P2C871A and VCU1-P128300",
+        "access_note": "Volvo journal reproduced by technical bulletin index"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p030100",
+      "brand": "Volvo",
+      "raw_code": "ECM-P030100",
+      "code": "P030100",
+      "base_code": "P0301",
+      "failure_type": "00",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "Reduced Performance / hesitation / misfire",
+      "conditions": "hesitation/jerking on acceleration, reduced performance or CEL, Volvo type 246/256 BM1KERS 2025-2027",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "حدد type 246/256 مع BM1KERS وسنوات 2025–2027 والأعراض.",
+        "اقرأ Freeze Frame وECM software عبر VIDA.",
+        "إذا كان البرنامج أقدم من 5.2.16 نفّذ تحديث البرنامج وفق TJ31543.",
+        "إذا استمر التردد أو سوء الاحتراق اتبع قياسات الأسطوانات والوقود في VIDA ولا تستبدل البخاخات بلا إثبات."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-MISFIRE",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37935.2.0",
+        "status_date": "2026-09-23",
+        "url": "https://oemdtc.com/tsb/11037972/",
+        "title": "Reduced Performance / hesitation / misfire",
+        "access_note": "Volvo journal reproduced by technical bulletin index"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p030200",
+      "brand": "Volvo",
+      "raw_code": "ECM-P030200",
+      "code": "P030200",
+      "base_code": "P0302",
+      "failure_type": "00",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "Reduced Performance / hesitation / misfire",
+      "conditions": "hesitation/jerking on acceleration, reduced performance or CEL, Volvo type 246/256 BM1KERS 2025-2027",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "حدد type 246/256 مع BM1KERS وسنوات 2025–2027 والأعراض.",
+        "اقرأ Freeze Frame وECM software عبر VIDA.",
+        "إذا كان البرنامج أقدم من 5.2.16 نفّذ تحديث البرنامج وفق TJ31543.",
+        "إذا استمر التردد أو سوء الاحتراق اتبع قياسات الأسطوانات والوقود في VIDA ولا تستبدل البخاخات بلا إثبات."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-MISFIRE",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37935.2.0",
+        "status_date": "2026-09-23",
+        "url": "https://oemdtc.com/tsb/11037972/",
+        "title": "Reduced Performance / hesitation / misfire",
+        "access_note": "Volvo journal reproduced by technical bulletin index"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p030400",
+      "brand": "Volvo",
+      "raw_code": "ECM-P030400",
+      "code": "P030400",
+      "base_code": "P0304",
+      "failure_type": "00",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "Reduced Performance / hesitation / misfire",
+      "conditions": "hesitation/jerking on acceleration, reduced performance or CEL, Volvo type 246/256 BM1KERS 2025-2027",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "حدد type 246/256 مع BM1KERS وسنوات 2025–2027 والأعراض.",
+        "اقرأ Freeze Frame وECM software عبر VIDA.",
+        "إذا كان البرنامج أقدم من 5.2.16 نفّذ تحديث البرنامج وفق TJ31543.",
+        "إذا استمر التردد أو سوء الاحتراق اتبع قياسات الأسطوانات والوقود في VIDA ولا تستبدل البخاخات بلا إثبات."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-MISFIRE",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37935.2.0",
+        "status_date": "2026-09-23",
+        "url": "https://oemdtc.com/tsb/11037972/",
+        "title": "Reduced Performance / hesitation / misfire",
+        "access_note": "Volvo journal reproduced by technical bulletin index"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p030300",
+      "brand": "Volvo",
+      "raw_code": "ECM-P030300",
+      "code": "P030300",
+      "base_code": "P0303",
+      "failure_type": "00",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "Reduced Performance / hesitation / misfire",
+      "conditions": "hesitation/jerking on acceleration, reduced performance or CEL, Volvo type 246/256 BM1KERS 2025-2027",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "حدد type 246/256 مع BM1KERS وسنوات 2025–2027 والأعراض.",
+        "اقرأ Freeze Frame وECM software عبر VIDA.",
+        "إذا كان البرنامج أقدم من 5.2.16 نفّذ تحديث البرنامج وفق TJ31543.",
+        "إذا استمر التردد أو سوء الاحتراق اتبع قياسات الأسطوانات والوقود في VIDA ولا تستبدل البخاخات بلا إثبات."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-MISFIRE",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37935.2.0",
+        "status_date": "2026-09-23",
+        "url": "https://oemdtc.com/tsb/11037972/",
+        "title": "Reduced Performance / hesitation / misfire",
+        "access_note": "Volvo journal reproduced by technical bulletin index"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p2b9600",
+      "brand": "Volvo",
+      "raw_code": "ECM-P2B9600",
+      "code": "P2B9600",
+      "base_code": "P2B96",
+      "failure_type": "00",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "Reduced Performance / hesitation / misfire",
+      "conditions": "hesitation/jerking on acceleration, reduced performance or CEL, Volvo type 246/256 BM1KERS 2025-2027",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "حدد type 246/256 مع BM1KERS وسنوات 2025–2027 والأعراض.",
+        "اقرأ Freeze Frame وECM software عبر VIDA.",
+        "إذا كان البرنامج أقدم من 5.2.16 نفّذ تحديث البرنامج وفق TJ31543.",
+        "إذا استمر التردد أو سوء الاحتراق اتبع قياسات الأسطوانات والوقود في VIDA ولا تستبدل البخاخات بلا إثبات."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-MISFIRE",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37935.2.0",
+        "status_date": "2026-09-23",
+        "url": "https://oemdtc.com/tsb/11037972/",
+        "title": "Reduced Performance / hesitation / misfire",
+        "access_note": "Volvo journal reproduced by technical bulletin index"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p219c00",
+      "brand": "Volvo",
+      "raw_code": "ECM-P219C00",
+      "code": "P219C00",
+      "base_code": "P219C",
+      "failure_type": "00",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "Reduced Performance / hesitation / misfire",
+      "conditions": "hesitation/jerking on acceleration, reduced performance or CEL, Volvo type 246/256 BM1KERS 2025-2027",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "حدد type 246/256 مع BM1KERS وسنوات 2025–2027 والأعراض.",
+        "اقرأ Freeze Frame وECM software عبر VIDA.",
+        "إذا كان البرنامج أقدم من 5.2.16 نفّذ تحديث البرنامج وفق TJ31543.",
+        "إذا استمر التردد أو سوء الاحتراق اتبع قياسات الأسطوانات والوقود في VIDA ولا تستبدل البخاخات بلا إثبات."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-MISFIRE",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37935.2.0",
+        "status_date": "2026-09-23",
+        "url": "https://oemdtc.com/tsb/11037972/",
+        "title": "Reduced Performance / hesitation / misfire",
+        "access_note": "Volvo journal reproduced by technical bulletin index"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p219e00",
+      "brand": "Volvo",
+      "raw_code": "ECM-P219E00",
+      "code": "P219E00",
+      "base_code": "P219E",
+      "failure_type": "00",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "Reduced Performance / hesitation / misfire",
+      "conditions": "hesitation/jerking on acceleration, reduced performance or CEL, Volvo type 246/256 BM1KERS 2025-2027",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "حدد type 246/256 مع BM1KERS وسنوات 2025–2027 والأعراض.",
+        "اقرأ Freeze Frame وECM software عبر VIDA.",
+        "إذا كان البرنامج أقدم من 5.2.16 نفّذ تحديث البرنامج وفق TJ31543.",
+        "إذا استمر التردد أو سوء الاحتراق اتبع قياسات الأسطوانات والوقود في VIDA ولا تستبدل البخاخات بلا إثبات."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-MISFIRE",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37935.2.0",
+        "status_date": "2026-09-23",
+        "url": "https://oemdtc.com/tsb/11037972/",
+        "title": "Reduced Performance / hesitation / misfire",
+        "access_note": "Volvo journal reproduced by technical bulletin index"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p219a00",
+      "brand": "Volvo",
+      "raw_code": "ECM-P219A00",
+      "code": "P219A00",
+      "base_code": "P219A",
+      "failure_type": "00",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "Reduced Performance / hesitation / misfire",
+      "conditions": "hesitation/jerking on acceleration, reduced performance or CEL, Volvo type 246/256 BM1KERS 2025-2027",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "حدد type 246/256 مع BM1KERS وسنوات 2025–2027 والأعراض.",
+        "اقرأ Freeze Frame وECM software عبر VIDA.",
+        "إذا كان البرنامج أقدم من 5.2.16 نفّذ تحديث البرنامج وفق TJ31543.",
+        "إذا استمر التردد أو سوء الاحتراق اتبع قياسات الأسطوانات والوقود في VIDA ولا تستبدل البخاخات بلا إثبات."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-MISFIRE",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37935.2.0",
+        "status_date": "2026-09-23",
+        "url": "https://oemdtc.com/tsb/11037972/",
+        "title": "Reduced Performance / hesitation / misfire",
+        "access_note": "Volvo journal reproduced by technical bulletin index"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    },
+    {
+      "id": "volvo-20261116-cont02-ecm-p219f00",
+      "brand": "Volvo",
+      "raw_code": "ECM-P219F00",
+      "code": "P219F00",
+      "base_code": "P219F",
+      "failure_type": "00",
+      "ecu": "ECM",
+      "category": "P",
+      "code_standard_type": "unknown_pending_SAE_J2012DA_VIDA",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "غير مؤكد؛ OEM journal proves DTC occurrence but not exact VIDA fault dictionary",
+      "context_en": "Reduced Performance / hesitation / misfire",
+      "conditions": "hesitation/jerking on acceleration, reduced performance or CEL, Volvo type 246/256 BM1KERS 2025-2027",
+      "symptoms": "case-specific from Technical Journal; see context_en and conditions",
+      "causes": [
+        "documented journal software/hardware scenario only; verify vehicle-specific diagnosis"
+      ],
+      "diagnostic_steps": [
+        "حدد type 246/256 مع BM1KERS وسنوات 2025–2027 والأعراض.",
+        "اقرأ Freeze Frame وECM software عبر VIDA.",
+        "إذا كان البرنامج أقدم من 5.2.16 نفّذ تحديث البرنامج وفق TJ31543.",
+        "إذا استمر التردد أو سوء الاحتراق اتبع قياسات الأسطوانات والوقود في VIDA ولا تستبدل البخاخات بلا إثبات."
+      ],
+      "tools": [
+        "VIDA",
+        "model-specific service information"
+      ],
+      "live_data": [],
+      "live_data_limits": "غير مؤكد",
+      "parts": [],
+      "images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "applicability_table_id": "VOLVO-TJ-MISFIRE",
+      "market": [
+        "United States",
+        "Canada"
+      ],
+      "eu_sweden_status": "unverified",
+      "source": {
+        "journal": "TJ 37935.2.0",
+        "status_date": "2026-09-23",
+        "url": "https://oemdtc.com/tsb/11037972/",
+        "title": "Reduced Performance / hesitation / misfire",
+        "access_note": "Volvo journal reproduced by technical bulletin index"
+      },
+      "priority_evidence": "manufacturer technical journal names DTC and case-specific remedy",
+      "verification_status": "source_confirmed_DTC_occurrence__partial_diagnostics__not_import_approved",
+      "review_status": "draft",
+      "import_approved": false
+    }
+  ],
+  "qa_policy": [
+    "No user release; draft branch only",
+    "No additions to existing 60 or 14 file contents",
+    "No PDF / image copied; links only",
+    "No exact OEM dictionary meanings inferred from bulletin subject",
+    "Unknown VIN and EU/Sweden mapping remains in review",
+    "9999 / 2099 are manufacturer table placeholders, not production-year assertions",
+    "No hardware substitution without VIDA confirmation"
+  ]
+}
