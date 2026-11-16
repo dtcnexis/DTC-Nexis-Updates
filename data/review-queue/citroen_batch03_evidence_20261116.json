@@ -1,0 +1,29 @@
+{
+  "brand": "Citroën",
+  "batch": "03",
+  "date": "2026-11-16",
+  "status": "review_only",
+  "cases": [
+    {
+      "code": "P0116",
+      "existing_in_batch01": true,
+      "vehicle": "C4",
+      "engine": "NFU (TU5JP4)",
+      "production_from": "2006-09-18",
+      "source": "https://www.hella.com/techworld/uk/bi/citroen-c4-illumination-of-the-coolant-temperature-warning-light/",
+      "finding": "ECT sensor crack or wrong specification; check Valeo marking 96566364; part 1338.F8",
+      "review": "ECU variant and VIN/market coverage not proven"
+    },
+    {
+      "code": null,
+      "vehicle": "C4-II",
+      "engine": "9HD 1.6 HDi",
+      "production_years": "2012-2016",
+      "source": "https://www.hella.com/techworld/uk/bi/citroen-c4-faulty-battery-condition-detection/",
+      "finding": "Battery negative-terminal monitoring sensor may cause intermittent charging warning",
+      "review": "No DTC specified by source; do not assign one"
+    }
+  ],
+  "new_unique_DTC_count": 0,
+  "do_not_merge": true
+}
