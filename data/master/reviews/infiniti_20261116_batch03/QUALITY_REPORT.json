@@ -1,0 +1,59 @@
+{
+  "schema": "dtcnexis-quality-report-v1",
+  "brand": "Infiniti",
+  "date": "2026-11-16",
+  "branch": "data/infiniti-dtc-20261116-batch03",
+  "checks": [
+    {
+      "name": "Five OEM source-scoped record identifiers",
+      "result": "PASS",
+      "count": 5
+    },
+    {
+      "name": "Distinct new code keys",
+      "result": "PASS",
+      "count": 5
+    },
+    {
+      "name": "All new codes absent from locally materialized Batch02 baseline of 65",
+      "result": "PASS",
+      "count": 5
+    },
+    {
+      "name": "Review queue entries have code and reason/source",
+      "result": "PASS",
+      "count": 14
+    },
+    {
+      "name": "No overlap between approved-scope file and review queue",
+      "result": "PASS",
+      "count": 0
+    },
+    {
+      "name": "Previously existing code overlaps indexed without re-counting",
+      "result": "PASS",
+      "count": 6
+    },
+    {
+      "name": "Sweden/EU applicability not extrapolated from US bulletins",
+      "result": "PASS"
+    },
+    {
+      "name": "Owner approval and app release",
+      "result": "NOT_REQUESTED"
+    }
+  ],
+  "limitations": [
+    "No licensed SAE J2012DA data used to certify individual generic/manufacturer code classification.",
+    "14 pending records not eligible for automatic diagnosis.",
+    "Prior DRAFT zip absent from current runtime; two codes retained as reconciliation candidates.",
+    "OEM TSB bulletin scoped records still require vehicle VIN/ECU part-number/software gate.",
+    "No OEM schematic or image redistributed.",
+    "No complete Infiniti DTC coverage claim."
+  ],
+  "new_code_records": 5,
+  "review_queue_count": 14,
+  "previous_baseline_unique_codes": 65,
+  "baseline_github_rows": 9589,
+  "release_to_app": false
+}
