@@ -1,0 +1,77 @@
+{
+  "schema": "dtcnexis-ford-batch05-source-registry-v1",
+  "brand": "Ford",
+  "created_on": "2026-11-16",
+  "not_approved_for_release": true,
+  "source_count": 8,
+  "source_policy": "Ford-authored bulletins on TSBSearch are third-party reproductions and cannot be characterized as live OEM PTS versions. NHTSA-hosted bulletin has Ford OEM authorship. Manufacturer archive 2012 is direct Ford. No copyrighted figures included.",
+  "sources": [
+    {
+      "id": "FORD-EU-TSB-24-2108",
+      "title": "Ford TSB 24-2108, PCM software R10, 2.0L EcoBlue Transit/Tourneo Custom",
+      "url": "https://www.tsbsearch.com/Ford/24-2108/143",
+      "date": "2024-04-11",
+      "host": "TSBSearch-hosted reproduction of Ford-authored bulletin, not an OEM-controlled download",
+      "markets": "All European markets"
+    },
+    {
+      "id": "FORD-EU-GSB-24-7014",
+      "title": "Ford GSB 24-7014, 1.5L EcoBlue P2000 LNT diagnostics",
+      "url": "https://www.tsbsearch.com/Ford/24-7014/470",
+      "date": "2024-02-20",
+      "host": "TSBSearch-hosted reproduction of Ford-authored bulletin",
+      "markets": "All European markets"
+    },
+    {
+      "id": "FORD-EU-GSB-23-7072",
+      "title": "Ford GSB 23-7072, Diesel Particulate Filter diagnostic information",
+      "url": "https://www.tsbsearch.com/Ford/23-7072/515",
+      "date": "2023-06-05",
+      "host": "TSBSearch-hosted reproduction of Ford-authored bulletin",
+      "markets": "Ford European technical context; exact national markets not stated in examined bulletin"
+    },
+    {
+      "id": "FORD-EU-TSB-24-2034",
+      "title": "Ford TSB 24-2034, Mach-E drive mode not available with or without ABS U0253",
+      "url": "https://www.tsbsearch.com/Ford/24-2034/138",
+      "date": "2024-03-20",
+      "host": "TSBSearch-hosted reproduction of Ford-authored bulletin",
+      "markets": "All European markets"
+    },
+    {
+      "id": "FORD-EU-TSB-24-2119",
+      "title": "Ford TSB 24-2119, Courier 7DCT300 clutch actuator pump DTCs",
+      "url": "https://www.tsbsearch.com/Ford/24-2119/426",
+      "date": "2024-04-23",
+      "host": "TSBSearch-hosted reproduction of Ford-authored bulletin",
+      "markets": "All European markets"
+    },
+    {
+      "id": "FORD-EU-GSB-23-7111",
+      "title": "Ford GSB 23-7111, European mild hybrid charging diagnosis",
+      "url": "https://www.tsbsearch.com/Ford/23-7111/220",
+      "date": "2023-08-09",
+      "host": "TSBSearch-hosted reproduction of Ford-authored bulletin",
+      "markets": "EU markets only"
+    },
+    {
+      "id": "FORD-OEM-DIESEL-2012",
+      "title": "Ford 2012 Model Year 6.7L Diesel OBD System Operation Summary",
+      "url": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/DOBDSM1202.pdf",
+      "date": "2011-04-21",
+      "host": "Ford OEM",
+      "markets": "North American 6.7L diesel, used here ONLY for contrasting P2463 core definition"
+    },
+    {
+      "id": "FORD-NA-TSB-24-2254",
+      "title": "Ford TSB 24-2254, 10R80 transmission CDF sleeve hydraulic leakage bulletin",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11006772-0001.pdf",
+      "published": "2024-08-23",
+      "host": "NHTSA-hosted copy of Ford-authored official TSB",
+      "markets": "North American markets only",
+      "supersedes": "Ford TSB 24-2176 under normal service circumstances; refer to PTS/OASIS for supersessions after this issue",
+      "scope": "Non-hybrid 10R80, build on/before 2022-08-15 in listed Ford models",
+      "source_limitation": "TSB lists code presence, not all individual SAE definitions"
+    }
+  ]
+}
