@@ -1,0 +1,575 @@
+{
+  "schema": "dtcnexis-skoda-review-queue-batch02-v1",
+  "date": "2026-11-16",
+  "brand": "Škoda",
+  "previous_records_in_master": 48,
+  "previous_review_queue_entries": 23,
+  "new_unique_base_codes": 10,
+  "new_variant_records": 12,
+  "entries": [
+    {
+      "record_id": "SKODA-RQ-B02-001",
+      "brand": "Škoda",
+      "raw_code": "P0321",
+      "base_code": "P0321",
+      "vag_alias": "16705 / 000801",
+      "code_family": "P",
+      "manufacturer_specific": false,
+      "ecu": "01-Engine",
+      "system": "engine",
+      "definition_en": "Engine Speed Sensor (G28): Implausible Signal",
+      "translation_ar": "إشارة غير منطقية من حساس سرعة المحرك G28",
+      "model": null,
+      "generation": null,
+      "engine_codes": [],
+      "market": null,
+      "model_years": null,
+      "ECU_part_number": null,
+      "observed_skoda_specific_scope": null,
+      "symptoms": [
+        "engine stops",
+        "no start"
+      ],
+      "diagnostic_steps": [
+        "Save freeze-frame and all codes",
+        "Check crank sensor G28 mounting and connector",
+        "Review Engine Speed live data while cranking",
+        "Check wiring; evaluate mechanical no-start before replacing sensor"
+      ],
+      "live_data_limits": "غير مؤكد؛ يتطلب دليل ECU",
+      "pinout": null,
+      "wiring": null,
+      "parts_location": null,
+      "source": {
+        "title": "Ross-Tech Wiki",
+        "url": "https://wiki.ross-tech.com/wiki/index.php/16705/P0321/000801",
+        "accessed_at": "2026-11-16",
+        "class": "independent technical reference; manufacturer TPI only identified, not read"
+      },
+      "review_reason": "VW/Audi-specific TPI examples not transferable to Škoda; exact model year/engine/ECU and factory diagnostic thresholds not established",
+      "verification_status": "review_required",
+      "approved_for_application": false,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft"
+    },
+    {
+      "record_id": "SKODA-RQ-B02-002",
+      "brand": "Škoda",
+      "raw_code": "P0341",
+      "base_code": "P0341",
+      "vag_alias": "16725 / 000833",
+      "code_family": "P",
+      "manufacturer_specific": false,
+      "ecu": "01-Engine",
+      "system": "engine",
+      "definition_en": "Camshaft Position Sensor (G40): Implausible Signal",
+      "translation_ar": "إشارة غير منطقية من حساس موضع عمود الكامات G40",
+      "model": null,
+      "generation": null,
+      "engine_codes": [],
+      "market": null,
+      "model_years": null,
+      "ECU_part_number": null,
+      "observed_skoda_specific_scope": null,
+      "symptoms": [
+        "MIL"
+      ],
+      "diagnostic_steps": [
+        "Save freeze-frame",
+        "Check G40 wiring and connector",
+        "Check oil level/pressure",
+        "Verify mechanical cam/crank timing with vehicle-specific procedure"
+      ],
+      "live_data_limits": "غير مؤكد؛ يتطلب دليل ECU",
+      "pinout": null,
+      "wiring": null,
+      "parts_location": null,
+      "source": {
+        "title": "Ross-Tech Wiki",
+        "url": "https://wiki.ross-tech.com/wiki/index.php/16725/P0341/000833",
+        "accessed_at": "2026-11-16",
+        "class": "independent technical reference; manufacturer TPI only identified, not read"
+      },
+      "review_reason": "VW 2.0T technical tip not Škoda approval; exact model year/engine/ECU and factory diagnostic thresholds not established",
+      "verification_status": "review_required",
+      "approved_for_application": false,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft"
+    },
+    {
+      "record_id": "SKODA-RQ-B02-003",
+      "brand": "Škoda",
+      "raw_code": "P0403",
+      "base_code": "P0403",
+      "vag_alias": "16787 / 001027",
+      "code_family": "P",
+      "manufacturer_specific": false,
+      "ecu": "01-Engine",
+      "system": "engine/emissions",
+      "definition_en": "Exhaust Gas Recirculation (EGR) Valve (N18): Malfunction",
+      "translation_ar": "خلل في صمام تدوير غازات العادم N18",
+      "model": null,
+      "generation": null,
+      "engine_codes": [],
+      "market": null,
+      "model_years": null,
+      "ECU_part_number": null,
+      "observed_skoda_specific_scope": null,
+      "symptoms": [
+        "MIL",
+        "rough idle",
+        "loss of power"
+      ],
+      "diagnostic_steps": [
+        "Check fuse and supply according to OEM circuit",
+        "Inspect N18/GX5 connections",
+        "Read EGR command and feedback if present",
+        "Run supported actuator test before parts replacement"
+      ],
+      "live_data_limits": "غير مؤكد؛ يتطلب دليل ECU",
+      "pinout": null,
+      "wiring": null,
+      "parts_location": null,
+      "source": {
+        "title": "Ross-Tech Wiki",
+        "url": "https://wiki.ross-tech.com/wiki/index.php/16787/P0403/001027",
+        "accessed_at": "2026-11-16",
+        "class": "independent technical reference; manufacturer TPI only identified, not read"
+      },
+      "review_reason": "CR TDI electric EGR may use GX5; engine-specific pinouts unknown; exact model year/engine/ECU and factory diagnostic thresholds not established",
+      "verification_status": "review_required",
+      "approved_for_application": false,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft"
+    },
+    {
+      "record_id": "SKODA-RQ-B02-004",
+      "brand": "Škoda",
+      "raw_code": "P0501",
+      "base_code": "P0501",
+      "vag_alias": "16885 / 001281",
+      "code_family": "P",
+      "manufacturer_specific": false,
+      "ecu": "01-Engine or transmission context",
+      "system": "vehicle speed",
+      "definition_en": "Vehicle Speed Sensor (G22): Implausible Signal",
+      "translation_ar": "إشارة غير منطقية من حساس سرعة السيارة G22",
+      "model": null,
+      "generation": null,
+      "engine_codes": [],
+      "market": null,
+      "model_years": null,
+      "ECU_part_number": null,
+      "observed_skoda_specific_scope": null,
+      "symptoms": [],
+      "diagnostic_steps": [
+        "Inspect ABS fault memory and vehicle speed source",
+        "Compare vehicle speed to four wheel speeds if supported",
+        "Inspect G22 wiring only if physical sensor fitted",
+        "Check signal path TCM-ECM if documented"
+      ],
+      "live_data_limits": "غير مؤكد؛ يتطلب دليل ECU",
+      "pinout": null,
+      "wiring": null,
+      "parts_location": null,
+      "source": {
+        "title": "Ross-Tech Wiki",
+        "url": "https://wiki.ross-tech.com/wiki/index.php/16885/P0501/001281",
+        "accessed_at": "2026-11-16",
+        "class": "independent technical reference; manufacturer TPI only identified, not read"
+      },
+      "review_reason": "Some vehicles derive speed from ABS; do not assume physical G22; exact model year/engine/ECU and factory diagnostic thresholds not established",
+      "verification_status": "review_required",
+      "approved_for_application": false,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft"
+    },
+    {
+      "record_id": "SKODA-RQ-B02-005",
+      "brand": "Škoda",
+      "raw_code": "P0671",
+      "base_code": "P0671",
+      "vag_alias": "17055 / 001649",
+      "code_family": "P",
+      "manufacturer_specific": false,
+      "ecu": "01-Engine",
+      "system": "diesel preheat",
+      "definition_en": "Cylinder 1 Glow Plug Circuit (Q10): Electrical Fault",
+      "translation_ar": "خلل كهربائي بدائرة شمعة تسخين الأسطوانة الأولى Q10",
+      "model": null,
+      "generation": null,
+      "engine_codes": [],
+      "market": null,
+      "model_years": null,
+      "ECU_part_number": null,
+      "observed_skoda_specific_scope": null,
+      "symptoms": [
+        "poor cold starting",
+        "no pre-glow"
+      ],
+      "diagnostic_steps": [
+        "Confirm diesel engine configuration and freeze-frame",
+        "Inspect glow plug connector and harness",
+        "Check circuit and glow plug to OEM specs with appropriate equipment",
+        "Check preheat actuation if scan tool supports it"
+      ],
+      "live_data_limits": "غير مؤكد؛ يتطلب دليل ECU",
+      "pinout": null,
+      "wiring": null,
+      "parts_location": null,
+      "source": {
+        "title": "Ross-Tech Wiki",
+        "url": "https://wiki.ross-tech.com/wiki/index.php/17055/P0671/001649",
+        "accessed_at": "2026-11-16",
+        "class": "independent technical reference; manufacturer TPI only identified, not read"
+      },
+      "review_reason": "Do not apply unknown resistance/voltage figures; exact model year/engine/ECU and factory diagnostic thresholds not established",
+      "verification_status": "review_required",
+      "approved_for_application": false,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft"
+    },
+    {
+      "record_id": "SKODA-RQ-B02-006",
+      "brand": "Škoda",
+      "raw_code": "P2002",
+      "base_code": "P2002",
+      "vag_alias": "18434 / 008194",
+      "code_family": "P",
+      "manufacturer_specific": false,
+      "ecu": "01-Engine",
+      "system": "diesel particulate filter",
+      "definition_en": "Particle Filter Bank 1: Malfunction",
+      "translation_ar": "خلل وظيفي في فلتر جسيمات الديزل، بنك 1",
+      "model": "Superb",
+      "generation": "3U",
+      "engine_codes": [
+        "BGW",
+        "BSS",
+        "BWW"
+      ],
+      "market": null,
+      "model_years": null,
+      "ECU_part_number": null,
+      "observed_skoda_specific_scope": "technical-source Skoda engine-family mention; no VIN/ECU version",
+      "symptoms": [
+        "MIL"
+      ],
+      "diagnostic_steps": [
+        "Save DPF load/differential pressure and regeneration status",
+        "Check G450 sensor and hoses",
+        "Compare soot and exhaust differential pressure under OEM-prescribed conditions",
+        "Check active regeneration eligibility and follow OEM procedure; do not force if unsafe"
+      ],
+      "live_data_limits": "غير مؤكد؛ يتطلب دليل ECU",
+      "pinout": null,
+      "wiring": null,
+      "parts_location": null,
+      "source": {
+        "title": "Ross-Tech Wiki",
+        "url": "https://wiki.ross-tech.com/wiki/index.php/18434/P2002/008194",
+        "accessed_at": "2026-11-16",
+        "class": "independent technical reference; manufacturer TPI only identified, not read"
+      },
+      "review_reason": "Ross-Tech specifically names Skoda Superb 3U BGW/BSS/BWW and G450 sealing failures; exact model year/engine/ECU and factory diagnostic thresholds not established",
+      "verification_status": "review_required",
+      "approved_for_application": false,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft"
+    },
+    {
+      "record_id": "SKODA-RQ-B02-007",
+      "brand": "Škoda",
+      "raw_code": "01435 — No or Incorrect Basic Setting / Adaptation",
+      "base_code": "01435",
+      "vag_alias": null,
+      "code_family": "VAG-5digit",
+      "manufacturer_specific": true,
+      "ecu": "03-ABS",
+      "system": "brakes",
+      "definition_en": "Brake Pressure Sensor 1 (G201): No or Incorrect Basic Setting / Adaptation",
+      "translation_ar": "حساس ضغط الفرامل G201: ضبط أساسي مفقود أو غير صحيح",
+      "model": null,
+      "generation": null,
+      "engine_codes": [],
+      "market": null,
+      "model_years": null,
+      "ECU_part_number": null,
+      "observed_skoda_specific_scope": null,
+      "symptoms": [
+        "MIL"
+      ],
+      "diagnostic_steps": [
+        "Identify ABS unit and coding",
+        "Check whether G201 basic setting is supported",
+        "Perform OEM-specific basic setting with documented prerequisites"
+      ],
+      "live_data_limits": "غير مؤكد؛ يتطلب دليل ECU",
+      "pinout": null,
+      "wiring": null,
+      "parts_location": null,
+      "source": {
+        "title": "Ross-Tech Wiki",
+        "url": "https://wiki.ross-tech.com/wiki/index.php/01435",
+        "accessed_at": "2026-11-16",
+        "class": "independent technical reference; manufacturer TPI only identified, not read"
+      },
+      "review_reason": "Distinct failure mode: do not replace sensor based solely on this subfault; exact model year/engine/ECU and factory diagnostic thresholds not established",
+      "verification_status": "review_required",
+      "approved_for_application": false,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft"
+    },
+    {
+      "record_id": "SKODA-RQ-B02-008",
+      "brand": "Škoda",
+      "raw_code": "01435 — Electrical Fault in Circuit",
+      "base_code": "01435",
+      "vag_alias": null,
+      "code_family": "VAG-5digit",
+      "manufacturer_specific": true,
+      "ecu": "03-ABS",
+      "system": "brakes",
+      "definition_en": "Brake Pressure Sensor 1 (G201): Electrical Fault in Circuit",
+      "translation_ar": "حساس ضغط الفرامل G201: خلل كهربائي بالدائرة",
+      "model": null,
+      "generation": null,
+      "engine_codes": [],
+      "market": null,
+      "model_years": null,
+      "ECU_part_number": null,
+      "observed_skoda_specific_scope": null,
+      "symptoms": [],
+      "diagnostic_steps": [
+        "Read G201 and brake pedal switch live data",
+        "Inspect brake pedal switch F, G201 circuit and ABS unit fitment",
+        "Check sensor electrical diagnosis via correct service manual",
+        "Verify repair kit compatibility before any ABS hydraulic unit replacement"
+      ],
+      "live_data_limits": "غير مؤكد؛ يتطلب دليل ECU",
+      "pinout": null,
+      "wiring": null,
+      "parts_location": null,
+      "source": {
+        "title": "Ross-Tech Wiki",
+        "url": "https://wiki.ross-tech.com/wiki/index.php/01435",
+        "accessed_at": "2026-11-16",
+        "class": "independent technical reference; manufacturer TPI only identified, not read"
+      },
+      "review_reason": "Skoda TPI 2025844 or prior 2025663 noted for some RoW MK60 systems; OEM text not accessed; exact model year/engine/ECU and factory diagnostic thresholds not established",
+      "verification_status": "review_required",
+      "approved_for_application": false,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft"
+    },
+    {
+      "record_id": "SKODA-RQ-B02-009",
+      "brand": "Škoda",
+      "raw_code": "01435 — Implausible Signal",
+      "base_code": "01435",
+      "vag_alias": null,
+      "code_family": "VAG-5digit",
+      "manufacturer_specific": true,
+      "ecu": "03-ABS",
+      "system": "brakes",
+      "definition_en": "Brake Pressure Sensor 1 (G201): Implausible Signal",
+      "translation_ar": "حساس ضغط الفرامل G201: إشارة غير منطقية",
+      "model": null,
+      "generation": null,
+      "engine_codes": [],
+      "market": null,
+      "model_years": null,
+      "ECU_part_number": null,
+      "observed_skoda_specific_scope": null,
+      "symptoms": [
+        "MIL"
+      ],
+      "diagnostic_steps": [
+        "Compare brake switch state and G201 live data",
+        "Check plausible signal progression during brake press according to relevant ABS unit",
+        "Examine wiring and hydraulic controller only after confirming mismatch"
+      ],
+      "live_data_limits": "غير مؤكد؛ يتطلب دليل ECU",
+      "pinout": null,
+      "wiring": null,
+      "parts_location": null,
+      "source": {
+        "title": "Ross-Tech Wiki",
+        "url": "https://wiki.ross-tech.com/wiki/index.php/01435",
+        "accessed_at": "2026-11-16",
+        "class": "independent technical reference; manufacturer TPI only identified, not read"
+      },
+      "review_reason": "Exact threshold and ABS module software absent; exact model year/engine/ECU and factory diagnostic thresholds not established",
+      "verification_status": "review_required",
+      "approved_for_application": false,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft"
+    },
+    {
+      "record_id": "SKODA-RQ-B02-010",
+      "brand": "Škoda",
+      "raw_code": "16347",
+      "base_code": "16347",
+      "vag_alias": "Control Module EEPROM",
+      "code_family": "VAG-5digit",
+      "manufacturer_specific": true,
+      "ecu": "ECU varies; ABS Bosch 8.0 context",
+      "system": "control-module",
+      "definition_en": "Control Module faulty/defective (EEPROM Error)",
+      "translation_ar": "خلل أو تلف في وحدة التحكم (خطأ ذاكرة EEPROM)",
+      "model": null,
+      "generation": null,
+      "engine_codes": [],
+      "market": null,
+      "model_years": null,
+      "ECU_part_number": null,
+      "observed_skoda_specific_scope": "Skoda Bosch 8.0 ABS family named; model/engine unverified",
+      "symptoms": [
+        "unexpected malfunctions"
+      ],
+      "diagnostic_steps": [
+        "Identify control module and software part number",
+        "Verify correct firmware coding and module power/ground",
+        "Use manufacturer service guidance before firmware update or replacement"
+      ],
+      "live_data_limits": "غير مؤكد؛ يتطلب دليل ECU",
+      "pinout": null,
+      "wiring": null,
+      "parts_location": null,
+      "source": {
+        "title": "Ross-Tech Wiki",
+        "url": "https://wiki.ross-tech.com/wiki/index.php/16347",
+        "accessed_at": "2026-11-16",
+        "class": "independent technical reference; manufacturer TPI only identified, not read"
+      },
+      "review_reason": "Ross-Tech explicitly cites Skoda Bosch 8.0 ABS TPI 2014687; actual TPI not reviewed; exact model year/engine/ECU and factory diagnostic thresholds not established",
+      "verification_status": "review_required",
+      "approved_for_application": false,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft"
+    },
+    {
+      "record_id": "SKODA-RQ-B02-011",
+      "brand": "Škoda",
+      "raw_code": "B1304 — Not configured",
+      "base_code": "B1304",
+      "vag_alias": null,
+      "code_family": "B",
+      "manufacturer_specific": false,
+      "ecu": "15-Airbags, AirbagVW20",
+      "system": "airbag",
+      "definition_en": "Left Front Seat Belt Tensioner Control Module: Not configured",
+      "translation_ar": "وحدة شد حزام الأمان الأمامي الأيسر: غير مهيأة",
+      "model": "Octavia",
+      "generation": "5E",
+      "engine_codes": [],
+      "market": null,
+      "model_years": null,
+      "ECU_part_number": null,
+      "observed_skoda_specific_scope": "Platform and controller explicitly cited, not VIN/ECU exact",
+      "symptoms": [
+        "SRS warning possible after component replacement"
+      ],
+      "diagnostic_steps": [
+        "Confirm J234 is AirbagVW20 by component and ASAM IDs",
+        "Check replacement status and component protection",
+        "Use authorized factory tools for required matching; do not attempt undocumented coding"
+      ],
+      "live_data_limits": "غير مؤكد؛ يتطلب دليل ECU",
+      "pinout": null,
+      "wiring": null,
+      "parts_location": null,
+      "source": {
+        "title": "Ross-Tech Wiki",
+        "url": "https://wiki.ross-tech.com/wiki/index.php/AirbagVW20",
+        "accessed_at": "2026-11-16",
+        "class": "independent technical reference; manufacturer TPI only identified, not read"
+      },
+      "review_reason": "MQB/Octavia 5E listed on page; code described for tensioner replacement; applicability still configuration-dependent; exact model year/engine/ECU and factory diagnostic thresholds not established",
+      "verification_status": "review_required",
+      "approved_for_application": false,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft"
+    },
+    {
+      "record_id": "SKODA-RQ-B02-012",
+      "brand": "Škoda",
+      "raw_code": "B1305 — Not configured",
+      "base_code": "B1305",
+      "vag_alias": null,
+      "code_family": "B",
+      "manufacturer_specific": false,
+      "ecu": "15-Airbags, AirbagVW20",
+      "system": "airbag",
+      "definition_en": "Right Front Seat Belt Tensioner Control Module: Not configured",
+      "translation_ar": "وحدة شد حزام الأمان الأمامي الأيمن: غير مهيأة",
+      "model": "Octavia",
+      "generation": "5E",
+      "engine_codes": [],
+      "market": null,
+      "model_years": null,
+      "ECU_part_number": null,
+      "observed_skoda_specific_scope": "Platform and controller explicitly cited, not VIN/ECU exact",
+      "symptoms": [
+        "SRS warning possible after component replacement"
+      ],
+      "diagnostic_steps": [
+        "Confirm J234 AirbagVW20 by component and ASAM IDs",
+        "Review deployment and replacement history without operating SRS wiring",
+        "Apply only approved OEM replacement procedure"
+      ],
+      "live_data_limits": "غير مؤكد؛ يتطلب دليل ECU",
+      "pinout": null,
+      "wiring": null,
+      "parts_location": null,
+      "source": {
+        "title": "Ross-Tech Wiki",
+        "url": "https://wiki.ross-tech.com/wiki/index.php/AirbagVW20",
+        "accessed_at": "2026-11-16",
+        "class": "independent technical reference; manufacturer TPI only identified, not read"
+      },
+      "review_reason": "MQB/Octavia 5E listed; no blanket Skoda applicability; exact model year/engine/ECU and factory diagnostic thresholds not established",
+      "verification_status": "review_required",
+      "approved_for_application": false,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "review_status": "draft"
+    }
+  ],
+  "notes": "Preserve old queue; no merge to main. Mechanism definitions from retrieved Ross-Tech pages; OEM fitment and wiring require independent approval."
+}
