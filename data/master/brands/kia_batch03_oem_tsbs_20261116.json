@@ -1,0 +1,3591 @@
+{
+  "schema": "dtcnexis-kia-source-scoped-batch03-v1",
+  "brand": "Kia",
+  "batch_date": "2026-11-16",
+  "status": "DRAFT_NOT_APP_RELEASE",
+  "main_baseline_path": "data/master/brands/kia.json",
+  "main_baseline_record_count": 63,
+  "main_baseline_blob_sha": "b67067e67cade3c65a32e26ed37c4c7470ddba5c",
+  "records_in_this_batch": 42,
+  "unique_raw_codes_in_this_batch": 42,
+  "new_unique_raw_codes_relative_to_main": 40,
+  "existing_code_new_application_records": [
+    "C1211",
+    "C1611"
+  ],
+  "compared_only_against_main": "The previously reported Kia 125-code DRAFT is unavailable as an original file in this session; uniqueness relative to that draft is not verified.",
+  "sources": [
+    {
+      "id": "KIA_TSB_CHA114_202203",
+      "title": "MDPS Warning Lamp Diagnostic Inspection & Single Parts Replacement",
+      "publication_date": "2022-03",
+      "publisher": "Kia",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10209439-0001.pdf",
+      "scope": "USA; Optima JF/JFa 2016–2017 MY, Optima HEV/PHEV JF 2017 MY, Sorento UMa 2016–2017 MY; production date/VIN limits",
+      "limitations": "DTC numbers and conditional actions only; bulletin lacks individual DTC definitions, wiring pinouts, engine identification."
+    },
+    {
+      "id": "KIA_TSB_TRA109_202407",
+      "title": "IVT Oil Pressure Sensor Replacement",
+      "publication_date": "2024-07",
+      "publisher": "Kia",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11004930-0001.pdf",
+      "scope": "USA Rio SC 2018–2023 MY, Forte BDm 2019–2024 MY, Soul SK3 2020–2024 MY, Seltos SP2 2021–2024 MY, IVT-equipped only",
+      "limitations": "Applies only if no drivability issue and no concurrent P0730XX/P0731XX/P0741XX; XX denotes variable suffix and is not a literal DTC."
+    },
+    {
+      "id": "KIA_TSB_ELE376_202504",
+      "title": "ACU Operation Logic Improvement SA609",
+      "publication_date": "2025-04",
+      "publisher": "Kia",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11017242-0001.pdf",
+      "scope": "USA 2025MY K5 DL3, produced 2024-02-20 through 2024-10-25, affected VIN/ACU ROM only",
+      "limitations": "Addresses ACU software judgement; DTC reporting module and wiring pinouts not independently confirmed."
+    }
+  ],
+  "records": [
+    {
+      "brand": "Kia",
+      "raw_code": "C1102",
+      "base_code": "C1102",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "C-MDPS",
+          "service_path": "ecu_path",
+          "bulletin_guidance_en": "Kia CHA114 lists an MDPS ECU service path for this code and C-MDPS configuration; confirm VIN/configuration and guided diagnosis."
+        },
+        {
+          "mdps_configuration": "C-MDPS",
+          "service_path": "protection_low_voltage",
+          "bulletin_guidance_en": "Kia CHA114 explicitly says do not replace parts for overheating protection or low-voltage-related customer-use circumstances."
+        },
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "protection_low_voltage",
+          "bulletin_guidance_en": "Kia CHA114 explicitly says do not replace parts for overheating protection or low-voltage-related customer-use circumstances."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": "Same code listed in two different C-MDPS groups (ECU service path and no-part-replacement low-voltage/overheat). Preserve conflicting conditional paths pending guided ECU diagnostics."
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1112",
+      "base_code": "C1112",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "C-MDPS",
+          "service_path": "ecu_path",
+          "bulletin_guidance_en": "Kia CHA114 lists an MDPS ECU service path for this code and C-MDPS configuration; confirm VIN/configuration and guided diagnosis."
+        },
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "power_pack_path",
+          "bulletin_guidance_en": "Kia CHA114 lists a steering power-pack replacement path when the R-MDPS configuration and diagnostic conditions match."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1202",
+      "base_code": "C1202",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1211",
+      "base_code": "C1211",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": true,
+      "new_code_relative_to_main": false,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": "Previously in Kia source as ABS/wheel-speed context; this MDPS/communications context is a separate application, not a merged definition."
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1259",
+      "base_code": "C1259",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "C-MDPS",
+          "service_path": "torque_cable",
+          "bulletin_guidance_en": "Kia CHA114: assess the steering torque-sensor cable; column/housing only if the DTC recurs after cable replacement, following KGIS."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1260",
+      "base_code": "C1260",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "C-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1290",
+      "base_code": "C1290",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "C-MDPS",
+          "service_path": "torque_cable",
+          "bulletin_guidance_en": "Kia CHA114: assess the steering torque-sensor cable; column/housing only if the DTC recurs after cable replacement, following KGIS."
+        },
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "short_gear_path",
+          "bulletin_guidance_en": "Kia CHA114 lists a steering short-gear path for confirmed R-MDPS diagnostic conditions."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1603",
+      "base_code": "C1603",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "C-MDPS",
+          "service_path": "protection_low_voltage",
+          "bulletin_guidance_en": "Kia CHA114 explicitly says do not replace parts for overheating protection or low-voltage-related customer-use circumstances."
+        },
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "protection_low_voltage",
+          "bulletin_guidance_en": "Kia CHA114 explicitly says do not replace parts for overheating protection or low-voltage-related customer-use circumstances."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1604",
+      "base_code": "C1604",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "C-MDPS",
+          "service_path": "ecu_path",
+          "bulletin_guidance_en": "Kia CHA114 lists an MDPS ECU service path for this code and C-MDPS configuration; confirm VIN/configuration and guided diagnosis."
+        },
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "power_pack_path",
+          "bulletin_guidance_en": "Kia CHA114 lists a steering power-pack replacement path when the R-MDPS configuration and diagnostic conditions match."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1611",
+      "base_code": "C1611",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "C-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        },
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": true,
+      "new_code_relative_to_main": false,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1613",
+      "base_code": "C1613",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1616",
+      "base_code": "C1616",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1622",
+      "base_code": "C1622",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1623",
+      "base_code": "C1623",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "C-MDPS",
+          "service_path": "ecu_path",
+          "bulletin_guidance_en": "Kia CHA114 lists an MDPS ECU service path for this code and C-MDPS configuration; confirm VIN/configuration and guided diagnosis."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1628",
+      "base_code": "C1628",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1633",
+      "base_code": "C1633",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1659",
+      "base_code": "C1659",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C166B",
+      "base_code": "C166B",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1687",
+      "base_code": "C1687",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "C-MDPS",
+          "service_path": "ecu_path",
+          "bulletin_guidance_en": "Kia CHA114 lists an MDPS ECU service path for this code and C-MDPS configuration; confirm VIN/configuration and guided diagnosis."
+        },
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "power_pack_path",
+          "bulletin_guidance_en": "Kia CHA114 lists a steering power-pack replacement path when the R-MDPS configuration and diagnostic conditions match."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1688",
+      "base_code": "C1688",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "C-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1692",
+      "base_code": "C1692",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "C-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        },
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1693",
+      "base_code": "C1693",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1696",
+      "base_code": "C1696",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1697",
+      "base_code": "C1697",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C16B2",
+      "base_code": "C16B2",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C16BF",
+      "base_code": "C16BF",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1700",
+      "base_code": "C1700",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "power_pack_path",
+          "bulletin_guidance_en": "Kia CHA114 lists a steering power-pack replacement path when the R-MDPS configuration and diagnostic conditions match."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1704",
+      "base_code": "C1704",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "C-MDPS",
+          "service_path": "ecu_path",
+          "bulletin_guidance_en": "Kia CHA114 lists an MDPS ECU service path for this code and C-MDPS configuration; confirm VIN/configuration and guided diagnosis."
+        },
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "power_pack_path",
+          "bulletin_guidance_en": "Kia CHA114 lists a steering power-pack replacement path when the R-MDPS configuration and diagnostic conditions match."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1705",
+      "base_code": "C1705",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "C-MDPS",
+          "service_path": "ecu_path",
+          "bulletin_guidance_en": "Kia CHA114 lists an MDPS ECU service path for this code and C-MDPS configuration; confirm VIN/configuration and guided diagnosis."
+        },
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "power_pack_path",
+          "bulletin_guidance_en": "Kia CHA114 lists a steering power-pack replacement path when the R-MDPS configuration and diagnostic conditions match."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1804",
+      "base_code": "C1804",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1805",
+      "base_code": "C1805",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1812",
+      "base_code": "C1812",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1814",
+      "base_code": "C1814",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C1817",
+      "base_code": "C1817",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "wiring_communications",
+          "bulletin_guidance_en": "Kia CHA114 says inspect external components, wiring and communications; no automatic MDPS replacement."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C2400",
+      "base_code": "C2400",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "C-MDPS",
+          "service_path": "motor_path",
+          "bulletin_guidance_en": "Kia CHA114 lists a motor replacement path for this code in C-MDPS, subject to verification per KGIS."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C2401",
+      "base_code": "C2401",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "C-MDPS",
+          "service_path": "motor_path",
+          "bulletin_guidance_en": "Kia CHA114 lists a motor replacement path for this code in C-MDPS, subject to verification per KGIS."
+        },
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "power_pack_path",
+          "bulletin_guidance_en": "Kia CHA114 lists a steering power-pack replacement path when the R-MDPS configuration and diagnostic conditions match."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C2412",
+      "base_code": "C2412",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "C-MDPS",
+          "service_path": "ecu_path",
+          "bulletin_guidance_en": "Kia CHA114 lists an MDPS ECU service path for this code and C-MDPS configuration; confirm VIN/configuration and guided diagnosis."
+        },
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "power_pack_path",
+          "bulletin_guidance_en": "Kia CHA114 lists a steering power-pack replacement path when the R-MDPS configuration and diagnostic conditions match."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C2413",
+      "base_code": "C2413",
+      "failure_type": null,
+      "system": "C",
+      "ecu": "MDPS/EPS; verify with KDS because some codes also appear in ABS/ESC",
+      "standard_or_oem": "not_determined_from_bulletin",
+      "definition_en": null,
+      "translation_ar": null,
+      "official_definition_status": "not_supplied_in_CHA114",
+      "applicability": {
+        "market": "USA",
+        "vehicle_scopes": [
+          {
+            "model": "Optima",
+            "chassis": "JF/JFa",
+            "model_years": "2016-2017"
+          },
+          {
+            "model": "Optima HEV/PHEV",
+            "chassis": "JF P/HEV",
+            "model_years": "2017"
+          },
+          {
+            "model": "Sorento",
+            "chassis": "UMa",
+            "model_years": "2016-2017"
+          }
+        ],
+        "production_date_ranges_by_configuration": {
+          "Optima JFa": "2015-08-28/2017-05-02",
+          "Optima JF": "2016-02-02/2017-04-26",
+          "Optima HEV/PHEV JF": "2016-06-27/2017-07-06",
+          "Sorento UMa": "2014-10-27/2017-04-13"
+        },
+        "engine_code": null,
+        "engine_code_verified": false,
+        "configuration_requirement": "must match installed C-MDPS or R-MDPS in KDS; bulletin does not map every DTC to every VIN"
+      },
+      "conditional_variants": [
+        {
+          "mdps_configuration": "C-MDPS",
+          "service_path": "ecu_path",
+          "bulletin_guidance_en": "Kia CHA114 lists an MDPS ECU service path for this code and C-MDPS configuration; confirm VIN/configuration and guided diagnosis."
+        },
+        {
+          "mdps_configuration": "R-MDPS",
+          "service_path": "power_pack_path",
+          "bulletin_guidance_en": "Kia CHA114 lists a steering power-pack replacement path when the R-MDPS configuration and diagnostic conditions match."
+        }
+      ],
+      "possible_symptom": "MDPS/EPS warning lamp reported in bulletin population",
+      "diagnostics": [
+        "Use KDS/VCI-II AUTO VIN and read EPS and ABS/ESC DTCs with freeze-frame",
+        "Determine C-MDPS vs R-MDPS and follow the exact CHA114 conditional service path",
+        "Check low voltage/overheat status and external communication wiring before any part replacement",
+        "Refer to current KGIS shop manual for vehicle-specific electrical tests; record their actual specifications"
+      ],
+      "live_data": [
+        {
+          "pid_en": "DTC Status / MDPS",
+          "translation_ar": "حالة رمز العطل في نظام التوجيه",
+          "reference_value": "not provided by CHA114"
+        },
+        {
+          "pid_en": "Battery Voltage",
+          "translation_ar": "جهد البطارية",
+          "reference_value": "not provided by CHA114 for code validation"
+        }
+      ],
+      "parts": "Conditional only; may include MDPS torque-sensor cable, MDPS ECU, MDPS motor, R-MDPS power pack, short gear; exact part depends on diagnostic path",
+      "wiring": "KGIS required; not reproduced or inferred",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_CHA114_202203"
+      ],
+      "source_confirmation": "code and service-path presence confirmed",
+      "verification_status": "source_code_confirmed; individual_definition_pending",
+      "review_status": "pending",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified",
+      "notes": null
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "P084500",
+      "base_code": "P0845",
+      "failure_type": "00",
+      "system": "P",
+      "ecu": "TCM / IVT",
+      "standard_or_oem": "not_confirmed_from_SAE_J2012DA",
+      "definition_en": "Transmission Fluid Pressure Sensor/Switch B Circuit",
+      "translation_ar": "خلل في دائرة حساس/مفتاح ضغط سائل ناقل الحركة B",
+      "applicability": {
+        "market": "USA",
+        "vehicles": [
+          {
+            "model": "Rio",
+            "chassis": "SC",
+            "model_years": "2018-2023"
+          },
+          {
+            "model": "Forte",
+            "chassis": "BDm",
+            "model_years": "2019-2024"
+          },
+          {
+            "model": "Soul",
+            "chassis": "SK3",
+            "model_years": "2020-2024"
+          },
+          {
+            "model": "Seltos",
+            "chassis": "SP2",
+            "model_years": "2021-2024"
+          }
+        ],
+        "transmission": "IVT only",
+        "engine_code": null
+      },
+      "occurrence_condition": "No drivability concerns, and no P0730XX/P0731XX/P0741XX concurrently, for TRA109 applicability.",
+      "diagnostics": [
+        "Read current/stored codes with Kia KDS, note drivability complaints and any P0730XX/P0731XX/P0741XX",
+        "If TRA109 conditions met follow OEM IVT OPS repair procedure; otherwise use KGIS/TRA102/TRA097/SC199",
+        "Follow KDS Pressure Sensor Characteristics Input and TCM adaptive learning after repair"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Oil Temperature Sensor",
+          "translation_ar": "درجة حرارة زيت ناقل الحركة",
+          "test_condition": "After IVT warmed per TRA109 service workflow",
+          "reference": "122°F is fluid condition specified for post-repair procedure, not DTC set threshold"
+        },
+        {
+          "pid_en": "Primary Pulley Speed / Secondary Pulley Speed",
+          "translation_ar": "سرعة البكرة الابتدائية/الثانوية",
+          "reference": "not provided in TRA109"
+        }
+      ],
+      "parts": [
+        {
+          "name": "IVT oil pressure sensor",
+          "part_number": "48885 02300",
+          "scope": "TRA109-listed US vehicles; confirm EPC"
+        }
+      ],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_TRA109_202407"
+      ],
+      "source_confirmation": "code and English description in Kia TSB",
+      "verification_status": "OEM_TSB_verified_code_and_definition; vehicle VIN scope conditional",
+      "review_status": "pending_engine_ECU_europe",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified"
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "P084600",
+      "base_code": "P0846",
+      "failure_type": "00",
+      "system": "P",
+      "ecu": "TCM / IVT",
+      "standard_or_oem": "not_confirmed_from_SAE_J2012DA",
+      "definition_en": "Transmission Fluid Pressure Sensor/Switch B Circuit Range",
+      "translation_ar": "إشارة دائرة حساس/مفتاح ضغط سائل ناقل الحركة B خارج المجال المتوقع",
+      "applicability": {
+        "market": "USA",
+        "vehicles": [
+          {
+            "model": "Rio",
+            "chassis": "SC",
+            "model_years": "2018-2023"
+          },
+          {
+            "model": "Forte",
+            "chassis": "BDm",
+            "model_years": "2019-2024"
+          },
+          {
+            "model": "Soul",
+            "chassis": "SK3",
+            "model_years": "2020-2024"
+          },
+          {
+            "model": "Seltos",
+            "chassis": "SP2",
+            "model_years": "2021-2024"
+          }
+        ],
+        "transmission": "IVT only",
+        "engine_code": null
+      },
+      "occurrence_condition": "No drivability concerns, and no P0730XX/P0731XX/P0741XX concurrently, for TRA109 applicability.",
+      "diagnostics": [
+        "Read current/stored codes with Kia KDS, note drivability complaints and any P0730XX/P0731XX/P0741XX",
+        "If TRA109 conditions met follow OEM IVT OPS repair procedure; otherwise use KGIS/TRA102/TRA097/SC199",
+        "Follow KDS Pressure Sensor Characteristics Input and TCM adaptive learning after repair"
+      ],
+      "live_data": [
+        {
+          "pid_en": "Oil Temperature Sensor",
+          "translation_ar": "درجة حرارة زيت ناقل الحركة",
+          "test_condition": "After IVT warmed per TRA109 service workflow",
+          "reference": "122°F is fluid condition specified for post-repair procedure, not DTC set threshold"
+        }
+      ],
+      "parts": [
+        {
+          "name": "IVT oil pressure sensor",
+          "part_number": "48885 02300",
+          "scope": "TRA109-listed US vehicles; confirm EPC"
+        }
+      ],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_TRA109_202407"
+      ],
+      "source_confirmation": "code and English description in Kia TSB",
+      "verification_status": "OEM_TSB_verified_code_and_definition; vehicle VIN scope conditional",
+      "review_status": "pending_engine_ECU_europe",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified"
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C128387",
+      "base_code": "C1283",
+      "failure_type": "87",
+      "system": "C",
+      "ecu": "ACU update context; DTC reporting ECU not established",
+      "standard_or_oem": "not_confirmed_from_SAE_J2012DA",
+      "definition_en": "Lateral G Sensor/Longitudinal G Sensor/Yaw Rate Sensor - Signal Error",
+      "translation_ar": "خطأ إشارة مستشعر التسارع الجانبي/الطولي أو معدل الانعراج",
+      "applicability": {
+        "market": "USA",
+        "vehicles": [
+          {
+            "model": "K5",
+            "chassis": "DL3",
+            "model_years": "2025",
+            "production_dates": "2024-02-20/2024-10-25"
+          }
+        ],
+        "engine_code": null,
+        "ecu_rom_prior": "04022AA1",
+        "ecu_rom_updated": "04042AA0",
+        "ecu_part_number": "95910 L2AA0"
+      },
+      "occurrence_condition": "Ignition OFF/ON restart within 1.5s; ESC/FCA lights for up to 3 minutes, temporary ESC/FCA/LKA unavailability",
+      "diagnostics": [
+        "Confirm VIN and ACU part number/ROM against SA609",
+        "Read stored DTC and freeze frame using KDS",
+        "Perform authorized ACU event 805 update only if needed; verify warning lamps and DTC status afterward"
+      ],
+      "live_data": [
+        {
+          "pid_en": "ACU ROM ID",
+          "translation_ar": "معرّف إصدار برمجة وحدة الوسائد الهوائية",
+          "reference": "04022AA1 prior / 04042AA0 new, only matching ACU P/N 95910 L2AA0"
+        }
+      ],
+      "parts": [
+        {
+          "name": "ACU",
+          "part_number": "95910 L2AA0",
+          "scope": "SA609 K5 DL3 affected ROM, not automatic replacement"
+        }
+      ],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_ELE376_202504"
+      ],
+      "source_confirmation": "code and English description in Kia TSB",
+      "verification_status": "OEM_TSB_verified_code_and_definition; vehicle VIN scope conditional",
+      "review_status": "pending_engine_ECU_europe",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified"
+    },
+    {
+      "brand": "Kia",
+      "raw_code": "C164286",
+      "base_code": "C1642",
+      "failure_type": "86",
+      "system": "C",
+      "ecu": "ACU update context; DTC reporting ECU not established",
+      "standard_or_oem": "not_confirmed_from_SAE_J2012DA",
+      "definition_en": "CAN Message Failure - Brake",
+      "translation_ar": "فشل رسالة CAN المتعلقة بالفرامل",
+      "applicability": {
+        "market": "USA",
+        "vehicles": [
+          {
+            "model": "K5",
+            "chassis": "DL3",
+            "model_years": "2025",
+            "production_dates": "2024-02-20/2024-10-25"
+          }
+        ],
+        "engine_code": null,
+        "ecu_rom_prior": "04022AA1",
+        "ecu_rom_updated": "04042AA0",
+        "ecu_part_number": "95910 L2AA0"
+      },
+      "occurrence_condition": "Ignition OFF/ON restart within 1.5s; ESC/FCA lights for up to 3 minutes, temporary ESC/FCA/LKA unavailability",
+      "diagnostics": [
+        "Confirm VIN and ACU part number/ROM against SA609",
+        "Read stored DTC and freeze frame using KDS",
+        "Perform authorized ACU event 805 update only if needed; verify warning lamps and DTC status afterward"
+      ],
+      "live_data": [
+        {
+          "pid_en": "ACU ROM ID",
+          "translation_ar": "معرّف إصدار برمجة وحدة الوسائد الهوائية",
+          "reference": "04022AA1 prior / 04042AA0 new, only matching ACU P/N 95910 L2AA0"
+        }
+      ],
+      "parts": [
+        {
+          "name": "ACU",
+          "part_number": "95910 L2AA0",
+          "scope": "SA609 K5 DL3 affected ROM, not automatic replacement"
+        }
+      ],
+      "wiring": null,
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "source_ids": [
+        "KIA_TSB_ELE376_202504"
+      ],
+      "source_confirmation": "code and English description in Kia TSB",
+      "verification_status": "OEM_TSB_verified_code_and_definition; vehicle VIN scope conditional",
+      "review_status": "pending_engine_ECU_europe",
+      "existing_kia_code_on_main": false,
+      "new_code_relative_to_main": true,
+      "europe_applicability": "unverified",
+      "sweden_applicability": "unverified"
+    }
+  ],
+  "global_remarks": [
+    "Do not infer EU/Sweden applicability from US bulletins",
+    "No media generated or uploaded",
+    "No publication, release, app, feed, or stable branch modifications",
+    "Codes in CHA114 have no manufacturer definition in that bulletin; store unverified definitions as null"
+  ]
+}
