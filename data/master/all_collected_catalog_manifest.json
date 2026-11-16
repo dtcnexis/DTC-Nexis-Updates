@@ -6,9 +6,9 @@
   "storage_repository": "dtcnexis/DTC-Nexis-Updates",
   "storage_branch": "main",
   "storage_directory": "data/master",
-  "current_saved_row_count": 9594,
+  "current_saved_row_count": 9748,
   "distinct_worldwide_codes": "UNKNOWN: cross-manufacturer duplicates/suffixes and same-code ECU variants are deliberately preserved",
-  "file_count": 54,
+  "file_count": 55,
   "collections": [
     {
       "kind": "generic_trilingual",
@@ -412,6 +412,13 @@
       "path": "data/master/brands/infiniti_batch03_oem_bulletins_20261116.json",
       "rows": 5,
       "verification": "BULLETIN_SCOPE_AND_CODE_MEANING_CHECKED_PENDING_FULL_TECHNICAL_QA_NO_RELEASE"
+    },
+    {
+      "kind": "infiniti_q50_2016_oem_ecu_index_batch04",
+      "brand": "Infiniti",
+      "path": "data/master/brands/infiniti_batch04_q50_2016_ecu_indexes_20261116.json",
+      "rows": 154,
+      "verification": "OEM_DTC_INDEX_AND_CONSULT_LABEL_VERIFIED_ALL_DETAIL_PENDING_NO_RELEASE"
     }
   ],
   "saved_groups": {
@@ -440,7 +447,8 @@
     "Jeep_batch01_preserved": 111,
     "Fiat_batch01_preserved": 221,
     "Jaguar_batch01_preserved": 149,
-    "Infiniti_batch03_oem_bulletin_scoped": 5
+    "Infiniti_batch03_oem_bulletin_scoped": 5,
+    "Infiniti_Q50_2016_oem_index_batch04": 154
   },
   "source_lists_still_to_reconcile": [
     {
@@ -785,5 +793,18 @@
     "report_path": "data/master/reviews/infiniti_20261116_batch03/REPORT_AR.md",
     "approved_for_release": false,
     "no_main_update_at_creation": true
+  },
+  "continuation_20261116_infiniti_batch04": {
+    "branch_only": "data/infiniti-dtc-20261116-batch03",
+    "added_source_index_records": 154,
+    "system_breakdown": {
+      "BCM": 44,
+      "ANC": 12,
+      "SRS": 44,
+      "CHASSIS": 54
+    },
+    "pending_detail": 154,
+    "review_path": "data/master/reviews/infiniti_20261116_batch03/REVIEW_QUEUE_BATCH04.json",
+    "full_technical_approval": false
   }
 }
