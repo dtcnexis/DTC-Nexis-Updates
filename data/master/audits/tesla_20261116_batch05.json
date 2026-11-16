@@ -1,0 +1,101 @@
+{
+  "schema": "dtcnexis-tesla-batch05-audit-v1",
+  "brand": "Tesla",
+  "date": "2026-11-16",
+  "branch": "work/tesla-dtc-20261116",
+  "release_to_app": "NOT_ACTIVE",
+  "previous_unique_oem_evidenced_alert_identifiers": 191,
+  "new_oem_evidenced_alert_identifiers": 8,
+  "new_codes": [
+    "CP_a141",
+    "CP_a143",
+    "CP_a171",
+    "UMC_a013",
+    "VCLEFT_a130",
+    "VCREAR_a130",
+    "VCLEFT_a402",
+    "VCFRONT_a402"
+  ],
+  "new_codes_by_source": {
+    "Cybertruck US Owner Manual": 7,
+    "Model Y Europe Owner Manual": 1
+  },
+  "total_unique_oem_evidenced_alert_identifiers": 199,
+  "duplicate_identifiers": 0,
+  "existing_code_new_applicability_relations": 16,
+  "review_queue_previous": 245,
+  "review_queue_total": 255,
+  "review_queue_new": 10,
+  "review_queue_new_oem_partial": 8,
+  "review_queue_ambiguous_literal_spelling": 2,
+  "review_queue_duplicates": 0,
+  "new_confirmed_sae_p_b_c_u_codes": 0,
+  "confirmed_vin_engine_ecu_variant_applicability": 0,
+  "source_urls": [
+    "https://www.tesla.com/ownersmanual/cybertruck/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+    "https://www.tesla.com/ownersmanual/modely/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html"
+  ],
+  "source_verified_at": "2026-11-16",
+  "excluded_ambiguous_manual_display": [
+    {
+      "literal": "VCLEFT_ a365",
+      "note": "Manual inserts space between underscore and number, no confirmed raw scan code."
+    },
+    {
+      "literal": "VCREAR_ a365",
+      "note": "Manual inserts space between underscore and number, no confirmed raw scan code."
+    }
+  ],
+  "notes": [
+    "All 8 new identifiers confirmed as OEM owner-manual alert IDs only, not full ECU latched diagnostic trouble codes.",
+    "7 Cybertruck codes from US guide may not apply to European vehicle configurations; one Model Y code from EU guide.",
+    "16 code-to-document associations establish manual-level scope only, not year/engine/ECU/VIN.",
+    "Missing threshold, connector pinout, live-data signal, part number, specific engine or suspension variant are explicitly unknown.",
+    "Existing original images, update feed, stable Windows builds, and other manufacturers untouched.",
+    "Prior full raw batch detail files were not copied byte-for-byte into work branch; archived local originals remain separate."
+  ],
+  "files_verified": [
+    {
+      "path": "data/master/brands/tesla_prior_batch01_batch02_index_20261116.json",
+      "sha_git_blob": "cbcce88057b91717dc90dbdb70f13a7742182cac",
+      "parse": "valid_json",
+      "record_count": 150
+    },
+    {
+      "path": "data/master/brands/tesla_service_mode_2024_8_additions_20261116.json",
+      "sha_git_blob": "8984401a222b53a19a925ed4cef717e520f81097",
+      "parse": "valid_json",
+      "record_count": 1
+    },
+    {
+      "path": "data/master/brands/tesla_models_europe_manual_batch04_20261116.json",
+      "sha_git_blob": "2758bd2df074c0c9be1d369da1c082a99fd22854",
+      "parse": "valid_json",
+      "record_count": 32
+    },
+    {
+      "path": "data/master/brands/tesla_service_mode_literal_suffix_batch04_20261116.json",
+      "sha_git_blob": "3fcef1962d8c9348663f597ba2fe19ecf97a6190",
+      "parse": "valid_json",
+      "record_count": 8
+    },
+    {
+      "path": "data/master/brands/tesla_cybertruck_modely_batch05_20261116.json",
+      "sha_git_blob": "4bdf76dbb1bd6f42fe201116a90f364a97703fbb",
+      "parse": "valid_json",
+      "record_count": 8
+    },
+    {
+      "path": "data/master/enrichment/tesla_cybertruck_manual_existing_alerts_applicability_batch05_20261116.json",
+      "sha_git_blob": "f3ae7e7ba7c3190b6fc4e8c6331ba3aa6c8ba0f7",
+      "parse": "valid_json",
+      "record_count": 16
+    },
+    {
+      "path": "data/review-queue/tesla_20261116.json",
+      "sha_git_blob": "2021f0722453635ed378d22f170608ac35342d95",
+      "parse": "valid_json",
+      "record_count": 255
+    }
+  ]
+}
