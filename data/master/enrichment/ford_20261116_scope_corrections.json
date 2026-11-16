@@ -1,0 +1,98 @@
+{
+  "schema": "dtcnexis-ford-context-correction-v1",
+  "brand": "Ford",
+  "created_on": "2026-11-16",
+  "record_count": 7,
+  "new_code_count": 0,
+  "release": "NOT_ACTIVATED",
+  "purpose": "Correct ECU/source attribution and record superseding Ford bulletin without duplicating original code records",
+  "source_document_updates": [
+    {
+      "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10226944-0001.pdf",
+      "revision_date": "2022-11-07",
+      "source": "Ford 14M02 Supplement 6"
+    },
+    {
+      "url": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1300.pdf",
+      "revision_date": "2013-03-08",
+      "source": "Ford/Lincoln 2013 Gasoline OBD"
+    },
+    {
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11018197-0001.pdf",
+      "revision_date": "2025-04-30",
+      "source": "Ford TSB 25-2142 supersedes 24-2442"
+    }
+  ],
+  "entries": [
+    {
+      "code": "P0606",
+      "ecu": "TCM",
+      "definition_en": "TCM Internal Failure",
+      "translation_ar": "عطل داخلي في وحدة التحكم بناقل الحركة",
+      "source": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10226944-0001.pdf",
+      "scope": "Ford Fiesta 2011-2015 / Focus 2012-2016 North America DPS6, VIN OASIS check",
+      "status": "manufacturer_service_bulletin_code_definition_direct",
+      "diagnostics": "Ford IDS; fault must be shown with qualifying symptoms; replace TCM only if Ford WSM/PCED diagnosis confirms"
+    },
+    {
+      "code": "U0101",
+      "ecu": "TCM as communications target; reporting module not identified by bulletin",
+      "definition_en": "Lost Communication With TCM",
+      "translation_ar": "فقد الاتصال بوحدة التحكم بناقل الحركة",
+      "source": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10226944-0001.pdf",
+      "scope": "Ford Fiesta 2011-2015 / Focus 2012-2016 North America DPS6, VIN OASIS check",
+      "status": "manufacturer_service_bulletin_code_definition_direct",
+      "diagnostics": "Check network power/grounds/connectivity and Ford WSM/PCED before interpreting as failed TCM"
+    },
+    {
+      "code": "U1013",
+      "ecu": "TCM as data source; reporting module not identified by bulletin",
+      "definition_en": "Invalid Internal Control Module Monitoring Data Received From TCM",
+      "translation_ar": "استقبال بيانات مراقبة داخلية غير صالحة من وحدة التحكم بناقل الحركة",
+      "source": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10226944-0001.pdf",
+      "scope": "Ford Fiesta 2011-2015 / Focus 2012-2016 North America DPS6, VIN OASIS check",
+      "status": "manufacturer_service_bulletin_code_definition_direct",
+      "diagnostics": "Review TCM communication and module calibration; WSM/PCED test required"
+    },
+    {
+      "code": "P0015",
+      "ecu": "PCM",
+      "definition_en": "Exhaust Camshaft Position Timing - Over-Retarded (Bank 1)",
+      "translation_ar": "توقيت كامة العادم متأخر أكثر من المسموح للبنك 1",
+      "source": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1300.pdf",
+      "scope": "Ford 2013 gasoline VCT monitor; NOT listed in DPS6 14M02 DTC table",
+      "status": "correction_to_batch02_TCM_misattribution",
+      "diagnostics": "Check VCT commanded vs actual position, oil/solenoid control and cam timing by Ford VIN-specific PCED"
+    },
+    {
+      "code": "P0016",
+      "ecu": "PCM",
+      "definition_en": "Crank/Cam Position Correlation (Bank 1)",
+      "translation_ar": "عدم تطابق توقيت عمود المرفق وعمود الكامات للبنك 1",
+      "source": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1300.pdf",
+      "scope": "Ford 2013 gasoline VCT monitor; NOT listed in DPS6 14M02 DTC table",
+      "status": "correction_to_batch02_TCM_misattribution",
+      "diagnostics": "Check crank/cam correlation per engine calibration; Ford 2013 overview says one tooth/16 crank degrees typical misalignment monitor threshold; not universal"
+    },
+    {
+      "code": "P0017",
+      "ecu": null,
+      "definition_en": null,
+      "translation_ar": null,
+      "source": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1300.pdf",
+      "scope": "Ford 2013 monitor preconditions list code P0017 but no inspected table establishes specific definition; NOT listed in DPS6 14M02",
+      "status": "deferred_unverified_definition_and_ECU",
+      "diagnostics": "Obtain VIN-specific PCM WSM/PCED; do not label as DPS6 TCM failure"
+    },
+    {
+      "code": "B11D9:09",
+      "ecu": "BCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "source": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11018197-0001.pdf",
+      "scope": "2021–2024 Ford F-150 3.5L PowerBoost, North America; TSB 25-2142 supersedes 24-2442",
+      "status": "existing_code_newer_service_bulletin_update",
+      "diagnostics": "Battery condition test, then update BCM/ACCM/TCCM per superseding TSB; battery replacement only if condition test fails"
+    }
+  ]
+}

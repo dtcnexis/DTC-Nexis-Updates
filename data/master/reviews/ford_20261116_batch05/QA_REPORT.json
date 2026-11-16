@@ -1,0 +1,103 @@
+{
+  "schema": "dtcnexis-ford-batch05-QA-v1",
+  "brand": "Ford",
+  "run_date": "2026-11-16",
+  "branch": "work/ford-dtc-continuation-20261116",
+  "main_untouched_required": true,
+  "production_status": "DRAFT_UNVERIFIED_FOR_RELEASE",
+  "counts": {
+    "previous_main_source_rows": 409,
+    "previous_main_unique_raw": 407,
+    "previous_batch02_local_unique": 413,
+    "previous_batch03_incremental_unique": 37,
+    "previous_batch04_incremental_unique": 20,
+    "previous_projected_unique_after_local_B02": 470,
+    "batch05_EU_new_unique": 11,
+    "batch05_NA_new_unique": 17,
+    "batch05_total_new_unique": 28,
+    "batch05_EU_conditional_applications": 30,
+    "batch05_NA_conditional_applications": 145,
+    "batch05_total_new_applications": 175,
+    "batch05_EU_existing_code_strings_with_new_scope": 7,
+    "batch05_NA_existing_code_strings_with_new_scope": 12,
+    "batch05_EU_mHEV_system_advisories": 6,
+    "batch05_deferred_review_records": 177,
+    "cumulative_deferred_review_records": 668,
+    "branch_distinct_raw_code_strings": 492,
+    "projected_catalog_unique_after_batch02_reconciliation": 498,
+    "new_source_documents": 8,
+    "new_images": 0,
+    "confirmed_sweden_VIN_specific_new_applicability": 0,
+    "duplicate_new_raw_code_strings": 0
+  },
+  "checks": {
+    "old_ford_409_preserved": true,
+    "prior_batch03_pcm_32": true,
+    "prior_batch03_cu_7": true,
+    "prior_batch04_definitions_20": true,
+    "fresh_codes_unique": true,
+    "no_new_raw_code_overlap_with_previous": true,
+    "source_register_unique": true,
+    "source_fk_valid": true,
+    "code_fk_valid": true,
+    "application_ids_unique": true,
+    "EU_apps_30": true,
+    "NA_apps_145": true,
+    "correct_europe_reproduced_source_disclaimer": true,
+    "mhev_diagnostic_only_not_DTC": true,
+    "SRS_images_not_created": true,
+    "review_ids_unique": true,
+    "review_177": true,
+    "all_eu_named_range_bound": true,
+    "EU_nonFordOem_claim_absent": true
+  },
+  "overall_structural_pass": true,
+  "source_document_paths": [
+    "data/master/brands/ford_batch05_europe_20261116.json",
+    "data/master/brands/ford_batch05_10r80_north_america_20261116.json"
+  ],
+  "known_issues": [
+    "TSBSearch is a third-party mirror reproducing Ford-authored EU bulletins. Ford provenance visible in reproduced text; exact latest PTS revision and VIN eligibility not independently verified.",
+    "23-7072 describes P2463 with words that Ford 2012 OEM OBD assigns to P246B. P2463 needs engine-specific review.",
+    "P24A4/P246B are historical DPF strategy examples; do not attach automatically to 2019–22 2.0L EcoBlue models.",
+    "P2000 source covers 1.5L EcoBlue no-AdBlue family 2018–2021 but does not name each model; stored model null.",
+    "Suffix P02FA-68 and engine variant BJ/BC/BK/B7 are preserved exactly from bulletin; authoritative FTB/engine-code classification still required.",
+    "24-2254 P076F occurs in action list but differs from lead summary code enumeration; keep under review.",
+    "Individual 17 new 10R80 code meanings not defined in TSB; definition_en and translation_ar null.",
+    "24-2254 named five Ford models for nonhybrid 10R80, built <=2022-08-15; does not establish Sweden or European Transit fitment.",
+    "Ford 24-2034 says U0253 may be absent; do not make presence a prerequisite for a symptom-only case.",
+    "No component diagrams/images created; no replacement authorised without WSM tests.",
+    "Batch02 six distinct codes are counted in a prospective total but not yet materialized as distinct new raw code entries on the work branch; source changes remain separate.",
+    "The archived historical DRAFT ZIP is not currently byte-verifiable; no claim of recovery."
+  ],
+  "sha_git_blobs": [
+    {
+      "file": "data/master/brands/ford.json",
+      "blob_sha1": "651db591fe664e397b52c55e535339671442979d"
+    },
+    {
+      "file": "data/master/brands/ford_batch03_source_scoped_20261116.json",
+      "blob_sha1": "c993083776bd969b7c9a54983574fc8e960ee8b2"
+    },
+    {
+      "file": "data/master/brands/ford_batch03_chassis_network_20261116.json",
+      "blob_sha1": "3c40622dd5e53663cb4d8d8c89ded32789012452"
+    },
+    {
+      "file": "data/master/brands/ford_batch04_hybrid_adas_srs_20261116.json",
+      "blob_sha1": "41dd2d150f39a6be3102b85468c1d9d795ce022b"
+    },
+    {
+      "file": "data/master/brands/ford_batch05_europe_20261116.json",
+      "blob_sha1": "54c3590f995c9b376cc1652cea74d4ceaefd668d"
+    },
+    {
+      "file": "data/master/brands/ford_batch05_10r80_north_america_20261116.json",
+      "blob_sha1": "244f3588c3e3cfd7c919df306cce961647917134"
+    },
+    {
+      "file": "data/master/reviews/ford_20261116_batch05/DEFERRED_REVIEW.json",
+      "blob_sha1": "a9a8222b22b0135188cf5fc3a7ce38d2affa1aa4"
+    }
+  ]
+}

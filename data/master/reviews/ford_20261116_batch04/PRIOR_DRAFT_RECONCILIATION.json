@@ -1,0 +1,29 @@
+{
+  "brand": "Ford",
+  "audit_date": "2026-11-16",
+  "schema": "dtcnexis-ford-prior-draft-source-overlap-v1",
+  "purpose": "Avoid double-counting previously reported DRAFT additions when reconciling local archive and GitHub branch",
+  "archival_evidence": {
+    "batch01_main_rows": 409,
+    "batch02_normalized_unique_codes": 413,
+    "prior_DRAFT_reported_unique_codes": 419,
+    "prior_DRAFT_source": "Assistant's earlier October Ford DRAFT export status in this conversation; raw archive not accessible in current container",
+    "raw_DRAFT_zip_available_in_active_runtime": false,
+    "raw_DRAFT_SHA256_recheck_possible": false
+  },
+  "six_prior_DRAFT_codes_already_in_current_batch03": [
+    "P0112",
+    "P0113",
+    "P0117",
+    "P0118",
+    "P1289",
+    "P1290"
+  ],
+  "new_batch03_code_strings_relative_to_B02": 37,
+  "new_batch03_code_strings_not_already_reported_in_prior_DRAFT": 31,
+  "new_batch04_distinct_code_strings": 20,
+  "prospective_distinct_code_strings_after_reconciliation": 470,
+  "arithmetic": "Prior reported DRAFT 419 + (Batch03 37 - 6 historical overlaps) + Batch04 20 = 470",
+  "de_duplication_policy": "This is a reported-code overlap audit; no automatic removal of any source record; each source and module variant retained",
+  "review_state": "NEEDS_RAW_DRAFT_ZIP_BYTE_COMPARISON_WHEN_ACCESSIBLE"
+}

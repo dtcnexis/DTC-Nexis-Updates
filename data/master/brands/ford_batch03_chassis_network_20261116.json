@@ -1,0 +1,237 @@
+{
+  "schema": "dtcnexis-ford-conditional-bulletins-v1",
+  "brand": "Ford",
+  "created_on": "2026-11-16",
+  "record_count": 7,
+  "distinct_code_strings": 5,
+  "precedence": "separate module/application variants; do not collapse with generic DTC",
+  "not_for_release": true,
+  "notes": "SSM/TBS evidence identifies the code, ECU and condition; it does not always define SAE standard meaning",
+  "entries": [
+    {
+      "record_id": "FORD-SSM-S2021-C1B00-62-PSCM-1",
+      "brand": "Ford",
+      "raw_code": "C1B00:62",
+      "base_code": "C1B00",
+      "ecu": "PSCM",
+      "model": "Escape",
+      "model_years": "2020–2021",
+      "market": "North America",
+      "engine": null,
+      "engine_code": null,
+      "definition_en": "Steering-related DTC C1B00, failure subtype 62 (exact official base-code definition not provided in bulletin)",
+      "translation_ar": "خلل مرتبط بالتوجيه — الرمز الفرعي 62؛ التعريف المعياري الكامل غير موثق في النشرة",
+      "source": {
+        "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10200738-0001.pdf",
+        "title": "Ford TSB 21-2252",
+        "date": "2021-07-30",
+        "source_scope": "Ford 2020–2021 Escape, not Sweden/EU fitment proof"
+      },
+      "observed_service_condition": "Stability/traction warning; steering wheel-to-column shaft alignment and unequal tie rod length",
+      "diagnostic_steps": [
+        "Read PSCM C1B00:62 and ABS C0051:67",
+        "Inspect tie rod threading lengths for gross asymmetry per TSB",
+        "If criteria met, have qualified technician inspect wheel/column alignment and follow Ford WSM and TSB procedure",
+        "After correct alignment and toe adjustment, perform Ford recalibration road test"
+      ],
+      "electrical_pinouts": null,
+      "live_data": [],
+      "interpretation_status": "manufacturer_bulletin_condition_documented; standard_DTC_definition_unverified",
+      "verification_status": "source_scoped_conditional; VIN_and_engine_not_confirmed",
+      "review_status": "pending_OEM_module_calibration",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "record_id": "FORD-SSM-S2021-C0051-67-ABS-2",
+      "brand": "Ford",
+      "raw_code": "C0051:67",
+      "base_code": "C0051",
+      "ecu": "ABS",
+      "model": "Escape",
+      "model_years": "2020–2021",
+      "market": "North America",
+      "engine": null,
+      "engine_code": null,
+      "definition_en": "C0051 failure type 67 in ABS; full failure-type standard definition not verified here",
+      "translation_ar": "عطل ABS برمز C0051 والنوع الفرعي 67؛ تعريف النوع الكامل يحتاج توثيقاً",
+      "source": {
+        "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10200738-0001.pdf",
+        "title": "Ford TSB 21-2252",
+        "date": "2021-07-30",
+        "source_scope": "Ford 2020–2021 Escape"
+      },
+      "observed_service_condition": "Same Ford TSB 21-2252 steering shaft alignment issue; accompanies PSCM C1B00:62",
+      "diagnostic_steps": [
+        "Confirm ABS C0051:67 and PSCM C1B00:62 co-occur",
+        "Inspect steering mechanical alignment and toe per TSB",
+        "Follow qualified Ford Workshop Manual procedures before replacing sensors"
+      ],
+      "electrical_pinouts": null,
+      "live_data": [],
+      "interpretation_status": "manufacturer_bulletin_condition_documented; standard_DTC_definition_unverified",
+      "verification_status": "source_scoped_conditional; VIN_and_engine_not_confirmed",
+      "review_status": "pending_OEM_module_calibration",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "record_id": "FORD-SSM-S2023-C1B00-62-PSCM-3",
+      "brand": "Ford",
+      "raw_code": "C1B00:62",
+      "base_code": "C1B00",
+      "ecu": "PSCM",
+      "model": "F-Super Duty",
+      "model_years": "2023",
+      "market": "North America",
+      "engine": null,
+      "engine_code": null,
+      "definition_en": "C1B00 failure type 62 in PSCM with driver-assist warnings; base code definition not given in SSM",
+      "translation_ar": "رمز C1B00 النوع 62 في وحدة التوجيه مع رسائل أنظمة المساعدة",
+      "source": {
+        "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10247150-0001.pdf",
+        "title": "Ford SSM 52105",
+        "date": null,
+        "source_scope": "2023 Ford F-Super Duty"
+      },
+      "observed_service_condition": "Pre-collision, Hill Start Assist, AdvanceTrac and blind-spot messages; Ford attributes some cases to PSCM software",
+      "diagnostic_steps": [
+        "Confirm 2023 F-Super Duty identity and exact PSCM stored code",
+        "Check SSM 52105 criteria and software level",
+        "If within bulletin scope, reprogram PSCM using supported Ford diagnostics; otherwise WSM diagnosis"
+      ],
+      "electrical_pinouts": null,
+      "live_data": [],
+      "interpretation_status": "manufacturer_bulletin_condition_documented; standard_DTC_definition_unverified",
+      "verification_status": "source_scoped_conditional; VIN_and_engine_not_confirmed",
+      "review_status": "pending_OEM_module_calibration",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "record_id": "FORD-SSM-S2016-C1B00-SECM-4",
+      "brand": "Ford",
+      "raw_code": "C1B00",
+      "base_code": "C1B00",
+      "ecu": "SECM",
+      "model": "Edge",
+      "model_years": "2016",
+      "market": "North America",
+      "engine": null,
+      "engine_code": null,
+      "definition_en": "Adaptive/Active Steering message with C1B00 stored in SECM; full DTC definition not specified",
+      "translation_ar": "خلل توجيه متكيف/نشط مع تسجيل C1B00 في وحدة التحكم بجهد التوجيه",
+      "source": {
+        "url": "https://static.nhtsa.gov/odi/tsbs/2016/SB-10095966-2532.pdf",
+        "title": "Ford TSB 16-2066",
+        "date": "2016-11-03",
+        "source_scope": "2016 Ford Edge with adaptive/active steering"
+      },
+      "observed_service_condition": "Adaptive/active steering warning; Ford TSB 16-2066 for Edge with active steering",
+      "diagnostic_steps": [
+        "Confirm adaptive/active steering equipment and SECM C1B00",
+        "Check exact TSB criteria and VIN applicability",
+        "Follow WSM 211-02 and specific TSB; no blanket replacement outside scope"
+      ],
+      "electrical_pinouts": null,
+      "live_data": [],
+      "interpretation_status": "manufacturer_bulletin_condition_documented; standard_DTC_definition_unverified",
+      "verification_status": "source_scoped_conditional; VIN_and_engine_not_confirmed",
+      "review_status": "pending_OEM_module_calibration",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "record_id": "FORD-SSM-S2026-C1B00-PSCM-5",
+      "brand": "Ford",
+      "raw_code": "C1B00",
+      "base_code": "C1B00",
+      "ecu": "PSCM",
+      "model": "Explorer / Police Interceptor Utility",
+      "model_years": "2025–2027",
+      "market": "North America",
+      "engine": null,
+      "engine_code": null,
+      "definition_en": "Power steering module C1B00 recorded after SCCM/GSM programming; official base-code definition not specified",
+      "translation_ar": "تسجيل C1B00 في وحدة التوجيه الكهربائي بعد برمجة وحدة عمود المقود أو اختيار التروس",
+      "source": {
+        "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11039144-0001.pdf",
+        "title": "Ford SSM 55298",
+        "date": null,
+        "source_scope": "Ford Explorer and Police Interceptor Utility 2025–2027, condition post-update"
+      },
+      "observed_service_condition": "Possible steering assist warning following SCCM/GSM update",
+      "diagnostic_steps": [
+        "Confirm recent SCCM or GSM software update and DTC source module",
+        "Follow Ford SSM 55298 exact reset procedure for vehicle type",
+        "Do not infer mechanical steering failure solely from this code"
+      ],
+      "electrical_pinouts": null,
+      "live_data": [],
+      "interpretation_status": "manufacturer_bulletin_condition_documented; standard_DTC_definition_unverified",
+      "verification_status": "source_scoped_conditional; VIN_and_engine_not_confirmed",
+      "review_status": "pending_OEM_module_calibration",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "record_id": "FORD-SSM-S2026-U2016-PSCM-6",
+      "brand": "Ford",
+      "raw_code": "U2016",
+      "base_code": "U2016",
+      "ecu": "PSCM",
+      "model": "Explorer / Police Interceptor Utility",
+      "model_years": "2025–2027",
+      "market": "North America",
+      "engine": null,
+      "engine_code": null,
+      "definition_en": "U2016 in PSCM after SCCM/GSM software update; definition not included in SSM",
+      "translation_ar": "كود U2016 في وحدة التوجيه بعد تحديث برمجي لوحدة المقود أو اختيار التروس؛ التعريف التفصيلي غير موثق",
+      "source": {
+        "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11039144-0001.pdf",
+        "title": "Ford SSM 55298",
+        "date": null,
+        "source_scope": "2025–2027 Ford Explorer and Police Interceptor Utility"
+      },
+      "observed_service_condition": "Condition after programming SCCM/GSM; Ford specifies reset path",
+      "diagnostic_steps": [
+        "Verify update history and PSCM U2016",
+        "Use Ford SSM 55298 appropriate power reset instructions and hybrid battery precautions",
+        "If the bulletin does not apply, follow WSM communication diagnosis"
+      ],
+      "electrical_pinouts": null,
+      "live_data": [],
+      "interpretation_status": "manufacturer_bulletin_condition_documented; standard_DTC_definition_unverified",
+      "verification_status": "source_scoped_conditional; VIN_and_engine_not_confirmed",
+      "review_status": "pending_OEM_module_calibration",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "record_id": "FORD-SSM-S2026-U211B-PSCM-7",
+      "brand": "Ford",
+      "raw_code": "U211B",
+      "base_code": "U211B",
+      "ecu": "PSCM",
+      "model": "Explorer / Police Interceptor Utility",
+      "model_years": "2025–2027",
+      "market": "North America",
+      "engine": null,
+      "engine_code": null,
+      "definition_en": "U211B present in PSCM in TRON module authentication workflow; official DTC definition not specified",
+      "translation_ar": "كود U211B ضمن عملية مصادقة وحدة TRON في وحدة التوجيه؛ التعريف القياسي غير مثبت",
+      "source": {
+        "url": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11039144-0001.pdf",
+        "title": "Ford SSM 55298",
+        "date": null,
+        "source_scope": "2025–2027 Ford Explorer and Police Interceptor Utility"
+      },
+      "observed_service_condition": "TRON Module Authentication referenced by Ford SSM 55298",
+      "diagnostic_steps": [
+        "Verify U211B is stored in PSCM and recent module reprogramming",
+        "Use Ford FDRS TRON Module Authentication application and documented repair sequence",
+        "Do not replace hardware before completing Ford authentication diagnosis"
+      ],
+      "electrical_pinouts": null,
+      "live_data": [],
+      "interpretation_status": "manufacturer_bulletin_condition_documented; standard_DTC_definition_unverified",
+      "verification_status": "source_scoped_conditional; VIN_and_engine_not_confirmed",
+      "review_status": "pending_OEM_module_calibration",
+      "release_status": "NOT_ACTIVATED"
+    }
+  ]
+}

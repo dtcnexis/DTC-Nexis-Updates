@@ -1,0 +1,88 @@
+{
+  "schema": "dtcnexis-ford-batch03-qa-report-v1",
+  "brand": "Ford",
+  "checked_on": "2026-11-16",
+  "repository": "dtcnexis/DTC-Nexis-Updates",
+  "base_branch": "main",
+  "work_branch": "work/ford-dtc-continuation-20261116",
+  "release_status": "NOT_ACTIVATED",
+  "production_approval": false,
+  "main_updated": false,
+  "totals": {
+    "legacy_main_rows": 409,
+    "legacy_main_distinct_raw_codes": 407,
+    "batch02_local_distinct_raw_codes": 413,
+    "batch02_new_strings_beyond_main": 6,
+    "new_batch03_pcm_records": 32,
+    "new_batch03_pcm_distinct": 32,
+    "new_batch03_chassis_network_records": 7,
+    "new_batch03_chassis_network_distinct": 5,
+    "new_source_scoped_records": 39,
+    "new_distinct_code_strings_after_batch02": 37,
+    "prospective_unique_code_strings_after_local_batch02_and_batch03": 450,
+    "identical_code_strings_overlap_with_main": 0,
+    "intentional_multimodule_repeated_strings_in_new_chassis_records": 2,
+    "corrections_or_enrichments_not_counted_as_new": 7,
+    "deferred_review_entries": 454,
+    "images_added": 0,
+    "EU_Sweden_VIN_engine_confirmed_new_relations": 0
+  },
+  "cross_checks": {
+    "main_legacy_original_blob_sha": "651db591fe664e397b52c55e535339671442979d",
+    "no_identical_new_pcm_codes": true,
+    "no_new_code_strings_in_main": true,
+    "review_ids_unique": true,
+    "count_match_new_p": true,
+    "count_match_new_cu": true,
+    "count_match_review": true,
+    "source_present_for_new_records": true,
+    "no_unverified_VIN_fitment_declared": true,
+    "no_current_update_feed_modified": true
+  },
+  "outstanding_issues": [
+    "All original 409 entries still require per-model/per-engine/VIN calibration verification.",
+    "Local Batch02 413 unique codes not fully imported into main. Six additional old codes are addressed as corrections only, not new importer rows.",
+    "Ford OEM OBD monitor overviews do not establish model-year/engine-specific code applicability by themselves.",
+    "P0106 description differs across areas of the 2013 Ford document (MAP vs BARO correlation); retain review status.",
+    "P2ABB/P2ABC code row identifies sensor B but monitor voltage threshold description calls sensor A; leave threshold unapproved.",
+    "P1299 source 270-degree threshold unit/production calibration not established for general release.",
+    "Ford 14M02 TCM list does not justify the Batch02 assignment of P0015, P0016 or P0017 to TCM; these require importer corrections.",
+    "TSB 25-2142 supersedes TSB 24-2442 for specified F-150 PowerBoost BCM B11D9:09 conditions.",
+    "All five additional C/U code strings have source-supported conditions, but universal SAE/DTC definitions are not confirmed.",
+    "No new engine-specific diagnostic pinouts, wiring diagrams, parts installation locations or OEM images approved.",
+    "Unreachable older DRAFT.zip from prior chat was not used or claimed recovered.",
+    "DRAFT PR must remain unmerged until owner approves record-by-record QA and model/engine evidence.",
+    "No European/Swedish vehicle-code-engine relationship has been established by the new North American TSBs."
+  ],
+  "original_local_files_sha256": [
+    {
+      "filename": "DTC_NEXIS_Ford_batch01.csv",
+      "sha256": "c9bc17865d36b7e645f5a987182bb02512a9dd835cb75539496e245b7f20c5ad"
+    },
+    {
+      "filename": "DTC_NEXIS_Ford_batch01.json",
+      "sha256": "053897b2f26e9c90ace38ebe3a7d3c99051770fcdf725f3febadaaeb352b53bb"
+    },
+    {
+      "filename": "DTC_NEXIS_Ford_batch01_manifest.json",
+      "sha256": "49c465225b2aaa0b2e2c1bf954897e73f831465145ff7d6989481e8970b38620"
+    },
+    {
+      "filename": "DTC_NEXIS_Ford_expansion_batch02.zip",
+      "sha256": "37d5ecd2ad1a854c6812e89baa80fda08fcca09bde5cc6fd333807e4f26fe7d7"
+    },
+    {
+      "filename": "batch02_normalized.json",
+      "sha256": "7cd5aa989b61228fdb7b1d64c6032c2d41f7badba761087a3e77ade965678409"
+    },
+    {
+      "filename": "REVIEW_REPORT_AR.md",
+      "sha256": "764f52f0990d7bcfea868e1412f7a9ed18d9071f22b63c313302c9222782a572"
+    },
+    {
+      "filename": "wide_cinematic_high_tech_diagnostic_technical_il.png",
+      "sha256": "de895d85849ab42a0de9fc4d008c1485487f3425285b4375407a1582f9f2f8c3"
+    }
+  ],
+  "source_scope_policy": "All sources cited are manufacturer OBD summaries or TSB/SSM publication; verification limited to specific codes, ECUs and conditions, not universal fitment. No SAE J2012 licensing assumed."
+}

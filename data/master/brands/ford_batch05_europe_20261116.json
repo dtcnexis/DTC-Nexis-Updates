@@ -1,0 +1,2285 @@
+{
+  "schema": "dtcnexis-ford-europe-source-scoped-v1",
+  "batch": "05",
+  "date": "2026-11-16",
+  "brand": "Ford",
+  "status": "DRAFT_REVIEW_ONLY",
+  "new_code_count": 11,
+  "new_application_rows": 30,
+  "mhev_service_advisories": 6,
+  "mapping_note": "Code entries ONLY include new raw strings not in archived GitHub Ford prior batches; prior codes in applicability retained without creating duplicate code objects.",
+  "ford_authored_docs_reproduced_on_third_party": true,
+  "no_images_added": true,
+  "no_application_release_approval": true,
+  "source_documents": [
+    {
+      "id": "FORD-EU-TSB-24-2108",
+      "title": "Ford TSB 24-2108, PCM software R10, 2.0L EcoBlue Transit/Tourneo Custom",
+      "url": "https://www.tsbsearch.com/Ford/24-2108/143",
+      "date": "2024-04-11",
+      "host": "TSBSearch-hosted reproduction of Ford-authored bulletin, not an OEM-controlled download",
+      "markets": "All European markets"
+    },
+    {
+      "id": "FORD-EU-GSB-24-7014",
+      "title": "Ford GSB 24-7014, 1.5L EcoBlue P2000 LNT diagnostics",
+      "url": "https://www.tsbsearch.com/Ford/24-7014/470",
+      "date": "2024-02-20",
+      "host": "TSBSearch-hosted reproduction of Ford-authored bulletin",
+      "markets": "All European markets"
+    },
+    {
+      "id": "FORD-EU-GSB-23-7072",
+      "title": "Ford GSB 23-7072, Diesel Particulate Filter diagnostic information",
+      "url": "https://www.tsbsearch.com/Ford/23-7072/515",
+      "date": "2023-06-05",
+      "host": "TSBSearch-hosted reproduction of Ford-authored bulletin",
+      "markets": "Ford European technical context; exact national markets not stated in examined bulletin"
+    },
+    {
+      "id": "FORD-EU-TSB-24-2034",
+      "title": "Ford TSB 24-2034, Mach-E drive mode not available with or without ABS U0253",
+      "url": "https://www.tsbsearch.com/Ford/24-2034/138",
+      "date": "2024-03-20",
+      "host": "TSBSearch-hosted reproduction of Ford-authored bulletin",
+      "markets": "All European markets"
+    },
+    {
+      "id": "FORD-EU-TSB-24-2119",
+      "title": "Ford TSB 24-2119, Courier 7DCT300 clutch actuator pump DTCs",
+      "url": "https://www.tsbsearch.com/Ford/24-2119/426",
+      "date": "2024-04-23",
+      "host": "TSBSearch-hosted reproduction of Ford-authored bulletin",
+      "markets": "All European markets"
+    },
+    {
+      "id": "FORD-EU-GSB-23-7111",
+      "title": "Ford GSB 23-7111, European mild hybrid charging diagnosis",
+      "url": "https://www.tsbsearch.com/Ford/23-7111/220",
+      "date": "2023-08-09",
+      "host": "TSBSearch-hosted reproduction of Ford-authored bulletin",
+      "markets": "EU markets only"
+    },
+    {
+      "id": "FORD-OEM-DIESEL-2012",
+      "title": "Ford 2012 Model Year 6.7L Diesel OBD System Operation Summary",
+      "url": "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/DOBDSM1202.pdf",
+      "date": "2011-04-21",
+      "host": "Ford OEM",
+      "markets": "North American 6.7L diesel, used here ONLY for contrasting P2463 core definition"
+    }
+  ],
+  "new_code_definitions": [
+    {
+      "record_id": "FORD-B05-EU-P02FA_68",
+      "brand": "Ford",
+      "raw_code": "P02FA-68",
+      "base_code": "P02FA",
+      "code_family": "P",
+      "definition_en": "Intake Air Flow Position Sensor Min/Max Stop Performance",
+      "translation_ar": "أداء حدّي التوقف الأدنى والأقصى لحساس موضع التحكم بتدفق هواء السحب",
+      "definition_evidence_status": "found_in_Ford_authored_service_text",
+      "code_type": "SAE/manufacturer allocation requires J2012DA verification",
+      "ecu": "PCM",
+      "system": "PCM/TCM",
+      "source_ids": [
+        "FORD-EU-TSB-24-2108"
+      ],
+      "notes": "Fault code reported on sound intake throttle valves; software false-positive possible. Ford does not define FTB 68 in excerpt.",
+      "diagnosis_note": "Source-specific procedures in applicability below; never infer component replacement from code alone.",
+      "legal_images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "component_location": null,
+      "engine_code": null,
+      "review_status": "draft",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "record_id": "FORD-B05-EU-P24C6",
+      "brand": "Ford",
+      "raw_code": "P24C6",
+      "base_code": "P24C6",
+      "code_family": "P",
+      "definition_en": "Particulate Matter Sensor Temperature Circuit",
+      "translation_ar": "خلل في دائرة قياس حرارة حساس الجسيمات",
+      "definition_evidence_status": "found_in_Ford_authored_service_text",
+      "code_type": "SAE/manufacturer allocation requires J2012DA verification",
+      "ecu": "PCM",
+      "system": "PCM/TCM",
+      "source_ids": [
+        "FORD-EU-TSB-24-2108"
+      ],
+      "notes": "Ford PCM calibration improved robustness; do not assume sensor failed.",
+      "diagnosis_note": "Source-specific procedures in applicability below; never infer component replacement from code alone.",
+      "legal_images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "component_location": null,
+      "engine_code": null,
+      "review_status": "draft",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "record_id": "FORD-B05-EU-P24C7",
+      "brand": "Ford",
+      "raw_code": "P24C7",
+      "base_code": "P24C7",
+      "code_family": "P",
+      "definition_en": "Particulate Matter Sensor Temperature Circuit Range/Performance",
+      "translation_ar": "خلل في نطاق أو أداء دائرة حرارة حساس الجسيمات",
+      "definition_evidence_status": "found_in_Ford_authored_service_text",
+      "code_type": "SAE/manufacturer allocation requires J2012DA verification",
+      "ecu": "PCM",
+      "system": "PCM/TCM",
+      "source_ids": [
+        "FORD-EU-TSB-24-2108"
+      ],
+      "notes": "Ford PCM calibration improved robustness after sensor exchange.",
+      "diagnosis_note": "Source-specific procedures in applicability below; never infer component replacement from code alone.",
+      "legal_images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "component_location": null,
+      "engine_code": null,
+      "review_status": "draft",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "record_id": "FORD-B05-EU-P2073",
+      "brand": "Ford",
+      "raw_code": "P2073",
+      "base_code": "P2073",
+      "code_family": "P",
+      "definition_en": "Manifold Absolute Pressure / Mass Air Flow - Throttle Position Correlation at Idle",
+      "translation_ar": "عدم تطابق الضغط المطلق لمجمع السحب وتدفق الهواء مع موضع الخانق عند الخمول",
+      "definition_evidence_status": "found_in_Ford_authored_service_text",
+      "code_type": "SAE/manufacturer allocation requires J2012DA verification",
+      "ecu": "PCM",
+      "system": "PCM/TCM",
+      "source_ids": [
+        "FORD-EU-TSB-24-2108"
+      ],
+      "notes": "Check validated symptoms and PCM calibration, not component alone.",
+      "diagnosis_note": "Source-specific procedures in applicability below; never infer component replacement from code alone.",
+      "legal_images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "component_location": null,
+      "engine_code": null,
+      "review_status": "draft",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "record_id": "FORD-B05-EU-P2074",
+      "brand": "Ford",
+      "raw_code": "P2074",
+      "base_code": "P2074",
+      "code_family": "P",
+      "definition_en": "Manifold Absolute Pressure / Mass Air Flow - Throttle Position Correlation at Higher Load",
+      "translation_ar": "عدم تطابق الضغط المطلق لمجمع السحب وتدفق الهواء مع موضع الخانق عند حمل أعلى",
+      "definition_evidence_status": "found_in_Ford_authored_service_text",
+      "code_type": "SAE/manufacturer allocation requires J2012DA verification",
+      "ecu": "PCM",
+      "system": "PCM/TCM",
+      "source_ids": [
+        "FORD-EU-TSB-24-2108"
+      ],
+      "notes": "Check verified symptoms and PCM calibration.",
+      "diagnosis_note": "Source-specific procedures in applicability below; never infer component replacement from code alone.",
+      "legal_images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "component_location": null,
+      "engine_code": null,
+      "review_status": "draft",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "record_id": "FORD-B05-EU-P2000",
+      "brand": "Ford",
+      "raw_code": "P2000",
+      "base_code": "P2000",
+      "code_family": "P",
+      "definition_en": "NOx Trap Efficiency Below Threshold (Bank 1)",
+      "translation_ar": "كفاءة مصيدة أكاسيد النيتروجين أقل من الحد المسموح (البنك 1)",
+      "definition_evidence_status": "found_in_Ford_authored_service_text",
+      "code_type": "SAE/manufacturer allocation requires J2012DA verification",
+      "ecu": "PCM",
+      "system": "PCM/TCM",
+      "source_ids": [
+        "FORD-EU-GSB-24-7014"
+      ],
+      "notes": "DV5 Neo / 1.5 EcoBlue without AdBlue; LNT monitor depends on deNOx regeneration and HEGO lambda.",
+      "diagnosis_note": "Source-specific procedures in applicability below; never infer component replacement from code alone.",
+      "legal_images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "component_location": null,
+      "engine_code": null,
+      "review_status": "draft",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "record_id": "FORD-B05-EU-P2463",
+      "brand": "Ford",
+      "raw_code": "P2463",
+      "base_code": "P2463",
+      "code_family": "P",
+      "definition_en": "Diesel Particulate Filter Restriction - Soot Accumulation",
+      "translation_ar": "تقييد مرشح جسيمات الديزل بسبب تراكم السخام",
+      "definition_evidence_status": "found_in_Ford_authored_service_text",
+      "code_type": "SAE/manufacturer allocation requires J2012DA verification",
+      "ecu": "PCM",
+      "system": "PCM/TCM",
+      "source_ids": [
+        "FORD-EU-GSB-23-7072",
+        "FORD-OEM-DIESEL-2012"
+      ],
+      "notes": "Ford 23-7072 incorrectly uses the P246B description 'Vehicle Conditions Incorrect for Particulate Filter Regeneration' in its current strategy paragraph; Ford OEM 2012 diesel OBD and DPF strategy support soot restriction definition. Quarantine conflict.",
+      "diagnosis_note": "Source-specific procedures in applicability below; never infer component replacement from code alone.",
+      "legal_images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "component_location": null,
+      "engine_code": null,
+      "review_status": "draft",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "record_id": "FORD-B05-EU-P246B",
+      "brand": "Ford",
+      "raw_code": "P246B",
+      "base_code": "P246B",
+      "code_family": "P",
+      "definition_en": "Vehicle Conditions Incorrect for Particulate Filter Regeneration",
+      "translation_ar": "ظروف تشغيل المركبة غير مناسبة لتجديد مرشح جسيمات الديزل",
+      "definition_evidence_status": "found_in_Ford_authored_service_text",
+      "code_type": "SAE/manufacturer allocation requires J2012DA verification",
+      "ecu": "PCM",
+      "system": "PCM/TCM",
+      "source_ids": [
+        "FORD-EU-GSB-23-7072"
+      ],
+      "notes": "Historical early-engine DPF strategy only; NOT mapped to Mondeo or Ranger in this bulletin.",
+      "diagnosis_note": "Source-specific procedures in applicability below; never infer component replacement from code alone.",
+      "legal_images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "component_location": null,
+      "engine_code": null,
+      "review_status": "draft",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "record_id": "FORD-B05-EU-P24A4",
+      "brand": "Ford",
+      "raw_code": "P24A4",
+      "base_code": "P24A4",
+      "code_family": "P",
+      "definition_en": "Particulate Filter Restriction - Soot Accumulation Too High (Bank 1)",
+      "translation_ar": "تقييد مرشح الجسيمات نتيجة تراكم سخام مفرط جداً (البنك 1)",
+      "definition_evidence_status": "found_in_Ford_authored_service_text",
+      "code_type": "SAE/manufacturer allocation requires J2012DA verification",
+      "ecu": "PCM",
+      "system": "PCM/TCM",
+      "source_ids": [
+        "FORD-EU-GSB-23-7072"
+      ],
+      "notes": "Historical DV6/DW10B/DW10C/Puma program mention; Ford says no longer used for later DPF strategy.",
+      "diagnosis_note": "Source-specific procedures in applicability below; never infer component replacement from code alone.",
+      "legal_images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "component_location": null,
+      "engine_code": null,
+      "review_status": "draft",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "record_id": "FORD-B05-EU-U0253",
+      "brand": "Ford",
+      "raw_code": "U0253",
+      "base_code": "U0253",
+      "code_family": "U",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_evidence_status": "not_explicitly_defined_in_bulletin",
+      "code_type": "SAE/manufacturer allocation requires J2012DA verification",
+      "ecu": "ABS",
+      "system": "ABS / vehicle network",
+      "source_ids": [
+        "FORD-EU-TSB-24-2034"
+      ],
+      "notes": "DTC may or may not accompany drive mode warning; software culprit may be APIM, not ABS module hardware. Bulletin does not provide canonical U0253 definition.",
+      "diagnosis_note": "Source-specific procedures in applicability below; never infer component replacement from code alone.",
+      "legal_images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "component_location": null,
+      "engine_code": null,
+      "review_status": "draft",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "record_id": "FORD-B05-EU-P28D1",
+      "brand": "Ford",
+      "raw_code": "P28D1",
+      "base_code": "P28D1",
+      "code_family": "P",
+      "definition_en": "Clutch 'A' Motor Driver Current/Temperature Too High",
+      "translation_ar": "تيار أو حرارة مشغّل محرك القابض A أعلى من الحد المسموح",
+      "definition_evidence_status": "found_in_Ford_authored_service_text",
+      "code_type": "SAE/manufacturer allocation requires J2012DA verification",
+      "ecu": "TCM",
+      "system": "PCM/TCM",
+      "source_ids": [
+        "FORD-EU-TSB-24-2119"
+      ],
+      "notes": "Co-occurs with P0901, on 7DCT300 A-clutch actuation pump/motor; condition and build dates required.",
+      "diagnosis_note": "Source-specific procedures in applicability below; never infer component replacement from code alone.",
+      "legal_images": [],
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "wiring": null,
+      "component_location": null,
+      "engine_code": null,
+      "review_status": "draft",
+      "release_status": "NOT_ACTIVATED"
+    }
+  ],
+  "dtc_applicability": [
+    {
+      "id": "FORD-B05-EU-APP-001",
+      "code": "P02FA-68",
+      "base_code": "P02FA",
+      "brand": "Ford",
+      "model": "Transit Custom",
+      "model_year_start": 2023,
+      "model_year_end": 2024,
+      "market": "Europe including Sweden within Ford's stated European scope; VIN confirmation still required",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-TSB-24-2108"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "DTC in PCM with MIL or described concern; FDRS check, confirm 2023–2024 model and build date <= 2024-03-12, latest PCM R10 calibration only when bulletin conditions matched. If other symptoms use WSM Pinpoint Tests."
+      ],
+      "live_data": [],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "production_date_end": "2024-03-12",
+      "assembly_plant": "Yenikoy",
+      "powertrain_variant_options": [
+        {
+          "power_kw": 77,
+          "power_ps": 105,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 81,
+          "power_ps": 110,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 88,
+          "power_ps": 120,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 100,
+          "power_ps": 136,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 110,
+          "power_ps": 150,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 110,
+          "power_ps": 150,
+          "tag": "BK"
+        },
+        {
+          "power_kw": 125,
+          "power_ps": 170,
+          "tag": "BK"
+        },
+        {
+          "power_kw": 136,
+          "power_ps": 185,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 140,
+          "power_ps": 190,
+          "tag": "BC"
+        }
+      ],
+      "transmission_variants_from_bulletin": [
+        "8F57 8-speed automatic",
+        "VMT6 6-speed manual"
+      ],
+      "owner_confirmation": "Engine suffix BJ/BC/BK must not automatically be treated as engine code; they are source variant tags."
+    },
+    {
+      "id": "FORD-B05-EU-APP-002",
+      "code": "P02FA-68",
+      "base_code": "P02FA",
+      "brand": "Ford",
+      "model": "Tourneo Custom",
+      "model_year_start": 2023,
+      "model_year_end": 2024,
+      "market": "Europe including Sweden within Ford's stated European scope; VIN confirmation still required",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-TSB-24-2108"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "DTC in PCM with MIL or described concern; FDRS check, confirm 2023–2024 model and build date <= 2024-03-12, latest PCM R10 calibration only when bulletin conditions matched. If other symptoms use WSM Pinpoint Tests."
+      ],
+      "live_data": [],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "production_date_end": "2024-03-12",
+      "assembly_plant": "Yenikoy",
+      "powertrain_variant_options": [
+        {
+          "power_kw": 77,
+          "power_ps": 105,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 81,
+          "power_ps": 110,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 88,
+          "power_ps": 120,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 100,
+          "power_ps": 136,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 110,
+          "power_ps": 150,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 110,
+          "power_ps": 150,
+          "tag": "BK"
+        },
+        {
+          "power_kw": 125,
+          "power_ps": 170,
+          "tag": "BK"
+        },
+        {
+          "power_kw": 136,
+          "power_ps": 185,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 140,
+          "power_ps": 190,
+          "tag": "BC"
+        }
+      ],
+      "transmission_variants_from_bulletin": [
+        "8F57 8-speed automatic",
+        "VMT6 6-speed manual"
+      ],
+      "owner_confirmation": "Engine suffix BJ/BC/BK must not automatically be treated as engine code; they are source variant tags."
+    },
+    {
+      "id": "FORD-B05-EU-APP-003",
+      "code": "P24C6",
+      "base_code": "P24C6",
+      "brand": "Ford",
+      "model": "Transit Custom",
+      "model_year_start": 2023,
+      "model_year_end": 2024,
+      "market": "Europe including Sweden within Ford's stated European scope; VIN confirmation still required",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-TSB-24-2108"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "DTC in PCM with MIL or described concern; FDRS check, confirm 2023–2024 model and build date <= 2024-03-12, latest PCM R10 calibration only when bulletin conditions matched. If other symptoms use WSM Pinpoint Tests."
+      ],
+      "live_data": [],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "production_date_end": "2024-03-12",
+      "assembly_plant": "Yenikoy",
+      "powertrain_variant_options": [
+        {
+          "power_kw": 77,
+          "power_ps": 105,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 81,
+          "power_ps": 110,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 88,
+          "power_ps": 120,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 100,
+          "power_ps": 136,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 110,
+          "power_ps": 150,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 110,
+          "power_ps": 150,
+          "tag": "BK"
+        },
+        {
+          "power_kw": 125,
+          "power_ps": 170,
+          "tag": "BK"
+        },
+        {
+          "power_kw": 136,
+          "power_ps": 185,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 140,
+          "power_ps": 190,
+          "tag": "BC"
+        }
+      ],
+      "transmission_variants_from_bulletin": [
+        "8F57 8-speed automatic",
+        "VMT6 6-speed manual"
+      ],
+      "owner_confirmation": "Engine suffix BJ/BC/BK must not automatically be treated as engine code; they are source variant tags."
+    },
+    {
+      "id": "FORD-B05-EU-APP-004",
+      "code": "P24C6",
+      "base_code": "P24C6",
+      "brand": "Ford",
+      "model": "Tourneo Custom",
+      "model_year_start": 2023,
+      "model_year_end": 2024,
+      "market": "Europe including Sweden within Ford's stated European scope; VIN confirmation still required",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-TSB-24-2108"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "DTC in PCM with MIL or described concern; FDRS check, confirm 2023–2024 model and build date <= 2024-03-12, latest PCM R10 calibration only when bulletin conditions matched. If other symptoms use WSM Pinpoint Tests."
+      ],
+      "live_data": [],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "production_date_end": "2024-03-12",
+      "assembly_plant": "Yenikoy",
+      "powertrain_variant_options": [
+        {
+          "power_kw": 77,
+          "power_ps": 105,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 81,
+          "power_ps": 110,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 88,
+          "power_ps": 120,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 100,
+          "power_ps": 136,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 110,
+          "power_ps": 150,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 110,
+          "power_ps": 150,
+          "tag": "BK"
+        },
+        {
+          "power_kw": 125,
+          "power_ps": 170,
+          "tag": "BK"
+        },
+        {
+          "power_kw": 136,
+          "power_ps": 185,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 140,
+          "power_ps": 190,
+          "tag": "BC"
+        }
+      ],
+      "transmission_variants_from_bulletin": [
+        "8F57 8-speed automatic",
+        "VMT6 6-speed manual"
+      ],
+      "owner_confirmation": "Engine suffix BJ/BC/BK must not automatically be treated as engine code; they are source variant tags."
+    },
+    {
+      "id": "FORD-B05-EU-APP-005",
+      "code": "P24C7",
+      "base_code": "P24C7",
+      "brand": "Ford",
+      "model": "Transit Custom",
+      "model_year_start": 2023,
+      "model_year_end": 2024,
+      "market": "Europe including Sweden within Ford's stated European scope; VIN confirmation still required",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-TSB-24-2108"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "DTC in PCM with MIL or described concern; FDRS check, confirm 2023–2024 model and build date <= 2024-03-12, latest PCM R10 calibration only when bulletin conditions matched. If other symptoms use WSM Pinpoint Tests."
+      ],
+      "live_data": [],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "production_date_end": "2024-03-12",
+      "assembly_plant": "Yenikoy",
+      "powertrain_variant_options": [
+        {
+          "power_kw": 77,
+          "power_ps": 105,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 81,
+          "power_ps": 110,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 88,
+          "power_ps": 120,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 100,
+          "power_ps": 136,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 110,
+          "power_ps": 150,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 110,
+          "power_ps": 150,
+          "tag": "BK"
+        },
+        {
+          "power_kw": 125,
+          "power_ps": 170,
+          "tag": "BK"
+        },
+        {
+          "power_kw": 136,
+          "power_ps": 185,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 140,
+          "power_ps": 190,
+          "tag": "BC"
+        }
+      ],
+      "transmission_variants_from_bulletin": [
+        "8F57 8-speed automatic",
+        "VMT6 6-speed manual"
+      ],
+      "owner_confirmation": "Engine suffix BJ/BC/BK must not automatically be treated as engine code; they are source variant tags."
+    },
+    {
+      "id": "FORD-B05-EU-APP-006",
+      "code": "P24C7",
+      "base_code": "P24C7",
+      "brand": "Ford",
+      "model": "Tourneo Custom",
+      "model_year_start": 2023,
+      "model_year_end": 2024,
+      "market": "Europe including Sweden within Ford's stated European scope; VIN confirmation still required",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-TSB-24-2108"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "DTC in PCM with MIL or described concern; FDRS check, confirm 2023–2024 model and build date <= 2024-03-12, latest PCM R10 calibration only when bulletin conditions matched. If other symptoms use WSM Pinpoint Tests."
+      ],
+      "live_data": [],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "production_date_end": "2024-03-12",
+      "assembly_plant": "Yenikoy",
+      "powertrain_variant_options": [
+        {
+          "power_kw": 77,
+          "power_ps": 105,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 81,
+          "power_ps": 110,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 88,
+          "power_ps": 120,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 100,
+          "power_ps": 136,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 110,
+          "power_ps": 150,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 110,
+          "power_ps": 150,
+          "tag": "BK"
+        },
+        {
+          "power_kw": 125,
+          "power_ps": 170,
+          "tag": "BK"
+        },
+        {
+          "power_kw": 136,
+          "power_ps": 185,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 140,
+          "power_ps": 190,
+          "tag": "BC"
+        }
+      ],
+      "transmission_variants_from_bulletin": [
+        "8F57 8-speed automatic",
+        "VMT6 6-speed manual"
+      ],
+      "owner_confirmation": "Engine suffix BJ/BC/BK must not automatically be treated as engine code; they are source variant tags."
+    },
+    {
+      "id": "FORD-B05-EU-APP-007",
+      "code": "P2073",
+      "base_code": "P2073",
+      "brand": "Ford",
+      "model": "Transit Custom",
+      "model_year_start": 2023,
+      "model_year_end": 2024,
+      "market": "Europe including Sweden within Ford's stated European scope; VIN confirmation still required",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-TSB-24-2108"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "DTC in PCM with MIL or described concern; FDRS check, confirm 2023–2024 model and build date <= 2024-03-12, latest PCM R10 calibration only when bulletin conditions matched. If other symptoms use WSM Pinpoint Tests."
+      ],
+      "live_data": [],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "production_date_end": "2024-03-12",
+      "assembly_plant": "Yenikoy",
+      "powertrain_variant_options": [
+        {
+          "power_kw": 77,
+          "power_ps": 105,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 81,
+          "power_ps": 110,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 88,
+          "power_ps": 120,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 100,
+          "power_ps": 136,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 110,
+          "power_ps": 150,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 110,
+          "power_ps": 150,
+          "tag": "BK"
+        },
+        {
+          "power_kw": 125,
+          "power_ps": 170,
+          "tag": "BK"
+        },
+        {
+          "power_kw": 136,
+          "power_ps": 185,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 140,
+          "power_ps": 190,
+          "tag": "BC"
+        }
+      ],
+      "transmission_variants_from_bulletin": [
+        "8F57 8-speed automatic",
+        "VMT6 6-speed manual"
+      ],
+      "owner_confirmation": "Engine suffix BJ/BC/BK must not automatically be treated as engine code; they are source variant tags."
+    },
+    {
+      "id": "FORD-B05-EU-APP-008",
+      "code": "P2073",
+      "base_code": "P2073",
+      "brand": "Ford",
+      "model": "Tourneo Custom",
+      "model_year_start": 2023,
+      "model_year_end": 2024,
+      "market": "Europe including Sweden within Ford's stated European scope; VIN confirmation still required",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-TSB-24-2108"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "DTC in PCM with MIL or described concern; FDRS check, confirm 2023–2024 model and build date <= 2024-03-12, latest PCM R10 calibration only when bulletin conditions matched. If other symptoms use WSM Pinpoint Tests."
+      ],
+      "live_data": [],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "production_date_end": "2024-03-12",
+      "assembly_plant": "Yenikoy",
+      "powertrain_variant_options": [
+        {
+          "power_kw": 77,
+          "power_ps": 105,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 81,
+          "power_ps": 110,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 88,
+          "power_ps": 120,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 100,
+          "power_ps": 136,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 110,
+          "power_ps": 150,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 110,
+          "power_ps": 150,
+          "tag": "BK"
+        },
+        {
+          "power_kw": 125,
+          "power_ps": 170,
+          "tag": "BK"
+        },
+        {
+          "power_kw": 136,
+          "power_ps": 185,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 140,
+          "power_ps": 190,
+          "tag": "BC"
+        }
+      ],
+      "transmission_variants_from_bulletin": [
+        "8F57 8-speed automatic",
+        "VMT6 6-speed manual"
+      ],
+      "owner_confirmation": "Engine suffix BJ/BC/BK must not automatically be treated as engine code; they are source variant tags."
+    },
+    {
+      "id": "FORD-B05-EU-APP-009",
+      "code": "P2074",
+      "base_code": "P2074",
+      "brand": "Ford",
+      "model": "Transit Custom",
+      "model_year_start": 2023,
+      "model_year_end": 2024,
+      "market": "Europe including Sweden within Ford's stated European scope; VIN confirmation still required",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-TSB-24-2108"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "DTC in PCM with MIL or described concern; FDRS check, confirm 2023–2024 model and build date <= 2024-03-12, latest PCM R10 calibration only when bulletin conditions matched. If other symptoms use WSM Pinpoint Tests."
+      ],
+      "live_data": [],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "production_date_end": "2024-03-12",
+      "assembly_plant": "Yenikoy",
+      "powertrain_variant_options": [
+        {
+          "power_kw": 77,
+          "power_ps": 105,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 81,
+          "power_ps": 110,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 88,
+          "power_ps": 120,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 100,
+          "power_ps": 136,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 110,
+          "power_ps": 150,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 110,
+          "power_ps": 150,
+          "tag": "BK"
+        },
+        {
+          "power_kw": 125,
+          "power_ps": 170,
+          "tag": "BK"
+        },
+        {
+          "power_kw": 136,
+          "power_ps": 185,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 140,
+          "power_ps": 190,
+          "tag": "BC"
+        }
+      ],
+      "transmission_variants_from_bulletin": [
+        "8F57 8-speed automatic",
+        "VMT6 6-speed manual"
+      ],
+      "owner_confirmation": "Engine suffix BJ/BC/BK must not automatically be treated as engine code; they are source variant tags."
+    },
+    {
+      "id": "FORD-B05-EU-APP-010",
+      "code": "P2074",
+      "base_code": "P2074",
+      "brand": "Ford",
+      "model": "Tourneo Custom",
+      "model_year_start": 2023,
+      "model_year_end": 2024,
+      "market": "Europe including Sweden within Ford's stated European scope; VIN confirmation still required",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-TSB-24-2108"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "DTC in PCM with MIL or described concern; FDRS check, confirm 2023–2024 model and build date <= 2024-03-12, latest PCM R10 calibration only when bulletin conditions matched. If other symptoms use WSM Pinpoint Tests."
+      ],
+      "live_data": [],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "production_date_end": "2024-03-12",
+      "assembly_plant": "Yenikoy",
+      "powertrain_variant_options": [
+        {
+          "power_kw": 77,
+          "power_ps": 105,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 81,
+          "power_ps": 110,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 88,
+          "power_ps": 120,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 100,
+          "power_ps": 136,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 110,
+          "power_ps": 150,
+          "tag": "BJ"
+        },
+        {
+          "power_kw": 110,
+          "power_ps": 150,
+          "tag": "BK"
+        },
+        {
+          "power_kw": 125,
+          "power_ps": 170,
+          "tag": "BK"
+        },
+        {
+          "power_kw": 136,
+          "power_ps": 185,
+          "tag": "BC"
+        },
+        {
+          "power_kw": 140,
+          "power_ps": 190,
+          "tag": "BC"
+        }
+      ],
+      "transmission_variants_from_bulletin": [
+        "8F57 8-speed automatic",
+        "VMT6 6-speed manual"
+      ],
+      "owner_confirmation": "Engine suffix BJ/BC/BK must not automatically be treated as engine code; they are source variant tags."
+    },
+    {
+      "id": "FORD-B05-EU-APP-011",
+      "code": "P2463",
+      "base_code": "P2463",
+      "brand": "Ford",
+      "model": "Mondeo",
+      "model_year_start": 2019,
+      "model_year_end": 2020,
+      "market": "Ford Europe GSB; national market including Sweden is not independently specified in this bulletin",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-GSB-23-7072"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "Before regeneration/replacement check additional DTCs and soot percentages (open and closed loop), pressure hose leaks, exhaust leaks/restrictions and EGT sensor positions; use FDRS SBD and WSM. Do not infer DPF replacement from DTC alone."
+      ],
+      "live_data": [
+        {
+          "name_en": "PF_SOOT_PCT_CL",
+          "translation_ar": "نسبة حمل السخام المحسوبة من الحلقة المغلقة"
+        },
+        {
+          "name_en": "PF_SOOT_PCT_OL",
+          "translation_ar": "نسبة حمل السخام المقدرة بالحساب المفتوح"
+        },
+        {
+          "name_en": "DPF_INP_V",
+          "translation_ar": "جهد حساس ضغط مدخل مرشح الجسيمات"
+        },
+        {
+          "name_en": "DIST_LAST_REGEN",
+          "translation_ar": "المسافة منذ آخر تجديد للمرشح"
+        },
+        {
+          "name_en": "EGT11 / EGT12",
+          "translation_ar": "قراءات حرارة غازات العادم"
+        }
+      ],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "warning": "P2463 current-strategy description in GSB 23-7072 conflicts with Ford OEM 2012 definition; verify DTC text in PTS. Threshold examples are NOT generic service acceptance limits."
+    },
+    {
+      "id": "FORD-B05-EU-APP-012",
+      "code": "P2463",
+      "base_code": "P2463",
+      "brand": "Ford",
+      "model": "Ranger",
+      "model_year_start": 2021,
+      "model_year_end": 2022,
+      "market": "Ford Europe GSB; national market including Sweden is not independently specified in this bulletin",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-GSB-23-7072"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "Before regeneration/replacement check additional DTCs and soot percentages (open and closed loop), pressure hose leaks, exhaust leaks/restrictions and EGT sensor positions; use FDRS SBD and WSM. Do not infer DPF replacement from DTC alone."
+      ],
+      "live_data": [
+        {
+          "name_en": "PF_SOOT_PCT_CL",
+          "translation_ar": "نسبة حمل السخام المحسوبة من الحلقة المغلقة"
+        },
+        {
+          "name_en": "PF_SOOT_PCT_OL",
+          "translation_ar": "نسبة حمل السخام المقدرة بالحساب المفتوح"
+        },
+        {
+          "name_en": "DPF_INP_V",
+          "translation_ar": "جهد حساس ضغط مدخل مرشح الجسيمات"
+        },
+        {
+          "name_en": "DIST_LAST_REGEN",
+          "translation_ar": "المسافة منذ آخر تجديد للمرشح"
+        },
+        {
+          "name_en": "EGT11 / EGT12",
+          "translation_ar": "قراءات حرارة غازات العادم"
+        }
+      ],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "warning": "P2463 current-strategy description in GSB 23-7072 conflicts with Ford OEM 2012 definition; verify DTC text in PTS. Threshold examples are NOT generic service acceptance limits."
+    },
+    {
+      "id": "FORD-B05-EU-APP-013",
+      "code": "P246C",
+      "base_code": "P246C",
+      "brand": "Ford",
+      "model": "Mondeo",
+      "model_year_start": 2019,
+      "model_year_end": 2020,
+      "market": "Ford Europe GSB; national market including Sweden is not independently specified in this bulletin",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-GSB-23-7072"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "Before regeneration/replacement check additional DTCs and soot percentages (open and closed loop), pressure hose leaks, exhaust leaks/restrictions and EGT sensor positions; use FDRS SBD and WSM. Do not infer DPF replacement from DTC alone."
+      ],
+      "live_data": [
+        {
+          "name_en": "PF_SOOT_PCT_CL",
+          "translation_ar": "نسبة حمل السخام المحسوبة من الحلقة المغلقة"
+        },
+        {
+          "name_en": "PF_SOOT_PCT_OL",
+          "translation_ar": "نسبة حمل السخام المقدرة بالحساب المفتوح"
+        },
+        {
+          "name_en": "DPF_INP_V",
+          "translation_ar": "جهد حساس ضغط مدخل مرشح الجسيمات"
+        },
+        {
+          "name_en": "DIST_LAST_REGEN",
+          "translation_ar": "المسافة منذ آخر تجديد للمرشح"
+        },
+        {
+          "name_en": "EGT11 / EGT12",
+          "translation_ar": "قراءات حرارة غازات العادم"
+        }
+      ],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "warning": "P2463 current-strategy description in GSB 23-7072 conflicts with Ford OEM 2012 definition; verify DTC text in PTS. Threshold examples are NOT generic service acceptance limits."
+    },
+    {
+      "id": "FORD-B05-EU-APP-014",
+      "code": "P246C",
+      "base_code": "P246C",
+      "brand": "Ford",
+      "model": "Ranger",
+      "model_year_start": 2021,
+      "model_year_end": 2022,
+      "market": "Ford Europe GSB; national market including Sweden is not independently specified in this bulletin",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-GSB-23-7072"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "Before regeneration/replacement check additional DTCs and soot percentages (open and closed loop), pressure hose leaks, exhaust leaks/restrictions and EGT sensor positions; use FDRS SBD and WSM. Do not infer DPF replacement from DTC alone."
+      ],
+      "live_data": [
+        {
+          "name_en": "PF_SOOT_PCT_CL",
+          "translation_ar": "نسبة حمل السخام المحسوبة من الحلقة المغلقة"
+        },
+        {
+          "name_en": "PF_SOOT_PCT_OL",
+          "translation_ar": "نسبة حمل السخام المقدرة بالحساب المفتوح"
+        },
+        {
+          "name_en": "DPF_INP_V",
+          "translation_ar": "جهد حساس ضغط مدخل مرشح الجسيمات"
+        },
+        {
+          "name_en": "DIST_LAST_REGEN",
+          "translation_ar": "المسافة منذ آخر تجديد للمرشح"
+        },
+        {
+          "name_en": "EGT11 / EGT12",
+          "translation_ar": "قراءات حرارة غازات العادم"
+        }
+      ],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "warning": "P2463 current-strategy description in GSB 23-7072 conflicts with Ford OEM 2012 definition; verify DTC text in PTS. Threshold examples are NOT generic service acceptance limits."
+    },
+    {
+      "id": "FORD-B05-EU-APP-015",
+      "code": "P2002",
+      "base_code": "P2002",
+      "brand": "Ford",
+      "model": "Mondeo",
+      "model_year_start": 2019,
+      "model_year_end": 2020,
+      "market": "Ford Europe GSB; national market including Sweden is not independently specified in this bulletin",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-GSB-23-7072"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "Before regeneration/replacement check additional DTCs and soot percentages (open and closed loop), pressure hose leaks, exhaust leaks/restrictions and EGT sensor positions; use FDRS SBD and WSM. Do not infer DPF replacement from DTC alone."
+      ],
+      "live_data": [
+        {
+          "name_en": "PF_SOOT_PCT_CL",
+          "translation_ar": "نسبة حمل السخام المحسوبة من الحلقة المغلقة"
+        },
+        {
+          "name_en": "PF_SOOT_PCT_OL",
+          "translation_ar": "نسبة حمل السخام المقدرة بالحساب المفتوح"
+        },
+        {
+          "name_en": "DPF_INP_V",
+          "translation_ar": "جهد حساس ضغط مدخل مرشح الجسيمات"
+        },
+        {
+          "name_en": "DIST_LAST_REGEN",
+          "translation_ar": "المسافة منذ آخر تجديد للمرشح"
+        },
+        {
+          "name_en": "EGT11 / EGT12",
+          "translation_ar": "قراءات حرارة غازات العادم"
+        }
+      ],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "warning": "P2463 current-strategy description in GSB 23-7072 conflicts with Ford OEM 2012 definition; verify DTC text in PTS. Threshold examples are NOT generic service acceptance limits."
+    },
+    {
+      "id": "FORD-B05-EU-APP-016",
+      "code": "P2002",
+      "base_code": "P2002",
+      "brand": "Ford",
+      "model": "Ranger",
+      "model_year_start": 2021,
+      "model_year_end": 2022,
+      "market": "Ford Europe GSB; national market including Sweden is not independently specified in this bulletin",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-GSB-23-7072"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "Before regeneration/replacement check additional DTCs and soot percentages (open and closed loop), pressure hose leaks, exhaust leaks/restrictions and EGT sensor positions; use FDRS SBD and WSM. Do not infer DPF replacement from DTC alone."
+      ],
+      "live_data": [
+        {
+          "name_en": "PF_SOOT_PCT_CL",
+          "translation_ar": "نسبة حمل السخام المحسوبة من الحلقة المغلقة"
+        },
+        {
+          "name_en": "PF_SOOT_PCT_OL",
+          "translation_ar": "نسبة حمل السخام المقدرة بالحساب المفتوح"
+        },
+        {
+          "name_en": "DPF_INP_V",
+          "translation_ar": "جهد حساس ضغط مدخل مرشح الجسيمات"
+        },
+        {
+          "name_en": "DIST_LAST_REGEN",
+          "translation_ar": "المسافة منذ آخر تجديد للمرشح"
+        },
+        {
+          "name_en": "EGT11 / EGT12",
+          "translation_ar": "قراءات حرارة غازات العادم"
+        }
+      ],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "warning": "P2463 current-strategy description in GSB 23-7072 conflicts with Ford OEM 2012 definition; verify DTC text in PTS. Threshold examples are NOT generic service acceptance limits."
+    },
+    {
+      "id": "FORD-B05-EU-APP-017",
+      "code": "P2453",
+      "base_code": "P2453",
+      "brand": "Ford",
+      "model": "Mondeo",
+      "model_year_start": 2019,
+      "model_year_end": 2020,
+      "market": "Ford Europe GSB; national market including Sweden is not independently specified in this bulletin",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-GSB-23-7072"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "Before regeneration/replacement check additional DTCs and soot percentages (open and closed loop), pressure hose leaks, exhaust leaks/restrictions and EGT sensor positions; use FDRS SBD and WSM. Do not infer DPF replacement from DTC alone."
+      ],
+      "live_data": [
+        {
+          "name_en": "PF_SOOT_PCT_CL",
+          "translation_ar": "نسبة حمل السخام المحسوبة من الحلقة المغلقة"
+        },
+        {
+          "name_en": "PF_SOOT_PCT_OL",
+          "translation_ar": "نسبة حمل السخام المقدرة بالحساب المفتوح"
+        },
+        {
+          "name_en": "DPF_INP_V",
+          "translation_ar": "جهد حساس ضغط مدخل مرشح الجسيمات"
+        },
+        {
+          "name_en": "DIST_LAST_REGEN",
+          "translation_ar": "المسافة منذ آخر تجديد للمرشح"
+        },
+        {
+          "name_en": "EGT11 / EGT12",
+          "translation_ar": "قراءات حرارة غازات العادم"
+        }
+      ],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "warning": "P2463 current-strategy description in GSB 23-7072 conflicts with Ford OEM 2012 definition; verify DTC text in PTS. Threshold examples are NOT generic service acceptance limits."
+    },
+    {
+      "id": "FORD-B05-EU-APP-018",
+      "code": "P2453",
+      "base_code": "P2453",
+      "brand": "Ford",
+      "model": "Ranger",
+      "model_year_start": 2021,
+      "model_year_end": 2022,
+      "market": "Ford Europe GSB; national market including Sweden is not independently specified in this bulletin",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-GSB-23-7072"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "Before regeneration/replacement check additional DTCs and soot percentages (open and closed loop), pressure hose leaks, exhaust leaks/restrictions and EGT sensor positions; use FDRS SBD and WSM. Do not infer DPF replacement from DTC alone."
+      ],
+      "live_data": [
+        {
+          "name_en": "PF_SOOT_PCT_CL",
+          "translation_ar": "نسبة حمل السخام المحسوبة من الحلقة المغلقة"
+        },
+        {
+          "name_en": "PF_SOOT_PCT_OL",
+          "translation_ar": "نسبة حمل السخام المقدرة بالحساب المفتوح"
+        },
+        {
+          "name_en": "DPF_INP_V",
+          "translation_ar": "جهد حساس ضغط مدخل مرشح الجسيمات"
+        },
+        {
+          "name_en": "DIST_LAST_REGEN",
+          "translation_ar": "المسافة منذ آخر تجديد للمرشح"
+        },
+        {
+          "name_en": "EGT11 / EGT12",
+          "translation_ar": "قراءات حرارة غازات العادم"
+        }
+      ],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "warning": "P2463 current-strategy description in GSB 23-7072 conflicts with Ford OEM 2012 definition; verify DTC text in PTS. Threshold examples are NOT generic service acceptance limits."
+    },
+    {
+      "id": "FORD-B05-EU-APP-019",
+      "code": "P2454",
+      "base_code": "P2454",
+      "brand": "Ford",
+      "model": "Mondeo",
+      "model_year_start": 2019,
+      "model_year_end": 2020,
+      "market": "Ford Europe GSB; national market including Sweden is not independently specified in this bulletin",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-GSB-23-7072"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "Before regeneration/replacement check additional DTCs and soot percentages (open and closed loop), pressure hose leaks, exhaust leaks/restrictions and EGT sensor positions; use FDRS SBD and WSM. Do not infer DPF replacement from DTC alone."
+      ],
+      "live_data": [
+        {
+          "name_en": "PF_SOOT_PCT_CL",
+          "translation_ar": "نسبة حمل السخام المحسوبة من الحلقة المغلقة"
+        },
+        {
+          "name_en": "PF_SOOT_PCT_OL",
+          "translation_ar": "نسبة حمل السخام المقدرة بالحساب المفتوح"
+        },
+        {
+          "name_en": "DPF_INP_V",
+          "translation_ar": "جهد حساس ضغط مدخل مرشح الجسيمات"
+        },
+        {
+          "name_en": "DIST_LAST_REGEN",
+          "translation_ar": "المسافة منذ آخر تجديد للمرشح"
+        },
+        {
+          "name_en": "EGT11 / EGT12",
+          "translation_ar": "قراءات حرارة غازات العادم"
+        }
+      ],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "warning": "P2463 current-strategy description in GSB 23-7072 conflicts with Ford OEM 2012 definition; verify DTC text in PTS. Threshold examples are NOT generic service acceptance limits."
+    },
+    {
+      "id": "FORD-B05-EU-APP-020",
+      "code": "P2454",
+      "base_code": "P2454",
+      "brand": "Ford",
+      "model": "Ranger",
+      "model_year_start": 2021,
+      "model_year_end": 2022,
+      "market": "Ford Europe GSB; national market including Sweden is not independently specified in this bulletin",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-GSB-23-7072"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "Before regeneration/replacement check additional DTCs and soot percentages (open and closed loop), pressure hose leaks, exhaust leaks/restrictions and EGT sensor positions; use FDRS SBD and WSM. Do not infer DPF replacement from DTC alone."
+      ],
+      "live_data": [
+        {
+          "name_en": "PF_SOOT_PCT_CL",
+          "translation_ar": "نسبة حمل السخام المحسوبة من الحلقة المغلقة"
+        },
+        {
+          "name_en": "PF_SOOT_PCT_OL",
+          "translation_ar": "نسبة حمل السخام المقدرة بالحساب المفتوح"
+        },
+        {
+          "name_en": "DPF_INP_V",
+          "translation_ar": "جهد حساس ضغط مدخل مرشح الجسيمات"
+        },
+        {
+          "name_en": "DIST_LAST_REGEN",
+          "translation_ar": "المسافة منذ آخر تجديد للمرشح"
+        },
+        {
+          "name_en": "EGT11 / EGT12",
+          "translation_ar": "قراءات حرارة غازات العادم"
+        }
+      ],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "warning": "P2463 current-strategy description in GSB 23-7072 conflicts with Ford OEM 2012 definition; verify DTC text in PTS. Threshold examples are NOT generic service acceptance limits."
+    },
+    {
+      "id": "FORD-B05-EU-APP-021",
+      "code": "P2455",
+      "base_code": "P2455",
+      "brand": "Ford",
+      "model": "Mondeo",
+      "model_year_start": 2019,
+      "model_year_end": 2020,
+      "market": "Ford Europe GSB; national market including Sweden is not independently specified in this bulletin",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-GSB-23-7072"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "Before regeneration/replacement check additional DTCs and soot percentages (open and closed loop), pressure hose leaks, exhaust leaks/restrictions and EGT sensor positions; use FDRS SBD and WSM. Do not infer DPF replacement from DTC alone."
+      ],
+      "live_data": [
+        {
+          "name_en": "PF_SOOT_PCT_CL",
+          "translation_ar": "نسبة حمل السخام المحسوبة من الحلقة المغلقة"
+        },
+        {
+          "name_en": "PF_SOOT_PCT_OL",
+          "translation_ar": "نسبة حمل السخام المقدرة بالحساب المفتوح"
+        },
+        {
+          "name_en": "DPF_INP_V",
+          "translation_ar": "جهد حساس ضغط مدخل مرشح الجسيمات"
+        },
+        {
+          "name_en": "DIST_LAST_REGEN",
+          "translation_ar": "المسافة منذ آخر تجديد للمرشح"
+        },
+        {
+          "name_en": "EGT11 / EGT12",
+          "translation_ar": "قراءات حرارة غازات العادم"
+        }
+      ],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "warning": "P2463 current-strategy description in GSB 23-7072 conflicts with Ford OEM 2012 definition; verify DTC text in PTS. Threshold examples are NOT generic service acceptance limits."
+    },
+    {
+      "id": "FORD-B05-EU-APP-022",
+      "code": "P2455",
+      "base_code": "P2455",
+      "brand": "Ford",
+      "model": "Ranger",
+      "model_year_start": 2021,
+      "model_year_end": 2022,
+      "market": "Ford Europe GSB; national market including Sweden is not independently specified in this bulletin",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-GSB-23-7072"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "Before regeneration/replacement check additional DTCs and soot percentages (open and closed loop), pressure hose leaks, exhaust leaks/restrictions and EGT sensor positions; use FDRS SBD and WSM. Do not infer DPF replacement from DTC alone."
+      ],
+      "live_data": [
+        {
+          "name_en": "PF_SOOT_PCT_CL",
+          "translation_ar": "نسبة حمل السخام المحسوبة من الحلقة المغلقة"
+        },
+        {
+          "name_en": "PF_SOOT_PCT_OL",
+          "translation_ar": "نسبة حمل السخام المقدرة بالحساب المفتوح"
+        },
+        {
+          "name_en": "DPF_INP_V",
+          "translation_ar": "جهد حساس ضغط مدخل مرشح الجسيمات"
+        },
+        {
+          "name_en": "DIST_LAST_REGEN",
+          "translation_ar": "المسافة منذ آخر تجديد للمرشح"
+        },
+        {
+          "name_en": "EGT11 / EGT12",
+          "translation_ar": "قراءات حرارة غازات العادم"
+        }
+      ],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "warning": "P2463 current-strategy description in GSB 23-7072 conflicts with Ford OEM 2012 definition; verify DTC text in PTS. Threshold examples are NOT generic service acceptance limits."
+    },
+    {
+      "id": "FORD-B05-EU-APP-023",
+      "code": "P2456",
+      "base_code": "P2456",
+      "brand": "Ford",
+      "model": "Mondeo",
+      "model_year_start": 2019,
+      "model_year_end": 2020,
+      "market": "Ford Europe GSB; national market including Sweden is not independently specified in this bulletin",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-GSB-23-7072"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "Before regeneration/replacement check additional DTCs and soot percentages (open and closed loop), pressure hose leaks, exhaust leaks/restrictions and EGT sensor positions; use FDRS SBD and WSM. Do not infer DPF replacement from DTC alone."
+      ],
+      "live_data": [
+        {
+          "name_en": "PF_SOOT_PCT_CL",
+          "translation_ar": "نسبة حمل السخام المحسوبة من الحلقة المغلقة"
+        },
+        {
+          "name_en": "PF_SOOT_PCT_OL",
+          "translation_ar": "نسبة حمل السخام المقدرة بالحساب المفتوح"
+        },
+        {
+          "name_en": "DPF_INP_V",
+          "translation_ar": "جهد حساس ضغط مدخل مرشح الجسيمات"
+        },
+        {
+          "name_en": "DIST_LAST_REGEN",
+          "translation_ar": "المسافة منذ آخر تجديد للمرشح"
+        },
+        {
+          "name_en": "EGT11 / EGT12",
+          "translation_ar": "قراءات حرارة غازات العادم"
+        }
+      ],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "warning": "P2463 current-strategy description in GSB 23-7072 conflicts with Ford OEM 2012 definition; verify DTC text in PTS. Threshold examples are NOT generic service acceptance limits."
+    },
+    {
+      "id": "FORD-B05-EU-APP-024",
+      "code": "P2456",
+      "base_code": "P2456",
+      "brand": "Ford",
+      "model": "Ranger",
+      "model_year_start": 2021,
+      "model_year_end": 2022,
+      "market": "Ford Europe GSB; national market including Sweden is not independently specified in this bulletin",
+      "engine": "2.0L EcoBlue Diesel",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-GSB-23-7072"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "Before regeneration/replacement check additional DTCs and soot percentages (open and closed loop), pressure hose leaks, exhaust leaks/restrictions and EGT sensor positions; use FDRS SBD and WSM. Do not infer DPF replacement from DTC alone."
+      ],
+      "live_data": [
+        {
+          "name_en": "PF_SOOT_PCT_CL",
+          "translation_ar": "نسبة حمل السخام المحسوبة من الحلقة المغلقة"
+        },
+        {
+          "name_en": "PF_SOOT_PCT_OL",
+          "translation_ar": "نسبة حمل السخام المقدرة بالحساب المفتوح"
+        },
+        {
+          "name_en": "DPF_INP_V",
+          "translation_ar": "جهد حساس ضغط مدخل مرشح الجسيمات"
+        },
+        {
+          "name_en": "DIST_LAST_REGEN",
+          "translation_ar": "المسافة منذ آخر تجديد للمرشح"
+        },
+        {
+          "name_en": "EGT11 / EGT12",
+          "translation_ar": "قراءات حرارة غازات العادم"
+        }
+      ],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "warning": "P2463 current-strategy description in GSB 23-7072 conflicts with Ford OEM 2012 definition; verify DTC text in PTS. Threshold examples are NOT generic service acceptance limits."
+    },
+    {
+      "id": "FORD-B05-EU-APP-025",
+      "code": "P2000",
+      "base_code": "P2000",
+      "brand": "Ford",
+      "model": null,
+      "model_year_start": 2018,
+      "model_year_end": 2021,
+      "market": "Europe including Sweden within Ford's stated European scope; VIN confirmation still required",
+      "engine": "1.5L EcoBlue Diesel WITHOUT AdBlue; DV5 Neo",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "PCM",
+      "source_ids": [
+        "FORD-EU-GSB-24-7014"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "Confirm no AdBlue system, correct 1.5 EcoBlue DV5 Neo application. Monitor deNOx event, LAMBDA11/12 and MASS_NOX_IN_LNT; check intake leaks, HEGO soot and underlying cause before replacing catalyst."
+      ],
+      "live_data": [
+        {
+          "name_en": "LAMBDA11",
+          "translation_ar": "لامبدا حساس الأكسجين 1، البنك 1"
+        },
+        {
+          "name_en": "LAMBDA12",
+          "translation_ar": "لامبدا حساس الأكسجين 2، البنك 1"
+        },
+        {
+          "name_en": "MASS_NOX_IN_LNT",
+          "translation_ar": "كتلة أكاسيد النيتروجين المخزنة في مصيدة NOx"
+        },
+        {
+          "name_en": "DIST_LAST_DENOX",
+          "translation_ar": "المسافة منذ آخر عملية إزالة NOx"
+        },
+        {
+          "name_en": "EGT1",
+          "translation_ar": "حرارة غازات العادم عند الحساس الأول"
+        }
+      ],
+      "test_thresholds": {
+        "EGT1_c": {
+          "min": 250,
+          "max": 340,
+          "only_for": "specific LNT road-test procedure; monitor suspended above 350 C"
+        },
+        "engine_speed_rpm": "approximately 2000 at gentle steady drive 3rd/4th gear; do not generalize",
+        "APP_percent": "approximately 50% in source's suggested procedure",
+        "mode_06": "Compare the actual monitor result to applicable MIN; no invented universal value"
+      },
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "application_granularity": "engine_family_and_European_model_year_scope_only",
+      "model_not_identified_by_source": true
+    },
+    {
+      "id": "FORD-B05-EU-APP-026",
+      "code": "U0253",
+      "base_code": "U0253",
+      "brand": "Ford",
+      "model": "Mustang Mach-E",
+      "model_year_start": 2021,
+      "model_year_end": 2023,
+      "market": "Europe including Sweden within Ford's stated European scope; VIN confirmation still required",
+      "engine": "Battery Electric Vehicle",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": null,
+      "ecu": "ABS",
+      "source_ids": [
+        "FORD-EU-TSB-24-2034"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "Confirm APIM update history/OTA in PTS, ABS U0253 and drive-mode complaint, verify 12V battery SOC and gateway updates; follow TSB software steps, not ABS replacement."
+      ],
+      "live_data": [
+        {
+          "name_en": "BCM BATT_SOC",
+          "translation_ar": "حالة شحن بطارية 12 فولت وفق BCM",
+          "min_value": 50,
+          "unit": "%",
+          "test_context": "FDRS APIM programming precondition in this bulletin"
+        }
+      ],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "condition": "Drive mode reverts to normal and/or Drive Mode Not Available with or without ABS U0253",
+      "likely_software_module": "APIM"
+    },
+    {
+      "id": "FORD-B05-EU-APP-027",
+      "code": "P0901",
+      "base_code": "P0901",
+      "brand": "Ford",
+      "model": "Transit Courier",
+      "model_year_start": 2023,
+      "model_year_end": 2024,
+      "market": "Europe including Sweden within Ford's stated European scope; VIN confirmation still required",
+      "engine": "1.0L EcoBoost Petrol 92 kW /125 PS",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": "B7",
+      "ecu": "TCM",
+      "source_ids": [
+        "FORD-EU-TSB-24-2119"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "Confirm 7DCT300 and build dates. FDRS GFDRS TCM Clutch mechanism Learn; if P0901 persists inspect electrical circuit with Ford WSM Pinpoint F2 before any pump/motor replacement."
+      ],
+      "live_data": [],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "production_date_start": "2023-12-01",
+      "production_date_end": "2024-03-14",
+      "assembly_plant": "Craiova",
+      "transmission": "7DCT300 7-speed automatic",
+      "service_details": "Transmission build-date 2023-10-01 through 2024-01-12 influences required components; follow exact WSM and TSB. P0901 always, P28D1 may coexist.",
+      "parts_candidate": [
+        {
+          "name": "A clutch actuation pump",
+          "finis": "2 709 856",
+          "replace_only_if_bulletin_tests_directed": true
+        },
+        {
+          "name": "A clutch actuation pump motor",
+          "finis": "2 665 127",
+          "replace_only_if_bulletin_tests_directed": true
+        }
+      ]
+    },
+    {
+      "id": "FORD-B05-EU-APP-028",
+      "code": "P0901",
+      "base_code": "P0901",
+      "brand": "Ford",
+      "model": "Tourneo Courier",
+      "model_year_start": 2023,
+      "model_year_end": 2024,
+      "market": "Europe including Sweden within Ford's stated European scope; VIN confirmation still required",
+      "engine": "1.0L EcoBoost Petrol 92 kW /125 PS",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": "B7",
+      "ecu": "TCM",
+      "source_ids": [
+        "FORD-EU-TSB-24-2119"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "Confirm 7DCT300 and build dates. FDRS GFDRS TCM Clutch mechanism Learn; if P0901 persists inspect electrical circuit with Ford WSM Pinpoint F2 before any pump/motor replacement."
+      ],
+      "live_data": [],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "production_date_start": "2023-12-01",
+      "production_date_end": "2024-03-14",
+      "assembly_plant": "Craiova",
+      "transmission": "7DCT300 7-speed automatic",
+      "service_details": "Transmission build-date 2023-10-01 through 2024-01-12 influences required components; follow exact WSM and TSB. P0901 always, P28D1 may coexist.",
+      "parts_candidate": [
+        {
+          "name": "A clutch actuation pump",
+          "finis": "2 709 856",
+          "replace_only_if_bulletin_tests_directed": true
+        },
+        {
+          "name": "A clutch actuation pump motor",
+          "finis": "2 665 127",
+          "replace_only_if_bulletin_tests_directed": true
+        }
+      ]
+    },
+    {
+      "id": "FORD-B05-EU-APP-029",
+      "code": "P28D1",
+      "base_code": "P28D1",
+      "brand": "Ford",
+      "model": "Transit Courier",
+      "model_year_start": 2023,
+      "model_year_end": 2024,
+      "market": "Europe including Sweden within Ford's stated European scope; VIN confirmation still required",
+      "engine": "1.0L EcoBoost Petrol 92 kW /125 PS",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": "B7",
+      "ecu": "TCM",
+      "source_ids": [
+        "FORD-EU-TSB-24-2119"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "Confirm 7DCT300 and build dates. FDRS GFDRS TCM Clutch mechanism Learn; if P0901 persists inspect electrical circuit with Ford WSM Pinpoint F2 before any pump/motor replacement."
+      ],
+      "live_data": [],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "production_date_start": "2023-12-01",
+      "production_date_end": "2024-03-14",
+      "assembly_plant": "Craiova",
+      "transmission": "7DCT300 7-speed automatic",
+      "service_details": "Transmission build-date 2023-10-01 through 2024-01-12 influences required components; follow exact WSM and TSB. P0901 always, P28D1 may coexist.",
+      "parts_candidate": [
+        {
+          "name": "A clutch actuation pump",
+          "finis": "2 709 856",
+          "replace_only_if_bulletin_tests_directed": true
+        },
+        {
+          "name": "A clutch actuation pump motor",
+          "finis": "2 665 127",
+          "replace_only_if_bulletin_tests_directed": true
+        }
+      ]
+    },
+    {
+      "id": "FORD-B05-EU-APP-030",
+      "code": "P28D1",
+      "base_code": "P28D1",
+      "brand": "Ford",
+      "model": "Tourneo Courier",
+      "model_year_start": 2023,
+      "model_year_end": 2024,
+      "market": "Europe including Sweden within Ford's stated European scope; VIN confirmation still required",
+      "engine": "1.0L EcoBoost Petrol 92 kW /125 PS",
+      "engine_code": null,
+      "engine_variant_tag_in_bulletin": "B7",
+      "ecu": "TCM",
+      "source_ids": [
+        "FORD-EU-TSB-24-2119"
+      ],
+      "source_applicability": "Bulletin conditional inclusion; not proof all examples of this model have this code",
+      "diagnostic_steps": [
+        "Confirm 7DCT300 and build dates. FDRS GFDRS TCM Clutch mechanism Learn; if P0901 persists inspect electrical circuit with Ford WSM Pinpoint F2 before any pump/motor replacement."
+      ],
+      "live_data": [],
+      "test_thresholds": null,
+      "wiring": null,
+      "images": [],
+      "release_status": "NOT_ACTIVATED",
+      "verification_status": "OEM_bulletin_scope; specific_VIN_not_checked",
+      "production_date_start": "2023-12-01",
+      "production_date_end": "2024-03-14",
+      "assembly_plant": "Craiova",
+      "transmission": "7DCT300 7-speed automatic",
+      "service_details": "Transmission build-date 2023-10-01 through 2024-01-12 influences required components; follow exact WSM and TSB. P0901 always, P28D1 may coexist.",
+      "parts_candidate": [
+        {
+          "name": "A clutch actuation pump",
+          "finis": "2 709 856",
+          "replace_only_if_bulletin_tests_directed": true
+        },
+        {
+          "name": "A clutch actuation pump motor",
+          "finis": "2 665 127",
+          "replace_only_if_bulletin_tests_directed": true
+        }
+      ]
+    }
+  ],
+  "vehicle_mhev_diagnostic_advisories": [
+    {
+      "advisory_id": "FORD-B05-MHEV-01",
+      "brand": "Ford",
+      "model": "Puma",
+      "year_from_in_bulletin": 2019,
+      "year_to": null,
+      "production_years_not_verified": true,
+      "assembly_plant": "Craiova",
+      "market": "EU markets only",
+      "fuel": "Mild hybrid electric",
+      "engine_code": null,
+      "no_dtc_asserted": true,
+      "diagnostic_procedure": "Use Ford PTS SBD-O MHEV system diagnostic or Starter Generator Check for Puma built from 2023-03-27; do NOT replace Belt-ISG, DCDC or 48V battery before tests.",
+      "source_ids": [
+        "FORD-EU-GSB-23-7111"
+      ],
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "advisory_id": "FORD-B05-MHEV-02",
+      "brand": "Ford",
+      "model": "Fiesta",
+      "year_from_in_bulletin": 2019,
+      "year_to": null,
+      "production_years_not_verified": true,
+      "assembly_plant": "Niehl / Cologne",
+      "market": "EU markets only",
+      "fuel": "Mild hybrid electric",
+      "engine_code": null,
+      "no_dtc_asserted": true,
+      "diagnostic_procedure": "Use Ford PTS SBD-O MHEV system diagnostic or Starter Generator Check for Puma built from 2023-03-27; do NOT replace Belt-ISG, DCDC or 48V battery before tests.",
+      "source_ids": [
+        "FORD-EU-GSB-23-7111"
+      ],
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "advisory_id": "FORD-B05-MHEV-03",
+      "brand": "Ford",
+      "model": "Focus",
+      "year_from_in_bulletin": 2018,
+      "year_to": null,
+      "production_years_not_verified": true,
+      "assembly_plant": "Saarlouis",
+      "market": "EU markets only",
+      "fuel": "Mild hybrid electric",
+      "engine_code": null,
+      "no_dtc_asserted": true,
+      "diagnostic_procedure": "Use Ford PTS SBD-O MHEV system diagnostic or Starter Generator Check for Puma built from 2023-03-27; do NOT replace Belt-ISG, DCDC or 48V battery before tests.",
+      "source_ids": [
+        "FORD-EU-GSB-23-7111"
+      ],
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "advisory_id": "FORD-B05-MHEV-04",
+      "brand": "Ford",
+      "model": "Kuga",
+      "year_from_in_bulletin": 2019,
+      "year_to": null,
+      "production_years_not_verified": true,
+      "assembly_plant": "Valencia",
+      "market": "EU markets only",
+      "fuel": "Mild hybrid electric",
+      "engine_code": null,
+      "no_dtc_asserted": true,
+      "diagnostic_procedure": "Use Ford PTS SBD-O MHEV system diagnostic or Starter Generator Check for Puma built from 2023-03-27; do NOT replace Belt-ISG, DCDC or 48V battery before tests.",
+      "source_ids": [
+        "FORD-EU-GSB-23-7111"
+      ],
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "advisory_id": "FORD-B05-MHEV-05",
+      "brand": "Ford",
+      "model": "Transit Custom",
+      "year_from_in_bulletin": 2019,
+      "year_to": null,
+      "production_years_not_verified": true,
+      "assembly_plant": "Kocaeli",
+      "market": "EU markets only",
+      "fuel": "Mild hybrid electric",
+      "engine_code": null,
+      "no_dtc_asserted": true,
+      "diagnostic_procedure": "Use Ford PTS SBD-O MHEV system diagnostic or Starter Generator Check for Puma built from 2023-03-27; do NOT replace Belt-ISG, DCDC or 48V battery before tests.",
+      "source_ids": [
+        "FORD-EU-GSB-23-7111"
+      ],
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "advisory_id": "FORD-B05-MHEV-06",
+      "brand": "Ford",
+      "model": "Transit",
+      "year_from_in_bulletin": 2019,
+      "year_to": null,
+      "production_years_not_verified": true,
+      "assembly_plant": "Kocaeli",
+      "market": "EU markets only",
+      "fuel": "Mild hybrid electric",
+      "engine_code": null,
+      "no_dtc_asserted": true,
+      "diagnostic_procedure": "Use Ford PTS SBD-O MHEV system diagnostic or Starter Generator Check for Puma built from 2023-03-27; do NOT replace Belt-ISG, DCDC or 48V battery before tests.",
+      "source_ids": [
+        "FORD-EU-GSB-23-7111"
+      ],
+      "release_status": "NOT_ACTIVATED"
+    }
+  ],
+  "source_only_historical_codes": [
+    "P246B",
+    "P24A4"
+  ],
+  "previously_existing_codes_enriched": [
+    "P0901",
+    "P246C",
+    "P2002",
+    "P2453",
+    "P2454",
+    "P2455",
+    "P2456"
+  ],
+  "quality_flags": [
+    "P2463 2023 European bulletin description conflicts with 2012 official Ford diesel OBD; no automatic semantic merge.",
+    "BJ/BC/BK/B7 parentheses denote technical variants in bulletin and are not asserted as verified Engine Code.",
+    "P2000 bulletin lists engine family/all carlines without named exact model; model remains null.",
+    "U0253 manufacturer bulletin does not contain official standardized code definition; definition null.",
+    "P02FA-68 suffix is retained exactly; failure-type meaning requires authoritative decoding.",
+    "No verification of Sweden-specific VIN, image, connector or engine code.",
+    "GSB 23-7072 did not explicitly state 'all European markets'; its Mondeo/Ranger 2.0 EcoBlue applications remain conditional, Sweden VIN coverage not established."
+  ]
+}

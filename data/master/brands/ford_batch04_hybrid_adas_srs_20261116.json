@@ -1,0 +1,1869 @@
+{
+  "schema": "dtcnexis-ford-batch04-v1",
+  "brand": "Ford",
+  "created_on": "2026-11-16",
+  "branch": "work/ford-dtc-continuation-20261116",
+  "status": "REVIEW_ONLY_NOT_RELEASED",
+  "not_for_production": true,
+  "coverage": {
+    "new_code_definition_placeholders": 20,
+    "new_distinct_code_strings": 20,
+    "hybrid_code_strings": 16,
+    "network_code_strings": 2,
+    "SRS_code_strings": 2,
+    "service_bulletin_applicability_records": 35,
+    "overlapping_preexisting_code_in_applicability": "C0051:67 (ABS; newly documented PSCM software context, NOT a new DTC code)",
+    "vehicle_specific_SRS_records": 0,
+    "swedish_european_applicability_records": 0
+  },
+  "no_SAE_definition_invented": true,
+  "sources": [
+    {
+      "source_id": "FORD-TSB-20-2221",
+      "title": "Ford TSB 20-2221: 2020 Escape HEV MIL with BECM DTCs",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10177858-0001.pdf",
+      "publication_date": "2020-07-28",
+      "document_type": "Ford OEM service bulletin",
+      "scope": "2020 Ford Escape HEV, produced on/before 2020-06-10, North American bulletin",
+      "evidence": "Code membership in BECM and vehicle condition; no per-DTC definition"
+    },
+    {
+      "source_id": "FORD-TSB-20-2345",
+      "title": "Ford TSB 20-2345: 2020 Explorer/Police Interceptor Utility Hybrid MIL",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10181918-0001.pdf",
+      "publication_date": "2020-10-01",
+      "document_type": "Ford OEM service bulletin",
+      "scope": "2020 Ford Explorer Hybrid and Police Interceptor Utility Hybrid, North American bulletin; supersedes 20-2293",
+      "evidence": "Code membership in PCM and software condition related to BECM, no per-DTC definition"
+    },
+    {
+      "source_id": "FORD-SSM-51437",
+      "title": "Ford SSM 51437: Driver Assist Warnings and DTCs PSCM/ABS/IPMA",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10233713-0001.pdf",
+      "publication_date": null,
+      "document_type": "Ford OEM special service message",
+      "scope": "2020–2022 Escape, 2021–2022 Bronco Sport, 2022 Maverick, build through 2022-03-23, North American bulletin",
+      "evidence": "Three DTCs and exact recording modules with PSCM software remediation"
+    },
+    {
+      "source_id": "FORD-NHTSA-PE23-021-RESPONSE",
+      "title": "Ford response to NHTSA PE23-021 Request 2: Pretensioner B007E/B007F",
+      "url": "https://static.nhtsa.gov/odi/inv/2023/INRD-PE23021-16709.pdf",
+      "publication_date": "2024-02-05",
+      "document_type": "Ford submitted investigative response, not a WSM pinpoint test",
+      "scope": "Ford reports in seatbelt-retractor-pretensioner inquiry; no exhaustive VIN or model applicability per individual DTC",
+      "evidence": "B007E and B007F code occurrence with airbag warning and high-resistance/open pretensioner circuit condition"
+    }
+  ],
+  "code_definitions": [
+    {
+      "code_id": "FORD-B04-P0A06",
+      "brand": "Ford",
+      "code": "P0A06",
+      "base_code": "P0A06",
+      "code_family": "P",
+      "ecu": "VARIES_BY_TSB",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_note": "These Ford TSBs list DTCs but do not provide the individual SAE/manufacturer definitions; leave unset.",
+      "code_type": "SAE / OEM allocation not independently checked",
+      "failure_type": null,
+      "vehicle_code_interpretation": "OEM bulletin-supported occurrence and logging module, NOT general semantic definition",
+      "diagnostic_actions": [
+        "Check the applicable Ford TSB conditions and module stored DTCs",
+        "Review cooling-system level and software calibrations as directed by the applicable bulletin",
+        "Use VIN-specific Ford WSM/FDRS/IDS for module diagnosis; do not replace components from code alone"
+      ],
+      "live_data": [],
+      "electrical_specs": null,
+      "engine_code": null,
+      "sources": [
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "documented_code_presence; definition_not_verified; application_source_scoped",
+      "review_status": "pending_code_definition_engine_VIN",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "code_id": "FORD-B04-P0A07",
+      "brand": "Ford",
+      "code": "P0A07",
+      "base_code": "P0A07",
+      "code_family": "P",
+      "ecu": "VARIES_BY_TSB",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_note": "These Ford TSBs list DTCs but do not provide the individual SAE/manufacturer definitions; leave unset.",
+      "code_type": "SAE / OEM allocation not independently checked",
+      "failure_type": null,
+      "vehicle_code_interpretation": "OEM bulletin-supported occurrence and logging module, NOT general semantic definition",
+      "diagnostic_actions": [
+        "Check the applicable Ford TSB conditions and module stored DTCs",
+        "Review cooling-system level and software calibrations as directed by the applicable bulletin",
+        "Use VIN-specific Ford WSM/FDRS/IDS for module diagnosis; do not replace components from code alone"
+      ],
+      "live_data": [],
+      "electrical_specs": null,
+      "engine_code": null,
+      "sources": [
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "documented_code_presence; definition_not_verified; application_source_scoped",
+      "review_status": "pending_code_definition_engine_VIN",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "code_id": "FORD-B04-P0C48",
+      "brand": "Ford",
+      "code": "P0C48",
+      "base_code": "P0C48",
+      "code_family": "P",
+      "ecu": "VARIES_BY_TSB",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_note": "These Ford TSBs list DTCs but do not provide the individual SAE/manufacturer definitions; leave unset.",
+      "code_type": "SAE / OEM allocation not independently checked",
+      "failure_type": null,
+      "vehicle_code_interpretation": "OEM bulletin-supported occurrence and logging module, NOT general semantic definition",
+      "diagnostic_actions": [
+        "Check the applicable Ford TSB conditions and module stored DTCs",
+        "Review cooling-system level and software calibrations as directed by the applicable bulletin",
+        "Use VIN-specific Ford WSM/FDRS/IDS for module diagnosis; do not replace components from code alone"
+      ],
+      "live_data": [],
+      "electrical_specs": null,
+      "engine_code": null,
+      "sources": [
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "documented_code_presence; definition_not_verified; application_source_scoped",
+      "review_status": "pending_code_definition_engine_VIN",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "code_id": "FORD-B04-P0C49",
+      "brand": "Ford",
+      "code": "P0C49",
+      "base_code": "P0C49",
+      "code_family": "P",
+      "ecu": "VARIES_BY_TSB",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_note": "These Ford TSBs list DTCs but do not provide the individual SAE/manufacturer definitions; leave unset.",
+      "code_type": "SAE / OEM allocation not independently checked",
+      "failure_type": null,
+      "vehicle_code_interpretation": "OEM bulletin-supported occurrence and logging module, NOT general semantic definition",
+      "diagnostic_actions": [
+        "Check the applicable Ford TSB conditions and module stored DTCs",
+        "Review cooling-system level and software calibrations as directed by the applicable bulletin",
+        "Use VIN-specific Ford WSM/FDRS/IDS for module diagnosis; do not replace components from code alone"
+      ],
+      "live_data": [],
+      "electrical_specs": null,
+      "engine_code": null,
+      "sources": [
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "documented_code_presence; definition_not_verified; application_source_scoped",
+      "review_status": "pending_code_definition_engine_VIN",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "code_id": "FORD-B04-P0C4A",
+      "brand": "Ford",
+      "code": "P0C4A",
+      "base_code": "P0C4A",
+      "code_family": "P",
+      "ecu": "VARIES_BY_TSB",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_note": "These Ford TSBs list DTCs but do not provide the individual SAE/manufacturer definitions; leave unset.",
+      "code_type": "SAE / OEM allocation not independently checked",
+      "failure_type": null,
+      "vehicle_code_interpretation": "OEM bulletin-supported occurrence and logging module, NOT general semantic definition",
+      "diagnostic_actions": [
+        "Check the applicable Ford TSB conditions and module stored DTCs",
+        "Review cooling-system level and software calibrations as directed by the applicable bulletin",
+        "Use VIN-specific Ford WSM/FDRS/IDS for module diagnosis; do not replace components from code alone"
+      ],
+      "live_data": [],
+      "electrical_specs": null,
+      "engine_code": null,
+      "sources": [
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "documented_code_presence; definition_not_verified; application_source_scoped",
+      "review_status": "pending_code_definition_engine_VIN",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "code_id": "FORD-B04-P0C4B",
+      "brand": "Ford",
+      "code": "P0C4B",
+      "base_code": "P0C4B",
+      "code_family": "P",
+      "ecu": "VARIES_BY_TSB",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_note": "These Ford TSBs list DTCs but do not provide the individual SAE/manufacturer definitions; leave unset.",
+      "code_type": "SAE / OEM allocation not independently checked",
+      "failure_type": null,
+      "vehicle_code_interpretation": "OEM bulletin-supported occurrence and logging module, NOT general semantic definition",
+      "diagnostic_actions": [
+        "Check the applicable Ford TSB conditions and module stored DTCs",
+        "Review cooling-system level and software calibrations as directed by the applicable bulletin",
+        "Use VIN-specific Ford WSM/FDRS/IDS for module diagnosis; do not replace components from code alone"
+      ],
+      "live_data": [],
+      "electrical_specs": null,
+      "engine_code": null,
+      "sources": [
+        "FORD-TSB-20-2221",
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "documented_code_presence; definition_not_verified; application_source_scoped",
+      "review_status": "pending_code_definition_engine_VIN",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "code_id": "FORD-B04-P0C73",
+      "brand": "Ford",
+      "code": "P0C73",
+      "base_code": "P0C73",
+      "code_family": "P",
+      "ecu": "VARIES_BY_TSB",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_note": "These Ford TSBs list DTCs but do not provide the individual SAE/manufacturer definitions; leave unset.",
+      "code_type": "SAE / OEM allocation not independently checked",
+      "failure_type": null,
+      "vehicle_code_interpretation": "OEM bulletin-supported occurrence and logging module, NOT general semantic definition",
+      "diagnostic_actions": [
+        "Check the applicable Ford TSB conditions and module stored DTCs",
+        "Review cooling-system level and software calibrations as directed by the applicable bulletin",
+        "Use VIN-specific Ford WSM/FDRS/IDS for module diagnosis; do not replace components from code alone"
+      ],
+      "live_data": [],
+      "electrical_specs": null,
+      "engine_code": null,
+      "sources": [
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "documented_code_presence; definition_not_verified; application_source_scoped",
+      "review_status": "pending_code_definition_engine_VIN",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "code_id": "FORD-B04-P0CFF",
+      "brand": "Ford",
+      "code": "P0CFF",
+      "base_code": "P0CFF",
+      "code_family": "P",
+      "ecu": "VARIES_BY_TSB",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_note": "These Ford TSBs list DTCs but do not provide the individual SAE/manufacturer definitions; leave unset.",
+      "code_type": "SAE / OEM allocation not independently checked",
+      "failure_type": null,
+      "vehicle_code_interpretation": "OEM bulletin-supported occurrence and logging module, NOT general semantic definition",
+      "diagnostic_actions": [
+        "Check the applicable Ford TSB conditions and module stored DTCs",
+        "Review cooling-system level and software calibrations as directed by the applicable bulletin",
+        "Use VIN-specific Ford WSM/FDRS/IDS for module diagnosis; do not replace components from code alone"
+      ],
+      "live_data": [],
+      "electrical_specs": null,
+      "engine_code": null,
+      "sources": [
+        "FORD-TSB-20-2221",
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "documented_code_presence; definition_not_verified; application_source_scoped",
+      "review_status": "pending_code_definition_engine_VIN",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "code_id": "FORD-B04-P0E1F",
+      "brand": "Ford",
+      "code": "P0E1F",
+      "base_code": "P0E1F",
+      "code_family": "P",
+      "ecu": "VARIES_BY_TSB",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_note": "These Ford TSBs list DTCs but do not provide the individual SAE/manufacturer definitions; leave unset.",
+      "code_type": "SAE / OEM allocation not independently checked",
+      "failure_type": null,
+      "vehicle_code_interpretation": "OEM bulletin-supported occurrence and logging module, NOT general semantic definition",
+      "diagnostic_actions": [
+        "Check the applicable Ford TSB conditions and module stored DTCs",
+        "Review cooling-system level and software calibrations as directed by the applicable bulletin",
+        "Use VIN-specific Ford WSM/FDRS/IDS for module diagnosis; do not replace components from code alone"
+      ],
+      "live_data": [],
+      "electrical_specs": null,
+      "engine_code": null,
+      "sources": [
+        "FORD-TSB-20-2221",
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "documented_code_presence; definition_not_verified; application_source_scoped",
+      "review_status": "pending_code_definition_engine_VIN",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "code_id": "FORD-B04-P2B29",
+      "brand": "Ford",
+      "code": "P2B29",
+      "base_code": "P2B29",
+      "code_family": "P",
+      "ecu": "VARIES_BY_TSB",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_note": "These Ford TSBs list DTCs but do not provide the individual SAE/manufacturer definitions; leave unset.",
+      "code_type": "SAE / OEM allocation not independently checked",
+      "failure_type": null,
+      "vehicle_code_interpretation": "OEM bulletin-supported occurrence and logging module, NOT general semantic definition",
+      "diagnostic_actions": [
+        "Check the applicable Ford TSB conditions and module stored DTCs",
+        "Review cooling-system level and software calibrations as directed by the applicable bulletin",
+        "Use VIN-specific Ford WSM/FDRS/IDS for module diagnosis; do not replace components from code alone"
+      ],
+      "live_data": [],
+      "electrical_specs": null,
+      "engine_code": null,
+      "sources": [
+        "FORD-TSB-20-2221",
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "documented_code_presence; definition_not_verified; application_source_scoped",
+      "review_status": "pending_code_definition_engine_VIN",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "code_id": "FORD-B04-P2CF3",
+      "brand": "Ford",
+      "code": "P2CF3",
+      "base_code": "P2CF3",
+      "code_family": "P",
+      "ecu": "VARIES_BY_TSB",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_note": "These Ford TSBs list DTCs but do not provide the individual SAE/manufacturer definitions; leave unset.",
+      "code_type": "SAE / OEM allocation not independently checked",
+      "failure_type": null,
+      "vehicle_code_interpretation": "OEM bulletin-supported occurrence and logging module, NOT general semantic definition",
+      "diagnostic_actions": [
+        "Check the applicable Ford TSB conditions and module stored DTCs",
+        "Review cooling-system level and software calibrations as directed by the applicable bulletin",
+        "Use VIN-specific Ford WSM/FDRS/IDS for module diagnosis; do not replace components from code alone"
+      ],
+      "live_data": [],
+      "electrical_specs": null,
+      "engine_code": null,
+      "sources": [
+        "FORD-TSB-20-2221",
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "documented_code_presence; definition_not_verified; application_source_scoped",
+      "review_status": "pending_code_definition_engine_VIN",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "code_id": "FORD-B04-P2D00",
+      "brand": "Ford",
+      "code": "P2D00",
+      "base_code": "P2D00",
+      "code_family": "P",
+      "ecu": "VARIES_BY_TSB",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_note": "These Ford TSBs list DTCs but do not provide the individual SAE/manufacturer definitions; leave unset.",
+      "code_type": "SAE / OEM allocation not independently checked",
+      "failure_type": null,
+      "vehicle_code_interpretation": "OEM bulletin-supported occurrence and logging module, NOT general semantic definition",
+      "diagnostic_actions": [
+        "Check the applicable Ford TSB conditions and module stored DTCs",
+        "Review cooling-system level and software calibrations as directed by the applicable bulletin",
+        "Use VIN-specific Ford WSM/FDRS/IDS for module diagnosis; do not replace components from code alone"
+      ],
+      "live_data": [],
+      "electrical_specs": null,
+      "engine_code": null,
+      "sources": [
+        "FORD-TSB-20-2221",
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "documented_code_presence; definition_not_verified; application_source_scoped",
+      "review_status": "pending_code_definition_engine_VIN",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "code_id": "FORD-B04-P2D01",
+      "brand": "Ford",
+      "code": "P2D01",
+      "base_code": "P2D01",
+      "code_family": "P",
+      "ecu": "VARIES_BY_TSB",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_note": "These Ford TSBs list DTCs but do not provide the individual SAE/manufacturer definitions; leave unset.",
+      "code_type": "SAE / OEM allocation not independently checked",
+      "failure_type": null,
+      "vehicle_code_interpretation": "OEM bulletin-supported occurrence and logging module, NOT general semantic definition",
+      "diagnostic_actions": [
+        "Check the applicable Ford TSB conditions and module stored DTCs",
+        "Review cooling-system level and software calibrations as directed by the applicable bulletin",
+        "Use VIN-specific Ford WSM/FDRS/IDS for module diagnosis; do not replace components from code alone"
+      ],
+      "live_data": [],
+      "electrical_specs": null,
+      "engine_code": null,
+      "sources": [
+        "FORD-TSB-20-2221",
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "documented_code_presence; definition_not_verified; application_source_scoped",
+      "review_status": "pending_code_definition_engine_VIN",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "code_id": "FORD-B04-P2D02",
+      "brand": "Ford",
+      "code": "P2D02",
+      "base_code": "P2D02",
+      "code_family": "P",
+      "ecu": "VARIES_BY_TSB",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_note": "These Ford TSBs list DTCs but do not provide the individual SAE/manufacturer definitions; leave unset.",
+      "code_type": "SAE / OEM allocation not independently checked",
+      "failure_type": null,
+      "vehicle_code_interpretation": "OEM bulletin-supported occurrence and logging module, NOT general semantic definition",
+      "diagnostic_actions": [
+        "Check the applicable Ford TSB conditions and module stored DTCs",
+        "Review cooling-system level and software calibrations as directed by the applicable bulletin",
+        "Use VIN-specific Ford WSM/FDRS/IDS for module diagnosis; do not replace components from code alone"
+      ],
+      "live_data": [],
+      "electrical_specs": null,
+      "engine_code": null,
+      "sources": [
+        "FORD-TSB-20-2221",
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "documented_code_presence; definition_not_verified; application_source_scoped",
+      "review_status": "pending_code_definition_engine_VIN",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "code_id": "FORD-B04-P2D03",
+      "brand": "Ford",
+      "code": "P2D03",
+      "base_code": "P2D03",
+      "code_family": "P",
+      "ecu": "VARIES_BY_TSB",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_note": "These Ford TSBs list DTCs but do not provide the individual SAE/manufacturer definitions; leave unset.",
+      "code_type": "SAE / OEM allocation not independently checked",
+      "failure_type": null,
+      "vehicle_code_interpretation": "OEM bulletin-supported occurrence and logging module, NOT general semantic definition",
+      "diagnostic_actions": [
+        "Check the applicable Ford TSB conditions and module stored DTCs",
+        "Review cooling-system level and software calibrations as directed by the applicable bulletin",
+        "Use VIN-specific Ford WSM/FDRS/IDS for module diagnosis; do not replace components from code alone"
+      ],
+      "live_data": [],
+      "electrical_specs": null,
+      "engine_code": null,
+      "sources": [
+        "FORD-TSB-20-2221",
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "documented_code_presence; definition_not_verified; application_source_scoped",
+      "review_status": "pending_code_definition_engine_VIN",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "code_id": "FORD-B04-P2D04",
+      "brand": "Ford",
+      "code": "P2D04",
+      "base_code": "P2D04",
+      "code_family": "P",
+      "ecu": "VARIES_BY_TSB",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_note": "These Ford TSBs list DTCs but do not provide the individual SAE/manufacturer definitions; leave unset.",
+      "code_type": "SAE / OEM allocation not independently checked",
+      "failure_type": null,
+      "vehicle_code_interpretation": "OEM bulletin-supported occurrence and logging module, NOT general semantic definition",
+      "diagnostic_actions": [
+        "Check the applicable Ford TSB conditions and module stored DTCs",
+        "Review cooling-system level and software calibrations as directed by the applicable bulletin",
+        "Use VIN-specific Ford WSM/FDRS/IDS for module diagnosis; do not replace components from code alone"
+      ],
+      "live_data": [],
+      "electrical_specs": null,
+      "engine_code": null,
+      "sources": [
+        "FORD-TSB-20-2221",
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "documented_code_presence; definition_not_verified; application_source_scoped",
+      "review_status": "pending_code_definition_engine_VIN",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "code_id": "FORD-B04-U0415-00",
+      "brand": "Ford",
+      "code": "U0415:00",
+      "base_code": "U0415",
+      "code_family": "U",
+      "ecu": "PSCM",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_note": "U0415:00 present in PSCM in Ford SSM 51437; document does not state a canonical full English definition",
+      "code_type": "SAE/UDS with reported Failure Type; classification not fully independently verified",
+      "failure_type": "00",
+      "related_codes": [
+        "C0051:67",
+        "U0418:86"
+      ],
+      "diagnostic_actions": [
+        "Confirm stored module DTC and Ford SSM scope",
+        "Use FDRS to verify PSCM software levels; update only if Ford bulletin criteria apply",
+        "Clear and recheck DTCs; if unresolved consult WSM"
+      ],
+      "live_data": [],
+      "electrical_specs": null,
+      "engine_code": null,
+      "sources": [
+        "FORD-SSM-51437"
+      ],
+      "verification_status": "OEM_SSM_code_module_and_fitment_scope_documented; standardized_definition_missing",
+      "review_status": "pending_UDS_definition_and_VIN",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "code_id": "FORD-B04-U0418-86",
+      "brand": "Ford",
+      "code": "U0418:86",
+      "base_code": "U0418",
+      "code_family": "U",
+      "ecu": "IPMA",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_note": "U0418:86 present in IPMA in Ford SSM 51437; document does not state a canonical full English definition",
+      "code_type": "SAE/UDS with reported Failure Type; classification not fully independently verified",
+      "failure_type": "86",
+      "related_codes": [
+        "U0415:00",
+        "C0051:67"
+      ],
+      "diagnostic_actions": [
+        "Confirm stored module DTC and Ford SSM scope",
+        "Use FDRS to verify PSCM software levels; update only if Ford bulletin criteria apply",
+        "Clear and recheck DTCs; if unresolved consult WSM"
+      ],
+      "live_data": [],
+      "electrical_specs": null,
+      "engine_code": null,
+      "sources": [
+        "FORD-SSM-51437"
+      ],
+      "verification_status": "OEM_SSM_code_module_and_fitment_scope_documented; standardized_definition_missing",
+      "review_status": "pending_UDS_definition_and_VIN",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "code_id": "FORD-B04-B007E",
+      "brand": "Ford",
+      "code": "B007E",
+      "base_code": "B007E",
+      "code_family": "B",
+      "ecu": null,
+      "system": "SRS / front seatbelt retractor pretensioner",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_note": "Ford response lists B007E/B007F jointly as codes associated with pretensioner resistance/open-circuit warnings; does NOT give exact code-to-side assignment.",
+      "code_type": "Unverified SAE/OEM classification",
+      "failure_type": null,
+      "diagnostic_actions": [
+        "Confirm actual RCM readout and model-specific service documentation",
+        "Do not probe a live pretensioner circuit, apply resistance meters directly to squibs, or bypass SRS connectors",
+        "Use Ford WSM qualified SRS disable/diagnostic procedure and recall/VIN eligibility"
+      ],
+      "live_data": [],
+      "electrical_specs": null,
+      "engine_code": null,
+      "sources": [
+        "FORD-NHTSA-PE23-021-RESPONSE"
+      ],
+      "verification_status": "Ford_response_codes_documented; reporting_module_and_vehicle_fitment_not_verified",
+      "review_status": "pending_WSM_SRS_and_code_to_side_mapping",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "code_id": "FORD-B04-B007F",
+      "brand": "Ford",
+      "code": "B007F",
+      "base_code": "B007F",
+      "code_family": "B",
+      "ecu": null,
+      "system": "SRS / front seatbelt retractor pretensioner",
+      "definition_en": null,
+      "translation_ar": null,
+      "definition_note": "Ford response lists B007E/B007F jointly as codes associated with pretensioner resistance/open-circuit warnings; does NOT give exact code-to-side assignment.",
+      "code_type": "Unverified SAE/OEM classification",
+      "failure_type": null,
+      "diagnostic_actions": [
+        "Confirm actual RCM readout and model-specific service documentation",
+        "Do not probe a live pretensioner circuit, apply resistance meters directly to squibs, or bypass SRS connectors",
+        "Use Ford WSM qualified SRS disable/diagnostic procedure and recall/VIN eligibility"
+      ],
+      "live_data": [],
+      "electrical_specs": null,
+      "engine_code": null,
+      "sources": [
+        "FORD-NHTSA-PE23-021-RESPONSE"
+      ],
+      "verification_status": "Ford_response_codes_documented; reporting_module_and_vehicle_fitment_not_verified",
+      "review_status": "pending_WSM_SRS_and_code_to_side_mapping",
+      "release_status": "NOT_ACTIVATED"
+    }
+  ],
+  "dtc_applicability": [
+    {
+      "applicability_id": "FORD-B04-EXP20-PCM-P0A06",
+      "code": "P0A06",
+      "ecu": "PCM",
+      "vehicle": "Explorer / Police Interceptor Utility",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid powertrain (no engine code in TSB)",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": null,
+      "condition": "MIL and code stored in PCM, hybrid vehicle, TSB criteria",
+      "causes_evidence": [
+        {
+          "reason": "BECM software",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Explorer or Police Interceptor Utility hybrid powertrain",
+        "Read PCM fault codes and match source list",
+        "Follow Ford TSB 20-2345 BECM reprogram procedure using Ford diagnostic tools",
+        "After programming inspect low-temperature coolant degas bottle; diagnose if below minimum per WSM 303-03",
+        "Recheck MIL and DTCs; escalate unresolved issues via WSM"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-EXP20-PCM-P0A07",
+      "code": "P0A07",
+      "ecu": "PCM",
+      "vehicle": "Explorer / Police Interceptor Utility",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid powertrain (no engine code in TSB)",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": null,
+      "condition": "MIL and code stored in PCM, hybrid vehicle, TSB criteria",
+      "causes_evidence": [
+        {
+          "reason": "BECM software",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Explorer or Police Interceptor Utility hybrid powertrain",
+        "Read PCM fault codes and match source list",
+        "Follow Ford TSB 20-2345 BECM reprogram procedure using Ford diagnostic tools",
+        "After programming inspect low-temperature coolant degas bottle; diagnose if below minimum per WSM 303-03",
+        "Recheck MIL and DTCs; escalate unresolved issues via WSM"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-EXP20-PCM-P0C48",
+      "code": "P0C48",
+      "ecu": "PCM",
+      "vehicle": "Explorer / Police Interceptor Utility",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid powertrain (no engine code in TSB)",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": null,
+      "condition": "MIL and code stored in PCM, hybrid vehicle, TSB criteria",
+      "causes_evidence": [
+        {
+          "reason": "BECM software",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Explorer or Police Interceptor Utility hybrid powertrain",
+        "Read PCM fault codes and match source list",
+        "Follow Ford TSB 20-2345 BECM reprogram procedure using Ford diagnostic tools",
+        "After programming inspect low-temperature coolant degas bottle; diagnose if below minimum per WSM 303-03",
+        "Recheck MIL and DTCs; escalate unresolved issues via WSM"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-EXP20-PCM-P0C49",
+      "code": "P0C49",
+      "ecu": "PCM",
+      "vehicle": "Explorer / Police Interceptor Utility",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid powertrain (no engine code in TSB)",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": null,
+      "condition": "MIL and code stored in PCM, hybrid vehicle, TSB criteria",
+      "causes_evidence": [
+        {
+          "reason": "BECM software",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Explorer or Police Interceptor Utility hybrid powertrain",
+        "Read PCM fault codes and match source list",
+        "Follow Ford TSB 20-2345 BECM reprogram procedure using Ford diagnostic tools",
+        "After programming inspect low-temperature coolant degas bottle; diagnose if below minimum per WSM 303-03",
+        "Recheck MIL and DTCs; escalate unresolved issues via WSM"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-EXP20-PCM-P0C4A",
+      "code": "P0C4A",
+      "ecu": "PCM",
+      "vehicle": "Explorer / Police Interceptor Utility",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid powertrain (no engine code in TSB)",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": null,
+      "condition": "MIL and code stored in PCM, hybrid vehicle, TSB criteria",
+      "causes_evidence": [
+        {
+          "reason": "BECM software",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Explorer or Police Interceptor Utility hybrid powertrain",
+        "Read PCM fault codes and match source list",
+        "Follow Ford TSB 20-2345 BECM reprogram procedure using Ford diagnostic tools",
+        "After programming inspect low-temperature coolant degas bottle; diagnose if below minimum per WSM 303-03",
+        "Recheck MIL and DTCs; escalate unresolved issues via WSM"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-ESC20-BECM-P0C4B",
+      "code": "P0C4B",
+      "ecu": "BECM",
+      "vehicle": "Escape",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid Electric Vehicle / HEV",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": "2020-06-10",
+      "condition": "MIL and code stored in BECM, bulletin criteria met",
+      "causes_evidence": [
+        {
+          "reason": "BECM software strategies",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Escape HEV and vehicle build on/before 10-Jun-2020",
+        "Read BECM MIL DTCs; identify whether one or more TSB codes are present",
+        "Inspect coolant degas reservoir level against vehicle-specific safe range per WSM 303-03C",
+        "If coolant is below range, stop TSB path and diagnose coolant loss instead",
+        "If within criteria, follow Ford TSB software update procedure for PCM and BECM and recheck DTCs"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2221"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-EXP20-PCM-P0C4B",
+      "code": "P0C4B",
+      "ecu": "PCM",
+      "vehicle": "Explorer / Police Interceptor Utility",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid powertrain (no engine code in TSB)",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": null,
+      "condition": "MIL and code stored in PCM, hybrid vehicle, TSB criteria",
+      "causes_evidence": [
+        {
+          "reason": "BECM software",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Explorer or Police Interceptor Utility hybrid powertrain",
+        "Read PCM fault codes and match source list",
+        "Follow Ford TSB 20-2345 BECM reprogram procedure using Ford diagnostic tools",
+        "After programming inspect low-temperature coolant degas bottle; diagnose if below minimum per WSM 303-03",
+        "Recheck MIL and DTCs; escalate unresolved issues via WSM"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-EXP20-PCM-P0C73",
+      "code": "P0C73",
+      "ecu": "PCM",
+      "vehicle": "Explorer / Police Interceptor Utility",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid powertrain (no engine code in TSB)",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": null,
+      "condition": "MIL and code stored in PCM, hybrid vehicle, TSB criteria",
+      "causes_evidence": [
+        {
+          "reason": "BECM software",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Explorer or Police Interceptor Utility hybrid powertrain",
+        "Read PCM fault codes and match source list",
+        "Follow Ford TSB 20-2345 BECM reprogram procedure using Ford diagnostic tools",
+        "After programming inspect low-temperature coolant degas bottle; diagnose if below minimum per WSM 303-03",
+        "Recheck MIL and DTCs; escalate unresolved issues via WSM"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-ESC20-BECM-P0CFF",
+      "code": "P0CFF",
+      "ecu": "BECM",
+      "vehicle": "Escape",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid Electric Vehicle / HEV",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": "2020-06-10",
+      "condition": "MIL and code stored in BECM, bulletin criteria met",
+      "causes_evidence": [
+        {
+          "reason": "BECM software strategies",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Escape HEV and vehicle build on/before 10-Jun-2020",
+        "Read BECM MIL DTCs; identify whether one or more TSB codes are present",
+        "Inspect coolant degas reservoir level against vehicle-specific safe range per WSM 303-03C",
+        "If coolant is below range, stop TSB path and diagnose coolant loss instead",
+        "If within criteria, follow Ford TSB software update procedure for PCM and BECM and recheck DTCs"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2221"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-EXP20-PCM-P0CFF",
+      "code": "P0CFF",
+      "ecu": "PCM",
+      "vehicle": "Explorer / Police Interceptor Utility",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid powertrain (no engine code in TSB)",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": null,
+      "condition": "MIL and code stored in PCM, hybrid vehicle, TSB criteria",
+      "causes_evidence": [
+        {
+          "reason": "BECM software",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Explorer or Police Interceptor Utility hybrid powertrain",
+        "Read PCM fault codes and match source list",
+        "Follow Ford TSB 20-2345 BECM reprogram procedure using Ford diagnostic tools",
+        "After programming inspect low-temperature coolant degas bottle; diagnose if below minimum per WSM 303-03",
+        "Recheck MIL and DTCs; escalate unresolved issues via WSM"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-ESC20-BECM-P0E1F",
+      "code": "P0E1F",
+      "ecu": "BECM",
+      "vehicle": "Escape",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid Electric Vehicle / HEV",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": "2020-06-10",
+      "condition": "MIL and code stored in BECM, bulletin criteria met",
+      "causes_evidence": [
+        {
+          "reason": "BECM software strategies",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Escape HEV and vehicle build on/before 10-Jun-2020",
+        "Read BECM MIL DTCs; identify whether one or more TSB codes are present",
+        "Inspect coolant degas reservoir level against vehicle-specific safe range per WSM 303-03C",
+        "If coolant is below range, stop TSB path and diagnose coolant loss instead",
+        "If within criteria, follow Ford TSB software update procedure for PCM and BECM and recheck DTCs"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2221"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-EXP20-PCM-P0E1F",
+      "code": "P0E1F",
+      "ecu": "PCM",
+      "vehicle": "Explorer / Police Interceptor Utility",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid powertrain (no engine code in TSB)",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": null,
+      "condition": "MIL and code stored in PCM, hybrid vehicle, TSB criteria",
+      "causes_evidence": [
+        {
+          "reason": "BECM software",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Explorer or Police Interceptor Utility hybrid powertrain",
+        "Read PCM fault codes and match source list",
+        "Follow Ford TSB 20-2345 BECM reprogram procedure using Ford diagnostic tools",
+        "After programming inspect low-temperature coolant degas bottle; diagnose if below minimum per WSM 303-03",
+        "Recheck MIL and DTCs; escalate unresolved issues via WSM"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-ESC20-BECM-P2B29",
+      "code": "P2B29",
+      "ecu": "BECM",
+      "vehicle": "Escape",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid Electric Vehicle / HEV",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": "2020-06-10",
+      "condition": "MIL and code stored in BECM, bulletin criteria met",
+      "causes_evidence": [
+        {
+          "reason": "BECM software strategies",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Escape HEV and vehicle build on/before 10-Jun-2020",
+        "Read BECM MIL DTCs; identify whether one or more TSB codes are present",
+        "Inspect coolant degas reservoir level against vehicle-specific safe range per WSM 303-03C",
+        "If coolant is below range, stop TSB path and diagnose coolant loss instead",
+        "If within criteria, follow Ford TSB software update procedure for PCM and BECM and recheck DTCs"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2221"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-EXP20-PCM-P2B29",
+      "code": "P2B29",
+      "ecu": "PCM",
+      "vehicle": "Explorer / Police Interceptor Utility",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid powertrain (no engine code in TSB)",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": null,
+      "condition": "MIL and code stored in PCM, hybrid vehicle, TSB criteria",
+      "causes_evidence": [
+        {
+          "reason": "BECM software",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Explorer or Police Interceptor Utility hybrid powertrain",
+        "Read PCM fault codes and match source list",
+        "Follow Ford TSB 20-2345 BECM reprogram procedure using Ford diagnostic tools",
+        "After programming inspect low-temperature coolant degas bottle; diagnose if below minimum per WSM 303-03",
+        "Recheck MIL and DTCs; escalate unresolved issues via WSM"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-ESC20-BECM-P2CF3",
+      "code": "P2CF3",
+      "ecu": "BECM",
+      "vehicle": "Escape",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid Electric Vehicle / HEV",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": "2020-06-10",
+      "condition": "MIL and code stored in BECM, bulletin criteria met",
+      "causes_evidence": [
+        {
+          "reason": "BECM software strategies",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Escape HEV and vehicle build on/before 10-Jun-2020",
+        "Read BECM MIL DTCs; identify whether one or more TSB codes are present",
+        "Inspect coolant degas reservoir level against vehicle-specific safe range per WSM 303-03C",
+        "If coolant is below range, stop TSB path and diagnose coolant loss instead",
+        "If within criteria, follow Ford TSB software update procedure for PCM and BECM and recheck DTCs"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2221"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-EXP20-PCM-P2CF3",
+      "code": "P2CF3",
+      "ecu": "PCM",
+      "vehicle": "Explorer / Police Interceptor Utility",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid powertrain (no engine code in TSB)",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": null,
+      "condition": "MIL and code stored in PCM, hybrid vehicle, TSB criteria",
+      "causes_evidence": [
+        {
+          "reason": "BECM software",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Explorer or Police Interceptor Utility hybrid powertrain",
+        "Read PCM fault codes and match source list",
+        "Follow Ford TSB 20-2345 BECM reprogram procedure using Ford diagnostic tools",
+        "After programming inspect low-temperature coolant degas bottle; diagnose if below minimum per WSM 303-03",
+        "Recheck MIL and DTCs; escalate unresolved issues via WSM"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-ESC20-BECM-P2D00",
+      "code": "P2D00",
+      "ecu": "BECM",
+      "vehicle": "Escape",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid Electric Vehicle / HEV",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": "2020-06-10",
+      "condition": "MIL and code stored in BECM, bulletin criteria met",
+      "causes_evidence": [
+        {
+          "reason": "BECM software strategies",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Escape HEV and vehicle build on/before 10-Jun-2020",
+        "Read BECM MIL DTCs; identify whether one or more TSB codes are present",
+        "Inspect coolant degas reservoir level against vehicle-specific safe range per WSM 303-03C",
+        "If coolant is below range, stop TSB path and diagnose coolant loss instead",
+        "If within criteria, follow Ford TSB software update procedure for PCM and BECM and recheck DTCs"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2221"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-EXP20-PCM-P2D00",
+      "code": "P2D00",
+      "ecu": "PCM",
+      "vehicle": "Explorer / Police Interceptor Utility",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid powertrain (no engine code in TSB)",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": null,
+      "condition": "MIL and code stored in PCM, hybrid vehicle, TSB criteria",
+      "causes_evidence": [
+        {
+          "reason": "BECM software",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Explorer or Police Interceptor Utility hybrid powertrain",
+        "Read PCM fault codes and match source list",
+        "Follow Ford TSB 20-2345 BECM reprogram procedure using Ford diagnostic tools",
+        "After programming inspect low-temperature coolant degas bottle; diagnose if below minimum per WSM 303-03",
+        "Recheck MIL and DTCs; escalate unresolved issues via WSM"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-ESC20-BECM-P2D01",
+      "code": "P2D01",
+      "ecu": "BECM",
+      "vehicle": "Escape",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid Electric Vehicle / HEV",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": "2020-06-10",
+      "condition": "MIL and code stored in BECM, bulletin criteria met",
+      "causes_evidence": [
+        {
+          "reason": "BECM software strategies",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Escape HEV and vehicle build on/before 10-Jun-2020",
+        "Read BECM MIL DTCs; identify whether one or more TSB codes are present",
+        "Inspect coolant degas reservoir level against vehicle-specific safe range per WSM 303-03C",
+        "If coolant is below range, stop TSB path and diagnose coolant loss instead",
+        "If within criteria, follow Ford TSB software update procedure for PCM and BECM and recheck DTCs"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2221"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-EXP20-PCM-P2D01",
+      "code": "P2D01",
+      "ecu": "PCM",
+      "vehicle": "Explorer / Police Interceptor Utility",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid powertrain (no engine code in TSB)",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": null,
+      "condition": "MIL and code stored in PCM, hybrid vehicle, TSB criteria",
+      "causes_evidence": [
+        {
+          "reason": "BECM software",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Explorer or Police Interceptor Utility hybrid powertrain",
+        "Read PCM fault codes and match source list",
+        "Follow Ford TSB 20-2345 BECM reprogram procedure using Ford diagnostic tools",
+        "After programming inspect low-temperature coolant degas bottle; diagnose if below minimum per WSM 303-03",
+        "Recheck MIL and DTCs; escalate unresolved issues via WSM"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-ESC20-BECM-P2D02",
+      "code": "P2D02",
+      "ecu": "BECM",
+      "vehicle": "Escape",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid Electric Vehicle / HEV",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": "2020-06-10",
+      "condition": "MIL and code stored in BECM, bulletin criteria met",
+      "causes_evidence": [
+        {
+          "reason": "BECM software strategies",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Escape HEV and vehicle build on/before 10-Jun-2020",
+        "Read BECM MIL DTCs; identify whether one or more TSB codes are present",
+        "Inspect coolant degas reservoir level against vehicle-specific safe range per WSM 303-03C",
+        "If coolant is below range, stop TSB path and diagnose coolant loss instead",
+        "If within criteria, follow Ford TSB software update procedure for PCM and BECM and recheck DTCs"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2221"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-EXP20-PCM-P2D02",
+      "code": "P2D02",
+      "ecu": "PCM",
+      "vehicle": "Explorer / Police Interceptor Utility",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid powertrain (no engine code in TSB)",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": null,
+      "condition": "MIL and code stored in PCM, hybrid vehicle, TSB criteria",
+      "causes_evidence": [
+        {
+          "reason": "BECM software",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Explorer or Police Interceptor Utility hybrid powertrain",
+        "Read PCM fault codes and match source list",
+        "Follow Ford TSB 20-2345 BECM reprogram procedure using Ford diagnostic tools",
+        "After programming inspect low-temperature coolant degas bottle; diagnose if below minimum per WSM 303-03",
+        "Recheck MIL and DTCs; escalate unresolved issues via WSM"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-ESC20-BECM-P2D03",
+      "code": "P2D03",
+      "ecu": "BECM",
+      "vehicle": "Escape",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid Electric Vehicle / HEV",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": "2020-06-10",
+      "condition": "MIL and code stored in BECM, bulletin criteria met",
+      "causes_evidence": [
+        {
+          "reason": "BECM software strategies",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Escape HEV and vehicle build on/before 10-Jun-2020",
+        "Read BECM MIL DTCs; identify whether one or more TSB codes are present",
+        "Inspect coolant degas reservoir level against vehicle-specific safe range per WSM 303-03C",
+        "If coolant is below range, stop TSB path and diagnose coolant loss instead",
+        "If within criteria, follow Ford TSB software update procedure for PCM and BECM and recheck DTCs"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2221"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-EXP20-PCM-P2D03",
+      "code": "P2D03",
+      "ecu": "PCM",
+      "vehicle": "Explorer / Police Interceptor Utility",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid powertrain (no engine code in TSB)",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": null,
+      "condition": "MIL and code stored in PCM, hybrid vehicle, TSB criteria",
+      "causes_evidence": [
+        {
+          "reason": "BECM software",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Explorer or Police Interceptor Utility hybrid powertrain",
+        "Read PCM fault codes and match source list",
+        "Follow Ford TSB 20-2345 BECM reprogram procedure using Ford diagnostic tools",
+        "After programming inspect low-temperature coolant degas bottle; diagnose if below minimum per WSM 303-03",
+        "Recheck MIL and DTCs; escalate unresolved issues via WSM"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-ESC20-BECM-P2D04",
+      "code": "P2D04",
+      "ecu": "BECM",
+      "vehicle": "Escape",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid Electric Vehicle / HEV",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": "2020-06-10",
+      "condition": "MIL and code stored in BECM, bulletin criteria met",
+      "causes_evidence": [
+        {
+          "reason": "BECM software strategies",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Escape HEV and vehicle build on/before 10-Jun-2020",
+        "Read BECM MIL DTCs; identify whether one or more TSB codes are present",
+        "Inspect coolant degas reservoir level against vehicle-specific safe range per WSM 303-03C",
+        "If coolant is below range, stop TSB path and diagnose coolant loss instead",
+        "If within criteria, follow Ford TSB software update procedure for PCM and BECM and recheck DTCs"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2221"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-EXP20-PCM-P2D04",
+      "code": "P2D04",
+      "ecu": "PCM",
+      "vehicle": "Explorer / Police Interceptor Utility",
+      "model_year_start": 2020,
+      "model_year_end": 2020,
+      "engine": "Hybrid powertrain (no engine code in TSB)",
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": null,
+      "condition": "MIL and code stored in PCM, hybrid vehicle, TSB criteria",
+      "causes_evidence": [
+        {
+          "reason": "BECM software",
+          "rank": "TSB-identified possible cause"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm 2020 Explorer or Police Interceptor Utility hybrid powertrain",
+        "Read PCM fault codes and match source list",
+        "Follow Ford TSB 20-2345 BECM reprogram procedure using Ford diagnostic tools",
+        "After programming inspect low-temperature coolant degas bottle; diagnose if below minimum per WSM 303-03",
+        "Recheck MIL and DTCs; escalate unresolved issues via WSM"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-TSB-20-2345"
+      ],
+      "verification_status": "manufacturer_TSB_conditional_applicability_documented; exact_VIN_and_engine_code_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-ADAS-Escape-U0415-00",
+      "code": "U0415:00",
+      "ecu": "PSCM",
+      "vehicle": "Escape",
+      "model_year_start": 2020,
+      "model_year_end": 2022,
+      "engine": null,
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": "2022-03-23",
+      "condition": "Driver-assistance warning messages, one or more listed module DTCs, and correct bulletin build scope",
+      "causes_evidence": [
+        {
+          "reason": "PSCM software",
+          "rank": "Ford SSM suspected cause, not proven for individual VIN"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm model year and actual build date on/before 23-Mar-2022",
+        "Read PSCM U0415:00, ABS C0051:67 and/or IPMA U0418:86; not all three are required",
+        "Evaluate driver-assistance warnings and PSCM software update applicability",
+        "Using appropriate Ford FDRS software, update PSCM only under manufacturer procedure",
+        "Cycle/recheck and use WSM to investigate persistence without guessing failed part"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-SSM-51437"
+      ],
+      "verification_status": "manufacturer_SSM_conditional_applicability_documented; specific_VIN_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-ADAS-Escape-C0051-67",
+      "code": "C0051:67",
+      "ecu": "ABS",
+      "vehicle": "Escape",
+      "model_year_start": 2020,
+      "model_year_end": 2022,
+      "engine": null,
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": "2022-03-23",
+      "condition": "Driver-assistance warning messages, one or more listed module DTCs, and correct bulletin build scope",
+      "causes_evidence": [
+        {
+          "reason": "PSCM software",
+          "rank": "Ford SSM suspected cause, not proven for individual VIN"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm model year and actual build date on/before 23-Mar-2022",
+        "Read PSCM U0415:00, ABS C0051:67 and/or IPMA U0418:86; not all three are required",
+        "Evaluate driver-assistance warnings and PSCM software update applicability",
+        "Using appropriate Ford FDRS software, update PSCM only under manufacturer procedure",
+        "Cycle/recheck and use WSM to investigate persistence without guessing failed part"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-SSM-51437"
+      ],
+      "verification_status": "manufacturer_SSM_conditional_applicability_documented; specific_VIN_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-ADAS-Escape-U0418-86",
+      "code": "U0418:86",
+      "ecu": "IPMA",
+      "vehicle": "Escape",
+      "model_year_start": 2020,
+      "model_year_end": 2022,
+      "engine": null,
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": "2022-03-23",
+      "condition": "Driver-assistance warning messages, one or more listed module DTCs, and correct bulletin build scope",
+      "causes_evidence": [
+        {
+          "reason": "PSCM software",
+          "rank": "Ford SSM suspected cause, not proven for individual VIN"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm model year and actual build date on/before 23-Mar-2022",
+        "Read PSCM U0415:00, ABS C0051:67 and/or IPMA U0418:86; not all three are required",
+        "Evaluate driver-assistance warnings and PSCM software update applicability",
+        "Using appropriate Ford FDRS software, update PSCM only under manufacturer procedure",
+        "Cycle/recheck and use WSM to investigate persistence without guessing failed part"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-SSM-51437"
+      ],
+      "verification_status": "manufacturer_SSM_conditional_applicability_documented; specific_VIN_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-ADAS-BroncoSport-U0415-00",
+      "code": "U0415:00",
+      "ecu": "PSCM",
+      "vehicle": "Bronco Sport",
+      "model_year_start": 2021,
+      "model_year_end": 2022,
+      "engine": null,
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": "2022-03-23",
+      "condition": "Driver-assistance warning messages, one or more listed module DTCs, and correct bulletin build scope",
+      "causes_evidence": [
+        {
+          "reason": "PSCM software",
+          "rank": "Ford SSM suspected cause, not proven for individual VIN"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm model year and actual build date on/before 23-Mar-2022",
+        "Read PSCM U0415:00, ABS C0051:67 and/or IPMA U0418:86; not all three are required",
+        "Evaluate driver-assistance warnings and PSCM software update applicability",
+        "Using appropriate Ford FDRS software, update PSCM only under manufacturer procedure",
+        "Cycle/recheck and use WSM to investigate persistence without guessing failed part"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-SSM-51437"
+      ],
+      "verification_status": "manufacturer_SSM_conditional_applicability_documented; specific_VIN_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-ADAS-BroncoSport-C0051-67",
+      "code": "C0051:67",
+      "ecu": "ABS",
+      "vehicle": "Bronco Sport",
+      "model_year_start": 2021,
+      "model_year_end": 2022,
+      "engine": null,
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": "2022-03-23",
+      "condition": "Driver-assistance warning messages, one or more listed module DTCs, and correct bulletin build scope",
+      "causes_evidence": [
+        {
+          "reason": "PSCM software",
+          "rank": "Ford SSM suspected cause, not proven for individual VIN"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm model year and actual build date on/before 23-Mar-2022",
+        "Read PSCM U0415:00, ABS C0051:67 and/or IPMA U0418:86; not all three are required",
+        "Evaluate driver-assistance warnings and PSCM software update applicability",
+        "Using appropriate Ford FDRS software, update PSCM only under manufacturer procedure",
+        "Cycle/recheck and use WSM to investigate persistence without guessing failed part"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-SSM-51437"
+      ],
+      "verification_status": "manufacturer_SSM_conditional_applicability_documented; specific_VIN_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-ADAS-BroncoSport-U0418-86",
+      "code": "U0418:86",
+      "ecu": "IPMA",
+      "vehicle": "Bronco Sport",
+      "model_year_start": 2021,
+      "model_year_end": 2022,
+      "engine": null,
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": "2022-03-23",
+      "condition": "Driver-assistance warning messages, one or more listed module DTCs, and correct bulletin build scope",
+      "causes_evidence": [
+        {
+          "reason": "PSCM software",
+          "rank": "Ford SSM suspected cause, not proven for individual VIN"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm model year and actual build date on/before 23-Mar-2022",
+        "Read PSCM U0415:00, ABS C0051:67 and/or IPMA U0418:86; not all three are required",
+        "Evaluate driver-assistance warnings and PSCM software update applicability",
+        "Using appropriate Ford FDRS software, update PSCM only under manufacturer procedure",
+        "Cycle/recheck and use WSM to investigate persistence without guessing failed part"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-SSM-51437"
+      ],
+      "verification_status": "manufacturer_SSM_conditional_applicability_documented; specific_VIN_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-ADAS-Maverick-U0415-00",
+      "code": "U0415:00",
+      "ecu": "PSCM",
+      "vehicle": "Maverick",
+      "model_year_start": 2022,
+      "model_year_end": 2022,
+      "engine": null,
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": "2022-03-23",
+      "condition": "Driver-assistance warning messages, one or more listed module DTCs, and correct bulletin build scope",
+      "causes_evidence": [
+        {
+          "reason": "PSCM software",
+          "rank": "Ford SSM suspected cause, not proven for individual VIN"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm model year and actual build date on/before 23-Mar-2022",
+        "Read PSCM U0415:00, ABS C0051:67 and/or IPMA U0418:86; not all three are required",
+        "Evaluate driver-assistance warnings and PSCM software update applicability",
+        "Using appropriate Ford FDRS software, update PSCM only under manufacturer procedure",
+        "Cycle/recheck and use WSM to investigate persistence without guessing failed part"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-SSM-51437"
+      ],
+      "verification_status": "manufacturer_SSM_conditional_applicability_documented; specific_VIN_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-ADAS-Maverick-C0051-67",
+      "code": "C0051:67",
+      "ecu": "ABS",
+      "vehicle": "Maverick",
+      "model_year_start": 2022,
+      "model_year_end": 2022,
+      "engine": null,
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": "2022-03-23",
+      "condition": "Driver-assistance warning messages, one or more listed module DTCs, and correct bulletin build scope",
+      "causes_evidence": [
+        {
+          "reason": "PSCM software",
+          "rank": "Ford SSM suspected cause, not proven for individual VIN"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm model year and actual build date on/before 23-Mar-2022",
+        "Read PSCM U0415:00, ABS C0051:67 and/or IPMA U0418:86; not all three are required",
+        "Evaluate driver-assistance warnings and PSCM software update applicability",
+        "Using appropriate Ford FDRS software, update PSCM only under manufacturer procedure",
+        "Cycle/recheck and use WSM to investigate persistence without guessing failed part"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-SSM-51437"
+      ],
+      "verification_status": "manufacturer_SSM_conditional_applicability_documented; specific_VIN_pending",
+      "release_status": "NOT_ACTIVATED"
+    },
+    {
+      "applicability_id": "FORD-B04-ADAS-Maverick-U0418-86",
+      "code": "U0418:86",
+      "ecu": "IPMA",
+      "vehicle": "Maverick",
+      "model_year_start": 2022,
+      "model_year_end": 2022,
+      "engine": null,
+      "engine_code": null,
+      "market": "North America (bulletin)",
+      "production_date_end": "2022-03-23",
+      "condition": "Driver-assistance warning messages, one or more listed module DTCs, and correct bulletin build scope",
+      "causes_evidence": [
+        {
+          "reason": "PSCM software",
+          "rank": "Ford SSM suspected cause, not proven for individual VIN"
+        }
+      ],
+      "diagnostic_steps": [
+        "Confirm model year and actual build date on/before 23-Mar-2022",
+        "Read PSCM U0415:00, ABS C0051:67 and/or IPMA U0418:86; not all three are required",
+        "Evaluate driver-assistance warnings and PSCM software update applicability",
+        "Using appropriate Ford FDRS software, update PSCM only under manufacturer procedure",
+        "Cycle/recheck and use WSM to investigate persistence without guessing failed part"
+      ],
+      "live_data": [],
+      "numeric_specs": null,
+      "parts": [],
+      "source_ids": [
+        "FORD-SSM-51437"
+      ],
+      "verification_status": "manufacturer_SSM_conditional_applicability_documented; specific_VIN_pending",
+      "release_status": "NOT_ACTIVATED"
+    }
+  ],
+  "source_only_SRS_context": [
+    {
+      "codes": [
+        "B007E",
+        "B007F"
+      ],
+      "brand": "Ford",
+      "system": "Front seatbelt retractor pretensioner",
+      "recording_ecu": null,
+      "associated_condition": "Airbag warning indicator, resistance high or open in retractor pretensioner; no safe code-to-side mapping from cited response",
+      "confirmed_ford_model_year": null,
+      "source_ids": [
+        "FORD-NHTSA-PE23-021-RESPONSE"
+      ],
+      "status": "under_review_not_specific_vehicle_fitment"
+    }
+  ],
+  "diagnostic_workflows": {
+    "escape": [
+      "Confirm 2020 Escape HEV and vehicle build on/before 10-Jun-2020",
+      "Read BECM MIL DTCs; identify whether one or more TSB codes are present",
+      "Inspect coolant degas reservoir level against vehicle-specific safe range per WSM 303-03C",
+      "If coolant is below range, stop TSB path and diagnose coolant loss instead",
+      "If within criteria, follow Ford TSB software update procedure for PCM and BECM and recheck DTCs"
+    ],
+    "explorer": [
+      "Confirm 2020 Explorer or Police Interceptor Utility hybrid powertrain",
+      "Read PCM fault codes and match source list",
+      "Follow Ford TSB 20-2345 BECM reprogram procedure using Ford diagnostic tools",
+      "After programming inspect low-temperature coolant degas bottle; diagnose if below minimum per WSM 303-03",
+      "Recheck MIL and DTCs; escalate unresolved issues via WSM"
+    ],
+    "adas": [
+      "Confirm model year and actual build date on/before 23-Mar-2022",
+      "Read PSCM U0415:00, ABS C0051:67 and/or IPMA U0418:86; not all three are required",
+      "Evaluate driver-assistance warnings and PSCM software update applicability",
+      "Using appropriate Ford FDRS software, update PSCM only under manufacturer procedure",
+      "Cycle/recheck and use WSM to investigate persistence without guessing failed part"
+    ]
+  },
+  "source_policy": "No copyrighted wiring drawings or OEM illustrations copied. No speculative sensor pinouts; all numeric metrics null if not documented in these bulletins."
+}

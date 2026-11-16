@@ -1,0 +1,59 @@
+{
+  "schema": "dtcnexis-ford-b04-QA-v1",
+  "brand": "Ford",
+  "checked_on": "2026-11-16",
+  "repository": "dtcnexis/DTC-Nexis-Updates",
+  "branch": "work/ford-dtc-continuation-20261116",
+  "release_status": "DRAFT_NOT_APPROVED",
+  "passed": true,
+  "validations": {
+    "raw_code_strings_unique": true,
+    "no_code_collision_with_prior_repository": true,
+    "application_ids_unique": true,
+    "source_foreign_keys_valid": true,
+    "application_code_foreign_keys_valid": true,
+    "expected_prior_code_C0051_included_in_new_applicability": true,
+    "all_new_codes_without_unverified_definition": true,
+    "review_ids_unique": true,
+    "required_review_entries_match": true,
+    "all_source_urls_observed_in_reference_document": true
+  },
+  "counts": {
+    "main_legacy_rows": 409,
+    "main_legacy_distinct_raw_code_strings": 407,
+    "previous_local_batch02_distinct": 413,
+    "previous_batch03_new_distinct": 37,
+    "previous_batch03_review_entries": 454,
+    "new_batch04_distinct_raw_code_strings": 20,
+    "new_batch04_hybrid": 16,
+    "new_batch04_network": 2,
+    "new_batch04_SRS": 2,
+    "new_batch04_conditional_applicability_records": 35,
+    "new_batch04_source_only_SRS": 2,
+    "new_batch04_extra_review_entries": 37,
+    "new_total_deferred_review": 491,
+    "prospective_distinct_code_strings_after_all_local_sources": 470,
+    "new_images": 0,
+    "new_EU_Sweden_confirmed_engine_codes": 0,
+    "new_Ford_vehicle_code_module_conditions_with_OEM_bulletin": 35,
+    "duplication_exact_new_code_strings": 0,
+    "intentional_same_code_multiple_applications": 16
+  },
+  "coverage_policy": "TSB-scoped North America; ECU, production conditions and module should NOT be inferred beyond listed sources. Ford Expedition SRS observation not mapped to vehicle model or exact side.",
+  "outstanding": [
+    "Per-DTC authoritative English definitions absent from bulletin for all 20 new strings, deliberately null.",
+    "Hybrid code meaning, DTC suffix/FTB and engine-code/ECU calibration require Ford WSM/PCED or authorized source.",
+    "SRS B007E/B007F code-to-side and reported module must be established before release; do not perform live squib testing.",
+    "Ford SSM 51437 confirms 3 network/chassis codes across conditions, one existing in Batch03 and not double-counted.",
+    "EU and Sweden vehicle/engine applicability remains unverified.",
+    "Local Batch02 normalized file is not yet materialized on GitHub main; no changes made to production.",
+    "No image assets, wiring diagrams or specific voltage thresholds added.",
+    "GitHub Draft PR #11 not merged; owner approval outstanding."
+  ],
+  "sources": [
+    "FORD-TSB-20-2221",
+    "FORD-TSB-20-2345",
+    "FORD-SSM-51437",
+    "FORD-NHTSA-PE23-021-RESPONSE"
+  ]
+}
