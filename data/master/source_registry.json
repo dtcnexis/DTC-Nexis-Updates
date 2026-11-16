@@ -212,10 +212,10 @@
       "verification": "manifest_only"
     }
   ],
-  "master_status": "BRANCH_PROPOSAL_9594_ROWS_PENDING_OWNER_REVIEW",
+  "master_status": "BRANCH_PROPOSAL_9748_ROWS_PENDING_OWNER_REVIEW",
   "master_manifest_path": "data/master/all_collected_catalog_manifest.json",
-  "materialized_text_records": 9594,
-  "current_data_collections_count": 54,
+  "materialized_text_records": 9748,
+  "current_data_collections_count": 55,
   "additional_permanent_sources": [
     {
       "source": "C_CODES_278_STAGING_RECONCILED.json",
@@ -568,9 +568,17 @@
       "verification": "BULLETIN_SCOPED_NOT_OWNER_APPROVED",
       "branch_only": "data/infiniti-dtc-20261116-batch03",
       "review_queue": "data/master/reviews/infiniti_20261116_batch03/REVIEW_QUEUE.json"
+    },
+    {
+      "source": "2016 Infiniti Q50 V37 OEM FSM BCS/AV/SRC/SCS (November 2016 revision)",
+      "saved_path": "data/master/brands/infiniti_batch04_q50_2016_ecu_indexes_20261116.json",
+      "records": 154,
+      "verification": "EXACT_OEM_INDEX_SCOPE_ONLY_PENDING_TECHNICAL_REVIEW",
+      "branch_only": "data/infiniti-dtc-20261116-batch03",
+      "review_queue": "data/master/reviews/infiniti_20261116_batch03/REVIEW_QUEUE_BATCH04.json"
     }
   ],
-  "remaining_source_work": "Nissan Batch01 compared: 503 source rows / 495 code strings; one missing P0101 L34 scope added, no new code count. Lexus Batch01 72 records retained; all need full technical QA, with 19 primary-definition and 11 primary-context checks. All 430 JSON/CSV/ZIP names in original 488-entry inventory found; content reconciliation of remaining source files continues. Audi30 and Honda7 remain pending. Do not start image inventory. Batch02 now preserves full Opel34/Polestar31/Skoda43 original record values as non-counted enrichment. Polestar source-context variants retained, definitions remain unknown. Full Nissan/Lexus and these three source-text reads completed. Other source-file content reconciliation and technical reviews remain. 2026-11-06 batch03: five exact original files (Citroen88, Infiniti38, Jeep111, Fiat221, Jaguar175) archived with original SHA256; 606 added counted source-scope rows. Infiniti C1130 bulk duplicate and 26 Jaguar unspecified-suffix family headings retained without counting. All new rows remain under technical review. Remaining source files require content reconciliation; Audi30/Honda7 and Toyota review unchanged; no images. Batch03 Infiniti: 14 pending issues; DRAFT original absent in local runtime; new 5 OEM-scoped records on isolated branch only.",
+  "remaining_source_work": "Nissan Batch01 compared: 503 source rows / 495 code strings; one missing P0101 L34 scope added, no new code count. Lexus Batch01 72 records retained; all need full technical QA, with 19 primary-definition and 11 primary-context checks. All 430 JSON/CSV/ZIP names in original 488-entry inventory found; content reconciliation of remaining source files continues. Audi30 and Honda7 remain pending. Do not start image inventory. Batch02 now preserves full Opel34/Polestar31/Skoda43 original record values as non-counted enrichment. Polestar source-context variants retained, definitions remain unknown. Full Nissan/Lexus and these three source-text reads completed. Other source-file content reconciliation and technical reviews remain. 2026-11-06 batch03: five exact original files (Citroen88, Infiniti38, Jeep111, Fiat221, Jaguar175) archived with original SHA256; 606 added counted source-scope rows. Infiniti C1130 bulk duplicate and 26 Jaguar unspecified-suffix family headings retained without counting. All new rows remain under technical review. Remaining source files require content reconciliation; Audi30/Honda7 and Toyota review unchanged; no images. Batch03 Infiniti: 14 pending issues; DRAFT original absent in local runtime; new 5 OEM-scoped records on isolated branch only. Batch04 Infiniti: 154 Q50 2016 source-index DTC/failure-type entries requiring full diagnostic detail, option fitment and EU/SE scope; see dedicated review queue; images paused.",
   "detail_recovery_20261030": {
     "counted_rows_unchanged": 7656,
     "canonical_files_unchanged": 30,
