@@ -1,0 +1,85 @@
+{
+  "schema": "dtcnexis-lexus-progress-v1",
+  "brand": "Lexus",
+  "date": "2026-11-16",
+  "branch": "work/lexus-dtc-batch03-20261116",
+  "base_branch": "main",
+  "baseline": {
+    "source": "data/master/brands/lexus_batch01_preserved_part01..03.json",
+    "rows": 72,
+    "unique_original_code_strings": 72,
+    "review_prior": "data/master/reviews/continuation_20261105_batch01/LEXUS_DEFINITION_REVIEW.json",
+    "prior_definition_review": {
+      "checked_primary_translation": 19,
+      "primary_context_only": 11,
+      "definition_pending": 42,
+      "full_technical_approval": 0
+    },
+    "local_expansion_rows": 73,
+    "local_expansion_legacy_72_plus_P2610": true
+  },
+  "new_oem_data": {
+    "file": "data/master/brands/lexus_batch03_new_oem.json",
+    "unique_new_codes_relative_to_main": 3,
+    "codes": [
+      "P2610",
+      "P0430",
+      "P07457F"
+    ],
+    "application_variants_in_new_file": 6,
+    "duplicate_codes_against_Lexus_original_72": 0,
+    "previously_present_in_local_batch02": [
+      "P2610"
+    ],
+    "net_new_codes_relative_to_local_batch02": [
+      "P0430",
+      "P07457F"
+    ],
+    "definitive_EU_SE_fitment": 0,
+    "full_repair_manual_procedures_complete": 0
+  },
+  "deferred_review": {
+    "file": "data/master/reviews/lexus_20261116_batch03/LEXUS_DEFERRED_REVIEW.json",
+    "new_queue_rows": 33,
+    "new_queue_unique_code_strings": 33,
+    "grouping": {
+      "secondary_bulletin_leads": 4,
+      "manufacturer_applicability_conflict": 1,
+      "hybrid_INF_manual_mirror_candidates": 28
+    },
+    "earlier_42_definition_pending_rows_not_copied_or_deleted": true,
+    "notes": "33 newly queued rows are not certified DTC applicability and do not count as verified additions"
+  },
+  "preservation": {
+    "original_three_files_unchanged": true,
+    "application_files_changed": false,
+    "release_workflows_unchanged": true,
+    "stable_channel_unchanged": true,
+    "app_versions_untouched": [
+      "RC3.8.0",
+      "RC3.8.2"
+    ],
+    "merged_into_main": false,
+    "master_catalog_manifest_updated": false,
+    "reason_master_catalog_not_updated": "Draft branch requires owner review of catalog count and source registry alignment before including new rows in permanent global index"
+  },
+  "file_checks": {
+    "git_readback_original_parts": 3,
+    "git_readback_new_data": 1,
+    "git_readback_review_queue": 1,
+    "source_PDF_links_included": 4,
+    "web_screenshot_attempts": 4,
+    "web_screenshot_result": "NHTSA PDF screenshot unavailable due to cache miss; bulletin text confirmed in extracted web view; source PDF visual verification not completed"
+  },
+  "limitations": [
+    "Source application market USA only for verified 3 codes",
+    "No EU/Sweden-specific applicability evidence for this batch",
+    "P07457F RX350L conflict pending",
+    "ECU, engine and transmission calibration must be matched by VIN",
+    "Secondary hybrid INF mirror is not an official source site and cannot be automatically imported",
+    "Some local Batch02 exports are available in conversation sandbox, but were not re-uploaded in this GitHub batch",
+    "No licensed OEM diagrams or images added",
+    "No user-facing program code or release modified"
+  ],
+  "status": "REVIEW_ONLY_NOT_PUBLISHED"
+}
