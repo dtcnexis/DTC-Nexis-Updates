@@ -1,0 +1,72 @@
+{
+  "schema": "dtc-nexis-qa-batch-v1",
+  "brand": "Alfa Romeo",
+  "batch": "ALFA_20261116_04",
+  "audit_date": "2026-11-16",
+  "branch": "work/alfa-romeo-dtc-20261116-batch04",
+  "inputs": {
+    "original_main": {
+      "path": "data/master/brands/alfa_romeo.json",
+      "git_blob_sha": "79d90be78abd100b0d6d921794cafd93d52bc533",
+      "code_count": 59
+    },
+    "previous_unmerged_batch03": {
+      "path": "data/master/brands/alfa_romeo_20261116_batch03.json",
+      "git_blob_sha": "d27cb35c56ff5a901cc22e5932972001b661b68f",
+      "code_count": 16,
+      "pr": "https://github.com/dtcnexis/DTC-Nexis-Updates/pull/12"
+    },
+    "current_batch04": {
+      "path": "data/master/brands/alfa_romeo_20261116_batch04.json",
+      "git_blob_sha": "1b0288d5abb5ba5c6d355b745a34efed9cc89af6",
+      "code_count": 17
+    },
+    "review": {
+      "path": "data/master/reviews/alfa_romeo_20261116_batch04/REVIEW_QUEUE.json",
+      "git_blob_sha": "499752c9a1b8b4cdf8453921cb52b4fc5557266f",
+      "queued_new": 17,
+      "queued_existing_link_extensions": 2
+    }
+  },
+  "counts": {
+    "previous_code_identifiers": 75,
+    "added_unique_code_identifiers": 17,
+    "duplicate_with_previous": 0,
+    "duplicate_new_internal": 0,
+    "distinct_total_across_all_branches": 92,
+    "existing_code_evidence_links_not_counted_new": 2,
+    "sources_count": 8,
+    "primary_manufacturer_bulletins": 7,
+    "secondary_bulletin_reprint": 1,
+    "code_family_counts": {
+      "P": 6,
+      "B": 4,
+      "C": 0,
+      "U": 7
+    },
+    "new_code_missing_full_technical_details": 17,
+    "images_new": 0
+  },
+  "checks": {
+    "github_readback": true,
+    "valid_dtc_tokens": true,
+    "source_link_referential_integrity": true,
+    "no_duplicate_identifiers": true,
+    "no_images_generated": true,
+    "main_branch_untouched": true,
+    "approved_for_app": false,
+    "issues": []
+  },
+  "caveats": [
+    "National market fitment: North America/LATAM/EMEA only as stated in source; Sweden and precise VIN unverified",
+    "Diagnostic tests give a safe sequence; no unverified voltages, terminals or OEM PID names claimed",
+    "DTC owner class SAE/manufacturer not derived from prefix alone; requires normative SAE J2012DA",
+    "Source TSB 18-023-23 contains P1CEA-00 twice: saved as one evidence link for an existing code, not a duplicate DTC",
+    "Official 08-204-23 Giulia bulletin accessed via third party mirror; verify original PDF later",
+    "Web PDF screenshot facility cache/status failure on multiple older bulletins; full extracted textual documents and reference IDs used",
+    "Previous Batch03 remains a separate unmerged draft PR; current batch04 branch is based on main and contains only current changes",
+    "No media acquisition, generation, upload or code-matched-image insertion, per project-level image pause"
+  ],
+  "release_to_app": "NOT_APPROVED",
+  "technical_review_status": "pending_OEM_VIN_ECU_and_workshop_validation"
+}
