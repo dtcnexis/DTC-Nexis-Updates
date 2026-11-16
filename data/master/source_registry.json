@@ -212,10 +212,10 @@
       "verification": "manifest_only"
     }
   ],
-  "master_status": "PERSISTED_CLOUD_MULTI_SOURCE_9589_ROWS",
+  "master_status": "BRANCH_PROPOSAL_9594_ROWS_PENDING_OWNER_REVIEW",
   "master_manifest_path": "data/master/all_collected_catalog_manifest.json",
-  "materialized_text_records": 9589,
-  "current_data_collections_count": 53,
+  "materialized_text_records": 9594,
+  "current_data_collections_count": 54,
   "additional_permanent_sources": [
     {
       "source": "C_CODES_278_STAGING_RECONCILED.json",
@@ -560,9 +560,17 @@
       "source_library_file_id": "libfile_f8f6633e7bbc8191b0dfe79fbe27d8c6",
       "preservation": "EXACT_ORIGINAL_BYTES_PLUS_PARSED_SOURCE_VALUES",
       "date": "2026-11-06"
+    },
+    {
+      "source": "Infiniti OEM TSBs ITB13-056a/ITB15-014A/ITB20-025C",
+      "saved_path": "data/master/brands/infiniti_batch03_oem_bulletins_20261116.json",
+      "records": 5,
+      "verification": "BULLETIN_SCOPED_NOT_OWNER_APPROVED",
+      "branch_only": "data/infiniti-dtc-20261116-batch03",
+      "review_queue": "data/master/reviews/infiniti_20261116_batch03/REVIEW_QUEUE.json"
     }
   ],
-  "remaining_source_work": "Nissan Batch01 compared: 503 source rows / 495 code strings; one missing P0101 L34 scope added, no new code count. Lexus Batch01 72 records retained; all need full technical QA, with 19 primary-definition and 11 primary-context checks. All 430 JSON/CSV/ZIP names in original 488-entry inventory found; content reconciliation of remaining source files continues. Audi30 and Honda7 remain pending. Do not start image inventory. Batch02 now preserves full Opel34/Polestar31/Skoda43 original record values as non-counted enrichment. Polestar source-context variants retained, definitions remain unknown. Full Nissan/Lexus and these three source-text reads completed. Other source-file content reconciliation and technical reviews remain. 2026-11-06 batch03: five exact original files (Citroen88, Infiniti38, Jeep111, Fiat221, Jaguar175) archived with original SHA256; 606 added counted source-scope rows. Infiniti C1130 bulk duplicate and 26 Jaguar unspecified-suffix family headings retained without counting. All new rows remain under technical review. Remaining source files require content reconciliation; Audi30/Honda7 and Toyota review unchanged; no images.",
+  "remaining_source_work": "Nissan Batch01 compared: 503 source rows / 495 code strings; one missing P0101 L34 scope added, no new code count. Lexus Batch01 72 records retained; all need full technical QA, with 19 primary-definition and 11 primary-context checks. All 430 JSON/CSV/ZIP names in original 488-entry inventory found; content reconciliation of remaining source files continues. Audi30 and Honda7 remain pending. Do not start image inventory. Batch02 now preserves full Opel34/Polestar31/Skoda43 original record values as non-counted enrichment. Polestar source-context variants retained, definitions remain unknown. Full Nissan/Lexus and these three source-text reads completed. Other source-file content reconciliation and technical reviews remain. 2026-11-06 batch03: five exact original files (Citroen88, Infiniti38, Jeep111, Fiat221, Jaguar175) archived with original SHA256; 606 added counted source-scope rows. Infiniti C1130 bulk duplicate and 26 Jaguar unspecified-suffix family headings retained without counting. All new rows remain under technical review. Remaining source files require content reconciliation; Audi30/Honda7 and Toyota review unchanged; no images. Batch03 Infiniti: 14 pending issues; DRAFT original absent in local runtime; new 5 OEM-scoped records on isolated branch only.",
   "detail_recovery_20261030": {
     "counted_rows_unchanged": 7656,
     "canonical_files_unchanged": 30,
