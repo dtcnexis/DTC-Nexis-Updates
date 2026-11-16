@@ -1,0 +1,71 @@
+{
+  "schema": "DTC_NEXIS_VOLVO_CONSOLIDATED_QA_V2",
+  "date": "2026-11-16",
+  "branch": "data/volvo-tj-20261116-batch01",
+  "repo": "dtcnexis/DTC-Nexis-Updates",
+  "release_ready": false,
+  "readback_validated": true,
+  "stats": {
+    "original_catalog": 60,
+    "previous_tj_added": 14,
+    "new_unique": 33,
+    "total_catalog": 107,
+    "catalog_duplicate_full_codes": 0,
+    "existing_code_enrichment": 4,
+    "previous_review_items": 25,
+    "new_review_items": 36,
+    "total_review_entries": 61,
+    "effective_unique_review_ids": 61,
+    "legacy_review_items_missing_id": 2,
+    "images_new": 0,
+    "source_groups_new": 11
+  },
+  "data_sources": [
+    {
+      "path": "data/master/brands/volvo.json",
+      "blob_sha": "d1803d61b6c2fd0d2cbc4bc11ba0ea599f266d5a"
+    },
+    {
+      "path": "data/master/brands/volvo_tj_20261116_batch01.json",
+      "blob_sha": "dae3ed02245bbf0629e999b8fa3927560d8231f9"
+    },
+    {
+      "path": "data/master/brands/volvo_tj_20261116_batch02_brake.json",
+      "blob_sha": "0ebfbc300fc8f53c881061b3203bdd67192abc48"
+    },
+    {
+      "path": "data/master/brands/volvo_tj_20261116_cont02.json",
+      "blob_sha": "f49fa633d7ff486cd99f937b3082c34db59df0b3"
+    },
+    {
+      "path": "data/master/reviews/volvo_20261116_batch01/REVIEW_QUEUE.json",
+      "blob_sha": "6fd7b6295a2a6c493f3ae6a366000202aa3fdfbd"
+    },
+    {
+      "path": "data/master/reviews/volvo_20261116_batch01/REVIEW_QUEUE_BRAKE.json",
+      "blob_sha": "e1b0d0ad373ad32216e75b9683b08fc46ac4efc8"
+    },
+    {
+      "path": "data/master/reviews/volvo_20261116_cont02/REVIEW_QUEUE.json",
+      "blob_sha": "9585c7ca2062683b96d3ee3abd2292fe7b1b4d64"
+    }
+  ],
+  "validation": {
+    "duplicates": [],
+    "uncataloged_new_entries": [],
+    "invalid_new_rows": [],
+    "review_id_legacy_mapping_path": "data/master/reviews/volvo_20261116_cont02/LEGACY_REVIEW_ID_MAPPING.json",
+    "non_destructive": true
+  },
+  "integrity_note": "Review queue brake previously contained two records with absent id property. Original preserved byte-for-byte; stable keys specified separately.",
+  "technical_cautions": [
+    "OEM TJ occurrence documented; exact VIDA code meaning not verified for all failure type bytes.",
+    "US/Canada journal is not proof of Swedish/European fitment.",
+    "Some TJ versions superseded; confirm current VIDA before repair.",
+    "Model-year markers 9999 and 2099 preserved verbatim, not predictions.",
+    "Do not recommend ignoring oil pressure warning or doing untrained high-voltage testing.",
+    "No images created or collected under project hold; prior media unmodified.",
+    "Original Volvo 60-code JSON preserved."
+  ],
+  "checks_passed": true
+}
