@@ -1,0 +1,44 @@
+{
+  "schema": "DTC_NEXIS_VOLVO_AUDIT_V1",
+  "date": "2026-11-16",
+  "repository": "dtcnexis/DTC-Nexis-Updates",
+  "branch": "data/volvo-tj-20261116-batch01",
+  "base_catalog_rows": 60,
+  "base_catalog_unique_codes": 60,
+  "additional_source_confirmed_rows": 14,
+  "additional_unique_codes": 14,
+  "duplicate_conflicts": [],
+  "total_source_catalog_unique_codes": 74,
+  "review_queue_count": 25,
+  "review_queue_source_confirmed_missing_fields": 14,
+  "review_queue_unpromoted_candidates": 11,
+  "source_tjs_primary": [
+    "TJ 36318.6.0",
+    "TJ 36726.2.0",
+    "TJ 36285.2.1",
+    "TJ 36195.1.1",
+    "TJ 36944.2.0",
+    "TJ 36801.1.0",
+    "TJ 36920.2.1",
+    "TJ 36963.2.0",
+    "TJ 33533.2.0",
+    "TJ 36899.1.0"
+  ],
+  "readback_validated": true,
+  "original_volvo_blob_sha": "d1803d61b6c2fd0d2cbc4bc11ba0ea599f266d5a",
+  "source_files": [
+    "data/master/brands/volvo.json",
+    "data/master/brands/volvo_tj_20261116_batch01.json",
+    "data/master/brands/volvo_tj_20261116_batch02_brake.json",
+    "data/master/reviews/volvo_20261116_batch01/REVIEW_QUEUE.json",
+    "data/master/reviews/volvo_20261116_batch01/REVIEW_QUEUE_BRAKE.json"
+  ],
+  "release_ready": false,
+  "claims_excluded": [
+    "No official comprehensive Volvo VIDA corpus available",
+    "No verified Sweden/EU fitment for new US/Canada journal cases",
+    "No binary OEM manuals/images imported",
+    "No final SAE/OEM subtype decision for new records",
+    "No maintenance or update feed files changed"
+  ]
+}
