@@ -1,0 +1,103 @@
+{
+  "schema": "dtcnexis-byd-batch-srs-20261116-v1",
+  "brand": "BYD",
+  "date": "2026-11-16",
+  "branch": "work/byd-dtc-catalogue-20261116",
+  "status": "DRAFT_NOT_RELEASED",
+  "previous": {
+    "code_rows": 348,
+    "unique_codes": 329,
+    "queue_rows": 348
+  },
+  "new_batch": {
+    "atto3_srs_and_peps_catalogue_codes": 59,
+    "optional_srs_pdf_source_codes": 76,
+    "candidates_inspected": 141,
+    "preexisting_code_strings_skipped": 6,
+    "net_new_code_strings": 135,
+    "fully_oem_verified_codes": 0,
+    "manufacturer_rehost_pdf_edition_authenticated": false
+  },
+  "after_batch": {
+    "code_rows": 483,
+    "unique_raw_code_strings_case_normalized": 464,
+    "review_queue_rows": 483,
+    "source_rows_by_family": {
+      "P": 201,
+      "U": 32,
+      "B": 201,
+      "C": 49
+    },
+    "number_of_legacy_conflict_flags": 6,
+    "new_discrepancy_flags": 1,
+    "unresolved_conflicts_or_discrepancies": 7
+  },
+  "quality_gates": {
+    "csv_generated": false,
+    "source_index_metadata_only": true,
+    "approval_for_app": false,
+    "vin_or_engine_variant_link_verified": false,
+    "source_pdf_screenshots_successful": false,
+    "license_to_redistribute_pdf_or_diagrams": false,
+    "new_srs_test_values_verified": false,
+    "missing_source_url_count": 0,
+    "no_main_modification": true,
+    "no_existing_files_removed": true
+  },
+  "reconciliation": {
+    "new_ATTO3_srs_codes": 55,
+    "new_smart_key_codes": 4,
+    "new_pdf_srs_codes": 76,
+    "duplicate_ATTO3_candidate_codes": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "pdf_duplicate_code_strings": [],
+    "case_normalization_cautions": [
+      "B170f12",
+      "B165e11",
+      "B166f00"
+    ],
+    "ambiguity": {
+      "catalogue": "B163B1B",
+      "pdf": "B163A1A",
+      "fault": "passenger side airbag zero-resistance indication",
+      "resolution": "NOT_RESOLVED"
+    }
+  },
+  "sources": [
+    {
+      "url": "https://obdtotal.com/product/byd-atto3-yuanplus-sc2e-service-manual/",
+      "publisher": "OBDTotal",
+      "evidence": "Public manual contents entry, not purchased PDF",
+      "scope": "ATTO 3 / Yuan Plus SC2E 2022–2023 listed",
+      "accessed": "2026-11-16"
+    },
+    {
+      "url": "https://chats.chinamobil.ru/files/byd-atto-3-owners/applicationpdf/2022%E5%B9%B4%E6%AF%94%E4%BA%9A%E8%BF%AA%E5%85%83PLUS_EV%E7%BB%B4%E4%BF%AE%E6%89%8B%E5%86%8C%E7%94%B5%E8%B7%AF%E5%9B%BE2022%E5%B9%B4%E6%AF%94%E4%BA%9A%E8%BF%AA%E5%85%83PLUS_EV_01_%E7%BB%B4%E4%BF%AE%E6%89%8B%E5%86%8C_SRS%E7%B3%BB%E7%BB%9F.pdf",
+      "publisher": "Chinamobil mirror (not manufacturer domain)",
+      "evidence": "PDF extracted Chinese SRS diagnostic-code table; screenshot failed, authenticity not validated",
+      "scope": "2022 Yuan Plus EV, trim/ECU unknown",
+      "accessed": "2026-11-16"
+    },
+    {
+      "url": "https://www.byd.com/material/byd-site/eu/support/service/manual/20250327/BYD%20ATTO3%20%282024%29%20Owner%27s%20Manual-Right-hand%20Drive-EN-240801.pdf",
+      "publisher": "BYD",
+      "evidence": "Owner manual only: SRS safety and model features, not DTC meanings",
+      "scope": "European right-hand drive MY2024 owner manual",
+      "accessed": "2026-11-16"
+    }
+  ],
+  "release_blockers": [
+    "BYD manufacturer-certified SRS ECU DTC definitions not accessed for a known VIN",
+    "Regional LHD/RHD and software variants unverified",
+    "Optional restraint channel fitment unconfirmed",
+    "2022 mirror PDF not authenticated and screenshot check failed",
+    "No procedures for pyrotechnic systems may be recommended without OEM safety criteria",
+    "SAE J2012DA proprietary code definitions unavailable"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "schema": "dtcnexis-BYD-t45c01-20261116-review-v1",
+  "date": "2026-11-16",
+  "branch": "work/byd-dtc-catalogue-20261116",
+  "brand": "BYD",
+  "source": {
+    "url": "https://bydbrasil.com.br/wp-content/uploads/2024/09/Manual-de-Servico-BYD-eT5.pdf",
+    "title_on_cover": "Caminhão Elétrico Puro BYD T45C01",
+    "version": "202102",
+    "manufacturer_text": "BYD AUTO INDUSTRY COMPANY LIMITED",
+    "host": "bydbrasil.com.br",
+    "source_document_type": "service manual PDF",
+    "extraction_method": "web text extraction from PDF",
+    "web_screenshot_attempt": "failed (cache miss)",
+    "local_download_attempt": "failed",
+    "model_market_and_ECU_version": "unverified"
+  },
+  "prior": {
+    "records_on_review_branch": 483,
+    "distinct_raw_codes": 464,
+    "review_queue": 483,
+    "branch_PR": 10
+  },
+  "batch": {
+    "candidate_distinct_code_strings_examined": 117,
+    "duplicate_code_strings_with_any_previous_BYD": 5,
+    "net_new_code_strings": 112,
+    "net_new_catalogue_rows": 112,
+    "reserved_or_not_implemented_entries": 9,
+    "fully_verified_OEM_VIN_specific_dtc": 0,
+    "by_system": {
+      "body_keyless_CAN_candidates": 29,
+      "DC_DC_candidates": 15,
+      "EHPS_candidates": 23,
+      "air_compressor_candidates": 25,
+      "drive_motor_controller_candidates": 25
+    },
+    "new_by_family": {
+      "P": 37,
+      "B": 17,
+      "C": 48,
+      "U": 10
+    },
+    "duplicates": [
+      "B1C1507",
+      "B1C2B00",
+      "B227C13",
+      "B227E13",
+      "U110287"
+    ]
+  },
+  "current": {
+    "catalogue_rows": 595,
+    "distinct_code_strings": 576,
+    "all_pending_OEM": 595,
+    "by_family": {
+      "P": 238,
+      "B": 218,
+      "C": 97,
+      "U": 42
+    },
+    "duplicate_instances_from_multi_ECU_or_document_context": 19,
+    "all_original_files_preserved": true
+  },
+  "qa": {
+    "raw_code_format_preserved": true,
+    "C_hyphenated_original_format_preserved": true,
+    "original_manufacturer_version_included": true,
+    "engine_code_verified": false,
+    "sweden_europe_applicability_verified": false,
+    "vehicle_model_scope_on_cover": "T45C01 only",
+    "VIN_firmware_mapping_verified": false,
+    "pinouts_circuit_values_verified": false,
+    "images_generated": 0,
+    "owner_approval": false,
+    "safe_to_import_for_diagnostic_matching": false,
+    "sha256_of_source_pdf_available": false,
+    "reused_original_manual_diagrams": false
+  },
+  "warnings": [
+    "T45C01 is a commercial electric truck, not an applicability extension to passenger cars",
+    "File name mentions eT5 but cover says T45C01; name discrepancy requires resolution",
+    "The manual marks 9 entries as reserved, not operative production errors",
+    "Full PDF visual verification failed; text extraction used",
+    "Factory manual copyright prohibits redistribution; only new factual code/translations and source URL retained",
+    "No live HV measurements approved",
+    "Do not merge, publish or modify RC3.8.x or update feeds"
+  ],
+  "save_location": "data/master/brands/byd_t45c01_service_manual_dtc_index_20261116.json",
+  "deferred_review": "data/master/reviews/byd_20261116/pending_t45c01_validation_delta.json"
+}
