@@ -1,0 +1,126 @@
+{
+  "schema": "dtcnexis-jeep-v2-reconciliation-index-v1",
+  "as_of": "2026-11-16",
+  "brand": "Jeep",
+  "stored_as": "index_only_to_reconcile_previous_local_Expansion_V2; not original archive",
+  "original_local_file": "jeep_normalized_review_v2.json",
+  "original_local_record_count": 115,
+  "github_batch01_distinct": 108,
+  "v2_additional_distinct": 7,
+  "records": [
+    {
+      "brand": "Jeep",
+      "code": "U0101",
+      "definition_en": "Lost Communication With Transmission Control Module (TCM)",
+      "translation_ar": "فقدان الاتصال بوحدة التحكم في ناقل الحركة",
+      "category": "U",
+      "source_ids": [
+        "src_05acbad37e06"
+      ],
+      "origin": "local Expansion V2 dated 2026-10-15",
+      "review_status": "existing_pre_20261116_not_new",
+      "vin_engine_ecu_revalidation_needed": true
+    },
+    {
+      "brand": "Jeep",
+      "code": "U0402",
+      "definition_en": "Implausible Data Received From TCM",
+      "translation_ar": "استقبال بيانات غير منطقية من وحدة التحكم في ناقل الحركة",
+      "category": "U",
+      "source_ids": [
+        "src_05acbad37e06"
+      ],
+      "origin": "local Expansion V2 dated 2026-10-15",
+      "review_status": "existing_pre_20261116_not_new",
+      "vin_engine_ecu_revalidation_needed": true
+    },
+    {
+      "brand": "Jeep",
+      "code": "U0418",
+      "definition_en": "Implausible Data Received From Brake System Control Module 1",
+      "translation_ar": "استقبال بيانات غير منطقية من وحدة التحكم في المكابح 1",
+      "category": "U",
+      "source_ids": [
+        "src_05acbad37e06",
+        "src_3b8bd1762eaf"
+      ],
+      "origin": "local Expansion V2 dated 2026-10-15",
+      "review_status": "existing_pre_20261116_not_new",
+      "vin_engine_ecu_revalidation_needed": true
+    },
+    {
+      "brand": "Jeep",
+      "code": "U0140-00",
+      "definition_en": "Lost Communication With Body Control Module (BCM)",
+      "translation_ar": "فقدان الاتصال بوحدة التحكم في الهيكل BCM",
+      "category": "U",
+      "source_ids": [
+        "src_3dc2a118e4da"
+      ],
+      "origin": "local Expansion V2 dated 2026-10-15",
+      "review_status": "existing_pre_20261116_not_new",
+      "vin_engine_ecu_revalidation_needed": true
+    },
+    {
+      "brand": "Jeep",
+      "code": "C0031-1D",
+      "definition_en": "Left Front Wheel Speed Sensor - Circuit Current Out Of Range",
+      "translation_ar": "تيار دائرة حساس سرعة العجلة الأمامية اليسرى خارج النطاق",
+      "category": "C",
+      "source_ids": [
+        "src_3b8bd1762eaf"
+      ],
+      "origin": "local Expansion V2 dated 2026-10-15",
+      "review_status": "existing_pre_20261116_not_new",
+      "vin_engine_ecu_revalidation_needed": true
+    },
+    {
+      "brand": "Jeep",
+      "code": "U1409",
+      "definition_en": "Implausible Left Front Wheel Speed Signal Received",
+      "translation_ar": "استقبال إشارة غير منطقية من حساس سرعة العجلة الأمامية اليسرى",
+      "category": "U",
+      "source_ids": [
+        "src_3b8bd1762eaf"
+      ],
+      "origin": "local Expansion V2 dated 2026-10-15",
+      "review_status": "existing_pre_20261116_not_new",
+      "vin_engine_ecu_revalidation_needed": true
+    },
+    {
+      "brand": "Jeep",
+      "code": "U0415-00",
+      "definition_en": "Invalid Data Received From Anti-Lock Brake System (ABS) Control Module A",
+      "translation_ar": "استقبال بيانات غير صالحة من وحدة ABS A",
+      "category": "U",
+      "source_ids": [
+        "src_3b8bd1762eaf"
+      ],
+      "origin": "local Expansion V2 dated 2026-10-15",
+      "review_status": "existing_pre_20261116_not_new",
+      "vin_engine_ecu_revalidation_needed": true
+    }
+  ],
+  "source_registry": [
+    {
+      "id": "src_05acbad37e06",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11018490-0001.pdf",
+      "title": "Stellantis TSB 21-016-25 Rev.A; check later Rev.C"
+    },
+    {
+      "id": "src_3b8bd1762eaf",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10223543-9999.pdf",
+      "title": "FCA STAR S2008000085"
+    },
+    {
+      "id": "src_3dc2a118e4da",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2014/MC-10232000-9999.pdf",
+      "title": "Grand Cherokee WK2 2015 U0140-00 PCM flash"
+    }
+  ],
+  "notes": [
+    "Not seven new codes for 2026-11-16 batch; these were present in the local Expansion V2 before today's work.",
+    "Do not pretend this small reconciliation index preserves bytes of the full V2 document. Original V2 retained in downloadable local ZIP.",
+    "Applicability not copied or asserted from index; follow V2 full JSON then VIN verification."
+  ]
+}
