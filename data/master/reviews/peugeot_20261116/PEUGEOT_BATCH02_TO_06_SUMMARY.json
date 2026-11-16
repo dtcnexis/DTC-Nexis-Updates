@@ -1,0 +1,21 @@
+{
+  "brand": "Peugeot",
+  "date": "2026-11-16",
+  "baseline_unique_codes": 1317,
+  "previous_priority_review": 22,
+  "review_batch_counts": {
+    "02": 200,
+    "03": 275,
+    "04": 275,
+    "05": 275,
+    "06": 270
+  },
+  "total_queued_for_deferred_review": 1317,
+  "new_verified_codes": 0,
+  "duplicates_added": 0,
+  "fully_verified_vehicle_engine_dtc_links": 0,
+  "notes": "All inherited 1317 catalog candidates now have an explicit deferred review entry, preserving original ECU associations and original row IDs. This is a review-queue expansion, not discovery of new DTCs or OEM validation.",
+  "source": "data/master/brands/peugeot.json",
+  "release": "NOT_ACTIVATED",
+  "next": "Seek official Peugeot ServiceBox and licensed OEM service documentation for exact model/engine/software DTC definitions; separately enrich transmission/SRS/ABS/BSI/CAN coverage. No images generated."
+}
