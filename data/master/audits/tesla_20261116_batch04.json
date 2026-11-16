@@ -1,0 +1,113 @@
+{
+  "schema": "dtcnexis-tesla-batch04-audit-v1",
+  "brand": "Tesla",
+  "audit_date": "2026-11-16",
+  "branch": "work/tesla-dtc-20261116",
+  "release_to_app": "NOT_ACTIVE",
+  "compared_to": {
+    "source": "existing work/tesla-dtc-20261116 branch",
+    "count": 151
+  },
+  "code_count_before": 151,
+  "records_preserved_from_batch01_and_batch02": 150,
+  "existing_new_batch03": 1,
+  "new_oem_evidenced_alert_identifiers": 40,
+  "new_oem_alerts_model_s_europe_manual": 32,
+  "new_oem_literal_suffix_identifiers_service_mode_example": 8,
+  "current_total_oem_evidenced_alert_identifiers": 191,
+  "unique_code_identifiers": 191,
+  "duplicates": [],
+  "queue_total": 245,
+  "queue_duplicates": [],
+  "untracked_code_identifiers": [],
+  "new_secondary_source_candidates_not_confirmed": 29,
+  "secondary_candidates_total": 54,
+  "sae_standard_p_b_c_u_applicability_confirmed": 0,
+  "fully_repair_validated_entries": 0,
+  "images_added": 0,
+  "model_year_vin_fitments_verified": 0,
+  "diagnostic_workflows_added": 7,
+  "file_checks": [
+    {
+      "path": "data/master/brands/tesla_prior_batch01_batch02_index_20261116.json",
+      "git_blob_sha": "cbcce88057b91717dc90dbdb70f13a7742182cac",
+      "parsed_json": true,
+      "record_count": 150
+    },
+    {
+      "path": "data/master/brands/tesla_service_mode_2024_8_additions_20261116.json",
+      "git_blob_sha": "8984401a222b53a19a925ed4cef717e520f81097",
+      "parsed_json": true,
+      "record_count": 1
+    },
+    {
+      "path": "data/master/brands/tesla_models_europe_manual_batch04_20261116.json",
+      "git_blob_sha": "2758bd2df074c0c9be1d369da1c082a99fd22854",
+      "parsed_json": true,
+      "record_count": 32
+    },
+    {
+      "path": "data/master/brands/tesla_service_mode_literal_suffix_batch04_20261116.json",
+      "git_blob_sha": "3fcef1962d8c9348663f597ba2fe19ecf97a6190",
+      "parsed_json": true,
+      "record_count": 8
+    },
+    {
+      "path": "data/master/enrichment/tesla_service_mode_diagnostic_panels_batch04_20261116.json",
+      "git_blob_sha": "8c4ee0f0149f193b11febdb1ca5d7a2db401f061",
+      "parsed_json": true,
+      "record_count": 7
+    },
+    {
+      "path": "data/review-queue/tesla_20261116.json",
+      "git_blob_sha": "c8a4a43c515ec22c954cff270d52e8512ef89bbc",
+      "parsed_json": true,
+      "record_count": 245
+    }
+  ],
+  "source_metadata": [
+    {
+      "publisher": "Tesla",
+      "title": "Model S 2021+ Europe Troubleshooting Alerts",
+      "version": "2026.20 snapshot seen in indexed official content",
+      "url": "https://www.tesla.com/ownersmanual/models/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html"
+    },
+    {
+      "publisher": "Tesla",
+      "title": "Service Mode User Guide",
+      "version": "2024.2.7 screenshot page 7",
+      "url": "https://service.tesla.com/docs/Public/ServiceMode/service_mode_user_guide.pdf"
+    },
+    {
+      "publisher": "Tesla",
+      "title": "Service Mode Release Notes",
+      "url": "https://service.tesla.com/docs/Public/ServiceMode/release-notes.html"
+    },
+    {
+      "publisher": "Tesla",
+      "title": "DTC reference article and RCM SRS safety",
+      "url": "https://service.tesla.com/docs/Model3/ServiceManual/2024/en-us/GUID-BB78BE60-83DF-49A9-9623-5A2CA9A29A5C.html"
+    },
+    {
+      "publisher": "evfaultcode",
+      "title": "RCM manufacturer alert index (third-party, candidate only)",
+      "url": "https://evfaultcode.com/en/tesla/alerts/systems/rcm/"
+    },
+    {
+      "publisher": "Tesware",
+      "title": "ESP and communication identifier indexes (third-party, candidate only)",
+      "url": "https://tesware.net/alerts/model3/ecu/ESP"
+    }
+  ],
+  "critical_caveats": [
+    "OEM source confirms manufacturer alert IDs; 2026 Tesla latched DTCs are a distinct class.",
+    "17 of 32 new owner-manual identifiers concern external charging apparatus; not proof of vehicle ECU defect.",
+    "32 new codes from European Model S owner manual represent document scope only, not VIN/ECU/engine/year mapping.",
+    "Eight Service Mode examples carry original suffix and are independently indexed by exact literal.",
+    "RCM/ESP/CAN identifiers from secondary indexes were appended only to review queue.",
+    "No SAE-J2012 P/B/C/U code was added without demonstrated Tesla vehicle fitment.",
+    "Prior 150 detailed local source records were not copied verbatim to GitHub in these batches.",
+    "Original images and program/release files were not touched."
+  ],
+  "approval_state": "DRAFT_PR_PENDING_TECHNICAL_REVIEW"
+}
