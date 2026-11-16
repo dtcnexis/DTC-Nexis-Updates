@@ -1,0 +1,44 @@
+{
+  "schema": "dtc-nexis-brand-batch-reconciliation-v1",
+  "brand": "MINI",
+  "date": "2026-11-16",
+  "branch": "work/mini-dtc-batch03-20261116",
+  "main_baseline": "c31da1ee655bf20e96ceab2c496b5a04d0657e35",
+  "previous_paths": [
+    "data/master/brands/mini.json",
+    "data/master/brands/mini_batch03_20261116.json"
+  ],
+  "previous_blob_shas": [
+    "dedf5681a07d8867f80a2a3daffdbfa165869e83",
+    "58ccea854a2deb6b2e9eeb2aaa69f1df12ae20af"
+  ],
+  "old_unique_codes": 60,
+  "legacy_codes": 45,
+  "batch03_codes": 15,
+  "batch04_new_records": 13,
+  "batch04_new_unique_codes": 12,
+  "batch04_duplicate_with_existing": 0,
+  "intentional_duplicate_raw_code_variants": [
+    {
+      "code": "135608",
+      "records": 2,
+      "contexts": [
+        "F55/F56 warm no-start",
+        "F60 PHEV erroneous fault without complaint"
+      ]
+    }
+  ],
+  "total_unique_codes_after_batch": 72,
+  "total_records_after_batch": 73,
+  "deferred_queue_before": 61,
+  "deferred_queue_new": 15,
+  "deferred_queue_total": 76,
+  "existing_code_enrichment": "118002 in data/master/enrichment/mini_118002_rev8_20261116.json, does not count new",
+  "excluded_candidate": "21F1F6, OEM bulletin mentions as related conditional code; queued only, not counted as new completed code",
+  "status": "BRANCH_ONLY_DRAFT_NO_MERGE",
+  "eu_review": "SE/EU VIN and ECU application not yet independently checked",
+  "image_count": 0,
+  "verified_coded_images": 0,
+  "source_registry": "data/master/reviews/mini_20261116_batch04/SOURCES.json",
+  "result": "Counts cross-checked against GitHub contents on work branch; no file replacement of existing MINI records."
+}
