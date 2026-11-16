@@ -8,9 +8,11 @@
     "partial_oem": 1,
     "new_third_party_candidates": 25,
     "batch04_new_oem_alerts_pending_fitment": 40,
-    "batch04_new_secondary_candidates": 29
+    "batch04_new_secondary_candidates": 29,
+    "batch05_new_oem_alerts_pending_fitment": 8,
+    "batch05_oem_display_spelling_ambiguous": 2
   },
-  "total": 245,
+  "total": 255,
   "entries": [
     {
       "brand": "Tesla",
@@ -4313,8 +4315,179 @@
       "review_status": "SOURCE_CANDIDATE_ONLY_NOT_OEM_VERIFIED",
       "priority": "secondary_review",
       "public_release": false
+    },
+    {
+      "brand": "Tesla",
+      "code": "CP_a141",
+      "base_code": "CP_a141",
+      "ecu": "CP",
+      "engine": null,
+      "model": "Cybertruck",
+      "source": {
+        "kind": "Tesla OEM owner-manual alert",
+        "url": "https://www.tesla.com/ownersmanual/cybertruck/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+        "edition": "Online rolling version as retrieved 2026-11-16"
+      },
+      "reason": "OEM confirms alert display and general safety meaning at owner-manual scope only. Year, VIN, hardware ECU, live data thresholds, wiring and parts fitment not specified. Alert must not be misrepresented as persistent DTC.",
+      "review_status": "PARTIAL_OEM_CONFIRMED_FITMENT_DIAGNOSTICS_PENDING",
+      "priority": "document_priority",
+      "public_release": false
+    },
+    {
+      "brand": "Tesla",
+      "code": "CP_a143",
+      "base_code": "CP_a143",
+      "ecu": "CP",
+      "engine": null,
+      "model": "Cybertruck",
+      "source": {
+        "kind": "Tesla OEM owner-manual alert",
+        "url": "https://www.tesla.com/ownersmanual/cybertruck/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+        "edition": "Online rolling version as retrieved 2026-11-16"
+      },
+      "reason": "OEM confirms alert display and general safety meaning at owner-manual scope only. Year, VIN, hardware ECU, live data thresholds, wiring and parts fitment not specified. Alert must not be misrepresented as persistent DTC.",
+      "review_status": "PARTIAL_OEM_CONFIRMED_FITMENT_DIAGNOSTICS_PENDING",
+      "priority": "document_priority",
+      "public_release": false
+    },
+    {
+      "brand": "Tesla",
+      "code": "CP_a171",
+      "base_code": "CP_a171",
+      "ecu": "CP",
+      "engine": null,
+      "model": "Cybertruck",
+      "source": {
+        "kind": "Tesla OEM owner-manual alert",
+        "url": "https://www.tesla.com/ownersmanual/cybertruck/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+        "edition": "Online rolling version as retrieved 2026-11-16"
+      },
+      "reason": "OEM confirms alert display and general safety meaning at owner-manual scope only. Year, VIN, hardware ECU, live data thresholds, wiring and parts fitment not specified. Alert must not be misrepresented as persistent DTC.",
+      "review_status": "PARTIAL_OEM_CONFIRMED_FITMENT_DIAGNOSTICS_PENDING",
+      "priority": "document_priority",
+      "public_release": false
+    },
+    {
+      "brand": "Tesla",
+      "code": "UMC_a013",
+      "base_code": "UMC_a013",
+      "ecu": "UMC",
+      "engine": null,
+      "model": "Cybertruck",
+      "source": {
+        "kind": "Tesla OEM owner-manual alert",
+        "url": "https://www.tesla.com/ownersmanual/cybertruck/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+        "edition": "Online rolling version as retrieved 2026-11-16"
+      },
+      "reason": "OEM confirms alert display and general safety meaning at owner-manual scope only. Year, VIN, hardware ECU, live data thresholds, wiring and parts fitment not specified. Alert must not be misrepresented as persistent DTC.",
+      "review_status": "PARTIAL_OEM_CONFIRMED_FITMENT_DIAGNOSTICS_PENDING",
+      "priority": "document_priority",
+      "public_release": false
+    },
+    {
+      "brand": "Tesla",
+      "code": "VCLEFT_a130",
+      "base_code": "VCLEFT_a130",
+      "ecu": "VCLEFT",
+      "engine": null,
+      "model": "Cybertruck",
+      "source": {
+        "kind": "Tesla OEM owner-manual alert",
+        "url": "https://www.tesla.com/ownersmanual/cybertruck/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+        "edition": "Online rolling version as retrieved 2026-11-16"
+      },
+      "reason": "OEM confirms alert display and general safety meaning at owner-manual scope only. Year, VIN, hardware ECU, live data thresholds, wiring and parts fitment not specified. Alert must not be misrepresented as persistent DTC.",
+      "review_status": "PARTIAL_OEM_CONFIRMED_FITMENT_DIAGNOSTICS_PENDING",
+      "priority": "high_safety",
+      "public_release": false
+    },
+    {
+      "brand": "Tesla",
+      "code": "VCREAR_a130",
+      "base_code": "VCREAR_a130",
+      "ecu": "VCREAR",
+      "engine": null,
+      "model": "Cybertruck",
+      "source": {
+        "kind": "Tesla OEM owner-manual alert",
+        "url": "https://www.tesla.com/ownersmanual/cybertruck/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+        "edition": "Online rolling version as retrieved 2026-11-16"
+      },
+      "reason": "OEM confirms alert display and general safety meaning at owner-manual scope only. Year, VIN, hardware ECU, live data thresholds, wiring and parts fitment not specified. Alert must not be misrepresented as persistent DTC.",
+      "review_status": "PARTIAL_OEM_CONFIRMED_FITMENT_DIAGNOSTICS_PENDING",
+      "priority": "high_safety",
+      "public_release": false
+    },
+    {
+      "brand": "Tesla",
+      "code": "VCLEFT_a402",
+      "base_code": "VCLEFT_a402",
+      "ecu": "VCLEFT",
+      "engine": null,
+      "model": "Cybertruck",
+      "source": {
+        "kind": "Tesla OEM owner-manual alert",
+        "url": "https://www.tesla.com/ownersmanual/cybertruck/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+        "edition": "Online rolling version as retrieved 2026-11-16"
+      },
+      "reason": "OEM confirms alert display and general safety meaning at owner-manual scope only. Year, VIN, hardware ECU, live data thresholds, wiring and parts fitment not specified. Alert must not be misrepresented as persistent DTC.",
+      "review_status": "PARTIAL_OEM_CONFIRMED_FITMENT_DIAGNOSTICS_PENDING",
+      "priority": "document_priority",
+      "public_release": false
+    },
+    {
+      "brand": "Tesla",
+      "code": "VCFRONT_a402",
+      "base_code": "VCFRONT_a402",
+      "ecu": "VCFRONT",
+      "engine": null,
+      "model": "Model Y",
+      "source": {
+        "kind": "Tesla OEM owner-manual alert",
+        "url": "https://www.tesla.com/ownersmanual/modely/en_eu/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+        "edition": "Online rolling version as retrieved 2026-11-16"
+      },
+      "reason": "OEM confirms alert display and general safety meaning at owner-manual scope only. Year, VIN, hardware ECU, live data thresholds, wiring and parts fitment not specified. Alert must not be misrepresented as persistent DTC.",
+      "review_status": "PARTIAL_OEM_CONFIRMED_FITMENT_DIAGNOSTICS_PENDING",
+      "priority": "document_priority",
+      "public_release": false
+    },
+    {
+      "brand": "Tesla",
+      "code": "VCLEFT_ a365",
+      "base_code": null,
+      "ecu": "VCLEFT",
+      "engine": null,
+      "model": "Cybertruck",
+      "source": {
+        "kind": "Tesla official owner-manual display, formatting ambiguous",
+        "url": "https://www.tesla.com/ownersmanual/cybertruck/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+        "retrieved": "2026-11-16"
+      },
+      "reason": "Exact official HTML displays 'VCLEFT_ a365' with whitespace; compact raw scanner code unverified. Printed alert meaning: steep slope 10%+ while Trailer Mode is active; not evidence of a component fault.",
+      "review_status": "SOURCE_FORMAT_AMBIGUOUS_NOT_FOR_IMPORT",
+      "priority": "format_check",
+      "public_release": false
+    },
+    {
+      "brand": "Tesla",
+      "code": "VCREAR_ a365",
+      "base_code": null,
+      "ecu": "VCREAR",
+      "engine": null,
+      "model": "Cybertruck",
+      "source": {
+        "kind": "Tesla official owner-manual display, formatting ambiguous",
+        "url": "https://www.tesla.com/ownersmanual/cybertruck/en_us/GUID-9A3F0F72-71F4-433D-B68B-0A472A9359DF.html",
+        "retrieved": "2026-11-16"
+      },
+      "reason": "Exact official HTML displays 'VCREAR_ a365' with whitespace; compact raw scanner code unverified. Printed alert meaning: steep slope 10%+ while Trailer Mode is active; not evidence of a component fault.",
+      "review_status": "SOURCE_FORMAT_AMBIGUOUS_NOT_FOR_IMPORT",
+      "priority": "format_check",
+      "public_release": false
     }
   ],
   "updated": "2026-11-16",
-  "notes": "New unique entries appended; original 176 entries remain unchanged. 40 OEM manufacturer alerts are NOT proven SAE P/B/C/U vehicle DTCs; 29 second-source identifiers require OEM corroboration."
+  "notes": "New unique entries appended; original 176 entries remain unchanged. 40 OEM manufacturer alerts are NOT proven SAE P/B/C/U vehicle DTCs; 29 second-source identifiers require OEM corroboration.",
+  "review_queue_note": "Batch05: Do not normalize VCLEFT_ a365 / VCREAR_ a365 to a scanner code without explicit Tesla diagnostic readout. No new images generated."
 }
