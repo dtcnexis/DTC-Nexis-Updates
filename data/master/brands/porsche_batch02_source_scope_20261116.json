@@ -1,0 +1,854 @@
+{
+  "brand": "Porsche",
+  "section": "dtc_codes",
+  "batch_id": "20261116",
+  "source_verification": "Porsche OEM bulletin confirms presence and scoped applicability; no EU/SWE or exact engine-code inference",
+  "record_count": 25,
+  "records": [
+    {
+      "id": "POR-20261116-001",
+      "brand": "Porsche",
+      "code": "C051800",
+      "code_base": "C0518",
+      "category": "C",
+      "ecu": "PSM brake electronics",
+      "definition_en": "Front left speed sensor - mechanical fault",
+      "translation_ar": "عطل ميكانيكي بحساس سرعة العجلة الأمامية اليسرى",
+      "applicability": {
+        "model": "Cayenne (9YA)",
+        "model_years": "2018 onward; VIN range unverified",
+        "engine": null,
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "PSM/chassis warnings after ignition on for over 30 min while stationary",
+      "diagnostic_steps": "Read vehicle speed at fault. At 0 m/s bulletin specifies PSM programming; >0 m/s specifies wheel speed sensor service and programming subject to campaign and SW checks.",
+      "live_data": [
+        "Fault occurrence - Measured values - Reference - Vehicle speed: 0 m/s vs >0 m/s"
+      ],
+      "parts": [
+        "Wheel speed sensor part 958.927.807; confirm VIN"
+      ],
+      "related_codes": null,
+      "source_id": "psm",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10163759-9999.pdf",
+      "source_date": "2019-07-25",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-002",
+      "brand": "Porsche",
+      "code": "C051900",
+      "code_base": "C0519",
+      "category": "C",
+      "ecu": "PSM brake electronics",
+      "definition_en": "Front right speed sensor - mechanical fault",
+      "translation_ar": "عطل ميكانيكي بحساس سرعة العجلة الأمامية اليمنى",
+      "applicability": {
+        "model": "Cayenne (9YA)",
+        "model_years": "2018 onward; VIN range unverified",
+        "engine": null,
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "PSM/chassis warnings after ignition on for over 30 min while stationary",
+      "diagnostic_steps": "Read vehicle speed at fault. At 0 m/s bulletin specifies PSM programming; >0 m/s specifies wheel speed sensor service and programming subject to campaign and SW checks.",
+      "live_data": [
+        "Fault occurrence - Measured values - Reference - Vehicle speed: 0 m/s vs >0 m/s"
+      ],
+      "parts": [
+        "Wheel speed sensor part 958.927.807; confirm VIN"
+      ],
+      "related_codes": null,
+      "source_id": "psm",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10163759-9999.pdf",
+      "source_date": "2019-07-25",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-003",
+      "brand": "Porsche",
+      "code": "C051A00",
+      "code_base": "C051A",
+      "category": "C",
+      "ecu": "PSM brake electronics",
+      "definition_en": "Rear left speed sensor - mechanical fault",
+      "translation_ar": "عطل ميكانيكي بحساس سرعة العجلة الخلفية اليسرى",
+      "applicability": {
+        "model": "Cayenne (9YA)",
+        "model_years": "2018 onward; VIN range unverified",
+        "engine": null,
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "PSM/chassis warnings after ignition on for over 30 min while stationary",
+      "diagnostic_steps": "Read vehicle speed at fault. At 0 m/s bulletin specifies PSM programming; >0 m/s specifies wheel speed sensor service and programming subject to campaign and SW checks.",
+      "live_data": [
+        "Fault occurrence - Measured values - Reference - Vehicle speed: 0 m/s vs >0 m/s"
+      ],
+      "parts": [
+        "Wheel speed sensor part 958.927.807; confirm VIN"
+      ],
+      "related_codes": null,
+      "source_id": "psm",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10163759-9999.pdf",
+      "source_date": "2019-07-25",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-004",
+      "brand": "Porsche",
+      "code": "C051B00",
+      "code_base": "C051B",
+      "category": "C",
+      "ecu": "PSM brake electronics",
+      "definition_en": "Rear right speed sensor - mechanical fault",
+      "translation_ar": "عطل ميكانيكي بحساس سرعة العجلة الخلفية اليمنى",
+      "applicability": {
+        "model": "Cayenne (9YA)",
+        "model_years": "2018 onward; VIN range unverified",
+        "engine": null,
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "PSM/chassis warnings after ignition on for over 30 min while stationary",
+      "diagnostic_steps": "Read vehicle speed at fault. At 0 m/s bulletin specifies PSM programming; >0 m/s specifies wheel speed sensor service and programming subject to campaign and SW checks.",
+      "live_data": [
+        "Fault occurrence - Measured values - Reference - Vehicle speed: 0 m/s vs >0 m/s"
+      ],
+      "parts": [
+        "Wheel speed sensor part 958.927.807; confirm VIN"
+      ],
+      "related_codes": null,
+      "source_id": "psm",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10163759-9999.pdf",
+      "source_date": "2019-07-25",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-005",
+      "brand": "Porsche",
+      "code": "C11B849_100002",
+      "code_base": "C11B8",
+      "category": "C",
+      "ecu": "HV Charger/OBC",
+      "definition_en": "AC charging not possible; code in onboard charger (OBC)",
+      "translation_ar": "تعذر الشحن المتناوب مع رمز في الشاحن الداخلي",
+      "applicability": {
+        "model": "Taycan Y1A/Y1B/Y1C",
+        "model_years": "2020-2023",
+        "engine": "Electric; 11 kW onboard charger option KB3",
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "AC charging fails at both sockets; charge button red",
+      "diagnostic_steps": "Confirm OBC KB3 and SW 1089, PIWIS software update to SW 1093; use OEM authorized procedure.",
+      "live_data": [
+        "OBC software version: 1089 affected / 1093 remedy"
+      ],
+      "parts": [
+        "11kW OBC control unit"
+      ],
+      "related_codes": null,
+      "source_id": "obc",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11005774-0001.pdf",
+      "source_date": "2024-07-19",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-006",
+      "brand": "Porsche",
+      "code": "P060C00 (0078D5)",
+      "code_base": "P060C",
+      "category": "P",
+      "ecu": "DME",
+      "definition_en": "Function restriction",
+      "translation_ar": "تقييد الوظيفة",
+      "applicability": {
+        "model": "Panamera 4 E-Hybrid/Turbo S E-Hybrid (971)",
+        "model_years": "2017 onward",
+        "engine": "PHEV; exact engine code unverified",
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "Warning after start and limp-home; code requires 0078D5 data error",
+      "diagnostic_steps": "Verify suffix, read DME with PIWIS, press brake through READY appearance before release; do not generalize to other P060C.",
+      "live_data": [
+        "Hybrid READY status (shown before brake release)"
+      ],
+      "parts": [
+        "DME; no component failure established"
+      ],
+      "related_codes": null,
+      "source_id": "pan",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10173050-0001.pdf",
+      "source_date": "2020-03-23",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-007",
+      "brand": "Porsche",
+      "code": "P06DA00 (0053B8)",
+      "code_base": "P06DA",
+      "category": "P",
+      "ecu": "DME",
+      "definition_en": "Oil pressure control valve - short to B+/open circuit",
+      "translation_ar": "صمام ضغط الزيت: قصر للموجب أو دائرة مفتوحة",
+      "applicability": {
+        "model": "Cayenne 9YA/9YB on WRQ9 eligible VINs",
+        "model_years": "2022-2023",
+        "engine": null,
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "Unauthorized/faulty DTC may arise from DME software diagnosis",
+      "diagnostic_steps": "Confirm campaign eligibility in PCSS and error suffix. PIWIS 4 DME update, minimum 42.950.021; support programming voltage 13.5-14.5 V. Do not infer oil valve failure.",
+      "live_data": [
+        "Voltage during authorized programming 13.5-14.5 V"
+      ],
+      "parts": [
+        "Oil pressure control valve not proved defective",
+        "DME software"
+      ],
+      "related_codes": null,
+      "source_id": "wrq",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11021660-0001.pdf",
+      "source_date": "2025-07-24",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-008",
+      "brand": "Porsche",
+      "code": "P06DB00 (0053B7)",
+      "code_base": "P06DB",
+      "category": "P",
+      "ecu": "DME",
+      "definition_en": "Oil pressure control valve - short to ground",
+      "translation_ar": "صمام ضغط الزيت: قصر للأرضي",
+      "applicability": {
+        "model": "Cayenne 9YA/9YB on WRQ9 eligible VINs",
+        "model_years": "2022-2023",
+        "engine": null,
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "Unauthorized/faulty DTC may arise from DME software diagnosis",
+      "diagnostic_steps": "Confirm campaign eligibility in PCSS and error suffix. PIWIS 4 DME update, minimum 42.950.021; support programming voltage 13.5-14.5 V. Do not infer oil valve failure.",
+      "live_data": [
+        "Voltage during authorized programming 13.5-14.5 V"
+      ],
+      "parts": [
+        "Oil pressure control valve not proved defective",
+        "DME software"
+      ],
+      "related_codes": null,
+      "source_id": "wrq",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11021660-0001.pdf",
+      "source_date": "2025-07-24",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-009",
+      "brand": "Porsche",
+      "code": "P010600 (008701)",
+      "code_base": "P0106",
+      "category": "P",
+      "ecu": "DME",
+      "definition_en": "Pressure sensor downstream of throttle, bank 1 - implausible signal",
+      "translation_ar": "حساس الضغط خلف الخانق للبنك الأول: إشارة غير منطقية",
+      "applicability": {
+        "model": "Cayenne E-Hybrid 9YA/9YB",
+        "model_years": "2021-2023",
+        "engine": "3.0L turbo V6; M-No T9I",
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "DME, PSM, distance control and AWD warnings",
+      "diagnostic_steps": "Confirm engine option T9I and suffix 008701; residual manifold vacuum after engine stop is read as implausible; PIWIS DME software update (min 42.950.050); do not replace pressure sensor for bulletin case.",
+      "live_data": [
+        "Intake manifold pressure, bank 1; numerical limits not documented"
+      ],
+      "parts": [
+        "Intake manifold pressure sensor (not confirmed defective)",
+        "DME software"
+      ],
+      "related_codes": null,
+      "source_id": "ehy",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11011673-0001.pdf",
+      "source_date": "2024-11-26",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-010",
+      "brand": "Porsche",
+      "code": "P070300 (00110D)",
+      "code_base": "P0703",
+      "category": "P",
+      "ecu": "DME",
+      "definition_en": "Brake light switch - electrical fault",
+      "translation_ar": "عطل كهربائي بمفتاح ضوء المكابح",
+      "applicability": {
+        "model": "911 992 vehicle types 992120/992320/992420/992620",
+        "model_years": "2020",
+        "engine": null,
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "Engine warning when brake pedal and high electrical loads are activated together",
+      "diagnostic_steps": "Confirm 00110D. Compare DME and electric brake booster voltage; bulletin points to software revision rather than automatically replacing brake switch.",
+      "live_data": [
+        "DME voltage and electric brake booster voltage; no universal threshold"
+      ],
+      "parts": [
+        "DME control module software",
+        "electric brake booster"
+      ],
+      "related_codes": null,
+      "source_id": "brake",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10208677-0001.pdf",
+      "source_date": "2022-02-23",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-011",
+      "brand": "Porsche",
+      "code": "P1BFC00",
+      "code_base": "P1BFC",
+      "category": "P",
+      "ecu": "DME",
+      "definition_en": "Radiator shutter 1 (left) - position implausible",
+      "translation_ar": "موضع مصراع المبرد الأيسر غير منطقي",
+      "applicability": {
+        "model": "911 Carrera/S/4/4S (992)",
+        "model_years": "2020-2021",
+        "engine": null,
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "Position discrepancy between DME and radiator shutter controller",
+      "diagnostic_steps": "Read DME/shutter DTCs and software; bulletin specifies DME reprogramming for matching complaint; verify before replacing parts.",
+      "live_data": [
+        "Radiator shutter target/actual position: numerical limits not documented"
+      ],
+      "parts": [
+        "Radiator shutter actuating system",
+        "DME software"
+      ],
+      "related_codes": null,
+      "source_id": "shutter",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10189709-0001.pdf",
+      "source_date": "2021-03-09",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-012",
+      "brand": "Porsche",
+      "code": "P1BFD00",
+      "code_base": "P1BFD",
+      "category": "P",
+      "ecu": "DME",
+      "definition_en": "Radiator shutter 2 (right) - position implausible",
+      "translation_ar": "موضع مصراع المبرد الأيمن غير منطقي",
+      "applicability": {
+        "model": "911 Carrera/S/4/4S (992)",
+        "model_years": "2020-2021",
+        "engine": null,
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "Position discrepancy between DME and radiator shutter controller",
+      "diagnostic_steps": "Read DME/shutter DTCs and software; bulletin specifies DME reprogramming for matching complaint; verify before replacing parts.",
+      "live_data": [
+        "Radiator shutter target/actual position: numerical limits not documented"
+      ],
+      "parts": [
+        "Radiator shutter actuating system",
+        "DME software"
+      ],
+      "related_codes": null,
+      "source_id": "shutter",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10189709-0001.pdf",
+      "source_date": "2021-03-09",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-013",
+      "brand": "Porsche",
+      "code": "P045600",
+      "code_base": "P0456",
+      "category": "P",
+      "ecu": "DME",
+      "definition_en": "Tank system micro leak",
+      "translation_ar": "تسرب بالغ الدقة في نظام الخزان",
+      "applicability": {
+        "model": "911 (992); Panamera (971); Macan (95B); Cayenne (9YA/9YB)",
+        "model_years": "2021-2022",
+        "engine": null,
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "MIL on cars with fuel-cap option M-No 2G4; fuel odor possible in other variants",
+      "diagnostic_steps": "Verify VIN/M-No 2G4 and inspect fuel filler cap for damage; replace only if damaged. Other leak causes not excluded.",
+      "live_data": [
+        "EVAP diagnostic result; threshold not provided"
+      ],
+      "parts": [
+        "Fuel tank cap; VIN confirmation needed"
+      ],
+      "related_codes": null,
+      "source_id": "evap",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10222513-0001.pdf",
+      "source_date": "2022-09-15",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-014",
+      "brand": "Porsche",
+      "code": "P044200",
+      "code_base": "P0442",
+      "category": "P",
+      "ecu": "DME",
+      "definition_en": "Tank system fine leak",
+      "translation_ar": "تسرب صغير في نظام الخزان",
+      "applicability": {
+        "model": "911 (992); Panamera (971); Macan (95B); Cayenne (9YA/9YB)",
+        "model_years": "2021-2022",
+        "engine": null,
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "MIL on cars with fuel-cap option M-No 2G4; fuel odor possible in other variants",
+      "diagnostic_steps": "Verify VIN/M-No 2G4 and inspect fuel filler cap for damage; replace only if damaged. Other leak causes not excluded.",
+      "live_data": [
+        "EVAP diagnostic result; threshold not provided"
+      ],
+      "parts": [
+        "Fuel tank cap; VIN confirmation needed"
+      ],
+      "related_codes": null,
+      "source_id": "evap",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10222513-0001.pdf",
+      "source_date": "2022-09-15",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-015",
+      "brand": "Porsche",
+      "code": "B143C29 (010065)",
+      "code_base": "B143C",
+      "category": "B",
+      "ecu": "Rear-end electronics",
+      "definition_en": "Power button (ignition release switch), signal implausible",
+      "translation_ar": "إشارة غير منطقية لزر التشغيل",
+      "applicability": {
+        "model": "Taycan Y1A/Y1B/Y1C",
+        "model_years": "2020-2025",
+        "engine": "Electric",
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "Power button warning; vehicle not READY",
+      "diagnostic_steps": "Inspect documented connector TCPR.1A1 between dashboard and main harness, especially bent pin 4; rework damaged connector; manufacturer says start switch replacement not effective for this case.",
+      "live_data": [
+        "Power-button plausibility, threshold unspecified"
+      ],
+      "parts": [
+        "Connector TCPR.1A1 pin 4; only in this bulletin context",
+        "ignition switch not proven faulty"
+      ],
+      "related_codes": null,
+      "source_id": "button",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11024068-0001.pdf",
+      "source_date": "2025-09-10",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-016",
+      "brand": "Porsche",
+      "code": "B143C29 (010066)",
+      "code_base": "B143C",
+      "category": "B",
+      "ecu": "Rear-end electronics",
+      "definition_en": "Power button (ignition release switch), signal implausible",
+      "translation_ar": "إشارة غير منطقية لزر التشغيل",
+      "applicability": {
+        "model": "Taycan Y1A/Y1B/Y1C",
+        "model_years": "2020-2025",
+        "engine": "Electric",
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "Power button warning; vehicle not READY",
+      "diagnostic_steps": "Inspect documented connector TCPR.1A1 between dashboard and main harness, especially bent pin 4; rework damaged connector; manufacturer says start switch replacement not effective for this case.",
+      "live_data": [
+        "Power-button plausibility, threshold unspecified"
+      ],
+      "parts": [
+        "Connector TCPR.1A1 pin 4; only in this bulletin context",
+        "ignition switch not proven faulty"
+      ],
+      "related_codes": null,
+      "source_id": "button",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11024068-0001.pdf",
+      "source_date": "2025-09-10",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-017",
+      "brand": "Porsche",
+      "code": "P010600",
+      "code_base": "P0106",
+      "category": "P",
+      "ecu": "DME",
+      "definition_en": "Bank 1 intake manifold pressure sensor - signal implausible",
+      "translation_ar": "حساس ضغط السحب بنك 1: إشارة غير منطقية",
+      "applicability": {
+        "model": "918 Spyder",
+        "model_years": "2015",
+        "engine": null,
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "Combustion-engine jerking under high-load operation; connector contacts can deteriorate from vibration",
+      "diagnostic_steps": "Inspect whether intermediate adapter exists on each intake pressure sensor; follow Porsche variant-specific adapter/harness connector remedy; do not infer numerical sensor test limits.",
+      "live_data": [
+        "Bank-specific intake pressure; numeric range unavailable"
+      ],
+      "parts": [
+        "Intake manifold pressure sensor 991.606.180.00",
+        "Adapter cable 918.607.105.00 or connector set 918.607.913.00 depending variant"
+      ],
+      "related_codes": null,
+      "source_id": "spyder",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10127484-9999.pdf",
+      "source_date": "2017-12-07",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-018",
+      "brand": "Porsche",
+      "code": "P010700",
+      "code_base": "P0107",
+      "category": "P",
+      "ecu": "DME",
+      "definition_en": "Bank 1 intake manifold pressure sensor - short to ground",
+      "translation_ar": "حساس ضغط السحب بنك 1: قصر للأرضي",
+      "applicability": {
+        "model": "918 Spyder",
+        "model_years": "2015",
+        "engine": null,
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "Combustion-engine jerking under high-load operation; connector contacts can deteriorate from vibration",
+      "diagnostic_steps": "Inspect whether intermediate adapter exists on each intake pressure sensor; follow Porsche variant-specific adapter/harness connector remedy; do not infer numerical sensor test limits.",
+      "live_data": [
+        "Bank-specific intake pressure; numeric range unavailable"
+      ],
+      "parts": [
+        "Intake manifold pressure sensor 991.606.180.00",
+        "Adapter cable 918.607.105.00 or connector set 918.607.913.00 depending variant"
+      ],
+      "related_codes": null,
+      "source_id": "spyder",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10127484-9999.pdf",
+      "source_date": "2017-12-07",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-019",
+      "brand": "Porsche",
+      "code": "P010800",
+      "code_base": "P0108",
+      "category": "P",
+      "ecu": "DME",
+      "definition_en": "Bank 1 intake manifold pressure sensor - short to B+",
+      "translation_ar": "حساس ضغط السحب بنك 1: قصر للموجب",
+      "applicability": {
+        "model": "918 Spyder",
+        "model_years": "2015",
+        "engine": null,
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "Combustion-engine jerking under high-load operation; connector contacts can deteriorate from vibration",
+      "diagnostic_steps": "Inspect whether intermediate adapter exists on each intake pressure sensor; follow Porsche variant-specific adapter/harness connector remedy; do not infer numerical sensor test limits.",
+      "live_data": [
+        "Bank-specific intake pressure; numeric range unavailable"
+      ],
+      "parts": [
+        "Intake manifold pressure sensor 991.606.180.00",
+        "Adapter cable 918.607.105.00 or connector set 918.607.913.00 depending variant"
+      ],
+      "related_codes": null,
+      "source_id": "spyder",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10127484-9999.pdf",
+      "source_date": "2017-12-07",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-020",
+      "brand": "Porsche",
+      "code": "P2A0B00",
+      "code_base": "P2A0B",
+      "category": "P",
+      "ecu": "DME",
+      "definition_en": "Bank 2 intake manifold pressure sensor - signal implausible",
+      "translation_ar": "حساس ضغط السحب بنك 2: إشارة غير منطقية",
+      "applicability": {
+        "model": "918 Spyder",
+        "model_years": "2015",
+        "engine": null,
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "Combustion-engine jerking under high-load operation; connector contacts can deteriorate from vibration",
+      "diagnostic_steps": "Inspect whether intermediate adapter exists on each intake pressure sensor; follow Porsche variant-specific adapter/harness connector remedy; do not infer numerical sensor test limits.",
+      "live_data": [
+        "Bank-specific intake pressure; numeric range unavailable"
+      ],
+      "parts": [
+        "Intake manifold pressure sensor 991.606.180.00",
+        "Adapter cable 918.607.105.00 or connector set 918.607.913.00 depending variant"
+      ],
+      "related_codes": null,
+      "source_id": "spyder",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10127484-9999.pdf",
+      "source_date": "2017-12-07",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-021",
+      "brand": "Porsche",
+      "code": "P024100",
+      "code_base": "P0241",
+      "category": "P",
+      "ecu": "DME",
+      "definition_en": "Bank 2 intake pressure sensor - short to ground (old code)",
+      "translation_ar": "حساس الضغط بنك 2: قصر للأرضي (رمز سابق)",
+      "applicability": {
+        "model": "918 Spyder",
+        "model_years": "2015",
+        "engine": null,
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "Combustion-engine jerking under high-load operation; connector contacts can deteriorate from vibration",
+      "diagnostic_steps": "Inspect whether intermediate adapter exists on each intake pressure sensor; follow Porsche variant-specific adapter/harness connector remedy; do not infer numerical sensor test limits.",
+      "live_data": [
+        "Bank-specific intake pressure; numeric range unavailable"
+      ],
+      "parts": [
+        "Intake manifold pressure sensor 991.606.180.00",
+        "Adapter cable 918.607.105.00 or connector set 918.607.913.00 depending variant"
+      ],
+      "related_codes": "P2A0C00",
+      "source_id": "spyder",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10127484-9999.pdf",
+      "source_date": "2017-12-07",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-022",
+      "brand": "Porsche",
+      "code": "P2A0C00",
+      "code_base": "P2A0C",
+      "category": "P",
+      "ecu": "DME",
+      "definition_en": "Bank 2 intake pressure sensor - short to ground (replacement code)",
+      "translation_ar": "حساس الضغط بنك 2: قصر للأرضي (رمز بديل)",
+      "applicability": {
+        "model": "918 Spyder",
+        "model_years": "2015",
+        "engine": null,
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "Combustion-engine jerking under high-load operation; connector contacts can deteriorate from vibration",
+      "diagnostic_steps": "Inspect whether intermediate adapter exists on each intake pressure sensor; follow Porsche variant-specific adapter/harness connector remedy; do not infer numerical sensor test limits.",
+      "live_data": [
+        "Bank-specific intake pressure; numeric range unavailable"
+      ],
+      "parts": [
+        "Intake manifold pressure sensor 991.606.180.00",
+        "Adapter cable 918.607.105.00 or connector set 918.607.913.00 depending variant"
+      ],
+      "related_codes": "P024100",
+      "source_id": "spyder",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10127484-9999.pdf",
+      "source_date": "2017-12-07",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-023",
+      "brand": "Porsche",
+      "code": "P024200",
+      "code_base": "P0242",
+      "category": "P",
+      "ecu": "DME",
+      "definition_en": "Bank 2 intake pressure sensor - short to B+ (old code)",
+      "translation_ar": "حساس الضغط بنك 2: قصر للموجب (رمز سابق)",
+      "applicability": {
+        "model": "918 Spyder",
+        "model_years": "2015",
+        "engine": null,
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "Combustion-engine jerking under high-load operation; connector contacts can deteriorate from vibration",
+      "diagnostic_steps": "Inspect whether intermediate adapter exists on each intake pressure sensor; follow Porsche variant-specific adapter/harness connector remedy; do not infer numerical sensor test limits.",
+      "live_data": [
+        "Bank-specific intake pressure; numeric range unavailable"
+      ],
+      "parts": [
+        "Intake manifold pressure sensor 991.606.180.00",
+        "Adapter cable 918.607.105.00 or connector set 918.607.913.00 depending variant"
+      ],
+      "related_codes": "P2A0D00",
+      "source_id": "spyder",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10127484-9999.pdf",
+      "source_date": "2017-12-07",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-024",
+      "brand": "Porsche",
+      "code": "P2A0D00",
+      "code_base": "P2A0D",
+      "category": "P",
+      "ecu": "DME",
+      "definition_en": "Bank 2 intake pressure sensor - short to B+ (replacement code)",
+      "translation_ar": "حساس الضغط بنك 2: قصر للموجب (رمز بديل)",
+      "applicability": {
+        "model": "918 Spyder",
+        "model_years": "2015",
+        "engine": null,
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "Combustion-engine jerking under high-load operation; connector contacts can deteriorate from vibration",
+      "diagnostic_steps": "Inspect whether intermediate adapter exists on each intake pressure sensor; follow Porsche variant-specific adapter/harness connector remedy; do not infer numerical sensor test limits.",
+      "live_data": [
+        "Bank-specific intake pressure; numeric range unavailable"
+      ],
+      "parts": [
+        "Intake manifold pressure sensor 991.606.180.00",
+        "Adapter cable 918.607.105.00 or connector set 918.607.913.00 depending variant"
+      ],
+      "related_codes": "P024200",
+      "source_id": "spyder",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10127484-9999.pdf",
+      "source_date": "2017-12-07",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    },
+    {
+      "id": "POR-20261116-025",
+      "brand": "Porsche",
+      "code": "P055600 (00110B)",
+      "code_base": "P0556",
+      "category": "P",
+      "ecu": "DME",
+      "definition_en": "Brake vacuum sensor implausible signal / brake booster pressure sensor performance",
+      "translation_ar": "إشارة غير منطقية لحساس تفريغ مؤازر الفرامل",
+      "applicability": {
+        "model": "718 GTS 4.0 (982160/982360/982370)",
+        "model_years": "2021-2024",
+        "engine": "4.0L petrol; exact code unverified",
+        "market": "Porsche North America bulletin scope; Europe/Sweden VIN applicability NOT verified"
+      },
+      "conditions_and_symptoms": "Power brake / brake booster warning on startup",
+      "diagnostic_steps": "After >25 min sleep, pressure recorded at terminal 15 and again +1.5s. Examine vacuum line, accumulators, electric pump, brake booster; document pre-VAL and follow GFF. Manufacturer threshold unreported.",
+      "live_data": [
+        "A250_ Brake negative pressure absolute (measured): threshold not stated"
+      ],
+      "parts": [
+        "Vacuum hoses, accumulators, pressure sensor, electric pump"
+      ],
+      "related_codes": null,
+      "source_id": "vac",
+      "source_url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10243628-0001.pdf",
+      "source_date": "2023-09-22",
+      "verification_status": "oem_bulletin_code_and_scope_confirmed_full_application_pending",
+      "review_status": "engine_vin_market_incomplete"
+    }
+  ],
+  "sources": [
+    {
+      "id": "psm",
+      "title": "Porsche TI 65/19",
+      "date": "2019-07-25",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10163759-9999.pdf",
+      "publisher": "Porsche Cars North America"
+    },
+    {
+      "id": "obc",
+      "title": "Porsche ATI 2414.1",
+      "date": "2024-07-19",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11005774-0001.pdf",
+      "publisher": "Porsche Cars North America"
+    },
+    {
+      "id": "pan",
+      "title": "Porsche TI 15/20",
+      "date": "2020-03-23",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10173050-0001.pdf",
+      "publisher": "Porsche Cars North America"
+    },
+    {
+      "id": "wrq",
+      "title": "Porsche TI WRQ9",
+      "date": "2025-07-24",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11021660-0001.pdf",
+      "publisher": "Porsche Cars North America"
+    },
+    {
+      "id": "ehy",
+      "title": "Porsche TI 192/24",
+      "date": "2024-11-26",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11011673-0001.pdf",
+      "publisher": "Porsche Cars North America"
+    },
+    {
+      "id": "brake",
+      "title": "Porsche ATI 2005.2",
+      "date": "2022-02-23",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10208677-0001.pdf",
+      "publisher": "Porsche Cars North America"
+    },
+    {
+      "id": "shutter",
+      "title": "Porsche TI 06/21",
+      "date": "2021-03-09",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10189709-0001.pdf",
+      "publisher": "Porsche Cars North America"
+    },
+    {
+      "id": "evap",
+      "title": "Porsche TI 150/22",
+      "date": "2022-09-15",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10222513-0001.pdf",
+      "publisher": "Porsche Cars North America"
+    },
+    {
+      "id": "button",
+      "title": "Porsche TI 65/25 (revision)",
+      "date": "2025-09-10",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2025/MC-11024068-0001.pdf",
+      "publisher": "Porsche Cars North America"
+    },
+    {
+      "id": "spyder",
+      "title": "Porsche TI 23/14",
+      "date": "2017-12-07",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10127484-9999.pdf",
+      "publisher": "Porsche Cars North America"
+    },
+    {
+      "id": "vac",
+      "title": "Porsche ATI 2309.1",
+      "date": "2023-09-22",
+      "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10243628-0001.pdf",
+      "publisher": "Porsche Cars North America"
+    }
+  ]
+}
