@@ -1,0 +1,36 @@
+{
+  "brand": "Peugeot",
+  "date": "2026-11-16",
+  "baseline": {
+    "codes": 1317,
+    "source": "data/master/brands/peugeot.json",
+    "verification": "inherited_candidate_unverified_vehicle_fitment"
+  },
+  "batch": {
+    "new_confirmed_codes": 0,
+    "duplicate_codes_added": 0,
+    "priority_review_cases": 22,
+    "remaining_existing_cases_requiring_oem_fitment_verification": 1295,
+    "images_generated": 0
+  },
+  "scope": [
+    "Engine",
+    "Transmission",
+    "ABS/ESP",
+    "SRS/Airbag",
+    "BSI/Body",
+    "CAN/Network"
+  ],
+  "missing": [
+    "OEM DTC definition per ECU and software variant",
+    "model, VIN, engine and year applicability",
+    "manufacturer diagnostic thresholds and wiring",
+    "complete independent review of 1295 remaining codes"
+  ],
+  "source_links": [
+    "https://github.com/dtcnexis/DTC-Nexis-Updates/blob/main/data/master/brands/peugeot.json",
+    "https://github.com/ludwig-v/arduino-psa-diag",
+    "https://public.servicebox.peugeot.com/information/informations_GB.htm"
+  ],
+  "policy": "No confirmed new records written; priority queue only. Master untouched. Existing review system reused."
+}
