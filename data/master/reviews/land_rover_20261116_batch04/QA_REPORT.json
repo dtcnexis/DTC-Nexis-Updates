@@ -1,0 +1,62 @@
+{
+  "schema": "dtcnexis-land-rover-qa-v1",
+  "date": "2026-11-16",
+  "batch": "LR-004",
+  "branch": "work/land-rover-dtc-20261116",
+  "counts": {
+    "previous_dtc_raw_unique": 67,
+    "previous_ecu_contexts": 69,
+    "lr004_rows": 51,
+    "lr004_unique_strings": 47,
+    "lr004_new_distinct_strings": 46,
+    "lr004_existing_code_new_engine_variant": 1,
+    "lr004_repeated_codes_across_two_engine_families": 4,
+    "combined_distinct_dtc_codes": 113,
+    "combined_ecu_engine_context_records": 120,
+    "prior_review_contexts": 69,
+    "new_review_contexts": 51,
+    "combined_review_contexts": 120,
+    "source_count": 11,
+    "full_oem_approval": 0,
+    "sweden_engine_code_fully_verified": 0,
+    "images_generated": 0
+  },
+  "verification": {
+    "checks": {
+      "records_51": true,
+      "unique_codes_47": true,
+      "new_strings_46": true,
+      "prior_existing_strict_overlap_only_P025C": true,
+      "same_code_different_engine_contexts_4": true,
+      "unique_context_keys": true,
+      "source_references_resolve": true,
+      "all_review_items_link_valid_record": true,
+      "all_data_held_from_release": true,
+      "engine_codes_not_invented": true,
+      "classification_not_pretend_verified": true,
+      "no_uploaded_images": true
+    },
+    "structural_pass": true,
+    "full_technical_approval": false,
+    "ready_for_production": false
+  },
+  "limitations": [
+    "US NHTSA bulletin archive does not confirm Sweden/EU applicability.",
+    "Model-year and VIN constraints may be missing for some SSMs; do not infer all listed vehicles match a powertrain.",
+    "JLR SSM74588 and SSM000030 enumerate codes but do not individually define every code/failure subtype; definition_en remains null where unsupported.",
+    "LR004 has 4 exact DTC strings with two engine-family contexts (AJ20 P4 and P6); these are not duplicate data to drop.",
+    "Already-existing P025C-11 is a different AJ126-specific context; no false increment in unique raw-code count.",
+    "2015 LTB00772 applies NAS VIN ranges and 8HP45 only; not EU.",
+    "Old LR001/LR002 originals are not uploaded to GitHub as raw files; only local references recorded in LR003 reconciliation.",
+    "No technical images or wiring pin numbers added.",
+    "PDF screenshot cache misses encountered for some archived bulletins; PDF text parsed, official link preserved and OEM wording flagged where incomplete.",
+    "Do not use Jaguar-only SSM74171 as Land Rover BCM U1000-00 evidence.",
+    "Do not merge; keep PR draft until owner and technical QA approve."
+  ],
+  "source_sha": {
+    "batch04": "b5e9cdf780e629f7e132395acd4f901715121dcb",
+    "sources": "edd1d93e4c31edb953bde69a7a9126f61c23e6ad",
+    "review_queue": "37ab1f460cc41fef05640fe23286cdbd6ceab3cc",
+    "lr003": "20ee584479b76d81fccc84fc66b0347582d2dffb"
+  }
+}

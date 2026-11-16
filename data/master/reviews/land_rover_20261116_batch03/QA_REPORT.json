@@ -1,0 +1,63 @@
+{
+  "brand": "Land Rover",
+  "date": "2026-11-16",
+  "batch": "LR-003",
+  "scope": "GitHub Draft PR data integrity only; NOT OEM full technical approval",
+  "counts": {
+    "old_LR002_ecu_records": 55,
+    "old_unique_dtc_strings": 53,
+    "new_records": 14,
+    "new_distinct_codes": 14,
+    "identical_code_duplicates_with_LR002": 0,
+    "total_context_records_accounted_for": 69,
+    "combined_distinct_raw_codes": 67,
+    "review_queue_contexts": 69,
+    "sources": 6,
+    "engine_specific_fully_verified_new_records": 0,
+    "sweden_specific_verified_new_records": 0
+  },
+  "checks": {
+    "new_records_14": true,
+    "record_ids_unique": true,
+    "new_raw_codes_unique": true,
+    "reference_ids_all_present": true,
+    "review_contexts_69": true,
+    "prior_55_new_14": true,
+    "unverified_engine_codes_are_not_filled": true,
+    "no_image_falsely_certified": true,
+    "no_production_release": true
+  },
+  "pass": true,
+  "unresolved": [
+    "14 new records still require Swedish/EU and engine/VIN verification",
+    "P1338-38 and C508D-01 standalone English definitions not in OEM summary",
+    "P0480-13 English label inferred from suffix; not explicit on the bulletin slide",
+    "SAE vs JLR proprietary classification needs J2012DA comparison",
+    "2014 airbag bulletin does not list model-year/engine scope",
+    "C1A13 suffix conflict in LR-002",
+    "Original LR-001 and LR-002 files not uploaded to GitHub, but local ZIP+CSV SHA-256 logged",
+    "No pinouts, approved technical images, or module connector pin numbers available"
+  ],
+  "source_reference": [
+    {
+      "path": "data/master/brands/land_rover_20261116_batch03.json",
+      "git_blob_sha": "20ee584479b76d81fccc84fc66b0347582d2dffb"
+    },
+    {
+      "path": "data/master/reviews/land_rover_20261116_batch03/REVIEW_QUEUE.json",
+      "git_blob_sha": "791591b8e767cbfb06aceead67cdbd96b81ccaf5"
+    },
+    {
+      "path": "data/master/reviews/land_rover_20261116_batch03/SOURCES.json",
+      "git_blob_sha": "cb322b0fba01ec51db0c7c4b0d7b534737f877ea"
+    },
+    {
+      "path": "data/master/reviews/land_rover_20261116_batch03/RECONCILIATION.json",
+      "git_blob_sha": "9b61afb0e3d69822ec74ade969e1a77ec0fce15d"
+    }
+  ],
+  "applies_to": "work branch only",
+  "main_modified": false,
+  "merge_approval": false,
+  "release_to_users": false
+}

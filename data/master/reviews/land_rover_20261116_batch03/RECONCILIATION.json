@@ -1,0 +1,62 @@
+{
+  "schema": "dtcnexis-brand-lr003-reconciliation-v1",
+  "brand": "Land Rover",
+  "date": "2026-11-16",
+  "repository": "dtcnexis/DTC-Nexis-Updates",
+  "base_branch": "main",
+  "work_branch": "work/land-rover-dtc-20261116",
+  "originals": {
+    "LR001": {
+      "path_local": "/mnt/data/land_rover_lr001_index.csv",
+      "sha256": "e353bf44825d8140bec9b7b61b7709e4be570e77b12e8f0098bcafb20f6ffd4a",
+      "rows_reported": 53,
+      "github_raw_original_uploaded": false
+    },
+    "LR002": {
+      "path_local": "/mnt/data/land_rover_lr002_package.zip",
+      "sha256": "3f53e5f305d65b1db689780e6b609a17492a73630cab885ec503b40fefb40707",
+      "records": 55,
+      "unique_code_strings": 53,
+      "manufacturer_ecu_variants": 2,
+      "github_raw_original_uploaded": false
+    }
+  },
+  "github_baseline": {
+    "land_rover_brand_file_in_data_master_brands": false,
+    "review_queue_path_exists_on_main": false,
+    "existing_review_system": "data/master/reviews",
+    "main_saved_total_in_manifest_at_review_time": 9589
+  },
+  "new_batch": {
+    "new_records": 14,
+    "new_unique_code_strings": 14,
+    "identical_duplicates_with_local_LR002": 0,
+    "distinct_dtc_strings_preserved_after_LR002_plus_LR003": 67,
+    "distinct_dtc_ecu_records_preserved_after_LR002_plus_LR003": 69,
+    "source_count": 6,
+    "manufacturer_specific_definition_missing": [
+      "P1338-38",
+      "C508D-01"
+    ],
+    "engine_code_confirmed_new_links": 0,
+    "sweden_specific_application_confirmed": 0
+  },
+  "review_queue": {
+    "legacy_ecu_contexts": 55,
+    "lr003_ecu_contexts": 14,
+    "total": 69,
+    "means": "context-level deferred QA, not 69 undocumented code numbers; 53 old unique+14 new unique"
+  },
+  "dedup_key": "brand + raw_code + ECU + engine/variant + documented model scope; same base code under different ECU is not a duplicate",
+  "no_release": true,
+  "main_branch_modified": false,
+  "app_modified": false,
+  "notes": [
+    "JLR SSM71958 provides model family but does not state model years or engine; retain nulls.",
+    "2022 JLR suspension slide provides broad MY range but no precise engine/VIN; do not extrapolate to Swedish EU trims.",
+    "LR002 originals remain available locally; GitHub branch contains new-code records and preservation manifests, not the unchanged original LR002 archive. Promote archive only through separately verified authorized transfer.",
+    "No engine-specific OEM pinouts, values, or images were invented.",
+    "Two preexisting same-code multi-ECU contexts P186D and U3000-49 preserved in review list.",
+    "All records remain excluded from automatic use pending approval."
+  ]
+}

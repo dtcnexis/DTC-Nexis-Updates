@@ -1,0 +1,794 @@
+{
+  "schema": "dtc-nexis-permanent-brand-code-records-v1",
+  "brand": "Land Rover",
+  "archive_status": "PERMANENT_COLLECTED_SOURCE_DATA",
+  "release_to_app": "NOT_ACTIVE",
+  "batch": "LR-003",
+  "checked_on": "2026-11-16",
+  "source_context": "Additional JLR bulletins; old LR-001/LR-002 originals retained offline and not overwritten",
+  "record_count": 14,
+  "unique_code_count": 14,
+  "verification_scope": "JLR bulletin confirms DTC and listed model/ECU only; engine, VIN, Swedish/EU market and SAE/OEM coding await evidence",
+  "records": [
+    {
+      "id": "LR-20261116-B0001-11-RCM",
+      "brand": "Land Rover",
+      "raw_code": "B0001-11",
+      "base_code": "B0001",
+      "code_family": "B",
+      "failure_type": "11",
+      "code_classification": "SAE_vs_OEM_pending_J2012DA_reconciliation",
+      "ecu_context": "RCM",
+      "definition_en": "Driver Frontal Stage 1 Deployment Control - Circuit short to ground",
+      "translation_ar": "تحكم تشغيل الوسادة الهوائية الأمامية للسائق — المرحلة الأولى في المرحلة الأولى من دائرة تشغيل الوسادة الهوائية الأمامية للسائق",
+      "applicability": {
+        "models": [
+          "Range Rover L405",
+          "Range Rover Sport L494",
+          "Range Rover Evoque L538"
+        ],
+        "model_years": null,
+        "market": "unconfirmed; manufacturer bulletin archive is not proof of Swedish/EU application",
+        "engine_code": null,
+        "engine": null,
+        "vin_range": null,
+        "transmission": null
+      },
+      "symptoms": [
+        "إضاءة تحذير الوسائد الهوائية"
+      ],
+      "causes_evidence": [
+        "قفل فيشة الشريط الحلزوني (clock spring) غير محكم، بحسب SSM71958",
+        "أسباب كهربائية أخرى: غير محسومة قبل تشخيص RCM"
+      ],
+      "diagnostic_steps": [
+        "اقرأ رموز RCM وأوقف أي تدخل غير آمن في نظام SRS",
+        "طبق إجراءات السلامة الخاصة بنظام SRS من الدليل الملائم لرقم VIN",
+        "افحص تثبيت قفل موصل clock spring بصرياً وفق نشرة SSM71958",
+        "اتبع فحوص ورشة TOPIx الخاصة بـRCM قبل استبدال أي مكوّن"
+      ],
+      "live_data": [],
+      "parts": [
+        "Clock spring connector",
+        "Driver airbag firing circuit"
+      ],
+      "sources": [
+        "JLR-SSM71958-2014"
+      ],
+      "review_status": "manufacturer_bulletin_scope_verified; VIN_engine_market_and_J2012_classification_pending",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null,
+      "definition_provenance": "JLR_source_English_label"
+    },
+    {
+      "id": "LR-20261116-B0001-12-RCM",
+      "brand": "Land Rover",
+      "raw_code": "B0001-12",
+      "base_code": "B0001",
+      "code_family": "B",
+      "failure_type": "12",
+      "code_classification": "SAE_vs_OEM_pending_J2012DA_reconciliation",
+      "ecu_context": "RCM",
+      "definition_en": "Driver Frontal Stage 1 Deployment Control - Circuit short to battery",
+      "translation_ar": "تحكم تشغيل الوسادة الهوائية الأمامية للسائق — المرحلة الأولى في المرحلة الأولى من دائرة تشغيل الوسادة الهوائية الأمامية للسائق",
+      "applicability": {
+        "models": [
+          "Range Rover L405",
+          "Range Rover Sport L494",
+          "Range Rover Evoque L538"
+        ],
+        "model_years": null,
+        "market": "unconfirmed; manufacturer bulletin archive is not proof of Swedish/EU application",
+        "engine_code": null,
+        "engine": null,
+        "vin_range": null,
+        "transmission": null
+      },
+      "symptoms": [
+        "إضاءة تحذير الوسائد الهوائية"
+      ],
+      "causes_evidence": [
+        "قفل فيشة الشريط الحلزوني (clock spring) غير محكم، بحسب SSM71958",
+        "أسباب كهربائية أخرى: غير محسومة قبل تشخيص RCM"
+      ],
+      "diagnostic_steps": [
+        "اقرأ رموز RCM وأوقف أي تدخل غير آمن في نظام SRS",
+        "طبق إجراءات السلامة الخاصة بنظام SRS من الدليل الملائم لرقم VIN",
+        "افحص تثبيت قفل موصل clock spring بصرياً وفق نشرة SSM71958",
+        "اتبع فحوص ورشة TOPIx الخاصة بـRCM قبل استبدال أي مكوّن"
+      ],
+      "live_data": [],
+      "parts": [
+        "Clock spring connector",
+        "Driver airbag firing circuit"
+      ],
+      "sources": [
+        "JLR-SSM71958-2014"
+      ],
+      "review_status": "manufacturer_bulletin_scope_verified; VIN_engine_market_and_J2012_classification_pending",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null,
+      "definition_provenance": "JLR_source_English_label"
+    },
+    {
+      "id": "LR-20261116-B0001-13-RCM",
+      "brand": "Land Rover",
+      "raw_code": "B0001-13",
+      "base_code": "B0001",
+      "code_family": "B",
+      "failure_type": "13",
+      "code_classification": "SAE_vs_OEM_pending_J2012DA_reconciliation",
+      "ecu_context": "RCM",
+      "definition_en": "Driver Frontal Stage 1 Deployment Control - Circuit open",
+      "translation_ar": "تحكم تشغيل الوسادة الهوائية الأمامية للسائق — المرحلة الأولى في المرحلة الأولى من دائرة تشغيل الوسادة الهوائية الأمامية للسائق",
+      "applicability": {
+        "models": [
+          "Range Rover L405",
+          "Range Rover Sport L494",
+          "Range Rover Evoque L538"
+        ],
+        "model_years": null,
+        "market": "unconfirmed; manufacturer bulletin archive is not proof of Swedish/EU application",
+        "engine_code": null,
+        "engine": null,
+        "vin_range": null,
+        "transmission": null
+      },
+      "symptoms": [
+        "إضاءة تحذير الوسائد الهوائية"
+      ],
+      "causes_evidence": [
+        "قفل فيشة الشريط الحلزوني (clock spring) غير محكم، بحسب SSM71958",
+        "أسباب كهربائية أخرى: غير محسومة قبل تشخيص RCM"
+      ],
+      "diagnostic_steps": [
+        "اقرأ رموز RCM وأوقف أي تدخل غير آمن في نظام SRS",
+        "طبق إجراءات السلامة الخاصة بنظام SRS من الدليل الملائم لرقم VIN",
+        "افحص تثبيت قفل موصل clock spring بصرياً وفق نشرة SSM71958",
+        "اتبع فحوص ورشة TOPIx الخاصة بـRCM قبل استبدال أي مكوّن"
+      ],
+      "live_data": [],
+      "parts": [
+        "Clock spring connector",
+        "Driver airbag firing circuit"
+      ],
+      "sources": [
+        "JLR-SSM71958-2014"
+      ],
+      "review_status": "manufacturer_bulletin_scope_verified; VIN_engine_market_and_J2012_classification_pending",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null,
+      "definition_provenance": "JLR_source_English_label"
+    },
+    {
+      "id": "LR-20261116-B0001-2B-RCM",
+      "brand": "Land Rover",
+      "raw_code": "B0001-2B",
+      "base_code": "B0001",
+      "code_family": "B",
+      "failure_type": "2B",
+      "code_classification": "SAE_vs_OEM_pending_J2012DA_reconciliation",
+      "ecu_context": "RCM",
+      "definition_en": "Driver Stage 1 Deployment Control - Signal cross coupled",
+      "translation_ar": "تحكم تشغيل الوسادة الهوائية الأمامية للسائق — المرحلة الأولى في المرحلة الأولى من دائرة تشغيل الوسادة الهوائية الأمامية للسائق",
+      "applicability": {
+        "models": [
+          "Range Rover L405",
+          "Range Rover Sport L494",
+          "Range Rover Evoque L538"
+        ],
+        "model_years": null,
+        "market": "unconfirmed; manufacturer bulletin archive is not proof of Swedish/EU application",
+        "engine_code": null,
+        "engine": null,
+        "vin_range": null,
+        "transmission": null
+      },
+      "symptoms": [
+        "إضاءة تحذير الوسائد الهوائية"
+      ],
+      "causes_evidence": [
+        "قفل فيشة الشريط الحلزوني (clock spring) غير محكم، بحسب SSM71958",
+        "أسباب كهربائية أخرى: غير محسومة قبل تشخيص RCM"
+      ],
+      "diagnostic_steps": [
+        "اقرأ رموز RCM وأوقف أي تدخل غير آمن في نظام SRS",
+        "طبق إجراءات السلامة الخاصة بنظام SRS من الدليل الملائم لرقم VIN",
+        "افحص تثبيت قفل موصل clock spring بصرياً وفق نشرة SSM71958",
+        "اتبع فحوص ورشة TOPIx الخاصة بـRCM قبل استبدال أي مكوّن"
+      ],
+      "live_data": [],
+      "parts": [
+        "Clock spring connector",
+        "Driver airbag firing circuit"
+      ],
+      "sources": [
+        "JLR-SSM71958-2014"
+      ],
+      "review_status": "manufacturer_bulletin_scope_verified; VIN_engine_market_and_J2012_classification_pending",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null,
+      "definition_provenance": "JLR_source_English_label"
+    },
+    {
+      "id": "LR-20261116-B0002-11-RCM",
+      "brand": "Land Rover",
+      "raw_code": "B0002-11",
+      "base_code": "B0002",
+      "code_family": "B",
+      "failure_type": "11",
+      "code_classification": "SAE_vs_OEM_pending_J2012DA_reconciliation",
+      "ecu_context": "RCM",
+      "definition_en": "Driver Frontal Stage 2 Deployment Control - Circuit short to ground",
+      "translation_ar": "تحكم تشغيل الوسادة الهوائية الأمامية للسائق — المرحلة الثانية في المرحلة الثانية من دائرة تشغيل الوسادة الهوائية الأمامية للسائق",
+      "applicability": {
+        "models": [
+          "Range Rover L405",
+          "Range Rover Sport L494",
+          "Range Rover Evoque L538"
+        ],
+        "model_years": null,
+        "market": "unconfirmed; manufacturer bulletin archive is not proof of Swedish/EU application",
+        "engine_code": null,
+        "engine": null,
+        "vin_range": null,
+        "transmission": null
+      },
+      "symptoms": [
+        "إضاءة تحذير الوسائد الهوائية"
+      ],
+      "causes_evidence": [
+        "قفل فيشة الشريط الحلزوني (clock spring) غير محكم، بحسب SSM71958",
+        "أسباب كهربائية أخرى: غير محسومة قبل تشخيص RCM"
+      ],
+      "diagnostic_steps": [
+        "اقرأ رموز RCM وأوقف أي تدخل غير آمن في نظام SRS",
+        "طبق إجراءات السلامة الخاصة بنظام SRS من الدليل الملائم لرقم VIN",
+        "افحص تثبيت قفل موصل clock spring بصرياً وفق نشرة SSM71958",
+        "اتبع فحوص ورشة TOPIx الخاصة بـRCM قبل استبدال أي مكوّن"
+      ],
+      "live_data": [],
+      "parts": [
+        "Clock spring connector",
+        "Driver airbag firing circuit"
+      ],
+      "sources": [
+        "JLR-SSM71958-2014"
+      ],
+      "review_status": "manufacturer_bulletin_scope_verified; VIN_engine_market_and_J2012_classification_pending",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null,
+      "definition_provenance": "JLR_source_English_label"
+    },
+    {
+      "id": "LR-20261116-B0002-12-RCM",
+      "brand": "Land Rover",
+      "raw_code": "B0002-12",
+      "base_code": "B0002",
+      "code_family": "B",
+      "failure_type": "12",
+      "code_classification": "SAE_vs_OEM_pending_J2012DA_reconciliation",
+      "ecu_context": "RCM",
+      "definition_en": "Driver Frontal Stage 2 Deployment Control - Circuit short to battery",
+      "translation_ar": "تحكم تشغيل الوسادة الهوائية الأمامية للسائق — المرحلة الثانية في المرحلة الثانية من دائرة تشغيل الوسادة الهوائية الأمامية للسائق",
+      "applicability": {
+        "models": [
+          "Range Rover L405",
+          "Range Rover Sport L494",
+          "Range Rover Evoque L538"
+        ],
+        "model_years": null,
+        "market": "unconfirmed; manufacturer bulletin archive is not proof of Swedish/EU application",
+        "engine_code": null,
+        "engine": null,
+        "vin_range": null,
+        "transmission": null
+      },
+      "symptoms": [
+        "إضاءة تحذير الوسائد الهوائية"
+      ],
+      "causes_evidence": [
+        "قفل فيشة الشريط الحلزوني (clock spring) غير محكم، بحسب SSM71958",
+        "أسباب كهربائية أخرى: غير محسومة قبل تشخيص RCM"
+      ],
+      "diagnostic_steps": [
+        "اقرأ رموز RCM وأوقف أي تدخل غير آمن في نظام SRS",
+        "طبق إجراءات السلامة الخاصة بنظام SRS من الدليل الملائم لرقم VIN",
+        "افحص تثبيت قفل موصل clock spring بصرياً وفق نشرة SSM71958",
+        "اتبع فحوص ورشة TOPIx الخاصة بـRCM قبل استبدال أي مكوّن"
+      ],
+      "live_data": [],
+      "parts": [
+        "Clock spring connector",
+        "Driver airbag firing circuit"
+      ],
+      "sources": [
+        "JLR-SSM71958-2014"
+      ],
+      "review_status": "manufacturer_bulletin_scope_verified; VIN_engine_market_and_J2012_classification_pending",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null,
+      "definition_provenance": "JLR_source_English_label"
+    },
+    {
+      "id": "LR-20261116-B0002-13-RCM",
+      "brand": "Land Rover",
+      "raw_code": "B0002-13",
+      "base_code": "B0002",
+      "code_family": "B",
+      "failure_type": "13",
+      "code_classification": "SAE_vs_OEM_pending_J2012DA_reconciliation",
+      "ecu_context": "RCM",
+      "definition_en": "Driver Frontal Stage 2 Deployment Control - Circuit open",
+      "translation_ar": "تحكم تشغيل الوسادة الهوائية الأمامية للسائق — المرحلة الثانية في المرحلة الثانية من دائرة تشغيل الوسادة الهوائية الأمامية للسائق",
+      "applicability": {
+        "models": [
+          "Range Rover L405",
+          "Range Rover Sport L494",
+          "Range Rover Evoque L538"
+        ],
+        "model_years": null,
+        "market": "unconfirmed; manufacturer bulletin archive is not proof of Swedish/EU application",
+        "engine_code": null,
+        "engine": null,
+        "vin_range": null,
+        "transmission": null
+      },
+      "symptoms": [
+        "إضاءة تحذير الوسائد الهوائية"
+      ],
+      "causes_evidence": [
+        "قفل فيشة الشريط الحلزوني (clock spring) غير محكم، بحسب SSM71958",
+        "أسباب كهربائية أخرى: غير محسومة قبل تشخيص RCM"
+      ],
+      "diagnostic_steps": [
+        "اقرأ رموز RCM وأوقف أي تدخل غير آمن في نظام SRS",
+        "طبق إجراءات السلامة الخاصة بنظام SRS من الدليل الملائم لرقم VIN",
+        "افحص تثبيت قفل موصل clock spring بصرياً وفق نشرة SSM71958",
+        "اتبع فحوص ورشة TOPIx الخاصة بـRCM قبل استبدال أي مكوّن"
+      ],
+      "live_data": [],
+      "parts": [
+        "Clock spring connector",
+        "Driver airbag firing circuit"
+      ],
+      "sources": [
+        "JLR-SSM71958-2014"
+      ],
+      "review_status": "manufacturer_bulletin_scope_verified; VIN_engine_market_and_J2012_classification_pending",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null,
+      "definition_provenance": "JLR_source_English_label"
+    },
+    {
+      "id": "LR-20261116-B0002-2B-RCM",
+      "brand": "Land Rover",
+      "raw_code": "B0002-2B",
+      "base_code": "B0002",
+      "code_family": "B",
+      "failure_type": "2B",
+      "code_classification": "SAE_vs_OEM_pending_J2012DA_reconciliation",
+      "ecu_context": "RCM",
+      "definition_en": "Driver Frontal Stage 2 Deployment Control - Signal cross coupled",
+      "translation_ar": "تحكم تشغيل الوسادة الهوائية الأمامية للسائق — المرحلة الثانية في المرحلة الثانية من دائرة تشغيل الوسادة الهوائية الأمامية للسائق",
+      "applicability": {
+        "models": [
+          "Range Rover L405",
+          "Range Rover Sport L494",
+          "Range Rover Evoque L538"
+        ],
+        "model_years": null,
+        "market": "unconfirmed; manufacturer bulletin archive is not proof of Swedish/EU application",
+        "engine_code": null,
+        "engine": null,
+        "vin_range": null,
+        "transmission": null
+      },
+      "symptoms": [
+        "إضاءة تحذير الوسائد الهوائية"
+      ],
+      "causes_evidence": [
+        "قفل فيشة الشريط الحلزوني (clock spring) غير محكم، بحسب SSM71958",
+        "أسباب كهربائية أخرى: غير محسومة قبل تشخيص RCM"
+      ],
+      "diagnostic_steps": [
+        "اقرأ رموز RCM وأوقف أي تدخل غير آمن في نظام SRS",
+        "طبق إجراءات السلامة الخاصة بنظام SRS من الدليل الملائم لرقم VIN",
+        "افحص تثبيت قفل موصل clock spring بصرياً وفق نشرة SSM71958",
+        "اتبع فحوص ورشة TOPIx الخاصة بـRCM قبل استبدال أي مكوّن"
+      ],
+      "live_data": [],
+      "parts": [
+        "Clock spring connector",
+        "Driver airbag firing circuit"
+      ],
+      "sources": [
+        "JLR-SSM71958-2014"
+      ],
+      "review_status": "manufacturer_bulletin_scope_verified; VIN_engine_market_and_J2012_classification_pending",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null,
+      "definition_provenance": "JLR_source_English_label"
+    },
+    {
+      "id": "LR-20261116-C105A-01-CHCM",
+      "brand": "Land Rover",
+      "raw_code": "C105A-01",
+      "base_code": "C105A",
+      "code_family": "C",
+      "failure_type": "01",
+      "code_classification": "SAE_vs_OEM_pending_J2012DA_reconciliation",
+      "ecu_context": "CHCM",
+      "definition_en": "Actuator Circuit Group A - General Electrical Failure",
+      "translation_ar": "مجموعة دوائر المشغلات A — خلل كهربائي عام",
+      "applicability": {
+        "models": [
+          "Range Rover L405",
+          "Range Rover Sport (generation not specified in source)",
+          "Range Rover Velar",
+          "Range Rover Evoque L551",
+          "Discovery",
+          "Discovery Sport"
+        ],
+        "model_years": [
+          2018,
+          2023
+        ],
+        "market": "unconfirmed; manufacturer bulletin archive is not proof of Swedish/EU application",
+        "engine_code": null,
+        "engine": null,
+        "vin_range": null,
+        "transmission": null
+      },
+      "symptoms": [
+        "إضاءة تحذير كهرماني",
+        "ظهور رسالة Suspension Fault"
+      ],
+      "causes_evidence": [
+        "احتمال ضعف اتصال ضمن الدائرة بحسب الملخص الفني",
+        "احتمال تفسير خاطئ للخلل بسبب البرمجيات؛ التشخيص التفصيلي للاند روفر غير مؤكد"
+      ],
+      "diagnostic_steps": [
+        "اقرأ CHCM DTC والتحذير المسجل",
+        "تحقق من الفيوزات ووصلات الدائرة وفق مخطط السيارة المحددة لا مخطط Jaguar",
+        "راجع SSM75824 ونسخة برامج CHCM قبل استبدال وحدة التحكم",
+        "لا تستبدل CHCM أو الأجزاء الأخرى بسبب هذا الكود وحده؛ تحقق من المعالجة البرمجية الحالية"
+      ],
+      "live_data": [],
+      "parts": [
+        "Chassis Control Module",
+        "Chassis suspension harness connectors"
+      ],
+      "sources": [
+        "JLR-CHASSIS-2022-37"
+      ],
+      "review_status": "manufacturer_bulletin_scope_verified; VIN_engine_market_and_J2012_classification_pending",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "لا تُستخدم SSM75823 الخاصة بطرازات Jaguar لإثبات إجراءات سلك Land Rover؛ مصدر Land Rover يذكر SSM75824.",
+      "definition_provenance": "JLR_source_English_label"
+    },
+    {
+      "id": "LR-20261116-C105B-01-CHCM",
+      "brand": "Land Rover",
+      "raw_code": "C105B-01",
+      "base_code": "C105B",
+      "code_family": "C",
+      "failure_type": "01",
+      "code_classification": "SAE_vs_OEM_pending_J2012DA_reconciliation",
+      "ecu_context": "CHCM",
+      "definition_en": "Actuator Circuit Group B - General Electrical Failure",
+      "translation_ar": "مجموعة دوائر المشغلات B — خلل كهربائي عام",
+      "applicability": {
+        "models": [
+          "Range Rover L405",
+          "Range Rover Sport (generation not specified in source)",
+          "Range Rover Velar",
+          "Range Rover Evoque L551",
+          "Discovery",
+          "Discovery Sport"
+        ],
+        "model_years": [
+          2018,
+          2023
+        ],
+        "market": "unconfirmed; manufacturer bulletin archive is not proof of Swedish/EU application",
+        "engine_code": null,
+        "engine": null,
+        "vin_range": null,
+        "transmission": null
+      },
+      "symptoms": [
+        "إضاءة تحذير كهرماني",
+        "ظهور رسالة Suspension Fault"
+      ],
+      "causes_evidence": [
+        "احتمال ضعف اتصال ضمن الدائرة بحسب الملخص الفني",
+        "احتمال تفسير خاطئ للخلل بسبب البرمجيات؛ التشخيص التفصيلي للاند روفر غير مؤكد"
+      ],
+      "diagnostic_steps": [
+        "اقرأ CHCM DTC والتحذير المسجل",
+        "تحقق من الفيوزات ووصلات الدائرة وفق مخطط السيارة المحددة لا مخطط Jaguar",
+        "راجع SSM75824 ونسخة برامج CHCM قبل استبدال وحدة التحكم",
+        "لا تستبدل CHCM أو الأجزاء الأخرى بسبب هذا الكود وحده؛ تحقق من المعالجة البرمجية الحالية"
+      ],
+      "live_data": [],
+      "parts": [
+        "Chassis Control Module",
+        "Chassis suspension harness connectors"
+      ],
+      "sources": [
+        "JLR-CHASSIS-2022-37"
+      ],
+      "review_status": "manufacturer_bulletin_scope_verified; VIN_engine_market_and_J2012_classification_pending",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "لا تُستخدم SSM75823 الخاصة بطرازات Jaguar لإثبات إجراءات سلك Land Rover؛ مصدر Land Rover يذكر SSM75824.",
+      "definition_provenance": "JLR_source_English_label"
+    },
+    {
+      "id": "LR-20261116-P0480-13-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P0480-13",
+      "base_code": "P0480",
+      "code_family": "P",
+      "failure_type": "13",
+      "code_classification": "SAE_vs_OEM_pending_J2012DA_reconciliation",
+      "ecu_context": "PCM",
+      "definition_en": "Cooling Fan 1 Control Circuit - Circuit Open",
+      "translation_ar": "دائرة التحكم بمروحة التبريد 1 — دائرة مفتوحة",
+      "applicability": {
+        "models": [
+          "Defender L663",
+          "Discovery L462"
+        ],
+        "model_years": [
+          2023,
+          2023
+        ],
+        "market": "unconfirmed; manufacturer bulletin archive is not proof of Swedish/EU application",
+        "engine_code": null,
+        "engine": null,
+        "vin_range": null,
+        "transmission": null
+      },
+      "symptoms": [
+        "المروحة قد تتوقف على نحو متقطع",
+        "احتمال ارتفاع حرارة المحرك",
+        "ضعف التكييف أو توقفه"
+      ],
+      "causes_evidence": [
+        "إشكال بمروحة التبريد ضمن الحالة الموصوفة في SSM76075؛ لا يلزم أن يكون السبب نفسه خارج النطاق"
+      ],
+      "diagnostic_steps": [
+        "اقرأ PCM DTC وأكّد النطاق من VIN",
+        "راجع تشغيل المروحة ووصلاتها والفيوز وفق دليل VIN",
+        "إذا ثبت تطبيق النشرة، تحقق من رقم المروحة LR164713 ومن علامة المراجعة #ST3 قبل طلبها",
+        "امسح الكود واختبر تشغيل المروحة بعد الإصلاح"
+      ],
+      "live_data": [],
+      "parts": [
+        "Cooling fan assembly LR164713 (subject to fitment)",
+        "Cooling fan connectors"
+      ],
+      "sources": [
+        "JLR-PWRTRAIN-2023-43"
+      ],
+      "review_status": "manufacturer_bulletin_scope_verified; VIN_engine_market_and_J2012_classification_pending",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "Full English code label is a technical interpretation; must check TOPIx/J2012DA before publication.",
+      "definition_provenance": "interpreted_from_code_and_failure_type_not_printed_as_full_label_in_OEM_slide"
+    },
+    {
+      "id": "LR-20261116-P025C-11-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P025C-11",
+      "base_code": "P025C",
+      "code_family": "P",
+      "failure_type": "11",
+      "code_classification": "SAE_vs_OEM_pending_J2012DA_reconciliation",
+      "ecu_context": "PCM",
+      "definition_en": "Fuel Pump Module 'A' Control Circuit Low",
+      "translation_ar": "جهد أو إشارة منخفضة في دائرة التحكم بوحدة مضخة الوقود A",
+      "applicability": {
+        "models": [
+          "Discovery L462",
+          "Defender L663"
+        ],
+        "model_years": [
+          2020,
+          2024
+        ],
+        "market": "unconfirmed; manufacturer bulletin archive is not proof of Swedish/EU application",
+        "engine_code": null,
+        "engine": null,
+        "vin_range": null,
+        "transmission": null
+      },
+      "symptoms": [
+        "إضاءة لمبة أعطال المحرك"
+      ],
+      "causes_evidence": [
+        "سبب جذر محدد غير مؤكد؛ استبدال FPDM وحده لا يعالج المشكلة وفق النشرة"
+      ],
+      "diagnostic_steps": [
+        "اقرأ جميع PCM DTC الحالية والسابقة والمرتبطة",
+        "راجع تعليمات TOPIx Diagnosis and Testing قبل اتهام FPDM",
+        "امسح أكواد PCM وافحص عودة العطل بعد دورة قيادة قصيرة",
+        "إذا عاد دون سبب واضح افتح بلاغ دعم فني JLR وفق SSM76149/SSM76203"
+      ],
+      "live_data": [],
+      "parts": [
+        "Fuel Pump Driver Module (do not replace based solely on this DTC)"
+      ],
+      "sources": [
+        "JLR-PWRTRAIN-2024-36"
+      ],
+      "review_status": "manufacturer_bulletin_scope_verified; VIN_engine_market_and_J2012_classification_pending",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "release_to_app": "NOT_ACTIVE",
+      "notes": null,
+      "definition_provenance": "JLR_source_English_label"
+    },
+    {
+      "id": "LR-20261116-P1338-38-PCM",
+      "brand": "Land Rover",
+      "raw_code": "P1338-38",
+      "base_code": "P1338",
+      "code_family": "P",
+      "failure_type": "38",
+      "code_classification": "SAE_vs_OEM_pending_J2012DA_reconciliation",
+      "ecu_context": "PCM",
+      "definition_en": null,
+      "translation_ar": "التعريف الرسمي الفردي لهذا الرمز غير مثبت في النشرة؛ رمز مرتبط بحالة FPDM",
+      "applicability": {
+        "models": [
+          "Discovery L462",
+          "Defender L663"
+        ],
+        "model_years": [
+          2020,
+          2024
+        ],
+        "market": "unconfirmed; manufacturer bulletin archive is not proof of Swedish/EU application",
+        "engine_code": null,
+        "engine": null,
+        "vin_range": null,
+        "transmission": null
+      },
+      "symptoms": [
+        "إضاءة لمبة أعطال المحرك"
+      ],
+      "causes_evidence": [
+        "التعريف الفني التفصيلي والسبب غير متاحين في النشرة المختصرة"
+      ],
+      "diagnostic_steps": [
+        "اقرأ جميع DTC في PCM",
+        "اتبع تشخيص TOPIx المخصص لمحرك/VIN السيارة",
+        "لا تستبدل FPDM لمجرد وجود هذا الكود",
+        "تحقق بعد قيادة قصيرة، ثم اطلب دعم JLR إن عاد العطل"
+      ],
+      "live_data": [],
+      "parts": [
+        "Fuel Pump Driver Module (association only)"
+      ],
+      "sources": [
+        "JLR-PWRTRAIN-2024-36"
+      ],
+      "review_status": "manufacturer_bulletin_scope_verified; VIN_engine_market_and_J2012_classification_pending",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "OEM bulletin associates P1338-38 with FPDM diagnosis but gives no separate English definition.",
+      "definition_provenance": "not_available_in_cited_OEM_summary"
+    },
+    {
+      "id": "LR-20261116-C508D-01-CHCMB",
+      "brand": "Land Rover",
+      "raw_code": "C508D-01",
+      "base_code": "C508D",
+      "code_family": "C",
+      "failure_type": "01",
+      "code_classification": "SAE_vs_OEM_pending_J2012DA_reconciliation",
+      "ecu_context": "CHCMB",
+      "definition_en": null,
+      "translation_ar": "الكود مسجل في وحدة التحكم بالشاسيه B ضمن تحذير التعليق؛ تعريفه الفردي غير متاح بالمصدر",
+      "applicability": {
+        "models": [
+          "Range Rover L460",
+          "Range Rover Sport L461"
+        ],
+        "model_years": [
+          2022,
+          2023
+        ],
+        "market": "unconfirmed; manufacturer bulletin archive is not proof of Swedish/EU application",
+        "engine_code": null,
+        "engine": null,
+        "vin_range": null,
+        "transmission": null
+      },
+      "symptoms": [
+        "تحذير توقف آمن وخلل التعليق"
+      ],
+      "causes_evidence": [
+        "النشرة تربط الحالة بمشكلة معايرة برمجيات EESM؛ لا تثبت تلف CHCMB"
+      ],
+      "diagnostic_steps": [
+        "افحص الأكواد المرتبطة U3000-49 في EESM/EPICE وB1646-01 في GWM",
+        "شغّل TOPIx Cloud Diagnostics ونفذ فحص تحذيرات التعليق",
+        "تحقق من معايرة EESM واتباع إجراء SSM75970 قبل تغيير الأجزاء"
+      ],
+      "live_data": [],
+      "parts": [
+        "CHCMB",
+        "EESM",
+        "EPICE",
+        "GWM"
+      ],
+      "sources": [
+        "JLR-CHASSIS-2023-33"
+      ],
+      "review_status": "manufacturer_bulletin_scope_verified; VIN_engine_market_and_J2012_classification_pending",
+      "image": {
+        "path": null,
+        "code_matched": false
+      },
+      "release_to_app": "NOT_ACTIVE",
+      "notes": "2022-23 Range Rover; 2023 Range Rover Sport. Paired DTCs U3000-49 and B1646-01 are already in LR-002; do not duplicate.",
+      "definition_provenance": "not_available_in_cited_OEM_summary"
+    }
+  ],
+  "quality_flags": [
+    "SAE_OEM_classification_pending",
+    "model_year_engine_vin_market_scope_limited",
+    "no_local_approved_images"
+  ]
+}
