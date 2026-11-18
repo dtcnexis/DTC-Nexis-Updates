@@ -1,0 +1,75 @@
+{
+  "schema": "dtc-nexis-vehicle-catalog-external-staging-v1",
+  "created_at": "2026-11-18",
+  "status": "REVIEW_ONLY_NOT_IMPORTABLE_TO_DTC",
+  "source_policy": "Independent source layers; no inferred mechanical DTC applicability; preserve attribution and raw originals",
+  "sources": [
+    {
+      "id": "vehiclesdb-2026-11-12",
+      "url": "https://github.com/vehiclesdb/vehiclesdb",
+      "source_ref": "main@5d0eaacaeb58190cb5481ab06ddc13715dc3ed48",
+      "source_blob_git_sha": "18c13a3f18b527dd22cf060edc9f5c49b9c3df06",
+      "file": "dist/vehicles.csv",
+      "license": "CC-BY-4.0",
+      "local_folder": "vehiclesdb",
+      "parts": 5,
+      "records": 16440,
+      "breakdown": {
+        "car": 6042,
+        "motorcycle": 6397,
+        "moped": 1529,
+        "van": 811,
+        "truck": 1223,
+        "bus": 438
+      },
+      "unique_car_makes": 321,
+      "car_with_year_start": 132,
+      "car_with_year_end": 45,
+      "raw_sha256_published": "632723cb2ef6988efae61ef230c86ff42449803482e0858e20e8dff9b163605b",
+      "sha256_recomputed": false
+    },
+    {
+      "id": "gor3a-v1.0.3",
+      "url": "https://github.com/gor3a/vehicle-makes-models",
+      "source_ref": "main@ad1d97654d7ac50b393bfeafad3b8b21f5f15657",
+      "engine_blob_git_sha": "d80dae93852dc5671e50ec0f0b303177ac446019",
+      "models_blob_git_sha": "8be79e9a08de6e0914a81f5ce345aa06992516fa",
+      "file": [
+        "data/csv/engines.csv",
+        "data/csv/makes-models.csv"
+      ],
+      "license": "ODbL-1.0",
+      "license_caveat": "Check upstream autoevolution copyright/terms; data redistribution/derived database share-alike and attribution",
+      "local_folder": "gor3a",
+      "engine_parts": 17,
+      "engine_rows": 31520,
+      "model_rows": 3640,
+      "model_make_groups": 216,
+      "engine_make_groups": 161,
+      "engine_with_transmission": 30051,
+      "engine_with_gen_year_start": 31520,
+      "engine_with_gen_year_end": 28101,
+      "engine_exact_duplicate_rows": 24
+    }
+  ],
+  "candidate_links": {
+    "filename": "crosswalk_exact_name_candidates.csv",
+    "rows": 1493,
+    "distinct_normalized_pairs": 1488,
+    "method": "case/diacritic/punctuation-normalized exact make+model name",
+    "approval": "NEEDS_REVIEW",
+    "dtc_matches_confirmed": 0
+  },
+  "missing_sources": [
+    "diagnostic.sdf",
+    "dtc.acz"
+  ],
+  "integration": {
+    "master_dtc_added": 0,
+    "ecus_linked": 0,
+    "vehicle_code_links_approved": 0,
+    "windows_app_modified": false,
+    "update_feed_modified": false,
+    "review_queue": "pending"
+  }
+}
