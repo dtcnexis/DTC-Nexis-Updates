@@ -1,0 +1,45 @@
+{
+  "schema": "dtcnexis-brand-reconciliation-v1",
+  "brand": "Infiniti",
+  "date": "2026-11-16",
+  "main_baseline": {
+    "counted_master_rows": 9589,
+    "counted_master_files": 53,
+    "infiniti_preserved_file_rows": 37,
+    "infiniti_preserved_distinct_codes": 35,
+    "additional_existing_C1130": "present in c_codes_multibrand.json as 55 model-year scopes; archived original source remains in source_archives",
+    "local_batch01_rows": 38,
+    "local_batch01_unique_codes": 36,
+    "local_batch02_unique_codes": 65,
+    "draft_67_codes_original_available": false
+  },
+  "new_bulletin_confirmed_code_rows": 5,
+  "new_codes": [
+    "P0139",
+    "P0159",
+    "C1204",
+    "B2724-23",
+    "C1B56-04"
+  ],
+  "previous_code_overlap": 6,
+  "overlapping_codes": [
+    "P17F0",
+    "P17F1",
+    "P0101",
+    "P010B",
+    "P0087",
+    "P0448"
+  ],
+  "review_queue_count": 14,
+  "review_breakdown": {
+    "source_verified_code_without_individual_definition": 11,
+    "P2008_title_table_inconsistency": 1,
+    "missing_previous_draft_sources": 2
+  },
+  "expected_main_if_merged": {
+    "counted_rows": 9594,
+    "counted_files": 54
+  },
+  "no_release": true,
+  "no_changes_to_main": true
+}
