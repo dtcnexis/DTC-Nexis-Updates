@@ -37,7 +37,7 @@ export function reviewedVehicle(root, review, cache) {
   const saved = read(file);
   assert.equal(saved.sha256,sha256,'Vehicle source fingerprint changed');
   const doc = saved.document;
-  const match = /^\/(related_datasets|related)\/(vehicles|engines)\/(0|[1-9]\d*)$/.exec(pointer);
+  const match = /^\/(related_datasets|related)\/(vehicles|engines|vehicle_engine_variants)\/(0|[1-9]\d*)$/.exec(pointer);
   let tables, table, index;
   if(match){
     tables=doc[match[1]];table=match[2];index=Number(match[3]);
@@ -51,12 +51,14 @@ export function reviewedVehicle(root, review, cache) {
   assert(Array.isArray(tables?.[table]), 'Unsupported vehicle source shape');
   const src=tables[table][index], id=src?.id ?? src?.vehicle_id;
   assert(text(id) && unique(tables[table],id) === src && review.id === id,'Original vehicle record ID mismatch');
-  const isEngine = table === 'engines';
+  const isVariant = table === 'vehicle_engine_variants';
+  const isEngine = table !== 'vehicles';
   const car = isEngine ? unique(tables.vehicles,src.vehicle_id) : src;
   const market=car.market ?? car.markets_confirmed_listed?.join(' / ');
   assert(text(car.brand) && (!doc.brand || car.brand===doc.brand) && text(car.model) && text(market),'Incomplete vehicle identity');
   const carYears = modelYears(car.model_years ?? (car.model_year_start && car.model_year_end ? car.model_year_start+'-'+car.model_year_end : ''));
-  const years = isEngine ? modelYears(src.model_year_scope) : carYears;
+  const engineYears=src.model_year_scope ?? (src.model_year_start && src.model_year_end ? src.model_year_start+'-'+src.model_year_end : '');
+  const years = isEngine ? modelYears(engineYears) : carYears;
   if(isEngine)assert(years && carYears && years[0]>=carYears[0] && years[1]<=carYears[1], 'Explicit, compatible model-year bounds required');
   const refs = (src.source_ids ?? []).map(id=>unique(tables.sources,id));
   assert(refs.length && refs.every(ref=>/^https:\/\//.test(ref.url)), 'Missing vehicle technical reference');
@@ -64,12 +66,21 @@ export function reviewedVehicle(root, review, cache) {
     scope:[market,car.generation,car.body_styles ?? car.body_style,car.trim_scope].filter(Boolean).join(' · '),
     source:refs[0].url,references:refs.map(ref=>ref.url),upstreamCommit:commit,provenance:review.source,vehicleId:car.id ?? car.vehicle_id};
   if (isEngine) {
-    assert(src.verification_status==='manufacturer_documented_specs' && text(src.commercial_engine_name),'Named engine evidence required');
-    Object.assign(record,{name:src.commercial_engine_name,yearBasis:'model_year_scope',fuel:src.fuel});
+    const name=isVariant ? src.engine_display_name : src.commercial_engine_name;
+    const status=isVariant ? 'manufacturer_explicit' : 'manufacturer_documented_specs';
+    assert(src.verification_status===status && text(name),'Named engine evidence required');
+    const family=isVariant && src.engine_id ? unique(tables.engines,src.engine_id) : src;
+    if(isVariant && src.engine_id){
+      assert(!family.brand || family.brand===car.brand,'Conflicting engine family make');
+      assert(!src.engine_code || src.engine_code===family.engine_code,'Conflicting engine family code');
+      record.engineId=family.id;
+    }
+    Object.assign(record,{name,yearBasis:src.model_year_scope?'model_year_scope':'model_year_start/end',fuel:src.fuel ?? family.fuel_type});
     if (src.engine_code_verified === true) {
-      assert(text(src.engine_code) && /^[A-Z0-9][A-Z0-9 ._-]{1,39}$/.test(src.engine_code), 'Invalid verified engine code');
-      record.engineCodes=[src.engine_code];
-      record.engineCodeEvidence=[{code:src.engine_code,source:record.source,scope:record.scope}];
+      const code=family.engine_code;
+      assert(text(code) && /^[A-Z0-9][A-Z0-9 ._-]{1,39}$/.test(code), 'Invalid verified engine code');
+      record.engineCodes=[code];
+      record.engineCodeEvidence=[{code,source:record.source,scope:record.scope}];
     }
   }
   return record;

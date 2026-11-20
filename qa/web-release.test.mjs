@@ -27,6 +27,8 @@ test('stable vehicle batches bind each ID to its original model, year, code and 
   assert.equal(states[0].vehicles.get(car.id).name,undefined);
   assert.throws(()=>build([engine,engine]),/Duplicate/);
   assert.throws(()=>build([unlinked]),/source ID/);
+  const listing=review('data/master/brands/toyota_exp002_related.json','vehicle_engine_variants',r=>r.id==='toyota:variant:yaris-se-2024-xp210:01');
+  assert.throws(()=>build([listing]),/model-year bounds/);
   assert.throws(()=>build([{...engine,status:'candidate'}]),/review/);
   assert.throws(()=>build([{...engine,source:{...engine.source,pointer:car.source.pointer}}]),/ID mismatch/);
   assert.throws(()=>build([{...engine,source:{...engine.source,sha256:'0'}}]),/fingerprint/);
