@@ -235,7 +235,7 @@ export async function publish({out,channel,states,privateKey,commit,verifyDelive
       for(const pack of packs)await verifyDelivery(pack.sha256);
       if(vehiclePack)await verifyDelivery(vehiclePack.sha256);
     }
-    const payload=json({schema:1,channel,sequence:state.sequence,date:state.date,digest:state.digest,commit,packs,vehiclePack,restore:state.restore,reason:state.reason});
+    const payload=json({schema:vehiclePack?2:1,channel,sequence:state.sequence,date:state.date,digest:state.digest,commit,packs,vehiclePack,restore:state.restore,reason:state.reason});
     const signature=sign('sha256',payload,{key:privateKey,dsaEncoding:'ieee-p1363'});
     const envelope=json({payload:payload.toString('base64'),signature:signature.toString('base64')});
     // A retry after an interrupted activation reuses the already signed envelope.
