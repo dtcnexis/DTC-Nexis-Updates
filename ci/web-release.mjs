@@ -11,8 +11,10 @@ const string = value => typeof value === 'string' && value.trim() === value && !
 const norm = value => String(value ?? '').normalize('NFC').trim().replace(/\s+/g, ' ').toLowerCase();
 const fields = ['make','model','yearStart','yearEnd','engineCode','ecu','market'];
 const makeKey = value => ({'škoda':'skoda','citroen':'citroën'}[norm(value)] ?? norm(value));
-const scopeKey = row => JSON.stringify([row.code,...fields.map(k=>k==='make'?makeKey(row.scope[k]):norm(row.scope[k]))]);
+const scopeKey = row => JSON.stringify([row.code.toUpperCase(),...fields.map(k=>k==='make'?makeKey(row.scope[k]):norm(row.scope[k]))]);
 const rank = {technical:1,manufacturer:2};
+
+const isTestEvidence=row=>/\bTEST (?:legacy|notes|cause|check)\b|synthetic fixture|example\.invalid|automated trial only/i.test(JSON.stringify(row));
 
 function evidence(root, row, channel) {
   const ref = row.source;
@@ -37,7 +39,8 @@ function evidence(root, row, channel) {
     assert(item && Object.hasOwn(item,key),'Source row missing');
     item=item[key];
   }
-  assert.equal(String(item.code ?? item.raw_code ?? item.code_raw).trim().toUpperCase(),row.code,'Source code mismatch');
+  if(channel==='stable')assert(!isTestEvidence(item),'Test evidence in central source row');
+  assert.equal(String(item.code ?? item.raw_code ?? item.code_raw).trim(),row.code,'Source code mismatch');
   const originalId=item.original_record_id ?? item.id;
   if(originalId) assert.equal(row.sourceRecordId,originalId,'Original identifier lost');
 }
@@ -45,8 +48,9 @@ function evidence(root, row, channel) {
 function validate(root,row,channel) {
   const allowedFields=['id','sourceRecordId','code','scope','text','technical','status','confidence','reviewedBy','source','replaces'];
   assert(Object.keys(row).every(k=>allowedFields.includes(k)),'Unmapped record field');
-  assert(string(row.id) && row.id.length<=180 && /^[\w:.-]+$/.test(row.id),'Invalid ID');
-  assert(/^[A-Z0-9]{2,12}(?:[-:][A-Z0-9]{1,8})?$/.test(row.code),'Invalid code');
+  assert(string(row.id) && row.id.length<=180 && /^[\w:|.-]+$/.test(row.id),'Invalid ID');
+  assert(string(row.code) && row.code.length<=32 && /^[A-Za-z0-9]+(?:[-:_/ ][A-Za-z0-9]+)*(?: ?\([A-Za-z0-9]+\))?$/.test(row.code),'Invalid code');
+  if(channel==='stable')assert(!isTestEvidence(row),'Test evidence in stable release');
   assert(row.scope && Object.keys(row.scope).every(k=>fields.includes(k)), 'Unsupported applicability');
   const s=row.scope;
   assert(Object.keys(s).length===0 || string(s.make),'Specific scope requires make');
@@ -125,9 +129,9 @@ export function compile({root, batches, channel}) {
         for(const lang of Object.keys(previous.text)) assert(string(row.text[lang]),'Translation removed');
       } else assert(!row.replaces,'Correction has no predecessor');
       if(!previous){
-        const related=scopesByCode.get(row.code)||[];
+        const related=scopesByCode.get(row.code.toUpperCase())||[];
         for(const other of related)assert(!overlapping(other,row.scope) || includesScope(other,row.scope) || includesScope(row.scope,other),'Ambiguous overlapping code contexts');
-        related.push(row.scope);scopesByCode.set(row.code,related);
+        related.push(row.scope);scopesByCode.set(row.code.toUpperCase(),related);
       }
       identities.set(key,row.id);
       revisions.set(row.id,row);

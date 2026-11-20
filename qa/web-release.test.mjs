@@ -59,17 +59,23 @@ test('incompletely documented candidates remain in the review queue and overlaps
 test('a stable-channel build pins source history and activates only after delivery verification',async t=>{
   const dir=fs.mkdtempSync(path.join(os.tmpdir(),'dtc-stable-simulation-'));
   t.after(()=>fs.rmSync(dir,{recursive:true,force:true}));
-  const out=path.join(dir,'distribution'),file='data/master/sample.json';
-  fs.mkdirSync(path.dirname(path.join(dir,file)),{recursive:true});
-  const source=fs.readFileSync(path.join(root,'qa/web-fixtures/source.json'));
-  fs.writeFileSync(path.join(dir,file),source);
-  const git=(...args)=>execFileSync('git',args,{cwd:dir,windowsHide:true,encoding:'utf8',stdio:['ignore','pipe','pipe']}).trim();
-  git('init','--quiet');git('add',file);
-  git('-c','user.name=Trial','-c','user.email=trial@example.invalid','-c','commit.gpgsign=false','commit','-qm','Synthetic test only');
-  const commit=git('rev-parse','HEAD'),batch=trialBatches()[0];batch.channel='stable';
-  for(const row of batch.changes)if(row.source)Object.assign(row.source,{file,commit});
-  fs.writeFileSync(path.join(dir,file),'{}');
-  const {states}=compile({root:dir,batches:[batch],channel:'stable'});
+  const out=path.join(dir,'distribution'),file='data/master/brands/legacy_generic_pbu.json';
+  const commit='2df439b7b13fae8381a20c3faf5819ea8ee56f3e';
+  const bytes=execFileSync('git',['show',commit+':'+file],{cwd:root,maxBuffer:8*1024*1024,encoding:'utf8'}).replace(/\r\n/g,'\n');
+  const rows=JSON.parse(bytes).entries,i=rows.findIndex(r=>r.code==='P0106'),original=rows[i];
+  // Exercise the delivery protocol in a temporary directory with actual baseline text.
+  const row={id:'legacy:P0106',code:original.code,scope:{},text:{ar:original.ar,en:original.en},
+    source:{file,commit,sha256:createHash('sha256').update(bytes).digest('hex'),pointer:'/entries/'+i,
+      reference:'https://github.com/dtcnexis/DTC-Nexis-Updates/blob/'+commit+'/'+file,locator:'original row '+original.original_row},
+    status:'approved',confidence:'technical',reviewedBy:'Local transport simulation'};
+  const batch={channel:'stable',sequence:1,date:'2026-11-20T00:00:00.000Z',changes:[row]};
+  const build=()=>compile({root,batches:[batch],channel:'stable'});
+  batch.changes=[{...row,text:{en:'TEST notes 1'}}];
+  assert.throws(build,/Test evidence/);
+  batch.changes=[{...row,source:{...row.source,pointer:'/entries/0'}}];
+  assert.throws(build,/Source code mismatch/);
+  batch.changes=[row];
+  const {states}=build();
   const key=generateKeyPairSync('ec',{namedCurve:'P-256'}).privateKey;
   const args={channel:'stable',states,out,privateKey:key,commit};
   await assert.rejects(()=>publish({...args,verifyDelivery:async()=>{throw Error('unreachable')}}),/unreachable/);
