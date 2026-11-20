@@ -4,6 +4,7 @@ import path from 'node:path';
 import {createHash, createPublicKey, randomUUID, sign, verify} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {pathToFileURL} from 'node:url';
+import {reviewedVehicle} from './web-vehicles.mjs';
 
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const json = value => Buffer.from(JSON.stringify(value));
@@ -11,7 +12,13 @@ const string = value => typeof value === 'string' && value.trim() === value && !
 const norm = value => String(value ?? '').normalize('NFC').trim().replace(/\s+/g, ' ').toLowerCase();
 const fields = ['make','model','yearStart','yearEnd','engineCode','ecu','market'];
 const makeKey = value => ({'škoda':'skoda','citroen':'citroën'}[norm(value)] ?? norm(value));
-const scopeKey = row => JSON.stringify([row.code.toUpperCase(),...fields.map(k=>k==='make'?makeKey(row.scope[k]):norm(row.scope[k]))]);
+// Use the same lookup identity as the web client. Keep the scanner spelling in the row.
+const codeKey = value => {
+  const spelling=value.toUpperCase().trim().replace(/\s+/g,' ').replace(/\s*([-:/_])\s*/g,'$1');
+  const compact=spelling.replace(/ /g,'').replace(/^([PBCU])-([0-9A-F]{4})$/,'$1$2');
+  return /^(?:[PBCU][0-9A-F]{4}|[0-9]+)$/.test(compact)?compact:spelling;
+};
+const scopeKey = row => JSON.stringify([codeKey(row.code),...fields.map(k=>k==='make'?makeKey(row.scope[k]):norm(row.scope[k]))]);
 const rank = {technical:1,manufacturer:2};
 
 const isTestEvidence=row=>/\bTEST (?:legacy|notes|cause|check)\b|synthetic fixture|example\.invalid|automated trial only/i.test(JSON.stringify(row));
@@ -27,19 +34,31 @@ function evidence(root, row, channel) {
   let bytes;
   if(channel==='stable'){
     assert(/^[a-f0-9]{40}$/.test(ref.commit),'Pin the evidence to its Git commit');
+    execFileSync('git',['merge-base','--is-ancestor',ref.commit,'refs/remotes/origin/main'],{cwd:root});
     bytes=execFileSync('git',['show',ref.commit+':'+ref.file],{cwd:root,maxBuffer:128*1024*1024});
   }else bytes=fs.readFileSync(path.join(root,ref.file));
   // JSON evidence is tracked in Git. Canonical LF tolerates Windows checkout conversion.
   const sourceText = bytes.toString('utf8').replace(/\r\n/g,'\n');
   assert.equal(hash(sourceText),ref.sha256,'Source fingerprint changed');
   assert(/^\/(?:[^~/]|~[01])+(?:\/(?:[^~/]|~[01])+)*$/.test(ref.pointer),'Invalid JSON pointer');
-  let item = JSON.parse(sourceText);
+  const document=JSON.parse(sourceText);
+  let item = document;
   for(const token of ref.pointer.slice(1).split('/')) {
     const key=token.replace(/~1/g,'/').replace(/~0/g,'~');
     assert(item && Object.hasOwn(item,key),'Source row missing');
     item=item[key];
   }
-  if(channel==='stable')assert(!isTestEvidence(item),'Test evidence in central source row');
+  if(channel==='stable'){
+    assert(!isTestEvidence(item),'Test evidence in central source row');
+    const brand=item.brand ?? document.brand;
+    if(typeof brand==='string' && brand.trim()){
+      assert(makeKey(row.scope.make)===makeKey(brand),'Manufacturer evidence requires matching make');
+    }
+    if(item.ecu_context){
+      const ecus=Array.isArray(item.ecu_context)?item.ecu_context:[item.ecu_context];
+      if(ecus.length && ecus.every(string))assert(ecus.some(ecu=>norm(ecu)===norm(row.scope.ecu)),'Preserve original ECU context');
+    }
+  }
   assert.equal(String(item.code ?? item.raw_code ?? item.code_raw).trim(),row.code,'Source code mismatch');
   const originalId=item.original_record_id ?? item.id;
   if(originalId) assert.equal(row.sourceRecordId,originalId,'Original identifier lost');
@@ -86,6 +105,8 @@ export function compile({root, batches, channel}) {
   assert(['trial','stable'].includes(channel));
   const states=[], pending=new Map(), revisions=new Map(), identities=new Map(), scopesByCode=new Map();
   let records=new Map(), parent=null;
+  let vehicles=new Map();
+  const vehicleHistory=new Map(), sourceCache=new Map();
   for(const [index,batch] of batches.entries()) {
     assert.equal(batch.sequence,index+1,'Gap or duplicate release');
     assert(batch.channel===channel && typeof batch.date==='string' && new Date(batch.date).toISOString()===batch.date,'Invalid channel/date');
@@ -94,7 +115,23 @@ export function compile({root, batches, channel}) {
     const audit=[], seen=new Set();
     if(batch.restore!==undefined){
       assert(Number.isInteger(batch.restore)&&batch.restore>0&&batch.restore<=index&&batch.changes.length===0&&string(batch.reason),'Invalid restore');
+      assert(!batch.vehicles?.length,'Restore must not add vehicle records');
       records=new Map(states[batch.restore-1].records);
+      vehicles=new Map(states[batch.restore-1].vehicles);
+    }
+    assert(Array.isArray(batch.vehicles ?? []),'Invalid vehicle reviews');
+    for(const review of batch.vehicles ?? []){
+      assert(channel==='stable' && !seen.has(review.id),'Duplicate or unsupported vehicle review');
+      seen.add(review.id);
+      const vehicle=reviewedVehicle(root,review,sourceCache);
+      const previous=vehicleHistory.get(vehicle.id);
+      assert.equal(review.replaces,previous && hash(json(previous)),'Repeated or stale vehicle review');
+      if(previous){
+        assert(previous.vehicleId===vehicle.vehicleId && previous.make===vehicle.make && previous.model===vehicle.model,'Vehicle identity reassigned');
+      }
+      vehicles.set(vehicle.id,vehicle);
+      vehicleHistory.set(vehicle.id,vehicle);
+      audit.push({id:vehicle.id,operation:'vehicle',source:review.source,reviewedBy:review.reviewedBy,current:hash(json(vehicle))});
     }
     for(const row of batch.changes) {
       if(row.status==='candidate'){
@@ -104,12 +141,12 @@ export function compile({root, batches, channel}) {
         if(!row.text || !Object.values(row.text).some(string))reasons.push('definition missing');
         if(!row.scope)reasons.push('applicability not specified');
         reasons.push('technical approval pending');
-        pending.set(row.id,{sequence:batch.sequence,id:row.id,reason:reasons.join(', ')});
+        pending.set(row.id,{sequence:batch.sequence,id:row.id,source:row.source ?? null,reason:reasons.join(', ')});
         continue;
       }
       if(row.status==='pending'){
         assert(string(row.id) && string(row.reason),'Review entry needs ID and reason');
-        pending.set(row.id,{sequence:batch.sequence,id:row.id,reason:row.reason});
+        pending.set(row.id,{sequence:batch.sequence,id:row.id,source:row.source ?? null,reason:row.reason});
         continue;
       }
       validate(root,row,channel);
@@ -129,9 +166,9 @@ export function compile({root, batches, channel}) {
         for(const lang of Object.keys(previous.text)) assert(string(row.text[lang]),'Translation removed');
       } else assert(!row.replaces,'Correction has no predecessor');
       if(!previous){
-        const related=scopesByCode.get(row.code.toUpperCase())||[];
+        const related=scopesByCode.get(codeKey(row.code))||[];
         for(const other of related)assert(!overlapping(other,row.scope) || includesScope(other,row.scope) || includesScope(row.scope,other),'Ambiguous overlapping code contexts');
-        related.push(row.scope);scopesByCode.set(row.code.toUpperCase(),related);
+        related.push(row.scope);scopesByCode.set(codeKey(row.code),related);
       }
       identities.set(key,row.id);
       revisions.set(row.id,row);
@@ -140,7 +177,7 @@ export function compile({root, batches, channel}) {
       audit.push({id:row.id,changed,operation:previous?'correct':'add',previous:previous?hash(json(previous)):null,current:hash(json(row)),source:row.source,reviewedBy:row.reviewedBy});
     }
     const digest=hash(json({parent,batch}));
-    states.push({sequence:batch.sequence,date:batch.date,digest,parent,records:new Map(records),audit,restore:batch.restore??null,reason:batch.reason??null});
+    states.push({sequence:batch.sequence,date:batch.date,digest,parent,records:new Map(records),vehicles:new Map(vehicles),audit,restore:batch.restore??null,reason:batch.reason??null});
     parent=digest;
   }
   return {states,pending:[...pending.values()]};
@@ -186,11 +223,19 @@ export async function publish({out,channel,states,privateKey,commit,verifyDelive
       immutable(path.join(out,'packs',sha256+'.json'),bytes);
       packs.push({group,sha256,count:rows.length});
     }
+    let vehiclePack;
+    if(state.vehicles?.size){
+      const vehicles=[...state.vehicles.values()].sort((a,b)=>a.id.localeCompare(b.id));
+      const bytes=json(vehicles),sha256=hash(bytes);
+      immutable(path.join(out,'packs',sha256+'.json'),bytes);
+      vehiclePack={group:'vehicles',sha256,count:vehicles.length};
+    }
     if(channel==='stable'){
       assert(typeof verifyDelivery==='function','Public delivery verification required');
       for(const pack of packs)await verifyDelivery(pack.sha256);
+      if(vehiclePack)await verifyDelivery(vehiclePack.sha256);
     }
-    const payload=json({schema:1,channel,sequence:state.sequence,date:state.date,digest:state.digest,commit,packs,restore:state.restore,reason:state.reason});
+    const payload=json({schema:1,channel,sequence:state.sequence,date:state.date,digest:state.digest,commit,packs,vehiclePack,restore:state.restore,reason:state.reason});
     const signature=sign('sha256',payload,{key:privateKey,dsaEncoding:'ieee-p1363'});
     const envelope=json({payload:payload.toString('base64'),signature:signature.toString('base64')});
     // A retry after an interrupted activation reuses the already signed envelope.

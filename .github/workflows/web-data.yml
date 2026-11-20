@@ -1,31 +1,38 @@
 name: Reviewed web data
 on:
   pull_request:
-    paths: ['data/**', 'ci/web-release*', 'qa/web-*', '.github/workflows/web-data.yml']
+    paths: ['data/**', 'ci/web-*.mjs', 'qa/web-*', '.github/workflows/web-data.yml']
   push:
     branches: [main]
-    paths: ['data/web/batches/*.json']
+    paths: ['data/master/**', 'data/web/batches/*.json', 'ci/web-*.mjs']
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
   validate:
     runs-on: ubuntu-latest
+    outputs:
+      has_batches: ${{ steps.batches.outputs.present }}
     steps:
       - uses: actions/checkout@v4
         with: {fetch-depth: 0}
       - uses: actions/setup-node@v4
         with: {node-version: 24}
       - run: node ci/verify_master_data.cjs
+      - id: batches
+        run: echo "present=${{ hashFiles('data/web/batches/*.json') != '' }}" >> "$GITHUB_OUTPUT"
       - run: node --test qa/web-release.test.mjs
+      - run: node ci/web-vehicle-inventory.mjs web-vehicle-review.json
       - run: node ci/web-release.mjs
         env: {DTC_REVIEW_REPORT: web-review-queue.json}
       - uses: actions/upload-artifact@v4
         with:
           name: web-review-queue
-          path: web-review-queue.json
+          path: |
+            web-review-queue.json
+            web-vehicle-review.json
   distribute:
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && vars.DTC_WEB_PUBLICATION == 'enabled'
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && needs.validate.outputs.has_batches == 'true' && vars.DTC_WEB_PUBLICATION == 'enabled'
     needs: validate
     environment: web-data-production
     concurrency: {group: web-data-production, cancel-in-progress: false}

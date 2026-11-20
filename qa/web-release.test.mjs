@@ -8,6 +8,30 @@ import path from 'node:path';
 import {compile,publish} from '../ci/web-release.mjs';
 import {root,trialBatches,generateTrial} from './web-fixture.mjs';
 
+test('stable vehicle batches bind each ID to its original model, year, code and evidence',()=>{
+  const commit='2df439b7b13fae8381a20c3faf5819ea8ee56f3e';
+  function review(file,table,choose){
+    const bytes=execFileSync('git',['show',commit+':'+file],{cwd:root,encoding:'utf8'}).replace(/\r\n/g,'\n');
+    const rows=JSON.parse(bytes).related_datasets[table],index=rows.findIndex(choose);
+    assert(index>=0);
+    return {id:rows[index].id,status:'approved',reviewedBy:'Local transport simulation',
+      source:{file,commit,sha256:createHash('sha256').update(bytes).digest('hex'),pointer:'/related_datasets/'+table+'/'+index}};
+  }
+  const file='data/master/brands/honda_batch02_related.json';
+  const engine=review(file,'engines',r=>r.engine_code==='K20C1' && r.model_year_scope==='2015');
+  const car=review(file,'vehicles',r=>r.id==='HND-VEH-EU-CIVIC-2006-8TH');
+  const unlinked=review('data/master/brands/toyota_exp002_related.json','engines',()=>true);
+  const build=vehicles=>compile({root,channel:'stable',batches:[{sequence:1,date:'2026-11-20T00:00:00.000Z',channel:'stable',changes:[],vehicles}]});
+  const {states}=build([car,engine]),row=states[0].vehicles.get(engine.id);
+  assert.deepEqual([row.make,row.model,row.yearStart,row.yearEnd,row.engineCodes[0]],['Honda','Civic Type R',2015,2015,'K20C1']);
+  assert.equal(states[0].vehicles.get(car.id).name,undefined);
+  assert.throws(()=>build([engine,engine]),/Duplicate/);
+  assert.throws(()=>build([unlinked]),/source ID/);
+  assert.throws(()=>build([{...engine,status:'candidate'}]),/review/);
+  assert.throws(()=>build([{...engine,source:{...engine.source,pointer:car.source.pointer}}]),/ID mismatch/);
+  assert.throws(()=>build([{...engine,source:{...engine.source,sha256:'0'}}]),/fingerprint/);
+});
+
 test('publication replaces one pack, preserves IDs, defers incomplete evidence, restores the prior records',async t=>{
   const dir=fs.mkdtempSync(path.join(os.tmpdir(),'dtc-feed-'));
   t.after(()=>fs.rmSync(dir,{recursive:true,force:true}));
