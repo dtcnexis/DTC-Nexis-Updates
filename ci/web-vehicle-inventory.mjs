@@ -47,7 +47,7 @@ for(const file of paths.filter(f=>f.endsWith('.json'))){
       records.push({file,pointer,id,type,make,model,vehicleId:row.vehicle_id,engineId:row.engine_id,
         engineName:row.commercial_engine_name ?? row.engine_display_name ?? row.description,
         code:row.engine_code ?? row.engine_code_family,codeVerified:row.engine_code_verified,
-        years,productionYears,status,sourceIds:row.source_ids,reasons});
+        years,productionYears,...(row.variant_period && {variantPeriod:modelYears(row.variant_period)}),status,sourceIds:row.source_ids,reasons});
       groups[type]++;
       if(make)makes.add(make);
       if(make && model)models.add(JSON.stringify([make,model]));

@@ -62,9 +62,12 @@ export function projectVehicleRow(brand,tables,table,index,review) {
   const car = isEngine ? unique(tables.vehicles,src.vehicle_id) : src;
   const market=car.market ?? car.markets_confirmed_listed?.join(' / ');
   assert(text(car.brand) && (!brand || car.brand===brand) && text(car.model) && text(market),'Incomplete vehicle identity');
-  const carYears = modelYears(car.model_years ?? (car.model_year_start && car.model_year_end ? car.model_year_start+'-'+car.model_year_end : ''));
-  const engineYears=src.model_year_scope ?? (src.model_year_start && src.model_year_end ? src.model_year_start+'-'+src.model_year_end : '');
+  const carYears = modelYears(car.variant_period ?? car.model_years ?? (car.model_year_start && car.model_year_end ? car.model_year_start+'-'+car.model_year_end : ''));
+  const engineYears=src.variant_period ?? src.model_year_scope ?? (src.model_year_start && src.model_year_end ? src.model_year_start+'-'+src.model_year_end : '');
   const years = isEngine ? modelYears(engineYears) : carYears;
+  if (src.variant_period !== undefined) {
+    assert(years && !src.model_year_scope && !src.model_years && !src.model_year_start && !src.model_year_end, 'Ambiguous variant period');
+  }
   if(isEngine)assert(years && carYears && years[0]>=carYears[0] && years[1]<=carYears[1], 'Explicit, compatible model-year bounds required');
   const refs = (src.source_ids ?? []).map(id=>unique(tables.sources,id));
   assert(refs.length && refs.every(ref=>/^https:\/\//.test(ref.url)), 'Missing vehicle technical reference');
@@ -89,5 +92,6 @@ export function projectVehicleRow(brand,tables,table,index,review) {
       record.engineCodeEvidence=[{code,source:record.source,scope:record.scope}];
     }
   }
+  if (src.variant_period !== undefined) record.yearBasis='variant_period';
   return record;
 }

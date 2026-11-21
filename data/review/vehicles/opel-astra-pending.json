@@ -1,0 +1,37 @@
+{
+  "brand": "Opel",
+  "scope": "Astra F/G/H/J/K/L",
+  "pending": [
+    {
+      "id": "astra-de-staging-crosswalk",
+      "source": {
+        "commit": "5ac783f7c15c530714dc31f7e16a6c8d57a800a8",
+        "directory": "data/master/reviews/vehicle_catalog_full_20261118/gor3a",
+        "files": {
+          "engines_part_011.csv": 391,
+          "engines_part_012.csv": 10
+        },
+        "filter": "make=Opel; model=Astra or model starts with 'Astra '"
+      },
+      "reason": "401 staging rows require individual market, generation, body, trim and date crosswalks. No staging row is automatically approved by a similar name or output."
+    },
+    {
+      "id": "astra-f-g-j-engine-codes",
+      "source_ids": [
+        "opel-f-gsi",
+        "adac-985670",
+        "adac-993594",
+        "adac-220344"
+      ],
+      "reason": "F/G references identify named variants without a unique engine code. The J source lists alternative designations; resolve against an Opel workshop reference for the exact date and car."
+    },
+    {
+      "id": "astra-body-market-boundaries",
+      "source_ids": [
+        "adac-de-series",
+        "opel-history"
+      ],
+      "reason": "Series dates aggregate German catalogue entries. The maker's main-generation timeline is shorter for several bodies; verify Classic continuations, other markets and each additional body separately."
+    }
+  ]
+}
