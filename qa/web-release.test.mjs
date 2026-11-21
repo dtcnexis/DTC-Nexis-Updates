@@ -109,3 +109,4 @@ test('a stable-channel build pins source history and activates only after delive
   await publish({...args,verifyDelivery:async sha=>assert.equal(createHash('sha256').update(fs.readFileSync(path.join(out,'packs',sha+'.json'))).digest('hex'),sha)});
   assert(fs.existsSync(path.join(out,'current.json')));
 });
+import './web-sensors.test.mjs';

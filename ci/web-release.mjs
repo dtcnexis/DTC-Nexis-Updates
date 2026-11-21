@@ -4,6 +4,7 @@ import path from 'node:path';
 import {createHash, createPublicKey, randomUUID, sign, verify} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {pathToFileURL} from 'node:url';
+import {validateSensorCatalog} from './sensor-model.mjs';
 import {reviewedVehicle} from './web-vehicles.mjs';
 
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
@@ -22,6 +23,17 @@ const scopeKey = row => JSON.stringify([codeKey(row.code),...fields.map(k=>k==='
 const rank = {technical:1,manufacturer:2};
 
 const isTestEvidence=row=>/\bTEST (?:legacy|notes|cause|check)\b|synthetic fixture|example\.invalid|automated trial only/i.test(JSON.stringify(row));
+
+// Read the reviewed revision rather than the publisher's mutable worktree.
+function reviewedSensors(root, review) {
+  const file = 'data/master/sensors/multimeter-v1.json';
+  assert(review.file === file && string(review.reviewedBy), 'Sensor catalogue must be reviewed');
+  assert(/^[a-f0-9]{40}$/.test(review.commit) && /^[a-f0-9]{64}$/.test(review.sha256), 'Missing sensor source fingerprint');
+  execFileSync('git', ['merge-base','--is-ancestor',review.commit,'refs/remotes/origin/main'], {cwd:root});
+  const bytes = execFileSync('git',['show',review.commit+':'+file],{cwd:root,encoding:'utf8'}).replace(/\r\n/g,'\n');
+  assert.equal(hash(bytes), review.sha256, 'Sensor source fingerprint mismatch');
+  return validateSensorCatalog(JSON.parse(bytes));
+}
 
 function evidence(root, row, channel) {
   const ref = row.source;
@@ -105,7 +117,7 @@ export function compile({root, batches, channel}) {
   assert(['trial','stable'].includes(channel));
   const states=[], pending=new Map(), revisions=new Map(), identities=new Map(), scopesByCode=new Map();
   let records=new Map(), parent=null;
-  let vehicles=new Map();
+  let vehicles=new Map(), sensors;
   const vehicleHistory=new Map(), sourceCache=new Map();
   for(const [index,batch] of batches.entries()) {
     assert.equal(batch.sequence,index+1,'Gap or duplicate release');
@@ -117,7 +129,25 @@ export function compile({root, batches, channel}) {
       assert(Number.isInteger(batch.restore)&&batch.restore>0&&batch.restore<=index&&batch.changes.length===0&&string(batch.reason),'Invalid restore');
       assert(!batch.vehicles?.length,'Restore must not add vehicle records');
       records=new Map(states[batch.restore-1].records);
+      assert(!batch.sensors,'Restore cannot replace sensor evidence');
       vehicles=new Map(states[batch.restore-1].vehicles);
+      sensors=states[batch.restore-1].sensors;
+    }
+    if (batch.sensors) {
+      assert(channel === 'stable', 'Use an approved central sensor revision');
+      const next = reviewedSensors(root, batch.sensors);
+      if (sensors) {
+        const guides = new Set(next.sensors.map(s => s.id));
+        const specs = new Map(next.specifications.map(s => [s.id, s]));
+        for (const guide of sensors.sensors) assert(guides.has(guide.id), 'Sensor guide removed');
+        for (const previous of sensors.specifications) {
+          const replacement = specs.get(previous.id);
+          assert(replacement?.sensorId === previous.sensorId, 'Sensor specification removed or reassigned');
+          assert.deepEqual(replacement.scope, previous.scope, 'Sensor specification scope reassigned');
+        }
+      }
+      sensors = next;
+      audit.push({operation:'sensor-catalogue', ...batch.sensors});
     }
     assert(Array.isArray(batch.vehicles ?? []),'Invalid vehicle reviews');
     for(const review of batch.vehicles ?? []){
@@ -177,7 +207,7 @@ export function compile({root, batches, channel}) {
       audit.push({id:row.id,changed,operation:previous?'correct':'add',previous:previous?hash(json(previous)):null,current:hash(json(row)),source:row.source,reviewedBy:row.reviewedBy});
     }
     const digest=hash(json({parent,batch}));
-    states.push({sequence:batch.sequence,date:batch.date,digest,parent,records:new Map(records),vehicles:new Map(vehicles),audit,restore:batch.restore??null,reason:batch.reason??null});
+    states.push({sequence:batch.sequence,date:batch.date,digest,parent,records:new Map(records),vehicles:new Map(vehicles),sensors,audit,restore:batch.restore??null,reason:batch.reason??null});
     parent=digest;
   }
   return {states,pending:[...pending.values()]};
@@ -230,12 +260,19 @@ export async function publish({out,channel,states,privateKey,commit,verifyDelive
       immutable(path.join(out,'packs',sha256+'.json'),bytes);
       vehiclePack={group:'vehicles',sha256,count:vehicles.length};
     }
+    let sensorPack;
+    if (state.sensors) {
+      const bytes = json([validateSensorCatalog(state.sensors)]), sha256 = hash(bytes);
+      immutable(path.join(out,'packs',sha256+'.json'),bytes);
+      sensorPack = {group:'sensor-catalogue', sha256, count:1};
+    }
     if(channel==='stable'){
       assert(typeof verifyDelivery==='function','Public delivery verification required');
       for(const pack of packs)await verifyDelivery(pack.sha256);
       if(vehiclePack)await verifyDelivery(vehiclePack.sha256);
+      if(sensorPack)await verifyDelivery(sensorPack.sha256);
     }
-    const payload=json({schema:vehiclePack?2:1,channel,sequence:state.sequence,date:state.date,digest:state.digest,commit,packs,vehiclePack,restore:state.restore,reason:state.reason});
+    const payload=json({schema:vehiclePack?2:1,channel,sequence:state.sequence,date:state.date,digest:state.digest,commit,packs,vehiclePack,sensorPack,restore:state.restore,reason:state.reason});
     const signature=sign('sha256',payload,{key:privateKey,dsaEncoding:'ieee-p1363'});
     const envelope=json({payload:payload.toString('base64'),signature:signature.toString('base64')});
     // A retry after an interrupted activation reuses the already signed envelope.
@@ -254,8 +291,10 @@ if(process.argv[1] && import.meta.url===pathToFileURL(path.resolve(process.argv[
   const root=process.cwd(),dir=path.join(root,'data/web/batches');
   const batches=fs.readdirSync(dir).filter(n=>n.endsWith('.json')).sort().map(n=>JSON.parse(fs.readFileSync(path.join(dir,n))));
   const result=compile({root,batches,channel:'stable'});
-  console.log(JSON.stringify({releases:result.states.length,pending:result.pending}));
-  if(process.env.DTC_REVIEW_REPORT)fs.writeFileSync(process.env.DTC_REVIEW_REPORT,JSON.stringify(result.pending,null,2));
+  const sensorQueue=JSON.parse(fs.readFileSync(path.join(root,'data/review/sensors/multimeter-pending.json'),'utf8'));
+  const pending=[...result.pending,...sensorQueue];
+  console.log(JSON.stringify({releases:result.states.length,pending}));
+  if(process.env.DTC_REVIEW_REPORT)fs.writeFileSync(process.env.DTC_REVIEW_REPORT,JSON.stringify(pending,null,2));
   if(process.argv[2]==='publish'){
     const commit=execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim();
     const out=process.env.DTC_DATA_ROOT, current=path.join(out,'current.json');

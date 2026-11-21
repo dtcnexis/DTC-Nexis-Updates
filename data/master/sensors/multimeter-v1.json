@@ -1,0 +1,360 @@
+{
+  "schema": 1,
+  "sensors": [
+    {
+      "id": "map",
+      "scope": "general",
+      "status": "documented-general",
+      "name": {
+        "ar": "MAP · ضغط مجمع السحب",
+        "en": "MAP · Manifold absolute pressure",
+        "sv": "MAP · Absolut insugstryck"
+      },
+      "operation": {
+        "ar": "يحوّل ضغط مجمع السحب إلى إشارة لحساب حمل المحرك. قد يوجد على المجمع أو يتصل به بخرطوم.",
+        "en": "Reports intake manifold pressure for engine load calculation. It may be mounted on the manifold or connected by a hose.",
+        "sv": "Mäter insugstryck för beräkning av motorlast. Givaren kan sitta på insuget eller vara ansluten med slang."
+      },
+      "measurement": {
+        "ar": "للنوع التناظري فقط، حدّد المرجع وأرضي الحساس والخرج. قس المرجع ثم الخرج بالنسبة إلى أرضي الحساس عند ظروف الضغط المحددة في الدليل.",
+        "en": "For an analogue sensor, identify reference, sensor ground and output. Measure reference, then output relative to sensor ground under the specified pressure conditions.",
+        "sv": "Identifiera referens, signaljord och utgång på analog givare. Mät referens och sedan utgång mot signaljord vid föreskrivet tryck."
+      },
+      "interpretation": {
+        "ar": "إذا ثبت الخرج فافحص مسار الضغط والأسلاك. تحتاج الإشارة الرقمية إلى أوسيلوسكوب.",
+        "en": "If output stays fixed, check the pressure path and wiring. Use a scope for a digital output.",
+        "sv": "Kontrollera tryckväg och kablage vid fast signal. Digital signal kräver oscilloskop."
+      },
+      "source": "https://www.picoauto.com/library/automotive-guided-tests/sensors/manifold-air-pressure/AGT-024-manifold-absolute-pressure-gasoline/",
+      "references": [
+        {
+          "title": {
+            "ar": "رسم HELLA لحساس الضغط والحرارة المدمج",
+            "en": "HELLA combined pressure and temperature sensor diagram",
+            "sv": "HELLA-schema för kombinerad tryck- och temperaturgivare"
+          },
+          "url": "https://www.hella.com/techworld/en/ti/intake-manifold-pressure-sensor-with-integrated-intake-air-temperature-sensor/"
+        },
+        {
+          "title": {
+            "ar": "مثال خرج رقمي",
+            "en": "Digital output example",
+            "sv": "Exempel på digital utgång"
+          },
+          "url": "https://www.picoauto.com/library/automotive-guided-tests/sensors/manifold-air-pressure/AGT-025-manifold-absolute-pressure-digital/"
+        }
+      ]
+    },
+    {
+      "id": "maf",
+      "scope": "general",
+      "status": "documented-general",
+      "name": {
+        "ar": "MAF · كتلة الهواء",
+        "en": "MAF · Mass airflow",
+        "sv": "MAF · Luftmassa"
+      },
+      "operation": {
+        "ar": "يقيس كتلة الهواء الداخل. في نوع السلك الساخن تتغيّر طاقة التسخين مع التدفق. في الترتيب الموضح لدى HELLA يقع بين علبة مرشح الهواء ومجمع السحب.",
+        "en": "Measures intake air mass. A hot-wire meter changes heating power as airflow changes. In the HELLA illustration it sits between the air filter housing and intake manifold.",
+        "sv": "Mäter insugsluftens massa. I en varmtrådsgivare ändras värmeeffekten med luftflödet. I HELLA:s exempel sitter den mellan luftfilterhuset och insuget."
+      },
+      "measurement": {
+        "ar": "حدّد التغذية والأرضي ونوع الخرج من المخطط. للخرج التناظري قس الإشارة خلال تغير التدفق وفق إجراء المصنع. تجنّب لمس عنصر القياس.",
+        "en": "Identify supply, ground and output type. For analogue output measure the signal as airflow varies under the workshop procedure. Keep clear of the sensing element.",
+        "sv": "Identifiera matning, jord och signaltyp. Mät analog signal vid ändrat luftflöde enligt verkstadshandboken. Rör inte mätelementet."
+      },
+      "interpretation": {
+        "ar": "افحص تسرب السحب والتغذية قبل إدانة الحساس. استخدم الأوسيلوسكوب للخرج الترددي أو الاستجابة السريعة.",
+        "en": "Check intake leaks and power before condemning the meter. Use a scope for frequency output or transient response.",
+        "sv": "Kontrollera luftläckor och matning. Använd oscilloskop för frekvenssignal eller snabba förlopp."
+      },
+      "source": "https://www.picoauto.com/library/automotive-guided-tests/sensors/air-flow-mass/AGT-007-air-flow-meter-hot-wire-gasoline/",
+      "references": [
+        {
+          "title": {
+            "ar": "صور HELLA وموقع الحساس في مسار السحب (PDF)",
+            "en": "HELLA sensor photos and intake location (PDF)",
+            "sv": "HELLA-bilder och placering i insuget (PDF)"
+          },
+          "url": "https://www.hella.com/forvia-us/assets/documents/BI_MAF_Mass_Air_Flow_Sensor_2026.pdf"
+        }
+      ]
+    },
+    {
+      "id": "tps",
+      "scope": "general",
+      "status": "documented-general",
+      "name": {
+        "ar": "TPS · موضع الخانق",
+        "en": "TPS · Throttle position",
+        "sv": "TPS · Spjälläge"
+      },
+      "operation": {
+        "ar": "يبلغ وحدة التحكم بزاوية الخانق. قد يستخدم مسار مقاومة أو مسارات مزدوجة.",
+        "en": "Reports throttle angle. Designs include a potentiometer or redundant tracks.",
+        "sv": "Anger spjällets vinkel. Konstruktionen kan ha potentiometer eller dubbla signalbanor."
+      },
+      "measurement": {
+        "ar": "في النوع التناظري حدّد المرجع والأرضي ومنزلق الإشارة. راقب خرج المسار عند تغيير الموضع بالطريقة المعتمدة فقط. لا تحرّك خانقًا كهربائيًا بالقوة.",
+        "en": "For an analogue track identify reference, ground and wiper. Monitor output through workshop-approved movement only. Never force a motorised throttle.",
+        "sv": "Identifiera referens, jord och löpare på analog givare. Följ signalen under godkänd manövrering. Tvinga aldrig ett elspjäll."
+      },
+      "interpretation": {
+        "ar": "قارن كل مسار بمنحناه الخاص. قد يفوت الملتيميتر انقطاعًا لحظيًا؛ سجّل الإشارة بالأوسيلوسكوب.",
+        "en": "Compare each track with its own curve. A meter can miss dropouts; capture them with a scope.",
+        "sv": "Jämför varje bana med dess egen kurva. Korta avbrott kan kräva oscilloskop."
+      },
+      "source": "https://www.picoauto.com/library/automotive-guided-tests/sensors/throttle-position/AGT-029-throttle-position-potentiometer/"
+    },
+    {
+      "id": "ect",
+      "scope": "general",
+      "status": "documented-general",
+      "name": {
+        "ar": "ECT · حرارة سائل التبريد",
+        "en": "ECT · Coolant temperature",
+        "sv": "ECT · Kylvätsketemperatur"
+      },
+      "operation": {
+        "ar": "يدلّ تغير مقاومة الثرمستور على حرارة سائل التبريد. تُقرأ الدائرة عبر إشارة منحازة ومرجع عودة.",
+        "en": "Thermistor resistance follows coolant temperature. The controller reads a biased signal relative to its return.",
+        "sv": "Termistorns resistans följer kylvätskans temperatur. Styrenheten läser en förspänd signal mot returledningen."
+      },
+      "measurement": {
+        "ar": "والمحرك بارد، قارن القراءة الحية بحرارة مرجعية. إذا حدّد الدليل اختبار مقاومة فاعزل الحساس وافصل التغذية ثم قس بين طرفيه عند حرارة معلومة.",
+        "en": "With a cold engine compare live data with a temperature reference. If a resistance test is specified, isolate the unpowered sensor and measure across its terminals at a known temperature.",
+        "sv": "Jämför kallmotorns livedata med en känd temperatur. Om resistansprov föreskrivs, mät över den frånkopplade spänningslösa givaren vid känd temperatur."
+      },
+      "interpretation": {
+        "ar": "قارن بجدول المصنع. افحص الدائرة المفتوحة أو القصر إذا كانت القراءة غير معقولة. لا تفتح دورة تبريد ساخنة.",
+        "en": "Compare with the factory curve. Check for an open or short if the reading is implausible. Do not open a hot cooling system.",
+        "sv": "Jämför med tillverkarens kurva. Sök avbrott eller kortslutning vid orimligt värde. Öppna inte ett varmt kylsystem."
+      },
+      "source": "https://www.picoauto.com/library/automotive-guided-tests/sensors/coolant-temperature/AGT-015-engine-coolant-temperature-5-v/"
+    },
+    {
+      "id": "iat",
+      "scope": "general",
+      "status": "documented-general",
+      "name": {
+        "ar": "IAT · حرارة هواء السحب",
+        "en": "IAT · Intake air temperature",
+        "sv": "IAT · Insugslufttemperatur"
+      },
+      "operation": {
+        "ar": "يقيس ثرمستور حرارة هواء السحب. قد يُدمج بحساس الضغط فتشترك الوظيفتان في موصل.",
+        "en": "A thermistor senses intake air temperature. It may share a connector with a pressure sensor.",
+        "sv": "En termistor mäter insugsluftens temperatur. Kontakten kan vara gemensam med tryckgivaren."
+      },
+      "measurement": {
+        "ar": "حدّد طرفي عنصر الحرارة تحديدًا من الرسم. عند فصل التغذية والموصل، قس مقاومة العنصر إذا سمح الدليل وسجّل حرارة الهواء معه.",
+        "en": "Identify the temperature element terminals in the diagram. If permitted, measure the isolated, unpowered element and record the air temperature.",
+        "sv": "Identifiera temperaturdelens stift i schemat. Mät resistansen på frånkopplat spänningslöst element om det är tillåtet och anteckna lufttemperaturen."
+      },
+      "interpretation": {
+        "ar": "قارن بمنحنى العنصر وبالبيانات الحية. قياس أطراف الضغط في الموصل نفسه لا يختبر عنصر الحرارة.",
+        "en": "Compare with its temperature curve and live data. Measuring the pressure circuit does not test the temperature element.",
+        "sv": "Jämför med temperaturkurvan och livedata. Mätning på tryckdelen testar inte temperaturdelen."
+      },
+      "source": "https://www.hella.com/techworld/en/ti/intake-manifold-pressure-sensor-with-integrated-intake-air-temperature-sensor/",
+      "references": [
+        {
+          "title": {
+            "ar": "رسم HELLA لحساس الضغط والحرارة المدمج",
+            "en": "HELLA combined pressure and temperature sensor diagram",
+            "sv": "HELLA-schema för kombinerad tryck- och temperaturgivare"
+          },
+          "url": "https://www.hella.com/techworld/en/ti/intake-manifold-pressure-sensor-with-integrated-intake-air-temperature-sensor/"
+        }
+      ]
+    },
+    {
+      "id": "ckp",
+      "scope": "general",
+      "status": "documented-general",
+      "name": {
+        "ar": "CKP · موضع العمود المرفقي",
+        "en": "CKP · Crankshaft position",
+        "sv": "CKP · Vevaxelläge"
+      },
+      "operation": {
+        "ar": "ترصد نبضات عجلة الإشارة سرعة العمود المرفقي وموضعه لتوقيت المحرك.",
+        "en": "Pulses from a target wheel encode engine speed and crankshaft position for timing.",
+        "sv": "Pulser från ett givarhjul anger motorvarvtal och vevaxelläge för motorstyrningen."
+      },
+      "measurement": {
+        "ar": "ميّز الحساس الحثي عن النشط من مخطط المحرك. افحص تغذية وأرضي النوع النشط فقط وفق المخطط. ثبّت المجسات بعيدًا عن الأجزاء الدوارة قبل التدوير.",
+        "en": "Use the engine diagram to distinguish inductive and powered sensors. Check the powered type’s supply and ground as specified. Secure probes clear of rotating parts before cranking.",
+        "sv": "Skilj induktiv och aktiv givare med motorschemat. Kontrollera aktiv givares matning och jord. Fäst proberna bort från roterande delar före startförsök."
+      },
+      "interpretation": {
+        "ar": "لا تثبت قراءة الجهد المتوسط التزامن. استخدم الأوسيلوسكوب لفحص النبضات وعجلة الإشارة أثناء التدوير.",
+        "en": "Average voltage cannot establish synchronisation. Scope the waveform during cranking and inspect the target wheel.",
+        "sv": "Medelspänning visar inte synkronisering. Kontrollera pulserna vid startförsök med oscilloskop och inspektera givarhjulet."
+      },
+      "source": "https://www.picoauto.com/library/automotive-guided-tests/sensors/crankshaft-position/AGT-012-crankshaft-position-hall-effect-running/"
+    },
+    {
+      "id": "cmp",
+      "scope": "general",
+      "status": "documented-general",
+      "name": {
+        "ar": "CMP · موضع عمود الكامات",
+        "en": "CMP · Camshaft position",
+        "sv": "CMP · Kamaxelläge"
+      },
+      "operation": {
+        "ar": "يعطي طور عمود الكامات بالنسبة إلى دوران المحرك. قد تكون الإشارة حثية أو رقمية.",
+        "en": "Indicates camshaft phase relative to engine rotation. Designs include inductive and digital outputs.",
+        "sv": "Anger kamaxelns fas i förhållande till motorrotationen. Signalen kan vara induktiv eller digital."
+      },
+      "measurement": {
+        "ar": "حدّد نوع الدائرة. لحساس Hall قس التغذية وفرق جهد الأرضي حسب الدليل ثم سجل الخرج بالأوسيلوسكوب.",
+        "en": "Identify the circuit type. For Hall sensors verify supply and ground voltage drop per manual, then capture the output with a scope.",
+        "sv": "Identifiera kretstypen. För Hallgivare, mät matning och spänningsfall i jord enligt handboken och registrera signalen med oscilloskop."
+      },
+      "interpretation": {
+        "ar": "إذا وُجدت نبضات لكن التزامن خاطئ فقارن CMP مع CKP بمرجع مطابق للمحرك قبل استبدال الحساس.",
+        "en": "When pulses exist but timing is wrong, compare CMP with CKP against an engine-specific reference before replacement.",
+        "sv": "Finns pulser men fel fas, jämför CMP och CKP med motorns referens innan givaren byts."
+      },
+      "source": "https://www.picoauto.com/library/automotive-guided-tests/sensors/camshaft-position/AGT-061-camshaft-position-hall-effect/",
+      "references": [
+        {
+          "title": {
+            "ar": "مثال إشارة حساس حثي",
+            "en": "Inductive waveform example",
+            "sv": "Exempel på induktiv signal"
+          },
+          "url": "https://www.picoauto.com/library/automotive-guided-tests/sensors/camshaft-position/AGT-011-camshaft-position-inductive/"
+        }
+      ]
+    },
+    {
+      "id": "oxygen",
+      "scope": "general",
+      "status": "documented-general",
+      "name": {
+        "ar": "حساس الأكسجين · لامبدا",
+        "en": "Oxygen · Lambda sensor",
+        "sv": "Syre · Lambdasond"
+      },
+      "operation": {
+        "ar": "يراقب الأكسجين في العادم. يختلف خرج الزركونيا ضيق النطاق عن دائرة تيار الضخ واسعة النطاق.",
+        "en": "Monitors exhaust oxygen. Narrowband zirconia output differs from a wideband pump-current circuit.",
+        "sv": "Övervakar syre i avgaserna. Smalbandssondens signal skiljer sig från bredbandssondens pumpström."
+      },
+      "measurement": {
+        "ar": "حدّد البنك والموضع ونوع الحساس وأطراف السخان من الدليل. اختبر دائرة السخان منفصلة وبالشروط المحددة؛ لا تُدخل جهدًا في دائرة القياس.",
+        "en": "Identify bank, position, sensor type and heater terminals. Check the heater separately as specified. Never apply voltage to the sensing circuit.",
+        "sv": "Identifiera bank, position, sondtyp och värmarstift. Kontrollera värmaren separat enligt anvisning. Mata aldrig mätkretsen med spänning."
+      },
+      "interpretation": {
+        "ar": "استخدم الأوسيلوسكوب لاستجابة النوع الضيق وجهاز التشخيص للنوع الواسع. افحص تسرب العادم واحذر حرارة السطح.",
+        "en": "Use a scope for narrowband response and scanner data for wideband operation. Check exhaust leaks and beware of hot surfaces.",
+        "sv": "Använd oscilloskop för smalbandssvar och diagnosdata för bredband. Kontrollera avgasläckor och undvik heta ytor."
+      },
+      "source": "https://www.picoauto.com/library/automotive-guided-tests/sensors/oxygen/AGT-022-oxygen-zirconia-output/",
+      "references": [
+        {
+          "title": {
+            "ar": "مثال إشارة حساس واسع النطاق",
+            "en": "Wideband signal example",
+            "sv": "Exempel på bredbandssignal"
+          },
+          "url": "https://www.picoauto.com/library/automotive-guided-tests/sensors/oxygen/AGT-402-bosch-lsu-42-oxygen-sensor-switching/"
+        }
+      ]
+    },
+    {
+      "id": "fuel-pressure",
+      "scope": "general",
+      "status": "documented-general",
+      "name": {
+        "ar": "حساس ضغط الوقود",
+        "en": "Fuel rail pressure",
+        "sv": "Bränslerälstryck"
+      },
+      "operation": {
+        "ar": "يحوّل محوّل الضغط في منظومة الحقن ضغط السكة إلى إشارة للتحكم بالوقود.",
+        "en": "The rail pressure transducer provides feedback for fuel pressure control.",
+        "sv": "Tryckgivaren på rälen ger återkoppling till bränsletrycksregleringen."
+      },
+      "measurement": {
+        "ar": "استخدم مخطط النسخة لتحديد المرجع والأرضي والإشارة. افحص الدائرة كهربائيًا فقط وقارن الإشارة ببيانات الضغط المطلوبة والفعلية.",
+        "en": "Use the variant diagram to identify reference, ground and signal. Make electrical checks only and compare with requested and actual pressure data.",
+        "sv": "Identifiera referens, jord och signal med rätt schema. Gör endast elektriska prov och jämför med begärt och uppmätt tryck i livedata."
+      },
+      "interpretation": {
+        "ar": "قد يكون الانحراف من التحكم بالضغط أو الأسلاك. لا تفك أي وصلة وقود عالية الضغط لإجراء هذا الفحص.",
+        "en": "Deviation may originate in pressure regulation or wiring. Never loosen a high-pressure fuel connection for this test.",
+        "sv": "Avvikelse kan bero på reglering eller kablage. Lossa aldrig en högtrycksanslutning för detta prov."
+      },
+      "source": "https://www.picoauto.com/library/automotive-guided-tests/sensors/fuel-pressure/AGT-138-crd-bosch-fuel-rail-pressure/"
+    },
+    {
+      "id": "boost",
+      "scope": "general",
+      "status": "documented-general",
+      "name": {
+        "ar": "حساس ضغط الشحن",
+        "en": "Boost pressure",
+        "sv": "Laddtryck"
+      },
+      "operation": {
+        "ar": "يقيس ضغط هواء الشحن لتغذية التحكم بالتوربو. يختلف موضع أخذ الضغط باختلاف النظام.",
+        "en": "Measures charge-air pressure for turbo control. The pressure tapping point depends on the system.",
+        "sv": "Mäter laddlufttryck för turboregleringen. Mätpunkten varierar med systemet."
+      },
+      "measurement": {
+        "ar": "حدّد نوع الإشارة والتغذية والأرضي. في النوع التناظري افحص الخرج عند فتح الإشعال والمحرك متوقف ثم قارن بقراءة الضغط المطلق المناسبة.",
+        "en": "Identify signal type, supply and ground. For analogue designs check output with ignition on and engine stopped against the applicable absolute pressure reading.",
+        "sv": "Identifiera signaltyp, matning och jord. Vid analog signal, kontrollera utgången med tändning på och motor av mot tillämpligt absoluttryck."
+      },
+      "interpretation": {
+        "ar": "فرّق بين الضغط المطلق والنسبي. لفحص تغير الشحن استخدم تسجيل البيانات وفق إجراء المصنع؛ افحص تسرب الأنابيب أيضًا.",
+        "en": "Distinguish absolute and gauge pressure. Log boost changes under the factory procedure and check pipework for leaks.",
+        "sv": "Skilj absoluttryck från övertryck. Logga laddtrycket enligt tillverkarens prov och kontrollera rören för läckor."
+      },
+      "source": "https://www.picoauto.com/library/automotive-guided-tests/sensors/manifold-air-pressure/AGT-010-manifold-absolute-pressure-turbo-diesel/"
+    },
+    {
+      "id": "abs",
+      "scope": "general",
+      "status": "documented-general",
+      "name": {
+        "ar": "ABS · سرعة العجلة",
+        "en": "ABS · Wheel speed",
+        "sv": "ABS · Hjulhastighet"
+      },
+      "operation": {
+        "ar": "يقرأ الحساس حلقة الإشارة عند العجلة. قد يكون حثيًا أو نشطًا يرمّز السرعة بالتيار.",
+        "en": "Reads a wheel encoder. Designs include inductive sensors and active current-modulated sensors.",
+        "sv": "Läser en givarring vid hjulet. Det finns induktiva och aktiva strömmodulerade givare."
+      },
+      "measurement": {
+        "ar": "حدّد العجلة ونوع الدائرة من مخطط ABS. اختبر التغذية بحسب المخطط؛ لا تقس مقاومة حساس نشط. ثبّت السيارة قبل أي تدوير للعجلة.",
+        "en": "Identify wheel and circuit type from the ABS diagram. Check supply as specified. Do not resistance-test an active sensor. Secure the vehicle before turning a wheel.",
+        "sv": "Identifiera hjul och kretstyp i ABS-schemat. Kontrollera matning enligt anvisning. Ohmmät inte en aktiv givare. Säkra bilen innan hjulet vrids."
+      },
+      "interpretation": {
+        "ar": "قارن سرعات العجلات بجهاز التشخيص. يحتاج انقطاع النبض أو عيب الحلقة فحصًا بالأوسيلوسكوب وفحص الحلقة والأسلاك.",
+        "en": "Compare wheel speeds on a scanner. Investigate dropped pulses using a scope and inspect the encoder and wiring.",
+        "sv": "Jämför hjulhastigheter med diagnosverktyg. Kontrollera pulsbortfall med oscilloskop och granska givarring och kablage."
+      },
+      "source": "https://www.picoauto.com/library/automotive-guided-tests/sensors/wheel-speed/AGT-072-wheel-speed-sensor-hall-effect/",
+      "references": [
+        {
+          "title": {
+            "ar": "مثال حساس سرعة عجلة حثي",
+            "en": "Inductive wheel speed example",
+            "sv": "Exempel på induktiv hjulgivare"
+          },
+          "url": "https://www.picoauto.com/library/automotive-guided-tests/sensors/wheel-speed/AGT-003-wheel-speed-sensor-inductive/"
+        }
+      ]
+    }
+  ],
+  "specifications": []
+}
