@@ -48,6 +48,12 @@ export function reviewedVehicle(root, review, cache) {
     tables={vehicles:doc,sources:read(path.posix.join(path.posix.dirname(file),'sources.json')).document};
     table='vehicles';index=Number(pointer.slice(1));
   }
+  return projectVehicleRow(doc.brand,tables,table,index,review);
+}
+
+// Both local catalogue generation and the signed publisher use the same joins.
+// The publisher verifies Git ancestry, the source hash and review before this step.
+export function projectVehicleRow(brand,tables,table,index,review) {
   assert(Array.isArray(tables?.[table]), 'Unsupported vehicle source shape');
   const src=tables[table][index], id=src?.id ?? src?.vehicle_id;
   assert(text(id) && unique(tables[table],id) === src && review.id === id,'Original vehicle record ID mismatch');
@@ -55,7 +61,7 @@ export function reviewedVehicle(root, review, cache) {
   const isEngine = table !== 'vehicles';
   const car = isEngine ? unique(tables.vehicles,src.vehicle_id) : src;
   const market=car.market ?? car.markets_confirmed_listed?.join(' / ');
-  assert(text(car.brand) && (!doc.brand || car.brand===doc.brand) && text(car.model) && text(market),'Incomplete vehicle identity');
+  assert(text(car.brand) && (!brand || car.brand===brand) && text(car.model) && text(market),'Incomplete vehicle identity');
   const carYears = modelYears(car.model_years ?? (car.model_year_start && car.model_year_end ? car.model_year_start+'-'+car.model_year_end : ''));
   const engineYears=src.model_year_scope ?? (src.model_year_start && src.model_year_end ? src.model_year_start+'-'+src.model_year_end : '');
   const years = isEngine ? modelYears(engineYears) : carYears;
@@ -64,7 +70,7 @@ export function reviewedVehicle(root, review, cache) {
   assert(refs.length && refs.every(ref=>/^https:\/\//.test(ref.url)), 'Missing vehicle technical reference');
   const record = {id,make:car.brand,model:car.model,...(years?{yearStart:years[0],yearEnd:years[1]}:{}),
     scope:[market,car.generation,car.body_styles ?? car.body_style,car.trim_scope].filter(Boolean).join(' · '),
-    source:refs[0].url,references:refs.map(ref=>ref.url),upstreamCommit:commit,provenance:review.source,vehicleId:car.id ?? car.vehicle_id};
+    source:refs[0].url,references:refs.map(ref=>ref.url),upstreamCommit:review.source.commit,provenance:review.source,vehicleId:car.id ?? car.vehicle_id};
   if (isEngine) {
     const name=isVariant ? src.engine_display_name : src.commercial_engine_name;
     const status=isVariant ? 'manufacturer_explicit' : 'manufacturer_documented_specs';
