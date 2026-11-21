@@ -15,10 +15,10 @@ protected_release=stable
 
 ## تقارير مراجعة المصدر المحفوظة
 - OTHER: الدفعات 11–35 تقارير مراجعة سابقة؛ الدفعات 36–44 متابعات مصدرية مفصلة؛ الدفعات 45–54 محفوظة بصفوف وأسماء وقيم وسعات وأسانيد Git Blob لكل ملف.
-- إنهاء OTHER: [الدفعة 54](data/master/audits/vehicle_foundation_20261121/MISSING_TRANSMISSION_SOURCE_AUDIT_BATCH54_AR.md)، 1,162 / 1,162 مراجعة مصدرية، صف النهاية engines_part_017.csv:1066.
-- HYBRID: [الدفعة 55](data/master/audits/vehicle_foundation_20261121/MISSING_TRANSMISSION_HYBRID_SOURCE_AUDIT_BATCH55_AR.md)، 28 / 28.
-- EV: الدفعات 56–64، 247 / 247، [الدفعة 64](data/master/audits/vehicle_foundation_20261121/MISSING_TRANSMISSION_EV_SOURCE_AUDIT_BATCH64_AR.md).
-- LABEL_HINTS: [الدفعة 65](data/master/audits/vehicle_foundation_20261121/MISSING_TRANSMISSION_LABEL_HINTS_SOURCE_AUDIT_BATCH65_AR.md)، 32 / 32.
+- إنهاء OTHER: [الدفعة 54](https://github.com/dtcnexis/DTC-Nexis-Updates/blob/review/vehicle-foundation-audit-20261118/data/master/audits/vehicle_foundation_20261121/MISSING_TRANSMISSION_SOURCE_AUDIT_BATCH54_AR.md)، 1,162 / 1,162 مراجعة مصدرية، صف النهاية engines_part_017.csv:1066.
+- HYBRID: [الدفعة 55](https://github.com/dtcnexis/DTC-Nexis-Updates/blob/review/vehicle-foundation-audit-20261118/data/master/audits/vehicle_foundation_20261121/MISSING_TRANSMISSION_HYBRID_SOURCE_AUDIT_BATCH55_AR.md)، 28 / 28.
+- EV: الدفعات 56–64، 247 / 247، [الدفعة 64](https://github.com/dtcnexis/DTC-Nexis-Updates/blob/review/vehicle-foundation-audit-20261118/data/master/audits/vehicle_foundation_20261121/MISSING_TRANSMISSION_EV_SOURCE_AUDIT_BATCH64_AR.md).
+- LABEL_HINTS: [الدفعة 65](https://github.com/dtcnexis/DTC-Nexis-Updates/blob/review/vehicle-foundation-audit-20261118/data/master/audits/vehicle_foundation_20261121/MISSING_TRANSMISSION_LABEL_HINTS_SOURCE_AUDIT_BATCH65_AR.md)، 32 / 32.
 - تحقق بعد كل حفظ من تطابق ملف التقرير المسترجع مع النص المرسل إلى GitHub؛ لم يحدث تعديل على ملفات CSV الخام أو قائمة الانتظار.
 
 ## نتائج الاعتماد مقابل مراجعة المصدر
