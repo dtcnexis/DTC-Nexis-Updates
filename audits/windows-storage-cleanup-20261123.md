@@ -18,3 +18,13 @@ Do not remove files, releases, tags, branches, or rewrite history until exact ta
 
 ## Resume point
 Continue from main and inspect other historical Windows candidates and release assets by exact filename/size. Categorize as already removed / active dependency / review candidate. Then compare before-after repository size only after an approved cleanup; never count deleted paths as freed storage.
+
+## Follow-up branch scan — 2026-11-23
+- Enumerated 41 repository branches (as returned by branch search).
+- Confirmed that historical `release-request.json` with exact blob SHA `0d21806679a4c6f4597589a5adf5d3c6376ff017` remains present on five checked branches: `owner-stable-data-channel`, `owner-test-batch01-20261018`, `fix/r7-authenticode-release-gate-20261018`, `test/rc382-recovery-signer-qa-20261019`, `staging/vw022-no-activation-20261024`.
+- On `main` the same path returns 404. Identical SHA proves the five release-request files are the same blob, NOT that all twenty binary installer parts remain on each branch.
+- Branch comparisons with `main` succeeded; they did not establish a full file tree or reclaimable-byte estimate. Releases and tags still need independent inventory.
+- **No branches, assets, files or history deleted**. These five refs must not be deleted simply because they contain the old request: some may carry stable/channel state or unrelated reviews.
+
+### Next precise check
+Enumerate release assets and tags; inspect full trees for `installer-parts/v7/` on remaining refs; confirm backups and dependencies, then propose per-ref/per-asset deletions only where safe. Preserve signed feeds and branches carrying unique data.
