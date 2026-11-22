@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-22",
+  "scope": "Manifest collections 33-40; top-level field coverage",
+  "files_checked": 8,
+  "rows": 843,
+  "top_level_counts": {
+    "english_definition": 262,
+    "arabic_definition": 262,
+    "symptoms": 262,
+    "causes": 262,
+    "diagnostic_steps": 262,
+    "repair_steps": 0
+  },
+  "top_level_missing": {
+    "english_definition": 581,
+    "arabic_definition": 581,
+    "symptoms": 581,
+    "causes": 581,
+    "diagnostic_steps": 581,
+    "repair_steps": 843
+  },
+  "notes": "581 Audi index-only entries have no definition text; 262 BYD legacy source entries have text plus diagnostic fields, but this does not mean OEM technical verification. All review and provenance constraints remain.",
+  "file_stats": [
+    {
+      "filename": "audi_index_new_part03.json",
+      "rows": 200,
+      "top_level_full_descriptive_fields": 0
+    },
+    {
+      "filename": "audi_index_new_part04.json",
+      "rows": 200,
+      "top_level_full_descriptive_fields": 0
+    },
+    {
+      "filename": "audi_index_new_part05.json",
+      "rows": 181,
+      "top_level_full_descriptive_fields": 0
+    },
+    {
+      "filename": "byd_batch01_original_part01.json",
+      "rows": 55,
+      "top_level_full_descriptive_fields": 55
+    },
+    {
+      "filename": "byd_batch01_original_part02.json",
+      "rows": 55,
+      "top_level_full_descriptive_fields": 55
+    },
+    {
+      "filename": "byd_batch01_original_part03.json",
+      "rows": 55,
+      "top_level_full_descriptive_fields": 55
+    },
+    {
+      "filename": "byd_batch01_original_part04.json",
+      "rows": 55,
+      "top_level_full_descriptive_fields": 55
+    },
+    {
+      "filename": "byd_batch01_original_part05.json",
+      "rows": 42,
+      "top_level_full_descriptive_fields": 42
+    }
+  ]
+}
