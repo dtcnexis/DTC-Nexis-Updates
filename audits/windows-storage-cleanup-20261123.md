@@ -48,3 +48,13 @@ Enumerate release assets and tags; inspect full trees for `installer-parts/v7/` 
 - Current main branch does not include an `update-feed.json` at repository root; older stable-related branches do. Do not equate root 404 with confirmation that existing installations have stopped using legacy update endpoints.
 - **Cleanup action:** none. Storage actually reclaimed: **0 bytes verified**. Release asset and tag require separate, explicit compatibility review and recovery plan; avoid deleting any stable feeds/tags or rewriting history without verified backups and approval.
 - Next: audit all remaining branches/tags and external references to the v7 download and signed feeds. Prioritize safe removal of genuinely abandoned CI artifacts/caches with expiration policies (separate from repository blobs), if applicable. Keep Windows installer removal pending while old Windows clients may still depend on it.
+
+## Old Windows app repository audit — 2026-11-23
+- `dtcnexis/DTC-Nexis-App` default `main` tree is complete, with 6 blob files totaling 3,718,860 bytes in the current tree.
+- Largest file: `DTC_NEXIS_RC35_PRIVATE_SOURCE.zip` (3,706,058 bytes). **Preserve as original private-source recovery archive**, not an expendable build artifact.
+- Other current files: `README.md` and four RC status documents. No current large disposable EXE installer found in this tree.
+- Repository-reported size: 65,459 KiB, far larger than current checked-out tree (about 3.55 MiB), suggesting historical Git objects/refs must be audited; **not proof of the amount reclaimable**.
+- `DTC-Nexis-Updates` repo-reported size: 62,993 KiB; `DTC-Nexis-Website`: 150,967 KiB. These are repository metadata sizes and must not be summed as recoverable Windows waste.
+- Explicit user request to delete unimportant old Windows files recorded. **No current-tree Windows files positively identified as both unnecessary and safely reclaimable yet; no deletion performed.** The v7 release is a prerelease but its description states migration dependency, so removal remains a compatibility risk.
+- GitHub connector's GitHub REST fetch does not permit the repository-wide Actions artifacts inventory endpoint in this environment; cache/artifact storage remains unverified. Do not claim these were deleted.
+- Next: compare all old Windows refs against main and inventory external release dependencies. Remove only individually proven disposable objects after recovery archive verification and references check; identify whether repository history rewrite would actually be needed and keep it out of the live branch.
