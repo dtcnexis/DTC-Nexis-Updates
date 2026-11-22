@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-22",
+  "scope": "Manifest collections 17 through 24 inclusive, top-level fields; legacy_generic_pbu uses en/ar aliases",
+  "files_checked": 8,
+  "rows": 5626,
+  "normalized_field_counts": {
+    "english_definition": 4845,
+    "arabic_definition": 4845,
+    "symptoms": 0,
+    "causes": 0,
+    "diagnostic_steps": 0,
+    "repair_steps": 0
+  },
+  "normalized_missing": {
+    "english_definition": 781,
+    "arabic_definition": 781,
+    "symptoms": 5626,
+    "causes": 5626,
+    "diagnostic_steps": 5626,
+    "repair_steps": 5626
+  },
+  "file_stats": [
+    {
+      "filename": "c_codes_multibrand.json",
+      "rows": 278,
+      "english_definition": 278,
+      "arabic_definition": 278
+    },
+    {
+      "filename": "ds_automobiles.json",
+      "rows": 798,
+      "english_definition": 17,
+      "arabic_definition": 17
+    },
+    {
+      "filename": "legacy_generic_pbu.json",
+      "rows": 2137,
+      "english_definition": 2137,
+      "arabic_definition": 2137
+    },
+    {
+      "filename": "nissan.json",
+      "rows": 495,
+      "english_definition": 495,
+      "arabic_definition": 495
+    },
+    {
+      "filename": "renault.json",
+      "rows": 129,
+      "english_definition": 129,
+      "arabic_definition": 129
+    },
+    {
+      "filename": "kia.json",
+      "rows": 63,
+      "english_definition": 63,
+      "arabic_definition": 63
+    },
+    {
+      "filename": "ford.json",
+      "rows": 409,
+      "english_definition": 409,
+      "arabic_definition": 409
+    },
+    {
+      "filename": "peugeot.json",
+      "rows": 1317,
+      "english_definition": 1317,
+      "arabic_definition": 1317
+    }
+  ],
+  "notes": "The 2,137 legacy_generic_pbu entries use fields en/ar rather than definition_en/translation_ar. DS Automobiles has 781 records missing plain-text definitions at direct top level. Review original evidence and nested variants before any supplementation. No OEM QA or technical validation conferred."
+}
