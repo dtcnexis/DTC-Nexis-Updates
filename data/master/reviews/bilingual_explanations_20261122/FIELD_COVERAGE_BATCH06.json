@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-22",
+  "scope": "Manifest collections 41-48; direct fields only; BYD provisional alternative field names excluded from verified definition counts",
+  "files_checked": 8,
+  "rows": 320,
+  "top_level_counts": {
+    "english_definition": 298,
+    "arabic_definition": 308,
+    "symptoms": 246,
+    "causes": 308,
+    "diagnostic_steps": 308,
+    "repair_steps": 0
+  },
+  "top_level_missing": {
+    "english_definition": 22,
+    "arabic_definition": 12,
+    "symptoms": 74,
+    "causes": 12,
+    "diagnostic_steps": 12,
+    "repair_steps": 320
+  },
+  "notes": "BYD batch02 includes 12 provisional catalogue labels in definition_en_catalogue and translation_ar_provisional, not equivalent to validated definition fields. Jeep has 10 missing English definitions; do not translate from conjecture. The top-level diagnostic fields are unreviewed for OEM fitment.",
+  "files": [
+    "byd_batch02_new_dtc.json",
+    "lexus_batch01_preserved_part01.json",
+    "lexus_batch01_preserved_part02.json",
+    "lexus_batch01_preserved_part03.json",
+    "citroen_batch01_preserved_part01.json",
+    "infiniti_batch01_preserved_part01.json",
+    "jeep_batch01_preserved_part01.json",
+    "jeep_batch01_preserved_part02.json"
+  ]
+}
