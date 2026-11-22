@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-22",
+  "scope": "Manifest collections 9 through 16 inclusive, direct top-level fields only",
+  "files_checked": 8,
+  "rows": 834,
+  "top_level_counts": {
+    "definition_en": 805,
+    "translation_ar": 805,
+    "symptoms": 0,
+    "causes": 0,
+    "diagnostic_steps": 0,
+    "repair_steps": 0
+  },
+  "top_level_missing": {
+    "definition_en": 29,
+    "translation_ar": 29,
+    "symptoms": 834,
+    "causes": 834,
+    "diagnostic_steps": 834,
+    "repair_steps": 834
+  },
+  "file_stats": [
+    {
+      "filename": "polestar.json",
+      "rows": 29,
+      "definition_en": 0,
+      "translation_ar": 0
+    },
+    {
+      "filename": "seat.json",
+      "rows": 53,
+      "definition_en": 53,
+      "translation_ar": 53
+    },
+    {
+      "filename": "skoda.json",
+      "rows": 48,
+      "definition_en": 48,
+      "translation_ar": 48
+    },
+    {
+      "filename": "volvo.json",
+      "rows": 60,
+      "definition_en": 60,
+      "translation_ar": 60
+    },
+    {
+      "filename": "volkswagen_vag_legacy_part01.json",
+      "rows": 181,
+      "definition_en": 181,
+      "translation_ar": 181
+    },
+    {
+      "filename": "volkswagen_vag_legacy_part02.json",
+      "rows": 175,
+      "definition_en": 175,
+      "translation_ar": 175
+    },
+    {
+      "filename": "volkswagen_vag_legacy_part03.json",
+      "rows": 140,
+      "definition_en": 140,
+      "translation_ar": 140
+    },
+    {
+      "filename": "volkswagen_vag_legacy_part04.json",
+      "rows": 148,
+      "definition_en": 148,
+      "translation_ar": 148
+    }
+  ],
+  "notes": "Polestar records have definition fields present as keys but null or empty in all 29 entries; source_context_variants_20261105 must be investigated before asserting loss of source information. Nested technical content, if any, not counted. Not a QA approval."
+}
