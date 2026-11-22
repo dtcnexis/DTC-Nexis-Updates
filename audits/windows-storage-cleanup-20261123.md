@@ -28,3 +28,13 @@ Continue from main and inspect other historical Windows candidates and release a
 
 ### Next precise check
 Enumerate release assets and tags; inspect full trees for `installer-parts/v7/` on remaining refs; confirm backups and dependencies, then propose per-ref/per-asset deletions only where safe. Preserve signed feeds and branches carrying unique data.
+
+## Verified binary payload and release follow-up — 2026-11-23
+- GitHub REST Releases list confirms exactly **one currently listed release** (v7): `DTC_NEXIS_SETUP_R7.exe`, asset ID `653132256`, **60,776,288 bytes** (57.96 MiB), **23 recorded downloads**, published 2026-10-18. URL: https://github.com/dtcnexis/DTC-Nexis-Updates/releases/tag/v7
+- Git tree of **main** returned complete (non-truncated), 364 entries; there are **no installer-parts/v7 entries in main**. No significant Windows installer among the largest main branch files.
+- Complete Git trees of `owner-stable-data-channel` and `owner-test-batch01-20261018` each still carry all 20 parts at `installer-parts/v7/`, totaling **60,776,288 bytes per branch tree**. These are the same historical release payload by declared sizes; NOT 121,552,576 confirmed unique storage because Git deduplicates shared objects.
+- This directly confirms old installer blobs are **still reachable from at least two branches**, so the former main-branch deletion cannot be treated as repository history cleanup.
+- **Do not delete the stable branch or the published v7 release yet**: the public release has recorded downloads and release body describes a Windows upgrade/update route. Determine whether active users rely on its asset and whether other refs/tags preserve the installer.
+- The release asset and Git objects represent different storage classes; removing a GitHub Release asset would only reclaim its release-asset storage (subject to GitHub's accounting), not Git objects kept alive by refs.
+- Attempt to scan all 41 branch trees in one operation exceeded connector execution call limit. Inventory remains **partial**, not all branches have been audited.
+- **No destructive action performed**; next resume step: scan remaining branch trees in smaller batches via REST `git/trees/{sha}?recursive=1`, then inspect tags and version-feed references. Separate approved removal of obsolete release assets from preserving original Git data and any live signed feed.
