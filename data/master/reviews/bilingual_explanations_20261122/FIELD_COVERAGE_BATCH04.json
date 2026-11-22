@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-22",
+  "scope": "Manifest collections 25-32, top-level only; Toyota previous_batch_row and Honda legacy_data not counted",
+  "files_checked": 8,
+  "rows": 826,
+  "top_level_counts": {
+    "english_definition": 426,
+    "arabic_definition": 426,
+    "symptoms": 165,
+    "causes": 169,
+    "diagnostic_steps": 169,
+    "repair_steps": 0
+  },
+  "top_level_missing": {
+    "english_definition": 400,
+    "arabic_definition": 400,
+    "symptoms": 661,
+    "causes": 657,
+    "diagnostic_steps": 657,
+    "repair_steps": 826
+  },
+  "stats": [
+    {
+      "filename": "audi_batch01_detail.json",
+      "rows": 20,
+      "english_definition": 20,
+      "arabic_definition": 20,
+      "symptoms": 16,
+      "causes": 20,
+      "diagnostic_steps": 20
+    },
+    {
+      "filename": "dacia_batch01_149_records.json",
+      "rows": 149,
+      "english_definition": 149,
+      "arabic_definition": 149,
+      "symptoms": 149,
+      "causes": 149,
+      "diagnostic_steps": 149
+    },
+    {
+      "filename": "toyota_exp002_dtc_part01.json",
+      "rows": 70,
+      "english_definition": 70,
+      "arabic_definition": 70,
+      "symptoms": 0,
+      "causes": 0,
+      "diagnostic_steps": 0
+    },
+    {
+      "filename": "toyota_exp002_dtc_part02.json",
+      "rows": 70,
+      "english_definition": 70,
+      "arabic_definition": 70,
+      "symptoms": 0,
+      "causes": 0,
+      "diagnostic_steps": 0
+    },
+    {
+      "filename": "toyota_exp002_dtc_part03.json",
+      "rows": 70,
+      "english_definition": 70,
+      "arabic_definition": 70,
+      "symptoms": 0,
+      "causes": 0,
+      "diagnostic_steps": 0
+    },
+    {
+      "filename": "honda_batch02_dtc.json",
+      "rows": 47,
+      "english_definition": 47,
+      "arabic_definition": 47,
+      "symptoms": 0,
+      "causes": 0,
+      "diagnostic_steps": 0
+    },
+    {
+      "filename": "audi_index_new_part01.json",
+      "rows": 200,
+      "english_definition": 0,
+      "arabic_definition": 0,
+      "symptoms": 0,
+      "causes": 0,
+      "diagnostic_steps": 0
+    },
+    {
+      "filename": "audi_index_new_part02.json",
+      "rows": 200,
+      "english_definition": 0,
+      "arabic_definition": 0,
+      "symptoms": 0,
+      "causes": 0,
+      "diagnostic_steps": 0
+    }
+  ],
+  "notes": "Toyota prior technical explanations in previous_batch_row need separate nested-field audit; Audi index rows are explicitly index-only candidates. Technical completeness not implied by mere field presence."
+}
