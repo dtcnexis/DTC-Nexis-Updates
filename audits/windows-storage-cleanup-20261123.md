@@ -90,3 +90,10 @@ Enumerate release assets and tags; inspect full trees for `installer-parts/v7/` 
 - This confirms **an explicit live-looking signed reference** to the v7 release binary in old branch files, not proof of active Windows users. Removing the release asset would break this historic Windows update URL. The owner has requested Windows retirement; release removal requires backup and action not exposed in current connector.
 - Do not edit signed payloads: changing the feed without re-signing invalidates its signature. Do not touch `main`, data/master, or brand branches' research files.
 - No deletion or storage reclamation occurred. The current safe action was to preserve evidence and document exact retirement dependency.
+
+## Post-owner deletion verification — 2026-11-23
+- Owner reported deleting the legacy Windows release.
+- Verified via GitHub REST: `GET /releases?per_page=100` returned `[]`, and `GET /releases/tags/v7` returned 404. The previously published Release and installer asset are no longer listed.
+- GitHub-reported repository size at this check: **62,847 KiB**; earlier reading was 62,993 KiB. This 146 KiB reported difference is NOT a verified 60,776,288-byte reclamation. GitHub accounting can lag and includes Git objects.
+- Important: `refs/tags/v7` **still exists** and points to commit `61e89e0aef76447833a6b792ce36558620b24772`. Branch count still **41**. The original 20-part `installer-parts/v7/` bundle remains reachable in Git history and 37 active branch tips per prior scan.
+- **Next target:** retire the remaining v7 tag and old installer Git objects only via approved, backup-verified administrative ref/history operation; current connection cannot delete refs, GitHub release assets, or rewrite history. Preserve unique brand work and original source archives. No branch/file/tag deletions performed by this assistant.
