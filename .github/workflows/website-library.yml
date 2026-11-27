@@ -1,0 +1,92 @@
+name: Central website library
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+    paths: ['website-library/**', 'ci/*website*.py', '.github/workflows/website-library.yml', 'data/master/**', 'volkswagen/**']
+  workflow_dispatch:
+    inputs:
+      action:
+        type: choice
+        options: [verify, rollback]
+        default: verify
+        description: Verify current sources or reactivate the preceding published snapshot
+
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - run: node ci/verify_master_data.cjs
+      - run: python -m unittest discover -s ci -p test_website_library.py
+      - name: Compare the proposed release with the published inventory
+        shell: bash
+        run: |
+          set -euo pipefail
+          args=()
+          if git ls-remote --exit-code origin refs/heads/website-data; then
+            git fetch --depth=1 origin refs/heads/website-data
+            git show FETCH_HEAD:current.json > "$RUNNER_TEMP/previous.json"
+            args+=(--previous "$RUNNER_TEMP/previous.json")
+          else
+            test "$?" = 2
+          fi
+          python ci/website_library.py "$GITHUB_SHA" "$RUNNER_TEMP/current.json" "${args[@]}"
+
+  publish:
+    needs: verify
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || inputs.action == 'rollback')
+    runs-on: ubuntu-latest
+    concurrency:
+      group: website-library-publication
+      cancel-in-progress: false
+    permissions:
+      contents: write
+      pull-requests: read
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0
+      - name: Assemble and advance the public data channel
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OPERATION: ${{ inputs.action }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          channel="$RUNNER_TEMP/channel"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git show-ref --verify --quiet refs/remotes/origin/website-data; then
+            git worktree add --detach "$channel" refs/remotes/origin/website-data
+            test -s "$channel/current.json"
+          else
+            git worktree add --detach --no-checkout "$channel" HEAD
+            git -C "$channel" switch --orphan website-channel-build
+          fi
+          if [[ "$OPERATION" == "rollback" ]]; then
+            test -s "$channel/previous.json"
+            python -c 'import sys,pathlib; sys.path.insert(0,"ci"); from website_library import read_snapshot; read_snapshot(pathlib.Path(sys.argv[1]))' "$channel/previous.json"
+            cp "$channel/current.json" "$RUNNER_TEMP/replaced.json"
+            cp "$channel/previous.json" "$channel/current.json"
+            cp "$RUNNER_TEMP/replaced.json" "$channel/previous.json"
+          else
+            args=()
+            if [[ -f "$channel/current.json" ]]; then args+=(--previous "$channel/current.json"); fi
+            python ci/website_library.py "$GITHUB_SHA" "$RUNNER_TEMP/candidate.json" "${args[@]}"
+            if [[ -f "$channel/current.json" ]] && python -c 'import sys,pathlib; sys.path.insert(0,"ci"); from website_library import read_snapshot; a,b=(read_snapshot(pathlib.Path(x)) for x in sys.argv[1:]); sys.exit(0 if a["files"]==b["files"] and a["sections"]==b["sections"] else 1)' "$channel/current.json" "$RUNNER_TEMP/candidate.json"; then exit 0; fi
+            python ci/authorize_website.py "$RUNNER_TEMP/candidate.json" "$channel/current.json"
+            if [[ -f "$channel/current.json" ]]; then cp "$channel/current.json" "$channel/previous.json"; fi
+            cp "$RUNNER_TEMP/candidate.json" "$channel/current.json"
+          fi
+          git -C "$channel" add -- current.json
+          if [[ -f "$channel/previous.json" ]]; then git -C "$channel" add -- previous.json; fi
+          git -C "$channel" commit -m "Website library ${OPERATION:-publish} from $GITHUB_SHA (run $GITHUB_RUN_ID)"
+          git fetch origin refs/heads/main
+          test "$(git rev-parse FETCH_HEAD)" = "$GITHUB_SHA"
+          git -C "$channel" push origin HEAD:refs/heads/website-data
